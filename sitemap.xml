@@ -2,16 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>//oblivc.org/</loc>
+    <loc>//uvacs2102.github.io/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>//oblivc.org/sqrtOram/</loc>
-  </url>
-  
-  <url>
-    <loc>//oblivc.org/main/</loc>
+    <loc>//uvacs2102.github.io/main/</loc>
   </url>
   
 </urlset>

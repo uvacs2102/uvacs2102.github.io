@@ -1,76 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Obliv-C</title>
-    <link>//oblivc.org/</link>
-    <description>Recent content on Obliv-C</description>
+    <title>cs2102</title>
+    <link>//uvacs2102.github.io/</link>
+    <description>Recent content on cs2102</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="//oblivc.org/index.xml" rel="self" type="application/rss+xml" />
-    
-    <item>
-      <title>Revisiting Square Root ORAM</title>
-      <link>//oblivc.org/sqrtOram/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>//oblivc.org/sqrtOram/</guid>
-      <description>
-
-&lt;h2 id=&#34;efficient-random-access-in-multi-party-computation:a2cae29f78a3ed35db7aeb3bee5a75d5&#34;&gt;Efficient Random Access in Multi-Party Computation&lt;/h2&gt;
-
-&lt;p&gt;Hiding memory access patterns is required for secure computation, but
-remains prohibitively expensive for many interesting applications. Prior
-work has either developed custom algorithms that minimize the need for
-data-dependant memory access, or proposed the use of Oblivious RAM
-(ORAM) to provide a general-purpose solution. However, most ORAMs are
-designed for client-server scenarios, and provide only asymptotic
-benefits in secure computation.&lt;/p&gt;
-
-&lt;p&gt;We show how the classical square-root ORAM of Goldreich and Ostrovsky
-can be modified to provide a practical ORAM for use in secure
-computation, even though it is asymptotically worse than the best known
-schemes. Specifically, we show a design that has over 100&lt;em&gt;x&lt;/em&gt; lower
-initialization cost, and provides benefits over linear scan for just 8
-blocks of data. Our scheme outperforms alternate approaches across a
-wide range of parameters, often by several orders of magnitude.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;//oblivc.org/images/sqoramcompare.png&#34; align=&#34;center&#34; width=&#34;70%&#34;&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;code:a2cae29f78a3ed35db7aeb3bee5a75d5&#34;&gt;Code&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/samee/sqrtOram&#34;&gt;https://github.com/samee/sqrtOram&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;This repository includes the implementation of Square-Root ORAM in
-&lt;a href=&#34;//oblivc.org/&#34;&gt;Obliv-C&lt;/a&gt;, as well as several example applications and benchmarks.&lt;/p&gt;
-
-&lt;h2 id=&#34;paper:a2cae29f78a3ed35db7aeb3bee5a75d5&#34;&gt;Paper&lt;/h2&gt;
-
-&lt;p&gt;Samee Zahur, Xiao Wang, Mariana Raykova, Adrià Gascón, Jack Doerner,
-David Evans, Jonathan Katz. &lt;a href=&#34;//oblivc.org/docs/sqoram.pdf&#34;&gt;&lt;em&gt;Revisiting Square-Root ORAM Efficient
-Random Access in Multi-Party Computation&lt;/em&gt;&lt;/a&gt;. In &lt;a href=&#34;http://www.ieee-security.org/TC/SP2016/&#34;&gt;&lt;em&gt;37&lt;sup&gt;th&lt;/sup&gt; IEEE
-Symposium on Security and
-Privacy&lt;/em&gt;&lt;/a&gt; (&amp;ldquo;Oakland&amp;rdquo;). San
-Jose, CA. 23-25 May 2016.&lt;/p&gt;
-
-&lt;h2 id=&#34;people:a2cae29f78a3ed35db7aeb3bee5a75d5&#34;&gt;People&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.cs.virginia.edu/~sza4uq/&#34;&gt;Samee Zahur&lt;/a&gt; (University of Virginia), Project Founder and Leader&lt;br /&gt;
-&lt;a href=&#34;https://github.com/wangxiao1254&#34;&gt;Xiao Wang&lt;/a&gt; (University of Maryland)&lt;br /&gt;
-&lt;a href=&#34;http://cpsc.yale.edu/people/mariana-raykova&#34;&gt;Mariana Raykova&lt;/a&gt; (Yale University)&lt;br /&gt;
-&lt;a href=&#34;http://www.cs.upc.edu/~agascon/&#34;&gt;Adrià Gascón&lt;/a&gt; (University of Edinburgh)&lt;br /&gt;
-&lt;a href=&#34;https://jackdoerner.net/&#34;&gt;Jack Doerner&lt;/a&gt; (University of Virginia)&lt;br /&gt;
-&lt;a href=&#34;https://www.cs.virginia.edu/evans&#34;&gt;David Evans&lt;/a&gt; (University of Virginia)&lt;br /&gt;
-&lt;a href=&#34;https://www.cs.umd.edu/~jkatz/&#34;&gt;Jonathan Katz&lt;/a&gt; (University of Maryland)&lt;/p&gt;
-</description>
-    </item>
+    <atom:link href="//uvacs2102.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>cs2102: Discrete Math</title>
-      <link>//oblivc.org/main/</link>
+      <link>//uvacs2102.github.io/main/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//oblivc.org/main/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;//oblivc.org/images/dm-logo.png&#34; align=&#34;center&#34; width=&#34;90%&#34;&gt;&lt;/p&gt;
+      <guid>//uvacs2102.github.io/main/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;//uvacs2102.github.io/images/dm-logo.png&#34; align=&#34;center&#34; width=&#34;90%&#34;&gt;&lt;/p&gt;
 
 &lt;p&gt;Coming soon&amp;hellip;&lt;/p&gt;
 </description>
