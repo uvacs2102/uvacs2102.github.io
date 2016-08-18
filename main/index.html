@@ -3,7 +3,7 @@
 
 <head>
   <title>
-    Obliv-C: A Language for Extensible Data-Oblivious Computation // Obliv-C
+    cs2102: Discrete Math // Obliv-C
   </title>
 
   <link href="//gmpg.org/xfn/11" rel="profile">
@@ -18,7 +18,7 @@
 <meta name="generator" content="Hugo 0.15-DEV" />
 
 
-  <meta property="og:title" content="Obliv-C: A Language for Extensible Data-Oblivious Computation" />
+  <meta property="og:title" content="cs2102: Discrete Math" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:locale" content="en_US" />
@@ -69,7 +69,8 @@
   <div class="header">
     <h2 class="brand-group">
 
-<a href="http://www.jeffersonswheel.org">Security Research Group</a><br>
+<a href="http://uvacs2102.github.io">cs2102: Discrete Math</a><br>
+Fall 2016<br>
 <a href="http://www.cs.virginia.edu">University of Virginia</a>
 </h2>
 
@@ -77,8 +78,6 @@
 
     <a href="//oblivc.org"><h1 class="brand-title">Obliv-C</h1></a>
     <h2 class="brand-tagline">A Language for Extensible Data-Oblivious Computation</h2>
-
-<img src="/images/oblivc-small.png" align="center" width="90%">
 
 
 
@@ -97,36 +96,10 @@
 
 		
 			
-		    <div id="toc" class="pure-u-1 pure-u-md-1-4">
-				<small class="toc-label">Contents</small>
-		   	 	<nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#code:379caad01b6ea305187be199bcac1370">Code</a></li>
-<li><a href="#tutorial:379caad01b6ea305187be199bcac1370">Tutorial</a></li>
-<li><a href="#publications:379caad01b6ea305187be199bcac1370">Publications</a></li>
-<li><a href="#projects-using-obliv-c:379caad01b6ea305187be199bcac1370">Projects Using Obliv-C</a>
-<ul>
-<li>
-<ul>
-<li><a href="#half-gates:379caad01b6ea305187be199bcac1370">Half-Gates</a></li>
-<li><a href="#sqoram-sqoram:379caad01b6ea305187be199bcac1370"><a href="/sqoram">SqORAM</a></a></li>
-<li><a href="#secure-deep-learning:379caad01b6ea305187be199bcac1370">Secure Deep Learning</a></li>
-<li><a href="#scientific-data-analysis:379caad01b6ea305187be199bcac1370">Scientific Data Analysis</a></li>
-</ul></li>
-</ul></li>
-<li><a href="#talks:379caad01b6ea305187be199bcac1370">Talks</a></li>
-<li><a href="#people:379caad01b6ea305187be199bcac1370">People</a></li>
-</ul></li>
-</ul>
-</nav>
-		    </div>
-		    
 	    
   		<section class="post">
             <h1 class="post-title">
-              <a href="/main/">Obliv-C: A Language for Extensible Data-Oblivious Computation</a>
+              <a href="/main/">cs2102: Discrete Math</a>
             </h1>
             <h3 class="post-subtitle">
             	
@@ -147,100 +120,9 @@
 
 			
 
-            
+            <p><img src="/images/dm-logo.png" align="center" width="90%"></p>
 
-<p><img src="/images/oblivc.png" align="center" width="90%"></p>
-
-<p><strong>Obliv-C</strong> is a simple GCC wrapper that makes it easy to embed secure
-computation protocols inside regular C programs.</p>
-
-<p>The idea is simple: if you are performing a multi-party distributed
-computation with sensitive data, just write it in our Obliv-C langauge
-and compile/link it with your project. The result will be a secure
-multi-party cryptographic protocol that performs this operation without
-revealing any of the inputs or intermediate values of the computation to
-any of the parties. Only the outputs are finally shared.</p>
-
-<h2 id="code:379caad01b6ea305187be199bcac1370">Code</h2>
-
-<p><a href="https://github.com/samee/obliv-c">https://github.com/samee/obliv-c</a><br />
-This repository includes the implementation of Obliv-C and several
-example applications and benchmarks.</p>
-
-<h2 id="tutorial:379caad01b6ea305187be199bcac1370">Tutorial</h2>
-
-<p><a href="http://samuelhavron.github.io/obliv-c/">Introduction to Obliv-C</a> (Samuel Havron)</p>
-
-<h2 id="publications:379caad01b6ea305187be199bcac1370">Publications</h2>
-
-<p>Samee Zahur and David Evans. <a href="http://eprint.iacr.org/2015/1153.pdf"><em>Obliv-C: A Language for Extensible
-Data-Oblivious Computation</em></a>,
-<a href="http://eprint.iacr.org/2015/1153">Cryptology ePrint Archive: Report
-2015:1153</a>
-[<a href="http://eprint.iacr.org/2015/1153">PDF</a>], November 2015.</p>
-
-<p>Samee Zahur and David Evans. <a href="http://www.ieee-security.org/TC/SP2015/posters/paper_62.pdf"><em>Poster: Obliv-C: a Fast, Lightweight
-Language for Garbled
-Circuits</em></a>.
-<a href="www.ieee-security.org/TC/SP2015/"><em>36<sup>th</sup> IEEE Symposium on Security and
-Privacy</em></a> (&ldquo;Oakland&rdquo;). 18-20 May 2015
-(Poster).</p>
-
-<h2 id="projects-using-obliv-c:379caad01b6ea305187be199bcac1370">Projects Using Obliv-C</h2>
-
-<h4 id="half-gates:379caad01b6ea305187be199bcac1370">Half-Gates</h4>
-
-<p>Samee Zahur, Mike Rosulek, and David Evans.  <a href="http://mightbeevil.com/halfgates/"><em>Two Halves Make a Whole: Reducing Data Transfer in Garbled Circuits using Half Gates</em></a>.  In <a href="https://www.cosic.esat.kuleuven.be/eurocrypt_2015/papers.shtml">EuroCrypt 2015</a>.  Sofia, Bulgaria.  26-30 April 2015. [<a href="http://www.cs.virginia.edu/evans/pubs/ec2015/halfgates.pdf">PDF</a>, 28 pages] [<a href="http://github.com/samee/obliv-c">Code</a>]</p>
-
-<h4 id="sqoram-sqoram:379caad01b6ea305187be199bcac1370"><a href="/sqoram">SqORAM</a></h4>
-
-<p>Samee Zahur, Xiao Wang, Mariana Raykova, Adrià Gascón, Jack Doerner,
-David Evans, Jonathan Katz. <a href="/docs/sqoram.pdf"><em>Revisiting Square-Root ORAM Efficient
-Random Access in Multi-Party
-Computation</em></a> (pre-publication
-version).  To appear in <a href="http://www.ieee-security.org/TC/SP2016/"><em>37<sup>th</sup> IEEE Symposium on Security and
-Privacy</em></a> (&ldquo;Oakland&rdquo;). San
-Jose, CA. 23-25 May 2016.</p>
-
-<h4 id="secure-deep-learning:379caad01b6ea305187be199bcac1370">Secure Deep Learning</h4>
-
-<p><a href="https://github.com/bargavjayaraman/SecureDeepLearning">https://github.com/bargavjayaraman/SecureDeepLearning</a><br />
-Bargav Jayaraman (Accenture Technology Labs, Bangalore)</p>
-
-<h4 id="scientific-data-analysis:379caad01b6ea305187be199bcac1370">Scientific Data Analysis</h4>
-
-<p><a href="https://github.com/samuelhavron/obliv-c">https://github.com/samuelhavron/obliv-c</a><br />
-Private Linear Regression<br />
-Samuel Havron</p>
-
-<h2 id="talks:379caad01b6ea305187be199bcac1370">Talks</h2>
-
-<p>Samee Zahur. <a href="http://www.humangenomeprivacy.org/2015/slides/UV.pdf"><em>Obliv-C: A Simple C Extension for
-SMC</em></a>, iDash
-Privacy &amp; Security Workshop 2015.  (Won award for fasted &ldquo;Hamming
-Distance&rdquo; execution.)</p>
-
-<p>David Evans. <a href="http://www.cs.virginia.edu/~evans/talks/crossing2015/"><em>Multi-Party Computation for the
-Masses</em></a>
-(includes video).  <a href="https://www.crossing.tu-darmstadt.de/en/news-events/crossing-conference-2015/">CROSSING Conference 2015: Where Quantum Physics,
-Cryptography, System Security and Software Engineering
-Meet</a>. Darmstadt. 1 June 2015</p>
-
-<p>Samee Zahur. <a href="http://research.microsoft.com/apps/video/dl.aspx?id=20989"><em>Obliv-C: A Lightweight Compiler for Data-Oblivious
-Computation</em></a>
-(includes video). Applied Multi-Party Computation.  Microsoft Research,
-Redmond, WA. 20 February 2014.</p>
-
-<h2 id="people:379caad01b6ea305187be199bcac1370">People</h2>
-
-<p><a href="https://www.cs.virginia.edu/~sza4uq/">Samee Zahur</a>, Project Founder and Leader</p>
-
-<p><a href="https://jackdoerner.net/">Jack Doerner</a>, Wizard of Oblivion<br />
-<a href="https://www.cs.virginia.edu/evans">David Evans</a>, Faculty Advisor<br />
-<a href="https://github.com/samuelhavron">Samuel Havron</a>, Undergraduate Researcher</p>
-
-<p>Contributors: <a href="https://github.com/ndokmai">Natnatee (&ldquo;Ko&rdquo;) Dokmai</a>, <a href="https://github.com/Lichard">Richard
-Li</a>, <a href="https://github.com/mdh3hc">Michael Mahoney</a>, <a href="https://github.com/wangxiao1254">Xiao Wang</a>.</p>
+<p>Coming soon&hellip;</p>
 
 	
 			
@@ -253,16 +135,11 @@ Li</a>, <a href="https://github.com/mdh3hc">Michael Mahoney</a>, <a href="https:
 					
 					<div class="paging-newer">
 						<span class="dark-red">Newer</span><span class="decorative-marker">//</span>
-						<a class="paging-link" href="/tutorial/">Obliv-C - Tutorial</a>
+						<a class="paging-link" href="/sqrtOram/">Revisiting Square Root ORAM</a>
 		            </div>
 		            
 
 					
-					<div class="paging-older">
-						<span class="dark-red">Older</span><span class="decorative-marker">//</span>
-			            <a class="paging-link" href="/sqoram/">Revisiting Square Root ORAM</a>
-		            </div>
-		            
 	            </div>
             
           </section>

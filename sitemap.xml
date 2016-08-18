@@ -7,23 +7,11 @@
   </url>
   
   <url>
-    <loc>//oblivc.org/tutorial/</loc>
-  </url>
-  
-  <url>
-    <loc>//oblivc.org/main/</loc>
-  </url>
-  
-  <url>
-    <loc>//oblivc.org/sqoram/</loc>
-  </url>
-  
-  <url>
     <loc>//oblivc.org/sqrtOram/</loc>
   </url>
   
   <url>
-    <loc>//oblivc.org/matching/</loc>
+    <loc>//oblivc.org/main/</loc>
   </url>
   
 </urlset>
