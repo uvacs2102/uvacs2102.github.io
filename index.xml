@@ -287,6 +287,17 @@ group&lt;/a&gt;.&lt;/p&gt;
       <guid>//uvacs2102.github.io/main/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;//uvacs2102.github.io/images/dm-logo.png&#34; align=&#34;center&#34; width=&#34;90%&#34;&gt;&lt;/p&gt;
 
+&lt;section id=&#34;main&#34;&gt;
+  &lt;div&gt;
+   &lt;h1 id=&#34;title&#34;&gt;{{ .Title }}&lt;/h1&gt;
+        &lt;ul id=&#34;list&#34;&gt;
+            {{ range .Data.Pages }}
+                {{ .Render &#34;li&#34;}}
+            {{ end }}
+        &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+
 &lt;p&gt;Coming soon&amp;hellip;&lt;/p&gt;
 </description>
     </item>
