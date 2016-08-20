@@ -9,6 +9,277 @@
     <atom:link href="//uvacs2102.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title></title>
+      <link>//uvacs2102.github.io/pages/syllabus/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//uvacs2102.github.io/pages/syllabus/</guid>
+      <description>
+
+&lt;h1 id=&#34;syllabus:051025d606153e159a2b11ffecb897d5&#34;&gt;Syllabus&lt;/h1&gt;
+
+&lt;div class=&#34;printing&#34;&gt;&lt;a href=&#34;{{ url_for(&#39;static&#39;, filename=&#39;docs/syllabus.pdf&#39;) }}&#34;&gt;PDF for Printing&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;cs2102: Discrete Mathematics&lt;/strong&gt;&lt;br /&gt;
+&lt;em&gt;Mathematics for Computer Science&lt;/em&gt;&lt;br /&gt;
+University of Virginia, Fall 2016&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Meetings:&lt;/strong&gt; Tuesdays and Thursdays, 2:00-3:15pm in Chemistry 402.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Course Objective.&lt;/strong&gt; The goal of this course is to students to
+  understand, explain, and apply the foundational mathematical concepts
+  at the core of computer science.&lt;/p&gt;
+
+&lt;p&gt;The skills students learn in this course are essential for later courses
+  (especially cs3102 and cs4102, but also in other courses), where they
+  will be used to reason about and develop algorithms, prove properties
+  about programs, and understand the limits of different models of
+  computation.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Expected Background:&lt;/strong&gt; The official prerequisite for this course is
+  earning credit for CS 1110, 1111, 1112 or 1120 with a grade of C- or
+  higher.  If you have not satisfied the official prerequisite, you need
+  permission from the instructor to enroll in the class.&lt;/p&gt;
+
+&lt;p&gt;The particular background we assume is:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;em&gt;Language:&lt;/em&gt; reasonable proficiency in reading and writing English&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;em&gt;Math:&lt;/em&gt; understanding of whole numbers and addition, subtraction,
+multiplication, division and exponentiation.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;em&gt;Programming:&lt;/em&gt; ability to understand and write simple programs
+in some programming language.  In some of the assignments in the
+class, students will be expected to read and write short programs in
+Python (so students who have not had previous experience with Python
+will need to learn a small subset of Python on their own).&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;em&gt;Computing:&lt;/em&gt; high-level understanding of how computers work.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Materials:&lt;/strong&gt; The primary textbook is:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Eric Lehman, F. Thomson Leighton, and Albert R. Meyer. &lt;a href=&#34;../docs/mcs.pdf&#34;&gt;&lt;em&gt;Mathematics for
+Computer Science&lt;/em&gt;&lt;/a&gt;. (2016/6/16 version).  This book is
+freely available on-line, and generously released under a &lt;a href=&#34;https://creativecommons.org/licenses/by-sa/3.0/&#34;&gt;Create
+Commons Attribution-ShareAlike 3.0
+License&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;In addition to that textbook, we will have selected readings from other
+sources.&lt;/p&gt;
+
+&lt;h2 id=&#34;staff:051025d606153e159a2b11ffecb897d5&#34;&gt;Staff&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Teacher:&lt;/strong&gt; &lt;a href=&#34;http://www.cs.virginia.edu/evans&#34;&gt;David Evans&lt;/a&gt; (evans@virginia.edu). My &lt;a href=&#34;http://www.cs.virginia.edu/evans/office&#34;&gt;office&lt;/a&gt; is Rice 507.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Assistant Teachers:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Office Hours:&lt;/strong&gt; The course staff is here to help you. Please don’t
+wait until too late to take advantage of the available help or ask for
+help. For nearly everyone, this course will involve learning new ways
+of thinking that are dramatically different from those you are
+accustomed to.  It is natural to miss things, and then become lost since
+new ideas build on previous ones.  A few minutes in office hours can
+enable real understanding and save hours of frustration (as well as
+provide the teachers with lots of insight about what is going on in the
+class); if that isn&amp;rsquo;t a compelling enough reason, my office has a great
+view of the Blue Ridge and occasionally has stray candy for office hours
+visitors.&lt;/p&gt;
+
+&lt;p&gt;The current office hours schedule (which may be revised based on your
+registration surveys) is:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Tuesdays, 3:30-4:30pm (Dave, Rice 507)&lt;/li&gt;
+&lt;li&gt;Wednesdays, 4:00-5:30pm (Yuchi, Rice 514)&lt;/li&gt;
+&lt;li&gt;Thursdays, 11:00am-noon (Dave, Rice 507)&lt;/li&gt;
+&lt;li&gt;Fridays, after class-3:00pm (Yuchi, starting in classroom; moving to Rice 514)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;communications:051025d606153e159a2b11ffecb897d5&#34;&gt;Communications&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Course Website:&lt;/strong&gt; &lt;a href=&#34;http://xplorecs.org/&#34;&gt;&lt;em&gt;xplorecs.org&lt;/em&gt;&lt;/a&gt;.  All course
+  materials will be posted on the course website.  This page is updated
+  often and students are expected to visit it regularly (almost every
+  day). All lectures, notes and assignments for the course will be
+  posted on the web site.  We encourage students to ask questions about
+  the classes and assignments by posting comments on the course blog,
+  and the course staff will read and respond to questions there.  You
+  may also want to subscribe to email notifications for when the site is
+  updated (details provided later), but we will generally not send
+  class-wide emails except in exceptional circumstances.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Slack:&lt;/strong&gt; &lt;a href=&#34;https://cs1120.slack.com&#34;&gt;&lt;em&gt;https://cs1120.slack.com&lt;/em&gt;&lt;/a&gt;.  We
+  will use a slack group for &amp;ldquo;real-time&amp;rdquo; communication for quick help
+  and discussion.  Unlike the course site, which is public and visible
+  to the world, this group will only be visible to people in the class.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Email:&lt;/strong&gt; Feel free to email me (&lt;em&gt;evans@virginia.edu&lt;/em&gt;) with any
+  personal questions or issues that should not be posted publicly. For
+  general questions or issues that might be relevant for others in the
+  class, it is better to post publicly to the course website or slack
+  group (both so that others may be able to answer your question, and
+  others may be able to see a response that will be useful to them).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Calendar:&lt;/strong&gt; The course calendar is available &lt;a href=&#34;https://calendar.google.com/calendar/embed?src=c9irid4if8aju6s17b7nk6ue8g%40group.calendar.google.com&amp;amp;ctz=America/New_York&#34;&gt;as a Google
+  calendar&lt;/a&gt;.
+  Students are encouraged to incorporate this into your own calendar.  If you use another calendar program, you can incorporate this calendar using &lt;a href=&#34;https://calendar.google.com/calendar/ical/c9irid4if8aju6s17b7nk6ue8g%40group.calendar.google.com/public/basic.ics&#34;&gt;ical&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;honor:051025d606153e159a2b11ffecb897d5&#34;&gt;Honor&lt;/h2&gt;
+
+&lt;p&gt;We believe strongly in the value of a community of trust, and expect all
+of the students in this class to contribute to strenghtening and
+enhancing that community.  The course will be better for everyone if
+everyone can assume everyone else is trustworthy. The course staff
+starts with the assumption that all students at the university deserve
+to be trusted.&lt;/p&gt;
+
+&lt;p&gt;To ensure that expectations are clear to everyone, all students are
+required to sign the &lt;a href=&#34;//uvacs2102.github.io/pledge&#34;&gt;course pledge&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;topics:051025d606153e159a2b11ffecb897d5&#34;&gt;Topics&lt;/h2&gt;
+
+&lt;p&gt;Computer science is the study of information processes.  Computer
+scientists study how to describe, predict properties of, and efficiently
+implement information processes.  Students in the course will learn to
+design and create computer programs, and to understand and reason about
+how those programs execute.&lt;/p&gt;
+
+&lt;p&gt;Most of what we know about describing information processes stems from
+three simple ideas:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;You can define things in terms of themselves (recursive definitions).&lt;/li&gt;
+&lt;li&gt;You can treat procedures and data as one and the same (universality).&lt;/li&gt;
+&lt;li&gt;When you give something a name, it becomes more useful (abstraction).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Although these ideas are simple, they have profound implications that it
+takes many years to fully appreciate.&lt;/p&gt;
+
+&lt;p&gt;The main topics of the course include:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Language.&lt;/strong&gt; Be able to identify the primitives, means of combination,
+  and means of abstraction for a language; describe a language using a
+  replacement grammar or recursive transition network; determine the set
+  of the surface forms in a language described by a replacement grammar
+  or recursive transition network; determine what a surface form in a
+  language means if you are given evaluation rules for the language;
+  determine the value of a expression following the rules of evaluation.
+  Understand an interpreter; modify an evaluator to change the meaning
+  of a language; explain why the difference between eagar and lazy
+  evaluation matters.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Defining and Understanding Procedures.&lt;/strong&gt; Be able to define and
+  understand procedures including procedures that take procedures as
+  parameters, procedures that produces procedures as results.
+  Understand recursive definitions and be able to solve problems by
+  defining a recursive procedures and reason about the process produced
+  by evaluating an application of a recursively defined procedure.  For
+  most of the class, we will use the programming language Python, and
+  students will be expected to be able to write and analyze Python
+  programs.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Data, Mutation, and Objects.&lt;/strong&gt; Understand how complex data can be
+constructed from simple structures, and how to define and manipulate
+recursive data structures.  Be able to define, use, and understand
+procedures that manipulate lists, trees, and dictionaries.  Define and
+understand procedures that use mutation; define procedures that create
+objects; explain a class hierarchy; define procedures that use
+inheritance; explain how a method is selected given class definitions.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Analyzing Problems and Procedures.&lt;/strong&gt; Describe problems precisely in
+  terms of their inputs and outputs; express the amount of work a
+  procedure requires using asymptotic operators; describe a problem
+  using &lt;em&gt;O&lt;/em&gt;, &amp;Omega;, and &amp;Theta;; estimate the amount of work a
+  solution to a problem involves; classify problems into complexity
+  classes P and NP; explain convincingly why a problem is in NP; explain
+  what it would mean if someone developed a fast (polynomial time)
+  procedure for an NP-Complete problem.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Modeling Computation.&lt;/strong&gt; Explain how to model computation; understand a
+  finite state machine description and explain what it does; understand
+  a Turing Machine description and explain what it does; show that a
+  computing model is (or is not) capable of modeling any mechanical
+  computation; explain what it means for an axiomatic system to be
+  perfect, incomplete or inconsistent; explain the essence of
+  G&amp;ouml;del&amp;#8217;s proof; determine if a problem is computable or
+  noncomputable and provide a convincing argument why.&lt;/p&gt;
+
+&lt;h2 id=&#34;assignments-exams-and-grading:051025d606153e159a2b11ffecb897d5&#34;&gt;Assignments, Exams, and Grading&lt;/h2&gt;
+
+&lt;p&gt;Most of the material in this course is tightly coupled and
+interdependent: it is not possible to understand later concepts well,
+without understanding what came before.  Hence, assignments and grading
+will be done using a progressive model more similar to what is done in
+kids Tae Kwon Do classes (and other martial arts) than what most
+students are accustomed to in academic classes.  This means you need to
+satisfactorily complete the &amp;ldquo;White Belt&amp;rdquo; level assignments before you
+can move on to the &amp;ldquo;Yellow Belt&amp;rdquo; assignments.  There will be target
+deadlines for each level, but if you do not successfully complete a
+level by the target deadline, you will be able to re-attempt it
+(possibly doing alternate assignments and oral exams) later.&lt;/p&gt;
+
+&lt;p&gt;Exams for completing each belt will vary in format and structure.  Some
+will involve submitting assignments on paper or electronically; others
+will include quizzes in writing in class or taken at home; and some will
+involve oral exams.&lt;/p&gt;
+
+&lt;p&gt;The target levels for the course are (dates updated from original syllabus):&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&amp;ldquo;White&amp;rdquo; (Monday, 25 January): informal understanding of what a
+computer is and what programming a computer involves, ability to write
+and understand expressions that manipulate numbers and strings.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&amp;ldquo;Yellow&amp;rdquo; (Friday, 5 February): understanding conditional and looping
+statements, being able to defining and use procedures, and ability to
+combine procedures to solve problems.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&amp;ldquo;Orange&amp;rdquo; (Monday, 15 February): using and reasoning about structured
+data including lists, procedures on recursive data structures.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&amp;ldquo;Green&amp;rdquo; (Wednesday, 24 February): designing and manipulating complex
+data and programs that operate on it.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&amp;ldquo;Blue&amp;rdquo; (Monday, 21 March): analyzing the cost of executions, basic understanding of
+how computing machines work, being able to solve problems without
+guidance.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&amp;ldquo;Purple/Brown&amp;rdquo; (Monday, 4 April): ability to organize procedures and
+state into classes and develop programs using multiple modules and
+inheritance, understanding of type systems and their tradeoffs.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&amp;ldquo;Red&amp;rdquo; (Friday, 18 April): understanding of computability and ability to
+construct and reason about reduction proofs, interpreters, language
+semantics.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&amp;ldquo;Black&amp;rdquo; (Monday, 2 May): deep knowledge of major concepts in computer
+science; understanding of intractability and its significance; ability
+to design and build a complex, interactive application.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Your final grade in the course will be based on the highest level you
+are able to satisfactorily complete.  For students who demonstrate
+commendable effort throughout the semester, achieving the Red Belt level
+earns an A in the course and Blue Belt earns a B.  The +/- modifiers
+reflect quality of work, contributions to the class, and other aspects.&lt;/p&gt;
+
+&lt;p&gt;Spend your energy focusing on what you are learning, instead of worrying
+about your grade.  Although the material we cover is challenging, and
+the pace may seem overwhelming at times, historically all students who
+put effort into this class have done fine.  Although success requires
+hard work, all students are expected to get an A in the course.
+Students who do especially outstanding work in the course will be
+offered paying summer positions in &lt;a href=&#34;http://www.jeffersonswheel.org&#34;&gt;my research
+group&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>cs2102: Discrete Math</title>
       <link>//uvacs2102.github.io/main/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
