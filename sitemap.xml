@@ -2,16 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>//uvacs2102.github.io/</loc>
+    <loc>https://uvacs2102.github.io/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>//uvacs2102.github.io/pages/syllabus/</loc>
+    <loc>https://uvacs2102.github.io/hw/hw0/</loc>
   </url>
   
   <url>
-    <loc>//uvacs2102.github.io/main/</loc>
+    <loc>https://uvacs2102.github.io/syllabus/</loc>
+  </url>
+  
+  <url>
+    <loc>https://uvacs2102.github.io/1/01/01/</loc>
+  </url>
+  
+  <url>
+    <loc>https://uvacs2102.github.io/pledge/</loc>
+  </url>
+  
+  <url>
+    <loc>https://uvacs2102.github.io/main/</loc>
   </url>
   
 </urlset>

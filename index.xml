@@ -1,28 +1,99 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>cs2102</title>
-    <link>//uvacs2102.github.io/</link>
-    <description>Recent content on cs2102</description>
+    <title>cs2102: Discrete Math</title>
+    <link>https://uvacs2102.github.io/</link>
+    <description>Recent content on cs2102: Discrete Math</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="//uvacs2102.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <managingEditor>evans@virginia.edu (David Evans)</managingEditor>
+    <webMaster>evans@virginia.edu (David Evans)</webMaster>
+    <atom:link href="https://uvacs2102.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title></title>
-      <link>//uvacs2102.github.io/pages/syllabus/</link>
+      <link>https://uvacs2102.github.io/hw/hw0/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>//uvacs2102.github.io/pages/syllabus/</guid>
+      <author>evans@virginia.edu (David Evans)</author>
+      <guid>https://uvacs2102.github.io/hw/hw0/</guid>
       <description>
 
-&lt;h1 id=&#34;syllabus:051025d606153e159a2b11ffecb897d5&#34;&gt;Syllabus&lt;/h1&gt;
+&lt;h1 id=&#34;homework-0&#34;&gt;Homework 0&lt;/h1&gt;
+
+&lt;div class=&#34;printing&#34;&gt;&lt;a href=&#34;{{ url_for(&#39;static&#39;, filename=&#39;docs/hw0.pdf&#39;) }}&#34;&gt;PDF for Printing&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;div class=&#34;turnin&#34;&gt;
+&lt;strong&gt;Deliverable:&lt;/strong&gt; Submit your responses as a single PDF file on the
+  collab site before &lt;strong&gt;5:59pm&lt;/strong&gt; on &lt;strong&gt;Friday, 26 August&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;collaboration-policy-read-carefully&#34;&gt;Collaboration Policy - Read Carefully&lt;/h3&gt;
+
+&lt;p&gt;For this assignment, you may work on your own or with one other student
+in the class.  If you work with a partner, you and your partner must
+have been born in different counties (if you were both born in the
+United States), or in different countries (if one of you was born
+outside the United States).  If you work with a partner, you should
+submit one assignment that represents your collective best work.
+Everyone should understand everything you turn in for the assignment
+well enough to be able to produce it completely on your own.&lt;/p&gt;
+
+&lt;p&gt;You may discuss the assignment with anyone you want and get help from
+others, so long as it is help in the spirit of learning how to do things
+yourself not getting answers you don&amp;rsquo;t understand.&lt;/p&gt;
+
+&lt;p&gt;Remember to follow the &lt;a href=&#34;https://uvacs2102.github.io/pledge&#34;&gt;course pledge&lt;/a&gt; you read and signed at
+the beginning of the semester.  For this assignment, you may consult any
+outside resources, including books, papers, web sites and people, you
+wish &lt;i&gt;except&lt;/i&gt; for materials from previous cs1120 courses.  You may
+consult an outside person (e.g., another friend who is a CS major but is
+not in this class) who is not a member of the course staff, but that
+person cannot type anything in for you and all work must remain your own
+and outside sources should never give you specific answers to problem
+set questions.&lt;/p&gt;
+
+&lt;p&gt;If you use resources other than the class materials, lectures and course
+staff, you should document this in your turn-in.&lt;/p&gt;
+
+&lt;p&gt;You are &lt;b&gt;strongly encouraged&lt;/b&gt; to take advantage of the scheduled
+ help hours and office hours for this course.&lt;/p&gt;
+
+&lt;p&gt;**1. ** The introduction for the MCS book states,&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&amp;laquo;Proofs also play a growing role in computer science; they are used to
+certify that software and hardware will &lt;em&gt;always&lt;/em&gt; behave correctly,
+something that no amount of testing can do.&amp;raquo;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Which of the following statements are implied by that statement:&lt;/p&gt;
+
+&lt;p&gt;(a) Proofs can certify that software and hardware will always behave correctly.&lt;/p&gt;
+
+&lt;p&gt;(b) Testing can never certify that software and hardware will always behave correctly.&lt;/p&gt;
+
+&lt;p&gt;&amp;copy; Proofs can certify that software and hardware will sometimes behave correctly.&lt;/p&gt;
+
+&lt;p&gt;(d)&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://uvacs2102.github.io/syllabus/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>evans@virginia.edu (David Evans)</author>
+      <guid>https://uvacs2102.github.io/syllabus/</guid>
+      <description>
+
+&lt;h1 id=&#34;syllabus&#34;&gt;Syllabus&lt;/h1&gt;
 
 &lt;div class=&#34;printing&#34;&gt;&lt;a href=&#34;{{ url_for(&#39;static&#39;, filename=&#39;docs/syllabus.pdf&#39;) }}&#34;&gt;PDF for Printing&lt;/a&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;strong&gt;cs2102: Discrete Mathematics&lt;/strong&gt;&lt;br /&gt;
-&lt;em&gt;Mathematics for Computer Science&lt;/em&gt;&lt;br /&gt;
-University of Virginia, Fall 2016&lt;/p&gt;
+&lt;h3 id=&#34;cs2102-discrete-mathematics-section-1&#34;&gt;&lt;strong&gt;cs2102: Discrete Mathematics&lt;/strong&gt; (Section 1)&lt;/h3&gt;
+
+&lt;h3 id=&#34;university-of-virginia-fall-2016&#34;&gt;University of Virginia, Fall 2016&lt;/h3&gt;
 
 &lt;p&gt;&lt;strong&gt;Meetings:&lt;/strong&gt; Tuesdays and Thursdays, 2:00-3:15pm in Chemistry 402.&lt;/p&gt;
 
@@ -68,54 +139,44 @@ Commons Attribution-ShareAlike 3.0
 License&lt;/a&gt;.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;In addition to that textbook, we will have selected readings from other
-sources.&lt;/p&gt;
+&lt;p&gt;The course will cover most of the first two parts of this book (Chapters
+1-13), with some selected materials from later chapters.  In addition to
+that textbook, we will have selected readings from other sources.&lt;/p&gt;
 
-&lt;h2 id=&#34;staff:051025d606153e159a2b11ffecb897d5&#34;&gt;Staff&lt;/h2&gt;
+&lt;h2 id=&#34;staff&#34;&gt;Staff&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;Teacher:&lt;/strong&gt; &lt;a href=&#34;http://www.cs.virginia.edu/evans&#34;&gt;David Evans&lt;/a&gt; (evans@virginia.edu). My &lt;a href=&#34;http://www.cs.virginia.edu/evans/office&#34;&gt;office&lt;/a&gt; is Rice 507.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Assistant Teachers:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Assistant Teachers:&lt;/strong&gt; Adam Guo (BSCS 2018), Adam Rosenberg (MCS 2017), Anindya Prodhan (PhD Student), Brooke Dickie (Systems Engineering 2018), Christopher Long (BACS 2018), Harrison Nam (BSCS 2018), Hussain Humadi (CPE 2018), Jin Han (BSCS 2018), Luke Botti (BACS/Math 2017), Riya Simon (CPE 2019), Saikat Chakraborty (PhD Student), Sarah Barkley (BACS/Math 2018), Sihang Liu (PhD Student), Subhan Poudel (BSCS 2019), Yong Jae Kwon (BACS 2017)&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Office Hours:&lt;/strong&gt; The course staff is here to help you. Please don’t
+&lt;p&gt;&lt;strong&gt;Office Hours:&lt;/strong&gt; &lt;em&gt;The course staff is here to help you.&lt;/em&gt; Please don’t
 wait until too late to take advantage of the available help or ask for
-help. For nearly everyone, this course will involve learning new ways
-of thinking that are dramatically different from those you are
-accustomed to.  It is natural to miss things, and then become lost since
-new ideas build on previous ones.  A few minutes in office hours can
-enable real understanding and save hours of frustration (as well as
-provide the teachers with lots of insight about what is going on in the
-class); if that isn&amp;rsquo;t a compelling enough reason, my office has a great
-view of the Blue Ridge and occasionally has stray candy for office hours
-visitors.&lt;/p&gt;
+help. For nearly everyone, this course will involve learning new ways of
+thinking that are dramatically different from those to which you are
+accustomed.  It is natural to miss things, and then become lost since
+new ideas build on previous ones.  Come to office hours early to get
+help before you find yourself frustrated and confused.&lt;/p&gt;
 
-&lt;p&gt;The current office hours schedule (which may be revised based on your
-registration surveys) is:&lt;/p&gt;
+&lt;p&gt;The office hours schedule is &lt;a href=&#34;officehours.md&#34;&gt;posted on-line&lt;/a&gt;, and will
+be kept updated throughout the semester.&lt;/p&gt;
 
-&lt;ul&gt;
-&lt;li&gt;Tuesdays, 3:30-4:30pm (Dave, Rice 507)&lt;/li&gt;
-&lt;li&gt;Wednesdays, 4:00-5:30pm (Yuchi, Rice 514)&lt;/li&gt;
-&lt;li&gt;Thursdays, 11:00am-noon (Dave, Rice 507)&lt;/li&gt;
-&lt;li&gt;Fridays, after class-3:00pm (Yuchi, starting in classroom; moving to Rice 514)&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h2 id=&#34;communications&#34;&gt;Communications&lt;/h2&gt;
 
-&lt;h2 id=&#34;communications:051025d606153e159a2b11ffecb897d5&#34;&gt;Communications&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Course Website:&lt;/strong&gt;
+  &lt;a href=&#34;https://uvacs2102.github.io/&#34;&gt;&lt;em&gt;https://uvacs2102.github.io/&lt;/em&gt;&lt;/a&gt;.  All
+  course materials will be posted on the course website.  This page is
+  updated often and students are expected to visit it regularly. All
+  lectures, notes and assignments for the course will be posted on the
+  web site.  We encourage students to ask questions about the classes
+  and assignments by posting comments on the course blog, and the course
+  staff will read and respond to questions there.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Course Website:&lt;/strong&gt; &lt;a href=&#34;http://xplorecs.org/&#34;&gt;&lt;em&gt;xplorecs.org&lt;/em&gt;&lt;/a&gt;.  All course
-  materials will be posted on the course website.  This page is updated
-  often and students are expected to visit it regularly (almost every
-  day). All lectures, notes and assignments for the course will be
-  posted on the web site.  We encourage students to ask questions about
-  the classes and assignments by posting comments on the course blog,
-  and the course staff will read and respond to questions there.  You
-  may also want to subscribe to email notifications for when the site is
-  updated (details provided later), but we will generally not send
-  class-wide emails except in exceptional circumstances.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Slack:&lt;/strong&gt; &lt;a href=&#34;https://cs1120.slack.com&#34;&gt;&lt;em&gt;https://cs1120.slack.com&lt;/em&gt;&lt;/a&gt;.  We
-  will use a slack group for &amp;ldquo;real-time&amp;rdquo; communication for quick help
-  and discussion.  Unlike the course site, which is public and visible
-  to the world, this group will only be visible to people in the class.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Slack:&lt;/strong&gt; &lt;a href=&#34;https://cs2102.slack.com&#34;&gt;&lt;em&gt;https://cs2102.slack.com&lt;/em&gt;&lt;/a&gt;.  We
+  will use a slack group for &amp;laquo;real-time&amp;raquo; communication for quick help
+  and discussion (including during lectures).  Unlike the course site,
+  which is public and visible to the world, this group will only be
+  visible to people in the class.  There are slack apps for web, iOS and
+  Android.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Email:&lt;/strong&gt; Feel free to email me (&lt;em&gt;evans@virginia.edu&lt;/em&gt;) with any
   personal questions or issues that should not be posted publicly. For
@@ -124,179 +185,189 @@ registration surveys) is:&lt;/p&gt;
   group (both so that others may be able to answer your question, and
   others may be able to see a response that will be useful to them).&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Calendar:&lt;/strong&gt; The course calendar is available &lt;a href=&#34;https://calendar.google.com/calendar/embed?src=c9irid4if8aju6s17b7nk6ue8g%40group.calendar.google.com&amp;amp;ctz=America/New_York&#34;&gt;as a Google
+&lt;p&gt;&lt;strong&gt;Calendar:&lt;/strong&gt; The course calendar is available &lt;a href=&#34;https://calendar.google.com/calendar/embed?src=qqvq9kvd197mu6pib4p2uf79q4%40group.calendar.google.com&amp;amp;ctz=America/New_York&#34;&gt;as a Google
   calendar&lt;/a&gt;.
-  Students are encouraged to incorporate this into your own calendar.  If you use another calendar program, you can incorporate this calendar using &lt;a href=&#34;https://calendar.google.com/calendar/ical/c9irid4if8aju6s17b7nk6ue8g%40group.calendar.google.com/public/basic.ics&#34;&gt;ical&lt;/a&gt;.&lt;/p&gt;
+  Students are encouraged to incorporate this into your own calendar.  If you use Google Calendar, just click the &amp;laquo;+&amp;raquo; at the bottom right of the &lt;a href=&#34;https://calendar.google.com/calendar/embed?src=qqvq9kvd197mu6pib4p2
+uf79q4%40group.calendar.google.com&amp;amp;ctz=America/New_York&#34;&gt;calendar page&lt;/a&gt;. If you use another calendar program, you can incorporate this calendar using &lt;a href=&#34;https://calendar.google.com/calendar/ical/qqvq9kvd197mu6pib4p2uf79q4%40group.calendar.google.com/public/basic.ics&#34;&gt;ical&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h2 id=&#34;honor:051025d606153e159a2b11ffecb897d5&#34;&gt;Honor&lt;/h2&gt;
+&lt;h2 id=&#34;honor&#34;&gt;Honor&lt;/h2&gt;
 
-&lt;p&gt;We believe strongly in the value of a community of trust, and expect all
-of the students in this class to contribute to strenghtening and
+&lt;p&gt;We believe strongly in the value of a &lt;em&gt;community of trust&lt;/em&gt;, and expect
+all of the students in this class to contribute to strenghtening and
 enhancing that community.  The course will be better for everyone if
 everyone can assume everyone else is trustworthy. The course staff
 starts with the assumption that all students at the university deserve
 to be trusted.&lt;/p&gt;
 
 &lt;p&gt;To ensure that expectations are clear to everyone, all students are
-required to sign the &lt;a href=&#34;//uvacs2102.github.io/pledge&#34;&gt;course pledge&lt;/a&gt;.&lt;/p&gt;
+required to sign the &lt;a href=&#34;https://uvacs2102.github.io/pledge&#34;&gt;course pledge&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h2 id=&#34;topics:051025d606153e159a2b11ffecb897d5&#34;&gt;Topics&lt;/h2&gt;
+&lt;h2 id=&#34;topics&#34;&gt;Topics&lt;/h2&gt;
 
-&lt;p&gt;Computer science is the study of information processes.  Computer
-scientists study how to describe, predict properties of, and efficiently
-implement information processes.  Students in the course will learn to
-design and create computer programs, and to understand and reason about
-how those programs execute.&lt;/p&gt;
-
-&lt;p&gt;Most of what we know about describing information processes stems from
-three simple ideas:&lt;/p&gt;
+&lt;p&gt;The topics covered in cs2102 focus on developing the mathematical
+foundation and skills that are most important for computer science.
+Expected topics include:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;You can define things in terms of themselves (recursive definitions).&lt;/li&gt;
-&lt;li&gt;You can treat procedures and data as one and the same (universality).&lt;/li&gt;
-&lt;li&gt;When you give something a name, it becomes more useful (abstraction).&lt;/li&gt;
+&lt;li&gt;Propositions and Proofs&lt;/li&gt;
+&lt;li&gt;Proof methods (including proof by construction, contradiction, and induction)&lt;/li&gt;
+&lt;li&gt;Logic (Boolean, Logical Formula,&lt;/li&gt;
+&lt;li&gt;Binary Relations&lt;/li&gt;
+&lt;li&gt;State machines&lt;/li&gt;
+&lt;li&gt;Graphs&lt;/li&gt;
+&lt;li&gt;Finite and infinite sets&lt;/li&gt;
+&lt;li&gt;Number Theory&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Although these ideas are simple, they have profound implications that it
-takes many years to fully appreciate.&lt;/p&gt;
+&lt;h2 id=&#34;assignments-and-exams&#34;&gt;Assignments and Exams&lt;/h2&gt;
 
-&lt;p&gt;The main topics of the course include:&lt;/p&gt;
+&lt;p&gt;A detailed schedule is &lt;a href=&#34;https://uvacs2102.github.io/schedule&#34;&gt;maintained on the course website&lt;/a&gt; and
+&lt;a href=&#34;#calendar&#34;&gt;calendar&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Language.&lt;/strong&gt; Be able to identify the primitives, means of combination,
-  and means of abstraction for a language; describe a language using a
-  replacement grammar or recursive transition network; determine the set
-  of the surface forms in a language described by a replacement grammar
-  or recursive transition network; determine what a surface form in a
-  language means if you are given evaluation rules for the language;
-  determine the value of a expression following the rules of evaluation.
-  Understand an interpreter; modify an evaluator to change the meaning
-  of a language; explain why the difference between eagar and lazy
-  evaluation matters.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Defining and Understanding Procedures.&lt;/strong&gt; Be able to define and
-  understand procedures including procedures that take procedures as
-  parameters, procedures that produces procedures as results.
-  Understand recursive definitions and be able to solve problems by
-  defining a recursive procedures and reason about the process produced
-  by evaluating an application of a recursively defined procedure.  For
-  most of the class, we will use the programming language Python, and
-  students will be expected to be able to write and analyze Python
-  programs.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Data, Mutation, and Objects.&lt;/strong&gt; Understand how complex data can be
-constructed from simple structures, and how to define and manipulate
-recursive data structures.  Be able to define, use, and understand
-procedures that manipulate lists, trees, and dictionaries.  Define and
-understand procedures that use mutation; define procedures that create
-objects; explain a class hierarchy; define procedures that use
-inheritance; explain how a method is selected given class definitions.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Analyzing Problems and Procedures.&lt;/strong&gt; Describe problems precisely in
-  terms of their inputs and outputs; express the amount of work a
-  procedure requires using asymptotic operators; describe a problem
-  using &lt;em&gt;O&lt;/em&gt;, &amp;Omega;, and &amp;Theta;; estimate the amount of work a
-  solution to a problem involves; classify problems into complexity
-  classes P and NP; explain convincingly why a problem is in NP; explain
-  what it would mean if someone developed a fast (polynomial time)
-  procedure for an NP-Complete problem.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Modeling Computation.&lt;/strong&gt; Explain how to model computation; understand a
-  finite state machine description and explain what it does; understand
-  a Turing Machine description and explain what it does; show that a
-  computing model is (or is not) capable of modeling any mechanical
-  computation; explain what it means for an axiomatic system to be
-  perfect, incomplete or inconsistent; explain the essence of
-  G&amp;ouml;del&amp;#8217;s proof; determine if a problem is computable or
-  noncomputable and provide a convincing argument why.&lt;/p&gt;
-
-&lt;h2 id=&#34;assignments-exams-and-grading:051025d606153e159a2b11ffecb897d5&#34;&gt;Assignments, Exams, and Grading&lt;/h2&gt;
-
-&lt;p&gt;Most of the material in this course is tightly coupled and
-interdependent: it is not possible to understand later concepts well,
-without understanding what came before.  Hence, assignments and grading
-will be done using a progressive model more similar to what is done in
-kids Tae Kwon Do classes (and other martial arts) than what most
-students are accustomed to in academic classes.  This means you need to
-satisfactorily complete the &amp;ldquo;White Belt&amp;rdquo; level assignments before you
-can move on to the &amp;ldquo;Yellow Belt&amp;rdquo; assignments.  There will be target
-deadlines for each level, but if you do not successfully complete a
-level by the target deadline, you will be able to re-attempt it
-(possibly doing alternate assignments and oral exams) later.&lt;/p&gt;
-
-&lt;p&gt;Exams for completing each belt will vary in format and structure.  Some
-will involve submitting assignments on paper or electronically; others
-will include quizzes in writing in class or taken at home; and some will
-involve oral exams.&lt;/p&gt;
-
-&lt;p&gt;The target levels for the course are (dates updated from original syllabus):&lt;/p&gt;
+&lt;p&gt;Key dates:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&amp;ldquo;White&amp;rdquo; (Monday, 25 January): informal understanding of what a
-computer is and what programming a computer involves, ability to write
-and understand expressions that manipulate numbers and strings.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&amp;ldquo;Yellow&amp;rdquo; (Friday, 5 February): understanding conditional and looping
-statements, being able to defining and use procedures, and ability to
-combine procedures to solve problems.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&amp;ldquo;Orange&amp;rdquo; (Monday, 15 February): using and reasoning about structured
-data including lists, procedures on recursive data structures.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&amp;ldquo;Green&amp;rdquo; (Wednesday, 24 February): designing and manipulating complex
-data and programs that operate on it.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&amp;ldquo;Blue&amp;rdquo; (Monday, 21 March): analyzing the cost of executions, basic understanding of
-how computing machines work, being able to solve problems without
-guidance.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&amp;ldquo;Purple/Brown&amp;rdquo; (Monday, 4 April): ability to organize procedures and
-state into classes and develop programs using multiple modules and
-inheritance, understanding of type systems and their tradeoffs.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&amp;ldquo;Red&amp;rdquo; (Friday, 18 April): understanding of computability and ability to
-construct and reason about reduction proofs, interpreters, language
-semantics.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&amp;ldquo;Black&amp;rdquo; (Monday, 2 May): deep knowledge of major concepts in computer
-science; understanding of intractability and its significance; ability
-to design and build a complex, interactive application.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;Most Fridays (6:29pm): There will be a homework assignment due on
+Fridays, except for weeks when there are exams (and Thanksgiving
+week).&lt;/li&gt;
+&lt;li&gt;Thursday, 6 October: Exam 1 (in class)&lt;/li&gt;
+&lt;li&gt;Thursday, 10 November: Exam 2 (in class)&lt;/li&gt;
+&lt;li&gt;Saturday, 10 December: Final Exam (9am-noon, scheduled by the registrar)&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Your final grade in the course will be based on the highest level you
-are able to satisfactorily complete.  For students who demonstrate
-commendable effort throughout the semester, achieving the Red Belt level
-earns an A in the course and Blue Belt earns a B.  The +/- modifiers
-reflect quality of work, contributions to the class, and other aspects.&lt;/p&gt;
+&lt;h2 id=&#34;grading&#34;&gt;Grading&lt;/h2&gt;
+
+&lt;p&gt;Grading will be based on your performance on the exams and homework
+assignments, with additional adjustments made based on exceptional
+contributions to the class.&lt;/p&gt;
+
+&lt;p&gt;Grades will be calculated with several different weightings, where your
+grade is based primarily on whichever weighting results in the highest
+score.  The range of possible weightings is:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Homeworks: 15-40%&lt;/li&gt;
+&lt;li&gt;Exam 1: 10-25%&lt;/li&gt;
+&lt;li&gt;Exam 2: 15-30%&lt;/li&gt;
+&lt;li&gt;Final Exam: 20-50%&lt;/li&gt;
+&lt;li&gt;Class Contribution: 0-25%&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;Spend your energy focusing on what you are learning, instead of worrying
 about your grade.  Although the material we cover is challenging, and
-the pace may seem overwhelming at times, historically all students who
-put effort into this class have done fine.  Although success requires
-hard work, all students are expected to get an A in the course.
-Students who do especially outstanding work in the course will be
-offered paying summer positions in &lt;a href=&#34;http://www.jeffersonswheel.org&#34;&gt;my research
+the pace may seem overwhelming at times, I am confident that all
+students who put effort into this class and take good advantage of
+available help will do well.  Students who do especially outstanding
+work in the course will be offered summer positions in &lt;a href=&#34;http://www.jeffersonswheel.org&#34;&gt;my research
 group&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
     <item>
-      <title>cs2102: Discrete Math</title>
-      <link>//uvacs2102.github.io/main/</link>
+      <title></title>
+      <link>https://uvacs2102.github.io/1/01/01/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>//uvacs2102.github.io/main/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;//uvacs2102.github.io/images/dm-logo.png&#34; align=&#34;center&#34; width=&#34;90%&#34;&gt;&lt;/p&gt;
+      <author>evans@virginia.edu (David Evans)</author>
+      <guid>https://uvacs2102.github.io/1/01/01/</guid>
+      <description>
 
-&lt;section id=&#34;main&#34;&gt;
-  &lt;div&gt;
-   &lt;h1 id=&#34;title&#34;&gt;{{ .Title }}&lt;/h1&gt;
-        &lt;ul id=&#34;list&#34;&gt;
-            {{ range .Data.Pages }}
-                {{ .Render &#34;li&#34;}}
-            {{ end }}
-        &lt;/ul&gt;
-  &lt;/div&gt;
-&lt;/section&gt;
+&lt;h1 id=&#34;class-1&#34;&gt;Class 1&lt;/h1&gt;
+
+&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
+
+&lt;p&gt;Before &lt;strong&gt;Friday, 6:29pm&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Read, print, and sign the &lt;a href=&#34;https://uvacs2102.github.io/pledge&#34;&gt;Course Pledge&lt;/a&gt;.  You should print
+the &lt;a href=&#34;https://uvacs2102.github.io/docs/pledge.pdf&#34;&gt;PDF version&lt;/a&gt; for signing, and submit a scan of
+your signed pledge using Collab.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://uvacs2102.github.io/pledge/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>evans@virginia.edu (David Evans)</author>
+      <guid>https://uvacs2102.github.io/pledge/</guid>
+      <description>
+
+&lt;h1 id=&#34;course-pledge&#34;&gt;Course Pledge&lt;/h1&gt;
+
+&lt;div class=&#34;printing&#34;&gt;&lt;a href=&#34;https://uvacs2102.github.io/docs/pledge.pdf&#34;&gt;PDF for Printing&lt;/a&gt;&lt;/div&gt;
+
+&lt;h2 id=&#34;honor-expectations&#34;&gt;Honor Expectations&lt;/h2&gt;
+
+&lt;p&gt;As a student at the University of Virginia, you are trusted to be
+honorable and expected to behave in ways that merit that trust. We take
+advantage of this trust to provide a better learning environment for
+everyone. In particular, students in cs2102 are expected to follow these
+rules throughout the course:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;I will not lie, cheat or steal.&lt;/strong&gt; If I am unsure whether something
+  would be considered lying, cheating or stealing, I will ask before
+  doing it.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;I will carefully read and follow the collaboration policy on each
+  assignment.&lt;/strong&gt; I will not abuse resources in ways that would be clearly
+  detrimental to my own learning or unfair to other students.&lt;/p&gt;
+
+&lt;h2 id=&#34;other-expectations&#34;&gt;Other Expectations&lt;/h2&gt;
+
+&lt;p&gt;In addition to the honor rules, students in cs2102 are also expected to
+follow these behaviors:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;I will do what I can to help my fellow classmates learn.&lt;/strong&gt; Except when
+specifically instructed not to, this means when other students ask me
+for help, I will attempt to provide it. I will listen respectfully to
+other&amp;rsquo;s ideas and discuss what I think is good or bad about their
+answers. When I work with teammates, I will not give or accept answers
+directly, but instead will make sure all of my teammates understand
+enough to be able to solve the problem themselves, and insist that
+teammates explain things to me until I fully understand.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;I will ask for help.&lt;/strong&gt; I will make a reasonable effort to do things on
+  my own first (or with my partners for group assignment), but will ask
+  the course staff for help before getting overly frustrated. There are
+  many ways to ask for help including the office hours and the course
+  slack group.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;I will be open minded and curious.&lt;/strong&gt; I understand that this course may
+  do things in ways differently from what I expect, and may sometimes
+  buck conventions that have been followed in other courses I have
+  taken.  I will ask questions when things make me uncomfortable, but
+  also accept that being surprised, facing uncertainty and adversity,
+  and being challenged unreasonably are often beneficial for learning
+  new ways of thinking.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;I grant the course staff permission to reproduce excerpts from my
+submissions for teaching purposes.&lt;/strong&gt; My work will be attributed when it
+is shown in a postive way, but may be used anonymously if it is used to
+illustrate common pitfalls or other issues.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;I will provide useful feedback.&lt;/strong&gt; I realize that this will be
+  attempting many new things, and that it is important that I let the
+  course staff know what they need to improve the course. I will provide
+  feedback either anonymously or by contacting the course staff
+  directly.  &lt;strong&gt;I will fill out all requested surveys honestly and
+  thoroughly.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Sign:       _______________________________________   &amp;nbsp;&amp;nbsp; &amp;nbsp;&amp;nbsp; Date: _____________&lt;/p&gt;
+
+&lt;p&gt;Print name:  ____________________________________________________&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>cs2102: Discrete Math</title>
+      <link>https://uvacs2102.github.io/main/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>evans@virginia.edu (David Evans)</author>
+      <guid>https://uvacs2102.github.io/main/</guid>
+      <description>&lt;p&gt;This is the front page.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/syllabus&#34;&gt;Syllabus&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Coming soon&amp;hellip;&lt;/p&gt;
 </description>
