@@ -20,15 +20,103 @@
 
 &lt;h1 id=&#34;class-1&#34;&gt;Class 1&lt;/h1&gt;
 
+&lt;p&gt;&lt;div class=&#34;highlighted&#34;&gt;
+All course materials are still under development, and subject to change until the first class.
+   &lt;/div&gt;&lt;/p&gt;
+
 &lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
+
+&lt;p&gt;Before &lt;strong&gt;Thursday&amp;rsquo;s class&lt;/strong&gt;: (visit &lt;a href=&#34;https://uvacs2102.github.io&#34;&gt;https://uvacs2102.github.io&lt;/a&gt; for the web version of these notes with links)&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Join the &lt;a href=&#34;https://cs2102.slack.com&#34;&gt;cs2102 slack group&lt;/a&gt; and set up
+your profile with a pronouncable name (not your UVA email id) (setting
+up your profile photo is encouraged, but not required).&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Read the &lt;a href=&#34;https://uvacs2102.github.io/syllabus&#34;&gt;Course Syllabus&lt;/a&gt; and post any questions or
+comments you have on it on the course &lt;a href=&#34;https://cs2102.slack.com&#34;&gt;slack group
+(#general)&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Read the &lt;em&gt;Introduction&lt;/em&gt; and &lt;em&gt;Chapter 1: What is a Proof?&lt;/em&gt; from the
+&lt;a href=&#34;https://uvacs2102.github.io/docs/mcs.pdf&#34;&gt;MCS Book&lt;/a&gt;.  The book is
+freely available on-line under a Creative Commons License.  Students
+are strongly encrouaged to print out the readings to read them more
+effectively on paper.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;Before &lt;strong&gt;Friday, 6:29pm&lt;/strong&gt;:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Read, print, and sign the &lt;a href=&#34;https://uvacs2102.github.io/pledge&#34;&gt;Course Pledge&lt;/a&gt;.  You should print
+&lt;li&gt;&lt;p&gt;Read, print, and sign the &lt;a href=&#34;https://uvacs2102.github.io/pledge&#34;&gt;Course Pledge&lt;/a&gt;.  You should print
 the &lt;a href=&#34;https://uvacs2102.github.io/docs/pledge.pdf&#34;&gt;PDF version&lt;/a&gt; for signing, and submit a scan of
-your signed pledge using Collab.&lt;/li&gt;
+your signed pledge using Collab.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Read Jeremy Kun&amp;rsquo;s &lt;a href=&#34;https://medium.com/@jeremyjkun/habits-of-highly-mathematical-people-b719df12d15e&#34;&gt;&lt;em&gt;Habits of highly mathematical people&lt;/em&gt;&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Submit a [Course Registration Survey] form (which includes some
+questions based on Kun&amp;rsquo;s essay).&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;h3 id=&#34;notes-and-questions-pdf-version-only-docs-class1-pdf&#34;&gt;&lt;a href=&#34;docs/class1.pdf&#34;&gt;Notes and Questions (PDF version only)&lt;/a&gt;&lt;/h3&gt;
+
+&lt;div class=&#34;latex&#34;&gt;
+
+Why is most of the math used in computer science _discrete_?
+
+&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;
+
+&lt;p&gt;Why is most of the math you have used in school previously &lt;em&gt;continuous&lt;/em&gt;?&lt;/p&gt;
+
+&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;
+
+&lt;p&gt;What are the differences between how scientists, philosophers, and
+mathematicians establish &lt;em&gt;truth&lt;/em&gt;?&lt;/p&gt;
+
+&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;
+
+&lt;p&gt;A &lt;em&gt;proposition&lt;/em&gt; is a statement that is either ________ or _________.&lt;/p&gt;
+
+&lt;p&gt;A &lt;em&gt;predicate&lt;/em&gt; is a proposition whose truth may depend on the value of
+variables.&lt;/p&gt;
+
+&lt;p&gt;A &lt;em&gt;theorem&lt;/em&gt; is a ____________ that has been proven true.&lt;/p&gt;
+
+&lt;p&gt;A proposition that is believed to be true, but unproven, is called a
+_____________.&lt;/p&gt;
+
+&lt;p&gt;An &lt;em&gt;axiom&lt;/em&gt; is a proposition that is &lt;em&gt;accepted to be true&lt;/em&gt;.  Axioms are
+not proven; they are &lt;em&gt;assumed&lt;/em&gt; to be true.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; A &lt;em&gt;mathematical proof&lt;/em&gt; of a proposition is a chain of
+  &lt;em&gt;logical deductions&lt;/em&gt; starting from a set of accepted &lt;em&gt;axioms&lt;/em&gt; that
+  leads to the proposition.&lt;/p&gt;
+
+&lt;h3 id=&#34;rules-of-inference&#34;&gt;Rules of Inference&lt;/h3&gt;
+
+&lt;p&gt;The possible steps that can be used in a proof are logical deductions
+based on inference rules.&lt;/p&gt;
+
+&lt;p&gt;Inference rules are written as:&lt;/p&gt;
+
+&lt;p&gt;&lt;table align=&#34;center&#34;&gt;
+&lt;tr&gt;&lt;td&gt;&lt;em&gt;antecedents&lt;/em&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;em&gt;conclusion&lt;/em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Modus Ponens&lt;/em&gt;: It proves &lt;em&gt;Q&lt;/em&gt; if you can prove &lt;em&gt;P&lt;/em&gt; and prove that &lt;em&gt;P&lt;/em&gt; implies &lt;em&gt;Q&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;\infer{Q}{P, P \textrm{ implies } Q}&lt;/p&gt;
+
+&lt;p&gt;An inference rule is &lt;em&gt;sound&lt;/em&gt; if it works for all values of its variables.&lt;/p&gt;
+
+&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;
+
+&lt;p&gt;\infer{Q}{P, P \textrm{ implies } Q}&lt;/p&gt;
+
+&lt;p&gt;What makes a proof &lt;em&gt;good&lt;/em&gt;?
+&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
 </description>
     </item>
     

@@ -1020,6 +1020,19 @@ progress {
     font-size: .8em
 }
 
+.highlighted{
+  display:block;align:center;padding:5px;margin-bottom:10px;margin-top:5px;margin-left:50px;margin-right:50px;font-size:15px;text-align:left;background-color:#f5f570;border:1px solid #f55
+}
+
+.gap {display:block;padding:50px;margin-bottom:10px;margin-top:10px;border:1px solid #666}
+
+.biggap {display:block;padding:100px;margin-bottom:10px;margin-top:10px;border:1px solid #666}
+
+.caption {
+   font-size: 11px; color: #111; margin-left: 60px; margin-right: 30px; margin-top: 0px; margin-bottom: 20px;
+}
+
+
 .printing {
    font-size: 12px; 
    float:right;
@@ -1032,3 +1045,6 @@ progress {
    font-weight:bold; padding-top: 5px; padding-bottom: 5px;
 }
 
+.latex {
+  display: none;
+}

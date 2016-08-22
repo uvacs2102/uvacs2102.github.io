@@ -81,6 +81,190 @@ something that no amount of testing can do.&amp;raquo;&lt;/p&gt;
     
     <item>
       <title></title>
+      <link>https://uvacs2102.github.io/pledge/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>evans@virginia.edu (David Evans)</author>
+      <guid>https://uvacs2102.github.io/pledge/</guid>
+      <description>
+
+&lt;h1 id=&#34;course-pledge&#34;&gt;Course Pledge&lt;/h1&gt;
+
+&lt;div class=&#34;printing&#34;&gt;&lt;a href=&#34;https://uvacs2102.github.io/docs/pledge.pdf&#34;&gt;PDF for Printing&lt;/a&gt;&lt;/div&gt;
+
+&lt;h2 id=&#34;honor-expectations&#34;&gt;Honor Expectations&lt;/h2&gt;
+
+&lt;p&gt;As a student at the University of Virginia, you are trusted to be
+honorable and expected to behave in ways that merit that trust. We take
+advantage of this trust to provide a better learning environment for
+everyone. In particular, students in cs2102 are expected to follow these
+rules throughout the course:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;I will not lie, cheat or steal.&lt;/strong&gt; If I am unsure whether something
+  would be considered lying, cheating or stealing, I will ask before
+  doing it.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;I will carefully read and follow the collaboration policy on each
+  assignment.&lt;/strong&gt; I will not abuse resources in ways that would be clearly
+  detrimental to my own learning or unfair to other students.&lt;/p&gt;
+
+&lt;h2 id=&#34;other-expectations&#34;&gt;Other Expectations&lt;/h2&gt;
+
+&lt;p&gt;In addition to the honor rules, students in cs2102 are also expected to
+follow these behaviors:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;I will do what I can to help my fellow classmates learn.&lt;/strong&gt; Except when
+specifically instructed not to, this means when other students ask me
+for help, I will attempt to provide it. I will listen respectfully to
+other&amp;rsquo;s ideas and discuss what I think is good or bad about their
+answers. When I work with teammates, I will not give or accept answers
+directly, but instead will make sure all of my teammates understand
+enough to be able to solve the problem themselves, and insist that
+teammates explain things to me until I fully understand.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;I will ask for help.&lt;/strong&gt; I will make a reasonable effort to do things on
+  my own first (or with my partners for group assignment), but will ask
+  the course staff for help before getting overly frustrated. There are
+  many ways to ask for help including the office hours and the course
+  slack group.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;I will be open minded and curious.&lt;/strong&gt; I understand that this course may
+  do things in ways differently from what I expect, and may sometimes
+  buck conventions that have been followed in other courses I have
+  taken.  I will ask questions when things make me uncomfortable, but
+  also accept that being surprised, facing uncertainty and adversity,
+  and being challenged unreasonably are often beneficial for learning
+  new ways of thinking.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;I grant the course staff permission to reproduce excerpts from my
+submissions for teaching purposes.&lt;/strong&gt; My work will be attributed when it
+is shown in a postive way, but may be used anonymously if it is used to
+illustrate common pitfalls or other issues.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;I will provide useful feedback.&lt;/strong&gt; I realize that this will be
+  attempting many new things, and that it is important that I let the
+  course staff know what they need to improve the course. I will provide
+  feedback either anonymously or by contacting the course staff
+  directly.  &lt;strong&gt;I will fill out all requested surveys honestly and
+  thoroughly.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Sign:       _______________________________________   &amp;nbsp;&amp;nbsp; &amp;nbsp;&amp;nbsp; Date: _____________&lt;/p&gt;
+
+&lt;p&gt;Print name:  ____________________________________________________&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://uvacs2102.github.io/1/01/01/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>evans@virginia.edu (David Evans)</author>
+      <guid>https://uvacs2102.github.io/1/01/01/</guid>
+      <description>
+
+&lt;h1 id=&#34;class-1&#34;&gt;Class 1&lt;/h1&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlighted&#34;&gt;
+All course materials are still under development, and subject to change until the first class.
+   &lt;/div&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
+
+&lt;p&gt;Before &lt;strong&gt;Thursday&amp;rsquo;s class&lt;/strong&gt;: (visit &lt;a href=&#34;https://uvacs2102.github.io&#34;&gt;https://uvacs2102.github.io&lt;/a&gt; for the web version of these notes with links)&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Join the &lt;a href=&#34;https://cs2102.slack.com&#34;&gt;cs2102 slack group&lt;/a&gt; and set up
+your profile with a pronouncable name (not your UVA email id) (setting
+up your profile photo is encouraged, but not required).&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Read the &lt;a href=&#34;https://uvacs2102.github.io/syllabus&#34;&gt;Course Syllabus&lt;/a&gt; and post any questions or
+comments you have on it on the course &lt;a href=&#34;https://cs2102.slack.com&#34;&gt;slack group
+(#general)&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Read the &lt;em&gt;Introduction&lt;/em&gt; and &lt;em&gt;Chapter 1: What is a Proof?&lt;/em&gt; from the
+&lt;a href=&#34;https://uvacs2102.github.io/docs/mcs.pdf&#34;&gt;MCS Book&lt;/a&gt;.  The book is
+freely available on-line under a Creative Commons License.  Students
+are strongly encrouaged to print out the readings to read them more
+effectively on paper.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Before &lt;strong&gt;Friday, 6:29pm&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Read, print, and sign the &lt;a href=&#34;https://uvacs2102.github.io/pledge&#34;&gt;Course Pledge&lt;/a&gt;.  You should print
+the &lt;a href=&#34;https://uvacs2102.github.io/docs/pledge.pdf&#34;&gt;PDF version&lt;/a&gt; for signing, and submit a scan of
+your signed pledge using Collab.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Read Jeremy Kun&amp;rsquo;s &lt;a href=&#34;https://medium.com/@jeremyjkun/habits-of-highly-mathematical-people-b719df12d15e&#34;&gt;&lt;em&gt;Habits of highly mathematical people&lt;/em&gt;&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Submit a [Course Registration Survey] form (which includes some
+questions based on Kun&amp;rsquo;s essay).&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;notes-and-questions-pdf-version-only-docs-class1-pdf&#34;&gt;&lt;a href=&#34;docs/class1.pdf&#34;&gt;Notes and Questions (PDF version only)&lt;/a&gt;&lt;/h3&gt;
+
+&lt;div class=&#34;latex&#34;&gt;
+
+Why is most of the math used in computer science _discrete_?
+
+&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;
+
+&lt;p&gt;Why is most of the math you have used in school previously &lt;em&gt;continuous&lt;/em&gt;?&lt;/p&gt;
+
+&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;
+
+&lt;p&gt;What are the differences between how scientists, philosophers, and
+mathematicians establish &lt;em&gt;truth&lt;/em&gt;?&lt;/p&gt;
+
+&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;
+
+&lt;p&gt;A &lt;em&gt;proposition&lt;/em&gt; is a statement that is either ________ or _________.&lt;/p&gt;
+
+&lt;p&gt;A &lt;em&gt;predicate&lt;/em&gt; is a proposition whose truth may depend on the value of
+variables.&lt;/p&gt;
+
+&lt;p&gt;A &lt;em&gt;theorem&lt;/em&gt; is a ____________ that has been proven true.&lt;/p&gt;
+
+&lt;p&gt;A proposition that is believed to be true, but unproven, is called a
+_____________.&lt;/p&gt;
+
+&lt;p&gt;An &lt;em&gt;axiom&lt;/em&gt; is a proposition that is &lt;em&gt;accepted to be true&lt;/em&gt;.  Axioms are
+not proven; they are &lt;em&gt;assumed&lt;/em&gt; to be true.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; A &lt;em&gt;mathematical proof&lt;/em&gt; of a proposition is a chain of
+  &lt;em&gt;logical deductions&lt;/em&gt; starting from a set of accepted &lt;em&gt;axioms&lt;/em&gt; that
+  leads to the proposition.&lt;/p&gt;
+
+&lt;h3 id=&#34;rules-of-inference&#34;&gt;Rules of Inference&lt;/h3&gt;
+
+&lt;p&gt;The possible steps that can be used in a proof are logical deductions
+based on inference rules.&lt;/p&gt;
+
+&lt;p&gt;Inference rules are written as:&lt;/p&gt;
+
+&lt;p&gt;&lt;table align=&#34;center&#34;&gt;
+&lt;tr&gt;&lt;td&gt;&lt;em&gt;antecedents&lt;/em&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;em&gt;conclusion&lt;/em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Modus Ponens&lt;/em&gt;: It proves &lt;em&gt;Q&lt;/em&gt; if you can prove &lt;em&gt;P&lt;/em&gt; and prove that &lt;em&gt;P&lt;/em&gt; implies &lt;em&gt;Q&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;\infer{Q}{P, P \textrm{ implies } Q}&lt;/p&gt;
+
+&lt;p&gt;An inference rule is &lt;em&gt;sound&lt;/em&gt; if it works for all values of its variables.&lt;/p&gt;
+
+&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;
+
+&lt;p&gt;\infer{Q}{P, P \textrm{ implies } Q}&lt;/p&gt;
+
+&lt;p&gt;What makes a proof &lt;em&gt;good&lt;/em&gt;?
+&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://uvacs2102.github.io/syllabus/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>evans@virginia.edu (David Evans)</author>
@@ -258,104 +442,8 @@ about your grade.  Although the material we cover is challenging, and
 the pace may seem overwhelming at times, I am confident that all
 students who put effort into this class and take good advantage of
 available help will do well.  Students who do especially outstanding
-work in the course will be offered summer positions in &lt;a href=&#34;http://www.jeffersonswheel.org&#34;&gt;my research
+work in the course will be offered positions in &lt;a href=&#34;http://www.jeffersonswheel.org&#34;&gt;my research
 group&lt;/a&gt;.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://uvacs2102.github.io/1/01/01/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <author>evans@virginia.edu (David Evans)</author>
-      <guid>https://uvacs2102.github.io/1/01/01/</guid>
-      <description>
-
-&lt;h1 id=&#34;class-1&#34;&gt;Class 1&lt;/h1&gt;
-
-&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
-
-&lt;p&gt;Before &lt;strong&gt;Friday, 6:29pm&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Read, print, and sign the &lt;a href=&#34;https://uvacs2102.github.io/pledge&#34;&gt;Course Pledge&lt;/a&gt;.  You should print
-the &lt;a href=&#34;https://uvacs2102.github.io/docs/pledge.pdf&#34;&gt;PDF version&lt;/a&gt; for signing, and submit a scan of
-your signed pledge using Collab.&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://uvacs2102.github.io/pledge/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <author>evans@virginia.edu (David Evans)</author>
-      <guid>https://uvacs2102.github.io/pledge/</guid>
-      <description>
-
-&lt;h1 id=&#34;course-pledge&#34;&gt;Course Pledge&lt;/h1&gt;
-
-&lt;div class=&#34;printing&#34;&gt;&lt;a href=&#34;https://uvacs2102.github.io/docs/pledge.pdf&#34;&gt;PDF for Printing&lt;/a&gt;&lt;/div&gt;
-
-&lt;h2 id=&#34;honor-expectations&#34;&gt;Honor Expectations&lt;/h2&gt;
-
-&lt;p&gt;As a student at the University of Virginia, you are trusted to be
-honorable and expected to behave in ways that merit that trust. We take
-advantage of this trust to provide a better learning environment for
-everyone. In particular, students in cs2102 are expected to follow these
-rules throughout the course:&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;I will not lie, cheat or steal.&lt;/strong&gt; If I am unsure whether something
-  would be considered lying, cheating or stealing, I will ask before
-  doing it.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;I will carefully read and follow the collaboration policy on each
-  assignment.&lt;/strong&gt; I will not abuse resources in ways that would be clearly
-  detrimental to my own learning or unfair to other students.&lt;/p&gt;
-
-&lt;h2 id=&#34;other-expectations&#34;&gt;Other Expectations&lt;/h2&gt;
-
-&lt;p&gt;In addition to the honor rules, students in cs2102 are also expected to
-follow these behaviors:&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;I will do what I can to help my fellow classmates learn.&lt;/strong&gt; Except when
-specifically instructed not to, this means when other students ask me
-for help, I will attempt to provide it. I will listen respectfully to
-other&amp;rsquo;s ideas and discuss what I think is good or bad about their
-answers. When I work with teammates, I will not give or accept answers
-directly, but instead will make sure all of my teammates understand
-enough to be able to solve the problem themselves, and insist that
-teammates explain things to me until I fully understand.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;I will ask for help.&lt;/strong&gt; I will make a reasonable effort to do things on
-  my own first (or with my partners for group assignment), but will ask
-  the course staff for help before getting overly frustrated. There are
-  many ways to ask for help including the office hours and the course
-  slack group.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;I will be open minded and curious.&lt;/strong&gt; I understand that this course may
-  do things in ways differently from what I expect, and may sometimes
-  buck conventions that have been followed in other courses I have
-  taken.  I will ask questions when things make me uncomfortable, but
-  also accept that being surprised, facing uncertainty and adversity,
-  and being challenged unreasonably are often beneficial for learning
-  new ways of thinking.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;I grant the course staff permission to reproduce excerpts from my
-submissions for teaching purposes.&lt;/strong&gt; My work will be attributed when it
-is shown in a postive way, but may be used anonymously if it is used to
-illustrate common pitfalls or other issues.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;I will provide useful feedback.&lt;/strong&gt; I realize that this will be
-  attempting many new things, and that it is important that I let the
-  course staff know what they need to improve the course. I will provide
-  feedback either anonymously or by contacting the course staff
-  directly.  &lt;strong&gt;I will fill out all requested surveys honestly and
-  thoroughly.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Sign:       _______________________________________   &amp;nbsp;&amp;nbsp; &amp;nbsp;&amp;nbsp; Date: _____________&lt;/p&gt;
-
-&lt;p&gt;Print name:  ____________________________________________________&lt;/p&gt;
 </description>
     </item>
     
