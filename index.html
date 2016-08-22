@@ -155,9 +155,9 @@ effectively on paper.</p></li>
 the <a href="/docs/pledge.pdf">PDF version</a> for signing, and submit a scan of
 your signed pledge using Collab.</p></li>
 
-<li><p>Read Jeremy Kun&rsquo;s <a href="https://medium.com/@jeremyjkun/habits-of-highly-mathematical-people-b719df12d15e"><em>Habits of highly mathematical people</em></a>.</p></li>
+<li><p>Read Jeremy Kun&rsquo;s <a href="https://medium.com/@jeremyjkun/habits-of-highly-mathematical-people-b719df12d15e"><em>Habits of Highly Mathematical People</em></a>.</p></li>
 
-<li><p>Submit a [Course Registration Survey] form (which includes some
+<li><p>Submit a <a href="http://google.com">Course Registration Survey</a> form (which includes some
 questions based on Kun&rsquo;s essay).</p></li>
 </ul>
 
@@ -191,10 +191,9 @@ mathematicians establish ``<em>truth</em>&rdquo;?</p>
 <p>A <em>predicate</em> is a proposition whose truth may depend on the value of
 variables.</p>
 
-<p>A <em>theorem</em> is a ____________ that has been proven true.</p>
+<h3 id="proof">Proof</h3>
 
-<p>A proposition that is believed to be true, but unproven, is called a
-_____________.</p>
+<p>A <em>theorem</em> is a ____________ that has been proven true.</p>
 
 <p>An <em>axiom</em> is a proposition that is <em>accepted to be true</em>.  Axioms are
 not proven; they are <em>assumed</em> to be true.</p>
@@ -215,29 +214,39 @@ $$
 This means if everything on top of the rule is established to be true,
 then you can conclude what is on the bottom.</p>
 
-<p><em>Modus Ponens</em>: To prove <em>Q</em>, (1) prove <em>P</em> and (2) prove that <em>P</em> implies <em>Q</em>.</p>
+<p><em>Modus Ponens</em>: To prove <em>Q</em>, (1) prove <em>P</em> and (2) prove that <em>P</em> implies <em>Q</em>.  ($P \implies Q$ is a notation for $P$ implies $Q$).</p>
 
 <p>$$
-\infer{Q}{P,\quad P \textrm{ \sc implies } Q}
+\infer{Q}{P,\quad P \implies Q}
 $$</p>
 
-<p>An inference rule is <em>sound</em> if never leads to a contradiction: a proof of <strong>false</strong>.</p>
+<p>An inference rule is <em>sound</em> if can never lead to a <strong>false</strong> conclusion.</p>
 
-<p>Complete each rule in a way that makes it sound:</p>
+<p>Which of these inference rules are sound?</p>
 
 <p>$$
-\infer{R}{P,\quad P \textrm{ \sc implies } Q,\quad \mbox{\hspace<em>{3em}}}
+\infer{Q}{P}
 \qquad
-\infer{R}{P,\quad Q \textrm{ \sc implies } R,\quad \mbox{\hspace</em>{3em}}}
+\infer{false}{P, P \implies Q}
+\qquad
+\infer{true}{P, NOT(P)}
+\qquad
+\infer{P \implies NOT(P)}{P, NOT(P)}
+\qquad
+\infer{NOT(Q) \implies P}{NOT(P) \implies Q}
 $$</p>
+
+<p>##</p>
 
 <p><strong>Contrapositive:</strong></p>
 
 <p>$$
-\infer{NOT(Q) \textrm{ \sc implies} NOT(P)}{P \textrm{ \sc implies } Q}
+\infer{NOT(Q) \implies NOT(P)}{P \implies Q}
 \qquad
-\infer{P \textrm{ \sc implies } Q}{NOT(Q) \textrm{ \sc implies} NOT(P)}
+\infer{P \implies Q}{NOT(Q) \implies NOT(P)}
 $$</p>
+
+<p><strong>Theorem to Prove:</strong> If the product of $x$ and $y$ is even, at least one of $x$ or $y$ must be even.</p>
 
 <p></div></p>
 

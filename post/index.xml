@@ -51,9 +51,9 @@ effectively on paper.&lt;/p&gt;&lt;/li&gt;
 the &lt;a href=&#34;https://uvacs2102.github.io/docs/pledge.pdf&#34;&gt;PDF version&lt;/a&gt; for signing, and submit a scan of
 your signed pledge using Collab.&lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;Read Jeremy Kun&amp;rsquo;s &lt;a href=&#34;https://medium.com/@jeremyjkun/habits-of-highly-mathematical-people-b719df12d15e&#34;&gt;&lt;em&gt;Habits of highly mathematical people&lt;/em&gt;&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Read Jeremy Kun&amp;rsquo;s &lt;a href=&#34;https://medium.com/@jeremyjkun/habits-of-highly-mathematical-people-b719df12d15e&#34;&gt;&lt;em&gt;Habits of Highly Mathematical People&lt;/em&gt;&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;Submit a [Course Registration Survey] form (which includes some
+&lt;li&gt;&lt;p&gt;Submit a &lt;a href=&#34;http://google.com&#34;&gt;Course Registration Survey&lt;/a&gt; form (which includes some
 questions based on Kun&amp;rsquo;s essay).&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -87,10 +87,9 @@ mathematicians establish ``&lt;em&gt;truth&lt;/em&gt;&amp;rdquo;?&lt;/p&gt;
 &lt;p&gt;A &lt;em&gt;predicate&lt;/em&gt; is a proposition whose truth may depend on the value of
 variables.&lt;/p&gt;
 
-&lt;p&gt;A &lt;em&gt;theorem&lt;/em&gt; is a ____________ that has been proven true.&lt;/p&gt;
+&lt;h3 id=&#34;proof&#34;&gt;Proof&lt;/h3&gt;
 
-&lt;p&gt;A proposition that is believed to be true, but unproven, is called a
-_____________.&lt;/p&gt;
+&lt;p&gt;A &lt;em&gt;theorem&lt;/em&gt; is a ____________ that has been proven true.&lt;/p&gt;
 
 &lt;p&gt;An &lt;em&gt;axiom&lt;/em&gt; is a proposition that is &lt;em&gt;accepted to be true&lt;/em&gt;.  Axioms are
 not proven; they are &lt;em&gt;assumed&lt;/em&gt; to be true.&lt;/p&gt;
@@ -111,29 +110,39 @@ $$
 This means if everything on top of the rule is established to be true,
 then you can conclude what is on the bottom.&lt;/p&gt;
 
-&lt;p&gt;&lt;em&gt;Modus Ponens&lt;/em&gt;: To prove &lt;em&gt;Q&lt;/em&gt;, (1) prove &lt;em&gt;P&lt;/em&gt; and (2) prove that &lt;em&gt;P&lt;/em&gt; implies &lt;em&gt;Q&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Modus Ponens&lt;/em&gt;: To prove &lt;em&gt;Q&lt;/em&gt;, (1) prove &lt;em&gt;P&lt;/em&gt; and (2) prove that &lt;em&gt;P&lt;/em&gt; implies &lt;em&gt;Q&lt;/em&gt;.  ($P \implies Q$ is a notation for $P$ implies $Q$).&lt;/p&gt;
 
 &lt;p&gt;$$
-\infer{Q}{P,\quad P \textrm{ \sc implies } Q}
+\infer{Q}{P,\quad P \implies Q}
 $$&lt;/p&gt;
 
-&lt;p&gt;An inference rule is &lt;em&gt;sound&lt;/em&gt; if never leads to a contradiction: a proof of &lt;strong&gt;false&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;An inference rule is &lt;em&gt;sound&lt;/em&gt; if can never lead to a &lt;strong&gt;false&lt;/strong&gt; conclusion.&lt;/p&gt;
 
-&lt;p&gt;Complete each rule in a way that makes it sound:&lt;/p&gt;
+&lt;p&gt;Which of these inference rules are sound?&lt;/p&gt;
 
 &lt;p&gt;$$
-\infer{R}{P,\quad P \textrm{ \sc implies } Q,\quad \mbox{\hspace&lt;em&gt;{3em}}}
+\infer{Q}{P}
 \qquad
-\infer{R}{P,\quad Q \textrm{ \sc implies } R,\quad \mbox{\hspace&lt;/em&gt;{3em}}}
+\infer{false}{P, P \implies Q}
+\qquad
+\infer{true}{P, NOT(P)}
+\qquad
+\infer{P \implies NOT(P)}{P, NOT(P)}
+\qquad
+\infer{NOT(Q) \implies P}{NOT(P) \implies Q}
 $$&lt;/p&gt;
+
+&lt;p&gt;##&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Contrapositive:&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;$$
-\infer{NOT(Q) \textrm{ \sc implies} NOT(P)}{P \textrm{ \sc implies } Q}
+\infer{NOT(Q) \implies NOT(P)}{P \implies Q}
 \qquad
-\infer{P \textrm{ \sc implies } Q}{NOT(Q) \textrm{ \sc implies} NOT(P)}
+\infer{P \implies Q}{NOT(Q) \implies NOT(P)}
 $$&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Theorem to Prove:&lt;/strong&gt; If the product of $x$ and $y$ is even, at least one of $x$ or $y$ must be even.&lt;/p&gt;
 
 &lt;p&gt;&lt;/div&gt;&lt;/p&gt;
 
