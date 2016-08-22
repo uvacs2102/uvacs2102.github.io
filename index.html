@@ -34,7 +34,7 @@
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://uvacs2102.github.io/touch-icon-144-precomposed.png">
 <link href="https://uvacs2102.github.io/favicon.png" rel="icon">
 <meta name="theme-color" content="#2053AB">
-<meta name="generator" content="Hugo 0.15-DEV" />
+<meta name="generator" content="Hugo 0.16" />
 
   <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -122,9 +122,11 @@
 
 <h1 id="class-1">Class 1</h1>
 
-<p><div class="highlighted">
+<p><div class="notpdf">
+   <div class="highlighted">
 All course materials are still under development, and subject to change until the first class.
-   </div></p>
+   </div>
+   </div><!--endpdf--></p>
 
 <h3 id="schedule">Schedule</h3>
 
@@ -159,9 +161,17 @@ your signed pledge using Collab.</p></li>
 questions based on Kun&rsquo;s essay).</p></li>
 </ul>
 
-<h3 id="notes-and-questions-pdf-version-only-docs-class1-pdf"><a href="docs/class1.pdf">Notes and Questions (PDF version only)</a></h3>
+<div class="notpdf">
+
+    <div class="highlightm">
+    <a href="docs/class1.pdf">See PDF Version for <b>Notes and Questions</b></a>.
+    </div>
+
+<p></div><!--endpdf--></p>
 
 <div class="latex">
+
+### Notes and Questions
 
 Why is most of the math used in computer science _discrete_?
 
@@ -171,8 +181,8 @@ Why is most of the math used in computer science _discrete_?
 
 <div class="gap"></div>
 
-<p>What are the differences between how scientists, philosophers, and
-mathematicians establish <em>truth</em>?</p>
+<p>What are the differences between how scientists, lawyers, and
+mathematicians establish ``<em>truth</em>&rdquo;?</p>
 
 <div class="gap"></div>
 
@@ -198,25 +208,38 @@ not proven; they are <em>assumed</em> to be true.</p>
 <p>The possible steps that can be used in a proof are logical deductions
 based on inference rules.</p>
 
-<p>Inference rules are written as:</p>
+<p>Inference rules are written as:
+$$
+\infer{\textrm{\emph{conclusion}}}{\textrm{\emph{antecedents}}}
+$$
+This means if everything on top of the rule is established to be true,
+then you can conclude what is on the bottom.</p>
 
-<p><table align="center">
-<tr><td><em>antecedents</em></td></tr>
-<tr><td>&mdash;&mdash;&mdash;&mdash;&mdash;</td></tr>
-<tr><td><em>conclusion</em></td></tr></p>
+<p><em>Modus Ponens</em>: To prove <em>Q</em>, (1) prove <em>P</em> and (2) prove that <em>P</em> implies <em>Q</em>.</p>
 
-<p><em>Modus Ponens</em>: It proves <em>Q</em> if you can prove <em>P</em> and prove that <em>P</em> implies <em>Q</em>.</p>
+<p>$$
+\infer{Q}{P,\quad P \textrm{ \sc implies } Q}
+$$</p>
 
-<p>\infer{Q}{P, P \textrm{ implies } Q}</p>
+<p>An inference rule is <em>sound</em> if never leads to a contradiction: a proof of <strong>false</strong>.</p>
 
-<p>An inference rule is <em>sound</em> if it works for all values of its variables.</p>
+<p>Complete each rule in a way that makes it sound:</p>
 
-<div class="gap"></div>
+<p>$$
+\infer{R}{P,\quad P \textrm{ \sc implies } Q,\quad \mbox{\hspace<em>{3em}}}
+\qquad
+\infer{R}{P,\quad Q \textrm{ \sc implies } R,\quad \mbox{\hspace</em>{3em}}}
+$$</p>
 
-<p>\infer{Q}{P, P \textrm{ implies } Q}</p>
+<p><strong>Contrapositive:</strong></p>
 
-<p>What makes a proof <em>good</em>?
-<div class="gap"></div></p>
+<p>$$
+\infer{NOT(Q) \textrm{ \sc implies} NOT(P)}{P \textrm{ \sc implies } Q}
+\qquad
+\infer{P \textrm{ \sc implies } Q}{NOT(Q) \textrm{ \sc implies} NOT(P)}
+$$</p>
+
+<p></div></p>
 
 <p></div></p>
  
