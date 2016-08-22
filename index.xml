@@ -6,15 +6,13 @@
     <description>Recent content on cs2102: Discrete Math</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <managingEditor>evans@virginia.edu (David Evans)</managingEditor>
-    <webMaster>evans@virginia.edu (David Evans)</webMaster>
     <atom:link href="https://uvacs2102.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title></title>
       <link>https://uvacs2102.github.io/hw/hw0/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <author>evans@virginia.edu (David Evans)</author>
+      
       <guid>https://uvacs2102.github.io/hw/hw0/</guid>
       <description>
 
@@ -81,9 +79,83 @@ something that no amount of testing can do.&amp;raquo;&lt;/p&gt;
     
     <item>
       <title></title>
+      <link>https://uvacs2102.github.io/pledge/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/pledge/</guid>
+      <description>
+
+&lt;h1 id=&#34;course-pledge&#34;&gt;Course Pledge&lt;/h1&gt;
+
+&lt;div class=&#34;printing&#34;&gt;&lt;a href=&#34;https://uvacs2102.github.io/docs/pledge.pdf&#34;&gt;PDF for Printing&lt;/a&gt;&lt;/div&gt;
+
+&lt;h2 id=&#34;honor-expectations&#34;&gt;Honor Expectations&lt;/h2&gt;
+
+&lt;p&gt;As a student at the University of Virginia, you are trusted to be
+honorable and expected to behave in ways that merit that trust. We take
+advantage of this trust to provide a better learning environment for
+everyone. In particular, students in cs2102 are expected to follow these
+rules throughout the course:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;I will not lie, cheat or steal.&lt;/strong&gt; If I am unsure whether something
+  would be considered lying, cheating or stealing, I will ask before
+  doing it.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;I will carefully read and follow the collaboration policy on each
+  assignment.&lt;/strong&gt; I will not abuse resources in ways that would be clearly
+  detrimental to my own learning or unfair to other students.&lt;/p&gt;
+
+&lt;h2 id=&#34;other-expectations&#34;&gt;Other Expectations&lt;/h2&gt;
+
+&lt;p&gt;In addition to the honor rules, students in cs2102 are also expected to
+follow these behaviors:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;I will do what I can to help my fellow classmates learn.&lt;/strong&gt; Except when
+specifically instructed not to, this means when other students ask me
+for help, I will attempt to provide it. I will listen respectfully to
+other&amp;rsquo;s ideas and discuss what I think is good or bad about their
+answers. When I work with teammates, I will not give or accept answers
+directly, but instead will make sure all of my teammates understand
+enough to be able to solve the problem themselves, and insist that
+teammates explain things to me until I fully understand.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;I will ask for help.&lt;/strong&gt; I will make a reasonable effort to do things on
+  my own first (or with my partners for group assignment), but will ask
+  the course staff for help before getting overly frustrated. There are
+  many ways to ask for help including the office hours and the course
+  slack group.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;I will be open minded and curious.&lt;/strong&gt; I understand that this course may
+  do things in ways differently from what I expect, and may sometimes
+  buck conventions that have been followed in other courses I have
+  taken.  I will ask questions when things make me uncomfortable, but
+  also accept that being surprised, facing uncertainty and adversity,
+  and being challenged unreasonably are often beneficial for learning
+  new ways of thinking.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;I grant the course staff permission to reproduce excerpts from my
+submissions for teaching purposes.&lt;/strong&gt; My work will be attributed when it
+is shown in a postive way, but may be used anonymously if it is used to
+illustrate common pitfalls or other issues.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;I will provide useful feedback.&lt;/strong&gt; I realize that this will be
+  attempting many new things, and that it is important that I let the
+  course staff know what they need to improve the course. I will provide
+  feedback either anonymously or by contacting the course staff
+  directly.  &lt;strong&gt;I will fill out all requested surveys honestly and
+  thoroughly.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Sign:       _______________________________________   &amp;nbsp;&amp;nbsp; &amp;nbsp;&amp;nbsp; Date: _____________&lt;/p&gt;
+
+&lt;p&gt;Print name:  ____________________________________________________&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://uvacs2102.github.io/1/01/01/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <author>evans@virginia.edu (David Evans)</author>
+      
       <guid>https://uvacs2102.github.io/1/01/01/</guid>
       <description>
 
@@ -193,7 +265,7 @@ based on inference rules.&lt;/p&gt;
       <title></title>
       <link>https://uvacs2102.github.io/syllabus/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <author>evans@virginia.edu (David Evans)</author>
+      
       <guid>https://uvacs2102.github.io/syllabus/</guid>
       <description>
 
@@ -374,84 +446,10 @@ group&lt;/a&gt;.&lt;/p&gt;
     </item>
     
     <item>
-      <title></title>
-      <link>https://uvacs2102.github.io/pledge/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <author>evans@virginia.edu (David Evans)</author>
-      <guid>https://uvacs2102.github.io/pledge/</guid>
-      <description>
-
-&lt;h1 id=&#34;course-pledge&#34;&gt;Course Pledge&lt;/h1&gt;
-
-&lt;div class=&#34;printing&#34;&gt;&lt;a href=&#34;https://uvacs2102.github.io/docs/pledge.pdf&#34;&gt;PDF for Printing&lt;/a&gt;&lt;/div&gt;
-
-&lt;h2 id=&#34;honor-expectations&#34;&gt;Honor Expectations&lt;/h2&gt;
-
-&lt;p&gt;As a student at the University of Virginia, you are trusted to be
-honorable and expected to behave in ways that merit that trust. We take
-advantage of this trust to provide a better learning environment for
-everyone. In particular, students in cs2102 are expected to follow these
-rules throughout the course:&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;I will not lie, cheat or steal.&lt;/strong&gt; If I am unsure whether something
-  would be considered lying, cheating or stealing, I will ask before
-  doing it.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;I will carefully read and follow the collaboration policy on each
-  assignment.&lt;/strong&gt; I will not abuse resources in ways that would be clearly
-  detrimental to my own learning or unfair to other students.&lt;/p&gt;
-
-&lt;h2 id=&#34;other-expectations&#34;&gt;Other Expectations&lt;/h2&gt;
-
-&lt;p&gt;In addition to the honor rules, students in cs2102 are also expected to
-follow these behaviors:&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;I will do what I can to help my fellow classmates learn.&lt;/strong&gt; Except when
-specifically instructed not to, this means when other students ask me
-for help, I will attempt to provide it. I will listen respectfully to
-other&amp;rsquo;s ideas and discuss what I think is good or bad about their
-answers. When I work with teammates, I will not give or accept answers
-directly, but instead will make sure all of my teammates understand
-enough to be able to solve the problem themselves, and insist that
-teammates explain things to me until I fully understand.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;I will ask for help.&lt;/strong&gt; I will make a reasonable effort to do things on
-  my own first (or with my partners for group assignment), but will ask
-  the course staff for help before getting overly frustrated. There are
-  many ways to ask for help including the office hours and the course
-  slack group.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;I will be open minded and curious.&lt;/strong&gt; I understand that this course may
-  do things in ways differently from what I expect, and may sometimes
-  buck conventions that have been followed in other courses I have
-  taken.  I will ask questions when things make me uncomfortable, but
-  also accept that being surprised, facing uncertainty and adversity,
-  and being challenged unreasonably are often beneficial for learning
-  new ways of thinking.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;I grant the course staff permission to reproduce excerpts from my
-submissions for teaching purposes.&lt;/strong&gt; My work will be attributed when it
-is shown in a postive way, but may be used anonymously if it is used to
-illustrate common pitfalls or other issues.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;I will provide useful feedback.&lt;/strong&gt; I realize that this will be
-  attempting many new things, and that it is important that I let the
-  course staff know what they need to improve the course. I will provide
-  feedback either anonymously or by contacting the course staff
-  directly.  &lt;strong&gt;I will fill out all requested surveys honestly and
-  thoroughly.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Sign:       _______________________________________   &amp;nbsp;&amp;nbsp; &amp;nbsp;&amp;nbsp; Date: _____________&lt;/p&gt;
-
-&lt;p&gt;Print name:  ____________________________________________________&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>cs2102: Discrete Math</title>
       <link>https://uvacs2102.github.io/main/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <author>evans@virginia.edu (David Evans)</author>
+      
       <guid>https://uvacs2102.github.io/main/</guid>
       <description>&lt;p&gt;This is the front page.&lt;/p&gt;
 
