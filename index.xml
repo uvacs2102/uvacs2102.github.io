@@ -17,14 +17,6 @@
       <guid>https://uvacs2102.github.io/class1/</guid>
       <description>
 
-&lt;h1 id=&#34;class-1&#34;&gt;Class 1&lt;/h1&gt;
-
-&lt;!--   &lt;div class=&#34;notpdf&#34;&gt;
-   &lt;div class=&#34;highlighted&#34;&gt;
-All course materials are still under development, and subject to change until the first class.
-   &lt;/div&gt;
-   &lt;/div&gt;&lt;!--endpdf--&gt;
-
 &lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;Before &lt;strong&gt;Thursday&amp;rsquo;s class&lt;/strong&gt;: (visit &lt;a href=&#34;https://uvacs2102.github.io&#34;&gt;https://uvacs2102.github.io&lt;/a&gt; for the web version of these notes with links)&lt;/p&gt;
@@ -151,91 +143,6 @@ $$&lt;/p&gt;
 &lt;p&gt;&lt;/div&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;/div&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://uvacs2102.github.io/hw/hw0/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://uvacs2102.github.io/hw/hw0/</guid>
-      <description>
-
-&lt;h1 id=&#34;homework-0&#34;&gt;Homework 0&lt;/h1&gt;
-
-&lt;div class=&#34;printing&#34;&gt;&lt;a href=&#34;{{ url_for(&#39;static&#39;, filename=&#39;docs/hw0.pdf&#39;) }}&#34;&gt;PDF for Printing&lt;/a&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;div class=&#34;turnin&#34;&gt;
-&lt;strong&gt;Deliverable:&lt;/strong&gt; Submit your responses as a single PDF file on the
-  collab site before &lt;strong&gt;5:59pm&lt;/strong&gt; on &lt;strong&gt;Friday, 26 August&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;collaboration-policy-read-carefully&#34;&gt;Collaboration Policy - Read Carefully&lt;/h3&gt;
-
-&lt;p&gt;For this assignment, you may work on your own or with one other student
-in the class.  If you work with a partner, you and your partner must
-have been born in different counties (if you were both born in the
-United States), or in different countries (if one of you was born
-outside the United States).  If you work with a partner, you should
-submit one assignment that represents your collective best work.
-Everyone should understand everything you turn in for the assignment
-well enough to be able to produce it completely on your own.&lt;/p&gt;
-
-&lt;p&gt;You may discuss the assignment with anyone you want and get help from
-others, so long as it is help in the spirit of learning how to do things
-yourself not getting answers you don&amp;rsquo;t understand.&lt;/p&gt;
-
-&lt;p&gt;Remember to follow the &lt;a href=&#34;https://uvacs2102.github.io/pledge&#34;&gt;course pledge&lt;/a&gt; you read and signed at
-the beginning of the semester.  For this assignment, you may consult any
-outside resources, including books, papers, web sites and people, you
-wish &lt;i&gt;except&lt;/i&gt; for materials from previous cs1120 courses.  You may
-consult an outside person (e.g., another friend who is a CS major but is
-not in this class) who is not a member of the course staff, but that
-person cannot type anything in for you and all work must remain your own
-and outside sources should never give you specific answers to problem
-set questions.&lt;/p&gt;
-
-&lt;p&gt;If you use resources other than the class materials, lectures and course
-staff, you should document this in your turn-in.&lt;/p&gt;
-
-&lt;p&gt;You are &lt;b&gt;strongly encouraged&lt;/b&gt; to take advantage of the scheduled
- help hours and office hours for this course.&lt;/p&gt;
-
-&lt;p&gt;**1. ** The introduction for the MCS book states,&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&amp;laquo;Proofs also play a growing role in computer science; they are used to
-certify that software and hardware will &lt;em&gt;always&lt;/em&gt; behave correctly,
-something that no amount of testing can do.&amp;raquo;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Which of the following statements are implied by that statement:&lt;/p&gt;
-
-&lt;p&gt;(a) Proofs can certify that software and hardware will always behave correctly.&lt;/p&gt;
-
-&lt;p&gt;(b) Testing can never certify that software and hardware will always behave correctly.&lt;/p&gt;
-
-&lt;p&gt;&amp;copy; Proofs can certify that software and hardware will sometimes behave correctly.&lt;/p&gt;
-
-&lt;p&gt;(d)&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://uvacs2102.github.io/officehours/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://uvacs2102.github.io/officehours/</guid>
-      <description>
-
-&lt;h1 id=&#34;office-hours&#34;&gt;Office Hours&lt;/h1&gt;
-
-&lt;p&gt;For the week of August 23, Dave has office hours (in Rice 507) on
-Wednesday, 3-4pm.  The TA&amp;rsquo;s office hours schedule will be posted here
-soon, and will start the following week.&lt;/p&gt;
 </description>
     </item>
     
