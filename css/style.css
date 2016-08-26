@@ -1035,6 +1035,17 @@ progress {
   background-color:#e5e5e5; border:1px solid #639;
 }
 
+.highlightr{
+  display:block;
+  align:center;
+  text-align: center;
+  padding:5px;
+  margin-bottom:10px;
+  margin-top:5px;
+  margin-left:50px;margin-right:50px;
+  background-color:#ffe544; border:1px solid #639;
+}
+
 .smallquote{display:block;align:right;color: #444; margin-left:60px; margin-right:20px;}
 
 .separator{display:block;padding-top:2px;padding-bottom:0px;margin-right:10px;margin-bottom:6px;margin-top:4px; background-color:#eeeacd;}
