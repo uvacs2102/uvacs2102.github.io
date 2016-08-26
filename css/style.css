@@ -1079,6 +1079,15 @@ progress {
    font-weight:bold; padding-top: 5px; padding-bottom: 5px;
 }
 
+.fronthead {
+   background-color: #EEE;
+   margin-top: 5pt; 
+   margin-bottom: 5pt;
+   font-size: 18pt;
+   text-align: center;
+   line-height: 2.5;
+}
+
 .latex {
   display: none;
 }
