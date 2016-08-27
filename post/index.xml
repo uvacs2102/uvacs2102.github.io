@@ -57,6 +57,10 @@ hours schedule.&lt;/p&gt;
 
 &lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;
 
+&lt;p&gt;&lt;strong&gt;Trichotomy&lt;/strong&gt;. A relation, $\prec$, satisfies the axiom of trichotomy
+  if exactly one of these is true for all elements $a$ and $b$: $a \prec
+  b$, $b \prec a$ or $a = b$.&lt;/p&gt;
+
 &lt;p&gt;Which of these are well-ordered?&lt;/p&gt;
 
 &lt;ul&gt;
