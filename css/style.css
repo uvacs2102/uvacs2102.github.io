@@ -1091,3 +1091,82 @@ progress {
 .latex {
   display: none;
 }
+
+.question {
+  font-style: italic;
+  margin-bottom: 12px;
+}
+
+.answer {
+   margin-left: 50px;
+   margin-right: 60px;
+   background: #E6E6FA;
+   margin-bottom: 10px;
+   padding: 12px;
+   line-height: 1.8;
+}
+
+.note {
+   margin-left: 50px;
+   margin-right: 60px;
+   background: #FAE6E6;
+   margin-bottom: 10px;
+   padding: 12px;
+}
+
+
+.yellownote {
+   margin-left: 50px;
+   margin-right: 60px;
+   background: #FAFAE6;
+   margin-bottom: 10px;
+   padding: 12px;
+}
+
+.hint {
+   margin-left: 50px;
+   margin-right: 60px;
+   background: #FAE6E6;
+   margin-bottom: 10px;
+   padding: 12px;
+}
+
+P.breakhere {page-break-before: always}
+
+span#name {
+    font-size: 20px;
+    text-align:left;
+    float: left;
+    font-family: "verdana";
+    }
+
+    #subtitle {
+    font-size: 20px;
+    text-align:right;
+    float: right;
+    font-family: "verdana";
+    }
+    
+p.indent {
+    text-indent: 5px;
+    }
+
+div.credits {
+   font-size: 9pt;
+   text-align: right;
+   padding-left: 90px;
+   padding-right: 0px;
+   margin-top:18pt;
+   margin-bottom:12pt;
+}
+
+
+div.hanging {
+     padding-left: 25px;
+     text-indent: -25px;
+}
+
+div.hangingmore {
+     padding-left: 125px;
+     text-indent: -125px;
+}
