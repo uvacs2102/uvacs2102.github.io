@@ -106,19 +106,22 @@ Never need an excuse to watch &lt;a href=&#34;http://www.wired.com/2014/12/gangn
   produced using some combination of \$2 and \$5 chips.  Prove that all
   integer values greater than \$3 are betable.&lt;/p&gt;
 
-&lt;p&gt;&lt;div class=&#34;biggap&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;biggap&#34;&gt;&lt;/div&gt;
 #
 #
-#&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Example: Division Property.&lt;/strong&gt; Given integer $a$ and positive integer $b$, there exist integers $q$ and $r$ such that:
-      $a = qb + r$ and $0 \le r &amp;lt; b$.&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;biggap&#34;&gt;&lt;/div&gt;
 #
-#&lt;/p&gt;
 
-&lt;p&gt;&lt;em&gt;The whole problem with the world is that fools and fanatics are always so certain of themselves, and wiser people so full of doubts.&lt;/em&gt; Bertrand Russell&lt;/p&gt;
+**Example: Division Property.** Given integer $a$ and positive integer $b$, there exist integers $q$ and $r$ such that:
+      $a = qb + r$ and $0 \le r &lt; b$.
+
+&lt;div class=&#34;biggap&#34;&gt;&lt;/div&gt;
+#
+#
+
+
+_The whole problem with the world is that fools and fanatics are always so certain of themselves, and wiser people so full of doubts._ Bertrand Russell
+
+&lt;/div&gt;
 </description>
     </item>
     
