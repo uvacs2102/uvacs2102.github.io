@@ -6,8 +6,18 @@
     <description>Recent content on cs2102: Discrete Math</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 01 Sep 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 02 Sep 2016 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://uvacs2102.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Problem Set 2</title>
+      <link>https://uvacs2102.github.io/ps2/</link>
+      <pubDate>Fri, 02 Sep 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/ps2/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Problem Set 2&lt;/strong&gt; is &lt;a href=&#34;https://uvacs2102.github.io/ps/ps2&#34;&gt;now posted&lt;/a&gt;, and is due on &lt;strong&gt;Friday, 9 September at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Class 4: Logical Formulas</title>
