@@ -10,6 +10,36 @@
     <atom:link href="https://uvacs2102.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Challenge Solved!</title>
+      <link>https://uvacs2102.github.io/challenge1/</link>
+      <pubDate>Fri, 02 Sep 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/challenge1/</guid>
+      <description>&lt;p&gt;The first challenge problem has been solved!&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlightr&#34;&gt;
+&lt;strong&gt;Challenge 1.&lt;/strong&gt; From &lt;a href=&#34;https://uvacs2102.github.io/class2&#34;&gt;Class 2&lt;/a&gt;: I wasn&amp;rsquo;t very satisfied with
+  my proof of the &amp;laquo;Odd-Even Lemma&amp;raquo; in class.  I hope a student will come
+  up with a better proof.  Come up with a proof that passes the
+  &amp;laquo;skeptical reader&amp;raquo; test and would convince someone with no prior
+  knowledge of odd and even numbers.
+   &lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;There are three winning solutions (that all take quite different approaches):&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://uvacs2102.github.io/docs/challenge1/john_fry.pdf&#34;&gt;John Fry&amp;rsquo;s solution using the well-ordering principle&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://uvacs2102.github.io/docs/challenge1/paul-sanders.pdf&#34;&gt;Paul Sander&amp;rsquo;s solution using a game proof&lt;/a&gt; (although most game-style proofs are not so entertaingly written as Pauls, using a game to prove something is a very common strategy, especially in &lt;a href=&#34;https://eprint.iacr.org/2004/332.pdf&#34;&gt;security&lt;/a&gt; and &lt;a href=&#34;https://cr.yp.to/bib/2004/bellare-games.pdf&#34;&gt;cryptography&lt;/a&gt; proofs.)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://uvacs2102.github.io/docs/challenge1/avi.pdf&#34;&gt;Avi Parikh&amp;rsquo;s solution using proof by contradiction&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Congratulations to the challenge winners!&lt;/p&gt;
+
+&lt;p&gt;(&lt;a href=&#34;https://uvacs2102.github.io/challenges&#34;&gt;Challenge 2&lt;/a&gt; is still open, and no viable solutions have yet been submitted.)&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Problem Set 2</title>
       <link>https://uvacs2102.github.io/ps2/</link>
       <pubDate>Fri, 02 Sep 2016 00:00:00 +0000</pubDate>
@@ -1367,8 +1397,8 @@ group&lt;/a&gt;.&lt;/p&gt;
 your classmates and the course staff (and maybe even the whole Internet
 if your solution is clever enough!).  If that&amp;rsquo;s not enough, you also are
 rewarded &amp;laquo;bonus points&amp;raquo; (the number varies at the discretion of the
-teacher, but typically a value from about $\frac{1}{2}$ to a full
-problem set (or even more).&lt;/p&gt;
+teacher, but typically a value from about &amp;frac12; to a full problem set (or
+even more).&lt;/p&gt;
 
 &lt;p&gt;You can submit a candidate answer for a challenge problem by sending me
 a Direct Message in Slack, or sending an email with subject line
@@ -1390,22 +1420,14 @@ numbers in Python are not well-ordered.&lt;/p&gt;
   knowledge of odd and even numbers.&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;highlightr&#34;&gt;
-   There are 3 winning solutions!  They will be posted here soon.
-   &lt;/div&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>cs2102: Discrete Math</title>
-      <link>https://uvacs2102.github.io/main/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://uvacs2102.github.io/main/</guid>
-      <description>&lt;p&gt;This is the front page.&lt;/p&gt;
+   There are 3 winning solutions:&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/syllabus&#34;&gt;Syllabus&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Coming soon&amp;hellip;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://uvacs2102.github.io/docs/challenge1/john_fry.pdf&#34;&gt;John Fry&amp;rsquo;s solution using the well-ordering principle&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://uvacs2102.github.io/docs/challenge1/paul-sanders.pdf&#34;&gt;Paul Sander&amp;rsquo;s solution using a game proof&lt;/a&gt; (although most game-style proofs are not so entertaingly written as Pauls, using a game to prove something is a very common strategy, especially in &lt;a href=&#34;https://eprint.iacr.org/2004/332.pdf&#34;&gt;security&lt;/a&gt; and &lt;a href=&#34;https://cr.yp.to/bib/2004/bellare-games.pdf&#34;&gt;cryptography&lt;/a&gt; proofs.)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://uvacs2102.github.io/docs/challenge1/avi.pdf&#34;&gt;Avi Parikh&amp;rsquo;s solution using proof by contradiction&lt;/a&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </description>
     </item>
     
