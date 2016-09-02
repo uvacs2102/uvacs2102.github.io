@@ -1366,16 +1366,22 @@ a Direct Message in Slack, or sending an email with subject line
 
 &lt;h1 id=&#34;open-challenges&#34;&gt;Open Challenges&lt;/h1&gt;
 
-&lt;p&gt;From &lt;a href=&#34;https://uvacs2102.github.io/class2&#34;&gt;Class 2&lt;/a&gt;: I wasn&amp;rsquo;t very satisfied with my proof of the
-  &amp;laquo;Odd-Even Lemma&amp;raquo; in class.  I hope a student will come up with a
-  better proof.  Come up with a proof that passes the &amp;laquo;skeptical reader&amp;raquo;
-  test and would convince someone with no prior knowledge of odd and
-  even numbers.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Challenge 2.&lt;/strong&gt; From &lt;a href=&#34;https://uvacs2102.github.io/class3&#34;&gt;Class 3&lt;/a&gt;: It is trivial to show that
+numbers in Java or C are not we-ordered, but quite challenging to show
+this for Python.  Write a Python program that demonstrates the fact that
+numbers in Python are not well-ordered.&lt;/p&gt;
 
-&lt;p&gt;From &lt;a href=&#34;https://uvacs2102.github.io/class3&#34;&gt;Class 3&lt;/a&gt;: It is trivial to show that numbers in Java or C
-are not we-ordered, but quite challenging to show this for Python.
-Write a Python program that demonstrates the fact that numbers in Python
-are not well-ordered.&lt;/p&gt;
+&lt;h1 id=&#34;closed-challenges&#34;&gt;Closed Challenges&lt;/h1&gt;
+
+&lt;p&gt;&lt;strong&gt;Challenge 1.&lt;/strong&gt; From &lt;a href=&#34;https://uvacs2102.github.io/class2&#34;&gt;Class 2&lt;/a&gt;: I wasn&amp;rsquo;t very satisfied with
+  my proof of the &amp;laquo;Odd-Even Lemma&amp;raquo; in class.  I hope a student will come
+  up with a better proof.  Come up with a proof that passes the
+  &amp;laquo;skeptical reader&amp;raquo; test and would convince someone with no prior
+  knowledge of odd and even numbers.&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlightr&#34;&gt;
+   There are 3 winning solutions!  They will be posted here soon.
+   &lt;/div&gt;&lt;/p&gt;
 </description>
     </item>
     
