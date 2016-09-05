@@ -267,7 +267,7 @@ q_b &amp;lt; p_b q_a$.&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;(Similar to Problem 2.6) The &amp;laquo;Exponential Losses&amp;raquo; Casino has
 chips with value \$1, \$2, \$4, \$8, \$16, \ldots, \$2$^{k}$, but has a
 rule that bettors may not use more than one of the same value of chip to
-make any bet.  Prove that all integer bets from \$1 to \$2$^{k + 1}$ can
+make any bet.  Prove that all integer bets from \$1 to \$2$^{k + 1} - 1$ can
 be made.&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;MCS Problem 2.17.&lt;/p&gt;&lt;/li&gt;
