@@ -276,7 +276,7 @@ be made.&lt;/p&gt;&lt;/li&gt;
 &lt;h2 id=&#34;logical-operators&#34;&gt;Logical Operators&lt;/h2&gt;
 
 &lt;ol&gt;
-&lt;li&gt;&lt;p&gt;How many 3-input, 1-input Boolean operators are there?  Support your
+&lt;li&gt;&lt;p&gt;How many 3-input, 1-output Boolean operators are there?  Support your
 answer with a convincing, concise justification.&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;Show that is it possible to implement the 3-input Boolean operator,
