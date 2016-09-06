@@ -181,6 +181,142 @@ For each of the formulas below, determine if it is _valid_ and if it is _satisfi
     </item>
     
     <item>
+      <title>Class 5: CNF, Quantifiers, Proofs about Computing</title>
+      <link>https://uvacs2102.github.io/class5/</link>
+      <pubDate>Thu, 01 Sep 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/class5/</guid>
+      <description>
+
+&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps2&#34;&gt;&lt;strong&gt;Problem Set 2&lt;/strong&gt;&lt;/a&gt; is due &lt;strong&gt;Friday at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;
+   &lt;center&gt;
+&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;79d8ff375dd84ce7b77827480b79a4dd&#34; data-ratio=&#34;1.77777777777778&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
+   &lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlightm&#34;&gt;
+   &lt;a href=&#34;https://uvacs2102.github.io/docs/class5.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes and Questions&lt;/b&gt;&lt;/a&gt;.
+   &lt;/div&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
+
+&lt;p&gt;If you believe real computing systems have the property that the values
+you read from memory will match what you wrote there, see:&lt;/p&gt;
+
+&lt;p&gt;Sudhakar Govindavajhala and Andrew W. Appel. &lt;a href=&#34;http://sip.cs.princeton.edu/pub/memerr.pdf&#34;&gt;&lt;em&gt;Using Memory Errors to Attack a Virtual Machine&lt;/em&gt;&lt;/a&gt;, IEEE Symposium on Security and Privacy 2003.&lt;/p&gt;
+
+&lt;p&gt;Bianca Schroeder, Eduardo Pinheiro, Wolf-Dietrich Weber. &lt;a href=&#34;http://www.cs.utoronto.ca/~bianca/papers/sigmetrics09.pdf&#34;&gt;&lt;em&gt;DRAM Errors
+in the Wild: A Large-Scale Field
+Study&lt;/em&gt;&lt;/a&gt;. SIGMETRICS 2009.&lt;/p&gt;
+
+&lt;p&gt;Kaveh Razavi, Ben Gras, Erik Bosman, Bart Preneel, Cristiano Giuffrida
+and Herbert Bos. &lt;a href=&#34;https://www.usenix.org/conference/usenixsecurity16/technical-sessions/presentation/razavi&#34;&gt;&lt;em&gt;Flip Feng Shui: Hammering a Needle in the Software
+Stack&lt;/em&gt;&lt;/a&gt;. USENIX
+Security 2016.&lt;/p&gt;
+
+&lt;p&gt;Yuan Xiao, Xiaokuan Zhang, Yinqian Zhang, and Radu Teodorescu. &lt;a href=&#34;https://www.usenix.org/system/files/conference/usenixsecurity16/sec16_paper_xiao.pdf&#34;&gt;&lt;em&gt;One Bit Flips, One Cloud Flops: Cross-VM Row Hammer Attacks and Privilege Escalation&lt;/em&gt;&lt;/a&gt;, USENIX Security 2016.&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;notes-and-questions&#34;&gt;Notes and Questions&lt;/h1&gt;
+
+&lt;p&gt;&lt;strong&gt;Definition: satisfiable.&lt;/strong&gt; A logical formula is &lt;em&gt;satisfiable&lt;/em&gt; if there
+  is &lt;em&gt;some&lt;/em&gt; way to make it &lt;strong&gt;true&lt;/strong&gt;.  That is, there is at least one
+  assignment of truth value to its variables that makes the forumla
+  true.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Definition: conjunctive normal form (CNF).&lt;/strong&gt; A logical formula that is
+  written as a conjunction of &lt;em&gt;clauses&lt;/em&gt;, where each clause is a
+  disjunction of &lt;em&gt;literals&lt;/em&gt;, and each literal is either a variable or a
+  negation of a variable, is in &lt;em&gt;conjunctive normal form&lt;/em&gt;.  If each
+  clause has excatly three literals, it is called &lt;em&gt;three conjunctive
+  normal form&lt;/em&gt; (3CNF).&lt;/p&gt;
+
+&lt;p&gt;$$
+(a_1 \vee a_2 \vee \neg a_3) \wedge
+(a_1 \vee \neg a_2 \vee a_3) \wedge
+(\neg a_1 \vee a_2 \vee \neg a_3) \wedge
+(\neg a_1 \vee a_2 \vee a_3)
+$$&lt;/p&gt;
+
+&lt;p&gt;##&lt;/p&gt;
+
+&lt;p&gt;Show that every logical formula can be written in 3-conjunctive normal form.&lt;/p&gt;
+
+&lt;div class=&#34;biggap&#34;&gt;&lt;/div&gt;
+
+&lt;p&gt;What is the maximum number of (different) clauses in a 3CNF formula
+involving 5 variables?&lt;/p&gt;
+
+&lt;p&gt;##&lt;/p&gt;
+
+&lt;p&gt;What is the maximum number of (different) clauses in a &lt;em&gt;satisfiable&lt;/em&gt;
+3CNF formula involving 5 variables?&lt;/p&gt;
+
+&lt;p&gt;##&lt;/p&gt;
+
+&lt;p&gt;What is the maximum number of (different) clauses in a &lt;em&gt;valid&lt;/em&gt; 3CNF formula involving 5 variables?&lt;/p&gt;
+
+&lt;p&gt;##&lt;/p&gt;
+
+&lt;!--page--&gt;
+
+&lt;h2 id=&#34;logical-quantifiers&#34;&gt;Logical Quantifiers&lt;/h2&gt;
+
+&lt;p&gt;$\forall x \in S. P(x)$ means $P$ holds for &lt;em&gt;every&lt;/em&gt; element of $S$.&lt;br /&gt;
+$\exists x \in S. P(x)$ means $P$ holds for &lt;em&gt;at least one&lt;/em&gt; element of $S$.&lt;/p&gt;
+
+&lt;p&gt;Define &lt;em&gt;valid&lt;/em&gt; and &lt;em&gt;satisfiable&lt;/em&gt; using logical quantifiers:&lt;/p&gt;
+
+&lt;p&gt;#&lt;/p&gt;
+
+&lt;p&gt;$\forall x \in S. P(x)$ is equivalent to $\neg(\exists x \in S. \qquad \qquad)$&lt;/p&gt;
+
+&lt;p&gt;###&lt;/p&gt;
+
+&lt;p&gt;Notation: $\textrm{pow}(S)$ denotes the &lt;em&gt;powerset&lt;/em&gt; of $S$.  The powerset
+of a set is the set of all possible subsets of that S.  So,
+$\textrm{pow}(\mathbb{N})$ denotes all subsets of the natural numbers.&lt;/p&gt;
+
+&lt;p&gt;Notation: $A - B$ denotes the &lt;em&gt;difference&lt;/em&gt; between two sets.  It is the
+elements of $A$, with every element of $B$ removed.&lt;/p&gt;
+
+&lt;p&gt;Notation: $\varnothing$ is the &lt;em&gt;empty set&lt;/em&gt;.  It is the set with no elements: ${ }$.&lt;/p&gt;
+
+&lt;p&gt;\begin{center}
+\Large&lt;/p&gt;
+
+&lt;p&gt;$$
+\fillin S \in \textrm{pow}(\mathbb{N}) - { \varnothing } \ldotp \fillin m \in S\ldotp \fillin x \in S - {m}\ldotp m &amp;lt; x
+$$&lt;/p&gt;
+
+&lt;p&gt;\begin{comment}
+$$
+\forall S \in \textrm{pow}(\mathbb{N}) - { \varnothing } \ldotp \exists m \in S\ldotp \forall x \in S - {m}\ldotp m &amp;lt; x
+$$
+\end{comment}
+\end{center}&lt;/p&gt;
+
+&lt;p&gt;Write a logical expression that captures the meaning of: &lt;em&gt;Proofs can
+certify that a computing system will always behave correctly, something
+that no amount of testing can do.&lt;/em&gt;&lt;/p&gt;
+
+&lt;div class=&#34;biggap&#34;&gt;&lt;/div&gt;
+
+&lt;p&gt;What does it mean to &lt;em&gt;test&lt;/em&gt; a computing system?  What does it mean for a computing system to &lt;em&gt;always behave correctly&lt;/em&gt;?&lt;/p&gt;
+
+&lt;p&gt;#&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Class 3: Well-Ordering Principle</title>
       <link>https://uvacs2102.github.io/class3/</link>
       <pubDate>Tue, 30 Aug 2016 00:00:00 +0000</pubDate>
