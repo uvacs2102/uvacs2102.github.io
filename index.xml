@@ -366,7 +366,7 @@ Never need an excuse to watch &lt;a href=&#34;http://www.wired.com/2014/12/gangn
 &lt;h1 id=&#34;notes-and-questions&#34;&gt;Notes and Questions&lt;/h1&gt;
 
 &lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; A set is &lt;em&gt;well-ordered&lt;/em&gt; with respect to an ordering
-  function (e.g., &amp;lt;), if any of its non-empty subsets has a minimum
+  function (e.g., &amp;lt;), if all of its non-empty subsets has a minimum
   element.&lt;/p&gt;
 
 &lt;p&gt;What properties must a sensible ordering function have?&lt;/p&gt;
