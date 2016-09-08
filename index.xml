@@ -34,9 +34,9 @@ on Monday.  I will have &amp;ldquo;make-up&amp;rdquo; office hours on Wednesday,
 (in addition to my usual Wednesday 1-2pm office hours).&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;
-   &lt;center&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/center&gt;&lt;/p&gt;
+   &lt;center&gt;
+&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;774e84575197415ca672431a740645ed&#34; data-ratio=&#34;1.77777777777778&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
+   &lt;/center&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;highlightm&#34;&gt;
    &lt;a href=&#34;https://uvacs2102.github.io/docs/class6.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes and Questions&lt;/b&gt;&lt;/a&gt;.
@@ -134,7 +134,7 @@ to always find a satisfying assignment for a satisfiable formula?&lt;/p&gt;
 
 &lt;p&gt;##&lt;/p&gt;
 
-&lt;h2 id=&#34;sat-solving&#34;&gt;SAT Solving&lt;/h2&gt;
+&lt;h2 id=&#34;sat-solving-will-be-covered-tuesday&#34;&gt;SAT Solving (will be covered Tuesday)&lt;/h2&gt;
 
 &lt;p&gt;Sahand Saba&amp;rsquo;s &lt;a href=&#34;http://sahandsaba.com/understanding-sat-by-implementing-a-simple-sat-solver-in-python.html&#34;&gt;&lt;em&gt;Understanding SAT by Implementing a Simple SAT Solver in
 Python&lt;/em&gt;&lt;/a&gt; (Code with a few modifications: &lt;a href=&#34;https://github.com/evansuva/simple-sat&#34;&gt;&lt;em&gt;https://github.com/evansuva/simple-sat&lt;/em&gt;&lt;/a&gt;)&lt;/p&gt;
