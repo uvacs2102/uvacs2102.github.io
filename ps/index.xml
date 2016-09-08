@@ -97,18 +97,18 @@ should be correct, clear, well-written, and convincing.&lt;/p&gt;
 &lt;p&gt;The introduction for the MCS book states,&lt;/p&gt;
 
 &lt;blockquote&gt;
-&lt;p&gt;&amp;laquo;Proofs also play a growing role in computer science; they are used to
+&lt;p&gt;&amp;ldquo;Proofs also play a growing role in computer science; they are used to
 certify that software and hardware will &lt;em&gt;always&lt;/em&gt; behave correctly,
-something that no amount of testing can do.&amp;raquo;&lt;/p&gt;
+something that no amount of testing can do.&amp;rdquo;&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;ol&gt;
-&lt;li&gt;&lt;p&gt;The statement suggests &amp;laquo;no amount of testing can certify software
-will always behave correctly&amp;raquo;.  Is this claim valid or invalid?  Support
+&lt;li&gt;&lt;p&gt;The statement suggests &amp;ldquo;no amount of testing can certify software
+will always behave correctly&amp;rdquo;.  Is this claim valid or invalid?  Support
 your answer with a short justification.&lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;The statement suggests &amp;laquo;proofs can certify that software will
-always behave correctly&amp;raquo;.  Argue that this is not a correct statement.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;The statement suggests &amp;ldquo;proofs can certify that software will
+always behave correctly&amp;rdquo;.  Argue that this is not a correct statement.&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;h2 id=&#34;inference-rules&#34;&gt;Inference Rules&lt;/h2&gt;
@@ -264,7 +264,7 @@ q_b &amp;lt; p_b q_a$.&lt;/p&gt;&lt;/li&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;p&gt;MCS Problem 2.2 (explain clearly which proof step is invalid and why).&lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;(Similar to Problem 2.6) The &amp;laquo;Exponential Losses&amp;raquo; Casino has
+&lt;li&gt;&lt;p&gt;(Similar to Problem 2.6) The &amp;ldquo;Exponential Losses&amp;rdquo; Casino has
 chips with value \$1, \$2, \$4, \$8, \$16, \ldots, \$2$^{k}$, but has a
 rule that bettors may not use more than one of the same value of chip to
 make any bet.  Prove that all integer bets from \$1 to \$2$^{k + 1} - 1$ can

@@ -6,8 +6,148 @@
     <description>Recent content on cs2102: Discrete Math</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 06 Sep 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 08 Sep 2016 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://uvacs2102.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Class 6: SAT Solving</title>
+      <link>https://uvacs2102.github.io/class6/</link>
+      <pubDate>Thu, 08 Sep 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/class6/</guid>
+      <description>
+
+&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps2&#34;&gt;&lt;strong&gt;Problem Set 2&lt;/strong&gt;&lt;/a&gt; is due &lt;strong&gt;Friday at 6:29pm&lt;/strong&gt;.  A few of the
+problems on PS2 are quite challenging!  The problems are organized by
+topic, not by difficulty (the hardest problems are #4 and #7).  I hope
+everyone makes a good attempt to solve all of the problems, but don&amp;rsquo;t be
+overly stressed if you cannot solve these ones and move on to the other
+problems if you are stuck on them (to hopefully return to these problems
+after you&amp;rsquo;ve had more time to think about them).  Good solutions to
+these problems will impress us, but are not necessary to get a good
+score on PS2.&lt;/p&gt;
+
+&lt;p&gt;I will be out-of-town Monday, and not able to hold my usual office hours
+on Monday.  I will have &amp;ldquo;make-up&amp;rdquo; office hours on Wednesday, 3:30-4:30pm
+(in addition to my usual Wednesday 1-2pm office hours).&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;
+   &lt;center&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlightm&#34;&gt;
+   &lt;a href=&#34;https://uvacs2102.github.io/docs/class6.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes and Questions&lt;/b&gt;&lt;/a&gt;.
+   &lt;/div&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
+
+&lt;p&gt;Sahand Saba&amp;rsquo;s &lt;a href=&#34;http://sahandsaba.com/understanding-sat-by-implementing-a-simple-sat-solver-in-python.html&#34;&gt;&lt;em&gt;Understanding SAT by Implementing a Simple SAT Solver in
+Python&lt;/em&gt;&lt;/a&gt; [&lt;a href=&#34;https://github.com/evansuva/simple-sat&#34;&gt;Code with my modifications: https://github.com/evansuva/simple-sat&lt;/a&gt;]&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://baldur.iti.kit.edu/sat-competition-2016/index.php&#34;&gt;SAT Competition 2016&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;notes-and-questions&#34;&gt;Notes and Questions&lt;/h1&gt;
+
+&lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; A formula is in &lt;em&gt;3SAT&lt;/em&gt; if it is in 3CNF form and it is
+  satisfiable.&lt;/p&gt;
+
+&lt;p&gt;$$
+(x_1 \vee x_2 \vee x_3) \wedge (x_1 \vee \overline{x_2} \vee x_3) \wedge (\overline{x_1} \vee x_2 \vee \overline{x_3})
+$$&lt;/p&gt;
+
+&lt;p&gt;\begin{center}
+\tiny
+\begin{math}
+(x&lt;em&gt;{48} \vee x&lt;/em&gt;{4} \vee \overline{x&lt;em&gt;{9}}) \wedge (\overline{x&lt;/em&gt;{44}} \vee x&lt;em&gt;{50} \vee \overline{x&lt;/em&gt;{37}}) \wedge (\overline{x&lt;em&gt;{8}} \vee \overline{x&lt;/em&gt;{1}} \vee x&lt;em&gt;{28}) \wedge (x&lt;/em&gt;{21} \vee x&lt;em&gt;{27} \vee \overline{x&lt;/em&gt;{32}}) \wedge (x&lt;em&gt;{17} \vee x&lt;/em&gt;{29} \vee \overline{x&lt;em&gt;{30}}) \wedge (x&lt;/em&gt;{30} \vee x&lt;em&gt;{24} \vee x&lt;/em&gt;{37}) \wedge (\overline{x&lt;em&gt;{22}} \vee \overline{x&lt;/em&gt;{27}} \vee \overline{x&lt;em&gt;{44}}) \wedge (x&lt;/em&gt;{8} \vee \overline{x&lt;em&gt;{25}} \vee \overline{x&lt;/em&gt;{24}}) \wedge (\overline{x&lt;em&gt;{44}} \vee x&lt;/em&gt;{50} \vee x&lt;em&gt;{14}) \wedge (x&lt;/em&gt;{45} \vee x&lt;em&gt;{15} \vee x&lt;/em&gt;{37}) \wedge (\overline{x&lt;em&gt;{16}} \vee x&lt;/em&gt;{14} \vee \overline{x&lt;em&gt;{36}}) \wedge (\overline{x&lt;/em&gt;{33}} \vee x&lt;em&gt;{5} \vee x&lt;/em&gt;{26}) \wedge (x&lt;em&gt;{18} \vee \overline{x&lt;/em&gt;{7}} \vee \overline{x&lt;em&gt;{24}}) \wedge (x&lt;/em&gt;{31} \vee x&lt;em&gt;{38} \vee x&lt;/em&gt;{28}) \wedge (x&lt;em&gt;{31} \vee \overline{x&lt;/em&gt;{33}} \vee \overline{x&lt;em&gt;{8}}) \wedge (x&lt;/em&gt;{49} \vee x&lt;em&gt;{7} \vee \overline{x&lt;/em&gt;{6}}) \wedge (x&lt;em&gt;{34} \vee \overline{x&lt;/em&gt;{8}} \vee x&lt;em&gt;{46}) \wedge (x&lt;/em&gt;{4} \vee \overline{x&lt;em&gt;{5}} \vee \overline{x&lt;/em&gt;{35}}) \wedge (x&lt;em&gt;{43} \vee x&lt;/em&gt;{27} \vee x&lt;em&gt;{39}) \wedge (\overline{x&lt;/em&gt;{46}} \vee \overline{x&lt;em&gt;{40}} \vee \overline{x&lt;/em&gt;{27}}) \wedge (\overline{x&lt;em&gt;{25}} \vee x&lt;/em&gt;{14} \vee \overline{x&lt;em&gt;{49}}) \wedge (x&lt;/em&gt;{38} \vee x&lt;em&gt;{5} \vee x&lt;/em&gt;{15}) \wedge (x&lt;em&gt;{9} \vee x&lt;/em&gt;{14} \vee \overline{x&lt;em&gt;{19}}) \wedge (x&lt;/em&gt;{45} \vee \overline{x&lt;em&gt;{42}} \vee \overline{x&lt;/em&gt;{39}}) \wedge (x&lt;em&gt;{34} \vee \overline{x&lt;/em&gt;{22}} \vee \overline{x&lt;em&gt;{28}}) \wedge (\overline{x&lt;/em&gt;{20}} \vee x&lt;em&gt;{15} \vee \overline{x&lt;/em&gt;{8}}) \wedge (\overline{x&lt;em&gt;{44}} \vee \overline{x&lt;/em&gt;{10}} \vee \overline{x&lt;em&gt;{9}}) \wedge (x&lt;/em&gt;{22} \vee \overline{x&lt;em&gt;{31}} \vee x&lt;/em&gt;{14}) \wedge (\overline{x&lt;em&gt;{9}} \vee \overline{x&lt;/em&gt;{42}} \vee \overline{x&lt;em&gt;{15}}) \wedge (\overline{x&lt;/em&gt;{40}} \vee x&lt;em&gt;{12} \vee \overline{x&lt;/em&gt;{32}}) \wedge (\overline{x&lt;em&gt;{20}} \vee \overline{x&lt;/em&gt;{6}} \vee \overline{x&lt;em&gt;{15}}) \wedge (\overline{x&lt;/em&gt;{37}} \vee x&lt;em&gt;{39} \vee \overline{x&lt;/em&gt;{23}}) \wedge (\overline{x&lt;em&gt;{3}} \vee \overline{x&lt;/em&gt;{40}} \vee \overline{x&lt;em&gt;{32}}) \wedge (\overline{x&lt;/em&gt;{4}} \vee \overline{x&lt;em&gt;{25}} \vee x&lt;/em&gt;{7}) \wedge (\overline{x&lt;em&gt;{20}} \vee \overline{x&lt;/em&gt;{36}} \vee \overline{x&lt;em&gt;{37}}) \wedge (\overline{x&lt;/em&gt;{40}} \vee \overline{x&lt;em&gt;{35}} \vee x&lt;/em&gt;{39}) \wedge (\overline{x&lt;em&gt;{43}} \vee \overline{x&lt;/em&gt;{40}} \vee \overline{x&lt;em&gt;{7}}) \wedge (x&lt;/em&gt;{34} \vee x&lt;em&gt;{44} \vee x&lt;/em&gt;{26}) \wedge (x&lt;em&gt;{13} \vee x&lt;/em&gt;{27} \vee x&lt;em&gt;{28}) \wedge (x&lt;/em&gt;{12} \vee \overline{x&lt;em&gt;{36}} \vee x&lt;/em&gt;{7}) \wedge (\overline{x&lt;em&gt;{16}} \vee x&lt;/em&gt;{9} \vee \overline{x&lt;em&gt;{24}}) \wedge (\overline{x&lt;/em&gt;{48}} \vee x&lt;em&gt;{14} \vee x&lt;/em&gt;{28}) \wedge (x&lt;em&gt;{16} \vee x&lt;/em&gt;{4} \vee x&lt;em&gt;{40}) \wedge (\overline{x&lt;/em&gt;{25}} \vee x&lt;em&gt;{15} \vee x&lt;/em&gt;{37}) \wedge (x&lt;em&gt;{47} \vee \overline{x&lt;/em&gt;{26}} \vee \overline{x&lt;em&gt;{23}}) \wedge (x&lt;/em&gt;{4} \vee \overline{x&lt;em&gt;{13}} \vee x&lt;/em&gt;{36}) \wedge (x&lt;em&gt;{48} \vee \overline{x&lt;/em&gt;{13}} \vee \overline{x&lt;em&gt;{37}}) \wedge (x&lt;/em&gt;{4} \vee x&lt;em&gt;{35} \vee \overline{x&lt;/em&gt;{27}}) \wedge (\overline{x&lt;em&gt;{22}} \vee x&lt;/em&gt;{47} \vee x&lt;em&gt;{26}) \wedge (\overline{x&lt;/em&gt;{22}} \vee \overline{x&lt;em&gt;{46}} \vee x&lt;/em&gt;{27}) \wedge (\overline{x&lt;em&gt;{20}} \vee x&lt;/em&gt;{49} \vee x&lt;em&gt;{11}) \wedge (x&lt;/em&gt;{42} \vee \overline{x&lt;em&gt;{10}} \vee x&lt;/em&gt;{28}) \wedge (\overline{x&lt;em&gt;{45}} \vee x&lt;/em&gt;{28} \vee \overline{x&lt;em&gt;{37}}) \wedge (x&lt;/em&gt;{14} \vee \overline{x&lt;em&gt;{32}} \vee \overline{x&lt;/em&gt;{23}}) \wedge (x&lt;em&gt;{22} \vee x&lt;/em&gt;{14} \vee x&lt;em&gt;{23}) \wedge (\overline{x&lt;/em&gt;{17}} \vee \overline{x&lt;em&gt;{46}} \vee \overline{x&lt;/em&gt;{7}}) \wedge (\overline{x&lt;em&gt;{31}} \vee x&lt;/em&gt;{46} \vee \overline{x&lt;em&gt;{50}}) \wedge (x&lt;/em&gt;{34} \vee \overline{x&lt;em&gt;{41}} \vee x&lt;/em&gt;{43}) \wedge (x&lt;em&gt;{17} \vee \overline{x&lt;/em&gt;{9}} \vee x&lt;em&gt;{15}) \wedge (x&lt;/em&gt;{46} \vee x&lt;em&gt;{14} \vee \overline{x&lt;/em&gt;{12}}) \wedge (\overline{x&lt;em&gt;{20}} \vee x&lt;/em&gt;{12} \vee x&lt;em&gt;{14}) \wedge (x&lt;/em&gt;{41} \vee x&lt;em&gt;{42} \vee \overline{x&lt;/em&gt;{15}}) \wedge (x&lt;em&gt;{48} \vee x&lt;/em&gt;{46} \vee \overline{x&lt;em&gt;{36}}) \wedge (\overline{x&lt;/em&gt;{22}} \vee \overline{x&lt;em&gt;{4}} \vee \overline{x&lt;/em&gt;{49}}) \wedge (x&lt;em&gt;{22} \vee x&lt;/em&gt;{12} \vee \overline{x&lt;em&gt;{42}}) \wedge (x&lt;/em&gt;{13} \vee \overline{x&lt;em&gt;{38}} \vee x&lt;/em&gt;{39}) \wedge (x&lt;em&gt;{48} \vee \overline{x&lt;/em&gt;{16}} \vee \overline{x&lt;em&gt;{27}}) \wedge (x&lt;/em&gt;{17} \vee \overline{x&lt;em&gt;{18}} \vee \overline{x&lt;/em&gt;{26}}) \wedge (x&lt;em&gt;{48} \vee \overline{x&lt;/em&gt;{40}} \vee \overline{x&lt;em&gt;{35}}) \wedge (\overline{x&lt;/em&gt;{43}} \vee \overline{x&lt;em&gt;{40}} \vee \overline{x&lt;/em&gt;{49}}) \wedge (x&lt;em&gt;{29} \vee x&lt;/em&gt;{11} \vee \overline{x&lt;em&gt;{32}}) \wedge (x&lt;/em&gt;{33} \vee \overline{x&lt;em&gt;{17}} \vee x&lt;/em&gt;{39}) \wedge (\overline{x&lt;em&gt;{25}} \vee \overline{x&lt;/em&gt;{9}} \vee \overline{x&lt;em&gt;{6}}) \wedge (x&lt;/em&gt;{40} \vee \overline{x&lt;em&gt;{50}} \vee x&lt;/em&gt;{19}) \wedge (x&lt;em&gt;{8} \vee x&lt;/em&gt;{10} \vee \overline{x&lt;em&gt;{27}}) \wedge (x&lt;/em&gt;{5} \vee x&lt;em&gt;{9} \vee \overline{x&lt;/em&gt;{26}}) \wedge (x&lt;em&gt;{45} \vee \overline{x&lt;/em&gt;{38}} \vee \overline{x&lt;em&gt;{27}}) \wedge (\overline{x&lt;/em&gt;{4}} \vee \overline{x&lt;em&gt;{40}} \vee \overline{x&lt;/em&gt;{42}}) \wedge (x&lt;em&gt;{21} \vee x&lt;/em&gt;{50} \vee x&lt;em&gt;{12}) \wedge (\overline{x&lt;/em&gt;{8}} \vee \overline{x&lt;em&gt;{14}} \vee \overline{x&lt;/em&gt;{42}}) \wedge (\overline{x&lt;em&gt;{17}} \vee x&lt;/em&gt;{47} \vee \overline{x&lt;em&gt;{27}}) \wedge (x&lt;/em&gt;{49} \vee \overline{x&lt;em&gt;{12}} \vee \overline{x&lt;/em&gt;{6}}) \wedge (x&lt;em&gt;{27} \vee x&lt;/em&gt;{49} \vee \overline{x&lt;em&gt;{32}}) \wedge (\overline{x&lt;/em&gt;{29}} \vee \overline{x&lt;em&gt;{12}} \vee \overline{x&lt;/em&gt;{26}}) \wedge (x&lt;em&gt;{48} \vee \overline{x&lt;/em&gt;{2}} \vee x&lt;em&gt;{6}) \wedge (x&lt;/em&gt;{16} \vee x&lt;em&gt;{36} \vee x&lt;/em&gt;{49}) \wedge (x&lt;em&gt;{33} \vee \overline{x&lt;/em&gt;{12}} \vee \overline{x&lt;em&gt;{26}}) \wedge (\overline{x&lt;/em&gt;{33}} \vee x&lt;em&gt;{29} \vee x&lt;/em&gt;{49}) \wedge (\overline{x&lt;em&gt;{48}} \vee x&lt;/em&gt;{2} \vee x&lt;em&gt;{19}) \wedge (x&lt;/em&gt;{25} \vee x&lt;em&gt;{36} \vee x&lt;/em&gt;{49}) \wedge (x&lt;em&gt;{21} \vee x&lt;/em&gt;{40} \vee \overline{x&lt;em&gt;{14}}) \wedge (\overline{x&lt;/em&gt;{34}} \vee \overline{x&lt;em&gt;{44}} \vee \overline{x&lt;/em&gt;{6}}) \wedge (x&lt;em&gt;{48} \vee \overline{x&lt;/em&gt;{50}} \vee \overline{x&lt;em&gt;{1}}) \wedge (x&lt;/em&gt;{5} \vee \overline{x&lt;em&gt;{12}} \vee x&lt;/em&gt;{7}) \wedge (x&lt;em&gt;{21} \vee \overline{x&lt;/em&gt;{35}} \vee \overline{x&lt;em&gt;{27}}) \wedge (\overline{x&lt;/em&gt;{22}} \vee \overline{x&lt;em&gt;{16}} \vee \overline{x&lt;/em&gt;{14}}) \wedge (\overline{x&lt;em&gt;{13}} \vee \overline{x&lt;/em&gt;{35}} \vee \overline{x&lt;em&gt;{12}}) \wedge (\overline{x&lt;/em&gt;{4}} \vee \overline{x&lt;em&gt;{35}} \vee \overline{x&lt;/em&gt;{42}}) \wedge (\overline{x&lt;em&gt;{50}} \vee \overline{x&lt;/em&gt;{40}} \vee x&lt;em&gt;{7}) \wedge (x&lt;/em&gt;{25} \vee x&lt;em&gt;{47} \vee \overline{x&lt;/em&gt;{12}})
+\end{math}
+\end{center}&lt;/p&gt;
+
+&lt;h2 id=&#34;converting-truth-tables-to-cnf&#34;&gt;Converting Truth Tables to CNF&lt;/h2&gt;
+
+&lt;p&gt;\begin{tabular}{cc|cc}
+$P$ &amp;amp; $Q$ &amp;amp; $P \implies Q$ &amp;amp; $P \oplus Q$ \ \hline
+\T &amp;amp; \T   &amp;amp; \T &amp;amp; \F &lt;br /&gt;
+\T &amp;amp; \F   &amp;amp; \F &amp;amp; \T &lt;br /&gt;
+\F &amp;amp; \T   &amp;amp; \T &amp;amp; \T &lt;br /&gt;
+\F &amp;amp; \F   &amp;amp; \T &amp;amp; \F &lt;br /&gt;
+\end{tabular}&lt;/p&gt;
+
+&lt;p&gt;The output of the operator is \T\ if and only if the inputs do not match
+&lt;em&gt;any row&lt;/em&gt; where the output is \F.  We can ensure the inputs do not match
+a row, but OR-ing the negation of each input: in the disjunction, at
+least one must be \T\ to satisfy the clause.&lt;/p&gt;
+
+&lt;h2 id=&#34;problems&#34;&gt;Problems&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; A &lt;em&gt;problem&lt;/em&gt; is a precise description of set of possible
+  inputs and desired property of an output corresponding to each input.&lt;/p&gt;
+
+&lt;p&gt;Define the &lt;em&gt;ADDITION&lt;/em&gt; problem (adding two integers):&lt;/p&gt;
+
+&lt;p&gt;#&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; A &lt;em&gt;decision problem&lt;/em&gt; is a problem where the output is
+  either &lt;em&gt;T&lt;/em&gt; or &lt;em&gt;F&lt;/em&gt;.  Equivalently, we can view a decision problem as
+  testing set membership: $x \in S$.&lt;/p&gt;
+
+&lt;p&gt;The &lt;em&gt;SUM&lt;/em&gt; problem:
+\begin{quote}
+  {\bf Input.} Three integers, $x$, $y$, and $z$.  &lt;br /&gt;
+  {\bf Output.} \T\ iff $z = x + y$.
+\end{quote}&lt;/p&gt;
+
+&lt;p&gt;How could we solve &lt;em&gt;ADDITION&lt;/em&gt; using &lt;em&gt;SUM&lt;/em&gt;?&lt;/p&gt;
+
+&lt;p&gt;##&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; A &lt;em&gt;procedure&lt;/em&gt; is a precise description of an information
+  process.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; An &lt;em&gt;algorithm&lt;/em&gt; for a particular problem is a procedure
+  that &lt;em&gt;solves&lt;/em&gt; that problem.  To &lt;em&gt;solve&lt;/em&gt; a problem, an algorithm must
+  always (eventually) produce the correct output for any problem input.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; A &lt;em&gt;program&lt;/em&gt; is adescription of a procedure that can be
+executed by a computer.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; The &lt;em&gt;3SAT decision problem&lt;/em&gt; takes as input a logical
+  formula written in CNF, and outputs &lt;em&gt;T&lt;/em&gt; if the input formula is
+  satisfiable and outputs &lt;em&gt;F&lt;/em&gt; otherwise.&lt;/p&gt;
+
+&lt;p&gt;How many uses of a solver for the &lt;em&gt;3SAT&lt;/em&gt; decision problem are sufficient
+to always find a satisfying assignment for a satisfiable formula?&lt;/p&gt;
+
+&lt;p&gt;##&lt;/p&gt;
+
+&lt;h2 id=&#34;sat-solving&#34;&gt;SAT Solving&lt;/h2&gt;
+
+&lt;p&gt;Sahand Saba&amp;rsquo;s &lt;a href=&#34;http://sahandsaba.com/understanding-sat-by-implementing-a-simple-sat-solver-in-python.html&#34;&gt;&lt;em&gt;Understanding SAT by Implementing a Simple SAT Solver in
+Python&lt;/em&gt;&lt;/a&gt; (Code with a few modifications: &lt;a href=&#34;https://github.com/evansuva/simple-sat&#34;&gt;&lt;em&gt;https://github.com/evansuva/simple-sat&lt;/em&gt;&lt;/a&gt;)&lt;/p&gt;
+
+&lt;p&gt;What is the &lt;em&gt;worst-case&lt;/em&gt; number of guesses needed to solve a SAT
+instance with $v$ variables and $c$ clauses using the ``brute-force
+guessing&amp;rdquo; strategy?&lt;/p&gt;
+
+&lt;p&gt;###&lt;/p&gt;
+
+&lt;p&gt;What is the &lt;em&gt;worst-case&lt;/em&gt; number of guesses needed to solve a SAT
+instance with $v$ variables and $c$ clauses using the ``watchlists&amp;rdquo;
+strategy?&lt;/p&gt;
+
+&lt;p&gt;###&lt;/p&gt;
+
+&lt;p&gt;Why is it possible to solve &lt;em&gt;most&lt;/em&gt; SAT instances reasonably quickly?&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Class 5: CNF, Quantifiers, and Proofs</title>
@@ -155,9 +295,9 @@ that no amount of testing can do.&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;highlightr&#34;&gt;
 &lt;strong&gt;Challenge 1.&lt;/strong&gt; From &lt;a href=&#34;https://uvacs2102.github.io/class2&#34;&gt;Class 2&lt;/a&gt;: I wasn&amp;rsquo;t very satisfied with
-  my proof of the &amp;laquo;Odd-Even Lemma&amp;raquo; in class.  I hope a student will come
+  my proof of the &amp;ldquo;Odd-Even Lemma&amp;rdquo; in class.  I hope a student will come
   up with a better proof.  Come up with a proof that passes the
-  &amp;laquo;skeptical reader&amp;raquo; test and would convince someone with no prior
+  &amp;ldquo;skeptical reader&amp;rdquo; test and would convince someone with no prior
   knowledge of odd and even numbers.
    &lt;/div&gt;&lt;/p&gt;
 
@@ -511,14 +651,14 @@ also want to keep the assignments a reasonable length.
 &lt;p&gt;&lt;div class=&#34;question&#34;&gt;
 How does the in class participation work? As in: how do you keep track of who participates?
    &lt;/div&gt;&lt;div class=&#34;answer&#34;&gt;
-I&amp;rsquo;m looking for &amp;laquo;class contribution&amp;raquo;, not just &amp;laquo;participation&amp;raquo;.  Class
+I&amp;rsquo;m looking for &amp;ldquo;class contribution&amp;rdquo;, not just &amp;ldquo;participation&amp;rdquo;.  Class
 contribution means you have done things to make the class better for
 your classmates (as well as for me!).  This could be by answering or
 asking questions in class, as well as on slack. It could also be by
 bringing up interesting ideas or sharing relevant materials or news
-items.  I&amp;rsquo;m not keeping track of &amp;laquo;points&amp;raquo; for whenever someone does
-something, and wouldn&amp;rsquo;t want people to be contributing with &amp;laquo;getting a
-point&amp;raquo; as the main motivation.  You should be contributing because you
+items.  I&amp;rsquo;m not keeping track of &amp;ldquo;points&amp;rdquo; for whenever someone does
+something, and wouldn&amp;rsquo;t want people to be contributing with &amp;ldquo;getting a
+point&amp;rdquo; as the main motivation.  You should be contributing because you
 want to get more out of the class yourself, and because you want to do
 things to make the class experience better for everyone.  Even for a
 largish class like this, over the course of the semester it is usually
@@ -534,8 +674,8 @@ Are there any good external resources/references that would aid me in this cours
    &lt;/div&gt;&lt;div class=&#34;answer&#34;&gt;
 Yes, there are lots of resources that could be useful.&lt;/p&gt;
 
-&lt;p&gt;The most useful will be the MIT OpenCourseWare sites for the &amp;laquo;6.042:
-Mathematics for Computer Science&amp;raquo; course:&lt;/p&gt;
+&lt;p&gt;The most useful will be the MIT OpenCourseWare sites for the &amp;ldquo;6.042:
+Mathematics for Computer Science&amp;rdquo; course:&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-042j-mathematics-for-computer-science-fall-2010/index.htm&#34;&gt;Fall 2010 (Tom Leighton and Marten van Dijk)&lt;/a&gt; (this includes &lt;a href=&#34;https://www.youtube.com/playlist?list=PLB7540DEDD482705B&#34;&gt;lecture videos&lt;/a&gt;, mostly by Tom Leighton, which cover many of the topics in the course)&lt;/p&gt;&lt;/li&gt;
@@ -601,7 +741,7 @@ haven&amp;rsquo;t taught yet.&lt;/p&gt;
 &lt;p&gt;&lt;/div&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;question&#34;&gt;
-Enjoyed your discussion of using &amp;laquo;hard math problems&amp;raquo; in todays encryption of for example the Bitcoin. Would love future discussions on the subject as it very much interests me.
+Enjoyed your discussion of using &amp;ldquo;hard math problems&amp;rdquo; in todays encryption of for example the Bitcoin. Would love future discussions on the subject as it very much interests me.
    &lt;/div&gt;
    &lt;div class=&#34;answer&#34;&gt;
 Thanks!  I will try, but worry sometimes students find trangressions
@@ -635,7 +775,7 @@ computer and stick the phon into the coupler).  There was no display,
 but it would print out interactions line-by-line.  The good news was
 everything was just a BASIC program.  We started by playing the games,
 but you could type &lt;code&gt;LIST&lt;/code&gt; and see all the source code and read it to
-learn how to &amp;laquo;cheat&amp;raquo; to win the game, and to start changing the code.
+learn how to &amp;ldquo;cheat&amp;rdquo; to win the game, and to start changing the code.
 The next year, the school got &lt;a href=&#34;https://en.wikipedia.org/wiki/Apple_II&#34;&gt;Apple
 II&lt;/a&gt;&amp;rsquo;s, which were fantastic
 machines with color graphics (that could display on a TV or monitor) and
@@ -787,18 +927,18 @@ should be correct, clear, well-written, and convincing.&lt;/p&gt;
 &lt;p&gt;The introduction for the MCS book states,&lt;/p&gt;
 
 &lt;blockquote&gt;
-&lt;p&gt;&amp;laquo;Proofs also play a growing role in computer science; they are used to
+&lt;p&gt;&amp;ldquo;Proofs also play a growing role in computer science; they are used to
 certify that software and hardware will &lt;em&gt;always&lt;/em&gt; behave correctly,
-something that no amount of testing can do.&amp;raquo;&lt;/p&gt;
+something that no amount of testing can do.&amp;rdquo;&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;ol&gt;
-&lt;li&gt;&lt;p&gt;The statement suggests &amp;laquo;no amount of testing can certify software
-will always behave correctly&amp;raquo;.  Is this claim valid or invalid?  Support
+&lt;li&gt;&lt;p&gt;The statement suggests &amp;ldquo;no amount of testing can certify software
+will always behave correctly&amp;rdquo;.  Is this claim valid or invalid?  Support
 your answer with a short justification.&lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;The statement suggests &amp;laquo;proofs can certify that software will
-always behave correctly&amp;raquo;.  Argue that this is not a correct statement.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;The statement suggests &amp;ldquo;proofs can certify that software will
+always behave correctly&amp;rdquo;.  Argue that this is not a correct statement.&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;h2 id=&#34;inference-rules&#34;&gt;Inference Rules&lt;/h2&gt;
@@ -874,14 +1014,14 @@ updated the notes to include the full proof (hopefully correct now!) at
 the level of detail intended in class.  Its good to see students are
 being skeptical proof-readers and noticing mistakes like this.&lt;/p&gt;
 
-&lt;p&gt;We didn&amp;rsquo;t get to the &amp;laquo;if and only if&amp;raquo; proof in the notes in class today,
+&lt;p&gt;We didn&amp;rsquo;t get to the &amp;ldquo;if and only if&amp;rdquo; proof in the notes in class today,
 but you are encouraged to try this on your own.  We&amp;rsquo;ll look at this the
 Well Ordering Principle (Chapter 2) in Tuesday&amp;rsquo;s class.&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;highlightr&#34;&gt;
 &lt;strong&gt;Challenge Problem Opportunity.&lt;/strong&gt; I wasn&amp;rsquo;t very satisfied with my proof
-  of the &amp;laquo;Odd-Even Lemma&amp;raquo; in class.  I hope a student will come up with
-  a better proof.  Come up with a proof that passes the &amp;laquo;skeptical reader&amp;raquo; test and
+  of the &amp;ldquo;Odd-Even Lemma&amp;rdquo; in class.  I hope a student will come up with
+  a better proof.  Come up with a proof that passes the &amp;ldquo;skeptical reader&amp;rdquo; test and
   would convince someone with no prior knowledge of odd and even numbers.
    &lt;/div&gt;&lt;/p&gt;
 
@@ -947,8 +1087,8 @@ To prove an implication, $P \implies Q$: 1. assume $P$.  2. Show chain of logica
 &lt;p&gt;Our goal is to prove the implication, $P \implies Q$, where:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;$P$ is &amp;laquo;the product of $x$ and $y$ is even&amp;raquo;&lt;/li&gt;
-&lt;li&gt;$Q$ is &amp;laquo;at least one of $x$ and $y$ must be even&amp;raquo;&lt;/li&gt;
+&lt;li&gt;$P$ is &amp;ldquo;the product of $x$ and $y$ is even&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;$Q$ is &amp;ldquo;at least one of $x$ and $y$ must be even&amp;rdquo;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;We will prove the contrapositive.  The inference rule,&lt;/p&gt;
@@ -965,12 +1105,12 @@ side.  So, our proof begins:&lt;/p&gt;
 &lt;li&gt;We prove the contrapositive.&lt;/li&gt;
 &lt;li&gt;Assume NOT(at least one of $x$ and $y$ must be even).&lt;/li&gt;
 &lt;li&gt;By the meaning of negation, this means both $x$ and $y$ are not even.&lt;/li&gt;
-&lt;li&gt;By the &amp;laquo;Odd-Even Lemma&amp;raquo;, both $x$ and $y$ are odd.&lt;/li&gt;
+&lt;li&gt;By the &amp;ldquo;Odd-Even Lemma&amp;rdquo;, both $x$ and $y$ are odd.&lt;/li&gt;
 &lt;li&gt;By the definition of &lt;em&gt;odd&lt;/em&gt;, there exist integers $k$ and $m$ such that $x = 2k + 1$ and $y = 2m + 1$.&lt;/li&gt;
 &lt;li&gt;Substituting, $xy = (2k + 1)(2m + 1) = 4mk + 2m + 2k + 1 = 2(2mk + m + k) + 1$.&lt;/li&gt;
 &lt;li&gt;By the closure of addition and multiplication over the integers, there is some integer $r = 2mk + m + k$, so $xy = 2r + 1$.&lt;/li&gt;
 &lt;li&gt;By the definition of &lt;em&gt;odd&lt;/em&gt;, $xy$ is odd.&lt;/li&gt;
-&lt;li&gt;By the (not proven) &amp;laquo;Even-Odd Lemma&amp;raquo;, this means $xy$ is not even.&lt;/li&gt;
+&lt;li&gt;By the (not proven) &amp;ldquo;Even-Odd Lemma&amp;rdquo;, this means $xy$ is not even.&lt;/li&gt;
 &lt;li&gt;So, we have shown NOT(the product of $x$ and $y$ is even).&lt;/li&gt;
 &lt;li&gt;Since we concluded this starting from the assumption (step 2), this proves the implication: NOT(at least one of $x$ and $y$ must be even) $\implies$ NOT(the product of $x$ and $y$ is even).&lt;/li&gt;
 &lt;li&gt;Using the contrapositive inference rule, we can conclude:
@@ -979,15 +1119,15 @@ the product of $x$ and $y$ is even $\implies$ at least one of $x$ and $y$ must b
 
 &lt;p&gt;\dbox{
 {\bf Challenge Problem Opportunity.} I wasn&amp;rsquo;t very satisfied with my proof
-  of the &amp;laquo;Odd-Even Lemma&amp;raquo; in class.  I hope a student will come up with
-  a better proof.  A proof that passes the &amp;laquo;skeptical reader&amp;raquo; test and
+  of the &amp;ldquo;Odd-Even Lemma&amp;rdquo; in class.  I hope a student will come up with
+  a better proof.  A proof that passes the &amp;ldquo;skeptical reader&amp;rdquo; test and
   would convince someone with no prior knowledge of odd and even numbers
   is worth up to 10 bonus points.
 }&lt;/p&gt;
 
 &lt;!--page--&gt;
 
-&lt;h2 id=&#34;proving-if-and-only-if&#34;&gt;Proving &amp;laquo;If and Only If&amp;raquo;&lt;/h2&gt;
+&lt;h2 id=&#34;proving-if-and-only-if&#34;&gt;Proving &amp;ldquo;If and Only If&amp;rdquo;&lt;/h2&gt;
 
 &lt;p&gt;Strategy: To prove $P$ if and only if $Q$:&lt;/p&gt;
 
@@ -1353,173 +1493,6 @@ illustrate common pitfalls or other issues.&lt;/p&gt;
        
 &lt;tr&gt;&lt;td&gt;&lt;b&gt;Saturday, 10 Dec 16&lt;/b&gt;&lt;/td&gt;&lt;td colspan=2 bgcolor=&#34;#FFAAAA&#34;&gt;Final Exam (9am-noon)&lt;/td&gt;&lt;/tr&gt;
 &lt;/table&gt;
-</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://uvacs2102.github.io/syllabus/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://uvacs2102.github.io/syllabus/</guid>
-      <description>
-
-&lt;h1 id=&#34;syllabus&#34;&gt;Syllabus&lt;/h1&gt;
-
-&lt;div class=&#34;printing&#34;&gt;&lt;a href=&#34;{{ url_for(&#39;static&#39;, filename=&#39;docs/syllabus.pdf&#39;) }}&#34;&gt;PDF for Printing&lt;/a&gt;&lt;/div&gt;
-
-&lt;h3 id=&#34;cs2102-discrete-mathematics-section-1&#34;&gt;&lt;strong&gt;cs2102: Discrete Mathematics&lt;/strong&gt; (Section 1)&lt;/h3&gt;
-
-&lt;h3 id=&#34;university-of-virginia-fall-2016&#34;&gt;University of Virginia, Fall 2016&lt;/h3&gt;
-
-&lt;p&gt;&lt;strong&gt;Meetings:&lt;/strong&gt; Tuesdays and Thursdays, 2:00-3:15pm in Chemistry 402.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Course Objective.&lt;/strong&gt; The goal of this course is to students to
-  understand, explain, and apply the foundational mathematical concepts
-  at the core of computer science.&lt;/p&gt;
-
-&lt;p&gt;The skills students learn in this course are essential for later courses
-  (especially cs3102 and cs4102, but also in other courses), where they
-  will be used to reason about and develop algorithms, prove properties
-  about programs, and understand the limits of different models of
-  computation.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Expected Background:&lt;/strong&gt; The official prerequisite for this course is
-  earning credit for CS 1110, 1111, 1112 or 1120 with a grade of C- or
-  higher.  If you have not satisfied the official prerequisite, you need
-  permission from the instructor to enroll in the class.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Materials:&lt;/strong&gt; The primary textbook is:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;Eric Lehman, F. Thomson Leighton, and Albert R. Meyer. &lt;a href=&#34;../docs/mcs.pdf&#34;&gt;&lt;em&gt;Mathematics for
-Computer Science&lt;/em&gt;&lt;/a&gt;. (2016/6/16 version).  This book is
-freely available on-line, and generously released under a &lt;a href=&#34;https://creativecommons.org/licenses/by-sa/3.0/&#34;&gt;Create
-Commons Attribution-ShareAlike 3.0
-License&lt;/a&gt;.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;The course will cover most of the first two parts of this book (Chapters
-1-13), with some selected materials from later chapters.  In addition to
-that textbook, we will have selected readings from other sources.&lt;/p&gt;
-
-&lt;h2 id=&#34;staff&#34;&gt;Staff&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;Teacher:&lt;/strong&gt; &lt;a href=&#34;http://www.cs.virginia.edu/evans&#34;&gt;David Evans&lt;/a&gt; (evans@virginia.edu). My &lt;a href=&#34;http://www.cs.virginia.edu/evans/office&#34;&gt;office&lt;/a&gt; is Rice 507.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Assistant Teachers:&lt;/strong&gt; &lt;a href=&#34;http://adamguo.com&#34;&gt;Adam Guo&lt;/a&gt; (BSCS 2018), Adam Rosenberg (MCS 2017), &lt;a href=&#34;https://sites.google.com/site/anindyatahsin/&#34;&gt;Anindya Prodhan&lt;/a&gt; (PhD Student), Brooke Dickie (Systems Engineering 2018), Christopher Long (BACS 2018), Gloria Li (MSCS 2019), Harrison Nam (BSCS 2018), Hussain Humadi (CPE 2018), Jin Han (BSCS 2018), Luke Botti (BACS/Math 2017), Riya Simon (CPE 2019), Saikat Chakraborty (PhD Student), Sarah Barkley (BACS/Math 2018), Sihang Liu (PhD Student), Subhan Poudel (BSCS 2019), Yaser Qazi (BSCS 2019), Yong Jae Kwon (BACS 2017).&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Office Hours:&lt;/strong&gt; &lt;em&gt;The course staff is here to help you.&lt;/em&gt; Please don’t
-wait until too late to take advantage of the available help or ask for
-help. For nearly everyone, this course will involve learning new ways of
-thinking that are dramatically different from those to which you are
-accustomed.  It is natural to miss things, and then become lost since
-new ideas build on previous ones.  Come to office hours early to get
-help before you find yourself frustrated and confused.&lt;/p&gt;
-
-&lt;p&gt;The office hours schedule is &lt;a href=&#34;https://uvacs2102.github.io/officehours&#34;&gt;posted on-line&lt;/a&gt;, and will
-be kept updated throughout the semester.&lt;/p&gt;
-
-&lt;h2 id=&#34;communications&#34;&gt;Communications&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;Course Website:&lt;/strong&gt;
-  &lt;a href=&#34;https://uvacs2102.github.io/&#34;&gt;&lt;em&gt;https://uvacs2102.github.io/&lt;/em&gt;&lt;/a&gt;.  All
-  course materials will be posted on the course website.  This page is
-  updated often and students are expected to visit it regularly. All
-  lectures, notes and assignments for the course will be posted on the
-  web site.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Slack:&lt;/strong&gt; &lt;a href=&#34;https://csmath.slack.com&#34;&gt;&lt;em&gt;https://csmath.slack.com&lt;/em&gt;&lt;/a&gt;.  We
-  will use a slack group for &amp;laquo;real-time&amp;raquo; communication for quick help
-  and discussion (including during lectures).  Unlike the course site,
-  which is public and visible to the world, this group will only be
-  visible to people in the class.  There are slack apps for web, iOS and
-  Android.  We encourage students to ask questions about the classes and
-  assignments by posting comments on slack, and the course
-  staff will read and respond to questions there.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Email:&lt;/strong&gt; Feel free to email me (&lt;em&gt;evans@virginia.edu&lt;/em&gt;) with any
-  personal questions or issues that should not be posted publicly. For
-  general questions or issues that might be relevant for others in the
-  class, it is better to post publicly to the course website or slack
-  group (both so that others may be able to answer your question, and
-  others may be able to see a response that will be useful to them).&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Calendar:&lt;/strong&gt; The course calendar is available &lt;a href=&#34;http://goo.gl/6KlwNO&#34;&gt;as a Google
-  calendar&lt;/a&gt;.
-  Students are encouraged to incorporate this into your own calendar.  If you use Google Calendar, just click the &amp;laquo;+&amp;raquo; at the bottom right of the &lt;a href=&#34;http://goo.gl/6KlwNO&#34;&gt;calendar page&lt;/a&gt;. If you use another calendar program, you can incorporate this calendar using &lt;a href=&#34;https://calendar.google.com/calendar/ical/qqvq9kvd197mu6pib4p2uf79q4%40group.calendar.google.com/public/basic.ics&#34;&gt;ical&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&#34;honor&#34;&gt;Honor&lt;/h2&gt;
-
-&lt;p&gt;We believe strongly in the value of a &lt;em&gt;community of trust&lt;/em&gt;, and expect
-all of the students in this class to contribute to strenghtening and
-enhancing that community.  The course will be better for everyone if
-everyone can assume everyone else is trustworthy. The course staff
-starts with the assumption that all students at the university deserve
-to be trusted.&lt;/p&gt;
-
-&lt;p&gt;To ensure that expectations are clear to everyone, all students are
-required to sign the &lt;a href=&#34;https://uvacs2102.github.io/pledge&#34;&gt;course pledge&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&#34;topics&#34;&gt;Topics&lt;/h2&gt;
-
-&lt;p&gt;The topics covered in cs2102 focus on developing the mathematical
-foundation and skills that are most important for computer science.
-Expected topics include:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Propositions and Proofs&lt;/li&gt;
-&lt;li&gt;Proof methods (including proof by construction, contradiction, and induction)&lt;/li&gt;
-&lt;li&gt;Logic (Boolean, Logical Formula,&lt;/li&gt;
-&lt;li&gt;Binary Relations&lt;/li&gt;
-&lt;li&gt;State machines&lt;/li&gt;
-&lt;li&gt;Graphs&lt;/li&gt;
-&lt;li&gt;Finite and infinite sets&lt;/li&gt;
-&lt;li&gt;Number Theory&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;assignments-and-exams&#34;&gt;Assignments and Exams&lt;/h2&gt;
-
-&lt;p&gt;A detailed schedule is &lt;a href=&#34;https://uvacs2102.github.io/schedule&#34;&gt;maintained on the course website&lt;/a&gt; and
-&lt;a href=&#34;https://calendar.google.com/calendar/embed?src=qqvq9kvd197mu6pib4p2uf79q4%40group.calendar.google.com&amp;amp;ctz=America/New_York&#34;&gt;calendar&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Key dates:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Most Fridays (6:29pm): There will be a homework assignment due on
-Fridays, except for weeks when there are exams (and Thanksgiving
-week).&lt;/li&gt;
-&lt;li&gt;Thursday, 6 October: Exam 1 (in class)&lt;/li&gt;
-&lt;li&gt;Thursday, 10 November: Exam 2 (in class)&lt;/li&gt;
-&lt;li&gt;Saturday, 10 December: Final Exam (9am-noon, scheduled by the registrar)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;grading&#34;&gt;Grading&lt;/h2&gt;
-
-&lt;p&gt;Grading will be based on your performance on the exams and homework
-assignments, with additional adjustments made based on exceptional
-contributions to the class.&lt;/p&gt;
-
-&lt;p&gt;Grades will be calculated with several different weightings, where your
-grade is based primarily on whichever weighting results in the highest
-score.  The range of possible weightings is:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Homeworks: 15-40%&lt;/li&gt;
-&lt;li&gt;Exam 1: 10-25%&lt;/li&gt;
-&lt;li&gt;Exam 2: 15-30%&lt;/li&gt;
-&lt;li&gt;Final Exam: 20-50%&lt;/li&gt;
-&lt;li&gt;Class Contribution: 0-25%
-&lt;br /&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Spend your energy focusing on what you are learning, instead of worrying
-about your grade.  Although the material we cover is challenging, and
-the pace may seem overwhelming at times, I am confident that all
-students who put effort into this class and take good advantage of
-available help will do well.  Students who do especially outstanding
-work in the course will be offered positions in &lt;a href=&#34;http://www.jeffersonswheel.org&#34;&gt;my research
-group&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
