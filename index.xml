@@ -6,8 +6,83 @@
     <description>Recent content on cs2102: Discrete Math</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 09 Sep 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 10 Sep 2016 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://uvacs2102.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Problem Set 1 Comments</title>
+      <link>https://uvacs2102.github.io/ps1comments/</link>
+      <pubDate>Sat, 10 Sep 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/ps1comments/</guid>
+      <description>&lt;p&gt;The solutions and comments for PS1 are now posted in collab: &lt;a href=&#34;https://collab.itc.virginia.edu/access/content/group/e0b17949-c94c-466b-835a-196381f3f911/ps1solutions.pdf&#34;&gt;PDF&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The grades will be released soon.  Sorry it took so long to get the
+grading and solutions done for PS1.  We are sorting out how to manage
+grading using collab and figuring a better way to manage this, and
+getting tablets to make it easier to write on your submitted PDFs
+(instead of typing notes, as was done for PS1).  I hope this will go
+more smoothly for PS2, and be fully worked out for PS3 and later. Our
+goal (which I think is reasonable for you to expect) is to always return
+assignments within a week of when they are due.&lt;/p&gt;
+
+&lt;p&gt;The way problem sets are graded in this class is probably different from
+what most of you are accustomed to.  The purpose of the problem sets is
+primarily for &lt;em&gt;learning&lt;/em&gt; and not for &lt;em&gt;grading&lt;/em&gt;, so the grading system I
+use is designed with the goals of providing useful feedback to you, as
+well as giving us a way to see how the class is going and if students
+are on track.  This means instead of giving detailed point scores for
+every problem and grading in a way that emphasizes losing points by
+making mistakes, the problem sets are graded in a way meant to capture
+how well students are understanding the material.&lt;/p&gt;
+
+&lt;p&gt;Collab requires specifying a &lt;em&gt;maximum&lt;/em&gt; score for each assignment, but
+there is no real maximum score, and you should not view the scores as
+being &amp;ldquo;&lt;em&gt;n&lt;/em&gt; out of &lt;em&gt;m&lt;/em&gt;&amp;rdquo; where there is some maximum score and you are losing
+points if you end up below that score.&lt;/p&gt;
+
+&lt;p&gt;The meaning of the grades for PS1 is:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Real problems - only attempted a few problems, and nothing that shows any understanding.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Substantial problems - attempted a few of the problems, but didn&amp;rsquo;t show any real understanding of many concepts.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Fundamental problems understanding key concepts; not able to complete
+reasonable answers for most questions.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Several fundamentally incorrect answers, or fundamental problems
+understanding difference between inference and equality.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Nearly all answers correct, but justifications not as strong as
+desired.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;All answers acceptable.  (This is the &amp;ldquo;expected&amp;rdquo; score for PS1.)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;All answers essentially correct, with at least one especially good answer.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;All answers well done, and more than one especially good answer.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Your answers broke new ground in computer science. (Not used for PS1)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;You solved an important open problem! (Not expected to be used in cs2102)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;You deserve a Turing award! (in theory, there is no upper bound on the grading, but I do not expect to have occassion to use grades higher than 11)&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Getting the &amp;ldquo;expected&amp;rdquo; code (6 for PS1) on assignments means you are
+well on track to getting an A in the class (this is the &amp;ldquo;expected&amp;rdquo; grade
+for everyone).  You&amp;rsquo;ll need to do well on the exams, also, of course.&lt;/p&gt;
+
+&lt;p&gt;If your score on PS1 is below 6, you should have a good idea from the
+comments and from reading the solutions, what you need to improve on to
+do better on future assignments.&lt;/p&gt;
+
+&lt;p&gt;If you notice a significant error in any of the provided solutions
+(where &amp;ldquo;significant&amp;rdquo; is at my discretion, but generally means something
+more than an obvious typo), you can earn bonus points by reporting it.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Problem Set 3</title>
@@ -1387,80 +1462,6 @@ noon-2pm Hussain
 &lt;!--
 &lt;iframe src=&#34;https://calendar.google.com/calendar/embed?src=qqvq9kvd197mu6pib4p2uf79q4%40group.calendar.google.com&amp;amp;ctz=America/New_York&#34; style=&#34;border: 0&#34; width=&#34;800&#34; height=&#34;600&#34; frameborder=&#34;0&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
 --&gt;
-</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://uvacs2102.github.io/pledge/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://uvacs2102.github.io/pledge/</guid>
-      <description>
-
-&lt;h1 id=&#34;course-pledge&#34;&gt;Course Pledge&lt;/h1&gt;
-
-&lt;div class=&#34;printing&#34;&gt;&lt;a href=&#34;https://uvacs2102.github.io/docs/pledge.pdf&#34;&gt;PDF for Printing&lt;/a&gt;&lt;/div&gt;
-
-&lt;h2 id=&#34;honor-expectations&#34;&gt;Honor Expectations&lt;/h2&gt;
-
-&lt;p&gt;As a student at the University of Virginia, you are trusted to be
-honorable and expected to behave in ways that merit that trust. We take
-advantage of this trust to provide a better learning environment for
-everyone. In particular, students in cs2102 are expected to follow these
-rules throughout the course:&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;I will not lie, cheat or steal.&lt;/strong&gt; If I am unsure whether something
-  would be considered lying, cheating or stealing, I will ask before
-  doing it.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;I will carefully read and follow the collaboration policy on each
-  assignment.&lt;/strong&gt; I will not abuse resources in ways that would be clearly
-  detrimental to my own learning or unfair to other students.&lt;/p&gt;
-
-&lt;h2 id=&#34;other-expectations&#34;&gt;Other Expectations&lt;/h2&gt;
-
-&lt;p&gt;In addition to the honor rules, students in cs2102 are also expected to
-follow these behaviors:&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;I will do what I can to help my fellow classmates learn.&lt;/strong&gt; Except when
-specifically instructed not to, this means when other students ask me
-for help, I will attempt to provide it. I will listen respectfully to
-other&amp;rsquo;s ideas and discuss what I think is good or bad about their
-answers. When I work with teammates, I will not give or accept answers
-directly, but instead will make sure all of my teammates understand
-enough to be able to solve the problem themselves, and insist that
-teammates explain things to me until I fully understand.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;I will ask for help.&lt;/strong&gt; I will make a reasonable effort to do things on
-  my own first (or with my partners for group assignment), but will ask
-  the course staff for help before getting overly frustrated. There are
-  many ways to ask for help including the office hours and the course
-  slack group.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;I will be open minded and curious.&lt;/strong&gt; I understand that this course may
-  do things in ways differently from what I expect, and may sometimes
-  buck conventions that have been followed in other courses I have
-  taken.  I will ask questions when things make me uncomfortable, but
-  also accept that being surprised, facing uncertainty and adversity,
-  and being challenged unreasonably are often beneficial for learning
-  new ways of thinking.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;I grant the course staff permission to reproduce excerpts from my
-submissions for teaching purposes.&lt;/strong&gt; My work will be attributed when it
-is shown in a postive way, but may be used anonymously if it is used to
-illustrate common pitfalls or other issues.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;I will provide useful feedback.&lt;/strong&gt; I realize that this will be
-  attempting many new things, and that it is important that I let the
-  course staff know what they need to improve the course. I will provide
-  feedback either anonymously or by contacting the course staff
-  directly.  &lt;strong&gt;I will fill out all requested surveys honestly and
-  thoroughly.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Sign:       _______________________________________   &amp;nbsp;&amp;nbsp; &amp;nbsp;&amp;nbsp; Date: _____________&lt;/p&gt;
-
-&lt;p&gt;Print name:  ____________________________________________________&lt;/p&gt;
 </description>
     </item>
     

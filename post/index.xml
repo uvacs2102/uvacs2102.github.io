@@ -6,8 +6,83 @@
     <description>Recent content in Posts on cs2102: Discrete Math</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 09 Sep 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 10 Sep 2016 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://uvacs2102.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Problem Set 1 Comments</title>
+      <link>https://uvacs2102.github.io/ps1comments/</link>
+      <pubDate>Sat, 10 Sep 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/ps1comments/</guid>
+      <description>&lt;p&gt;The solutions and comments for PS1 are now posted in collab: &lt;a href=&#34;https://collab.itc.virginia.edu/access/content/group/e0b17949-c94c-466b-835a-196381f3f911/ps1solutions.pdf&#34;&gt;PDF&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The grades will be released soon.  Sorry it took so long to get the
+grading and solutions done for PS1.  We are sorting out how to manage
+grading using collab and figuring a better way to manage this, and
+getting tablets to make it easier to write on your submitted PDFs
+(instead of typing notes, as was done for PS1).  I hope this will go
+more smoothly for PS2, and be fully worked out for PS3 and later. Our
+goal (which I think is reasonable for you to expect) is to always return
+assignments within a week of when they are due.&lt;/p&gt;
+
+&lt;p&gt;The way problem sets are graded in this class is probably different from
+what most of you are accustomed to.  The purpose of the problem sets is
+primarily for &lt;em&gt;learning&lt;/em&gt; and not for &lt;em&gt;grading&lt;/em&gt;, so the grading system I
+use is designed with the goals of providing useful feedback to you, as
+well as giving us a way to see how the class is going and if students
+are on track.  This means instead of giving detailed point scores for
+every problem and grading in a way that emphasizes losing points by
+making mistakes, the problem sets are graded in a way meant to capture
+how well students are understanding the material.&lt;/p&gt;
+
+&lt;p&gt;Collab requires specifying a &lt;em&gt;maximum&lt;/em&gt; score for each assignment, but
+there is no real maximum score, and you should not view the scores as
+being &amp;ldquo;&lt;em&gt;n&lt;/em&gt; out of &lt;em&gt;m&lt;/em&gt;&amp;rdquo; where there is some maximum score and you are losing
+points if you end up below that score.&lt;/p&gt;
+
+&lt;p&gt;The meaning of the grades for PS1 is:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Real problems - only attempted a few problems, and nothing that shows any understanding.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Substantial problems - attempted a few of the problems, but didn&amp;rsquo;t show any real understanding of many concepts.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Fundamental problems understanding key concepts; not able to complete
+reasonable answers for most questions.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Several fundamentally incorrect answers, or fundamental problems
+understanding difference between inference and equality.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Nearly all answers correct, but justifications not as strong as
+desired.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;All answers acceptable.  (This is the &amp;ldquo;expected&amp;rdquo; score for PS1.)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;All answers essentially correct, with at least one especially good answer.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;All answers well done, and more than one especially good answer.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Your answers broke new ground in computer science. (Not used for PS1)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;You solved an important open problem! (Not expected to be used in cs2102)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;You deserve a Turing award! (in theory, there is no upper bound on the grading, but I do not expect to have occassion to use grades higher than 11)&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Getting the &amp;ldquo;expected&amp;rdquo; code (6 for PS1) on assignments means you are
+well on track to getting an A in the class (this is the &amp;ldquo;expected&amp;rdquo; grade
+for everyone).  You&amp;rsquo;ll need to do well on the exams, also, of course.&lt;/p&gt;
+
+&lt;p&gt;If your score on PS1 is below 6, you should have a good idea from the
+comments and from reading the solutions, what you need to improve on to
+do better on future assignments.&lt;/p&gt;
+
+&lt;p&gt;If you notice a significant error in any of the provided solutions
+(where &amp;ldquo;significant&amp;rdquo; is at my discretion, but generally means something
+more than an obvious typo), you can earn bonus points by reporting it.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Problem Set 3</title>
