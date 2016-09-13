@@ -51,7 +51,7 @@
     },
     "datePublished": "0001-01-01",
     "description": "",
-    "wordCount":  255 
+    "wordCount":  330 
   }
 </script>
 
@@ -187,6 +187,20 @@ numbers in Java or C are not we-ordered, but quite challenging to show
 this for Python.  Write a Python program that demonstrates the fact that
 numbers in Python are not well-ordered.</p>
 
+<p><div class="highlightg">
+There has been a partial solution to this submitted that shows how
+floating point numbers in Python are not well-ordered, but, although I
+didn&rsquo;t specify it in the question, I really want a program that
+demonstrates that integers in Python3 are not well-ordered (and won&rsquo;t
+close the challenge until getting one).  For floating point numbers, the solution Karan Dhillon came up with is essentially:</p>
+
+<pre><code>   import sys
+   a = sys.float_info.max
+   assert (a + 1 == a)
+</code></pre>
+
+<p></div></p>
+
 <h1 id="closed-challenges">Closed Challenges</h1>
 
 <p><strong>Challenge 1.</strong> From <a href="/class2">Class 2</a>: I wasn&rsquo;t very satisfied with
@@ -195,7 +209,7 @@ numbers in Python are not well-ordered.</p>
   &ldquo;skeptical reader&rdquo; test and would convince someone with no prior
   knowledge of odd and even numbers.</p>
 
-<p><div class="highlightr">
+<p><div class="highlightg">
    There are 3 winning solutions:</p>
 
 <ul>
