@@ -6,8 +6,141 @@
     <description>Recent content on cs2102: Discrete Math</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 10 Sep 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 13 Sep 2016 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://uvacs2102.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Anonymous Feedback Comments</title>
+      <link>https://uvacs2102.github.io/anonymousfeedback/</link>
+      <pubDate>Tue, 13 Sep 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/anonymousfeedback/</guid>
+      <description>&lt;p&gt;I wanted to discuss two anonymous comments that were submitted through
+Collab (there&amp;rsquo;s no way to respond directly to submitters, so I&amp;rsquo;ll post
+my response here).&lt;/p&gt;
+
+&lt;p&gt;Comment 1:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;The homework is significantly longer and harder than Edwards&amp;rsquo;. Also, it extends beyond lecture content too much :(&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Comment 2:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;Professor,&lt;/em&gt;&lt;br /&gt;
+&lt;em&gt;I believe that we are moving in too fast a pace at the current moment. I am truly enjoying the class material however before I am fully able to grasp the concepts we quickly move on to the next. I understand that this class moves fast however I have attended every single lecture and still did not understand how to solve quite a few of the questions in problem set 2. In fact in more than one instance I had no idea what some of the questions were asking. I would appreciate it if we could have a brief overview of the problem set before they are due. I appreciate you taking the time to address the questions in the later part of the week but we had about 15 minutes to ask pertinent questions for an assignment due less than 48 hours.&lt;/em&gt;&lt;br /&gt;
+&lt;em&gt;I am truly enjoying this class but I will fall very far behind in this class if we continue to go at the pace we are. If we could solve more sample questions related to the problem sets I feel it would go a long way in understanding how to utilize the tools we are being taught.&lt;/em&gt;&lt;br /&gt;
+&lt;em&gt;I hope I am not out of line. I also didn&amp;rsquo;t feel comfortable bringing this up personally because I am not sure if I am in the majority, minority, or the rarity. I have never had problems with a math course before and have been comfortable doing proofs prior to this. I suppose I am not as fast a learner as the class demands.&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;First, I do appreciate getting comments like this, and although I would
+hope most students feel that they could safely send comments like this
+without needing anonymity, I understand why you prefer to send them
+anonymously.&lt;/p&gt;
+
+&lt;p&gt;As for the content of Comment #1, what you should be worried about is if the workload
+for the course seems unreasonably high for a 3-unit class.  As the
+university defines things, a 3-unit course is supposed to involve 9
+hours of academic work per week (assuming you are coming to class for
+2.5 hours per week, this leaves 6.5 hours for outside work).  It is
+sometimes hard to estimate how long it will take students to do an
+assignment, but I don&amp;rsquo;t think the readings and problem sets assigned so
+far in this course should take more than this for most students.&lt;/p&gt;
+
+&lt;p&gt;If you find you are spending unreasonably more than this, then it is
+either because you are not using the time effectively (this is
+especially a challenge when students work in teams to keep everyone
+focused and on task); you are trying to do more than is intended (which
+is great if you have time for it); you are solving problems using a
+tedious, painstaking approach rather than looking for a clever, fast
+solution (e.g., making an exhaustive truth table for a 7-input
+function); you are lacking in some of the necessary background or
+experience so need more time; or (perhaps most likely) because I have
+grossly underestimated how long things take when you are learning them
+for the first time (and me teaching them for the first time).&lt;/p&gt;
+
+&lt;p&gt;I do want to understand if things are taking too long and why, so if it
+seems like the workload for the course is unreasonable I encourage you
+to come to office hours and discuss what you are doing and whether their
+might be more effective ways to use your time.&lt;/p&gt;
+
+&lt;p&gt;As for the problems &amp;ldquo;extending beyond lecture content&amp;rdquo;, that is
+absolutely what you should expect (indeed, ambitious students should be
+insulted by assignments that don&amp;rsquo;t go beyond what was covered in
+lecture!).  The problems are not designed to just test if you have been
+paying attenting in class and can repeat what is done in class in a
+straightforward way.  Sometimes there will be &amp;ldquo;warm-up&amp;rdquo; problems
+intended to check basic understanding, but the goal of most of the
+problem set problems is to deepen your understanding of the concepts
+introduced in class and in the book and improve your abilities as a
+mathematical thinker, by having you apply them yourself in ways you
+haven&amp;rsquo;t seen before.&lt;/p&gt;
+
+&lt;p&gt;For Comment #2, I agree that we have covered a lot quite quickly at the
+beginning of the course.  In general, there is always a tension between
+wanting to include and get to the most interesting material and making
+sure the foundations are strong.&lt;/p&gt;
+
+&lt;p&gt;The best way to make sure I spend more class time on topics is to ask
+questions about them.  My default assumption (which I know is
+na&amp;#239;ve, but I also think is fair) is that if something is explained
+well in the assigned readings and no one asks questions about it, then I
+shouldn&amp;rsquo;t waste class time going over it (unless I have something I
+think is worthwhile beyond or different from what was in the reading).
+So far (scanning over &lt;code&gt;#general&lt;/code&gt; now), very few students have asked
+questions like this; nearly all the questions are about clarifying
+specific problems from the problem sets.  I am happy to spend more class
+time on topics covered in the book if people ask questions about them.
+It doesn&amp;rsquo;t even have to be a precise question - its fine to ask things
+like, &amp;ldquo;I didn&amp;rsquo;t understand the set builder notation, can you go over an
+example in class?&amp;rdquo; (otherwise, I think its quite boring to talk about
+set builder notation, and that what is written in the book is sufficient
+for everyone to understand it without me spending time on it in class).&lt;/p&gt;
+
+&lt;p&gt;The other thing I want to say on this is that we&amp;rsquo;ve introduced a lot of
+new things fast, but all of the main themes of the course will keep
+recurring throughout the semester.  In particular, towards the two main
+goals of getting good at making and using definitions, and understanding
+and constructing proofs, most of the concepts we have introduced already
+will be seen over and over again throughout the course.  The new topics
+will build on the knowledge and understanding you have, but also (I
+hope) deepen your understanding of the early topics.&lt;/p&gt;
+
+&lt;p&gt;(As one concrete example, following the design of the book, we
+introduced well-ordering proofs early.  We will soon get to proof by
+induction, which is dependent on well-ordering, and similar to
+well-ordering proofs in many ways.  Proof by induction is probably the
+most powerful proof technique you&amp;rsquo;ll learn in this class, and one used
+all the time in computer science, and we&amp;rsquo;ll see many different examples
+of proof by induction throughout the semester since its something that
+most people need to see many times in different ways and contexts before
+really getting it.)&lt;/p&gt;
+
+&lt;p&gt;Finally, in terms of the overall pacing, my plan for the course (which
+is very much flexible) is to cover about half the material that is
+covered in the comparable MIT course.  This seems reasonable to me since
+I expect UVA students to be as good as MIT students, but the way MIT
+classes work students take fewer courses than UVA students do (it would
+be more like a 4-unit class here), and there is a lot more class time
+than we have (they have 3 meetings a week, plus recitation, and four
+evening &amp;ldquo;midterm&amp;rdquo; exams), so the actual class time is about 2x what we
+have.  As another example, &lt;a href=&#34;http://www-inst.eecs.berkeley.edu/~cs70/sp15/#syllabus&#34;&gt;Berkeley&amp;rsquo;s CS70
+class&lt;/a&gt; covers
+things with a quite different approach, but also covers fair bit more
+material than is planned for cs2102 (and with resources more like we
+have as a public school, they expect students to do their own homework
+grading).  If you think I shouldn&amp;rsquo;t expect you to be competitive with
+Berkeley or MIT students, you can also compare to the &lt;a href=&#34;https://www.cs.unc.edu/~baruah/Teaching/2015-2Fa/&#34;&gt;UNC
+course&lt;/a&gt;, which covers
+a similar amount of material to this course but with 8am Monday
+lectures.  (I do, of course, have much higher expectations of UVA
+students than what &lt;a href=&#34;https://www.math.vt.edu/people/mcquain/math2534.htm&#34;&gt;Virginia
+Tech&lt;/a&gt; does, but I
+hope you would not use that as a sign that our expectations are too
+high!)&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Problem Set 1 Comments</title>
@@ -1687,143 +1820,6 @@ the two-implications strategy.&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;In physics, your solution should convince a reasonable person. In math, you have to convince a person who&amp;rsquo;s trying to make trouble.&lt;/em&gt;
 Frank Wilczek&lt;/p&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Class 1: What makes it go?</title>
-      <link>https://uvacs2102.github.io/class1/</link>
-      <pubDate>Tue, 23 Aug 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://uvacs2102.github.io/class1/</guid>
-      <description>
-
-&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
-
-&lt;p&gt;Before &lt;strong&gt;Thursday&amp;rsquo;s class&lt;/strong&gt;: (visit &lt;a href=&#34;https://uvacs2102.github.io&#34;&gt;https://uvacs2102.github.io&lt;/a&gt; for the web version of these notes with links)&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Join the &lt;a href=&#34;https://csmath.slack.com&#34;&gt;cs2102 slack group&lt;/a&gt; and set up
-your profile with a pronouncable name (not your UVA email id) (setting
-up your profile photo is encouraged, but not required).&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Read the &lt;a href=&#34;https://uvacs2102.github.io/syllabus&#34;&gt;Course Syllabus&lt;/a&gt; and post any questions or
-comments you have on it on the course &lt;a href=&#34;https://csmath.slack.com&#34;&gt;slack group
-(#general)&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Read the &lt;em&gt;Introduction&lt;/em&gt; and &lt;em&gt;Chapter 1: What is a Proof?&lt;/em&gt; from the
-&lt;a href=&#34;https://uvacs2102.github.io/docs/mcs.pdf&#34;&gt;MCS Book&lt;/a&gt;.  The book is
-freely available on-line under a Creative Commons License.  Students
-are strongly encrouaged to print out the readings to read them more
-effectively on paper.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Before &lt;strong&gt;Friday, 6:29pm&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Read, print, and sign the &lt;a href=&#34;https://uvacs2102.github.io/pledge&#34;&gt;Course Pledge&lt;/a&gt;.  You should print
-the &lt;a href=&#34;https://uvacs2102.github.io/docs/pledge.pdf&#34;&gt;PDF version&lt;/a&gt; for signing, and submit a scan of
-your signed pledge using Collab.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Read Jeremy Kun&amp;rsquo;s &lt;a href=&#34;https://medium.com/@jeremyjkun/habits-of-highly-mathematical-people-b719df12d15e&#34;&gt;&lt;em&gt;Habits of Highly Mathematical People&lt;/em&gt;&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Submit a &lt;a href=&#34;https://docs.google.com/forms/d/e/1FAIpQLSesDMnQXhCP73thN51kTSNNst8GcvQCJCGTepiJ2c3Ym1l-zg/viewform&#34;&gt;Course Registration Survey&lt;/a&gt; (which includes some questions based on Kun&amp;rsquo;s essay).&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&#34;notpdf&#34;&gt;
-
-    &lt;div class=&#34;highlightm&#34;&gt;
-    &lt;a href=&#34;docs/class1.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes and Questions&lt;/b&gt;&lt;/a&gt;.
-    &lt;/div&gt;
-
-&lt;p&gt;&lt;center&gt;
-&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;460cc29c74a04fe3971ce197961981f9&#34; data-ratio=&#34;1.77777777777778&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
-&lt;/center&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
-
-&lt;div class=&#34;latex&#34;&gt;
-
-### Notes and Questions
-
-Why is most of the math used in computer science _discrete_?
-
-&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;
-
-&lt;p&gt;Why is most of the math you have used in school previously &lt;em&gt;continuous&lt;/em&gt;?&lt;/p&gt;
-
-&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;
-
-&lt;p&gt;What are the differences between how scientists, lawyers, and
-mathematicians establish ``&lt;em&gt;truth&lt;/em&gt;&amp;rdquo;?&lt;/p&gt;
-
-&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;
-
-&lt;p&gt;A &lt;em&gt;proposition&lt;/em&gt; is a statement that is either ________ or _________.&lt;/p&gt;
-
-&lt;p&gt;A &lt;em&gt;predicate&lt;/em&gt; is a proposition whose truth may depend on the value of
-variables.&lt;/p&gt;
-
-&lt;h3 id=&#34;proof&#34;&gt;Proof&lt;/h3&gt;
-
-&lt;p&gt;A &lt;em&gt;theorem&lt;/em&gt; is a ____________ that has been proven true.&lt;/p&gt;
-
-&lt;p&gt;An &lt;em&gt;axiom&lt;/em&gt; is a proposition that is &lt;em&gt;accepted to be true&lt;/em&gt;.  Axioms are
-not proven; they are &lt;em&gt;assumed&lt;/em&gt; to be true.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; A &lt;em&gt;mathematical proof&lt;/em&gt; of a proposition is a chain of
-  &lt;em&gt;logical deductions&lt;/em&gt; starting from a set of accepted &lt;em&gt;axioms&lt;/em&gt; that
-  leads to the proposition.&lt;/p&gt;
-
-&lt;h3 id=&#34;rules-of-inference&#34;&gt;Rules of Inference&lt;/h3&gt;
-
-&lt;p&gt;The possible steps that can be used in a proof are logical deductions
-based on inference rules.&lt;/p&gt;
-
-&lt;p&gt;Inference rules are written as:
-$$
-\infer{\textrm{\emph{conclusion}}}{\textrm{\emph{antecedents}}}
-$$
-This means if everything on top of the rule is established to be true,
-then you can conclude what is on the bottom.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Modus Ponens&lt;/em&gt;: To prove &lt;em&gt;Q&lt;/em&gt;, (1) prove &lt;em&gt;P&lt;/em&gt; and (2) prove that &lt;em&gt;P&lt;/em&gt; implies &lt;em&gt;Q&lt;/em&gt;.  ($P \implies Q$ is a notation for $P$ implies $Q$).&lt;/p&gt;
-
-&lt;p&gt;$$
-\infer{Q}{P,\quad P \implies Q}
-$$&lt;/p&gt;
-
-&lt;p&gt;An inference rule is &lt;em&gt;sound&lt;/em&gt; if can never lead to a &lt;strong&gt;false&lt;/strong&gt; conclusion.&lt;/p&gt;
-
-&lt;p&gt;Which of these inference rules are sound?&lt;/p&gt;
-
-&lt;p&gt;$$
-\infer{Q}{P}
-\qquad
-\infer{false}{P, P \implies Q}
-\qquad
-\infer{true}{P, NOT(P)}
-\qquad
-\infer{P \implies NOT(P)}{P, NOT(P)}
-\qquad
-\infer{NOT(Q) \implies P}{NOT(P) \implies Q}
-$$&lt;/p&gt;
-
-&lt;p&gt;##&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Contrapositive:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;$$
-\infer{NOT(Q) \implies NOT(P)}{P \implies Q}
-\qquad
-\infer{P \implies Q}{NOT(Q) \implies NOT(P)}
-$$&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Theorem to Prove:&lt;/strong&gt; If the product of $x$ and $y$ is even, at least one of $x$ or $y$ must be even.&lt;/p&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;/div&gt;&lt;/p&gt;
 </description>
