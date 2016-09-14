@@ -6,8 +6,109 @@
     <description>Recent content in Posts on cs2102: Discrete Math</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 13 Sep 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 14 Sep 2016 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://uvacs2102.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Generating PDFs</title>
+      <link>https://uvacs2102.github.io/pdfs/</link>
+      <pubDate>Wed, 14 Sep 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/pdfs/</guid>
+      <description>
+
+&lt;p&gt;We are finding many of the assignment submissions for PS1 and PS2 are
+barely readable.  When it is hard for the graders to read your answers,
+you will get less useful feedback on your submission.  We are not
+intentionally down-grading work that is hard to read, but you will lose
+the benefit-of-the-doubt for answers that are too hard to read, and it
+also makes a bad impression when your work is presented in a way that
+looks careless.&lt;/p&gt;
+
+&lt;p&gt;We provide some advice below on how to generate a readable PDF to
+submit.  Please review what you are submitting before submitting it to
+make sure that it will not cause the graders headaches attempting to
+discern your answers from it.&lt;/p&gt;
+
+&lt;p&gt;We&amp;rsquo;ve been forgiving on PS1 and PS2, but from PS3 on will be expecting
+everyone to follow the directions well and generate readable
+submissions, and will refuse to grade unreadable submissions.&lt;/p&gt;
+
+&lt;h4 id=&#34;one-submission-per-team-with-everyone-s-name-and-id&#34;&gt;One Submission per Team, with Everyone&amp;rsquo;s Name and ID&lt;/h4&gt;
+
+&lt;p&gt;Each team that works together should submit &lt;em&gt;exactly one&lt;/em&gt; assignment,
+and it should have each team member&amp;rsquo;s name and email ID clearly at the
+top of it.  When you neglect to do this, it causes a lot of extra
+trouble for us.&lt;/p&gt;
+
+&lt;h4 id=&#34;pdf-files-only&#34;&gt;PDF files only&lt;/h4&gt;
+
+&lt;p&gt;Your submission must be a single, PDF file.  We will not grade Word
+documents, images, or other formats.  We do make two exceptions:
+&lt;a href=&#34;https://www.youtube.com/watch?v=GSIodz9GWxc#t=12&#34;&gt;entertaining
+videos&lt;/a&gt; and
+&lt;a href=&#34;http://www.cs.virginia.edu/~evans/cs1120-f11/all/2011/class-41-the-cake-of-computing&#34;&gt;cakes&lt;/a&gt;.
+(If your answers are in the form of a cake, it make not be possible to
+submit it through collab, but you can drop it off in person.)&lt;/p&gt;
+
+&lt;h2 id=&#34;ways-to-generate-good-pdfs&#34;&gt;Ways to Generate Good PDFs&lt;/h2&gt;
+
+&lt;p&gt;There are three ways to generate reasonable PDFs to submit: (1) use a
+mathematical typesetting tool, (2) use a scanner that scans to PDF
+files, or (3) use a camera.  If you use a scanner or a camera, the page
+you are scanning has to be readable to begin with, and you have to scan
+it well.  It is best to write on only one side of the paper, since often
+the writing from the back side bleeds through in the scan or image.&lt;/p&gt;
+
+&lt;p&gt;The most difficult to read submissions are when people use their mobile
+phone camera to take a picture of handwritten paper, and then put the
+image into a Word document without any filtering or processing.  This is
+not a way to make a readable PDF, and its not fair to expect graders to
+deal with that type of document.&lt;/p&gt;
+
+&lt;p&gt;There are ways to generate readable PDFs using your mobile phone camera.
+One tool that works for this is
+&lt;a href=&#34;https://www.camscanner.com/user/download&#34;&gt;CamScanner&lt;/a&gt; (available as a
+free app for limited use, for Android, iPhone, and Windows Phone).
+There are lots of other scanning apps that should work - see &lt;a href=&#34;https://www.cnet.com/how-to/best-scanning-apps-for-android-and-iphone/&#34;&gt;&lt;em&gt;The best
+scanning apps for Android and
+iPhone&lt;/em&gt;&lt;/a&gt;.
+Please look at the file you have generated before submitting it.  If you
+are not able to generate a readable PDF using your phone, you should use
+a scanner. There are public scanner to use in some of the UVA libraries
+including in Clemons Library.&lt;/p&gt;
+
+&lt;h2 id=&#34;mathematical-typesetting&#34;&gt;Mathematical Typesetting&lt;/h2&gt;
+
+&lt;p&gt;More ambitious, forward-thinking, aesthetically-minded, or
+handwriting-averse students will prefer to use a system that generates
+PDFs directly.  The system used for nearly all technical typesetting is
+&lt;a href=&#34;https://www.latex-project.org/&#34;&gt;LaTeX&lt;/a&gt; (which was started by &lt;a href=&#34;https://en.wikipedia.org/wiki/Leslie_Lamport&#34;&gt;Leslie
+Lamport&lt;/a&gt; who won the
+Turing Award in 2013, and builds on the TeX typesetting program created
+by &lt;a href=&#34;http://cs.stanford.edu/~uno/&#34;&gt;Donald Knuth&lt;/a&gt;, who won the Turing
+Award in 1974; neither of the awards were for work on typesetting).&lt;/p&gt;
+
+&lt;p&gt;LaTeX has a fairly steep learning curve, but there are lots of tools
+available now to make it easier to get started.
+&lt;a href=&#34;https://www.sharelatex.com/&#34;&gt;ShareLaTeX&lt;/a&gt; is a web-based, multi-user
+LaTeX editor; &lt;a href=&#34;http://www.texniccenter.org/&#34;&gt;TeXnicCenter&lt;/a&gt; is a LaTeX
+editor for Windows; and &lt;a href=&#34;https://www.texpadapp.com/&#34;&gt;texpad&lt;/a&gt; is
+available for Mac and iOS.&lt;/p&gt;
+
+&lt;p&gt;If you are expecting to take further math and CS courses, it is worth
+learning to use this to produce documents efficiently.  Some later CS
+courses required submissions to be typeset using LaTeX (depending on
+whom is teaching them, this is sometimes the case for CS3102 and
+CS4102), and nearly all research papers are written this way.  You are
+not required to produce beautifully-typeset problem sets for CS2102 and
+shouldn&amp;rsquo;t spend inordinate extra time just trying to make your answers
+look great, but we will definitely appreciate your efforts to make
+submissions easier to read, and after a small effort in getting started
+with LaTeX, you may find that it takes less time than hand-writing
+(especially since it is easy to edit, instead of needing to rewrite).&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Anonymous Feedback Comments</title>
@@ -1630,204 +1731,6 @@ think about at all!)&lt;br /&gt;
       
       <guid>https://uvacs2102.github.io/ps1/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Problem Set 1&lt;/strong&gt; is &lt;a href=&#34;https://uvacs2102.github.io/ps/ps1&#34;&gt;now posted&lt;/a&gt;, and is due on &lt;strong&gt;Friday, 2 September at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Class 2: Proof Methods</title>
-      <link>https://uvacs2102.github.io/class2/</link>
-      <pubDate>Thu, 25 Aug 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://uvacs2102.github.io/class2/</guid>
-      <description>
-
-&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
-
-&lt;p&gt;Before &lt;strong&gt;Friday (tomorrow), 6:29pm&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Read, print, and sign the &lt;a href=&#34;https://uvacs2102.github.io/pledge&#34;&gt;Course Pledge&lt;/a&gt;.  You should print
-the &lt;a href=&#34;https://uvacs2102.github.io/docs/pledge.pdf&#34;&gt;PDF version&lt;/a&gt; for signing, and submit a scan of
-your signed pledge using Collab.&lt;/li&gt;
-&lt;li&gt;Read Jeremy Kun&amp;rsquo;s &lt;a href=&#34;https://medium.com/@jeremyjkun/habits-of-highly-mathematical-people-b719df12d15e&#34;&gt;&lt;em&gt;Habits of Highly Mathematical People&lt;/em&gt;&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Submit a &lt;a href=&#34;https://docs.google.com/forms/d/e/1FAIpQLSesDMnQXhCP73thN51kTSNNst8GcvQCJCGTepiJ2c3Ym1l-zg/viewform&#34;&gt;Course Registration Survey&lt;/a&gt; (which includes some questions based on Kun&amp;rsquo;s essay).&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Next week:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Before Tuesday&amp;rsquo;s class: Read MCS Chapter 2&lt;/li&gt;
-&lt;li&gt;Before Thursday&amp;rsquo;s class: Read MCS Chapter 3&lt;/li&gt;
-&lt;li&gt;Due Friday at 6:29pm: &lt;a href=&#34;https://uvacs2102.github.io/ps/ps1&#34;&gt;&lt;strong&gt;Problem Set 1&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;&lt;/p&gt;
-
-&lt;p&gt;Sorry the proof in class got so messed up!  Although part of my goal for
-class today was to illustrated the subjectiveness of human-written and
-read proofs, I apologize for making things so confusing and broken.  I&amp;rsquo;d
-updated the notes to include the full proof (hopefully correct now!) at
-the level of detail intended in class.  Its good to see students are
-being skeptical proof-readers and noticing mistakes like this.&lt;/p&gt;
-
-&lt;p&gt;We didn&amp;rsquo;t get to the &amp;ldquo;if and only if&amp;rdquo; proof in the notes in class today,
-but you are encouraged to try this on your own.  We&amp;rsquo;ll look at this the
-Well Ordering Principle (Chapter 2) in Tuesday&amp;rsquo;s class.&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;highlightr&#34;&gt;
-&lt;strong&gt;Challenge Problem Opportunity.&lt;/strong&gt; I wasn&amp;rsquo;t very satisfied with my proof
-  of the &amp;ldquo;Odd-Even Lemma&amp;rdquo; in class.  I hope a student will come up with
-  a better proof.  Come up with a proof that passes the &amp;ldquo;skeptical reader&amp;rdquo; test and
-  would convince someone with no prior knowledge of odd and even numbers.
-   &lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;highlightm&#34;&gt;
-   &lt;a href=&#34;docs/class2.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes and Questions&lt;/b&gt;&lt;/a&gt;.
-   &lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;center&gt;
-&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;d7b6ff339db149ba8996cfcc6d84d44d&#34; data-ratio=&#34;1.77777777777778&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
-&lt;/center&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
-
-&lt;p&gt;Dan Ariely, &lt;a href=&#34;http://more-minerals.blogspot.com/2016/02/dan-ariely-honor-codes.html&#34;&gt;&lt;em&gt;Honor Codes&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;The Coq Proof Assistant tool I mentioned in class today is available
-from &lt;a href=&#34;https://coq.inria.fr/&#34;&gt;&lt;em&gt;https://coq.inria.fr/&lt;/em&gt;&lt;/a&gt;.  (You are not
-expected to use this for cs2102, or generate proofs at this level of
-rigor or details, but are certainly welcome to if you want!)&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.vanityfair.com/culture/2009/06/us_airways200906&#34;&gt;&lt;em&gt;Anatomy of a
-Miracle&lt;/em&gt;&lt;/a&gt;,
-Vanity Fair, June 2009.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.trnicely.net/pentbug/pentbug.html&#34;&gt;Intel&amp;rsquo;s FDIV bug&lt;/a&gt; (there&amp;rsquo;s even a web page for &lt;a href=&#34;http://www.columbia.edu/~sss31/rainbow/pentium.jokes.html&#34;&gt;jokes about Intel&amp;rsquo;s FDIV bug&lt;/a&gt;).&lt;/p&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
-
-&lt;div class=&#34;latex&#34;&gt;
-
-# Notes and Questions
-
-An integer, $z$, is **even** if there exists an integer $k$ such that $z = 2k$.    
-
-Is this a _definition_, _axiom_, or _proposition_?
-
-#
-
-An integer, $z$, is **odd** if there exists an integer $k$ such that $z
-= 2k + 1$.  (Note that there is no connection between the variables used
-here, and to define even above.)
-
-To prove an implication, $P \implies Q$: 1. assume $P$.  2. Show chain of logical deductions that leads to $Q$.
-
-**Odd-Even Lemma:** If an integer is not even, it is odd.  Note: A
-  _lemma_ is just a name for a theorem, typically used for proving
-  another theorem.
-
-&lt;div class=&#34;biggap&#34;&gt;&lt;/div&gt;
-
-&lt;p&gt;How should one decide what can be accepted as an axiom, and what must be proven?&lt;/p&gt;
-
-&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;
-
-&lt;p&gt;What is the purpose of a &lt;em&gt;proof&lt;/em&gt;?  (in cs2102? in software development? in algorithm design?)&lt;/p&gt;
-
-&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;
-
-&lt;h2 id=&#34;proof-from-class&#34;&gt;Proof from Class&lt;/h2&gt;
-
-&lt;p&gt;Proposition: If the product of $x$ and $y$ is even, at least one of $x$ or $y$ must be even.&lt;/p&gt;
-
-&lt;p&gt;Our goal is to prove the implication, $P \implies Q$, where:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;$P$ is &amp;ldquo;the product of $x$ and $y$ is even&amp;rdquo;&lt;/li&gt;
-&lt;li&gt;$Q$ is &amp;ldquo;at least one of $x$ and $y$ must be even&amp;rdquo;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;We will prove the contrapositive.  The inference rule,&lt;/p&gt;
-
-&lt;p&gt;$$
-\infer{P \implies Q}{NOT(Q) \implies NOT(P)}
-$$
-will be the last step in our proof.  To be able to use this rule, we need to make the antecedent true.  So, our goal is to prove $NOT(Q) \implies NOT(P)$.&lt;/p&gt;
-
-&lt;p&gt;To prove an implication, we assume the left side and short the right
-side.  So, our proof begins:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;We prove the contrapositive.&lt;/li&gt;
-&lt;li&gt;Assume NOT(at least one of $x$ and $y$ must be even).&lt;/li&gt;
-&lt;li&gt;By the meaning of negation, this means both $x$ and $y$ are not even.&lt;/li&gt;
-&lt;li&gt;By the &amp;ldquo;Odd-Even Lemma&amp;rdquo;, both $x$ and $y$ are odd.&lt;/li&gt;
-&lt;li&gt;By the definition of &lt;em&gt;odd&lt;/em&gt;, there exist integers $k$ and $m$ such that $x = 2k + 1$ and $y = 2m + 1$.&lt;/li&gt;
-&lt;li&gt;Substituting, $xy = (2k + 1)(2m + 1) = 4mk + 2m + 2k + 1 = 2(2mk + m + k) + 1$.&lt;/li&gt;
-&lt;li&gt;By the closure of addition and multiplication over the integers, there is some integer $r = 2mk + m + k$, so $xy = 2r + 1$.&lt;/li&gt;
-&lt;li&gt;By the definition of &lt;em&gt;odd&lt;/em&gt;, $xy$ is odd.&lt;/li&gt;
-&lt;li&gt;By the (not proven) &amp;ldquo;Even-Odd Lemma&amp;rdquo;, this means $xy$ is not even.&lt;/li&gt;
-&lt;li&gt;So, we have shown NOT(the product of $x$ and $y$ is even).&lt;/li&gt;
-&lt;li&gt;Since we concluded this starting from the assumption (step 2), this proves the implication: NOT(at least one of $x$ and $y$ must be even) $\implies$ NOT(the product of $x$ and $y$ is even).&lt;/li&gt;
-&lt;li&gt;Using the contrapositive inference rule, we can conclude:
-the product of $x$ and $y$ is even $\implies$ at least one of $x$ and $y$ must be even. \QEDA&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;\dbox{
-{\bf Challenge Problem Opportunity.} I wasn&amp;rsquo;t very satisfied with my proof
-  of the &amp;ldquo;Odd-Even Lemma&amp;rdquo; in class.  I hope a student will come up with
-  a better proof.  A proof that passes the &amp;ldquo;skeptical reader&amp;rdquo; test and
-  would convince someone with no prior knowledge of odd and even numbers
-  is worth up to 10 bonus points.
-}&lt;/p&gt;
-
-&lt;!--page--&gt;
-
-&lt;h2 id=&#34;proving-if-and-only-if&#34;&gt;Proving &amp;ldquo;If and Only If&amp;rdquo;&lt;/h2&gt;
-
-&lt;p&gt;Strategy: To prove $P$ if and only if $Q$:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Prove $P \implies Q$.&lt;/li&gt;
-&lt;li&gt;Prove $Q \implies P$.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;em&gt;Definition.&lt;/em&gt; The &lt;em&gt;standard deviation&lt;/em&gt; of a sequence of values $x_1, x_2, \ldots, x_n$ is
-$$
-\sqrt{\frac{(x_1 - \mu)^2 + (x_2 - \mu)^2 + \ldots + (x_n - \mu)^2}{n}}
-$$
-where $\mu$ is the mean of the values:
-$$
-\mu ::= \frac{x_1 + x_2 + \ldots + x_n}{n}
-$$.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Theorem 1.6.1.&lt;/strong&gt; The standard deviation of a sequence of values, $x_1,
-  x_2, \ldots, x_n$ is $0$ &lt;em&gt;if and only if&lt;/em&gt; all of the $x_i$ values are
-  equal to the mean of $x_1, x_2, \ldots, x_n$.&lt;/p&gt;
-
-&lt;p&gt;The book proves this using a chain of iff implications; prove it using
-the two-implications strategy.&lt;/p&gt;
-
-&lt;p&gt;#&lt;/p&gt;
-
-&lt;p&gt;#&lt;/p&gt;
-
-&lt;p&gt;#&lt;/p&gt;
-
-&lt;p&gt;#&lt;/p&gt;
-
-&lt;p&gt;#&lt;/p&gt;
-
-&lt;p&gt;#&lt;/p&gt;
-
-&lt;p&gt;#&lt;/p&gt;
-
-&lt;p&gt;#&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;In physics, your solution should convince a reasonable person. In math, you have to convince a person who&amp;rsquo;s trying to make trouble.&lt;/em&gt;
-Frank Wilczek&lt;/p&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
 </description>
     </item>
     

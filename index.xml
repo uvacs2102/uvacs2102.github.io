@@ -6,8 +6,109 @@
     <description>Recent content on cs2102: Discrete Math</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 13 Sep 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 14 Sep 2016 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://uvacs2102.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Generating PDFs</title>
+      <link>https://uvacs2102.github.io/pdfs/</link>
+      <pubDate>Wed, 14 Sep 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/pdfs/</guid>
+      <description>
+
+&lt;p&gt;We are finding many of the assignment submissions for PS1 and PS2 are
+barely readable.  When it is hard for the graders to read your answers,
+you will get less useful feedback on your submission.  We are not
+intentionally down-grading work that is hard to read, but you will lose
+the benefit-of-the-doubt for answers that are too hard to read, and it
+also makes a bad impression when your work is presented in a way that
+looks careless.&lt;/p&gt;
+
+&lt;p&gt;We provide some advice below on how to generate a readable PDF to
+submit.  Please review what you are submitting before submitting it to
+make sure that it will not cause the graders headaches attempting to
+discern your answers from it.&lt;/p&gt;
+
+&lt;p&gt;We&amp;rsquo;ve been forgiving on PS1 and PS2, but from PS3 on will be expecting
+everyone to follow the directions well and generate readable
+submissions, and will refuse to grade unreadable submissions.&lt;/p&gt;
+
+&lt;h4 id=&#34;one-submission-per-team-with-everyone-s-name-and-id&#34;&gt;One Submission per Team, with Everyone&amp;rsquo;s Name and ID&lt;/h4&gt;
+
+&lt;p&gt;Each team that works together should submit &lt;em&gt;exactly one&lt;/em&gt; assignment,
+and it should have each team member&amp;rsquo;s name and email ID clearly at the
+top of it.  When you neglect to do this, it causes a lot of extra
+trouble for us.&lt;/p&gt;
+
+&lt;h4 id=&#34;pdf-files-only&#34;&gt;PDF files only&lt;/h4&gt;
+
+&lt;p&gt;Your submission must be a single, PDF file.  We will not grade Word
+documents, images, or other formats.  We do make two exceptions:
+&lt;a href=&#34;https://www.youtube.com/watch?v=GSIodz9GWxc#t=12&#34;&gt;entertaining
+videos&lt;/a&gt; and
+&lt;a href=&#34;http://www.cs.virginia.edu/~evans/cs1120-f11/all/2011/class-41-the-cake-of-computing&#34;&gt;cakes&lt;/a&gt;.
+(If your answers are in the form of a cake, it make not be possible to
+submit it through collab, but you can drop it off in person.)&lt;/p&gt;
+
+&lt;h2 id=&#34;ways-to-generate-good-pdfs&#34;&gt;Ways to Generate Good PDFs&lt;/h2&gt;
+
+&lt;p&gt;There are three ways to generate reasonable PDFs to submit: (1) use a
+mathematical typesetting tool, (2) use a scanner that scans to PDF
+files, or (3) use a camera.  If you use a scanner or a camera, the page
+you are scanning has to be readable to begin with, and you have to scan
+it well.  It is best to write on only one side of the paper, since often
+the writing from the back side bleeds through in the scan or image.&lt;/p&gt;
+
+&lt;p&gt;The most difficult to read submissions are when people use their mobile
+phone camera to take a picture of handwritten paper, and then put the
+image into a Word document without any filtering or processing.  This is
+not a way to make a readable PDF, and its not fair to expect graders to
+deal with that type of document.&lt;/p&gt;
+
+&lt;p&gt;There are ways to generate readable PDFs using your mobile phone camera.
+One tool that works for this is
+&lt;a href=&#34;https://www.camscanner.com/user/download&#34;&gt;CamScanner&lt;/a&gt; (available as a
+free app for limited use, for Android, iPhone, and Windows Phone).
+There are lots of other scanning apps that should work - see &lt;a href=&#34;https://www.cnet.com/how-to/best-scanning-apps-for-android-and-iphone/&#34;&gt;&lt;em&gt;The best
+scanning apps for Android and
+iPhone&lt;/em&gt;&lt;/a&gt;.
+Please look at the file you have generated before submitting it.  If you
+are not able to generate a readable PDF using your phone, you should use
+a scanner. There are public scanner to use in some of the UVA libraries
+including in Clemons Library.&lt;/p&gt;
+
+&lt;h2 id=&#34;mathematical-typesetting&#34;&gt;Mathematical Typesetting&lt;/h2&gt;
+
+&lt;p&gt;More ambitious, forward-thinking, aesthetically-minded, or
+handwriting-averse students will prefer to use a system that generates
+PDFs directly.  The system used for nearly all technical typesetting is
+&lt;a href=&#34;https://www.latex-project.org/&#34;&gt;LaTeX&lt;/a&gt; (which was started by &lt;a href=&#34;https://en.wikipedia.org/wiki/Leslie_Lamport&#34;&gt;Leslie
+Lamport&lt;/a&gt; who won the
+Turing Award in 2013, and builds on the TeX typesetting program created
+by &lt;a href=&#34;http://cs.stanford.edu/~uno/&#34;&gt;Donald Knuth&lt;/a&gt;, who won the Turing
+Award in 1974; neither of the awards were for work on typesetting).&lt;/p&gt;
+
+&lt;p&gt;LaTeX has a fairly steep learning curve, but there are lots of tools
+available now to make it easier to get started.
+&lt;a href=&#34;https://www.sharelatex.com/&#34;&gt;ShareLaTeX&lt;/a&gt; is a web-based, multi-user
+LaTeX editor; &lt;a href=&#34;http://www.texniccenter.org/&#34;&gt;TeXnicCenter&lt;/a&gt; is a LaTeX
+editor for Windows; and &lt;a href=&#34;https://www.texpadapp.com/&#34;&gt;texpad&lt;/a&gt; is
+available for Mac and iOS.&lt;/p&gt;
+
+&lt;p&gt;If you are expecting to take further math and CS courses, it is worth
+learning to use this to produce documents efficiently.  Some later CS
+courses required submissions to be typeset using LaTeX (depending on
+whom is teaching them, this is sometimes the case for CS3102 and
+CS4102), and nearly all research papers are written this way.  You are
+not required to produce beautifully-typeset problem sets for CS2102 and
+shouldn&amp;rsquo;t spend inordinate extra time just trying to make your answers
+look great, but we will definitely appreciate your efforts to make
+submissions easier to read, and after a small effort in getting started
+with LaTeX, you may find that it takes less time than hand-writing
+(especially since it is easy to edit, instead of needing to rewrite).&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Anonymous Feedback Comments</title>
@@ -1630,144 +1731,6 @@ think about at all!)&lt;br /&gt;
       
       <guid>https://uvacs2102.github.io/ps1/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Problem Set 1&lt;/strong&gt; is &lt;a href=&#34;https://uvacs2102.github.io/ps/ps1&#34;&gt;now posted&lt;/a&gt;, and is due on &lt;strong&gt;Friday, 2 September at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Problem Set 1</title>
-      <link>https://uvacs2102.github.io/ps/ps1/</link>
-      <pubDate>Fri, 26 Aug 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://uvacs2102.github.io/ps/ps1/</guid>
-      <description>
-
-&lt;div class=&#34;latex&#34;&gt;
-   \dbox{{\bf Deliverable:} Submit your responses as a
-single PDF file on the collab site before {\bf 6:29pm} on {\bf Friday, 2
-September}.  The PDF you submit can be a scanned handwritten file
-(please check the scan is readable), or a typeset PDF file (e.g.,
-generated by LaTeX or Word).} 
-&lt;/div&gt;
-
-&lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;
-   &lt;div class=&#34;highlightr&#34;&gt;
-   &lt;strong&gt;Deliverable:&lt;/strong&gt; Submit your responses as a
-single PDF file on the collab site before &lt;strong&gt;6:29pm&lt;/strong&gt; on &lt;strong&gt;Friday, 2
-September&lt;/strong&gt;.  The PDF you submit can be a scanned handwritten file
-(please check the scan is readable), or a typeset PDF file (e.g.,
-generated by LaTeX or Word).
-   &lt;/div&gt;
-   &lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;collaboration-policy-read-carefully&#34;&gt;Collaboration Policy - Read Carefully&lt;/h3&gt;
-
-&lt;p&gt;For this assignment, you may work in groups of one to three students, so
-long as all members of a group were born at least 100 kilometers apart.
-(That is, if you work in a group of 3, no two of you may have been born
-within 100 km of each other.)  If you work with teammates, you should
-submit one assignment that represents your collective best work with all
-of your names and UVA ids on it.  Everyone on a team should understand
-everything you turn in for the assignment well enough to be able to
-produce it completely on your own.  You are encouraged to use the
-&lt;code&gt;#teaming&lt;/code&gt; channel to find suitable teammates.&lt;/p&gt;
-
-&lt;p&gt;You may discuss the assignment with anyone you want and get help from
-others, so long as it is help in the spirit of learning how to do things
-yourself not getting answers you don&amp;rsquo;t understand.&lt;/p&gt;
-
-&lt;p&gt;Remember to follow the &lt;a href=&#34;https://uvacs2102.github.io/pledge&#34;&gt;course pledge&lt;/a&gt; you read and signed at
-the beginning of the semester.  For this assignment, you may consult any
-outside resources you want, including books, papers, web sites and
-people.  You may consult an outside person (e.g., another friend who is
-a CS major but is not in this class) who is not a member of the course
-staff, but that person cannot type anything in for you and all work must
-remain your own and outside sources should never give you specific
-answers to problem set questions.  If you use resources other than the
-class materials, lectures and course staff, you should document this
-clearly on your submission.&lt;/p&gt;
-
-&lt;p&gt;You are &lt;b&gt;strongly encouraged&lt;/b&gt; to start early and take advantage of
-the scheduled &lt;a href=&#34;https://uvacs2102.github.io/officehours&#34;&gt;office hours&lt;/a&gt; for this course.&lt;/p&gt;
-
-&lt;h2 id=&#34;preparation&#34;&gt;Preparation&lt;/h2&gt;
-
-&lt;p&gt;This problem set focuses on Chapter 1 of the MCS book, and &lt;a href=&#34;https://uvacs2102.github.io/class1&#34;&gt;Class
-1&lt;/a&gt; and &lt;a href=&#34;https://uvacs2102.github.io/class2&#34;&gt;Class 2&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;highlightm&#34;&gt;
-    &lt;a href=&#34;https://uvacs2102.github.io/docs/ps1.pdf&#34;&gt;Download PDF for Problems&lt;/a&gt;.
-   &lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;highlightr&#34;&gt;
-Your response should be submitted as a single PDF file using collab:
-&lt;a href=&#34;https://collab.itc.virginia.edu/portal/site/e0b17949-c94c-466b-835a-196381f3f911/page/a8776e39-7cfd-4ae2-955a-a846a02d9557&#34;&gt;submission link&lt;/a&gt;
-   &lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;directions&#34;&gt;Directions&lt;/h2&gt;
-
-&lt;p&gt;Solve all the problems on the next page.  For full credit, your answers
-should be correct, clear, well-written, and convincing.&lt;/p&gt;
-
-&lt;!--page--&gt;
-
-&lt;h2 id=&#34;proofs-and-certification&#34;&gt;Proofs and Certification&lt;/h2&gt;
-
-&lt;p&gt;The introduction for the MCS book states,&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&amp;ldquo;Proofs also play a growing role in computer science; they are used to
-certify that software and hardware will &lt;em&gt;always&lt;/em&gt; behave correctly,
-something that no amount of testing can do.&amp;rdquo;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;The statement suggests &amp;ldquo;no amount of testing can certify software
-will always behave correctly&amp;rdquo;.  Is this claim valid or invalid?  Support
-your answer with a short justification.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;The statement suggests &amp;ldquo;proofs can certify that software will
-always behave correctly&amp;rdquo;.  Argue that this is not a correct statement.&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&#34;inference-rules&#34;&gt;Inference Rules&lt;/h2&gt;
-
-&lt;p&gt;For each candidate rule below, state whether or not the rule is sound.
-Support your answer with a convincing proof.&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;$\infer{R}{P \implies Q, Q \implies R}$&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;$\infer{P}{(NOT(NOT(P)))}$&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;$\infer{Q \implies P}{P \implies Q}$&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;$\infer{NOT(Q) \implies P}{P}$&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&#34;proofs&#34;&gt;Proofs&lt;/h2&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;Prove rigorously that if $x + y$ is even and $x$ is odd, $y$ must be odd.  (For this proof, you should be more rigorous than will be expected on most proofs in cs2102, showing all of the steps and justifying each step, similar to the level of rigor from the proof in Class 2.)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;The proof that $\sqrt{2}$ is irrational (Theorem 1.8.1) in the
-book includes relies on this implication: $d^2$ is a multiple of two
-implies $d$ is a multiple of 2.  Prove that this is a valid
-implication to a skeptical reader.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Problem 1.4 (parts a, b, and c) from the MCS book.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Prove that for any non-negative real numbers, $x$ and $y$, if $xy
-= n$ then the minimum of $x$ and $y$ is not greater than $\sqrt{n}$.
-(Hint: prove by contradiction.)&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
 </description>
     </item>
     
