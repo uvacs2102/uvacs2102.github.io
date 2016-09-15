@@ -6,8 +6,136 @@
     <description>Recent content on cs2102: Discrete Math</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 14 Sep 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 15 Sep 2016 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://uvacs2102.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Class 8: Relations</title>
+      <link>https://uvacs2102.github.io/class8/</link>
+      <pubDate>Thu, 15 Sep 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/class8/</guid>
+      <description>
+
+&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps3&#34;&gt;&lt;strong&gt;Problem Set 3&lt;/strong&gt;&lt;/a&gt; is due &lt;strong&gt;Friday at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;
+   &lt;center&gt;
+&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;eaabcbbe2383494e9724b1904156f883&#34; data-ratio=&#34;1.77777777777778&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
+   &lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlightr&#34;&gt; &lt;strong&gt;Challenge Problem Opportunity.&lt;/strong&gt;
+Apparently, people were not entirely convinced by my proof sketch in
+class that the egg came before the chicken.  So, we&amp;rsquo;ll make it a
+challenge problem to write the best proof that answers the question of
+&amp;ldquo;which came first, the chicken or the egg?&amp;rdquo; (That is, you can either
+prove the egg came first, or prove the chicken came first).  A
+convincing proof would need to include clear definitions of &amp;ldquo;chicken&amp;rdquo;
+and &amp;ldquo;egg&amp;rdquo;, and use inference rules, as well as axioms from biology
+(clearly stated), to make an irrefutable argument supporting your position.
+   &lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlightm&#34;&gt;
+   &lt;a href=&#34;https://uvacs2102.github.io/docs/class8.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes and Questions&lt;/b&gt;&lt;/a&gt;.
+   &lt;/div&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;functions&#34;&gt;Functions&lt;/h1&gt;
+
+&lt;p&gt;A &lt;strong&gt;function&lt;/strong&gt; is a mathematical datatype that associates elements from
+one set, called the &lt;em&gt;domain&lt;/em&gt;, with elements from another set, called a
+&lt;em&gt;codomain&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;$$ f: \textrm{\em domain} \rightarrow \textrm{\em codomain} $$&lt;/p&gt;
+
+&lt;p&gt;If the function is &lt;em&gt;total&lt;/em&gt;, every element of the domain has one
+associated codomain element; if the function is &lt;em&gt;partial&lt;/em&gt;, there may be
+elements of the domain that do not have an associated codomain element.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Defining a function.&lt;/strong&gt; To define a function, we need to describe how
+  elements in the domain are associated with elements in the codomain.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Set Products.&lt;/strong&gt; A &lt;em&gt;Cartesian product&lt;/em&gt; of sets $S_1, S_2, \cdots, S_n$
+  is a set consisting of all possible sequences of $n$ elements where the
+  $i$\textsuperscript{th} element is chosen from $S_i$.&lt;/p&gt;
+
+&lt;p&gt;$$ S_1 \times S_2 \times \cdots \times S_n = { (s_1, s_2, \cdots, s_n) | s_i \in S_i } $$&lt;/p&gt;
+
+&lt;p&gt;How many elements are in $A \times B$?&lt;/p&gt;
+
+&lt;p&gt;#&lt;/p&gt;
+
+&lt;p&gt;What are the (sensible) domains and codomains of each function below:&lt;/p&gt;
+
+&lt;p&gt;$$ f(n) ::= |n| \qquad \qquad f(x) ::= x^2  \qquad\qquad f(n) ::= n + 1 \qquad\qquad f(a, b) ::= a / b $$&lt;/p&gt;
+
+&lt;p&gt;$$ f(x) ::= \sqrt{x}  \qquad \qquad \qquad f(S) ::= \textrm{minimum}_{&amp;lt;}(S) $$&lt;/p&gt;
+
+&lt;p&gt;##&lt;/p&gt;
+
+&lt;p&gt;For which of them is the function &lt;em&gt;total&lt;/em&gt;?&lt;/p&gt;
+
+&lt;!--page--&gt;
+
+&lt;p&gt;How are functions in your favorite programming language like and unlike
+mathematical functions?&lt;/p&gt;
+
+&lt;p&gt;#&lt;/p&gt;
+
+&lt;h2 id=&#34;relations&#34;&gt;Relations&lt;/h2&gt;
+
+&lt;p&gt;A &lt;strong&gt;binary relation&lt;/strong&gt;, $R$, consists of a domain set, $A$, and a
+codomain set, $B$, and a subset of $A \times B$ called the &lt;em&gt;graph&lt;/em&gt; of
+$R$.&lt;/p&gt;
+
+&lt;p&gt;For each statement below, give the name and at least one example.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;A binary relation where no element of $A$ has more than one outgoing edge:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;##&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;A binary relation where every element of $A$ has exactly one outgoing edge:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;##&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;A binary relation where every element of $B$ has exactly one incoming edge:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;##&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;A binary relation where every element of $A$ has exactly one outgoing
+edge and every element of $B$ has exactly one incoming edge:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;##&lt;/p&gt;
+
+&lt;p&gt;If there exists a &lt;em&gt;bijective&lt;/em&gt; relation between $S$ and $T$ defined by the graph $G$ which of these &lt;em&gt;must&lt;/em&gt; be true:&lt;/p&gt;
+
+&lt;p&gt;a. there exists some &lt;em&gt;injective&lt;/em&gt; relation between $S$ and $T$.
+b. there exists some &lt;em&gt;bijective&lt;/em&gt; relation between $T$ and $S$.
+c. there exists a &lt;em&gt;total&lt;/em&gt; function, $f: S \rightarrow T$.
+d. $S - T = \emptyset$.
+e. the number of elements of $S$ is equal to the number of elements of $T$.
+f. $G - (S \times T) = \emptyset$.
+g. $(S \times T) - G = \emptyset$.
+h. $(S \times T) - G \neq \emptyset$.&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Generating PDFs</title>
@@ -1727,16 +1855,6 @@ should enable you to design, build, and analyze computing systems that
 do things people previously thought were not possible (or didn&amp;rsquo;t even
 think about at all!)&lt;br /&gt;
    &lt;/div&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Problem Set 1</title>
-      <link>https://uvacs2102.github.io/ps1/</link>
-      <pubDate>Fri, 26 Aug 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://uvacs2102.github.io/ps1/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Problem Set 1&lt;/strong&gt; is &lt;a href=&#34;https://uvacs2102.github.io/ps/ps1&#34;&gt;now posted&lt;/a&gt;, and is due on &lt;strong&gt;Friday, 2 September at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
 </description>
     </item>
     
