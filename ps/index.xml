@@ -479,19 +479,19 @@ are welcome to use SAT solving programs to solve them, including the
 
 &lt;h2 id=&#34;satisfaction&#34;&gt;Satisfaction&lt;/h2&gt;
 
-&lt;p&gt;The length of the formula is the number of clauses, and no clause may be
-repeated.  (The order of literals within a clause doesn&amp;rsquo;t matter, so the
-clauses $(x_1 \vee x_2 \vee x_3)$ and $(x_3 \vee x_1 \vee x_2)$ would
-count as the same clauses, but $(x_1 \vee x_2 \vee x_3)$ and
+&lt;p&gt;The length of the 3CNF formula is the number of clauses, and no clause
+may be repeated.  (The order of literals within a clause doesn&amp;rsquo;t matter,
+so the clauses $(x_1 \vee x_2 \vee x_3)$ and $(x_3 \vee x_1 \vee x_2)$
+would count as the same clauses, but $(x_1 \vee x_2 \vee x_3)$ and
 $(\overline{x_1} \vee x_2 \vee x_3$ are different clauses.)&lt;/p&gt;
 
 &lt;ol&gt;
-&lt;li&gt;&lt;p&gt;What is the length of the &lt;em&gt;shortest&lt;/em&gt; unsatisfiable formula involving
-3 variables?  (That is, each clause involves $x_1$, $x_2$, and $x_3$,
-and your goal is to show that there exists an unsatisfiable formula of
-length $l$, and any formula of length $&amp;lt; l$ is satisfiable.)&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;What is the length of the &lt;em&gt;shortest&lt;/em&gt; unsatisfiable 3CNF formula
+involving 3 variables?  (That is, each clause involves $x_1$, $x_2$, and
+$x_3$, and your goal is to show that there exists an unsatisfiable
+formula of length $l$, and any formula of length $&amp;lt; l$ is satisfiable.)&lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;($\star$) What is the length of the &lt;em&gt;longest&lt;/em&gt; satisfiable formula
+&lt;li&gt;&lt;p&gt;($\star$) What is the length of the &lt;em&gt;longest&lt;/em&gt; satisfiable 3CNF formula
 involving $v$ variables?  An outstanding answer would include a
 convincing proof (hint: well-ordering principle!) that there exists a
 satisfiable formula with $v$ variables of length $l$, but no satisfiable
