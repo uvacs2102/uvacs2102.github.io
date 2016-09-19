@@ -6,8 +6,26 @@
     <description>Recent content on cs2102: Discrete Math</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 16 Sep 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 19 Sep 2016 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://uvacs2102.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Problem Set 2 Comments</title>
+      <link>https://uvacs2102.github.io/ps2comments/</link>
+      <pubDate>Mon, 19 Sep 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/ps2comments/</guid>
+      <description>&lt;p&gt;The solutions and comments for PS2 are now posted in collab: &lt;a href=&#34;https://collab.itc.virginia.edu/access/content/group/e0b17949-c94c-466b-835a-196381f3f911/ps2solutions.pdf&#34;&gt;PDF&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The grades will be released soon.  The grading scale for PS2 is similar
+to what was used for PS1 (there is no &amp;ldquo;out of&amp;rdquo; goal, or &amp;ldquo;maximum&amp;rdquo;
+score), but scores are intended to reflect whether or not you got what
+was intended out of the assignment (or did better than those
+expectations).  See the &lt;a href=&#34;https://uvacs2102.github.io/ps1comments/&#34;&gt;Problem Set 1
+Comments&lt;/a&gt; for the meaning of
+different scores.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Problem Set 4</title>
@@ -577,12 +595,13 @@ points if you end up below that score.&lt;/p&gt;
 reasonable answers for most questions.&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;Several fundamentally incorrect answers, or fundamental problems
-understanding difference between inference and equality.&lt;/p&gt;&lt;/li&gt;
+understanding important concepts for this assignment.&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;Nearly all answers correct, but justifications not as strong as
 desired.&lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;All answers acceptable.  (This is the &amp;ldquo;expected&amp;rdquo; score for PS1.)&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;All answers acceptable.  (This is the &amp;ldquo;expected&amp;rdquo; score for problem
+sets.)&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;All answers essentially correct, with at least one especially good answer.&lt;/p&gt;&lt;/li&gt;
 
@@ -1530,7 +1549,7 @@ hours schedule.&lt;/p&gt;
    &lt;/div&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;highlightm&#34;&gt;
-   &lt;a href=&#34;docs/class3.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes and Questions&lt;/b&gt;&lt;/a&gt;.
+   &lt;a href=&#34;https://uvacs2102.github.io/docs/class3.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes and Questions&lt;/b&gt;&lt;/a&gt;.
    &lt;/div&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
@@ -1611,52 +1630,6 @@ Never need an excuse to watch &lt;a href=&#34;http://www.wired.com/2014/12/gangn
 _The whole problem with the world is that fools and fanatics are always so certain of themselves, and wiser people so full of doubts._ Bertrand Russell
 
 &lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Office Hours Posted</title>
-      <link>https://uvacs2102.github.io/ohours/</link>
-      <pubDate>Sun, 28 Aug 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://uvacs2102.github.io/ohours/</guid>
-      <description>&lt;div class=&#34;highlightr&#34;&gt;
-   The schedule here is subject to change. Please check the current [Office Hours Schedule](/officehours) for the current schedule.
-   &lt;/div&gt;
-
-&lt;p&gt;The &lt;a href=&#34;https://uvacs2102.github.io/officehours&#34;&gt;Office Hours Schedule&lt;/a&gt; is now posted on the &lt;a href=&#34;http://goo.gl/6KlwNO&#34;&gt;Course
-Calendar&lt;/a&gt;.  Office hours start this week Monday
-(August 29).  Except for Dave&amp;rsquo;s, all office hours are in Rice 436.
-Dave&amp;rsquo;s office hours are in his office, Rice 507.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Mondays&lt;/strong&gt;&lt;br /&gt;
-9:30-10:30am Dave (Rice 507)&lt;br /&gt;
-10:30-2pm Yong Jae, Adam R., Brooke&lt;br /&gt;
-4-6:30pm Adam G., Sarah&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Tuesdays&lt;/strong&gt;&lt;br /&gt;
-noon-1:30pm Riya&lt;br /&gt;
-3:30-5pm Luke&lt;br /&gt;
-7:30-9:30pm Subhan&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Wednesdays&lt;/strong&gt;&lt;br /&gt;
-10am-1pm Yong Jae, Brooke, Harrison&lt;br /&gt;
-1-2pm Dave (Rice 507)&lt;br /&gt;
-2:30-5pm Adam G., Gloria&lt;br /&gt;
-6:30-9:30pm Sarah, Han Jin, Subhan&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Thursdays&lt;/strong&gt;&lt;br /&gt;
-10am-1:30pm Harrison, Luke, Han&lt;br /&gt;
-3:30-10pm Gloria, Riya, Adam R., Christopher, Subhan, Yaser&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Fridays&lt;/strong&gt;&lt;br /&gt;
-9-11:30am Sarah, Yong Jae&lt;br /&gt;
-1:30-4pm Luke, Yaser&lt;br /&gt;
-5-6pm Hussain&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Sundays&lt;/strong&gt;&lt;br /&gt;
-noon-3:30pm Hussain, Yong Jae&lt;br /&gt;
-4-5:30pm Christopher&lt;/p&gt;
 </description>
     </item>
     

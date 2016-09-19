@@ -587,7 +587,7 @@ $A$ and $B$, $$A = (A \cap B) \cup (A - B).$$&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;In &lt;a href=&#34;https://uvacs2102.github.io/class7&#34;&gt;Class 7&lt;/a&gt;, we defined set difference as:
 $$\forall x. x \in A - B \iff x \in A \wedge x \notin B.$$
 Provide an alternate (but equivalent in meaning) definition of set
-different using only the other defined set operations (you may use any
+difference using only the other defined set operations (you may use any
 of the union ($\cup$), intersection ($\cap$), and complement
 ($\overline{S}$) operations in your definition, but no other operations
 or qualifiers).  A good answer will include a proof that shows your
