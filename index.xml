@@ -10,6 +10,78 @@
     <atom:link href="https://uvacs2102.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Anonymous Feedback Comments</title>
+      <link>https://uvacs2102.github.io/anonymousfeedback/</link>
+      <pubDate>Mon, 19 Sep 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/anonymousfeedback/</guid>
+      <description>&lt;p&gt;This anonymous comment was submitted through collab:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Hello Professor!&lt;/p&gt;
+
+&lt;p&gt;I have never been very strong at math, and whenever I take a math class I have to try very hard to keep up. This class has been the first time I have ever done a proof and I am having difficulty even getting a grasp of even the basics of this material. Would it be possible to work through more example problems in class in order to get an idea of how to apply these concepts? Also, I have sometimes have difficulty following the symbols that are used when you write in mathematical notation, would it be possible to explain some of the more complex symbols, or go a bit slower when writing them?&lt;/p&gt;
+
+&lt;p&gt;Thanks!&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I understand what you are saying, but do appreciate the comment.  I
+think you are right that we should spend a bit more time in lecture
+going through examples, but I also think large-scale lectures like we
+have for this class are just about the worst possible medium for doing
+this kind of technical work.  (I &lt;a href=&#34;https://web.archive.org/web/20160818072337/http://chronicle.com/blognetwork/castingoutnines/2012/04/03/udacity-cs101-whats-been-good/&#34;&gt;mostly
+agree&lt;/a&gt;
+with Robert Talbert&amp;rsquo;s description of &lt;a href=&#34;https://web.archive.org/web/20160315071640/http://chronicle.com/blognetwork/castingoutnines/2012/02/13/four-things-lecture-is-good-for/&#34;&gt;Four things lecture is good
+for&lt;/a&gt;.)&lt;/p&gt;
+
+&lt;p&gt;The reason large-scale lectures are such a bad format for going through
+technical examples and learning from them is that the way to learn from
+examples is to understand each step by figuring it out yourself, with
+the right leading questions to get you to that step.  And, problems
+don&amp;rsquo;t have just one way of solving them, so you don&amp;rsquo;t want to go through
+a pre-set sequence of steps, but find a path to a solution that makes
+most sense for whoever is working on it.  Spending lecture time going
+through techincal examples inevitably will be boring for a significant
+fraction of the class (that could already solve that problem on their
+own), and will be bewildering for some other fraction of the class (that
+misses some step in the explanation or is thinking about the problem in
+some other way).  The best way to learn from examples is to go through
+them in very small groups (ideally one-on-one), where everyone can
+understand and contribute to each step.  The next best way is to read
+examples at your own pace.  Going through written examples has the
+benefit that everyone can go through at their own pace, and go back over
+steps that didn&amp;rsquo;t make sense, and then try to work out the solution on
+their own.  (The disadvantage is that if what is written doesn&amp;rsquo;t cover
+some path that you are thinking about, or doesn&amp;rsquo;t explain something that
+is unclear, then there is no way to get more information from the static
+page.)&lt;/p&gt;
+
+&lt;p&gt;The book (at least in my view) does do a great job with most example
+problems, and has many good examples.  As I mentioned before, my
+assumption is that if no one asks questions about content, including
+examples, in the book, that means that everyone understood it and it is
+not worthwhile to spend time in lecture repeating material you already
+understand.&lt;/p&gt;
+
+&lt;p&gt;Similarly, I expect everyone to read through the provided solutions to
+the problem sets, which I hope are clear and understandable, but you
+should ask questions if not.  Even if you did well on an assignment, it
+should be worthwhile to read through the solutions, which often provide
+more depth or different approaches to solving problems.&lt;/p&gt;
+
+&lt;p&gt;So, the best thing to do is to come to office hours to go through
+examples in person.  Next, to ask questions about examples from the book
+or problems on the problem sets that are unclear, and then I&amp;rsquo;ll go
+through those in class.&lt;/p&gt;
+
+&lt;p&gt;That said, I do appreciate that it will sometimes be useful to go
+through more basic examples in class, and will try and do this more, but
+balance it with my goals of making class interesting and worthwhile for
+people who are able to understand the text on their own.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Problem Set 2 Comments</title>
       <link>https://uvacs2102.github.io/ps2comments/</link>
       <pubDate>Mon, 19 Sep 2016 00:00:00 +0000</pubDate>
@@ -1512,122 +1584,6 @@ For each of the formulas below, determine if it is _valid_ and if it is _satisfi
 3. $((P \implies Q) \wedge (Q \implies P)) \vee (P \xor Q)$
 
 
-
-&lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Class 3: Well-Ordering Principle</title>
-      <link>https://uvacs2102.github.io/class3/</link>
-      <pubDate>Tue, 30 Aug 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://uvacs2102.github.io/class3/</guid>
-      <description>
-
-&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
-
-&lt;p&gt;This week, you should read MCS Chapter 2 and MCS Chapter 3 (at least
-through the end of Section 3.4).&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps1&#34;&gt;&lt;strong&gt;Problem Set 1&lt;/strong&gt;&lt;/a&gt; is due &lt;strong&gt;Friday at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;Office hours started Monday.  There are upcoming office hours: today
-(Tuesday) 3:30-5pm and 7:30-9:30pm; Wednesday 10am-1pm, 2:30-4pm,
-6:30-9:30pm (all of these are in Rice 436), and Dave has office hours
-Wednesday 1-2pm (in Rice 507).  See &lt;a href=&#34;https://uvacs2102.github.io/officehours/&#34;&gt;the course
-calendar&lt;/a&gt; for the full office
-hours schedule.&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;
-   &lt;center&gt;
-   &lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;33a5919061d54688b959debdad91f6a7&#34; data-ratio=&#34;1.77777777777778&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
-   &lt;/center&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;highlightr&#34;&gt;
-&lt;strong&gt;Challenge Problem Opportunity.&lt;/strong&gt; It is trivial to show that numbers in Java or C are not we-ordered, but quite challenging to show this for Python.  Write a Python program that demonstrates the fact that numbers in Python are not well-ordered.
-   &lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;highlightm&#34;&gt;
-   &lt;a href=&#34;https://uvacs2102.github.io/docs/class3.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes and Questions&lt;/b&gt;&lt;/a&gt;.
-   &lt;/div&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://math.berkeley.edu/~kpmann/Well-ordering.pdf&#34;&gt;&lt;em&gt;The Well-Ordering Theorem: one of the Greatest Mathematical Controversies of All Time&lt;/em&gt;&lt;/a&gt;, Kathryn Mann.&lt;br /&gt;
-&lt;a href=&#34;https://www.theguardian.com/business/2015/may/01/us-aviation-authority-boeing-787-dreamliner-bug-could-cause-loss-of-control&#34;&gt;&lt;em&gt;US aviation authority: Boeing 787 bug could cause &amp;lsquo;loss of control&amp;rsquo;&lt;/em&gt;&lt;/a&gt; (&lt;a href=&#34;http://embeddedgurus.com/stack-overflow/2015/05/boeing-dreamliner-bug/&#34;&gt;Nigel Jones&amp;rsquo; explanation&lt;/a&gt;)&lt;br /&gt;
-&lt;a href=&#34;http://phrack.org/issues/60/10.html&#34;&gt;Basic Integer Overflows&lt;/a&gt;, blexim,
-Phrak (Volume 0x0b, Issue 0x3c).&lt;br /&gt;
-Never need an excuse to watch &lt;a href=&#34;http://www.wired.com/2014/12/gangnam-style-youtube-math/&#34;&gt;Gangnam Style&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;notes-and-questions&#34;&gt;Notes and Questions&lt;/h1&gt;
-
-&lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; A set is &lt;em&gt;well-ordered&lt;/em&gt; with respect to an ordering
-  function (e.g., &amp;lt;), if all of its non-empty subsets has a minimum
-  element.&lt;/p&gt;
-
-&lt;p&gt;What properties must a sensible ordering function have?&lt;/p&gt;
-
-&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;Trichotomy&lt;/strong&gt;. A relation, $\prec$, satisfies the axiom of trichotomy
-  if exactly one of these is true for all elements $a$ and $b$: $a \prec
-  b$, $b \prec a$ or $a = b$.&lt;/p&gt;
-
-&lt;p&gt;Which of these are well-ordered?&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;The set of non-negative integers, comparator $&amp;lt;$.&lt;/li&gt;
-&lt;li&gt;The set of integers, comparator $&amp;lt;$.&lt;/li&gt;
-&lt;li&gt;The set of integers, comparator $|a| &amp;lt; |b|$.&lt;/li&gt;
-&lt;li&gt;The set of integers, comparator if |a| = |b|: $a &amp;lt; b$, else: $|a| &amp;lt; |b|$.&lt;/li&gt;
-&lt;li&gt;The set of national soccer teams, comparator winning games.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Prove the set of positive rationals is &lt;em&gt;not&lt;/em&gt; well-ordered under $&amp;lt;$.&lt;/p&gt;
-
-&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;
-
-&lt;p&gt;#&lt;/p&gt;
-
-&lt;p&gt;Provide a comparison function that can be used to well-order the positive rationals.&lt;/p&gt;
-
-&lt;!--page--&gt;
-
-&lt;h3 id=&#34;template-for-well-ordering-proofs-section-2-2&#34;&gt;Template for Well-Ordering Proofs (Section 2.2)&lt;/h3&gt;
-
-&lt;p&gt;To prove that $P(n)$ is true for all $n \in \mathbb{N}$:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Define the set of counterexamples, $C ::= { n \in \mathbb{N} | NOT(P(n)) }$.&lt;/li&gt;
-&lt;li&gt;Assume for contradiction that $C$ is ______________. &lt;!-- non-empty.--&gt;&lt;/li&gt;
-&lt;li&gt;By the well-ordering principle, there must be __________________ &lt;!-- some smallest element--&gt;, $m \in C$.&lt;/li&gt;
-&lt;li&gt;Reach a contradiction (this is the creative part!).  One way to reach a contradiction would be to show $P(m)$.  Another way is to show there must be an element $m&amp;rsquo; \in C$ where $m&amp;rsquo; &amp;lt; m$.&lt;/li&gt;
-&lt;li&gt;Conclude that $C$ must be empty, hence there are no counter-examples and $P(n)$ always holds.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;strong&gt;Example: Betable Numbers.&lt;/strong&gt; A number is &lt;em&gt;betable&lt;/em&gt; if it can be
-  produced using some combination of \$2 and \$5 chips.  Prove that all
-  integer values greater than \$3 are betable.&lt;/p&gt;
-
-&lt;div class=&#34;biggap&#34;&gt;&lt;/div&gt;
-#
-#
-#
-
-**Example: Division Property.** Given integer $a$ and positive integer $b$, there exist integers $q$ and $r$ such that:
-      $a = qb + r$ and $0 \le r &lt; b$.
-
-&lt;div class=&#34;biggap&#34;&gt;&lt;/div&gt;
-#
-#
-
-
-_The whole problem with the world is that fools and fanatics are always so certain of themselves, and wiser people so full of doubts._ Bertrand Russell
 
 &lt;/div&gt;
 </description>
