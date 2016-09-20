@@ -34,7 +34,7 @@ Section 5.1.  We will discuss Induction (Section 5.1) next class.&lt;/p&gt;
    &lt;/div&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;highlightg&#34;&gt;
-How many self-inverting relations, &lt;em&gt;R&lt;/em&gt;: &lt;em&gt;N&lt;/em&gt;&lt;sub&gt;&lt;em&gt;k&lt;/em&gt;&lt;/sub&gt; &amp;rarr; &lt;em&gt;N&lt;/em&gt;&lt;sub&gt;&lt;em&gt;k&lt;/em&gt;&lt;/sub&gt;, are there?  (Where &lt;em&gt;N&lt;/em&gt;&lt;sub&gt;&lt;em&gt;k&lt;/em&gt;&lt;/sub&gt; is the set of all non-negative integers less than &lt;em&gt;k&lt;/em&gt;, and a relation is self-inverting if &lt;em&gt;R&lt;/em&gt; = &lt;em&gt;R&lt;/em&gt;&lt;sup&gt;-1&lt;/sup&gt;.)
+&lt;strong&gt;Challenge Problem.&lt;/strong&gt; How many self-inverting relations, &lt;em&gt;R&lt;/em&gt;: &lt;em&gt;N&lt;/em&gt;&lt;sub&gt;&lt;em&gt;k&lt;/em&gt;&lt;/sub&gt; &amp;rarr; &lt;em&gt;N&lt;/em&gt;&lt;sub&gt;&lt;em&gt;k&lt;/em&gt;&lt;/sub&gt;, are there?  (Where &lt;em&gt;N&lt;/em&gt;&lt;sub&gt;&lt;em&gt;k&lt;/em&gt;&lt;/sub&gt; is the set of all non-negative integers less than &lt;em&gt;k&lt;/em&gt;, and a relation is self-inverting if &lt;em&gt;R&lt;/em&gt; = &lt;em&gt;R&lt;/em&gt;&lt;sup&gt;-1&lt;/sup&gt;.)
    &lt;/div&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
