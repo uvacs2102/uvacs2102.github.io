@@ -6,8 +6,116 @@
     <description>Recent content on cs2102: Discrete Math</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 19 Sep 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 20 Sep 2016 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://uvacs2102.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Class 9: Cardinality</title>
+      <link>https://uvacs2102.github.io/class9/</link>
+      <pubDate>Tue, 20 Sep 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/class9/</guid>
+      <description>
+
+&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
+
+&lt;p&gt;This week you should finish reading MSC Chapter 4 (section 4.5) and
+Section 5.1.  We will discuss Induction (Section 5.1) next class.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps4&#34;&gt;&lt;strong&gt;Problem Set 4&lt;/strong&gt;&lt;/a&gt; is due &lt;strong&gt;Friday at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;
+   &lt;center&gt;
+&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;9612efccd7d943e2acdc844eeac874f4&#34; data-ratio=&#34;1.77777777777778&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
+   &lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlightm&#34;&gt;
+   &lt;a href=&#34;https://uvacs2102.github.io/docs/class9.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes and Questions&lt;/b&gt;&lt;/a&gt;.
+   &lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlightg&#34;&gt;
+How many self-inverting relations, $R: \mathbb{N}_k \rightarrow \mathbb{N}_k$, are there?  (Where $\mathbb{N}_k$ is the set of all non-negative integers less than $k$, and a relation is self-inverting if $R \equiv R^{-1}$.)
+   &lt;/div&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;relation-practice&#34;&gt;Relation Practice&lt;/h1&gt;
+
+&lt;p&gt;The &lt;em&gt;inverse&lt;/em&gt; of a relation $R: A \rightarrow B, G \subseteq A \times B$ is defined by reversing all the arrows:
+$$
+R^{-1}: B \rightarrow A, G^{-1} \subseteq B \times A
+$$&lt;/p&gt;
+
+&lt;p&gt;$$
+(b, a) \in G^{-1} \iff \fillin\fillin\fillin\fillin
+$$&lt;/p&gt;
+
+&lt;p&gt;What does it mean if $R \equiv R^{-1}$?&lt;/p&gt;
+
+&lt;h1 id=&#34;set-cardinality&#34;&gt;Set Cardinality&lt;/h1&gt;
+
+&lt;p&gt;&lt;strong&gt;Finite Cardinality.&lt;/strong&gt; If $A$ is a finite set, the &lt;em&gt;cardinality&lt;/em&gt; of
+  $A$, written $|A|$, is the number of elements in $A$.&lt;/p&gt;
+
+&lt;p&gt;Does this definition require adding a new fundamental set operation?&lt;/p&gt;
+
+&lt;p&gt;#&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Alternate definition:&lt;/strong&gt; The &lt;em&gt;cardinality&lt;/em&gt; of the set
+$$
+N_k = { n | n \in \mathbb{N} \wedge n &amp;lt; k }
+$$
+is $k$.  If there is a &lt;em&gt;bijection&lt;/em&gt; between two sets, they have the same
+cardinality.&lt;/p&gt;
+
+&lt;p&gt;#&lt;/p&gt;
+
+&lt;p&gt;If there is a &lt;em&gt;surjective relation&lt;/em&gt; between $A$ and $B$ what do we know
+about their cardinalities?&lt;/p&gt;
+
+&lt;p&gt;##&lt;/p&gt;
+
+&lt;p&gt;If there is a &lt;em&gt;surjective function&lt;/em&gt; between $A$ and $B$ what do we know
+about their cardinalities?&lt;/p&gt;
+
+&lt;!--page--&gt;
+
+&lt;p&gt;If there is a &lt;em&gt;total surjective function&lt;/em&gt; between $A$ and $B$ what do we know
+about their cardinalities?&lt;/p&gt;
+
+&lt;p&gt;##&lt;/p&gt;
+
+&lt;p&gt;If there is a &lt;em&gt;total surjective injective function&lt;/em&gt; between $A$ and $B$
+what do we know about their cardinalities?&lt;/p&gt;
+
+&lt;p&gt;##&lt;/p&gt;
+
+&lt;p&gt;What is the cardinality of $A \cup B$?&lt;/p&gt;
+
+&lt;p&gt;#&lt;/p&gt;
+
+&lt;h1 id=&#34;power-sets&#34;&gt;Power Sets&lt;/h1&gt;
+
+&lt;p&gt;The &lt;strong&gt;power set&lt;/strong&gt; of $A$ ($\textrm{pow}(A)$)is the set of all subsets of $A$:
+$$
+B \in \textrm{pow}(A) \iff B \subseteq A.
+$$&lt;/p&gt;
+
+&lt;p&gt;Prove that the size of the power set of a set $S$ with $|S| = N$ is
+$2^N$ using the well-ordering principle.  (See MCS 4.5.1 for an
+alternate proof.)&lt;/p&gt;
+
+&lt;p&gt;#&lt;/p&gt;
+
+&lt;p&gt;#&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Anonymous Feedback Comments</title>
@@ -1464,137 +1572,6 @@ that no amount of testing can do.&lt;/em&gt;&lt;/p&gt;
       
       <guid>https://uvacs2102.github.io/ps2/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Problem Set 2&lt;/strong&gt; is &lt;a href=&#34;https://uvacs2102.github.io/ps/ps2&#34;&gt;now posted&lt;/a&gt;, and is due on &lt;strong&gt;Friday, 9 September at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Class 4: Logical Formulas</title>
-      <link>https://uvacs2102.github.io/class4/</link>
-      <pubDate>Thu, 01 Sep 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://uvacs2102.github.io/class4/</guid>
-      <description>
-
-&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps1&#34;&gt;&lt;strong&gt;Problem Set 1&lt;/strong&gt;&lt;/a&gt; is due &lt;strong&gt;Friday at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;I will not be able to hold my normal office hours on Monday.&lt;/p&gt;
-
-&lt;p&gt;Next week, we will cover the rest of Chapter 3 (Satisfiability and
-Quantifiers).&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;
-   &lt;center&gt;
-&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;409b26ba65fc4331970cb6eee0918d70&#34; data-ratio=&#34;1.77777777777778&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
-   &lt;/center&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;highlightm&#34;&gt;
-   &lt;a href=&#34;https://uvacs2102.github.io/docs/class4.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes and Questions&lt;/b&gt;&lt;/a&gt;.
-   &lt;/div&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
-
-&lt;p&gt;Scott Brown, &lt;a href=&#34;http://ms.appliedprobability.org/data/files/selected%20articles/39-1-1.pdf&#34;&gt;&lt;em&gt;The Life and Work of Augustus De Morgan&lt;/em&gt;&lt;/a&gt;. Applied Probability 2006.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.claymath.org/content/correspondence-de-morgan-0&#34;&gt;Ada&amp;rsquo;s Correspondence with De Morgan&lt;/a&gt; (Clay Mathematics Institute)&lt;/p&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;notes-and-questions&#34;&gt;Notes and Questions&lt;/h1&gt;
-
-&lt;h2 id=&#34;well-ordering-principle-proof&#34;&gt;Well-Ordering Principle Proof&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;Odd Summation.&lt;/strong&gt; (Problem 2.12) Prove that for all $n &amp;gt; 0$, the sum of the first $n$ odd numbers is $n^2$.&lt;/p&gt;
-
-&lt;div class=&#34;biggap&#34;&gt;&lt;/div&gt;
-#
-#
-
-## Notations
-
-Mathematics and other domains often use many symbols to mean the same
-thing.  Section 3.2 of the book gives some common notations, but there
-are others in common use.
-
-\begin{center}
-\begin{tabular}{cccc}
-English &amp; Logic &amp; C, Java, Rust &amp; Python \\ \hline
-$P$ \smallcaps{implies} $Q$ &amp; $P \implies Q$ {\em or} $P \longrightarrow Q$ &amp; - &amp; - \\
-\smallcaps{not}$(P)$ &amp; $\neg P$ {\em or} $\overline{P}$ &amp; \verb+!p+ &amp; \verb+not p+ \\
-$P$ \smallcaps{and} $Q$ &amp; $P \wedge Q$ &amp; \verb+p &amp;&amp; q+ &amp; \verb+p and q+ \\
-$P$ \smallcaps{or} $Q$ &amp; $P \vee Q$ &amp; \verb+P || Q+ &amp; \verb+p or q+ \\
-$P$ \smallcaps{xor} $Q$ &amp; $P \oplus Q$ &amp; \verb+p ^ q+ (bitwise) or \verb+p != q+ &amp; \verb+p ^ q+ \\
-\end{tabular}
-\end{center}
-
-For what values in Java or C are \verb+p ^ q+ and \verb+p != q+ both valid, but have different meanings?
-
-## Logical Formulas
-
-\begin{center}
-\begin{tabular}{c|c|c}
-$P$ &amp; \smallcaps{not}$(P)$ &amp; \_\_\_\_\_\_\_\_ \\ \hline
-\T &amp; \F &amp; \\
-\F &amp; \T &amp; \\
-\end{tabular}
-\end{center}
-
-How many one-input Boolean operators are there?  How many do we need to
-produce them all?
-
-#
-
-\begin{center}
-\begin{tabular}{cc|c|c|c|c|c}
-$P$ &amp; $Q$ &amp; $P \wedge Q$ &amp; $P \vee Q$ &amp; $P \implies Q$ &amp; \_\_\_\_\_\_\_\_ &amp; $P \oplus Q$ \\ \hline
-\T &amp; \T   &amp; \T &amp; \T &amp; &amp; \T &amp; \F \\
-\T &amp; \F   &amp;    &amp; \T &amp; &amp; \F &amp; \T \\
-\F &amp; \T   &amp;    &amp; \T &amp; &amp; \F &amp; \T \\
-\F &amp; \F   &amp;   &amp; \F &amp;  &amp; \T &amp; \F \\
-\end{tabular}
-\end{center}
-
-How many two-input Boolean operators are there?
-
-#
-
-**De Morgan&#39;s Laws:** 
-$$\neg(P \wedge Q) \equiv (\neg P) \vee (\neg Q)  \qquad \neg(P \vee Q) \equiv (\neg P) \wedge (\neg Q)$$
-
-How can these be written without the $\neg$ in front?
-
-##
-
-Prove that it is possible to make all two-input Boolean operators using
-just \smallcaps{not} and any _odd_ two-input operator. (An operator is _odd_,
-if the number of outputs that are **True** are odd.)
-
-##
-
-**Definition: valid.** A logical formula is _valid_ if there is no way
-  to make it **false**.  That is, no matter what truth values its
-  variables have, it is always **true**.  (Another name for this is a
-  _tautology_.)
-
-**Definition: satisfiable.** A logical formula is _satisfiable_ if there
-  is _some_ way to make it **true**.  That is, there is at least one
-  assignment of truth value to its variables that makes the forumla
-  true.
-
-For each of the formulas below, determine if it is _valid_ and if it is _satisfiable_.
-
-1. $(P \vee \neg P)$
-
-2. $(P \vee Q) \wedge (\neg P \vee Q)$
-
-3. $((P \implies Q) \wedge (Q \implies P)) \vee (P \xor Q)$
-
-
-
-&lt;/div&gt;
 </description>
     </item>
     
