@@ -142,17 +142,150 @@
   <center>
   <b>Recent Posts: </b>
   
+    <a href="https://uvacs2102.github.io/class10/">Class 10: In(tro)duction</a> |
+  
+    <a href="https://uvacs2102.github.io/ps3comments/">Problem Set 3 Comments</a> |
+  
     <a href="https://uvacs2102.github.io/class9/">Class 9: Cardinality</a> |
-  
-    <a href="https://uvacs2102.github.io/surveyquestions3/">Survey Questions (Part 3)</a> |
-  
-    <a href="https://uvacs2102.github.io/anonymousfeedback/">Anonymous Feedback Comments</a> |
   
   <a href="/post">More...</a>
   </center>
   <p></p>
 
   
+  
+    <p class="fronthead"><a href="https://uvacs2102.github.io/class10/">Class 10: In(tro)duction</a> (Thu, 22 Sep 2016)</p>
+     
+
+<h3 id="schedule">Schedule</h3>
+
+<p><a href="/ps/ps4"><strong>Problem Set 4</strong></a> is due <strong>Friday at 6:29pm</strong>.</p>
+
+<p>Next week, you should finish reading MCS Chapter 5 (Induction).  Another
+presentation of Induction is <a href="http://www.people.vcu.edu/~rhammack/BookOfProof/Induction.pdf">Chapter 10 from the Book of
+Proof</a>
+(you are not required to read this, but it is encouraged and has lots
+more examples of proofs by induction).</p>
+
+<p>Exam 1 will be in class on Thursday, 6 October.</p>
+
+<p><div class="notpdf">
+   <center>
+   </center></p>
+
+<p><div class="highlightm">
+   <a href="/docs/class10.pdf">See PDF Version for <b>Notes and Questions</b></a>.
+   </div></p>
+
+<h2 id="links">Links</h2>
+
+<p><a href="http://www.people.vcu.edu/~rhammack/BookOfProof/Induction.pdf">Chapter 10: Induction from the Book of Proof</a></p>
+
+<p></div><!--endpdf--></p>
+
+<p><div class="latex"></p>
+
+<h1 id="power-sets-continued-from-class-9-class9">Power Sets (continued from <a href="/class9">Class 9</a>)</h1>
+
+<p>The <strong>power set</strong> of $A$ ($\textrm{pow}(A)$) is the set of all subsets of
+$A$: $B \in \textrm{pow}(A) \iff B \subseteq A$.</p>
+
+<p>Prove that the size of the power set of a set $S$ with $|S| = N$ is
+$2^N$.</p>
+
+<p><strong>Proof using Well-Ordering Principle</strong></p>
+
+<p>The goal is to prove for all sets $A$: $|\textrm{pow}(A)| = 2^{|A|}$.</p>
+
+<p>Recall (from <a href="/class9">Class 9</a>) that $N_k = { n | n \in \mathbb{N} \wedge n &lt; k } $ and $|\mathbb{N}_n| = n$.</p>
+
+<p>Because of the bijection between any set $A$ where $|A| = n$ to $\mathbb{N}_n$, we can prove the general property by  showing $\forall n \in \mathbb{N} \ldotp P(n)$ where $P(n) ::= |\textrm{pow}(\mathbb{N}_n)| = 2^n$.</p>
+
+<p>We follow the structure of every well-ordering proof:</p>
+
+<ol>
+<li>Define the set of counterexamples:
+$$
+C ::= { n \in \mathbb{N} | \quad |\textrm{pow}(\mathbb{N}_n)| \neq 2^n }
+$$</li>
+<li>Assume $C$ is $\fillin\fillin\fillin$.</li>
+<li>By the well-ordering principle, there must be some smallest element, $m \in C$.</li>
+
+<li><p>Reach a contradiction: we show that $\fillin\fillin\fillin$ holds.</p>
+
+<ul>
+<li>Since $m$ is the smallest element of $C$, $P(n)$ must hold for all $\fillin\fillin\fillin$.</li>
+<li>We know $P(0)$ is true since $\mathbb{N}_0 = \emptyset$ and $\textrm{pow}(\emptyset) = \fillin\fillin\fillin\fillin$.  We have, $|\textrm{pow}(\mathbb{N}_0)| =  \fillin\fillin = \fillin\fillin$, satisfying $P(0)$.</li>
+<li>Thus, $m &gt; 0$.  This means $m - 1 \in \mathbb{N}$.</li>
+<li>So, we know $P(\fillin\fillin)$ holds.</li>
+<li>Thus, we can construct $\textrm{pow}(\mathbb{N}<em>{m})$ by keeping all the elements of $\textrm{pow}(\mathbb{N}</em>{m - 1})$ and adding each of those elements with $(m-1)$ inserts.  More formally,
+$$
+\textrm{pow}(\mathbb{N}<em>m) = \textrm{pow}(\mathbb{N}</em>{m - 1}) \quad \cup \bigcup<em>{S \in \textrm{pow}(\mathbb{N}</em>{m - 1})} (S \cup \fillin\fillin\fillin)
+$$
+The size of this set is $2 |\textrm{pow}(\mathbb{N}<em>{m - 1})|$ since it contains two sets for each set in $\textrm{pow}(\mathbb{N}</em>{m - 1})$ (the original one, and the one with $m-1$ added, which we know is a new set since $m - 1 \notin \mathbb{N}_{m - 1}$).<br /></li>
+<li>Since $P(m-1)$, we know $|\textrm{pow}(\mathbb{N}<em>{m - 1})| = \fillin\fillin\fillin$. The size of the new set, $|\textrm{pow}(\mathbb{N}</em>{m})| = 2 \cdot 2^{m - 1} = 2^{m}$.  This means that $P(m)$ holds.</li>
+</ul></li>
+
+<li><p>Hence, $C$ must be empty.  We reached a contradiction using the well-ordering principle by showing the $P(m)$ holds for $m \in C$, which must mean the $C$ is empty.  If there are no counter-examples, then $P(n)$ holds for all $n \in \mathbb{N}$.</p></li>
+</ol>
+
+<h1 id="induction-principle">Induction Principle</h1>
+
+<p>Let $P$ be a predicated on $\mathbb{N}$.  If</p>
+
+<ul>
+<li>$P(0)$ is true, and</li>
+<li>$P(n) \implies P(n + 1)$ for all $n \in \mathbb{N}$,</li>
+</ul>
+
+<p>then</p>
+
+<ul>
+<li>$P(m)$ is true for all $m \in \mathbb{N}$.</li>
+</ul>
+
+<h2 id="template-for-induction-proofs">Template for Induction Proofs</h2>
+
+<ol>
+<li>State, &ldquo;We prove by induction.&rdquo;</li>
+<li>Define a predicate, $P(n)$.  This is the <em>induction hypothesis</em>.  Our goal is to show that $P(n)$ is true for all $n \in \mathbb{N}$.</li>
+<li>Prove $P(0)$ is true.  (<em>base case</em> or <em>basis step</em>.)</li>
+<li>Prove that $P(n) \implies P(n + 1)$ for every $n \in \mathbb{N}$.  (<em>induction step</em>)</li>
+<li>Conclude that $P(n)$ is true for all $n \in \mathbb{N}$ by induction.</li>
+</ol>
+
+<p>How is the method of <em>proof by induction principle</em> similar to and different from <em>proof by well-ordering principle</em>?</p>
+
+<h2 id="induction-practice">Induction Practice</h2>
+
+<p>Prove the non-negative integers are well ordered by the induction principle.</p>
+
+<p>###</p>
+
+<p>Prove the power set size property, $|\textrm{pow}(A)| = 2^{|A|}$, by
+induction.</p>
+
+<p>###</p>
+
+<p></div></p>
+
+  
+    <p class="fronthead"><a href="https://uvacs2102.github.io/ps3comments/">Problem Set 3 Comments</a> (Thu, 22 Sep 2016)</p>
+     <p>The solutions and comments for PS3 are now posted in collab: <a href="https://collab.itc.virginia.edu/access/content/group/e0b17949-c94c-466b-835a-196381f3f911/ps3_solutions.pdf">PDF</a></p>
+
+<p>You should find your graded assignment as a new PDF attachment with
+markup on it in collab (if you submitted with teammates, please check
+with your partners).</p>
+
+<p>The meaning of the scores is the same as for PS1 and PS2.  A score of 6
+means you got everything we expected out of this assignment, and 5 means
+you did well for the most part by had some answers that should have been
+better.  Scores above 6 are for excellent work.  (In the gradebook,
+collab sometimes shows the grades scaled by 100 for some buggy reason.
+Although receiving a score of 100+ is possible in theory, no one
+received more than 8 points for this assingment.  If you see a score
+about 100, the meaning is that score divided by 100.)</p>
+
   
     <p class="fronthead"><a href="https://uvacs2102.github.io/class9/">Class 9: Cardinality</a> (Tue, 20 Sep 2016)</p>
      
@@ -955,214 +1088,6 @@ students than what <a href="https://www.math.vt.edu/people/mcquain/math2534.htm"
 Tech</a> does, but I
 hope you would not use that as a sign that our expectations are too
 high!)</p>
-
-  
-    <p class="fronthead"><a href="https://uvacs2102.github.io/class7/">Class 7: Sets</a> (Tue, 13 Sep 2016)</p>
-     
-
-<h3 id="schedule">Schedule</h3>
-
-<p>Everyone should have received their comments and grade on PS1
-yesterday. Please make sure to read the comments posted on the website
-about how PS1 was graded.</p>
-
-<p><a href="/ps/ps3"><strong>Problem Set 3</strong></a> is due <strong>Friday at 6:29pm</strong>.</p>
-
-<p>I will have &ldquo;make-up&rdquo; office hours tomorrow (Wednesday) 3:30-4:30pm (in
-addition to my usual Wednesday 1-2pm office hours).  There have been
-some adjustments to the office hours schedule, please check the
-calendar.</p>
-
-<p><div class="notpdf">
-   <center>
-<script async class="speakerdeck-embed" data-id="e2acfe2e97794da8a9a7f5fec369147e" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-   </center></p>
-
-<p><div class="highlightm">
-   <a href="/docs/class7.pdf">See PDF Version for <b>Notes and Questions</b></a>.
-   </div></p>
-
-<h2 id="links">Links</h2>
-
-<p><a href="http://www.egr.unlv.edu/~bein/SIGACT/lewin.html">Tom Leighton&rsquo;s Remarks on Danny Lewin</a></p>
-
-<p><a href="http://archive.boston.com/business/technology/articles/2011/09/04/akamai_thrives_in_the_spirit_of_its_lost_founder/?camp=pm"><em>A Lost Spirit Still Inspires</em></a>, Boston Globe, 4 September 2011.</p>
-
-<p><a href="https://www.amazon.com/No-Better-Time-Remarkable-Transformed/dp/0306821664"><em>No Better Time: The Brief, Remarkable Life of Danny Lewin, the Genius Who Transformed the Internet</em></a> by Molly Knight Raskin.</p>
-
-<p><a href="https://www.technologyreview.com/s/400799/akamais-algorithms/"><em>Akamai&rsquo;s
-Algorithms</em></a>
-Technology Review, Interview with Tom Leighton, 1 September 2000.</p>
-
-<p>David Karger, Eric Lehman, Tom Leighton, Matthew Levine, Daniel Lewin,
-Rina Panigrah.  <a href="https://www.akamai.com/kr/ko/multimedia/documents/technical-publication/consistent-hashing-and-random-trees-distributed-caching-protocols-for-relieving-hot-spots-on-the-world-wide-web-technical-publication.pdf"><em>Consistent Hashing and Random Trees: Distributed
-Caching Protocols for Relieving Hot Spots on the World Wide
-Web</em></a>. (Note:
-tradition in theory papers is to list all authors alphabetically). 29th
-ACM Symposium on Theory of Computing, 1997.</p>
-
-<p>The SAT solver I demo&rsquo;d in class today was from the <a href="/class6">Class 6</a>
-notes: Sahand Saba&rsquo;s <a href="http://sahandsaba.com/understanding-sat-by-implementing-a-simple-sat-solver-in-python.html"><em>Understanding SAT by Implementing a Simple SAT
-Solver in
-Python</em></a>
-[<a href="https://github.com/evansuva/simple-sat">Code with my modifications:
-https://github.com/evansuva/simple-sat</a>].  You should, of course, feel free to use this (or any other SAT solver you want) to help with solving and checking your answers for <a href="/ps/ps3">Problem Set 3</a> (and any other assignment in this class).</p>
-
-<p></div><!--endpdf--></p>
-
-<p><div class="latex"></p>
-
-<h1 id="notes-and-questions">Notes and Questions</h1>
-
-<p>What is a <em>data type</em>?  What are the differences between a <em>mathematical
-data type</em> and a data type in your favorite programming language?</p>
-
-<p>#</p>
-
-<p>A <strong>set</strong> is an unordered colection of objects.  A set is defined by its
-membership operation: $x \in S$ is true if $x$ is in the set $S$.</p>
-
-<h2 id="set-operations">Set Operations</h2>
-
-<p>Subset: $\subseteq$ (note that this does not mean <em>strict subset</em>)
-$$A \subseteq B \iff \forall x \in A. \fillin \in \fillin.$$</p>
-
-<p>Set Equality: $=$
-$$A = B \iff A \fillin B \wedge B \fillin A.$$</p>
-
-<p>Set Union: $\cup$
-$$\forall x. x \in A \cup B \iff x \in A \fillin x \in B.$$</p>
-
-<p>Set Intersection: $\cap$
-$$\forall x. x \in A \cap B \iff x \in A \fillin x \in B.$$</p>
-
-<p>Set Difference: $-$
-$$\forall x. x \in A - B \iff x \in A \wedge x \notin B.$$</p>
-
-<p>Set Complement: $\overline{S}$
-$$ \forall x. x \in D. x \in \overline{A} \iff x \notin A.$$</p>
-
-<p>($D$ is the ``domain of discourse&rdquo;, the universe of all objects under
-discussion.)
-<!--page--></p>
-
-<h3 id="russell-s-paradox">Russell&rsquo;s Paradox</h3>
-
-<p>$$ S_{R} = \textrm{ the set of all sets that are not members of themselves} $$</p>
-
-<p>Is $S<em>{R} \in S</em>{R}$?</p>
-
-<p>#</p>
-
-<h3 id="set-practice">Set Practice</h3>
-
-<p>Here are some practice problems involving sets.  We won&rsquo;t go through
-these in class, but you should ask questions about any are unclear.  (At
-least a few of these will be on Exam 1.)</p>
-
-<ol>
-<li>Define $A \subset B$ (strict subset).</li>
-</ol>
-
-<p>#</p>
-
-<ol>
-<li>Prove $A \cup B \equiv B \cup A$.</li>
-</ol>
-
-<p>#</p>
-
-<ol>
-<li>Prove $A - B = \emptyset \iff A \subseteq B$.</li>
-</ol>
-
-<p>#</p>
-
-<ol>
-<li>Prove $A = B \iff (\forall a \in A \ldotp a \in B) \wedge (\forall b \in B \ldotp b \in A).$</li>
-</ol>
-
-<p>#</p>
-
-<h2 id="danny-lewin">Danny Lewin</h2>
-
-<p>See the web version for links to articles on Danny Lewin.</p>
-
-<p>\begin{quote}
-{\em In true Danny form, he fought back against the terrorists in an effort to defend the stewardesses and the cockpit. To this day, those of us who knew him well can’t figure out how only five terrorists managed to overpower him. During his short life, Danny made extraordinary contributions to the internet and to computer science through his work in algorithms and complexity theory. The impact of his work will be felt throughout the hi-tech industry for many years to come.} (from Tom Leigthon&rsquo;s \hyperlink{<a href="http://www.egr.unlv.edu/~bein/SIGACT/lewin.html}{remarks">http://www.egr.unlv.edu/~bein/SIGACT/lewin.html}{remarks</a> to commemorate naming of the STOC Best Student Paper Award in honor of Daniel Lewin}, 19 May 2002.
-\end{quote}</p>
-
-<p></div></p>
-
-  
-    <p class="fronthead"><a href="https://uvacs2102.github.io/ps1comments/">Problem Set 1 Comments</a> (Sat, 10 Sep 2016)</p>
-     <p>The solutions and comments for PS1 are now posted in collab: <a href="https://collab.itc.virginia.edu/access/content/group/e0b17949-c94c-466b-835a-196381f3f911/ps1solutions.pdf">PDF</a></p>
-
-<p>The grades will be released soon.  Sorry it took so long to get the
-grading and solutions done for PS1.  We are sorting out how to manage
-grading using collab and figuring a better way to manage this, and
-getting tablets to make it easier to write on your submitted PDFs
-(instead of typing notes, as was done for PS1).  I hope this will go
-more smoothly for PS2, and be fully worked out for PS3 and later. Our
-goal (which I think is reasonable for you to expect) is to always return
-assignments within a week of when they are due.</p>
-
-<p>The way problem sets are graded in this class is probably different from
-what most of you are accustomed to.  The purpose of the problem sets is
-primarily for <em>learning</em> and not for <em>grading</em>, so the grading system I
-use is designed with the goals of providing useful feedback to you, as
-well as giving us a way to see how the class is going and if students
-are on track.  This means instead of giving detailed point scores for
-every problem and grading in a way that emphasizes losing points by
-making mistakes, the problem sets are graded in a way meant to capture
-how well students are understanding the material.</p>
-
-<p>Collab requires specifying a <em>maximum</em> score for each assignment, but
-there is no real maximum score, and you should not view the scores as
-being &ldquo;<em>n</em> out of <em>m</em>&rdquo; where there is some maximum score and you are losing
-points if you end up below that score.</p>
-
-<p>The meaning of the grades for PS1 is:</p>
-
-<ol>
-<li><p>Real problems - only attempted a few problems, and nothing that shows any understanding.</p></li>
-
-<li><p>Substantial problems - attempted a few of the problems, but didn&rsquo;t show any real understanding of many concepts.</p></li>
-
-<li><p>Fundamental problems understanding key concepts; not able to complete
-reasonable answers for most questions.</p></li>
-
-<li><p>Several fundamentally incorrect answers, or fundamental problems
-understanding important concepts for this assignment.</p></li>
-
-<li><p>Nearly all answers correct, but justifications not as strong as
-desired.</p></li>
-
-<li><p>All answers acceptable.  (This is the &ldquo;expected&rdquo; score for problem
-sets.)</p></li>
-
-<li><p>All answers essentially correct, with at least one especially good answer.</p></li>
-
-<li><p>All answers well done, and more than one especially good answer.</p></li>
-
-<li><p>Your answers broke new ground in computer science. (Not used for PS1)</p></li>
-
-<li><p>You solved an important open problem! (Not expected to be used in cs2102)</p></li>
-
-<li><p>You deserve a Turing award! (in theory, there is no upper bound on the grading, but I do not expect to have occassion to use grades higher than 11)</p></li>
-</ol>
-
-<p>Getting the &ldquo;expected&rdquo; code (6 for PS1) on assignments means you are
-well on track to getting an A in the class (this is the &ldquo;expected&rdquo; grade
-for everyone).  You&rsquo;ll need to do well on the exams, also, of course.</p>
-
-<p>If your score on PS1 is below 6, you should have a good idea from the
-comments and from reading the solutions, what you need to improve on to
-do better on future assignments.</p>
-
-<p>If you notice a significant error in any of the provided solutions
-(where &ldquo;significant&rdquo; is at my discretion, but generally means something
-more than an obvious typo), you can earn bonus points by reporting it.</p>
 
   
   

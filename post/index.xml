@@ -6,8 +6,153 @@
     <description>Recent content in Posts on cs2102: Discrete Math</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 20 Sep 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 22 Sep 2016 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://uvacs2102.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Class 10: In(tro)duction</title>
+      <link>https://uvacs2102.github.io/class10/</link>
+      <pubDate>Thu, 22 Sep 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/class10/</guid>
+      <description>
+
+&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps4&#34;&gt;&lt;strong&gt;Problem Set 4&lt;/strong&gt;&lt;/a&gt; is due &lt;strong&gt;Friday at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Next week, you should finish reading MCS Chapter 5 (Induction).  Another
+presentation of Induction is &lt;a href=&#34;http://www.people.vcu.edu/~rhammack/BookOfProof/Induction.pdf&#34;&gt;Chapter 10 from the Book of
+Proof&lt;/a&gt;
+(you are not required to read this, but it is encouraged and has lots
+more examples of proofs by induction).&lt;/p&gt;
+
+&lt;p&gt;Exam 1 will be in class on Thursday, 6 October.&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;
+   &lt;center&gt;
+   &lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlightm&#34;&gt;
+   &lt;a href=&#34;https://uvacs2102.github.io/docs/class10.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes and Questions&lt;/b&gt;&lt;/a&gt;.
+   &lt;/div&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.people.vcu.edu/~rhammack/BookOfProof/Induction.pdf&#34;&gt;Chapter 10: Induction from the Book of Proof&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;power-sets-continued-from-class-9-class9&#34;&gt;Power Sets (continued from &lt;a href=&#34;https://uvacs2102.github.io/class9&#34;&gt;Class 9&lt;/a&gt;)&lt;/h1&gt;
+
+&lt;p&gt;The &lt;strong&gt;power set&lt;/strong&gt; of $A$ ($\textrm{pow}(A)$) is the set of all subsets of
+$A$: $B \in \textrm{pow}(A) \iff B \subseteq A$.&lt;/p&gt;
+
+&lt;p&gt;Prove that the size of the power set of a set $S$ with $|S| = N$ is
+$2^N$.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Proof using Well-Ordering Principle&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;The goal is to prove for all sets $A$: $|\textrm{pow}(A)| = 2^{|A|}$.&lt;/p&gt;
+
+&lt;p&gt;Recall (from &lt;a href=&#34;https://uvacs2102.github.io/class9&#34;&gt;Class 9&lt;/a&gt;) that $N_k = { n | n \in \mathbb{N} \wedge n &amp;lt; k } $ and $|\mathbb{N}_n| = n$.&lt;/p&gt;
+
+&lt;p&gt;Because of the bijection between any set $A$ where $|A| = n$ to $\mathbb{N}_n$, we can prove the general property by  showing $\forall n \in \mathbb{N} \ldotp P(n)$ where $P(n) ::= |\textrm{pow}(\mathbb{N}_n)| = 2^n$.&lt;/p&gt;
+
+&lt;p&gt;We follow the structure of every well-ordering proof:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Define the set of counterexamples:
+$$
+C ::= { n \in \mathbb{N} | \quad |\textrm{pow}(\mathbb{N}_n)| \neq 2^n }
+$$&lt;/li&gt;
+&lt;li&gt;Assume $C$ is $\fillin\fillin\fillin$.&lt;/li&gt;
+&lt;li&gt;By the well-ordering principle, there must be some smallest element, $m \in C$.&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Reach a contradiction: we show that $\fillin\fillin\fillin$ holds.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Since $m$ is the smallest element of $C$, $P(n)$ must hold for all $\fillin\fillin\fillin$.&lt;/li&gt;
+&lt;li&gt;We know $P(0)$ is true since $\mathbb{N}_0 = \emptyset$ and $\textrm{pow}(\emptyset) = \fillin\fillin\fillin\fillin$.  We have, $|\textrm{pow}(\mathbb{N}_0)| =  \fillin\fillin = \fillin\fillin$, satisfying $P(0)$.&lt;/li&gt;
+&lt;li&gt;Thus, $m &amp;gt; 0$.  This means $m - 1 \in \mathbb{N}$.&lt;/li&gt;
+&lt;li&gt;So, we know $P(\fillin\fillin)$ holds.&lt;/li&gt;
+&lt;li&gt;Thus, we can construct $\textrm{pow}(\mathbb{N}&lt;em&gt;{m})$ by keeping all the elements of $\textrm{pow}(\mathbb{N}&lt;/em&gt;{m - 1})$ and adding each of those elements with $(m-1)$ inserts.  More formally,
+$$
+\textrm{pow}(\mathbb{N}&lt;em&gt;m) = \textrm{pow}(\mathbb{N}&lt;/em&gt;{m - 1}) \quad \cup \bigcup&lt;em&gt;{S \in \textrm{pow}(\mathbb{N}&lt;/em&gt;{m - 1})} (S \cup \fillin\fillin\fillin)
+$$
+The size of this set is $2 |\textrm{pow}(\mathbb{N}&lt;em&gt;{m - 1})|$ since it contains two sets for each set in $\textrm{pow}(\mathbb{N}&lt;/em&gt;{m - 1})$ (the original one, and the one with $m-1$ added, which we know is a new set since $m - 1 \notin \mathbb{N}_{m - 1}$).&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;Since $P(m-1)$, we know $|\textrm{pow}(\mathbb{N}&lt;em&gt;{m - 1})| = \fillin\fillin\fillin$. The size of the new set, $|\textrm{pow}(\mathbb{N}&lt;/em&gt;{m})| = 2 \cdot 2^{m - 1} = 2^{m}$.  This means that $P(m)$ holds.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Hence, $C$ must be empty.  We reached a contradiction using the well-ordering principle by showing the $P(m)$ holds for $m \in C$, which must mean the $C$ is empty.  If there are no counter-examples, then $P(n)$ holds for all $n \in \mathbb{N}$.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h1 id=&#34;induction-principle&#34;&gt;Induction Principle&lt;/h1&gt;
+
+&lt;p&gt;Let $P$ be a predicated on $\mathbb{N}$.  If&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;$P(0)$ is true, and&lt;/li&gt;
+&lt;li&gt;$P(n) \implies P(n + 1)$ for all $n \in \mathbb{N}$,&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;then&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;$P(m)$ is true for all $m \in \mathbb{N}$.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;template-for-induction-proofs&#34;&gt;Template for Induction Proofs&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt;State, &amp;ldquo;We prove by induction.&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;Define a predicate, $P(n)$.  This is the &lt;em&gt;induction hypothesis&lt;/em&gt;.  Our goal is to show that $P(n)$ is true for all $n \in \mathbb{N}$.&lt;/li&gt;
+&lt;li&gt;Prove $P(0)$ is true.  (&lt;em&gt;base case&lt;/em&gt; or &lt;em&gt;basis step&lt;/em&gt;.)&lt;/li&gt;
+&lt;li&gt;Prove that $P(n) \implies P(n + 1)$ for every $n \in \mathbb{N}$.  (&lt;em&gt;induction step&lt;/em&gt;)&lt;/li&gt;
+&lt;li&gt;Conclude that $P(n)$ is true for all $n \in \mathbb{N}$ by induction.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;How is the method of &lt;em&gt;proof by induction principle&lt;/em&gt; similar to and different from &lt;em&gt;proof by well-ordering principle&lt;/em&gt;?&lt;/p&gt;
+
+&lt;h2 id=&#34;induction-practice&#34;&gt;Induction Practice&lt;/h2&gt;
+
+&lt;p&gt;Prove the non-negative integers are well ordered by the induction principle.&lt;/p&gt;
+
+&lt;p&gt;###&lt;/p&gt;
+
+&lt;p&gt;Prove the power set size property, $|\textrm{pow}(A)| = 2^{|A|}$, by
+induction.&lt;/p&gt;
+
+&lt;p&gt;###&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Problem Set 3 Comments</title>
+      <link>https://uvacs2102.github.io/ps3comments/</link>
+      <pubDate>Thu, 22 Sep 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/ps3comments/</guid>
+      <description>&lt;p&gt;The solutions and comments for PS3 are now posted in collab: &lt;a href=&#34;https://collab.itc.virginia.edu/access/content/group/e0b17949-c94c-466b-835a-196381f3f911/ps3_solutions.pdf&#34;&gt;PDF&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;You should find your graded assignment as a new PDF attachment with
+markup on it in collab (if you submitted with teammates, please check
+with your partners).&lt;/p&gt;
+
+&lt;p&gt;The meaning of the scores is the same as for PS1 and PS2.  A score of 6
+means you got everything we expected out of this assignment, and 5 means
+you did well for the most part by had some answers that should have been
+better.  Scores above 6 are for excellent work.  (In the gradebook,
+collab sometimes shows the grades scaled by 100 for some buggy reason.
+Although receiving a score of 100+ is possible in theory, no one
+received more than 8 points for this assingment.  If you see a score
+about 100, the meaning is that score divided by 100.)&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Class 9: Cardinality</title>
@@ -1659,172 +1804,6 @@ strategy?&lt;/p&gt;
 &lt;p&gt;Why is it possible to solve &lt;em&gt;most&lt;/em&gt; SAT instances reasonably quickly?&lt;/p&gt;
 
 &lt;p&gt;&lt;/div&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Class 5: CNF, Quantifiers, and Proofs</title>
-      <link>https://uvacs2102.github.io/class5/</link>
-      <pubDate>Tue, 06 Sep 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://uvacs2102.github.io/class5/</guid>
-      <description>
-
-&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps2&#34;&gt;&lt;strong&gt;Problem Set 2&lt;/strong&gt;&lt;/a&gt; is due &lt;strong&gt;Friday at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;
-   &lt;center&gt;
-&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;79d8ff375dd84ce7b77827480b79a4dd&#34; data-ratio=&#34;1.77777777777778&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
-   &lt;/center&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;highlightm&#34;&gt;
-   &lt;a href=&#34;https://uvacs2102.github.io/docs/class5.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes and Questions&lt;/b&gt;&lt;/a&gt;.
-   &lt;/div&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
-
-&lt;p&gt;If you believe real computing systems have the property that the values
-you read from memory will match what you wrote there, see:&lt;/p&gt;
-
-&lt;p&gt;Sudhakar Govindavajhala and Andrew W. Appel. &lt;a href=&#34;http://sip.cs.princeton.edu/pub/memerr.pdf&#34;&gt;&lt;em&gt;Using Memory Errors to Attack a Virtual Machine&lt;/em&gt;&lt;/a&gt;, IEEE Symposium on Security and Privacy 2003.&lt;/p&gt;
-
-&lt;p&gt;Bianca Schroeder, Eduardo Pinheiro, Wolf-Dietrich Weber. &lt;a href=&#34;http://www.cs.utoronto.ca/~bianca/papers/sigmetrics09.pdf&#34;&gt;&lt;em&gt;DRAM Errors
-in the Wild: A Large-Scale Field
-Study&lt;/em&gt;&lt;/a&gt;. SIGMETRICS 2009.&lt;/p&gt;
-
-&lt;p&gt;Kaveh Razavi, Ben Gras, Erik Bosman, Bart Preneel, Cristiano Giuffrida
-and Herbert Bos. &lt;a href=&#34;https://www.usenix.org/conference/usenixsecurity16/technical-sessions/presentation/razavi&#34;&gt;&lt;em&gt;Flip Feng Shui: Hammering a Needle in the Software
-Stack&lt;/em&gt;&lt;/a&gt;. USENIX
-Security 2016.&lt;/p&gt;
-
-&lt;p&gt;Yuan Xiao, Xiaokuan Zhang, Yinqian Zhang, and Radu Teodorescu. &lt;a href=&#34;https://www.usenix.org/system/files/conference/usenixsecurity16/sec16_paper_xiao.pdf&#34;&gt;&lt;em&gt;One Bit Flips, One Cloud Flops: Cross-VM Row Hammer Attacks and Privilege Escalation&lt;/em&gt;&lt;/a&gt;, USENIX Security 2016.&lt;/p&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;notes-and-questions&#34;&gt;Notes and Questions&lt;/h1&gt;
-
-&lt;p&gt;&lt;strong&gt;Definition: satisfiable.&lt;/strong&gt; A logical formula is &lt;em&gt;satisfiable&lt;/em&gt; if there
-  is &lt;em&gt;some&lt;/em&gt; way to make it &lt;strong&gt;true&lt;/strong&gt;.  That is, there is at least one
-  assignment of truth value to its variables that makes the forumla
-  true.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Definition: conjunctive normal form (CNF).&lt;/strong&gt; A logical formula that is
-  written as a conjunction of &lt;em&gt;clauses&lt;/em&gt;, where each clause is a
-  disjunction of &lt;em&gt;literals&lt;/em&gt;, and each literal is either a variable or a
-  negation of a variable, is in &lt;em&gt;conjunctive normal form&lt;/em&gt;.  If each
-  clause has excatly three literals, it is called &lt;em&gt;three conjunctive
-  normal form&lt;/em&gt; (3CNF).&lt;/p&gt;
-
-&lt;p&gt;$$
-(a_1 \vee a_2 \vee \neg a_3) \wedge
-(a_1 \vee \neg a_2 \vee a_3) \wedge
-(\neg a_1 \vee a_2 \vee \neg a_3) \wedge
-(\neg a_1 \vee a_2 \vee a_3)
-$$&lt;/p&gt;
-
-&lt;p&gt;##&lt;/p&gt;
-
-&lt;p&gt;Show that every logical formula can be written in 3-conjunctive normal form.&lt;/p&gt;
-
-&lt;div class=&#34;biggap&#34;&gt;&lt;/div&gt;
-
-&lt;p&gt;What is the maximum number of (different) clauses in a 3CNF formula
-involving 5 variables?&lt;/p&gt;
-
-&lt;p&gt;##&lt;/p&gt;
-
-&lt;p&gt;What is the maximum number of (different) clauses in a &lt;em&gt;satisfiable&lt;/em&gt;
-3CNF formula involving 5 variables?&lt;/p&gt;
-
-&lt;p&gt;##&lt;/p&gt;
-
-&lt;p&gt;What is the maximum number of (different) clauses in a &lt;em&gt;valid&lt;/em&gt; 3CNF formula involving 5 variables?&lt;/p&gt;
-
-&lt;p&gt;##&lt;/p&gt;
-
-&lt;!--page--&gt;
-
-&lt;h2 id=&#34;logical-quantifiers&#34;&gt;Logical Quantifiers&lt;/h2&gt;
-
-&lt;p&gt;$\forall x \in S. P(x)$ means $P$ holds for &lt;em&gt;every&lt;/em&gt; element of $S$.&lt;br /&gt;
-$\exists x \in S. P(x)$ means $P$ holds for &lt;em&gt;at least one&lt;/em&gt; element of $S$.&lt;/p&gt;
-
-&lt;p&gt;Define &lt;em&gt;valid&lt;/em&gt; and &lt;em&gt;satisfiable&lt;/em&gt; using logical quantifiers:&lt;/p&gt;
-
-&lt;p&gt;#&lt;/p&gt;
-
-&lt;p&gt;$\forall x \in S. P(x)$ is equivalent to $\neg(\exists x \in S. \qquad \qquad)$&lt;/p&gt;
-
-&lt;p&gt;###&lt;/p&gt;
-
-&lt;p&gt;Notation: $\textrm{pow}(S)$ denotes the &lt;em&gt;powerset&lt;/em&gt; of $S$.  The powerset
-of a set is the set of all possible subsets of that S.  So,
-$\textrm{pow}(\mathbb{N})$ denotes all subsets of the natural numbers.&lt;/p&gt;
-
-&lt;p&gt;Notation: $A - B$ denotes the &lt;em&gt;difference&lt;/em&gt; between two sets.  It is the
-elements of $A$, with every element of $B$ removed.&lt;/p&gt;
-
-&lt;p&gt;Notation: $\varnothing$ is the &lt;em&gt;empty set&lt;/em&gt;.  It is the set with no elements: ${ }$.&lt;/p&gt;
-
-&lt;p&gt;\begin{center}
-\Large&lt;/p&gt;
-
-&lt;p&gt;$$
-\fillin S \in \textrm{pow}(\mathbb{N}) - { \varnothing } \ldotp \fillin m \in S\ldotp \fillin x \in S - {m}\ldotp m &amp;lt; x
-$$&lt;/p&gt;
-
-&lt;p&gt;\begin{comment}
-$$
-\forall S \in \textrm{pow}(\mathbb{N}) - { \varnothing } \ldotp \exists m \in S\ldotp \forall x \in S - {m}\ldotp m &amp;lt; x
-$$
-\end{comment}
-\end{center}&lt;/p&gt;
-
-&lt;p&gt;Write a logical expression that captures the meaning of: &lt;em&gt;Proofs can
-certify that a computing system will always behave correctly, something
-that no amount of testing can do.&lt;/em&gt;&lt;/p&gt;
-
-&lt;div class=&#34;biggap&#34;&gt;&lt;/div&gt;
-
-&lt;p&gt;What does it mean to &lt;em&gt;test&lt;/em&gt; a computing system?  What does it mean for a computing system to &lt;em&gt;always behave correctly&lt;/em&gt;?&lt;/p&gt;
-
-&lt;p&gt;#&lt;/p&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Challenge Solved!</title>
-      <link>https://uvacs2102.github.io/challenge1/</link>
-      <pubDate>Fri, 02 Sep 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://uvacs2102.github.io/challenge1/</guid>
-      <description>&lt;p&gt;The first challenge problem has been solved!&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;highlightr&#34;&gt;
-&lt;strong&gt;Challenge 1.&lt;/strong&gt; From &lt;a href=&#34;https://uvacs2102.github.io/class2&#34;&gt;Class 2&lt;/a&gt;: I wasn&amp;rsquo;t very satisfied with
-  my proof of the &amp;ldquo;Odd-Even Lemma&amp;rdquo; in class.  I hope a student will come
-  up with a better proof.  Come up with a proof that passes the
-  &amp;ldquo;skeptical reader&amp;rdquo; test and would convince someone with no prior
-  knowledge of odd and even numbers.
-   &lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;There are three winning solutions (that all take quite different approaches):&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://uvacs2102.github.io/docs/challenge1/john_fry.pdf&#34;&gt;John Fry&amp;rsquo;s solution using the well-ordering principle&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://uvacs2102.github.io/docs/challenge1/paul-sanders.pdf&#34;&gt;Paul Sander&amp;rsquo;s solution using a game proof&lt;/a&gt; (although most game-style proofs are not so entertaingly written as Pauls, using a game to prove something is a very common strategy, especially in &lt;a href=&#34;https://eprint.iacr.org/2004/332.pdf&#34;&gt;security&lt;/a&gt; and &lt;a href=&#34;https://cr.yp.to/bib/2004/bellare-games.pdf&#34;&gt;cryptography&lt;/a&gt; proofs.)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://uvacs2102.github.io/docs/challenge1/avi.pdf&#34;&gt;Avi Parikh&amp;rsquo;s solution using proof by contradiction&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Congratulations to the challenge winners!&lt;/p&gt;
-
-&lt;p&gt;(&lt;a href=&#34;https://uvacs2102.github.io/challenges&#34;&gt;Challenge 2&lt;/a&gt; is still open, and no viable solutions have yet been submitted.)&lt;/p&gt;
 </description>
     </item>
     
