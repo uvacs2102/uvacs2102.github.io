@@ -6,8 +6,19 @@
     <description>Recent content in Posts on cs2102: Discrete Math</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 22 Sep 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 23 Sep 2016 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://uvacs2102.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Problem Set 5</title>
+      <link>https://uvacs2102.github.io/ps5announce/</link>
+      <pubDate>Fri, 23 Sep 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/ps5announce/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Problem Set 5&lt;/strong&gt; is &lt;a href=&#34;https://uvacs2102.github.io/docs/ps5.pdf&#34;&gt;now posted&lt;/a&gt;, and is due on &lt;strong&gt;Friday, 30
+  September at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Class 10: In(tro)duction</title>
@@ -167,7 +178,7 @@ about 100, the meaning is that score divided by 100.)&lt;/p&gt;
 
 &lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
 
-&lt;p&gt;This week you should finish reading MSC Chapter 4 (section 4.5) and
+&lt;p&gt;This week you should finish reading MCS Chapter 4 (section 4.5) and
 Section 5.1.  We will discuss Induction (Section 5.1) next class.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps4&#34;&gt;&lt;strong&gt;Problem Set 4&lt;/strong&gt;&lt;/a&gt; is due &lt;strong&gt;Friday at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
@@ -1659,154 +1670,6 @@ runner-ups.&lt;/p&gt;
       <guid>https://uvacs2102.github.io/ps3/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Problem Set 3&lt;/strong&gt; is &lt;a href=&#34;https://uvacs2102.github.io/ps/ps3&#34;&gt;now posted&lt;/a&gt;, and is due on &lt;strong&gt;Friday, 16
   September at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Class 6: SAT Solving</title>
-      <link>https://uvacs2102.github.io/class6/</link>
-      <pubDate>Thu, 08 Sep 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://uvacs2102.github.io/class6/</guid>
-      <description>
-
-&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps2&#34;&gt;&lt;strong&gt;Problem Set 2&lt;/strong&gt;&lt;/a&gt; is due &lt;strong&gt;Friday at 6:29pm&lt;/strong&gt;.  A few of the
-problems on PS2 are quite challenging!  The problems are organized by
-topic, not by difficulty (the hardest problems are #4 and #7).  I hope
-everyone makes a good attempt to solve all of the problems, but don&amp;rsquo;t be
-overly stressed if you cannot solve these ones and move on to the other
-problems if you are stuck on them (to hopefully return to these problems
-after you&amp;rsquo;ve had more time to think about them).  Good solutions to
-these problems will impress us, but are not necessary to get a good
-score on PS2.&lt;/p&gt;
-
-&lt;p&gt;I will be out-of-town Monday, and not able to hold my usual office hours
-on Monday.  I will have &amp;ldquo;make-up&amp;rdquo; office hours on Wednesday, 3:30-4:30pm
-(in addition to my usual Wednesday 1-2pm office hours).&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;
-   &lt;center&gt;
-&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;774e84575197415ca672431a740645ed&#34; data-ratio=&#34;1.77777777777778&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
-   &lt;/center&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;highlightm&#34;&gt;
-   &lt;a href=&#34;https://uvacs2102.github.io/docs/class6.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes and Questions&lt;/b&gt;&lt;/a&gt;.
-   &lt;/div&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
-
-&lt;p&gt;Sahand Saba&amp;rsquo;s &lt;a href=&#34;http://sahandsaba.com/understanding-sat-by-implementing-a-simple-sat-solver-in-python.html&#34;&gt;&lt;em&gt;Understanding SAT by Implementing a Simple SAT Solver in
-Python&lt;/em&gt;&lt;/a&gt; [&lt;a href=&#34;https://github.com/evansuva/simple-sat&#34;&gt;Code with my modifications: https://github.com/evansuva/simple-sat&lt;/a&gt;]&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://baldur.iti.kit.edu/sat-competition-2016/index.php&#34;&gt;SAT Competition 2016&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;XKCDs on NP-Complete problems: &lt;a href=&#34;https://xkcd.com/287/&#34;&gt;Subset Sum&lt;/a&gt;, &lt;a href=&#34;http://xkcd.com/399/&#34;&gt;Travelling Seller&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.cs.virginia.edu/pegboard/cb-sigact.pdf&#34;&gt;&lt;em&gt;Pancakes, Puzzles, and Polynomials: Cracking the Cracker
-Barrel&lt;/em&gt;&lt;/a&gt; (reducing
-pegboard puzzle to 3SAT)&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://claymath.org/sites/default/files/minesweeper.pdf&#34;&gt;&lt;em&gt;Minesweeper&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;notes-and-questions&#34;&gt;Notes and Questions&lt;/h1&gt;
-
-&lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; A formula is in &lt;em&gt;3SAT&lt;/em&gt; if it is in 3CNF form and it is
-  satisfiable.&lt;/p&gt;
-
-&lt;p&gt;$$
-(x_1 \vee x_2 \vee x_3) \wedge (x_1 \vee \overline{x_2} \vee x_3) \wedge (\overline{x_1} \vee x_2 \vee \overline{x_3})
-$$&lt;/p&gt;
-
-&lt;p&gt;\begin{center}
-\tiny
-\begin{math}
-(x&lt;em&gt;{48} \vee x&lt;/em&gt;{4} \vee \overline{x&lt;em&gt;{9}}) \wedge (\overline{x&lt;/em&gt;{44}} \vee x&lt;em&gt;{50} \vee \overline{x&lt;/em&gt;{37}}) \wedge (\overline{x&lt;em&gt;{8}} \vee \overline{x&lt;/em&gt;{1}} \vee x&lt;em&gt;{28}) \wedge (x&lt;/em&gt;{21} \vee x&lt;em&gt;{27} \vee \overline{x&lt;/em&gt;{32}}) \wedge (x&lt;em&gt;{17} \vee x&lt;/em&gt;{29} \vee \overline{x&lt;em&gt;{30}}) \wedge (x&lt;/em&gt;{30} \vee x&lt;em&gt;{24} \vee x&lt;/em&gt;{37}) \wedge (\overline{x&lt;em&gt;{22}} \vee \overline{x&lt;/em&gt;{27}} \vee \overline{x&lt;em&gt;{44}}) \wedge (x&lt;/em&gt;{8} \vee \overline{x&lt;em&gt;{25}} \vee \overline{x&lt;/em&gt;{24}}) \wedge (\overline{x&lt;em&gt;{44}} \vee x&lt;/em&gt;{50} \vee x&lt;em&gt;{14}) \wedge (x&lt;/em&gt;{45} \vee x&lt;em&gt;{15} \vee x&lt;/em&gt;{37}) \wedge (\overline{x&lt;em&gt;{16}} \vee x&lt;/em&gt;{14} \vee \overline{x&lt;em&gt;{36}}) \wedge (\overline{x&lt;/em&gt;{33}} \vee x&lt;em&gt;{5} \vee x&lt;/em&gt;{26}) \wedge (x&lt;em&gt;{18} \vee \overline{x&lt;/em&gt;{7}} \vee \overline{x&lt;em&gt;{24}}) \wedge (x&lt;/em&gt;{31} \vee x&lt;em&gt;{38} \vee x&lt;/em&gt;{28}) \wedge (x&lt;em&gt;{31} \vee \overline{x&lt;/em&gt;{33}} \vee \overline{x&lt;em&gt;{8}}) \wedge (x&lt;/em&gt;{49} \vee x&lt;em&gt;{7} \vee \overline{x&lt;/em&gt;{6}}) \wedge (x&lt;em&gt;{34} \vee \overline{x&lt;/em&gt;{8}} \vee x&lt;em&gt;{46}) \wedge (x&lt;/em&gt;{4} \vee \overline{x&lt;em&gt;{5}} \vee \overline{x&lt;/em&gt;{35}}) \wedge (x&lt;em&gt;{43} \vee x&lt;/em&gt;{27} \vee x&lt;em&gt;{39}) \wedge (\overline{x&lt;/em&gt;{46}} \vee \overline{x&lt;em&gt;{40}} \vee \overline{x&lt;/em&gt;{27}}) \wedge (\overline{x&lt;em&gt;{25}} \vee x&lt;/em&gt;{14} \vee \overline{x&lt;em&gt;{49}}) \wedge (x&lt;/em&gt;{38} \vee x&lt;em&gt;{5} \vee x&lt;/em&gt;{15}) \wedge (x&lt;em&gt;{9} \vee x&lt;/em&gt;{14} \vee \overline{x&lt;em&gt;{19}}) \wedge (x&lt;/em&gt;{45} \vee \overline{x&lt;em&gt;{42}} \vee \overline{x&lt;/em&gt;{39}}) \wedge (x&lt;em&gt;{34} \vee \overline{x&lt;/em&gt;{22}} \vee \overline{x&lt;em&gt;{28}}) \wedge (\overline{x&lt;/em&gt;{20}} \vee x&lt;em&gt;{15} \vee \overline{x&lt;/em&gt;{8}}) \wedge (\overline{x&lt;em&gt;{44}} \vee \overline{x&lt;/em&gt;{10}} \vee \overline{x&lt;em&gt;{9}}) \wedge (x&lt;/em&gt;{22} \vee \overline{x&lt;em&gt;{31}} \vee x&lt;/em&gt;{14}) \wedge (\overline{x&lt;em&gt;{9}} \vee \overline{x&lt;/em&gt;{42}} \vee \overline{x&lt;em&gt;{15}}) \wedge (\overline{x&lt;/em&gt;{40}} \vee x&lt;em&gt;{12} \vee \overline{x&lt;/em&gt;{32}}) \wedge (\overline{x&lt;em&gt;{20}} \vee \overline{x&lt;/em&gt;{6}} \vee \overline{x&lt;em&gt;{15}}) \wedge (\overline{x&lt;/em&gt;{37}} \vee x&lt;em&gt;{39} \vee \overline{x&lt;/em&gt;{23}}) \wedge (\overline{x&lt;em&gt;{3}} \vee \overline{x&lt;/em&gt;{40}} \vee \overline{x&lt;em&gt;{32}}) \wedge (\overline{x&lt;/em&gt;{4}} \vee \overline{x&lt;em&gt;{25}} \vee x&lt;/em&gt;{7}) \wedge (\overline{x&lt;em&gt;{20}} \vee \overline{x&lt;/em&gt;{36}} \vee \overline{x&lt;em&gt;{37}}) \wedge (\overline{x&lt;/em&gt;{40}} \vee \overline{x&lt;em&gt;{35}} \vee x&lt;/em&gt;{39}) \wedge (\overline{x&lt;em&gt;{43}} \vee \overline{x&lt;/em&gt;{40}} \vee \overline{x&lt;em&gt;{7}}) \wedge (x&lt;/em&gt;{34} \vee x&lt;em&gt;{44} \vee x&lt;/em&gt;{26}) \wedge (x&lt;em&gt;{13} \vee x&lt;/em&gt;{27} \vee x&lt;em&gt;{28}) \wedge (x&lt;/em&gt;{12} \vee \overline{x&lt;em&gt;{36}} \vee x&lt;/em&gt;{7}) \wedge (\overline{x&lt;em&gt;{16}} \vee x&lt;/em&gt;{9} \vee \overline{x&lt;em&gt;{24}}) \wedge (\overline{x&lt;/em&gt;{48}} \vee x&lt;em&gt;{14} \vee x&lt;/em&gt;{28}) \wedge (x&lt;em&gt;{16} \vee x&lt;/em&gt;{4} \vee x&lt;em&gt;{40}) \wedge (\overline{x&lt;/em&gt;{25}} \vee x&lt;em&gt;{15} \vee x&lt;/em&gt;{37}) \wedge (x&lt;em&gt;{47} \vee \overline{x&lt;/em&gt;{26}} \vee \overline{x&lt;em&gt;{23}}) \wedge (x&lt;/em&gt;{4} \vee \overline{x&lt;em&gt;{13}} \vee x&lt;/em&gt;{36}) \wedge (x&lt;em&gt;{48} \vee \overline{x&lt;/em&gt;{13}} \vee \overline{x&lt;em&gt;{37}}) \wedge (x&lt;/em&gt;{4} \vee x&lt;em&gt;{35} \vee \overline{x&lt;/em&gt;{27}}) \wedge (\overline{x&lt;em&gt;{22}} \vee x&lt;/em&gt;{47} \vee x&lt;em&gt;{26}) \wedge (\overline{x&lt;/em&gt;{22}} \vee \overline{x&lt;em&gt;{46}} \vee x&lt;/em&gt;{27}) \wedge (\overline{x&lt;em&gt;{20}} \vee x&lt;/em&gt;{49} \vee x&lt;em&gt;{11}) \wedge (x&lt;/em&gt;{42} \vee \overline{x&lt;em&gt;{10}} \vee x&lt;/em&gt;{28}) \wedge (\overline{x&lt;em&gt;{45}} \vee x&lt;/em&gt;{28} \vee \overline{x&lt;em&gt;{37}}) \wedge (x&lt;/em&gt;{14} \vee \overline{x&lt;em&gt;{32}} \vee \overline{x&lt;/em&gt;{23}}) \wedge (x&lt;em&gt;{22} \vee x&lt;/em&gt;{14} \vee x&lt;em&gt;{23}) \wedge (\overline{x&lt;/em&gt;{17}} \vee \overline{x&lt;em&gt;{46}} \vee \overline{x&lt;/em&gt;{7}}) \wedge (\overline{x&lt;em&gt;{31}} \vee x&lt;/em&gt;{46} \vee \overline{x&lt;em&gt;{50}}) \wedge (x&lt;/em&gt;{34} \vee \overline{x&lt;em&gt;{41}} \vee x&lt;/em&gt;{43}) \wedge (x&lt;em&gt;{17} \vee \overline{x&lt;/em&gt;{9}} \vee x&lt;em&gt;{15}) \wedge (x&lt;/em&gt;{46} \vee x&lt;em&gt;{14} \vee \overline{x&lt;/em&gt;{12}}) \wedge (\overline{x&lt;em&gt;{20}} \vee x&lt;/em&gt;{12} \vee x&lt;em&gt;{14}) \wedge (x&lt;/em&gt;{41} \vee x&lt;em&gt;{42} \vee \overline{x&lt;/em&gt;{15}}) \wedge (x&lt;em&gt;{48} \vee x&lt;/em&gt;{46} \vee \overline{x&lt;em&gt;{36}}) \wedge (\overline{x&lt;/em&gt;{22}} \vee \overline{x&lt;em&gt;{4}} \vee \overline{x&lt;/em&gt;{49}}) \wedge (x&lt;em&gt;{22} \vee x&lt;/em&gt;{12} \vee \overline{x&lt;em&gt;{42}}) \wedge (x&lt;/em&gt;{13} \vee \overline{x&lt;em&gt;{38}} \vee x&lt;/em&gt;{39}) \wedge (x&lt;em&gt;{48} \vee \overline{x&lt;/em&gt;{16}} \vee \overline{x&lt;em&gt;{27}}) \wedge (x&lt;/em&gt;{17} \vee \overline{x&lt;em&gt;{18}} \vee \overline{x&lt;/em&gt;{26}}) \wedge (x&lt;em&gt;{48} \vee \overline{x&lt;/em&gt;{40}} \vee \overline{x&lt;em&gt;{35}}) \wedge (\overline{x&lt;/em&gt;{43}} \vee \overline{x&lt;em&gt;{40}} \vee \overline{x&lt;/em&gt;{49}}) \wedge (x&lt;em&gt;{29} \vee x&lt;/em&gt;{11} \vee \overline{x&lt;em&gt;{32}}) \wedge (x&lt;/em&gt;{33} \vee \overline{x&lt;em&gt;{17}} \vee x&lt;/em&gt;{39}) \wedge (\overline{x&lt;em&gt;{25}} \vee \overline{x&lt;/em&gt;{9}} \vee \overline{x&lt;em&gt;{6}}) \wedge (x&lt;/em&gt;{40} \vee \overline{x&lt;em&gt;{50}} \vee x&lt;/em&gt;{19}) \wedge (x&lt;em&gt;{8} \vee x&lt;/em&gt;{10} \vee \overline{x&lt;em&gt;{27}}) \wedge (x&lt;/em&gt;{5} \vee x&lt;em&gt;{9} \vee \overline{x&lt;/em&gt;{26}}) \wedge (x&lt;em&gt;{45} \vee \overline{x&lt;/em&gt;{38}} \vee \overline{x&lt;em&gt;{27}}) \wedge (\overline{x&lt;/em&gt;{4}} \vee \overline{x&lt;em&gt;{40}} \vee \overline{x&lt;/em&gt;{42}}) \wedge (x&lt;em&gt;{21} \vee x&lt;/em&gt;{50} \vee x&lt;em&gt;{12}) \wedge (\overline{x&lt;/em&gt;{8}} \vee \overline{x&lt;em&gt;{14}} \vee \overline{x&lt;/em&gt;{42}}) \wedge (\overline{x&lt;em&gt;{17}} \vee x&lt;/em&gt;{47} \vee \overline{x&lt;em&gt;{27}}) \wedge (x&lt;/em&gt;{49} \vee \overline{x&lt;em&gt;{12}} \vee \overline{x&lt;/em&gt;{6}}) \wedge (x&lt;em&gt;{27} \vee x&lt;/em&gt;{49} \vee \overline{x&lt;em&gt;{32}}) \wedge (\overline{x&lt;/em&gt;{29}} \vee \overline{x&lt;em&gt;{12}} \vee \overline{x&lt;/em&gt;{26}}) \wedge (x&lt;em&gt;{48} \vee \overline{x&lt;/em&gt;{2}} \vee x&lt;em&gt;{6}) \wedge (x&lt;/em&gt;{16} \vee x&lt;em&gt;{36} \vee x&lt;/em&gt;{49}) \wedge (x&lt;em&gt;{33} \vee \overline{x&lt;/em&gt;{12}} \vee \overline{x&lt;em&gt;{26}}) \wedge (\overline{x&lt;/em&gt;{33}} \vee x&lt;em&gt;{29} \vee x&lt;/em&gt;{49}) \wedge (\overline{x&lt;em&gt;{48}} \vee x&lt;/em&gt;{2} \vee x&lt;em&gt;{19}) \wedge (x&lt;/em&gt;{25} \vee x&lt;em&gt;{36} \vee x&lt;/em&gt;{49}) \wedge (x&lt;em&gt;{21} \vee x&lt;/em&gt;{40} \vee \overline{x&lt;em&gt;{14}}) \wedge (\overline{x&lt;/em&gt;{34}} \vee \overline{x&lt;em&gt;{44}} \vee \overline{x&lt;/em&gt;{6}}) \wedge (x&lt;em&gt;{48} \vee \overline{x&lt;/em&gt;{50}} \vee \overline{x&lt;em&gt;{1}}) \wedge (x&lt;/em&gt;{5} \vee \overline{x&lt;em&gt;{12}} \vee x&lt;/em&gt;{7}) \wedge (x&lt;em&gt;{21} \vee \overline{x&lt;/em&gt;{35}} \vee \overline{x&lt;em&gt;{27}}) \wedge (\overline{x&lt;/em&gt;{22}} \vee \overline{x&lt;em&gt;{16}} \vee \overline{x&lt;/em&gt;{14}}) \wedge (\overline{x&lt;em&gt;{13}} \vee \overline{x&lt;/em&gt;{35}} \vee \overline{x&lt;em&gt;{12}}) \wedge (\overline{x&lt;/em&gt;{4}} \vee \overline{x&lt;em&gt;{35}} \vee \overline{x&lt;/em&gt;{42}}) \wedge (\overline{x&lt;em&gt;{50}} \vee \overline{x&lt;/em&gt;{40}} \vee x&lt;em&gt;{7}) \wedge (x&lt;/em&gt;{25} \vee x&lt;em&gt;{47} \vee \overline{x&lt;/em&gt;{12}})
-\end{math}
-\end{center}&lt;/p&gt;
-
-&lt;h2 id=&#34;converting-truth-tables-to-cnf&#34;&gt;Converting Truth Tables to CNF&lt;/h2&gt;
-
-&lt;p&gt;\begin{tabular}{cc|cc}
-$P$ &amp;amp; $Q$ &amp;amp; $P \implies Q$ &amp;amp; $P \oplus Q$ \ \hline
-\T &amp;amp; \T   &amp;amp; \T &amp;amp; \F &lt;br /&gt;
-\T &amp;amp; \F   &amp;amp; \F &amp;amp; \T &lt;br /&gt;
-\F &amp;amp; \T   &amp;amp; \T &amp;amp; \T &lt;br /&gt;
-\F &amp;amp; \F   &amp;amp; \T &amp;amp; \F &lt;br /&gt;
-\end{tabular}&lt;/p&gt;
-
-&lt;p&gt;The output of the operator is \T\ if and only if the inputs do not match
-&lt;em&gt;any row&lt;/em&gt; where the output is \F.  We can ensure the inputs do not match
-a row, but OR-ing the negation of each input: in the disjunction, at
-least one must be \T\ to satisfy the clause.&lt;/p&gt;
-
-&lt;h2 id=&#34;problems&#34;&gt;Problems&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; A &lt;em&gt;problem&lt;/em&gt; is a precise description of set of possible
-  inputs and desired property of an output corresponding to each input.&lt;/p&gt;
-
-&lt;p&gt;Define the &lt;em&gt;ADDITION&lt;/em&gt; problem (adding two integers):&lt;/p&gt;
-
-&lt;p&gt;#&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; A &lt;em&gt;decision problem&lt;/em&gt; is a problem where the output is
-  either &lt;em&gt;T&lt;/em&gt; or &lt;em&gt;F&lt;/em&gt;.  Equivalently, we can view a decision problem as
-  testing set membership: $x \in S$.&lt;/p&gt;
-
-&lt;p&gt;The &lt;em&gt;SUM&lt;/em&gt; problem:
-\begin{quote}
-  {\bf Input.} Three integers, $x$, $y$, and $z$.  &lt;br /&gt;
-  {\bf Output.} \T\ iff $z = x + y$.
-\end{quote}&lt;/p&gt;
-
-&lt;p&gt;How could we solve &lt;em&gt;ADDITION&lt;/em&gt; using &lt;em&gt;SUM&lt;/em&gt;?&lt;/p&gt;
-
-&lt;p&gt;##&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; A &lt;em&gt;procedure&lt;/em&gt; is a precise description of an information
-  process.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; An &lt;em&gt;algorithm&lt;/em&gt; for a particular problem is a procedure
-  that &lt;em&gt;solves&lt;/em&gt; that problem.  To &lt;em&gt;solve&lt;/em&gt; a problem, an algorithm must
-  always (eventually) produce the correct output for any problem input.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; A &lt;em&gt;program&lt;/em&gt; is adescription of a procedure that can be
-executed by a computer.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; The &lt;em&gt;3SAT decision problem&lt;/em&gt; takes as input a logical
-  formula written in CNF, and outputs &lt;em&gt;T&lt;/em&gt; if the input formula is
-  satisfiable and outputs &lt;em&gt;F&lt;/em&gt; otherwise.&lt;/p&gt;
-
-&lt;p&gt;How many uses of a solver for the &lt;em&gt;3SAT&lt;/em&gt; decision problem are sufficient
-to always find a satisfying assignment for a satisfiable formula?&lt;/p&gt;
-
-&lt;p&gt;##&lt;/p&gt;
-
-&lt;h2 id=&#34;sat-solving-will-be-covered-tuesday&#34;&gt;SAT Solving (will be covered Tuesday)&lt;/h2&gt;
-
-&lt;p&gt;Sahand Saba&amp;rsquo;s &lt;a href=&#34;http://sahandsaba.com/understanding-sat-by-implementing-a-simple-sat-solver-in-python.html&#34;&gt;&lt;em&gt;Understanding SAT by Implementing a Simple SAT Solver in
-Python&lt;/em&gt;&lt;/a&gt; (Code with a few modifications: &lt;a href=&#34;https://github.com/evansuva/simple-sat&#34;&gt;&lt;em&gt;https://github.com/evansuva/simple-sat&lt;/em&gt;&lt;/a&gt;)&lt;/p&gt;
-
-&lt;p&gt;What is the &lt;em&gt;worst-case&lt;/em&gt; number of guesses needed to solve a SAT
-instance with $v$ variables and $c$ clauses using the ``brute-force
-guessing&amp;rdquo; strategy?&lt;/p&gt;
-
-&lt;p&gt;###&lt;/p&gt;
-
-&lt;p&gt;What is the &lt;em&gt;worst-case&lt;/em&gt; number of guesses needed to solve a SAT
-instance with $v$ variables and $c$ clauses using the ``watchlists&amp;rdquo;
-strategy?&lt;/p&gt;
-
-&lt;p&gt;###&lt;/p&gt;
-
-&lt;p&gt;Why is it possible to solve &lt;em&gt;most&lt;/em&gt; SAT instances reasonably quickly?&lt;/p&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
 </description>
     </item>
     
