@@ -17,7 +17,7 @@
       <guid>https://uvacs2102.github.io/challenge4/</guid>
       <description>&lt;p&gt;Challenge 4 has been solved by Henry Spece!&lt;/p&gt;
 
-&lt;p&gt;&lt;div class=&#34;highlightr&#34;&gt;
+&lt;p&gt;&lt;div class=&#34;highlightg&#34;&gt;
 &lt;strong&gt;Challenge 4.&lt;/strong&gt; (From &lt;a href=&#34;https://uvacs2102.github.io/class9&#34;&gt;Class 9&lt;/a&gt;) How many self-inverting relations, &lt;em&gt;R&lt;/em&gt;: &lt;em&gt;N&lt;/em&gt;&lt;sub&gt;&lt;em&gt;k&lt;/em&gt;&lt;/sub&gt; &amp;rarr; &lt;em&gt;N&lt;/em&gt;&lt;sub&gt;&lt;em&gt;k&lt;/em&gt;&lt;/sub&gt;, are there?  (Where &lt;em&gt;N&lt;/em&gt;&lt;sub&gt;&lt;em&gt;k&lt;/em&gt;&lt;/sub&gt; is the set of all non-negative integers less than &lt;em&gt;k&lt;/em&gt;, and a relation is self-inverting if &lt;em&gt;R&lt;/em&gt; = &lt;em&gt;R&lt;/em&gt;&lt;sup&gt;-1&lt;/sup&gt;.)
    &lt;/div&gt;&lt;/p&gt;
 
