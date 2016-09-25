@@ -6,8 +6,214 @@
     <description>Recent content on cs2102: Discrete Math</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 23 Sep 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 26 Sep 2016 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://uvacs2102.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Class 11: Strong Induction</title>
+      <link>https://uvacs2102.github.io/class11/</link>
+      <pubDate>Mon, 26 Sep 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/class11/</guid>
+      <description>
+
+&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps5&#34;&gt;&lt;strong&gt;Problem Set 5&lt;/strong&gt;&lt;/a&gt; is due &lt;strong&gt;Friday at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h3 id=&#34;exam-1&#34;&gt;Exam 1&lt;/h3&gt;
+
+&lt;p&gt;Exam 1 will be in class on Thursday, 6 October.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Resources.&lt;/strong&gt; You will be permitted to use a single paper page of notes
+that you prepare and bring to the exam.  It is fine to collaborate with
+others to prepare your notes.  The page should be no larger than a US
+Letter size page ($8.5 \times 11$ inches), and you may write (or
+print) on both sides of the page.  No other resources are permitted
+during the exam.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Content.&lt;/strong&gt; The problems on the exam will cover material from Classes
+  1&amp;ndash;11, Problem Sets 1&amp;ndash;5 (including the provided solutions), and MCS
+  Chapters 1&amp;ndash;5.  Everything on the exam will be something you have seen
+  in at least two of these (Classes, Problem Sets, and MCS Book), and
+  most of the exam will be things you have seen in all three.  If you
+  understand the problems on the problem sets and questions on the class
+  notes well enough to be able to answer similar questions, you should
+  do well on the exam.&lt;/p&gt;
+
+&lt;p&gt;The main topics the exam will cover include:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Inference rules (how to determine and show if an inference rule is
+sound or unsound, how to correctly use inference rules in a proof)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;
+   &lt;center&gt;
+&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;06f4be58f3984fa2b5e65cfaa9525667&#34; data-ratio=&#34;1.77777777777778&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
+   &lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlightm&#34;&gt;
+   &lt;a href=&#34;https://uvacs2102.github.io/docs/class10.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes and Questions&lt;/b&gt;&lt;/a&gt;.
+   &lt;/div&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.people.vcu.edu/~rhammack/BookOfProof/Induction.pdf&#34;&gt;Chapter 10: Induction from the Book of Proof&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The Onion, &lt;a href=&#34;http://www.theonion.com/article/bush-earmarks-15-billion-gold-stars-for-education-392&#34;&gt;Bush Earmarks 1.5 Billion Gold Stars For Education&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;power-sets-continued-from-class-9-class9&#34;&gt;Power Sets (continued from &lt;a href=&#34;https://uvacs2102.github.io/class9&#34;&gt;Class 9&lt;/a&gt;)&lt;/h1&gt;
+
+&lt;p&gt;The &lt;strong&gt;power set&lt;/strong&gt; of $A$ ($\textrm{pow}(A)$) is the set of all subsets of
+$A$: $B \in \textrm{pow}(A) \iff B \subseteq A$.&lt;/p&gt;
+
+&lt;p&gt;Prove that the size of the power set of a set $S$ with $|S| = N$ is
+$2^N$.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Proof using Well-Ordering Principle&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;The goal is to prove for all sets $A$: $|\textrm{pow}(A)| = 2^{|A|}$.&lt;/p&gt;
+
+&lt;p&gt;Recall (from &lt;a href=&#34;https://uvacs2102.github.io/class9&#34;&gt;Class 9&lt;/a&gt;) that $N_k = { n | n \in \mathbb{N} \wedge n &amp;lt; k } $ and $|\mathbb{N}_n| = n$.&lt;/p&gt;
+
+&lt;p&gt;Because of the bijection between any set $A$ where $|A| = n$ to $\mathbb{N}_n$, we can prove the general property by  showing $\forall n \in \mathbb{N} \ldotp P(n)$ where $P(n) ::= |\textrm{pow}(\mathbb{N}_n)| = 2^n$.&lt;/p&gt;
+
+&lt;p&gt;We follow the structure of every well-ordering proof:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Define the set of counterexamples:
+$$
+C ::= { n \in \mathbb{N} | \quad |\textrm{pow}(\mathbb{N}_n)| \neq 2^n }
+$$&lt;/li&gt;
+&lt;li&gt;Assume $C$ is $\fillin\fillin\fillin$.&lt;/li&gt;
+&lt;li&gt;By the well-ordering principle, there must be some smallest element, $m \in C$.&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Reach a contradiction: we show that $\fillin\fillin\fillin$ holds.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Since $m$ is the smallest element of $C$, $P(n)$ must hold for all $\fillin\fillin\fillin$.&lt;/li&gt;
+&lt;li&gt;We know $P(0)$ is true since $\mathbb{N}_0 = \emptyset$ and $\textrm{pow}(\emptyset) = \fillin\fillin\fillin\fillin$.  We have, $|\textrm{pow}(\mathbb{N}_0)| =  \fillin\fillin = \fillin\fillin$, satisfying $P(0)$.&lt;/li&gt;
+&lt;li&gt;Thus, $m &amp;gt; 0$.  This means $m - 1 \in \mathbb{N}$.&lt;/li&gt;
+&lt;li&gt;So, we know $P(\fillin\fillin)$ holds.&lt;/li&gt;
+&lt;li&gt;Thus, we can construct $\textrm{pow}(\mathbb{N}&lt;em&gt;{m})$ by keeping all the elements of $\textrm{pow}(\mathbb{N}&lt;/em&gt;{m - 1})$ and adding each of those elements with $(m-1)$ inserts.  More formally,
+$$
+\textrm{pow}(\mathbb{N}&lt;em&gt;m) = \textrm{pow}(\mathbb{N}&lt;/em&gt;{m - 1}) \quad \cup \bigcup&lt;em&gt;{S \in \textrm{pow}(\mathbb{N}&lt;/em&gt;{m - 1})} (S \cup \fillin\fillin\fillin)
+$$
+The size of this set is $2 |\textrm{pow}(\mathbb{N}&lt;em&gt;{m - 1})|$ since it contains two sets for each set in $\textrm{pow}(\mathbb{N}&lt;/em&gt;{m - 1})$ (the original one, and the one with $m-1$ added, which we know is a new set since $m - 1 \notin \mathbb{N}_{m - 1}$).&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;Since $P(m-1)$, we know $|\textrm{pow}(\mathbb{N}&lt;em&gt;{m - 1})| = \fillin\fillin\fillin$. The size of the new set, $|\textrm{pow}(\mathbb{N}&lt;/em&gt;{m})| = 2 \cdot 2^{m - 1} = 2^{m}$.  This means that $P(m)$ holds.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Hence, $C$ must be empty.  We reached a contradiction using the well-ordering principle by showing the $P(m)$ holds for $m \in C$, which must mean the $C$ is empty.  If there are no counter-examples, then $P(n)$ holds for all $n \in \mathbb{N}$.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h1 id=&#34;induction-principle&#34;&gt;Induction Principle&lt;/h1&gt;
+
+&lt;p&gt;Let $P$ be a predicated on $\mathbb{N}$.  If&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;$P(0)$ is true, and&lt;/li&gt;
+&lt;li&gt;$P(n) \implies P(n + 1)$ for all $n \in \mathbb{N}$,&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;then&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;$P(m)$ is true for all $m \in \mathbb{N}$.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;template-for-induction-proofs&#34;&gt;Template for Induction Proofs&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt;State, &amp;ldquo;We prove by induction.&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;Define a predicate, $P(n)$.  This is the &lt;em&gt;induction hypothesis&lt;/em&gt;.  Our goal is to show that $P(n)$ is true for all $n \in \mathbb{N}$.&lt;/li&gt;
+&lt;li&gt;Prove $P(0)$ is true.  (&lt;em&gt;base case&lt;/em&gt; or &lt;em&gt;basis step&lt;/em&gt;.)&lt;/li&gt;
+&lt;li&gt;Prove that $P(n) \implies P(n + 1)$ for every $n \in \mathbb{N}$.  (&lt;em&gt;induction step&lt;/em&gt;)&lt;/li&gt;
+&lt;li&gt;Conclude that $P(n)$ is true for all $n \in \mathbb{N}$ by induction.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;How is the method of &lt;em&gt;proof by induction principle&lt;/em&gt; similar to and different from &lt;em&gt;proof by well-ordering principle&lt;/em&gt;?&lt;/p&gt;
+
+&lt;h2 id=&#34;induction-practice&#34;&gt;Induction Practice&lt;/h2&gt;
+
+&lt;p&gt;Prove the non-negative integers are well ordered by the induction principle.&lt;/p&gt;
+
+&lt;p&gt;###&lt;/p&gt;
+
+&lt;p&gt;Prove the power set size property, $|\textrm{pow}(A)| = 2^{|A|}$, by
+induction.&lt;/p&gt;
+
+&lt;p&gt;###&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Challenge Solved!</title>
+      <link>https://uvacs2102.github.io/challenge4/</link>
+      <pubDate>Sat, 24 Sep 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/challenge4/</guid>
+      <description>&lt;p&gt;Challenge 4 has been solved by Henry Spece!&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlightr&#34;&gt;
+&lt;strong&gt;Challenge 4.&lt;/strong&gt; (From &lt;a href=&#34;https://uvacs2102.github.io/class9&#34;&gt;Class 9&lt;/a&gt;) How many self-inverting relations, &lt;em&gt;R&lt;/em&gt;: &lt;em&gt;N&lt;/em&gt;&lt;sub&gt;&lt;em&gt;k&lt;/em&gt;&lt;/sub&gt; &amp;rarr; &lt;em&gt;N&lt;/em&gt;&lt;sub&gt;&lt;em&gt;k&lt;/em&gt;&lt;/sub&gt;, are there?  (Where &lt;em&gt;N&lt;/em&gt;&lt;sub&gt;&lt;em&gt;k&lt;/em&gt;&lt;/sub&gt; is the set of all non-negative integers less than &lt;em&gt;k&lt;/em&gt;, and a relation is self-inverting if &lt;em&gt;R&lt;/em&gt; = &lt;em&gt;R&lt;/em&gt;&lt;sup&gt;-1&lt;/sup&gt;.)
+   &lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;Henry&amp;rsquo;s answer is below:&lt;/p&gt;
+
+&lt;p&gt;&lt;blockquote&gt;
+2&lt;sup&gt;&lt;em&gt;n&lt;/em&gt;*(&lt;em&gt;n&lt;/em&gt;+1)/2&lt;/sup&gt;&lt;/p&gt;
+
+&lt;p&gt;For each element in the domain, the number of &amp;ldquo;connection&amp;rdquo; possibilities
+for that element to each element of the codomain (given that it can
+either be related or not related to a codomain element) is 2&lt;em&gt;n&lt;/em&gt;, where
+&lt;em&gt;n&lt;/em&gt; is the number of codomain elements.&lt;/p&gt;
+
+&lt;p&gt;This includes the possibility of the element connecting to itself,
+because there are two possibilities involving self connection, and
+2&lt;sup&gt;(&lt;em&gt;n&lt;/em&gt;-1)&lt;/sup&gt; possibilities for connection to non-identical
+elements.  The product of these two results in
+2*2&lt;sup&gt;(&lt;em&gt;n&lt;/em&gt;-1)&lt;/sup&gt; = 2&lt;sup&gt;n&lt;/sup&gt;.&lt;/p&gt;
+
+&lt;p&gt;For each following element in the domain, the relationship with all
+previous elements which have been assigned relationships is fixed.  For
+example, if element &lt;em&gt;a&lt;/em&gt; in the domain is related to element
+&lt;em&gt;b&lt;/em&gt; in the codomain, then element &lt;em&gt;b&lt;/em&gt; in the domain must
+be related to element &lt;em&gt;a&lt;/em&gt; in the codomain.  This applies equally
+if element &lt;em&gt;a&lt;/em&gt; in the domain is not related to element &lt;em&gt;b&lt;/em&gt;
+in the codomain, because then element &lt;em&gt;b&lt;/em&gt; in the domain must also
+not be related to element &lt;em&gt;a&lt;/em&gt; in the codomain, or the relation
+would not be self-inverting.&lt;/p&gt;
+
+&lt;p&gt;All other relationships between our second element and elements of the
+codomain are still free to change, though, leaving
+2&lt;sup&gt;&lt;em&gt;n&lt;/em&gt;-1&lt;/sup&gt; combinations for the second element considered.&lt;/p&gt;
+
+&lt;p&gt;This pattern continues &lt;em&gt;n&lt;/em&gt; times in total, and by multiplying
+these possibilities, we get&lt;/p&gt;
+
+&lt;p&gt;2&lt;sup&gt;n&lt;/sup&gt; * 2&lt;sup&gt;n-1&lt;/sup&gt; * 2 &lt;sup&gt;n-2&lt;/sup&gt; &amp;hellip; * 2&lt;sup&gt;1&lt;/sup&gt;&lt;/p&gt;
+
+&lt;p&gt;Which is the same as 2&lt;sup&gt;&lt;em&gt;n&lt;/em&gt; + (&lt;em&gt;n&lt;/em&gt;-1) + (&lt;em&gt;n&lt;/em&gt;-2)
++ &amp;hellip; + 2 + 1&lt;/sup&gt;.&lt;/p&gt;
+
+&lt;p&gt;By reversing the addition sequence we get that the exponent of 2 is the
+sum of all numbers from 1 to &lt;em&gt;n&lt;/em&gt;, which is equal to
+&lt;em&gt;n&lt;/em&gt;*(&lt;em&gt;n&lt;/em&gt;+1)/2.&lt;/p&gt;
+
+&lt;p&gt;Hence, the number of self-inverting relations for a set of size
+&lt;em&gt;n&lt;/em&gt; must be 2&lt;sup&gt;(&lt;em&gt;n&lt;/em&gt;*(&lt;em&gt;n&lt;/em&gt;+1)/2)&lt;/sup&gt;.
+   &lt;/blockquote&gt;&lt;/p&gt;
+
+&lt;p&gt;Congratulations to Henry Spece for solving the challenge!&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Problem Set 5</title>
@@ -1236,440 +1442,6 @@ do better on future assignments.&lt;/p&gt;
 &lt;p&gt;If you notice a significant error in any of the provided solutions
 (where &amp;ldquo;significant&amp;rdquo; is at my discretion, but generally means something
 more than an obvious typo), you can earn bonus points by reporting it.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Survey Questions (Part 2)</title>
-      <link>https://uvacs2102.github.io/surveyquestions2/</link>
-      <pubDate>Sat, 10 Sep 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://uvacs2102.github.io/surveyquestions2/</guid>
-      <description>&lt;p&gt;Here are my (in progress) responses to more questions submitted in the
-registration surveys (see &lt;a href=&#34;https://uvacs2102.github.io/surveyquestions&#34;&gt;Part 1&lt;/a&gt; for the first set
-of responses).  Sorry its taking a long time to answer these questions,
-but there are lots of great questions submitted, and I will eventually
-get to them all.&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;question&#34;&gt;
-How to get better
-   &lt;/div&gt;
-   &lt;div class=&#34;answer&#34;&gt;
-Practice! (This applies to pretty much everything).  But, its important
-to practice in a way that maximimizes benefit and avoids getting stuck
-in local maxima.  The best kind of practice involves honest and direct
-feedback, and interaction with people at both levels above and levels
-below yourself.  We hope the problem sets in this class will provide
-plenty of opportunity for effective practice.
-   &lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;question&#34;&gt;
-The syllabus said that students who do exceptionally well will be offered positions in your research group. I am interested in encryption research and I was wondering what I would have to do to be considered for a position in your research group.
-   &lt;/div&gt;
-   &lt;div class=&#34;answer&#34;&gt;
-Excellent!  Thanks for reading to the end of the syllabus.&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;m willing to consider anyone who expresses interest for a summer
-position in my research group, but want to try and have a good
-expectation that it will be a positive and worthwhile experience for
-both of us before offering a position.  The main things I want to see
-are &lt;em&gt;curiosity&lt;/em&gt; and &lt;em&gt;initiative&lt;/em&gt;.  Beyond that, it does help to show
-that you can do well on the content in the class, but it is not
-necessary to be the best student or to do consistently well.  Much more
-valuable to do one impressive thing (which could be something in the
-class like solving a challenge problem, or something you&amp;rsquo;ve done on your
-own, like building an interesting mobile app or writing a blog, etc.).
-   &lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;question&#34;&gt;
-I would like to learn everything I would need to know to be able to build big programs.
-   &lt;/div&gt;
-   &lt;div class=&#34;answer&#34;&gt;
-This class is more relevant for building &lt;em&gt;small&lt;/em&gt; programs that do a lot,
-than for building &lt;em&gt;big&lt;/em&gt; programs.&lt;/p&gt;
-
-&lt;p&gt;The main challenge in building big programs is managing complexity and
-the best tool for managing complexity is to define clean and limited
-interfaces between components.  This class might help some for that, at
-least in terms of the underlying skills, becuase it should improve your
-ability to think clearly about precise definitions and to strive for
-minimal requirements.&lt;/p&gt;
-
-&lt;p&gt;If you want to learn how to build big programs successfully the best
-thing to do is to actually try building progressively bigger programs,
-and to join and contribute to open source projects where you&amp;rsquo;ll get
-mentoring from people with experience building (and maintaining, which
-is often the hardest part!) big programs.
-   &lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;question&#34;&gt;
-I love interesting classes, but I also get really stressed about
-grades. They don&amp;rsquo;t matter as much as I have been told they do, but my
-mind is conditioned to value them. I just hope this class will be more
-interesting than stressful! The article we just had to read definitely
-fell into interesting and I would have enjoyed that on my own.
-   &lt;/div&gt;
-   &lt;div class=&#34;answer&#34;&gt;
-When you were in high school, you were probably told that grades were
-essential to getting into a good college, and you followed this advice
-well and were smart enough to do well, that&amp;rsquo;s how you ended up at UVA.&lt;/p&gt;
-
-&lt;p&gt;In college, grades have much less significance.  There is,
-unfortunately, one exception to that which is getting into the CS
-majors.  I hope this will change, and also encourage students to not
-accept being turned away from their desired major without a fight, but
-for now the unfortunate reality is that slots in the CS majors have been
-capped, and admissions are decided nearly entirely based on arbitrary
-GPA cut-offs.&lt;/p&gt;
-
-&lt;p&gt;Otherwise, there is very little that depends on your college grades (as
-long as they are respectable enough that you don&amp;rsquo;t run into trouble with
-academic probation or anything like that).&lt;/p&gt;
-
-&lt;p&gt;If you want to go to graduate school (in computing, at least) after
-college, it is a little better to have great grades than to have
-mediocre grades (although perfect or near-perfect grades will probably
-count against you), but far more important to have an impressive
-accomplishment and reference letters.  Being a significant author on a
-research paper is the most important determiner in getting into the best
-PhD programs, and having letters from known researchers who can provide
-a lot of detail about interesting and impressive things you have done is
-the next most important thing.  Most reviewers of PhD applications won&amp;rsquo;t
-even look at grades, or GPAs, except to possible check grades in a few
-key courses, and if the reason for getting poor grades in some less
-important classes is that you were more focused on doing some exciting
-research, so much the better!&lt;/p&gt;
-
-&lt;p&gt;If you want a software development job in industry, there are some
-(mostly big, old) companies that will have GPA cut-offs in their hiring
-searches, but generally the more interesting and worthwhile the company
-you are seeking to work for, the less they care about grades and the
-more they want to see evidence of what you can accomplish on your own
-initiative.  Contributing significantly to an open source project,
-building your own interesting web/mobile app, initiating and leading a
-student club, providing a technical and leadership contribution to a
-service organization, etc., are all much more impressive and meaningful
-evidence that you would be a valuable employee for most companies and
-any number of As in your classes.&lt;/p&gt;
-
-&lt;p&gt;As for what we can do in cs2102, I do try to make things less stressful
-for students, but sometimes things intended to reduce stress are
-misinterpreted and actually increase student stress.  I believe being
-somewhat vague about what is expected and how grading is done is highly
-beneficial for learning.  My favorite quote about this is from John
-Stigloe (who was a professor at Harvard, but it applies equally to UVA
-students):&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;em&gt;This generation of students got into Harvard by doing exactly and precisely what teacher wants. If teacher is vague about what he wants, they work a lot harder to figure out what they want and whether or not it is good. The vaguer the directions, the more likely the opportunity for serendipity to happen. It drives them nuts!&lt;/em&gt; (Harvard Professor John Stilgoe on &amp;ldquo;60 Minutes&amp;rdquo;, 4 January 2004)&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;That said, I understand that uncertainty is one of the main things that
-causes stress for students (and I don&amp;rsquo;t really want to drive students
-nuts!).  I hope students will view the vagueness in my courses as
-meaning there are many and varried opportunities to show that you
-deserve an A in the class, and that I can be trusted to treat everyone
-fairly.&lt;/p&gt;
-
-&lt;p&gt;The other main cause of grading stress, I believe, is students fearing
-that even though they understand the material well and are putting in a
-solid effort, that they are at risk of getting less-than-desired grade
-because of making little mistakes.  Grading done where each question is
-&amp;ldquo;out of&amp;rdquo; some number of points, and there are various ways to lose
-specific numbers of points for making mistakes, and the grade is
-computed as the total of all the points over all the questions,
-exaccerbates this stress in two ways.&lt;/p&gt;
-
-&lt;p&gt;First, it means students are mostly focused on getting to the threshold
-&amp;ldquo;full credit&amp;rdquo; answer and fearful of anything that might cause point
-deductions.  This stifles creativity and ambition.&lt;/p&gt;
-
-&lt;p&gt;Second, over the course of a set of assignments, it means it is nearly
-impossible to recover from one misstep.  If 90% is needed for an &amp;ldquo;A&amp;rdquo;
-grade, it takes 3 grades of 95 to make up for one 75, and 5 grades of 95
-to make up for one 65.  With the grading system I use, one great
-assignment (or one successful challenge solution), is enough to make up
-for several poor assignments.  I&amp;rsquo;m looking for evidence that students
-have understood important concepts and shown that they can use them
-effectively, not for signs of occasional slip-ups.&lt;/p&gt;
-
-&lt;p&gt;I hope students find the grading systems I use to be less stressful, and
-more conducive to ambition and creativity.
-   &lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;question&#34;&gt;
-People tell me if discrete doesn&amp;rsquo;t &amp;ldquo;click&amp;rdquo; for me I will not do well in the class. What can I do to make it &amp;ldquo;click&amp;rdquo;?
-   &lt;/div&gt;
-   &lt;div class=&#34;answer&#34;&gt;
-I don&amp;rsquo;t think anything worthwhile for you to learn &amp;ldquo;clicks&amp;rdquo; right away.
-Usually when something &amp;ldquo;clicks&amp;rdquo;, it is because of lots of struggling and
-effort beforehand, setting up your mind for the &amp;ldquo;click&amp;rdquo; to happen.&lt;/p&gt;
-
-&lt;p&gt;So, the main thing I would say is don&amp;rsquo;t be distressed if you see other
-people getting things more quickly than you do.  Its probably not
-because they have some magic discrete math gene that enables them to
-understand things that you are lacking.  I&amp;rsquo;m pretty sure no such gene
-exists.  Instead, when someone learns something quickly it is probably
-because they had a lot of previous experience that gave them the context
-necessary for the new concept to make sense.&lt;/p&gt;
-
-&lt;p&gt;When things seem overly hard to learn, instead of getting frustrated,
-your goal should be to figure out what context you are missing that is
-making it hard to learn.  Rather than getting stuck on the new concept,
-go back to the previous ones that it is building on and make sure you
-really understand them (a great way to do this is to try and explain
-them to someone else who might be confused on them).&lt;/p&gt;
-
-&lt;p&gt;Don&amp;rsquo;t just assume you understand things because you can read solutions
-to problems and they seem to make sense, make sure you do by working out
-the problems yourself and then comparing them to others&amp;rsquo; solutions.  The
-collaboration policy for the assignments in this class is intended to
-encourage this, and I hope students will take advantage of it, and use
-opportunities to work with others as ways to improve each other&amp;rsquo;s
-understanding.
-   &lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;question&#34;&gt;
-Will this course be focused solely on mathematical proofs, or a broad range of proofs (i.e. Evaluating conspiracy claims)?
-   &lt;/div&gt;
-   &lt;div class=&#34;answer&#34;&gt;
-We will concentrate on proofs about mathematical propositions, with a
-focus on ones that are (at least loosely) relevant to computing.  The
-nice thing about mathematical propositions and proofs is that they can
-be stated precisely and umambiguously, and the methods of reasoning are
-well established and universal.  Many of the reasoning methods we&amp;rsquo;ll see
-for mathematical proofs are also relevant to discussions about things in
-the physical world, but the &amp;ldquo;rules of evidence&amp;rdquo; and methods of reasoning
-are much less clear and much in dispute (e.g., outright lying seems to
-have become pretty much acceptable in our current political discourse,
-but assuming any falsehood would completely invalidate any mathematical
-proof).  I would encourage everyone to take a philosophy class to look
-more deeply at how formal reasoning can be used to understand things in
-the real world, but for this class we will mostly stay in the safe world
-of mathematical abstractions.
-   &lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;question&#34;&gt;
-As a double major in Math and CS, I am also taking the Transition to Higher Mathematics course this semester. Do you believe these proof-based courses would work in conjunction?
-   &lt;/div&gt;
-   &lt;div class=&#34;answer&#34;&gt;
-I would expect so!  I&amp;rsquo;m sure there will be lots of connections between
-the two classes, and would encourage you to share any extra insights you
-get with me and the class.
-   &lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;question&#34;&gt;
-whats your middle name
-   &lt;/div&gt;
-   &lt;div class=&#34;answer&#34;&gt;
-I provide that only on a &amp;ldquo;need-to-know&amp;rdquo; basis.
-   &lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;question&#34;&gt;
-How much of a computer/computing/etc. background do I need to succeed in this class?
-   &lt;/div&gt;
-   &lt;div class=&#34;answer&#34;&gt;
-You are expected to have at least some programming experience (enough to
-understand and write simple programs), and I also assume everyone in the
-modern world has had a lot of experience using complex computing
-systems.  I think some parts of the class will probably have more
-relevance to people with more programming experience, and I&amp;rsquo;ll try to
-relate some of the abstract concepts in the class to things that some
-students may have encountered in programming (but others will not have
-yet seen), but it is not necessary to have substantial computing
-background to do well in this class.&lt;/p&gt;
-
-&lt;p&gt;The only official prerequisite is cs11xx or equivalent, so if it seems
-like anything is ever unfairly assuming more CS background than you
-should expect to have by satisfying that prerequisite, you should make
-sure to let me know. &lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;question&#34;&gt;
-Is there any actual coding involved in the course?
-   &lt;/div&gt;
-   &lt;div class=&#34;answer&#34;&gt;
-Its possible there will be some problems that involve programming, but
-it will not be a major part of the course.  There will be challenge and
-optional problems that might be infeasible to solve without programming.&lt;/p&gt;
-
-&lt;p&gt;It will definitely be possible to earn an A in the class without doing
-any programming.
-   &lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;question&#34;&gt;
-I always enjoy hearing about the instructor&amp;rsquo;s life/achievements. I feel like it makes them seem more human ,and also makes me feel excited to learn under such a distinguished person in their field.
-   &lt;/div&gt;
-   &lt;div class=&#34;answer&#34;&gt;
-Wow, that&amp;rsquo;s flattering!  (I&amp;rsquo;m not sure if it is more flattering to seem
-human, or to be a &amp;ldquo;distinguished person&amp;rdquo;, but either way, I appreciate
-the question.)&lt;/p&gt;
-
-&lt;p&gt;As for my life, it is mostly focused around my children (a four-year old
-daughter, and 17-month old son).  Since having children, I view any
-professional accomplishment as inconsequential compared to my hopes of
-being a good parent and raising decent and fulfilled children.&lt;/p&gt;
-
-&lt;p&gt;As for my achievements and experiences in computing and teaching, the
-ones I think are most significant are:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;When I was an undergraduate at MIT, I was an undergraduate researcher
-in Marc Raibert&amp;rsquo;s robotics lab where I worked on making
-physically-realistic animations of kangaroo-like creatures.  One day
-Prof. Raibert came into the lab and told us we should make the
-creatures look like dinosaurs instead, but he couldn&amp;rsquo;t explain why.  A
-few weeks later he came back from a meeting with people in Hollywood,
-saying he thought he had convinced them it would be possible to make a
-sufficiently realistic animated dinosaur for a movie (which turned out
-to be Jurassic Park).  As an undergraduate, I also had an opportunity
-to work as an intern in John Backus&amp;rsquo; group at IBM Almaden, on a
-functional programming language.  John was a UVA dropout, who had gone
-on to lead the Fortan project at IBM, develop what is now known as
-Backus-Naur Form, and then lead a programming language research group
-at IBM Almaden.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;The main research I did as a graduate student at MIT (which didn&amp;rsquo;t end
-up actually as part of my PhD dissertation) was to develop a tool for
-lightweight static checking, that would take advantage of annotations
-added to C programs to be able to warn programmers about likely
-programming errors.  The tool I mostly built ended up being quite
-widely used, and included in many Linux distributions.  (The work was
-mostly done in 1993-1996, with some more doing after I came to UVA in
-1999-2001, but I still get bug reports form people using &lt;a href=&#34;http://www.splint.org/&#34;&gt;the
-tool&lt;/a&gt;.  Some of the ideas we had for checking
-memory use in C programs are now being used, in farily similar form,
-in the &lt;a href=&#34;https://www.rust-lang.org/en-US/&#34;&gt;Rust programming language&lt;/a&gt;,
-although I have no direct involvement in this.)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;One of my first goals after starting at UVA (where I joined as a
-professor in 1999) was to develop a new introductory computing course
-targeted for College of Arts and Sciences students and intended for
-people who were only expected to take one computing course.  This
-started as a &lt;a href=&#34;http://www.cs.virginia.edu/~evans/pubs/teachingfellowship.pdf&#34;&gt;University Teaching Fellowship
-Proposal&lt;/a&gt;,
-and the first course was offered as &lt;a href=&#34;http://www.cs.virginia.edu/~evans/cs200-spring2002/&#34;&gt;cs200: &lt;em&gt;Computer Science from Ada
-and Euclid to Quantum Computing and the World Wide
-Web&lt;/em&gt;&lt;/a&gt; in 2002.
-Initially, there were about 20 students in the class, but more than
-half of them dropped out after the first problem set which was not
-well designed.  But, the remaining 9 students stuck with the class and
-over the years it developed.  Since some students who took it wanted
-to continue into other computing courses but were not allowed to in
-the curriculum we had then, I created a follow-on course (initially
-offered as &lt;a href=&#34;http://www.cs.virginia.edu/~evans/cs201j-fall2002/&#34;&gt;cs201j: Engineering
-Software&lt;/a&gt;, and
-with &lt;a href=&#34;http://www.cs.virginia.edu/~evans/pictures/snakes/&#34;&gt;Snakes!&lt;/a&gt;),
-which could lead into our other CS courses (it counted as what is now
-cs2110, and satisfied the prerequisite for cs2150).&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Based on the success of these courses and the quality of students we
-were finding in the College, I pushed for creating a CS major that was
-open to CLAS students.  In fall 2005, I was given support from my
-Department Chair to lead an effort to create a CS degree for the
-College, and after putting together a committee to help with this and
-designing a curriculum, the Interdisciplinary Major in Comptuer
-Science (BACS) degree was approved in 2006, and we graduated our first
-three students in 2007.  By the time I stepped down as BACS director,
-the BACS had grown to be larger than any other major offered by the
-Engineering school.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;I wrote an open textbook based around the cs200/cs150/cs1120 course,
-&lt;a href=&#34;http://computingbook.org&#34;&gt;&lt;em&gt;Introduction to Computing: Explorations in Language, Logic, and
-Machines&lt;/em&gt;&lt;/a&gt;.  Although it was not widely
-adopted, it does have some eager readers and I get occasional emails
-from people who have used it as a self-study book.  It also was the
-main thing that led to me being recruited by an open education startup
-to teach their first course.  (You can read about my experiences as
-the first VP of Education for Udacity here: &lt;a href=&#34;http://blog.udacity.com/2013/02/cs101-one-year-later.html&#34;&gt;CS101: One Year
-Later&lt;/a&gt;, and
-my favorite article about this is &lt;a href=&#34;http://www.prospectmagazine.co.uk/features/online-universities-udacity-grand-challenge-david-stavens-dave-evans&#34;&gt;&lt;em&gt;Professors without borders: Will
-online learning spell the end of
-universities?&lt;/em&gt;&lt;/a&gt;, not just because it somehow claims I have &amp;ldquo;Monty Python humour&amp;rdquo;.)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;I&amp;rsquo;ve had a chance to teach many &lt;a href=&#34;http://www.cs.virginia.edu/~evans/students/&#34;&gt;remarkable
-students&lt;/a&gt; who have gone on
-to do amazing and wonderful things.  Although its always hard to know
-how much impact one actually has, one of the joys and privledges of
-being a professor is to follow the careers of your students and to
-feel like you can claim some credit for them.  Some of the students
-who have worked in my research group include &lt;a href=&#34;https://www.youtube.com/watch?v=29K7ldNlH6s&amp;amp;feature=youtu.be&#34;&gt;Adrienne Porter
-Felt&lt;/a&gt;
-(&lt;a href=&#34;https://news.virginia.edu/content/computer-science-grad-stands-watch-users-googles-popular-browser&#34;&gt;UVAToday&lt;/a&gt;
-article) (who works on social network privacy and web browser security
-when she was an undergraduate in my research group, and now leads the
-Chrome security team at Google), &lt;a href=&#34;http://homes.soic.indiana.edu/yh33/&#34;&gt;Yan
-Huang&lt;/a&gt; (who worked on secure
-computation for his PhD in my group, and is now a professor at Indiana
-University), &lt;a href=&#34;http://www.cbsnews.com/news/60-minutes-hacking-your-phone/&#34;&gt;Karsten
-Nohl&lt;/a&gt; (who
-worked on RFID security for his PhD in my group, and went on to found
-&lt;a href=&#34;https://srlabs.de/&#34;&gt;Security Research Labs&lt;/a&gt; and expose high profile
-security vulnerabilities in &lt;a href=&#34;https://www.jeffersonswheel.org/2016/tracking-congressional-phones&#34;&gt;phone
-systems&lt;/a&gt;,
-&lt;a href=&#34;https://www.jeffersonswheel.org/2015/latest-from-karsten-nohl-pos-security&#34;&gt;payment
-systems&lt;/a&gt;,
-&lt;a href=&#34;https://www.jeffersonswheel.org/2014/updates-from-karstens-badusb&#34;&gt;USB&lt;/a&gt;,
-and &lt;a href=&#34;https://www.jeffersonswheel.org/2011/karstens-gsm-studies&#34;&gt;GSM&lt;/a&gt;),
-&lt;a href=&#34;http://www2.eecs.utk.edu/people/faculty/pauln&#34;&gt;Nate Paul&lt;/a&gt; (who work
-on malware security for his PhD in my group, and has gone on to do
-work on medical devices and embedded security at Oak Ridge and
-University of Tennessee),
-and &lt;a href=&#34;http://www.cs.virginia.edu/~evans/students/&#34;&gt;many others&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;I&amp;rsquo;ve led or been involved in research projects that have come up with
-some cool ideas, &lt;a href=&#34;https://scholar.google.com/citations?user=DsR4PucAAAAJ&amp;amp;hl=en&#34;&gt;a few of which have led to lots of other research as
-well as use in
-industry&lt;/a&gt;.
-The most significant are our work on making &lt;a href=&#34;http://www.mightbeevil.org/&#34;&gt;secure multi-party
-computation practical&lt;/a&gt;, improving
-software security (e.g.,
-&lt;a href=&#34;http://scriptinspector.org/&#34;&gt;ScriptInspector&lt;/a&gt;,
-&lt;a href=&#34;http://www.cs.virginia.edu/perracotta/&#34;&gt;Perracotta&lt;/a&gt;,
-&lt;a href=&#34;http://www.cs.virginia.edu/~evans/pubs/infosec05.html&#34;&gt;PHPrevent&lt;/a&gt;,
-and &lt;a href=&#34;http://www.splint.org&#34;&gt;Split&lt;/a&gt;), and &lt;a href=&#34;http://www.cs.virginia.edu/~evans/mcl/&#34;&gt;mobile
-networking&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;I&amp;rsquo;ve been involved in a few start-up companies, one as a co-founder
-(when I was a grad student), one as an early employee (with Udacity,
-growing from 5 to ~50 people), and many as an advisor.  I&amp;rsquo;ve learned
-from these experiences (mostly that academia is much more pleasant
-than industry!), but also have lots of opportunites to work with great
-people and see different aspects of companies at various stages.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;I&amp;rsquo;ve written a &lt;a href=&#34;http://www.dori-mic.org/&#34;&gt;baby book on theoretical computer
-science&lt;/a&gt;, make some &lt;a href=&#34;http://www.cs.virginia.edu/~evans/videos/#fun&#34;&gt;fun
-videos&lt;/a&gt;, and &lt;a href=&#34;http://www.cs.virginia.edu/~evans/pictures/2009-02-19-ofa/&#34;&gt;received
-an award from Tim
-Kaine&lt;/a&gt; (back when
-he was a lowly governor).&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Hope that helps!  Thanks for asking.
-   &lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;question&#34;&gt;
-who&amp;rsquo;s your favourite scientist?
-   &lt;/div&gt;
-   &lt;div class=&#34;answer&#34;&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://plus.google.com/+DavidEvans/posts/7QRogdYbBQ3&#34;&gt;Grace Hopper&lt;/a&gt;
-(really enjoyed Kurt Beyer&amp;rsquo;s
-&lt;a href=&#34;https://www.amazon.com/Invention-Information-Lemelson-Studies-Innovation/dp/0262517264/ref=sr_1_1?ie=UTF8&amp;amp;qid=1473559448&amp;amp;sr=8-1&amp;amp;keywords=grace+hopper&#34;&gt;biography&lt;/a&gt;.
-I would also mention Claude Shannon, Alan Turing, and Richard Feynman as
-runner-ups.&lt;/p&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Problem Set 3</title>
-      <link>https://uvacs2102.github.io/ps3/</link>
-      <pubDate>Fri, 09 Sep 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://uvacs2102.github.io/ps3/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Problem Set 3&lt;/strong&gt; is &lt;a href=&#34;https://uvacs2102.github.io/ps/ps3&#34;&gt;now posted&lt;/a&gt;, and is due on &lt;strong&gt;Friday, 16
-  September at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
 </description>
     </item>
     
