@@ -6,8 +6,25 @@
     <description>Recent content in Posts on cs2102: Discrete Math</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 27 Sep 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 28 Sep 2016 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://uvacs2102.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Satisfiable Formula Challenge</title>
+      <link>https://uvacs2102.github.io/clauses/</link>
+      <pubDate>Wed, 28 Sep 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/clauses/</guid>
+      <description>&lt;p&gt;Henry Spece has solved the challenge about proving the length of the
+longest satisfiable formula!&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlightg&#34;&gt;
+&lt;strong&gt;Challenge 6.&lt;/strong&gt; (From &lt;a href=&#34;https://collab.itc.virginia.edu/access/content/group/e0b17949-c94c-466b-835a-196381f3f911/ps3_solutions.pdf&#34;&gt;PS3 Solutions&lt;/a&gt;) Provide a full and convincing proof for Problem 11.
+   &lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;The proof is here: &lt;a href=&#34;https://uvacs2102.github.io/docs/challenge6/henry.pdf&#34;&gt;PDF&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Chicken vs. Egg Challenge</title>
@@ -184,21 +201,6 @@ Player 1 has a winning strategy or Player 2 does.&lt;/p&gt;&lt;/li&gt;
 nodes has $n - 1$ edges.&lt;/p&gt;
 
 &lt;p&gt;&lt;/div&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Satisfiable Formula Challenge</title>
-      <link>https://uvacs2102.github.io/clauses/</link>
-      <pubDate>Tue, 27 Sep 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://uvacs2102.github.io/clauses/</guid>
-      <description>&lt;p&gt;Henry Spece has solved the challenge about proving the length of the
-longest satisfiable formula:&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Challenge 6.&lt;/strong&gt; (From &lt;a href=&#34;https://collab.itc.virginia.edu/access/content/group/e0b17949-c94c-466b-835a-196381f3f911/ps3_solutions.pdf&#34;&gt;PS3 Solutions&lt;/a&gt; Provide a full and convincing proof for Problem 11.&lt;/p&gt;
-
-&lt;p&gt;The proof is here: &lt;a href=&#34;https://uvacs2102.github.io/docs/challenge6/henry.pdf&#34;&gt;PDF&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
