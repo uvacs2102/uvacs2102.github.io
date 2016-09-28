@@ -188,6 +188,21 @@ nodes has $n - 1$ edges.&lt;/p&gt;
     </item>
     
     <item>
+      <title>Maximum Length Satisfiable Formula</title>
+      <link>https://uvacs2102.github.io/clauses/</link>
+      <pubDate>Tue, 27 Sep 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/clauses/</guid>
+      <description>&lt;p&gt;Henry Spece has solved the challenge about proving the length of the
+longest satisfiable formula:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Challenge 6.&lt;/strong&gt; (From &lt;a href=&#34;https://collab.itc.virginia.edu/access/content/group/e0b17949-c94c-466b-835a-196381f3f911/ps3_solutions.pdf&#34;&gt;PS3 Solutions&lt;/a&gt; Provide a full and convincing proof for Problem 11.&lt;/p&gt;
+
+&lt;p&gt;The proof is here: &lt;a href=&#34;https://uvacs2102.github.io/docs/challenge6/henry.pdf&#34;&gt;PDF&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Self-Inverting Relations Challenge Solved!</title>
       <link>https://uvacs2102.github.io/challenge4/</link>
       <pubDate>Sat, 24 Sep 2016 00:00:00 +0000</pubDate>
@@ -1256,150 +1271,6 @@ students than what &lt;a href=&#34;https://www.math.vt.edu/people/mcquain/math25
 Tech&lt;/a&gt; does, but I
 hope you would not use that as a sign that our expectations are too
 high!)&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Class 7: Sets</title>
-      <link>https://uvacs2102.github.io/class7/</link>
-      <pubDate>Tue, 13 Sep 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://uvacs2102.github.io/class7/</guid>
-      <description>
-
-&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
-
-&lt;p&gt;Everyone should have received their comments and grade on PS1
-yesterday. Please make sure to read the comments posted on the website
-about how PS1 was graded.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps3&#34;&gt;&lt;strong&gt;Problem Set 3&lt;/strong&gt;&lt;/a&gt; is due &lt;strong&gt;Friday at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;I will have &amp;ldquo;make-up&amp;rdquo; office hours tomorrow (Wednesday) 3:30-4:30pm (in
-addition to my usual Wednesday 1-2pm office hours).  There have been
-some adjustments to the office hours schedule, please check the
-calendar.&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;
-   &lt;center&gt;
-&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;e2acfe2e97794da8a9a7f5fec369147e&#34; data-ratio=&#34;1.77777777777778&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
-   &lt;/center&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;highlightm&#34;&gt;
-   &lt;a href=&#34;https://uvacs2102.github.io/docs/class7.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes and Questions&lt;/b&gt;&lt;/a&gt;.
-   &lt;/div&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.egr.unlv.edu/~bein/SIGACT/lewin.html&#34;&gt;Tom Leighton&amp;rsquo;s Remarks on Danny Lewin&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://archive.boston.com/business/technology/articles/2011/09/04/akamai_thrives_in_the_spirit_of_its_lost_founder/?camp=pm&#34;&gt;&lt;em&gt;A Lost Spirit Still Inspires&lt;/em&gt;&lt;/a&gt;, Boston Globe, 4 September 2011.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.amazon.com/No-Better-Time-Remarkable-Transformed/dp/0306821664&#34;&gt;&lt;em&gt;No Better Time: The Brief, Remarkable Life of Danny Lewin, the Genius Who Transformed the Internet&lt;/em&gt;&lt;/a&gt; by Molly Knight Raskin.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.technologyreview.com/s/400799/akamais-algorithms/&#34;&gt;&lt;em&gt;Akamai&amp;rsquo;s
-Algorithms&lt;/em&gt;&lt;/a&gt;
-Technology Review, Interview with Tom Leighton, 1 September 2000.&lt;/p&gt;
-
-&lt;p&gt;David Karger, Eric Lehman, Tom Leighton, Matthew Levine, Daniel Lewin,
-Rina Panigrah.  &lt;a href=&#34;https://www.akamai.com/kr/ko/multimedia/documents/technical-publication/consistent-hashing-and-random-trees-distributed-caching-protocols-for-relieving-hot-spots-on-the-world-wide-web-technical-publication.pdf&#34;&gt;&lt;em&gt;Consistent Hashing and Random Trees: Distributed
-Caching Protocols for Relieving Hot Spots on the World Wide
-Web&lt;/em&gt;&lt;/a&gt;. (Note:
-tradition in theory papers is to list all authors alphabetically). 29th
-ACM Symposium on Theory of Computing, 1997.&lt;/p&gt;
-
-&lt;p&gt;The SAT solver I demo&amp;rsquo;d in class today was from the &lt;a href=&#34;https://uvacs2102.github.io/class6&#34;&gt;Class 6&lt;/a&gt;
-notes: Sahand Saba&amp;rsquo;s &lt;a href=&#34;http://sahandsaba.com/understanding-sat-by-implementing-a-simple-sat-solver-in-python.html&#34;&gt;&lt;em&gt;Understanding SAT by Implementing a Simple SAT
-Solver in
-Python&lt;/em&gt;&lt;/a&gt;
-[&lt;a href=&#34;https://github.com/evansuva/simple-sat&#34;&gt;Code with my modifications:
-https://github.com/evansuva/simple-sat&lt;/a&gt;].  You should, of course, feel free to use this (or any other SAT solver you want) to help with solving and checking your answers for &lt;a href=&#34;https://uvacs2102.github.io/ps/ps3&#34;&gt;Problem Set 3&lt;/a&gt; (and any other assignment in this class).&lt;/p&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;notes-and-questions&#34;&gt;Notes and Questions&lt;/h1&gt;
-
-&lt;p&gt;What is a &lt;em&gt;data type&lt;/em&gt;?  What are the differences between a &lt;em&gt;mathematical
-data type&lt;/em&gt; and a data type in your favorite programming language?&lt;/p&gt;
-
-&lt;p&gt;#&lt;/p&gt;
-
-&lt;p&gt;A &lt;strong&gt;set&lt;/strong&gt; is an unordered colection of objects.  A set is defined by its
-membership operation: $x \in S$ is true if $x$ is in the set $S$.&lt;/p&gt;
-
-&lt;h2 id=&#34;set-operations&#34;&gt;Set Operations&lt;/h2&gt;
-
-&lt;p&gt;Subset: $\subseteq$ (note that this does not mean &lt;em&gt;strict subset&lt;/em&gt;)
-$$A \subseteq B \iff \forall x \in A. \fillin \in \fillin.$$&lt;/p&gt;
-
-&lt;p&gt;Set Equality: $=$
-$$A = B \iff A \fillin B \wedge B \fillin A.$$&lt;/p&gt;
-
-&lt;p&gt;Set Union: $\cup$
-$$\forall x. x \in A \cup B \iff x \in A \fillin x \in B.$$&lt;/p&gt;
-
-&lt;p&gt;Set Intersection: $\cap$
-$$\forall x. x \in A \cap B \iff x \in A \fillin x \in B.$$&lt;/p&gt;
-
-&lt;p&gt;Set Difference: $-$
-$$\forall x. x \in A - B \iff x \in A \wedge x \notin B.$$&lt;/p&gt;
-
-&lt;p&gt;Set Complement: $\overline{S}$
-$$ \forall x. x \in D. x \in \overline{A} \iff x \notin A.$$&lt;/p&gt;
-
-&lt;p&gt;($D$ is the ``domain of discourse&amp;rdquo;, the universe of all objects under
-discussion.)
-&lt;!--page--&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;russell-s-paradox&#34;&gt;Russell&amp;rsquo;s Paradox&lt;/h3&gt;
-
-&lt;p&gt;$$ S_{R} = \textrm{ the set of all sets that are not members of themselves} $$&lt;/p&gt;
-
-&lt;p&gt;Is $S&lt;em&gt;{R} \in S&lt;/em&gt;{R}$?&lt;/p&gt;
-
-&lt;p&gt;#&lt;/p&gt;
-
-&lt;h3 id=&#34;set-practice&#34;&gt;Set Practice&lt;/h3&gt;
-
-&lt;p&gt;Here are some practice problems involving sets.  We won&amp;rsquo;t go through
-these in class, but you should ask questions about any are unclear.  (At
-least a few of these will be on Exam 1.)&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Define $A \subset B$ (strict subset).&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;#&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Prove $A \cup B \equiv B \cup A$.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;#&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Prove $A - B = \emptyset \iff A \subseteq B$.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;#&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Prove $A = B \iff (\forall a \in A \ldotp a \in B) \wedge (\forall b \in B \ldotp b \in A).$&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;#&lt;/p&gt;
-
-&lt;h2 id=&#34;danny-lewin&#34;&gt;Danny Lewin&lt;/h2&gt;
-
-&lt;p&gt;See the web version for links to articles on Danny Lewin.&lt;/p&gt;
-
-&lt;p&gt;\begin{quote}
-{\em In true Danny form, he fought back against the terrorists in an effort to defend the stewardesses and the cockpit. To this day, those of us who knew him well can’t figure out how only five terrorists managed to overpower him. During his short life, Danny made extraordinary contributions to the internet and to computer science through his work in algorithms and complexity theory. The impact of his work will be felt throughout the hi-tech industry for many years to come.} (from Tom Leigthon&amp;rsquo;s \hyperlink{&lt;a href=&#34;http://www.egr.unlv.edu/~bein/SIGACT/lewin.html}{remarks&#34;&gt;http://www.egr.unlv.edu/~bein/SIGACT/lewin.html}{remarks&lt;/a&gt; to commemorate naming of the STOC Best Student Paper Award in honor of Daniel Lewin}, 19 May 2002.
-\end{quote}&lt;/p&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
 </description>
     </item>
     
