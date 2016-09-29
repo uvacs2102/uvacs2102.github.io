@@ -10,6 +10,130 @@
     <atom:link href="https://uvacs2102.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Class 12: Review</title>
+      <link>https://uvacs2102.github.io/class12/</link>
+      <pubDate>Thu, 29 Sep 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/class12/</guid>
+      <description>
+
+&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps5&#34;&gt;&lt;strong&gt;Problem Set 5&lt;/strong&gt;&lt;/a&gt; is due &lt;strong&gt;Friday at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Exam 1&lt;/strong&gt; is in class on &lt;strong&gt;Thursday, 6 October&lt;/strong&gt;.  See &lt;a href=&#34;https://uvacs2102.github.io/class11&#34;&gt;Notes
+  11&lt;/a&gt; for details.  Remember to bring a good writing
+  instrument (sharp pencil is recommended) and your page of notes to the
+  exam.&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;
+   &lt;center&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;b1ae1f6618b747fca08e0d2f64aa2586&#34; data-ratio=&#34;1.77777777777778&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
+   &lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;exam-review&#34;&gt;Exam Review&lt;/h2&gt;
+
+&lt;p&gt;Below are some notations you should understand.  We use variables $P$
+and $Q$ to represent logical propositions (with \T\ or \F\ value), $A$
+and $B$ and $D$ (domain of discourse) to represent sets, and $x$
+represents any mathematical object.&lt;/p&gt;
+
+&lt;p&gt;\begin{tabular}{cl}
+\multicolumn{2}{c}{\bf Logical Operators} &lt;br /&gt;
+$P$ \smallcaps{implies} $Q$, $P \implies Q$ &amp;amp; Logical implication: when $P$ is \T, $Q$ must be \T &lt;br /&gt;
+$P$ \smallcaps{iff} $Q$, $P \iff Q$ &amp;amp; Double implication: $P \implies Q \vee Q \implies P$ &lt;br /&gt;
+\smallcaps{not}$(P)$, $\neg P$, $\overline{P}$ &amp;amp;  Logical negation &lt;br /&gt;
+$P$ \smallcaps{and} $Q$, $P \wedge Q$ &amp;amp; Logical conjunction (\T\ when both $P$ and $Q$ are \T) &lt;br /&gt;
+$P$ \smallcaps{or} $Q$, $P \vee Q$ &amp;amp; Logical disjunction (\T\ when $P$ or $Q$ is \T\ (or both) &lt;br /&gt;
+$P$ \smallcaps{xor} $Q$, $P \oplus Q$ &amp;amp; Exlusive or (\T\ when either $P$ or $Q$ is \T, but not both&lt;br /&gt;
+\multicolumn{2}{c}{\bf Quantifiers} &lt;br /&gt;
+$\forall x \in A \ldotp P(x)$ &amp;amp; $P(x)$ for {\em every} element $x$ of the set $A$ &lt;br /&gt;
+$\exists x \in A \ldotp P(x)$ &amp;amp; $P(x)$ for {\em at least one} element $x$ of the set $A$ &lt;br /&gt;
+\multicolumn{2}{c}{\bf Set Operators} &lt;br /&gt;
+$x \in A$ &amp;amp; Set membership, $A$ contains the element $x$ &lt;br /&gt;
+$x \notin A$ &amp;amp; Set non-membership, $A$ does not contain $x$ &lt;br /&gt;
+$A \subseteq B$ &amp;amp; $A$ is a subset of $B$: $\forall x \in A. x \in B.$ &lt;br /&gt;
+$A = B$ &amp;amp; set equality: $A \subseteq B \vee B subseteq A$ &lt;br /&gt;
+$A \cup B$ &amp;amp; Set Union: $\forall x. x \in A \cup B \iff x \in A \vee x \in B.$ &lt;br /&gt;
+$A \cap B$ &amp;amp; Set Intersection: $\forall x. x \in A \cup B \iff x \in A \wedge x \in B.$ &lt;br /&gt;
+$ A - B$ &amp;amp; Set Difference: $\forall x. x \in A - B \iff x \in A \wedge x \notin B.$ &lt;br /&gt;
+$ \overline{A}$ &amp;amp; Set Complement: $\forall x. x \in D. x \in \overline{A} \iff x \notin A.$ &lt;br /&gt;
+$ A \times B$ &amp;amp; Cartesian Product: $\forall a \in A, b \in B \ldotp (a, b) \in A \times B.$&lt;br /&gt;
+$ \textrm{pow}(A)$ &amp;amp; Power Set: $S \in A \iff S \subseteq A$. &lt;br /&gt;
+\end{tabular}&lt;/p&gt;
+
+&lt;!--page--&gt;
+
+&lt;h2 id=&#34;well-ordering-principle&#34;&gt;Well-Ordering Principle&lt;/h2&gt;
+
+&lt;p&gt;Remember the well-ordering principle template from Class 3:&lt;/p&gt;
+
+&lt;p&gt;To prove that $P(n)$ is true for all $n \in \mathbb{N}$:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Define the set of counterexamples, $C ::= { n \in \mathbb{N} | NOT(P(n)) }$.&lt;/li&gt;
+&lt;li&gt;Assume for contradiction that $C$ is non-empty.&lt;/li&gt;
+&lt;li&gt;By the well-ordering principle, there must be some smallest element, $m \in C$.&lt;/li&gt;
+&lt;li&gt;Reach a contradiction (this is the creative part!).  One way to reach a contradiction would be to show $P(m)$.  Another way is to show there must be an element $m&amp;rsquo; \in C$ where $m&amp;rsquo; &amp;lt; m$.&lt;/li&gt;
+&lt;li&gt;Conclude that $C$ must be empty, hence there are no counter-examples and $P(n)$ always holds.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Since we didn&amp;rsquo;t finish the winning strategy proof in class, I&amp;rsquo;ve written
+it out fully here.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Theorem.&lt;/strong&gt; Player 1 has a winning strategy in Take-Away if
+  the number of sticks, $n$ is not divisible by 4.&lt;/p&gt;
+
+&lt;p&gt;For any induction proof, the first thing we need to do is write the
+theorem as a predicate on the natural numbers.&lt;/p&gt;
+
+&lt;p&gt;$$\forall n \in \mathbb{N} \ldotp P(n) ::= \textrm{ Player 1 has a winning strategy if }\exists a \in { 1, 2, 3 }, \exists k \in \mathbb{N} \textrm{ such that } n = 4k + a.$$&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Base cases&lt;/em&gt;: $P(1)$, $P(2)$, $P(3)$.&lt;/p&gt;
+
+&lt;p&gt;$P(1)$: If there is $1$ stick remaining, Player 1 wins by taking 1 stick.&lt;br /&gt;
+$P(2)$: If there are $2$ sticks remaining, Player 1 wins by taking 2 sticks.&lt;br /&gt;
+$P(3)$: If there are $3$ sticks remaining, Player 1 wins by taking 3 sticks.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Inductive case&lt;/em&gt;: Using strong induction, $\forall m \in \mathbb{N}, m \ge 4 \ldotp (\forall k \in \mathbb{N}, k \le m. P(k)) \implies P(m + 1)$.&lt;/p&gt;
+
+&lt;p&gt;Since $m \ge 4$ we can write $m = 4k + b$ for some $k \in \mathbb{N}^{+}$ and $b \in {0, 1, 2, 3}$.&lt;/p&gt;
+
+&lt;p&gt;We consider four cases for each value of $b$.&lt;/p&gt;
+
+&lt;p&gt;Case 3: $b = 3$.  Since $m = 4k + 3$, $m + 1 = 4k + 4 = 4(k + 1)$.
+Since $m + 1$ is divisible by 4, $P(m+ 1)$ holds because the predicate
+makes no claims when $n$ is divisible by 4.&lt;/p&gt;
+
+&lt;p&gt;Cases 0, 1, 2: Since $m = 4k + b$ for $b \in {0, 1, 2}$, we know $m +
+1 = 4k + c$ for $c \in {1, 2, 3}$ (since $c = b + 1$ to produce $m +
+1$).  We need to show $P(m+1)$, which means showing that player 1 has a
+winning strategy for $n = 4k + c$, $c \in {1, 2, 3}$.  Player 1 takes
+$c$ sticks, leaving $4k$ sticks.&lt;/p&gt;
+
+&lt;p&gt;For the next turn, Player 2 can remove 1, 2, or 3 sticks, leaving $4k -
+d$ sticks, $d \in {1, 2, 3}$.  This can be simplified to $4(k - 1) +
+e$ sticks where $e = 4 - d$ since $4k - 4 + (4 - d) = 4k - d = 4(k -
+1) + e$.  Hence, after Player 2&amp;rsquo;s turn it will be Player 1&amp;rsquo;s turn with
+$4(k - 1) + e$ sticks, $e \in {1, 2, 3}$.  We know $4(k - 1) + e &amp;lt; m$
+and it is not divisible by 4.  So, Player 1 has a winning strategy from
+$P(m + 1)$ since she has a move to make such that no matter what move
+player 2 makes, it leads to a number that is not divisible by 4 and is
+less than $m$, which we know is a position where Player 1 has a winning
+strategy but strong induction.&lt;/p&gt;
+
+&lt;p&gt;Note that $4(k - 1) + e$ is $m - 1$, $m - 2$ or $m - 3$, so we need to
+know $m \ge 4$ for this to be valid.  That&amp;rsquo;s why we needed three base
+cases!&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Problem Set 4 Comments</title>
       <link>https://uvacs2102.github.io/ps4comments/</link>
       <pubDate>Thu, 29 Sep 2016 00:00:00 +0000</pubDate>
@@ -1057,113 +1181,6 @@ g. $(S \times T) - G = \emptyset$.
 h. $(S \times T) - G \neq \emptyset$.&lt;/p&gt;
 
 &lt;p&gt;&lt;/div&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Generating PDFs</title>
-      <link>https://uvacs2102.github.io/pdfs/</link>
-      <pubDate>Wed, 14 Sep 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://uvacs2102.github.io/pdfs/</guid>
-      <description>
-
-&lt;p&gt;We are finding many of the assignment submissions for PS1 and PS2 are
-barely readable.  When it is hard for the graders to read your answers,
-you will get less useful feedback on your submission.  We are not
-intentionally down-grading work that is hard to read, but you will lose
-the benefit-of-the-doubt for answers that are too hard to read, and it
-also makes a bad impression when your work is presented in a way that
-looks careless.&lt;/p&gt;
-
-&lt;p&gt;We provide some advice below on how to generate a readable PDF to
-submit.  Please review what you are submitting before submitting it to
-make sure that it will not cause the graders headaches attempting to
-discern your answers from it.&lt;/p&gt;
-
-&lt;p&gt;We&amp;rsquo;ve been forgiving on PS1 and PS2, but from PS3 on will be expecting
-everyone to follow the directions well and generate readable
-submissions, and will refuse to grade unreadable submissions.&lt;/p&gt;
-
-&lt;h4 id=&#34;one-submission-per-team-with-everyone-s-name-and-id&#34;&gt;One Submission per Team, with Everyone&amp;rsquo;s Name and ID&lt;/h4&gt;
-
-&lt;p&gt;Each team that works together should submit &lt;em&gt;exactly one&lt;/em&gt; assignment,
-and it should have each team member&amp;rsquo;s name and email ID clearly at the
-top of it.  When you neglect to do this, it causes a lot of extra
-trouble for us.&lt;/p&gt;
-
-&lt;h4 id=&#34;pdf-files-only&#34;&gt;PDF files only&lt;/h4&gt;
-
-&lt;p&gt;Your submission must be a single, PDF file.  We will not grade Word
-documents, images, or other formats.  We do make two exceptions:
-&lt;a href=&#34;https://www.youtube.com/watch?v=GSIodz9GWxc#t=12&#34;&gt;entertaining
-videos&lt;/a&gt; and
-&lt;a href=&#34;http://www.cs.virginia.edu/~evans/cs1120-f11/all/2011/class-41-the-cake-of-computing&#34;&gt;cakes&lt;/a&gt;.
-(If your answers are in the form of a cake, it make not be possible to
-submit it through collab, but you can drop it off in person.)&lt;/p&gt;
-
-&lt;h2 id=&#34;ways-to-generate-good-pdfs&#34;&gt;Ways to Generate Good PDFs&lt;/h2&gt;
-
-&lt;p&gt;There are three ways to generate reasonable PDFs to submit: (1) use a
-mathematical typesetting tool, (2) use a scanner that scans to PDF
-files, or (3) use a camera.  If you use a scanner or a camera, the page
-you are scanning has to be readable to begin with, and you have to scan
-it well.  It is best to write on only one side of the paper, since often
-the writing from the back side bleeds through in the scan or image.&lt;/p&gt;
-
-&lt;p&gt;The most difficult to read submissions are when people use their mobile
-phone camera to take a picture of handwritten paper, and then put the
-image into a Word document without any filtering or processing.  This is
-not a way to make a readable PDF, and its not fair to expect graders to
-deal with that type of document.&lt;/p&gt;
-
-&lt;p&gt;There are ways to generate readable PDFs using your mobile phone camera.
-One tool that works for this is
-&lt;a href=&#34;https://www.camscanner.com/user/download&#34;&gt;CamScanner&lt;/a&gt; (available as a
-free app for limited use, for Android, iPhone, and Windows Phone).
-There are lots of other scanning apps that should work - see &lt;a href=&#34;https://www.cnet.com/how-to/best-scanning-apps-for-android-and-iphone/&#34;&gt;&lt;em&gt;The best
-scanning apps for Android and
-iPhone&lt;/em&gt;&lt;/a&gt;.
-Please look at the file you have generated before submitting it.  If you
-are not able to generate a readable PDF using your phone, you should use
-a scanner. There are public scanner to use in some of the UVA libraries
-including in Clemons Library.&lt;/p&gt;
-
-&lt;h2 id=&#34;mathematical-typesetting&#34;&gt;Mathematical Typesetting&lt;/h2&gt;
-
-&lt;p&gt;More ambitious, forward-thinking, aesthetically-minded, or
-handwriting-averse students will prefer to use a system that generates
-PDFs directly.  The system used for nearly all technical typesetting is
-&lt;a href=&#34;https://www.latex-project.org/&#34;&gt;LaTeX&lt;/a&gt; (which was started by &lt;a href=&#34;https://en.wikipedia.org/wiki/Leslie_Lamport&#34;&gt;Leslie
-Lamport&lt;/a&gt; who won the
-Turing Award in 2013, and builds on the TeX typesetting program created
-by &lt;a href=&#34;http://cs.stanford.edu/~uno/&#34;&gt;Donald Knuth&lt;/a&gt;, who won the Turing
-Award in 1974; neither of the awards were for work on typesetting).
-(Word and Google Docs do include equation editors, and you are welcome
-to use these if you want for cs2102.  But, anyone doing serious
-mathematics quickly finds that these gui-type equation editors are both
-painfully slow and not able to generate good output.  So, I don&amp;rsquo;t
-recommend using them unless you already know how and are happy with
-this.)&lt;/p&gt;
-
-&lt;p&gt;LaTeX has a fairly steep learning curve, but there are lots of tools
-available now to make it easier to get started.
-&lt;a href=&#34;https://www.sharelatex.com/&#34;&gt;ShareLaTeX&lt;/a&gt; is a web-based, multi-user
-LaTeX editor; &lt;a href=&#34;http://www.texniccenter.org/&#34;&gt;TeXnicCenter&lt;/a&gt; is a LaTeX
-editor for Windows; and &lt;a href=&#34;https://www.texpadapp.com/&#34;&gt;texpad&lt;/a&gt; is
-available for Mac and iOS.&lt;/p&gt;
-
-&lt;p&gt;If you are expecting to take further math and CS courses, it is worth
-learning to use this to produce documents efficiently.  Some later CS
-courses required submissions to be typeset using LaTeX (depending on
-whom is teaching them, this is sometimes the case for CS3102 and
-CS4102), and nearly all research papers are written this way.  You are
-not required to produce beautifully-typeset problem sets for CS2102 and
-shouldn&amp;rsquo;t spend inordinate extra time just trying to make your answers
-look great, but we will definitely appreciate your efforts to make
-submissions easier to read, and after a small effort in getting started
-with LaTeX, you may find that it takes less time than hand-writing
-(especially since it is easy to edit, instead of needing to rewrite).&lt;/p&gt;
 </description>
     </item>
     
