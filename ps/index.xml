@@ -785,7 +785,7 @@ $|A|$ and $|B|$?&lt;/p&gt;&lt;/li&gt;
 
 &lt;ol&gt;
 &lt;li&gt;&lt;p&gt;In &lt;a href=&#34;https://uvacs2102.github.io/ps/ps2&#34;&gt;Problem Set 2&lt;/a&gt; (Problem 6) you used the well-ordering
-principle to prove that any non-negative integer value less that
+principle to prove that any non-negative integer value less than
 $2^{k+1}$ can be written as $a_0 \cdot 2^0 + a_1 \cdot 2^1 + a_2 \cdot
 2^2 + \cdots + a_k \cdot 2^k$ where all the $a_i$ values are either 0 or 1.  Prove the same property using induction.  (Hint: the induction
 should be on $k$.)&lt;/p&gt;&lt;/li&gt;
