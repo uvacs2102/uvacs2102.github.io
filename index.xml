@@ -6,8 +6,76 @@
     <description>Recent content on cs2102: Discrete Math</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 29 Sep 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 30 Sep 2016 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://uvacs2102.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Three-Clause Challenge Refuted!</title>
+      <link>https://uvacs2102.github.io/challenge5/</link>
+      <pubDate>Fri, 30 Sep 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/challenge5/</guid>
+      <description>&lt;p&gt;Challenge 5 has been refuted by Henry Spece!&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlightg&#34;&gt;
+&lt;strong&gt;Challenge 5.&lt;/strong&gt; (From &lt;a href=&#34;https://collab.itc.virginia.edu/access/content/group/e0b17949-c94c-466b-835a-196381f3f911/ps3_solutions.pdf&#34;&gt;PS3 Solutions&lt;/a&gt;) Prove that the four-clause solution given for question 6 is the shortest possible equivalent 3CNF formula.
+   &lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;The challenge as stated was actually bogus!  The four-clause solution
+isn&amp;rsquo;t the shortest possible equivalent 3CNF formula.  Henry found a
+three-clause equivalent 3CNF formula, and proved that there is no
+two-clause equivalent 3CNF formula.&lt;/p&gt;
+
+&lt;p&gt;His answer is below:&lt;/p&gt;
+
+&lt;p&gt;&lt;blockquote&gt;
+The four-clause 3-CNF equivalent solution to the logical equation is not
+the smallest equivalent solution to the equation.&lt;/p&gt;
+
+&lt;p&gt;The following is the original formula: &lt;em&gt;A&lt;/em&gt; &amp;or; &amp;not;&lt;em&gt;B&lt;/em&gt; &amp;or; &lt;em&gt;C&lt;/em&gt; &amp;or; (&amp;not;&lt;em&gt;D&lt;/em&gt; &amp;and; &lt;em&gt;E&lt;/em&gt;).&lt;br /&gt;
+Here is a two-clause solution: (&lt;em&gt;A&lt;/em&gt; &amp;or; &amp;not;&lt;em&gt;B&lt;/em&gt; &amp;or;
+&amp;not;&lt;em&gt;x&lt;/em&gt;) &amp;and; (&lt;em&gt;x&lt;/em&gt; &amp;or; &lt;em&gt;C&lt;/em&gt;&amp;or; &amp;not;&lt;em&gt;D&lt;/em&gt;) &amp;and; (&lt;em&gt;x&lt;/em&gt; &amp;or; &lt;em&gt;C&lt;/em&gt; &amp;or; &lt;em&gt;E&lt;/em&gt;).&lt;/p&gt;
+
+&lt;p&gt;This can be shown to be equivalent to the original formula by
+constraining &lt;em&gt;x&lt;/em&gt; to be &lt;em&gt;A&lt;/em&gt;&amp;or;&amp;not;&lt;em&gt;B&lt;/em&gt; and algebraically reducing:
+   &lt;blockquote&gt;
+(&lt;em&gt;A&lt;/em&gt;&amp;or;&amp;not;&lt;em&gt;B&lt;/em&gt;&amp;or;&amp;not;(&lt;em&gt;A&lt;/em&gt;&amp;or;&amp;not;&lt;em&gt;B&lt;/em&gt;))&amp;and;(&lt;em&gt;A&lt;/em&gt; &amp;or; &amp;not;&lt;em&gt;B&lt;/em&gt; &amp;or; &lt;em&gt;C&lt;/em&gt;
+&amp;or; &amp;not;&lt;em&gt;D&lt;/em&gt;)&amp;and;(&lt;em&gt;A&lt;/em&gt; &amp;or; &amp;not;&lt;em&gt;B&lt;/em&gt; &amp;or; &lt;em&gt;C&lt;/em&gt; &amp;or; &lt;em&gt;E&lt;/em&gt;)&lt;br /&gt;
+(&lt;em&gt;A&lt;/em&gt; &amp;or; &amp;not;&lt;em&gt;B&lt;/em&gt; &amp;or; &lt;em&gt;C&lt;/em&gt; &amp;or; &amp;not;&lt;em&gt;D&lt;/em&gt;)&amp;and;(&lt;em&gt;A&lt;/em&gt; &amp;or; &amp;not;&lt;em&gt;B&lt;/em&gt; &amp;or; &lt;em&gt;C&lt;/em&gt; &amp;or; &lt;em&gt;E&lt;/em&gt;)&lt;br /&gt;
+(&lt;em&gt;A&lt;/em&gt; &amp;or; &amp;not;&lt;em&gt;B&lt;/em&gt; &amp;or; &lt;em&gt;C&lt;/em&gt;) &amp;or; (&amp;not;&lt;em&gt;D&lt;/em&gt;&amp;and;&lt;em&gt;E&lt;/em&gt;)&lt;br /&gt;
+&lt;em&gt;A&lt;/em&gt; &amp;or; &amp;not;&lt;em&gt;B&lt;/em&gt; &amp;or; &lt;em&gt;C&lt;/em&gt; &amp;or; (&amp;not;&lt;em&gt;D&lt;/em&gt;&amp;and;&lt;em&gt;E&lt;/em&gt;)
+   &lt;/blockquote&gt;&lt;/p&gt;
+
+&lt;p&gt;To further prove the equivalence, we can make the original formula
+unsatisfied and show that there is no satisfying assignment for &lt;em&gt;x&lt;/em&gt;.  To
+be unsatisfied, &lt;em&gt;A&lt;/em&gt; must be &lt;strong&gt;F&lt;/strong&gt;, &lt;em&gt;B&lt;/em&gt; must be &lt;strong&gt;T&lt;/strong&gt;, and &lt;em&gt;C&lt;/em&gt; must be
+&lt;strong&gt;F&lt;/strong&gt;.  This reduces the formula to:
+   &lt;blockquote&gt;
+(&lt;strong&gt;F&lt;/strong&gt; &amp;or; &lt;strong&gt;F&lt;/strong&gt; &amp;or; &amp;not;&lt;em&gt;x&lt;/em&gt;)&amp;and;(x &amp;or; &lt;strong&gt;F&lt;/strong&gt; &amp;or; &amp;not;&lt;em&gt;D&lt;/em&gt;)&amp;and;(x &amp;or; &lt;strong&gt;F&lt;/strong&gt; &amp;or; &lt;em&gt;E&lt;/em&gt;)
+   &lt;/blockquote&gt;
+Because of the first term, &lt;em&gt;x&lt;/em&gt; must be &lt;strong&gt;F&lt;/strong&gt; if we want to satisfy the formula:
+   &lt;blockquote&gt;
+(&lt;strong&gt;F&lt;/strong&gt; &amp;or; &lt;strong&gt;F&lt;/strong&gt; &amp;or; &lt;strong&gt;T&lt;/strong&gt;)&amp;and;(&lt;strong&gt;F&lt;/strong&gt; &amp;or; &lt;strong&gt;F&lt;/strong&gt; &amp;or; &amp;not;&lt;em&gt;D&lt;/em&gt;)&amp;and;(&lt;strong&gt;F&lt;/strong&gt; &amp;or; &lt;strong&gt;F&lt;/strong&gt; &amp;or; &lt;em&gt;E&lt;/em&gt;) &amp;equiv; (&amp;not;&lt;em&gt;D&lt;/em&gt;&amp;and;&lt;em&gt;E&lt;/em&gt;)
+   &lt;/blockquote&gt;
+This has the same satisfiability as the remaining variables in the original formula (if &amp;not;&lt;em&gt;D&lt;/em&gt;&amp;and;&lt;em&gt;E&lt;/em&gt; is not satisfied, there is no satisfying assignment for &lt;em&gt;x&lt;/em&gt;).&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Proof that this is the shortest possible solution:&lt;/em&gt; There is no two or
+one clause solution because a new variable in addition to &lt;em&gt;A&lt;/em&gt;, &lt;em&gt;B&lt;/em&gt;, &lt;em&gt;C&lt;/em&gt;,
+D, and &lt;em&gt;E&lt;/em&gt; is required for each clause to have only three terms, and
+this variable must be repeated (by the rules we use to select that
+variable).  Therefore, only 5 variables may be represented in a
+two-clause solution, while there are at least six variables required for
+equivalence to the original formula.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Proof that a new variable is required:&lt;/em&gt; The original formula reduces to
+(&lt;em&gt;A&lt;/em&gt; &amp;or; &amp;not;&lt;em&gt;B&lt;/em&gt; &amp;or; &lt;em&gt;C&lt;/em&gt; &amp;or; &amp;not;&lt;em&gt;D&lt;/em&gt;)&amp;and;(&lt;em&gt;A&lt;/em&gt; &amp;or; &amp;not;&lt;em&gt;B&lt;/em&gt; &amp;or;
+&lt;em&gt;C&lt;/em&gt; &amp;or; &lt;em&gt;E&lt;/em&gt;) in CNF form, which has two clauses, each containing a
+unique combination of four variables.  There is no way to reduce the
+number of variables per clause of a solution without adding a variable,
+therefore at least one variable must be added to form the 3-CNF
+equivalent of this formula.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Anonymous Feedback Comments</title>
@@ -1140,17 +1208,6 @@ was intended out of the assignment (or did better than those
 expectations).  See the &lt;a href=&#34;https://uvacs2102.github.io/ps1comments/&#34;&gt;Problem Set 1
 Comments&lt;/a&gt; for the meaning of
 different scores.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Problem Set 4</title>
-      <link>https://uvacs2102.github.io/ps4announce/</link>
-      <pubDate>Fri, 16 Sep 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://uvacs2102.github.io/ps4announce/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Problem Set 4&lt;/strong&gt; is &lt;a href=&#34;https://uvacs2102.github.io/docs/ps4.pdf&#34;&gt;now posted&lt;/a&gt;, and is due on &lt;strong&gt;Friday, 23
-  September at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
 </description>
     </item>
     

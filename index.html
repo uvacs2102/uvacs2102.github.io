@@ -144,17 +144,79 @@
   <center>
   <b>Recent Posts: </b>
   
+    <a href="https://uvacs2102.github.io/challenge5/">Three-Clause Challenge Refuted!</a> |
+  
     <a href="https://uvacs2102.github.io/anonymousfeedback3/">Anonymous Feedback Comments</a> |
   
     <a href="https://uvacs2102.github.io/class12/">Class 12: Review</a> |
-  
-    <a href="https://uvacs2102.github.io/ps4comments/">Problem Set 4 Comments</a> |
   
   <a href="/post">More...</a>
   </center>
   <p></p>
 
   
+  
+    <p class="fronthead"><a href="https://uvacs2102.github.io/challenge5/">Three-Clause Challenge Refuted!</a> (Fri, 30 Sep 2016)</p>
+     <p>Challenge 5 has been refuted by Henry Spece!</p>
+
+<p><div class="highlightg">
+<strong>Challenge 5.</strong> (From <a href="https://collab.itc.virginia.edu/access/content/group/e0b17949-c94c-466b-835a-196381f3f911/ps3_solutions.pdf">PS3 Solutions</a>) Prove that the four-clause solution given for question 6 is the shortest possible equivalent 3CNF formula.
+   </div></p>
+
+<p>The challenge as stated was actually bogus!  The four-clause solution
+isn&rsquo;t the shortest possible equivalent 3CNF formula.  Henry found a
+three-clause equivalent 3CNF formula, and proved that there is no
+two-clause equivalent 3CNF formula.</p>
+
+<p>His answer is below:</p>
+
+<p><blockquote>
+The four-clause 3-CNF equivalent solution to the logical equation is not
+the smallest equivalent solution to the equation.</p>
+
+<p>The following is the original formula: <em>A</em> &or; &not;<em>B</em> &or; <em>C</em> &or; (&not;<em>D</em> &and; <em>E</em>).<br />
+Here is a two-clause solution: (<em>A</em> &or; &not;<em>B</em> &or;
+&not;<em>x</em>) &and; (<em>x</em> &or; <em>C</em>&or; &not;<em>D</em>) &and; (<em>x</em> &or; <em>C</em> &or; <em>E</em>).</p>
+
+<p>This can be shown to be equivalent to the original formula by
+constraining <em>x</em> to be <em>A</em>&or;&not;<em>B</em> and algebraically reducing:
+   <blockquote>
+(<em>A</em>&or;&not;<em>B</em>&or;&not;(<em>A</em>&or;&not;<em>B</em>))&and;(<em>A</em> &or; &not;<em>B</em> &or; <em>C</em>
+&or; &not;<em>D</em>)&and;(<em>A</em> &or; &not;<em>B</em> &or; <em>C</em> &or; <em>E</em>)<br />
+(<em>A</em> &or; &not;<em>B</em> &or; <em>C</em> &or; &not;<em>D</em>)&and;(<em>A</em> &or; &not;<em>B</em> &or; <em>C</em> &or; <em>E</em>)<br />
+(<em>A</em> &or; &not;<em>B</em> &or; <em>C</em>) &or; (&not;<em>D</em>&and;<em>E</em>)<br />
+<em>A</em> &or; &not;<em>B</em> &or; <em>C</em> &or; (&not;<em>D</em>&and;<em>E</em>)
+   </blockquote></p>
+
+<p>To further prove the equivalence, we can make the original formula
+unsatisfied and show that there is no satisfying assignment for <em>x</em>.  To
+be unsatisfied, <em>A</em> must be <strong>F</strong>, <em>B</em> must be <strong>T</strong>, and <em>C</em> must be
+<strong>F</strong>.  This reduces the formula to:
+   <blockquote>
+(<strong>F</strong> &or; <strong>F</strong> &or; &not;<em>x</em>)&and;(x &or; <strong>F</strong> &or; &not;<em>D</em>)&and;(x &or; <strong>F</strong> &or; <em>E</em>)
+   </blockquote>
+Because of the first term, <em>x</em> must be <strong>F</strong> if we want to satisfy the formula:
+   <blockquote>
+(<strong>F</strong> &or; <strong>F</strong> &or; <strong>T</strong>)&and;(<strong>F</strong> &or; <strong>F</strong> &or; &not;<em>D</em>)&and;(<strong>F</strong> &or; <strong>F</strong> &or; <em>E</em>) &equiv; (&not;<em>D</em>&and;<em>E</em>)
+   </blockquote>
+This has the same satisfiability as the remaining variables in the original formula (if &not;<em>D</em>&and;<em>E</em> is not satisfied, there is no satisfying assignment for <em>x</em>).</p>
+
+<p><em>Proof that this is the shortest possible solution:</em> There is no two or
+one clause solution because a new variable in addition to <em>A</em>, <em>B</em>, <em>C</em>,
+D, and <em>E</em> is required for each clause to have only three terms, and
+this variable must be repeated (by the rules we use to select that
+variable).  Therefore, only 5 variables may be represented in a
+two-clause solution, while there are at least six variables required for
+equivalence to the original formula.</p>
+
+<p><em>Proof that a new variable is required:</em> The original formula reduces to
+(<em>A</em> &or; &not;<em>B</em> &or; <em>C</em> &or; &not;<em>D</em>)&and;(<em>A</em> &or; &not;<em>B</em> &or;
+<em>C</em> &or; <em>E</em>) in CNF form, which has two clauses, each containing a
+unique combination of four variables.  There is no way to reduce the
+number of variables per clause of a solution without adding a variable,
+therefore at least one variable must be added to form the 3-CNF
+equivalent of this formula.</p>
+
   
     <p class="fronthead"><a href="https://uvacs2102.github.io/anonymousfeedback3/">Anonymous Feedback Comments</a> (Thu, 29 Sep 2016)</p>
      <p>This anonymous comment was submitted through collab:</p>
@@ -741,23 +803,6 @@ induction.</p>
 <p>###</p>
 
 <p></div></p>
-
-  
-    <p class="fronthead"><a href="https://uvacs2102.github.io/ps3comments/">Problem Set 3 Comments</a> (Thu, 22 Sep 2016)</p>
-     <p>The solutions and comments for PS3 are now posted in collab: <a href="https://collab.itc.virginia.edu/access/content/group/e0b17949-c94c-466b-835a-196381f3f911/ps3_solutions.pdf">PDF</a></p>
-
-<p>You should find your graded assignment as a new PDF attachment with
-markup on it in collab (if you submitted with teammates, please check
-with your partners).</p>
-
-<p>The meaning of the scores is the same as for PS1 and PS2.  A score of 6
-means you got everything we expected out of this assignment, and 5 means
-you did well for the most part by had some answers that should have been
-better.  Scores above 6 are for excellent work.  (In the gradebook,
-collab sometimes shows the grades scaled by 100 for some buggy reason.
-Although receiving a score of 100+ is possible in theory, no one
-received more than 8 points for this assingment.  If you see a score
-about 100, the meaning is that score divided by 100.)</p>
 
   
   
