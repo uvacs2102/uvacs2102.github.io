@@ -6,8 +6,23 @@
     <description>Recent content on cs2102: Discrete Math</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 30 Sep 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 01 Oct 2016 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://uvacs2102.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Problem Set 5 Comments</title>
+      <link>https://uvacs2102.github.io/ps5comments/</link>
+      <pubDate>Sat, 01 Oct 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/ps5comments/</guid>
+      <description>&lt;p&gt;The preliminary solutions and comments for PS5 are now posted in collab:
+&lt;a href=&#34;https://collab.itc.virginia.edu/access/content/group/e0b17949-c94c-466b-835a-196381f3f911/ps5_solutions.pdf&#34;&gt;PDF&lt;/a&gt;.
+(Problem 9 is not included, but will be added later.)&lt;/p&gt;
+
+&lt;p&gt;We are providing the PS5 solutions now before they are graded, so you
+have the solutions to read with plenty of time before the exam.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Three-Clause Challenge Refuted!</title>
@@ -1190,24 +1205,6 @@ through those in class.&lt;/p&gt;
 through more basic examples in class, and will try and do this more, but
 balance it with my goals of making class interesting and worthwhile for
 people who are able to understand the text on their own.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Problem Set 2 Comments</title>
-      <link>https://uvacs2102.github.io/ps2comments/</link>
-      <pubDate>Mon, 19 Sep 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://uvacs2102.github.io/ps2comments/</guid>
-      <description>&lt;p&gt;The solutions and comments for PS2 are now posted in collab: &lt;a href=&#34;https://collab.itc.virginia.edu/access/content/group/e0b17949-c94c-466b-835a-196381f3f911/ps2_solutions.pdf&#34;&gt;PDF&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;The grades will be released soon.  The grading scale for PS2 is similar
-to what was used for PS1 (there is no &amp;ldquo;out of&amp;rdquo; goal, or &amp;ldquo;maximum&amp;rdquo;
-score), but scores are intended to reflect whether or not you got what
-was intended out of the assignment (or did better than those
-expectations).  See the &lt;a href=&#34;https://uvacs2102.github.io/ps1comments/&#34;&gt;Problem Set 1
-Comments&lt;/a&gt; for the meaning of
-different scores.&lt;/p&gt;
 </description>
     </item>
     
