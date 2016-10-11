@@ -5,7 +5,7 @@
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <title>Problem Set 5 Comments  &middot; cs2102: Discrete Math</title>
+  <title>Class 13: State Machines  &middot; cs2102: Discrete Math</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="HandheldFriendly" content="True">
 <meta name="MobileOptimized" content="320">
@@ -17,16 +17,16 @@
 <meta name="keywords" content="">
 
 
-<meta property="og:title" content="Problem Set 5 Comments  &middot; cs2102: Discrete Math ">
+<meta property="og:title" content="Class 13: State Machines  &middot; cs2102: Discrete Math ">
 <meta property="og:site_name" content="cs2102: Discrete Math"/>
-<meta property="og:url" content="https://uvacs2102.github.io/ps5comments/" />
+<meta property="og:url" content="https://uvacs2102.github.io/class13/" />
 <meta property="og:locale" content="en-us">
 
 
 <meta property="og:type" content="article" />
 <meta property="og:description" content=""/>
-<meta property="og:article:published_time" content="2016-10-01T00:00:00Z" />
-<meta property="og:article:modified_time" content="2016-10-01T00:00:00Z" />
+<meta property="og:article:published_time" content="2016-10-11T00:00:00Z" />
+<meta property="og:article:modified_time" content="2016-10-11T00:00:00Z" />
 
   
 
@@ -34,9 +34,9 @@
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <meta name="twitter:creator" content="@" />
-<meta name="twitter:title" content="Problem Set 5 Comments" />
+<meta name="twitter:title" content="Class 13: State Machines" />
 <meta name="twitter:description" content="" />
-<meta name="twitter:url" content="https://uvacs2102.github.io/ps5comments/" />
+<meta name="twitter:url" content="https://uvacs2102.github.io/class13/" />
 <meta name="twitter:domain" content="https://uvacs2102.github.io">
   
 
@@ -44,20 +44,20 @@
   {
     "@context": "http://schema.org",
     "@type": "Article",
-    "headline": "Problem Set 5 Comments",
+    "headline": "Class 13: State Machines",
     "author": {
       "@type": "Person",
       "name": "http://profiles.google.com/+?rel=author"
     },
-    "datePublished": "2016-10-01",
+    "datePublished": "2016-10-11",
     "description": "",
-    "wordCount":  48 
+    "wordCount":  473 
   }
 </script>
 
 
 
-<link rel="canonical" href="https://uvacs2102.github.io/ps5comments/" />
+<link rel="canonical" href="https://uvacs2102.github.io/class13/" />
 
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://uvacs2102.github.io/touch-icon-144-precomposed.png">
 <link href="https://uvacs2102.github.io/favicon.png" rel="icon">
@@ -163,11 +163,11 @@
 
 <article id="main-content" class="container main_content single">
   <header class="container hat">
-  <center><h1>Problem Set 5 Comments
+  <center><h1>Class 13: State Machines
 </h1></center>
 
   <div class="metas">
-<time datetime="2016-10-01">1 Oct, 2016</time>
+<time datetime="2016-10-11">11 Oct, 2016</time>
 
 
   
@@ -180,12 +180,109 @@
 </header>
 
   <div class="container content">
-  <p>The preliminary solutions and comments for PS5 are now posted in collab:
-<a href="https://collab.itc.virginia.edu/access/content/group/e0b17949-c94c-466b-835a-196381f3f911/ps5_solutions.pdf">PDF</a>.
-(Problem 9 is not included, but will be added later.)</p>
+  
 
-<p>We are providing the PS5 solutions now before they are graded, so you
-have the solutions to read with plenty of time before the exam.</p>
+<h3 id="schedule">Schedule</h3>
+
+<p>There is no problem set due this week!</p>
+
+<p><strong>Drop Date</strong> is today.  If you have any concerns about whether you
+  should stay in the class, please talk to me after class today.</p>
+
+<p><a href="/ps/ps6"><strong>Problem Set 6</strong></a> (will be posted later this week) is due
+<strong>21 October (Friday) at 6:29pm</strong>.</p>
+
+<p>Exam 1 will be returned during class today.  Please confirm that the
+score on your exam matches what is recorded in collab, and that PS1-5
+are all recorded correctly.</p>
+
+<p><div class="notpdf">
+   <center>
+   </center></p>
+
+<p><div class="highlightm">
+   <a href="/docs/class13.pdf">See PDF Version for <b>Notes</b></a>.
+   </div>
+   </div><!--endpdf--></p>
+
+<p><div class="latex"></p>
+
+<h2 id="state-machines">State Machines</h2>
+
+<p>A <em>state machine</em> is a binary relation (called a <em>transition relation</em>)
+on a set (both the domain and codomain are the same set).  One state is
+designated as the <em>start state</em>.</p>
+
+<p>$$M = (S, G: S \times S, q_0 \in S)$$</p>
+
+<p>What does it mean if $G$ is <em>total</em>?</p>
+
+<p>##</p>
+
+<p>What does it mean if $G$ is not a <em>function</em>?</p>
+
+<p>##</p>
+
+<p><strong>Parity Counter.</strong> Describe a state machine that determines if the
+  number of steps is even.</p>
+
+<p>#</p>
+
+<p><strong>Unbounded Counter.</strong> Describe a state machine that counts the number of steps.</p>
+
+<p>#</p>
+
+<p>How well do state machines model real computers?  What kind of
+transition relation does the state machine modeling your computer have?</p>
+
+<!--page-->
+
+<h1 id="invariant-principle">Invariant Principle</h1>
+
+<p>An <em>execution</em> of a state machine $M = (S, G \subseteq S \times S, q_0 \in S)$ is a (possibly infinite) sequence of states, $(x_0, x_1, \cdots, x_n)$ where:</p>
+
+<ol>
+<li>$x_0 = q_0$ (it begins with the start state), and</li>
+<li>$\forall i \in {0, 1, \ldots, n - 1} \ldotp (x<em>i, x</em>{i + 1}) \in G$ (if $q$ and $r$ are consecutive states in the sequence, then there is an edge $q \rightarrow r$ in $G$)</li>
+</ol>
+
+<p>A state $q$ is <em>reachable</em> if it appears in some execution.  (That is,
+there is a sequence of transitions starting from $q_0$, following edges
+in $G$, that ends with $q$.)</p>
+
+<p>$$
+M_1 = (S = \mathbb{N}, G = {(x, y) | y = x^2 }, q_0 = 1)
+$$
+$$
+M_2 = (S = \mathbb{N}, G = {(x, y) | \exists k \in \mathbb{N} \ldotp y = kx }, q_0 = 1)
+$$</p>
+
+<p>Which states are <em>reachable</em> for $M_1$ and $M_2$?</p>
+
+<p>#</p>
+
+<p>A <em>preserved invariant</em> of a state machine $M = (S, G \subseteq S \times
+S, q_0 \in S)$ is a predicate, $P$, on states, such that whenever $P(q)$
+is true of a state $q$, and $q \rightarrow r \in G$, then $P&reg;$ is
+true.</p>
+
+<p><strong>Invariant Principle.</strong> If a <em>preserved invariant</em> of a state machine
+  is true for the start state, it is true for all reachable states.</p>
+
+<p>To show $P(q)$ for machine $M = (S, G \subseteq S \times S, q_0 \in
+  S)$ all $q \in S$, show:</p>
+
+<ol>
+<li>Base case: $P(\fillin)$</li>
+<li>$\forall s \in S \ldotp \fillin \implies \fillin$</li>
+</ol>
+
+<p>Show the invariant principle holds using the principle of induction
+(hint: induction is on the <em>number of steps</em>).</p>
+
+<p>#</p>
+
+<p></div></p>
 
 </div>
 
@@ -197,15 +294,11 @@ have the solutions to read with plenty of time before the exam.</p>
   
 
     
-    <a class="prev" href="https://uvacs2102.github.io/challenge5/" title="Three-Clause Challenge Refuted!">
+    <a class="prev" href="https://uvacs2102.github.io/exam1solutions/" title="Exam 1 Solutions">
       Previous
     </a>
     
 
-    
-    <a class="next" href="https://uvacs2102.github.io/exam1solutions/" title="Exam 1 Solutions">
-      Next
-    </a>
     
 
   

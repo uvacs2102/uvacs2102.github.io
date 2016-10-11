@@ -6,8 +6,130 @@
     <description>Recent content on cs2102: Discrete Math</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 01 Oct 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 11 Oct 2016 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://uvacs2102.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Class 13: State Machines</title>
+      <link>https://uvacs2102.github.io/class13/</link>
+      <pubDate>Tue, 11 Oct 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/class13/</guid>
+      <description>
+
+&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
+
+&lt;p&gt;There is no problem set due this week!&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Drop Date&lt;/strong&gt; is today.  If you have any concerns about whether you
+  should stay in the class, please talk to me after class today.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps6&#34;&gt;&lt;strong&gt;Problem Set 6&lt;/strong&gt;&lt;/a&gt; (will be posted later this week) is due
+&lt;strong&gt;21 October (Friday) at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Exam 1 will be returned during class today.  Please confirm that the
+score on your exam matches what is recorded in collab, and that PS1-5
+are all recorded correctly.&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;
+   &lt;center&gt;
+   &lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlightm&#34;&gt;
+   &lt;a href=&#34;https://uvacs2102.github.io/docs/class13.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes&lt;/b&gt;&lt;/a&gt;.
+   &lt;/div&gt;
+   &lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;state-machines&#34;&gt;State Machines&lt;/h2&gt;
+
+&lt;p&gt;A &lt;em&gt;state machine&lt;/em&gt; is a binary relation (called a &lt;em&gt;transition relation&lt;/em&gt;)
+on a set (both the domain and codomain are the same set).  One state is
+designated as the &lt;em&gt;start state&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;$$M = (S, G: S \times S, q_0 \in S)$$&lt;/p&gt;
+
+&lt;p&gt;What does it mean if $G$ is &lt;em&gt;total&lt;/em&gt;?&lt;/p&gt;
+
+&lt;p&gt;##&lt;/p&gt;
+
+&lt;p&gt;What does it mean if $G$ is not a &lt;em&gt;function&lt;/em&gt;?&lt;/p&gt;
+
+&lt;p&gt;##&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Parity Counter.&lt;/strong&gt; Describe a state machine that determines if the
+  number of steps is even.&lt;/p&gt;
+
+&lt;p&gt;#&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Unbounded Counter.&lt;/strong&gt; Describe a state machine that counts the number of steps.&lt;/p&gt;
+
+&lt;p&gt;#&lt;/p&gt;
+
+&lt;p&gt;How well do state machines model real computers?  What kind of
+transition relation does the state machine modeling your computer have?&lt;/p&gt;
+
+&lt;!--page--&gt;
+
+&lt;h1 id=&#34;invariant-principle&#34;&gt;Invariant Principle&lt;/h1&gt;
+
+&lt;p&gt;An &lt;em&gt;execution&lt;/em&gt; of a state machine $M = (S, G \subseteq S \times S, q_0 \in S)$ is a (possibly infinite) sequence of states, $(x_0, x_1, \cdots, x_n)$ where:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;$x_0 = q_0$ (it begins with the start state), and&lt;/li&gt;
+&lt;li&gt;$\forall i \in {0, 1, \ldots, n - 1} \ldotp (x&lt;em&gt;i, x&lt;/em&gt;{i + 1}) \in G$ (if $q$ and $r$ are consecutive states in the sequence, then there is an edge $q \rightarrow r$ in $G$)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;A state $q$ is &lt;em&gt;reachable&lt;/em&gt; if it appears in some execution.  (That is,
+there is a sequence of transitions starting from $q_0$, following edges
+in $G$, that ends with $q$.)&lt;/p&gt;
+
+&lt;p&gt;$$
+M_1 = (S = \mathbb{N}, G = {(x, y) | y = x^2 }, q_0 = 1)
+$$
+$$
+M_2 = (S = \mathbb{N}, G = {(x, y) | \exists k \in \mathbb{N} \ldotp y = kx }, q_0 = 1)
+$$&lt;/p&gt;
+
+&lt;p&gt;Which states are &lt;em&gt;reachable&lt;/em&gt; for $M_1$ and $M_2$?&lt;/p&gt;
+
+&lt;p&gt;#&lt;/p&gt;
+
+&lt;p&gt;A &lt;em&gt;preserved invariant&lt;/em&gt; of a state machine $M = (S, G \subseteq S \times
+S, q_0 \in S)$ is a predicate, $P$, on states, such that whenever $P(q)$
+is true of a state $q$, and $q \rightarrow r \in G$, then $P&amp;reg;$ is
+true.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Invariant Principle.&lt;/strong&gt; If a &lt;em&gt;preserved invariant&lt;/em&gt; of a state machine
+  is true for the start state, it is true for all reachable states.&lt;/p&gt;
+
+&lt;p&gt;To show $P(q)$ for machine $M = (S, G \subseteq S \times S, q_0 \in
+  S)$ all $q \in S$, show:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Base case: $P(\fillin)$&lt;/li&gt;
+&lt;li&gt;$\forall s \in S \ldotp \fillin \implies \fillin$&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Show the invariant principle holds using the principle of induction
+(hint: induction is on the &lt;em&gt;number of steps&lt;/em&gt;).&lt;/p&gt;
+
+&lt;p&gt;#&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Exam 1 Solutions</title>
+      <link>https://uvacs2102.github.io/exam1solutions/</link>
+      <pubDate>Tue, 11 Oct 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/exam1solutions/</guid>
+      <description>&lt;p&gt;The solutions to &lt;a href=&#34;https://uvacs2102.github.io/docs/exam1.pdf&#34;&gt;Exam 1&lt;/a&gt; are here: &lt;a href=&#34;https://uvacs2102.github.io/docs/exam1-solutions.pdf&#34;&gt;Exam 1 Solutions&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Problem Set 5 Comments</title>
@@ -861,350 +983,6 @@ alternate proof.)&lt;/p&gt;
 &lt;p&gt;#&lt;/p&gt;
 
 &lt;p&gt;&lt;/div&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Survey Questions (Part 3)</title>
-      <link>https://uvacs2102.github.io/surveyquestions3/</link>
-      <pubDate>Tue, 20 Sep 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://uvacs2102.github.io/surveyquestions3/</guid>
-      <description>&lt;p&gt;Here&amp;rsquo;s the third (and final!) installment of responses to questions
-submitted in the registration surveys (see &lt;a href=&#34;https://uvacs2102.github.io/surveyquestions&#34;&gt;Part 1&lt;/a&gt;
-and &lt;a href=&#34;https://uvacs2102.github.io/surveyquestion2&#34;&gt;Part 2&lt;/a&gt; for the earlier responses).  If you
-missed your chance to ask a question on the registration survey, or have
-new questions now the course is further along, feel free to send them
-(directly or anonymous is fine if you prefer).&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;question&#34;&gt;
-What does Professor Evans do in his free time?
-   &lt;/div&gt;
-   &lt;div class=&#34;answer&#34;&gt;
-The meaning of &amp;ldquo;free time&amp;rdquo; is pretty strange for a professor, since all
-your time is basically &amp;ldquo;free&amp;rdquo;.  You have remarkably few real
-requirements on your time (other than showing up for class a couple
-times a week every other semester, and filing an annual report once a
-year), and can mostly &lt;a href=&#34;http://www.cs.virginia.edu/~evans/paradise/time/&#34;&gt;choose how you want to spend your
-time&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;How you might view things more normally, one&amp;rsquo;s view of &amp;ldquo;free time&amp;rdquo;
-changes a lot after having a family.  Before that, I would have
-considered my teaching and research work as the main thing I do, and the
-time I&amp;rsquo;m not doing that as &amp;ldquo;free time&amp;rdquo;, which I would mostly spend
-&lt;a href=&#34;http://www.cs.virginia.edu/~evans/pictures/basement/&#34;&gt;playing&lt;/a&gt; and
-&lt;a href=&#34;http://www.cs.virginia.edu/~evans/france98/&#34;&gt;wa&lt;/a&gt;&lt;a href=&#34;http://www.cs.virginia.edu/~evans/pictures/columbus/&#34;&gt;tc&lt;/a&gt;&lt;a href=&#34;http://www.cs.virginia.edu/~evans/pictures/korea2002/&#34;&gt;hi&lt;/a&gt;&lt;a href=&#34;http://www.cs.virginia.edu/~evans/pictures/za2010/&#34;&gt;ng&lt;/a&gt;
-soccer, music, and mostly bad TV shows.&lt;/p&gt;
-
-&lt;p&gt;Now, I view the main things I do as revolving around my children (4-year
-old daughter and 1 &amp;frac12;-year old son), and can mostly schedule the rest
-of my life around that (one of the perks of being a professor, instead
-of having a real job!).  I do get to do lots of fun things with the kids
-but don&amp;rsquo;t really consider that &amp;ldquo;free time&amp;rdquo; in the traditional sense.&lt;/p&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;question&#34;&gt;
-In the lecture, did you choose to mod(629) because its semiprime? And if so is that  why the graph became super scattered?
-   &lt;/div&gt;
-   &lt;div class=&#34;answer&#34;&gt;
-   Great question!&lt;/p&gt;
-
-&lt;p&gt;Since its been a while, here&amp;rsquo;s the picture from &lt;a href=&#34;https://uvacs2102.github.io/class1&#34;&gt;Class 1&lt;/a&gt;:&lt;/p&gt;
-
-&lt;p&gt;&lt;center&gt;&lt;img src=&#34;https://uvacs2102.github.io/images/figure629.png&#34;&gt;&lt;/center&gt;&lt;/p&gt;
-
-&lt;p&gt;It was generated by this (very ugly and brute force) python code:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-Python&#34;&gt;
-import numpy as np
-import matplotlib.pyplot as plt
-
-def ellip_curve():
-    x = np.arange(-2, 10, 0.1);
-    y = np.sqrt(x ** 3 + 7)
-    plt.plot(x, y)
-    plt.show()
-
-def ellip_curve_field():
-    xpoints = []
-    ypoints = []
-    G = 629
-    for x in range(500):
-        for y in range(500):
-            if y ** 2 % G == (x ** 3 + 7) %  G:
-                xpoints.append(x)
-                ypoints.append(y)
-    plt.plot(xpoints, ypoints, marker=&#39;+&#39;, linestyle=&#39;none&#39;, color=&#39;r&#39;)
-    plt.show()
-
-ellip_curve_field()
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;I picked 629 just because its one of my &lt;a href=&#34;http://dorina.org/&#34;&gt;favorite numbers&lt;/a&gt;, but the fact that is has two large factors (17 * 37) makes it produce a less regular graph than we would get for a more divisible number.  For example, here is the graph for modulus 628 (&lt;a href=&#34;http://www.wolframalpha.com/input/?i=factor+628&#34;&gt;2 * 2 * 157&lt;/a&gt;):
-&lt;center&gt;&lt;img src=&#34;https://uvacs2102.github.io/images/figure628.png&#34;&gt;&lt;/center&gt;
-which seems to have more patterns in it than the one for modulus 631 (&lt;a href=&#34;http://www.wolframalpha.com/input/?i=factor+631&#34;&gt;prime&lt;/a&gt;)
-&lt;center&gt;&lt;img src=&#34;https://uvacs2102.github.io/images/figure631.png&#34;&gt;&lt;/center&gt;
-Of course, the actual modulus values used for cryptosystems like bitcoin are
-huge prime numbers (2&lt;sup&gt;256&lt;/sup&gt; - 2&lt;sup&gt;32&lt;/sup&gt; - 977 for bitcoin&amp;rsquo;s curve, which is otherwise the same as this one).
-   &lt;/div&gt;
-   &lt;div class=&#34;question&#34;&gt;
-How long have you been teaching this course for?
-   &lt;/div&gt;
-   &lt;div class=&#34;answer&#34;&gt;
-When you filled out the survey, about 3 days.  Now, its been about 4 weeks.  This is my first time teaching cs2102, but I&amp;rsquo;ve taught &lt;a href=&#34;https://www.cs.virginia.edu/evans/courses&#34;&gt;lots of other courses&lt;/a&gt;.
-   &lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;question&#34;&gt;
-More applications of Discrete Math (we talked about encryption, which was really interesting, but I would like to hear about more applications); Professor Evans&amp;rsquo; field of research and maybe its relation to Discrete Math
-   &lt;/div&gt;
-   &lt;div class=&#34;answer&#34;&gt;
-Yes, I&amp;rsquo;ll try to keep this in mind and connect things to applications as
-much as possible, but the gap between some of the theory we will learn
-and applications is sometimes fairly large (that is, we need to get
-fairly deep into the theory before we can connect it to applications
-well).  That said, nearly every concept in this class does have clear connections to applications in computing, and we&amp;rsquo;ll see many examples, and I&amp;rsquo;m always happy to talk about more in office hours.&lt;/p&gt;
-
-&lt;p&gt;My research is in computer security and applied cryptography, which is
-entirely built on discrete math.  I will try to integrate this into some
-of the lectures, but definitely have some classes toward the end of the
-semester that get more into how discrete math is essential for
-cryptography, and maybe even how some of the problems you&amp;rsquo;re learning
-about in this class can be used to enable zero-knowledge proofs (that
-is, proving that you know something without revealing anything about it)
-and multi-party computation (enabling two people to compute a function
-together without revealing any information about their inputs).
-   &lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;question&#34;&gt;
-How to get an A?
-   &lt;/div&gt;
-   &lt;div class=&#34;answer&#34;&gt;
-If you are able to demonstrate good understanding of the key concepts in
-the course, and ability to use them to solve problems well, you&amp;rsquo;ll get
-an A in the class.  Working effectively and consistently on the
-assignments throughout the semester, of course, should help.  It is also
-important to ask for help, focusing on your understanding of concepts,
-not just on the immediate goal of being able to answer some question on
-a problem set.  Most people will also benefit greatly by finding a study group to work with that works well together, where you are enhancing your
-learning by explaining things to others, and testing the limits of your
-understanding by having others question your assumptions and approaches.
-   &lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;question&#34;&gt;
-How much of this course is pure math, how much is computing, and how much is both? (I apologize for being so vague)
-   &lt;/div&gt;&lt;div class=&#34;answer&#34;&gt;
-This is a math course (hence the name Discrete Mathematics), but also a
-computer course (hence the course number cs2102).  I would claim all the
-math we do in the class has some significant relevance to computing, but
-it is also selected partly for relevance to computing and partly for
-being interesting math (at least in my view, or that of the textbook
-author&amp;rsquo;s).  I would say the decisions about what to include in the class
-are based about 50% on relevance to computing and 50% on interesting
-math (which would mean that something that is highly relevant to
-computing but uninteresting math would not be covered in favor of
-something that is less directly relevant to computing but interesting
-math).
-   &lt;/div&gt;&lt;div class=&#34;question&#34;&gt;
-Are there available solutions to the textbook practice problems?
-   &lt;/div&gt;&lt;div class=&#34;answer&#34;&gt;
-Not for most of them.  I understand that it would be very helpful to be
-able to look at solutions after you try problems yourself.  We&amp;rsquo;ll
-provide solutions to the problems assigned on problem sets, but if you
-have other problems that you&amp;rsquo;ve tried to solve on your own and want to get feedback on your solution or suggestions for a good solution, feel free to send your solution (or attempt and explain what you are trying to do) to me.
-   &lt;/div&gt;&lt;div class=&#34;question&#34;&gt;
-I want to major in CS, but I am not sure I want to go into programming. What can Discrete Mathematics help with in deciding a different career path using a computer science degree?
-   &lt;/div&gt;&lt;div class=&#34;answer&#34;&gt;
-I don&amp;rsquo;t expect this class will be that helpful directly in exploring
-possible computing careers, but do hope it will give you the background
-to succeed in many possible careers.  What I would say is that if you
-enjoy and excel and the kinds of problems we do in this class, you are
-well suited to careers in aspects of computing at the level of
-designing, reasoning about, and defining systems, as well as in careers where you are reasoning about ideas.
-   &lt;/div&gt;&lt;div class=&#34;question&#34;&gt;
-How is the course related to coding?
-   &lt;/div&gt;&lt;div class=&#34;answer&#34;&gt;
-I usually interpret &lt;em&gt;coding&lt;/em&gt; as the process of turning a well described
-algorithm into code in some programming language.  This course won&amp;rsquo;t
-help too much with that.  It is more related to &lt;em&gt;programming&lt;/em&gt;, which I
-view as the process of finding a program that solves some problem.  This
-includes both devising the algorithms and data structures to use, and
-writing the code to implement them.  This course should help you get
-better at constructing programs and reasoning about whether or not they
-are correct.
-   &lt;/div&gt;&lt;div class=&#34;question&#34;&gt;
-Were you ever discouraged by failure while studying computer science?
-   &lt;/div&gt;&lt;div class=&#34;answer&#34;&gt;
-Yes, many times!  As one memorable example, in my &amp;ldquo;Advanced Computer
-Science&amp;rdquo; course in high school the teacher assigned us to implement
-quicksort (I think this was in BASIC).  I couldn&amp;rsquo;t get it to work, and
-got very frustrated, and refused to turn anything in.  Other students
-turned in obviously broken programs, but got most credit for their
-attempts.  I ended up getting a B in the course as a result, and being
-very upset about it, but to no avail.  I did make my peace with
-quicksort later, and its now one of my favorite algorithms (and I&amp;rsquo;ve
-been privledged to meet its inventor, Tony Hoare, several times and even
-have dinner with him).
-   &lt;/div&gt;&lt;div class=&#34;question&#34;&gt;
-Is this course harder to comprehend than other courses and what is the best way to prepare for this course and the exams and home work that will be provided?
-   &lt;/div&gt;&lt;div class=&#34;answer&#34;&gt;
-I think this course is probably harder to comprehend than most courses
-you take, both because of the material and my general approach to teaching.  For most students, the material in this course requires you to learn to think in new and unfamiliar ways, and to develop new mental models, not just to learn new things that fit well into your well-developed mental models.  My approach to teaching emphasizes challenging students to learn things by exploring things on your own after (hopefully) the right context has been developed to enable this.  I believe this is important for really learning things well, as well as developing your abilities to be creative thinkers.  But, this is different from what students typically expect and are accustomed to classes where you are given a lot more guidance about what to do and prescribed how to do things.
-      &lt;/div&gt;&lt;div class=&#34;question&#34;&gt;
-Will I be able to survive with Python experience but no previous Java experience?
-    &lt;/div&gt;&lt;div class=&#34;answer&#34;&gt;
-Yes.  There is no requirement to have experience with either Python or Java, but just to have enough familiarity with some programming language to understand programs.
-      &lt;/div&gt;&lt;div class=&#34;question&#34;&gt;
-How are exams like?
-    &lt;/div&gt;&lt;div class=&#34;answer&#34;&gt;
-The plan for the first exam is to have an in-class exam, with problems
-that you should be well prepared to answer if you understand the problem
-sets.  The exam questions will be similar to problem set questions, but
-less difficult and complex given the limited time available during the
-exam.
-     &lt;/div&gt;&lt;div class=&#34;question&#34;&gt;
-How far do you suggest we delve into the world of math in order to become the best computer scientist we can be? What other courses might help broaden our mathematical background in a way that is beneficial to our computer science studies?
-    &lt;/div&gt;&lt;div class=&#34;answer&#34;&gt;
-The most direct classes that follow from this one are cs3102 (Theory of
-Computation) and cs4102 (Algorithms).  Many computing courses involve a
-lot of math including graphics (mostly linear algebra), cryptography
-(mostly discrete math), and machine learning (includes more continuous
-math, as well as lots of linear algebra and discrete math).  In general, any good math course should help develop your abstract thinking abilities in ways that will be useful in computing, although some will have more direct applications in computing than others.
-     &lt;/div&gt;&lt;div class=&#34;question&#34;&gt;
-How does the material we have learned so far relate to computer science as a whole?  Do programmers in the real world need to know how to write proofs
-    &lt;/div&gt;&lt;div class=&#34;answer&#34;&gt;
-If the &amp;ldquo;real world&amp;rdquo; means a typical software developer in industry, then
-it is pretty rare for a programmer to need to write a &amp;ldquo;formal proof&amp;rdquo; in
-a mathematical style, but very common for a programmer to need to form a
-strong argument that convinces others an idea is correct (this is really
-what a proof is).  In terms of mathematical-style proofs, these are very
-common in computing research and most research papers (even in systems
-areas like networking and programming languages) include several proofs.&lt;br /&gt;
-    &lt;/div&gt;&lt;div class=&#34;question&#34;&gt;
-What is the best internship and extra-curricular programs relating to computer science that you would recommend?
-    &lt;/div&gt;&lt;div class=&#34;answer&#34;&gt;
-There are lots of great opportunities at UVA.  I&amp;rsquo;ve been impressed with &lt;a href=&#34;http://hackcville.com/&#34;&gt;HackCville&lt;/a&gt; and the &lt;a href=&#34;http://cnsatuva.site/&#34;&gt;Computer and Network Security Club&lt;/a&gt; is great.&lt;/p&gt;
-
-&lt;p&gt;Away from Charlottesvile, the &lt;a href=&#34;https://www.recurse.com/&#34;&gt;Recurse Center&lt;/a&gt;
-is very cool (when I visited it was called Hacker School), and they have
-students for summer sessions.&lt;/p&gt;
-
-&lt;p&gt;Lots of students have great experiences doing research over the summer,
-and there are many ways for students to get involved in research groups
-and have paid positions over the summer (including &lt;a href=&#34;https://www.jeffersonswheel.org&#34;&gt;in
-mine&lt;/a&gt;).&lt;/p&gt;
-
-&lt;p&gt;I don&amp;rsquo;t want to mention specific companies for internships publicly
-here, but there are some that I&amp;rsquo;ve heard students have great experiences
-at, and other where the experiences are more mixed.  I&amp;rsquo;m happy to share
-my thoughts on this privately during office hours (or make an
-appointment to meet some other time).
-    &lt;/div&gt;&lt;div class=&#34;question&#34;&gt;
-Do you like turtles?
-    &lt;/div&gt;&lt;div class=&#34;answer&#34;&gt;
-Absolutely!  Its &lt;a href=&#34;https://en.wikipedia.org/wiki/Turtles_all_the_way_down&#34;&gt;turtles all the way down&lt;/a&gt;.
-    &lt;/div&gt;&lt;div class=&#34;question&#34;&gt;
-How well have your past students performed in this course? I will admit that Day 1 was a bit intimidating for me.
-    &lt;/div&gt;&lt;div class=&#34;answer&#34;&gt;
-I haven&amp;rsquo;t taught this course before, but in general students work hard
-in my classes and hopefully learn a lot, and most students in my classes
-end up getting As.  I don&amp;rsquo;t know what the distribution will be for this
-class (and I don&amp;rsquo;t assign grades with a target distribution in mind),
-but I hope to be able to have at least 2/3rds of the class get As (or at
-least A-s), and the rest all get at least a B (but sometimes there is no
-way to justify the desired grate).
-   &lt;/div&gt;&lt;div class=&#34;question&#34;&gt;
-Are any of the homeworks dropped?
-    &lt;/div&gt;&lt;div class=&#34;answer&#34;&gt;
-None are &amp;ldquo;dropped&amp;rdquo; per se, but the grades are computed with many
-different weightings (some of which don&amp;rsquo;t count the early homeworks
-heavily, and others which will only count the number of &amp;ldquo;green&amp;rdquo; star or
-better homeworks) and generally the weighting that make your performance
-look best is the one that will determine your grade.  All the homeworks
-as important for learning the material well, but you shouldn&amp;rsquo;t be
-stressed out about getting a low grade on one or two homeworks.
-    &lt;/div&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Anonymous Feedback Comments</title>
-      <link>https://uvacs2102.github.io/anonymousfeedback/</link>
-      <pubDate>Mon, 19 Sep 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://uvacs2102.github.io/anonymousfeedback/</guid>
-      <description>&lt;p&gt;This anonymous comment was submitted through collab:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;em&gt;Hello Professor!&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;I have never been very strong at math, and whenever I take a math class I have to try very hard to keep up. This class has been the first time I have ever done a proof and I am having difficulty even getting a grasp of even the basics of this material. Would it be possible to work through more example problems in class in order to get an idea of how to apply these concepts? Also, I have sometimes have difficulty following the symbols that are used when you write in mathematical notation, would it be possible to explain some of the more complex symbols, or go a bit slower when writing them?&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Thanks!&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;I understand what you are saying, and do appreciate the comment.&lt;/p&gt;
-
-&lt;p&gt;First, on the notations.  If I use a notation that is unfamiliar, please
-stop and ask for me to define it, or at least post on slack &lt;code&gt;#inclass&lt;/code&gt;
-so someone else will notice and clarify it.  Notations are meant to be a
-convenient and compact way to write things down, and should be
-obfuscating the content.&lt;/p&gt;
-
-&lt;p&gt;On the example problems, I think you are right that we should spend a
-bit more time in lecture going through examples, but I also think
-large-scale lectures like we have for this class are just about the
-worst possible medium for doing this kind of technical work.  (I &lt;a href=&#34;https://web.archive.org/web/20160818072337/http://chronicle.com/blognetwork/castingoutnines/2012/04/03/udacity-cs101-whats-been-good/&#34;&gt;mostly
-agree&lt;/a&gt;
-with Robert Talbert&amp;rsquo;s description of &lt;a href=&#34;https://web.archive.org/web/20160315071640/http://chronicle.com/blognetwork/castingoutnines/2012/02/13/four-things-lecture-is-good-for/&#34;&gt;Four things lecture is good
-for&lt;/a&gt;
-and that lectures are a terrible way to cover material and transfer
-information.)&lt;/p&gt;
-
-&lt;p&gt;The reason large-scale lectures are such a bad format for going through
-technical examples and learning from them is that the way to learn from
-examples is to understand each step by figuring it out yourself, with
-the right leading questions to get you to that step.  And, problems
-don&amp;rsquo;t have just one way of solving them, so you don&amp;rsquo;t want to go through
-a pre-set sequence of steps, but find a path to a solution that makes
-most sense for whoever is working on it.  Spending lecture time going
-through techincal examples inevitably will be boring for a significant
-fraction of the class (that could already solve that problem on their
-own), and will be bewildering for some other fraction of the class (that
-misses some step in the explanation or is thinking about the problem in
-some other way).  The best way to learn from examples is to go through
-them in very small groups (ideally one-on-one), where everyone can
-understand and contribute to each step.  The next best way is to read
-examples at your own pace.  Going through written examples has the
-benefit that everyone can go through at their own pace, and go back over
-steps that didn&amp;rsquo;t make sense, and then try to work out the solution on
-their own.  (The disadvantage is that if what is written doesn&amp;rsquo;t cover
-some path that you are thinking about, or doesn&amp;rsquo;t explain something that
-is unclear, then there is no way to get more information from the static
-page.)&lt;/p&gt;
-
-&lt;p&gt;The book (at least in my view) does do a great job with most example
-problems, and has many good examples.  As I mentioned before, my
-assumption is that if no one asks questions about content, including
-examples, in the book, that means that everyone understood it and it is
-not worthwhile to spend time in lecture repeating material you already
-understand.&lt;/p&gt;
-
-&lt;p&gt;Similarly, I expect everyone to read through the provided solutions to
-the problem sets, which I hope are clear and understandable, but you
-should ask questions if not.  Even if you did well on an assignment, it
-should be worthwhile to read through the solutions, which often provide
-more depth or different approaches to solving problems.&lt;/p&gt;
-
-&lt;p&gt;So, the best thing to do is to come to office hours to go through
-examples in person.  Next, to ask questions about examples from the book
-or problems on the problem sets that are unclear, and then I&amp;rsquo;ll go
-through those in class.&lt;/p&gt;
-
-&lt;p&gt;That said, I do appreciate that it will sometimes be useful to go
-through more basic examples in class, and will try and do this more, but
-balance it with my goals of making class interesting and worthwhile for
-people who are able to understand the text on their own.&lt;/p&gt;
 </description>
     </item>
     

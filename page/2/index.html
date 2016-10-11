@@ -144,17 +144,78 @@
   <center>
   <b>Recent Posts: </b>
   
+    <a href="https://uvacs2102.github.io/class13/">Class 13: State Machines</a> |
+  
+    <a href="https://uvacs2102.github.io/exam1solutions/">Exam 1 Solutions</a> |
+  
     <a href="https://uvacs2102.github.io/ps5comments/">Problem Set 5 Comments</a> |
-  
-    <a href="https://uvacs2102.github.io/challenge5/">Three-Clause Challenge Refuted!</a> |
-  
-    <a href="https://uvacs2102.github.io/anonymousfeedback3/">Anonymous Feedback Comments</a> |
   
   <a href="/post">More...</a>
   </center>
   <p></p>
 
   
+  
+    <p class="fronthead"><a href="https://uvacs2102.github.io/challenge4/">Self-Inverting Relations Challenge Solved!</a> (Sat, 24 Sep 2016)</p>
+     <p>Challenge 4 has been solved by Henry Spece!</p>
+
+<p><div class="highlightg">
+<strong>Challenge 4.</strong> (From <a href="/class9">Class 9</a>) How many self-inverting relations, <em>R</em>: <em>N</em><sub><em>k</em></sub> &rarr; <em>N</em><sub><em>k</em></sub>, are there?  (Where <em>N</em><sub><em>k</em></sub> is the set of all non-negative integers less than <em>k</em>, and a relation is self-inverting if <em>R</em> = <em>R</em><sup>-1</sup>.)
+   </div></p>
+
+<p>Henry&rsquo;s answer is below:</p>
+
+<p><blockquote>
+2<sup><em>n</em>*(<em>n</em>+1)/2</sup></p>
+
+<p>For each element in the domain, the number of &ldquo;connection&rdquo; possibilities
+for that element to each element of the codomain (given that it can
+either be related or not related to a codomain element) is 2<em>n</em>, where
+<em>n</em> is the number of codomain elements.</p>
+
+<p>This includes the possibility of the element connecting to itself,
+because there are two possibilities involving self connection, and
+2<sup>(<em>n</em>-1)</sup> possibilities for connection to non-identical
+elements.  The product of these two results in
+2*2<sup>(<em>n</em>-1)</sup> = 2<sup>n</sup>.</p>
+
+<p>For each following element in the domain, the relationship with all
+previous elements which have been assigned relationships is fixed.  For
+example, if element <em>a</em> in the domain is related to element
+<em>b</em> in the codomain, then element <em>b</em> in the domain must
+be related to element <em>a</em> in the codomain.  This applies equally
+if element <em>a</em> in the domain is not related to element <em>b</em>
+in the codomain, because then element <em>b</em> in the domain must also
+not be related to element <em>a</em> in the codomain, or the relation
+would not be self-inverting.</p>
+
+<p>All other relationships between our second element and elements of the
+codomain are still free to change, though, leaving
+2<sup><em>n</em>-1</sup> combinations for the second element considered.</p>
+
+<p>This pattern continues <em>n</em> times in total, and by multiplying
+these possibilities, we get</p>
+
+<p>2<sup>n</sup> * 2<sup>n-1</sup> * 2 <sup>n-2</sup> &hellip; * 2<sup>1</sup></p>
+
+<p>Which is the same as 2<sup><em>n</em> + (<em>n</em>-1) + (<em>n</em>-2)
++ &hellip; + 2 + 1</sup>.</p>
+
+<p>By reversing the addition sequence we get that the exponent of 2 is the
+sum of all numbers from 1 to <em>n</em>, which is equal to
+<em>n</em>*(<em>n</em>+1)/2.</p>
+
+<p>Hence, the number of self-inverting relations for a set of size
+<em>n</em> must be 2<sup>(<em>n</em>*(<em>n</em>+1)/2)</sup>.
+   </blockquote></p>
+
+<p>Congratulations to Henry Spece for solving the challenge!</p>
+
+  
+    <p class="fronthead"><a href="https://uvacs2102.github.io/ps5announce/">Problem Set 5</a> (Fri, 23 Sep 2016)</p>
+     <p><strong>Problem Set 5</strong> is <a href="/docs/ps5.pdf">now posted</a>, and is due on <strong>Friday, 30
+  September at 6:29pm</strong>.</p>
+
   
     <p class="fronthead"><a href="https://uvacs2102.github.io/class10/">Class 10: In(tro)duction</a> (Thu, 22 Sep 2016)</p>
      
@@ -865,234 +926,6 @@ g. $(S \times T) - G = \emptyset$.
 h. $(S \times T) - G \neq \emptyset$.</p>
 
 <p></div></p>
-
-  
-    <p class="fronthead"><a href="https://uvacs2102.github.io/pdfs/">Generating PDFs</a> (Wed, 14 Sep 2016)</p>
-     
-
-<p>We are finding many of the assignment submissions for PS1 and PS2 are
-barely readable.  When it is hard for the graders to read your answers,
-you will get less useful feedback on your submission.  We are not
-intentionally down-grading work that is hard to read, but you will lose
-the benefit-of-the-doubt for answers that are too hard to read, and it
-also makes a bad impression when your work is presented in a way that
-looks careless.</p>
-
-<p>We provide some advice below on how to generate a readable PDF to
-submit.  Please review what you are submitting before submitting it to
-make sure that it will not cause the graders headaches attempting to
-discern your answers from it.</p>
-
-<p>We&rsquo;ve been forgiving on PS1 and PS2, but from PS3 on will be expecting
-everyone to follow the directions well and generate readable
-submissions, and will refuse to grade unreadable submissions.</p>
-
-<h4 id="one-submission-per-team-with-everyone-s-name-and-id">One Submission per Team, with Everyone&rsquo;s Name and ID</h4>
-
-<p>Each team that works together should submit <em>exactly one</em> assignment,
-and it should have each team member&rsquo;s name and email ID clearly at the
-top of it.  When you neglect to do this, it causes a lot of extra
-trouble for us.</p>
-
-<h4 id="pdf-files-only">PDF files only</h4>
-
-<p>Your submission must be a single, PDF file.  We will not grade Word
-documents, images, or other formats.  We do make two exceptions:
-<a href="https://www.youtube.com/watch?v=GSIodz9GWxc#t=12">entertaining
-videos</a> and
-<a href="http://www.cs.virginia.edu/~evans/cs1120-f11/all/2011/class-41-the-cake-of-computing">cakes</a>.
-(If your answers are in the form of a cake, it make not be possible to
-submit it through collab, but you can drop it off in person.)</p>
-
-<h2 id="ways-to-generate-good-pdfs">Ways to Generate Good PDFs</h2>
-
-<p>There are three ways to generate reasonable PDFs to submit: (1) use a
-mathematical typesetting tool, (2) use a scanner that scans to PDF
-files, or (3) use a camera.  If you use a scanner or a camera, the page
-you are scanning has to be readable to begin with, and you have to scan
-it well.  It is best to write on only one side of the paper, since often
-the writing from the back side bleeds through in the scan or image.</p>
-
-<p>The most difficult to read submissions are when people use their mobile
-phone camera to take a picture of handwritten paper, and then put the
-image into a Word document without any filtering or processing.  This is
-not a way to make a readable PDF, and its not fair to expect graders to
-deal with that type of document.</p>
-
-<p>There are ways to generate readable PDFs using your mobile phone camera.
-One tool that works for this is
-<a href="https://www.camscanner.com/user/download">CamScanner</a> (available as a
-free app for limited use, for Android, iPhone, and Windows Phone).
-There are lots of other scanning apps that should work - see <a href="https://www.cnet.com/how-to/best-scanning-apps-for-android-and-iphone/"><em>The best
-scanning apps for Android and
-iPhone</em></a>.
-Please look at the file you have generated before submitting it.  If you
-are not able to generate a readable PDF using your phone, you should use
-a scanner. There are public scanner to use in some of the UVA libraries
-including in Clemons Library.</p>
-
-<h2 id="mathematical-typesetting">Mathematical Typesetting</h2>
-
-<p>More ambitious, forward-thinking, aesthetically-minded, or
-handwriting-averse students will prefer to use a system that generates
-PDFs directly.  The system used for nearly all technical typesetting is
-<a href="https://www.latex-project.org/">LaTeX</a> (which was started by <a href="https://en.wikipedia.org/wiki/Leslie_Lamport">Leslie
-Lamport</a> who won the
-Turing Award in 2013, and builds on the TeX typesetting program created
-by <a href="http://cs.stanford.edu/~uno/">Donald Knuth</a>, who won the Turing
-Award in 1974; neither of the awards were for work on typesetting).
-(Word and Google Docs do include equation editors, and you are welcome
-to use these if you want for cs2102.  But, anyone doing serious
-mathematics quickly finds that these gui-type equation editors are both
-painfully slow and not able to generate good output.  So, I don&rsquo;t
-recommend using them unless you already know how and are happy with
-this.)</p>
-
-<p>LaTeX has a fairly steep learning curve, but there are lots of tools
-available now to make it easier to get started.
-<a href="https://www.sharelatex.com/">ShareLaTeX</a> is a web-based, multi-user
-LaTeX editor; <a href="http://www.texniccenter.org/">TeXnicCenter</a> is a LaTeX
-editor for Windows; and <a href="https://www.texpadapp.com/">texpad</a> is
-available for Mac and iOS.</p>
-
-<p>If you are expecting to take further math and CS courses, it is worth
-learning to use this to produce documents efficiently.  Some later CS
-courses required submissions to be typeset using LaTeX (depending on
-whom is teaching them, this is sometimes the case for CS3102 and
-CS4102), and nearly all research papers are written this way.  You are
-not required to produce beautifully-typeset problem sets for CS2102 and
-shouldn&rsquo;t spend inordinate extra time just trying to make your answers
-look great, but we will definitely appreciate your efforts to make
-submissions easier to read, and after a small effort in getting started
-with LaTeX, you may find that it takes less time than hand-writing
-(especially since it is easy to edit, instead of needing to rewrite).</p>
-
-  
-    <p class="fronthead"><a href="https://uvacs2102.github.io/anonymousfeedback/">Anonymous Feedback Comments</a> (Tue, 13 Sep 2016)</p>
-     <p>I wanted to discuss two anonymous comments that were submitted through
-Collab (there&rsquo;s no way to respond directly to submitters, so I&rsquo;ll post
-my response here).</p>
-
-<p>Comment 1:</p>
-
-<blockquote>
-<p><em>The homework is significantly longer and harder than Edwards&rsquo;. Also, it extends beyond lecture content too much :(</em></p>
-</blockquote>
-
-<p>Comment 2:</p>
-
-<blockquote>
-<p><em>Professor,</em><br />
-<em>I believe that we are moving in too fast a pace at the current moment. I am truly enjoying the class material however before I am fully able to grasp the concepts we quickly move on to the next. I understand that this class moves fast however I have attended every single lecture and still did not understand how to solve quite a few of the questions in problem set 2. In fact in more than one instance I had no idea what some of the questions were asking. I would appreciate it if we could have a brief overview of the problem set before they are due. I appreciate you taking the time to address the questions in the later part of the week but we had about 15 minutes to ask pertinent questions for an assignment due less than 48 hours.</em><br />
-<em>I am truly enjoying this class but I will fall very far behind in this class if we continue to go at the pace we are. If we could solve more sample questions related to the problem sets I feel it would go a long way in understanding how to utilize the tools we are being taught.</em><br />
-<em>I hope I am not out of line. I also didn&rsquo;t feel comfortable bringing this up personally because I am not sure if I am in the majority, minority, or the rarity. I have never had problems with a math course before and have been comfortable doing proofs prior to this. I suppose I am not as fast a learner as the class demands.</em></p>
-</blockquote>
-
-<p>First, I do appreciate getting comments like this, and although I would
-hope most students feel that they could safely send comments like this
-without needing anonymity, I understand why you prefer to send them
-anonymously.</p>
-
-<p>As for the content of Comment #1, what you should be worried about is if the workload
-for the course seems unreasonably high for a 3-unit class.  As the
-university defines things, a 3-unit course is supposed to involve 9
-hours of academic work per week (assuming you are coming to class for
-2.5 hours per week, this leaves 6.5 hours for outside work).  It is
-sometimes hard to estimate how long it will take students to do an
-assignment, but I don&rsquo;t think the readings and problem sets assigned so
-far in this course should take more than this for most students.</p>
-
-<p>If you find you are spending unreasonably more than this, then it is
-either because you are not using the time effectively (this is
-especially a challenge when students work in teams to keep everyone
-focused and on task); you are trying to do more than is intended (which
-is great if you have time for it); you are solving problems using a
-tedious, painstaking approach rather than looking for a clever, fast
-solution (e.g., making an exhaustive truth table for a 7-input
-function); you are lacking in some of the necessary background or
-experience so need more time; or (perhaps most likely) because I have
-grossly underestimated how long things take when you are learning them
-for the first time (and me teaching them for the first time).</p>
-
-<p>I do want to understand if things are taking too long and why, so if it
-seems like the workload for the course is unreasonable I encourage you
-to come to office hours and discuss what you are doing and whether their
-might be more effective ways to use your time.</p>
-
-<p>As for the problems &ldquo;extending beyond lecture content&rdquo;, that is
-absolutely what you should expect (indeed, ambitious students should be
-insulted by assignments that don&rsquo;t go beyond what was covered in
-lecture!).  The problems are not designed to just test if you have been
-paying attenting in class and can repeat what is done in class in a
-straightforward way.  Sometimes there will be &ldquo;warm-up&rdquo; problems
-intended to check basic understanding, but the goal of most of the
-problem set problems is to deepen your understanding of the concepts
-introduced in class and in the book and improve your abilities as a
-mathematical thinker, by having you apply them yourself in ways you
-haven&rsquo;t seen before.</p>
-
-<p>For Comment #2, I agree that we have covered a lot quite quickly at the
-beginning of the course.  In general, there is always a tension between
-wanting to include and get to the most interesting material and making
-sure the foundations are strong.</p>
-
-<p>The best way to make sure I spend more class time on topics is to ask
-questions about them.  My default assumption (which I know is
-na&#239;ve, but I also think is fair) is that if something is explained
-well in the assigned readings and no one asks questions about it, then I
-shouldn&rsquo;t waste class time going over it (unless I have something I
-think is worthwhile beyond or different from what was in the reading).
-So far (scanning over <code>#general</code> now), very few students have asked
-questions like this; nearly all the questions are about clarifying
-specific problems from the problem sets.  I am happy to spend more class
-time on topics covered in the book if people ask questions about them.
-It doesn&rsquo;t even have to be a precise question - its fine to ask things
-like, &ldquo;I didn&rsquo;t understand the set builder notation, can you go over an
-example in class?&rdquo; (otherwise, I think its quite boring to talk about
-set builder notation, and that what is written in the book is sufficient
-for everyone to understand it without me spending time on it in class).</p>
-
-<p>The other thing I want to say on this is that we&rsquo;ve introduced a lot of
-new things fast, but all of the main themes of the course will keep
-recurring throughout the semester.  In particular, towards the two main
-goals of getting good at making and using definitions, and understanding
-and constructing proofs, most of the concepts we have introduced already
-will be seen over and over again throughout the course.  The new topics
-will build on the knowledge and understanding you have, but also (I
-hope) deepen your understanding of the early topics.</p>
-
-<p>(As one concrete example, following the design of the book, we
-introduced well-ordering proofs early.  We will soon get to proof by
-induction, which is dependent on well-ordering, and similar to
-well-ordering proofs in many ways.  Proof by induction is probably the
-most powerful proof technique you&rsquo;ll learn in this class, and one used
-all the time in computer science, and we&rsquo;ll see many different examples
-of proof by induction throughout the semester since its something that
-most people need to see many times in different ways and contexts before
-really getting it.)</p>
-
-<p>Finally, in terms of the overall pacing, my plan for the course (which
-is very much flexible) is to cover about half the material that is
-covered in the comparable MIT course.  This seems reasonable to me since
-I expect UVA students to be as good as MIT students, but the way MIT
-classes work students take fewer courses than UVA students do (it would
-be more like a 4-unit class here), and there is a lot more class time
-than we have (they have 3 meetings a week, plus recitation, and four
-evening &ldquo;midterm&rdquo; exams), so the actual class time is about 2x what we
-have.  As another example, <a href="http://www-inst.eecs.berkeley.edu/~cs70/sp15/#syllabus">Berkeley&rsquo;s CS70
-class</a> covers
-things with a quite different approach, but also covers fair bit more
-material than is planned for cs2102 (and with resources more like we
-have as a public school, they expect students to do their own homework
-grading).  If you think I shouldn&rsquo;t expect you to be competitive with
-Berkeley or MIT students, you can also compare to the <a href="https://www.cs.unc.edu/~baruah/Teaching/2015-2Fa/">UNC
-course</a>, which covers
-a similar amount of material to this course but with 8am Monday
-lectures.  (I do, of course, have much higher expectations of UVA
-students than what <a href="https://www.math.vt.edu/people/mcquain/math2534.htm">Virginia
-Tech</a> does, but I
-hope you would not use that as a sign that our expectations are too
-high!)</p>
 
   
   
