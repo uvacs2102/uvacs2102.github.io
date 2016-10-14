@@ -5,7 +5,7 @@
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <title>Class 13: State Machines  &middot; cs2102: Discrete Math</title>
+  <title>Class 14: Invariant Principle  &middot; cs2102: Discrete Math</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="HandheldFriendly" content="True">
 <meta name="MobileOptimized" content="320">
@@ -17,16 +17,16 @@
 <meta name="keywords" content="">
 
 
-<meta property="og:title" content="Class 13: State Machines  &middot; cs2102: Discrete Math ">
+<meta property="og:title" content="Class 14: Invariant Principle  &middot; cs2102: Discrete Math ">
 <meta property="og:site_name" content="cs2102: Discrete Math"/>
-<meta property="og:url" content="https://uvacs2102.github.io/class13/" />
+<meta property="og:url" content="https://uvacs2102.github.io/class14/" />
 <meta property="og:locale" content="en-us">
 
 
 <meta property="og:type" content="article" />
 <meta property="og:description" content=""/>
-<meta property="og:article:published_time" content="2016-10-11T00:00:00Z" />
-<meta property="og:article:modified_time" content="2016-10-11T00:00:00Z" />
+<meta property="og:article:published_time" content="2016-10-13T00:00:00Z" />
+<meta property="og:article:modified_time" content="2016-10-13T00:00:00Z" />
 
   
 
@@ -34,9 +34,9 @@
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <meta name="twitter:creator" content="@" />
-<meta name="twitter:title" content="Class 13: State Machines" />
+<meta name="twitter:title" content="Class 14: Invariant Principle" />
 <meta name="twitter:description" content="" />
-<meta name="twitter:url" content="https://uvacs2102.github.io/class13/" />
+<meta name="twitter:url" content="https://uvacs2102.github.io/class14/" />
 <meta name="twitter:domain" content="https://uvacs2102.github.io">
   
 
@@ -44,20 +44,20 @@
   {
     "@context": "http://schema.org",
     "@type": "Article",
-    "headline": "Class 13: State Machines",
+    "headline": "Class 14: Invariant Principle",
     "author": {
       "@type": "Person",
       "name": "http://profiles.google.com/+?rel=author"
     },
-    "datePublished": "2016-10-11",
+    "datePublished": "2016-10-13",
     "description": "",
-    "wordCount":  492 
+    "wordCount":  644 
   }
 </script>
 
 
 
-<link rel="canonical" href="https://uvacs2102.github.io/class13/" />
+<link rel="canonical" href="https://uvacs2102.github.io/class14/" />
 
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://uvacs2102.github.io/touch-icon-144-precomposed.png">
 <link href="https://uvacs2102.github.io/favicon.png" rel="icon">
@@ -163,11 +163,11 @@
 
 <article id="main-content" class="container main_content single">
   <header class="container hat">
-  <center><h1>Class 13: State Machines
+  <center><h1>Class 14: Invariant Principle
 </h1></center>
 
   <div class="metas">
-<time datetime="2016-10-11">11 Oct, 2016</time>
+<time datetime="2016-10-13">13 Oct, 2016</time>
 
 
   
@@ -184,91 +184,96 @@
 
 <h3 id="schedule">Schedule</h3>
 
-<p><a href="https://uvacs2102.github.io/docs/exam1-solutions.pdf">Exam 1 Solutions</a>
-are now posted.</p>
+<p><a href="/ps/ps6"><strong>Problem Set 6</strong></a> (is posted now) is due <strong>21
+October (Friday) at 6:29pm</strong>.</p>
 
-<p><strong>Drop Date</strong> is today.  If you have any concerns about whether you
-  should stay in the class, please talk to me after class today.</p>
-
-<p>There is no problem set due this week!  <a href="/ps/ps6"><strong>Problem Set 6</strong></a>
-(will be posted later this week) is due <strong>21 October (Friday) at
-6:29pm</strong>.</p>
-
-<p>Exam 1 was returned during class today.  (Exam grades will eventually
-make it into collab, but haven&rsquo;t yet.  When they do, please confirm that
-the score on your exam matches what is recorded in collab, and that
-PS1-5 are all recorded correctly.)</p>
+<p>Exam 1 was returned Tuesday.  If you did not pick yours up yet, you can
+get it after class today.  I will start charging
+exponentially-increasing storage fees for inexcusably unclaimed exams
+starting tomorrow.</p>
 
 <p><div class="notpdf">
    <center>
-<script async class="speakerdeck-embed" data-id="e834908c757142c7b5ff50a196a26f43" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+<script async class="speakerdeck-embed" data-id="fcd3660e39b740a0bb2069883054a525" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
    </center></p>
 
+<p>Note that the version of the notes that was handed out in class mixed up
+the $\vee$ and $\wedge$ symbols!  The web version is corrected.</p>
+
 <p><div class="highlightm">
-   <a href="/docs/class13.pdf">See PDF Version for <b>Notes</b></a>.
-   </div>
-   </div><!--endpdf--></p>
+   <a href="/docs/class14.pdf">See PDF Version for <b>Notes</b></a>.
+   </div></p>
+
+<h1 id="fast-exponentiation">Fast Exponentiation</h1>
+
+<p>This is the algorithm from Section 6.3.1 written as Python code:</p>
+
+<pre><code class="language-python">def power(a, b):
+   x = a
+   y = 1
+   z = b
+   while z &gt; 0:
+      r = z % 2 # remainder of z / 2
+      z = z // 2 # quotient of z / 2
+      if r == 1:
+         y = x * y
+      x = x * x
+   return y
+</code></pre>
+
+<p></div><!--endpdf--></p>
 
 <p><div class="latex"></p>
 
-<h2 id="state-machines">State Machines</h2>
+<h2 id="state-machines-review-from-class-13">State Machines (review from Class 13)</h2>
 
-<p>A <em>state machine</em> is a binary relation (called a <em>transition relation</em>)
-on a set (both the domain and codomain are the same set).  One state is
-designated as the <em>start state</em>.</p>
+<p>A <em>state machine</em>, $M = (S, G: S \times S, q_0 \in S)$, is a binary
+relation (called a <em>transition relation</em>) on a set (both the domain and
+codomain are the same set).  One state, denoted $q_0$, is designated as
+the <em>start state</em>.</p>
 
-<p>$$M = (S, G: S \times S, q_0 \in S)$$</p>
+<p>An <em>execution</em> of a state machine $M = (S, G \subseteq S \times S, q_0
+\in S)$ is a (possibly infinite) sequence of states, $(x_0, x_1, \cdots,
+x_n)$ where (1) $x_0 = q_0$ (it begins with the start state), and (2)
+$\forall i \in {0, 1, \ldots, n - 1} \ldotp (x<em>i, x</em>{i + 1}) \in G$
+(if $q$ and $r$ are consecutive states in the sequence, then there is an
+edge $q \rightarrow r$ in $G$).</p>
 
-<p>What does it mean if $G$ is <em>total</em>?</p>
-
-<p>##</p>
-
-<p>What does it mean if $G$ is not a <em>function</em>?</p>
-
-<p>##</p>
-
-<p><strong>Parity Counter.</strong> Describe a state machine that determines if the
-  number of steps is even.</p>
-
-<p>#</p>
-
-<p><strong>Unbounded Counter.</strong> Describe a state machine that counts the number of steps.</p>
-
-<p>#</p>
-
-<p>How well do state machines model real computers?  What kind of
-transition relation does the state machine modeling your computer have?</p>
-
-<!--page-->
-
-<h1 id="invariant-principle">Invariant Principle</h1>
-
-<p>An <em>execution</em> of a state machine $M = (S, G \subseteq S \times S, q_0 \in S)$ is a (possibly infinite) sequence of states, $(x_0, x_1, \cdots, x_n)$ where:</p>
-
-<ol>
-<li>$x_0 = q_0$ (it begins with the start state), and</li>
-<li>$\forall i \in {0, 1, \ldots, n - 1} \ldotp (x<em>i, x</em>{i + 1}) \in G$ (if $q$ and $r$ are consecutive states in the sequence, then there is an edge $q \rightarrow r$ in $G$)</li>
-</ol>
-
-<p>A state $q$ is <em>reachable</em> if it appears in some execution.  (That is,
-there is a sequence of transitions starting from $q_0$, following edges
-in $G$, that ends with $q$.)</p>
-
-<p>$$
-M_1 = (S = \mathbb{N}, G = {(x, y) | y = x^2 }, q_0 = 1)
-$$
-$$
-M_2 = (S = \mathbb{N}, G = {(x, y) | \exists k \in \mathbb{N} \ldotp y = kx }, q_0 = 1)
-$$</p>
-
-<p>Which states are <em>reachable</em> for $M_1$ and $M_2$?</p>
-
-<p>#</p>
+<p>A state $q$ is <em>reachable</em> if it appears in some execution.</p>
 
 <p>A <em>preserved invariant</em> of a state machine $M = (S, G \subseteq S \times
 S, q_0 \in S)$ is a predicate, $P$, on states, such that whenever $P(q)$
 is true of a state $q$, and $q \rightarrow r \in G$, then $P&reg;$ is
 true.</p>
+
+<h3 id="bishop-state-machine">Bishop State Machine</h3>
+
+<p>$S = { (\fillin ) \, | \, r, c \in \mathbb{N} }$<br />
+$G = { (r, c) \rightarrow (r&rsquo;, c&rsquo;) \, | \, r, c \in \mathbb{N} \wedge (\exists d \in \mathbb{N}^{+} \textrm{ such that } r&rsquo; = r \fillin d \wedge r&rsquo; \ge 0 \wedge c&rsquo; = c \fillin d \wedge c&rsquo; \ge 0 }$<br />
+$q_0 = (0, 2)$</p>
+
+<p>What states are <em>reachable</em>?</p>
+
+<p>#</p>
+
+<h3 id="progress-machine">``Progress&rdquo; Machine</h3>
+
+<p>$S = { (x, d) \, | \, x \in \mathbb{Z}, d \in { \mathrm{\bf F}, \mathrm{\bf B}} }$<br />
+$G = { (x, \mathrm{\bf F}) \rightarrow (x + 1, \mathrm{\bf B}) \, | \, x \in \mathbb{Z} } \cup
+     { (x, \mathrm{\bf B}) \rightarrow (x - 2, \mathrm{\bf F}) \, | \, x \in \mathbb{Z} }$<br />
+$q_0 = (0, \mathrm{\bf F})$</p>
+
+<p>Which states are <em>reachable</em>?</p>
+
+<!--page-->
+
+<p>A predicate $P(q)$ is a <em>preserved invariant</em> of machine $M = (S, G \subseteq S \times S, q_0 \in
+  S)$ if:
+$$
+\forall q \in S \ldotp (P(q) \wedge (q \rightarrow r) \in G) \implies P&reg;
+$$</p>
+
+<p>What are some <em>preserved invariants</em> for the (original) Bishop State Machine?</p>
 
 <p><strong>Invariant Principle.</strong> If a <em>preserved invariant</em> of a state machine
   is true for the start state, it is true for all reachable states.</p>
@@ -281,8 +286,26 @@ true.</p>
 <li>$\forall s \in S \ldotp \fillin \implies \fillin$</li>
 </ol>
 
-<p>Show the invariant principle holds using the principle of induction
-(hint: induction is on the <em>number of steps</em>).</p>
+<p>Prove that the original Bishop State Machine never reaches a square where $r + c$ is odd.</p>
+
+<p>#</p>
+
+<h1 id="slow-exponentiation">Slow Exponentiation</h1>
+
+<pre><code class="language-python">def slow_power(a, b):
+   y = 1
+   z = b
+   while z &gt; 0:
+      y = y * a
+      z = z - 1
+   return y
+</code></pre>
+
+<p>$S ::= \mathbb{N} \times \mathbb{N}$<br />
+$G ::= { (y, z) \rightarrow (y \cdot a, z - 1) \, | \, \forall y, z \in \mathbb{N}^{+}}$<br />
+$q_0 ::= (1, b)$</p>
+
+<p>Prove <code>slow_power(a, b)</code> = $a^b$.</p>
 
 <p>#</p>
 
@@ -298,13 +321,13 @@ true.</p>
   
 
     
-    <a class="prev" href="https://uvacs2102.github.io/exam1solutions/" title="Exam 1 Solutions">
+    <a class="prev" href="https://uvacs2102.github.io/class13/" title="Class 13: State Machines">
       Previous
     </a>
     
 
     
-    <a class="next" href="https://uvacs2102.github.io/class14/" title="Class 14: Invariant Principle">
+    <a class="next" href="https://uvacs2102.github.io/ps5announce/" title="Problem Set 6">
       Next
     </a>
     
