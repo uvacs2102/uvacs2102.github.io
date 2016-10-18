@@ -170,11 +170,14 @@
 October (Friday) at 6:29pm</strong>.</p>
 
 <p><div class="notpdf">
-   <center></p>
-
-<p></center></p>
+   <center>
+<script async class="speakerdeck-embed" data-id="6f50f3a2e5be484eacedeffdf2c98620" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+   </center></p>
 
 <h1 id="links">Links</h1>
+
+<p>We didn&rsquo;t get to talk about Secure Stable Mathing today, but will in a
+future class.  (For now, feel free to read the links, of coure.)</p>
 
 <p><a href="http://www.nytimes.com/2014/12/07/nyregion/how-game-theory-helped-improve-new-york-city-high-school-application-process.html?_r=0">How Game Theory Helped Improve New York City’s High School Application Process</a>, New York Times, 5 December 2014.</p>
 
@@ -260,37 +263,9 @@ gale_shapley(A, B)
 
 <p>#</p>
 
+<p>#</p>
+
 <p><strong>Prove correctness.</strong> The Gale-Shapley program returns a <em>stable matching</em> of the two input sets and preferences.</p>
-
-<p>##</p>
-
-<h1 id="secure-multi-party-computation">Secure Multi-Party Computation</h1>
-
-<p><em>Secure Multi-Party Computation</em> (MPC) allows two (or more) parties to
-jointly compute a function of their two private inputs, without leaking
-any information about those inputs (other than what can be inferred from
-the revealed result).  See web versoin for links.</p>
-
-<h2 id="garbled-logic-gate">Garbled Logic Gate</h2>
-
-<p>$p<em>{T,F}$, $q</em>{T,F}$, and $x_{T,F}$ are randomly selected keys that
-represent the respective True and False values.</p>
-
-<p>Randomly permute the rows, and only send the output column.</p>
-
-<p>\begin{center}
-\begin{tabular}{ccc}
-$P$ &amp; $Q$ &amp; $X = P \wedge Q$ \ \hline
-$p_T$ &amp; $q_T$ &amp; $E(\fillin, x_T)$ <br />
-$p_T$ &amp; $q_F$ &amp; $E(\fillin, x_F)$ <br />
-$p_F$ &amp; $q_T$ &amp; $E(\fillin, x_F)$ <br />
-$p_F$ &amp; $q_F$ &amp; $E(\fillin, x_F)$ <br />
-\end{tabular}
-\end{center}</p>
-
-<h2 id="xor-secret-sharing">XOR Secret Sharing</h2>
-
-<p>$A \oplus R = C$. What is $C \oplus R$?</p>
 
 <p></div></p>
 

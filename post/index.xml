@@ -26,11 +26,14 @@
 October (Friday) at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;
-   &lt;center&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/center&gt;&lt;/p&gt;
+   &lt;center&gt;
+&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;6f50f3a2e5be484eacedeffdf2c98620&#34; data-ratio=&#34;1.77777777777778&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
+   &lt;/center&gt;&lt;/p&gt;
 
 &lt;h1 id=&#34;links&#34;&gt;Links&lt;/h1&gt;
+
+&lt;p&gt;We didn&amp;rsquo;t get to talk about Secure Stable Mathing today, but will in a
+future class.  (For now, feel free to read the links, of coure.)&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://www.nytimes.com/2014/12/07/nyregion/how-game-theory-helped-improve-new-york-city-high-school-application-process.html?_r=0&#34;&gt;How Game Theory Helped Improve New York City’s High School Application Process&lt;/a&gt;, New York Times, 5 December 2014.&lt;/p&gt;
 
@@ -116,37 +119,9 @@ gale_shapley(A, B)
 
 &lt;p&gt;#&lt;/p&gt;
 
+&lt;p&gt;#&lt;/p&gt;
+
 &lt;p&gt;&lt;strong&gt;Prove correctness.&lt;/strong&gt; The Gale-Shapley program returns a &lt;em&gt;stable matching&lt;/em&gt; of the two input sets and preferences.&lt;/p&gt;
-
-&lt;p&gt;##&lt;/p&gt;
-
-&lt;h1 id=&#34;secure-multi-party-computation&#34;&gt;Secure Multi-Party Computation&lt;/h1&gt;
-
-&lt;p&gt;&lt;em&gt;Secure Multi-Party Computation&lt;/em&gt; (MPC) allows two (or more) parties to
-jointly compute a function of their two private inputs, without leaking
-any information about those inputs (other than what can be inferred from
-the revealed result).  See web versoin for links.&lt;/p&gt;
-
-&lt;h2 id=&#34;garbled-logic-gate&#34;&gt;Garbled Logic Gate&lt;/h2&gt;
-
-&lt;p&gt;$p&lt;em&gt;{T,F}$, $q&lt;/em&gt;{T,F}$, and $x_{T,F}$ are randomly selected keys that
-represent the respective True and False values.&lt;/p&gt;
-
-&lt;p&gt;Randomly permute the rows, and only send the output column.&lt;/p&gt;
-
-&lt;p&gt;\begin{center}
-\begin{tabular}{ccc}
-$P$ &amp;amp; $Q$ &amp;amp; $X = P \wedge Q$ \ \hline
-$p_T$ &amp;amp; $q_T$ &amp;amp; $E(\fillin, x_T)$ &lt;br /&gt;
-$p_T$ &amp;amp; $q_F$ &amp;amp; $E(\fillin, x_F)$ &lt;br /&gt;
-$p_F$ &amp;amp; $q_T$ &amp;amp; $E(\fillin, x_F)$ &lt;br /&gt;
-$p_F$ &amp;amp; $q_F$ &amp;amp; $E(\fillin, x_F)$ &lt;br /&gt;
-\end{tabular}
-\end{center}&lt;/p&gt;
-
-&lt;h2 id=&#34;xor-secret-sharing&#34;&gt;XOR Secret Sharing&lt;/h2&gt;
-
-&lt;p&gt;$A \oplus R = C$. What is $C \oplus R$?&lt;/p&gt;
 
 &lt;p&gt;&lt;/div&gt;&lt;/p&gt;
 </description>
