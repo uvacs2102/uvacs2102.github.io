@@ -32,6 +32,8 @@ October (Friday) at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;h1 id=&#34;links&#34;&gt;Links&lt;/h1&gt;
 
+&lt;p&gt;Download the full matching code: &lt;a href=&#34;https://uvacs2102.github.io/docs/matching.py&#34;&gt;matching.py&lt;/a&gt; (assertions and comments removed here for space)&lt;/p&gt;
+
 &lt;p&gt;We didn&amp;rsquo;t get to talk about Secure Stable Mathing today, but will in a
 future class.  (For now, feel free to read the links, of coure.)&lt;/p&gt;
 
@@ -72,8 +74,6 @@ equal-size sets?&lt;/p&gt;
 &lt;p&gt;##&lt;/p&gt;
 
 &lt;h1 id=&#34;gale-shapley-algorithm&#34;&gt;Gale-Shapley Algorithm&lt;/h1&gt;
-
-&lt;p&gt;Download the full matching code: &lt;a href=&#34;https://uvacs2102.github.io/docs/matching.py&#34;&gt;matching.py&lt;/a&gt; (assertions and comments removed here for space)&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def gale_shapley(A, B):
     pairings = {} # dictionary b: a pairings
