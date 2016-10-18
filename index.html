@@ -146,17 +146,154 @@
   <center>
   <b>Recent Posts: </b>
   
+    <a href="https://uvacs2102.github.io/class15/">Class 15: Stable Matchings</a> |
+  
     <a href="https://uvacs2102.github.io/ps6announce/">Problem Set 6</a> |
   
     <a href="https://uvacs2102.github.io/class14/">Class 14: Invariant Principle</a> |
-  
-    <a href="https://uvacs2102.github.io/class13/">Class 13: State Machines</a> |
   
   <a href="/post">More...</a>
   </center>
   <p></p>
 
   
+  
+    <p class="fronthead"><a href="https://uvacs2102.github.io/class15/">Class 15: Stable Matchings</a> (Tue, 18 Oct 2016)</p>
+     
+
+<h3 id="schedule">Schedule</h3>
+
+<p><strong>There is no class Thursday (Oct 20).</strong> Please use the class time to do
+  something worthwhile and fulfilling.</p>
+
+<p><a href="/ps/ps6"><strong>Problem Set 6</strong></a> (is posted now) is due <strong>21
+October (Friday) at 6:29pm</strong>.</p>
+
+<p><div class="notpdf">
+   <center></p>
+
+<p></center></p>
+
+<h1 id="links">Links</h1>
+
+<p><a href="http://www.nytimes.com/2014/12/07/nyregion/how-game-theory-helped-improve-new-york-city-high-school-application-process.html?_r=0">How Game Theory Helped Improve New York City’s High School Application Process</a>, New York Times, 5 December 2014.</p>
+
+<p><a href="http://www.nrmp.org/match-process/match-algorithm/">National Resident Matching Program</a> (how medical school graduates are matched to residency programs)</p>
+
+<blockquote>
+<p><em>Can anyone else see my rank order list (ROL)</em>?
+Your rank order list is confidential.  Program rank order lists can be seen only by the program director and coordinator, the institutional official and administrator, and NRMP staff (unless you give your username and password to someone else, which is a violation of the Match agreement).
+(<a href="http://www.nrmp.org/match-process/match-algorithm/">Frequently Asked Question</a> on NRMP)</p>
+</blockquote>
+
+<p><a href="http://www.oblivc.org/matching">Secure Stable Matching</a>: Jack Doerner,
+David Evans, abhi shelat. <a href="http://oblivc.org/docs/matching.pdf"><em>Secure Stable Matching at
+Scale</em></a>.  In <a href="https://www.sigsac.org/ccs/CCS2016/"><em>23<sup>rd</sup> ACM
+Conference on Computer and Communications
+Security</em></a> (CCS). Vienna,
+Austria. 24-28 October 2016.</p>
+
+<p><div class="highlightm">
+   <a href="/docs/class15.pdf">See PDF Version for <b>Notes</b></a>.
+   </div></p>
+
+<p></div><!--endpdf--></p>
+
+<p><div class="latex"></p>
+
+<h1 id="stable-matching">Stable Matching</h1>
+
+<p><strong>Definition.</strong> $M = { (a_1, b_1), (a_2, b_2), \cdots, (a_n, b_n) }$ is a
+  <em>stable matching</em> between two sets $A = { a_1, \cdots, a_n }$ and $B
+  = { b_1, \cdots, b_n }$ with respective preference orderings $\prec_A$ and $\prec_B$ if there is no pair $(a_i, b_j)$ where $b<em>i \prec</em>{a_i} b_j$ and $a<em>j \prec</em>{b_j} a_i$.</p>
+
+<p>How do we know there is always a stable matching between any two
+equal-size sets?</p>
+
+<p>##</p>
+
+<h1 id="gale-shapley-algorithm">Gale-Shapley Algorithm</h1>
+
+<p>Download the full matching code: <a href="/docs/matching.py">matching.py</a> (assertions and comments removed here for space)</p>
+
+<pre><code class="language-python">def gale_shapley(A, B):
+    pairings = {} # dictionary b: a pairings
+    unpaired = set(a for a in A.keys()) # unpaired a's
+    proposals = {a: 0 for a in A.keys()} # keep track of who gets next proposal
+
+    while unpaired:
+        a = unpaired.pop()
+        ap = A[a] # a's preference list
+        assert proposals[a] &lt; len(ap)
+        choice = ap[proposals[a]]
+        proposals[a] += 1
+        if choice in pairings: # a's choice already has a match
+            amatch = pairings[choice]
+            bp = B[choice]
+            if bp.index(a) &lt; bp.index(amatch):
+                pairings[choice] = a
+                unpaired.add(amatch) # lost match
+            else:
+                unpaired.add(a)
+        else:
+            pairings[choice] = a
+    return [(a, b) for (b, a) in pairings.items()]
+</code></pre>
+
+<!--page-->
+
+<pre><code class="language-python">A = {&quot;Anna&quot;: [&quot;Kristoff&quot;, &quot;Olaf&quot;], &quot;Elsa&quot;: [&quot;Olaf&quot;, &quot;Kristoff&quot;]}
+B = {&quot;Kristoff&quot;: [&quot;Anna&quot;, &quot;Elsa&quot;], &quot;Olaf&quot;: [&quot;Elsa&quot;, &quot;Anna&quot;]}
+gale_shapley(A, B)
+</code></pre>
+
+<h2 id="modeling-the-gale-shapley-program-as-a-state-machine">Modeling the Gale-Shapley program as a state machine</h2>
+
+<p>$S = $</p>
+
+<p>$G = $</p>
+
+<p>$q_0 = $</p>
+
+<p><strong>Prove termination.</strong> The Gale-Shapley program, modeled by the state
+  machine, eventually returns.</p>
+
+<p>#</p>
+
+<p><strong>Prove correctness.</strong> The Gale-Shapley program returns a <em>stable matching</em> of the two input sets and preferences.</p>
+
+<p>##</p>
+
+<h1 id="secure-multi-party-computation">Secure Multi-Party Computation</h1>
+
+<p><em>Secure Multi-Party Computation</em> (MPC) allows two (or more) parties to
+jointly compute a function of their two private inputs, without leaking
+any information about those inputs (other than what can be inferred from
+the revealed result).  See web versoin for links.</p>
+
+<h2 id="garbled-logic-gate">Garbled Logic Gate</h2>
+
+<p>$p<em>{T,F}$, $q</em>{T,F}$, and $x_{T,F}$ are randomly selected keys that
+represent the respective True and False values.</p>
+
+<p>Randomly permute the rows, and only send the output column.</p>
+
+<p>\begin{center}
+\begin{tabular}{ccc}
+$P$ &amp; $Q$ &amp; $X = P \wedge Q$ \ \hline
+$p_T$ &amp; $q_T$ &amp; $E(\fillin, x_T)$ <br />
+$p_T$ &amp; $q_F$ &amp; $E(\fillin, x_F)$ <br />
+$p_F$ &amp; $q_T$ &amp; $E(\fillin, x_F)$ <br />
+$p_F$ &amp; $q_F$ &amp; $E(\fillin, x_F)$ <br />
+\end{tabular}
+\end{center}</p>
+
+<h2 id="xor-secret-sharing">XOR Secret Sharing</h2>
+
+<p>$A \oplus R = C$. What is $C \oplus R$?</p>
+
+<p></div></p>
+
   
     <p class="fronthead"><a href="https://uvacs2102.github.io/ps6announce/">Problem Set 6</a> (Fri, 14 Oct 2016)</p>
      <p><strong>Problem Set 6</strong> is <a href="/docs/ps6.pdf">now posted</a>, and is due on <strong>Friday, 21 October at 6:29pm</strong>.</p>
@@ -185,7 +322,10 @@ the $\vee$ and $\wedge$ symbols!  The web version is corrected.</p>
 
 <p><div class="highlightm">
    <a href="/docs/class14.pdf">See PDF Version for <b>Notes</b></a>.
-   </div></p>
+   </div>
+   </div><!--endpdf--></p>
+
+<p><div class="latex"></p>
 
 <h1 id="fast-exponentiation">Fast Exponentiation</h1>
 
@@ -708,17 +848,6 @@ the grades scaled by 100 for some buggy reason.  Although receiving a
 score of 100+ is possible in theory, no one received more than 8 points
 for this assingment.  If you see a score about 100, the meaning is that
 score divided by 100.)</p>
-
-  
-    <p class="fronthead"><a href="https://uvacs2102.github.io/clauses/">Satisfiable Formula Challenge</a> (Wed, 28 Sep 2016)</p>
-     <p>Henry Spece has solved the challenge about proving the length of the
-longest satisfiable formula!</p>
-
-<p><div class="highlightg">
-<strong>Challenge 6.</strong> (From <a href="https://collab.itc.virginia.edu/access/content/group/e0b17949-c94c-466b-835a-196381f3f911/ps3_solutions.pdf">PS3 Solutions</a>) Provide a full and convincing proof for Problem 11.
-   </div></p>
-
-<p>The proof is here: <a href="/docs/challenge6/henry.pdf">PDF</a></p>
 
   
   

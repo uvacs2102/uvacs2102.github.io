@@ -6,8 +6,151 @@
     <description>Recent content on cs2102: Discrete Math</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 14 Oct 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 18 Oct 2016 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://uvacs2102.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Class 15: Stable Matchings</title>
+      <link>https://uvacs2102.github.io/class15/</link>
+      <pubDate>Tue, 18 Oct 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/class15/</guid>
+      <description>
+
+&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;There is no class Thursday (Oct 20).&lt;/strong&gt; Please use the class time to do
+  something worthwhile and fulfilling.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps6&#34;&gt;&lt;strong&gt;Problem Set 6&lt;/strong&gt;&lt;/a&gt; (is posted now) is due &lt;strong&gt;21
+October (Friday) at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;
+   &lt;center&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/center&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;links&#34;&gt;Links&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.nytimes.com/2014/12/07/nyregion/how-game-theory-helped-improve-new-york-city-high-school-application-process.html?_r=0&#34;&gt;How Game Theory Helped Improve New York City’s High School Application Process&lt;/a&gt;, New York Times, 5 December 2014.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.nrmp.org/match-process/match-algorithm/&#34;&gt;National Resident Matching Program&lt;/a&gt; (how medical school graduates are matched to residency programs)&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;Can anyone else see my rank order list (ROL)&lt;/em&gt;?
+Your rank order list is confidential.  Program rank order lists can be seen only by the program director and coordinator, the institutional official and administrator, and NRMP staff (unless you give your username and password to someone else, which is a violation of the Match agreement).
+(&lt;a href=&#34;http://www.nrmp.org/match-process/match-algorithm/&#34;&gt;Frequently Asked Question&lt;/a&gt; on NRMP)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.oblivc.org/matching&#34;&gt;Secure Stable Matching&lt;/a&gt;: Jack Doerner,
+David Evans, abhi shelat. &lt;a href=&#34;http://oblivc.org/docs/matching.pdf&#34;&gt;&lt;em&gt;Secure Stable Matching at
+Scale&lt;/em&gt;&lt;/a&gt;.  In &lt;a href=&#34;https://www.sigsac.org/ccs/CCS2016/&#34;&gt;&lt;em&gt;23&lt;sup&gt;rd&lt;/sup&gt; ACM
+Conference on Computer and Communications
+Security&lt;/em&gt;&lt;/a&gt; (CCS). Vienna,
+Austria. 24-28 October 2016.&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlightm&#34;&gt;
+   &lt;a href=&#34;https://uvacs2102.github.io/docs/class15.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes&lt;/b&gt;&lt;/a&gt;.
+   &lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;stable-matching&#34;&gt;Stable Matching&lt;/h1&gt;
+
+&lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; $M = { (a_1, b_1), (a_2, b_2), \cdots, (a_n, b_n) }$ is a
+  &lt;em&gt;stable matching&lt;/em&gt; between two sets $A = { a_1, \cdots, a_n }$ and $B
+  = { b_1, \cdots, b_n }$ with respective preference orderings $\prec_A$ and $\prec_B$ if there is no pair $(a_i, b_j)$ where $b&lt;em&gt;i \prec&lt;/em&gt;{a_i} b_j$ and $a&lt;em&gt;j \prec&lt;/em&gt;{b_j} a_i$.&lt;/p&gt;
+
+&lt;p&gt;How do we know there is always a stable matching between any two
+equal-size sets?&lt;/p&gt;
+
+&lt;p&gt;##&lt;/p&gt;
+
+&lt;h1 id=&#34;gale-shapley-algorithm&#34;&gt;Gale-Shapley Algorithm&lt;/h1&gt;
+
+&lt;p&gt;Download the full matching code: &lt;a href=&#34;https://uvacs2102.github.io/docs/matching.py&#34;&gt;matching.py&lt;/a&gt; (assertions and comments removed here for space)&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def gale_shapley(A, B):
+    pairings = {} # dictionary b: a pairings
+    unpaired = set(a for a in A.keys()) # unpaired a&#39;s
+    proposals = {a: 0 for a in A.keys()} # keep track of who gets next proposal
+
+    while unpaired:
+        a = unpaired.pop()
+        ap = A[a] # a&#39;s preference list
+        assert proposals[a] &amp;lt; len(ap)
+        choice = ap[proposals[a]]
+        proposals[a] += 1
+        if choice in pairings: # a&#39;s choice already has a match
+            amatch = pairings[choice]
+            bp = B[choice]
+            if bp.index(a) &amp;lt; bp.index(amatch):
+                pairings[choice] = a
+                unpaired.add(amatch) # lost match
+            else:
+                unpaired.add(a)
+        else:
+            pairings[choice] = a
+    return [(a, b) for (b, a) in pairings.items()]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;!--page--&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;A = {&amp;quot;Anna&amp;quot;: [&amp;quot;Kristoff&amp;quot;, &amp;quot;Olaf&amp;quot;], &amp;quot;Elsa&amp;quot;: [&amp;quot;Olaf&amp;quot;, &amp;quot;Kristoff&amp;quot;]}
+B = {&amp;quot;Kristoff&amp;quot;: [&amp;quot;Anna&amp;quot;, &amp;quot;Elsa&amp;quot;], &amp;quot;Olaf&amp;quot;: [&amp;quot;Elsa&amp;quot;, &amp;quot;Anna&amp;quot;]}
+gale_shapley(A, B)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;modeling-the-gale-shapley-program-as-a-state-machine&#34;&gt;Modeling the Gale-Shapley program as a state machine&lt;/h2&gt;
+
+&lt;p&gt;$S = $&lt;/p&gt;
+
+&lt;p&gt;$G = $&lt;/p&gt;
+
+&lt;p&gt;$q_0 = $&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Prove termination.&lt;/strong&gt; The Gale-Shapley program, modeled by the state
+  machine, eventually returns.&lt;/p&gt;
+
+&lt;p&gt;#&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Prove correctness.&lt;/strong&gt; The Gale-Shapley program returns a &lt;em&gt;stable matching&lt;/em&gt; of the two input sets and preferences.&lt;/p&gt;
+
+&lt;p&gt;##&lt;/p&gt;
+
+&lt;h1 id=&#34;secure-multi-party-computation&#34;&gt;Secure Multi-Party Computation&lt;/h1&gt;
+
+&lt;p&gt;&lt;em&gt;Secure Multi-Party Computation&lt;/em&gt; (MPC) allows two (or more) parties to
+jointly compute a function of their two private inputs, without leaking
+any information about those inputs (other than what can be inferred from
+the revealed result).  See web versoin for links.&lt;/p&gt;
+
+&lt;h2 id=&#34;garbled-logic-gate&#34;&gt;Garbled Logic Gate&lt;/h2&gt;
+
+&lt;p&gt;$p&lt;em&gt;{T,F}$, $q&lt;/em&gt;{T,F}$, and $x_{T,F}$ are randomly selected keys that
+represent the respective True and False values.&lt;/p&gt;
+
+&lt;p&gt;Randomly permute the rows, and only send the output column.&lt;/p&gt;
+
+&lt;p&gt;\begin{center}
+\begin{tabular}{ccc}
+$P$ &amp;amp; $Q$ &amp;amp; $X = P \wedge Q$ \ \hline
+$p_T$ &amp;amp; $q_T$ &amp;amp; $E(\fillin, x_T)$ &lt;br /&gt;
+$p_T$ &amp;amp; $q_F$ &amp;amp; $E(\fillin, x_F)$ &lt;br /&gt;
+$p_F$ &amp;amp; $q_T$ &amp;amp; $E(\fillin, x_F)$ &lt;br /&gt;
+$p_F$ &amp;amp; $q_F$ &amp;amp; $E(\fillin, x_F)$ &lt;br /&gt;
+\end{tabular}
+\end{center}&lt;/p&gt;
+
+&lt;h2 id=&#34;xor-secret-sharing&#34;&gt;XOR Secret Sharing&lt;/h2&gt;
+
+&lt;p&gt;$A \oplus R = C$. What is $C \oplus R$?&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Problem Set 6</title>
@@ -47,7 +190,10 @@ the $\vee$ and $\wedge$ symbols!  The web version is corrected.&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;highlightm&#34;&gt;
    &lt;a href=&#34;https://uvacs2102.github.io/docs/class14.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes&lt;/b&gt;&lt;/a&gt;.
-   &lt;/div&gt;&lt;/p&gt;
+   &lt;/div&gt;
+   &lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
 &lt;h1 id=&#34;fast-exponentiation&#34;&gt;Fast Exponentiation&lt;/h1&gt;
 
@@ -880,131 +1026,6 @@ sum of all numbers from 1 to &lt;em&gt;n&lt;/em&gt;, which is equal to
       <guid>https://uvacs2102.github.io/ps5announce/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Problem Set 5&lt;/strong&gt; is &lt;a href=&#34;https://uvacs2102.github.io/docs/ps5.pdf&#34;&gt;now posted&lt;/a&gt;, and is due on &lt;strong&gt;Friday, 30
   September at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Class 10: In(tro)duction</title>
-      <link>https://uvacs2102.github.io/class10/</link>
-      <pubDate>Thu, 22 Sep 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://uvacs2102.github.io/class10/</guid>
-      <description>
-
-&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps4&#34;&gt;&lt;strong&gt;Problem Set 4&lt;/strong&gt;&lt;/a&gt; is due &lt;strong&gt;Friday at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;Next week, you should finish reading MCS Chapter 5 (Induction).  Another
-presentation of Induction is &lt;a href=&#34;http://www.people.vcu.edu/~rhammack/BookOfProof/Induction.pdf&#34;&gt;Chapter 10 from the Book of
-Proof&lt;/a&gt;
-(you are not required to read this, but it is encouraged and has lots
-more examples of proofs by induction).&lt;/p&gt;
-
-&lt;p&gt;Exam 1 will be in class on Thursday, 6 October.&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;
-   &lt;center&gt;
-&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;06f4be58f3984fa2b5e65cfaa9525667&#34; data-ratio=&#34;1.77777777777778&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
-   &lt;/center&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;highlightm&#34;&gt;
-   &lt;a href=&#34;https://uvacs2102.github.io/docs/class10.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes and Questions&lt;/b&gt;&lt;/a&gt;.
-   &lt;/div&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.people.vcu.edu/~rhammack/BookOfProof/Induction.pdf&#34;&gt;Chapter 10: Induction from the Book of Proof&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;The Onion, &lt;a href=&#34;http://www.theonion.com/article/bush-earmarks-15-billion-gold-stars-for-education-392&#34;&gt;Bush Earmarks 1.5 Billion Gold Stars For Education&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;power-sets-continued-from-class-9-class9&#34;&gt;Power Sets (continued from &lt;a href=&#34;https://uvacs2102.github.io/class9&#34;&gt;Class 9&lt;/a&gt;)&lt;/h1&gt;
-
-&lt;p&gt;The &lt;strong&gt;power set&lt;/strong&gt; of $A$ ($\textrm{pow}(A)$) is the set of all subsets of
-$A$: $B \in \textrm{pow}(A) \iff B \subseteq A$.&lt;/p&gt;
-
-&lt;p&gt;Prove that the size of the power set of a set $S$ with $|S| = N$ is
-$2^N$.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Proof using Well-Ordering Principle&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;The goal is to prove for all sets $A$: $|\textrm{pow}(A)| = 2^{|A|}$.&lt;/p&gt;
-
-&lt;p&gt;Recall (from &lt;a href=&#34;https://uvacs2102.github.io/class9&#34;&gt;Class 9&lt;/a&gt;) that $N_k = { n | n \in \mathbb{N} \wedge n &amp;lt; k } $ and $|\mathbb{N}_n| = n$.&lt;/p&gt;
-
-&lt;p&gt;Because of the bijection between any set $A$ where $|A| = n$ to $\mathbb{N}_n$, we can prove the general property by  showing $\forall n \in \mathbb{N} \ldotp P(n)$ where $P(n) ::= |\textrm{pow}(\mathbb{N}_n)| = 2^n$.&lt;/p&gt;
-
-&lt;p&gt;We follow the structure of every well-ordering proof:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Define the set of counterexamples:
-$$
-C ::= { n \in \mathbb{N} | \quad |\textrm{pow}(\mathbb{N}_n)| \neq 2^n }
-$$&lt;/li&gt;
-&lt;li&gt;Assume $C$ is $\fillin\fillin\fillin$.&lt;/li&gt;
-&lt;li&gt;By the well-ordering principle, there must be some smallest element, $m \in C$.&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Reach a contradiction: we show that $\fillin\fillin\fillin$ holds.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Since $m$ is the smallest element of $C$, $P(n)$ must hold for all $\fillin\fillin\fillin$.&lt;/li&gt;
-&lt;li&gt;We know $P(0)$ is true since $\mathbb{N}_0 = \emptyset$ and $\textrm{pow}(\emptyset) = \fillin\fillin\fillin\fillin$.  We have, $|\textrm{pow}(\mathbb{N}_0)| =  \fillin\fillin = \fillin\fillin$, satisfying $P(0)$.&lt;/li&gt;
-&lt;li&gt;Thus, $m &amp;gt; 0$.  This means $m - 1 \in \mathbb{N}$.&lt;/li&gt;
-&lt;li&gt;So, we know $P(\fillin\fillin)$ holds.&lt;/li&gt;
-&lt;li&gt;Thus, we can construct $\textrm{pow}(\mathbb{N}&lt;em&gt;{m})$ by keeping all the elements of $\textrm{pow}(\mathbb{N}&lt;/em&gt;{m - 1})$ and adding each of those elements with $(m-1)$ inserts.  More formally,
-$$
-\textrm{pow}(\mathbb{N}&lt;em&gt;m) = \textrm{pow}(\mathbb{N}&lt;/em&gt;{m - 1}) \quad \cup \bigcup&lt;em&gt;{S \in \textrm{pow}(\mathbb{N}&lt;/em&gt;{m - 1})} (S \cup \fillin\fillin\fillin)
-$$
-The size of this set is $2 |\textrm{pow}(\mathbb{N}&lt;em&gt;{m - 1})|$ since it contains two sets for each set in $\textrm{pow}(\mathbb{N}&lt;/em&gt;{m - 1})$ (the original one, and the one with $m-1$ added, which we know is a new set since $m - 1 \notin \mathbb{N}_{m - 1}$).&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;Since $P(m-1)$, we know $|\textrm{pow}(\mathbb{N}&lt;em&gt;{m - 1})| = \fillin\fillin\fillin$. The size of the new set, $|\textrm{pow}(\mathbb{N}&lt;/em&gt;{m})| = 2 \cdot 2^{m - 1} = 2^{m}$.  This means that $P(m)$ holds.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Hence, $C$ must be empty.  We reached a contradiction using the well-ordering principle by showing the $P(m)$ holds for $m \in C$, which must mean the $C$ is empty.  If there are no counter-examples, then $P(n)$ holds for all $n \in \mathbb{N}$.&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h1 id=&#34;induction-principle&#34;&gt;Induction Principle&lt;/h1&gt;
-
-&lt;p&gt;Let $P$ be a predicated on $\mathbb{N}$.  If&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;$P(0)$ is true, and&lt;/li&gt;
-&lt;li&gt;$P(n) \implies P(n + 1)$ for all $n \in \mathbb{N}$,&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;then&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;$P(m)$ is true for all $m \in \mathbb{N}$.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;template-for-induction-proofs&#34;&gt;Template for Induction Proofs&lt;/h2&gt;
-
-&lt;ol&gt;
-&lt;li&gt;State, &amp;ldquo;We prove by induction.&amp;rdquo;&lt;/li&gt;
-&lt;li&gt;Define a predicate, $P(n)$.  This is the &lt;em&gt;induction hypothesis&lt;/em&gt;.  Our goal is to show that $P(n)$ is true for all $n \in \mathbb{N}$.&lt;/li&gt;
-&lt;li&gt;Prove $P(0)$ is true.  (&lt;em&gt;base case&lt;/em&gt; or &lt;em&gt;basis step&lt;/em&gt;.)&lt;/li&gt;
-&lt;li&gt;Prove that $P(n) \implies P(n + 1)$ for every $n \in \mathbb{N}$.  (&lt;em&gt;induction step&lt;/em&gt;)&lt;/li&gt;
-&lt;li&gt;Conclude that $P(n)$ is true for all $n \in \mathbb{N}$ by induction.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;How is the method of &lt;em&gt;proof by induction principle&lt;/em&gt; similar to and different from &lt;em&gt;proof by well-ordering principle&lt;/em&gt;?&lt;/p&gt;
-
-&lt;h2 id=&#34;induction-practice&#34;&gt;Induction Practice&lt;/h2&gt;
-
-&lt;p&gt;Prove the non-negative integers are well ordered by the induction principle.&lt;/p&gt;
-
-&lt;p&gt;###&lt;/p&gt;
-
-&lt;p&gt;Prove the power set size property, $|\textrm{pow}(A)| = 2^{|A|}$, by
-induction.&lt;/p&gt;
-
-&lt;p&gt;###&lt;/p&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
 </description>
     </item>
     

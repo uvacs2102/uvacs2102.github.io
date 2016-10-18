@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Class 15: Stable Matchings  &middot; cs2102: Discrete Math</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="" />
+
+<meta name="keywords" content="">
+
+
+<meta property="og:title" content="Class 15: Stable Matchings  &middot; cs2102: Discrete Math ">
+<meta property="og:site_name" content="cs2102: Discrete Math"/>
+<meta property="og:url" content="https://uvacs2102.github.io/class15/" />
+<meta property="og:locale" content="en-us">
+
+
+<meta property="og:type" content="article" />
+<meta property="og:description" content=""/>
+<meta property="og:article:published_time" content="2016-10-18T00:00:00Z" />
+<meta property="og:article:modified_time" content="2016-10-18T00:00:00Z" />
+
+  
+
+  
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@" />
+<meta name="twitter:creator" content="@" />
+<meta name="twitter:title" content="Class 15: Stable Matchings" />
+<meta name="twitter:description" content="" />
+<meta name="twitter:url" content="https://uvacs2102.github.io/class15/" />
+<meta name="twitter:domain" content="https://uvacs2102.github.io">
+  
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "headline": "Class 15: Stable Matchings",
+    "author": {
+      "@type": "Person",
+      "name": "http://profiles.google.com/+?rel=author"
+    },
+    "datePublished": "2016-10-18",
+    "description": "",
+    "wordCount":  538 
+  }
+</script>
+
+
+
+<link rel="canonical" href="https://uvacs2102.github.io/class15/" />
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://uvacs2102.github.io/touch-icon-144-precomposed.png">
+<link href="https://uvacs2102.github.io/favicon.png" rel="icon">
+<meta name="theme-color" content="#2053AB">
+<meta name="generator" content="Hugo 0.16" />
+
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,900,900i|Open+Sans|Raleway" rel="stylesheet">
+<link rel="stylesheet" href="https://uvacs2102.github.io/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://uvacs2102.github.io/css/style.css">
+
+
+  
+</head>
+<body>
+  <main id="main-wrapper" class="container main_wrapper has-sidebar">
+    <header id="main-header" class="container main_header">
+  <div class="container brand">
+  <div class="container title h1-like">
+  <a class="baselink" href="https://uvacs2102.github.io">
+  cs2102
+
+</a>
+
+</div>
+
+  
+<div class="container topline">
+  
+  Discrete Mathematics
+
+
+</div>
+
+
+</div>
+
+  <nav class="container nav primary no-print">
+  
+
+
+  
+<a href="https://uvacs2102.github.io/syllabus">Syllabus</a>
+
+<a href="https://uvacs2102.github.io/schedule">Schedule</a>
+
+<a href="https://uvacs2102.github.io/officehours">Office Hours</a>
+
+<a href="https://uvacs2102.github.io/docs/mcs.pdf">MCS Book</a>
+
+<a href="https://uvacs2102.github.io/pledge">Course Pledge</a>
+
+<a href="https://collab.itc.virginia.edu/portal/site/e0b17949-c94c-466b-835a-196381f3f911?panel=Main">Collab Site</a>
+
+<a href="https://uvacs2102.github.io/challenges">Challenges</a>
+
+<a href="https://uvacs2102.github.io/docs/ps1.pdf">Problem Set 1</a>
+
+<a href="https://uvacs2102.github.io/docs/ps2.pdf">Problem Set 2</a>
+
+<a href="https://uvacs2102.github.io/docs/ps3.pdf">Problem Set 3</a>
+
+<a href="https://uvacs2102.github.io/docs/ps4.pdf">Problem Set 4</a>
+
+<a href="https://uvacs2102.github.io/docs/ps5.pdf">Problem Set 5</a>
+
+<a href="https://uvacs2102.github.io/docs/ps6.pdf">Problem Set 6</a>
+
+<a href="https://uvacs2102.github.io/post" title="Show list of posts">Posts</a>
+
+
+</nav>
+
+<div class="container nav secondary no-print">
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+  
+
+</header>
+
+
+<article id="main-content" class="container main_content single">
+  <header class="container hat">
+  <center><h1>Class 15: Stable Matchings
+</h1></center>
+
+  <div class="metas">
+<time datetime="2016-10-18">18 Oct, 2016</time>
+
+
+  
+  <br>
+  
+
+
+</div>
+
+</header>
+
+  <div class="container content">
+  
+
+<h3 id="schedule">Schedule</h3>
+
+<p><strong>There is no class Thursday (Oct 20).</strong> Please use the class time to do
+  something worthwhile and fulfilling.</p>
+
+<p><a href="/ps/ps6"><strong>Problem Set 6</strong></a> (is posted now) is due <strong>21
+October (Friday) at 6:29pm</strong>.</p>
+
+<p><div class="notpdf">
+   <center></p>
+
+<p></center></p>
+
+<h1 id="links">Links</h1>
+
+<p><a href="http://www.nytimes.com/2014/12/07/nyregion/how-game-theory-helped-improve-new-york-city-high-school-application-process.html?_r=0">How Game Theory Helped Improve New York City’s High School Application Process</a>, New York Times, 5 December 2014.</p>
+
+<p><a href="http://www.nrmp.org/match-process/match-algorithm/">National Resident Matching Program</a> (how medical school graduates are matched to residency programs)</p>
+
+<blockquote>
+<p><em>Can anyone else see my rank order list (ROL)</em>?
+Your rank order list is confidential.  Program rank order lists can be seen only by the program director and coordinator, the institutional official and administrator, and NRMP staff (unless you give your username and password to someone else, which is a violation of the Match agreement).
+(<a href="http://www.nrmp.org/match-process/match-algorithm/">Frequently Asked Question</a> on NRMP)</p>
+</blockquote>
+
+<p><a href="http://www.oblivc.org/matching">Secure Stable Matching</a>: Jack Doerner,
+David Evans, abhi shelat. <a href="http://oblivc.org/docs/matching.pdf"><em>Secure Stable Matching at
+Scale</em></a>.  In <a href="https://www.sigsac.org/ccs/CCS2016/"><em>23<sup>rd</sup> ACM
+Conference on Computer and Communications
+Security</em></a> (CCS). Vienna,
+Austria. 24-28 October 2016.</p>
+
+<p><div class="highlightm">
+   <a href="/docs/class15.pdf">See PDF Version for <b>Notes</b></a>.
+   </div></p>
+
+<p></div><!--endpdf--></p>
+
+<p><div class="latex"></p>
+
+<h1 id="stable-matching">Stable Matching</h1>
+
+<p><strong>Definition.</strong> $M = { (a_1, b_1), (a_2, b_2), \cdots, (a_n, b_n) }$ is a
+  <em>stable matching</em> between two sets $A = { a_1, \cdots, a_n }$ and $B
+  = { b_1, \cdots, b_n }$ with respective preference orderings $\prec_A$ and $\prec_B$ if there is no pair $(a_i, b_j)$ where $b<em>i \prec</em>{a_i} b_j$ and $a<em>j \prec</em>{b_j} a_i$.</p>
+
+<p>How do we know there is always a stable matching between any two
+equal-size sets?</p>
+
+<p>##</p>
+
+<h1 id="gale-shapley-algorithm">Gale-Shapley Algorithm</h1>
+
+<p>Download the full matching code: <a href="/docs/matching.py">matching.py</a> (assertions and comments removed here for space)</p>
+
+<pre><code class="language-python">def gale_shapley(A, B):
+    pairings = {} # dictionary b: a pairings
+    unpaired = set(a for a in A.keys()) # unpaired a's
+    proposals = {a: 0 for a in A.keys()} # keep track of who gets next proposal
+
+    while unpaired:
+        a = unpaired.pop()
+        ap = A[a] # a's preference list
+        assert proposals[a] &lt; len(ap)
+        choice = ap[proposals[a]]
+        proposals[a] += 1
+        if choice in pairings: # a's choice already has a match
+            amatch = pairings[choice]
+            bp = B[choice]
+            if bp.index(a) &lt; bp.index(amatch):
+                pairings[choice] = a
+                unpaired.add(amatch) # lost match
+            else:
+                unpaired.add(a)
+        else:
+            pairings[choice] = a
+    return [(a, b) for (b, a) in pairings.items()]
+</code></pre>
+
+<!--page-->
+
+<pre><code class="language-python">A = {&quot;Anna&quot;: [&quot;Kristoff&quot;, &quot;Olaf&quot;], &quot;Elsa&quot;: [&quot;Olaf&quot;, &quot;Kristoff&quot;]}
+B = {&quot;Kristoff&quot;: [&quot;Anna&quot;, &quot;Elsa&quot;], &quot;Olaf&quot;: [&quot;Elsa&quot;, &quot;Anna&quot;]}
+gale_shapley(A, B)
+</code></pre>
+
+<h2 id="modeling-the-gale-shapley-program-as-a-state-machine">Modeling the Gale-Shapley program as a state machine</h2>
+
+<p>$S = $</p>
+
+<p>$G = $</p>
+
+<p>$q_0 = $</p>
+
+<p><strong>Prove termination.</strong> The Gale-Shapley program, modeled by the state
+  machine, eventually returns.</p>
+
+<p>#</p>
+
+<p><strong>Prove correctness.</strong> The Gale-Shapley program returns a <em>stable matching</em> of the two input sets and preferences.</p>
+
+<p>##</p>
+
+<h1 id="secure-multi-party-computation">Secure Multi-Party Computation</h1>
+
+<p><em>Secure Multi-Party Computation</em> (MPC) allows two (or more) parties to
+jointly compute a function of their two private inputs, without leaking
+any information about those inputs (other than what can be inferred from
+the revealed result).  See web versoin for links.</p>
+
+<h2 id="garbled-logic-gate">Garbled Logic Gate</h2>
+
+<p>$p<em>{T,F}$, $q</em>{T,F}$, and $x_{T,F}$ are randomly selected keys that
+represent the respective True and False values.</p>
+
+<p>Randomly permute the rows, and only send the output column.</p>
+
+<p>\begin{center}
+\begin{tabular}{ccc}
+$P$ &amp; $Q$ &amp; $X = P \wedge Q$ \ \hline
+$p_T$ &amp; $q_T$ &amp; $E(\fillin, x_T)$ <br />
+$p_T$ &amp; $q_F$ &amp; $E(\fillin, x_F)$ <br />
+$p_F$ &amp; $q_T$ &amp; $E(\fillin, x_F)$ <br />
+$p_F$ &amp; $q_F$ &amp; $E(\fillin, x_F)$ <br />
+\end{tabular}
+\end{center}</p>
+
+<h2 id="xor-secret-sharing">XOR Secret Sharing</h2>
+
+<p>$A \oplus R = C$. What is $C \oplus R$?</p>
+
+<p></div></p>
+
+</div>
+
+
+  <footer class="container">
+  <div class="container navigation no-print">
+  <h2>Navigation</h2>
+  
+  
+
+    
+    <a class="prev" href="https://uvacs2102.github.io/ps6announce/" title="Problem Set 6">
+      Previous
+    </a>
+    
+
+    
+
+  
+
+
+</div>
+
+  
+
+</footer>
+
+</article>
+      <footer id="main-footer" class="container main_footer">
+  
+
+  <div class="container nav foot no-print">
+  
+
+  <a class="toplink" href="#">back to top</a>
+
+</div>
+
+  <div class="container credits">
+  
+<div class="container footline">
+  
+  <p align="center">cs2102: Discrete Mathematics | University of Virginia, Fall 2016 | <a href="https://www.cs.virginia.edu/evans">David Evans</a>
+
+
+</div>
+
+
+  
+
+</div>
+
+</footer>
+
+    </main>
+    
+
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-3775212-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+    
+  </body>
+</html>
+
