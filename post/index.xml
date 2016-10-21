@@ -6,8 +6,18 @@
     <description>Recent content in Posts on cs2102: Discrete Math</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 18 Oct 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 21 Oct 2016 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://uvacs2102.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Problem Set 7</title>
+      <link>https://uvacs2102.github.io/ps7announce/</link>
+      <pubDate>Fri, 21 Oct 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/ps7announce/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Problem Set 7&lt;/strong&gt; is &lt;a href=&#34;https://uvacs2102.github.io/docs/ps7.pdf&#34;&gt;now posted&lt;/a&gt;, and is due on &lt;strong&gt;Friday, 28 October at 7:29pm&lt;/strong&gt;.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Class 15: Stable Matchings</title>
@@ -990,17 +1000,6 @@ sum of all numbers from 1 to &lt;em&gt;n&lt;/em&gt;, which is equal to
    &lt;/blockquote&gt;&lt;/p&gt;
 
 &lt;p&gt;Congratulations to Henry Spece for solving the challenge!&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Problem Set 5</title>
-      <link>https://uvacs2102.github.io/ps5announce/</link>
-      <pubDate>Fri, 23 Sep 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://uvacs2102.github.io/ps5announce/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Problem Set 5&lt;/strong&gt; is &lt;a href=&#34;https://uvacs2102.github.io/docs/ps5.pdf&#34;&gt;now posted&lt;/a&gt;, and is due on &lt;strong&gt;Friday, 30
-  September at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
 </description>
     </item>
     
