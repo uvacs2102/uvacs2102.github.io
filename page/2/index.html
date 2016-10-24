@@ -138,17 +138,140 @@
   <center>
   <b>Recent Posts: </b>
   
+    <a href="https://uvacs2102.github.io/ps7revised/">Problem Set 7 - Revised</a> |
+  
     <a href="https://uvacs2102.github.io/ps7announce/">Problem Set 7</a> |
   
     <a href="https://uvacs2102.github.io/class15/">Class 15: Stable Matchings</a> |
-  
-    <a href="https://uvacs2102.github.io/ps6announce/">Problem Set 6</a> |
   
   <a href="/post">More...</a>
   </center>
   <p></p>
 
   
+  
+    <p class="fronthead"><a href="https://uvacs2102.github.io/class12/">Class 12: Review</a> (Thu, 29 Sep 2016)</p>
+     
+
+<h3 id="schedule">Schedule</h3>
+
+<p><a href="/ps/ps5"><strong>Problem Set 5</strong></a> is due <strong>Friday at 6:29pm</strong>.</p>
+
+<p><strong>Exam 1</strong> is in class on <strong>Thursday, 6 October</strong>.  See <a href="/class11">Notes
+  11</a> for details.  Remember to bring a good writing
+  instrument (sharp pencil is recommended) and your page of notes to the
+  exam.</p>
+
+<p><div class="notpdf">
+   <center></p>
+
+<p><script async class="speakerdeck-embed" data-id="b1ae1f6618b747fca08e0d2f64aa2586" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+   </center></p>
+
+<p><div class="highlightm">
+   <a href="/docs/class12.pdf">See PDF Version for <b>Notes</b></a>.
+   </div>
+   </div><!--endpdf--></p>
+
+<p><div class="latex"></p>
+
+<h2 id="exam-review">Exam Review</h2>
+
+<p>Below are some notations you should understand.  We use variables $P$
+and $Q$ to represent logical propositions (with \T\ or \F\ value), $A$
+and $B$ and $D$ (domain of discourse) to represent sets, and $x$
+represents any mathematical object.</p>
+
+<p>\begin{tabular}{cl}
+\multicolumn{2}{c}{\bf Logical Operators} <br />
+$P$ \smallcaps{implies} $Q$, $P \implies Q$ &amp; Logical implication: when $P$ is \T, $Q$ must be \T <br />
+$P$ \smallcaps{iff} $Q$, $P \iff Q$ &amp; Double implication: $P \implies Q \vee Q \implies P$ <br />
+\smallcaps{not}$(P)$, $\neg P$, $\overline{P}$ &amp;  Logical negation <br />
+$P$ \smallcaps{and} $Q$, $P \wedge Q$ &amp; Logical conjunction (\T\ when both $P$ and $Q$ are \T) <br />
+$P$ \smallcaps{or} $Q$, $P \vee Q$ &amp; Logical disjunction (\T\ when $P$ or $Q$ is \T\ (or both) <br />
+$P$ \smallcaps{xor} $Q$, $P \oplus Q$ &amp; Exlusive or (\T\ when either $P$ or $Q$ is \T, but not both<br />
+\multicolumn{2}{c}{\bf Quantifiers} <br />
+$\forall x \in A \ldotp P(x)$ &amp; $P(x)$ for {\em every} element $x$ of the set $A$ <br />
+$\exists x \in A \ldotp P(x)$ &amp; $P(x)$ for {\em at least one} element $x$ of the set $A$ <br />
+\multicolumn{2}{c}{\bf Set Operators} <br />
+$x \in A$ &amp; Set membership, $A$ contains the element $x$ <br />
+$x \notin A$ &amp; Set non-membership, $A$ does not contain $x$ <br />
+$A \subseteq B$ &amp; $A$ is a subset of $B$: $\forall x \in A. x \in B.$ <br />
+$A = B$ &amp; set equality: $A \subseteq B \vee B subseteq A$ <br />
+$A \cup B$ &amp; Set Union: $\forall x. x \in A \cup B \iff x \in A \vee x \in B.$ <br />
+$A \cap B$ &amp; Set Intersection: $\forall x. x \in A \cup B \iff x \in A \wedge x \in B.$ <br />
+$ A - B$ &amp; Set Difference: $\forall x. x \in A - B \iff x \in A \wedge x \notin B.$ <br />
+$ \overline{A}$ &amp; Set Complement: $\forall x. x \in D. x \in \overline{A} \iff x \notin A.$ <br />
+$ A \times B$ &amp; Cartesian Product: $\forall a \in A, b \in B \ldotp (a, b) \in A \times B.$<br />
+$ \textrm{pow}(A)$ &amp; Power Set: $S \in A \iff S \subseteq A$. <br />
+\end{tabular}</p>
+
+<!--page-->
+
+<h2 id="well-ordering-principle">Well-Ordering Principle</h2>
+
+<p>Remember the well-ordering principle template from Class 3:</p>
+
+<p>To prove that $P(n)$ is true for all $n \in \mathbb{N}$:</p>
+
+<ol>
+<li>Define the set of counterexamples, $C ::= { n \in \mathbb{N} | NOT(P(n)) }$.</li>
+<li>Assume for contradiction that $C$ is non-empty.</li>
+<li>By the well-ordering principle, there must be some smallest element, $m \in C$.</li>
+<li>Reach a contradiction (this is the creative part!).  One way to reach a contradiction would be to show $P(m)$.  Another way is to show there must be an element $m&rsquo; \in C$ where $m&rsquo; &lt; m$.</li>
+<li>Conclude that $C$ must be empty, hence there are no counter-examples and $P(n)$ always holds.</li>
+</ol>
+
+<p>Since we didn&rsquo;t finish the winning strategy proof in class, I&rsquo;ve written
+it out fully here.</p>
+
+<p><strong>Theorem.</strong> Player 1 has a winning strategy in Take-Away if
+  the number of sticks, $n$ is not divisible by 4.</p>
+
+<p>For any induction proof, the first thing we need to do is write the
+theorem as a predicate on the natural numbers.</p>
+
+<p>$$\forall n \in \mathbb{N} \ldotp P(n) ::= \textrm{ Player 1 has a winning strategy if }\exists a \in { 1, 2, 3 }, \exists k \in \mathbb{N} \textrm{ such that } n = 4k + a.$$</p>
+
+<p><em>Base cases</em>: $P(1)$, $P(2)$, $P(3)$.</p>
+
+<p>$P(1)$: If there is $1$ stick remaining, Player 1 wins by taking 1 stick.<br />
+$P(2)$: If there are $2$ sticks remaining, Player 1 wins by taking 2 sticks.<br />
+$P(3)$: If there are $3$ sticks remaining, Player 1 wins by taking 3 sticks.</p>
+
+<p><em>Inductive case</em>: Using strong induction, $\forall m \in \mathbb{N}, m \ge 4 \ldotp (\forall k \in \mathbb{N}, k \le m. P(k)) \implies P(m + 1)$.</p>
+
+<p>Since $m \ge 4$ we can write $m = 4k + b$ for some $k \in \mathbb{N}^{+}$ and $b \in {0, 1, 2, 3}$.</p>
+
+<p>We consider four cases for each value of $b$.</p>
+
+<p>Case 3: $b = 3$.  Since $m = 4k + 3$, $m + 1 = 4k + 4 = 4(k + 1)$.
+Since $m + 1$ is divisible by 4, $P(m+ 1)$ holds because the predicate
+makes no claims when $n$ is divisible by 4.</p>
+
+<p>Cases 0, 1, 2: Since $m = 4k + b$ for $b \in {0, 1, 2}$, we know $m +
+1 = 4k + c$ for $c \in {1, 2, 3}$ (since $c = b + 1$ to produce $m +
+1$).  We need to show $P(m+1)$, which means showing that player 1 has a
+winning strategy for $n = 4k + c$, $c \in {1, 2, 3}$.  Player 1 takes
+$c$ sticks, leaving $4k$ sticks.</p>
+
+<p>For the next turn, Player 2 can remove 1, 2, or 3 sticks, leaving $4k -
+d$ sticks, $d \in {1, 2, 3}$.  This can be simplified to $4(k - 1) +
+e$ sticks where $e = 4 - d$ since $4k - 4 + (4 - d) = 4k - d = 4(k -
+1) + e$.  Hence, after Player 2&rsquo;s turn it will be Player 1&rsquo;s turn with
+$4(k - 1) + e$ sticks, $e \in {1, 2, 3}$.  We know $4(k - 1) + e &lt; m$
+and it is not divisible by 4.  So, Player 1 has a winning strategy from
+$P(m + 1)$ since she has a move to make such that no matter what move
+player 2 makes, it leads to a number that is not divisible by 4 and is
+less than $m$, which we know is a position where Player 1 has a winning
+strategy but strong induction.</p>
+
+<p>Note that $4(k - 1) + e$ is $m - 1$, $m - 2$ or $m - 3$, so we need to
+know $m \ge 4$ for this to be valid.  That&rsquo;s why we needed three base
+cases!</p>
+
+<p></div></p>
+
   
     <p class="fronthead"><a href="https://uvacs2102.github.io/ps4comments/">Problem Set 4 Comments</a> (Thu, 29 Sep 2016)</p>
      <p>The solutions and comments for PS4 are now posted in collab: <a href="https://collab.itc.virginia.edu/access/content/group/e0b17949-c94c-466b-835a-196381f3f911/ps4_solutions.pdf">PDF</a></p>
@@ -642,263 +765,6 @@ alternate proof.)</p>
 <p>#</p>
 
 <p></div></p>
-
-  
-    <p class="fronthead"><a href="https://uvacs2102.github.io/surveyquestions3/">Survey Questions (Part 3)</a> (Tue, 20 Sep 2016)</p>
-     <p>Here&rsquo;s the third (and final!) installment of responses to questions
-submitted in the registration surveys (see <a href="/surveyquestions">Part 1</a>
-and <a href="/surveyquestion2">Part 2</a> for the earlier responses).  If you
-missed your chance to ask a question on the registration survey, or have
-new questions now the course is further along, feel free to send them
-(directly or anonymous is fine if you prefer).</p>
-
-<p><div class="question">
-What does Professor Evans do in his free time?
-   </div>
-   <div class="answer">
-The meaning of &ldquo;free time&rdquo; is pretty strange for a professor, since all
-your time is basically &ldquo;free&rdquo;.  You have remarkably few real
-requirements on your time (other than showing up for class a couple
-times a week every other semester, and filing an annual report once a
-year), and can mostly <a href="http://www.cs.virginia.edu/~evans/paradise/time/">choose how you want to spend your
-time</a>.</p>
-
-<p>How you might view things more normally, one&rsquo;s view of &ldquo;free time&rdquo;
-changes a lot after having a family.  Before that, I would have
-considered my teaching and research work as the main thing I do, and the
-time I&rsquo;m not doing that as &ldquo;free time&rdquo;, which I would mostly spend
-<a href="http://www.cs.virginia.edu/~evans/pictures/basement/">playing</a> and
-<a href="http://www.cs.virginia.edu/~evans/france98/">wa</a><a href="http://www.cs.virginia.edu/~evans/pictures/columbus/">tc</a><a href="http://www.cs.virginia.edu/~evans/pictures/korea2002/">hi</a><a href="http://www.cs.virginia.edu/~evans/pictures/za2010/">ng</a>
-soccer, music, and mostly bad TV shows.</p>
-
-<p>Now, I view the main things I do as revolving around my children (4-year
-old daughter and 1 &frac12;-year old son), and can mostly schedule the rest
-of my life around that (one of the perks of being a professor, instead
-of having a real job!).  I do get to do lots of fun things with the kids
-but don&rsquo;t really consider that &ldquo;free time&rdquo; in the traditional sense.</p>
-
-<p></div></p>
-
-<p><div class="question">
-In the lecture, did you choose to mod(629) because its semiprime? And if so is that  why the graph became super scattered?
-   </div>
-   <div class="answer">
-   Great question!</p>
-
-<p>Since its been a while, here&rsquo;s the picture from <a href="/class1">Class 1</a>:</p>
-
-<p><center><img src="/images/figure629.png"></center></p>
-
-<p>It was generated by this (very ugly and brute force) python code:</p>
-
-<pre><code class="language-Python">
-import numpy as np
-import matplotlib.pyplot as plt
-
-def ellip_curve():
-    x = np.arange(-2, 10, 0.1);
-    y = np.sqrt(x ** 3 + 7)
-    plt.plot(x, y)
-    plt.show()
-
-def ellip_curve_field():
-    xpoints = []
-    ypoints = []
-    G = 629
-    for x in range(500):
-        for y in range(500):
-            if y ** 2 % G == (x ** 3 + 7) %  G:
-                xpoints.append(x)
-                ypoints.append(y)
-    plt.plot(xpoints, ypoints, marker='+', linestyle='none', color='r')
-    plt.show()
-
-ellip_curve_field()
-</code></pre>
-
-<p>I picked 629 just because its one of my <a href="http://dorina.org/">favorite numbers</a>, but the fact that is has two large factors (17 * 37) makes it produce a less regular graph than we would get for a more divisible number.  For example, here is the graph for modulus 628 (<a href="http://www.wolframalpha.com/input/?i=factor+628">2 * 2 * 157</a>):
-<center><img src="/images/figure628.png"></center>
-which seems to have more patterns in it than the one for modulus 631 (<a href="http://www.wolframalpha.com/input/?i=factor+631">prime</a>)
-<center><img src="/images/figure631.png"></center>
-Of course, the actual modulus values used for cryptosystems like bitcoin are
-huge prime numbers (2<sup>256</sup> - 2<sup>32</sup> - 977 for bitcoin&rsquo;s curve, which is otherwise the same as this one).
-   </div>
-   <div class="question">
-How long have you been teaching this course for?
-   </div>
-   <div class="answer">
-When you filled out the survey, about 3 days.  Now, its been about 4 weeks.  This is my first time teaching cs2102, but I&rsquo;ve taught <a href="https://www.cs.virginia.edu/evans/courses">lots of other courses</a>.
-   </div></p>
-
-<p><div class="question">
-More applications of Discrete Math (we talked about encryption, which was really interesting, but I would like to hear about more applications); Professor Evans&rsquo; field of research and maybe its relation to Discrete Math
-   </div>
-   <div class="answer">
-Yes, I&rsquo;ll try to keep this in mind and connect things to applications as
-much as possible, but the gap between some of the theory we will learn
-and applications is sometimes fairly large (that is, we need to get
-fairly deep into the theory before we can connect it to applications
-well).  That said, nearly every concept in this class does have clear connections to applications in computing, and we&rsquo;ll see many examples, and I&rsquo;m always happy to talk about more in office hours.</p>
-
-<p>My research is in computer security and applied cryptography, which is
-entirely built on discrete math.  I will try to integrate this into some
-of the lectures, but definitely have some classes toward the end of the
-semester that get more into how discrete math is essential for
-cryptography, and maybe even how some of the problems you&rsquo;re learning
-about in this class can be used to enable zero-knowledge proofs (that
-is, proving that you know something without revealing anything about it)
-and multi-party computation (enabling two people to compute a function
-together without revealing any information about their inputs).
-   </div></p>
-
-<p><div class="question">
-How to get an A?
-   </div>
-   <div class="answer">
-If you are able to demonstrate good understanding of the key concepts in
-the course, and ability to use them to solve problems well, you&rsquo;ll get
-an A in the class.  Working effectively and consistently on the
-assignments throughout the semester, of course, should help.  It is also
-important to ask for help, focusing on your understanding of concepts,
-not just on the immediate goal of being able to answer some question on
-a problem set.  Most people will also benefit greatly by finding a study group to work with that works well together, where you are enhancing your
-learning by explaining things to others, and testing the limits of your
-understanding by having others question your assumptions and approaches.
-   </div></p>
-
-<p><div class="question">
-How much of this course is pure math, how much is computing, and how much is both? (I apologize for being so vague)
-   </div><div class="answer">
-This is a math course (hence the name Discrete Mathematics), but also a
-computer course (hence the course number cs2102).  I would claim all the
-math we do in the class has some significant relevance to computing, but
-it is also selected partly for relevance to computing and partly for
-being interesting math (at least in my view, or that of the textbook
-author&rsquo;s).  I would say the decisions about what to include in the class
-are based about 50% on relevance to computing and 50% on interesting
-math (which would mean that something that is highly relevant to
-computing but uninteresting math would not be covered in favor of
-something that is less directly relevant to computing but interesting
-math).
-   </div><div class="question">
-Are there available solutions to the textbook practice problems?
-   </div><div class="answer">
-Not for most of them.  I understand that it would be very helpful to be
-able to look at solutions after you try problems yourself.  We&rsquo;ll
-provide solutions to the problems assigned on problem sets, but if you
-have other problems that you&rsquo;ve tried to solve on your own and want to get feedback on your solution or suggestions for a good solution, feel free to send your solution (or attempt and explain what you are trying to do) to me.
-   </div><div class="question">
-I want to major in CS, but I am not sure I want to go into programming. What can Discrete Mathematics help with in deciding a different career path using a computer science degree?
-   </div><div class="answer">
-I don&rsquo;t expect this class will be that helpful directly in exploring
-possible computing careers, but do hope it will give you the background
-to succeed in many possible careers.  What I would say is that if you
-enjoy and excel and the kinds of problems we do in this class, you are
-well suited to careers in aspects of computing at the level of
-designing, reasoning about, and defining systems, as well as in careers where you are reasoning about ideas.
-   </div><div class="question">
-How is the course related to coding?
-   </div><div class="answer">
-I usually interpret <em>coding</em> as the process of turning a well described
-algorithm into code in some programming language.  This course won&rsquo;t
-help too much with that.  It is more related to <em>programming</em>, which I
-view as the process of finding a program that solves some problem.  This
-includes both devising the algorithms and data structures to use, and
-writing the code to implement them.  This course should help you get
-better at constructing programs and reasoning about whether or not they
-are correct.
-   </div><div class="question">
-Were you ever discouraged by failure while studying computer science?
-   </div><div class="answer">
-Yes, many times!  As one memorable example, in my &ldquo;Advanced Computer
-Science&rdquo; course in high school the teacher assigned us to implement
-quicksort (I think this was in BASIC).  I couldn&rsquo;t get it to work, and
-got very frustrated, and refused to turn anything in.  Other students
-turned in obviously broken programs, but got most credit for their
-attempts.  I ended up getting a B in the course as a result, and being
-very upset about it, but to no avail.  I did make my peace with
-quicksort later, and its now one of my favorite algorithms (and I&rsquo;ve
-been privledged to meet its inventor, Tony Hoare, several times and even
-have dinner with him).
-   </div><div class="question">
-Is this course harder to comprehend than other courses and what is the best way to prepare for this course and the exams and home work that will be provided?
-   </div><div class="answer">
-I think this course is probably harder to comprehend than most courses
-you take, both because of the material and my general approach to teaching.  For most students, the material in this course requires you to learn to think in new and unfamiliar ways, and to develop new mental models, not just to learn new things that fit well into your well-developed mental models.  My approach to teaching emphasizes challenging students to learn things by exploring things on your own after (hopefully) the right context has been developed to enable this.  I believe this is important for really learning things well, as well as developing your abilities to be creative thinkers.  But, this is different from what students typically expect and are accustomed to classes where you are given a lot more guidance about what to do and prescribed how to do things.
-      </div><div class="question">
-Will I be able to survive with Python experience but no previous Java experience?
-    </div><div class="answer">
-Yes.  There is no requirement to have experience with either Python or Java, but just to have enough familiarity with some programming language to understand programs.
-      </div><div class="question">
-How are exams like?
-    </div><div class="answer">
-The plan for the first exam is to have an in-class exam, with problems
-that you should be well prepared to answer if you understand the problem
-sets.  The exam questions will be similar to problem set questions, but
-less difficult and complex given the limited time available during the
-exam.
-     </div><div class="question">
-How far do you suggest we delve into the world of math in order to become the best computer scientist we can be? What other courses might help broaden our mathematical background in a way that is beneficial to our computer science studies?
-    </div><div class="answer">
-The most direct classes that follow from this one are cs3102 (Theory of
-Computation) and cs4102 (Algorithms).  Many computing courses involve a
-lot of math including graphics (mostly linear algebra), cryptography
-(mostly discrete math), and machine learning (includes more continuous
-math, as well as lots of linear algebra and discrete math).  In general, any good math course should help develop your abstract thinking abilities in ways that will be useful in computing, although some will have more direct applications in computing than others.
-     </div><div class="question">
-How does the material we have learned so far relate to computer science as a whole?  Do programmers in the real world need to know how to write proofs
-    </div><div class="answer">
-If the &ldquo;real world&rdquo; means a typical software developer in industry, then
-it is pretty rare for a programmer to need to write a &ldquo;formal proof&rdquo; in
-a mathematical style, but very common for a programmer to need to form a
-strong argument that convinces others an idea is correct (this is really
-what a proof is).  In terms of mathematical-style proofs, these are very
-common in computing research and most research papers (even in systems
-areas like networking and programming languages) include several proofs.<br />
-    </div><div class="question">
-What is the best internship and extra-curricular programs relating to computer science that you would recommend?
-    </div><div class="answer">
-There are lots of great opportunities at UVA.  I&rsquo;ve been impressed with <a href="http://hackcville.com/">HackCville</a> and the <a href="http://cnsatuva.site/">Computer and Network Security Club</a> is great.</p>
-
-<p>Away from Charlottesvile, the <a href="https://www.recurse.com/">Recurse Center</a>
-is very cool (when I visited it was called Hacker School), and they have
-students for summer sessions.</p>
-
-<p>Lots of students have great experiences doing research over the summer,
-and there are many ways for students to get involved in research groups
-and have paid positions over the summer (including <a href="https://www.jeffersonswheel.org">in
-mine</a>).</p>
-
-<p>I don&rsquo;t want to mention specific companies for internships publicly
-here, but there are some that I&rsquo;ve heard students have great experiences
-at, and other where the experiences are more mixed.  I&rsquo;m happy to share
-my thoughts on this privately during office hours (or make an
-appointment to meet some other time).
-    </div><div class="question">
-Do you like turtles?
-    </div><div class="answer">
-Absolutely!  Its <a href="https://en.wikipedia.org/wiki/Turtles_all_the_way_down">turtles all the way down</a>.
-    </div><div class="question">
-How well have your past students performed in this course? I will admit that Day 1 was a bit intimidating for me.
-    </div><div class="answer">
-I haven&rsquo;t taught this course before, but in general students work hard
-in my classes and hopefully learn a lot, and most students in my classes
-end up getting As.  I don&rsquo;t know what the distribution will be for this
-class (and I don&rsquo;t assign grades with a target distribution in mind),
-but I hope to be able to have at least 2/3rds of the class get As (or at
-least A-s), and the rest all get at least a B (but sometimes there is no
-way to justify the desired grate).
-   </div><div class="question">
-Are any of the homeworks dropped?
-    </div><div class="answer">
-None are &ldquo;dropped&rdquo; per se, but the grades are computed with many
-different weightings (some of which don&rsquo;t count the early homeworks
-heavily, and others which will only count the number of &ldquo;green&rdquo; star or
-better homeworks) and generally the weighting that make your performance
-look best is the one that will determine your grade.  All the homeworks
-as important for learning the material well, but you shouldn&rsquo;t be
-stressed out about getting a low grade on one or two homeworks.
-    </div></p>
 
   
   

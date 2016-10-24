@@ -1037,6 +1037,8 @@ that $0! = 1$.)&lt;/p&gt;
       <guid>https://uvacs2102.github.io/ps/ps7/</guid>
       <description>
 
+&lt;p&gt;[Revision 0.1: 23 October 7:57pm]&lt;/p&gt;
+
 &lt;div class=&#34;latex&#34;&gt;
    \dbox{{\bf Deliverable:} Submit your responses as a
 single, readable PDF file on the collab site before {\bf 6:29pm} on {\bf Friday, 28 October}.  
@@ -1123,8 +1125,10 @@ with AIBO.&lt;/p&gt;&lt;/li&gt;
 
 &lt;h1 id=&#34;gale-shapley-algorithm&#34;&gt;Gale-Shapley Algorithm&lt;/h1&gt;
 
-&lt;p&gt;In &lt;a href=&#34;https://uvacs2102.github.io/class15/&#34;&gt;Class 15&lt;/a&gt;, we developed a
+&lt;p&gt;\vspace&lt;em&gt;{-1ex}
+In &lt;a href=&#34;https://uvacs2102.github.io/class15/&#34;&gt;Class 15&lt;/a&gt;, we developed a
 state machine model for the Gale-Shapley stable matching algorithm:
+\vspace&lt;/em&gt;{-2ex}
 \begin{equation&lt;em&gt;}
 \begin{split}
 S = {(pa&amp;amp;irings, \text{\em proposals}) \, | \
@@ -1132,6 +1136,7 @@ S = {(pa&amp;amp;irings, \text{\em proposals}) \, | \
 &amp;amp; \text{\em proposals} = (r_1, r_2, \cdots, r_n), 0 \le r_i \le n } &lt;br /&gt;
 G = {(\text{\em pa}&amp;amp;\text{\em irings}, \text{\em proposals} = (r_1, r_2, \cdots, r_n)) \rightarrow (\text{\em pairings}&amp;lsquo;, \text{\em proposals}&amp;lsquo;) \, | &lt;br /&gt;
 &amp;amp; i \in { 1, \cdots, n }, r_i &amp;lt; n &lt;br /&gt;
+&amp;amp; \forall b \in B \ldotp (a_i, b) \notin \text{\em pairings} \
 &amp;amp; b_x ::= \text{the}\ r_i\text{-ranked choice for }a_i &lt;br /&gt;
 &amp;amp; \text{\em proposals}&amp;rsquo; = (r_1, \cdots, r_i + 1, \cdots, r_n) &lt;br /&gt;
 &amp;amp; \text{\em pairings}&amp;rsquo; = \begin{cases}
@@ -1139,7 +1144,8 @@ G = {(\text{\em pa}&amp;amp;\text{\em irings}, \text{\em proposals} = (r_1, r_2,
                 \text{\em pairings} \cup { (a_i, b_x)} - { (a_z, b_x) } &amp;amp; \exists a_z \in A \ldotp (a_z, b_x) \in \text{\em pairings} \wedge a&lt;em&gt;z \prec&lt;/em&gt;{b_x} a_i\ \text{(Case 2)} &lt;br /&gt;
                 \text{\em pairings} &amp;amp; \text{otherwise (Case 3)} &lt;br /&gt;
 \end{cases} \
-q_0 = (pa&amp;amp;irings = { }, \text{\em proposals} = (0, 0, \ldots, 0)) &lt;br /&gt;
+&amp;amp; } &lt;br /&gt;
+q_0 = (\text{\em pa}&amp;amp;\text{\em irings} = { }, \text{\em proposals} = (0, 0, \ldots, 0)) &lt;br /&gt;
 \end{split}
 \end{equation&lt;/em&gt;}&lt;/p&gt;
 

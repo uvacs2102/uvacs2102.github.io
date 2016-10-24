@@ -6,8 +6,27 @@
     <description>Recent content on cs2102: Discrete Math</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 21 Oct 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 23 Oct 2016 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://uvacs2102.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Problem Set 7 - Revised</title>
+      <link>https://uvacs2102.github.io/ps7revised/</link>
+      <pubDate>Sun, 23 Oct 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/ps7revised/</guid>
+      <description>&lt;p&gt;A revised version of &lt;strong&gt;Problem Set 7&lt;/strong&gt; is &lt;a href=&#34;https://uvacs2102.github.io/docs/ps7.pdf&#34;&gt;now posted&lt;/a&gt;.
+The change is that an additional constrait was added to the state
+machine transitions (&lt;span class=&#34;math&#34;&gt;&lt;em&gt;G&lt;/em&gt;&lt;/span&gt;):
+&lt;center&gt;
+&lt;span class=&#34;math&#34;&gt;&amp;forall; &lt;em&gt;b&lt;/em&gt; &amp;isin; &lt;em&gt;B&lt;/em&gt; . (&lt;em&gt;a&lt;sub&gt;i&lt;/sub&gt;&lt;/em&gt;, &lt;em&gt;b&lt;/em&gt;) &amp;notin; &lt;em&gt;pairings&lt;/em&gt;&lt;/span&gt;
+&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;This constraint is needed since without it, a member of &lt;span
+class=&#34;math&#34;&gt;&lt;em&gt;A&lt;/em&gt;&lt;/span&gt; might give up a better match for a worse
+one!&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Problem Set 7</title>
@@ -938,68 +957,6 @@ Player 1 has a winning strategy or Player 2 does.&lt;/p&gt;&lt;/li&gt;
 nodes has $n - 1$ edges.&lt;/p&gt;
 
 &lt;p&gt;&lt;/div&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Self-Inverting Relations Challenge Solved!</title>
-      <link>https://uvacs2102.github.io/challenge4/</link>
-      <pubDate>Sat, 24 Sep 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://uvacs2102.github.io/challenge4/</guid>
-      <description>&lt;p&gt;Challenge 4 has been solved by Henry Spece!&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;highlightg&#34;&gt;
-&lt;strong&gt;Challenge 4.&lt;/strong&gt; (From &lt;a href=&#34;https://uvacs2102.github.io/class9&#34;&gt;Class 9&lt;/a&gt;) How many self-inverting relations, &lt;em&gt;R&lt;/em&gt;: &lt;em&gt;N&lt;/em&gt;&lt;sub&gt;&lt;em&gt;k&lt;/em&gt;&lt;/sub&gt; &amp;rarr; &lt;em&gt;N&lt;/em&gt;&lt;sub&gt;&lt;em&gt;k&lt;/em&gt;&lt;/sub&gt;, are there?  (Where &lt;em&gt;N&lt;/em&gt;&lt;sub&gt;&lt;em&gt;k&lt;/em&gt;&lt;/sub&gt; is the set of all non-negative integers less than &lt;em&gt;k&lt;/em&gt;, and a relation is self-inverting if &lt;em&gt;R&lt;/em&gt; = &lt;em&gt;R&lt;/em&gt;&lt;sup&gt;-1&lt;/sup&gt;.)
-   &lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;Henry&amp;rsquo;s answer is below:&lt;/p&gt;
-
-&lt;p&gt;&lt;blockquote&gt;
-2&lt;sup&gt;&lt;em&gt;n&lt;/em&gt;*(&lt;em&gt;n&lt;/em&gt;+1)/2&lt;/sup&gt;&lt;/p&gt;
-
-&lt;p&gt;For each element in the domain, the number of &amp;ldquo;connection&amp;rdquo; possibilities
-for that element to each element of the codomain (given that it can
-either be related or not related to a codomain element) is 2&lt;em&gt;n&lt;/em&gt;, where
-&lt;em&gt;n&lt;/em&gt; is the number of codomain elements.&lt;/p&gt;
-
-&lt;p&gt;This includes the possibility of the element connecting to itself,
-because there are two possibilities involving self connection, and
-2&lt;sup&gt;(&lt;em&gt;n&lt;/em&gt;-1)&lt;/sup&gt; possibilities for connection to non-identical
-elements.  The product of these two results in
-2*2&lt;sup&gt;(&lt;em&gt;n&lt;/em&gt;-1)&lt;/sup&gt; = 2&lt;sup&gt;n&lt;/sup&gt;.&lt;/p&gt;
-
-&lt;p&gt;For each following element in the domain, the relationship with all
-previous elements which have been assigned relationships is fixed.  For
-example, if element &lt;em&gt;a&lt;/em&gt; in the domain is related to element
-&lt;em&gt;b&lt;/em&gt; in the codomain, then element &lt;em&gt;b&lt;/em&gt; in the domain must
-be related to element &lt;em&gt;a&lt;/em&gt; in the codomain.  This applies equally
-if element &lt;em&gt;a&lt;/em&gt; in the domain is not related to element &lt;em&gt;b&lt;/em&gt;
-in the codomain, because then element &lt;em&gt;b&lt;/em&gt; in the domain must also
-not be related to element &lt;em&gt;a&lt;/em&gt; in the codomain, or the relation
-would not be self-inverting.&lt;/p&gt;
-
-&lt;p&gt;All other relationships between our second element and elements of the
-codomain are still free to change, though, leaving
-2&lt;sup&gt;&lt;em&gt;n&lt;/em&gt;-1&lt;/sup&gt; combinations for the second element considered.&lt;/p&gt;
-
-&lt;p&gt;This pattern continues &lt;em&gt;n&lt;/em&gt; times in total, and by multiplying
-these possibilities, we get&lt;/p&gt;
-
-&lt;p&gt;2&lt;sup&gt;n&lt;/sup&gt; * 2&lt;sup&gt;n-1&lt;/sup&gt; * 2 &lt;sup&gt;n-2&lt;/sup&gt; &amp;hellip; * 2&lt;sup&gt;1&lt;/sup&gt;&lt;/p&gt;
-
-&lt;p&gt;Which is the same as 2&lt;sup&gt;&lt;em&gt;n&lt;/em&gt; + (&lt;em&gt;n&lt;/em&gt;-1) + (&lt;em&gt;n&lt;/em&gt;-2)
-+ &amp;hellip; + 2 + 1&lt;/sup&gt;.&lt;/p&gt;
-
-&lt;p&gt;By reversing the addition sequence we get that the exponent of 2 is the
-sum of all numbers from 1 to &lt;em&gt;n&lt;/em&gt;, which is equal to
-&lt;em&gt;n&lt;/em&gt;*(&lt;em&gt;n&lt;/em&gt;+1)/2.&lt;/p&gt;
-
-&lt;p&gt;Hence, the number of self-inverting relations for a set of size
-&lt;em&gt;n&lt;/em&gt; must be 2&lt;sup&gt;(&lt;em&gt;n&lt;/em&gt;*(&lt;em&gt;n&lt;/em&gt;+1)/2)&lt;/sup&gt;.
-   &lt;/blockquote&gt;&lt;/p&gt;
-
-&lt;p&gt;Congratulations to Henry Spece for solving the challenge!&lt;/p&gt;
 </description>
     </item>
     

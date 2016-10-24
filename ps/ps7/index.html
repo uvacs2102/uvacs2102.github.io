@@ -51,7 +51,7 @@
     },
     "datePublished": "0001-01-01",
     "description": "",
-    "wordCount":  908 
+    "wordCount":  931 
   }
 </script>
 
@@ -165,6 +165,8 @@
   <div class="container content">
   
 
+<p>[Revision 0.1: 23 October 7:57pm]</p>
+
 <div class="latex">
    \dbox{{\bf Deliverable:} Submit your responses as a
 single, readable PDF file on the collab site before {\bf 6:29pm} on {\bf Friday, 28 October}.  
@@ -251,8 +253,10 @@ with AIBO.</p></li>
 
 <h1 id="gale-shapley-algorithm">Gale-Shapley Algorithm</h1>
 
-<p>In <a href="https://uvacs2102.github.io/class15/">Class 15</a>, we developed a
+<p>\vspace<em>{-1ex}
+In <a href="https://uvacs2102.github.io/class15/">Class 15</a>, we developed a
 state machine model for the Gale-Shapley stable matching algorithm:
+\vspace</em>{-2ex}
 \begin{equation<em>}
 \begin{split}
 S = {(pa&amp;irings, \text{\em proposals}) \, | \
@@ -260,6 +264,7 @@ S = {(pa&amp;irings, \text{\em proposals}) \, | \
 &amp; \text{\em proposals} = (r_1, r_2, \cdots, r_n), 0 \le r_i \le n } <br />
 G = {(\text{\em pa}&amp;\text{\em irings}, \text{\em proposals} = (r_1, r_2, \cdots, r_n)) \rightarrow (\text{\em pairings}&lsquo;, \text{\em proposals}&lsquo;) \, | <br />
 &amp; i \in { 1, \cdots, n }, r_i &lt; n <br />
+&amp; \forall b \in B \ldotp (a_i, b) \notin \text{\em pairings} \
 &amp; b_x ::= \text{the}\ r_i\text{-ranked choice for }a_i <br />
 &amp; \text{\em proposals}&rsquo; = (r_1, \cdots, r_i + 1, \cdots, r_n) <br />
 &amp; \text{\em pairings}&rsquo; = \begin{cases}
@@ -267,7 +272,8 @@ G = {(\text{\em pa}&amp;\text{\em irings}, \text{\em proposals} = (r_1, r_2, \cd
                 \text{\em pairings} \cup { (a_i, b_x)} - { (a_z, b_x) } &amp; \exists a_z \in A \ldotp (a_z, b_x) \in \text{\em pairings} \wedge a<em>z \prec</em>{b_x} a_i\ \text{(Case 2)} <br />
                 \text{\em pairings} &amp; \text{otherwise (Case 3)} <br />
 \end{cases} \
-q_0 = (pa&amp;irings = { }, \text{\em proposals} = (0, 0, \ldots, 0)) <br />
+&amp; } <br />
+q_0 = (\text{\em pa}&amp;\text{\em irings} = { }, \text{\em proposals} = (0, 0, \ldots, 0)) <br />
 \end{split}
 \end{equation</em>}</p>
 
