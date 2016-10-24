@@ -25,6 +25,8 @@ machine transitions (&lt;span class=&#34;math&#34;&gt;&lt;em&gt;G&lt;/em&gt;&lt;
 &lt;p&gt;This constraint is needed since without it, a member of &lt;span
 class=&#34;math&#34;&gt;&lt;em&gt;A&lt;/em&gt;&lt;/span&gt; might give up a better match for a worse
 one!&lt;/p&gt;
+
+&lt;p&gt;(Thanks especially to Luke Botti for noticing this problem.)&lt;/p&gt;
 </description>
     </item>
     
