@@ -5,7 +5,7 @@
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <title>Class 16: Recursive Data Types  &middot; cs2102: Discrete Math</title>
+  <title>Class 17: Structural Induction  &middot; cs2102: Discrete Math</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="HandheldFriendly" content="True">
 <meta name="MobileOptimized" content="320">
@@ -17,16 +17,16 @@
 <meta name="keywords" content="">
 
 
-<meta property="og:title" content="Class 16: Recursive Data Types  &middot; cs2102: Discrete Math ">
+<meta property="og:title" content="Class 17: Structural Induction  &middot; cs2102: Discrete Math ">
 <meta property="og:site_name" content="cs2102: Discrete Math"/>
-<meta property="og:url" content="https://uvacs2102.github.io/class16/" />
+<meta property="og:url" content="https://uvacs2102.github.io/class17/" />
 <meta property="og:locale" content="en-us">
 
 
 <meta property="og:type" content="article" />
 <meta property="og:description" content=""/>
-<meta property="og:article:published_time" content="2016-10-25T00:00:00Z" />
-<meta property="og:article:modified_time" content="2016-10-25T00:00:00Z" />
+<meta property="og:article:published_time" content="2016-10-27T00:00:00Z" />
+<meta property="og:article:modified_time" content="2016-10-27T00:00:00Z" />
 
   
 
@@ -34,9 +34,9 @@
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <meta name="twitter:creator" content="@" />
-<meta name="twitter:title" content="Class 16: Recursive Data Types" />
+<meta name="twitter:title" content="Class 17: Structural Induction" />
 <meta name="twitter:description" content="" />
-<meta name="twitter:url" content="https://uvacs2102.github.io/class16/" />
+<meta name="twitter:url" content="https://uvacs2102.github.io/class17/" />
 <meta name="twitter:domain" content="https://uvacs2102.github.io">
   
 
@@ -44,20 +44,20 @@
   {
     "@context": "http://schema.org",
     "@type": "Article",
-    "headline": "Class 16: Recursive Data Types",
+    "headline": "Class 17: Structural Induction",
     "author": {
       "@type": "Person",
       "name": "http://profiles.google.com/+?rel=author"
     },
-    "datePublished": "2016-10-25",
+    "datePublished": "2016-10-27",
     "description": "",
-    "wordCount":  355 
+    "wordCount":  419 
   }
 </script>
 
 
 
-<link rel="canonical" href="https://uvacs2102.github.io/class16/" />
+<link rel="canonical" href="https://uvacs2102.github.io/class17/" />
 
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://uvacs2102.github.io/touch-icon-144-precomposed.png">
 <link href="https://uvacs2102.github.io/favicon.png" rel="icon">
@@ -157,11 +157,11 @@
 
 <article id="main-content" class="container main_content single">
   <header class="container hat">
-  <center><h1>Class 16: Recursive Data Types
+  <center><h1>Class 17: Structural Induction
 </h1></center>
 
   <div class="metas">
-<time datetime="2016-10-25">25 Oct, 2016</time>
+<time datetime="2016-10-27">27 Oct, 2016</time>
 
 
   
@@ -178,68 +178,40 @@
 
 <h3 id="schedule">Schedule</h3>
 
-<p>You should read MCS Chapter 7 this week.</p>
+<p><a href="/ps/ps7"><strong>Problem Set 7</strong></a> is due <strong>tomorrow at 6:29pm</strong>.</p>
 
-<p><a href="/ps/ps7"><strong>Problem Set 7</strong></a> is due <strong>28 October (Friday) at 6:29pm</strong>.</p>
+<p>Next week Friday, 4 November at 11am, <strong>Steve Huffman</strong> (BSCS 2005,
+co-founder and CEO of Reddit) will give a Computer Science Distinguished
+Alumni talk in the Rotunda.  If you would like to meet with Steve
+(either at a lunch after the talk or a meeting with students later that
+afternoon), send me an email with a good reason why you should be
+invited (only a very limited number of spaces available).</p>
 
 <p><div class="notpdf">
    <center>
-<script async class="speakerdeck-embed" data-id="b350014169664ae49e537a2999b851b2" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+<script async class="speakerdeck-embed" data-id="f0c0a93cfbf64e3ba1df906dc4c2e2b5" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
    </center></p>
 
-<h2 id="links">Links</h2>
-
-<p>Python code from class and list definitions: <a href="/docs/pairs.py">pairs.py</a></p>
-
 <p><div class="highlightm">
-   <a href="/docs/class16.pdf">See PDF Version for <b>Notes</b></a>.
+   <a href="/docs/class17.pdf">See PDF Version for <b>Notes</b></a>.
    </div></p>
 
 <p></div><!--endpdf--></p>
 
 <p><div class="latex"></p>
 
-<h1 id="structural-induction">Structural Induction</h1>
-
-<p>We can show a property holds for <em>all objects of a data type</em> by:</p>
-
-<ol>
-<li><p>Showing the property holds for all base objects.</p></li>
-
-<li><p>Showing that all the ways of constructing new objects, preserve the property.</p></li>
-</ol>
-
-<p>What is the difference between scalar data and compound data structures?</p>
-
-<p>#</p>
-
-<h1 id="pairs">Pairs</h1>
-
-<p><strong>Definition.</strong> A $\text{\em Pair}$ is a datatype that supports these three operations:<br />
-\begin{quote}
-     $\text{\em make_pair}: \text{\em Object} \times \text{\em Object} \rightarrow \text{\em Pair}$<br />
-     $\text{\em pair_first}: \text{\em Pair} \rightarrow \text{\em Object}$\<br />
-     $\text{\em pair_last}: \text{\em Pair} \rightarrow \text{\em Object}$\<br />
-\end{quote}
-where, for any objects $a$ and $b$, $\text{\em pair_first}(\text{\em make_pair}(a, b)) = a$ and $\text{\em pair_last}(\text{\em make_pair}(a, b)) = b$.</p>
-
 <h1 id="lists">Lists</h1>
 
-<p><strong>Definition (1).</strong> A <em>List</em> is either (1) a <em>Pair</em> where the second part of
-  the pair is a <em>List</em>, or (2) the empty list.</p>
-
-<p><strong>Definition (2).</strong> A <em>List</em> is a ordered sequence of objects.</p>
-
-<!--page-->
-
-<h2 id="list-operations">List Operations</h2>
+<p><strong>Definition.</strong> A <em>list</em> is an ordered sequence of objects.  A list is
+  either the empty list ($\lambda$), or the result of $\text{prepend}(e,
+  l)$ for some object $e$ and list $l$.</p>
 
 <p>\begin{equation<em>}
 \begin{split}
-\text{\em first}(\text{\em prepend}(e, l)) &amp;= \fillin <br />
-\text{\em rest}(\text{\em prepend}(e, l)) &amp;= \fillin <br />
-\text{\em empty}(\text{\em prepend}(e, l)) &amp;= \text{\bf False} <br />
-\text{\em empty}(\fillin) &amp;= \text{\bf True} <br />
+\text{\em first}(\text{prepend}(e, l)) &amp;= e <br />
+\text{\em rest}(\text{prepend}(e, l)) &amp;= l <br />
+\text{\em empty}(\text{prepend}(e, l)) &amp;= \text{\bf False} <br />
+\text{\em empty}(\text{\bf null}) &amp;= \text{\bf True} <br />
 \end{split}
 \end{equation</em>}</p>
 
@@ -247,39 +219,13 @@ where, for any objects $a$ and $b$, $\text{\em pair_first}(\text{\em make_pair}(
 \begin{equation<em>}
 \begin{split}
 \begin{cases}
-0 &amp; p\ \text{is \bf null} <br />
-\bigfillin %\text{\em length}(q) + 1
-&amp; p = \text{\em prepend}(e, q)\ \text{for some object}\ e\ \text{and some list}\ q <br />
+0 &amp; \text{if}\ p\ \text{is \bf null} <br />
+\text{\em length}(q) + 1 &amp; \text{otherwise}\ p = \text{\em prepend}(e, q)\ \text{for some object}\ e\ \text{and some list}\ q <br />
 \end{cases}
 \end{split}
 \end{equation</em>}</p>
 
-<p><strong>Unique Construction</strong> property:</p>
-
-<p>\begin{equation<em>}
-\begin{split}
-\forall p \in \text{\em List} - { \text{\bf null} } \ldotp \exists q \in \text{\em List}, e \in \text{\em Object} \ldotp p = \text{\em prepend}(e, q) \; \wedge <br />
-(\forall r \in \text{\em List}, f \in \text{\em Object} \ldotp p = \text{\em prepend}(f, r) \implies r = q \wedge f = e)
-\end{split}
-\end{equation</em>}</p>
-
-<p>Why is this necessary for our length definition?</p>
-
-<p>##</p>
-
-<pre><code class="language-python">def list_prepend(e, l):
-    return make_pair(e, l)
-
-def list_first(l):
-    return pair_first(l)
-
-def list_rest(l):
-    return pair_last(l)
-
-def list_empty(l):
-    return l == None
-
-def list_length(l):
+<pre><code class="language-Python">def list_length(l):
     if list_empty(l):
         return 0
     else:
@@ -288,6 +234,49 @@ def list_length(l):
 </code></pre>
 
 <p>Prove: for all lists, $p$, <code>list_length(p)</code> returns the length of the list $p$.</p>
+
+<!--page-->
+
+<h2 id="concatenation">Concatenation</h2>
+
+<p><strong>Definition.</strong> The <em>concatenation</em> of two lists, $p = (p_1, p_2, \cdots, p_n)$ and $q = (q_1, q_2, \cdots, q_m)$ is
+$$(p_1, p_2, \cdots, p_n, q_1, q_2, \cdots, q_m).$$</p>
+
+<p>Provide a <em>constructuve</em> definition of <em>concatenation</em>.</p>
+
+<p>#
+##</p>
+
+<p>Prove. For any two lists, $p$ and $q$, $\text{length}(p + q) = \text{length}(p) + \text{length}(q)$.</p>
+
+<p>#
+##</p>
+
+<h2 id="induction-summary">Induction Summary</h2>
+
+<p>\begin{center}
+\begin{tabular}{lccc}
+&amp; {\bf Regular Induction} &amp; {\bf Invariant Principle} &amp; {\bf Structural Induction} \ \hline
+Works on: &amp; natural numbers &amp; state machines &amp; data types <br />
+To prove $P(\cdot)$ &amp; {\em for all natural numbers} &amp; {\em for all reachable states} &amp; {\em for all data type objects} <br />
+Prove {\bf base case(s)} &amp; $P(0)$ &amp; $P(q_0)$ &amp; $P(\text{base object(s)})$ <br />
+and {\bf inductive step} &amp; $\forall m \in \mathbb{N} \ldotp$ &amp; $\forall (q, r) \in G \ldotp $ &amp; $\forall s \in \text{\em Type} \ldotp$ <br />
+  &amp; $P(m) \implies P(m+1)$ &amp; $P(q) \implies P&reg;$ &amp; $P(s) \implies P(t)$ <br />
+ &amp; &amp; &amp; $\quad \forall t\ \text{constructable from}\ s$ \
+\end{tabular}
+\end{center}</p>
+
+<h1 id="challenge-response-protocols">Challenge-Response Protocols</h1>
+
+<ol>
+<li><p><strong>Verifier:</strong> picks random challenge, $y$.</p></li>
+
+<li><p><strong>Prover:</strong> proves knowledge of $x$ by revealing $f(x, y)$.</p></li>
+
+<li><p><strong>Verifer:</strong> can verify prover knows $x$ from response, but learns nothing (useful) about $x$.</p></li>
+</ol>
+
+<p>How can you know the website you are sending your password to is what you think it is?</p>
 
 <p></div></p>
 
@@ -301,15 +290,11 @@ def list_length(l):
   
 
     
-    <a class="prev" href="https://uvacs2102.github.io/ps7revised/" title="Problem Set 7 - Revised">
+    <a class="prev" href="https://uvacs2102.github.io/class16/" title="Class 16: Recursive Data Types">
       Previous
     </a>
     
 
-    
-    <a class="next" href="https://uvacs2102.github.io/class17/" title="Class 17: Structural Induction">
-      Next
-    </a>
     
 
   
