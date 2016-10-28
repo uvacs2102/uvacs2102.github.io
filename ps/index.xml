@@ -1379,7 +1379,7 @@ but are sadly lacking in previous experience using procedures as
 parameters and results and realize that you cannot be a true kunoichi
 programmer without becoming adept with programming with procedures.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Download:&lt;/strong&gt; &lt;a href=&#34;https://uvacs2102.github.io/docs/pairs.py&#34;&gt;pairs.py&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Download:&lt;/strong&gt; &lt;a href=&#34;https://uvacs2102.github.io/docs/pairs.py&#34;&gt;pairs.py&lt;/a&gt; (if the link in the PDF file doesn&amp;rsquo;t work, use &lt;em&gt;&lt;a href=&#34;https://uvacs2102.github.io/docs/pairs.py&#34;&gt;https://uvacs2102.github.io/docs/pairs.py&lt;/a&gt;&lt;/em&gt;).&lt;/p&gt;
 
 &lt;p&gt;In &lt;a href=&#34;https://uvacs2102.github.io/docs/pairs.py&#34;&gt;pairs.py&lt;/a&gt;, we defined &lt;code&gt;make_pair&lt;/code&gt; and various
 procedures for building and using lists.  You should download this code,
