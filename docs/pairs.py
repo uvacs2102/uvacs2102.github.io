@@ -19,7 +19,7 @@ def pair_first(p):
 def pair_last(p):
     return p(False)
 
-def list_append(e, l):
+def list_prepend(e, l):
     return make_pair(e, l)
 
 def list_first(l):
@@ -41,7 +41,7 @@ def list_concat(p, q):
     if list_empty(p):
         return q
     else:
-        return list_append(list_first(p), list_concat(list_rest(p), q))
+        return list_prepend(list_first(p), list_concat(list_rest(p), q))
     
 def list_last(l):
     if list_empty(list_rest(l)):
@@ -57,6 +57,6 @@ def list_reverse(l):
         return list_postpend(list_reverse(list_rest(l)), list_first(l))
 
 
-list123 = list_append(1, list_append(2, list_append(3, None)))
+list123 = list_prepend(1, list_prepend(2, list_prepend(3, None)))
 
     
