@@ -6,8 +6,19 @@
     <description>Recent content on cs2102: Discrete Math</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 27 Oct 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 28 Oct 2016 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://uvacs2102.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Problem Set 8</title>
+      <link>https://uvacs2102.github.io/ps8announce/</link>
+      <pubDate>Fri, 28 Oct 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/ps8announce/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Problem Set 8&lt;/strong&gt; is &lt;a href=&#34;https://uvacs2102.github.io/docs/ps8.pdf&#34;&gt;now posted&lt;/a&gt;, and is due on
+  &lt;strong&gt;Friday, 4 November at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Class 17: Structural Induction</title>
@@ -1003,23 +1014,6 @@ the grades scaled by 100 for some buggy reason.  Although receiving a
 score of 100+ is possible in theory, no one received more than 8 points
 for this assingment.  If you see a score about 100, the meaning is that
 score divided by 100.)&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Satisfiable Formula Challenge</title>
-      <link>https://uvacs2102.github.io/clauses/</link>
-      <pubDate>Wed, 28 Sep 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://uvacs2102.github.io/clauses/</guid>
-      <description>&lt;p&gt;Henry Spece has solved the challenge about proving the length of the
-longest satisfiable formula!&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;highlightg&#34;&gt;
-&lt;strong&gt;Challenge 6.&lt;/strong&gt; (From &lt;a href=&#34;https://collab.itc.virginia.edu/access/content/group/e0b17949-c94c-466b-835a-196381f3f911/ps3_solutions.pdf&#34;&gt;PS3 Solutions&lt;/a&gt;) Provide a full and convincing proof for Problem 11.
-   &lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;The proof is here: &lt;a href=&#34;https://uvacs2102.github.io/docs/challenge6/henry.pdf&#34;&gt;PDF&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
