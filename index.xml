@@ -6,8 +6,175 @@
     <description>Recent content on cs2102: Discrete Math</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 28 Oct 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 01 Nov 2016 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://uvacs2102.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Class 18: Infinite Sets</title>
+      <link>https://uvacs2102.github.io/class18/</link>
+      <pubDate>Tue, 01 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/class18/</guid>
+      <description>
+
+&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
+
+&lt;p&gt;Before Thursday, everyone should have finished reading MCS Chapter 8.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps8&#34;&gt;&lt;strong&gt;Problem Set 8&lt;/strong&gt;&lt;/a&gt; is due &lt;strong&gt;Friday (4 November) at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;I am out of town Wednesday and will not be able to hold my normal office
+hours.&lt;/p&gt;
+
+&lt;p&gt;Friday, 4 November at 11am (Rotunda Dome Room): &lt;strong&gt;Steve Huffman&lt;/strong&gt; (BSCS
+2005, co-founder and CEO of Reddit), &lt;em&gt;Computer Science Distinguished
+Alumni Speaker&lt;/em&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;exam-2&#34;&gt;Exam 2&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Exam 2&lt;/strong&gt; will be in class on &lt;strong&gt;Thursday, 10 November&lt;/strong&gt;.  It will be
+  similar in format to Exam 1.  If you need to make special arrangements
+  for taking Exam 2, please contact me by the end of this week (Nov 6).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Resources.&lt;/strong&gt; As with Exam 1, you will be permitted to use a single
+paper page of notes that you prepare and bring to the exam.  It is fine
+to collaborate with others to prepare your notes.  The page should be no
+larger than a US Letter size page ($8.5 \times 11$ inches), and you may
+write (or print) on both sides of the page.  No other resources are
+permitted during the exam.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Content.&lt;/strong&gt; The problems on the exam will cover material from Classes
+  1&amp;ndash;17, Problem Sets 1&amp;ndash;8 (including the provided solutions), and MCS
+  Chapters 1&amp;ndash;7.  Exam 2 will emphasize material covered since Exam 1
+  (Classes 12&amp;ndash;17, Problem Sets 6&amp;ndash;8, and MCS Chapters 6&amp;ndash;7), but will
+  also include questions that cover earlier material in the class.  In
+  particular, you should not be at all surprised if Exam 2 includes
+  questions very similar to Problem 4 and Problem 8 from Exam 1, so it
+  would be quite foolish for any student to go into the exam without
+  making sure they understand those problems and their solutions.  There
+  will not be any questions about trick-xor-treat protocols, despite
+  their practical importance and mathematical beauty.  If you understand
+  the problems on the problem sets and questions on the class notes well
+  enough to be able to answer similar questions, you should do well on
+  the exam.&lt;/p&gt;
+
+&lt;p&gt;The main topics the exam will cover include:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;State Machines (how to interpret and reason about a state machine
+given its formal description, how to model a problem with a state
+machine)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Invariant Principle (you should be able to construct a proof that uses
+the invariant principle to reason about properties of reachable
+states, and be able to understand proofs that use and mis-use the
+invariant principle)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Termination Proofs (you should be able to prove a state machine
+eventually reaches a terminating state, or that a program eventually
+terminates)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Stable Matching (you should understand the definition of a stable
+matching and the Gale-Shalpey algorithm for finding a stable matching,
+and be able to prove properties about matchings)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Recursive Data Types (how to define a data type constructively,
+operations on recursive data types; lists, trees, and other
+recursively defined data types)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Structural Induction (how to use the principle of structural induction
+to reason about all objects of a recursive data type; understand the
+connections and differences between structural induction, invariant
+principle, and induction on the natural numbers)&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;For most students, I believe the best way to prepare for the exam will
+be to (1) go over exam 1 and the problem sets and their solutions, and
+make sure you understand well any of the problems you did not get
+before; (2) go through the questions in the class notes and convince
+yourself you can answer them well; (3) re-read chapters of the book,
+solving the associated practice problems, especially for any sections on
+topics where you had difficulty on the problem sets.  If you do #1 and
+understand well the problems on the problem set, you should be confident
+you&amp;rsquo;ll do well on the exam; if you struggled on the problem sets, you
+would benefit from doing #2 and #3 as well.  If you have anything you
+want me to review before the exam, post on slack before Monday (7
+Novemeber).&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;
+   &lt;center&gt;
+   &lt;/center&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;links&#34;&gt;Links&lt;/h1&gt;
+
+&lt;p&gt;Apostolos Doxiadis and &lt;a href=&#34;https://people.eecs.berkeley.edu/~christos/&#34;&gt;Christos Papadimitriou&lt;/a&gt;. &lt;a href=&#34;https://www.amazon.com/Logicomix-search-truth-Apostolos-Doxiadis/dp/1596914521/&#34;&gt;&lt;em&gt;Logicomix: An epic
+search for
+truth&lt;/em&gt;&lt;/a&gt;, Bloomsbury USA, 2009.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://pi.math.virginia.edu/History/1800s.htm&#34;&gt;Math Professors at UVa (1825-1900)&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;Courtenay&amp;rsquo;s tenure at Virginia was, in contrast to that of his predecessor, a resounding success. He was described as a model professor: &amp;ldquo;He never by look, act, word, or emphasis disparaged the efforts or undervalued the acquirements of his pupils. His pleasant smile and kind voice, when he would say, &amp;lsquo;Is that answer perfectly correct?&amp;rsquo; gave hope to many minds struggling with science&amp;rdquo;&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlightm&#34;&gt;
+   &lt;a href=&#34;https://uvacs2102.github.io/docs/class18.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes&lt;/b&gt;&lt;/a&gt;.
+   &lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;infinite-sets&#34;&gt;Infinite Sets&lt;/h1&gt;
+
+&lt;p&gt;&lt;strong&gt;Finite Cardinality.&lt;/strong&gt; The &lt;em&gt;cardinality&lt;/em&gt; of the set
+$$
+\mathbb{N}_k = { n | n \in \mathbb{N} \wedge n &amp;lt; k }
+$$
+is $k$.  If there is a &lt;em&gt;bijection&lt;/em&gt; between two sets, they have the same
+cardinality.  (Class 9)&lt;/p&gt;
+
+&lt;p&gt;Does this definition tell us the cardinality of $\mathbb{N}$?&lt;/p&gt;
+
+&lt;p&gt;###&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; A set $C$ is &lt;em&gt;infinite&lt;/em&gt; if there is no bijection between
+  $C$ and any set $\mathbb{N}_k$ (as defined above).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Dedekind-Infinite.&lt;/strong&gt; A set $A$ is &lt;em&gt;Dedekind-infinite&lt;/em&gt; if and only if there exists a strict subset of $A$ with the same cardinality as $A$.  That is,
+$$\exists B \subset A \ldotp \exists R \ldotp R\ \text{is a bijection between}\ A\ \text{and}\ B.$$&lt;/p&gt;
+
+&lt;p&gt;Are the definitions of (standard) &lt;em&gt;infinite&lt;/em&gt; and &lt;em&gt;Dedekind-infinite&lt;/em&gt;
+equivalent?&lt;/p&gt;
+
+&lt;p&gt;##&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; A set $C$ is &lt;em&gt;countable&lt;/em&gt; if and only if there exists a
+  surjective function from $\mathbb{N}$ to $C$.  (That is, $\le 1$ arrow
+  out from $\mathbb{N}$, $ge 1$ arrow in to $C$.)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; A set $C$ is &lt;em&gt;countably infinite&lt;/em&gt; if and only if there
+  exists a bijection between $C$ and $\mathbb{N}$.&lt;/p&gt;
+
+&lt;p&gt;Must a &lt;em&gt;countable&lt;/em&gt; set that is &lt;em&gt;Dedekind-infinite&lt;/em&gt; be &lt;em&gt;countably infinite&lt;/em&gt;?&lt;/p&gt;
+
+&lt;p&gt;Prove that these sets are countable: $\mathbb{Z}$, $\mathbb{N} \times
+\mathbb{N}$, $\mathbb{Q}$ (rationals), $\emptyset$, $\mathbb{N} \cup (\mathbb{N} \times \mathbb{N}) \cup (\mathbb{N} \times \mathbb{N} \times \mathbb{N})$, all finite sequences of elements of $\mathbb{N}$.&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Problem Set 6 Comments</title>
+      <link>https://uvacs2102.github.io/ps6comments/</link>
+      <pubDate>Tue, 01 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/ps6comments/</guid>
+      <description>&lt;p&gt;The solutions and comments for PS6 are now posted in collab:
+&lt;a href=&#34;https://collab.itc.virginia.edu/access/content/group/e0b17949-c94c-466b-835a-196381f3f911/ps6solutions.pdf&#34;&gt;PDF&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Problem Set 8</title>
@@ -861,159 +1028,6 @@ appointment if you can&amp;rsquo;t make it then).  My office hours have mostly
 been fairly empty, and the best sense I get of what is going on in the
 class is from students who come to talk to me during office hours, so I
 hope you&amp;rsquo;ll do that rather than just getting frustrated.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Class 12: Review</title>
-      <link>https://uvacs2102.github.io/class12/</link>
-      <pubDate>Thu, 29 Sep 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://uvacs2102.github.io/class12/</guid>
-      <description>
-
-&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps5&#34;&gt;&lt;strong&gt;Problem Set 5&lt;/strong&gt;&lt;/a&gt; is due &lt;strong&gt;Friday at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Exam 1&lt;/strong&gt; is in class on &lt;strong&gt;Thursday, 6 October&lt;/strong&gt;.  See &lt;a href=&#34;https://uvacs2102.github.io/class11&#34;&gt;Notes
-  11&lt;/a&gt; for details.  Remember to bring a good writing
-  instrument (sharp pencil is recommended) and your page of notes to the
-  exam.&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;
-   &lt;center&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;b1ae1f6618b747fca08e0d2f64aa2586&#34; data-ratio=&#34;1.77777777777778&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
-   &lt;/center&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;highlightm&#34;&gt;
-   &lt;a href=&#34;https://uvacs2102.github.io/docs/class12.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes&lt;/b&gt;&lt;/a&gt;.
-   &lt;/div&gt;
-   &lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;exam-review&#34;&gt;Exam Review&lt;/h2&gt;
-
-&lt;p&gt;Below are some notations you should understand.  We use variables $P$
-and $Q$ to represent logical propositions (with \T\ or \F\ value), $A$
-and $B$ and $D$ (domain of discourse) to represent sets, and $x$
-represents any mathematical object.&lt;/p&gt;
-
-&lt;p&gt;\begin{tabular}{cl}
-\multicolumn{2}{c}{\bf Logical Operators} &lt;br /&gt;
-$P$ \smallcaps{implies} $Q$, $P \implies Q$ &amp;amp; Logical implication: when $P$ is \T, $Q$ must be \T &lt;br /&gt;
-$P$ \smallcaps{iff} $Q$, $P \iff Q$ &amp;amp; Double implication: $P \implies Q \vee Q \implies P$ &lt;br /&gt;
-\smallcaps{not}$(P)$, $\neg P$, $\overline{P}$ &amp;amp;  Logical negation &lt;br /&gt;
-$P$ \smallcaps{and} $Q$, $P \wedge Q$ &amp;amp; Logical conjunction (\T\ when both $P$ and $Q$ are \T) &lt;br /&gt;
-$P$ \smallcaps{or} $Q$, $P \vee Q$ &amp;amp; Logical disjunction (\T\ when $P$ or $Q$ is \T\ (or both) &lt;br /&gt;
-$P$ \smallcaps{xor} $Q$, $P \oplus Q$ &amp;amp; Exlusive or (\T\ when either $P$ or $Q$ is \T, but not both&lt;br /&gt;
-\multicolumn{2}{c}{\bf Quantifiers} &lt;br /&gt;
-$\forall x \in A \ldotp P(x)$ &amp;amp; $P(x)$ for {\em every} element $x$ of the set $A$ &lt;br /&gt;
-$\exists x \in A \ldotp P(x)$ &amp;amp; $P(x)$ for {\em at least one} element $x$ of the set $A$ &lt;br /&gt;
-\multicolumn{2}{c}{\bf Set Operators} &lt;br /&gt;
-$x \in A$ &amp;amp; Set membership, $A$ contains the element $x$ &lt;br /&gt;
-$x \notin A$ &amp;amp; Set non-membership, $A$ does not contain $x$ &lt;br /&gt;
-$A \subseteq B$ &amp;amp; $A$ is a subset of $B$: $\forall x \in A. x \in B.$ &lt;br /&gt;
-$A = B$ &amp;amp; set equality: $A \subseteq B \vee B subseteq A$ &lt;br /&gt;
-$A \cup B$ &amp;amp; Set Union: $\forall x. x \in A \cup B \iff x \in A \vee x \in B.$ &lt;br /&gt;
-$A \cap B$ &amp;amp; Set Intersection: $\forall x. x \in A \cup B \iff x \in A \wedge x \in B.$ &lt;br /&gt;
-$ A - B$ &amp;amp; Set Difference: $\forall x. x \in A - B \iff x \in A \wedge x \notin B.$ &lt;br /&gt;
-$ \overline{A}$ &amp;amp; Set Complement: $\forall x. x \in D. x \in \overline{A} \iff x \notin A.$ &lt;br /&gt;
-$ A \times B$ &amp;amp; Cartesian Product: $\forall a \in A, b \in B \ldotp (a, b) \in A \times B.$&lt;br /&gt;
-$ \textrm{pow}(A)$ &amp;amp; Power Set: $S \in A \iff S \subseteq A$. &lt;br /&gt;
-\end{tabular}&lt;/p&gt;
-
-&lt;!--page--&gt;
-
-&lt;h2 id=&#34;well-ordering-principle&#34;&gt;Well-Ordering Principle&lt;/h2&gt;
-
-&lt;p&gt;Remember the well-ordering principle template from Class 3:&lt;/p&gt;
-
-&lt;p&gt;To prove that $P(n)$ is true for all $n \in \mathbb{N}$:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Define the set of counterexamples, $C ::= { n \in \mathbb{N} | NOT(P(n)) }$.&lt;/li&gt;
-&lt;li&gt;Assume for contradiction that $C$ is non-empty.&lt;/li&gt;
-&lt;li&gt;By the well-ordering principle, there must be some smallest element, $m \in C$.&lt;/li&gt;
-&lt;li&gt;Reach a contradiction (this is the creative part!).  One way to reach a contradiction would be to show $P(m)$.  Another way is to show there must be an element $m&amp;rsquo; \in C$ where $m&amp;rsquo; &amp;lt; m$.&lt;/li&gt;
-&lt;li&gt;Conclude that $C$ must be empty, hence there are no counter-examples and $P(n)$ always holds.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Since we didn&amp;rsquo;t finish the winning strategy proof in class, I&amp;rsquo;ve written
-it out fully here.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Theorem.&lt;/strong&gt; Player 1 has a winning strategy in Take-Away if
-  the number of sticks, $n$ is not divisible by 4.&lt;/p&gt;
-
-&lt;p&gt;For any induction proof, the first thing we need to do is write the
-theorem as a predicate on the natural numbers.&lt;/p&gt;
-
-&lt;p&gt;$$\forall n \in \mathbb{N} \ldotp P(n) ::= \textrm{ Player 1 has a winning strategy if }\exists a \in { 1, 2, 3 }, \exists k \in \mathbb{N} \textrm{ such that } n = 4k + a.$$&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Base cases&lt;/em&gt;: $P(1)$, $P(2)$, $P(3)$.&lt;/p&gt;
-
-&lt;p&gt;$P(1)$: If there is $1$ stick remaining, Player 1 wins by taking 1 stick.&lt;br /&gt;
-$P(2)$: If there are $2$ sticks remaining, Player 1 wins by taking 2 sticks.&lt;br /&gt;
-$P(3)$: If there are $3$ sticks remaining, Player 1 wins by taking 3 sticks.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Inductive case&lt;/em&gt;: Using strong induction, $\forall m \in \mathbb{N}, m \ge 4 \ldotp (\forall k \in \mathbb{N}, k \le m. P(k)) \implies P(m + 1)$.&lt;/p&gt;
-
-&lt;p&gt;Since $m \ge 4$ we can write $m = 4k + b$ for some $k \in \mathbb{N}^{+}$ and $b \in {0, 1, 2, 3}$.&lt;/p&gt;
-
-&lt;p&gt;We consider four cases for each value of $b$.&lt;/p&gt;
-
-&lt;p&gt;Case 3: $b = 3$.  Since $m = 4k + 3$, $m + 1 = 4k + 4 = 4(k + 1)$.
-Since $m + 1$ is divisible by 4, $P(m+ 1)$ holds because the predicate
-makes no claims when $n$ is divisible by 4.&lt;/p&gt;
-
-&lt;p&gt;Cases 0, 1, 2: Since $m = 4k + b$ for $b \in {0, 1, 2}$, we know $m +
-1 = 4k + c$ for $c \in {1, 2, 3}$ (since $c = b + 1$ to produce $m +
-1$).  We need to show $P(m+1)$, which means showing that player 1 has a
-winning strategy for $n = 4k + c$, $c \in {1, 2, 3}$.  Player 1 takes
-$c$ sticks, leaving $4k$ sticks.&lt;/p&gt;
-
-&lt;p&gt;For the next turn, Player 2 can remove 1, 2, or 3 sticks, leaving $4k -
-d$ sticks, $d \in {1, 2, 3}$.  This can be simplified to $4(k - 1) +
-e$ sticks where $e = 4 - d$ since $4k - 4 + (4 - d) = 4k - d = 4(k -
-1) + e$.  Hence, after Player 2&amp;rsquo;s turn it will be Player 1&amp;rsquo;s turn with
-$4(k - 1) + e$ sticks, $e \in {1, 2, 3}$.  We know $4(k - 1) + e &amp;lt; m$
-and it is not divisible by 4.  So, Player 1 has a winning strategy from
-$P(m + 1)$ since she has a move to make such that no matter what move
-player 2 makes, it leads to a number that is not divisible by 4 and is
-less than $m$, which we know is a position where Player 1 has a winning
-strategy but strong induction.&lt;/p&gt;
-
-&lt;p&gt;Note that $4(k - 1) + e$ is $m - 1$, $m - 2$ or $m - 3$, so we need to
-know $m \ge 4$ for this to be valid.  That&amp;rsquo;s why we needed three base
-cases!&lt;/p&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Problem Set 4 Comments</title>
-      <link>https://uvacs2102.github.io/ps4comments/</link>
-      <pubDate>Thu, 29 Sep 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://uvacs2102.github.io/ps4comments/</guid>
-      <description>&lt;p&gt;The solutions and comments for PS4 are now posted in collab: &lt;a href=&#34;https://collab.itc.virginia.edu/access/content/group/e0b17949-c94c-466b-835a-196381f3f911/ps4_solutions.pdf&#34;&gt;PDF&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;You should find your graded assignment as a new PDF attachment with
-markup on it in collab (if you submitted with teammates, please check
-with your partners).&lt;/p&gt;
-
-&lt;p&gt;The meaning of the scores is the same as for previous problem sets.  A
-score of 6 means you got everything we expected out of this assignment,
-and 5 means you did well for the most part by had some answers that
-should have been better.  Scores above 6 are reserved for excellent work
-that is above expectations.  (In the gradebook, collab sometimes shows
-the grades scaled by 100 for some buggy reason.  Although receiving a
-score of 100+ is possible in theory, no one received more than 8 points
-for this assingment.  If you see a score about 100, the meaning is that
-score divided by 100.)&lt;/p&gt;
 </description>
     </item>
     
