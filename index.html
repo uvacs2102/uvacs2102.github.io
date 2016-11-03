@@ -140,9 +140,9 @@
   
     <a href="https://uvacs2102.github.io/class19/">Class 19: Uncountable Sets</a> |
   
-    <a href="https://uvacs2102.github.io/class18/">Class 18: Infinite Sets</a> |
+    <a href="https://uvacs2102.github.io/ps8revisions/">Problem Set 8 Revisions</a> |
   
-    <a href="https://uvacs2102.github.io/ps6comments/">Problem Set 6 Comments</a> |
+    <a href="https://uvacs2102.github.io/class18/">Class 18: Infinite Sets</a> |
   
   <a href="/post">More...</a>
   </center>
@@ -162,6 +162,18 @@
 Alumni Speaker</em>.</p>
 
 <p><strong>Exam 2</strong> will be in class on <strong>Thursday, 10 November</strong>.  See <a href="/class18">Class 18</a> notes for details.</p>
+
+<p><div class="notpdf">
+   <center>
+<script async class="speakerdeck-embed" data-id="483bfa40aae04e3a8e46c090d6d4d727" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+   </center>
+   <div class="highlightm">
+   <a href="/docs/class19.pdf">See PDF Version for <b>Notes</b></a>.
+   </div></p>
+
+<p></div><!--endpdf--></p>
+
+<p><div class="latex"></p>
 
 <h2 id="countable-and-uncountable-sets">Countable and Uncountable Sets</h2>
 
@@ -235,6 +247,34 @@ cardinal number</em>.</p>
 question of whether $\aleph_1 = 2^{\aleph_0}$ with the ZFC axioms?</p>
 
 <p></div></p>
+
+  
+    <p class="fronthead"><a href="https://uvacs2102.github.io/ps8revisions/">Problem Set 8 Revisions</a> (Thu, 3 Nov 2016)</p>
+     <p>There are three important revisions to <a href="/docs/ps8.pdf">Problem Set 8</a>:</p>
+
+<ol>
+<li><p>The definition of <em>height</em> for Problem 4 should have included that
+the height of the <strong>null</strong> tree is 0.</p></li>
+
+<li><p>The definition of the <em>OrderedBinaryTree</em> before Problem 7 did not
+make sense for constructing nodes where one (or both) of the subtrees
+are <strong>null</strong>.  I have added clauses that allow empty trees to be used as
+the subtrees in a node.  Without these, it would not be possible to
+construct any trees (other than the base <strong>null</strong> tree), since it would
+not be sensible to satisfy the maximum or minimum constraints for the
+null tree.  It makes more sense to consider these undefined for the
+<strong>null</strong> tree, so it would be impossible to satisfy the constructor
+constraints without adding the disjunction clauses that allow the
+sub-trees to be <strong>null</strong>.</p></li>
+
+<li><p>For Problem 11, the definition of length using <code>list_accumulate</code>
+should be <code>list_accumulate(lambda a, b: b + 1, lst, 0)</code>.</p></li>
+</ol>
+
+<p>The version now posted has these revisions.  If you already found
+work-arounds to these problems in your solutions, you can add a note to
+your assignment indicating this and don&rsquo;t need to revisit them, but
+otherwise, please solve the revised problems.</p>
 
   
     <p class="fronthead"><a href="https://uvacs2102.github.io/class18/">Class 18: Infinite Sets</a> (Tue, 1 Nov 2016)</p>
@@ -322,7 +362,7 @@ understand well the problems on the problem set, you should be confident
 you&rsquo;ll do well on the exam; if you struggled on the problem sets, you
 would benefit from doing #2 and #3 as well.  If you have anything you
 want me to review before the exam, post on slack before Monday (7
-Novemeber).</p>
+November).</p>
 
 <p><div class="notpdf">
    <center>
@@ -760,10 +800,6 @@ gale_shapley(A, B)
 <p><strong>Prove correctness.</strong> The Gale-Shapley program returns a <em>stable matching</em> of the two input sets and preferences.</p>
 
 <p></div></p>
-
-  
-    <p class="fronthead"><a href="https://uvacs2102.github.io/ps6announce/">Problem Set 6</a> (Fri, 14 Oct 2016)</p>
-     <p><strong>Problem Set 6</strong> is <a href="/docs/ps6.pdf">now posted</a>, and is due on <strong>Friday, 21 October at 6:29pm</strong>.</p>
 
   
   

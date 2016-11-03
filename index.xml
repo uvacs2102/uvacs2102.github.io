@@ -27,6 +27,18 @@ Alumni Speaker&lt;/em&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Exam 2&lt;/strong&gt; will be in class on &lt;strong&gt;Thursday, 10 November&lt;/strong&gt;.  See &lt;a href=&#34;https://uvacs2102.github.io/class18&#34;&gt;Class 18&lt;/a&gt; notes for details.&lt;/p&gt;
 
+&lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;
+   &lt;center&gt;
+&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;483bfa40aae04e3a8e46c090d6d4d727&#34; data-ratio=&#34;1.77777777777778&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
+   &lt;/center&gt;
+   &lt;div class=&#34;highlightm&#34;&gt;
+   &lt;a href=&#34;https://uvacs2102.github.io/docs/class19.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes&lt;/b&gt;&lt;/a&gt;.
+   &lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
+
 &lt;h2 id=&#34;countable-and-uncountable-sets&#34;&gt;Countable and Uncountable Sets&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; A set $S$ is &lt;em&gt;countably infinite&lt;/em&gt; if and only if there
@@ -99,6 +111,40 @@ cardinal number&lt;/em&gt;.&lt;/p&gt;
 question of whether $\aleph_1 = 2^{\aleph_0}$ with the ZFC axioms?&lt;/p&gt;
 
 &lt;p&gt;&lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Problem Set 8 Revisions</title>
+      <link>https://uvacs2102.github.io/ps8revisions/</link>
+      <pubDate>Thu, 03 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/ps8revisions/</guid>
+      <description>&lt;p&gt;There are three important revisions to &lt;a href=&#34;https://uvacs2102.github.io/docs/ps8.pdf&#34;&gt;Problem Set 8&lt;/a&gt;:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;The definition of &lt;em&gt;height&lt;/em&gt; for Problem 4 should have included that
+the height of the &lt;strong&gt;null&lt;/strong&gt; tree is 0.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;The definition of the &lt;em&gt;OrderedBinaryTree&lt;/em&gt; before Problem 7 did not
+make sense for constructing nodes where one (or both) of the subtrees
+are &lt;strong&gt;null&lt;/strong&gt;.  I have added clauses that allow empty trees to be used as
+the subtrees in a node.  Without these, it would not be possible to
+construct any trees (other than the base &lt;strong&gt;null&lt;/strong&gt; tree), since it would
+not be sensible to satisfy the maximum or minimum constraints for the
+null tree.  It makes more sense to consider these undefined for the
+&lt;strong&gt;null&lt;/strong&gt; tree, so it would be impossible to satisfy the constructor
+constraints without adding the disjunction clauses that allow the
+sub-trees to be &lt;strong&gt;null&lt;/strong&gt;.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;For Problem 11, the definition of length using &lt;code&gt;list_accumulate&lt;/code&gt;
+should be &lt;code&gt;list_accumulate(lambda a, b: b + 1, lst, 0)&lt;/code&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;The version now posted has these revisions.  If you already found
+work-arounds to these problems in your solutions, you can add a note to
+your assignment indicating this and don&amp;rsquo;t need to revisit them, but
+otherwise, please solve the revised problems.&lt;/p&gt;
 </description>
     </item>
     
@@ -192,7 +238,7 @@ understand well the problems on the problem set, you should be confident
 you&amp;rsquo;ll do well on the exam; if you struggled on the problem sets, you
 would benefit from doing #2 and #3 as well.  If you have anything you
 want me to review before the exam, post on slack before Monday (7
-Novemeber).&lt;/p&gt;
+November).&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;
    &lt;center&gt;
@@ -965,74 +1011,6 @@ true.&lt;/p&gt;
 
 &lt;p&gt;We are providing the PS5 solutions now before they are graded, so you
 have the solutions to read with plenty of time before the exam.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Three-Clause Challenge Refuted!</title>
-      <link>https://uvacs2102.github.io/challenge5/</link>
-      <pubDate>Fri, 30 Sep 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://uvacs2102.github.io/challenge5/</guid>
-      <description>&lt;p&gt;Challenge 5 has been refuted by Henry Spece!&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;highlightg&#34;&gt;
-&lt;strong&gt;Challenge 5.&lt;/strong&gt; (From &lt;a href=&#34;https://collab.itc.virginia.edu/access/content/group/e0b17949-c94c-466b-835a-196381f3f911/ps3_solutions.pdf&#34;&gt;PS3 Solutions&lt;/a&gt;) Prove that the four-clause solution given for question 6 is the shortest possible equivalent 3CNF formula.
-   &lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;The challenge as stated was actually bogus!  The four-clause solution
-isn&amp;rsquo;t the shortest possible equivalent 3CNF formula.  Henry found a
-three-clause equivalent 3CNF formula, and proved that there is no
-two-clause equivalent 3CNF formula.&lt;/p&gt;
-
-&lt;p&gt;His answer is below:&lt;/p&gt;
-
-&lt;p&gt;&lt;blockquote&gt;
-The four-clause 3-CNF equivalent solution to the logical equation is not
-the smallest equivalent solution to the equation.&lt;/p&gt;
-
-&lt;p&gt;The following is the original formula: &lt;em&gt;A&lt;/em&gt; &amp;or; &amp;not;&lt;em&gt;B&lt;/em&gt; &amp;or; &lt;em&gt;C&lt;/em&gt; &amp;or; (&amp;not;&lt;em&gt;D&lt;/em&gt; &amp;and; &lt;em&gt;E&lt;/em&gt;).&lt;br /&gt;
-Here is a two-clause solution: (&lt;em&gt;A&lt;/em&gt; &amp;or; &amp;not;&lt;em&gt;B&lt;/em&gt; &amp;or;
-&amp;not;&lt;em&gt;x&lt;/em&gt;) &amp;and; (&lt;em&gt;x&lt;/em&gt; &amp;or; &lt;em&gt;C&lt;/em&gt;&amp;or; &amp;not;&lt;em&gt;D&lt;/em&gt;) &amp;and; (&lt;em&gt;x&lt;/em&gt; &amp;or; &lt;em&gt;C&lt;/em&gt; &amp;or; &lt;em&gt;E&lt;/em&gt;).&lt;/p&gt;
-
-&lt;p&gt;This can be shown to be equivalent to the original formula by
-constraining &lt;em&gt;x&lt;/em&gt; to be &lt;em&gt;A&lt;/em&gt;&amp;or;&amp;not;&lt;em&gt;B&lt;/em&gt; and algebraically reducing:
-   &lt;blockquote&gt;
-(&lt;em&gt;A&lt;/em&gt;&amp;or;&amp;not;&lt;em&gt;B&lt;/em&gt;&amp;or;&amp;not;(&lt;em&gt;A&lt;/em&gt;&amp;or;&amp;not;&lt;em&gt;B&lt;/em&gt;))&amp;and;(&lt;em&gt;A&lt;/em&gt; &amp;or; &amp;not;&lt;em&gt;B&lt;/em&gt; &amp;or; &lt;em&gt;C&lt;/em&gt;
-&amp;or; &amp;not;&lt;em&gt;D&lt;/em&gt;)&amp;and;(&lt;em&gt;A&lt;/em&gt; &amp;or; &amp;not;&lt;em&gt;B&lt;/em&gt; &amp;or; &lt;em&gt;C&lt;/em&gt; &amp;or; &lt;em&gt;E&lt;/em&gt;)&lt;br /&gt;
-(&lt;em&gt;A&lt;/em&gt; &amp;or; &amp;not;&lt;em&gt;B&lt;/em&gt; &amp;or; &lt;em&gt;C&lt;/em&gt; &amp;or; &amp;not;&lt;em&gt;D&lt;/em&gt;)&amp;and;(&lt;em&gt;A&lt;/em&gt; &amp;or; &amp;not;&lt;em&gt;B&lt;/em&gt; &amp;or; &lt;em&gt;C&lt;/em&gt; &amp;or; &lt;em&gt;E&lt;/em&gt;)&lt;br /&gt;
-(&lt;em&gt;A&lt;/em&gt; &amp;or; &amp;not;&lt;em&gt;B&lt;/em&gt; &amp;or; &lt;em&gt;C&lt;/em&gt;) &amp;or; (&amp;not;&lt;em&gt;D&lt;/em&gt;&amp;and;&lt;em&gt;E&lt;/em&gt;)&lt;br /&gt;
-&lt;em&gt;A&lt;/em&gt; &amp;or; &amp;not;&lt;em&gt;B&lt;/em&gt; &amp;or; &lt;em&gt;C&lt;/em&gt; &amp;or; (&amp;not;&lt;em&gt;D&lt;/em&gt;&amp;and;&lt;em&gt;E&lt;/em&gt;)
-   &lt;/blockquote&gt;&lt;/p&gt;
-
-&lt;p&gt;To further prove the equivalence, we can make the original formula
-unsatisfied and show that there is no satisfying assignment for &lt;em&gt;x&lt;/em&gt;.  To
-be unsatisfied, &lt;em&gt;A&lt;/em&gt; must be &lt;strong&gt;F&lt;/strong&gt;, &lt;em&gt;B&lt;/em&gt; must be &lt;strong&gt;T&lt;/strong&gt;, and &lt;em&gt;C&lt;/em&gt; must be
-&lt;strong&gt;F&lt;/strong&gt;.  This reduces the formula to:
-   &lt;blockquote&gt;
-(&lt;strong&gt;F&lt;/strong&gt; &amp;or; &lt;strong&gt;F&lt;/strong&gt; &amp;or; &amp;not;&lt;em&gt;x&lt;/em&gt;)&amp;and;(x &amp;or; &lt;strong&gt;F&lt;/strong&gt; &amp;or; &amp;not;&lt;em&gt;D&lt;/em&gt;)&amp;and;(x &amp;or; &lt;strong&gt;F&lt;/strong&gt; &amp;or; &lt;em&gt;E&lt;/em&gt;)
-   &lt;/blockquote&gt;
-Because of the first term, &lt;em&gt;x&lt;/em&gt; must be &lt;strong&gt;F&lt;/strong&gt; if we want to satisfy the formula:
-   &lt;blockquote&gt;
-(&lt;strong&gt;F&lt;/strong&gt; &amp;or; &lt;strong&gt;F&lt;/strong&gt; &amp;or; &lt;strong&gt;T&lt;/strong&gt;)&amp;and;(&lt;strong&gt;F&lt;/strong&gt; &amp;or; &lt;strong&gt;F&lt;/strong&gt; &amp;or; &amp;not;&lt;em&gt;D&lt;/em&gt;)&amp;and;(&lt;strong&gt;F&lt;/strong&gt; &amp;or; &lt;strong&gt;F&lt;/strong&gt; &amp;or; &lt;em&gt;E&lt;/em&gt;) &amp;equiv; (&amp;not;&lt;em&gt;D&lt;/em&gt;&amp;and;&lt;em&gt;E&lt;/em&gt;)
-   &lt;/blockquote&gt;
-This has the same satisfiability as the remaining variables in the original formula (if &amp;not;&lt;em&gt;D&lt;/em&gt;&amp;and;&lt;em&gt;E&lt;/em&gt; is not satisfied, there is no satisfying assignment for &lt;em&gt;x&lt;/em&gt;).&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Proof that this is the shortest possible solution:&lt;/em&gt; There is no two or
-one clause solution because a new variable in addition to &lt;em&gt;A&lt;/em&gt;, &lt;em&gt;B&lt;/em&gt;, &lt;em&gt;C&lt;/em&gt;,
-D, and &lt;em&gt;E&lt;/em&gt; is required for each clause to have only three terms, and
-this variable must be repeated (by the rules we use to select that
-variable).  Therefore, only 5 variables may be represented in a
-two-clause solution, while there are at least six variables required for
-equivalence to the original formula.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Proof that a new variable is required:&lt;/em&gt; The original formula reduces to
-(&lt;em&gt;A&lt;/em&gt; &amp;or; &amp;not;&lt;em&gt;B&lt;/em&gt; &amp;or; &lt;em&gt;C&lt;/em&gt; &amp;or; &amp;not;&lt;em&gt;D&lt;/em&gt;)&amp;and;(&lt;em&gt;A&lt;/em&gt; &amp;or; &amp;not;&lt;em&gt;B&lt;/em&gt; &amp;or;
-&lt;em&gt;C&lt;/em&gt; &amp;or; &lt;em&gt;E&lt;/em&gt;) in CNF form, which has two clauses, each containing a
-unique combination of four variables.  There is no way to reduce the
-number of variables per clause of a solution without adding a variable,
-therefore at least one variable must be added to form the 3-CNF
-equivalent of this formula.&lt;/p&gt;
 </description>
     </item>
     

@@ -5,7 +5,7 @@
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <title>Class 19: Uncountable Sets  &middot; cs2102: Discrete Math</title>
+  <title>Problem Set 8 Revisions  &middot; cs2102: Discrete Math</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="HandheldFriendly" content="True">
 <meta name="MobileOptimized" content="320">
@@ -17,9 +17,9 @@
 <meta name="keywords" content="">
 
 
-<meta property="og:title" content="Class 19: Uncountable Sets  &middot; cs2102: Discrete Math ">
+<meta property="og:title" content="Problem Set 8 Revisions  &middot; cs2102: Discrete Math ">
 <meta property="og:site_name" content="cs2102: Discrete Math"/>
-<meta property="og:url" content="https://uvacs2102.github.io/class19/" />
+<meta property="og:url" content="https://uvacs2102.github.io/ps8revisions/" />
 <meta property="og:locale" content="en-us">
 
 
@@ -34,9 +34,9 @@
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <meta name="twitter:creator" content="@" />
-<meta name="twitter:title" content="Class 19: Uncountable Sets" />
+<meta name="twitter:title" content="Problem Set 8 Revisions" />
 <meta name="twitter:description" content="" />
-<meta name="twitter:url" content="https://uvacs2102.github.io/class19/" />
+<meta name="twitter:url" content="https://uvacs2102.github.io/ps8revisions/" />
 <meta name="twitter:domain" content="https://uvacs2102.github.io">
   
 
@@ -44,20 +44,20 @@
   {
     "@context": "http://schema.org",
     "@type": "Article",
-    "headline": "Class 19: Uncountable Sets",
+    "headline": "Problem Set 8 Revisions",
     "author": {
       "@type": "Person",
       "name": "http://profiles.google.com/+?rel=author"
     },
     "datePublished": "2016-11-03",
     "description": "",
-    "wordCount":  268 
+    "wordCount":  197 
   }
 </script>
 
 
 
-<link rel="canonical" href="https://uvacs2102.github.io/class19/" />
+<link rel="canonical" href="https://uvacs2102.github.io/ps8revisions/" />
 
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://uvacs2102.github.io/touch-icon-144-precomposed.png">
 <link href="https://uvacs2102.github.io/favicon.png" rel="icon">
@@ -157,7 +157,7 @@
 
 <article id="main-content" class="container main_content single">
   <header class="container hat">
-  <center><h1>Class 19: Uncountable Sets
+  <center><h1>Problem Set 8 Revisions
 </h1></center>
 
   <div class="metas">
@@ -174,102 +174,31 @@
 </header>
 
   <div class="container content">
-  
+  <p>There are three important revisions to <a href="/docs/ps8.pdf">Problem Set 8</a>:</p>
 
-<h3 id="schedule">Schedule</h3>
+<ol>
+<li><p>The definition of <em>height</em> for Problem 4 should have included that
+the height of the <strong>null</strong> tree is 0.</p></li>
 
-<p><a href="/ps/ps8"><strong>Problem Set 8</strong></a> is due <strong>Friday (4 November) at 6:29pm</strong>.</p>
+<li><p>The definition of the <em>OrderedBinaryTree</em> before Problem 7 did not
+make sense for constructing nodes where one (or both) of the subtrees
+are <strong>null</strong>.  I have added clauses that allow empty trees to be used as
+the subtrees in a node.  Without these, it would not be possible to
+construct any trees (other than the base <strong>null</strong> tree), since it would
+not be sensible to satisfy the maximum or minimum constraints for the
+null tree.  It makes more sense to consider these undefined for the
+<strong>null</strong> tree, so it would be impossible to satisfy the constructor
+constraints without adding the disjunction clauses that allow the
+sub-trees to be <strong>null</strong>.</p></li>
 
-<p>Friday, 4 November at 11am (Rotunda Dome Room): <strong>Steve Huffman</strong> (BSCS
-2005, co-founder and CEO of Reddit), <em>Computer Science Distinguished
-Alumni Speaker</em>.</p>
+<li><p>For Problem 11, the definition of length using <code>list_accumulate</code>
+should be <code>list_accumulate(lambda a, b: b + 1, lst, 0)</code>.</p></li>
+</ol>
 
-<p><strong>Exam 2</strong> will be in class on <strong>Thursday, 10 November</strong>.  See <a href="/class18">Class 18</a> notes for details.</p>
-
-<p><div class="notpdf">
-   <center>
-<script async class="speakerdeck-embed" data-id="483bfa40aae04e3a8e46c090d6d4d727" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-   </center>
-   <div class="highlightm">
-   <a href="/docs/class19.pdf">See PDF Version for <b>Notes</b></a>.
-   </div></p>
-
-<p></div><!--endpdf--></p>
-
-<p><div class="latex"></p>
-
-<h2 id="countable-and-uncountable-sets">Countable and Uncountable Sets</h2>
-
-<p><strong>Definition.</strong> A set $S$ is <em>countably infinite</em> if and only if there
-  exists a bijection between $S$ and $\mathbb{N}$.</p>
-
-<p><strong>Definition.</strong> A set $S$ is <em>uncountable</em>, if there exists no bijection
-  between $S$ and $\mathbb{N}$.</p>
-
-<p>The <strong>power set</strong> of $A$ ($\textrm{pow}(A)$)is the set of all subsets of $A$:
-$$
-B \in \textrm{pow}(A) \iff B \subseteq A.
-$$</p>
-
-<p>For all <strong>finite</strong> sets $S$, $|pow(S)| = 2^{|S|}$.</p>
-
-<p>#
-#</p>
-
-<p>For <strong>all</strong> sets $S$, $|pow(S)| &gt; |S|$.</p>
-
-<p>#</p>
-
-<p>Prove $pow(\mathbb{N})$ is uncountable.</p>
-
-<p>#</p>
-
-<p>$\text{bitstrings} = \forall n \in \mathbb{N} . {0, 1}^n$.</p>
-
-<p>#</p>
-
-<!--page-->
-
-<h2 id="ordinal-and-cardinal-numbers">Ordinal and Cardinal Numbers</h2>
-
-<p>$\omega$ is the <em>smallest infinite ordinal</em>.  The first ordinal after
-$0, 1, 2, \cdots$.</p>
-
-<p>What is the difference between an <em>ordinal</em> and <em>cardinal</em> number?</p>
-
-<p>##</p>
-
-<p>What should $2\omega$ mean?</p>
-
-<p>##</p>
-
-<p>Is $\text{InfiniteBitStrings} = {0, 1}^\omega$ countable?</p>
-
-<p>#</p>
-
-<p>Prove the number of real numbers in the interval $[0, 1]$ is uncountable.</p>
-
-<p>#
-#
-#</p>
-
-<p>What set is bigger than $\mathbb{R}$?</p>
-
-<p>#</p>
-
-<p>Aleph-naught: $\aleph_0 = |\mathbb{N}|$ is the <em>smallest infinite
-cardinal number</em>.</p>
-
-<p>How is $\omega$ different from $\aleph_0$?</p>
-
-<p>##</p>
-
-<p>$$2^{\aleph_0} = |pow(\mathbb{N})| = | [0, 1] | = | \mathbb{R} | = | \text{InfiniteBitStrings} |  $$</p>
-
-<p>What is necessary to conclude that it is not possible to settle the
-question of whether $\aleph_1 = 2^{\aleph_0}$ with the ZFC axioms?</p>
-
-<p></div></p>
+<p>The version now posted has these revisions.  If you already found
+work-arounds to these problems in your solutions, you can add a note to
+your assignment indicating this and don&rsquo;t need to revisit them, but
+otherwise, please solve the revised problems.</p>
 
 </div>
 
@@ -281,11 +210,15 @@ question of whether $\aleph_1 = 2^{\aleph_0}$ with the ZFC axioms?</p>
   
 
     
-    <a class="prev" href="https://uvacs2102.github.io/ps8revisions/" title="Problem Set 8 Revisions">
+    <a class="prev" href="https://uvacs2102.github.io/class18/" title="Class 18: Infinite Sets">
       Previous
     </a>
     
 
+    
+    <a class="next" href="https://uvacs2102.github.io/class19/" title="Class 19: Uncountable Sets">
+      Next
+    </a>
     
 
   
