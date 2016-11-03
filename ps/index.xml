@@ -1200,6 +1200,8 @@ preserved invariant property from question 6.)&lt;/p&gt;&lt;/li&gt;
       <guid>https://uvacs2102.github.io/ps/ps8/</guid>
       <description>
 
+&lt;p&gt;[Revision 0.2 - 3 November]&lt;/p&gt;
+
 &lt;div class=&#34;latex&#34;&gt;
    \dbox{{\bf Deliverable:} Submit your responses as a
 single, readable PDF file on the collab site before {\bf 6:29pm} on {\bf
@@ -1308,7 +1310,7 @@ numbers.&lt;/p&gt;
 its root (the one node that has no parent node) to a leaf.  Provide a
 &lt;em&gt;constructive&lt;/em&gt; definition of &lt;em&gt;height&lt;/em&gt; for our binary tree type.  (Hint:
 the height of $\text{node}(\text{\bf null}, n, \text{\bf null})$ is
-$0$.)&lt;/p&gt;&lt;/li&gt;
+$0$.  The height of $\text{\bf null}$ should also be $0$.)&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;Prove that the maximum number of nodes in a binary tree of height $h$
 is $2^{h + 1} - 1$.&lt;/p&gt;&lt;/li&gt;
@@ -1344,8 +1346,8 @@ $\text{traverse(t)}$ is a list of length $n$.&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;&lt;strong&gt;Base case:&lt;/strong&gt; $\text{\bf null} \in \text{\em OrderedBinaryTree}$.&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;&lt;strong&gt;Constructor case:&lt;/strong&gt; if $t_1, t_2 \in \text{\em OrderedBinaryTree}$
-and $n \in \mathbb{N}$, and $\text{maximum}(t_1) &amp;lt; n$ and
-$\text{minimum}(t_2) &amp;gt; n$, then $\text{node}(t_1, n, t_2) \in \text{\em OrderedBinaryTree}$.&lt;/p&gt;&lt;/li&gt;
+and $n \in \mathbb{N}$, and $\text{empty}(t_1) \vee \text{maximum}(t_1) &amp;lt; n$ and
+$\text{empty}(t_1) \vee \text{minimum}(t_2) &amp;gt; n$, then $\text{node}(t_1, n, t_2) \in \text{\em OrderedBinaryTree}$.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;You may assume all the other tree operations (including
@@ -1406,7 +1408,7 @@ applying the function through the list.  For example,
 &lt;code&gt;list_accumulate(lambda a, b: a + b, lst, 0)&lt;/code&gt;
 should return the sum of all the elements in the list, and
 &lt;code&gt;list_accumulate(lambda a, b: a * b, lst, 1)&lt;/code&gt;
-should return their product, and &lt;code&gt;list_accumulate(lambda a, b: a + 1, lst, 0)&lt;/code&gt;
+should return their product, and &lt;code&gt;list_accumulate(lambda a, b: b + 1, lst, 0)&lt;/code&gt;
 should return the length of the list.&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;Define &lt;code&gt;list_map&lt;/code&gt; (as in problem 10) using &lt;code&gt;list_accumulate&lt;/code&gt;.&lt;/p&gt;&lt;/li&gt;
