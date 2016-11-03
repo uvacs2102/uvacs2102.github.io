@@ -311,8 +311,8 @@ $\text{traverse(t)}$ is a list of length $n$.</li>
 <li><p><strong>Base case:</strong> $\text{\bf null} \in \text{\em OrderedBinaryTree}$.</p></li>
 
 <li><p><strong>Constructor case:</strong> if $t_1, t_2 \in \text{\em OrderedBinaryTree}$
-and $n \in \mathbb{N}$, and $\text{empty}(t_1) \vee \text{maximum}(t_1) &lt; n$ and
-$\text{empty}(t_1) \vee \text{minimum}(t_2) &gt; n$, then $\text{node}(t_1, n, t_2) \in \text{\em OrderedBinaryTree}$.</p></li>
+and $n \in \mathbb{N}$, and $(\text{empty}(t_1) \vee \text{maximum}(t_1) &lt; n)$ and
+$(\text{empty}(t_1) \vee \text{minimum}(t_2) &gt; n)$, then $\text{node}(t_1, n, t_2) \in \text{\em OrderedBinaryTree}$.</p></li>
 </ul>
 
 <p>You may assume all the other tree operations (including

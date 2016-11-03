@@ -1346,8 +1346,8 @@ $\text{traverse(t)}$ is a list of length $n$.&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;&lt;strong&gt;Base case:&lt;/strong&gt; $\text{\bf null} \in \text{\em OrderedBinaryTree}$.&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;&lt;strong&gt;Constructor case:&lt;/strong&gt; if $t_1, t_2 \in \text{\em OrderedBinaryTree}$
-and $n \in \mathbb{N}$, and $\text{empty}(t_1) \vee \text{maximum}(t_1) &amp;lt; n$ and
-$\text{empty}(t_1) \vee \text{minimum}(t_2) &amp;gt; n$, then $\text{node}(t_1, n, t_2) \in \text{\em OrderedBinaryTree}$.&lt;/p&gt;&lt;/li&gt;
+and $n \in \mathbb{N}$, and $(\text{empty}(t_1) \vee \text{maximum}(t_1) &amp;lt; n)$ and
+$(\text{empty}(t_1) \vee \text{minimum}(t_2) &amp;gt; n)$, then $\text{node}(t_1, n, t_2) \in \text{\em OrderedBinaryTree}$.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;You may assume all the other tree operations (including
