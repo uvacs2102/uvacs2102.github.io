@@ -6,8 +6,18 @@
     <description>Recent content in Posts on cs2102: Discrete Math</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 03 Nov 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 04 Nov 2016 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://uvacs2102.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Problem Set 7 Solutions and Comments</title>
+      <link>https://uvacs2102.github.io/ps7solutions/</link>
+      <pubDate>Fri, 04 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/ps7solutions/</guid>
+      <description>&lt;p&gt;The Problem Set 7 solutions are now posted: [&lt;a href=&#34;https://collab.itc.virginia.edu/access/content/group/e0b17949-c94c-466b-835a-196381f3f911/ps7solutions.pdf&#34;&gt;PDF&lt;/a&gt;].&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Class 19: Uncountable Sets</title>
@@ -996,21 +1006,6 @@ true.&lt;/p&gt;
       
       <guid>https://uvacs2102.github.io/exam1solutions/</guid>
       <description>&lt;p&gt;The solutions to &lt;a href=&#34;https://uvacs2102.github.io/docs/exam1.pdf&#34;&gt;Exam 1&lt;/a&gt; are here: &lt;a href=&#34;https://uvacs2102.github.io/docs/exam1-solutions.pdf&#34;&gt;Exam 1 Solutions&lt;/a&gt;.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Problem Set 5 Comments</title>
-      <link>https://uvacs2102.github.io/ps5comments/</link>
-      <pubDate>Sat, 01 Oct 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://uvacs2102.github.io/ps5comments/</guid>
-      <description>&lt;p&gt;The preliminary solutions and comments for PS5 are now posted in collab:
-&lt;a href=&#34;https://collab.itc.virginia.edu/access/content/group/e0b17949-c94c-466b-835a-196381f3f911/ps5_solutions.pdf&#34;&gt;PDF&lt;/a&gt;.
-(Problem 9 is not included, but will be added later.)&lt;/p&gt;
-
-&lt;p&gt;We are providing the PS5 solutions now before they are graded, so you
-have the solutions to read with plenty of time before the exam.&lt;/p&gt;
 </description>
     </item>
     

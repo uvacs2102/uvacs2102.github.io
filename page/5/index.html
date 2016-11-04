@@ -138,17 +138,147 @@
   <center>
   <b>Recent Posts: </b>
   
+    <a href="https://uvacs2102.github.io/ps7solutions/">Problem Set 7 Solutions and Comments</a> |
+  
     <a href="https://uvacs2102.github.io/class19/">Class 19: Uncountable Sets</a> |
   
     <a href="https://uvacs2102.github.io/ps8revisions/">Problem Set 8 Revisions</a> |
-  
-    <a href="https://uvacs2102.github.io/class18/">Class 18: Infinite Sets</a> |
   
   <a href="/post">More...</a>
   </center>
   <p></p>
 
   
+  
+    <p class="fronthead"><a href="https://uvacs2102.github.io/class5/">Class 5: CNF, Quantifiers, and Proofs</a> (Tue, 6 Sep 2016)</p>
+     
+
+<h3 id="schedule">Schedule</h3>
+
+<p><a href="/ps/ps2"><strong>Problem Set 2</strong></a> is due <strong>Friday at 6:29pm</strong>.</p>
+
+<p><div class="notpdf">
+   <center>
+<script async class="speakerdeck-embed" data-id="79d8ff375dd84ce7b77827480b79a4dd" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+   </center></p>
+
+<p><div class="highlightm">
+   <a href="/docs/class5.pdf">See PDF Version for <b>Notes and Questions</b></a>.
+   </div></p>
+
+<h2 id="links">Links</h2>
+
+<p>If you believe real computing systems have the property that the values
+you read from memory will match what you wrote there, see:</p>
+
+<p>Sudhakar Govindavajhala and Andrew W. Appel. <a href="http://sip.cs.princeton.edu/pub/memerr.pdf"><em>Using Memory Errors to Attack a Virtual Machine</em></a>, IEEE Symposium on Security and Privacy 2003.</p>
+
+<p>Bianca Schroeder, Eduardo Pinheiro, Wolf-Dietrich Weber. <a href="http://www.cs.utoronto.ca/~bianca/papers/sigmetrics09.pdf"><em>DRAM Errors
+in the Wild: A Large-Scale Field
+Study</em></a>. SIGMETRICS 2009.</p>
+
+<p>Kaveh Razavi, Ben Gras, Erik Bosman, Bart Preneel, Cristiano Giuffrida
+and Herbert Bos. <a href="https://www.usenix.org/conference/usenixsecurity16/technical-sessions/presentation/razavi"><em>Flip Feng Shui: Hammering a Needle in the Software
+Stack</em></a>. USENIX
+Security 2016.</p>
+
+<p>Yuan Xiao, Xiaokuan Zhang, Yinqian Zhang, and Radu Teodorescu. <a href="https://www.usenix.org/system/files/conference/usenixsecurity16/sec16_paper_xiao.pdf"><em>One Bit Flips, One Cloud Flops: Cross-VM Row Hammer Attacks and Privilege Escalation</em></a>, USENIX Security 2016.</p>
+
+<p></div><!--endpdf--></p>
+
+<p><div class="latex"></p>
+
+<h1 id="notes-and-questions">Notes and Questions</h1>
+
+<p><strong>Definition: satisfiable.</strong> A logical formula is <em>satisfiable</em> if there
+  is <em>some</em> way to make it <strong>true</strong>.  That is, there is at least one
+  assignment of truth value to its variables that makes the forumla
+  true.</p>
+
+<p><strong>Definition: conjunctive normal form (CNF).</strong> A logical formula that is
+  written as a conjunction of <em>clauses</em>, where each clause is a
+  disjunction of <em>literals</em>, and each literal is either a variable or a
+  negation of a variable, is in <em>conjunctive normal form</em>.  If each
+  clause has excatly three literals, it is called <em>three conjunctive
+  normal form</em> (3CNF).</p>
+
+<p>$$
+(a_1 \vee a_2 \vee \neg a_3) \wedge
+(a_1 \vee \neg a_2 \vee a_3) \wedge
+(\neg a_1 \vee a_2 \vee \neg a_3) \wedge
+(\neg a_1 \vee a_2 \vee a_3)
+$$</p>
+
+<p>##</p>
+
+<p>Show that every logical formula can be written in 3-conjunctive normal form.</p>
+
+<div class="biggap"></div>
+
+<p>What is the maximum number of (different) clauses in a 3CNF formula
+involving 5 variables?</p>
+
+<p>##</p>
+
+<p>What is the maximum number of (different) clauses in a <em>satisfiable</em>
+3CNF formula involving 5 variables?</p>
+
+<p>##</p>
+
+<p>What is the maximum number of (different) clauses in a <em>valid</em> 3CNF formula involving 5 variables?</p>
+
+<p>##</p>
+
+<!--page-->
+
+<h2 id="logical-quantifiers">Logical Quantifiers</h2>
+
+<p>$\forall x \in S. P(x)$ means $P$ holds for <em>every</em> element of $S$.<br />
+$\exists x \in S. P(x)$ means $P$ holds for <em>at least one</em> element of $S$.</p>
+
+<p>Define <em>valid</em> and <em>satisfiable</em> using logical quantifiers:</p>
+
+<p>#</p>
+
+<p>$\forall x \in S. P(x)$ is equivalent to $\neg(\exists x \in S. \qquad \qquad)$</p>
+
+<p>###</p>
+
+<p>Notation: $\textrm{pow}(S)$ denotes the <em>powerset</em> of $S$.  The powerset
+of a set is the set of all possible subsets of that S.  So,
+$\textrm{pow}(\mathbb{N})$ denotes all subsets of the natural numbers.</p>
+
+<p>Notation: $A - B$ denotes the <em>difference</em> between two sets.  It is the
+elements of $A$, with every element of $B$ removed.</p>
+
+<p>Notation: $\varnothing$ is the <em>empty set</em>.  It is the set with no elements: ${ }$.</p>
+
+<p>\begin{center}
+\Large</p>
+
+<p>$$
+\fillin S \in \textrm{pow}(\mathbb{N}) - { \varnothing } \ldotp \fillin m \in S\ldotp \fillin x \in S - {m}\ldotp m &lt; x
+$$</p>
+
+<p>\begin{comment}
+$$
+\forall S \in \textrm{pow}(\mathbb{N}) - { \varnothing } \ldotp \exists m \in S\ldotp \forall x \in S - {m}\ldotp m &lt; x
+$$
+\end{comment}
+\end{center}</p>
+
+<p>Write a logical expression that captures the meaning of: <em>Proofs can
+certify that a computing system will always behave correctly, something
+that no amount of testing can do.</em></p>
+
+<div class="biggap"></div>
+
+<p>What does it mean to <em>test</em> a computing system?  What does it mean for a computing system to <em>always behave correctly</em>?</p>
+
+<p>#</p>
+
+<p></div></p>
+
   
     <p class="fronthead"><a href="https://uvacs2102.github.io/challenge1/">Challenge Solved!</a> (Fri, 2 Sep 2016)</p>
      <p>The first challenge problem has been solved!</p>
