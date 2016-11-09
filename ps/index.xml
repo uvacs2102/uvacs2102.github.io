@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ps on cs2102: Discrete Math</title>
-    <link>https://uvacs2102.github.io/ps/</link>
-    <description>Recent content in Ps on cs2102: Discrete Math</description>
+    <title>Ps-rsses on cs2102: Discrete Math</title>
+    <link>https://uvacs2102.github.io/ps/index.xml</link>
+    <description>Recent content in Ps-rsses on cs2102: Discrete Math</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 26 Aug 2016 00:00:00 +0000</lastBuildDate>

@@ -33,15 +33,15 @@
 
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://uvacs2102.github.io/touch-icon-144-precomposed.png">
 <link href="https://uvacs2102.github.io/favicon.png" rel="icon">
-<meta name="theme-color" content="#2053AB">
-<meta name="generator" content="Hugo 0.16" />
+
+<meta name="generator" content="Hugo 0.17" />
 
   <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
 
-<link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,900,900i|Open+Sans|Raleway" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Merriweather:300%7CRaleway%7COpen+Sans' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="https://uvacs2102.github.io/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://uvacs2102.github.io/css/style.css">
 
@@ -119,6 +119,10 @@
 
 
 
+
+
+
+
 </div>
 
 
@@ -129,29 +133,161 @@
 
 <section id="main-content" class="container main_content homepage">
   <header class="container header">
-    <center><h1>cs2102: Discrete Math
-</h1></center>
+    <h1><center>cs2102: Discrete Math
+</center></h1>
 
-    
   </header>
+  
+  
+  <p class="fronthead"><A href="/ps3/">Problem Set 3</a> (Fri, 9 Sep 2016)</p>
+    <p><strong>Problem Set 3</strong> is <a href="/ps/ps3">now posted</a>, and is due on <strong>Friday, 16
+  September at 6:29pm</strong>.</p>
+ 
+  
+  <p class="fronthead"><A href="/class6/">Class 6: SAT Solving</a> (Thu, 8 Sep 2016)</p>
+    
 
-  <center>
-  <b>Recent Posts: </b>
-  
-    <a href="https://uvacs2102.github.io/ps7solutions/">Problem Set 7 Solutions and Comments</a> |
-  
-    <a href="https://uvacs2102.github.io/class19/">Class 19: Uncountable Sets</a> |
-  
-    <a href="https://uvacs2102.github.io/ps8revisions/">Problem Set 8 Revisions</a> |
-  
-  <a href="/post">More...</a>
-  </center>
-  <p></p>
+<h3 id="schedule">Schedule</h3>
 
+<p><a href="/ps/ps2"><strong>Problem Set 2</strong></a> is due <strong>Friday at 6:29pm</strong>.  A few of the
+problems on PS2 are quite challenging!  The problems are organized by
+topic, not by difficulty (the hardest problems are #4 and #7).  I hope
+everyone makes a good attempt to solve all of the problems, but don&rsquo;t be
+overly stressed if you cannot solve these ones and move on to the other
+problems if you are stuck on them (to hopefully return to these problems
+after you&rsquo;ve had more time to think about them).  Good solutions to
+these problems will impress us, but are not necessary to get a good
+score on PS2.</p>
+
+<p>I will be out-of-town Monday, and not able to hold my usual office hours
+on Monday.  I will have &ldquo;make-up&rdquo; office hours on Wednesday, 3:30-4:30pm
+(in addition to my usual Wednesday 1-2pm office hours).</p>
+
+<p><div class="notpdf">
+   <center>
+<script async class="speakerdeck-embed" data-id="774e84575197415ca672431a740645ed" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+   </center></p>
+
+<p><div class="highlightm">
+   <a href="/docs/class6.pdf">See PDF Version for <b>Notes and Questions</b></a>.
+   </div></p>
+
+<h2 id="links">Links</h2>
+
+<p>Sahand Saba&rsquo;s <a href="http://sahandsaba.com/understanding-sat-by-implementing-a-simple-sat-solver-in-python.html"><em>Understanding SAT by Implementing a Simple SAT Solver in
+Python</em></a> [<a href="https://github.com/evansuva/simple-sat">Code with my modifications: https://github.com/evansuva/simple-sat</a>]</p>
+
+<p><a href="http://baldur.iti.kit.edu/sat-competition-2016/index.php">SAT Competition 2016</a></p>
+
+<p>XKCDs on NP-Complete problems: <a href="https://xkcd.com/287/">Subset Sum</a>, <a href="http://xkcd.com/399/">Travelling Seller</a></p>
+
+<p><a href="http://www.cs.virginia.edu/pegboard/cb-sigact.pdf"><em>Pancakes, Puzzles, and Polynomials: Cracking the Cracker
+Barrel</em></a> (reducing
+pegboard puzzle to 3SAT)</p>
+
+<p><a href="http://claymath.org/sites/default/files/minesweeper.pdf"><em>Minesweeper</em></a></p>
+
+<p></div><!--endpdf--></p>
+
+<p><div class="latex"></p>
+
+<h1 id="notes-and-questions">Notes and Questions</h1>
+
+<p><strong>Definition.</strong> A formula is in <em>3SAT</em> if it is in 3CNF form and it is
+  satisfiable.</p>
+
+<p>$$
+(x_1 \vee x_2 \vee x_3) \wedge (x_1 \vee \overline{x_2} \vee x_3) \wedge (\overline{x_1} \vee x_2 \vee \overline{x_3})
+$$</p>
+
+<p>\begin{center}
+\tiny
+\begin{math}
+(x<em>{48} \vee x</em>{4} \vee \overline{x<em>{9}}) \wedge (\overline{x</em>{44}} \vee x<em>{50} \vee \overline{x</em>{37}}) \wedge (\overline{x<em>{8}} \vee \overline{x</em>{1}} \vee x<em>{28}) \wedge (x</em>{21} \vee x<em>{27} \vee \overline{x</em>{32}}) \wedge (x<em>{17} \vee x</em>{29} \vee \overline{x<em>{30}}) \wedge (x</em>{30} \vee x<em>{24} \vee x</em>{37}) \wedge (\overline{x<em>{22}} \vee \overline{x</em>{27}} \vee \overline{x<em>{44}}) \wedge (x</em>{8} \vee \overline{x<em>{25}} \vee \overline{x</em>{24}}) \wedge (\overline{x<em>{44}} \vee x</em>{50} \vee x<em>{14}) \wedge (x</em>{45} \vee x<em>{15} \vee x</em>{37}) \wedge (\overline{x<em>{16}} \vee x</em>{14} \vee \overline{x<em>{36}}) \wedge (\overline{x</em>{33}} \vee x<em>{5} \vee x</em>{26}) \wedge (x<em>{18} \vee \overline{x</em>{7}} \vee \overline{x<em>{24}}) \wedge (x</em>{31} \vee x<em>{38} \vee x</em>{28}) \wedge (x<em>{31} \vee \overline{x</em>{33}} \vee \overline{x<em>{8}}) \wedge (x</em>{49} \vee x<em>{7} \vee \overline{x</em>{6}}) \wedge (x<em>{34} \vee \overline{x</em>{8}} \vee x<em>{46}) \wedge (x</em>{4} \vee \overline{x<em>{5}} \vee \overline{x</em>{35}}) \wedge (x<em>{43} \vee x</em>{27} \vee x<em>{39}) \wedge (\overline{x</em>{46}} \vee \overline{x<em>{40}} \vee \overline{x</em>{27}}) \wedge (\overline{x<em>{25}} \vee x</em>{14} \vee \overline{x<em>{49}}) \wedge (x</em>{38} \vee x<em>{5} \vee x</em>{15}) \wedge (x<em>{9} \vee x</em>{14} \vee \overline{x<em>{19}}) \wedge (x</em>{45} \vee \overline{x<em>{42}} \vee \overline{x</em>{39}}) \wedge (x<em>{34} \vee \overline{x</em>{22}} \vee \overline{x<em>{28}}) \wedge (\overline{x</em>{20}} \vee x<em>{15} \vee \overline{x</em>{8}}) \wedge (\overline{x<em>{44}} \vee \overline{x</em>{10}} \vee \overline{x<em>{9}}) \wedge (x</em>{22} \vee \overline{x<em>{31}} \vee x</em>{14}) \wedge (\overline{x<em>{9}} \vee \overline{x</em>{42}} \vee \overline{x<em>{15}}) \wedge (\overline{x</em>{40}} \vee x<em>{12} \vee \overline{x</em>{32}}) \wedge (\overline{x<em>{20}} \vee \overline{x</em>{6}} \vee \overline{x<em>{15}}) \wedge (\overline{x</em>{37}} \vee x<em>{39} \vee \overline{x</em>{23}}) \wedge (\overline{x<em>{3}} \vee \overline{x</em>{40}} \vee \overline{x<em>{32}}) \wedge (\overline{x</em>{4}} \vee \overline{x<em>{25}} \vee x</em>{7}) \wedge (\overline{x<em>{20}} \vee \overline{x</em>{36}} \vee \overline{x<em>{37}}) \wedge (\overline{x</em>{40}} \vee \overline{x<em>{35}} \vee x</em>{39}) \wedge (\overline{x<em>{43}} \vee \overline{x</em>{40}} \vee \overline{x<em>{7}}) \wedge (x</em>{34} \vee x<em>{44} \vee x</em>{26}) \wedge (x<em>{13} \vee x</em>{27} \vee x<em>{28}) \wedge (x</em>{12} \vee \overline{x<em>{36}} \vee x</em>{7}) \wedge (\overline{x<em>{16}} \vee x</em>{9} \vee \overline{x<em>{24}}) \wedge (\overline{x</em>{48}} \vee x<em>{14} \vee x</em>{28}) \wedge (x<em>{16} \vee x</em>{4} \vee x<em>{40}) \wedge (\overline{x</em>{25}} \vee x<em>{15} \vee x</em>{37}) \wedge (x<em>{47} \vee \overline{x</em>{26}} \vee \overline{x<em>{23}}) \wedge (x</em>{4} \vee \overline{x<em>{13}} \vee x</em>{36}) \wedge (x<em>{48} \vee \overline{x</em>{13}} \vee \overline{x<em>{37}}) \wedge (x</em>{4} \vee x<em>{35} \vee \overline{x</em>{27}}) \wedge (\overline{x<em>{22}} \vee x</em>{47} \vee x<em>{26}) \wedge (\overline{x</em>{22}} \vee \overline{x<em>{46}} \vee x</em>{27}) \wedge (\overline{x<em>{20}} \vee x</em>{49} \vee x<em>{11}) \wedge (x</em>{42} \vee \overline{x<em>{10}} \vee x</em>{28}) \wedge (\overline{x<em>{45}} \vee x</em>{28} \vee \overline{x<em>{37}}) \wedge (x</em>{14} \vee \overline{x<em>{32}} \vee \overline{x</em>{23}}) \wedge (x<em>{22} \vee x</em>{14} \vee x<em>{23}) \wedge (\overline{x</em>{17}} \vee \overline{x<em>{46}} \vee \overline{x</em>{7}}) \wedge (\overline{x<em>{31}} \vee x</em>{46} \vee \overline{x<em>{50}}) \wedge (x</em>{34} \vee \overline{x<em>{41}} \vee x</em>{43}) \wedge (x<em>{17} \vee \overline{x</em>{9}} \vee x<em>{15}) \wedge (x</em>{46} \vee x<em>{14} \vee \overline{x</em>{12}}) \wedge (\overline{x<em>{20}} \vee x</em>{12} \vee x<em>{14}) \wedge (x</em>{41} \vee x<em>{42} \vee \overline{x</em>{15}}) \wedge (x<em>{48} \vee x</em>{46} \vee \overline{x<em>{36}}) \wedge (\overline{x</em>{22}} \vee \overline{x<em>{4}} \vee \overline{x</em>{49}}) \wedge (x<em>{22} \vee x</em>{12} \vee \overline{x<em>{42}}) \wedge (x</em>{13} \vee \overline{x<em>{38}} \vee x</em>{39}) \wedge (x<em>{48} \vee \overline{x</em>{16}} \vee \overline{x<em>{27}}) \wedge (x</em>{17} \vee \overline{x<em>{18}} \vee \overline{x</em>{26}}) \wedge (x<em>{48} \vee \overline{x</em>{40}} \vee \overline{x<em>{35}}) \wedge (\overline{x</em>{43}} \vee \overline{x<em>{40}} \vee \overline{x</em>{49}}) \wedge (x<em>{29} \vee x</em>{11} \vee \overline{x<em>{32}}) \wedge (x</em>{33} \vee \overline{x<em>{17}} \vee x</em>{39}) \wedge (\overline{x<em>{25}} \vee \overline{x</em>{9}} \vee \overline{x<em>{6}}) \wedge (x</em>{40} \vee \overline{x<em>{50}} \vee x</em>{19}) \wedge (x<em>{8} \vee x</em>{10} \vee \overline{x<em>{27}}) \wedge (x</em>{5} \vee x<em>{9} \vee \overline{x</em>{26}}) \wedge (x<em>{45} \vee \overline{x</em>{38}} \vee \overline{x<em>{27}}) \wedge (\overline{x</em>{4}} \vee \overline{x<em>{40}} \vee \overline{x</em>{42}}) \wedge (x<em>{21} \vee x</em>{50} \vee x<em>{12}) \wedge (\overline{x</em>{8}} \vee \overline{x<em>{14}} \vee \overline{x</em>{42}}) \wedge (\overline{x<em>{17}} \vee x</em>{47} \vee \overline{x<em>{27}}) \wedge (x</em>{49} \vee \overline{x<em>{12}} \vee \overline{x</em>{6}}) \wedge (x<em>{27} \vee x</em>{49} \vee \overline{x<em>{32}}) \wedge (\overline{x</em>{29}} \vee \overline{x<em>{12}} \vee \overline{x</em>{26}}) \wedge (x<em>{48} \vee \overline{x</em>{2}} \vee x<em>{6}) \wedge (x</em>{16} \vee x<em>{36} \vee x</em>{49}) \wedge (x<em>{33} \vee \overline{x</em>{12}} \vee \overline{x<em>{26}}) \wedge (\overline{x</em>{33}} \vee x<em>{29} \vee x</em>{49}) \wedge (\overline{x<em>{48}} \vee x</em>{2} \vee x<em>{19}) \wedge (x</em>{25} \vee x<em>{36} \vee x</em>{49}) \wedge (x<em>{21} \vee x</em>{40} \vee \overline{x<em>{14}}) \wedge (\overline{x</em>{34}} \vee \overline{x<em>{44}} \vee \overline{x</em>{6}}) \wedge (x<em>{48} \vee \overline{x</em>{50}} \vee \overline{x<em>{1}}) \wedge (x</em>{5} \vee \overline{x<em>{12}} \vee x</em>{7}) \wedge (x<em>{21} \vee \overline{x</em>{35}} \vee \overline{x<em>{27}}) \wedge (\overline{x</em>{22}} \vee \overline{x<em>{16}} \vee \overline{x</em>{14}}) \wedge (\overline{x<em>{13}} \vee \overline{x</em>{35}} \vee \overline{x<em>{12}}) \wedge (\overline{x</em>{4}} \vee \overline{x<em>{35}} \vee \overline{x</em>{42}}) \wedge (\overline{x<em>{50}} \vee \overline{x</em>{40}} \vee x<em>{7}) \wedge (x</em>{25} \vee x<em>{47} \vee \overline{x</em>{12}})
+\end{math}
+\end{center}</p>
+
+<h2 id="converting-truth-tables-to-cnf">Converting Truth Tables to CNF</h2>
+
+<p>\begin{tabular}{cc|cc}
+$P$ &amp; $Q$ &amp; $P \implies Q$ &amp; $P \oplus Q$ \ \hline
+\T &amp; \T   &amp; \T &amp; \F <br />
+\T &amp; \F   &amp; \F &amp; \T <br />
+\F &amp; \T   &amp; \T &amp; \T <br />
+\F &amp; \F   &amp; \T &amp; \F <br />
+\end{tabular}</p>
+
+<p>The output of the operator is \T\ if and only if the inputs do not match
+<em>any row</em> where the output is \F.  We can ensure the inputs do not match
+a row, but OR-ing the negation of each input: in the disjunction, at
+least one must be \T\ to satisfy the clause.</p>
+
+<h2 id="problems">Problems</h2>
+
+<p><strong>Definition.</strong> A <em>problem</em> is a precise description of set of possible
+  inputs and desired property of an output corresponding to each input.</p>
+
+<p>Define the <em>ADDITION</em> problem (adding two integers):</p>
+
+<p>#</p>
+
+<p><strong>Definition.</strong> A <em>decision problem</em> is a problem where the output is
+  either <em>T</em> or <em>F</em>.  Equivalently, we can view a decision problem as
+  testing set membership: $x \in S$.</p>
+
+<p>The <em>SUM</em> problem:
+\begin{quote}
+  {\bf Input.} Three integers, $x$, $y$, and $z$.  <br />
+  {\bf Output.} \T\ iff $z = x + y$.
+\end{quote}</p>
+
+<p>How could we solve <em>ADDITION</em> using <em>SUM</em>?</p>
+
+<p>##</p>
+
+<p><strong>Definition.</strong> A <em>procedure</em> is a precise description of an information
+  process.</p>
+
+<p><strong>Definition.</strong> An <em>algorithm</em> for a particular problem is a procedure
+  that <em>solves</em> that problem.  To <em>solve</em> a problem, an algorithm must
+  always (eventually) produce the correct output for any problem input.</p>
+
+<p><strong>Definition.</strong> A <em>program</em> is adescription of a procedure that can be
+executed by a computer.</p>
+
+<p><strong>Definition.</strong> The <em>3SAT decision problem</em> takes as input a logical
+  formula written in CNF, and outputs <em>T</em> if the input formula is
+  satisfiable and outputs <em>F</em> otherwise.</p>
+
+<p>How many uses of a solver for the <em>3SAT</em> decision problem are sufficient
+to always find a satisfying assignment for a satisfiable formula?</p>
+
+<p>##</p>
+
+<h2 id="sat-solving-will-be-covered-tuesday">SAT Solving (will be covered Tuesday)</h2>
+
+<p>Sahand Saba&rsquo;s <a href="http://sahandsaba.com/understanding-sat-by-implementing-a-simple-sat-solver-in-python.html"><em>Understanding SAT by Implementing a Simple SAT Solver in
+Python</em></a> (Code with a few modifications: <a href="https://github.com/evansuva/simple-sat"><em>https://github.com/evansuva/simple-sat</em></a>)</p>
+
+<p>What is the <em>worst-case</em> number of guesses needed to solve a SAT
+instance with $v$ variables and $c$ clauses using the ``brute-force
+guessing&rdquo; strategy?</p>
+
+<p>###</p>
+
+<p>What is the <em>worst-case</em> number of guesses needed to solve a SAT
+instance with $v$ variables and $c$ clauses using the ``watchlists&rdquo;
+strategy?</p>
+
+<p>###</p>
+
+<p>Why is it possible to solve <em>most</em> SAT instances reasonably quickly?</p>
+
+<p></div></p>
+ 
   
-  
-    <p class="fronthead"><a href="https://uvacs2102.github.io/class5/">Class 5: CNF, Quantifiers, and Proofs</a> (Tue, 6 Sep 2016)</p>
-     
+  <p class="fronthead"><A href="/class5/">Class 5: CNF, Quantifiers, and Proofs</a> (Tue, 6 Sep 2016)</p>
+    
 
 <h3 id="schedule">Schedule</h3>
 
@@ -278,10 +414,10 @@ that no amount of testing can do.</em></p>
 <p>#</p>
 
 <p></div></p>
-
+ 
   
-    <p class="fronthead"><a href="https://uvacs2102.github.io/challenge1/">Challenge Solved!</a> (Fri, 2 Sep 2016)</p>
-     <p>The first challenge problem has been solved!</p>
+  <p class="fronthead"><A href="/challenge1/">Challenge Solved!</a> (Fri, 2 Sep 2016)</p>
+    <p>The first challenge problem has been solved!</p>
 
 <p><div class="highlightr">
 <strong>Challenge 1.</strong> From <a href="/class2">Class 2</a>: I wasn&rsquo;t very satisfied with
@@ -302,14 +438,14 @@ that no amount of testing can do.</em></p>
 <p>Congratulations to the challenge winners!</p>
 
 <p>(<a href="/challenges">Challenge 2</a> is still open, and no viable solutions have yet been submitted.)</p>
-
+ 
   
-    <p class="fronthead"><a href="https://uvacs2102.github.io/ps2/">Problem Set 2</a> (Fri, 2 Sep 2016)</p>
-     <p><strong>Problem Set 2</strong> is <a href="/ps/ps2">now posted</a>, and is due on <strong>Friday, 9 September at 6:29pm</strong>.</p>
-
+  <p class="fronthead"><A href="/ps2/">Problem Set 2</a> (Fri, 2 Sep 2016)</p>
+    <p><strong>Problem Set 2</strong> is <a href="/ps/ps2">now posted</a>, and is due on <strong>Friday, 9 September at 6:29pm</strong>.</p>
+ 
   
-    <p class="fronthead"><a href="https://uvacs2102.github.io/class4/">Class 4: Logical Formulas</a> (Thu, 1 Sep 2016)</p>
-     
+  <p class="fronthead"><A href="/class4/">Class 4: Logical Formulas</a> (Thu, 1 Sep 2016)</p>
+    
 
 <h3 id="schedule">Schedule</h3>
 
@@ -431,10 +567,10 @@ For each of the formulas below, determine if it is _valid_ and if it is _satisfi
 
 
 </div>
-
+ 
   
-    <p class="fronthead"><a href="https://uvacs2102.github.io/class3/">Class 3: Well-Ordering Principle</a> (Tue, 30 Aug 2016)</p>
-     
+  <p class="fronthead"><A href="/class3/">Class 3: Well-Ordering Principle</a> (Tue, 30 Aug 2016)</p>
+    
 
 <h3 id="schedule">Schedule</h3>
 
@@ -541,10 +677,10 @@ Never need an excuse to watch <a href="http://www.wired.com/2014/12/gangnam-styl
 _The whole problem with the world is that fools and fanatics are always so certain of themselves, and wiser people so full of doubts._ Bertrand Russell
 
 </div>
-
+ 
   
-    <p class="fronthead"><a href="https://uvacs2102.github.io/ohours/">Office Hours Posted</a> (Sun, 28 Aug 2016)</p>
-     <div class="highlightr">
+  <p class="fronthead"><A href="/ohours/">Office Hours Posted</a> (Sun, 28 Aug 2016)</p>
+    <div class="highlightr">
    The schedule here is subject to change. Please check the current [Office Hours Schedule](/officehours) for the current schedule.
    </div>
 
@@ -581,10 +717,10 @@ noon-1:30pm Riya<br />
 <p><strong>Sundays</strong><br />
 noon-3:30pm Hussain, Yong Jae<br />
 4-5:30pm Christopher</p>
-
+ 
   
-    <p class="fronthead"><a href="https://uvacs2102.github.io/surveyquestions/">Survey Questions</a> (Sat, 27 Aug 2016)</p>
-     <p>Here are my (in progress) responses to selected questions submitted in
+  <p class="fronthead"><A href="/surveyquestions/">Survey Questions</a> (Sat, 27 Aug 2016)</p>
+    <p>Here are my (in progress) responses to selected questions submitted in
 the registration surveys.  I&rsquo;ll add more responses here as I go through
 the rest of your questions.  If you have other questions after reading
 this, feel free to ask them on slack (if you want it to be anonymous,
@@ -786,334 +922,11 @@ should enable you to design, build, and analyze computing systems that
 do things people previously thought were not possible (or didn&rsquo;t even
 think about at all!)<br />
    </div></p>
-
+ 
   
-    <p class="fronthead"><a href="https://uvacs2102.github.io/ps1/">Problem Set 1</a> (Fri, 26 Aug 2016)</p>
-     <p><strong>Problem Set 1</strong> is <a href="/ps/ps1">now posted</a>, and is due on <strong>Friday, 2 September at 6:29pm</strong>.</p>
-
-  
-    <p class="fronthead"><a href="https://uvacs2102.github.io/class2/">Class 2: Proof Methods</a> (Thu, 25 Aug 2016)</p>
-     
-
-<h3 id="schedule">Schedule</h3>
-
-<p>Before <strong>Friday (tomorrow), 6:29pm</strong>:</p>
-
-<ul>
-<li>Read, print, and sign the <a href="/pledge">Course Pledge</a>.  You should print
-the <a href="/docs/pledge.pdf">PDF version</a> for signing, and submit a scan of
-your signed pledge using Collab.</li>
-<li>Read Jeremy Kun&rsquo;s <a href="https://medium.com/@jeremyjkun/habits-of-highly-mathematical-people-b719df12d15e"><em>Habits of Highly Mathematical People</em></a>.</li>
-<li>Submit a <a href="https://docs.google.com/forms/d/e/1FAIpQLSesDMnQXhCP73thN51kTSNNst8GcvQCJCGTepiJ2c3Ym1l-zg/viewform">Course Registration Survey</a> (which includes some questions based on Kun&rsquo;s essay).</li>
-</ul>
-
-<p>Next week:</p>
-
-<ul>
-<li>Before Tuesday&rsquo;s class: Read MCS Chapter 2</li>
-<li>Before Thursday&rsquo;s class: Read MCS Chapter 3</li>
-<li>Due Friday at 6:29pm: <a href="/ps/ps1"><strong>Problem Set 1</strong></a></li>
-</ul>
-
-<p><div class="notpdf"></p>
-
-<p>Sorry the proof in class got so messed up!  Although part of my goal for
-class today was to illustrated the subjectiveness of human-written and
-read proofs, I apologize for making things so confusing and broken.  I&rsquo;d
-updated the notes to include the full proof (hopefully correct now!) at
-the level of detail intended in class.  Its good to see students are
-being skeptical proof-readers and noticing mistakes like this.</p>
-
-<p>We didn&rsquo;t get to the &ldquo;if and only if&rdquo; proof in the notes in class today,
-but you are encouraged to try this on your own.  We&rsquo;ll look at this the
-Well Ordering Principle (Chapter 2) in Tuesday&rsquo;s class.</p>
-
-<p><div class="highlightr">
-<strong>Challenge Problem Opportunity.</strong> I wasn&rsquo;t very satisfied with my proof
-  of the &ldquo;Odd-Even Lemma&rdquo; in class.  I hope a student will come up with
-  a better proof.  Come up with a proof that passes the &ldquo;skeptical reader&rdquo; test and
-  would convince someone with no prior knowledge of odd and even numbers.
-   </div></p>
-
-<p><div class="highlightm">
-   <a href="docs/class2.pdf">See PDF Version for <b>Notes and Questions</b></a>.
-   </div></p>
-
-<p><center>
-<script async class="speakerdeck-embed" data-id="d7b6ff339db149ba8996cfcc6d84d44d" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-</center></p>
-
-<h2 id="links">Links</h2>
-
-<p>Dan Ariely, <a href="http://more-minerals.blogspot.com/2016/02/dan-ariely-honor-codes.html"><em>Honor Codes</em></a></p>
-
-<p>The Coq Proof Assistant tool I mentioned in class today is available
-from <a href="https://coq.inria.fr/"><em>https://coq.inria.fr/</em></a>.  (You are not
-expected to use this for cs2102, or generate proofs at this level of
-rigor or details, but are certainly welcome to if you want!)</p>
-
-<p><a href="http://www.vanityfair.com/culture/2009/06/us_airways200906"><em>Anatomy of a
-Miracle</em></a>,
-Vanity Fair, June 2009.</p>
-
-<p><a href="http://www.trnicely.net/pentbug/pentbug.html">Intel&rsquo;s FDIV bug</a> (there&rsquo;s even a web page for <a href="http://www.columbia.edu/~sss31/rainbow/pentium.jokes.html">jokes about Intel&rsquo;s FDIV bug</a>).</p>
-
-<p></div><!--endpdf--></p>
-
-<div class="latex">
-
-# Notes and Questions
-
-An integer, $z$, is **even** if there exists an integer $k$ such that $z = 2k$.    
-
-Is this a _definition_, _axiom_, or _proposition_?
-
-#
-
-An integer, $z$, is **odd** if there exists an integer $k$ such that $z
-= 2k + 1$.  (Note that there is no connection between the variables used
-here, and to define even above.)
-
-To prove an implication, $P \implies Q$: 1. assume $P$.  2. Show chain of logical deductions that leads to $Q$.
-
-**Odd-Even Lemma:** If an integer is not even, it is odd.  Note: A
-  _lemma_ is just a name for a theorem, typically used for proving
-  another theorem.
-
-<div class="biggap"></div>
-
-<p>How should one decide what can be accepted as an axiom, and what must be proven?</p>
-
-<div class="gap"></div>
-
-<p>What is the purpose of a <em>proof</em>?  (in cs2102? in software development? in algorithm design?)</p>
-
-<div class="gap"></div>
-
-<h2 id="proof-from-class">Proof from Class</h2>
-
-<p>Proposition: If the product of $x$ and $y$ is even, at least one of $x$ or $y$ must be even.</p>
-
-<p>Our goal is to prove the implication, $P \implies Q$, where:</p>
-
-<ul>
-<li>$P$ is &ldquo;the product of $x$ and $y$ is even&rdquo;</li>
-<li>$Q$ is &ldquo;at least one of $x$ and $y$ must be even&rdquo;</li>
-</ul>
-
-<p>We will prove the contrapositive.  The inference rule,</p>
-
-<p>$$
-\infer{P \implies Q}{NOT(Q) \implies NOT(P)}
-$$
-will be the last step in our proof.  To be able to use this rule, we need to make the antecedent true.  So, our goal is to prove $NOT(Q) \implies NOT(P)$.</p>
-
-<p>To prove an implication, we assume the left side and short the right
-side.  So, our proof begins:</p>
-
-<ol>
-<li>We prove the contrapositive.</li>
-<li>Assume NOT(at least one of $x$ and $y$ must be even).</li>
-<li>By the meaning of negation, this means both $x$ and $y$ are not even.</li>
-<li>By the &ldquo;Odd-Even Lemma&rdquo;, both $x$ and $y$ are odd.</li>
-<li>By the definition of <em>odd</em>, there exist integers $k$ and $m$ such that $x = 2k + 1$ and $y = 2m + 1$.</li>
-<li>Substituting, $xy = (2k + 1)(2m + 1) = 4mk + 2m + 2k + 1 = 2(2mk + m + k) + 1$.</li>
-<li>By the closure of addition and multiplication over the integers, there is some integer $r = 2mk + m + k$, so $xy = 2r + 1$.</li>
-<li>By the definition of <em>odd</em>, $xy$ is odd.</li>
-<li>By the (not proven) &ldquo;Even-Odd Lemma&rdquo;, this means $xy$ is not even.</li>
-<li>So, we have shown NOT(the product of $x$ and $y$ is even).</li>
-<li>Since we concluded this starting from the assumption (step 2), this proves the implication: NOT(at least one of $x$ and $y$ must be even) $\implies$ NOT(the product of $x$ and $y$ is even).</li>
-<li>Using the contrapositive inference rule, we can conclude:
-the product of $x$ and $y$ is even $\implies$ at least one of $x$ and $y$ must be even. \QEDA</li>
-</ol>
-
-<p>\dbox{
-{\bf Challenge Problem Opportunity.} I wasn&rsquo;t very satisfied with my proof
-  of the &ldquo;Odd-Even Lemma&rdquo; in class.  I hope a student will come up with
-  a better proof.  A proof that passes the &ldquo;skeptical reader&rdquo; test and
-  would convince someone with no prior knowledge of odd and even numbers
-  is worth up to 10 bonus points.
-}</p>
-
-<!--page-->
-
-<h2 id="proving-if-and-only-if">Proving &ldquo;If and Only If&rdquo;</h2>
-
-<p>Strategy: To prove $P$ if and only if $Q$:</p>
-
-<ol>
-<li>Prove $P \implies Q$.</li>
-<li>Prove $Q \implies P$.</li>
-</ol>
-
-<p><em>Definition.</em> The <em>standard deviation</em> of a sequence of values $x_1, x_2, \ldots, x_n$ is
-$$
-\sqrt{\frac{(x_1 - \mu)^2 + (x_2 - \mu)^2 + \ldots + (x_n - \mu)^2}{n}}
-$$
-where $\mu$ is the mean of the values:
-$$
-\mu ::= \frac{x_1 + x_2 + \ldots + x_n}{n}
-$$.</p>
-
-<p><strong>Theorem 1.6.1.</strong> The standard deviation of a sequence of values, $x_1,
-  x_2, \ldots, x_n$ is $0$ <em>if and only if</em> all of the $x_i$ values are
-  equal to the mean of $x_1, x_2, \ldots, x_n$.</p>
-
-<p>The book proves this using a chain of iff implications; prove it using
-the two-implications strategy.</p>
-
-<p>#</p>
-
-<p>#</p>
-
-<p>#</p>
-
-<p>#</p>
-
-<p>#</p>
-
-<p>#</p>
-
-<p>#</p>
-
-<p>#</p>
-
-<p><em>In physics, your solution should convince a reasonable person. In math, you have to convince a person who&rsquo;s trying to make trouble.</em>
-Frank Wilczek</p>
-
-<p></div></p>
-
-  
-    <p class="fronthead"><a href="https://uvacs2102.github.io/class1/">Class 1: What makes it go?</a> (Tue, 23 Aug 2016)</p>
-     
-
-<h3 id="schedule">Schedule</h3>
-
-<p>Before <strong>Thursday&rsquo;s class</strong>: (visit <a href="https://uvacs2102.github.io">https://uvacs2102.github.io</a> for the web version of these notes with links)</p>
-
-<ul>
-<li><p>Join the <a href="https://csmath.slack.com">cs2102 slack group</a> and set up
-your profile with a pronouncable name (not your UVA email id) (setting
-up your profile photo is encouraged, but not required).</p></li>
-
-<li><p>Read the <a href="/syllabus">Course Syllabus</a> and post any questions or
-comments you have on it on the course <a href="https://csmath.slack.com">slack group
-(#general)</a>.</p></li>
-
-<li><p>Read the <em>Introduction</em> and <em>Chapter 1: What is a Proof?</em> from the
-<a href="https://uvacs2102.github.io/docs/mcs.pdf">MCS Book</a>.  The book is
-freely available on-line under a Creative Commons License.  Students
-are strongly encrouaged to print out the readings to read them more
-effectively on paper.</p></li>
-</ul>
-
-<p>Before <strong>Friday, 6:29pm</strong>:</p>
-
-<ul>
-<li><p>Read, print, and sign the <a href="/pledge">Course Pledge</a>.  You should print
-the <a href="/docs/pledge.pdf">PDF version</a> for signing, and submit a scan of
-your signed pledge using Collab.</p></li>
-
-<li><p>Read Jeremy Kun&rsquo;s <a href="https://medium.com/@jeremyjkun/habits-of-highly-mathematical-people-b719df12d15e"><em>Habits of Highly Mathematical People</em></a>.</p></li>
-
-<li><p>Submit a <a href="https://docs.google.com/forms/d/e/1FAIpQLSesDMnQXhCP73thN51kTSNNst8GcvQCJCGTepiJ2c3Ym1l-zg/viewform">Course Registration Survey</a> (which includes some questions based on Kun&rsquo;s essay).</p></li>
-</ul>
-
-<div class="notpdf">
-
-    <div class="highlightm">
-    <a href="/docs/class1.pdf">See PDF Version for <b>Notes and Questions</b></a>.
-    </div>
-
-<p><center>
-<script async class="speakerdeck-embed" data-id="460cc29c74a04fe3971ce197961981f9" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-</center></p>
-
-<p></div><!--endpdf--></p>
-
-<div class="latex">
-
-### Notes and Questions
-
-Why is most of the math used in computer science _discrete_?
-
-<div class="gap"></div>
-
-<p>Why is most of the math you have used in school previously <em>continuous</em>?</p>
-
-<div class="gap"></div>
-
-<p>What are the differences between how scientists, lawyers, and
-mathematicians establish ``<em>truth</em>&rdquo;?</p>
-
-<div class="gap"></div>
-
-<p>A <em>proposition</em> is a statement that is either ________ or _________.</p>
-
-<p>A <em>predicate</em> is a proposition whose truth may depend on the value of
-variables.</p>
-
-<h3 id="proof">Proof</h3>
-
-<p>A <em>theorem</em> is a ____________ that has been proven true.</p>
-
-<p>An <em>axiom</em> is a proposition that is <em>accepted to be true</em>.  Axioms are
-not proven; they are <em>assumed</em> to be true.</p>
-
-<p><strong>Definition.</strong> A <em>mathematical proof</em> of a proposition is a chain of
-  <em>logical deductions</em> starting from a set of accepted <em>axioms</em> that
-  leads to the proposition.</p>
-
-<h3 id="rules-of-inference">Rules of Inference</h3>
-
-<p>The possible steps that can be used in a proof are logical deductions
-based on inference rules.</p>
-
-<p>Inference rules are written as:
-$$
-\infer{\textrm{\emph{conclusion}}}{\textrm{\emph{antecedents}}}
-$$
-This means if everything on top of the rule is established to be true,
-then you can conclude what is on the bottom.</p>
-
-<p><em>Modus Ponens</em>: To prove <em>Q</em>, (1) prove <em>P</em> and (2) prove that <em>P</em> implies <em>Q</em>.  ($P \implies Q$ is a notation for $P$ implies $Q$).</p>
-
-<p>$$
-\infer{Q}{P,\quad P \implies Q}
-$$</p>
-
-<p>An inference rule is <em>sound</em> if can never lead to a <strong>false</strong> conclusion.</p>
-
-<p>Which of these inference rules are sound?</p>
-
-<p>$$
-\infer{Q}{P}
-\qquad
-\infer{false}{P, P \implies Q}
-\qquad
-\infer{true}{P, NOT(P)}
-\qquad
-\infer{P \implies NOT(P)}{P, NOT(P)}
-\qquad
-\infer{NOT(Q) \implies P}{NOT(P) \implies Q}
-$$</p>
-
-<p>##</p>
-
-<p><strong>Contrapositive:</strong></p>
-
-<p>$$
-\infer{NOT(Q) \implies NOT(P)}{P \implies Q}
-\qquad
-\infer{P \implies Q}{NOT(Q) \implies NOT(P)}
-$$</p>
-
-<p><strong>Theorem to Prove:</strong> If the product of $x$ and $y$ is even, at least one of $x$ or $y$ must be even.</p>
-
-<p></div></p>
-
-<p></div></p>
-
+  <p class="fronthead"><A href="/ps1/">Problem Set 1</a> (Fri, 26 Aug 2016)</p>
+    <p><strong>Problem Set 1</strong> is <a href="/ps/ps1">now posted</a>, and is due on <strong>Friday, 2 September at 6:29pm</strong>.</p>
+ 
   
   
 <div class="container pagination">
@@ -1149,12 +962,16 @@ $$</p>
   5
 </a>
 
+<a href="https://uvacs2102.github.io/page/6/">
+  6
+</a>
 
-<a class="disabled" aria-label="Next" href="#">
+
+<a aria-label="Next" href="https://uvacs2102.github.io/page/6/">
   <span aria-hidden="true">»</span>
 </a>
 
-<a aria-label="Last" href="https://uvacs2102.github.io/page/5/">
+<a aria-label="Last" href="https://uvacs2102.github.io/page/6/">
   <span aria-hidden="true">»»</span>
 </a>
 

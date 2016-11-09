@@ -2,12 +2,70 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>cs2102: Discrete Math</title>
-    <link>https://uvacs2102.github.io/</link>
+    <link>https://uvacs2102.github.io/index.xml</link>
     <description>Recent content on cs2102: Discrete Math</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 04 Nov 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 08 Nov 2016 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://uvacs2102.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Class 20: Elections, Review</title>
+      <link>https://uvacs2102.github.io/class20/</link>
+      <pubDate>Tue, 08 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/class20/</guid>
+      <description>
+
+&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Exam 2&lt;/strong&gt; will be in class on &lt;strong&gt;Thursday, 10 November&lt;/strong&gt;.  See &lt;a href=&#34;https://uvacs2102.github.io/class18&#34;&gt;Class 18&lt;/a&gt; notes for details.&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;
+   &lt;center&gt;
+&lt;script async class=&#34;speakerdeck-embed&#34;
+   data-id=&#34;e6c145e3a44b45aa803b46960be3754b&#34;
+   data-ratio=&#34;1.77777777777778&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
+   &lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;links&#34;&gt;Links&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://genius.com/Lin-manuel-miranda-cabinet-battle-1-lyrics&#34;&gt;Cabinet Battle
+#1&lt;/a&gt;,
+&lt;a href=&#34;http://genius.com/Lin-manuel-miranda-cabinet-battle-2-lyrics&#34;&gt;Cabinet Battle #2&lt;/a&gt;,
+&lt;a href=&#34;http://genius.com/Lin-manuel-miranda-cabinet-battle-3-lyrics&#34;&gt;Cabinet Battle
+#3&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Michael J. Caulfield, &lt;a href=&#34;http://www.maa.org/press/periodicals/convergence/apportioning-representatives-in-the-united-states-congress-introduction&#34;&gt;&lt;em&gt;Apportioning Representatives in the United
+States
+Congress&lt;/em&gt;&lt;/a&gt;,
+Mathematical Association of America, 2010.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.maa.org/meetings/calendar-events/a-mathematical-adventure-through-the-census-reapportionment-and-redistricting&#34;&gt;&lt;em&gt;A Mathematical Adventure through the Census, Reapportionment, and
+Redistricting&lt;/em&gt;&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.census.gov/population/apportionment/data/2010_apportionment_results.html&#34;&gt;2010 Apportiment
+Results&lt;/a&gt;,
+US Census. (Includes &lt;a href=&#34;https://www.census.gov/population/apportionment/files/Priority%20Values%202010.pdf&#34;&gt;priority values&lt;/a&gt;.)&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Problem Set 8 Solutions and Comments</title>
+      <link>https://uvacs2102.github.io/ps8solutions/</link>
+      <pubDate>Sat, 05 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/ps8solutions/</guid>
+      <description>&lt;p&gt;The Problem Set 8 solutions are now posted:
+[&lt;a href=&#34;https://collab.itc.virginia.edu/access/content/group/e0b17949-c94c-466b-835a-196381f3f911/ps8solutions.pdf&#34;&gt;PDF&lt;/a&gt;].
+Please review these to prepare for Exam 2, and let me know if you have
+any questions or parts you want to go over in class Tuesday.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Problem Set 7 Solutions and Comments</title>
@@ -880,132 +938,6 @@ $q_0 ::= (1, b)$&lt;/p&gt;
 &lt;p&gt;#&lt;/p&gt;
 
 &lt;p&gt;&lt;/div&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Class 13: State Machines</title>
-      <link>https://uvacs2102.github.io/class13/</link>
-      <pubDate>Tue, 11 Oct 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://uvacs2102.github.io/class13/</guid>
-      <description>
-
-&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/docs/exam1-solutions.pdf&#34;&gt;Exam 1 Solutions&lt;/a&gt;
-are now posted.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Drop Date&lt;/strong&gt; is today.  If you have any concerns about whether you
-  should stay in the class, please talk to me after class today.&lt;/p&gt;
-
-&lt;p&gt;There is no problem set due this week!  &lt;a href=&#34;https://uvacs2102.github.io/ps/ps6&#34;&gt;&lt;strong&gt;Problem Set 6&lt;/strong&gt;&lt;/a&gt;
-(will be posted later this week) is due &lt;strong&gt;21 October (Friday) at
-6:29pm&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;Exam 1 was returned during class today.  (Exam grades will eventually
-make it into collab, but haven&amp;rsquo;t yet.  When they do, please confirm that
-the score on your exam matches what is recorded in collab, and that
-PS1-5 are all recorded correctly.)&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;
-   &lt;center&gt;
-&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;e834908c757142c7b5ff50a196a26f43&#34; data-ratio=&#34;1.77777777777778&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
-   &lt;/center&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;highlightm&#34;&gt;
-   &lt;a href=&#34;https://uvacs2102.github.io/docs/class13.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes&lt;/b&gt;&lt;/a&gt;.
-   &lt;/div&gt;
-   &lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;state-machines&#34;&gt;State Machines&lt;/h2&gt;
-
-&lt;p&gt;A &lt;em&gt;state machine&lt;/em&gt; is a binary relation (called a &lt;em&gt;transition relation&lt;/em&gt;)
-on a set (both the domain and codomain are the same set).  One state is
-designated as the &lt;em&gt;start state&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;$$M = (S, G: S \times S, q_0 \in S)$$&lt;/p&gt;
-
-&lt;p&gt;What does it mean if $G$ is &lt;em&gt;total&lt;/em&gt;?&lt;/p&gt;
-
-&lt;p&gt;##&lt;/p&gt;
-
-&lt;p&gt;What does it mean if $G$ is not a &lt;em&gt;function&lt;/em&gt;?&lt;/p&gt;
-
-&lt;p&gt;##&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Parity Counter.&lt;/strong&gt; Describe a state machine that determines if the
-  number of steps is even.&lt;/p&gt;
-
-&lt;p&gt;#&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Unbounded Counter.&lt;/strong&gt; Describe a state machine that counts the number of steps.&lt;/p&gt;
-
-&lt;p&gt;#&lt;/p&gt;
-
-&lt;p&gt;How well do state machines model real computers?  What kind of
-transition relation does the state machine modeling your computer have?&lt;/p&gt;
-
-&lt;!--page--&gt;
-
-&lt;h1 id=&#34;invariant-principle&#34;&gt;Invariant Principle&lt;/h1&gt;
-
-&lt;p&gt;An &lt;em&gt;execution&lt;/em&gt; of a state machine $M = (S, G \subseteq S \times S, q_0 \in S)$ is a (possibly infinite) sequence of states, $(x_0, x_1, \cdots, x_n)$ where:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;$x_0 = q_0$ (it begins with the start state), and&lt;/li&gt;
-&lt;li&gt;$\forall i \in {0, 1, \ldots, n - 1} \ldotp (x&lt;em&gt;i, x&lt;/em&gt;{i + 1}) \in G$ (if $q$ and $r$ are consecutive states in the sequence, then there is an edge $q \rightarrow r$ in $G$)&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;A state $q$ is &lt;em&gt;reachable&lt;/em&gt; if it appears in some execution.  (That is,
-there is a sequence of transitions starting from $q_0$, following edges
-in $G$, that ends with $q$.)&lt;/p&gt;
-
-&lt;p&gt;$$
-M_1 = (S = \mathbb{N}, G = {(x, y) | y = x^2 }, q_0 = 1)
-$$
-$$
-M_2 = (S = \mathbb{N}, G = {(x, y) | \exists k \in \mathbb{N} \ldotp y = kx }, q_0 = 1)
-$$&lt;/p&gt;
-
-&lt;p&gt;Which states are &lt;em&gt;reachable&lt;/em&gt; for $M_1$ and $M_2$?&lt;/p&gt;
-
-&lt;p&gt;#&lt;/p&gt;
-
-&lt;p&gt;A &lt;em&gt;preserved invariant&lt;/em&gt; of a state machine $M = (S, G \subseteq S \times
-S, q_0 \in S)$ is a predicate, $P$, on states, such that whenever $P(q)$
-is true of a state $q$, and $q \rightarrow r \in G$, then $P&amp;reg;$ is
-true.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Invariant Principle.&lt;/strong&gt; If a &lt;em&gt;preserved invariant&lt;/em&gt; of a state machine
-  is true for the start state, it is true for all reachable states.&lt;/p&gt;
-
-&lt;p&gt;To show $P(q)$ for machine $M = (S, G \subseteq S \times S, q_0 \in
-  S)$ all $q \in S$, show:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Base case: $P(\fillin)$&lt;/li&gt;
-&lt;li&gt;$\forall s \in S \ldotp \fillin \implies \fillin$&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Show the invariant principle holds using the principle of induction
-(hint: induction is on the &lt;em&gt;number of steps&lt;/em&gt;).&lt;/p&gt;
-
-&lt;p&gt;#&lt;/p&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Exam 1 Solutions</title>
-      <link>https://uvacs2102.github.io/exam1solutions/</link>
-      <pubDate>Tue, 11 Oct 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://uvacs2102.github.io/exam1solutions/</guid>
-      <description>&lt;p&gt;The solutions to &lt;a href=&#34;https://uvacs2102.github.io/docs/exam1.pdf&#34;&gt;Exam 1&lt;/a&gt; are here: &lt;a href=&#34;https://uvacs2102.github.io/docs/exam1-solutions.pdf&#34;&gt;Exam 1 Solutions&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
