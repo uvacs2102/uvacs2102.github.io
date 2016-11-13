@@ -23,12 +23,9 @@
 
 &lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;
    &lt;center&gt;
-&lt;script async class=&#34;speakerdeck-embed&#34;
-   data-id=&#34;e6c145e3a44b45aa803b46960be3754b&#34;
-   data-ratio=&#34;1.77777777777778&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
-   &lt;/center&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
+&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;e6c145e3a44b45aa803b46960be3754b&#34; data-ratio=&#34;1.77777777777778&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
+   &lt;/center&gt;
+   &lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
 
 &lt;h1 id=&#34;links&#34;&gt;Links&lt;/h1&gt;
 
