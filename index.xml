@@ -6,8 +6,64 @@
     <description>Recent content on cs2102: Discrete Math</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 08 Nov 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 15 Nov 2016 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://uvacs2102.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Class 21: Infinite Infinites, Exam 2</title>
+      <link>https://uvacs2102.github.io/class21/</link>
+      <pubDate>Tue, 15 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/class21/</guid>
+      <description>
+
+&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Problem Set 9&lt;/strong&gt; is now due on &lt;strong&gt;Wednesday, 23 November&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;
+   &lt;center&gt;
+&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;dc45f78adb254aadb2d0ac1684c1e47b&#34; data-ratio=&#34;1.77777777777778&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
+   &lt;/center&gt;
+   &lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlightm&#34;&gt;
+   &lt;a href=&#34;https://uvacs2102.github.io/docs/class21.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes&lt;/b&gt;&lt;/a&gt;.
+   &lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;infinite-sets-recap&#34;&gt;Infinite Sets Recap&lt;/h1&gt;
+
+&lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; A set $C$ is &lt;em&gt;countable&lt;/em&gt; if and only if there exists a
+  surjective function from $\mathbb{N}$ to $C$.  (That is, $\le 1$ arrow
+  out from $\mathbb{N}$, $ge 1$ arrow in to $C$.)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; A set $C$ is &lt;em&gt;countably infinite&lt;/em&gt; if and only if there
+  exists a bijection between $C$ and $\mathbb{N}$.&lt;/p&gt;
+
+&lt;h1 id=&#34;cantor-s-theorem&#34;&gt;Cantor&amp;rsquo;s Theorem&lt;/h1&gt;
+
+&lt;p&gt;For &lt;strong&gt;all&lt;/strong&gt; sets, $S$, $| pow(S) | &amp;gt; | S |$.&lt;/p&gt;
+
+&lt;p&gt;What does this mean for $| \mathbb{N} |$?&lt;/p&gt;
+
+&lt;p&gt;#&lt;/p&gt;
+
+&lt;p&gt;What is a &lt;em&gt;real number&lt;/em&gt;?&lt;/p&gt;
+
+&lt;p&gt;#&lt;/p&gt;
+
+&lt;p&gt;Show there is a bijection between $[0, 1)$ and $pow(\mathbb{N})$.&lt;/p&gt;
+
+&lt;p&gt;#
+#&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Class 20: Elections, Review</title>
@@ -793,148 +849,6 @@ gale_shapley(A, B)
       
       <guid>https://uvacs2102.github.io/ps6announce/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Problem Set 6&lt;/strong&gt; is &lt;a href=&#34;https://uvacs2102.github.io/docs/ps6.pdf&#34;&gt;now posted&lt;/a&gt;, and is due on &lt;strong&gt;Friday, 21 October at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Class 14: Invariant Principle</title>
-      <link>https://uvacs2102.github.io/class14/</link>
-      <pubDate>Thu, 13 Oct 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://uvacs2102.github.io/class14/</guid>
-      <description>
-
-&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps6&#34;&gt;&lt;strong&gt;Problem Set 6&lt;/strong&gt;&lt;/a&gt; (is posted now) is due &lt;strong&gt;21
-October (Friday) at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;Exam 1 was returned Tuesday.  If you did not pick yours up yet, you can
-get it after class today.  I will start charging
-exponentially-increasing storage fees for inexcusably unclaimed exams
-starting tomorrow.&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;
-   &lt;center&gt;
-&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;fcd3660e39b740a0bb2069883054a525&#34; data-ratio=&#34;1.77777777777778&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
-   &lt;/center&gt;&lt;/p&gt;
-
-&lt;p&gt;Note that the version of the notes that was handed out in class mixed up
-the $\vee$ and $\wedge$ symbols!  The web version is corrected.&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;highlightm&#34;&gt;
-   &lt;a href=&#34;https://uvacs2102.github.io/docs/class14.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes&lt;/b&gt;&lt;/a&gt;.
-   &lt;/div&gt;
-   &lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;fast-exponentiation&#34;&gt;Fast Exponentiation&lt;/h1&gt;
-
-&lt;p&gt;This is the algorithm from Section 6.3.1 written as Python code:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def power(a, b):
-   x = a
-   y = 1
-   z = b
-   while z &amp;gt; 0:
-      r = z % 2 # remainder of z / 2
-      z = z // 2 # quotient of z / 2
-      if r == 1:
-         y = x * y
-      x = x * x
-   return y
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;state-machines-review-from-class-13&#34;&gt;State Machines (review from Class 13)&lt;/h2&gt;
-
-&lt;p&gt;A &lt;em&gt;state machine&lt;/em&gt;, $M = (S, G: S \times S, q_0 \in S)$, is a binary
-relation (called a &lt;em&gt;transition relation&lt;/em&gt;) on a set (both the domain and
-codomain are the same set).  One state, denoted $q_0$, is designated as
-the &lt;em&gt;start state&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;An &lt;em&gt;execution&lt;/em&gt; of a state machine $M = (S, G \subseteq S \times S, q_0
-\in S)$ is a (possibly infinite) sequence of states, $(x_0, x_1, \cdots,
-x_n)$ where (1) $x_0 = q_0$ (it begins with the start state), and (2)
-$\forall i \in {0, 1, \ldots, n - 1} \ldotp (x&lt;em&gt;i, x&lt;/em&gt;{i + 1}) \in G$
-(if $q$ and $r$ are consecutive states in the sequence, then there is an
-edge $q \rightarrow r$ in $G$).&lt;/p&gt;
-
-&lt;p&gt;A state $q$ is &lt;em&gt;reachable&lt;/em&gt; if it appears in some execution.&lt;/p&gt;
-
-&lt;p&gt;A &lt;em&gt;preserved invariant&lt;/em&gt; of a state machine $M = (S, G \subseteq S \times
-S, q_0 \in S)$ is a predicate, $P$, on states, such that whenever $P(q)$
-is true of a state $q$, and $q \rightarrow r \in G$, then $P&amp;reg;$ is
-true.&lt;/p&gt;
-
-&lt;h3 id=&#34;bishop-state-machine&#34;&gt;Bishop State Machine&lt;/h3&gt;
-
-&lt;p&gt;$S = { (\fillin ) \, | \, r, c \in \mathbb{N} }$&lt;br /&gt;
-$G = { (r, c) \rightarrow (r&amp;rsquo;, c&amp;rsquo;) \, | \, r, c \in \mathbb{N} \wedge (\exists d \in \mathbb{N}^{+} \textrm{ such that } r&amp;rsquo; = r \fillin d \wedge r&amp;rsquo; \ge 0 \wedge c&amp;rsquo; = c \fillin d \wedge c&amp;rsquo; \ge 0 }$&lt;br /&gt;
-$q_0 = (0, 2)$&lt;/p&gt;
-
-&lt;p&gt;What states are &lt;em&gt;reachable&lt;/em&gt;?&lt;/p&gt;
-
-&lt;p&gt;#&lt;/p&gt;
-
-&lt;h3 id=&#34;progress-machine&#34;&gt;``Progress&amp;rdquo; Machine&lt;/h3&gt;
-
-&lt;p&gt;$S = { (x, d) \, | \, x \in \mathbb{Z}, d \in { \mathrm{\bf F}, \mathrm{\bf B}} }$&lt;br /&gt;
-$G = { (x, \mathrm{\bf F}) \rightarrow (x + 1, \mathrm{\bf B}) \, | \, x \in \mathbb{Z} } \cup
-     { (x, \mathrm{\bf B}) \rightarrow (x - 2, \mathrm{\bf F}) \, | \, x \in \mathbb{Z} }$&lt;br /&gt;
-$q_0 = (0, \mathrm{\bf F})$&lt;/p&gt;
-
-&lt;p&gt;Which states are &lt;em&gt;reachable&lt;/em&gt;?&lt;/p&gt;
-
-&lt;!--page--&gt;
-
-&lt;p&gt;A predicate $P(q)$ is a &lt;em&gt;preserved invariant&lt;/em&gt; of machine $M = (S, G \subseteq S \times S, q_0 \in
-  S)$ if:
-$$
-\forall q \in S \ldotp (P(q) \wedge (q \rightarrow r) \in G) \implies P&amp;reg;
-$$&lt;/p&gt;
-
-&lt;p&gt;What are some &lt;em&gt;preserved invariants&lt;/em&gt; for the (original) Bishop State Machine?&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Invariant Principle.&lt;/strong&gt; If a &lt;em&gt;preserved invariant&lt;/em&gt; of a state machine
-  is true for the start state, it is true for all reachable states.&lt;/p&gt;
-
-&lt;p&gt;To show $P(q)$ for machine $M = (S, G \subseteq S \times S, q_0 \in
-  S)$ all $q \in S$, show:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Base case: $P(\fillin)$&lt;/li&gt;
-&lt;li&gt;$\forall s \in S \ldotp \fillin \implies \fillin$&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Prove that the original Bishop State Machine never reaches a square where $r + c$ is odd.&lt;/p&gt;
-
-&lt;p&gt;#&lt;/p&gt;
-
-&lt;h1 id=&#34;slow-exponentiation&#34;&gt;Slow Exponentiation&lt;/h1&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def slow_power(a, b):
-   y = 1
-   z = b
-   while z &amp;gt; 0:
-      y = y * a
-      z = z - 1
-   return y
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;$S ::= \mathbb{N} \times \mathbb{N}$&lt;br /&gt;
-$G ::= { (y, z) \rightarrow (y \cdot a, z - 1) \, | \, \forall y, z \in \mathbb{N}^{+}}$&lt;br /&gt;
-$q_0 ::= (1, b)$&lt;/p&gt;
-
-&lt;p&gt;Prove &lt;code&gt;slow_power(a, b)&lt;/code&gt; = $a^b$.&lt;/p&gt;
-
-&lt;p&gt;#&lt;/p&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
 </description>
     </item>
     
