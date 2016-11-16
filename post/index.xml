@@ -6,8 +6,20 @@
     <description>Recent content in Post-rsses on cs2102: Discrete Math</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 15 Nov 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 16 Nov 2016 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://uvacs2102.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Problem Set 9</title>
+      <link>https://uvacs2102.github.io/ps9announce/</link>
+      <pubDate>Wed, 16 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/ps9announce/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Problem Set 9&lt;/strong&gt; is &lt;a href=&#34;https://uvacs2102.github.io/docs/ps9.pdf&#34;&gt;now posted&lt;/a&gt;, and is due on
+  &lt;strong&gt;Wednesday, 23 November at 6:29pm&lt;/strong&gt;.  (Note the unusual Wednesday
+  due date.)&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Class 21: Infinite Infinites, Exam 2</title>
@@ -839,16 +851,6 @@ gale_shapley(A, B)
 &lt;p&gt;&lt;strong&gt;Prove correctness.&lt;/strong&gt; The Gale-Shapley program returns a &lt;em&gt;stable matching&lt;/em&gt; of the two input sets and preferences.&lt;/p&gt;
 
 &lt;p&gt;&lt;/div&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Problem Set 6</title>
-      <link>https://uvacs2102.github.io/ps6announce/</link>
-      <pubDate>Fri, 14 Oct 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://uvacs2102.github.io/ps6announce/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Problem Set 6&lt;/strong&gt; is &lt;a href=&#34;https://uvacs2102.github.io/docs/ps6.pdf&#34;&gt;now posted&lt;/a&gt;, and is due on &lt;strong&gt;Friday, 21 October at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
 </description>
     </item>
     
