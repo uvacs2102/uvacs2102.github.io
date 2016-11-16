@@ -1427,9 +1427,8 @@ should return the length of the list.&lt;/p&gt;&lt;/li&gt;
 &lt;div class=&#34;latex&#34;&gt;
    \dbox{{\bf Deliverable:} Submit your responses as a
 single, readable PDF file on the collab site before {\bf 6:29pm} on {\bf
-   Wednesday, 23 November).
-}
-&lt;/div&gt;
+   Wednesday, 23 November}.}
+   &lt;/div&gt;
 
 &lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;
    &lt;div class=&#34;highlightr&#34;&gt;
@@ -1452,12 +1451,6 @@ restrictions, and follow the rest of the collaboration policy from
 and &lt;a href=&#34;https://uvacs2102.github.io/class18&#34;&gt;Class 18&lt;/a&gt;, &lt;a href=&#34;https://uvacs2102.github.io/class19&#34;&gt;Class 19&lt;/a&gt;, &lt;a href=&#34;https://uvacs2102.github.io/class21&#34;&gt;Class 21&lt;/a&gt; and
 &lt;a href=&#34;https://uvacs2102.github.io/class22&#34;&gt;Class 22&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h2 id=&#34;directions&#34;&gt;Directions&lt;/h2&gt;
-
-&lt;p&gt;\TODO{CHECK}
-Problems 1&amp;ndash;8 are expected for everyone; solve as many as you can.  The
-Busy Beaver problems are optional (see the note before them).&lt;/p&gt;
-
 &lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;highlightm&#34;&gt;
@@ -1472,19 +1465,52 @@ Your response should be submitted as a single PDF file using collab.  Please rea
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
+&lt;h2 id=&#34;directions&#34;&gt;Directions&lt;/h2&gt;
+
+&lt;p&gt;Solve all 8 problems.  Your answers should be clear, consise, and convincing.&lt;/p&gt;
+
 &lt;h3 id=&#34;countable-sets&#34;&gt;Countable Sets&lt;/h3&gt;
 
-&lt;p&gt;For each question, prove that the set described is &lt;em&gt;countable&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;For each set defined below, prove that the set described is &lt;em&gt;countable&lt;/em&gt;.&lt;/p&gt;
 
 &lt;ol&gt;
-&lt;li&gt;&lt;p&gt;$\text{\em Evens} = { 2n | n \in \mathbb{N} }$&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;$\text{\em Evens} = { 2n \, | \, n \in \mathbb{N} }$&lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;$\mathbb{N} \times \mathbb{Q}^{+}$ (where $\mathbb{Q}^{+}$ is the
-positive rational numbers)&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;$\mathbb{N} \cup { \pi, \tau }$ (where $\pi$ is the ratio of a circle&amp;rsquo;s circumference to its diameter and $\tau$ is the ratio of a circle&amp;rsquo;s circumference to its radius)&lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;The set of all finite state machines, $M = (S, G, q_0)$ where $S
-\subseteq \mathbb{N}$, and $G \subseteq S \times S$ and $q_0 \in S$ are
+&lt;li&gt;&lt;p&gt;The set of all finite state machines, $M = (S, G, q_0)$ where $S$
+is a finite set, and $G \subseteq S \times S$ and $q_0 \in S$ are
 otherwise unrestricted.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;!--page--&gt;
+
+&lt;h3 id=&#34;possibly-countable-sets&#34;&gt;Possibly Countable Sets&lt;/h3&gt;
+
+&lt;p&gt;For each set defined below, determine if the set is &lt;em&gt;countable&lt;/em&gt; or
+&lt;em&gt;uncountable&lt;/em&gt; and support your answer with a convincing proof.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;The set of all &lt;em&gt;stree&lt;/em&gt; objects, defined by:
+\begin{itemize}
+\item Base object: $\text{\bf null}$ is an {\em stree}.&lt;br /&gt;
+\item Constructor: for any {\em stree} objects $q_1, q_2$, $\text{combine}(q_1, q_2)$ is an {\em stree}.
+\end{itemize}&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;$\mathbb{R} - \mathbb{Q}$.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;($\star$) The set of all &lt;em&gt;infinite&lt;/em&gt; state machines, $M = (S, G, q_0)$ where $S = \mathbb{N}$, and $G \subseteq S \times S$ and $q_0 \in S$ are
+otherwise unrestricted.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&#34;properties-of-infinite-sets&#34;&gt;Properties of Infinite Sets&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;(MCS Problem 8.11, with typesetting problem fixed)
+  (a) Prove that if a nonempty set, $C$, is countable, then there is a &lt;em&gt;total&lt;/em&gt; surjective function, $$f: \mathbb{N} \rightarrow C.$$
+  (b) Conversely, supposed that $\mathbb{N}\ \text{surj}\ D$, that is, there is a not necessarily total surjective function, $f: \mathbb{N} \rightarrow D$.  Prove that $D$ is countable.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;MCS Problem 8.17.&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 </description>
     </item>

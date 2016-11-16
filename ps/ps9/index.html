@@ -51,7 +51,7 @@
     },
     "datePublished": "0001-01-01",
     "description": "",
-    "wordCount":  223 
+    "wordCount":  388 
   }
 </script>
 
@@ -172,9 +172,8 @@
 <div class="latex">
    \dbox{{\bf Deliverable:} Submit your responses as a
 single, readable PDF file on the collab site before {\bf 6:29pm} on {\bf
-   Wednesday, 23 November).
-}
-</div>
+   Wednesday, 23 November}.}
+   </div>
 
 <p><div class="notpdf">
    <div class="highlightr">
@@ -197,12 +196,6 @@ restrictions, and follow the rest of the collaboration policy from
 and <a href="/class18">Class 18</a>, <a href="/class19">Class 19</a>, <a href="/class21">Class 21</a> and
 <a href="/class22">Class 22</a>.</p>
 
-<h2 id="directions">Directions</h2>
-
-<p>\TODO{CHECK}
-Problems 1&ndash;8 are expected for everyone; solve as many as you can.  The
-Busy Beaver problems are optional (see the note before them).</p>
-
 <p><div class="notpdf"></p>
 
 <p><div class="highlightm">
@@ -217,19 +210,52 @@ Your response should be submitted as a single PDF file using collab.  Please rea
 
 <p><div class="latex"></p>
 
+<h2 id="directions">Directions</h2>
+
+<p>Solve all 8 problems.  Your answers should be clear, consise, and convincing.</p>
+
 <h3 id="countable-sets">Countable Sets</h3>
 
-<p>For each question, prove that the set described is <em>countable</em>.</p>
+<p>For each set defined below, prove that the set described is <em>countable</em>.</p>
 
 <ol>
-<li><p>$\text{\em Evens} = { 2n | n \in \mathbb{N} }$</p></li>
+<li><p>$\text{\em Evens} = { 2n \, | \, n \in \mathbb{N} }$</p></li>
 
-<li><p>$\mathbb{N} \times \mathbb{Q}^{+}$ (where $\mathbb{Q}^{+}$ is the
-positive rational numbers)</p></li>
+<li><p>$\mathbb{N} \cup { \pi, \tau }$ (where $\pi$ is the ratio of a circle&rsquo;s circumference to its diameter and $\tau$ is the ratio of a circle&rsquo;s circumference to its radius)</p></li>
 
-<li><p>The set of all finite state machines, $M = (S, G, q_0)$ where $S
-\subseteq \mathbb{N}$, and $G \subseteq S \times S$ and $q_0 \in S$ are
+<li><p>The set of all finite state machines, $M = (S, G, q_0)$ where $S$
+is a finite set, and $G \subseteq S \times S$ and $q_0 \in S$ are
 otherwise unrestricted.</p></li>
+</ol>
+
+<!--page-->
+
+<h3 id="possibly-countable-sets">Possibly Countable Sets</h3>
+
+<p>For each set defined below, determine if the set is <em>countable</em> or
+<em>uncountable</em> and support your answer with a convincing proof.</p>
+
+<ol>
+<li><p>The set of all <em>stree</em> objects, defined by:
+\begin{itemize}
+\item Base object: $\text{\bf null}$ is an {\em stree}.<br />
+\item Constructor: for any {\em stree} objects $q_1, q_2$, $\text{combine}(q_1, q_2)$ is an {\em stree}.
+\end{itemize}</p></li>
+
+<li><p>$\mathbb{R} - \mathbb{Q}$.</p></li>
+
+<li><p>($\star$) The set of all <em>infinite</em> state machines, $M = (S, G, q_0)$ where $S = \mathbb{N}$, and $G \subseteq S \times S$ and $q_0 \in S$ are
+otherwise unrestricted.</p></li>
+</ol>
+
+<h3 id="properties-of-infinite-sets">Properties of Infinite Sets</h3>
+
+<ol>
+<li><p>(MCS Problem 8.11, with typesetting problem fixed)
+  (a) Prove that if a nonempty set, $C$, is countable, then there is a <em>total</em> surjective function, $$f: \mathbb{N} \rightarrow C.$$
+  (b) Conversely, supposed that $\mathbb{N}\ \text{surj}\ D$, that is, there is a not necessarily total surjective function, $f: \mathbb{N} \rightarrow D$.  Prove that $D$ is countable.</p></li>
+
+<li><p>MCS Problem 8.17.</p></li>
 </ol>
 
 </div>
