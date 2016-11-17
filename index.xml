@@ -10,6 +10,98 @@
     <atom:link href="https://uvacs2102.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Class 22: On Computable Numbers</title>
+      <link>https://uvacs2102.github.io/class22/</link>
+      <pubDate>Wed, 16 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/class22/</guid>
+      <description>
+
+&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://uvacs2102.github.io/docs/ps9.pdf&#34;&gt;Problem Set 9&lt;/a&gt;&lt;/strong&gt; is now due on &lt;strong&gt;Wednesday, 23 November&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/psZ&#34;&gt;Problem Set $\omega$&lt;/a&gt;&lt;/strong&gt; is now posted and due on &lt;strong&gt;Sunday,
+  4 December&lt;/strong&gt; or &lt;strong&gt;Tuesday, 6 December&lt;/strong&gt; (see problem set for
+  details).  It is not like the others, and counts as a &amp;ldquo;bonus&amp;rdquo;
+  optional assignment.&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;
+   &lt;center&gt;
+&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;b0dff8d581dc461c9d71c79589eb0dc9&#34; data-ratio=&#34;1.77777777777778&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
+   &lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlightm&#34;&gt;
+   &lt;a href=&#34;https://uvacs2102.github.io/docs/class22.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes&lt;/b&gt;&lt;/a&gt;.
+   &lt;/div&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;links&#34;&gt;Links&lt;/h1&gt;
+
+&lt;p&gt;Fernando Gouvea, &lt;a href=&#34;http://www.maa.org/was-cantor-surprised&#34;&gt;&lt;em&gt;Was Cantor Surprised?&lt;/em&gt;&lt;/a&gt;. American Mathematical Monthly, March 2011.&lt;/p&gt;
+
+&lt;p&gt;A. M. Turing, &lt;a href=&#34;https://uvacs2102.github.io/docs/oncomputablenumbers.pdf&#34;&gt;&lt;em&gt;On Computable Numbers, with an Application to the Entscheidungsproblem&lt;/em&gt;&lt;/a&gt;, 1936.&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;cantor-s-continuum-hypothesis&#34;&gt;Cantor&amp;rsquo;s Continuum &amp;ldquo;Hypothesis&amp;rdquo;&lt;/h1&gt;
+
+&lt;p&gt;Aleph-naught: $\aleph_0 = |\mathbb{N}|$ is the &lt;em&gt;smallest infinite
+cardinal number&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Recall: $\omega$ is the &lt;em&gt;smallest infinite ordinal&lt;/em&gt;.  The first ordinal after
+$0, 1, 2, \cdots$.&lt;/p&gt;
+
+&lt;p&gt;$$2^{\aleph_0} = |pow(\mathbb{N})| = | [0, 1] | = | \mathbb{R} | = | {0, 1}^{\omega} | &amp;gt; |\mathbb{N} $$&lt;/p&gt;
+
+&lt;p&gt;What does it mean to say it is proven to not be possible to settle the
+question of whether $\aleph_1 = 2^{\aleph_0}$ with the ZFC axioms?&lt;/p&gt;
+
+&lt;p&gt;#&lt;/p&gt;
+
+&lt;h1 id=&#34;on-computable-numbers&#34;&gt;On Computable Numbers&lt;/h1&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;The &amp;ldquo;computable&amp;rdquo; numbers may be described briefly as the real numbers whose expressions as a decimal are calculable by finite means.&lt;/em&gt; (Alan Turing, &lt;em&gt;On Computable Numbers, with an Application to the Entscheidungsproblem&lt;/em&gt;, 1936.)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Is $\tau$ computable (by Turing&amp;rsquo;s definition)?  ($\tau = \frac{\text{Circumference of circle}}{\text{radius of circle}}$)&lt;/p&gt;
+
+&lt;!--page--&gt;
+
+&lt;p&gt;What are the problems with using the State Machine to model computation:
+$$M = (S, G \subseteq S \times S, q_0 \in S)$$&lt;/p&gt;
+
+&lt;p&gt;#&lt;/p&gt;
+
+&lt;p&gt;What was Turing attempting to model in defining what we know call a Turing Machine?&lt;/p&gt;
+
+&lt;p&gt;#&lt;/p&gt;
+
+&lt;p&gt;$$
+TM = (S, T \subseteq S \times \Gamma \rightarrow S \times \Gamma \times \text{\em dir}, q&lt;em&gt;0 \in S, q&lt;/em&gt;{Accept} \subseteq S)
+$$&lt;/p&gt;
+
+&lt;p&gt;$S$ is a finite set (the &amp;ldquo;in-the-head&amp;rdquo; processing states)&lt;br /&gt;
+$\Gamma$ is a finite set (symbols that can be writte on the tape)&lt;br /&gt;
+$\text{\em dir} = { \text{\bf Left}, \text{\bf Right}, \text{\bf Halt} }$ is the direction to move on the tape.&lt;/p&gt;
+
+&lt;p&gt;##&lt;/p&gt;
+
+&lt;p&gt;What is the cardinality of the set of all Turing Machines?&lt;/p&gt;
+
+&lt;p&gt;#&lt;/p&gt;
+
+&lt;p&gt;Prove that there are numbers that cannot be output by any Turing Machine.&lt;/p&gt;
+
+&lt;p&gt;#&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Problem Set Omega</title>
       <link>https://uvacs2102.github.io/psomegaannounce/</link>
       <pubDate>Wed, 16 Nov 2016 00:00:00 +0000</pubDate>
@@ -731,124 +823,6 @@ one!&lt;/p&gt;
       
       <guid>https://uvacs2102.github.io/ps7announce/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Problem Set 7&lt;/strong&gt; is &lt;a href=&#34;https://uvacs2102.github.io/docs/ps7.pdf&#34;&gt;now posted&lt;/a&gt;, and is due on &lt;strong&gt;Friday, 28 October at 7:29pm&lt;/strong&gt;.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Class 15: Stable Matchings</title>
-      <link>https://uvacs2102.github.io/class15/</link>
-      <pubDate>Tue, 18 Oct 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://uvacs2102.github.io/class15/</guid>
-      <description>
-
-&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
-
-&lt;p&gt;&lt;strong&gt;There is no class Thursday (Oct 20).&lt;/strong&gt; Please use the class time to do
-  something worthwhile and fulfilling, preferably outdoors.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps6&#34;&gt;&lt;strong&gt;Problem Set 6&lt;/strong&gt;&lt;/a&gt; (is posted now) is due &lt;strong&gt;21
-October (Friday) at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;
-   &lt;center&gt;
-&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;6f50f3a2e5be484eacedeffdf2c98620&#34; data-ratio=&#34;1.77777777777778&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
-   &lt;/center&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;links&#34;&gt;Links&lt;/h1&gt;
-
-&lt;p&gt;Download the full matching code: &lt;a href=&#34;https://uvacs2102.github.io/docs/matching.py&#34;&gt;matching.py&lt;/a&gt; (assertions and comments removed here for space)&lt;/p&gt;
-
-&lt;p&gt;We didn&amp;rsquo;t get to talk about Secure Stable Mathing today, but will in a
-future class.  (For now, feel free to read the links, of coure.)&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.nytimes.com/2014/12/07/nyregion/how-game-theory-helped-improve-new-york-city-high-school-application-process.html?_r=0&#34;&gt;How Game Theory Helped Improve New York City’s High School Application Process&lt;/a&gt;, New York Times, 5 December 2014.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.nrmp.org/match-process/match-algorithm/&#34;&gt;National Resident Matching Program&lt;/a&gt; (how medical school graduates are matched to residency programs)&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;em&gt;Can anyone else see my rank order list (ROL)&lt;/em&gt;?&lt;br /&gt;
-Your rank order list is confidential.  Program rank order lists can be seen only by the program director and coordinator, the institutional official and administrator, and NRMP staff (unless you give your username and password to someone else, which is a violation of the Match agreement).
-(&lt;a href=&#34;http://www.nrmp.org/match-process/match-algorithm/&#34;&gt;Frequently Asked Question&lt;/a&gt; on NRMP)&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.oblivc.org/matching&#34;&gt;Secure Stable Matching&lt;/a&gt;: &lt;a href=&#34;https://jackdoerner.net/&#34;&gt;Jack Doerner&lt;/a&gt; (UVA BSCS and Studio Art, 2015),
-David Evans, abhi shelat. &lt;a href=&#34;http://oblivc.org/docs/matching.pdf&#34;&gt;&lt;em&gt;Secure Stable Matching at
-Scale&lt;/em&gt;&lt;/a&gt;.  In &lt;a href=&#34;https://www.sigsac.org/ccs/CCS2016/&#34;&gt;&lt;em&gt;23&lt;sup&gt;rd&lt;/sup&gt; ACM
-Conference on Computer and Communications
-Security&lt;/em&gt;&lt;/a&gt; (CCS). Vienna,
-Austria. 24-28 October 2016.&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;highlightm&#34;&gt;
-   &lt;a href=&#34;https://uvacs2102.github.io/docs/class15.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes&lt;/b&gt;&lt;/a&gt;.
-   &lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;stable-matching&#34;&gt;Stable Matching&lt;/h1&gt;
-
-&lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; $M = { (a_1, b_1), (a_2, b_2), \cdots, (a_n, b_n) }$ is a
-  &lt;em&gt;stable matching&lt;/em&gt; between two sets $A = { a_1, \cdots, a_n }$ and $B
-  = { b_1, \cdots, b_n }$ with respective preference orderings $\prec_A$ and $\prec_B$ if there is no pair $(a_i, b_j)$ where $b&lt;em&gt;i \prec&lt;/em&gt;{a_i} b_j$ and $a&lt;em&gt;j \prec&lt;/em&gt;{b_j} a_i$.&lt;/p&gt;
-
-&lt;p&gt;How do we know there is always a stable matching between any two
-equal-size sets?&lt;/p&gt;
-
-&lt;p&gt;##&lt;/p&gt;
-
-&lt;h1 id=&#34;gale-shapley-algorithm&#34;&gt;Gale-Shapley Algorithm&lt;/h1&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def gale_shapley(A, B):
-    pairings = {} # dictionary b: a pairings
-    unpaired = set(a for a in A.keys()) # unpaired a&#39;s
-    proposals = {a: 0 for a in A.keys()} # keep track of who gets next proposal
-
-    while unpaired:
-        a = unpaired.pop()
-        ap = A[a] # a&#39;s preference list
-        assert proposals[a] &amp;lt; len(ap)
-        choice = ap[proposals[a]]
-        proposals[a] += 1
-        if choice in pairings: # a&#39;s choice already has a match
-            amatch = pairings[choice]
-            bp = B[choice]
-            if bp.index(a) &amp;lt; bp.index(amatch):
-                pairings[choice] = a
-                unpaired.add(amatch) # lost match
-            else:
-                unpaired.add(a)
-        else:
-            pairings[choice] = a
-    return [(a, b) for (b, a) in pairings.items()]
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;!--page--&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;A = {&amp;quot;Anna&amp;quot;: [&amp;quot;Kristoff&amp;quot;, &amp;quot;Olaf&amp;quot;], &amp;quot;Elsa&amp;quot;: [&amp;quot;Olaf&amp;quot;, &amp;quot;Kristoff&amp;quot;]}
-B = {&amp;quot;Kristoff&amp;quot;: [&amp;quot;Anna&amp;quot;, &amp;quot;Elsa&amp;quot;], &amp;quot;Olaf&amp;quot;: [&amp;quot;Elsa&amp;quot;, &amp;quot;Anna&amp;quot;]}
-gale_shapley(A, B)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;modeling-the-gale-shapley-program-as-a-state-machine&#34;&gt;Modeling the Gale-Shapley program as a state machine&lt;/h2&gt;
-
-&lt;p&gt;$S = $&lt;/p&gt;
-
-&lt;p&gt;$G = $&lt;/p&gt;
-
-&lt;p&gt;$q_0 = $&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Prove termination.&lt;/strong&gt; The Gale-Shapley program, modeled by the state
-  machine, eventually returns.&lt;/p&gt;
-
-&lt;p&gt;#&lt;/p&gt;
-
-&lt;p&gt;#&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Prove correctness.&lt;/strong&gt; The Gale-Shapley program returns a &lt;em&gt;stable matching&lt;/em&gt; of the two input sets and preferences.&lt;/p&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
 </description>
     </item>
     
