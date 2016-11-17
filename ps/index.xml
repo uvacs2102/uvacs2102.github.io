@@ -1513,5 +1513,146 @@ otherwise unrestricted.&lt;/p&gt;&lt;/li&gt;
 </description>
     </item>
     
+    <item>
+      <title>Problem Set Omega</title>
+      <link>https://uvacs2102.github.io/ps/psz/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/ps/psz/</guid>
+      <description>
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlightg&#34;&gt;
+This problem set is not like the others.   It is &lt;em&gt;optional&lt;/em&gt;, and can only count positively.&lt;br /&gt;
+   If you want an opportunity to present, the deadline is &lt;strong&gt;Sunday, 4 December&lt;/strong&gt; at &lt;strong&gt;6:29pm&lt;/strong&gt;.  The final submission deadline is &lt;strong&gt;Tuesday, 6 December&lt;/strong&gt; at &lt;strong&gt;11:59pm&lt;/strong&gt; (although this can be extended on request).&lt;/p&gt;
+
+&lt;p&gt;You should do it if you have an
+   idea for something worthwhile, fun, or interesting to do (that&amp;rsquo;s a
+   logical or, not an exclusive xor).  A good submission for this
+   assignment can also help your grade, counting like a bonus problem
+   set.  An excellent submission could count like two bonus problem
+   sets.&lt;/div&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;collaboration-policy&#34;&gt;Collaboration Policy&lt;/h3&gt;
+
+&lt;p&gt;For this assignment, you may work alone or with as many other people
+as you choose. If you work in a team, your team should jointly post a
+single submission with all of your names on it. All team members will
+receive the same credit, unless you specify and justify an uneven
+distribution in your submission. Your team may be as large as you
+want, but the expectations for quality and value of your submission
+scale according to &lt;span class=&#34;math&#34;&gt;sqrt(&lt;em&gt;N&lt;/em&gt;)&lt;/span&gt; (that
+is, a team with 4 people should do something twice as impressive as an
+individual to merit the same credit; if you are able to convince all
+202 students in the class to join your team, you should do something
+approximately 14.2 times as impressive as what would be expected from
+a single student). You are welcome to include people not in the class
+in your team (and they do not increase the value of &lt;span
+class=&#34;math&#34;&gt;&lt;em&gt;N&lt;/em&gt;&lt;/span&gt;).&lt;/p&gt;
+
+&lt;h2 id=&#34;goal&#34;&gt;Goal&lt;/h2&gt;
+
+&lt;p&gt;Create an artifact that conveys some idea from this class to a
+selected target audience.&lt;/p&gt;
+
+&lt;h3 id=&#34;target-audience&#34;&gt;Target Audience&lt;/h3&gt;
+
+&lt;p&gt;You can define your target audience but should specify what it
+is. Examples of target audiences include &amp;ldquo;typical third graders&amp;rdquo;,
+&amp;ldquo;your parents&amp;rdquo;, &amp;ldquo;UVa students majoring in history&amp;rdquo;, &amp;ldquo;Martians&amp;rdquo;, &amp;ldquo;cs1110
+students&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;Your artifact can be anything you want, so long as it includes some
+representation as a finite sequence of bits that can be posted on the
+Internet. Examples of possible artifacts include a written story, a
+comic, a video, a song (lyrics), or an interpretive dance.  If your
+artifact cannot be posted on the Internet (for example, if you bake a
+cake, build a quantum computer, or develop a time machine) you should
+still make some description of your artifact (including a picture if
+helpful) that can be posted.&lt;/p&gt;
+
+&lt;h2 id=&#34;submission&#34;&gt;Submission&lt;/h2&gt;
+
+&lt;p&gt;You should submit your artifact by using a web form
+  (to be make available on the course website soon).  Your submission
+  should include: (a) a description of your target audience; and (b) a
+  link to your artifact, hosted at a URL that will not disappear
+  shortly after you graduate.  Your submission may also include &amp;copy; a
+  &lt;em&gt;poetic license&lt;/em&gt; statement.  Everything technical in your artifact
+  should be correct, unless you carefully document how you know it is
+  incorrect. To convey the essence of an idea effectively to a general
+  audience, it may be necessary to simplify some things in ways that
+  are not technically correct but do not violate the important essence
+  of the idea. If you do this, include a poetic license statement to your
+  submission that explains and justifies your decisions (otherwise,
+  you will lose points for any technical inaccuracies).&lt;/p&gt;
+
+&lt;h2 id=&#34;optional-presentation&#34;&gt;Optional Presentation&lt;/h2&gt;
+
+&lt;p&gt;If you would like to present, perform, or share your artifact in class
+on 6 December (the last day of class), you must submit your request by
+&lt;strong&gt;6:29pm&lt;/strong&gt; on &lt;strong&gt;Sunday, 4 December&lt;/strong&gt;.  Your request should explain
+what you would like to do and how much time you think you need for
+this. Given the size of the class, it may not be possible for all
+teams that want to present to do so, so selection will be done based
+on what you submit with an emphasis on things that will be worthwhile
+or enjoyable for the whole class.  What you submit on 4 December does
+not need to be your final submission, but it should be enough to make
+a decision on whether or not it should be presented.&lt;/p&gt;
+
+&lt;h2 id=&#34;evaluation-criteria&#34;&gt;Evaluation Criteria&lt;/h2&gt;
+
+&lt;p&gt;Submissions will be evaluated on technical correctness and perceived
+effectiveness in conveying an important idea to your defined target
+audience.  Aesthetic merit, entertainment value, and creativity are
+also important, but only in as much as they support the goal of
+conveying an idea from discrete math to your target audience.&lt;/p&gt;
+
+&lt;h2 id=&#34;motivating-examples&#34;&gt;Motivating Examples&lt;/h2&gt;
+
+&lt;p&gt;To give you some ideas, here are some examples of things students have
+done in past years for similar assignments (but with different topics,
+because of being in either Theory of Computation course or
+Introduction to Computing).&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.cs.virginia.edu/~evans/cs1120-f11/conveying-computing-highlights&#34;&gt;&lt;em&gt;Conveying Computing&lt;/em&gt;&lt;/a&gt; (cs1120: Computing: Language, Logic, Machines, Fall 2011)&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;
+&lt;img src=&#34;http://www.cs.virginia.edu/~evans/cs1120-f11/wp-content/uploads/2011/12/IMG_15772.jpg&#34; width=600&gt;&lt;br&gt;
+Turing Machine Cake Balls, Megan Dunne and Jamie Miller
+&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.cs.virginia.edu/~evans/cs3102/?page_id=324&#34;&gt;&lt;em&gt;Conveying Complexity
+Highlights&lt;/em&gt;&lt;/a&gt;
+(cs3102: Theory of Computation, Spring 2010) (you can see all the
+submissions &lt;a href=&#34;http://www.cs.virginia.edu/~evans/cs3102/?p=304&#34;&gt;here&lt;/a&gt;,
+but many of the links don&amp;rsquo;t work anymore since people used their
+&lt;em&gt;people.virginia.edu&lt;/em&gt; pages)&lt;/p&gt;
+
+&lt;p&gt;The most successful (at least by number of views) is Authur Gordon, Allison Gurlitz, Stephen Lam, and Eugene Moy&amp;rsquo;s &lt;em&gt;A &amp;ldquo;Downfall&amp;rdquo; Parody: P = NP&lt;/em&gt;:
+&lt;center&gt;
+&lt;iframe width=&#34;650&#34; height=&#34;366&#34; src=&#34;https://www.youtube.com/embed/GSIodz9GWxc&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;From &lt;a href=&#34;http://www.cs.virginia.edu/~evans/cs588-fall2001/problem-sets/ps4-selected.html&#34;&gt;CS588: Cryptology - Principles and Applications&lt;/a&gt; (Fall 2001), Adam Glaser and Portman Wills, &lt;em&gt;Safe Computing at UVA&lt;/em&gt;:
+&lt;center&gt;
+&lt;video controls=&#34;controls&#34; width=&#34;650&#34; height=&#34;488&#34; name=&#34;Video Name&#34; src=&#34;https://www.cs.virginia.edu/evans/safecomputing.mov&#34;&gt;&lt;/video&gt;
+&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;Some examples that were not for course assignments:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.logicomix.com/en/index.html&#34;&gt;&lt;em&gt;Logicomix&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;My personal favorite, &lt;a href=&#34;https://www.amazon.com/Dori-Mic-Universal-Machine-David-Evans/dp/1495944980/&#34;&gt;&lt;em&gt;Dori-Mic and the Universal Machine&lt;/em&gt;&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;center&gt;
+&lt;a href=&#34;http://dori-mic.org&#34;&gt;&lt;img src=&#34;http://dori-mic.org/images/dori-mic-cover.png&#34; width=650&gt;&lt;/a&gt;
+&lt;/center&gt;&lt;/p&gt;
+</description>
+    </item>
+    
   </channel>
 </rss>
