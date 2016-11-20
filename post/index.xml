@@ -6,8 +6,20 @@
     <description>Recent content in Post-rsses on cs2102: Discrete Math</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 17 Nov 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 19 Nov 2016 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://uvacs2102.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Exam 2 Solutions</title>
+      <link>https://uvacs2102.github.io/exam2solutions/</link>
+      <pubDate>Sat, 19 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/exam2solutions/</guid>
+      <description>&lt;p&gt;The solutions to &lt;a href=&#34;https://uvacs2102.github.io/docs/exam2.pdf&#34;&gt;Exam 2&lt;/a&gt; are here: &lt;a href=&#34;https://uvacs2102.github.io/docs/exam2-solutions.pdf&#34;&gt;Exam 2
+Solutions&lt;/a&gt;.  You should, of course, expect
+to see questions like these again on the final.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Class 22: On Computable Numbers</title>
@@ -813,16 +825,6 @@ class=&#34;math&#34;&gt;&lt;em&gt;A&lt;/em&gt;&lt;/span&gt; might give up a bett
 one!&lt;/p&gt;
 
 &lt;p&gt;(Thanks especially to Luke Botti for noticing this problem.)&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Problem Set 7</title>
-      <link>https://uvacs2102.github.io/ps7announce/</link>
-      <pubDate>Fri, 21 Oct 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://uvacs2102.github.io/ps7announce/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Problem Set 7&lt;/strong&gt; is &lt;a href=&#34;https://uvacs2102.github.io/docs/ps7.pdf&#34;&gt;now posted&lt;/a&gt;, and is due on &lt;strong&gt;Friday, 28 October at 7:29pm&lt;/strong&gt;.&lt;/p&gt;
 </description>
     </item>
     
