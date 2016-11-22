@@ -139,8 +139,124 @@
   </header>
   
   
+  <p class="fronthead"><A href="/class23/">Class 23: Universal Machines</a> (Sat, 19 Nov 2016)</p>
+    
+
+<h3 id="schedule">Schedule</h3>
+
+<p><strong><a href="/docs/ps9.pdf">Problem Set 9</a></strong> is tomorrow, <strong>Wednesday, 23 November</strong> at <strong>6:29pm</strong>.</p>
+
+<p><strong><a href="/ps/psZ">Problem Set Omega</a></strong> is now posted and due on <strong>Sunday,
+  4 December</strong> or <strong>Tuesday, 6 December</strong> (see problem set for
+  details).  It is not like the others, and counts as a &ldquo;bonus&rdquo;
+  optional assignment.</p>
+
+<p><div class="notpdf">
+   <center>
+<script async class=''speakerdeck-embed'' data-id=''a98aa89e00784f0ca379fd216a092c5c'' data-ratio=''1.77777777777778'' src=''//speakerdeck.com/assets/embed.js''></script>
+   </center></p>
+
+<p><div class="highlightm">
+   <a href="/docs/class23.pdf">See PDF Version for <b>Notes</b></a>.
+   </div></p>
+
+<h1 id="code">Code</h1>
+
+<p>Simple Turing Machine simulator (and XOR machine): <a href="/docs/tm.py">tm.py</a></p>
+
+<p></div><!--endpdf--></p>
+
+<p><div class="latex"></p>
+
+<h2 id="turing-machine">Turing Machine</h2>
+
+<p>$$
+TM = (S, T \subseteq S \times \Gamma \rightarrow S \times \Gamma \times \text{\em dir}, q<em>0 \in S, q</em>{Accept} \subseteq S)
+$$</p>
+
+<p>$S$ is a finite set (the &ldquo;in-the-head&rdquo; processing states)<br />
+$\Gamma$ is a finite set (symbols that can be writte on the tape)<br />
+$\text{\em dir} = { \text{\bf Left}, \text{\bf Right}, \text{\bf Halt} }$ is the direction to move on the tape.</p>
+
+<p>An <em>execution</em> of a Turing Machine, $TM = (S, T \subseteq S \times \Gamma \rightarrow S \times \Gamma \times \text{\em dir}, q<em>0 \in S, q</em>{Accept} \subseteq S)$, is a (possibly infinite) sequence of <strong>configurations</strong>, $(x_0, x_1, \ldots)$ where $x_i \in \text{\em Tsil} \times S \times \text{\em List}$ (elements of the lists are in the finite set of symbols, $\Gamma$), such that:</p>
+
+<pre><code>  - $x_0 = (\text{\bf null}, q_0, \text{\bf input})$
+  - and all transitions follow the rules (need to be specified in detail).
+</code></pre>
+
+<!-- What is the case for the transition rule for then the direction is Left?
+
+#
+-->
+
+<h2 id="machines-and-languages">Machines and Languages</h2>
+
+<p>A <strong>language</strong> is a (possibly infinite) set of <em>finite</em> strings.</p>
+
+<p>$\Sigma$ = alphabet, a finite set of symbols<br />
+$L \subseteq \Sigma^{*}$</p>
+
+<p>$$L_{XOR} = { x_0x_1\ldots x_n + y_0y_1\ldots y_n = z_0z_1\ldots z_n \$ | x_i \in {0, 1}, y_i \in {0, 1}, z_i = x_i \oplus y_i }$$</p>
+
+<h2 id="turing-machine-computation">Turing Machine Computation</h2>
+
+<p>A Turing Machine, $M = (S, T \subseteq S \times \Gamma \rightarrow S \times \Gamma \times \text{\em dir}, q<em>0 \in S, q</em>{Accept} \subseteq S)$, <strong>accepts</strong> a string <em>x</em>, if there is an execution of <em>M</em> that starts in configuration $(\text{\bf null}, q_0, x)$, and terminates in a configuration, $(l, q_f, r)$, where $q<em>f \in q</em>{Accept}$.</p>
+
+<p>A Turing Machine, $M = (S, T \subseteq S \times \Gamma \rightarrow S \times \Gamma \times \text{\em dir}, q<em>0 \in S, q</em>{Accept} \subseteq S)$, <strong>recognizes</strong> a language  $L$, if for all strings $s \in L$, $M$ accepts $s$, and there is no string $t \notin L$ such that $M$ accepts $t$.</p>
+
+<pre><code class="language-python">TuringMachine = namedtuple('TuringMachine', ['rules', 'q_0', 'q_accepting'])
+
+def simulate(tm, starttape):
+    tape = starttape
+    headpos = 0
+    currentstate = tm.q_0
+
+    while True:
+        readsym = tape[headpos]
+        if (currentstate, readsym) in tm.rules:
+            (nextstate, writesym, dir) = tm.rules[(currentstate, readsym)]
+            tape[headpos] = writesym
+            currentstate = nextstate
+        else:
+            return currentstate in tm.q_accepting # no rule, halt
+
+        if dir == 'L':
+            headpos = max(headpos - 1, 0)
+        elif dir == 'R':
+            headpos += 1
+            if len(tape) &lt;= headpos: tape.append('_') # blank
+        else: # assert dir == 'Halt'
+            return currentstate in tm.q_accepting
+           
+xorm = TuringMachine(
+    rules = { ('S', '0'): ('R0', '-', 'R'), ('S', '1'): ('R1', '-', 'R'),
+              ('S', '+'): ('C', '+', 'R'),
+              ('R0', '0'): ('R0', '0', 'R'), ('R0', '1'): ('R0', '1', 'R'),
+              ('R1', '0'): ('R1', '0', 'R'), ('R1', '1'): ('R1', '1', 'R'),
+              ('R0', '+'): ('X0', '+', 'R'), ('R1', '+'): ('X1', '+', 'R'),
+              ('X0', 'X'): ('X0', 'X', 'R'), ('X1', 'X'): ('X1', 'X', 'R'),
+              ('X0', '0'): ('Y0', 'X', 'R'), ('X0', '1'): ('Y1', 'X', 'R'),
+              ('X1', '0'): ('Y1', 'X', 'R'), ('X1', '1'): ('Y0', 'X', 'R'),
+              ('Y0', '0'): ('Y0', '0', 'R'), ('Y0', '1'): ('Y0', '1', 'R'),
+              ('Y1', '0'): ('Y1', '0', 'R'), ('Y1', '1'): ('Y1', '1', 'R'),
+              ('Y0', '='): ('Z0', '=', 'R'), ('Y1', '='): ('Z1', '=', 'R'),
+              ('Z0', 'X'): ('Z0', 'X', 'R'), ('Z1', 'X'): ('Z1', 'X', 'R'),
+              ('Z0', '0'): ('B', 'X', 'L'),  ('Z1', '1'): ('B', 'X', 'L'),
+              ('B', '0'): ('B', '0', 'L'),   ('B', '1'): ('B', '1', 'L'),
+              ('B', '+'): ('B', '+', 'L'),   ('B', 'X'): ('B', 'X', 'L'),
+              ('B', '='): ('B', '=', 'L'),   ('B', '-'): ('S', '-', 'R'),
+              ('C', 'X'): ('C', 'X', 'R'),   ('C', '='): ('C', '=', 'R'), 
+              ('C', '$'): ('Accept', '$', 'Halt') },
+    q_0 = 'S', q_accepting = { 'Accept' })    
+
+simulate(xorm, list(&quot;00+10=10$&quot;))
+</code></pre>
+
+<p></div></p>
+ 
+  
   <p class="fronthead"><A href="/exam2solutions/">Exam 2 Solutions</a> (Sat, 19 Nov 2016)</p>
-    <p>The solutions to <a href="/docs/exam2.pdf">Exam 2</a> are here: <a href="/docs/exam2-solutions.pdf">Exam 2
+    <p>The solutions to <a href="/docs/exam2.pdf">Exam 2</a> are here: <a href="/docs/exam2solutions.pdf">Exam 2
 Solutions</a>.  You should, of course, expect
 to see questions like these again on the final.</p>
  
@@ -457,163 +573,6 @@ should be <code>list_accumulate(lambda a, b: b + 1, lst, 0)</code>.</p></li>
 work-arounds to these problems in your solutions, you can add a note to
 your assignment indicating this and don&rsquo;t need to revisit them, but
 otherwise, please solve the revised problems.</p>
- 
-  
-  <p class="fronthead"><A href="/class18/">Class 18: Infinite Sets</a> (Tue, 1 Nov 2016)</p>
-    
-
-<h3 id="schedule">Schedule</h3>
-
-<p>Before Thursday, everyone should have finished reading MCS Chapter 8.</p>
-
-<p><a href="/ps/ps8"><strong>Problem Set 8</strong></a> is due <strong>Friday (4 November) at 6:29pm</strong>.</p>
-
-<p>I am out of town Wednesday and will not be able to hold my normal office
-hours.</p>
-
-<p>Friday, 4 November at 11am (Rotunda Dome Room): <strong>Steve Huffman</strong> (BSCS
-2005, co-founder and CEO of Reddit), <em>Computer Science Distinguished
-Alumni Speaker</em>.</p>
-
-<h2 id="exam-2">Exam 2</h2>
-
-<p><strong>Exam 2</strong> will be in class on <strong>Thursday, 10 November</strong>.  It will be
-  similar in format to Exam 1.  If you need to make special arrangements
-  for taking Exam 2, please contact me by the end of this week (Nov 6).</p>
-
-<p><strong>Resources.</strong> As with Exam 1, you will be permitted to use a single
-paper page of notes that you prepare and bring to the exam.  It is fine
-to collaborate with others to prepare your notes.  The page should be no
-larger than a US Letter size page ($8.5 \times 11$ inches), and you may
-write (or print) on both sides of the page.  No other resources are
-permitted during the exam.</p>
-
-<p><strong>Content.</strong> The problems on the exam will cover material from Classes
-  1&ndash;17, Problem Sets 1&ndash;8 (including the provided solutions), and MCS
-  Chapters 1&ndash;7.  Exam 2 will emphasize material covered since Exam 1
-  (Classes 12&ndash;17, Problem Sets 6&ndash;8, and MCS Chapters 6&ndash;7), but will
-  also include questions that cover earlier material in the class.  In
-  particular, you should not be at all surprised if Exam 2 includes
-  questions very similar to Problem 4 and Problem 8 from Exam 1, so it
-  would be quite foolish for any student to go into the exam without
-  making sure they understand those problems and their solutions.  There
-  will not be any questions about trick-xor-treat protocols, despite
-  their practical importance and mathematical beauty.  If you understand
-  the problems on the problem sets and questions on the class notes well
-  enough to be able to answer similar questions, you should do well on
-  the exam.</p>
-
-<p>The main topics the exam will cover include:</p>
-
-<ul>
-<li><p>State Machines (how to interpret and reason about a state machine
-given its formal description, how to model a problem with a state
-machine)</p></li>
-
-<li><p>Invariant Principle (you should be able to construct a proof that uses
-the invariant principle to reason about properties of reachable
-states, and be able to understand proofs that use and mis-use the
-invariant principle)</p></li>
-
-<li><p>Termination Proofs (you should be able to prove a state machine
-eventually reaches a terminating state, or that a program eventually
-terminates)</p></li>
-
-<li><p>Stable Matching (you should understand the definition of a stable
-matching and the Gale-Shalpey algorithm for finding a stable matching,
-and be able to prove properties about matchings)</p></li>
-
-<li><p>Recursive Data Types (how to define a data type constructively,
-operations on recursive data types; lists, trees, and other
-recursively defined data types)</p></li>
-
-<li><p>Structural Induction (how to use the principle of structural induction
-to reason about all objects of a recursive data type; understand the
-connections and differences between structural induction, invariant
-principle, and induction on the natural numbers)</p></li>
-</ul>
-
-<p>For most students, I believe the best way to prepare for the exam will
-be to (1) go over exam 1 and the problem sets and their solutions, and
-make sure you understand well any of the problems you did not get
-before; (2) go through the questions in the class notes and convince
-yourself you can answer them well; (3) re-read chapters of the book,
-solving the associated practice problems, especially for any sections on
-topics where you had difficulty on the problem sets.  If you do #1 and
-understand well the problems on the problem set, you should be confident
-you&rsquo;ll do well on the exam; if you struggled on the problem sets, you
-would benefit from doing #2 and #3 as well.  If you have anything you
-want me to review before the exam, post on slack before Monday (7
-November).</p>
-
-<p><div class="notpdf">
-   <center>
-<script async class="speakerdeck-embed" data-id="bce1aef8374f4dffbf5f11d517397e0a" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-   </center></p>
-
-<h1 id="links">Links</h1>
-
-<p>Apostolos Doxiadis and <a href="https://people.eecs.berkeley.edu/~christos/">Christos Papadimitriou</a>. <a href="https://www.amazon.com/Logicomix-search-truth-Apostolos-Doxiadis/dp/1596914521/"><em>Logicomix: An epic
-search for
-truth</em></a>, Bloomsbury USA, 2009.</p>
-
-<p><a href="http://pi.math.virginia.edu/History/1800s.htm">Math Professors at UVa (1825-1900)</a></p>
-
-<blockquote>
-<p><em>Courtenay&rsquo;s tenure at Virginia was, in contrast to that of his predecessor, a resounding success. He was described as a model professor: &ldquo;He never by look, act, word, or emphasis disparaged the efforts or undervalued the acquirements of his pupils. His pleasant smile and kind voice, when he would say, &lsquo;Is that answer perfectly correct?&rsquo; gave hope to many minds struggling with science&rdquo;</em></p>
-</blockquote>
-
-<p><a href="http://www.encyclopediavirginia.org/Bonnycastle_Charles_1796-1840#start_entry">Charles Bonnycastle</a>, UVA&rsquo;s Professor of Mathematics, 1825-1840</p>
-
-<blockquote>
-<p>As mathematics professor, &ldquo;Old Bonny,&rdquo; as he was fondly called, replaced the antiquated British approach to mathematical pedagogy typified by his own father&rsquo;s texts with a new approach borrowed from French mathematicians. British writers had imitated Euclid by clinging to the deductive manner of presenting material. They opened their texts with axioms and definitions and proceeded to the derivation of facts and theorems. Although logically satisfying to mathematicians, the method did little to motivate beginning students. French textbook writers, on the other hand, approached mathematics analytically, leading from concrete examples to abstractions. Bonnycastle introduced this method at the University of Virginia and published his own college textbook, <em>Inductive Geometry, or, An Analysis of the Relations of Form and Magnitude: Commencing with the Elementary Ideas Derived Through the Senses, and Proceeding by a Train of Inductive Reasoning to Develop the Present State of the Science</em> (1834). Painfully prolix even by nineteenth-century standards, the innovative book was not a financial success.  (Excerpt from article by Karen Parshall)</p>
-</blockquote>
-
-<p><div class="highlightm">
-   <a href="/docs/class18.pdf">See PDF Version for <b>Notes</b></a>.
-   </div></p>
-
-<p></div><!--endpdf--></p>
-
-<p><div class="latex"></p>
-
-<h1 id="infinite-sets">Infinite Sets</h1>
-
-<p><strong>Finite Cardinality.</strong> The <em>cardinality</em> of the set
-$$
-\mathbb{N}_k = { n | n \in \mathbb{N} \wedge n &lt; k }
-$$
-is $k$.  If there is a <em>bijection</em> between two sets, they have the same
-cardinality.  (Class 9)</p>
-
-<p>Does this definition tell us the cardinality of $\mathbb{N}$?</p>
-
-<p>###</p>
-
-<p><strong>Definition.</strong> A set $C$ is <em>infinite</em> if there is no bijection between
-  $C$ and any set $\mathbb{N}_k$ (as defined above).</p>
-
-<p><strong>Dedekind-Infinite.</strong> A set $A$ is <em>Dedekind-infinite</em> if and only if there exists a strict subset of $A$ with the same cardinality as $A$.  That is,
-$$\exists B \subset A \ldotp \exists R \ldotp R\ \text{is a bijection between}\ A\ \text{and}\ B.$$</p>
-
-<p>Are the definitions of (standard) <em>infinite</em> and <em>Dedekind-infinite</em>
-equivalent?</p>
-
-<p>##</p>
-
-<p><strong>Definition.</strong> A set $C$ is <em>countable</em> if and only if there exists a
-  surjective function from $\mathbb{N}$ to $C$.  (That is, $\le 1$ arrow
-  out from $\mathbb{N}$, $ge 1$ arrow in to $C$.)</p>
-
-<p><strong>Definition.</strong> A set $C$ is <em>countably infinite</em> if and only if there
-  exists a bijection between $C$ and $\mathbb{N}$.</p>
-
-<p>Must a <em>countable</em> set that is <em>Dedekind-infinite</em> be <em>countably infinite</em>?</p>
-
-<p>Prove that these sets are countable: $\mathbb{Z}$, $\mathbb{N} \times
-\mathbb{N}$, $\mathbb{Q}$ (rationals), $\emptyset$, $\mathbb{N} \cup (\mathbb{N} \times \mathbb{N}) \cup (\mathbb{N} \times \mathbb{N} \times \mathbb{N})$, all finite sequences of elements of $\mathbb{N}$.</p>
-
-<p></div></p>
  
   
   

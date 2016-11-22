@@ -10,12 +10,134 @@
     <atom:link href="https://uvacs2102.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Class 23: Universal Machines</title>
+      <link>https://uvacs2102.github.io/class23/</link>
+      <pubDate>Sat, 19 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/class23/</guid>
+      <description>
+
+&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://uvacs2102.github.io/docs/ps9.pdf&#34;&gt;Problem Set 9&lt;/a&gt;&lt;/strong&gt; is tomorrow, &lt;strong&gt;Wednesday, 23 November&lt;/strong&gt; at &lt;strong&gt;6:29pm&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/psZ&#34;&gt;Problem Set Omega&lt;/a&gt;&lt;/strong&gt; is now posted and due on &lt;strong&gt;Sunday,
+  4 December&lt;/strong&gt; or &lt;strong&gt;Tuesday, 6 December&lt;/strong&gt; (see problem set for
+  details).  It is not like the others, and counts as a &amp;ldquo;bonus&amp;rdquo;
+  optional assignment.&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;
+   &lt;center&gt;
+&lt;script async class=&#39;&#39;speakerdeck-embed&#39;&#39; data-id=&#39;&#39;a98aa89e00784f0ca379fd216a092c5c&#39;&#39; data-ratio=&#39;&#39;1.77777777777778&#39;&#39; src=&#39;&#39;//speakerdeck.com/assets/embed.js&#39;&#39;&gt;&lt;/script&gt;
+   &lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlightm&#34;&gt;
+   &lt;a href=&#34;https://uvacs2102.github.io/docs/class23.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes&lt;/b&gt;&lt;/a&gt;.
+   &lt;/div&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;code&#34;&gt;Code&lt;/h1&gt;
+
+&lt;p&gt;Simple Turing Machine simulator (and XOR machine): &lt;a href=&#34;https://uvacs2102.github.io/docs/tm.py&#34;&gt;tm.py&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;turing-machine&#34;&gt;Turing Machine&lt;/h2&gt;
+
+&lt;p&gt;$$
+TM = (S, T \subseteq S \times \Gamma \rightarrow S \times \Gamma \times \text{\em dir}, q&lt;em&gt;0 \in S, q&lt;/em&gt;{Accept} \subseteq S)
+$$&lt;/p&gt;
+
+&lt;p&gt;$S$ is a finite set (the &amp;ldquo;in-the-head&amp;rdquo; processing states)&lt;br /&gt;
+$\Gamma$ is a finite set (symbols that can be writte on the tape)&lt;br /&gt;
+$\text{\em dir} = { \text{\bf Left}, \text{\bf Right}, \text{\bf Halt} }$ is the direction to move on the tape.&lt;/p&gt;
+
+&lt;p&gt;An &lt;em&gt;execution&lt;/em&gt; of a Turing Machine, $TM = (S, T \subseteq S \times \Gamma \rightarrow S \times \Gamma \times \text{\em dir}, q&lt;em&gt;0 \in S, q&lt;/em&gt;{Accept} \subseteq S)$, is a (possibly infinite) sequence of &lt;strong&gt;configurations&lt;/strong&gt;, $(x_0, x_1, \ldots)$ where $x_i \in \text{\em Tsil} \times S \times \text{\em List}$ (elements of the lists are in the finite set of symbols, $\Gamma$), such that:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;  - $x_0 = (\text{\bf null}, q_0, \text{\bf input})$
+  - and all transitions follow the rules (need to be specified in detail).
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;!-- What is the case for the transition rule for then the direction is Left?
+
+#
+--&gt;
+
+&lt;h2 id=&#34;machines-and-languages&#34;&gt;Machines and Languages&lt;/h2&gt;
+
+&lt;p&gt;A &lt;strong&gt;language&lt;/strong&gt; is a (possibly infinite) set of &lt;em&gt;finite&lt;/em&gt; strings.&lt;/p&gt;
+
+&lt;p&gt;$\Sigma$ = alphabet, a finite set of symbols&lt;br /&gt;
+$L \subseteq \Sigma^{*}$&lt;/p&gt;
+
+&lt;p&gt;$$L_{XOR} = { x_0x_1\ldots x_n + y_0y_1\ldots y_n = z_0z_1\ldots z_n \$ | x_i \in {0, 1}, y_i \in {0, 1}, z_i = x_i \oplus y_i }$$&lt;/p&gt;
+
+&lt;h2 id=&#34;turing-machine-computation&#34;&gt;Turing Machine Computation&lt;/h2&gt;
+
+&lt;p&gt;A Turing Machine, $M = (S, T \subseteq S \times \Gamma \rightarrow S \times \Gamma \times \text{\em dir}, q&lt;em&gt;0 \in S, q&lt;/em&gt;{Accept} \subseteq S)$, &lt;strong&gt;accepts&lt;/strong&gt; a string &lt;em&gt;x&lt;/em&gt;, if there is an execution of &lt;em&gt;M&lt;/em&gt; that starts in configuration $(\text{\bf null}, q_0, x)$, and terminates in a configuration, $(l, q_f, r)$, where $q&lt;em&gt;f \in q&lt;/em&gt;{Accept}$.&lt;/p&gt;
+
+&lt;p&gt;A Turing Machine, $M = (S, T \subseteq S \times \Gamma \rightarrow S \times \Gamma \times \text{\em dir}, q&lt;em&gt;0 \in S, q&lt;/em&gt;{Accept} \subseteq S)$, &lt;strong&gt;recognizes&lt;/strong&gt; a language  $L$, if for all strings $s \in L$, $M$ accepts $s$, and there is no string $t \notin L$ such that $M$ accepts $t$.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;TuringMachine = namedtuple(&#39;TuringMachine&#39;, [&#39;rules&#39;, &#39;q_0&#39;, &#39;q_accepting&#39;])
+
+def simulate(tm, starttape):
+    tape = starttape
+    headpos = 0
+    currentstate = tm.q_0
+
+    while True:
+        readsym = tape[headpos]
+        if (currentstate, readsym) in tm.rules:
+            (nextstate, writesym, dir) = tm.rules[(currentstate, readsym)]
+            tape[headpos] = writesym
+            currentstate = nextstate
+        else:
+            return currentstate in tm.q_accepting # no rule, halt
+
+        if dir == &#39;L&#39;:
+            headpos = max(headpos - 1, 0)
+        elif dir == &#39;R&#39;:
+            headpos += 1
+            if len(tape) &amp;lt;= headpos: tape.append(&#39;_&#39;) # blank
+        else: # assert dir == &#39;Halt&#39;
+            return currentstate in tm.q_accepting
+           
+xorm = TuringMachine(
+    rules = { (&#39;S&#39;, &#39;0&#39;): (&#39;R0&#39;, &#39;-&#39;, &#39;R&#39;), (&#39;S&#39;, &#39;1&#39;): (&#39;R1&#39;, &#39;-&#39;, &#39;R&#39;),
+              (&#39;S&#39;, &#39;+&#39;): (&#39;C&#39;, &#39;+&#39;, &#39;R&#39;),
+              (&#39;R0&#39;, &#39;0&#39;): (&#39;R0&#39;, &#39;0&#39;, &#39;R&#39;), (&#39;R0&#39;, &#39;1&#39;): (&#39;R0&#39;, &#39;1&#39;, &#39;R&#39;),
+              (&#39;R1&#39;, &#39;0&#39;): (&#39;R1&#39;, &#39;0&#39;, &#39;R&#39;), (&#39;R1&#39;, &#39;1&#39;): (&#39;R1&#39;, &#39;1&#39;, &#39;R&#39;),
+              (&#39;R0&#39;, &#39;+&#39;): (&#39;X0&#39;, &#39;+&#39;, &#39;R&#39;), (&#39;R1&#39;, &#39;+&#39;): (&#39;X1&#39;, &#39;+&#39;, &#39;R&#39;),
+              (&#39;X0&#39;, &#39;X&#39;): (&#39;X0&#39;, &#39;X&#39;, &#39;R&#39;), (&#39;X1&#39;, &#39;X&#39;): (&#39;X1&#39;, &#39;X&#39;, &#39;R&#39;),
+              (&#39;X0&#39;, &#39;0&#39;): (&#39;Y0&#39;, &#39;X&#39;, &#39;R&#39;), (&#39;X0&#39;, &#39;1&#39;): (&#39;Y1&#39;, &#39;X&#39;, &#39;R&#39;),
+              (&#39;X1&#39;, &#39;0&#39;): (&#39;Y1&#39;, &#39;X&#39;, &#39;R&#39;), (&#39;X1&#39;, &#39;1&#39;): (&#39;Y0&#39;, &#39;X&#39;, &#39;R&#39;),
+              (&#39;Y0&#39;, &#39;0&#39;): (&#39;Y0&#39;, &#39;0&#39;, &#39;R&#39;), (&#39;Y0&#39;, &#39;1&#39;): (&#39;Y0&#39;, &#39;1&#39;, &#39;R&#39;),
+              (&#39;Y1&#39;, &#39;0&#39;): (&#39;Y1&#39;, &#39;0&#39;, &#39;R&#39;), (&#39;Y1&#39;, &#39;1&#39;): (&#39;Y1&#39;, &#39;1&#39;, &#39;R&#39;),
+              (&#39;Y0&#39;, &#39;=&#39;): (&#39;Z0&#39;, &#39;=&#39;, &#39;R&#39;), (&#39;Y1&#39;, &#39;=&#39;): (&#39;Z1&#39;, &#39;=&#39;, &#39;R&#39;),
+              (&#39;Z0&#39;, &#39;X&#39;): (&#39;Z0&#39;, &#39;X&#39;, &#39;R&#39;), (&#39;Z1&#39;, &#39;X&#39;): (&#39;Z1&#39;, &#39;X&#39;, &#39;R&#39;),
+              (&#39;Z0&#39;, &#39;0&#39;): (&#39;B&#39;, &#39;X&#39;, &#39;L&#39;),  (&#39;Z1&#39;, &#39;1&#39;): (&#39;B&#39;, &#39;X&#39;, &#39;L&#39;),
+              (&#39;B&#39;, &#39;0&#39;): (&#39;B&#39;, &#39;0&#39;, &#39;L&#39;),   (&#39;B&#39;, &#39;1&#39;): (&#39;B&#39;, &#39;1&#39;, &#39;L&#39;),
+              (&#39;B&#39;, &#39;+&#39;): (&#39;B&#39;, &#39;+&#39;, &#39;L&#39;),   (&#39;B&#39;, &#39;X&#39;): (&#39;B&#39;, &#39;X&#39;, &#39;L&#39;),
+              (&#39;B&#39;, &#39;=&#39;): (&#39;B&#39;, &#39;=&#39;, &#39;L&#39;),   (&#39;B&#39;, &#39;-&#39;): (&#39;S&#39;, &#39;-&#39;, &#39;R&#39;),
+              (&#39;C&#39;, &#39;X&#39;): (&#39;C&#39;, &#39;X&#39;, &#39;R&#39;),   (&#39;C&#39;, &#39;=&#39;): (&#39;C&#39;, &#39;=&#39;, &#39;R&#39;), 
+              (&#39;C&#39;, &#39;$&#39;): (&#39;Accept&#39;, &#39;$&#39;, &#39;Halt&#39;) },
+    q_0 = &#39;S&#39;, q_accepting = { &#39;Accept&#39; })    
+
+simulate(xorm, list(&amp;quot;00+10=10$&amp;quot;))
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Exam 2 Solutions</title>
       <link>https://uvacs2102.github.io/exam2solutions/</link>
       <pubDate>Sat, 19 Nov 2016 00:00:00 +0000</pubDate>
       
       <guid>https://uvacs2102.github.io/exam2solutions/</guid>
-      <description>&lt;p&gt;The solutions to &lt;a href=&#34;https://uvacs2102.github.io/docs/exam2.pdf&#34;&gt;Exam 2&lt;/a&gt; are here: &lt;a href=&#34;https://uvacs2102.github.io/docs/exam2-solutions.pdf&#34;&gt;Exam 2
+      <description>&lt;p&gt;The solutions to &lt;a href=&#34;https://uvacs2102.github.io/docs/exam2.pdf&#34;&gt;Exam 2&lt;/a&gt; are here: &lt;a href=&#34;https://uvacs2102.github.io/docs/exam2solutions.pdf&#34;&gt;Exam 2
 Solutions&lt;/a&gt;.  You should, of course, expect
 to see questions like these again on the final.&lt;/p&gt;
 </description>
@@ -804,27 +926,6 @@ def list_length(l):
 &lt;p&gt;Prove: for all lists, $p$, &lt;code&gt;list_length(p)&lt;/code&gt; returns the length of the list $p$.&lt;/p&gt;
 
 &lt;p&gt;&lt;/div&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Problem Set 7 - Revised</title>
-      <link>https://uvacs2102.github.io/ps7revised/</link>
-      <pubDate>Sun, 23 Oct 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://uvacs2102.github.io/ps7revised/</guid>
-      <description>&lt;p&gt;A revised version of &lt;strong&gt;Problem Set 7&lt;/strong&gt; is &lt;a href=&#34;https://uvacs2102.github.io/docs/ps7.pdf&#34;&gt;now posted&lt;/a&gt;.
-The change is that an additional constrait was added to the state
-machine transitions (&lt;span class=&#34;math&#34;&gt;&lt;em&gt;G&lt;/em&gt;&lt;/span&gt;):
-&lt;center&gt;
-&lt;span class=&#34;math&#34;&gt;&amp;forall; &lt;em&gt;b&lt;/em&gt; &amp;isin; &lt;em&gt;B&lt;/em&gt; . (&lt;em&gt;a&lt;sub&gt;i&lt;/sub&gt;&lt;/em&gt;, &lt;em&gt;b&lt;/em&gt;) &amp;notin; &lt;em&gt;pairings&lt;/em&gt;&lt;/span&gt;
-&lt;/center&gt;&lt;/p&gt;
-
-&lt;p&gt;This constraint is needed since without it, a member of &lt;span
-class=&#34;math&#34;&gt;&lt;em&gt;A&lt;/em&gt;&lt;/span&gt; might give up a better match for a worse
-one!&lt;/p&gt;
-
-&lt;p&gt;(Thanks especially to Luke Botti for noticing this problem.)&lt;/p&gt;
 </description>
     </item>
     
