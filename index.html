@@ -150,13 +150,16 @@
 
 <p>Henry&rsquo;s proof is below:</p>
 
-<p>The set of _Tree_s is <em>countable</em>.</p>
+<p>The set of <em>Tree</em> objects is <em>countable</em>.</p>
 
-<p>The following already proven theorems are used:
-   - The set of all strees is countably infinite.<br />
-   - the set of all finite sequences of natural numbers is countable.
-   - The cartesian product of two countable sets is also countable.
-   - The sub-set of a countable set is countable.</p>
+<p>The following already proven theorems are used:</p>
+
+<ul>
+<li>The set of all strees is countably infinite.<br /></li>
+<li>the set of all finite sequences of natural numbers is countable.</li>
+<li>The cartesian product of two countable sets is also countable.</li>
+<li>The sub-set of a countable set is countable.</li>
+</ul>
 
 <p>We prove that the set of all trees with natural number labels is
 countable by finding a total injective mapping between the set of all
@@ -190,17 +193,15 @@ defined above.</p>
 <p><em>Part 2</em> (helper function):</p>
 
 <p><pre>
-   getSequence := tree -&gt; sequence</p>
-
-<p>getSequence(null) = empty sequence
+   getSequence := tree -&gt; sequence
+   getSequence(null) = empty sequence
    getSequence(combine(t1,N,t2)) = concatenate(getSequence(t1),N,getSequence(t2))
    </pre></p>
 
 <p><em>Combined</em> (the relation being defined for the proof):
    <pre>
-   splitTree := tree -&gt; (stree, sequence)</p>
-
-<p>splitTree(t) = (getStree(t),getSequence(t))
+   splitTree := tree -&gt; (stree, sequence)
+   splitTree(t) = (getStree(t),getSequence(t))
    </pre></p>
 
 <p>This relation is defined for all trees, making it total, and produces

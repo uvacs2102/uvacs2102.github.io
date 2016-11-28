@@ -25,13 +25,16 @@
 
 &lt;p&gt;Henry&amp;rsquo;s proof is below:&lt;/p&gt;
 
-&lt;p&gt;The set of _Tree_s is &lt;em&gt;countable&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;The set of &lt;em&gt;Tree&lt;/em&gt; objects is &lt;em&gt;countable&lt;/em&gt;.&lt;/p&gt;
 
-&lt;p&gt;The following already proven theorems are used:
-   - The set of all strees is countably infinite.&lt;br /&gt;
-   - the set of all finite sequences of natural numbers is countable.
-   - The cartesian product of two countable sets is also countable.
-   - The sub-set of a countable set is countable.&lt;/p&gt;
+&lt;p&gt;The following already proven theorems are used:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;The set of all strees is countably infinite.&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;the set of all finite sequences of natural numbers is countable.&lt;/li&gt;
+&lt;li&gt;The cartesian product of two countable sets is also countable.&lt;/li&gt;
+&lt;li&gt;The sub-set of a countable set is countable.&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;We prove that the set of all trees with natural number labels is
 countable by finding a total injective mapping between the set of all
@@ -65,17 +68,15 @@ defined above.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Part 2&lt;/em&gt; (helper function):&lt;/p&gt;
 
 &lt;p&gt;&lt;pre&gt;
-   getSequence := tree -&amp;gt; sequence&lt;/p&gt;
-
-&lt;p&gt;getSequence(null) = empty sequence
+   getSequence := tree -&amp;gt; sequence
+   getSequence(null) = empty sequence
    getSequence(combine(t1,N,t2)) = concatenate(getSequence(t1),N,getSequence(t2))
    &lt;/pre&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;Combined&lt;/em&gt; (the relation being defined for the proof):
    &lt;pre&gt;
-   splitTree := tree -&amp;gt; (stree, sequence)&lt;/p&gt;
-
-&lt;p&gt;splitTree(t) = (getStree(t),getSequence(t))
+   splitTree := tree -&amp;gt; (stree, sequence)
+   splitTree(t) = (getStree(t),getSequence(t))
    &lt;/pre&gt;&lt;/p&gt;
 
 &lt;p&gt;This relation is defined for all trees, making it total, and produces
