@@ -139,54 +139,6 @@
   </header>
   
   
-  <p class="fronthead"><A href="/class24/">Class 24: Halting Problems</a> (Tue, 29 Nov 2016)</p>
-    
-
-<h3 id="schedule">Schedule</h3>
-
-<p><strong><a href="/ps/psZ">Problem Set Omega</a></strong> is due on <strong>Sunday, 4 December</strong> or
-<strong>Tuesday, 6 December</strong> (see problem set for details).  It is not like
-the others, and counts as a &ldquo;bonus&rdquo; optional assignment.</p>
-
-<p>The <strong>final exam</strong> is scheduled by the registrar for <strong>Saturday, 10
-December, 9am-noon</strong> in our normal classroom.  The final will cover
-everything in the course, with an emphasis on the most important
-concepts.  More information about the final and <strong>practice problems</strong>
-to prepare for it are posted on the course site.</p>
-
-<p><div class="notpdf">
-   <center>
-   </center></p>
-
-<p><div class="highlightm">
-   <a href="/docs/class24.pdf">See PDF Version for <b>Notes</b></a>.
-   </div></p>
-
-<h3 id="links">Links</h3>
-
-<h2 id="turing-machine">Turing Machine</h2>
-
-<p>$$
-TM = (S, T \subseteq S \times \Gamma \rightarrow S \times \Gamma \times \text{\em dir}, q<em>0 \in S, q</em>{Accept} \subseteq S)
-$$</p>
-
-<p>$S$ is a finite set (the &ldquo;in-the-head&rdquo; processing states)<br />
-$\Gamma$ is a finite set (symbols that can be writte on the tape)<br />
-$\text{\em dir} = { \text{\bf Left}, \text{\bf Right}, \text{\bf Halt} }$ is the direction to move on the tape.</p>
-
-<p>An <em>execution</em> of a Turing Machine, $TM = (S, T \subseteq S \times \Gamma \rightarrow S \times \Gamma \times \text{\em dir}, q<em>0 \in S, q</em>{Accept} \subseteq S)$, is a (possibly infinite) sequence of <strong>configurations</strong>, $(x_0, x_1, \ldots)$ where $x_i \in \text{\em Tsil} \times S \times \text{\em List}$ (elements of the lists are in the finite set of symbols, $\Gamma$), such that:</p>
-
-<pre><code>  - $x_0 = (\text{\bf null}, q_0, \text{\bf input})$
-  - and all transitions follow the rules (need to be specified in detail).
-</code></pre>
-
-<p>A Turing Machine, $M = (S, T \subseteq S \times \Gamma \rightarrow S \times \Gamma \times \text{\em dir}, q<em>0 \in S, q</em>{Accept} \subseteq S)$, <strong>accepts</strong> a string <em>x</em>, if there is an execution of <em>M</em> that starts in configuration $(\text{\bf null}, q_0, x)$, and terminates in a configuration, $(l, q_f, r)$, where $q<em>f \in q</em>{Accept}$.</p>
-
-<p>A Turing Machine, $M = (S, T \subseteq S \times \Gamma \rightarrow S \times \Gamma \times \text{\em dir}, q<em>0 \in S, q</em>{Accept} \subseteq S)$, <strong>recognizes</strong> a language  $L$, if for all strings $s \in L$, $M$ accepts $s$, and there is no string $t \notin L$ such that $M$ accepts $t$.</p>
-
-<p></div></p>
- 
-  
   <p class="fronthead"><A href="/treeschallenge/">Trees Challenge</a> (Mon, 28 Nov 2016)</p>
     <p>Henry Spece has solved Challenge 7:</p>
 
@@ -576,6 +528,13 @@ US Census. (Includes <a href="https://www.census.gov/population/apportionment/fi
 <p></div></p>
  
   
+  <p class="fronthead"><A href="/ps8solutions/">Problem Set 8 Solutions and Comments</a> (Sat, 5 Nov 2016)</p>
+    <p>The Problem Set 8 solutions are now posted:
+[<a href="https://collab.itc.virginia.edu/access/content/group/e0b17949-c94c-466b-835a-196381f3f911/ps8solutions.pdf">PDF</a>].
+Please review these to prepare for Exam 2, and let me know if you have
+any questions or parts you want to go over in class Tuesday.</p>
+ 
+  
   
 <div class="container pagination">
   
@@ -614,16 +573,12 @@ US Census. (Includes <a href="https://www.census.gov/population/apportionment/fi
   6
 </a>
 
-<a href="https://uvacs2102.github.io/page/7/">
-  7
-</a>
-
 
 <a aria-label="Next" href="https://uvacs2102.github.io/page/2/">
   <span aria-hidden="true">»</span>
 </a>
 
-<a aria-label="Last" href="https://uvacs2102.github.io/page/7/">
+<a aria-label="Last" href="https://uvacs2102.github.io/page/6/">
   <span aria-hidden="true">»»</span>
 </a>
 
