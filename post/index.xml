@@ -17,23 +17,21 @@
       <guid>https://uvacs2102.github.io/treeschallenge/</guid>
       <description>&lt;p&gt;Henry Spece has solved Challenge 7:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;&amp;lt;div class=&amp;quot;highlightg&amp;quot;&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;strong&gt;Challenge 7.&lt;/strong&gt; From &lt;a href=&#34;https://uvacs2102.github.io/class19&#34;&gt;Class19&lt;/a&gt;: Determine the carinality of
+&lt;p&gt;&lt;div class=&#34;highlightg&#34;&gt;
+   &lt;strong&gt;Challenge 7.&lt;/strong&gt; From &lt;a href=&#34;https://uvacs2102.github.io/class19&#34;&gt;Class19&lt;/a&gt;: Determine the carinality of
   the set of all _Tree_s (as defined on PS8), and provide a convincing
   proof supporting your answer.
-    &lt;/div&gt;&lt;/p&gt;
+   &lt;/div&gt;&lt;/p&gt;
 
 &lt;p&gt;Henry&amp;rsquo;s proof is below:&lt;/p&gt;
 
 &lt;p&gt;The set of _Tree_s is &lt;em&gt;countable&lt;/em&gt;.&lt;/p&gt;
 
 &lt;p&gt;The following already proven theorems are used:
-- The set of all strees is countably infinite.&lt;br /&gt;
-- the set of all finite sequences of natural numbers is countable.
-- The cartesian product of two countable sets is also countable.
-- The sub-set of a countable set is countable.&lt;/p&gt;
+   - The set of all strees is countably infinite.&lt;br /&gt;
+   - the set of all finite sequences of natural numbers is countable.
+   - The cartesian product of two countable sets is also countable.
+   - The sub-set of a countable set is countable.&lt;/p&gt;
 
 &lt;p&gt;We prove that the set of all trees with natural number labels is
 countable by finding a total injective mapping between the set of all
