@@ -30,10 +30,10 @@
 &lt;p&gt;The set of _Tree_s is &lt;em&gt;countable&lt;/em&gt;.&lt;/p&gt;
 
 &lt;p&gt;The following already proven theorers are used:
- - The set of all strees is countably infinite.&lt;br /&gt;
- - the set of all finite sequences of natural numbers is countable.
- - The cartesian product of two countable sets is also countable.
- - The sub-set of a countable set is countable.&lt;/p&gt;
+- The set of all strees is countably infinite.&lt;br /&gt;
+- the set of all finite sequences of natural numbers is countable.
+- The cartesian product of two countable sets is also countable.
+- The sub-set of a countable set is countable.&lt;/p&gt;
 
 &lt;p&gt;We prove that the set of all trees with natural number labels is
 countable by finding a total injective mapping between the set of all
