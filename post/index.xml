@@ -23,6 +23,21 @@
     </item>
     
     <item>
+      <title>Submitting Problem Set Omega</title>
+      <link>https://uvacs2102.github.io/pszsubmit/</link>
+      <pubDate>Sun, 27 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/pszsubmit/</guid>
+      <description>&lt;p&gt;The form for submitting &lt;a href=&#34;https://uvacs2102.github.io/ps/psZ&#34;&gt;Problem Set Omega&lt;/a&gt; is
+&lt;a href=&#34;https://docs.google.com/forms/d/e/1FAIpQLSfMqhD_T3hUvNB0uLWr1Cs8VmIWsJPtHYLajTJV4Y1RLioq1w/viewform&#34;&gt;here&lt;/a&gt;:&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;
+&lt;iframe src=&#34;https://docs.google.com/forms/d/e/1FAIpQLSfMqhD_T3hUvNB0uLWr1Cs8VmIWsJPtHYLajTJV4Y1RLioq1w/viewform?embedded=true&#34; width=&#34;760&#34; height=&#34;500&#34; frameborder=&#34;0&#34; marginheight=&#34;0&#34; marginwidth=&#34;0&#34;&gt;Loading&amp;hellip;&lt;/iframe&gt;
+&lt;/center&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Exam 2 Solutions</title>
       <link>https://uvacs2102.github.io/exam2solutions/</link>
       <pubDate>Sat, 19 Nov 2016 00:00:00 +0000</pubDate>
@@ -690,131 +705,6 @@ and {\bf inductive step} &amp;amp; $\forall m \in \mathbb{N} \ldotp$ &amp;amp; $
 &lt;/ol&gt;
 
 &lt;p&gt;How can you know the website you are sending your password to is what you think it is?&lt;/p&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Class 16: Recursive Data Types</title>
-      <link>https://uvacs2102.github.io/class16/</link>
-      <pubDate>Tue, 25 Oct 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://uvacs2102.github.io/class16/</guid>
-      <description>
-
-&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
-
-&lt;p&gt;You should read MCS Chapter 7 this week.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps7&#34;&gt;&lt;strong&gt;Problem Set 7&lt;/strong&gt;&lt;/a&gt; is due &lt;strong&gt;28 October (Friday) at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;
-   &lt;center&gt;
-&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;b350014169664ae49e537a2999b851b2&#34; data-ratio=&#34;1.77777777777778&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
-   &lt;/center&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
-
-&lt;p&gt;Python code from class and list definitions: &lt;a href=&#34;https://uvacs2102.github.io/docs/pairs.py&#34;&gt;pairs.py&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;highlightm&#34;&gt;
-   &lt;a href=&#34;https://uvacs2102.github.io/docs/class16.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes&lt;/b&gt;&lt;/a&gt;.
-   &lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;structural-induction&#34;&gt;Structural Induction&lt;/h1&gt;
-
-&lt;p&gt;We can show a property holds for &lt;em&gt;all objects of a data type&lt;/em&gt; by:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;Showing the property holds for all base objects.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Showing that all the ways of constructing new objects, preserve the property.&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;What is the difference between scalar data and compound data structures?&lt;/p&gt;
-
-&lt;p&gt;#&lt;/p&gt;
-
-&lt;h1 id=&#34;pairs&#34;&gt;Pairs&lt;/h1&gt;
-
-&lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; A $\text{\em Pair}$ is a datatype that supports these three operations:&lt;br /&gt;
-\begin{quote}
-     $\text{\em make_pair}: \text{\em Object} \times \text{\em Object} \rightarrow \text{\em Pair}$&lt;br /&gt;
-     $\text{\em pair_first}: \text{\em Pair} \rightarrow \text{\em Object}$\&lt;br /&gt;
-     $\text{\em pair_last}: \text{\em Pair} \rightarrow \text{\em Object}$\&lt;br /&gt;
-\end{quote}
-where, for any objects $a$ and $b$, $\text{\em pair_first}(\text{\em make_pair}(a, b)) = a$ and $\text{\em pair_last}(\text{\em make_pair}(a, b)) = b$.&lt;/p&gt;
-
-&lt;h1 id=&#34;lists&#34;&gt;Lists&lt;/h1&gt;
-
-&lt;p&gt;&lt;strong&gt;Definition (1).&lt;/strong&gt; A &lt;em&gt;List&lt;/em&gt; is either (1) a &lt;em&gt;Pair&lt;/em&gt; where the second part of
-  the pair is a &lt;em&gt;List&lt;/em&gt;, or (2) the empty list.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Definition (2).&lt;/strong&gt; A &lt;em&gt;List&lt;/em&gt; is a ordered sequence of objects.&lt;/p&gt;
-
-&lt;!--page--&gt;
-
-&lt;h2 id=&#34;list-operations&#34;&gt;List Operations&lt;/h2&gt;
-
-&lt;p&gt;\begin{equation&lt;em&gt;}
-\begin{split}
-\text{\em first}(\text{\em prepend}(e, l)) &amp;amp;= \fillin &lt;br /&gt;
-\text{\em rest}(\text{\em prepend}(e, l)) &amp;amp;= \fillin &lt;br /&gt;
-\text{\em empty}(\text{\em prepend}(e, l)) &amp;amp;= \text{\bf False} &lt;br /&gt;
-\text{\em empty}(\fillin) &amp;amp;= \text{\bf True} &lt;br /&gt;
-\end{split}
-\end{equation&lt;/em&gt;}&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; The &lt;em&gt;length&lt;/em&gt; of a list, $p$, is:
-\begin{equation&lt;em&gt;}
-\begin{split}
-\begin{cases}
-0 &amp;amp; p\ \text{is \bf null} &lt;br /&gt;
-\bigfillin %\text{\em length}(q) + 1
-&amp;amp; p = \text{\em prepend}(e, q)\ \text{for some object}\ e\ \text{and some list}\ q &lt;br /&gt;
-\end{cases}
-\end{split}
-\end{equation&lt;/em&gt;}&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Unique Construction&lt;/strong&gt; property:&lt;/p&gt;
-
-&lt;p&gt;\begin{equation&lt;em&gt;}
-\begin{split}
-\forall p \in \text{\em List} - { \text{\bf null} } \ldotp \exists q \in \text{\em List}, e \in \text{\em Object} \ldotp p = \text{\em prepend}(e, q) \; \wedge &lt;br /&gt;
-(\forall r \in \text{\em List}, f \in \text{\em Object} \ldotp p = \text{\em prepend}(f, r) \implies r = q \wedge f = e)
-\end{split}
-\end{equation&lt;/em&gt;}&lt;/p&gt;
-
-&lt;p&gt;Why is this necessary for our length definition?&lt;/p&gt;
-
-&lt;p&gt;##&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def list_prepend(e, l):
-    return make_pair(e, l)
-
-def list_first(l):
-    return pair_first(l)
-
-def list_rest(l):
-    return pair_last(l)
-
-def list_empty(l):
-    return l == None
-
-def list_length(l):
-    if list_empty(l):
-        return 0
-    else:
-        return 1 + list_length(list_rest(l))
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Prove: for all lists, $p$, &lt;code&gt;list_length(p)&lt;/code&gt; returns the length of the list $p$.&lt;/p&gt;
 
 &lt;p&gt;&lt;/div&gt;&lt;/p&gt;
 </description>

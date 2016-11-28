@@ -139,6 +139,142 @@
   </header>
   
   
+  <p class="fronthead"><A href="/class11/">Class 11: Strong Induction</a> (Tue, 27 Sep 2016)</p>
+    
+
+<h3 id="schedule">Schedule</h3>
+
+<p><a href="/ps/ps5"><strong>Problem Set 5</strong></a> is due <strong>Friday at 6:29pm</strong>.</p>
+
+<p><strong>Thursday&rsquo;s Class</strong> may include review for Exam 1.  Before 6:59pm
+  Wednesday, send me topics you would like to review:</p>
+
+<ul>
+<li>fewer than 10 total requests: class is not being sufficiently challenged and we should be doing more difficult material (except for the 10 requestors who get exam exemptions).<br /></li>
+<li>exactly 10 total requests: all requestors get automatic exam exemptions, review requested topics.<br /></li>
+<li>more than 10 requests implies we should spend Thursday’s class on reviewing requested topics, no exam exemptions.</li>
+</ul>
+
+<p><strong>Friday, 3:30pm</strong> (Rice Hall Auditorium): <a href="http://www.cs.cornell.edu/~eva/">Eva Tardos</a> (Cornell University), <em>Learning and
+  Efficiency of Outcomes in Games</em>.  (She could definitely help you
+  answer questions 7-9 on <a href="/docs/ps5.pdf">PS5</a>!)</p>
+
+<h3 id="exam-1">Exam 1</h3>
+
+<p>Exam 1 will be in class on Thursday, 6 October.</p>
+
+<p><strong>Resources.</strong> You will be permitted to use a single paper page of notes
+that you prepare and bring to the exam.  It is fine to collaborate with
+others to prepare your notes.  The page should be no larger than a US
+Letter size page ($8.5 \times 11$ inches), and you may write (or
+print) on both sides of the page.  No other resources are permitted
+during the exam.</p>
+
+<p><strong>Content.</strong> The problems on the exam will cover material from Classes
+  1&ndash;11, Problem Sets 1&ndash;5 (including the provided solutions), and MCS
+  Chapters 1&ndash;5.  Everything on the exam will be something you have seen
+  in at least two of these (Classes, Problem Sets, and MCS Book), and
+  most of the exam will be things you have seen in all three.  If you
+  understand the problems on the problem sets and questions on the class
+  notes well enough to be able to answer similar questions, you should
+  do well on the exam.</p>
+
+<p>The main topics the exam will cover include:</p>
+
+<ul>
+<li><p>Propositions, axioms, and proofs (you should understand what each of
+these are and how to define them precisely)</p></li>
+
+<li><p>Inference rules (how to determine and show if an inference rule is
+sound or unsound, how to correctly use inference rules in a proof)</p></li>
+
+<li><p>Logical formula (how to interpret logical formulas and convert English
+statements into logic, determine the validity or satisfiability of a
+formula, and show equivalence or non-equivalence of two formulas)</p></li>
+
+<li><p>Logical quantifiers (how to reason about logical formula using
+$\forall$ and $\exists$, including showing logical equivalence and
+implication)</p></li>
+
+<li><p>Proof methods (you should be able to read and write proofs that use
+direct proof, contrapositive proof, and proof by contradiction)</p></li>
+
+<li><p>Well ordering (you should be able to explain what it means for a set
+to be well ordered, determine if a given set and operator is well
+ordered, and be able to construct proofs using the well ordering
+principle and identify flaws in misuses of the well ordering
+principle)</p></li>
+
+<li><p>Induction (you should understand mathematical induction and be able to
+construct proofs using induction and identify flaws in misuses of
+induction in proofs)</p></li>
+</ul>
+
+<p>For most students, I believe the best way to prepare for the exam will
+be to (1) go over the problem sets and their solutions, and make sure
+you understand well any of the problems you did not get before; (2) go
+through the questions in the class notes and convince yourself you can
+answer them well; (3) re-read chapters of the book, solving the
+associated practice problems, especially for any sections on topics
+where you had difficulty on the problem sets.  If you do #1 and
+understand well the problems on the problem set, you should be confident
+you&rsquo;ll do well on the exam; if you struggled on the problem sets, you
+would benefit from doing #2 and #3 as well.</p>
+
+<p><div class="notpdf">
+   <center>
+<script async class="speakerdeck-embed" data-id="350db86117144d179c964584b50b9696" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+   </center></p>
+
+<p><div class="highlightm">
+   <a href="/docs/class11.pdf">See PDF Version for <b>Notes and Questions</b></a>.
+   </div></p>
+
+<h2 id="links">Links</h2>
+
+<p>The strong induction example was based on <a href="http://www.people.vcu.edu/~rhammack/BookOfProof/Induction.pdf">Chapter 10: Induction from the Book of Proof</a>.</p>
+
+<p></div><!--endpdf--></p>
+
+<p><div class="latex"></p>
+
+<h2 id="induction-practice">Induction Practice</h2>
+
+<p>Take-Away Game: start with $n$ sticks; at each turn a player must remove
+1, 2 or 3 sticks; player who takes the last stick wins.</p>
+
+<ul>
+<li><p>Prove: for a Take-Away game with any initial number of sticks, $n$, either
+Player 1 has a winning strategy or Player 2 does.</p></li>
+
+<li><p>Prove: Player 1 has a winning strategy for a Take-Away game with $n$ sticks, if \bigfillin.  Otherwise, Player 2 has a winning strategy.</p></li>
+</ul>
+
+<h1 id="strong-induction-principle">Strong Induction Principle</h1>
+
+<p>Let $P$ be a predicated on $\mathbb{N}$.  If</p>
+
+<ul>
+<li>$P(0)$ is true, and</li>
+<li>$(\forall m \in \mathbb{N}, m \le n . P(n)) \implies P(n + 1)$ for all $n \in \mathbb{N}$,</li>
+</ul>
+
+<p>then</p>
+
+<ul>
+<li>$P(m)$ is true for all $m \in \mathbb{N}$.</li>
+</ul>
+
+<p>Show that <em>strong</em> induction is not actually stronger than regular induction.</p>
+
+<p>##</p>
+
+<p>Prove that a tree (fully-connected graph with no cycles in it) with $n$
+nodes has $n - 1$ edges.</p>
+
+<p></div></p>
+ 
+  
   <p class="fronthead"><A href="/challenge4/">Self-Inverting Relations Challenge Solved!</a> (Sat, 24 Sep 2016)</p>
     <p>Challenge 4 has been solved by Henry Spece!</p>
 
@@ -785,130 +921,6 @@ different scores.</p>
   <p class="fronthead"><A href="/ps4announce/">Problem Set 4</a> (Fri, 16 Sep 2016)</p>
     <p><strong>Problem Set 4</strong> is <a href="/docs/ps4.pdf">now posted</a>, and is due on <strong>Friday, 23
   September at 6:29pm</strong>.</p>
- 
-  
-  <p class="fronthead"><A href="/class8/">Class 8: Relations</a> (Thu, 15 Sep 2016)</p>
-    
-
-<h3 id="schedule">Schedule</h3>
-
-<p><a href="/ps/ps3"><strong>Problem Set 3</strong></a> is due <strong>Friday at 6:29pm</strong>.</p>
-
-<p><div class="notpdf">
-   <center>
-<script async class="speakerdeck-embed" data-id="eaabcbbe2383494e9724b1904156f883" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-   </center></p>
-
-<p><div class="highlightg"> <strong>Challenge Problem Opportunity.</strong>
-Apparently, people were not entirely convinced by my proof sketch in
-class that the egg came before the chicken.  So, we&rsquo;ll make it a
-challenge problem to write the best proof that answers the question of
-&ldquo;which came first, the chicken or the egg?&rdquo; (That is, you can either
-prove the egg came first, or prove the chicken came first).  A
-convincing proof would need to include clear definitions of &ldquo;chicken&rdquo;
-and &ldquo;egg&rdquo;, and use inference rules, as well as axioms based on
-biological assumptions (clearly stated), to make an irrefutable argument
-supporting your position.  </div></p>
-
-<p><div class="highlightm">
-   <a href="/docs/class8.pdf">See PDF Version for <b>Notes and Questions</b></a>.
-   </div></p>
-
-<h2 id="links">Links</h2>
-
-<p><a href="https://www.cs.utexas.edu/users/EWD/ewd08xx/EWD831.PDF">Dijkstra&rsquo;s explanation of what the natural numbers should start with 0</a></p>
-
-<p></div><!--endpdf--></p>
-
-<p><div class="latex"></p>
-
-<h1 id="functions">Functions</h1>
-
-<p>A <strong>function</strong> is a mathematical datatype that associates elements from
-one set, called the <em>domain</em>, with elements from another set, called a
-<em>codomain</em>.</p>
-
-<p>$$ f: \textrm{\em domain} \rightarrow \textrm{\em codomain} $$</p>
-
-<p>If the function is <em>total</em>, every element of the domain has one
-associated codomain element; if the function is <em>partial</em>, there may be
-elements of the domain that do not have an associated codomain element.</p>
-
-<p><strong>Defining a function.</strong> To define a function, we need to describe how
-  elements in the domain are associated with elements in the codomain.</p>
-
-<p><strong>Set Products.</strong> A <em>Cartesian product</em> of sets $S_1, S_2, \cdots, S_n$
-  is a set consisting of all possible sequences of $n$ elements where the
-  $i$\textsuperscript{th} element is chosen from $S_i$.</p>
-
-<p>$$ S_1 \times S_2 \times \cdots \times S_n = { (s_1, s_2, \cdots, s_n) | s_i \in S_i } $$</p>
-
-<p>How many elements are in $A \times B$?</p>
-
-<p>#</p>
-
-<p>What are the (sensible) domains and codomains of each function below:</p>
-
-<p>$$ f(n) ::= |n| \qquad \qquad f(x) ::= x^2  \qquad\qquad f(n) ::= n + 1 \qquad\qquad f(a, b) ::= a / b $$</p>
-
-<p>$$ f(x) ::= \sqrt{x}  \qquad \qquad \qquad f(S) ::= \textrm{minimum}_{&lt;}(S) $$</p>
-
-<p>##</p>
-
-<p>For which of them is the function <em>total</em>?</p>
-
-<!--page-->
-
-<p>How are functions in your favorite programming language like and unlike
-mathematical functions?</p>
-
-<p>#</p>
-
-<h2 id="relations">Relations</h2>
-
-<p>A <strong>binary relation</strong>, $R$, consists of a domain set, $A$, and a
-codomain set, $B$, and a subset of $A \times B$ called the <em>graph</em> of
-$R$.</p>
-
-<p>For each statement below, give the name and at least one example.</p>
-
-<ul>
-<li>A binary relation where no element of $A$ has more than one outgoing edge:</li>
-</ul>
-
-<p>##</p>
-
-<ul>
-<li>A binary relation where every element of $A$ has exactly one outgoing edge:</li>
-</ul>
-
-<p>##</p>
-
-<ul>
-<li>A binary relation where every element of $B$ has exactly one incoming edge:</li>
-</ul>
-
-<p>##</p>
-
-<ul>
-<li>A binary relation where every element of $A$ has exactly one outgoing
-edge and every element of $B$ has exactly one incoming edge:</li>
-</ul>
-
-<p>##</p>
-
-<p>If there exists a <em>bijective</em> relation between $S$ and $T$ defined by the graph $G$ which of these <em>must</em> be true:</p>
-
-<p>a. there exists some <em>injective</em> relation between $S$ and $T$.
-b. there exists some <em>bijective</em> relation between $T$ and $S$.
-c. there exists a <em>total</em> function, $f: S \rightarrow T$.
-d. $S - T = \emptyset$.
-e. the number of elements of $S$ is equal to the number of elements of $T$.
-f. $G - (S \times T) = \emptyset$.
-g. $(S \times T) - G = \emptyset$.
-h. $(S \times T) - G \neq \emptyset$.</p>
-
-<p></div></p>
  
   
   
