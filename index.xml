@@ -6,8 +6,141 @@
     <description>Recent content on cs2102: Discrete Math</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 27 Nov 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 29 Nov 2016 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://uvacs2102.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Class 24: Halting Problems</title>
+      <link>https://uvacs2102.github.io/class24/</link>
+      <pubDate>Tue, 29 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/class24/</guid>
+      <description>
+
+&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/psZ&#34;&gt;Problem Set Omega&lt;/a&gt;&lt;/strong&gt; is due on &lt;strong&gt;Sunday, 4 December&lt;/strong&gt; or
+&lt;strong&gt;Tuesday, 6 December&lt;/strong&gt; (see problem set for details).  It is not like
+the others, and counts as a &amp;ldquo;bonus&amp;rdquo; optional assignment.&lt;/p&gt;
+
+&lt;p&gt;The &lt;strong&gt;final exam&lt;/strong&gt; is scheduled by the registrar for &lt;strong&gt;Saturday, 10
+December, 9am-noon&lt;/strong&gt; in our normal classroom.  The final will cover
+everything in the course, with an emphasis on the most important
+concepts.  More information about the final and &lt;strong&gt;practice problems&lt;/strong&gt;
+to prepare for it are posted on the course site.&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;
+   &lt;center&gt;
+   &lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlightm&#34;&gt;
+   &lt;a href=&#34;https://uvacs2102.github.io/docs/class24.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes&lt;/b&gt;&lt;/a&gt;.
+   &lt;/div&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;links&#34;&gt;Links&lt;/h3&gt;
+
+&lt;h2 id=&#34;turing-machine&#34;&gt;Turing Machine&lt;/h2&gt;
+
+&lt;p&gt;$$
+TM = (S, T \subseteq S \times \Gamma \rightarrow S \times \Gamma \times \text{\em dir}, q&lt;em&gt;0 \in S, q&lt;/em&gt;{Accept} \subseteq S)
+$$&lt;/p&gt;
+
+&lt;p&gt;$S$ is a finite set (the &amp;ldquo;in-the-head&amp;rdquo; processing states)&lt;br /&gt;
+$\Gamma$ is a finite set (symbols that can be writte on the tape)&lt;br /&gt;
+$\text{\em dir} = { \text{\bf Left}, \text{\bf Right}, \text{\bf Halt} }$ is the direction to move on the tape.&lt;/p&gt;
+
+&lt;p&gt;An &lt;em&gt;execution&lt;/em&gt; of a Turing Machine, $TM = (S, T \subseteq S \times \Gamma \rightarrow S \times \Gamma \times \text{\em dir}, q&lt;em&gt;0 \in S, q&lt;/em&gt;{Accept} \subseteq S)$, is a (possibly infinite) sequence of &lt;strong&gt;configurations&lt;/strong&gt;, $(x_0, x_1, \ldots)$ where $x_i \in \text{\em Tsil} \times S \times \text{\em List}$ (elements of the lists are in the finite set of symbols, $\Gamma$), such that:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;  - $x_0 = (\text{\bf null}, q_0, \text{\bf input})$
+  - and all transitions follow the rules (need to be specified in detail).
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;A Turing Machine, $M = (S, T \subseteq S \times \Gamma \rightarrow S \times \Gamma \times \text{\em dir}, q&lt;em&gt;0 \in S, q&lt;/em&gt;{Accept} \subseteq S)$, &lt;strong&gt;accepts&lt;/strong&gt; a string &lt;em&gt;x&lt;/em&gt;, if there is an execution of &lt;em&gt;M&lt;/em&gt; that starts in configuration $(\text{\bf null}, q_0, x)$, and terminates in a configuration, $(l, q_f, r)$, where $q&lt;em&gt;f \in q&lt;/em&gt;{Accept}$.&lt;/p&gt;
+
+&lt;p&gt;A Turing Machine, $M = (S, T \subseteq S \times \Gamma \rightarrow S \times \Gamma \times \text{\em dir}, q&lt;em&gt;0 \in S, q&lt;/em&gt;{Accept} \subseteq S)$, &lt;strong&gt;recognizes&lt;/strong&gt; a language  $L$, if for all strings $s \in L$, $M$ accepts $s$, and there is no string $t \notin L$ such that $M$ accepts $t$.&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Trees Challenge</title>
+      <link>https://uvacs2102.github.io/treeschallenge/</link>
+      <pubDate>Mon, 28 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/treeschallenge/</guid>
+      <description>&lt;p&gt;Henry Spece has solved Challenge 7:&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlightf&#34;&gt;
+&lt;strong&gt;Challenge 7.&lt;/strong&gt; From &lt;a href=&#34;https://uvacs2102.github.io/class19&#34;&gt;Class19&lt;/a&gt;: Determine the carinality of
+  the set of all _Tree_s (as defined on PS8), and provide a convincing
+  proof supporting your answer.
+  &lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;Henry&amp;rsquo;s proof is below:&lt;/p&gt;
+
+&lt;p&gt;The set of _Tree_s is &lt;em&gt;countable&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;The following already proven theorers are used:
+ - The set of all strees is countably infinite.&lt;br /&gt;
+ - the set of all finite sequences of natural numbers is countable.
+ - The cartesian product of two countable sets is also countable.
+ - The sub-set of a countable set is countable.&lt;/p&gt;
+
+&lt;p&gt;We prove that the set of all trees with natural number labels is
+countable by finding a total injective mapping between the set of all
+trees and a set which is known to be countably infinite.&lt;/p&gt;
+
+&lt;p&gt;The set to which we are mapping the trees is the cartesian product of
+the set of finite sequences of natural numbers and the set of all
+strees.  We already know that the set of all strees is countable, as
+well as the set of all finite sequences of natural numbers.  Because
+the cartesian product of two countable sets is also countable, the
+cartesian product of these two sets must be countable, and a total
+injective mapping between the trees and this set would prove the set
+of all trees to also be countably infinite.&lt;/p&gt;
+
+&lt;p&gt;It is possible to imagine a mapping that links a tree to a stree,
+representing its structure, and a list of its labels, &amp;ldquo;in-order.&amp;rdquo;
+This is effectively &amp;ldquo;breaking apart&amp;rdquo; the tree into its components,
+resulting in two more manageable data types, or one element of the set
+defined above.&lt;/p&gt;
+
+&lt;p&gt;The function is defined more rigorously below, in two parts:&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Part 1&lt;/em&gt; (helper function):&lt;/p&gt;
+
+&lt;p&gt;&lt;pre&gt;
+   getStree := tree -&amp;gt; stree
+   getStree(null) = null
+   getStree(combine(t1,N,t2)) = combine(getStree(t1),getStree(t2))
+   &lt;/pre&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Part 2&lt;/em&gt; (helper function):&lt;/p&gt;
+
+&lt;p&gt;&lt;pre&gt;
+   getSequence := tree -&amp;gt; sequence&lt;/p&gt;
+
+&lt;p&gt;getSequence(null) = empty sequence
+   getSequence(combine(t1,N,t2)) = concatenate(getSequence(t1),N,getSequence(t2))
+   &lt;/pre&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Combined&lt;/em&gt; (the relation being defined for the proof):
+   &lt;pre&gt;
+   splitTree := tree -&amp;gt; (stree, sequence)&lt;/p&gt;
+
+&lt;p&gt;splitTree(t) = (getStree(t),getSequence(t))
+   &lt;/pre&gt;&lt;/p&gt;
+
+&lt;p&gt;This relation is defined for all trees, making it total, and produces
+a unique stree-sequence combination for each tree, making it
+injective.&lt;/p&gt;
+
+&lt;p&gt;Because we have defined a total injective relation between the trees
+and another set which is known to be countable, the set of all trees
+must be countable.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Problem Set 9 Solutions and Comments</title>
@@ -695,28 +828,6 @@ equivalent?&lt;/p&gt;
 \mathbb{N}$, $\mathbb{Q}$ (rationals), $\emptyset$, $\mathbb{N} \cup (\mathbb{N} \times \mathbb{N}) \cup (\mathbb{N} \times \mathbb{N} \times \mathbb{N})$, all finite sequences of elements of $\mathbb{N}$.&lt;/p&gt;
 
 &lt;p&gt;&lt;/div&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Problem Set 6 Comments</title>
-      <link>https://uvacs2102.github.io/ps6comments/</link>
-      <pubDate>Tue, 01 Nov 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://uvacs2102.github.io/ps6comments/</guid>
-      <description>&lt;p&gt;The solutions and comments for PS6 are now posted in collab:
-&lt;a href=&#34;https://collab.itc.virginia.edu/access/content/group/e0b17949-c94c-466b-835a-196381f3f911/ps6solutions.pdf&#34;&gt;PDF&lt;/a&gt;.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Problem Set 8</title>
-      <link>https://uvacs2102.github.io/ps8announce/</link>
-      <pubDate>Fri, 28 Oct 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://uvacs2102.github.io/ps8announce/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Problem Set 8&lt;/strong&gt; is &lt;a href=&#34;https://uvacs2102.github.io/docs/ps8.pdf&#34;&gt;now posted&lt;/a&gt;, and is due on
-  &lt;strong&gt;Friday, 4 November at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
 </description>
     </item>
     

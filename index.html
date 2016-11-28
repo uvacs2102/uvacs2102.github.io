@@ -139,6 +139,127 @@
   </header>
   
   
+  <p class="fronthead"><A href="/class24/">Class 24: Halting Problems</a> (Tue, 29 Nov 2016)</p>
+    
+
+<h3 id="schedule">Schedule</h3>
+
+<p><strong><a href="/ps/psZ">Problem Set Omega</a></strong> is due on <strong>Sunday, 4 December</strong> or
+<strong>Tuesday, 6 December</strong> (see problem set for details).  It is not like
+the others, and counts as a &ldquo;bonus&rdquo; optional assignment.</p>
+
+<p>The <strong>final exam</strong> is scheduled by the registrar for <strong>Saturday, 10
+December, 9am-noon</strong> in our normal classroom.  The final will cover
+everything in the course, with an emphasis on the most important
+concepts.  More information about the final and <strong>practice problems</strong>
+to prepare for it are posted on the course site.</p>
+
+<p><div class="notpdf">
+   <center>
+   </center></p>
+
+<p><div class="highlightm">
+   <a href="/docs/class24.pdf">See PDF Version for <b>Notes</b></a>.
+   </div></p>
+
+<h3 id="links">Links</h3>
+
+<h2 id="turing-machine">Turing Machine</h2>
+
+<p>$$
+TM = (S, T \subseteq S \times \Gamma \rightarrow S \times \Gamma \times \text{\em dir}, q<em>0 \in S, q</em>{Accept} \subseteq S)
+$$</p>
+
+<p>$S$ is a finite set (the &ldquo;in-the-head&rdquo; processing states)<br />
+$\Gamma$ is a finite set (symbols that can be writte on the tape)<br />
+$\text{\em dir} = { \text{\bf Left}, \text{\bf Right}, \text{\bf Halt} }$ is the direction to move on the tape.</p>
+
+<p>An <em>execution</em> of a Turing Machine, $TM = (S, T \subseteq S \times \Gamma \rightarrow S \times \Gamma \times \text{\em dir}, q<em>0 \in S, q</em>{Accept} \subseteq S)$, is a (possibly infinite) sequence of <strong>configurations</strong>, $(x_0, x_1, \ldots)$ where $x_i \in \text{\em Tsil} \times S \times \text{\em List}$ (elements of the lists are in the finite set of symbols, $\Gamma$), such that:</p>
+
+<pre><code>  - $x_0 = (\text{\bf null}, q_0, \text{\bf input})$
+  - and all transitions follow the rules (need to be specified in detail).
+</code></pre>
+
+<p>A Turing Machine, $M = (S, T \subseteq S \times \Gamma \rightarrow S \times \Gamma \times \text{\em dir}, q<em>0 \in S, q</em>{Accept} \subseteq S)$, <strong>accepts</strong> a string <em>x</em>, if there is an execution of <em>M</em> that starts in configuration $(\text{\bf null}, q_0, x)$, and terminates in a configuration, $(l, q_f, r)$, where $q<em>f \in q</em>{Accept}$.</p>
+
+<p>A Turing Machine, $M = (S, T \subseteq S \times \Gamma \rightarrow S \times \Gamma \times \text{\em dir}, q<em>0 \in S, q</em>{Accept} \subseteq S)$, <strong>recognizes</strong> a language  $L$, if for all strings $s \in L$, $M$ accepts $s$, and there is no string $t \notin L$ such that $M$ accepts $t$.</p>
+
+<p></div></p>
+ 
+  
+  <p class="fronthead"><A href="/treeschallenge/">Trees Challenge</a> (Mon, 28 Nov 2016)</p>
+    <p>Henry Spece has solved Challenge 7:</p>
+
+<p><div class="highlightf">
+<strong>Challenge 7.</strong> From <a href="/class19">Class19</a>: Determine the carinality of
+  the set of all _Tree_s (as defined on PS8), and provide a convincing
+  proof supporting your answer.
+  </div></p>
+
+<p>Henry&rsquo;s proof is below:</p>
+
+<p>The set of _Tree_s is <em>countable</em>.</p>
+
+<p>The following already proven theorers are used:
+ - The set of all strees is countably infinite.<br />
+ - the set of all finite sequences of natural numbers is countable.
+ - The cartesian product of two countable sets is also countable.
+ - The sub-set of a countable set is countable.</p>
+
+<p>We prove that the set of all trees with natural number labels is
+countable by finding a total injective mapping between the set of all
+trees and a set which is known to be countably infinite.</p>
+
+<p>The set to which we are mapping the trees is the cartesian product of
+the set of finite sequences of natural numbers and the set of all
+strees.  We already know that the set of all strees is countable, as
+well as the set of all finite sequences of natural numbers.  Because
+the cartesian product of two countable sets is also countable, the
+cartesian product of these two sets must be countable, and a total
+injective mapping between the trees and this set would prove the set
+of all trees to also be countably infinite.</p>
+
+<p>It is possible to imagine a mapping that links a tree to a stree,
+representing its structure, and a list of its labels, &ldquo;in-order.&rdquo;
+This is effectively &ldquo;breaking apart&rdquo; the tree into its components,
+resulting in two more manageable data types, or one element of the set
+defined above.</p>
+
+<p>The function is defined more rigorously below, in two parts:</p>
+
+<p><em>Part 1</em> (helper function):</p>
+
+<p><pre>
+   getStree := tree -&gt; stree
+   getStree(null) = null
+   getStree(combine(t1,N,t2)) = combine(getStree(t1),getStree(t2))
+   </pre></p>
+
+<p><em>Part 2</em> (helper function):</p>
+
+<p><pre>
+   getSequence := tree -&gt; sequence</p>
+
+<p>getSequence(null) = empty sequence
+   getSequence(combine(t1,N,t2)) = concatenate(getSequence(t1),N,getSequence(t2))
+   </pre></p>
+
+<p><em>Combined</em> (the relation being defined for the proof):
+   <pre>
+   splitTree := tree -&gt; (stree, sequence)</p>
+
+<p>splitTree(t) = (getStree(t),getSequence(t))
+   </pre></p>
+
+<p>This relation is defined for all trees, making it total, and produces
+a unique stree-sequence combination for each tree, making it
+injective.</p>
+
+<p>Because we have defined a total injective relation between the trees
+and another set which is known to be countable, the set of all trees
+must be countable.</p>
+ 
+  
   <p class="fronthead"><A href="/ps9solutions/">Problem Set 9 Solutions and Comments</a> (Sun, 27 Nov 2016)</p>
     <p>The Problem Set 9 solutions are now posted:
 <a href="https://collab.itc.virginia.edu/access/content/group/e0b17949-c94c-466b-835a-196381f3f911/ps9solutions.pdf">[PDF]</a></p>
@@ -455,17 +576,6 @@ US Census. (Includes <a href="https://www.census.gov/population/apportionment/fi
 <p></div></p>
  
   
-  <p class="fronthead"><A href="/ps8solutions/">Problem Set 8 Solutions and Comments</a> (Sat, 5 Nov 2016)</p>
-    <p>The Problem Set 8 solutions are now posted:
-[<a href="https://collab.itc.virginia.edu/access/content/group/e0b17949-c94c-466b-835a-196381f3f911/ps8solutions.pdf">PDF</a>].
-Please review these to prepare for Exam 2, and let me know if you have
-any questions or parts you want to go over in class Tuesday.</p>
- 
-  
-  <p class="fronthead"><A href="/ps7solutions/">Problem Set 7 Solutions and Comments</a> (Fri, 4 Nov 2016)</p>
-    <p>The Problem Set 7 solutions are now posted: [<a href="https://collab.itc.virginia.edu/access/content/group/e0b17949-c94c-466b-835a-196381f3f911/ps7solutions.pdf">PDF</a>].</p>
- 
-  
   
 <div class="container pagination">
   
@@ -504,12 +614,16 @@ any questions or parts you want to go over in class Tuesday.</p>
   6
 </a>
 
+<a href="https://uvacs2102.github.io/page/7/">
+  7
+</a>
+
 
 <a aria-label="Next" href="https://uvacs2102.github.io/page/2/">
   <span aria-hidden="true">»</span>
 </a>
 
-<a aria-label="Last" href="https://uvacs2102.github.io/page/6/">
+<a aria-label="Last" href="https://uvacs2102.github.io/page/7/">
   <span aria-hidden="true">»»</span>
 </a>
 
