@@ -88,13 +88,6 @@ support your answer with a convincing proof.&lt;/p&gt;&lt;/li&gt;
 
 &lt;h2 id=&#34;practice-problems&#34;&gt;Practice Problems&lt;/h2&gt;
 
-&lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;
-   &lt;div class=&#34;highlightm&#34;&gt;
-   &lt;a href=&#34;https://uvacs2102.github.io/docs/finalprep.pdf&#34;&gt;See PDF Version for &lt;b&gt;Practice Problems&lt;/b&gt;&lt;/a&gt;.
-   &lt;/div&gt;
-   &lt;/div&gt;&lt;!--endpdf--&gt;
-   &lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
-
 &lt;p&gt;Since there was no problem set covering Classes 23&amp;ndash;25, here are some
 practice problems to help you prepare for the final. You do not need
 to turn in your solutions to these problems, but it is highly
@@ -104,6 +97,13 @@ ths course site by December 4, but it is strongly encouraged that you
 solve the problems on your own before consulting the solutions.  You
 should not be surprised to see problems similar to these on the final
 exam.&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;
+   &lt;div class=&#34;highlightm&#34;&gt;
+   &lt;a href=&#34;https://uvacs2102.github.io/docs/finalprep.pdf&#34;&gt;See PDF Version for &lt;b&gt;Practice Problems&lt;/b&gt;&lt;/a&gt;.
+   &lt;/div&gt;
+   &lt;/div&gt;&lt;!--endpdf--&gt;
+   &lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
 &lt;ol&gt;
 &lt;li&gt;&lt;p&gt;Prove that all well-ordered sets are countable.&lt;/p&gt;&lt;/li&gt;
@@ -171,7 +171,7 @@ $\text{\bf 0}$ symbols).&lt;br /&gt;
 
 &lt;p&gt;&lt;div class=&#34;highlightg&#34;&gt;
    &lt;strong&gt;Challenge 7.&lt;/strong&gt; From &lt;a href=&#34;https://uvacs2102.github.io/class19&#34;&gt;Class19&lt;/a&gt;: Determine the carinality of
-  the set of all _Tree_s (as defined on PS8), and provide a convincing
+  the set of all &lt;em&gt;Tree&lt;/em&gt; objects (as defined on PS8), and provide a convincing
   proof supporting your answer.
    &lt;/div&gt;&lt;/p&gt;
 
