@@ -51,7 +51,7 @@
     },
     "datePublished": "2016-11-29",
     "description": "",
-    "wordCount":  343 
+    "wordCount":  525 
   }
 </script>
 
@@ -187,40 +187,112 @@
 the others, and counts as a &ldquo;bonus&rdquo; optional assignment.</p>
 
 <p>The <strong>final exam</strong> is scheduled by the registrar for <strong>Saturday, 10
-December, 9am-noon</strong> in our normal classroom.  The final will cover
-everything in the course, with an emphasis on the most important
-concepts.  More information about the final and <strong>practice problems</strong>
-to prepare for it are posted on the course site.</p>
+December, 9am-noon</strong> in our normal classroom.  See the <a href="/finalprep">Final Exam
+Preparation</a> handout for more information on the final and
+some <strong>practice problems</strong>.</p>
 
 <p><div class="notpdf">
    <center>
+<script async class="speakerdeck-embed" data-id="e2fa98661b6e4202911a96a8418ef219" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
    </center></p>
 
 <p><div class="highlightm">
    <a href="/docs/class24.pdf">See PDF Version for <b>Notes</b></a>.
    </div></p>
 
-<h3 id="links">Links</h3>
+<p></div><!--endpdf--></p>
 
-<h2 id="turing-machine">Turing Machine</h2>
+<p><div class="latex"></p>
+
+<h2 id="turing-machine-definitions">Turing Machine Definitions</h2>
 
 <p>$$
 TM = (S, T \subseteq S \times \Gamma \rightarrow S \times \Gamma \times \text{\em dir}, q<em>0 \in S, q</em>{Accept} \subseteq S)
 $$</p>
 
 <p>$S$ is a finite set (the &ldquo;in-the-head&rdquo; processing states)<br />
-$\Gamma$ is a finite set (symbols that can be writte on the tape)<br />
+$\Gamma$ is a finite set (symbols that can be written on the tape)<br />
 $\text{\em dir} = { \text{\bf Left}, \text{\bf Right}, \text{\bf Halt} }$ is the direction to move on the tape.</p>
 
 <p>An <em>execution</em> of a Turing Machine, $TM = (S, T \subseteq S \times \Gamma \rightarrow S \times \Gamma \times \text{\em dir}, q<em>0 \in S, q</em>{Accept} \subseteq S)$, is a (possibly infinite) sequence of <strong>configurations</strong>, $(x_0, x_1, \ldots)$ where $x_i \in \text{\em Tsil} \times S \times \text{\em List}$ (elements of the lists are in the finite set of symbols, $\Gamma$), such that:</p>
 
-<pre><code>  - $x_0 = (\text{\bf null}, q_0, \text{\bf input})$
-  - and all transitions follow the rules (need to be specified in detail).
+<ul>
+<li>$x_0 = (\text{\bf null}, q_0, \text{\bf input})$</li>
+<li>and all transitions follow the rules (need to be specified in detail).</li>
+</ul>
+
+<h1 id="recognizing-languages">Recognizing Languages</h1>
+
+<p>A Turing Machine, $M = (S, T \subseteq S \times \Gamma \rightarrow S
+\times \Gamma \times \text{\em dir}, q<em>0 \in S, q</em>{Accept} \subseteq
+S)$, <strong>accepts</strong> a string <em>x</em>, if there is an execution of <em>M</em> that
+starts in configuration $(\text{\bf null}, q_0, x)$, and terminates in
+a configuration, $(l, q_f, r)$, where $q<em>f \in q</em>{Accept}$.</p>
+
+<p>A Turing Machine, $M = (S, T \subseteq S \times \Gamma \rightarrow S
+\times \Gamma \times \text{\em dir}, q<em>0 \in S, q</em>{Accept} \subseteq
+S)$, <strong>recognizes</strong> a language $\mathcal{L}$, if for all strings $s
+\in \mathcal{L}$, $M$ accepts $s$, and there is no string $t \notin L$
+such that $M$ accepts $t$.</p>
+
+<p>A Turing Machine, $M = (S, T \subseteq S \times \Gamma \rightarrow S
+\times \Gamma \times \text{\em dir}, q<em>0 \in S, q</em>{Accept} \subseteq
+S)$, <strong>decides</strong> a language $\mathcal{L}$, if for all strings $s \in
+\mathcal{L}$, $M$ accepts $s$, and for all strings $t \notin L$, $M$
+<em>terminates</em> in a non-accepting state.</p>
+
+<p>A language $\mathcal{L}$ is <strong>Turing-recognizable</strong> if there is some
+Turing Machine that recognizes it.  A language $\mathcal{L}$ is
+<strong>Turing-decidable</strong> if there is some Turing Machine that decides it.</p>
+
+<p>Are all Turing-decidable languages Turing-recognizable?</p>
+
+<p>##</p>
+
+<p>Are all Turing-recognizable languages Turing-decidable?</p>
+
+<!--page-->
+
+<h1 id="undecidable-languages">Undecidable Languages</h1>
+
+<p>$$
+\text{SelfRejecting} := { w \in \Sigma^{*} \, | \, w \notin \mathcal{L}(M(w)) }
+$$
+where $M(w)$ is the Turing Machine described by string $w$ if $w$
+describes a valid Turing Machine, otherwise, a $M(w)$ is a machine
+that rejects all inputs.</p>
+
+<p>Is there a $M<em>{SR} = M(w</em>{SR})$ that recognizes the language $\text{SelfRejecting}$?</p>
+
+<p>#</p>
+
+<p>$$
+A_{TM} = { (w, x) \, | \, M(w)\ \text{accepts on input}\ x }
+$$</p>
+
+<p>Is the language $A_{TM}$ Turing-recognizable?</p>
+
+<p>#</p>
+
+<p>Is the language $A_{TM}$ Turing-decidable?</p>
+
+<p>#</p>
+
+<p>#</p>
+
+<p>#</p>
+
+<p>$$
+Halts_{TM} = { (w, x) \, | \, M(w)\ \text{terminates on input}\ x }
+$$</p>
+
+<p>#</p>
+
+<pre><code class="language-Python">def paradox():
+   if halts('paradox()'):
+       while True:
+          pass
 </code></pre>
-
-<p>A Turing Machine, $M = (S, T \subseteq S \times \Gamma \rightarrow S \times \Gamma \times \text{\em dir}, q<em>0 \in S, q</em>{Accept} \subseteq S)$, <strong>accepts</strong> a string <em>x</em>, if there is an execution of <em>M</em> that starts in configuration $(\text{\bf null}, q_0, x)$, and terminates in a configuration, $(l, q_f, r)$, where $q<em>f \in q</em>{Accept}$.</p>
-
-<p>A Turing Machine, $M = (S, T \subseteq S \times \Gamma \rightarrow S \times \Gamma \times \text{\em dir}, q<em>0 \in S, q</em>{Accept} \subseteq S)$, <strong>recognizes</strong> a language  $L$, if for all strings $s \in L$, $M$ accepts $s$, and there is no string $t \notin L$ such that $M$ accepts $t$.</p>
 
 <p></div></p>
 
@@ -234,7 +306,7 @@ $\text{\em dir} = { \text{\bf Left}, \text{\bf Right}, \text{\bf Halt} }$ is the
   
 
     
-    <a class="prev" href="https://uvacs2102.github.io/treeschallenge/" title="Trees Challenge">
+    <a class="prev" href="https://uvacs2102.github.io/finalprep/" title="Final Exam Preparation">
       Previous
     </a>
     
