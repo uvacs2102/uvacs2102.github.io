@@ -10,6 +10,158 @@
     <atom:link href="https://uvacs2102.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Final Exam Preparation</title>
+      <link>https://uvacs2102.github.io/finalprep/</link>
+      <pubDate>Mon, 28 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/finalprep/</guid>
+      <description>
+
+&lt;h2 id=&#34;final-exam&#34;&gt;Final Exam&lt;/h2&gt;
+
+&lt;p&gt;The final exam is scheduled by the registrar for &lt;strong&gt;Saturday, 10
+December, 9am-noon&lt;/strong&gt; in our normal classroom.  The final will cover
+everything in the course, with an emphasis on the most important
+concepts that have appeared in at least two places.&lt;/p&gt;
+
+&lt;p&gt;Most of the questions on the final will be small variations on
+problems you have already seen on previous exams or problem sets.
+Doing well on these questions will make a strong case for earning at
+least a B in the class.  A few of the problems will be designed to see
+how well you can use concepts you have learned in the class to solve
+problems unlike ones you have already seen.  Doing well on many of
+these questions will make a strong case for earning an A in the class.&lt;/p&gt;
+
+&lt;p&gt;The format will be fairly similar to Exam 1 and Exam 2, but because of
+the extended time for the final, and the desire to give as much
+opportunity as possible for students to demonstrate what you can do,
+will be a bit longer than those exams.&lt;/p&gt;
+
+&lt;p&gt;As with Exam 1 and Exam 2, you will be permitted to use a &lt;strong&gt;single
+paper page of notes that you prepare and bring to the exam&lt;/strong&gt;, but no
+other resources.  It is fine to collaborate with others to prepare
+your notes.  The page should be no larger than a US Letter size page
+($8.5 \times 11$ inches), and you may write (or print) on both sides
+of the page.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Unlike the previous exams, you must turn in your notes page with
+your exam.&lt;/strong&gt; If you would like to keep your own copy of it, you should
+make a copy to save before the exam.&lt;/p&gt;
+
+&lt;h2 id=&#34;expected-problems&#34;&gt;Expected Problems&lt;/h2&gt;
+
+&lt;p&gt;Although the exam covers the whole class, you should not be surprised
+if it includes problems for you to demonstrate:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Your understanding of &lt;strong&gt;logical formulas&lt;/strong&gt;, &lt;strong&gt;inference rules&lt;/strong&gt;, and an ability to reason about and
+manipulate formulas using &lt;strong&gt;quantifiers&lt;/strong&gt;.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Your fluency with standard proof techniques including &lt;strong&gt;proof-by-contradiction&lt;/strong&gt;.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Your understanding of &lt;strong&gt;well-ordering&lt;/strong&gt; and how to construct proofs using the &lt;strong&gt;well
+ordering principle&lt;/strong&gt;.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Your understanding of &lt;strong&gt;sets&lt;/strong&gt;, how the set operators are defined, and what they mean.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;That you can do a &lt;strong&gt;regular induction&lt;/strong&gt; proof similar to ones you
+have seen on previous exams &lt;em&gt;very well&lt;/em&gt;.  That you can do an
+induction proof that requires some creativity to &lt;strong&gt;define a good
+induction predicate&lt;/strong&gt; and then to complete the proof.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Your understanding of &lt;strong&gt;state machines&lt;/strong&gt;, and ability to use the
+&lt;strong&gt;invariant principle&lt;/strong&gt; to prove a property of the reachable states
+for a given state machine.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Your understanding of &lt;strong&gt;recursive data types&lt;/strong&gt;, ability to define
+functions on recursive data types, and to use &lt;strong&gt;structural
+induction&lt;/strong&gt; to prove a property about all objects of a recursive
+data type.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Your understanding of infinite cardinalities including the ability
+to determine if a set is &lt;strong&gt;countable&lt;/strong&gt; or &lt;strong&gt;uncountable&lt;/strong&gt;, and to
+support your answer with a convincing proof.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Your understanding of &lt;strong&gt;Turing Machines&lt;/strong&gt; and
+&lt;strong&gt;computability&lt;/strong&gt;. (See practice problems.)&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;practice-problems&#34;&gt;Practice Problems&lt;/h2&gt;
+
+&lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;
+   &lt;div class=&#34;highlightm&#34;&gt;
+   &lt;a href=&#34;https://uvacs2102.github.io/docs/finalprep.pdf&#34;&gt;See PDF Version for &lt;b&gt;Practice Problems&lt;/b&gt;&lt;/a&gt;.
+   &lt;/div&gt;
+   &lt;/div&gt;&lt;!--endpdf--&gt;
+   &lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
+
+&lt;p&gt;Since there was no problem set covering Classes 23&amp;ndash;25, here are some
+practice problems to help you prepare for the final. You do not need
+to turn in your solutions to these problems, but it is highly
+recommended that you approach them similarly to a problem set to be
+well prepared for the final.  I will post solutions to the problems on
+ths course site by December 4, but it is strongly encouraged that you
+solve the problems on your own before consulting the solutions.  You
+should not be surprised to see problems similar to these on the final
+exam.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Prove that all well-ordered sets are countable.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;The way we defined an execution of a Turing Machine in &lt;a href=&#34;https://uvacs2102.github.io/class23&#34;&gt;Class
+23&lt;/a&gt; suggested that there could be more than one execution
+of a Turing Machine, $TM = (S, T \subseteq S \times \Gamma \rightarrow
+S \times \Gamma \times \text{\em dir}, q&lt;em&gt;0 \in S, q&lt;/em&gt;{Accept} \subseteq
+S)$, on a given input $I$.  What property of $T$ would ensure that
+there is only a single execution possible?&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;For the following questions, a &lt;em&gt;deterministic&lt;/em&gt; Turing Machine is a
+Turing Machine that for every possible input has a single execution.
+That is, there is no input for which the Turing Machine has more than
+one possible execution.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Describe a deterministic Turing Machine that never halts but never
+repeats a configuration.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Prove that a deterministic Turing Machine that repeats a
+configuration never halts.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Consider the Turing Machine, $M_X$, defined below. (The $\text{\bf -}$
+symbol denotes a blank square, which may not appear in the input.
+Every square to the right of the last input symbol is initially
+blank.)  Hint: for questions 5 and 6 you should be able to use similar
+techniques to how we reasoned about state machines, but need to also
+take into account the tape (so instead of using the invariant
+principle for states as before, now you need to consider it for full
+machine configurations).&lt;/p&gt;
+
+&lt;p&gt;\begin{equation&lt;em&gt;}
+\begin{split}
+M_X = ( &amp;amp; S = { A, B, C, D }, &lt;br /&gt;
+        &amp;amp; T = { (A, \text{\bf 0}) \rightarrow (B, \text{\bf X}, \text{\bf R}), (A, \text{\bf -}) \rightarrow (D, \text{\bf -}, \text{\bf Halt}) &lt;br /&gt;
+        &amp;amp;  \qquad \;\,\, (B, \text{\bf 0}) \rightarrow (B, \text{\bf 0}, \text{\bf R}), (B, \text{\bf -}) \rightarrow (C, \text{\bf -}, \text{\bf L}), &lt;br /&gt;
+        &amp;amp;  \qquad \;\,\, (C, \text{\bf 0}) \rightarrow (C, \text{\bf 0}, \text{\bf L}), (C, \text{\bf X}) \rightarrow (A, \text{\bf X}, \text{\bf R}) }, \
+        &amp;amp; q&lt;em&gt;0 = A, q&lt;/em&gt;{Accept} = { D } )  &lt;br /&gt;
+\end{split}
+\end{equation&lt;/em&gt;}&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Prove that $M_X$ running on any initial tape with finite input
+(that is, the number of non-blank squares is $k \in \mathbb{N}$)
+always terminates.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Prove that $\mathcal{L}(M_X) = \text{\bf 0}^*$ (that is, the
+language recognized by $M_X$ is the set of all strings of zero or more
+$\text{\bf 0}$ symbols).&lt;br /&gt;
+&lt;/div&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Trees Challenge</title>
       <link>https://uvacs2102.github.io/treeschallenge/</link>
       <pubDate>Mon, 28 Nov 2016 00:00:00 +0000</pubDate>
@@ -775,17 +927,6 @@ equivalent?&lt;/p&gt;
 \mathbb{N}$, $\mathbb{Q}$ (rationals), $\emptyset$, $\mathbb{N} \cup (\mathbb{N} \times \mathbb{N}) \cup (\mathbb{N} \times \mathbb{N} \times \mathbb{N})$, all finite sequences of elements of $\mathbb{N}$.&lt;/p&gt;
 
 &lt;p&gt;&lt;/div&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Problem Set 6 Comments</title>
-      <link>https://uvacs2102.github.io/ps6comments/</link>
-      <pubDate>Tue, 01 Nov 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://uvacs2102.github.io/ps6comments/</guid>
-      <description>&lt;p&gt;The solutions and comments for PS6 are now posted in collab:
-&lt;a href=&#34;https://collab.itc.virginia.edu/access/content/group/e0b17949-c94c-466b-835a-196381f3f911/ps6solutions.pdf&#34;&gt;PDF&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
