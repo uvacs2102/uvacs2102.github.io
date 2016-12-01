@@ -6,8 +6,140 @@
     <description>Recent content on cs2102: Discrete Math</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 29 Nov 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 01 Dec 2016 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://uvacs2102.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Class 25: Cryptography</title>
+      <link>https://uvacs2102.github.io/class25/</link>
+      <pubDate>Thu, 01 Dec 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/class25/</guid>
+      <description>
+
+&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/psz&#34;&gt;Problem Set Omega&lt;/a&gt;&lt;/strong&gt; is due on &lt;strong&gt;Sunday, 4 December&lt;/strong&gt; or
+&lt;strong&gt;Tuesday, 6 December&lt;/strong&gt; (see problem set for details).  It is not like
+the others, and counts as a &amp;ldquo;bonus&amp;rdquo; optional assignment.&lt;/p&gt;
+
+&lt;p&gt;The &lt;strong&gt;final exam&lt;/strong&gt; is scheduled by the registrar for &lt;strong&gt;Saturday, 10
+December, 9am-noon&lt;/strong&gt; in our normal classroom.  See the &lt;a href=&#34;https://uvacs2102.github.io/finalprep&#34;&gt;Final Exam
+Preparation&lt;/a&gt; handout for more information on the final and
+some &lt;strong&gt;practice problems&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;
+   &lt;center&gt;
+&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;e2fa98661b6e4202911a96a8418ef219&#34; data-ratio=&#34;1.77777777777778&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
+   &lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlightm&#34;&gt;
+   &lt;a href=&#34;https://uvacs2102.github.io/docs/class24.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes&lt;/b&gt;&lt;/a&gt;.
+   &lt;/div&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=eB5VXJXxnNU&#34;&gt;Ali G on Science&lt;/a&gt; (possibly offensive, watch at your own risk!)&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=macM_MtS_w4&#34;&gt;Numberphile on the Halting Problem&lt;/a&gt; (HT: John Fry)&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;turing-machine-definitions&#34;&gt;Turing Machine Definitions&lt;/h2&gt;
+
+&lt;p&gt;$$
+TM = (S, T \subseteq S \times \Gamma \rightarrow S \times \Gamma \times \text{\em dir}, q&lt;em&gt;0 \in S, q&lt;/em&gt;{Accept} \subseteq S)
+$$&lt;/p&gt;
+
+&lt;p&gt;$S$ is a finite set (the &amp;ldquo;in-the-head&amp;rdquo; processing states)&lt;br /&gt;
+$\Gamma$ is a finite set (symbols that can be written on the tape)&lt;br /&gt;
+$\text{\em dir} = { \text{\bf Left}, \text{\bf Right}, \text{\bf Halt} }$ is the direction to move on the tape.&lt;/p&gt;
+
+&lt;p&gt;An &lt;em&gt;execution&lt;/em&gt; of a Turing Machine, $TM = (S, T \subseteq S \times \Gamma \rightarrow S \times \Gamma \times \text{\em dir}, q&lt;em&gt;0 \in S, q&lt;/em&gt;{Accept} \subseteq S)$, is a (possibly infinite) sequence of &lt;strong&gt;configurations&lt;/strong&gt;, $(x_0, x_1, \ldots)$ where $x_i \in \text{\em Tsil} \times S \times \text{\em List}$ (elements of the lists are in the finite set of symbols, $\Gamma$), such that:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;$x_0 = (\text{\bf null}, q_0, \text{\bf input})$&lt;/li&gt;
+&lt;li&gt;and all transitions follow the rules (need to be specified in detail).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;recognizing-languages&#34;&gt;Recognizing Languages&lt;/h1&gt;
+
+&lt;p&gt;A Turing Machine, $M = (S, T \subseteq S \times \Gamma \rightarrow S
+\times \Gamma \times \text{\em dir}, q&lt;em&gt;0 \in S, q&lt;/em&gt;{Accept} \subseteq
+S)$, &lt;strong&gt;accepts&lt;/strong&gt; a string &lt;em&gt;x&lt;/em&gt;, if there is an execution of &lt;em&gt;M&lt;/em&gt; that
+starts in configuration $(\text{\bf null}, q_0, x)$, and terminates in
+a configuration, $(l, q_f, r)$, where $q&lt;em&gt;f \in q&lt;/em&gt;{Accept}$.&lt;/p&gt;
+
+&lt;p&gt;A Turing Machine, $M = (S, T \subseteq S \times \Gamma \rightarrow S
+\times \Gamma \times \text{\em dir}, q&lt;em&gt;0 \in S, q&lt;/em&gt;{Accept} \subseteq
+S)$, &lt;strong&gt;recognizes&lt;/strong&gt; a language $\mathcal{L}$, if for all strings $s
+\in \mathcal{L}$, $M$ accepts $s$, and there is no string $t \notin L$
+such that $M$ accepts $t$.&lt;/p&gt;
+
+&lt;p&gt;A Turing Machine, $M = (S, T \subseteq S \times \Gamma \rightarrow S
+\times \Gamma \times \text{\em dir}, q&lt;em&gt;0 \in S, q&lt;/em&gt;{Accept} \subseteq
+S)$, &lt;strong&gt;decides&lt;/strong&gt; a language $\mathcal{L}$, if for all strings $s \in
+\mathcal{L}$, $M$ accepts $s$, and for all strings $t \notin L$, $M$
+&lt;em&gt;terminates&lt;/em&gt; in a non-accepting state.&lt;/p&gt;
+
+&lt;p&gt;A language $\mathcal{L}$ is &lt;strong&gt;Turing-recognizable&lt;/strong&gt; if there is some
+Turing Machine that recognizes it.  A language $\mathcal{L}$ is
+&lt;strong&gt;Turing-decidable&lt;/strong&gt; if there is some Turing Machine that decides it.&lt;/p&gt;
+
+&lt;p&gt;Are all Turing-decidable languages Turing-recognizable?&lt;/p&gt;
+
+&lt;p&gt;##&lt;/p&gt;
+
+&lt;p&gt;Are all Turing-recognizable languages Turing-decidable?&lt;/p&gt;
+
+&lt;!--page--&gt;
+
+&lt;h1 id=&#34;undecidable-languages&#34;&gt;Undecidable Languages&lt;/h1&gt;
+
+&lt;p&gt;$$
+\text{SelfRejecting} := { w \in \Sigma^{*} \, | \, w \notin \mathcal{L}(M(w)) }
+$$
+where $M(w)$ is the Turing Machine described by string $w$ if $w$
+describes a valid Turing Machine, otherwise, a $M(w)$ is a machine
+that rejects all inputs.&lt;/p&gt;
+
+&lt;p&gt;Is there a $M&lt;em&gt;{SR} = M(w&lt;/em&gt;{SR})$ that recognizes the language $\text{SelfRejecting}$?&lt;/p&gt;
+
+&lt;p&gt;#&lt;/p&gt;
+
+&lt;p&gt;$$
+A_{TM} = { (w, x) \, | \, M(w)\ \text{accepts on input}\ x }
+$$&lt;/p&gt;
+
+&lt;p&gt;Is the language $A_{TM}$ Turing-recognizable?&lt;/p&gt;
+
+&lt;p&gt;#&lt;/p&gt;
+
+&lt;p&gt;Is the language $A_{TM}$ Turing-decidable?&lt;/p&gt;
+
+&lt;p&gt;#&lt;/p&gt;
+
+&lt;p&gt;#&lt;/p&gt;
+
+&lt;p&gt;#&lt;/p&gt;
+
+&lt;p&gt;$$
+Halts_{TM} = { (w, x) \, | \, M(w)\ \text{terminates on input}\ x }
+$$&lt;/p&gt;
+
+&lt;p&gt;#&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-Python&#34;&gt;def paradox():
+   if halts(&#39;paradox()&#39;):
+       while True:
+          pass
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Class 24: Halting Problems</title>
@@ -859,40 +991,6 @@ cardinal number&lt;/em&gt;.&lt;/p&gt;
 question of whether $\aleph_1 = 2^{\aleph_0}$ with the ZFC axioms?&lt;/p&gt;
 
 &lt;p&gt;&lt;/div&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Problem Set 8 Revisions</title>
-      <link>https://uvacs2102.github.io/ps8revisions/</link>
-      <pubDate>Thu, 03 Nov 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://uvacs2102.github.io/ps8revisions/</guid>
-      <description>&lt;p&gt;There are three important revisions to &lt;a href=&#34;https://uvacs2102.github.io/docs/ps8.pdf&#34;&gt;Problem Set 8&lt;/a&gt;:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;The definition of &lt;em&gt;height&lt;/em&gt; for Problem 4 should have included that
-the height of the &lt;strong&gt;null&lt;/strong&gt; tree is 0.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;The definition of the &lt;em&gt;OrderedBinaryTree&lt;/em&gt; before Problem 7 did not
-make sense for constructing nodes where one (or both) of the subtrees
-are &lt;strong&gt;null&lt;/strong&gt;.  I have added clauses that allow empty trees to be used as
-the subtrees in a node.  Without these, it would not be possible to
-construct any trees (other than the base &lt;strong&gt;null&lt;/strong&gt; tree), since it would
-not be sensible to satisfy the maximum or minimum constraints for the
-null tree.  It makes more sense to consider these undefined for the
-&lt;strong&gt;null&lt;/strong&gt; tree, so it would be impossible to satisfy the constructor
-constraints without adding the disjunction clauses that allow the
-sub-trees to be &lt;strong&gt;null&lt;/strong&gt;.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;For Problem 11, the definition of length using &lt;code&gt;list_accumulate&lt;/code&gt;
-should be &lt;code&gt;list_accumulate(lambda a, b: b + 1, lst, 0)&lt;/code&gt;.&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;The version now posted has these revisions.  If you already found
-work-arounds to these problems in your solutions, you can add a note to
-your assignment indicating this and don&amp;rsquo;t need to revisit them, but
-otherwise, please solve the revised problems.&lt;/p&gt;
 </description>
     </item>
     
