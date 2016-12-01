@@ -139,125 +139,6 @@
   </header>
   
   
-  <p class="fronthead"><A href="/class16/">Class 16: Recursive Data Types</a> (Tue, 25 Oct 2016)</p>
-    
-
-<h3 id="schedule">Schedule</h3>
-
-<p>You should read MCS Chapter 7 this week.</p>
-
-<p><a href="/ps/ps7"><strong>Problem Set 7</strong></a> is due <strong>28 October (Friday) at 6:29pm</strong>.</p>
-
-<p><div class="notpdf">
-   <center>
-<script async class="speakerdeck-embed" data-id="b350014169664ae49e537a2999b851b2" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-   </center></p>
-
-<h2 id="links">Links</h2>
-
-<p>Python code from class and list definitions: <a href="/docs/pairs.py">pairs.py</a></p>
-
-<p><div class="highlightm">
-   <a href="/docs/class16.pdf">See PDF Version for <b>Notes</b></a>.
-   </div></p>
-
-<p></div><!--endpdf--></p>
-
-<p><div class="latex"></p>
-
-<h1 id="structural-induction">Structural Induction</h1>
-
-<p>We can show a property holds for <em>all objects of a data type</em> by:</p>
-
-<ol>
-<li><p>Showing the property holds for all base objects.</p></li>
-
-<li><p>Showing that all the ways of constructing new objects, preserve the property.</p></li>
-</ol>
-
-<p>What is the difference between scalar data and compound data structures?</p>
-
-<p>#</p>
-
-<h1 id="pairs">Pairs</h1>
-
-<p><strong>Definition.</strong> A $\text{\em Pair}$ is a datatype that supports these three operations:<br />
-\begin{quote}
-     $\text{\em make_pair}: \text{\em Object} \times \text{\em Object} \rightarrow \text{\em Pair}$<br />
-     $\text{\em pair_first}: \text{\em Pair} \rightarrow \text{\em Object}$\<br />
-     $\text{\em pair_last}: \text{\em Pair} \rightarrow \text{\em Object}$\<br />
-\end{quote}
-where, for any objects $a$ and $b$, $\text{\em pair_first}(\text{\em make_pair}(a, b)) = a$ and $\text{\em pair_last}(\text{\em make_pair}(a, b)) = b$.</p>
-
-<h1 id="lists">Lists</h1>
-
-<p><strong>Definition (1).</strong> A <em>List</em> is either (1) a <em>Pair</em> where the second part of
-  the pair is a <em>List</em>, or (2) the empty list.</p>
-
-<p><strong>Definition (2).</strong> A <em>List</em> is a ordered sequence of objects.</p>
-
-<!--page-->
-
-<h2 id="list-operations">List Operations</h2>
-
-<p>\begin{equation<em>}
-\begin{split}
-\text{\em first}(\text{\em prepend}(e, l)) &amp;= \fillin <br />
-\text{\em rest}(\text{\em prepend}(e, l)) &amp;= \fillin <br />
-\text{\em empty}(\text{\em prepend}(e, l)) &amp;= \text{\bf False} <br />
-\text{\em empty}(\fillin) &amp;= \text{\bf True} <br />
-\end{split}
-\end{equation</em>}</p>
-
-<p><strong>Definition.</strong> The <em>length</em> of a list, $p$, is:
-\begin{equation<em>}
-\begin{split}
-\begin{cases}
-0 &amp; p\ \text{is \bf null} <br />
-\bigfillin %\text{\em length}(q) + 1
-&amp; p = \text{\em prepend}(e, q)\ \text{for some object}\ e\ \text{and some list}\ q <br />
-\end{cases}
-\end{split}
-\end{equation</em>}</p>
-
-<p><strong>Unique Construction</strong> property:</p>
-
-<p>\begin{equation<em>}
-\begin{split}
-\forall p \in \text{\em List} - { \text{\bf null} } \ldotp \exists q \in \text{\em List}, e \in \text{\em Object} \ldotp p = \text{\em prepend}(e, q) \; \wedge <br />
-(\forall r \in \text{\em List}, f \in \text{\em Object} \ldotp p = \text{\em prepend}(f, r) \implies r = q \wedge f = e)
-\end{split}
-\end{equation</em>}</p>
-
-<p>Why is this necessary for our length definition?</p>
-
-<p>##</p>
-
-<pre><code class="language-python">def list_prepend(e, l):
-    return make_pair(e, l)
-
-def list_first(l):
-    return pair_first(l)
-
-def list_rest(l):
-    return pair_last(l)
-
-def list_empty(l):
-    return l == None
-
-def list_length(l):
-    if list_empty(l):
-        return 0
-    else:
-        return 1 + list_length(list_rest(l))
-
-</code></pre>
-
-<p>Prove: for all lists, $p$, <code>list_length(p)</code> returns the length of the list $p$.</p>
-
-<p></div></p>
- 
-  
   <p class="fronthead"><A href="/ps7revised/">Problem Set 7 - Revised</a> (Sun, 23 Oct 2016)</p>
     <p>A revised version of <strong>Problem Set 7</strong> is <a href="/docs/ps7.pdf">now posted</a>.
 The change is that an additional constrait was added to the state
@@ -712,6 +593,95 @@ unique combination of four variables.  There is no way to reduce the
 number of variables per clause of a solution without adding a variable,
 therefore at least one variable must be added to form the 3-CNF
 equivalent of this formula.</p>
+ 
+  
+  <p class="fronthead"><A href="/anonymousfeedback3/">Anonymous Feedback Comments</a> (Thu, 29 Sep 2016)</p>
+    <p>This anonymous comment was submitted through collab:</p>
+
+<blockquote>
+<p><em>A lot of my fellow classmates and I are concerned about this class because we feel that we aren&rsquo;t provided with the resources necessary to be able to do the homework in a reasonable amount of time/effort. So many people spend hours and hours at office hours several times a week but even the TAs don&rsquo;t understand our questions and are not able to help us understand any of the concepts. I understand that we&rsquo;re supposed to be challenged by the class, but if we aren&rsquo;t well-equipped to work through the challenges it becomes extremely frustrating. I feel like the class could be improved if the lectures were better structured so that we&rsquo;re thoroughly taught the concepts and steps we can take to think through a problem rather than going through examples that are hard to understand because we&rsquo;re only copying down things we don&rsquo;t fully understand and that don&rsquo;t apply to other problems we&rsquo;re expected to solve. I don&rsquo;t mean to be rude at all so I apologize if it comes off that way, it&rsquo;s just that so many of the students and I are frustrated and stressed out about how much we don&rsquo;t understand in the class even after seeking help repeatedly.</em></p>
+</blockquote>
+
+<p>One of the drawbacks of anonymous comments, is I have no way to
+follow-up to better understand what is really going on here. I do
+appreciate the anonymous comments, but you shouldn&rsquo;t be worried about
+making comments like this directly &mdash; I view any student making
+comments with the goal of improving their own learning and making things
+better for the class as a positive thing, and you shouldn&rsquo;t be worried
+that I would count any thoughtful and respectful comment against you.</p>
+
+<p>As for the content, as best as I&rsquo;m able to interpret it, the perception
+that the problems are too hard does not fit with what I&rsquo;m seeing in the
+assignments.  For all of the problem sets so far, more than 90% of
+students have received grades at least 5 (the exception was for PS3,
+where it was 89%), which means nearly all answers correct (with some
+justifications that could be better).  On all the assignments, fewer
+than 5% of the submissions have been 4 or below.  So, either we are
+grading them too generously and students are getting 5+s without
+actually understanding much (which I don&rsquo;t think is the case, but
+perhaps we are giving too much benefit of the doubt for unclear
+answers), or, more likely, people are acutally understanding things
+quite well, but it is taking more &ldquo;pain&rdquo; and effort to get there than
+you expect.</p>
+
+<p>It doesn&rsquo;t make sense to spend time in lecture copying down things you
+don&rsquo;t understand.  If there are things you don&rsquo;t understand in lecture,
+please stop and ask questions, or if you aren&rsquo;t comfortable doing that,
+at least post questions on slack.  If you don&rsquo;t ask questions, I don&rsquo;t
+know what is confusing, or what should be explained.  I make the slides
+and notes available so you can spend lecture time thinking instead of
+writing (that said, I think it is often helpful to write things down
+yourself as part of understanding them, or discovering what is unclear).</p>
+
+<p>There are lots of resources available, but I think you are expecting the
+wrong kind of problems if you are looking for resources to tell you how
+to solve them.  I understand why this is, since it is what you expect
+from most of your previous classes.  You were all good students, and
+great at redoing things you saw in class, that&rsquo;s why you got into
+UVA.</p>
+
+<p>But, you shouldn&rsquo;t expect most problems from now on (in this class, and
+in any worthwhile classes you take after this one) to be like
+this. You&rsquo;re not learning anything (useful), if you are just re-solving
+problems you&rsquo;ve already seen, or making straightforward symbol
+replacements in them.</p>
+
+<p>Nearly all of the problems you did in previous math classes were
+problems you could type into Wolfram Alpha and it could solve instantly;
+this isn&rsquo;t surprising - if a problem is something you can solve by
+following given rules in a straightforward way, it shouldn&rsquo;t be a
+problem for humans to spend time on, the rules should be encoded in
+programs that can do it automatically.  Sometimes its worthwhile for
+humans to learn what the rules are and get some experience following
+them, but the further along you get, and the more advanced computing
+systems get, the more ridiculous it is for humans to spend tons of time
+learning to do things computers already do well.</p>
+
+<p>So, we do learn steps for solving problems in this class, both in
+lecture and in the book.  And, all of the problems on the problem sets
+are related to things you learn in class.  But, many of the problems
+also involve some creative step that isn&rsquo;t a straightforward replication
+of something you&rsquo;ve seen in class or the book. Without that, I wouldn&rsquo;t
+really see the point in assigning them - I&rsquo;m not assigning problem sets
+to check if you are doing the reading and coming to class, the point of
+the problem sets is to develop your understanding of the concepts by
+having you figure out how to apply them in new ways that go beyond
+things you&rsquo;ve already seen and (more importantly) to develop your
+abilities as mathematical thinkers and problem solvers.  You can&rsquo;t do
+that by replicating problems you&rsquo;ve already done, or by solving problems
+that are straightforward repetitions of problems you&rsquo;ve already seen
+solved.  But, before trying to solve new problems, you should make sure
+you understand the examples you&rsquo;ve seen in the book and in class. It is
+usually much harder to come up with your own solutions to problems than
+to understand ones that are provided by others.</p>
+
+<p>All that said, I would encourage anyone who feels like they are spending
+an unreasonable amount of time on this, or feeling frustrated and
+stressed out by it, to come to office hours to talk to me (or to make an
+appointment if you can&rsquo;t make it then).  My office hours have mostly
+been fairly empty, and the best sense I get of what is going on in the
+class is from students who come to talk to me during office hours, so I
+hope you&rsquo;ll do that rather than just getting frustrated.</p>
  
   
   

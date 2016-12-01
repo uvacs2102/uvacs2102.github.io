@@ -139,56 +139,6 @@
   </header>
   
   
-  <p class="fronthead"><A href="/class21/">Class 21: Infinite Infinites, Exam 2</a> (Tue, 15 Nov 2016)</p>
-    
-
-<h3 id="schedule">Schedule</h3>
-
-<p><strong>Problem Set 9</strong> is now due on <strong>Wednesday, 23 November</strong>.</p>
-
-<p><div class="notpdf">
-   <center>
-<script async class="speakerdeck-embed" data-id="dc45f78adb254aadb2d0ac1684c1e47b" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-   </center>
-   </div><!--endpdf--></p>
-
-<p><div class="highlightm">
-   <a href="/docs/class21.pdf">See PDF Version for <b>Notes</b></a>.
-   </div></p>
-
-<p></div><!--endpdf--></p>
-
-<p><div class="latex"></p>
-
-<h1 id="infinite-sets-recap">Infinite Sets Recap</h1>
-
-<p><strong>Definition.</strong> A set $C$ is <em>countable</em> if and only if there exists a
-  surjective function from $\mathbb{N}$ to $C$.  (That is, $\le 1$ arrow
-  out from $\mathbb{N}$, $ge 1$ arrow in to $C$.)</p>
-
-<p><strong>Definition.</strong> A set $C$ is <em>countably infinite</em> if and only if there
-  exists a bijection between $C$ and $\mathbb{N}$.</p>
-
-<h1 id="cantor-s-theorem">Cantor&rsquo;s Theorem</h1>
-
-<p>For <strong>all</strong> sets, $S$, $| pow(S) | &gt; | S |$.</p>
-
-<p>What does this mean for $| \mathbb{N} |$?</p>
-
-<p>#</p>
-
-<p>What is a <em>real number</em>?</p>
-
-<p>#</p>
-
-<p>Show there is a bijection between $[0, 1)$ and $pow(\mathbb{N})$.</p>
-
-<p>#
-#</p>
-
-<p></div></p>
- 
-  
   <p class="fronthead"><A href="/class20/">Class 20: Elections, Review</a> (Tue, 8 Nov 2016)</p>
     
 
@@ -634,6 +584,125 @@ and {\bf inductive step} &amp; $\forall m \in \mathbb{N} \ldotp$ &amp; $\forall 
 </ol>
 
 <p>How can you know the website you are sending your password to is what you think it is?</p>
+
+<p></div></p>
+ 
+  
+  <p class="fronthead"><A href="/class16/">Class 16: Recursive Data Types</a> (Tue, 25 Oct 2016)</p>
+    
+
+<h3 id="schedule">Schedule</h3>
+
+<p>You should read MCS Chapter 7 this week.</p>
+
+<p><a href="/ps/ps7"><strong>Problem Set 7</strong></a> is due <strong>28 October (Friday) at 6:29pm</strong>.</p>
+
+<p><div class="notpdf">
+   <center>
+<script async class="speakerdeck-embed" data-id="b350014169664ae49e537a2999b851b2" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+   </center></p>
+
+<h2 id="links">Links</h2>
+
+<p>Python code from class and list definitions: <a href="/docs/pairs.py">pairs.py</a></p>
+
+<p><div class="highlightm">
+   <a href="/docs/class16.pdf">See PDF Version for <b>Notes</b></a>.
+   </div></p>
+
+<p></div><!--endpdf--></p>
+
+<p><div class="latex"></p>
+
+<h1 id="structural-induction">Structural Induction</h1>
+
+<p>We can show a property holds for <em>all objects of a data type</em> by:</p>
+
+<ol>
+<li><p>Showing the property holds for all base objects.</p></li>
+
+<li><p>Showing that all the ways of constructing new objects, preserve the property.</p></li>
+</ol>
+
+<p>What is the difference between scalar data and compound data structures?</p>
+
+<p>#</p>
+
+<h1 id="pairs">Pairs</h1>
+
+<p><strong>Definition.</strong> A $\text{\em Pair}$ is a datatype that supports these three operations:<br />
+\begin{quote}
+     $\text{\em make_pair}: \text{\em Object} \times \text{\em Object} \rightarrow \text{\em Pair}$<br />
+     $\text{\em pair_first}: \text{\em Pair} \rightarrow \text{\em Object}$\<br />
+     $\text{\em pair_last}: \text{\em Pair} \rightarrow \text{\em Object}$\<br />
+\end{quote}
+where, for any objects $a$ and $b$, $\text{\em pair_first}(\text{\em make_pair}(a, b)) = a$ and $\text{\em pair_last}(\text{\em make_pair}(a, b)) = b$.</p>
+
+<h1 id="lists">Lists</h1>
+
+<p><strong>Definition (1).</strong> A <em>List</em> is either (1) a <em>Pair</em> where the second part of
+  the pair is a <em>List</em>, or (2) the empty list.</p>
+
+<p><strong>Definition (2).</strong> A <em>List</em> is a ordered sequence of objects.</p>
+
+<!--page-->
+
+<h2 id="list-operations">List Operations</h2>
+
+<p>\begin{equation<em>}
+\begin{split}
+\text{\em first}(\text{\em prepend}(e, l)) &amp;= \fillin <br />
+\text{\em rest}(\text{\em prepend}(e, l)) &amp;= \fillin <br />
+\text{\em empty}(\text{\em prepend}(e, l)) &amp;= \text{\bf False} <br />
+\text{\em empty}(\fillin) &amp;= \text{\bf True} <br />
+\end{split}
+\end{equation</em>}</p>
+
+<p><strong>Definition.</strong> The <em>length</em> of a list, $p$, is:
+\begin{equation<em>}
+\begin{split}
+\begin{cases}
+0 &amp; p\ \text{is \bf null} <br />
+\bigfillin %\text{\em length}(q) + 1
+&amp; p = \text{\em prepend}(e, q)\ \text{for some object}\ e\ \text{and some list}\ q <br />
+\end{cases}
+\end{split}
+\end{equation</em>}</p>
+
+<p><strong>Unique Construction</strong> property:</p>
+
+<p>\begin{equation<em>}
+\begin{split}
+\forall p \in \text{\em List} - { \text{\bf null} } \ldotp \exists q \in \text{\em List}, e \in \text{\em Object} \ldotp p = \text{\em prepend}(e, q) \; \wedge <br />
+(\forall r \in \text{\em List}, f \in \text{\em Object} \ldotp p = \text{\em prepend}(f, r) \implies r = q \wedge f = e)
+\end{split}
+\end{equation</em>}</p>
+
+<p>Why is this necessary for our length definition?</p>
+
+<p>##</p>
+
+<pre><code class="language-python">def list_prepend(e, l):
+    return make_pair(e, l)
+
+def list_first(l):
+    return pair_first(l)
+
+def list_rest(l):
+    return pair_last(l)
+
+def list_empty(l):
+    return l == None
+
+def list_length(l):
+    if list_empty(l):
+        return 0
+    else:
+        return 1 + list_length(list_rest(l))
+
+</code></pre>
+
+<p>Prove: for all lists, $p$, <code>list_length(p)</code> returns the length of the list $p$.</p>
 
 <p></div></p>
  
