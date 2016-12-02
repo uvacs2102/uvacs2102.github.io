@@ -88,8 +88,6 @@
 
 <a href="https://collab.itc.virginia.edu/portal/site/e0b17949-c94c-466b-835a-196381f3f911?panel=Main">Collab Site</a>
 
-<a href="https://uvacs2102.github.io/docs/finalprep.pdf">Final</a>
-
 <a href="https://uvacs2102.github.io/docs/ps9.pdf">Problem Set 9</a>
 
 <a href="https://uvacs2102.github.io/ps/psz">Problem Set O</a>
@@ -141,12 +139,125 @@
   </header>
   
   
+  <p class="fronthead"><A href="/class25/">Class 25: Cryptography</a> (Thu, 1 Dec 2016)</p>
+    
+
+<h3 id="schedule">Schedule</h3>
+
+<p><em>Lighting of the Lawn</em> is <strong>tonight</strong>!  (Starts around 7pm)</p>
+
+<p>If you would like to present something to the class, you need to
+submit <strong><a href="/ps/psz">Problem Set Omega</a></strong> by <strong>Sunday, 4 December</strong> at
+<strong>6:29pm</strong>.  Your submission should include an answer to &ldquo;Presentation
+option&rdquo; question:</p>
+
+<blockquote>
+<p>Presentation option: if you would like to present in class Tuesday, write a brief explanation of what you would like to do and how much time you are requesting for it. You can also include anything you want to make a compelling case for why your project should be selected (depending on how many requests for presentation their are, it may be necessary to select only as many as fit into the class).</p>
+</blockquote>
+
+<p>Your final (optional) submission is due <strong>Tuesday, 6 December</strong>. You
+may revise and update earlier submissions until this deadline.</p>
+
+<p>The <strong>final exam</strong> is scheduled by the registrar for <strong>Saturday, 10
+December, 9am-noon</strong> in our normal classroom.  See the <a href="/finalprep">Final Exam
+Preparation</a> handout for more information and some <strong>practice problems</strong>.</p>
+
+<p><div class="notpdf">
+   <center>
+<script async class="speakerdeck-embed" data-id="05564d4a4f204f10867ae912bc410f93" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+   </center></p>
+
+<p><div class="highlightm">
+   <a href="/docs/class25.pdf">See PDF Version for <b>Notes</b></a>.
+   </div></p>
+
+<h2 id="links">Links</h2>
+
+<p><a href="http://www.cs.virginia.edu/~evans/courses/cs387/">Cryptography Courses</a></p>
+
+<p><a href="http://www.mightbeevil.org">MightBeEvil</a></p>
+
+<p></div><!--endpdf--></p>
+
+<p><div class="latex"></p>
+
+<h1 id="symmetric-cryptography">Symmetric Cryptography</h1>
+
+<p>Correctness: $D(K, E(K, M)) = M$</p>
+
+<p>Security: without $K$, it is hard to learning anything interesting about $M$ from $E(K, M)$.</p>
+
+<p>Why is $\oplus$ (xor) such a useful operator for cryptography?</p>
+
+<p>#</p>
+
+<p><strong>Perfect cipher</strong> (Claude Shannon, 1940s).  The ciphertext reveals no
+  information (other than maximum length) about the plaintext.</p>
+
+<p>Why must a perfect cipher have $|K|\, \ge\, |M|$? ($K$ is the set of possible keys, $M$ is the set of plaintext messages)</p>
+
+<p>#</p>
+
+<p>Why is a one-time pad impractical for most purposes?  How do you break a &ldquo;two&rdquo;-time pad?</p>
+
+<!--page-->
+
+<h1 id="asymmetric-public-key-cryptography">Asymmetric (Public Key) Cryptography</h1>
+
+<p>\small</p>
+
+<blockquote>
+<p><em>We stand today on the brink of a revolution in cryptography. The development of cheap digital hardware has freed it from the design limitations of mechanical computing and brought the cost of high grade cryptographic devices down to where they can be used in such commercial applications as remote cash dispensers and computer terminals. In turn, such applications create a need for new types of cryptographic systems which minimize the necessity of secure key distribution channels and supply the equivalent of a written signature. At the same time, theoretical developments in information theory and computer science show promise of providing provably secure cryptosystems, changing this ancient art into a science.</em><br />
+Whit Diffie and Martin Hellman, <em>New Directions in Cryptography</em>, November 1976</p>
+</blockquote>
+
+<p>\normalsize</p>
+
+<p><strong>Primitive root.</strong> $\alpha$ is a primitive root of $q$ if $\forall 1 \le n &lt; q \ldotp \exists m, 1 \le m &lt; q\ \text{such that}\ \alpha^m = n \mod q$.  All prime numbers have primitive roots.</p>
+
+<h3 id="diffie-hellman-merkle-key-agreement">Diffie-Hellman-Merkle Key Agreement</h3>
+
+<p><strong>Goal:</strong> Alice and Bob agree on a secure key $K$, over an insecure channel with no prior agreement.</p>
+
+<p><strong>Assumption:</strong> Discrete log problem is hard (for sufficiently large inputs).</p>
+
+<ol>
+<li><p>Choose and public the public parameters:<br />
+$q$, large prime number
+$\alpha$, primitive root of $q$</p></li>
+
+<li><p>Alice generates random $X_A$.</p></li>
+
+<li><p>Alice sends $Y_A = \alpha^{X_A} \mod q$.</p></li>
+
+<li><p>Bob generates random $X_B$.</p></li>
+
+<li><p>Bob sends $Y_B = \alpha^{X_B} \mod q$</p></li>
+
+<li><p>Alice computes $K = (Y_B)^{X_A} \mod q$ / Bob computes $K = (Y_A)^{X_B} \mod q$.</p></li>
+</ol>
+
+<p>How do we know Alice and Bob will agree on the same key, $K$?</p>
+
+<p>##</p>
+
+<p>What would an eavesdropper need to do to learn $K$?</p>
+
+<p>##</p>
+
+<h1 id="secure-multi-party-computation">Secure Multi-Party Computation</h1>
+
+<p>How can we compute a stable matching without revealing sensitive preferences?</p>
+
+<p></div></p>
+ 
+  
   <p class="fronthead"><A href="/class24/">Class 24: Halting Problems</a> (Tue, 29 Nov 2016)</p>
     
 
 <h3 id="schedule">Schedule</h3>
 
-<p><strong><a href="/ps/psZ">Problem Set Omega</a></strong> is due on <strong>Sunday, 4 December</strong> or
+<p><strong><a href="/ps/psz">Problem Set Omega</a></strong> is due on <strong>Sunday, 4 December</strong> or
 <strong>Tuesday, 6 December</strong> (see problem set for details).  It is not like
 the others, and counts as a &ldquo;bonus&rdquo; optional assignment.</p>
 
@@ -712,56 +823,6 @@ $\text{\em dir} = { \text{\bf Left}, \text{\bf Right}, \text{\bf Halt} }$ is the
   
   <p class="fronthead"><A href="/psomegaannounce/">Problem Set Omega</a> (Wed, 16 Nov 2016)</p>
     <p><strong>Problem Set &omega;</strong> is <a href="/ps/psz">now posted</a> and due Dec 4 or the last day of class (see the <a href="/ps/psz">problem set</a> for details). It is a &ldquo;bonus&rdquo; problem set, and not like the others.</p>
- 
-  
-  <p class="fronthead"><A href="/class21/">Class 21: Infinite Infinites, Exam 2</a> (Tue, 15 Nov 2016)</p>
-    
-
-<h3 id="schedule">Schedule</h3>
-
-<p><strong>Problem Set 9</strong> is now due on <strong>Wednesday, 23 November</strong>.</p>
-
-<p><div class="notpdf">
-   <center>
-<script async class="speakerdeck-embed" data-id="dc45f78adb254aadb2d0ac1684c1e47b" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-   </center>
-   </div><!--endpdf--></p>
-
-<p><div class="highlightm">
-   <a href="/docs/class21.pdf">See PDF Version for <b>Notes</b></a>.
-   </div></p>
-
-<p></div><!--endpdf--></p>
-
-<p><div class="latex"></p>
-
-<h1 id="infinite-sets-recap">Infinite Sets Recap</h1>
-
-<p><strong>Definition.</strong> A set $C$ is <em>countable</em> if and only if there exists a
-  surjective function from $\mathbb{N}$ to $C$.  (That is, $\le 1$ arrow
-  out from $\mathbb{N}$, $ge 1$ arrow in to $C$.)</p>
-
-<p><strong>Definition.</strong> A set $C$ is <em>countably infinite</em> if and only if there
-  exists a bijection between $C$ and $\mathbb{N}$.</p>
-
-<h1 id="cantor-s-theorem">Cantor&rsquo;s Theorem</h1>
-
-<p>For <strong>all</strong> sets, $S$, $| pow(S) | &gt; | S |$.</p>
-
-<p>What does this mean for $| \mathbb{N} |$?</p>
-
-<p>#</p>
-
-<p>What is a <em>real number</em>?</p>
-
-<p>#</p>
-
-<p>Show there is a bijection between $[0, 1)$ and $pow(\mathbb{N})$.</p>
-
-<p>#
-#</p>
-
-<p></div></p>
  
   
   
