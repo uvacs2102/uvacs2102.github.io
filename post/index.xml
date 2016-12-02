@@ -6,8 +6,21 @@
     <description>Recent content in Post-rsses on cs2102: Discrete Math</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 29 Nov 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 02 Dec 2016 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://uvacs2102.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Practice Problems Solutions</title>
+      <link>https://uvacs2102.github.io/practicesolutions/</link>
+      <pubDate>Fri, 02 Dec 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/practicesolutions/</guid>
+      <description>&lt;p&gt;After you have tried to solve the &lt;a href=&#34;https://uvacs2102.github.io/docs/finalprep.pdf&#34;&gt;practice
+problems&lt;/a&gt; on your own, you can obtain solutions
+to them using this form: &lt;a
+href=&#34;https://goo.gl/forms/3Kgmu2WHjVmeCtyZ2&#34;&gt;&lt;em&gt;&lt;a href=&#34;https://goo.gl/forms/3Kgmu2WHjVmeCty2Z&#34;&gt;https://goo.gl/forms/3Kgmu2WHjVmeCty2Z&lt;/a&gt;&lt;/em&gt;&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Class 24: Halting Problems</title>
@@ -859,40 +872,6 @@ cardinal number&lt;/em&gt;.&lt;/p&gt;
 question of whether $\aleph_1 = 2^{\aleph_0}$ with the ZFC axioms?&lt;/p&gt;
 
 &lt;p&gt;&lt;/div&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Problem Set 8 Revisions</title>
-      <link>https://uvacs2102.github.io/ps8revisions/</link>
-      <pubDate>Thu, 03 Nov 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://uvacs2102.github.io/ps8revisions/</guid>
-      <description>&lt;p&gt;There are three important revisions to &lt;a href=&#34;https://uvacs2102.github.io/docs/ps8.pdf&#34;&gt;Problem Set 8&lt;/a&gt;:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;The definition of &lt;em&gt;height&lt;/em&gt; for Problem 4 should have included that
-the height of the &lt;strong&gt;null&lt;/strong&gt; tree is 0.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;The definition of the &lt;em&gt;OrderedBinaryTree&lt;/em&gt; before Problem 7 did not
-make sense for constructing nodes where one (or both) of the subtrees
-are &lt;strong&gt;null&lt;/strong&gt;.  I have added clauses that allow empty trees to be used as
-the subtrees in a node.  Without these, it would not be possible to
-construct any trees (other than the base &lt;strong&gt;null&lt;/strong&gt; tree), since it would
-not be sensible to satisfy the maximum or minimum constraints for the
-null tree.  It makes more sense to consider these undefined for the
-&lt;strong&gt;null&lt;/strong&gt; tree, so it would be impossible to satisfy the constructor
-constraints without adding the disjunction clauses that allow the
-sub-trees to be &lt;strong&gt;null&lt;/strong&gt;.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;For Problem 11, the definition of length using &lt;code&gt;list_accumulate&lt;/code&gt;
-should be &lt;code&gt;list_accumulate(lambda a, b: b + 1, lst, 0)&lt;/code&gt;.&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;The version now posted has these revisions.  If you already found
-work-arounds to these problems in your solutions, you can add a note to
-your assignment indicating this and don&amp;rsquo;t need to revisit them, but
-otherwise, please solve the revised problems.&lt;/p&gt;
 </description>
     </item>
     
