@@ -141,6 +141,10 @@
   </header>
   
   
+  <p class="fronthead"><A href="/psomegaannounce/">Problem Set Omega</a> (Wed, 16 Nov 2016)</p>
+    <p><strong>Problem Set &omega;</strong> is <a href="/ps/psz">now posted</a> and due Dec 4 or the last day of class (see the <a href="/ps/psz">problem set</a> for details). It is a &ldquo;bonus&rdquo; problem set, and not like the others.</p>
+ 
+  
   <p class="fronthead"><A href="/class21/">Class 21: Infinite Infinites, Exam 2</a> (Tue, 15 Nov 2016)</p>
     
 
@@ -530,114 +534,6 @@ equivalent?</p>
   <p class="fronthead"><A href="/ps8announce/">Problem Set 8</a> (Fri, 28 Oct 2016)</p>
     <p><strong>Problem Set 8</strong> is <a href="/docs/ps8.pdf">now posted</a>, and is due on
   <strong>Friday, 4 November at 6:29pm</strong>.</p>
- 
-  
-  <p class="fronthead"><A href="/class17/">Class 17: Structural Induction</a> (Thu, 27 Oct 2016)</p>
-    
-
-<h3 id="schedule">Schedule</h3>
-
-<p><a href="/ps/ps7"><strong>Problem Set 7</strong></a> is due <strong>tomorrow at 6:29pm</strong>.</p>
-
-<p>Next week Friday, 4 November at 11am, <strong>Steve Huffman</strong> (BSCS 2005,
-co-founder and CEO of Reddit) will give a Computer Science Distinguished
-Alumni talk in the Rotunda.  If you would like to meet with Steve
-(either at a lunch after the talk or a meeting with students later that
-afternoon), send me an email with a good reason why you should be
-invited (only a very limited number of spaces available).</p>
-
-<p><div class="notpdf">
-   <center>
-<script async class="speakerdeck-embed" data-id="f0c0a93cfbf64e3ba1df906dc4c2e2b5" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-   </center></p>
-
-<p><div class="highlightm">
-   <a href="/docs/class17.pdf">See PDF Version for <b>Notes</b></a>.
-   </div></p>
-
-<p></div><!--endpdf--></p>
-
-<p><div class="latex"></p>
-
-<h1 id="lists">Lists</h1>
-
-<p><strong>Definition.</strong> A <em>list</em> is an ordered sequence of objects.  A list is
-  either the empty list ($\lambda$), or the result of $\text{prepend}(e,
-  l)$ for some object $e$ and list $l$.</p>
-
-<p>\begin{equation<em>}
-\begin{split}
-\text{\em first}(\text{prepend}(e, l)) &amp;= e <br />
-\text{\em rest}(\text{prepend}(e, l)) &amp;= l <br />
-\text{\em empty}(\text{prepend}(e, l)) &amp;= \text{\bf False} <br />
-\text{\em empty}(\text{\bf null}) &amp;= \text{\bf True} <br />
-\end{split}
-\end{equation</em>}</p>
-
-<p><strong>Definition.</strong> The <em>length</em> of a list, $p$, is:
-\begin{equation<em>}
-\begin{split}
-\begin{cases}
-0 &amp; \text{if}\ p\ \text{is \bf null} <br />
-\text{\em length}(q) + 1 &amp; \text{otherwise}\ p = \text{\em prepend}(e, q)\ \text{for some object}\ e\ \text{and some list}\ q <br />
-\end{cases}
-\end{split}
-\end{equation</em>}</p>
-
-<pre><code class="language-Python">def list_length(l):
-    if list_empty(l):
-        return 0
-    else:
-        return 1 + list_length(list_rest(l))
-
-</code></pre>
-
-<p>Prove: for all lists, $p$, <code>list_length(p)</code> returns the length of the list $p$.</p>
-
-<!--page-->
-
-<h2 id="concatenation">Concatenation</h2>
-
-<p><strong>Definition.</strong> The <em>concatenation</em> of two lists, $p = (p_1, p_2, \cdots, p_n)$ and $q = (q_1, q_2, \cdots, q_m)$ is
-$$(p_1, p_2, \cdots, p_n, q_1, q_2, \cdots, q_m).$$</p>
-
-<p>Provide a <em>constructuve</em> definition of <em>concatenation</em>.</p>
-
-<p>#
-##</p>
-
-<p>Prove. For any two lists, $p$ and $q$, $\text{length}(p + q) = \text{length}(p) + \text{length}(q)$.</p>
-
-<p>#
-##</p>
-
-<h2 id="induction-summary">Induction Summary</h2>
-
-<p>\begin{center}
-\begin{tabular}{lccc}
-&amp; {\bf Regular Induction} &amp; {\bf Invariant Principle} &amp; {\bf Structural Induction} \ \hline
-Works on: &amp; natural numbers &amp; state machines &amp; data types <br />
-To prove $P(\cdot)$ &amp; {\em for all natural numbers} &amp; {\em for all reachable states} &amp; {\em for all data type objects} <br />
-Prove {\bf base case(s)} &amp; $P(0)$ &amp; $P(q_0)$ &amp; $P(\text{base object(s)})$ <br />
-and {\bf inductive step} &amp; $\forall m \in \mathbb{N} \ldotp$ &amp; $\forall (q, r) \in G \ldotp $ &amp; $\forall s \in \text{\em Type} \ldotp$ <br />
-  &amp; $P(m) \implies P(m+1)$ &amp; $P(q) \implies P&reg;$ &amp; $P(s) \implies P(t)$ <br />
- &amp; &amp; &amp; $\quad \forall t\ \text{constructable from}\ s$ \
-\end{tabular}
-\end{center}</p>
-
-<h1 id="challenge-response-protocols">Challenge-Response Protocols</h1>
-
-<ol>
-<li><p><strong>Verifier:</strong> picks random challenge, $y$.</p></li>
-
-<li><p><strong>Prover:</strong> proves knowledge of $x$ by revealing $f(x, y)$.</p></li>
-
-<li><p><strong>Verifer:</strong> can verify prover knows $x$ from response, but learns nothing (useful) about $x$.</p></li>
-</ol>
-
-<p>How can you know the website you are sending your password to is what you think it is?</p>
-
-<p></div></p>
  
   
   

@@ -24,6 +24,125 @@ href=&#34;https://goo.gl/forms/qZVZJD8HHMc2C5XQ2&#34;&gt;
     </item>
     
     <item>
+      <title>Class 25: Cryptography</title>
+      <link>https://uvacs2102.github.io/class25/</link>
+      <pubDate>Thu, 01 Dec 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/class25/</guid>
+      <description>
+
+&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Lighting of the Lawn&lt;/em&gt; is &lt;strong&gt;tonight&lt;/strong&gt;!  (Starts around 7pm)&lt;/p&gt;
+
+&lt;p&gt;If you would like to present something to the class, you need to
+submit &lt;strong&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/psz&#34;&gt;Problem Set Omega&lt;/a&gt;&lt;/strong&gt; by &lt;strong&gt;Sunday, 4 December&lt;/strong&gt; at
+&lt;strong&gt;6:29pm&lt;/strong&gt;.  Your submission should include an answer to &amp;ldquo;Presentation
+option&amp;rdquo; question:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Presentation option: if you would like to present in class Tuesday, write a brief explanation of what you would like to do and how much time you are requesting for it. You can also include anything you want to make a compelling case for why your project should be selected (depending on how many requests for presentation their are, it may be necessary to select only as many as fit into the class).&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Your final (optional) submission is due &lt;strong&gt;Tuesday, 6 December&lt;/strong&gt;. You
+may revise and update earlier submissions until this deadline.&lt;/p&gt;
+
+&lt;p&gt;The &lt;strong&gt;final exam&lt;/strong&gt; is scheduled by the registrar for &lt;strong&gt;Saturday, 10
+December, 9am-noon&lt;/strong&gt; in our normal classroom.  See the &lt;a href=&#34;https://uvacs2102.github.io/finalprep&#34;&gt;Final Exam
+Preparation&lt;/a&gt; handout for more information and some &lt;strong&gt;practice problems&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;
+   &lt;center&gt;
+&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;05564d4a4f204f10867ae912bc410f93&#34; data-ratio=&#34;1.77777777777778&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
+   &lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlightm&#34;&gt;
+   &lt;a href=&#34;https://uvacs2102.github.io/docs/class25.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes&lt;/b&gt;&lt;/a&gt;.
+   &lt;/div&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.cs.virginia.edu/~evans/courses/cs387/&#34;&gt;Cryptography Courses&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.mightbeevil.org&#34;&gt;MightBeEvil&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;symmetric-cryptography&#34;&gt;Symmetric Cryptography&lt;/h1&gt;
+
+&lt;p&gt;Correctness: $D(K, E(K, M)) = M$&lt;/p&gt;
+
+&lt;p&gt;Security: without $K$, it is hard to learning anything interesting about $M$ from $E(K, M)$.&lt;/p&gt;
+
+&lt;p&gt;Why is $\oplus$ (xor) such a useful operator for cryptography?&lt;/p&gt;
+
+&lt;p&gt;#&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Perfect cipher&lt;/strong&gt; (Claude Shannon, 1940s).  The ciphertext reveals no
+  information (other than maximum length) about the plaintext.&lt;/p&gt;
+
+&lt;p&gt;Why must a perfect cipher have $|K|\, \ge\, |M|$? ($K$ is the set of possible keys, $M$ is the set of plaintext messages)&lt;/p&gt;
+
+&lt;p&gt;#&lt;/p&gt;
+
+&lt;p&gt;Why is a one-time pad impractical for most purposes?  How do you break a &amp;ldquo;two&amp;rdquo;-time pad?&lt;/p&gt;
+
+&lt;!--page--&gt;
+
+&lt;h1 id=&#34;asymmetric-public-key-cryptography&#34;&gt;Asymmetric (Public Key) Cryptography&lt;/h1&gt;
+
+&lt;p&gt;\small&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;We stand today on the brink of a revolution in cryptography. The development of cheap digital hardware has freed it from the design limitations of mechanical computing and brought the cost of high grade cryptographic devices down to where they can be used in such commercial applications as remote cash dispensers and computer terminals. In turn, such applications create a need for new types of cryptographic systems which minimize the necessity of secure key distribution channels and supply the equivalent of a written signature. At the same time, theoretical developments in information theory and computer science show promise of providing provably secure cryptosystems, changing this ancient art into a science.&lt;/em&gt;&lt;br /&gt;
+Whit Diffie and Martin Hellman, &lt;em&gt;New Directions in Cryptography&lt;/em&gt;, November 1976&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;\normalsize&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Primitive root.&lt;/strong&gt; $\alpha$ is a primitive root of $q$ if $\forall 1 \le n &amp;lt; q \ldotp \exists m, 1 \le m &amp;lt; q\ \text{such that}\ \alpha^m = n \mod q$.  All prime numbers have primitive roots.&lt;/p&gt;
+
+&lt;h3 id=&#34;diffie-hellman-merkle-key-agreement&#34;&gt;Diffie-Hellman-Merkle Key Agreement&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Goal:&lt;/strong&gt; Alice and Bob agree on a secure key $K$, over an insecure channel with no prior agreement.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Assumption:&lt;/strong&gt; Discrete log problem is hard (for sufficiently large inputs).&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Choose and public the public parameters:&lt;br /&gt;
+$q$, large prime number
+$\alpha$, primitive root of $q$&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Alice generates random $X_A$.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Alice sends $Y_A = \alpha^{X_A} \mod q$.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Bob generates random $X_B$.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Bob sends $Y_B = \alpha^{X_B} \mod q$&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Alice computes $K = (Y_B)^{X_A} \mod q$ / Bob computes $K = (Y_A)^{X_B} \mod q$.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;How do we know Alice and Bob will agree on the same key, $K$?&lt;/p&gt;
+
+&lt;p&gt;##&lt;/p&gt;
+
+&lt;p&gt;What would an eavesdropper need to do to learn $K$?&lt;/p&gt;
+
+&lt;p&gt;##&lt;/p&gt;
+
+&lt;h1 id=&#34;secure-multi-party-computation&#34;&gt;Secure Multi-Party Computation&lt;/h1&gt;
+
+&lt;p&gt;How can we compute a stable matching without revealing sensitive preferences?&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Class 24: Halting Problems</title>
       <link>https://uvacs2102.github.io/class24/</link>
       <pubDate>Tue, 29 Nov 2016 00:00:00 +0000</pubDate>
@@ -33,7 +152,7 @@ href=&#34;https://goo.gl/forms/qZVZJD8HHMc2C5XQ2&#34;&gt;
 
 &lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
 
-&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/psZ&#34;&gt;Problem Set Omega&lt;/a&gt;&lt;/strong&gt; is due on &lt;strong&gt;Sunday, 4 December&lt;/strong&gt; or
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/psz&#34;&gt;Problem Set Omega&lt;/a&gt;&lt;/strong&gt; is due on &lt;strong&gt;Sunday, 4 December&lt;/strong&gt; or
 &lt;strong&gt;Tuesday, 6 December&lt;/strong&gt; (see problem set for details).  It is not like
 the others, and counts as a &amp;ldquo;bonus&amp;rdquo; optional assignment.&lt;/p&gt;
 
@@ -768,111 +887,6 @@ any questions or parts you want to go over in class Tuesday.&lt;/p&gt;
       
       <guid>https://uvacs2102.github.io/ps7solutions/</guid>
       <description>&lt;p&gt;The Problem Set 7 solutions are now posted: [&lt;a href=&#34;https://collab.itc.virginia.edu/access/content/group/e0b17949-c94c-466b-835a-196381f3f911/ps7solutions.pdf&#34;&gt;PDF&lt;/a&gt;].&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Class 19: Uncountable Sets</title>
-      <link>https://uvacs2102.github.io/class19/</link>
-      <pubDate>Thu, 03 Nov 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://uvacs2102.github.io/class19/</guid>
-      <description>
-
-&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps8&#34;&gt;&lt;strong&gt;Problem Set 8&lt;/strong&gt;&lt;/a&gt; is due &lt;strong&gt;Friday (4 November) at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;Friday, 4 November at 11am (Rotunda Dome Room): &lt;strong&gt;Steve Huffman&lt;/strong&gt; (BSCS
-2005, co-founder and CEO of Reddit), &lt;em&gt;Computer Science Distinguished
-Alumni Speaker&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Exam 2&lt;/strong&gt; will be in class on &lt;strong&gt;Thursday, 10 November&lt;/strong&gt;.  See &lt;a href=&#34;https://uvacs2102.github.io/class18&#34;&gt;Class 18&lt;/a&gt; notes for details.&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;
-   &lt;center&gt;
-&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;483bfa40aae04e3a8e46c090d6d4d727&#34; data-ratio=&#34;1.77777777777778&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
-   &lt;/center&gt;
-   &lt;div class=&#34;highlightm&#34;&gt;
-   &lt;a href=&#34;https://uvacs2102.github.io/docs/class19.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes&lt;/b&gt;&lt;/a&gt;.
-   &lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;countable-and-uncountable-sets&#34;&gt;Countable and Uncountable Sets&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; A set $S$ is &lt;em&gt;countably infinite&lt;/em&gt; if and only if there
-  exists a bijection between $S$ and $\mathbb{N}$.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; A set $S$ is &lt;em&gt;uncountable&lt;/em&gt;, if there exists no bijection
-  between $S$ and $\mathbb{N}$.&lt;/p&gt;
-
-&lt;p&gt;The &lt;strong&gt;power set&lt;/strong&gt; of $A$ ($\textrm{pow}(A)$)is the set of all subsets of $A$:
-$$
-B \in \textrm{pow}(A) \iff B \subseteq A.
-$$&lt;/p&gt;
-
-&lt;p&gt;For all &lt;strong&gt;finite&lt;/strong&gt; sets $S$, $|pow(S)| = 2^{|S|}$.&lt;/p&gt;
-
-&lt;p&gt;#
-#&lt;/p&gt;
-
-&lt;p&gt;For &lt;strong&gt;all&lt;/strong&gt; sets $S$, $|pow(S)| &amp;gt; |S|$.&lt;/p&gt;
-
-&lt;p&gt;#&lt;/p&gt;
-
-&lt;p&gt;Prove $pow(\mathbb{N})$ is uncountable.&lt;/p&gt;
-
-&lt;p&gt;#&lt;/p&gt;
-
-&lt;p&gt;$\text{bitstrings} = \forall n \in \mathbb{N} . {0, 1}^n$.&lt;/p&gt;
-
-&lt;p&gt;#&lt;/p&gt;
-
-&lt;!--page--&gt;
-
-&lt;h2 id=&#34;ordinal-and-cardinal-numbers&#34;&gt;Ordinal and Cardinal Numbers&lt;/h2&gt;
-
-&lt;p&gt;$\omega$ is the &lt;em&gt;smallest infinite ordinal&lt;/em&gt;.  The first ordinal after
-$0, 1, 2, \cdots$.&lt;/p&gt;
-
-&lt;p&gt;What is the difference between an &lt;em&gt;ordinal&lt;/em&gt; and &lt;em&gt;cardinal&lt;/em&gt; number?&lt;/p&gt;
-
-&lt;p&gt;##&lt;/p&gt;
-
-&lt;p&gt;What should $2\omega$ mean?&lt;/p&gt;
-
-&lt;p&gt;##&lt;/p&gt;
-
-&lt;p&gt;Is $\text{InfiniteBitStrings} = {0, 1}^\omega$ countable?&lt;/p&gt;
-
-&lt;p&gt;#&lt;/p&gt;
-
-&lt;p&gt;Prove the number of real numbers in the interval $[0, 1]$ is uncountable.&lt;/p&gt;
-
-&lt;p&gt;#
-#
-#&lt;/p&gt;
-
-&lt;p&gt;What set is bigger than $\mathbb{R}$?&lt;/p&gt;
-
-&lt;p&gt;#&lt;/p&gt;
-
-&lt;p&gt;Aleph-naught: $\aleph_0 = |\mathbb{N}|$ is the &lt;em&gt;smallest infinite
-cardinal number&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;How is $\omega$ different from $\aleph_0$?&lt;/p&gt;
-
-&lt;p&gt;##&lt;/p&gt;
-
-&lt;p&gt;$$2^{\aleph_0} = |pow(\mathbb{N})| = | [0, 1] | = | \mathbb{R} | = | \text{InfiniteBitStrings} |  $$&lt;/p&gt;
-
-&lt;p&gt;What is necessary to conclude that it is not possible to settle the
-question of whether $\aleph_1 = 2^{\aleph_0}$ with the ZFC axioms?&lt;/p&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
 </description>
     </item>
     
