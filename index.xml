@@ -6,127 +6,8 @@
     <description>Recent content on cs2102: Discrete Math</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 01 Dec 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 29 Nov 2016 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://uvacs2102.github.io/index.xml" rel="self" type="application/rss+xml" />
-    
-    <item>
-      <title>Class 25: Cryptography</title>
-      <link>https://uvacs2102.github.io/class25/</link>
-      <pubDate>Thu, 01 Dec 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://uvacs2102.github.io/class25/</guid>
-      <description>
-
-&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
-
-&lt;p&gt;&lt;em&gt;Lighting of the Lawn&lt;/em&gt; is &lt;strong&gt;tonight&lt;/strong&gt;!  (Starts around 7pm)&lt;/p&gt;
-
-&lt;p&gt;If you would like to present something to the class, you need to
-submit &lt;strong&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/psz&#34;&gt;Problem Set Omega&lt;/a&gt;&lt;/strong&gt; by &lt;strong&gt;Sunday, 4 December&lt;/strong&gt; at
-&lt;strong&gt;6:29pm&lt;/strong&gt;.  Your submission should include an answer to &amp;ldquo;Presentation
-option&amp;rdquo; question:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;Presentation option: if you would like to present in class Tuesday, write a brief explanation of what you would like to do and how much time you are requesting for it. You can also include anything you want to make a compelling case for why your project should be selected (depending on how many requests for presentation their are, it may be necessary to select only as many as fit into the class).&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Your final (optional) submission is due &lt;strong&gt;Tuesday, 6 December&lt;/strong&gt;. You
-may revise and update earlier submissions until this deadline.&lt;/p&gt;
-
-&lt;p&gt;The &lt;strong&gt;final exam&lt;/strong&gt; is scheduled by the registrar for &lt;strong&gt;Saturday, 10
-December, 9am-noon&lt;/strong&gt; in our normal classroom.  See the &lt;a href=&#34;https://uvacs2102.github.io/finalprep&#34;&gt;Final Exam
-Preparation&lt;/a&gt; handout for more information and some &lt;strong&gt;practice problems&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;
-   &lt;center&gt;
-&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;05564d4a4f204f10867ae912bc410f93&#34; data-ratio=&#34;1.77777777777778&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
-   &lt;/center&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;highlightm&#34;&gt;
-   &lt;a href=&#34;https://uvacs2102.github.io/docs/class25.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes&lt;/b&gt;&lt;/a&gt;.
-   &lt;/div&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.cs.virginia.edu/~evans/courses/cs387/&#34;&gt;Cryptography Courses&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.mightbeevil.org&#34;&gt;MightBeEvil&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;symmetric-cryptography&#34;&gt;Symmetric Cryptography&lt;/h1&gt;
-
-&lt;p&gt;Correctness: $D(K, E(K, M)) = M$&lt;/p&gt;
-
-&lt;p&gt;Security: without $K$, it is hard to learning anything interesting about $M$ from $E(K, M)$.&lt;/p&gt;
-
-&lt;p&gt;Why is $\oplus$ (xor) such a useful operator for cryptography?&lt;/p&gt;
-
-&lt;p&gt;#&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Perfect cipher&lt;/strong&gt; (Claude Shannon, 1940s).  The ciphertext reveals no
-  information (other than maximum length) about the plaintext.&lt;/p&gt;
-
-&lt;p&gt;Why must a perfect cipher have $|K|\, \ge\, |M|$? ($K$ is the set of possible keys, $M$ is the set of plaintext messages)&lt;/p&gt;
-
-&lt;p&gt;#&lt;/p&gt;
-
-&lt;p&gt;Why is a one-time pad impractical for most purposes?  How do you break a &amp;ldquo;two&amp;rdquo;-time pad?&lt;/p&gt;
-
-&lt;!--page--&gt;
-
-&lt;h1 id=&#34;asymmetric-public-key-cryptography&#34;&gt;Asymmetric (Public Key) Cryptography&lt;/h1&gt;
-
-&lt;p&gt;\small&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;em&gt;We stand today on the brink of a revolution in cryptography. The development of cheap digital hardware has freed it from the design limitations of mechanical computing and brought the cost of high grade cryptographic devices down to where they can be used in such commercial applications as remote cash dispensers and computer terminals. In turn, such applications create a need for new types of cryptographic systems which minimize the necessity of secure key distribution channels and supply the equivalent of a written signature. At the same time, theoretical developments in information theory and computer science show promise of providing provably secure cryptosystems, changing this ancient art into a science.&lt;/em&gt;&lt;br /&gt;
-Whit Diffie and Martin Hellman, &lt;em&gt;New Directions in Cryptography&lt;/em&gt;, November 1976&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;\normalsize&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Primitive root.&lt;/strong&gt; $\alpha$ is a primitive root of $q$ if $\forall 1 \le n &amp;lt; q \ldotp \exists m, 1 \le m &amp;lt; q\ \text{such that}\ \alpha^m = n \mod q$.  All prime numbers have primitive roots.&lt;/p&gt;
-
-&lt;h3 id=&#34;diffie-hellman-merkle-key-agreement&#34;&gt;Diffie-Hellman-Merkle Key Agreement&lt;/h3&gt;
-
-&lt;p&gt;&lt;strong&gt;Goal:&lt;/strong&gt; Alice and Bob agree on a secure key $K$, over an insecure channel with no prior agreement.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Assumption:&lt;/strong&gt; Discrete log problem is hard (for sufficiently large inputs).&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;Choose and public the public parameters:&lt;br /&gt;
-$q$, large prime number
-$\alpha$, primitive root of $q$&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Alice generates random $X_A$.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Alice sends $Y_A = \alpha^{X_A} \mod q$.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Bob generates random $X_B$.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Bob sends $Y_B = \alpha^{X_B} \mod q$&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Alice computes $K = (Y_B)^{X_A} \mod q$ / Bob computes $K = (Y_A)^{X_B} \mod q$.&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;How do we know Alice and Bob will agree on the same key, $K$?&lt;/p&gt;
-
-&lt;p&gt;##&lt;/p&gt;
-
-&lt;p&gt;What would an eavesdropper need to do to learn $K$?&lt;/p&gt;
-
-&lt;p&gt;##&lt;/p&gt;
-
-&lt;h1 id=&#34;secure-multi-party-computation&#34;&gt;Secure Multi-Party Computation&lt;/h1&gt;
-
-&lt;p&gt;How can we compute a stable matching without revealing sensitive preferences?&lt;/p&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
-</description>
-    </item>
     
     <item>
       <title>Class 24: Halting Problems</title>
@@ -138,7 +19,7 @@ $\alpha$, primitive root of $q$&lt;/p&gt;&lt;/li&gt;
 
 &lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
 
-&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/psz&#34;&gt;Problem Set Omega&lt;/a&gt;&lt;/strong&gt; is due on &lt;strong&gt;Sunday, 4 December&lt;/strong&gt; or
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/psZ&#34;&gt;Problem Set Omega&lt;/a&gt;&lt;/strong&gt; is due on &lt;strong&gt;Sunday, 4 December&lt;/strong&gt; or
 &lt;strong&gt;Tuesday, 6 December&lt;/strong&gt; (see problem set for details).  It is not like
 the others, and counts as a &amp;ldquo;bonus&amp;rdquo; optional assignment.&lt;/p&gt;
 
@@ -978,6 +859,40 @@ cardinal number&lt;/em&gt;.&lt;/p&gt;
 question of whether $\aleph_1 = 2^{\aleph_0}$ with the ZFC axioms?&lt;/p&gt;
 
 &lt;p&gt;&lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Problem Set 8 Revisions</title>
+      <link>https://uvacs2102.github.io/ps8revisions/</link>
+      <pubDate>Thu, 03 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/ps8revisions/</guid>
+      <description>&lt;p&gt;There are three important revisions to &lt;a href=&#34;https://uvacs2102.github.io/docs/ps8.pdf&#34;&gt;Problem Set 8&lt;/a&gt;:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;The definition of &lt;em&gt;height&lt;/em&gt; for Problem 4 should have included that
+the height of the &lt;strong&gt;null&lt;/strong&gt; tree is 0.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;The definition of the &lt;em&gt;OrderedBinaryTree&lt;/em&gt; before Problem 7 did not
+make sense for constructing nodes where one (or both) of the subtrees
+are &lt;strong&gt;null&lt;/strong&gt;.  I have added clauses that allow empty trees to be used as
+the subtrees in a node.  Without these, it would not be possible to
+construct any trees (other than the base &lt;strong&gt;null&lt;/strong&gt; tree), since it would
+not be sensible to satisfy the maximum or minimum constraints for the
+null tree.  It makes more sense to consider these undefined for the
+&lt;strong&gt;null&lt;/strong&gt; tree, so it would be impossible to satisfy the constructor
+constraints without adding the disjunction clauses that allow the
+sub-trees to be &lt;strong&gt;null&lt;/strong&gt;.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;For Problem 11, the definition of length using &lt;code&gt;list_accumulate&lt;/code&gt;
+should be &lt;code&gt;list_accumulate(lambda a, b: b + 1, lst, 0)&lt;/code&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;The version now posted has these revisions.  If you already found
+work-arounds to these problems in your solutions, you can add a note to
+your assignment indicating this and don&amp;rsquo;t need to revisit them, but
+otherwise, please solve the revised problems.&lt;/p&gt;
 </description>
     </item>
     
