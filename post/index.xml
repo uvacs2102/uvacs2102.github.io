@@ -6,8 +6,22 @@
     <description>Recent content in Post-rsses on cs2102: Discrete Math</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 01 Dec 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 02 Dec 2016 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://uvacs2102.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Practice Problems Solutions</title>
+      <link>https://uvacs2102.github.io/practicesolutions/</link>
+      <pubDate>Fri, 02 Dec 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/practicesolutions/</guid>
+      <description>&lt;p&gt;After you have tried to solve the &lt;a href=&#34;https://uvacs2102.github.io/docs/finalprep.pdf&#34;&gt;practice
+problems&lt;/a&gt; on your own, you can obtain solutions
+to them using this form: &lt;a
+href=&#34;https://goo.gl/forms/qZVZJD8HHMc2C5XQ2&#34;&gt;
+&lt;em&gt;&lt;a href=&#34;https://goo.gl/forms/qZVZJD8HHMc2C5XQ2&#34;&gt;https://goo.gl/forms/qZVZJD8HHMc2C5XQ2&lt;/a&gt;&lt;/em&gt;&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Class 25: Cryptography</title>
@@ -873,111 +887,6 @@ any questions or parts you want to go over in class Tuesday.&lt;/p&gt;
       
       <guid>https://uvacs2102.github.io/ps7solutions/</guid>
       <description>&lt;p&gt;The Problem Set 7 solutions are now posted: [&lt;a href=&#34;https://collab.itc.virginia.edu/access/content/group/e0b17949-c94c-466b-835a-196381f3f911/ps7solutions.pdf&#34;&gt;PDF&lt;/a&gt;].&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Class 19: Uncountable Sets</title>
-      <link>https://uvacs2102.github.io/class19/</link>
-      <pubDate>Thu, 03 Nov 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://uvacs2102.github.io/class19/</guid>
-      <description>
-
-&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps8&#34;&gt;&lt;strong&gt;Problem Set 8&lt;/strong&gt;&lt;/a&gt; is due &lt;strong&gt;Friday (4 November) at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;Friday, 4 November at 11am (Rotunda Dome Room): &lt;strong&gt;Steve Huffman&lt;/strong&gt; (BSCS
-2005, co-founder and CEO of Reddit), &lt;em&gt;Computer Science Distinguished
-Alumni Speaker&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Exam 2&lt;/strong&gt; will be in class on &lt;strong&gt;Thursday, 10 November&lt;/strong&gt;.  See &lt;a href=&#34;https://uvacs2102.github.io/class18&#34;&gt;Class 18&lt;/a&gt; notes for details.&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;
-   &lt;center&gt;
-&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;483bfa40aae04e3a8e46c090d6d4d727&#34; data-ratio=&#34;1.77777777777778&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
-   &lt;/center&gt;
-   &lt;div class=&#34;highlightm&#34;&gt;
-   &lt;a href=&#34;https://uvacs2102.github.io/docs/class19.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes&lt;/b&gt;&lt;/a&gt;.
-   &lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;countable-and-uncountable-sets&#34;&gt;Countable and Uncountable Sets&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; A set $S$ is &lt;em&gt;countably infinite&lt;/em&gt; if and only if there
-  exists a bijection between $S$ and $\mathbb{N}$.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; A set $S$ is &lt;em&gt;uncountable&lt;/em&gt;, if there exists no bijection
-  between $S$ and $\mathbb{N}$.&lt;/p&gt;
-
-&lt;p&gt;The &lt;strong&gt;power set&lt;/strong&gt; of $A$ ($\textrm{pow}(A)$)is the set of all subsets of $A$:
-$$
-B \in \textrm{pow}(A) \iff B \subseteq A.
-$$&lt;/p&gt;
-
-&lt;p&gt;For all &lt;strong&gt;finite&lt;/strong&gt; sets $S$, $|pow(S)| = 2^{|S|}$.&lt;/p&gt;
-
-&lt;p&gt;#
-#&lt;/p&gt;
-
-&lt;p&gt;For &lt;strong&gt;all&lt;/strong&gt; sets $S$, $|pow(S)| &amp;gt; |S|$.&lt;/p&gt;
-
-&lt;p&gt;#&lt;/p&gt;
-
-&lt;p&gt;Prove $pow(\mathbb{N})$ is uncountable.&lt;/p&gt;
-
-&lt;p&gt;#&lt;/p&gt;
-
-&lt;p&gt;$\text{bitstrings} = \forall n \in \mathbb{N} . {0, 1}^n$.&lt;/p&gt;
-
-&lt;p&gt;#&lt;/p&gt;
-
-&lt;!--page--&gt;
-
-&lt;h2 id=&#34;ordinal-and-cardinal-numbers&#34;&gt;Ordinal and Cardinal Numbers&lt;/h2&gt;
-
-&lt;p&gt;$\omega$ is the &lt;em&gt;smallest infinite ordinal&lt;/em&gt;.  The first ordinal after
-$0, 1, 2, \cdots$.&lt;/p&gt;
-
-&lt;p&gt;What is the difference between an &lt;em&gt;ordinal&lt;/em&gt; and &lt;em&gt;cardinal&lt;/em&gt; number?&lt;/p&gt;
-
-&lt;p&gt;##&lt;/p&gt;
-
-&lt;p&gt;What should $2\omega$ mean?&lt;/p&gt;
-
-&lt;p&gt;##&lt;/p&gt;
-
-&lt;p&gt;Is $\text{InfiniteBitStrings} = {0, 1}^\omega$ countable?&lt;/p&gt;
-
-&lt;p&gt;#&lt;/p&gt;
-
-&lt;p&gt;Prove the number of real numbers in the interval $[0, 1]$ is uncountable.&lt;/p&gt;
-
-&lt;p&gt;#
-#
-#&lt;/p&gt;
-
-&lt;p&gt;What set is bigger than $\mathbb{R}$?&lt;/p&gt;
-
-&lt;p&gt;#&lt;/p&gt;
-
-&lt;p&gt;Aleph-naught: $\aleph_0 = |\mathbb{N}|$ is the &lt;em&gt;smallest infinite
-cardinal number&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;How is $\omega$ different from $\aleph_0$?&lt;/p&gt;
-
-&lt;p&gt;##&lt;/p&gt;
-
-&lt;p&gt;$$2^{\aleph_0} = |pow(\mathbb{N})| = | [0, 1] | = | \mathbb{R} | = | \text{InfiniteBitStrings} |  $$&lt;/p&gt;
-
-&lt;p&gt;What is necessary to conclude that it is not possible to settle the
-question of whether $\aleph_1 = 2^{\aleph_0}$ with the ZFC axioms?&lt;/p&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
 </description>
     </item>
     
