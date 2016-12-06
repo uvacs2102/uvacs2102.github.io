@@ -141,6 +141,15 @@
   </header>
   
   
+  <p class="fronthead"><A href="/ps5comments/">Problem Set 5 Comments</a> (Sat, 1 Oct 2016)</p>
+    <p>The preliminary solutions and comments for PS5 are now posted in collab:
+<a href="https://collab.itc.virginia.edu/access/content/group/e0b17949-c94c-466b-835a-196381f3f911/ps5_solutions.pdf">PDF</a>.
+(Problem 9 is not included, but will be added later.)</p>
+
+<p>We are providing the PS5 solutions now before they are graded, so you
+have the solutions to read with plenty of time before the exam.</p>
+ 
+  
   <p class="fronthead"><A href="/challenge5/">Three-Clause Challenge Refuted!</a> (Fri, 30 Sep 2016)</p>
     <p>Challenge 5 has been refuted by Henry Spece!</p>
 
@@ -669,125 +678,6 @@ sum of all numbers from 1 to <em>n</em>, which is equal to
   <p class="fronthead"><A href="/ps5announce/">Problem Set 5</a> (Fri, 23 Sep 2016)</p>
     <p><strong>Problem Set 5</strong> is <a href="/docs/ps5.pdf">now posted</a>, and is due on <strong>Friday, 30
   September at 6:29pm</strong>.</p>
- 
-  
-  <p class="fronthead"><A href="/class10/">Class 10: In(tro)duction</a> (Thu, 22 Sep 2016)</p>
-    
-
-<h3 id="schedule">Schedule</h3>
-
-<p><a href="/ps/ps4"><strong>Problem Set 4</strong></a> is due <strong>Friday at 6:29pm</strong>.</p>
-
-<p>Next week, you should finish reading MCS Chapter 5 (Induction).  Another
-presentation of Induction is <a href="http://www.people.vcu.edu/~rhammack/BookOfProof/Induction.pdf">Chapter 10 from the Book of
-Proof</a>
-(you are not required to read this, but it is encouraged and has lots
-more examples of proofs by induction).</p>
-
-<p>Exam 1 will be in class on Thursday, 6 October.</p>
-
-<p><div class="notpdf">
-   <center>
-<script async class="speakerdeck-embed" data-id="06f4be58f3984fa2b5e65cfaa9525667" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-   </center></p>
-
-<p><div class="highlightm">
-   <a href="/docs/class10.pdf">See PDF Version for <b>Notes and Questions</b></a>.
-   </div></p>
-
-<h2 id="links">Links</h2>
-
-<p><a href="http://www.people.vcu.edu/~rhammack/BookOfProof/Induction.pdf">Chapter 10: Induction from the Book of Proof</a></p>
-
-<p>The Onion, <a href="http://www.theonion.com/article/bush-earmarks-15-billion-gold-stars-for-education-392">Bush Earmarks 1.5 Billion Gold Stars For Education</a>.</p>
-
-<p></div><!--endpdf--></p>
-
-<p><div class="latex"></p>
-
-<h1 id="power-sets-continued-from-class-9-class9">Power Sets (continued from <a href="/class9">Class 9</a>)</h1>
-
-<p>The <strong>power set</strong> of $A$ ($\textrm{pow}(A)$) is the set of all subsets of
-$A$: $B \in \textrm{pow}(A) \iff B \subseteq A$.</p>
-
-<p>Prove that the size of the power set of a set $S$ with $|S| = N$ is
-$2^N$.</p>
-
-<p><strong>Proof using Well-Ordering Principle</strong></p>
-
-<p>The goal is to prove for all sets $A$: $|\textrm{pow}(A)| = 2^{|A|}$.</p>
-
-<p>Recall (from <a href="/class9">Class 9</a>) that $N_k = { n | n \in \mathbb{N} \wedge n &lt; k } $ and $|\mathbb{N}_n| = n$.</p>
-
-<p>Because of the bijection between any set $A$ where $|A| = n$ to $\mathbb{N}_n$, we can prove the general property by  showing $\forall n \in \mathbb{N} \ldotp P(n)$ where $P(n) ::= |\textrm{pow}(\mathbb{N}_n)| = 2^n$.</p>
-
-<p>We follow the structure of every well-ordering proof:</p>
-
-<ol>
-<li>Define the set of counterexamples:
-$$
-C ::= { n \in \mathbb{N} | \quad |\textrm{pow}(\mathbb{N}_n)| \neq 2^n }
-$$</li>
-<li>Assume $C$ is $\fillin\fillin\fillin$.</li>
-<li>By the well-ordering principle, there must be some smallest element, $m \in C$.</li>
-
-<li><p>Reach a contradiction: we show that $\fillin\fillin\fillin$ holds.</p>
-
-<ul>
-<li>Since $m$ is the smallest element of $C$, $P(n)$ must hold for all $\fillin\fillin\fillin$.</li>
-<li>We know $P(0)$ is true since $\mathbb{N}_0 = \emptyset$ and $\textrm{pow}(\emptyset) = \fillin\fillin\fillin\fillin$.  We have, $|\textrm{pow}(\mathbb{N}_0)| =  \fillin\fillin = \fillin\fillin$, satisfying $P(0)$.</li>
-<li>Thus, $m &gt; 0$.  This means $m - 1 \in \mathbb{N}$.</li>
-<li>So, we know $P(\fillin\fillin)$ holds.</li>
-<li>Thus, we can construct $\textrm{pow}(\mathbb{N}<em>{m})$ by keeping all the elements of $\textrm{pow}(\mathbb{N}</em>{m - 1})$ and adding each of those elements with $(m-1)$ inserts.  More formally,
-$$
-\textrm{pow}(\mathbb{N}<em>m) = \textrm{pow}(\mathbb{N}</em>{m - 1}) \quad \cup \bigcup<em>{S \in \textrm{pow}(\mathbb{N}</em>{m - 1})} (S \cup \fillin\fillin\fillin)
-$$
-The size of this set is $2 |\textrm{pow}(\mathbb{N}<em>{m - 1})|$ since it contains two sets for each set in $\textrm{pow}(\mathbb{N}</em>{m - 1})$ (the original one, and the one with $m-1$ added, which we know is a new set since $m - 1 \notin \mathbb{N}_{m - 1}$).<br /></li>
-<li>Since $P(m-1)$, we know $|\textrm{pow}(\mathbb{N}<em>{m - 1})| = \fillin\fillin\fillin$. The size of the new set, $|\textrm{pow}(\mathbb{N}</em>{m})| = 2 \cdot 2^{m - 1} = 2^{m}$.  This means that $P(m)$ holds.</li>
-</ul></li>
-
-<li><p>Hence, $C$ must be empty.  We reached a contradiction using the well-ordering principle by showing the $P(m)$ holds for $m \in C$, which must mean the $C$ is empty.  If there are no counter-examples, then $P(n)$ holds for all $n \in \mathbb{N}$.</p></li>
-</ol>
-
-<h1 id="induction-principle">Induction Principle</h1>
-
-<p>Let $P$ be a predicated on $\mathbb{N}$.  If</p>
-
-<ul>
-<li>$P(0)$ is true, and</li>
-<li>$P(n) \implies P(n + 1)$ for all $n \in \mathbb{N}$,</li>
-</ul>
-
-<p>then</p>
-
-<ul>
-<li>$P(m)$ is true for all $m \in \mathbb{N}$.</li>
-</ul>
-
-<h2 id="template-for-induction-proofs">Template for Induction Proofs</h2>
-
-<ol>
-<li>State, &ldquo;We prove by induction.&rdquo;</li>
-<li>Define a predicate, $P(n)$.  This is the <em>induction hypothesis</em>.  Our goal is to show that $P(n)$ is true for all $n \in \mathbb{N}$.</li>
-<li>Prove $P(0)$ is true.  (<em>base case</em> or <em>basis step</em>.)</li>
-<li>Prove that $P(n) \implies P(n + 1)$ for every $n \in \mathbb{N}$.  (<em>induction step</em>)</li>
-<li>Conclude that $P(n)$ is true for all $n \in \mathbb{N}$ by induction.</li>
-</ol>
-
-<p>How is the method of <em>proof by induction principle</em> similar to and different from <em>proof by well-ordering principle</em>?</p>
-
-<h2 id="induction-practice">Induction Practice</h2>
-
-<p>Prove the non-negative integers are well ordered by the induction principle.</p>
-
-<p>###</p>
-
-<p>Prove the power set size property, $|\textrm{pow}(A)| = 2^{|A|}$, by
-induction.</p>
-
-<p>###</p>
-
-<p></div></p>
  
   
   
