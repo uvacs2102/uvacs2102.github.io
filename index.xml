@@ -6,8 +6,20 @@
     <description>Recent content on cs2102: Discrete Math</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 14 Dec 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 15 Dec 2016 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://uvacs2102.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Final Exam Solutions</title>
+      <link>https://uvacs2102.github.io/finalexamsolutions/</link>
+      <pubDate>Thu, 15 Dec 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/finalexamsolutions/</guid>
+      <description>&lt;p&gt;The solutions to &lt;a href=&#34;https://uvacs2102.github.io/docs/finalexam.pdf&#34;&gt;Final Exam&lt;/a&gt; are here: &lt;a href=&#34;https://uvacs2102.github.io/docs/finalexamsolutions.pdf&#34;&gt;Final
+Exam Solutions&lt;/a&gt;.  (I promise, no Harambe
+mentions, other than in quotes.)&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Problem Set Omega Highlights</title>
@@ -1062,48 +1074,6 @@ $\text{\em dir} = { \text{\bf Left}, \text{\bf Right}, \text{\bf Halt} }$ is the
 
 &lt;p&gt;#
 #&lt;/p&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Class 20: Elections, Review</title>
-      <link>https://uvacs2102.github.io/class20/</link>
-      <pubDate>Tue, 08 Nov 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://uvacs2102.github.io/class20/</guid>
-      <description>
-
-&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
-
-&lt;p&gt;&lt;strong&gt;Exam 2&lt;/strong&gt; will be in class on &lt;strong&gt;Thursday, 10 November&lt;/strong&gt;.  See &lt;a href=&#34;https://uvacs2102.github.io/class18&#34;&gt;Class 18&lt;/a&gt; notes for details.&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;
-   &lt;center&gt;
-&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;e6c145e3a44b45aa803b46960be3754b&#34; data-ratio=&#34;1.77777777777778&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
-   &lt;/center&gt;
-   &lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;links&#34;&gt;Links&lt;/h1&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://genius.com/Lin-manuel-miranda-cabinet-battle-1-lyrics&#34;&gt;Cabinet Battle
-#1&lt;/a&gt;,
-&lt;a href=&#34;http://genius.com/Lin-manuel-miranda-cabinet-battle-2-lyrics&#34;&gt;Cabinet Battle #2&lt;/a&gt;,
-&lt;a href=&#34;http://genius.com/Lin-manuel-miranda-cabinet-battle-3-lyrics&#34;&gt;Cabinet Battle
-#3&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Michael J. Caulfield, &lt;a href=&#34;http://www.maa.org/press/periodicals/convergence/apportioning-representatives-in-the-united-states-congress-introduction&#34;&gt;&lt;em&gt;Apportioning Representatives in the United
-States
-Congress&lt;/em&gt;&lt;/a&gt;,
-Mathematical Association of America, 2010.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.maa.org/meetings/calendar-events/a-mathematical-adventure-through-the-census-reapportionment-and-redistricting&#34;&gt;&lt;em&gt;A Mathematical Adventure through the Census, Reapportionment, and
-Redistricting&lt;/em&gt;&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.census.gov/population/apportionment/data/2010_apportionment_results.html&#34;&gt;2010 Apportiment
-Results&lt;/a&gt;,
-US Census. (Includes &lt;a href=&#34;https://www.census.gov/population/apportionment/files/Priority%20Values%202010.pdf&#34;&gt;priority values&lt;/a&gt;.)&lt;/p&gt;
 
 &lt;p&gt;&lt;/div&gt;&lt;/p&gt;
 </description>

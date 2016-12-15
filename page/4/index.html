@@ -141,6 +141,116 @@
   </header>
   
   
+  <p class="fronthead"><A href="/class13/">Class 13: State Machines</a> (Tue, 11 Oct 2016)</p>
+    
+
+<h3 id="schedule">Schedule</h3>
+
+<p><a href="https://uvacs2102.github.io/docs/exam1-solutions.pdf">Exam 1 Solutions</a>
+are now posted.</p>
+
+<p><strong>Drop Date</strong> is today.  If you have any concerns about whether you
+  should stay in the class, please talk to me after class today.</p>
+
+<p>There is no problem set due this week!  <a href="/ps/ps6"><strong>Problem Set 6</strong></a>
+(will be posted later this week) is due <strong>21 October (Friday) at
+6:29pm</strong>.</p>
+
+<p>Exam 1 was returned during class today.  (Exam grades will eventually
+make it into collab, but haven&rsquo;t yet.  When they do, please confirm that
+the score on your exam matches what is recorded in collab, and that
+PS1-5 are all recorded correctly.)</p>
+
+<p><div class="notpdf">
+   <center>
+<script async class="speakerdeck-embed" data-id="e834908c757142c7b5ff50a196a26f43" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+   </center></p>
+
+<p><div class="highlightm">
+   <a href="/docs/class13.pdf">See PDF Version for <b>Notes</b></a>.
+   </div>
+   </div><!--endpdf--></p>
+
+<p><div class="latex"></p>
+
+<h2 id="state-machines">State Machines</h2>
+
+<p>A <em>state machine</em> is a binary relation (called a <em>transition relation</em>)
+on a set (both the domain and codomain are the same set).  One state is
+designated as the <em>start state</em>.</p>
+
+<p>$$M = (S, G: S \times S, q_0 \in S)$$</p>
+
+<p>What does it mean if $G$ is <em>total</em>?</p>
+
+<p>##</p>
+
+<p>What does it mean if $G$ is not a <em>function</em>?</p>
+
+<p>##</p>
+
+<p><strong>Parity Counter.</strong> Describe a state machine that determines if the
+  number of steps is even.</p>
+
+<p>#</p>
+
+<p><strong>Unbounded Counter.</strong> Describe a state machine that counts the number of steps.</p>
+
+<p>#</p>
+
+<p>How well do state machines model real computers?  What kind of
+transition relation does the state machine modeling your computer have?</p>
+
+<!--page-->
+
+<h1 id="invariant-principle">Invariant Principle</h1>
+
+<p>An <em>execution</em> of a state machine $M = (S, G \subseteq S \times S, q_0 \in S)$ is a (possibly infinite) sequence of states, $(x_0, x_1, \cdots, x_n)$ where:</p>
+
+<ol>
+<li>$x_0 = q_0$ (it begins with the start state), and</li>
+<li>$\forall i \in {0, 1, \ldots, n - 1} \ldotp (x<em>i, x</em>{i + 1}) \in G$ (if $q$ and $r$ are consecutive states in the sequence, then there is an edge $q \rightarrow r$ in $G$)</li>
+</ol>
+
+<p>A state $q$ is <em>reachable</em> if it appears in some execution.  (That is,
+there is a sequence of transitions starting from $q_0$, following edges
+in $G$, that ends with $q$.)</p>
+
+<p>$$
+M_1 = (S = \mathbb{N}, G = {(x, y) | y = x^2 }, q_0 = 1)
+$$
+$$
+M_2 = (S = \mathbb{N}, G = {(x, y) | \exists k \in \mathbb{N} \ldotp y = kx }, q_0 = 1)
+$$</p>
+
+<p>Which states are <em>reachable</em> for $M_1$ and $M_2$?</p>
+
+<p>#</p>
+
+<p>A <em>preserved invariant</em> of a state machine $M = (S, G \subseteq S \times
+S, q_0 \in S)$ is a predicate, $P$, on states, such that whenever $P(q)$
+is true of a state $q$, and $q \rightarrow r \in G$, then $P&reg;$ is
+true.</p>
+
+<p><strong>Invariant Principle.</strong> If a <em>preserved invariant</em> of a state machine
+  is true for the start state, it is true for all reachable states.</p>
+
+<p>To show $P(q)$ for machine $M = (S, G \subseteq S \times S, q_0 \in
+  S)$ all $q \in S$, show:</p>
+
+<ol>
+<li>Base case: $P(\fillin)$</li>
+<li>$\forall s \in S \ldotp \fillin \implies \fillin$</li>
+</ol>
+
+<p>Show the invariant principle holds using the principle of induction
+(hint: induction is on the <em>number of steps</em>).</p>
+
+<p>#</p>
+
+<p></div></p>
+ 
+  
   <p class="fronthead"><A href="/exam1solutions/">Exam 1 Solutions</a> (Tue, 11 Oct 2016)</p>
     <p>The solutions to <a href="/docs/exam1.pdf">Exam 1</a> are here: <a href="/docs/exam1-solutions.pdf">Exam 1 Solutions</a>.</p>
  
@@ -621,62 +731,6 @@ Player 1 has a winning strategy or Player 2 does.</p></li>
 nodes has $n - 1$ edges.</p>
 
 <p></div></p>
- 
-  
-  <p class="fronthead"><A href="/challenge4/">Self-Inverting Relations Challenge Solved!</a> (Sat, 24 Sep 2016)</p>
-    <p>Challenge 4 has been solved by Henry Spece!</p>
-
-<p><div class="highlightg">
-<strong>Challenge 4.</strong> (From <a href="/class9">Class 9</a>) How many self-inverting relations, <em>R</em>: <em>N</em><sub><em>k</em></sub> &rarr; <em>N</em><sub><em>k</em></sub>, are there?  (Where <em>N</em><sub><em>k</em></sub> is the set of all non-negative integers less than <em>k</em>, and a relation is self-inverting if <em>R</em> = <em>R</em><sup>-1</sup>.)
-   </div></p>
-
-<p>Henry&rsquo;s answer is below:</p>
-
-<p><blockquote>
-2<sup><em>n</em>*(<em>n</em>+1)/2</sup></p>
-
-<p>For each element in the domain, the number of &ldquo;connection&rdquo; possibilities
-for that element to each element of the codomain (given that it can
-either be related or not related to a codomain element) is 2<em>n</em>, where
-<em>n</em> is the number of codomain elements.</p>
-
-<p>This includes the possibility of the element connecting to itself,
-because there are two possibilities involving self connection, and
-2<sup>(<em>n</em>-1)</sup> possibilities for connection to non-identical
-elements.  The product of these two results in
-2*2<sup>(<em>n</em>-1)</sup> = 2<sup>n</sup>.</p>
-
-<p>For each following element in the domain, the relationship with all
-previous elements which have been assigned relationships is fixed.  For
-example, if element <em>a</em> in the domain is related to element
-<em>b</em> in the codomain, then element <em>b</em> in the domain must
-be related to element <em>a</em> in the codomain.  This applies equally
-if element <em>a</em> in the domain is not related to element <em>b</em>
-in the codomain, because then element <em>b</em> in the domain must also
-not be related to element <em>a</em> in the codomain, or the relation
-would not be self-inverting.</p>
-
-<p>All other relationships between our second element and elements of the
-codomain are still free to change, though, leaving
-2<sup><em>n</em>-1</sup> combinations for the second element considered.</p>
-
-<p>This pattern continues <em>n</em> times in total, and by multiplying
-these possibilities, we get</p>
-
-<p>2<sup>n</sup> * 2<sup>n-1</sup> * 2 <sup>n-2</sup> &hellip; * 2<sup>1</sup></p>
-
-<p>Which is the same as 2<sup><em>n</em> + (<em>n</em>-1) + (<em>n</em>-2)
-+ &hellip; + 2 + 1</sup>.</p>
-
-<p>By reversing the addition sequence we get that the exponent of 2 is the
-sum of all numbers from 1 to <em>n</em>, which is equal to
-<em>n</em>*(<em>n</em>+1)/2.</p>
-
-<p>Hence, the number of self-inverting relations for a set of size
-<em>n</em> must be 2<sup>(<em>n</em>*(<em>n</em>+1)/2)</sup>.
-   </blockquote></p>
-
-<p>Congratulations to Henry Spece for solving the challenge!</p>
  
   
   
