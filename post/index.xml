@@ -6,8 +6,206 @@
     <description>Recent content in Post-rsses on cs2102: Discrete Math</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 06 Dec 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 10 Dec 2016 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://uvacs2102.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Problem Set Omega Highlights</title>
+      <link>https://uvacs2102.github.io/pszhighlights/</link>
+      <pubDate>Sat, 10 Dec 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/pszhighlights/</guid>
+      <description>
+
+&lt;p&gt;Here are some interesting submissions for &lt;a href=&#34;https://uvacs2102.github.io/ps/psz&#34;&gt;Problem Set Omega&lt;/a&gt;
+(roughly grouped by topic).  Thanks for all the entertaining and
+illuminating submissions!&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;logic&#34;&gt;Logic&lt;/h1&gt;
+
+&lt;p&gt;&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/YC-ewXitC5w&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;&lt;br&gt;
+Logical Operators&lt;br&gt;
+&lt;b&gt;Helen Simecek&lt;/b&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://docs.google.com/presentation/d/1nPaLNygB3QrwSIWW8rMoJFkycMAJvkh38Id-VqkUHqQ/edit#slide=id.p3&#34;&gt;Carlos Goes Birdwatching&lt;/a&gt; (A story about binary operations for middle school students)&lt;br&gt;
+&lt;b&gt;Derrick Chien Huang, Andrea Chang, Jennifer Qian&lt;/b&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://binaryrelations.files.wordpress.com/2016/12/000011.jpg&#34; width=500&gt;&lt;br&gt;
+&lt;a href=&#34;https://binaryrelations.wordpress.com/&#34;&gt;Binary Relation Properties (comics)&lt;/a&gt;&lt;br&gt;
+&lt;b&gt;Lalita Mallapragada&lt;/b&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/key/mV0A7c7IZrWlCa&#34; width=&#34;595&#34; height=&#34;485&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; style=&#34;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&#34; allowfullscreen&gt; &lt;/iframe&gt; &lt;div style=&#34;margin-bottom:5px&#34;&gt; &lt;strong&gt; &lt;a href=&#34;//www.slideshare.net/JesseAlloy/truth-table-game&#34; title=&#34;Truth Table Game&#34; target=&#34;_blank&#34;&gt;Truth Table Game&lt;/a&gt; &lt;/strong&gt;&lt;br&gt; &lt;strong&gt;&lt;a target=&#34;_blank&#34; href=&#34;//www.slideshare.net/JesseAlloy&#34;&gt;JesseAlloy&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://s14.postimg.org/79qps2i1t/CS_2102_Omega.jpg&#34;&gt;&lt;br&gt;
+&lt;b&gt;Ethan Zell&lt;/b&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://drive.google.com/file/d/0By695UHW09uyWHA5cmk4ZTlZelE/view&#34;&gt;Logic Game [JAR]&lt;/a&gt;&lt;br&gt;
+&lt;b&gt;Temuulen Khurelbaatar&lt;/b&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://uvacs2102.github.io/images/trickxortreat.jpg&#34; width=500&gt;&lt;br&gt;
+&lt;b&gt;Yiming Wang, Mike Wang, Yingqing Huang&lt;/b&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;set-theory&#34;&gt;Set Theory&lt;/h1&gt;
+
+&lt;p&gt;&lt;center&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/SWjhB8Ijy7w?list=PLr874xyHM_pyGkjqB1sKYRWfdjugFtmyG&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;&lt;br&gt;
+Sets and Superheroes&lt;br&gt;
+&lt;b&gt;Matt Huo, Joe Karaki&lt;/b&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/key/i9PSakiBUVeVMY&#34; width=&#34;595&#34; height=&#34;485&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; style=&#34;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&#34; allowfullscreen&gt; &lt;/iframe&gt; &lt;div style=&#34;margin-bottom:5px&#34;&gt; &lt;strong&gt; &lt;a href=&#34;//www.slideshare.net/MariaJoseHitoRamos/sets-69572321&#34; title=&#34;Sets&#34; target=&#34;_blank&#34;&gt;Sets&lt;/a&gt; &lt;/strong&gt;&lt;br&gt;&lt;strong&gt;&lt;a target=&#34;_blank&#34; href=&#34;//www.slideshare.net/MariaJoseHitoRamos&#34;&gt;Maria Jose Hito Ramos&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/images/angrybirds.pdf&#34;&gt;Angry Birds: Set Relations&lt;/a&gt;&lt;br&gt;
+&lt;b&gt;Brian Li&lt;/b&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://docs.google.com/presentation/d/e/2PACX-1vRH-xmsRoWUWBVqcLrLT9FYH7SoYosQfz9_QGx14Ptu5UL7qcOmdxG4dBJmEXbbX2vrzMgAvHzc8OKA/pub?start=false&amp;loop=false&amp;delayms=3000&amp;slide=id.p&#34;&gt;To Infinite Sets and Beyond!&lt;/a&gt;&lt;br&gt;
+Justin Barry, Monique Mezher, Robert Klemchek, Ayman Mobin&lt;/p&gt;
+
+&lt;p&gt;&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/GUg8FLZwDdA&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;&lt;br&gt;
+Call of Duty and Countable Infinities&lt;br&gt;
+&lt;b&gt;Aarron Braxton, Shreyas Hirway &lt;/b&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;induction&#34;&gt;Induction&lt;/h1&gt;
+
+&lt;p&gt;&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/PNpBamrpgic&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;&lt;br&gt;
+Induction Rap&lt;br&gt;
+&lt;b&gt;Milan Bharadwaj&lt;/b&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://9a8b5089-a-62cb3a1a-s-sites.googlegroups.com/site/problemsetomegabowler2016/home/ProblemSetO.jpg?attachauth=ANoY7cqcv6nnReB4tmh0ZMrRRc2w-8vha3yNzLanjG7jI2TCcYNt4LDRH4fpK50pYnsm94Hsz5-Gde6jio4K4aV-IbwL17LOyOzGg2Zs6DD-uOCdCK7lXyJq0zEGeuojbMbYPmwVXEi9gL2xWFBuHX3rOH5bZ7x0X-2-GxxCtu2TSYrUxJYwM_JcgsD39BmMOQ58rSdzsRyJWx3RQk0E07y1DgfKG3t4OXm_TZ7CQmUtHogLw7KoNl8%3D&amp;attredirects=0&#34;&gt;
+&lt;img src=&#34;https://uvacs2102.github.io/images/bowler.jpg&#34; width=550&gt;&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://9a8b5089-a-62cb3a1a-s-sites.googlegroups.com/site/problemsetomegabowler2016/home/ProblemSetO.jpg?attachauth=ANoY7cqcv6nnReB4tmh0ZMrRRc2w-8vha3yNzLanjG7jI2TCcYNt4LDRH4fpK50pYnsm94Hsz5-Gde6jio4K4aV-IbwL17LOyOzGg2Zs6DD-uOCdCK7lXyJq0zEGeuojbMbYPmwVXEi9gL2xWFBuHX3rOH5bZ7x0X-2-GxxCtu2TSYrUxJYwM_JcgsD39BmMOQ58rSdzsRyJWx3RQk0E07y1DgfKG3t4OXm_TZ7CQmUtHogLw7KoNl8%3D&amp;attredirects=0&#34;&gt;Recursive Nesting Dolls&lt;/a&gt;&lt;br&gt;
+&lt;b&gt;Casey Bowler&lt;/b&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/images/separationinduction.pptx&#34;&gt;Six Degress of Separation [PPTX]&lt;/a&gt;&lt;br&gt;
+&lt;b&gt;Fan Feng&lt;/b&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://tracyschristmasquestion.files.wordpress.com/2016/12/problem-set-0.pdf&#34;&gt;Tracy&amp;rsquo;s Christmas Question [PDF]&lt;/a&gt;&lt;br&gt;
+&lt;b&gt;Ryann Consalo, Megan Greatorex&lt;/b&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/images/basketball.pdf&#34;&gt;Basketball Induction&lt;/a&gt;&lt;br&gt;
+&lt;b&gt;Josh Davis&lt;/b&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://uvacs2102.github.io/images/stronginduction.jpg&#34; width=500&gt;&lt;br&gt;
+&lt;b&gt;Muhammad Sareini&lt;/b&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;state-machines&#34;&gt;State Machines&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://docs.google.com/presentation/d/1GaDhjOL3tU-EZDtarmWsyYqdwjiarIRV0-7GQlVPwHw/edit&#34;&gt;Baseball Game State Machine&lt;/a&gt;&lt;br&gt;
+&lt;b&gt;Mason Au, Bobby Stephens, and Kevin Warshaw&lt;/b&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://docs.google.com/document/d/1G56RGM6G31AGI4gfuW5zMh19JyMb_WBR5Njhzj2Guvc/edit&#34;&gt;A Beginner&amp;rsquo;s Manual to Dust Cultivation&lt;/a&gt;&lt;br&gt;
+&lt;b&gt;Jessica Emmons&lt;/b&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://docs.google.com/document/d/1cQ3KQ8J4cbdWdPtQcu9p8_dwTvyY7a2KeF-glI0GH3o/edit&#34;&gt;Echo Chamber: The Greatest Model of 2016 Voter Behavior&lt;/a&gt;&lt;br&gt;
+&lt;b&gt;Neel Kaushal and Arpit Rupakhetee&lt;/b&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;iframe id=&#34;iframe_container&#34; frameborder=&#34;0&#34; webkitallowfullscreen=&#34;&#34; mozallowfullscreen=&#34;&#34; allowfullscreen=&#34;&#34; width=&#34;550&#34; height=&#34;400&#34; src=&#34;https://prezi.com/embed/ss873zkdpboq/?bgcolor=ffffff&amp;amp;lock_to_path=0&amp;amp;autoplay=0&amp;amp;autohide_ctrls=0&amp;amp;landing_data=bHVZZmNaNDBIWnNjdEVENDRhZDFNZGNIUE1lN2lETGZVbFVZd0FVbHg4RTRNeGNiMStCLzQxREgzcWZ4RjJiOHZwdz0&amp;amp;landing_sign=7ziEB2a9paxUDcmHnBeRk2iWFTslWvS2SSoz5Tcj2nw&#34;&gt;&lt;/iframe&gt;&lt;br&gt;
+Gumball State Machine&lt;br&gt;
+&lt;b&gt;Priya Nakhre&lt;/b&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/MsVdTG6I_5Y&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;&lt;br&gt;
+Modeling Mario Party with State Machines&lt;br&gt;
+&lt;b&gt;Benjamin Fuhrman&lt;/b&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/nGuEQJRH34k&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;&lt;br&gt;
+State Machines and Breakdancing&lt;br&gt;
+&lt;b&gt;Kenny Le&lt;/b&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://docs.google.com/document/d/1iklGpQz90FR601mBhgJNjUrkajczJXvbOMJlP-d03fA/edit?usp=sharing&#34;&gt;Java Knights&lt;/a&gt; (code in Word document)&lt;br&gt;
+&lt;b&gt;Connor Albrecht, William Brayshaw, Matthew Anderson&lt;/b&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://docs.google.com/document/d/1KLZFuUFfap0ZI1MhsO14uZDz143PBgTLmbImeGpExAc/edit&#34;&gt;Halted&lt;/a&gt; (Lyrics for &lt;em&gt;Pieces&lt;/em&gt; by Sum 41)&lt;br&gt;
+Rick Yanhao Zhao&lt;/p&gt;
+
+&lt;h1 id=&#34;recursive-datatypes&#34;&gt;Recursive Datatypes&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/images/recursive-mak2vr.pdf&#34;&gt;Recursive Data Types for Introductory CS Students&lt;/a&gt;&lt;br&gt;
+&lt;b&gt;Matthew Keitelman&lt;/b&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/eVB-wHlxI9w&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;&lt;br&gt;
+Recursive Music&lt;br&gt;
+Jiahong Chen, WenBin Qi&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://pdb.surge.sh/&#34;&gt;Bifurcating Trees&lt;/a&gt;&lt;br&gt;
+Youbeen Shim, James Mekavibul&lt;/p&gt;
+
+&lt;h1 id=&#34;stable-matching&#34;&gt;Stable Matching&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://docs.google.com/presentation/d/1MXxppMPq5_T8pAg0sLteqmoVk6R5LWD00xOzyk3HPY0/pub?start=false&amp;loop=false&amp;delayms=10000&amp;slide=id.p&#34;&gt;The Bachelor&lt;/a&gt; (Stable Matching Dating Show!)&lt;Br&gt;
+&lt;b&gt;Samantha Chu, Nicole Pope, Nancy Lee&lt;/b&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://docs.google.com/document/d/1EnqUc9pnfj7d-gj414PG4eMK60VebEawj0_tDnKi2LU/pub&#34;&gt;5 Disney Princesses (to the tune of &amp;ldquo;5 Little Monkeys&amp;rdquo;)&lt;/a&gt;&lt;br&gt;
+Nirali Shah&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://docs.google.com/a/virginia.edu/presentation/d/1w1gLPq9cz_ok-gpzO_2nL9wXZv1X47lm9WMUhoOyUJs/edit?usp=sharing&#34;&gt;Pokemon: I Choose You (A Beginner&amp;rsquo;s Guide to the Gale-Shapely Algorithm)&lt;/a&gt; [Slideshow]&lt;br&gt;
+&lt;b&gt;Ying Lai, Chris Fassoth, Barry Chin, Rachel Yi&lt;/b&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/sh/fgdxite5fltzhyr/AAC8zmSDlfVsCM1dYS5DB72Ja?dl=0&#34;&gt;Stable Marriage: Harry Potter Edition (Game)&lt;/a&gt;&lt;br&gt;
+Utkarsha Bhave, Anne Marie Lee, Jessica Virden&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://imgur.com/a/R0qly&#34;&gt;&lt;img src=&#34;https://uvacs2102.github.io/images/gingerbread.jpg&#34; width=550&gt;&lt;/a&gt;&lt;Br&gt;
+Gingerbread Matching&lt;br&gt;
+&lt;b&gt;Baylor Towne&lt;/b&gt;
+   &lt;p class=&#34;caption&#34;&gt;
+Stable matching as told by six gingerbread gnomes looking for
+love. Their preference lists are ranked from most preferred to least
+preferred. Nicholas proposes to the first on his list - Noelle. She
+accepts since she is not paired with anyone. Then Yule also proposes
+to Noelle who is currently matched with Nicholas. Since Noelle much
+prefers Yule above Nicholas, she happily accepts Yule&amp;rsquo;s proposal and
+Nicholas is kicked out of the pairing. Kris and Ginger are each
+other&amp;rsquo;s top choices, so Ginger accepts Kris&amp;rsquo;s proposal. Now Nicholas
+can propose to his second choice, Holly, who, although she prefers
+Yule, will settle with Nicholas since Yule is already happily paired
+with Noelle. The stable matching is listed at the bottom of the
+picture, and it is stable because there is no pair in which one member
+prefers someone else who also prefers them. With these specific
+preference lists, this is the only stable matching that could occur.
+   &lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/key/sW81lpOoPIPxzw&#34; width=&#34;595&#34; height=&#34;485&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; style=&#34;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&#34; allowfullscreen&gt; &lt;/iframe&gt; &lt;div style=&#34;margin-bottom:5px&#34;&gt; &lt;strong&gt; &lt;a href=&#34;//www.slideshare.net/MariaJoseHitoRamos/stable-matching&#34; title=&#34;Stable Matching&#34; target=&#34;_blank&#34;&gt;Stable Matching&lt;/a&gt; &lt;/strong&gt; &lt;br&gt;&lt;strong&gt;&lt;a target=&#34;_blank&#34; href=&#34;//www.slideshare.net/MariaJoseHitoRamos&#34;&gt;Maria Jose Hito Ramos&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/images/StableMatchmakers.pdf&#34;&gt;Stable Matchmakers (Comic) [PDF]&lt;br&gt;
+&lt;b&gt;Lauren Phan, Grace Harders&lt;/b&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/e1xmi3ed78ov96k/ProblemSet0.pdf?dl=0&#34;&gt;Gale-Shapley&amp;rsquo;s Hotline Bling [PDF]&lt;/a&gt;&lt;br&gt;
+&lt;b&gt;Karan Dhillon, Bennett Clougherty, Jessica Ewing&lt;/b&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/NZWl0UPTQrk&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;&lt;br&gt;&lt;br&gt;
+Anna Wu, Lan Jiang&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://drive.google.com/file/d/0B71lmXKjDUFOZHVNWldBcUtqUUU/view&#34;&gt;A Millennial&amp;rsquo;s Guide To Discreet Stable Matching (as explained with Tinder)&lt;/a&gt;&lt;br&gt;
+Fazlah Rahaman&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/mluo613/stable_matching_sortinghat&#34;&gt;Harry Potter house matching [Code]&lt;/a&gt;&lt;br&gt;
+Mengjia Luo, Allison Chow&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.stripcreator.com/comics/pinkyswear/sets/stablematching/&#34;&gt;Gale-Shapley Comic&lt;/a&gt;&lt;br&gt;
+Meeka Meng&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://docs.google.com/document/d/1594RoT1wu97TuULDvXy0QVg_DNoP-6zOTFUBImHTZQQ/edit?usp=sharing&#34;&gt;Stable Matching [Taxman Lyrics]&lt;/a&gt;&lt;br&gt;
+Sahan Pandey&lt;/p&gt;
+
+&lt;h1 id=&#34;proof-methods&#34;&gt;Proof Methods&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/wsf11/CS2102-Extra-Credit/blob/master/The%20Real%20Santa%20Claus.pptx&#34;&gt;Santa Claus: [PPTX]&lt;/a&gt;&lt;br&gt;
+&lt;b&gt;Winston Frick&lt;/b&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://problemseto.weebly.com/&#34;&gt;Phenomenal Proof&lt;/a&gt; (based on Maya Angelou&amp;rsquo;s &lt;em&gt;Phenomenal Woman&lt;/em&gt;)&lt;br&gt;
+&lt;b&gt;Zeeshan Mir&lt;/b&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;unclassifable&#34;&gt;Unclassifable&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://docs.google.com/document/u/1/d/18-7ZcHOncd26FqnlWWfLhZwxl6c98sMJwWZao7LgFIE/pub&#34;&gt;Discrete Dubs (W’s)&lt;/a&gt; (Rap Song)&lt;br&gt;
+Nicholas Georgiou, Melony Bennis, Noah Harlow, Justin Mooney, Amelia Naegele, Emma Bono&lt;/p&gt;
+
+&lt;p&gt;&lt;iframe id=&#34;iframe_container&#34; frameborder=&#34;0&#34; webkitallowfullscreen=&#34;&#34; mozallowfullscreen=&#34;&#34; allowfullscreen=&#34;&#34; width=&#34;550&#34; height=&#34;400&#34; src=&#34;https://prezi.com/embed/5c_svagdrfkl/?bgcolor=ffffff&amp;amp;lock_to_path=0&amp;amp;autoplay=0&amp;amp;autohide_ctrls=0&amp;amp;landing_data=bHVZZmNaNDBIWnNjdEVENDRhZDFNZGNIUE1lN2lETGZVbFVZd0FVbHg4RTBJVEMzQldtbHhPSDFMWUJmYXE3TXdzST0&amp;amp;landing_sign=VtflvtzLhnxLE_3ot2byrK1AKkYfgv9dSaxaav1tlCA&#34;&gt;&lt;/iframe&gt;&lt;br&gt;
+Nancy Zhang, Peter Cybriwsky, Sohum Sontakke&lt;/p&gt;
+
+&lt;p&gt;&lt;/center&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Class 26: Wrap-Up</title>
@@ -908,19 +1106,6 @@ Results&lt;/a&gt;,
 US Census. (Includes &lt;a href=&#34;https://www.census.gov/population/apportionment/files/Priority%20Values%202010.pdf&#34;&gt;priority values&lt;/a&gt;.)&lt;/p&gt;
 
 &lt;p&gt;&lt;/div&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Problem Set 8 Solutions and Comments</title>
-      <link>https://uvacs2102.github.io/ps8solutions/</link>
-      <pubDate>Sat, 05 Nov 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://uvacs2102.github.io/ps8solutions/</guid>
-      <description>&lt;p&gt;The Problem Set 8 solutions are now posted:
-[&lt;a href=&#34;https://collab.itc.virginia.edu/access/content/group/e0b17949-c94c-466b-835a-196381f3f911/ps8solutions.pdf&#34;&gt;PDF&lt;/a&gt;].
-Please review these to prepare for Exam 2, and let me know if you have
-any questions or parts you want to go over in class Tuesday.&lt;/p&gt;
 </description>
     </item>
     
