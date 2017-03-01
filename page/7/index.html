@@ -141,6 +141,241 @@
   </header>
   
   
+  <p class="fronthead"><A href="/class4/">Class 4: Logical Formulas</a> (Thu, 1 Sep 2016)</p>
+    
+
+<h3 id="schedule">Schedule</h3>
+
+<p><a href="/ps/ps1"><strong>Problem Set 1</strong></a> is due <strong>Friday at 6:29pm</strong>.</p>
+
+<p>I will not be able to hold my normal office hours on Monday.</p>
+
+<p>Next week, we will cover the rest of Chapter 3 (Satisfiability and
+Quantifiers).</p>
+
+<p><div class="notpdf">
+   <center>
+<script async class="speakerdeck-embed" data-id="409b26ba65fc4331970cb6eee0918d70" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+   </center></p>
+
+<p><div class="highlightm">
+   <a href="/docs/class4.pdf">See PDF Version for <b>Notes and Questions</b></a>.
+   </div></p>
+
+<h2 id="links">Links</h2>
+
+<p>Scott Brown, <a href="http://ms.appliedprobability.org/data/files/selected%20articles/39-1-1.pdf"><em>The Life and Work of Augustus De Morgan</em></a>. Applied Probability 2006.</p>
+
+<p><a href="http://www.claymath.org/content/correspondence-de-morgan-0">Ada&rsquo;s Correspondence with De Morgan</a> (Clay Mathematics Institute)</p>
+
+<p></div><!--endpdf--></p>
+
+<p><div class="latex"></p>
+
+<h1 id="notes-and-questions">Notes and Questions</h1>
+
+<h2 id="well-ordering-principle-proof">Well-Ordering Principle Proof</h2>
+
+<p><strong>Odd Summation.</strong> (Problem 2.12) Prove that for all $n &gt; 0$, the sum of the first $n$ odd numbers is $n^2$.</p>
+
+<div class="biggap"></div>
+#
+#
+
+## Notations
+
+Mathematics and other domains often use many symbols to mean the same
+thing.  Section 3.2 of the book gives some common notations, but there
+are others in common use.
+
+\begin{center}
+\begin{tabular}{cccc}
+English & Logic & C, Java, Rust & Python \\ \hline
+$P$ \smallcaps{implies} $Q$ & $P \implies Q$ {\em or} $P \longrightarrow Q$ & - & - \\
+\smallcaps{not}$(P)$ & $\neg P$ {\em or} $\overline{P}$ & \verb+!p+ & \verb+not p+ \\
+$P$ \smallcaps{and} $Q$ & $P \wedge Q$ & \verb+p && q+ & \verb+p and q+ \\
+$P$ \smallcaps{or} $Q$ & $P \vee Q$ & \verb+P || Q+ & \verb+p or q+ \\
+$P$ \smallcaps{xor} $Q$ & $P \oplus Q$ & \verb+p ^ q+ (bitwise) or \verb+p != q+ & \verb+p ^ q+ \\
+\end{tabular}
+\end{center}
+
+For what values in Java or C are \verb+p ^ q+ and \verb+p != q+ both valid, but have different meanings?
+
+## Logical Formulas
+
+\begin{center}
+\begin{tabular}{c|c|c}
+$P$ & \smallcaps{not}$(P)$ & \_\_\_\_\_\_\_\_ \\ \hline
+\T & \F & \\
+\F & \T & \\
+\end{tabular}
+\end{center}
+
+How many one-input Boolean operators are there?  How many do we need to
+produce them all?
+
+#
+
+\begin{center}
+\begin{tabular}{cc|c|c|c|c|c}
+$P$ & $Q$ & $P \wedge Q$ & $P \vee Q$ & $P \implies Q$ & \_\_\_\_\_\_\_\_ & $P \oplus Q$ \\ \hline
+\T & \T   & \T & \T & & \T & \F \\
+\T & \F   &    & \T & & \F & \T \\
+\F & \T   &    & \T & & \F & \T \\
+\F & \F   &   & \F &  & \T & \F \\
+\end{tabular}
+\end{center}
+
+How many two-input Boolean operators are there?
+
+#
+
+**De Morgan's Laws:** 
+$$\neg(P \wedge Q) \equiv (\neg P) \vee (\neg Q)  \qquad \neg(P \vee Q) \equiv (\neg P) \wedge (\neg Q)$$
+
+How can these be written without the $\neg$ in front?
+
+##
+
+Prove that it is possible to make all two-input Boolean operators using
+just \smallcaps{not} and any _odd_ two-input operator. (An operator is _odd_,
+if the number of outputs that are **True** are odd.)
+
+##
+
+**Definition: valid.** A logical formula is _valid_ if there is no way
+  to make it **false**.  That is, no matter what truth values its
+  variables have, it is always **true**.  (Another name for this is a
+  _tautology_.)
+
+**Definition: satisfiable.** A logical formula is _satisfiable_ if there
+  is _some_ way to make it **true**.  That is, there is at least one
+  assignment of truth value to its variables that makes the forumla
+  true.
+
+For each of the formulas below, determine if it is _valid_ and if it is _satisfiable_.
+
+1. $(P \vee \neg P)$
+
+2. $(P \vee Q) \wedge (\neg P \vee Q)$
+
+3. $((P \implies Q) \wedge (Q \implies P)) \vee (P \xor Q)$
+
+
+
+</div>
+ 
+  
+  <p class="fronthead"><A href="/class3/">Class 3: Well-Ordering Principle</a> (Tue, 30 Aug 2016)</p>
+    
+
+<h3 id="schedule">Schedule</h3>
+
+<p>This week, you should read MCS Chapter 2 and MCS Chapter 3 (at least
+through the end of Section 3.4).</p>
+
+<p><a href="/ps/ps1"><strong>Problem Set 1</strong></a> is due <strong>Friday at 6:29pm</strong>.</p>
+
+<p>Office hours started Monday.  There are upcoming office hours: today
+(Tuesday) 3:30-5pm and 7:30-9:30pm; Wednesday 10am-1pm, 2:30-4pm,
+6:30-9:30pm (all of these are in Rice 436), and Dave has office hours
+Wednesday 1-2pm (in Rice 507).  See <a href="https://uvacs2102.github.io/officehours/">the course
+calendar</a> for the full office
+hours schedule.</p>
+
+<p><div class="notpdf">
+   <center>
+   <script async class="speakerdeck-embed" data-id="33a5919061d54688b959debdad91f6a7" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+   </center></p>
+
+<p><div class="highlightr">
+<strong>Challenge Problem Opportunity.</strong> It is trivial to show that numbers in Java or C are not we-ordered, but quite challenging to show this for Python.  Write a Python program that demonstrates the fact that numbers in Python are not well-ordered.
+   </div></p>
+
+<p><div class="highlightm">
+   <a href="/docs/class3.pdf">See PDF Version for <b>Notes and Questions</b></a>.
+   </div></p>
+
+<h2 id="links">Links</h2>
+
+<p><a href="https://math.berkeley.edu/~kpmann/Well-ordering.pdf"><em>The Well-Ordering Theorem: one of the Greatest Mathematical Controversies of All Time</em></a>, Kathryn Mann.<br />
+<a href="https://www.theguardian.com/business/2015/may/01/us-aviation-authority-boeing-787-dreamliner-bug-could-cause-loss-of-control"><em>US aviation authority: Boeing 787 bug could cause &lsquo;loss of control&rsquo;</em></a> (<a href="http://embeddedgurus.com/stack-overflow/2015/05/boeing-dreamliner-bug/">Nigel Jones&rsquo; explanation</a>)<br />
+<a href="http://phrack.org/issues/60/10.html">Basic Integer Overflows</a>, blexim,
+Phrak (Volume 0x0b, Issue 0x3c).<br />
+Never need an excuse to watch <a href="http://www.wired.com/2014/12/gangnam-style-youtube-math/">Gangnam Style</a>.</p>
+
+<p></div><!--endpdf--></p>
+
+<p><div class="latex"></p>
+
+<h1 id="notes-and-questions">Notes and Questions</h1>
+
+<p><strong>Definition.</strong> A set is <em>well-ordered</em> with respect to an ordering
+  function (e.g., &lt;), if all of its non-empty subsets has a minimum
+  element.</p>
+
+<p>What properties must a sensible ordering function have?</p>
+
+<div class="gap"></div>
+
+<p><strong>Trichotomy</strong>. A relation, $\prec$, satisfies the axiom of trichotomy
+  if exactly one of these is true for all elements $a$ and $b$: $a \prec
+  b$, $b \prec a$ or $a = b$.</p>
+
+<p>Which of these are well-ordered?</p>
+
+<ul>
+<li>The set of non-negative integers, comparator $&lt;$.</li>
+<li>The set of integers, comparator $&lt;$.</li>
+<li>The set of integers, comparator $|a| &lt; |b|$.</li>
+<li>The set of integers, comparator if |a| = |b|: $a &lt; b$, else: $|a| &lt; |b|$.</li>
+<li>The set of national soccer teams, comparator winning games.</li>
+</ul>
+
+<p>Prove the set of positive rationals is <em>not</em> well-ordered under $&lt;$.</p>
+
+<div class="gap"></div>
+
+<p>#</p>
+
+<p>Provide a comparison function that can be used to well-order the positive rationals.</p>
+
+<!--page-->
+
+<h3 id="template-for-well-ordering-proofs-section-2-2">Template for Well-Ordering Proofs (Section 2.2)</h3>
+
+<p>To prove that $P(n)$ is true for all $n \in \mathbb{N}$:</p>
+
+<ol>
+<li>Define the set of counterexamples, $C ::= { n \in \mathbb{N} | NOT(P(n)) }$.</li>
+<li>Assume for contradiction that $C$ is ______________. <!-- non-empty.--></li>
+<li>By the well-ordering principle, there must be __________________ <!-- some smallest element-->, $m \in C$.</li>
+<li>Reach a contradiction (this is the creative part!).  One way to reach a contradiction would be to show $P(m)$.  Another way is to show there must be an element $m&rsquo; \in C$ where $m&rsquo; &lt; m$.</li>
+<li>Conclude that $C$ must be empty, hence there are no counter-examples and $P(n)$ always holds.</li>
+</ol>
+
+<p><strong>Example: Betable Numbers.</strong> A number is <em>betable</em> if it can be
+  produced using some combination of \$2 and \$5 chips.  Prove that all
+  integer values greater than \$3 are betable.</p>
+
+<div class="biggap"></div>
+#
+#
+#
+
+**Example: Division Property.** Given integer $a$ and positive integer $b$, there exist integers $q$ and $r$ such that:
+      $a = qb + r$ and $0 \le r < b$.
+
+<div class="biggap"></div>
+#
+#
+
+
+_The whole problem with the world is that fools and fanatics are always so certain of themselves, and wiser people so full of doubts._ Bertrand Russell
+
+</div>
+ 
+  
   <p class="fronthead"><A href="/ohours/">Office Hours Posted</a> (Sun, 28 Aug 2016)</p>
     <div class="highlightr">
    The schedule here is subject to change. Please check the current <a href="/officehours">Office Hours Schedule</a> for the current schedule.
