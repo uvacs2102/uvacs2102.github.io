@@ -6,8 +6,21 @@
     <description>Recent content in Post-rsses on cs2102: Discrete Math</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 15 Dec 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 17 Mar 2017 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://uvacs2102.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Fall 2017 Course</title>
+      <link>https://uvacs2102.github.io/fall2017/</link>
+      <pubDate>Fri, 17 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/fall2017/</guid>
+      <description>&lt;p&gt;cs2102 will be offered again in Fall 2017, co-taught by &lt;a href=&#34;https://www.cs.virginia.edu/~mohammad/&#34;&gt;Mohammad Mahmoody&lt;/a&gt; and &lt;a href=&#34;https://www.cs.virginia.edu/evans&#34;&gt;David Evans&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Some things about the course are likely to change substantially for
+Fall 2017, but you can see what was done in the Fall 2016 course here.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Final Exam Solutions</title>
@@ -1016,62 +1029,6 @@ $\text{\em dir} = { \text{\bf Left}, \text{\bf Right}, \text{\bf Halt} }$ is the
       
       <guid>https://uvacs2102.github.io/psomegaannounce/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Problem Set &amp;omega;&lt;/strong&gt; is &lt;a href=&#34;https://uvacs2102.github.io/ps/psz&#34;&gt;now posted&lt;/a&gt; and due Dec 4 or the last day of class (see the &lt;a href=&#34;https://uvacs2102.github.io/ps/psz&#34;&gt;problem set&lt;/a&gt; for details). It is a &amp;ldquo;bonus&amp;rdquo; problem set, and not like the others.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Class 21: Infinite Infinites, Exam 2</title>
-      <link>https://uvacs2102.github.io/class21/</link>
-      <pubDate>Tue, 15 Nov 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://uvacs2102.github.io/class21/</guid>
-      <description>
-
-&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
-
-&lt;p&gt;&lt;strong&gt;Problem Set 9&lt;/strong&gt; is now due on &lt;strong&gt;Wednesday, 23 November&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;
-   &lt;center&gt;
-&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;dc45f78adb254aadb2d0ac1684c1e47b&#34; data-ratio=&#34;1.77777777777778&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
-   &lt;/center&gt;
-   &lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;highlightm&#34;&gt;
-   &lt;a href=&#34;https://uvacs2102.github.io/docs/class21.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes&lt;/b&gt;&lt;/a&gt;.
-   &lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;infinite-sets-recap&#34;&gt;Infinite Sets Recap&lt;/h1&gt;
-
-&lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; A set $C$ is &lt;em&gt;countable&lt;/em&gt; if and only if there exists a
-  surjective function from $\mathbb{N}$ to $C$.  (That is, $\le 1$ arrow
-  out from $\mathbb{N}$, $ge 1$ arrow in to $C$.)&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; A set $C$ is &lt;em&gt;countably infinite&lt;/em&gt; if and only if there
-  exists a bijection between $C$ and $\mathbb{N}$.&lt;/p&gt;
-
-&lt;h1 id=&#34;cantor-s-theorem&#34;&gt;Cantor&amp;rsquo;s Theorem&lt;/h1&gt;
-
-&lt;p&gt;For &lt;strong&gt;all&lt;/strong&gt; sets, $S$, $| pow(S) | &amp;gt; | S |$.&lt;/p&gt;
-
-&lt;p&gt;What does this mean for $| \mathbb{N} |$?&lt;/p&gt;
-
-&lt;p&gt;#&lt;/p&gt;
-
-&lt;p&gt;What is a &lt;em&gt;real number&lt;/em&gt;?&lt;/p&gt;
-
-&lt;p&gt;#&lt;/p&gt;
-
-&lt;p&gt;Show there is a bijection between $[0, 1)$ and $pow(\mathbb{N})$.&lt;/p&gt;
-
-&lt;p&gt;#
-#&lt;/p&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
 </description>
     </item>
     
