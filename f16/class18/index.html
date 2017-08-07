@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Class 18: Infinite Sets  &middot; cs2102: Discrete Math (Fall 2016)</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="" />
+
+<meta name="keywords" content="">
+
+
+<meta property="og:title" content="Class 18: Infinite Sets  &middot; cs2102: Discrete Math (Fall 2016) ">
+<meta property="og:site_name" content="cs2102: Discrete Math (Fall 2016)"/>
+<meta property="og:url" content="https://uvacs2102.github.io/f16/class18/" />
+<meta property="og:locale" content="en-us">
+
+
+<meta property="og:type" content="article" />
+<meta property="og:description" content=""/>
+<meta property="og:article:published_time" content="2016-11-01T00:00:00Z" />
+<meta property="og:article:modified_time" content="2016-11-01T00:00:00Z" />
+
+  
+
+  
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@" />
+<meta name="twitter:creator" content="@" />
+<meta name="twitter:title" content="Class 18: Infinite Sets" />
+<meta name="twitter:description" content="" />
+<meta name="twitter:url" content="https://uvacs2102.github.io/f16/class18/" />
+<meta name="twitter:domain" content="https://uvacs2102.github.io/f16">
+  
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "headline": "Class 18: Infinite Sets",
+    "author": {
+      "@type": "Person",
+      "name": "http://profiles.google.com/+?rel=author"
+    },
+    "datePublished": "2016-11-01",
+    "description": "",
+    "wordCount":  1119 
+  }
+</script>
+
+
+
+<link rel="canonical" href="https://uvacs2102.github.io/f16/class18/" />
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://uvacs2102.github.io/touch-icon-144-precomposed.png">
+<link href="https://uvacs2102.github.io/favicon.png" rel="icon">
+
+<meta name="generator" content="Hugo 0.17" />
+
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<link href='https://fonts.googleapis.com/css?family=Merriweather:300%7CRaleway%7COpen+Sans' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://uvacs2102.github.io/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://uvacs2102.github.io/css/style.css">
+
+
+  
+</head>
+<body>
+  <main id="main-wrapper" class="container main_wrapper has-sidebar">
+    <header id="main-header" class="container main_header">
+  <div class="container brand">
+  <div class="container title h1-like">
+  <a class="baselink" href="https://uvacs2102.github.io/f16">
+  cs2102
+
+</a>
+
+</div>
+
+  
+<div class="container topline">
+  
+  Discrete Mathematics
+
+
+</div>
+
+
+</div>
+
+  <nav class="container nav primary no-print">
+  
+
+
+  
+<a href="https://uvacs2102.github.io/f16/syllabus">Syllabus</a>
+
+<a href="https://uvacs2102.github.io/f16/schedule">Schedule</a>
+
+<a href="https://uvacs2102.github.io/f16/officehours">Office Hours</a>
+
+<a href="https://uvacs2102.github.io/f16/docs/mcs.pdf">MCS Book</a>
+
+<a href="https://uvacs2102.github.io/f16/pledge">Course Pledge</a>
+
+<a href="https://collab.itc.virginia.edu/portal/site/e0b17949-c94c-466b-835a-196381f3f911?panel=Main">Collab Site</a>
+
+<a href="https://uvacs2102.github.io/f16/docs/finalprep.pdf">Final</a>
+
+<a href="https://uvacs2102.github.io/f16/ps/pszhighlights">PS Highlights</a>
+
+<a href="https://uvacs2102.github.io/f16/challenges">Challenges</a>
+
+<a href="https://uvacs2102.github.io/f16/post">Posts</a>
+
+
+</nav>
+
+<div class="container nav secondary no-print">
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+  
+
+</header>
+
+
+<article id="main-content" class="container main_content single">
+  <header class="container hat">
+  <h1><center>Class 18: Infinite Sets
+</center></h1>
+
+  <div class="metas">
+<time datetime="2016-11-01">1 Nov, 2016</time>
+
+
+  
+  <br>
+  
+
+
+</div>
+
+</header>
+
+  <div class="container content">
+  
+
+<h3 id="schedule">Schedule</h3>
+
+<p>Before Thursday, everyone should have finished reading MCS Chapter 8.</p>
+
+<p><a href="/ps/ps8"><strong>Problem Set 8</strong></a> is due <strong>Friday (4 November) at 6:29pm</strong>.</p>
+
+<p>I am out of town Wednesday and will not be able to hold my normal office
+hours.</p>
+
+<p>Friday, 4 November at 11am (Rotunda Dome Room): <strong>Steve Huffman</strong> (BSCS
+2005, co-founder and CEO of Reddit), <em>Computer Science Distinguished
+Alumni Speaker</em>.</p>
+
+<h2 id="exam-2">Exam 2</h2>
+
+<p><strong>Exam 2</strong> will be in class on <strong>Thursday, 10 November</strong>.  It will be
+  similar in format to Exam 1.  If you need to make special arrangements
+  for taking Exam 2, please contact me by the end of this week (Nov 6).</p>
+
+<p><strong>Resources.</strong> As with Exam 1, you will be permitted to use a single
+paper page of notes that you prepare and bring to the exam.  It is fine
+to collaborate with others to prepare your notes.  The page should be no
+larger than a US Letter size page ($8.5 \times 11$ inches), and you may
+write (or print) on both sides of the page.  No other resources are
+permitted during the exam.</p>
+
+<p><strong>Content.</strong> The problems on the exam will cover material from Classes
+  1&ndash;17, Problem Sets 1&ndash;8 (including the provided solutions), and MCS
+  Chapters 1&ndash;7.  Exam 2 will emphasize material covered since Exam 1
+  (Classes 12&ndash;17, Problem Sets 6&ndash;8, and MCS Chapters 6&ndash;7), but will
+  also include questions that cover earlier material in the class.  In
+  particular, you should not be at all surprised if Exam 2 includes
+  questions very similar to Problem 4 and Problem 8 from Exam 1, so it
+  would be quite foolish for any student to go into the exam without
+  making sure they understand those problems and their solutions.  There
+  will not be any questions about trick-xor-treat protocols, despite
+  their practical importance and mathematical beauty.  If you understand
+  the problems on the problem sets and questions on the class notes well
+  enough to be able to answer similar questions, you should do well on
+  the exam.</p>
+
+<p>The main topics the exam will cover include:</p>
+
+<ul>
+<li><p>State Machines (how to interpret and reason about a state machine
+given its formal description, how to model a problem with a state
+machine)</p></li>
+
+<li><p>Invariant Principle (you should be able to construct a proof that uses
+the invariant principle to reason about properties of reachable
+states, and be able to understand proofs that use and mis-use the
+invariant principle)</p></li>
+
+<li><p>Termination Proofs (you should be able to prove a state machine
+eventually reaches a terminating state, or that a program eventually
+terminates)</p></li>
+
+<li><p>Stable Matching (you should understand the definition of a stable
+matching and the Gale-Shalpey algorithm for finding a stable matching,
+and be able to prove properties about matchings)</p></li>
+
+<li><p>Recursive Data Types (how to define a data type constructively,
+operations on recursive data types; lists, trees, and other
+recursively defined data types)</p></li>
+
+<li><p>Structural Induction (how to use the principle of structural induction
+to reason about all objects of a recursive data type; understand the
+connections and differences between structural induction, invariant
+principle, and induction on the natural numbers)</p></li>
+</ul>
+
+<p>For most students, I believe the best way to prepare for the exam will
+be to (1) go over exam 1 and the problem sets and their solutions, and
+make sure you understand well any of the problems you did not get
+before; (2) go through the questions in the class notes and convince
+yourself you can answer them well; (3) re-read chapters of the book,
+solving the associated practice problems, especially for any sections on
+topics where you had difficulty on the problem sets.  If you do #1 and
+understand well the problems on the problem set, you should be confident
+you&rsquo;ll do well on the exam; if you struggled on the problem sets, you
+would benefit from doing #2 and #3 as well.  If you have anything you
+want me to review before the exam, post on slack before Monday (7
+November).</p>
+
+<p><div class="notpdf">
+   <center>
+<script async class="speakerdeck-embed" data-id="bce1aef8374f4dffbf5f11d517397e0a" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+   </center></p>
+
+<h1 id="links">Links</h1>
+
+<p>Apostolos Doxiadis and <a href="https://people.eecs.berkeley.edu/~christos/">Christos Papadimitriou</a>. <a href="https://www.amazon.com/Logicomix-search-truth-Apostolos-Doxiadis/dp/1596914521/"><em>Logicomix: An epic
+search for
+truth</em></a>, Bloomsbury USA, 2009.</p>
+
+<p><a href="http://pi.math.virginia.edu/History/1800s.htm">Math Professors at UVa (1825-1900)</a></p>
+
+<blockquote>
+<p><em>Courtenay&rsquo;s tenure at Virginia was, in contrast to that of his predecessor, a resounding success. He was described as a model professor: &ldquo;He never by look, act, word, or emphasis disparaged the efforts or undervalued the acquirements of his pupils. His pleasant smile and kind voice, when he would say, &lsquo;Is that answer perfectly correct?&rsquo; gave hope to many minds struggling with science&rdquo;</em></p>
+</blockquote>
+
+<p><a href="http://www.encyclopediavirginia.org/Bonnycastle_Charles_1796-1840#start_entry">Charles Bonnycastle</a>, UVA&rsquo;s Professor of Mathematics, 1825-1840</p>
+
+<blockquote>
+<p>As mathematics professor, &ldquo;Old Bonny,&rdquo; as he was fondly called, replaced the antiquated British approach to mathematical pedagogy typified by his own father&rsquo;s texts with a new approach borrowed from French mathematicians. British writers had imitated Euclid by clinging to the deductive manner of presenting material. They opened their texts with axioms and definitions and proceeded to the derivation of facts and theorems. Although logically satisfying to mathematicians, the method did little to motivate beginning students. French textbook writers, on the other hand, approached mathematics analytically, leading from concrete examples to abstractions. Bonnycastle introduced this method at the University of Virginia and published his own college textbook, <em>Inductive Geometry, or, An Analysis of the Relations of Form and Magnitude: Commencing with the Elementary Ideas Derived Through the Senses, and Proceeding by a Train of Inductive Reasoning to Develop the Present State of the Science</em> (1834). Painfully prolix even by nineteenth-century standards, the innovative book was not a financial success.  (Excerpt from article by Karen Parshall)</p>
+</blockquote>
+
+<p><div class="highlightm">
+   <a href="/docs/class18.pdf">See PDF Version for <b>Notes</b></a>.
+   </div></p>
+
+<p></div><!--endpdf--></p>
+
+<p><div class="latex"></p>
+
+<h1 id="infinite-sets">Infinite Sets</h1>
+
+<p><strong>Finite Cardinality.</strong> The <em>cardinality</em> of the set
+$$
+\mathbb{N}_k = { n | n \in \mathbb{N} \wedge n &lt; k }
+$$
+is $k$.  If there is a <em>bijection</em> between two sets, they have the same
+cardinality.  (Class 9)</p>
+
+<p>Does this definition tell us the cardinality of $\mathbb{N}$?</p>
+
+<p>###</p>
+
+<p><strong>Definition.</strong> A set $C$ is <em>infinite</em> if there is no bijection between
+  $C$ and any set $\mathbb{N}_k$ (as defined above).</p>
+
+<p><strong>Dedekind-Infinite.</strong> A set $A$ is <em>Dedekind-infinite</em> if and only if there exists a strict subset of $A$ with the same cardinality as $A$.  That is,
+$$\exists B \subset A \ldotp \exists R \ldotp R\ \text{is a bijection between}\ A\ \text{and}\ B.$$</p>
+
+<p>Are the definitions of (standard) <em>infinite</em> and <em>Dedekind-infinite</em>
+equivalent?</p>
+
+<p>##</p>
+
+<p><strong>Definition.</strong> A set $C$ is <em>countable</em> if and only if there exists a
+  surjective function from $\mathbb{N}$ to $C$.  (That is, $\le 1$ arrow
+  out from $\mathbb{N}$, $ge 1$ arrow in to $C$.)</p>
+
+<p><strong>Definition.</strong> A set $C$ is <em>countably infinite</em> if and only if there
+  exists a bijection between $C$ and $\mathbb{N}$.</p>
+
+<p>Must a <em>countable</em> set that is <em>Dedekind-infinite</em> be <em>countably infinite</em>?</p>
+
+<p>Prove that these sets are countable: $\mathbb{Z}$, $\mathbb{N} \times
+\mathbb{N}$, $\mathbb{Q}$ (rationals), $\emptyset$, $\mathbb{N} \cup (\mathbb{N} \times \mathbb{N}) \cup (\mathbb{N} \times \mathbb{N} \times \mathbb{N})$, all finite sequences of elements of $\mathbb{N}$.</p>
+
+<p></div></p>
+
+</div>
+
+
+  <footer class="container">
+  <div class="container navigation no-print">
+  <h2>Navigation</h2>
+  
+  
+
+    
+    <a class="prev" href="https://uvacs2102.github.io/f16/ps6comments/" title="Problem Set 6 Comments">
+      Previous
+    </a>
+    
+
+    
+    <a class="next" href="https://uvacs2102.github.io/f16/ps8revisions/" title="Problem Set 8 Revisions">
+      Next
+    </a>
+    
+
+  
+
+
+</div>
+
+</footer>
+
+</article>
+      <footer id="main-footer" class="container main_footer">
+  
+
+  <div class="container nav foot no-print">
+  
+
+  <a class="toplink" href="#">back to top</a>
+
+</div>
+
+  <div class="container credits">
+  
+<div class="container footline">
+  
+  <p align="center">cs2102: Discrete Mathematics | University of Virginia, Fall 2016 | <a href="https://www.cs.virginia.edu/evans">David Evans</a>
+
+
+</div>
+
+
+  
+
+</div>
+
+</footer>
+
+    </main>
+    
+
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-3775212-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+    
+  </body>
+</html>
+
