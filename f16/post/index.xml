@@ -1,0 +1,1036 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Post-rsses on cs2102: Discrete Math</title>
+    <link>https://uvacs2102.github.io/post/index.xml</link>
+    <description>Recent content in Post-rsses on cs2102: Discrete Math</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 17 Mar 2017 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://uvacs2102.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Fall 2017 Course</title>
+      <link>https://uvacs2102.github.io/fall2017/</link>
+      <pubDate>Fri, 17 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/fall2017/</guid>
+      <description>&lt;p&gt;cs2102 will be offered again in Fall 2017, co-taught by &lt;a href=&#34;https://www.cs.virginia.edu/~mohammad/&#34;&gt;Mohammad Mahmoody&lt;/a&gt; and &lt;a href=&#34;https://www.cs.virginia.edu/evans&#34;&gt;David Evans&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Some things about the course are likely to change substantially for
+Fall 2017, but you can see what was done in the Fall 2016 course here.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Final Exam Solutions</title>
+      <link>https://uvacs2102.github.io/finalexamsolutions/</link>
+      <pubDate>Thu, 15 Dec 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/finalexamsolutions/</guid>
+      <description>&lt;p&gt;The solutions to &lt;a href=&#34;https://uvacs2102.github.io/docs/finalexam.pdf&#34;&gt;Final Exam&lt;/a&gt; are here: &lt;a href=&#34;https://uvacs2102.github.io/docs/finalexamsolutions.pdf&#34;&gt;Final
+Exam Solutions&lt;/a&gt;.  (I promise, no Harambe
+mentions, other than in quotes.)&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Problem Set Omega Highlights</title>
+      <link>https://uvacs2102.github.io/pszhighlights/</link>
+      <pubDate>Wed, 14 Dec 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/pszhighlights/</guid>
+      <description>
+
+&lt;p&gt;Here are some interesting submissions for &lt;a href=&#34;https://uvacs2102.github.io/ps/psz&#34;&gt;Problem Set Omega&lt;/a&gt;
+(roughly grouped by topic).  Thanks for all the entertaining and
+illuminating submissions!&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;logic&#34;&gt;Logic&lt;/h1&gt;
+
+&lt;p&gt;&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/YC-ewXitC5w&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;&lt;br&gt;
+Logical Operators&lt;br&gt;
+&lt;b&gt;Helen Simecek&lt;/b&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://docs.google.com/presentation/d/1nPaLNygB3QrwSIWW8rMoJFkycMAJvkh38Id-VqkUHqQ/edit#slide=id.p3&#34;&gt;Carlos Goes Birdwatching&lt;/a&gt; (A story about binary operations for middle school students)&lt;br&gt;
+&lt;b&gt;Derrick Chien Huang, Andrea Chang, Jennifer Qian&lt;/b&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://binaryrelations.files.wordpress.com/2016/12/000011.jpg&#34; width=500&gt;&lt;br&gt;
+&lt;a href=&#34;https://binaryrelations.wordpress.com/&#34;&gt;Binary Relation Properties (comics)&lt;/a&gt;&lt;br&gt;
+&lt;b&gt;Lalita Mallapragada&lt;/b&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/key/mV0A7c7IZrWlCa&#34; width=&#34;595&#34; height=&#34;485&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; style=&#34;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&#34; allowfullscreen&gt; &lt;/iframe&gt; &lt;div style=&#34;margin-bottom:5px&#34;&gt; &lt;strong&gt; &lt;a href=&#34;//www.slideshare.net/JesseAlloy/truth-table-game&#34; title=&#34;Truth Table Game&#34; target=&#34;_blank&#34;&gt;Truth Table Game&lt;/a&gt; &lt;/strong&gt;&lt;br&gt; &lt;strong&gt;&lt;a target=&#34;_blank&#34; href=&#34;//www.slideshare.net/JesseAlloy&#34;&gt;JesseAlloy&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://drive.google.com/file/d/0By695UHW09uyWHA5cmk4ZTlZelE/view&#34;&gt;Logic Game [JAR]&lt;/a&gt;&lt;br&gt;
+&lt;b&gt;Temuulen Khurelbaatar&lt;/b&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://uvacs2102.github.io/images/trickxortreat.jpg&#34; width=500&gt;&lt;br&gt;
+&lt;b&gt;Yiming Wang, Mike Wang, Yingqing Huang&lt;/b&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;set-theory&#34;&gt;Set Theory&lt;/h1&gt;
+
+&lt;p&gt;&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/SWjhB8Ijy7w?list=PLr874xyHM_pyGkjqB1sKYRWfdjugFtmyG&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;&lt;br&gt;
+Sets and Superheroes&lt;br&gt;
+&lt;b&gt;Matt Huo, Joe Karaki&lt;/b&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/key/i9PSakiBUVeVMY&#34; width=&#34;595&#34; height=&#34;485&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; style=&#34;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&#34; allowfullscreen&gt; &lt;/iframe&gt; &lt;div style=&#34;margin-bottom:5px&#34;&gt; &lt;strong&gt; &lt;a href=&#34;//www.slideshare.net/MariaJoseHitoRamos/sets-69572321&#34; title=&#34;Sets&#34; target=&#34;_blank&#34;&gt;Sets&lt;/a&gt; &lt;/strong&gt;&lt;br&gt;&lt;strong&gt;&lt;a target=&#34;_blank&#34; href=&#34;//www.slideshare.net/MariaJoseHitoRamos&#34;&gt;Maria Jose Hito Ramos&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/images/angrybirds.pdf&#34;&gt;Angry Birds: Set Relations&lt;/a&gt;&lt;br&gt;
+&lt;b&gt;Brian Li&lt;/b&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://docs.google.com/presentation/d/e/2PACX-1vRH-xmsRoWUWBVqcLrLT9FYH7SoYosQfz9_QGx14Ptu5UL7qcOmdxG4dBJmEXbbX2vrzMgAvHzc8OKA/pub?start=false&amp;loop=false&amp;delayms=3000&amp;slide=id.p&#34;&gt;To Infinite Sets and Beyond!&lt;/a&gt;&lt;br&gt;
+Justin Barry, Monique Mezher, Robert Klemchek, Ayman Mobin&lt;/p&gt;
+
+&lt;p&gt;&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/GUg8FLZwDdA&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;&lt;br&gt;
+Call of Duty and Countable Infinities&lt;br&gt;
+&lt;b&gt;Aarron Braxton, Shreyas Hirway &lt;/b&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;induction&#34;&gt;Induction&lt;/h1&gt;
+
+&lt;p&gt;&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/PNpBamrpgic&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;&lt;br&gt;
+Induction Rap&lt;br&gt;
+&lt;b&gt;Milan Bharadwaj&lt;/b&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://9a8b5089-a-62cb3a1a-s-sites.googlegroups.com/site/problemsetomegabowler2016/home/ProblemSetO.jpg?attachauth=ANoY7cqcv6nnReB4tmh0ZMrRRc2w-8vha3yNzLanjG7jI2TCcYNt4LDRH4fpK50pYnsm94Hsz5-Gde6jio4K4aV-IbwL17LOyOzGg2Zs6DD-uOCdCK7lXyJq0zEGeuojbMbYPmwVXEi9gL2xWFBuHX3rOH5bZ7x0X-2-GxxCtu2TSYrUxJYwM_JcgsD39BmMOQ58rSdzsRyJWx3RQk0E07y1DgfKG3t4OXm_TZ7CQmUtHogLw7KoNl8%3D&amp;attredirects=0&#34;&gt;
+&lt;img src=&#34;https://uvacs2102.github.io/images/bowler.jpg&#34; width=550&gt;&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://9a8b5089-a-62cb3a1a-s-sites.googlegroups.com/site/problemsetomegabowler2016/home/ProblemSetO.jpg?attachauth=ANoY7cqcv6nnReB4tmh0ZMrRRc2w-8vha3yNzLanjG7jI2TCcYNt4LDRH4fpK50pYnsm94Hsz5-Gde6jio4K4aV-IbwL17LOyOzGg2Zs6DD-uOCdCK7lXyJq0zEGeuojbMbYPmwVXEi9gL2xWFBuHX3rOH5bZ7x0X-2-GxxCtu2TSYrUxJYwM_JcgsD39BmMOQ58rSdzsRyJWx3RQk0E07y1DgfKG3t4OXm_TZ7CQmUtHogLw7KoNl8%3D&amp;attredirects=0&#34;&gt;Recursive Nesting Dolls&lt;/a&gt;&lt;br&gt;
+&lt;b&gt;Casey Bowler&lt;/b&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/images/separationinduction.pptx&#34;&gt;Six Degress of Separation [PPTX]&lt;/a&gt;&lt;br&gt;
+&lt;b&gt;Fan Feng&lt;/b&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://tracyschristmasquestion.files.wordpress.com/2016/12/problem-set-0.pdf&#34;&gt;Tracy&amp;rsquo;s Christmas Question [PDF]&lt;/a&gt;&lt;br&gt;
+&lt;b&gt;Ryann Consalo, Megan Greatorex&lt;/b&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/images/basketball.pdf&#34;&gt;Basketball Induction&lt;/a&gt;&lt;br&gt;
+&lt;b&gt;Josh Davis&lt;/b&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://uvacs2102.github.io/images/stronginduction.jpg&#34; width=500&gt;&lt;br&gt;
+&lt;b&gt;Muhammad Sareini&lt;/b&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;state-machines&#34;&gt;State Machines&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://docs.google.com/presentation/d/1GaDhjOL3tU-EZDtarmWsyYqdwjiarIRV0-7GQlVPwHw/edit&#34;&gt;Baseball Game State Machine&lt;/a&gt;&lt;br&gt;
+&lt;b&gt;Mason Au, Bobby Stephens, and Kevin Warshaw&lt;/b&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://docs.google.com/document/d/1G56RGM6G31AGI4gfuW5zMh19JyMb_WBR5Njhzj2Guvc/edit&#34;&gt;A Beginner&amp;rsquo;s Manual to Dust Cultivation&lt;/a&gt;&lt;br&gt;
+&lt;b&gt;Jessica Emmons&lt;/b&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://docs.google.com/document/d/1cQ3KQ8J4cbdWdPtQcu9p8_dwTvyY7a2KeF-glI0GH3o/edit&#34;&gt;Echo Chamber: The Greatest Model of 2016 Voter Behavior&lt;/a&gt;&lt;br&gt;
+&lt;b&gt;Neel Kaushal and Arpit Rupakhetee&lt;/b&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;iframe id=&#34;iframe_container&#34; frameborder=&#34;0&#34; webkitallowfullscreen=&#34;&#34; mozallowfullscreen=&#34;&#34; allowfullscreen=&#34;&#34; width=&#34;550&#34; height=&#34;400&#34; src=&#34;https://prezi.com/embed/ss873zkdpboq/?bgcolor=ffffff&amp;amp;lock_to_path=0&amp;amp;autoplay=0&amp;amp;autohide_ctrls=0&amp;amp;landing_data=bHVZZmNaNDBIWnNjdEVENDRhZDFNZGNIUE1lN2lETGZVbFVZd0FVbHg4RTRNeGNiMStCLzQxREgzcWZ4RjJiOHZwdz0&amp;amp;landing_sign=7ziEB2a9paxUDcmHnBeRk2iWFTslWvS2SSoz5Tcj2nw&#34;&gt;&lt;/iframe&gt;&lt;br&gt;
+Gumball State Machine&lt;br&gt;
+&lt;b&gt;Priya Nakhre&lt;/b&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/MsVdTG6I_5Y&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;&lt;br&gt;
+Modeling Mario Party with State Machines&lt;br&gt;
+&lt;b&gt;Benjamin Fuhrman&lt;/b&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/nGuEQJRH34k&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;&lt;br&gt;
+State Machines and Breakdancing&lt;br&gt;
+&lt;b&gt;Kenny Le&lt;/b&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://docs.google.com/document/d/1iklGpQz90FR601mBhgJNjUrkajczJXvbOMJlP-d03fA/edit?usp=sharing&#34;&gt;Java Knights&lt;/a&gt; (code in Word document)&lt;br&gt;
+&lt;b&gt;Connor Albrecht, William Brayshaw, Matthew Anderson&lt;/b&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://docs.google.com/document/d/1KLZFuUFfap0ZI1MhsO14uZDz143PBgTLmbImeGpExAc/edit&#34;&gt;Halted&lt;/a&gt; (Lyrics for &lt;em&gt;Pieces&lt;/em&gt; by Sum 41)&lt;br&gt;
+Rick Yanhao Zhao&lt;/p&gt;
+
+&lt;h1 id=&#34;recursive-datatypes&#34;&gt;Recursive Datatypes&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/images/recursive-mak2vr.pdf&#34;&gt;Recursive Data Types for Introductory CS Students&lt;/a&gt;&lt;br&gt;
+&lt;b&gt;Matthew Keitelman&lt;/b&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/eVB-wHlxI9w&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;&lt;br&gt;
+Recursive Music&lt;br&gt;
+Jiahong Chen, WenBin Qi&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://pdb.surge.sh/&#34;&gt;Bifurcating Trees&lt;/a&gt;&lt;br&gt;
+Youbeen Shim, James Mekavibul&lt;/p&gt;
+
+&lt;h1 id=&#34;stable-matching&#34;&gt;Stable Matching&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://docs.google.com/presentation/d/1MXxppMPq5_T8pAg0sLteqmoVk6R5LWD00xOzyk3HPY0/pub?start=false&amp;loop=false&amp;delayms=10000&amp;slide=id.p&#34;&gt;The Bachelor&lt;/a&gt; (Stable Matching Dating Show!)&lt;Br&gt;
+&lt;b&gt;Samantha Chu, Nicole Pope, Nancy Lee&lt;/b&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://docs.google.com/document/d/1EnqUc9pnfj7d-gj414PG4eMK60VebEawj0_tDnKi2LU/pub&#34;&gt;5 Disney Princesses (to the tune of &amp;ldquo;5 Little Monkeys&amp;rdquo;)&lt;/a&gt;&lt;br&gt;
+Nirali Shah&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://docs.google.com/a/virginia.edu/presentation/d/1w1gLPq9cz_ok-gpzO_2nL9wXZv1X47lm9WMUhoOyUJs/edit?usp=sharing&#34;&gt;Pokemon: I Choose You (A Beginner&amp;rsquo;s Guide to the Gale-Shapely Algorithm)&lt;/a&gt; [Slideshow]&lt;br&gt;
+&lt;b&gt;Ying Lai, Chris Fassoth, Barry Chin, Rachel Yi&lt;/b&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/sh/fgdxite5fltzhyr/AAC8zmSDlfVsCM1dYS5DB72Ja?dl=0&#34;&gt;Stable Marriage: Harry Potter Edition (Game)&lt;/a&gt;&lt;br&gt;
+Utkarsha Bhave, Anne Marie Lee, Jessica Virden&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://imgur.com/a/R0qly&#34;&gt;&lt;img src=&#34;https://uvacs2102.github.io/images/gingerbread.jpg&#34; width=550&gt;&lt;/a&gt;&lt;Br&gt;
+Gingerbread Matching&lt;br&gt;
+&lt;b&gt;Baylor Towne&lt;/b&gt;
+   &lt;p class=&#34;caption&#34;&gt;
+Stable matching as told by six gingerbread gnomes looking for
+love. Their preference lists are ranked from most preferred to least
+preferred. Nicholas proposes to the first on his list - Noelle. She
+accepts since she is not paired with anyone. Then Yule also proposes
+to Noelle who is currently matched with Nicholas. Since Noelle much
+prefers Yule above Nicholas, she happily accepts Yule&amp;rsquo;s proposal and
+Nicholas is kicked out of the pairing. Kris and Ginger are each
+other&amp;rsquo;s top choices, so Ginger accepts Kris&amp;rsquo;s proposal. Now Nicholas
+can propose to his second choice, Holly, who, although she prefers
+Yule, will settle with Nicholas since Yule is already happily paired
+with Noelle. The stable matching is listed at the bottom of the
+picture, and it is stable because there is no pair in which one member
+prefers someone else who also prefers them. With these specific
+preference lists, this is the only stable matching that could occur.
+   &lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/key/sW81lpOoPIPxzw&#34; width=&#34;595&#34; height=&#34;485&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; style=&#34;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&#34; allowfullscreen&gt; &lt;/iframe&gt; &lt;div style=&#34;margin-bottom:5px&#34;&gt; &lt;strong&gt; &lt;a href=&#34;//www.slideshare.net/MariaJoseHitoRamos/stable-matching&#34; title=&#34;Stable Matching&#34; target=&#34;_blank&#34;&gt;Stable Matching&lt;/a&gt; &lt;/strong&gt; &lt;br&gt;&lt;strong&gt;&lt;a target=&#34;_blank&#34; href=&#34;//www.slideshare.net/MariaJoseHitoRamos&#34;&gt;Maria Jose Hito Ramos&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/images/StableMatchmakers.pdf&#34;&gt;Stable Matchmakers (Comic) [PDF]&lt;br&gt;
+&lt;b&gt;Lauren Phan, Grace Harders&lt;/b&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/e1xmi3ed78ov96k/ProblemSet0.pdf?dl=0&#34;&gt;Gale-Shapley&amp;rsquo;s Hotline Bling [PDF]&lt;/a&gt;&lt;br&gt;
+&lt;b&gt;Karan Dhillon, Bennett Clougherty, Jessica Ewing&lt;/b&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/NZWl0UPTQrk&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;&lt;br&gt;&lt;br&gt;
+Anna Wu, Lan Jiang&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://drive.google.com/file/d/0B71lmXKjDUFOZHVNWldBcUtqUUU/view&#34;&gt;A Millennial&amp;rsquo;s Guide To Discreet Stable Matching (as explained with Tinder)&lt;/a&gt;&lt;br&gt;
+Fazlah Rahaman&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/mluo613/stable_matching_sortinghat&#34;&gt;Harry Potter house matching [Code]&lt;/a&gt;&lt;br&gt;
+Mengjia Luo, Allison Chow&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.stripcreator.com/comics/pinkyswear/sets/stablematching/&#34;&gt;Gale-Shapley Comic&lt;/a&gt;&lt;br&gt;
+Meeka Meng&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://docs.google.com/document/d/1594RoT1wu97TuULDvXy0QVg_DNoP-6zOTFUBImHTZQQ/edit?usp=sharing&#34;&gt;Stable Matching [Taxman Lyrics]&lt;/a&gt;&lt;br&gt;
+Sahan Pandey&lt;/p&gt;
+
+&lt;h1 id=&#34;proof-methods&#34;&gt;Proof Methods&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/wsf11/CS2102-Extra-Credit/blob/master/The%20Real%20Santa%20Claus.pptx&#34;&gt;Santa Claus: [PPTX]&lt;/a&gt;&lt;br&gt;
+&lt;b&gt;Winston Frick&lt;/b&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://problemseto.weebly.com/&#34;&gt;Phenomenal Proof&lt;/a&gt; (based on Maya Angelou&amp;rsquo;s &lt;em&gt;Phenomenal Woman&lt;/em&gt;)&lt;br&gt;
+&lt;b&gt;Zeeshan Mir&lt;/b&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;unclassifable&#34;&gt;Unclassifable&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://docs.google.com/document/u/1/d/18-7ZcHOncd26FqnlWWfLhZwxl6c98sMJwWZao7LgFIE/pub&#34;&gt;Discrete Dubs (W’s)&lt;/a&gt; (Rap Song)&lt;br&gt;
+Nicholas Georgiou, Melony Bennis, Noah Harlow, Justin Mooney, Amelia Naegele, Emma Bono&lt;/p&gt;
+
+&lt;p&gt;&lt;iframe id=&#34;iframe_container&#34; frameborder=&#34;0&#34; webkitallowfullscreen=&#34;&#34; mozallowfullscreen=&#34;&#34; allowfullscreen=&#34;&#34; width=&#34;550&#34; height=&#34;400&#34; src=&#34;https://prezi.com/embed/5c_svagdrfkl/?bgcolor=ffffff&amp;amp;lock_to_path=0&amp;amp;autoplay=0&amp;amp;autohide_ctrls=0&amp;amp;landing_data=bHVZZmNaNDBIWnNjdEVENDRhZDFNZGNIUE1lN2lETGZVbFVZd0FVbHg4RTBJVEMzQldtbHhPSDFMWUJmYXE3TXdzST0&amp;amp;landing_sign=VtflvtzLhnxLE_3ot2byrK1AKkYfgv9dSaxaav1tlCA&#34;&gt;&lt;/iframe&gt;&lt;br&gt;
+Nancy Zhang, Peter Cybriwsky, Sohum Sontakke&lt;/p&gt;
+
+&lt;p&gt;&lt;/center&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Class 26: Wrap-Up</title>
+      <link>https://uvacs2102.github.io/class26/</link>
+      <pubDate>Tue, 06 Dec 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/class26/</guid>
+      <description>
+
+&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
+
+&lt;p&gt;Your final (optional) submission for &lt;strong&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/psz&#34;&gt;Problem Set Omega&lt;/a&gt;&lt;/strong&gt;
+is due by &lt;strong&gt;11:59pm&lt;/strong&gt; tonight (&lt;strong&gt;Tuesday, 6 December&lt;/strong&gt;). You may
+revise and update earlier submissions until this deadline.&lt;/p&gt;
+
+&lt;p&gt;The &lt;strong&gt;final exam&lt;/strong&gt; is scheduled by the registrar for &lt;strong&gt;Saturday, 10
+December, 9am-noon&lt;/strong&gt; in our normal classroom.  See the &lt;a href=&#34;https://uvacs2102.github.io/finalprep&#34;&gt;Final Exam
+Preparation&lt;/a&gt; handout for more information and some
+&lt;strong&gt;practice problems&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;
+   &lt;center&gt;
+&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;4afb39d8f5e54a8c95d01f53398f8644&#34; data-ratio=&#34;1.77777777777778&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
+   &lt;/center&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
+
+&lt;p&gt;Here&amp;rsquo;s Jeremy Kun&amp;rsquo;s essay on &lt;a href=&#34;https://medium.com/@jeremyjkun/habits-of-highly-mathematical-people-b719df12d15e#.hra90oa0t&#34;&gt;&lt;em&gt;Habits of Highly Mathematical People&lt;/em&gt;&lt;/a&gt; (to re-read from the beginning of class)&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/YC-ewXitC5w&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;&lt;br&gt;
+Helen Simecek, &lt;em&gt;Logical Operators&lt;/em&gt;
+&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/PNpBamrpgic&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;&lt;br&gt;
+Milan Bharadwaj, &lt;em&gt;Induction Rap&lt;/em&gt;
+&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;(More psO submissions will be posted on the course site later&amp;hellip;)&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Practice Problems Solutions</title>
+      <link>https://uvacs2102.github.io/practicesolutions/</link>
+      <pubDate>Fri, 02 Dec 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/practicesolutions/</guid>
+      <description>&lt;p&gt;After you have tried to solve the &lt;a href=&#34;https://uvacs2102.github.io/docs/finalprep.pdf&#34;&gt;practice
+problems&lt;/a&gt; on your own, you can obtain solutions
+to them using this form: &lt;a
+href=&#34;https://goo.gl/forms/qZVZJD8HHMc2C5XQ2&#34;&gt;
+&lt;em&gt;&lt;a href=&#34;https://goo.gl/forms/qZVZJD8HHMc2C5XQ2&#34;&gt;https://goo.gl/forms/qZVZJD8HHMc2C5XQ2&lt;/a&gt;&lt;/em&gt;&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Class 25: Cryptography</title>
+      <link>https://uvacs2102.github.io/class25/</link>
+      <pubDate>Thu, 01 Dec 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/class25/</guid>
+      <description>
+
+&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Lighting of the Lawn&lt;/em&gt; is &lt;strong&gt;tonight&lt;/strong&gt;!  (Starts around 7pm)&lt;/p&gt;
+
+&lt;p&gt;If you would like to present something to the class, you need to
+submit &lt;strong&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/psz&#34;&gt;Problem Set Omega&lt;/a&gt;&lt;/strong&gt; by &lt;strong&gt;Sunday, 4 December&lt;/strong&gt; at
+&lt;strong&gt;6:29pm&lt;/strong&gt;.  Your submission should include an answer to &amp;ldquo;Presentation
+option&amp;rdquo; question:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Presentation option: if you would like to present in class Tuesday, write a brief explanation of what you would like to do and how much time you are requesting for it. You can also include anything you want to make a compelling case for why your project should be selected (depending on how many requests for presentation their are, it may be necessary to select only as many as fit into the class).&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Your final (optional) submission is due &lt;strong&gt;Tuesday, 6 December&lt;/strong&gt;. You
+may revise and update earlier submissions until this deadline.&lt;/p&gt;
+
+&lt;p&gt;The &lt;strong&gt;final exam&lt;/strong&gt; is scheduled by the registrar for &lt;strong&gt;Saturday, 10
+December, 9am-noon&lt;/strong&gt; in our normal classroom.  See the &lt;a href=&#34;https://uvacs2102.github.io/finalprep&#34;&gt;Final Exam
+Preparation&lt;/a&gt; handout for more information and some &lt;strong&gt;practice problems&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;
+   &lt;center&gt;
+&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;05564d4a4f204f10867ae912bc410f93&#34; data-ratio=&#34;1.77777777777778&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
+   &lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlightm&#34;&gt;
+   &lt;a href=&#34;https://uvacs2102.github.io/docs/class25.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes&lt;/b&gt;&lt;/a&gt;.
+   &lt;/div&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.cs.virginia.edu/~evans/courses/cs387/&#34;&gt;Cryptography Courses&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.mightbeevil.org&#34;&gt;MightBeEvil&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;symmetric-cryptography&#34;&gt;Symmetric Cryptography&lt;/h1&gt;
+
+&lt;p&gt;Correctness: $D(K, E(K, M)) = M$&lt;/p&gt;
+
+&lt;p&gt;Security: without $K$, it is hard to learning anything interesting about $M$ from $E(K, M)$.&lt;/p&gt;
+
+&lt;p&gt;Why is $\oplus$ (xor) such a useful operator for cryptography?&lt;/p&gt;
+
+&lt;p&gt;#&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Perfect cipher&lt;/strong&gt; (Claude Shannon, 1940s).  The ciphertext reveals no
+  information (other than maximum length) about the plaintext.&lt;/p&gt;
+
+&lt;p&gt;Why must a perfect cipher have $|K|\, \ge\, |M|$? ($K$ is the set of possible keys, $M$ is the set of plaintext messages)&lt;/p&gt;
+
+&lt;p&gt;#&lt;/p&gt;
+
+&lt;p&gt;Why is a one-time pad impractical for most purposes?  How do you break a &amp;ldquo;two&amp;rdquo;-time pad?&lt;/p&gt;
+
+&lt;!--page--&gt;
+
+&lt;h1 id=&#34;asymmetric-public-key-cryptography&#34;&gt;Asymmetric (Public Key) Cryptography&lt;/h1&gt;
+
+&lt;p&gt;\small&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;We stand today on the brink of a revolution in cryptography. The development of cheap digital hardware has freed it from the design limitations of mechanical computing and brought the cost of high grade cryptographic devices down to where they can be used in such commercial applications as remote cash dispensers and computer terminals. In turn, such applications create a need for new types of cryptographic systems which minimize the necessity of secure key distribution channels and supply the equivalent of a written signature. At the same time, theoretical developments in information theory and computer science show promise of providing provably secure cryptosystems, changing this ancient art into a science.&lt;/em&gt;&lt;br /&gt;
+Whit Diffie and Martin Hellman, &lt;em&gt;New Directions in Cryptography&lt;/em&gt;, November 1976&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;\normalsize&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Primitive root.&lt;/strong&gt; $\alpha$ is a primitive root of $q$ if $\forall 1 \le n &amp;lt; q \ldotp \exists m, 1 \le m &amp;lt; q\ \text{such that}\ \alpha^m = n \mod q$.  All prime numbers have primitive roots.&lt;/p&gt;
+
+&lt;h3 id=&#34;diffie-hellman-merkle-key-agreement&#34;&gt;Diffie-Hellman-Merkle Key Agreement&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Goal:&lt;/strong&gt; Alice and Bob agree on a secure key $K$, over an insecure channel with no prior agreement.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Assumption:&lt;/strong&gt; Discrete log problem is hard (for sufficiently large inputs).&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Choose and public the public parameters:&lt;br /&gt;
+$q$, large prime number
+$\alpha$, primitive root of $q$&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Alice generates random $X_A$.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Alice sends $Y_A = \alpha^{X_A} \mod q$.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Bob generates random $X_B$.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Bob sends $Y_B = \alpha^{X_B} \mod q$&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Alice computes $K = (Y_B)^{X_A} \mod q$ / Bob computes $K = (Y_A)^{X_B} \mod q$.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;How do we know Alice and Bob will agree on the same key, $K$?&lt;/p&gt;
+
+&lt;p&gt;##&lt;/p&gt;
+
+&lt;p&gt;What would an eavesdropper need to do to learn $K$?&lt;/p&gt;
+
+&lt;p&gt;##&lt;/p&gt;
+
+&lt;h1 id=&#34;secure-multi-party-computation&#34;&gt;Secure Multi-Party Computation&lt;/h1&gt;
+
+&lt;p&gt;How can we compute a stable matching without revealing sensitive preferences?&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Class 24: Halting Problems</title>
+      <link>https://uvacs2102.github.io/class24/</link>
+      <pubDate>Tue, 29 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/class24/</guid>
+      <description>
+
+&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/psz&#34;&gt;Problem Set Omega&lt;/a&gt;&lt;/strong&gt; is due on &lt;strong&gt;Sunday, 4 December&lt;/strong&gt; or
+&lt;strong&gt;Tuesday, 6 December&lt;/strong&gt; (see problem set for details).  It is not like
+the others, and counts as a &amp;ldquo;bonus&amp;rdquo; optional assignment.&lt;/p&gt;
+
+&lt;p&gt;The &lt;strong&gt;final exam&lt;/strong&gt; is scheduled by the registrar for &lt;strong&gt;Saturday, 10
+December, 9am-noon&lt;/strong&gt; in our normal classroom.  See the &lt;a href=&#34;https://uvacs2102.github.io/finalprep&#34;&gt;Final Exam
+Preparation&lt;/a&gt; handout for more information on the final and
+some &lt;strong&gt;practice problems&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;
+   &lt;center&gt;
+&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;e2fa98661b6e4202911a96a8418ef219&#34; data-ratio=&#34;1.77777777777778&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
+   &lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlightm&#34;&gt;
+   &lt;a href=&#34;https://uvacs2102.github.io/docs/class24.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes&lt;/b&gt;&lt;/a&gt;.
+   &lt;/div&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=eB5VXJXxnNU&#34;&gt;Ali G on Science&lt;/a&gt; (possibly offensive, watch at your own risk!)&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=macM_MtS_w4&#34;&gt;Numberphile on the Halting Problem&lt;/a&gt; (HT: John Fry)&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;turing-machine-definitions&#34;&gt;Turing Machine Definitions&lt;/h2&gt;
+
+&lt;p&gt;$$
+TM = (S, T \subseteq S \times \Gamma \rightarrow S \times \Gamma \times \text{\em dir}, q&lt;em&gt;0 \in S, q&lt;/em&gt;{Accept} \subseteq S)
+$$&lt;/p&gt;
+
+&lt;p&gt;$S$ is a finite set (the &amp;ldquo;in-the-head&amp;rdquo; processing states)&lt;br /&gt;
+$\Gamma$ is a finite set (symbols that can be written on the tape)&lt;br /&gt;
+$\text{\em dir} = { \text{\bf Left}, \text{\bf Right}, \text{\bf Halt} }$ is the direction to move on the tape.&lt;/p&gt;
+
+&lt;p&gt;An &lt;em&gt;execution&lt;/em&gt; of a Turing Machine, $TM = (S, T \subseteq S \times \Gamma \rightarrow S \times \Gamma \times \text{\em dir}, q&lt;em&gt;0 \in S, q&lt;/em&gt;{Accept} \subseteq S)$, is a (possibly infinite) sequence of &lt;strong&gt;configurations&lt;/strong&gt;, $(x_0, x_1, \ldots)$ where $x_i \in \text{\em Tsil} \times S \times \text{\em List}$ (elements of the lists are in the finite set of symbols, $\Gamma$), such that:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;$x_0 = (\text{\bf null}, q_0, \text{\bf input})$&lt;/li&gt;
+&lt;li&gt;and all transitions follow the rules (need to be specified in detail).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;recognizing-languages&#34;&gt;Recognizing Languages&lt;/h1&gt;
+
+&lt;p&gt;A Turing Machine, $M = (S, T \subseteq S \times \Gamma \rightarrow S
+\times \Gamma \times \text{\em dir}, q&lt;em&gt;0 \in S, q&lt;/em&gt;{Accept} \subseteq
+S)$, &lt;strong&gt;accepts&lt;/strong&gt; a string &lt;em&gt;x&lt;/em&gt;, if there is an execution of &lt;em&gt;M&lt;/em&gt; that
+starts in configuration $(\text{\bf null}, q_0, x)$, and terminates in
+a configuration, $(l, q_f, r)$, where $q&lt;em&gt;f \in q&lt;/em&gt;{Accept}$.&lt;/p&gt;
+
+&lt;p&gt;A Turing Machine, $M = (S, T \subseteq S \times \Gamma \rightarrow S
+\times \Gamma \times \text{\em dir}, q&lt;em&gt;0 \in S, q&lt;/em&gt;{Accept} \subseteq
+S)$, &lt;strong&gt;recognizes&lt;/strong&gt; a language $\mathcal{L}$, if for all strings $s
+\in \mathcal{L}$, $M$ accepts $s$, and there is no string $t \notin L$
+such that $M$ accepts $t$.&lt;/p&gt;
+
+&lt;p&gt;A Turing Machine, $M = (S, T \subseteq S \times \Gamma \rightarrow S
+\times \Gamma \times \text{\em dir}, q&lt;em&gt;0 \in S, q&lt;/em&gt;{Accept} \subseteq
+S)$, &lt;strong&gt;decides&lt;/strong&gt; a language $\mathcal{L}$, if for all strings $s \in
+\mathcal{L}$, $M$ accepts $s$, and for all strings $t \notin L$, $M$
+&lt;em&gt;terminates&lt;/em&gt; in a non-accepting state.&lt;/p&gt;
+
+&lt;p&gt;A language $\mathcal{L}$ is &lt;strong&gt;Turing-recognizable&lt;/strong&gt; if there is some
+Turing Machine that recognizes it.  A language $\mathcal{L}$ is
+&lt;strong&gt;Turing-decidable&lt;/strong&gt; if there is some Turing Machine that decides it.&lt;/p&gt;
+
+&lt;p&gt;Are all Turing-decidable languages Turing-recognizable?&lt;/p&gt;
+
+&lt;p&gt;##&lt;/p&gt;
+
+&lt;p&gt;Are all Turing-recognizable languages Turing-decidable?&lt;/p&gt;
+
+&lt;!--page--&gt;
+
+&lt;h1 id=&#34;undecidable-languages&#34;&gt;Undecidable Languages&lt;/h1&gt;
+
+&lt;p&gt;$$
+\text{SelfRejecting} := { w \in \Sigma^{*} \, | \, w \notin \mathcal{L}(M(w)) }
+$$
+where $M(w)$ is the Turing Machine described by string $w$ if $w$
+describes a valid Turing Machine, otherwise, a $M(w)$ is a machine
+that rejects all inputs.&lt;/p&gt;
+
+&lt;p&gt;Is there a $M&lt;em&gt;{SR} = M(w&lt;/em&gt;{SR})$ that recognizes the language $\text{SelfRejecting}$?&lt;/p&gt;
+
+&lt;p&gt;#&lt;/p&gt;
+
+&lt;p&gt;$$
+A_{TM} = { (w, x) \, | \, M(w)\ \text{accepts on input}\ x }
+$$&lt;/p&gt;
+
+&lt;p&gt;Is the language $A_{TM}$ Turing-recognizable?&lt;/p&gt;
+
+&lt;p&gt;#&lt;/p&gt;
+
+&lt;p&gt;Is the language $A_{TM}$ Turing-decidable?&lt;/p&gt;
+
+&lt;p&gt;#&lt;/p&gt;
+
+&lt;p&gt;#&lt;/p&gt;
+
+&lt;p&gt;#&lt;/p&gt;
+
+&lt;p&gt;$$
+Halts_{TM} = { (w, x) \, | \, M(w)\ \text{terminates on input}\ x }
+$$&lt;/p&gt;
+
+&lt;p&gt;#&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-Python&#34;&gt;def paradox():
+   if halts(&#39;paradox()&#39;):
+       while True:
+          pass
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Final Exam Preparation</title>
+      <link>https://uvacs2102.github.io/finalprep/</link>
+      <pubDate>Mon, 28 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/finalprep/</guid>
+      <description>
+
+&lt;h2 id=&#34;final-exam&#34;&gt;Final Exam&lt;/h2&gt;
+
+&lt;p&gt;The final exam is scheduled by the registrar for &lt;strong&gt;Saturday, 10
+December, 9am-noon&lt;/strong&gt; in our normal classroom.  The final will cover
+everything in the course, with an emphasis on the most important
+concepts that have appeared in at least two places.&lt;/p&gt;
+
+&lt;p&gt;Most of the questions on the final will be small variations on
+problems you have already seen on previous exams or problem sets.
+Doing well on these questions will make a strong case for earning at
+least a B in the class.  A few of the problems will be designed to see
+how well you can use concepts you have learned in the class to solve
+problems unlike ones you have already seen.  Doing well on many of
+these questions will make a strong case for earning an A in the class.&lt;/p&gt;
+
+&lt;p&gt;The format will be fairly similar to Exam 1 and Exam 2, but because of
+the extended time for the final, and the desire to give as much
+opportunity as possible for students to demonstrate what you can do,
+will be a bit longer than those exams.&lt;/p&gt;
+
+&lt;p&gt;As with Exam 1 and Exam 2, you will be permitted to use a &lt;strong&gt;single
+paper page of notes that you prepare and bring to the exam&lt;/strong&gt;, but no
+other resources.  It is fine to collaborate with others to prepare
+your notes.  The page should be no larger than a US Letter size page
+($8.5 \times 11$ inches), and you may write (or print) on both sides
+of the page.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Unlike the previous exams, you must turn in your notes page with
+your exam.&lt;/strong&gt; If you would like to keep your own copy of it, you should
+make a copy to save before the exam.&lt;/p&gt;
+
+&lt;h2 id=&#34;expected-problems&#34;&gt;Expected Problems&lt;/h2&gt;
+
+&lt;p&gt;Although the exam covers the whole class, you should not be surprised
+if it includes problems for you to demonstrate:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Your understanding of &lt;strong&gt;logical formulas&lt;/strong&gt;, &lt;strong&gt;inference rules&lt;/strong&gt;, and an ability to reason about and
+manipulate formulas using &lt;strong&gt;quantifiers&lt;/strong&gt;.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Your fluency with standard proof techniques including &lt;strong&gt;proof-by-contradiction&lt;/strong&gt;.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Your understanding of &lt;strong&gt;well-ordering&lt;/strong&gt; and how to construct proofs using the &lt;strong&gt;well
+ordering principle&lt;/strong&gt;.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Your understanding of &lt;strong&gt;sets&lt;/strong&gt;, how the set operators are defined, and what they mean.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;That you can do a &lt;strong&gt;regular induction&lt;/strong&gt; proof similar to ones you
+have seen on previous exams &lt;em&gt;very well&lt;/em&gt;.  That you can do an
+induction proof that requires some creativity to &lt;strong&gt;define a good
+induction predicate&lt;/strong&gt; and then to complete the proof.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Your understanding of &lt;strong&gt;state machines&lt;/strong&gt;, and ability to use the
+&lt;strong&gt;invariant principle&lt;/strong&gt; to prove a property of the reachable states
+for a given state machine.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Your understanding of &lt;strong&gt;recursive data types&lt;/strong&gt;, ability to define
+functions on recursive data types, and to use &lt;strong&gt;structural
+induction&lt;/strong&gt; to prove a property about all objects of a recursive
+data type.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Your understanding of infinite cardinalities including the ability
+to determine if a set is &lt;strong&gt;countable&lt;/strong&gt; or &lt;strong&gt;uncountable&lt;/strong&gt;, and to
+support your answer with a convincing proof.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Your understanding of &lt;strong&gt;Turing Machines&lt;/strong&gt; and
+&lt;strong&gt;computability&lt;/strong&gt;. (See practice problems.)&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;practice-problems&#34;&gt;Practice Problems&lt;/h2&gt;
+
+&lt;p&gt;Since there was no problem set covering Classes 23&amp;ndash;25, here are some
+practice problems to help you prepare for the final. You do not need
+to turn in your solutions to these problems, but it is highly
+recommended that you approach them similarly to a problem set to be
+well prepared for the final.  You should not be surprised to see
+problems similar to these on the final exam.&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;
+   &lt;div class=&#34;highlightm&#34;&gt;
+   &lt;a href=&#34;https://uvacs2102.github.io/docs/finalprep.pdf&#34;&gt;See PDF Version for &lt;b&gt;Practice Problems&lt;/b&gt;&lt;/a&gt;.
+   &lt;/div&gt;
+   &lt;/div&gt;&lt;!--endpdf--&gt;
+   &lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Prove that all well-ordered sets are countable.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;The way we defined an execution of a Turing Machine in &lt;a href=&#34;https://uvacs2102.github.io/class23&#34;&gt;Class
+23&lt;/a&gt; suggested that there could be more than one execution
+of a Turing Machine, $TM = (S, T \subseteq S \times \Gamma \rightarrow
+S \times \Gamma \times \text{\em dir}, q&lt;em&gt;0 \in S, q&lt;/em&gt;{Accept} \subseteq
+S)$, on a given input $I$.  What property of $T$ would ensure that
+there is only a single execution possible?&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;For the following questions, a &lt;em&gt;deterministic&lt;/em&gt; Turing Machine is a
+Turing Machine that for every possible input has a single execution.
+That is, there is no input for which the Turing Machine has more than
+one possible execution.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Describe a deterministic Turing Machine that never halts but never
+repeats a configuration.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Prove that a deterministic Turing Machine that repeats a
+configuration never halts.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Consider the Turing Machine, $M_X$, defined below. (The $\text{\bf -}$
+symbol denotes a blank square, which may not appear in the input.
+Every square to the right of the last input symbol is initially
+blank.)  Hint: for questions 5 and 6 you should be able to use similar
+techniques to how we reasoned about state machines, but need to also
+take into account the tape (so instead of using the invariant
+principle for states as before, now you need to consider it for full
+machine configurations).&lt;/p&gt;
+
+&lt;p&gt;\begin{equation&lt;em&gt;}
+\begin{split}
+M_X = ( &amp;amp; S = { A, B, C, D }, &lt;br /&gt;
+        &amp;amp; T = { (A, \text{\bf 0}) \rightarrow (B, \text{\bf X}, \text{\bf R}), (A, \text{\bf -}) \rightarrow (D, \text{\bf -}, \text{\bf Halt}) &lt;br /&gt;
+        &amp;amp;  \qquad \;\,\, (B, \text{\bf 0}) \rightarrow (B, \text{\bf 0}, \text{\bf R}), (B, \text{\bf -}) \rightarrow (C, \text{\bf -}, \text{\bf L}), &lt;br /&gt;
+        &amp;amp;  \qquad \;\,\, (C, \text{\bf 0}) \rightarrow (C, \text{\bf 0}, \text{\bf L}), (C, \text{\bf X}) \rightarrow (A, \text{\bf X}, \text{\bf R}) }, \
+        &amp;amp; q&lt;em&gt;0 = A, q&lt;/em&gt;{Accept} = { D } )  &lt;br /&gt;
+\end{split}
+\end{equation&lt;/em&gt;}&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Prove that $M_X$ running on any initial tape with finite input
+(that is, the number of non-blank squares is $k \in \mathbb{N}$)
+always terminates.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Prove that $\mathcal{L}(M_X) = \text{\bf 0}^*$ (that is, the
+language recognized by $M_X$ is the set of all strings of zero or more
+$\text{\bf 0}$ symbols).&lt;br /&gt;
+&lt;/div&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Trees Challenge</title>
+      <link>https://uvacs2102.github.io/treeschallenge/</link>
+      <pubDate>Mon, 28 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/treeschallenge/</guid>
+      <description>&lt;p&gt;Henry Spece has solved Challenge 7:&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlightg&#34;&gt;
+   &lt;strong&gt;Challenge 7.&lt;/strong&gt; From &lt;a href=&#34;https://uvacs2102.github.io/class19&#34;&gt;Class19&lt;/a&gt;: Determine the carinality of
+  the set of all &lt;em&gt;Tree&lt;/em&gt; objects (as defined on PS8), and provide a convincing
+  proof supporting your answer.
+   &lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;Henry&amp;rsquo;s proof is below:&lt;/p&gt;
+
+&lt;p&gt;The set of &lt;em&gt;Tree&lt;/em&gt; objects is &lt;em&gt;countable&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;The following already proven theorems are used:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;The set of all strees is countably infinite.&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;the set of all finite sequences of natural numbers is countable.&lt;/li&gt;
+&lt;li&gt;The cartesian product of two countable sets is also countable.&lt;/li&gt;
+&lt;li&gt;The sub-set of a countable set is countable.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;We prove that the set of all trees with natural number labels is
+countable by finding a total injective mapping between the set of all
+trees and a set which is known to be countably infinite.&lt;/p&gt;
+
+&lt;p&gt;The set to which we are mapping the trees is the cartesian product of
+the set of finite sequences of natural numbers and the set of all
+strees.  We already know that the set of all strees is countable, as
+well as the set of all finite sequences of natural numbers.  Because
+the cartesian product of two countable sets is also countable, the
+cartesian product of these two sets must be countable, and a total
+injective mapping between the trees and this set would prove the set
+of all trees to also be countably infinite.&lt;/p&gt;
+
+&lt;p&gt;It is possible to imagine a mapping that links a tree to a stree,
+representing its structure, and a list of its labels, &amp;ldquo;in-order.&amp;rdquo;
+This is effectively &amp;ldquo;breaking apart&amp;rdquo; the tree into its components,
+resulting in two more manageable data types, or one element of the set
+defined above.&lt;/p&gt;
+
+&lt;p&gt;The function is defined more rigorously below, in two parts:&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Part 1&lt;/em&gt; (helper function):&lt;/p&gt;
+
+&lt;p&gt;&lt;pre&gt;
+   getStree := tree -&amp;gt; stree
+   getStree(null) = null
+   getStree(combine(t1,N,t2)) = combine(getStree(t1),getStree(t2))
+   &lt;/pre&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Part 2&lt;/em&gt; (helper function):&lt;/p&gt;
+
+&lt;p&gt;&lt;pre&gt;
+   getSequence := tree -&amp;gt; sequence
+   getSequence(null) = empty sequence
+   getSequence(combine(t1,N,t2)) = concatenate(getSequence(t1),N,getSequence(t2))
+   &lt;/pre&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Combined&lt;/em&gt; (the relation being defined for the proof):
+   &lt;pre&gt;
+   splitTree := tree -&amp;gt; (stree, sequence)
+   splitTree(t) = (getStree(t),getSequence(t))
+   &lt;/pre&gt;&lt;/p&gt;
+
+&lt;p&gt;This relation is defined for all trees, making it total, and produces
+a unique stree-sequence combination for each tree, making it
+injective.&lt;/p&gt;
+
+&lt;p&gt;Because we have defined a total injective relation between the trees
+and another set which is known to be countable, the set of all trees
+must be countable.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Problem Set 9 Solutions and Comments</title>
+      <link>https://uvacs2102.github.io/ps9solutions/</link>
+      <pubDate>Sun, 27 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/ps9solutions/</guid>
+      <description>&lt;p&gt;The Problem Set 9 solutions are now posted:
+&lt;a href=&#34;https://collab.itc.virginia.edu/access/content/group/e0b17949-c94c-466b-835a-196381f3f911/ps9solutions.pdf&#34;&gt;[PDF]&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Its a good idea, of course, to read this carefully and ask questions about anything that is unclear.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Submitting Problem Set Omega</title>
+      <link>https://uvacs2102.github.io/pszsubmit/</link>
+      <pubDate>Sun, 27 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/pszsubmit/</guid>
+      <description>&lt;p&gt;The form for submitting &lt;a href=&#34;https://uvacs2102.github.io/ps/psz&#34;&gt;Problem Set Omega&lt;/a&gt; is
+&lt;a href=&#34;https://docs.google.com/forms/d/e/1FAIpQLSfMqhD_T3hUvNB0uLWr1Cs8VmIWsJPtHYLajTJV4Y1RLioq1w/viewform&#34;&gt;here&lt;/a&gt;:&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;
+&lt;iframe src=&#34;https://docs.google.com/forms/d/e/1FAIpQLSfMqhD_T3hUvNB0uLWr1Cs8VmIWsJPtHYLajTJV4Y1RLioq1w/viewform?embedded=true&#34; width=&#34;850&#34; height=&#34;500&#34; frameborder=&#34;0&#34; marginheight=&#34;0&#34; marginwidth=&#34;0&#34;&gt;Loading&amp;hellip;&lt;/iframe&gt;
+&lt;/center&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Class 23: Universal Machines</title>
+      <link>https://uvacs2102.github.io/class23/</link>
+      <pubDate>Sat, 19 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/class23/</guid>
+      <description>
+
+&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://uvacs2102.github.io/docs/ps9.pdf&#34;&gt;Problem Set 9&lt;/a&gt;&lt;/strong&gt; is tomorrow, &lt;strong&gt;Wednesday, 23 November&lt;/strong&gt; at &lt;strong&gt;6:29pm&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/psZ&#34;&gt;Problem Set Omega&lt;/a&gt;&lt;/strong&gt; is now posted and due on &lt;strong&gt;Sunday,
+  4 December&lt;/strong&gt; or &lt;strong&gt;Tuesday, 6 December&lt;/strong&gt; (see problem set for
+  details).  It is not like the others, and counts as a &amp;ldquo;bonus&amp;rdquo;
+  optional assignment.&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;
+   &lt;center&gt;
+&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;a98aa89e00784f0ca379fd216a092c5c&#34; data-ratio=&#34;1.77777777777778&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
+   &lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlightm&#34;&gt;
+   &lt;a href=&#34;https://uvacs2102.github.io/docs/class23.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes&lt;/b&gt;&lt;/a&gt;.
+   &lt;/div&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;links&#34;&gt;Links&lt;/h3&gt;
+
+&lt;p&gt;Simple Turing Machine simulator (and XOR machine): &lt;a href=&#34;https://uvacs2102.github.io/docs/tm.py&#34;&gt;tm.py&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://dori-mic.org&#34;&gt;Dori-Mic and the Universal Machine!&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;turing-machine&#34;&gt;Turing Machine&lt;/h2&gt;
+
+&lt;p&gt;$$
+TM = (S, T \subseteq S \times \Gamma \rightarrow S \times \Gamma \times \text{\em dir}, q&lt;em&gt;0 \in S, q&lt;/em&gt;{Accept} \subseteq S)
+$$&lt;/p&gt;
+
+&lt;p&gt;$S$ is a finite set (the &amp;ldquo;in-the-head&amp;rdquo; processing states)&lt;br /&gt;
+$\Gamma$ is a finite set (symbols that can be writte on the tape)&lt;br /&gt;
+$\text{\em dir} = { \text{\bf Left}, \text{\bf Right}, \text{\bf Halt} }$ is the direction to move on the tape.&lt;/p&gt;
+
+&lt;p&gt;An &lt;em&gt;execution&lt;/em&gt; of a Turing Machine, $TM = (S, T \subseteq S \times \Gamma \rightarrow S \times \Gamma \times \text{\em dir}, q&lt;em&gt;0 \in S, q&lt;/em&gt;{Accept} \subseteq S)$, is a (possibly infinite) sequence of &lt;strong&gt;configurations&lt;/strong&gt;, $(x_0, x_1, \ldots)$ where $x_i \in \text{\em Tsil} \times S \times \text{\em List}$ (elements of the lists are in the finite set of symbols, $\Gamma$), such that:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;  - $x_0 = (\text{\bf null}, q_0, \text{\bf input})$
+  - and all transitions follow the rules (need to be specified in detail).
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;!-- What is the case for the transition rule for then the direction is Left?
+
+#
+--&gt;
+
+&lt;h2 id=&#34;machines-and-languages&#34;&gt;Machines and Languages&lt;/h2&gt;
+
+&lt;p&gt;A &lt;strong&gt;language&lt;/strong&gt; is a (possibly infinite) set of &lt;em&gt;finite&lt;/em&gt; strings.&lt;/p&gt;
+
+&lt;p&gt;$\Sigma$ = alphabet, a finite set of symbols&lt;br /&gt;
+$L \subseteq \Sigma^{*}$&lt;/p&gt;
+
+&lt;p&gt;$$L_{XOR} = { x_0x_1\ldots x_n + y_0y_1\ldots y_n = z_0z_1\ldots z_n \$ | x_i \in {0, 1}, y_i \in {0, 1}, z_i = x_i \oplus y_i }$$&lt;/p&gt;
+
+&lt;h2 id=&#34;turing-machine-computation&#34;&gt;Turing Machine Computation&lt;/h2&gt;
+
+&lt;p&gt;A Turing Machine, $M = (S, T \subseteq S \times \Gamma \rightarrow S \times \Gamma \times \text{\em dir}, q&lt;em&gt;0 \in S, q&lt;/em&gt;{Accept} \subseteq S)$, &lt;strong&gt;accepts&lt;/strong&gt; a string &lt;em&gt;x&lt;/em&gt;, if there is an execution of &lt;em&gt;M&lt;/em&gt; that starts in configuration $(\text{\bf null}, q_0, x)$, and terminates in a configuration, $(l, q_f, r)$, where $q&lt;em&gt;f \in q&lt;/em&gt;{Accept}$.&lt;/p&gt;
+
+&lt;p&gt;A Turing Machine, $M = (S, T \subseteq S \times \Gamma \rightarrow S \times \Gamma \times \text{\em dir}, q&lt;em&gt;0 \in S, q&lt;/em&gt;{Accept} \subseteq S)$, &lt;strong&gt;recognizes&lt;/strong&gt; a language  $L$, if for all strings $s \in L$, $M$ accepts $s$, and there is no string $t \notin L$ such that $M$ accepts $t$.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;TuringMachine = namedtuple(&#39;TuringMachine&#39;, [&#39;rules&#39;, &#39;q_0&#39;, &#39;q_accepting&#39;])
+
+def simulate(tm, starttape):
+    tape = starttape
+    headpos = 0
+    currentstate = tm.q_0
+
+    while True:
+        readsym = tape[headpos]
+        if (currentstate, readsym) in tm.rules:
+            (nextstate, writesym, dir) = tm.rules[(currentstate, readsym)]
+            tape[headpos] = writesym
+            currentstate = nextstate
+        else:
+            return currentstate in tm.q_accepting # no rule, halt
+
+        if dir == &#39;L&#39;:
+            headpos = max(headpos - 1, 0)
+        elif dir == &#39;R&#39;:
+            headpos += 1
+            if len(tape) &amp;lt;= headpos: tape.append(&#39;_&#39;) # blank
+        else: # assert dir == &#39;Halt&#39;
+            return currentstate in tm.q_accepting
+           
+xorm = TuringMachine(
+    rules = { (&#39;S&#39;, &#39;0&#39;): (&#39;R0&#39;, &#39;-&#39;, &#39;R&#39;), (&#39;S&#39;, &#39;1&#39;): (&#39;R1&#39;, &#39;-&#39;, &#39;R&#39;),
+              (&#39;S&#39;, &#39;+&#39;): (&#39;C&#39;, &#39;+&#39;, &#39;R&#39;),
+              (&#39;R0&#39;, &#39;0&#39;): (&#39;R0&#39;, &#39;0&#39;, &#39;R&#39;), (&#39;R0&#39;, &#39;1&#39;): (&#39;R0&#39;, &#39;1&#39;, &#39;R&#39;),
+              (&#39;R1&#39;, &#39;0&#39;): (&#39;R1&#39;, &#39;0&#39;, &#39;R&#39;), (&#39;R1&#39;, &#39;1&#39;): (&#39;R1&#39;, &#39;1&#39;, &#39;R&#39;),
+              (&#39;R0&#39;, &#39;+&#39;): (&#39;X0&#39;, &#39;+&#39;, &#39;R&#39;), (&#39;R1&#39;, &#39;+&#39;): (&#39;X1&#39;, &#39;+&#39;, &#39;R&#39;),
+              (&#39;X0&#39;, &#39;X&#39;): (&#39;X0&#39;, &#39;X&#39;, &#39;R&#39;), (&#39;X1&#39;, &#39;X&#39;): (&#39;X1&#39;, &#39;X&#39;, &#39;R&#39;),
+              (&#39;X0&#39;, &#39;0&#39;): (&#39;Y0&#39;, &#39;X&#39;, &#39;R&#39;), (&#39;X0&#39;, &#39;1&#39;): (&#39;Y1&#39;, &#39;X&#39;, &#39;R&#39;),
+              (&#39;X1&#39;, &#39;0&#39;): (&#39;Y1&#39;, &#39;X&#39;, &#39;R&#39;), (&#39;X1&#39;, &#39;1&#39;): (&#39;Y0&#39;, &#39;X&#39;, &#39;R&#39;),
+              (&#39;Y0&#39;, &#39;0&#39;): (&#39;Y0&#39;, &#39;0&#39;, &#39;R&#39;), (&#39;Y0&#39;, &#39;1&#39;): (&#39;Y0&#39;, &#39;1&#39;, &#39;R&#39;),
+              (&#39;Y1&#39;, &#39;0&#39;): (&#39;Y1&#39;, &#39;0&#39;, &#39;R&#39;), (&#39;Y1&#39;, &#39;1&#39;): (&#39;Y1&#39;, &#39;1&#39;, &#39;R&#39;),
+              (&#39;Y0&#39;, &#39;=&#39;): (&#39;Z0&#39;, &#39;=&#39;, &#39;R&#39;), (&#39;Y1&#39;, &#39;=&#39;): (&#39;Z1&#39;, &#39;=&#39;, &#39;R&#39;),
+              (&#39;Z0&#39;, &#39;X&#39;): (&#39;Z0&#39;, &#39;X&#39;, &#39;R&#39;), (&#39;Z1&#39;, &#39;X&#39;): (&#39;Z1&#39;, &#39;X&#39;, &#39;R&#39;),
+              (&#39;Z0&#39;, &#39;0&#39;): (&#39;B&#39;, &#39;X&#39;, &#39;L&#39;),  (&#39;Z1&#39;, &#39;1&#39;): (&#39;B&#39;, &#39;X&#39;, &#39;L&#39;),
+              (&#39;B&#39;, &#39;0&#39;): (&#39;B&#39;, &#39;0&#39;, &#39;L&#39;),   (&#39;B&#39;, &#39;1&#39;): (&#39;B&#39;, &#39;1&#39;, &#39;L&#39;),
+              (&#39;B&#39;, &#39;+&#39;): (&#39;B&#39;, &#39;+&#39;, &#39;L&#39;),   (&#39;B&#39;, &#39;X&#39;): (&#39;B&#39;, &#39;X&#39;, &#39;L&#39;),
+              (&#39;B&#39;, &#39;=&#39;): (&#39;B&#39;, &#39;=&#39;, &#39;L&#39;),   (&#39;B&#39;, &#39;-&#39;): (&#39;S&#39;, &#39;-&#39;, &#39;R&#39;),
+              (&#39;C&#39;, &#39;X&#39;): (&#39;C&#39;, &#39;X&#39;, &#39;R&#39;),   (&#39;C&#39;, &#39;=&#39;): (&#39;C&#39;, &#39;=&#39;, &#39;R&#39;), 
+              (&#39;C&#39;, &#39;$&#39;): (&#39;Accept&#39;, &#39;$&#39;, &#39;Halt&#39;) },
+    q_0 = &#39;S&#39;, q_accepting = { &#39;Accept&#39; })    
+
+simulate(xorm, list(&amp;quot;00+10=10$&amp;quot;))
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Exam 2 Solutions</title>
+      <link>https://uvacs2102.github.io/exam2solutions/</link>
+      <pubDate>Sat, 19 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/exam2solutions/</guid>
+      <description>&lt;p&gt;The solutions to &lt;a href=&#34;https://uvacs2102.github.io/docs/exam2.pdf&#34;&gt;Exam 2&lt;/a&gt; are here: &lt;a href=&#34;https://uvacs2102.github.io/docs/exam2solutions.pdf&#34;&gt;Exam 2
+Solutions&lt;/a&gt;.  You should, of course, expect
+to see questions like these again on the final.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Class 22: On Computable Numbers</title>
+      <link>https://uvacs2102.github.io/class22/</link>
+      <pubDate>Thu, 17 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/class22/</guid>
+      <description>
+
+&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://uvacs2102.github.io/docs/ps9.pdf&#34;&gt;Problem Set 9&lt;/a&gt;&lt;/strong&gt; is now due on &lt;strong&gt;Wednesday, 23 November&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/psZ&#34;&gt;Problem Set Omega&lt;/a&gt;&lt;/strong&gt; is now posted and due on &lt;strong&gt;Sunday,
+  4 December&lt;/strong&gt; or &lt;strong&gt;Tuesday, 6 December&lt;/strong&gt; (see problem set for
+  details).  It is not like the others, and counts as a &amp;ldquo;bonus&amp;rdquo;
+  optional assignment.&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;
+   &lt;center&gt;
+&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;b0dff8d581dc461c9d71c79589eb0dc9&#34; data-ratio=&#34;1.77777777777778&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
+   &lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlightm&#34;&gt;
+   &lt;a href=&#34;https://uvacs2102.github.io/docs/class22.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes&lt;/b&gt;&lt;/a&gt;.
+   &lt;/div&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;links&#34;&gt;Links&lt;/h1&gt;
+
+&lt;p&gt;Fernando Gouvea, &lt;a href=&#34;http://www.maa.org/was-cantor-surprised&#34;&gt;&lt;em&gt;Was Cantor Surprised?&lt;/em&gt;&lt;/a&gt;. American Mathematical Monthly, March 2011.&lt;/p&gt;
+
+&lt;p&gt;A. M. Turing, &lt;a href=&#34;https://uvacs2102.github.io/docs/oncomputablenumbers.pdf&#34;&gt;&lt;em&gt;On Computable Numbers, with an Application to the Entscheidungsproblem&lt;/em&gt;&lt;/a&gt;, 1936.&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;cantor-s-continuum-hypothesis&#34;&gt;Cantor&amp;rsquo;s Continuum &amp;ldquo;Hypothesis&amp;rdquo;&lt;/h1&gt;
+
+&lt;p&gt;Aleph-naught: $\aleph_0 = |\mathbb{N}|$ is the &lt;em&gt;smallest infinite
+cardinal number&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Recall: $\omega$ is the &lt;em&gt;smallest infinite ordinal&lt;/em&gt;.  The first ordinal after
+$0, 1, 2, \cdots$.&lt;/p&gt;
+
+&lt;p&gt;$$2^{\aleph_0} = |pow(\mathbb{N})| = | [0, 1] | = | \mathbb{R} | = | {0, 1}^{\omega} | &amp;gt; |\mathbb{N} $$&lt;/p&gt;
+
+&lt;p&gt;What does it mean to say it is proven to not be possible to settle the
+question of whether $\aleph_1 = 2^{\aleph_0}$ with the ZFC axioms?&lt;/p&gt;
+
+&lt;p&gt;#&lt;/p&gt;
+
+&lt;h1 id=&#34;on-computable-numbers&#34;&gt;On Computable Numbers&lt;/h1&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;The &amp;ldquo;computable&amp;rdquo; numbers may be described briefly as the real numbers whose expressions as a decimal are calculable by finite means.&lt;/em&gt; (Alan Turing, &lt;em&gt;On Computable Numbers, with an Application to the Entscheidungsproblem&lt;/em&gt;, 1936.)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Is $\tau$ computable (by Turing&amp;rsquo;s definition)?  ($\tau = \frac{\text{Circumference of circle}}{\text{radius of circle}}$)&lt;/p&gt;
+
+&lt;!--page--&gt;
+
+&lt;p&gt;What are the problems with using the State Machine to model computation:
+$$M = (S, G \subseteq S \times S, q_0 \in S)$$&lt;/p&gt;
+
+&lt;p&gt;#&lt;/p&gt;
+
+&lt;p&gt;What was Turing attempting to model in defining what we know call a Turing Machine?&lt;/p&gt;
+
+&lt;p&gt;#&lt;/p&gt;
+
+&lt;p&gt;$$
+TM = (S, T \subseteq S \times \Gamma \rightarrow S \times \Gamma \times \text{\em dir}, q&lt;em&gt;0 \in S, q&lt;/em&gt;{Accept} \subseteq S)
+$$&lt;/p&gt;
+
+&lt;p&gt;$S$ is a finite set (the &amp;ldquo;in-the-head&amp;rdquo; processing states)&lt;br /&gt;
+$\Gamma$ is a finite set (symbols that can be writte on the tape)&lt;br /&gt;
+$\text{\em dir} = { \text{\bf Left}, \text{\bf Right}, \text{\bf Halt} }$ is the direction to move on the tape.&lt;/p&gt;
+
+&lt;p&gt;##&lt;/p&gt;
+
+&lt;p&gt;What is the cardinality of the set of all Turing Machines?&lt;/p&gt;
+
+&lt;p&gt;#&lt;/p&gt;
+
+&lt;p&gt;Prove that there are numbers that cannot be output by any Turing Machine.&lt;/p&gt;
+
+&lt;p&gt;#&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Problem Set Omega</title>
+      <link>https://uvacs2102.github.io/psomegaannounce/</link>
+      <pubDate>Wed, 16 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/psomegaannounce/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Problem Set &amp;omega;&lt;/strong&gt; is &lt;a href=&#34;https://uvacs2102.github.io/ps/psz&#34;&gt;now posted&lt;/a&gt; and due Dec 4 or the last day of class (see the &lt;a href=&#34;https://uvacs2102.github.io/ps/psz&#34;&gt;problem set&lt;/a&gt; for details). It is a &amp;ldquo;bonus&amp;rdquo; problem set, and not like the others.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>cs2102: Discrete Math </title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="" />
+
+<meta name="keywords" content="">
+
+
+<meta property="og:title" content="cs2102: Discrete Math ">
+<meta property="og:site_name" content="cs2102: Discrete Math"/>
+<meta property="og:url" content="https://uvacs2102.github.io/" />
+<meta property="og:locale" content="en-us">
+
+
+<meta property="og:type" content="website" />
+
+
+
+<link href="https://uvacs2102.github.io/index.xml" rel="alternate" type="application/rss+xml" title="cs2102: Discrete Math" />
+
+<link rel="canonical" href="https://uvacs2102.github.io/" />
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://uvacs2102.github.io/touch-icon-144-precomposed.png">
+<link href="https://uvacs2102.github.io/favicon.png" rel="icon">
+
+<meta name="generator" content="Hugo 0.17" />
+
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<link href='https://fonts.googleapis.com/css?family=Merriweather:300%7CRaleway%7COpen+Sans' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://uvacs2102.github.io/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://uvacs2102.github.io/css/style.css">
+
+
+  
+</head>
+<body>
+  <main id="main-wrapper" class="container main_wrapper has-sidebar">
+    <header id="main-header" class="container main_header">
+  <div class="container brand">
+  <div class="container title h1-like">
+  <a class="baselink" href="https://uvacs2102.github.io">
+  cs2102
+
+</a>
+
+</div>
+
+  
+<div class="container topline">
+  
+  Discrete Mathematics
+
+
+</div>
+
+
+</div>
+
+  <nav class="container nav primary no-print">
+  
+
+
+  
+<a href="https://uvacs2102.github.io/syllabus">Syllabus</a>
+
+<a href="https://uvacs2102.github.io/schedule">Schedule</a>
+
+<a href="https://uvacs2102.github.io/officehours">Office Hours</a>
+
+<a href="https://uvacs2102.github.io/docs/mcs.pdf">MCS Book</a>
+
+<a href="https://uvacs2102.github.io/pledge">Course Pledge</a>
+
+<a href="https://collab.itc.virginia.edu/portal/site/e0b17949-c94c-466b-835a-196381f3f911?panel=Main">Collab Site</a>
+
+<a href="https://uvacs2102.github.io/docs/finalprep.pdf">Final</a>
+
+<a href="https://uvacs2102.github.io/docs/ps9.pdf">Problem Set 9</a>
+
+<a href="https://uvacs2102.github.io/ps/psz">Problem Set O</a>
+
+<a href="https://uvacs2102.github.io/challenges">Challenges</a>
+
+<a href="https://uvacs2102.github.io/post" title="Show list of posts">Posts</a>
+
+
+</nav>
+
+<div class="container nav secondary no-print">
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+  
+
+</header>
+
+
+This is a preserved file from cs2102 Fall 2016. See the latest version (if it exists) at /
+
+<section id="main-content" class="container main_content homepage">
+  <header class="container header">
+    <h1><center>cs2102: Discrete Math
+</center></h1>
+
+  </header>
+  
+  
+  <p class="fronthead"><A href="/class14/">Class 14: Invariant Principle</a> (Thu, 13 Oct 2016)</p>
+    
+
+<h3 id="schedule">Schedule</h3>
+
+<p><a href="/ps/ps6"><strong>Problem Set 6</strong></a> (is posted now) is due <strong>21
+October (Friday) at 6:29pm</strong>.</p>
+
+<p>Exam 1 was returned Tuesday.  If you did not pick yours up yet, you can
+get it after class today.  I will start charging
+exponentially-increasing storage fees for inexcusably unclaimed exams
+starting tomorrow.</p>
+
+<p><div class="notpdf">
+   <center>
+<script async class="speakerdeck-embed" data-id="fcd3660e39b740a0bb2069883054a525" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+   </center></p>
+
+<p>Note that the version of the notes that was handed out in class mixed up
+the $\vee$ and $\wedge$ symbols!  The web version is corrected.</p>
+
+<p><div class="highlightm">
+   <a href="/docs/class14.pdf">See PDF Version for <b>Notes</b></a>.
+   </div>
+   </div><!--endpdf--></p>
+
+<p><div class="latex"></p>
+
+<h1 id="fast-exponentiation">Fast Exponentiation</h1>
+
+<p>This is the algorithm from Section 6.3.1 written as Python code:</p>
+
+<pre><code class="language-python">def power(a, b):
+   x = a
+   y = 1
+   z = b
+   while z &gt; 0:
+      r = z % 2 # remainder of z / 2
+      z = z // 2 # quotient of z / 2
+      if r == 1:
+         y = x * y
+      x = x * x
+   return y
+</code></pre>
+
+<p></div><!--endpdf--></p>
+
+<p><div class="latex"></p>
+
+<h2 id="state-machines-review-from-class-13">State Machines (review from Class 13)</h2>
+
+<p>A <em>state machine</em>, $M = (S, G: S \times S, q_0 \in S)$, is a binary
+relation (called a <em>transition relation</em>) on a set (both the domain and
+codomain are the same set).  One state, denoted $q_0$, is designated as
+the <em>start state</em>.</p>
+
+<p>An <em>execution</em> of a state machine $M = (S, G \subseteq S \times S, q_0
+\in S)$ is a (possibly infinite) sequence of states, $(x_0, x_1, \cdots,
+x_n)$ where (1) $x_0 = q_0$ (it begins with the start state), and (2)
+$\forall i \in {0, 1, \ldots, n - 1} \ldotp (x<em>i, x</em>{i + 1}) \in G$
+(if $q$ and $r$ are consecutive states in the sequence, then there is an
+edge $q \rightarrow r$ in $G$).</p>
+
+<p>A state $q$ is <em>reachable</em> if it appears in some execution.</p>
+
+<p>A <em>preserved invariant</em> of a state machine $M = (S, G \subseteq S \times
+S, q_0 \in S)$ is a predicate, $P$, on states, such that whenever $P(q)$
+is true of a state $q$, and $q \rightarrow r \in G$, then $P&reg;$ is
+true.</p>
+
+<h3 id="bishop-state-machine">Bishop State Machine</h3>
+
+<p>$S = { (\fillin ) \, | \, r, c \in \mathbb{N} }$<br />
+$G = { (r, c) \rightarrow (r&rsquo;, c&rsquo;) \, | \, r, c \in \mathbb{N} \wedge (\exists d \in \mathbb{N}^{+} \textrm{ such that } r&rsquo; = r \fillin d \wedge r&rsquo; \ge 0 \wedge c&rsquo; = c \fillin d \wedge c&rsquo; \ge 0 }$<br />
+$q_0 = (0, 2)$</p>
+
+<p>What states are <em>reachable</em>?</p>
+
+<p>#</p>
+
+<h3 id="progress-machine">``Progress&rdquo; Machine</h3>
+
+<p>$S = { (x, d) \, | \, x \in \mathbb{Z}, d \in { \mathrm{\bf F}, \mathrm{\bf B}} }$<br />
+$G = { (x, \mathrm{\bf F}) \rightarrow (x + 1, \mathrm{\bf B}) \, | \, x \in \mathbb{Z} } \cup
+     { (x, \mathrm{\bf B}) \rightarrow (x - 2, \mathrm{\bf F}) \, | \, x \in \mathbb{Z} }$<br />
+$q_0 = (0, \mathrm{\bf F})$</p>
+
+<p>Which states are <em>reachable</em>?</p>
+
+<!--page-->
+
+<p>A predicate $P(q)$ is a <em>preserved invariant</em> of machine $M = (S, G \subseteq S \times S, q_0 \in
+  S)$ if:
+$$
+\forall q \in S \ldotp (P(q) \wedge (q \rightarrow r) \in G) \implies P&reg;
+$$</p>
+
+<p>What are some <em>preserved invariants</em> for the (original) Bishop State Machine?</p>
+
+<p><strong>Invariant Principle.</strong> If a <em>preserved invariant</em> of a state machine
+  is true for the start state, it is true for all reachable states.</p>
+
+<p>To show $P(q)$ for machine $M = (S, G \subseteq S \times S, q_0 \in
+  S)$ all $q \in S$, show:</p>
+
+<ol>
+<li>Base case: $P(\fillin)$</li>
+<li>$\forall s \in S \ldotp \fillin \implies \fillin$</li>
+</ol>
+
+<p>Prove that the original Bishop State Machine never reaches a square where $r + c$ is odd.</p>
+
+<p>#</p>
+
+<h1 id="slow-exponentiation">Slow Exponentiation</h1>
+
+<pre><code class="language-python">def slow_power(a, b):
+   y = 1
+   z = b
+   while z &gt; 0:
+      y = y * a
+      z = z - 1
+   return y
+</code></pre>
+
+<p>$S ::= \mathbb{N} \times \mathbb{N}$<br />
+$G ::= { (y, z) \rightarrow (y \cdot a, z - 1) \, | \, \forall y, z \in \mathbb{N}^{+}}$<br />
+$q_0 ::= (1, b)$</p>
+
+<p>Prove <code>slow_power(a, b)</code> = $a^b$.</p>
+
+<p>#</p>
+
+<p></div></p>
+ 
+  
+  <p class="fronthead"><A href="/class13/">Class 13: State Machines</a> (Tue, 11 Oct 2016)</p>
+    
+
+<h3 id="schedule">Schedule</h3>
+
+<p><a href="https://uvacs2102.github.io/docs/exam1-solutions.pdf">Exam 1 Solutions</a>
+are now posted.</p>
+
+<p><strong>Drop Date</strong> is today.  If you have any concerns about whether you
+  should stay in the class, please talk to me after class today.</p>
+
+<p>There is no problem set due this week!  <a href="/ps/ps6"><strong>Problem Set 6</strong></a>
+(will be posted later this week) is due <strong>21 October (Friday) at
+6:29pm</strong>.</p>
+
+<p>Exam 1 was returned during class today.  (Exam grades will eventually
+make it into collab, but haven&rsquo;t yet.  When they do, please confirm that
+the score on your exam matches what is recorded in collab, and that
+PS1-5 are all recorded correctly.)</p>
+
+<p><div class="notpdf">
+   <center>
+<script async class="speakerdeck-embed" data-id="e834908c757142c7b5ff50a196a26f43" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+   </center></p>
+
+<p><div class="highlightm">
+   <a href="/docs/class13.pdf">See PDF Version for <b>Notes</b></a>.
+   </div>
+   </div><!--endpdf--></p>
+
+<p><div class="latex"></p>
+
+<h2 id="state-machines">State Machines</h2>
+
+<p>A <em>state machine</em> is a binary relation (called a <em>transition relation</em>)
+on a set (both the domain and codomain are the same set).  One state is
+designated as the <em>start state</em>.</p>
+
+<p>$$M = (S, G: S \times S, q_0 \in S)$$</p>
+
+<p>What does it mean if $G$ is <em>total</em>?</p>
+
+<p>##</p>
+
+<p>What does it mean if $G$ is not a <em>function</em>?</p>
+
+<p>##</p>
+
+<p><strong>Parity Counter.</strong> Describe a state machine that determines if the
+  number of steps is even.</p>
+
+<p>#</p>
+
+<p><strong>Unbounded Counter.</strong> Describe a state machine that counts the number of steps.</p>
+
+<p>#</p>
+
+<p>How well do state machines model real computers?  What kind of
+transition relation does the state machine modeling your computer have?</p>
+
+<!--page-->
+
+<h1 id="invariant-principle">Invariant Principle</h1>
+
+<p>An <em>execution</em> of a state machine $M = (S, G \subseteq S \times S, q_0 \in S)$ is a (possibly infinite) sequence of states, $(x_0, x_1, \cdots, x_n)$ where:</p>
+
+<ol>
+<li>$x_0 = q_0$ (it begins with the start state), and</li>
+<li>$\forall i \in {0, 1, \ldots, n - 1} \ldotp (x<em>i, x</em>{i + 1}) \in G$ (if $q$ and $r$ are consecutive states in the sequence, then there is an edge $q \rightarrow r$ in $G$)</li>
+</ol>
+
+<p>A state $q$ is <em>reachable</em> if it appears in some execution.  (That is,
+there is a sequence of transitions starting from $q_0$, following edges
+in $G$, that ends with $q$.)</p>
+
+<p>$$
+M_1 = (S = \mathbb{N}, G = {(x, y) | y = x^2 }, q_0 = 1)
+$$
+$$
+M_2 = (S = \mathbb{N}, G = {(x, y) | \exists k \in \mathbb{N} \ldotp y = kx }, q_0 = 1)
+$$</p>
+
+<p>Which states are <em>reachable</em> for $M_1$ and $M_2$?</p>
+
+<p>#</p>
+
+<p>A <em>preserved invariant</em> of a state machine $M = (S, G \subseteq S \times
+S, q_0 \in S)$ is a predicate, $P$, on states, such that whenever $P(q)$
+is true of a state $q$, and $q \rightarrow r \in G$, then $P&reg;$ is
+true.</p>
+
+<p><strong>Invariant Principle.</strong> If a <em>preserved invariant</em> of a state machine
+  is true for the start state, it is true for all reachable states.</p>
+
+<p>To show $P(q)$ for machine $M = (S, G \subseteq S \times S, q_0 \in
+  S)$ all $q \in S$, show:</p>
+
+<ol>
+<li>Base case: $P(\fillin)$</li>
+<li>$\forall s \in S \ldotp \fillin \implies \fillin$</li>
+</ol>
+
+<p>Show the invariant principle holds using the principle of induction
+(hint: induction is on the <em>number of steps</em>).</p>
+
+<p>#</p>
+
+<p></div></p>
+ 
+  
+  <p class="fronthead"><A href="/exam1solutions/">Exam 1 Solutions</a> (Tue, 11 Oct 2016)</p>
+    <p>The solutions to <a href="/docs/exam1.pdf">Exam 1</a> are here: <a href="/docs/exam1-solutions.pdf">Exam 1 Solutions</a>.</p>
+ 
+  
+  <p class="fronthead"><A href="/ps5comments/">Problem Set 5 Comments</a> (Sat, 1 Oct 2016)</p>
+    <p>The preliminary solutions and comments for PS5 are now posted in collab:
+<a href="https://collab.itc.virginia.edu/access/content/group/e0b17949-c94c-466b-835a-196381f3f911/ps5_solutions.pdf">PDF</a>.
+(Problem 9 is not included, but will be added later.)</p>
+
+<p>We are providing the PS5 solutions now before they are graded, so you
+have the solutions to read with plenty of time before the exam.</p>
+ 
+  
+  <p class="fronthead"><A href="/challenge5/">Three-Clause Challenge Refuted!</a> (Fri, 30 Sep 2016)</p>
+    <p>Challenge 5 has been refuted by Henry Spece!</p>
+
+<p><div class="highlightg">
+<strong>Challenge 5.</strong> (From <a href="https://collab.itc.virginia.edu/access/content/group/e0b17949-c94c-466b-835a-196381f3f911/ps3_solutions.pdf">PS3 Solutions</a>) Prove that the four-clause solution given for question 6 is the shortest possible equivalent 3CNF formula.
+   </div></p>
+
+<p>The challenge as stated was actually bogus!  The four-clause solution
+isn&rsquo;t the shortest possible equivalent 3CNF formula.  Henry found a
+three-clause equivalent 3CNF formula, and proved that there is no
+two-clause equivalent 3CNF formula.</p>
+
+<p>His answer is below:</p>
+
+<p><blockquote>
+The four-clause 3-CNF equivalent solution to the logical equation is not
+the smallest equivalent solution to the equation.</p>
+
+<p>The following is the original formula: <em>A</em> &or; &not;<em>B</em> &or; <em>C</em> &or; (&not;<em>D</em> &and; <em>E</em>).<br />
+Here is a two-clause solution: (<em>A</em> &or; &not;<em>B</em> &or;
+&not;<em>x</em>) &and; (<em>x</em> &or; <em>C</em>&or; &not;<em>D</em>) &and; (<em>x</em> &or; <em>C</em> &or; <em>E</em>).</p>
+
+<p>This can be shown to be equivalent to the original formula by
+constraining <em>x</em> to be <em>A</em>&or;&not;<em>B</em> and algebraically reducing:
+   <blockquote>
+(<em>A</em>&or;&not;<em>B</em>&or;&not;(<em>A</em>&or;&not;<em>B</em>))&and;(<em>A</em> &or; &not;<em>B</em> &or; <em>C</em>
+&or; &not;<em>D</em>)&and;(<em>A</em> &or; &not;<em>B</em> &or; <em>C</em> &or; <em>E</em>)<br />
+(<em>A</em> &or; &not;<em>B</em> &or; <em>C</em> &or; &not;<em>D</em>)&and;(<em>A</em> &or; &not;<em>B</em> &or; <em>C</em> &or; <em>E</em>)<br />
+(<em>A</em> &or; &not;<em>B</em> &or; <em>C</em>) &or; (&not;<em>D</em>&and;<em>E</em>)<br />
+<em>A</em> &or; &not;<em>B</em> &or; <em>C</em> &or; (&not;<em>D</em>&and;<em>E</em>)
+   </blockquote></p>
+
+<p>To further prove the equivalence, we can make the original formula
+unsatisfied and show that there is no satisfying assignment for <em>x</em>.  To
+be unsatisfied, <em>A</em> must be <strong>F</strong>, <em>B</em> must be <strong>T</strong>, and <em>C</em> must be
+<strong>F</strong>.  This reduces the formula to:
+   <blockquote>
+(<strong>F</strong> &or; <strong>F</strong> &or; &not;<em>x</em>)&and;(x &or; <strong>F</strong> &or; &not;<em>D</em>)&and;(x &or; <strong>F</strong> &or; <em>E</em>)
+   </blockquote>
+Because of the first term, <em>x</em> must be <strong>F</strong> if we want to satisfy the formula:
+   <blockquote>
+(<strong>F</strong> &or; <strong>F</strong> &or; <strong>T</strong>)&and;(<strong>F</strong> &or; <strong>F</strong> &or; &not;<em>D</em>)&and;(<strong>F</strong> &or; <strong>F</strong> &or; <em>E</em>) &equiv; (&not;<em>D</em>&and;<em>E</em>)
+   </blockquote>
+This has the same satisfiability as the remaining variables in the original formula (if &not;<em>D</em>&and;<em>E</em> is not satisfied, there is no satisfying assignment for <em>x</em>).</p>
+
+<p><em>Proof that this is the shortest possible solution:</em> There is no two or
+one clause solution because a new variable in addition to <em>A</em>, <em>B</em>, <em>C</em>,
+D, and <em>E</em> is required for each clause to have only three terms, and
+this variable must be repeated (by the rules we use to select that
+variable).  Therefore, only 5 variables may be represented in a
+two-clause solution, while there are at least six variables required for
+equivalence to the original formula.</p>
+
+<p><em>Proof that a new variable is required:</em> The original formula reduces to
+(<em>A</em> &or; &not;<em>B</em> &or; <em>C</em> &or; &not;<em>D</em>)&and;(<em>A</em> &or; &not;<em>B</em> &or;
+<em>C</em> &or; <em>E</em>) in CNF form, which has two clauses, each containing a
+unique combination of four variables.  There is no way to reduce the
+number of variables per clause of a solution without adding a variable,
+therefore at least one variable must be added to form the 3-CNF
+equivalent of this formula.</p>
+ 
+  
+  <p class="fronthead"><A href="/anonymousfeedback3/">Anonymous Feedback Comments</a> (Thu, 29 Sep 2016)</p>
+    <p>This anonymous comment was submitted through collab:</p>
+
+<blockquote>
+<p><em>A lot of my fellow classmates and I are concerned about this class because we feel that we aren&rsquo;t provided with the resources necessary to be able to do the homework in a reasonable amount of time/effort. So many people spend hours and hours at office hours several times a week but even the TAs don&rsquo;t understand our questions and are not able to help us understand any of the concepts. I understand that we&rsquo;re supposed to be challenged by the class, but if we aren&rsquo;t well-equipped to work through the challenges it becomes extremely frustrating. I feel like the class could be improved if the lectures were better structured so that we&rsquo;re thoroughly taught the concepts and steps we can take to think through a problem rather than going through examples that are hard to understand because we&rsquo;re only copying down things we don&rsquo;t fully understand and that don&rsquo;t apply to other problems we&rsquo;re expected to solve. I don&rsquo;t mean to be rude at all so I apologize if it comes off that way, it&rsquo;s just that so many of the students and I are frustrated and stressed out about how much we don&rsquo;t understand in the class even after seeking help repeatedly.</em></p>
+</blockquote>
+
+<p>One of the drawbacks of anonymous comments, is I have no way to
+follow-up to better understand what is really going on here. I do
+appreciate the anonymous comments, but you shouldn&rsquo;t be worried about
+making comments like this directly &mdash; I view any student making
+comments with the goal of improving their own learning and making things
+better for the class as a positive thing, and you shouldn&rsquo;t be worried
+that I would count any thoughtful and respectful comment against you.</p>
+
+<p>As for the content, as best as I&rsquo;m able to interpret it, the perception
+that the problems are too hard does not fit with what I&rsquo;m seeing in the
+assignments.  For all of the problem sets so far, more than 90% of
+students have received grades at least 5 (the exception was for PS3,
+where it was 89%), which means nearly all answers correct (with some
+justifications that could be better).  On all the assignments, fewer
+than 5% of the submissions have been 4 or below.  So, either we are
+grading them too generously and students are getting 5+s without
+actually understanding much (which I don&rsquo;t think is the case, but
+perhaps we are giving too much benefit of the doubt for unclear
+answers), or, more likely, people are acutally understanding things
+quite well, but it is taking more &ldquo;pain&rdquo; and effort to get there than
+you expect.</p>
+
+<p>It doesn&rsquo;t make sense to spend time in lecture copying down things you
+don&rsquo;t understand.  If there are things you don&rsquo;t understand in lecture,
+please stop and ask questions, or if you aren&rsquo;t comfortable doing that,
+at least post questions on slack.  If you don&rsquo;t ask questions, I don&rsquo;t
+know what is confusing, or what should be explained.  I make the slides
+and notes available so you can spend lecture time thinking instead of
+writing (that said, I think it is often helpful to write things down
+yourself as part of understanding them, or discovering what is unclear).</p>
+
+<p>There are lots of resources available, but I think you are expecting the
+wrong kind of problems if you are looking for resources to tell you how
+to solve them.  I understand why this is, since it is what you expect
+from most of your previous classes.  You were all good students, and
+great at redoing things you saw in class, that&rsquo;s why you got into
+UVA.</p>
+
+<p>But, you shouldn&rsquo;t expect most problems from now on (in this class, and
+in any worthwhile classes you take after this one) to be like
+this. You&rsquo;re not learning anything (useful), if you are just re-solving
+problems you&rsquo;ve already seen, or making straightforward symbol
+replacements in them.</p>
+
+<p>Nearly all of the problems you did in previous math classes were
+problems you could type into Wolfram Alpha and it could solve instantly;
+this isn&rsquo;t surprising - if a problem is something you can solve by
+following given rules in a straightforward way, it shouldn&rsquo;t be a
+problem for humans to spend time on, the rules should be encoded in
+programs that can do it automatically.  Sometimes its worthwhile for
+humans to learn what the rules are and get some experience following
+them, but the further along you get, and the more advanced computing
+systems get, the more ridiculous it is for humans to spend tons of time
+learning to do things computers already do well.</p>
+
+<p>So, we do learn steps for solving problems in this class, both in
+lecture and in the book.  And, all of the problems on the problem sets
+are related to things you learn in class.  But, many of the problems
+also involve some creative step that isn&rsquo;t a straightforward replication
+of something you&rsquo;ve seen in class or the book. Without that, I wouldn&rsquo;t
+really see the point in assigning them - I&rsquo;m not assigning problem sets
+to check if you are doing the reading and coming to class, the point of
+the problem sets is to develop your understanding of the concepts by
+having you figure out how to apply them in new ways that go beyond
+things you&rsquo;ve already seen and (more importantly) to develop your
+abilities as mathematical thinkers and problem solvers.  You can&rsquo;t do
+that by replicating problems you&rsquo;ve already done, or by solving problems
+that are straightforward repetitions of problems you&rsquo;ve already seen
+solved.  But, before trying to solve new problems, you should make sure
+you understand the examples you&rsquo;ve seen in the book and in class. It is
+usually much harder to come up with your own solutions to problems than
+to understand ones that are provided by others.</p>
+
+<p>All that said, I would encourage anyone who feels like they are spending
+an unreasonable amount of time on this, or feeling frustrated and
+stressed out by it, to come to office hours to talk to me (or to make an
+appointment if you can&rsquo;t make it then).  My office hours have mostly
+been fairly empty, and the best sense I get of what is going on in the
+class is from students who come to talk to me during office hours, so I
+hope you&rsquo;ll do that rather than just getting frustrated.</p>
+ 
+  
+  <p class="fronthead"><A href="/class12/">Class 12: Review</a> (Thu, 29 Sep 2016)</p>
+    
+
+<h3 id="schedule">Schedule</h3>
+
+<p><a href="/ps/ps5"><strong>Problem Set 5</strong></a> is due <strong>Friday at 6:29pm</strong>.</p>
+
+<p><strong>Exam 1</strong> is in class on <strong>Thursday, 6 October</strong>.  See <a href="/class11">Notes
+  11</a> for details.  Remember to bring a good writing
+  instrument (sharp pencil is recommended) and your page of notes to the
+  exam.</p>
+
+<p><div class="notpdf">
+   <center></p>
+
+<p><script async class="speakerdeck-embed" data-id="b1ae1f6618b747fca08e0d2f64aa2586" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+   </center></p>
+
+<p><div class="highlightm">
+   <a href="/docs/class12.pdf">See PDF Version for <b>Notes</b></a>.
+   </div>
+   </div><!--endpdf--></p>
+
+<p><div class="latex"></p>
+
+<h2 id="exam-review">Exam Review</h2>
+
+<p>Below are some notations you should understand.  We use variables $P$
+and $Q$ to represent logical propositions (with \T\ or \F\ value), $A$
+and $B$ and $D$ (domain of discourse) to represent sets, and $x$
+represents any mathematical object.</p>
+
+<p>\begin{tabular}{cl}
+\multicolumn{2}{c}{\bf Logical Operators} <br />
+$P$ \smallcaps{implies} $Q$, $P \implies Q$ &amp; Logical implication: when $P$ is \T, $Q$ must be \T <br />
+$P$ \smallcaps{iff} $Q$, $P \iff Q$ &amp; Double implication: $P \implies Q \vee Q \implies P$ <br />
+\smallcaps{not}$(P)$, $\neg P$, $\overline{P}$ &amp;  Logical negation <br />
+$P$ \smallcaps{and} $Q$, $P \wedge Q$ &amp; Logical conjunction (\T\ when both $P$ and $Q$ are \T) <br />
+$P$ \smallcaps{or} $Q$, $P \vee Q$ &amp; Logical disjunction (\T\ when $P$ or $Q$ is \T\ (or both) <br />
+$P$ \smallcaps{xor} $Q$, $P \oplus Q$ &amp; Exlusive or (\T\ when either $P$ or $Q$ is \T, but not both<br />
+\multicolumn{2}{c}{\bf Quantifiers} <br />
+$\forall x \in A \ldotp P(x)$ &amp; $P(x)$ for {\em every} element $x$ of the set $A$ <br />
+$\exists x \in A \ldotp P(x)$ &amp; $P(x)$ for {\em at least one} element $x$ of the set $A$ <br />
+\multicolumn{2}{c}{\bf Set Operators} <br />
+$x \in A$ &amp; Set membership, $A$ contains the element $x$ <br />
+$x \notin A$ &amp; Set non-membership, $A$ does not contain $x$ <br />
+$A \subseteq B$ &amp; $A$ is a subset of $B$: $\forall x \in A. x \in B.$ <br />
+$A = B$ &amp; set equality: $A \subseteq B \vee B subseteq A$ <br />
+$A \cup B$ &amp; Set Union: $\forall x. x \in A \cup B \iff x \in A \vee x \in B.$ <br />
+$A \cap B$ &amp; Set Intersection: $\forall x. x \in A \cup B \iff x \in A \wedge x \in B.$ <br />
+$ A - B$ &amp; Set Difference: $\forall x. x \in A - B \iff x \in A \wedge x \notin B.$ <br />
+$ \overline{A}$ &amp; Set Complement: $\forall x. x \in D. x \in \overline{A} \iff x \notin A.$ <br />
+$ A \times B$ &amp; Cartesian Product: $\forall a \in A, b \in B \ldotp (a, b) \in A \times B.$<br />
+$ \textrm{pow}(A)$ &amp; Power Set: $S \in A \iff S \subseteq A$. <br />
+\end{tabular}</p>
+
+<!--page-->
+
+<h2 id="well-ordering-principle">Well-Ordering Principle</h2>
+
+<p>Remember the well-ordering principle template from Class 3:</p>
+
+<p>To prove that $P(n)$ is true for all $n \in \mathbb{N}$:</p>
+
+<ol>
+<li>Define the set of counterexamples, $C ::= { n \in \mathbb{N} | NOT(P(n)) }$.</li>
+<li>Assume for contradiction that $C$ is non-empty.</li>
+<li>By the well-ordering principle, there must be some smallest element, $m \in C$.</li>
+<li>Reach a contradiction (this is the creative part!).  One way to reach a contradiction would be to show $P(m)$.  Another way is to show there must be an element $m&rsquo; \in C$ where $m&rsquo; &lt; m$.</li>
+<li>Conclude that $C$ must be empty, hence there are no counter-examples and $P(n)$ always holds.</li>
+</ol>
+
+<p>Since we didn&rsquo;t finish the winning strategy proof in class, I&rsquo;ve written
+it out fully here.</p>
+
+<p><strong>Theorem.</strong> Player 1 has a winning strategy in Take-Away if
+  the number of sticks, $n$ is not divisible by 4.</p>
+
+<p>For any induction proof, the first thing we need to do is write the
+theorem as a predicate on the natural numbers.</p>
+
+<p>$$\forall n \in \mathbb{N} \ldotp P(n) ::= \textrm{ Player 1 has a winning strategy if }\exists a \in { 1, 2, 3 }, \exists k \in \mathbb{N} \textrm{ such that } n = 4k + a.$$</p>
+
+<p><em>Base cases</em>: $P(1)$, $P(2)$, $P(3)$.</p>
+
+<p>$P(1)$: If there is $1$ stick remaining, Player 1 wins by taking 1 stick.<br />
+$P(2)$: If there are $2$ sticks remaining, Player 1 wins by taking 2 sticks.<br />
+$P(3)$: If there are $3$ sticks remaining, Player 1 wins by taking 3 sticks.</p>
+
+<p><em>Inductive case</em>: Using strong induction, $\forall m \in \mathbb{N}, m \ge 4 \ldotp (\forall k \in \mathbb{N}, k \le m. P(k)) \implies P(m + 1)$.</p>
+
+<p>Since $m \ge 4$ we can write $m = 4k + b$ for some $k \in \mathbb{N}^{+}$ and $b \in {0, 1, 2, 3}$.</p>
+
+<p>We consider four cases for each value of $b$.</p>
+
+<p>Case 3: $b = 3$.  Since $m = 4k + 3$, $m + 1 = 4k + 4 = 4(k + 1)$.
+Since $m + 1$ is divisible by 4, $P(m+ 1)$ holds because the predicate
+makes no claims when $n$ is divisible by 4.</p>
+
+<p>Cases 0, 1, 2: Since $m = 4k + b$ for $b \in {0, 1, 2}$, we know $m +
+1 = 4k + c$ for $c \in {1, 2, 3}$ (since $c = b + 1$ to produce $m +
+1$).  We need to show $P(m+1)$, which means showing that player 1 has a
+winning strategy for $n = 4k + c$, $c \in {1, 2, 3}$.  Player 1 takes
+$c$ sticks, leaving $4k$ sticks.</p>
+
+<p>For the next turn, Player 2 can remove 1, 2, or 3 sticks, leaving $4k -
+d$ sticks, $d \in {1, 2, 3}$.  This can be simplified to $4(k - 1) +
+e$ sticks where $e = 4 - d$ since $4k - 4 + (4 - d) = 4k - d = 4(k -
+1) + e$.  Hence, after Player 2&rsquo;s turn it will be Player 1&rsquo;s turn with
+$4(k - 1) + e$ sticks, $e \in {1, 2, 3}$.  We know $4(k - 1) + e &lt; m$
+and it is not divisible by 4.  So, Player 1 has a winning strategy from
+$P(m + 1)$ since she has a move to make such that no matter what move
+player 2 makes, it leads to a number that is not divisible by 4 and is
+less than $m$, which we know is a position where Player 1 has a winning
+strategy but strong induction.</p>
+
+<p>Note that $4(k - 1) + e$ is $m - 1$, $m - 2$ or $m - 3$, so we need to
+know $m \ge 4$ for this to be valid.  That&rsquo;s why we needed three base
+cases!</p>
+
+<p></div></p>
+ 
+  
+  <p class="fronthead"><A href="/ps4comments/">Problem Set 4 Comments</a> (Thu, 29 Sep 2016)</p>
+    <p>The solutions and comments for PS4 are now posted in collab: <a href="https://collab.itc.virginia.edu/access/content/group/e0b17949-c94c-466b-835a-196381f3f911/ps4_solutions.pdf">PDF</a></p>
+
+<p>You should find your graded assignment as a new PDF attachment with
+markup on it in collab (if you submitted with teammates, please check
+with your partners).</p>
+
+<p>The meaning of the scores is the same as for previous problem sets.  A
+score of 6 means you got everything we expected out of this assignment,
+and 5 means you did well for the most part by had some answers that
+should have been better.  Scores above 6 are reserved for excellent work
+that is above expectations.  (In the gradebook, collab sometimes shows
+the grades scaled by 100 for some buggy reason.  Although receiving a
+score of 100+ is possible in theory, no one received more than 8 points
+for this assingment.  If you see a score about 100, the meaning is that
+score divided by 100.)</p>
+ 
+  
+  <p class="fronthead"><A href="/clauses/">Satisfiable Formula Challenge</a> (Wed, 28 Sep 2016)</p>
+    <p>Henry Spece has solved the challenge about proving the length of the
+longest satisfiable formula!</p>
+
+<p><div class="highlightg">
+<strong>Challenge 6.</strong> (From <a href="https://collab.itc.virginia.edu/access/content/group/e0b17949-c94c-466b-835a-196381f3f911/ps3_solutions.pdf">PS3 Solutions</a>) Provide a full and convincing proof for Problem 11.
+   </div></p>
+
+<p>The proof is here: <a href="/docs/challenge6/henry.pdf">PDF</a></p>
+ 
+  
+  <p class="fronthead"><A href="/chickens/">Chicken vs. Egg Challenge</a> (Tue, 27 Sep 2016)</p>
+    <p>The chicken/egg challenge:</p>
+
+<p><div class="highlightg">
+<strong>Challenge 3.</strong> (From <a href="/class8">Class 8</a>) Apparently, people were not entirely convinced by my
+proof sketch in class that the egg came before the chicken.  So, we&rsquo;ll
+make it a challenge problem to write the best proof that answers the
+question of &ldquo;which came first, the chicken or the egg?&rdquo; (That is, you
+can either prove the egg came first, or prove the chicken came first).
+A convincing proof would need to include clear definitions of &ldquo;chicken&rdquo;
+and &ldquo;egg&rdquo;, and use inference rules, as well as axioms based on
+biological assumptions (clearly stated), to make an irrefutable argument
+supporting your position.
+   </div></p>
+
+<p>The challenge remains a conundrum, but several promising answers have
+been received:</p>
+
+<ul>
+<li>Tony Yang&rsquo;s <a href="/docs/challenge3/tonyyang.pdf">Proof that the Chicken Came First</a> (<font color="gold">&#x2605; &#x2605;</font>)</li>
+<li>Milan Bharadwaj&rsquo;s <a href="/docs/challenge3/milan.pdf">Proof that Neither Came First</a> (<font color="gold">&#x2605; &#x2605; &#x2605;</font>)</li>
+<li>Jesse Alloy&rsquo;s <a href="/docs/challenge3/jesse.pdf">Proof that the Egg Came First</a> (<font color="gold">&#x2605;</font>)</li>
+<li>Brian Li&rsquo;s <a href="/docs/challenge3/brian.pdf">Proof that the Egg Came First</a> (<font color="gold">&#x2605;</font>)</li>
+</ul>
+
+<p>All of these are interesting answers, worthy of some bonus credit, but
+none completely close the debate.  (I&rsquo;ll provide my alternative proof in
+<a href="/class11">Class 11</a>.)</p>
+ 
+  
+  
+<div class="container pagination">
+  
+
+
+<a aria-label="First" href="https://uvacs2102.github.io/">
+  <span aria-hidden="true">««</span>
+</a>
+
+<a aria-label="Previous" href="https://uvacs2102.github.io/page/3/">
+  <span aria-hidden="true">«</span>
+</a>
+
+
+<a href="https://uvacs2102.github.io/">
+  1
+</a>
+
+<a href="https://uvacs2102.github.io/page/2/">
+  2
+</a>
+
+<a href="https://uvacs2102.github.io/page/3/">
+  3
+</a>
+
+<a class="active" href="https://uvacs2102.github.io/page/4/">
+  4
+</a>
+
+<a href="https://uvacs2102.github.io/page/5/">
+  5
+</a>
+
+<a href="https://uvacs2102.github.io/page/6/">
+  6
+</a>
+
+<a href="https://uvacs2102.github.io/page/7/">
+  7
+</a>
+
+
+<a aria-label="Next" href="https://uvacs2102.github.io/page/5/">
+  <span aria-hidden="true">»</span>
+</a>
+
+<a aria-label="Last" href="https://uvacs2102.github.io/page/7/">
+  <span aria-hidden="true">»»</span>
+</a>
+
+
+</div>
+
+
+</section>
+
+      <footer id="main-footer" class="container main_footer">
+  
+
+  <div class="container nav foot no-print">
+  
+
+  <a class="toplink" href="#">back to top</a>
+
+</div>
+
+  <div class="container credits">
+  
+<div class="container footline">
+  
+  <p align="center">cs2102: Discrete Mathematics | University of Virginia, Fall 2016 | <a href="https://www.cs.virginia.edu/evans">David Evans</a>
+
+
+</div>
+
+
+  
+
+</div>
+
+</footer>
+
+    </main>
+    
+
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-3775212-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+    
+  </body>
+</html>
+

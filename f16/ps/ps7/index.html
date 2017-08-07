@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Problem Set 7  &middot; cs2102: Discrete Math</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="" />
+
+<meta name="keywords" content="">
+
+
+<meta property="og:title" content="Problem Set 7  &middot; cs2102: Discrete Math ">
+<meta property="og:site_name" content="cs2102: Discrete Math"/>
+<meta property="og:url" content="https://uvacs2102.github.io/ps/ps7/" />
+<meta property="og:locale" content="en-us">
+
+
+<meta property="og:type" content="article" />
+<meta property="og:description" content=""/>
+<meta property="og:article:published_time" content="0001-01-01T00:00:00Z" />
+<meta property="og:article:modified_time" content="0001-01-01T00:00:00Z" />
+
+  
+
+  
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@" />
+<meta name="twitter:creator" content="@" />
+<meta name="twitter:title" content="Problem Set 7" />
+<meta name="twitter:description" content="" />
+<meta name="twitter:url" content="https://uvacs2102.github.io/ps/ps7/" />
+<meta name="twitter:domain" content="https://uvacs2102.github.io">
+  
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "headline": "Problem Set 7",
+    "author": {
+      "@type": "Person",
+      "name": "http://profiles.google.com/+?rel=author"
+    },
+    "datePublished": "0001-01-01",
+    "description": "",
+    "wordCount":  931 
+  }
+</script>
+
+
+
+<link rel="canonical" href="https://uvacs2102.github.io/ps/ps7/" />
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://uvacs2102.github.io/touch-icon-144-precomposed.png">
+<link href="https://uvacs2102.github.io/favicon.png" rel="icon">
+
+<meta name="generator" content="Hugo 0.17" />
+
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<link href='https://fonts.googleapis.com/css?family=Merriweather:300%7CRaleway%7COpen+Sans' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://uvacs2102.github.io/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://uvacs2102.github.io/css/style.css">
+
+
+  
+</head>
+<body>
+  <main id="main-wrapper" class="container main_wrapper has-sidebar">
+    <header id="main-header" class="container main_header">
+  <div class="container brand">
+  <div class="container title h1-like">
+  <a class="baselink" href="https://uvacs2102.github.io">
+  cs2102
+
+</a>
+
+</div>
+
+  
+<div class="container topline">
+  
+  Discrete Mathematics
+
+
+</div>
+
+
+</div>
+
+  <nav class="container nav primary no-print">
+  
+
+
+  
+<a href="https://uvacs2102.github.io/syllabus">Syllabus</a>
+
+<a href="https://uvacs2102.github.io/schedule">Schedule</a>
+
+<a href="https://uvacs2102.github.io/officehours">Office Hours</a>
+
+<a href="https://uvacs2102.github.io/docs/mcs.pdf">MCS Book</a>
+
+<a href="https://uvacs2102.github.io/pledge">Course Pledge</a>
+
+<a href="https://collab.itc.virginia.edu/portal/site/e0b17949-c94c-466b-835a-196381f3f911?panel=Main">Collab Site</a>
+
+<a href="https://uvacs2102.github.io/docs/finalprep.pdf">Final</a>
+
+<a href="https://uvacs2102.github.io/docs/ps9.pdf">Problem Set 9</a>
+
+<a href="https://uvacs2102.github.io/ps/psz">Problem Set O</a>
+
+<a href="https://uvacs2102.github.io/challenges">Challenges</a>
+
+<a href="https://uvacs2102.github.io/post" title="Show list of posts">Posts</a>
+
+
+</nav>
+
+<div class="container nav secondary no-print">
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+  
+
+</header>
+
+
+This is a preserved file from cs2102 Fall 2016. See the latest version (if it exists) at /ps/ps7/
+
+<article id="main-content" class="container main_content single">
+  <header class="container hat">
+  <h1><center>Problem Set 7
+</center></h1>
+
+</header>
+
+  <div class="container content">
+  
+
+<p>[Revision 0.1: 23 October 7:57pm]</p>
+
+<div class="latex">
+   \dbox{{\bf Deliverable:} Submit your responses as a
+single, readable PDF file on the collab site before {\bf 6:29pm} on {\bf Friday, 28 October}.  
+}
+</div>
+
+<p><div class="notpdf">
+   <div class="highlightr">
+   <strong>Deliverable:</strong> Submit your responses as a
+single, readable PDF file on the collab site before <strong>6:29pm</strong> on <strong>Friday, 28
+October</strong>.<br />
+   </div>
+   </div><!--endpdf--></p>
+
+<h3 id="collaboration-policy-read-carefully">Collaboration Policy - Read Carefully</h3>
+
+<p>The collaboration policy is identical to that for PS6: you should work
+in groups of <em>one</em> to <em>four</em> students of your choice with no
+restrictions, and follow the rest of the collaboration policy from
+<a href="/ps/ps3">PS3</a>.</p>
+
+<h2 id="preparation">Preparation</h2>
+
+<p>This problem set focuses on Stable Matching &mdash; Section 6.4 of the MCS
+book, and <a href="/class15">Class 15</a>.</p>
+
+<p><div class="notpdf"></p>
+
+<p><div class="highlightm">
+    <a href="/docs/ps7.pdf">Download PDF for Problems</a>.
+   </div></p>
+
+<p><div class="highlightr">
+Your response should be submitted as a single PDF file using collab.  Please read and follow the <a href="https://uvacs2102.github.io/pdfs/">Generating PDFs</a> advice on the course site.
+   </div></p>
+
+<p></div><!--endpdf--></p>
+
+<p><div class="latex"></p>
+
+<h2 id="directions">Directions</h2>
+
+<p>Solve as many of the 7 problems as you can.  Questions 1 and 2 check
+your understanding of stable matching, and the remaining questions build
+up to completing the proof that the Gale-Shapley Algorithm always finds
+a stable matching.  For maximum credit, your answers should be correct,
+clear, well-written, and convincing.</p>
+
+<h1 id="stable-matching">Stable Matching</h1>
+
+<p>Traumatized by his failure to reach Eve in Problem Set 6, Wall-E has
+decided to join RoboMatch.com, the Stable Macthing Service for Loney
+Robots.  Robots do not have limitations on their potential matches, but
+RoboMatch is concerned that <a href="/docs/roomates.pdf">it may not be possible to find a stable
+matching</a> if the robots are allowed to prefer any
+other robot, RoboMatch divides robots into two sets based on whether or
+not they are in Disney/Pixar movies, and requires every member to
+provide a full preference ranking of all the robots in the other set.</p>
+
+<p>The rankings are (from most preferred to least preferred):</p>
+
+<p>\begin{center}
+\begin{tabular}{lcl}
+\multicolumn{1}{c}{{\bf Set A:} Disney/Pixar Robots} &amp; $\qquad\qquad$ &amp;  \multicolumn{1}{c}{{\bf Set B:} Real Robots} \ \hline
+Luxo: AIBO, Big Dog, Junior  &amp; &amp;
+AIBO: Wall-E, Luxo, R2-D2  \</p>
+
+<p>R2-D2: AIBO, Junior, Big Dog  &amp; &amp;
+Big Dog: R2-D2, Luxo, Wall-E   \</p>
+
+<p>Wall-E: Big Dog, Junior, AIBO &amp; &amp;
+Junior: Wall-E, R2-D2, Luxo <br />
+\end{tabular}
+\end{center}</p>
+
+<ol>
+<li><p>Show that there are stable matchings where Wall-E is paired with
+Junior and where Wall-E is paired with Big Dog.  (Note: feel free to use
+the provided Gale-Shapley program <a href="/docs/matching-ps6.py">code</a>.</p></li>
+
+<li><p>Show that there cannot be any stable matching where Wall-E is paired
+with AIBO.</p></li>
+</ol>
+
+<h1 id="gale-shapley-algorithm">Gale-Shapley Algorithm</h1>
+
+<p>\vspace<em>{-1ex}
+In <a href="https://uvacs2102.github.io/class15/">Class 15</a>, we developed a
+state machine model for the Gale-Shapley stable matching algorithm:
+\vspace</em>{-2ex}
+\begin{equation<em>}
+\begin{split}
+S = {(pa&amp;irings, \text{\em proposals}) \, | \
+&amp; \text{\em pairings} = { (a, b) \, | \, a \in A, b \in B, \text{no duplicate occurences of}\ a\ \text{or}\ b\ \text{in}\ \text{\em pairings} }, <br />
+&amp; \text{\em proposals} = (r_1, r_2, \cdots, r_n), 0 \le r_i \le n } <br />
+G = {(\text{\em pa}&amp;\text{\em irings}, \text{\em proposals} = (r_1, r_2, \cdots, r_n)) \rightarrow (\text{\em pairings}&lsquo;, \text{\em proposals}&lsquo;) \, | <br />
+&amp; i \in { 1, \cdots, n }, r_i &lt; n <br />
+&amp; \forall b \in B \ldotp (a_i, b) \notin \text{\em pairings} \
+&amp; b_x ::= \text{the}\ r_i\text{-ranked choice for }a_i <br />
+&amp; \text{\em proposals}&rsquo; = (r_1, \cdots, r_i + 1, \cdots, r_n) <br />
+&amp; \text{\em pairings}&rsquo; = \begin{cases}
+                \text{\em pairings} \cup { (a_i, b_x)} &amp; \forall a_z \in A \ldotp (a_z, b_x) \notin \text{\em pairings}\ \text{(Case 1)} <br />
+                \text{\em pairings} \cup { (a_i, b_x)} - { (a_z, b_x) } &amp; \exists a_z \in A \ldotp (a_z, b_x) \in \text{\em pairings} \wedge a<em>z \prec</em>{b_x} a_i\ \text{(Case 2)} <br />
+                \text{\em pairings} &amp; \text{otherwise (Case 3)} <br />
+\end{cases} \
+&amp; } <br />
+q_0 = (\text{\em pa}&amp;\text{\em irings} = { }, \text{\em proposals} = (0, 0, \ldots, 0)) <br />
+\end{split}
+\end{equation</em>}</p>
+
+<ol>
+<li><p>Explain (in simple English) when (Case 3) in the definition of $G$ occurs.</p></li>
+
+<li><p>Prove that the state machine always terminates (we did this in Class
+15, but didn&rsquo;t write out a full proof).  (Hint: Explain why we need the
+$r_i &lt; n$ constraint for $G$.)</p></li>
+
+<li><p>Prove that the state machine always terminates in a state where
+$\text{\em pairings}$ includes a match for each element of $B$.  (Hint: prove by
+contradiction by showing that if the machine is in a reachable state
+where some element of $B$ is unmatched, it must have a transition.)</p></li>
+</ol>
+
+<p>Define, $\text{\em Prefs}<em>x(n)$ as the set of the top ranked $n$ preferences of
+$x$.  So, $\text{\em Prefs}</em>{a<em>i}(0) = { }$, and $\text{\em Prefs}</em>{a_i}(1) = { b_x }$
+where $b_x$ is $a<em>i$&rsquo;s top choice, $\text{\em Prefs}</em>{a_i}(2) = { b_x, b_y }$
+where $b_y$ is $a<em>i$&rsquo;s second choice, and $\text{\em Prefs}</em>{a_i}(n) = B$.</p>
+
+<ol>
+<li><p>($\star$) Prove that the property $P$ defined below is a <em>preserved invariant</em>
+for the state machine.  The value of $\text{\em proposals}[i]$ is the count in the
+sequences $\text{\em proposals}$ that corresponds to the number of \text{\em proposals} made by $a_i$.
+\begin{equation<em>}
+\begin{split}
+P(q = (\text{\em pai}&amp;\text{\em rings}, \text{\em proposals})) ::= <br />
+&amp; (a_i, b_j) \in \text{\em pairings} \implies  \
+&amp; \qquad \qquad \forall b<em>x \in \text{\em Prefs}</em>{a_i}(\text{\em proposals}[i]) \wedge b<em>j \prec</em>{a_i} b_x \, \ldotp \, \exists a_y \in A - { a_i } \ldotp (a<em>i \prec</em>{b_x} a_y) <br />
+\end{split}
+% \wedge b<em>x \in \text{\em Prefs}</em>{a_y}(\text{\em proposals}[y])  <br />
+\end{equation</em>}</p>
+
+<p>That is, if $(a_i, b_j)$ is in $\text{\em pairings}$, then every match $a_i$ prefers to $b_j$ prefers someone else over $a_i$.</p></li>
+
+<li><p>($\star\star$) Prove the $\text{\em pairings}$ for the terminating
+state are a stable matching (as defined in <a href="/class15">Class 15</a>).  (You may assume all of the properties in
+questions 4&ndash;6 in your proof, even if you were not able to prove them.)
+(Note: you may first want to state the definition of a stable matching
+in a different way, and may also find it helpful to strengthen the
+preserved invariant property from question 6.)</p></li>
+</ol>
+
+</div>
+
+
+  
+</article>
+      <footer id="main-footer" class="container main_footer">
+  
+
+  <div class="container nav foot no-print">
+  
+
+  <a class="toplink" href="#">back to top</a>
+
+</div>
+
+  <div class="container credits">
+  
+<div class="container footline">
+  
+  <p align="center">cs2102: Discrete Mathematics | University of Virginia, Fall 2016 | <a href="https://www.cs.virginia.edu/evans">David Evans</a>
+
+
+</div>
+
+
+  
+
+</div>
+
+</footer>
+
+    </main>
+    
+
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-3775212-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+    
+  </body>
+</html>
+

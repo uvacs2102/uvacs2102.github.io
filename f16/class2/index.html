@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Class 2: Proof Methods  &middot; cs2102: Discrete Math</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="" />
+
+<meta name="keywords" content="">
+
+
+<meta property="og:title" content="Class 2: Proof Methods  &middot; cs2102: Discrete Math ">
+<meta property="og:site_name" content="cs2102: Discrete Math"/>
+<meta property="og:url" content="https://uvacs2102.github.io/class2/" />
+<meta property="og:locale" content="en-us">
+
+
+<meta property="og:type" content="article" />
+<meta property="og:description" content=""/>
+<meta property="og:article:published_time" content="2016-08-25T00:00:00Z" />
+<meta property="og:article:modified_time" content="2016-08-25T00:00:00Z" />
+
+  
+
+  
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@" />
+<meta name="twitter:creator" content="@" />
+<meta name="twitter:title" content="Class 2: Proof Methods" />
+<meta name="twitter:description" content="" />
+<meta name="twitter:url" content="https://uvacs2102.github.io/class2/" />
+<meta name="twitter:domain" content="https://uvacs2102.github.io">
+  
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "headline": "Class 2: Proof Methods",
+    "author": {
+      "@type": "Person",
+      "name": "http://profiles.google.com/+?rel=author"
+    },
+    "datePublished": "2016-08-25",
+    "description": "",
+    "wordCount":  987 
+  }
+</script>
+
+
+
+<link rel="canonical" href="https://uvacs2102.github.io/class2/" />
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://uvacs2102.github.io/touch-icon-144-precomposed.png">
+<link href="https://uvacs2102.github.io/favicon.png" rel="icon">
+
+<meta name="generator" content="Hugo 0.17" />
+
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<link href='https://fonts.googleapis.com/css?family=Merriweather:300%7CRaleway%7COpen+Sans' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://uvacs2102.github.io/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://uvacs2102.github.io/css/style.css">
+
+
+  
+</head>
+<body>
+  <main id="main-wrapper" class="container main_wrapper has-sidebar">
+    <header id="main-header" class="container main_header">
+  <div class="container brand">
+  <div class="container title h1-like">
+  <a class="baselink" href="https://uvacs2102.github.io">
+  cs2102
+
+</a>
+
+</div>
+
+  
+<div class="container topline">
+  
+  Discrete Mathematics
+
+
+</div>
+
+
+</div>
+
+  <nav class="container nav primary no-print">
+  
+
+
+  
+<a href="https://uvacs2102.github.io/syllabus">Syllabus</a>
+
+<a href="https://uvacs2102.github.io/schedule">Schedule</a>
+
+<a href="https://uvacs2102.github.io/officehours">Office Hours</a>
+
+<a href="https://uvacs2102.github.io/docs/mcs.pdf">MCS Book</a>
+
+<a href="https://uvacs2102.github.io/pledge">Course Pledge</a>
+
+<a href="https://collab.itc.virginia.edu/portal/site/e0b17949-c94c-466b-835a-196381f3f911?panel=Main">Collab Site</a>
+
+<a href="https://uvacs2102.github.io/docs/finalprep.pdf">Final</a>
+
+<a href="https://uvacs2102.github.io/docs/ps9.pdf">Problem Set 9</a>
+
+<a href="https://uvacs2102.github.io/ps/psz">Problem Set O</a>
+
+<a href="https://uvacs2102.github.io/challenges">Challenges</a>
+
+<a href="https://uvacs2102.github.io/post" title="Show list of posts">Posts</a>
+
+
+</nav>
+
+<div class="container nav secondary no-print">
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+  
+
+</header>
+
+
+This is a preserved file from cs2102 Fall 2016. See the latest version (if it exists) at /class2/
+
+<article id="main-content" class="container main_content single">
+  <header class="container hat">
+  <h1><center>Class 2: Proof Methods
+</center></h1>
+
+  <div class="metas">
+<time datetime="2016-08-25">25 Aug, 2016</time>
+
+
+  
+  <br>
+  
+
+
+</div>
+
+</header>
+
+  <div class="container content">
+  
+
+<h3 id="schedule">Schedule</h3>
+
+<p>Before <strong>Friday (tomorrow), 6:29pm</strong>:</p>
+
+<ul>
+<li>Read, print, and sign the <a href="/pledge">Course Pledge</a>.  You should print
+the <a href="/docs/pledge.pdf">PDF version</a> for signing, and submit a scan of
+your signed pledge using Collab.</li>
+<li>Read Jeremy Kun&rsquo;s <a href="https://medium.com/@jeremyjkun/habits-of-highly-mathematical-people-b719df12d15e"><em>Habits of Highly Mathematical People</em></a>.</li>
+<li>Submit a <a href="https://docs.google.com/forms/d/e/1FAIpQLSesDMnQXhCP73thN51kTSNNst8GcvQCJCGTepiJ2c3Ym1l-zg/viewform">Course Registration Survey</a> (which includes some questions based on Kun&rsquo;s essay).</li>
+</ul>
+
+<p>Next week:</p>
+
+<ul>
+<li>Before Tuesday&rsquo;s class: Read MCS Chapter 2</li>
+<li>Before Thursday&rsquo;s class: Read MCS Chapter 3</li>
+<li>Due Friday at 6:29pm: <a href="/ps/ps1"><strong>Problem Set 1</strong></a></li>
+</ul>
+
+<p><div class="notpdf"></p>
+
+<p>Sorry the proof in class got so messed up!  Although part of my goal for
+class today was to illustrated the subjectiveness of human-written and
+read proofs, I apologize for making things so confusing and broken.  I&rsquo;d
+updated the notes to include the full proof (hopefully correct now!) at
+the level of detail intended in class.  Its good to see students are
+being skeptical proof-readers and noticing mistakes like this.</p>
+
+<p>We didn&rsquo;t get to the &ldquo;if and only if&rdquo; proof in the notes in class today,
+but you are encouraged to try this on your own.  We&rsquo;ll look at this the
+Well Ordering Principle (Chapter 2) in Tuesday&rsquo;s class.</p>
+
+<p><div class="highlightr">
+<strong>Challenge Problem Opportunity.</strong> I wasn&rsquo;t very satisfied with my proof
+  of the &ldquo;Odd-Even Lemma&rdquo; in class.  I hope a student will come up with
+  a better proof.  Come up with a proof that passes the &ldquo;skeptical reader&rdquo; test and
+  would convince someone with no prior knowledge of odd and even numbers.
+   </div></p>
+
+<p><div class="highlightm">
+   <a href="/docs/class2.pdf">See PDF Version for <b>Notes and Questions</b></a>.
+   </div></p>
+
+<p><center>
+<script async class="speakerdeck-embed" data-id="d7b6ff339db149ba8996cfcc6d84d44d" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+</center></p>
+
+<h2 id="links">Links</h2>
+
+<p>Dan Ariely, <a href="http://more-minerals.blogspot.com/2016/02/dan-ariely-honor-codes.html"><em>Honor Codes</em></a></p>
+
+<p>The Coq Proof Assistant tool I mentioned in class today is available
+from <a href="https://coq.inria.fr/"><em>https://coq.inria.fr/</em></a>.  (You are not
+expected to use this for cs2102, or generate proofs at this level of
+rigor or details, but are certainly welcome to if you want!)</p>
+
+<p><a href="http://www.vanityfair.com/culture/2009/06/us_airways200906"><em>Anatomy of a
+Miracle</em></a>,
+Vanity Fair, June 2009.</p>
+
+<p><a href="http://www.trnicely.net/pentbug/pentbug.html">Intel&rsquo;s FDIV bug</a> (there&rsquo;s even a web page for <a href="http://www.columbia.edu/~sss31/rainbow/pentium.jokes.html">jokes about Intel&rsquo;s FDIV bug</a>).</p>
+
+<p></div><!--endpdf--></p>
+
+<div class="latex">
+
+# Notes and Questions
+
+An integer, $z$, is **even** if there exists an integer $k$ such that $z = 2k$.    
+
+Is this a _definition_, _axiom_, or _proposition_?
+
+#
+
+An integer, $z$, is **odd** if there exists an integer $k$ such that $z
+= 2k + 1$.  (Note that there is no connection between the variables used
+here, and to define even above.)
+
+To prove an implication, $P \implies Q$: 1. assume $P$.  2. Show chain of logical deductions that leads to $Q$.
+
+**Odd-Even Lemma:** If an integer is not even, it is odd.  Note: A
+  _lemma_ is just a name for a theorem, typically used for proving
+  another theorem.
+
+<div class="biggap"></div>
+
+<p>How should one decide what can be accepted as an axiom, and what must be proven?</p>
+
+<div class="gap"></div>
+
+<p>What is the purpose of a <em>proof</em>?  (in cs2102? in software development? in algorithm design?)</p>
+
+<div class="gap"></div>
+
+<h2 id="proof-from-class">Proof from Class</h2>
+
+<p>Proposition: If the product of $x$ and $y$ is even, at least one of $x$ or $y$ must be even.</p>
+
+<p>Our goal is to prove the implication, $P \implies Q$, where:</p>
+
+<ul>
+<li>$P$ is &ldquo;the product of $x$ and $y$ is even&rdquo;</li>
+<li>$Q$ is &ldquo;at least one of $x$ and $y$ must be even&rdquo;</li>
+</ul>
+
+<p>We will prove the contrapositive.  The inference rule,</p>
+
+<p>$$
+\infer{P \implies Q}{NOT(Q) \implies NOT(P)}
+$$
+will be the last step in our proof.  To be able to use this rule, we need to make the antecedent true.  So, our goal is to prove $NOT(Q) \implies NOT(P)$.</p>
+
+<p>To prove an implication, we assume the left side and short the right
+side.  So, our proof begins:</p>
+
+<ol>
+<li>We prove the contrapositive.</li>
+<li>Assume NOT(at least one of $x$ and $y$ must be even).</li>
+<li>By the meaning of negation, this means both $x$ and $y$ are not even.</li>
+<li>By the &ldquo;Odd-Even Lemma&rdquo;, both $x$ and $y$ are odd.</li>
+<li>By the definition of <em>odd</em>, there exist integers $k$ and $m$ such that $x = 2k + 1$ and $y = 2m + 1$.</li>
+<li>Substituting, $xy = (2k + 1)(2m + 1) = 4mk + 2m + 2k + 1 = 2(2mk + m + k) + 1$.</li>
+<li>By the closure of addition and multiplication over the integers, there is some integer $r = 2mk + m + k$, so $xy = 2r + 1$.</li>
+<li>By the definition of <em>odd</em>, $xy$ is odd.</li>
+<li>By the (not proven) &ldquo;Even-Odd Lemma&rdquo;, this means $xy$ is not even.</li>
+<li>So, we have shown NOT(the product of $x$ and $y$ is even).</li>
+<li>Since we concluded this starting from the assumption (step 2), this proves the implication: NOT(at least one of $x$ and $y$ must be even) $\implies$ NOT(the product of $x$ and $y$ is even).</li>
+<li>Using the contrapositive inference rule, we can conclude:
+the product of $x$ and $y$ is even $\implies$ at least one of $x$ and $y$ must be even. \QEDA</li>
+</ol>
+
+<p>\dbox{
+{\bf Challenge Problem Opportunity.} I wasn&rsquo;t very satisfied with my proof
+  of the &ldquo;Odd-Even Lemma&rdquo; in class.  I hope a student will come up with
+  a better proof.  A proof that passes the &ldquo;skeptical reader&rdquo; test and
+  would convince someone with no prior knowledge of odd and even numbers
+  is worth up to 10 bonus points.
+}</p>
+
+<!--page-->
+
+<h2 id="proving-if-and-only-if">Proving &ldquo;If and Only If&rdquo;</h2>
+
+<p>Strategy: To prove $P$ if and only if $Q$:</p>
+
+<ol>
+<li>Prove $P \implies Q$.</li>
+<li>Prove $Q \implies P$.</li>
+</ol>
+
+<p><em>Definition.</em> The <em>standard deviation</em> of a sequence of values $x_1, x_2, \ldots, x_n$ is
+$$
+\sqrt{\frac{(x_1 - \mu)^2 + (x_2 - \mu)^2 + \ldots + (x_n - \mu)^2}{n}}
+$$
+where $\mu$ is the mean of the values:
+$$
+\mu ::= \frac{x_1 + x_2 + \ldots + x_n}{n}
+$$.</p>
+
+<p><strong>Theorem 1.6.1.</strong> The standard deviation of a sequence of values, $x_1,
+  x_2, \ldots, x_n$ is $0$ <em>if and only if</em> all of the $x_i$ values are
+  equal to the mean of $x_1, x_2, \ldots, x_n$.</p>
+
+<p>The book proves this using a chain of iff implications; prove it using
+the two-implications strategy.</p>
+
+<p>#</p>
+
+<p>#</p>
+
+<p>#</p>
+
+<p>#</p>
+
+<p>#</p>
+
+<p>#</p>
+
+<p>#</p>
+
+<p>#</p>
+
+<p><em>In physics, your solution should convince a reasonable person. In math, you have to convince a person who&rsquo;s trying to make trouble.</em>
+Frank Wilczek</p>
+
+<p></div></p>
+
+</div>
+
+
+  <footer class="container">
+  <div class="container navigation no-print">
+  <h2>Navigation</h2>
+  
+  
+
+    
+    <a class="prev" href="https://uvacs2102.github.io/class1/" title="Class 1: What makes it go?">
+      Previous
+    </a>
+    
+
+    
+    <a class="next" href="https://uvacs2102.github.io/ps1/" title="Problem Set 1">
+      Next
+    </a>
+    
+
+  
+
+
+</div>
+
+</footer>
+
+</article>
+      <footer id="main-footer" class="container main_footer">
+  
+
+  <div class="container nav foot no-print">
+  
+
+  <a class="toplink" href="#">back to top</a>
+
+</div>
+
+  <div class="container credits">
+  
+<div class="container footline">
+  
+  <p align="center">cs2102: Discrete Mathematics | University of Virginia, Fall 2016 | <a href="https://www.cs.virginia.edu/evans">David Evans</a>
+
+
+</div>
+
+
+  
+
+</div>
+
+</footer>
+
+    </main>
+    
+
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-3775212-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+    
+  </body>
+</html>
+
