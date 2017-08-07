@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ps-rsses on cs2102: Discrete Math (Fall 2016)</title>
-    <link>https://uvacs2102.github.io/f16/ps/index.xml</link>
-    <description>Recent content in Ps-rsses on cs2102: Discrete Math (Fall 2016)</description>
+    <title>Ps-rsses on cs2102: Discrete Math</title>
+    <link>https://uvacs2102.github.io/ps/index.xml</link>
+    <description>Recent content in Ps-rsses on cs2102: Discrete Math</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 26 Aug 2016 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://uvacs2102.github.io/f16/ps/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://uvacs2102.github.io/ps/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Problem Set 1</title>
-      <link>https://uvacs2102.github.io/f16/ps/ps1/</link>
+      <link>https://uvacs2102.github.io/ps/ps1/</link>
       <pubDate>Fri, 26 Aug 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://uvacs2102.github.io/f16/ps/ps1/</guid>
+      <guid>https://uvacs2102.github.io/ps/ps1/</guid>
       <description>
 
 &lt;div class=&#34;latex&#34;&gt;
@@ -51,7 +51,7 @@ produce it completely on your own.  You are encouraged to use the
 others, so long as it is help in the spirit of learning how to do things
 yourself not getting answers you don&amp;rsquo;t understand.&lt;/p&gt;
 
-&lt;p&gt;Remember to follow the &lt;a href=&#34;https://uvacs2102.github.io/f16/pledge&#34;&gt;course pledge&lt;/a&gt; you read and signed at
+&lt;p&gt;Remember to follow the &lt;a href=&#34;https://uvacs2102.github.io/pledge&#34;&gt;course pledge&lt;/a&gt; you read and signed at
 the beginning of the semester.  For this assignment, you may consult any
 outside resources you want, including books, papers, web sites and
 people.  You may consult an outside person (e.g., another friend who is
@@ -63,17 +63,17 @@ class materials, lectures and course staff, you should document this
 clearly on your submission.&lt;/p&gt;
 
 &lt;p&gt;You are &lt;b&gt;strongly encouraged&lt;/b&gt; to start early and take advantage of
-the scheduled &lt;a href=&#34;https://uvacs2102.github.io/f16/officehours&#34;&gt;office hours&lt;/a&gt; for this course.&lt;/p&gt;
+the scheduled &lt;a href=&#34;https://uvacs2102.github.io/officehours&#34;&gt;office hours&lt;/a&gt; for this course.&lt;/p&gt;
 
 &lt;h2 id=&#34;preparation&#34;&gt;Preparation&lt;/h2&gt;
 
-&lt;p&gt;This problem set focuses on Chapter 1 of the MCS book, and &lt;a href=&#34;https://uvacs2102.github.io/f16/class1&#34;&gt;Class
-1&lt;/a&gt; and &lt;a href=&#34;https://uvacs2102.github.io/f16/class2&#34;&gt;Class 2&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This problem set focuses on Chapter 1 of the MCS book, and &lt;a href=&#34;https://uvacs2102.github.io/class1&#34;&gt;Class
+1&lt;/a&gt; and &lt;a href=&#34;https://uvacs2102.github.io/class2&#34;&gt;Class 2&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;highlightm&#34;&gt;
-    &lt;a href=&#34;https://uvacs2102.github.io/f16/docs/ps1.pdf&#34;&gt;Download PDF for Problems&lt;/a&gt;.
+    &lt;a href=&#34;https://uvacs2102.github.io/docs/ps1.pdf&#34;&gt;Download PDF for Problems&lt;/a&gt;.
    &lt;/div&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;highlightr&#34;&gt;
@@ -149,10 +149,10 @@ implication to a skeptical reader.&lt;/p&gt;&lt;/li&gt;
     
     <item>
       <title>Problem Set 2</title>
-      <link>https://uvacs2102.github.io/f16/ps/ps2/</link>
+      <link>https://uvacs2102.github.io/ps/ps2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://uvacs2102.github.io/f16/ps/ps2/</guid>
+      <guid>https://uvacs2102.github.io/ps/ps2/</guid>
       <description>
 
 &lt;div class=&#34;latex&#34;&gt;
@@ -197,7 +197,7 @@ than to not do the assignment!&lt;/p&gt;
 others, so long as it is help in the spirit of learning how to do things
 yourself not getting answers you don&amp;rsquo;t understand.&lt;/p&gt;
 
-&lt;p&gt;Remember to follow the &lt;a href=&#34;https://uvacs2102.github.io/f16/pledge&#34;&gt;course pledge&lt;/a&gt; you read and signed at
+&lt;p&gt;Remember to follow the &lt;a href=&#34;https://uvacs2102.github.io/pledge&#34;&gt;course pledge&lt;/a&gt; you read and signed at
 the beginning of the semester.  For this assignment, you may consult any
 outside resources you want, including books, papers, web sites and
 people.  You may consult an outside person (e.g., another friend who is
@@ -209,17 +209,17 @@ class materials, lectures and course staff, you should document this
 clearly on your submission.&lt;/p&gt;
 
 &lt;p&gt;You are &lt;b&gt;strongly encouraged&lt;/b&gt; to start early and take advantage of
-the scheduled &lt;a href=&#34;https://uvacs2102.github.io/f16/officehours&#34;&gt;office hours&lt;/a&gt; for this course.&lt;/p&gt;
+the scheduled &lt;a href=&#34;https://uvacs2102.github.io/officehours&#34;&gt;office hours&lt;/a&gt; for this course.&lt;/p&gt;
 
 &lt;h2 id=&#34;preparation&#34;&gt;Preparation&lt;/h2&gt;
 
 &lt;p&gt;This problem set focuses on Chapter 2 and Chapter 3 (through 3.5) of the
-MCS book, and &lt;a href=&#34;https://uvacs2102.github.io/f16/class3&#34;&gt;Class 3&lt;/a&gt; and &lt;a href=&#34;https://uvacs2102.github.io/f16/class4&#34;&gt;Class 4&lt;/a&gt;.&lt;/p&gt;
+MCS book, and &lt;a href=&#34;https://uvacs2102.github.io/class3&#34;&gt;Class 3&lt;/a&gt; and &lt;a href=&#34;https://uvacs2102.github.io/class4&#34;&gt;Class 4&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;highlightm&#34;&gt;
-    &lt;a href=&#34;https://uvacs2102.github.io/f16/docs/ps2.pdf&#34;&gt;Download PDF for Problems&lt;/a&gt;.
+    &lt;a href=&#34;https://uvacs2102.github.io/docs/ps2.pdf&#34;&gt;Download PDF for Problems&lt;/a&gt;.
    &lt;/div&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;highlightr&#34;&gt;
@@ -341,10 +341,10 @@ $$&lt;/li&gt;
     
     <item>
       <title>Problem Set 3</title>
-      <link>https://uvacs2102.github.io/f16/ps/ps3/</link>
+      <link>https://uvacs2102.github.io/ps/ps3/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://uvacs2102.github.io/f16/ps/ps3/</guid>
+      <guid>https://uvacs2102.github.io/ps/ps3/</guid>
       <description>
 
 &lt;div class=&#34;latex&#34;&gt;
@@ -374,18 +374,18 @@ you may not work with anyone with you you worked on &lt;em&gt;both&lt;/em&gt; PS
 PS2, and PS3 should be empty).&lt;/p&gt;
 
 &lt;p&gt;The rest of the collaboration policy is identical to what it was on
-&lt;a href=&#34;https://uvacs2102.github.io/f16/ps/ps2&#34;&gt;PS2&lt;/a&gt;, and is not repeated here.&lt;/p&gt;
+&lt;a href=&#34;https://uvacs2102.github.io/ps/ps2&#34;&gt;PS2&lt;/a&gt;, and is not repeated here.&lt;/p&gt;
 
 &lt;h2 id=&#34;preparation&#34;&gt;Preparation&lt;/h2&gt;
 
 &lt;p&gt;This problem set focuses on Chapter 3 (especially 3.4-3.6) of the MCS
-book, and &lt;a href=&#34;https://uvacs2102.github.io/f16/class5&#34;&gt;Class 5&lt;/a&gt; and &lt;a href=&#34;https://uvacs2102.github.io/f16/class6&#34;&gt;Class 6&lt;/a&gt; (which include some
+book, and &lt;a href=&#34;https://uvacs2102.github.io/class5&#34;&gt;Class 5&lt;/a&gt; and &lt;a href=&#34;https://uvacs2102.github.io/class6&#34;&gt;Class 6&lt;/a&gt; (which include some
 material not in Chapter 3).&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;highlightm&#34;&gt;
-    &lt;a href=&#34;https://uvacs2102.github.io/f16/docs/ps3.pdf&#34;&gt;Download PDF for Problems&lt;/a&gt;.
+    &lt;a href=&#34;https://uvacs2102.github.io/docs/ps3.pdf&#34;&gt;Download PDF for Problems&lt;/a&gt;.
    &lt;/div&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;highlightr&#34;&gt;
@@ -462,7 +462,7 @@ formula).  Write a 3CNF formula that represents the AND gate.&lt;/p&gt;&lt;/li&g
 state that it is not satisfiable.  (If you follow a smart strategy,
 these can be solved by hand without a lot of tedious effort.  But, you
 are welcome to use SAT solving programs to solve them, including the
-&lt;a href=&#34;https://github.com/evansuva/simple-sat&#34;&gt;simple-sat&lt;/a&gt; solver from &lt;a href=&#34;https://uvacs2102.github.io/f16/class6&#34;&gt;Class
+&lt;a href=&#34;https://github.com/evansuva/simple-sat&#34;&gt;simple-sat&lt;/a&gt; solver from &lt;a href=&#34;https://uvacs2102.github.io/class6&#34;&gt;Class
 6&lt;/a&gt;.)&lt;/p&gt;
 
 &lt;ol&gt;
@@ -502,10 +502,10 @@ formula with $v$ variables of length $l + 1$.&lt;/p&gt;&lt;/li&gt;
     
     <item>
       <title>Problem Set 4</title>
-      <link>https://uvacs2102.github.io/f16/ps/ps4/</link>
+      <link>https://uvacs2102.github.io/ps/ps4/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://uvacs2102.github.io/f16/ps/ps4/</guid>
+      <guid>https://uvacs2102.github.io/ps/ps4/</guid>
       <description>
 
 &lt;p&gt;[Revised 18 Sept 3:15pm]&lt;/p&gt;
@@ -531,18 +531,18 @@ generated by LaTeX or Word).
 
 &lt;p&gt;For this assignment, you should work in groups of &lt;em&gt;one&lt;/em&gt; to &lt;em&gt;four&lt;/em&gt;
 students of your choice with no restrictions.  The rest of the
-collaboration policy is identical to what it was on &lt;a href=&#34;https://uvacs2102.github.io/f16/ps/ps3&#34;&gt;PS3&lt;/a&gt;, and
+collaboration policy is identical to what it was on &lt;a href=&#34;https://uvacs2102.github.io/ps/ps3&#34;&gt;PS3&lt;/a&gt;, and
 is not repeated here.&lt;/p&gt;
 
 &lt;h2 id=&#34;preparation&#34;&gt;Preparation&lt;/h2&gt;
 
 &lt;p&gt;This problem set focuses on Chapter 4 (up to Section 4.4) of the MCS
-book, and &lt;a href=&#34;https://uvacs2102.github.io/f16/class7&#34;&gt;Class 7&lt;/a&gt; and &lt;a href=&#34;https://uvacs2102.github.io/f16/class8&#34;&gt;Class 8&lt;/a&gt;.&lt;/p&gt;
+book, and &lt;a href=&#34;https://uvacs2102.github.io/class7&#34;&gt;Class 7&lt;/a&gt; and &lt;a href=&#34;https://uvacs2102.github.io/class8&#34;&gt;Class 8&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;highlightm&#34;&gt;
-    &lt;a href=&#34;https://uvacs2102.github.io/f16/docs/ps4.pdf&#34;&gt;Download PDF for Problems&lt;/a&gt;.
+    &lt;a href=&#34;https://uvacs2102.github.io/docs/ps4.pdf&#34;&gt;Download PDF for Problems&lt;/a&gt;.
    &lt;/div&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;highlightr&#34;&gt;
@@ -584,7 +584,7 @@ with a brief explanation.&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Use the definitions of the set operations to prove that for all sets
 $A$ and $B$, $$A = (A \cap B) \cup (A - B).$$&lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;In &lt;a href=&#34;https://uvacs2102.github.io/f16/class7&#34;&gt;Class 7&lt;/a&gt;, we defined set difference as:
+&lt;li&gt;&lt;p&gt;In &lt;a href=&#34;https://uvacs2102.github.io/class7&#34;&gt;Class 7&lt;/a&gt;, we defined set difference as:
 $$\forall x. x \in A - B \iff x \in A \wedge x \notin B.$$
 Provide an alternate (but equivalent in meaning) definition of set
 difference using only the other defined set operations (you may use any
@@ -709,10 +709,10 @@ element.)&lt;/p&gt;
     
     <item>
       <title>Problem Set 5</title>
-      <link>https://uvacs2102.github.io/f16/ps/ps5/</link>
+      <link>https://uvacs2102.github.io/ps/ps5/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://uvacs2102.github.io/f16/ps/ps5/</guid>
+      <guid>https://uvacs2102.github.io/ps/ps5/</guid>
       <description>
 
 &lt;div class=&#34;latex&#34;&gt;
@@ -736,17 +736,17 @@ generated by LaTeX or Word).
 
 &lt;p&gt;As with PS4, you should work in groups of &lt;em&gt;one&lt;/em&gt; to &lt;em&gt;four&lt;/em&gt; students of
 your choice with no restrictions.  The rest of the collaboration policy
-is identical to what it was on &lt;a href=&#34;https://uvacs2102.github.io/f16/ps/ps3&#34;&gt;PS3&lt;/a&gt;, and is not repeated here.&lt;/p&gt;
+is identical to what it was on &lt;a href=&#34;https://uvacs2102.github.io/ps/ps3&#34;&gt;PS3&lt;/a&gt;, and is not repeated here.&lt;/p&gt;
 
 &lt;h2 id=&#34;preparation&#34;&gt;Preparation&lt;/h2&gt;
 
 &lt;p&gt;This problem set focuses on Section 4.5 (Cadrinality of Finite Sets) and
-Chapter 5 (Induction) of the MCS book, and &lt;a href=&#34;https://uvacs2102.github.io/f16/class9&#34;&gt;Class 9&lt;/a&gt; and &lt;a href=&#34;https://uvacs2102.github.io/f16/class10&#34;&gt;Class
+Chapter 5 (Induction) of the MCS book, and &lt;a href=&#34;https://uvacs2102.github.io/class9&#34;&gt;Class 9&lt;/a&gt; and &lt;a href=&#34;https://uvacs2102.github.io/class10&#34;&gt;Class
 10&lt;/a&gt;.&lt;br /&gt;
    &lt;div class=&#34;notpdf&#34;&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;highlightm&#34;&gt;
-    &lt;a href=&#34;https://uvacs2102.github.io/f16/docs/ps5.pdf&#34;&gt;Download PDF for Problems&lt;/a&gt;.
+    &lt;a href=&#34;https://uvacs2102.github.io/docs/ps5.pdf&#34;&gt;Download PDF for Problems&lt;/a&gt;.
    &lt;/div&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;highlightr&#34;&gt;
@@ -778,13 +778,13 @@ between $A$ and $B$.  What must be true about the relationship between
 $|A|$ and $|B|$?&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;Prove that for any two sets $A$ and $B$, $| A \times B | = |A| \cdot
-|B|$.  (Recall the definition of set products from &lt;a href=&#34;https://uvacs2102.github.io/f16/class8&#34;&gt;Class 8&lt;/a&gt;.)&lt;/p&gt;&lt;/li&gt;
+|B|$.  (Recall the definition of set products from &lt;a href=&#34;https://uvacs2102.github.io/class8&#34;&gt;Class 8&lt;/a&gt;.)&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;h1 id=&#34;induction&#34;&gt;Induction&lt;/h1&gt;
 
 &lt;ol&gt;
-&lt;li&gt;&lt;p&gt;In &lt;a href=&#34;https://uvacs2102.github.io/f16/ps/ps2&#34;&gt;Problem Set 2&lt;/a&gt; (Problem 6) you used the well-ordering
+&lt;li&gt;&lt;p&gt;In &lt;a href=&#34;https://uvacs2102.github.io/ps/ps2&#34;&gt;Problem Set 2&lt;/a&gt; (Problem 6) you used the well-ordering
 principle to prove that any non-negative integer value less than
 $2^{k+1}$ can be written as $a_0 \cdot 2^0 + a_1 \cdot 2^1 + a_2 \cdot
 2^2 + \cdots + a_k \cdot 2^k$ where all the $a_i$ values are either 0 or 1.  Prove the same property using induction.  (Hint: the induction
@@ -899,10 +899,10 @@ material from outside of this course to solve it.)&lt;/p&gt;&lt;/li&gt;
     
     <item>
       <title>Problem Set 6</title>
-      <link>https://uvacs2102.github.io/f16/ps/ps6/</link>
+      <link>https://uvacs2102.github.io/ps/ps6/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://uvacs2102.github.io/f16/ps/ps6/</guid>
+      <guid>https://uvacs2102.github.io/ps/ps6/</guid>
       <description>
 
 &lt;div class=&#34;latex&#34;&gt;
@@ -923,17 +923,17 @@ October&lt;/strong&gt;.&lt;br /&gt;
 
 &lt;p&gt;As with PS5, you should work in groups of &lt;em&gt;one&lt;/em&gt; to &lt;em&gt;four&lt;/em&gt; students of
 your choice with no restrictions.  The rest of the collaboration policy
-is identical to what it was on &lt;a href=&#34;https://uvacs2102.github.io/f16/ps/ps3&#34;&gt;PS3&lt;/a&gt;, and is not repeated here.&lt;/p&gt;
+is identical to what it was on &lt;a href=&#34;https://uvacs2102.github.io/ps/ps3&#34;&gt;PS3&lt;/a&gt;, and is not repeated here.&lt;/p&gt;
 
 &lt;h2 id=&#34;preparation&#34;&gt;Preparation&lt;/h2&gt;
 
-&lt;p&gt;This problem set focuses on Sections 6.1-6.3 of the MCS book, and &lt;a href=&#34;https://uvacs2102.github.io/f16/class13&#34;&gt;Class
-13&lt;/a&gt; and &lt;a href=&#34;https://uvacs2102.github.io/f16/class14&#34;&gt;Class 14&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This problem set focuses on Sections 6.1-6.3 of the MCS book, and &lt;a href=&#34;https://uvacs2102.github.io/class13&#34;&gt;Class
+13&lt;/a&gt; and &lt;a href=&#34;https://uvacs2102.github.io/class14&#34;&gt;Class 14&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;highlightm&#34;&gt;
-    &lt;a href=&#34;https://uvacs2102.github.io/f16/docs/ps6.pdf&#34;&gt;Download PDF for Problems&lt;/a&gt;.
+    &lt;a href=&#34;https://uvacs2102.github.io/docs/ps6.pdf&#34;&gt;Download PDF for Problems&lt;/a&gt;.
    &lt;/div&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;highlightr&#34;&gt;
@@ -981,7 +981,7 @@ $S$ to be unreachable.&lt;/p&gt;&lt;/li&gt;
 &lt;h1 id=&#34;knight-s-moves&#34;&gt;Knight&amp;rsquo;s Moves&lt;/h1&gt;
 
 &lt;ol&gt;
-&lt;li&gt;&lt;p&gt;($\star$) A &lt;em&gt;knight&lt;/em&gt; in chess can move two squares up, down, left, or right, followed by one square in a direction perpendicular to the two squares (so, it can move two squares up or down, followed by one square left or right; or, can move two squares left or right, followed by one square up or down).  We can define the possible moves of a knight on an infinite chess board as the Knight State Machine (similarly to how we defined the Bishop State Machine in &lt;a href=&#34;https://uvacs2102.github.io/f16/class14&#34;&gt;Class 14&lt;/a&gt;):&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;($\star$) A &lt;em&gt;knight&lt;/em&gt; in chess can move two squares up, down, left, or right, followed by one square in a direction perpendicular to the two squares (so, it can move two squares up or down, followed by one square left or right; or, can move two squares left or right, followed by one square up or down).  We can define the possible moves of a knight on an infinite chess board as the Knight State Machine (similarly to how we defined the Bishop State Machine in &lt;a href=&#34;https://uvacs2102.github.io/class14&#34;&gt;Class 14&lt;/a&gt;):&lt;/p&gt;
 
 &lt;p&gt;$S = { (\fillin ) \, | \, r, c \in \mathbb{N} }$&lt;br /&gt;
 $G = { (r, c) \rightarrow (r&amp;rsquo;, c&amp;rsquo;) \, | \, r, c \in \mathbb{N} \wedge
@@ -1031,10 +1031,10 @@ that $0! = 1$.)&lt;/p&gt;
     
     <item>
       <title>Problem Set 7</title>
-      <link>https://uvacs2102.github.io/f16/ps/ps7/</link>
+      <link>https://uvacs2102.github.io/ps/ps7/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://uvacs2102.github.io/f16/ps/ps7/</guid>
+      <guid>https://uvacs2102.github.io/ps/ps7/</guid>
       <description>
 
 &lt;p&gt;[Revision 0.1: 23 October 7:57pm]&lt;/p&gt;
@@ -1058,17 +1058,17 @@ October&lt;/strong&gt;.&lt;br /&gt;
 &lt;p&gt;The collaboration policy is identical to that for PS6: you should work
 in groups of &lt;em&gt;one&lt;/em&gt; to &lt;em&gt;four&lt;/em&gt; students of your choice with no
 restrictions, and follow the rest of the collaboration policy from
-&lt;a href=&#34;https://uvacs2102.github.io/f16/ps/ps3&#34;&gt;PS3&lt;/a&gt;.&lt;/p&gt;
+&lt;a href=&#34;https://uvacs2102.github.io/ps/ps3&#34;&gt;PS3&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&#34;preparation&#34;&gt;Preparation&lt;/h2&gt;
 
 &lt;p&gt;This problem set focuses on Stable Matching &amp;mdash; Section 6.4 of the MCS
-book, and &lt;a href=&#34;https://uvacs2102.github.io/f16/class15&#34;&gt;Class 15&lt;/a&gt;.&lt;/p&gt;
+book, and &lt;a href=&#34;https://uvacs2102.github.io/class15&#34;&gt;Class 15&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;highlightm&#34;&gt;
-    &lt;a href=&#34;https://uvacs2102.github.io/f16/docs/ps7.pdf&#34;&gt;Download PDF for Problems&lt;/a&gt;.
+    &lt;a href=&#34;https://uvacs2102.github.io/docs/ps7.pdf&#34;&gt;Download PDF for Problems&lt;/a&gt;.
    &lt;/div&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;highlightr&#34;&gt;
@@ -1092,7 +1092,7 @@ clear, well-written, and convincing.&lt;/p&gt;
 &lt;p&gt;Traumatized by his failure to reach Eve in Problem Set 6, Wall-E has
 decided to join RoboMatch.com, the Stable Macthing Service for Loney
 Robots.  Robots do not have limitations on their potential matches, but
-RoboMatch is concerned that &lt;a href=&#34;https://uvacs2102.github.io/f16/docs/roomates.pdf&#34;&gt;it may not be possible to find a stable
+RoboMatch is concerned that &lt;a href=&#34;https://uvacs2102.github.io/docs/roomates.pdf&#34;&gt;it may not be possible to find a stable
 matching&lt;/a&gt; if the robots are allowed to prefer any
 other robot, RoboMatch divides robots into two sets based on whether or
 not they are in Disney/Pixar movies, and requires every member to
@@ -1117,7 +1117,7 @@ Junior: Wall-E, R2-D2, Luxo &lt;br /&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;p&gt;Show that there are stable matchings where Wall-E is paired with
 Junior and where Wall-E is paired with Big Dog.  (Note: feel free to use
-the provided Gale-Shapley program &lt;a href=&#34;https://uvacs2102.github.io/f16/docs/matching-ps6.py&#34;&gt;code&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
+the provided Gale-Shapley program &lt;a href=&#34;https://uvacs2102.github.io/docs/matching-ps6.py&#34;&gt;code&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;Show that there cannot be any stable matching where Wall-E is paired
 with AIBO.&lt;/p&gt;&lt;/li&gt;
@@ -1183,7 +1183,7 @@ P(q = (\text{\em pai}&amp;amp;\text{\em rings}, \text{\em proposals})) ::= &lt;b
 &lt;p&gt;That is, if $(a_i, b_j)$ is in $\text{\em pairings}$, then every match $a_i$ prefers to $b_j$ prefers someone else over $a_i$.&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;($\star\star$) Prove the $\text{\em pairings}$ for the terminating
-state are a stable matching (as defined in &lt;a href=&#34;https://uvacs2102.github.io/f16/class15&#34;&gt;Class 15&lt;/a&gt;).  (You may assume all of the properties in
+state are a stable matching (as defined in &lt;a href=&#34;https://uvacs2102.github.io/class15&#34;&gt;Class 15&lt;/a&gt;).  (You may assume all of the properties in
 questions 4&amp;ndash;6 in your proof, even if you were not able to prove them.)
 (Note: you may first want to state the definition of a stable matching
 in a different way, and may also find it helpful to strengthen the
@@ -1194,10 +1194,10 @@ preserved invariant property from question 6.)&lt;/p&gt;&lt;/li&gt;
     
     <item>
       <title>Problem Set 8</title>
-      <link>https://uvacs2102.github.io/f16/ps/ps8/</link>
+      <link>https://uvacs2102.github.io/ps/ps8/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://uvacs2102.github.io/f16/ps/ps8/</guid>
+      <guid>https://uvacs2102.github.io/ps/ps8/</guid>
       <description>
 
 &lt;p&gt;[Revision 0.2 - 3 November]&lt;/p&gt;
@@ -1222,13 +1222,13 @@ single, readable PDF file on the collab site before &lt;strong&gt;6:29pm&lt;/str
 &lt;p&gt;The collaboration policy is identical to that for PS7: you should work
 in groups of &lt;em&gt;one&lt;/em&gt; to &lt;em&gt;four&lt;/em&gt; students of your choice with no
 restrictions, and follow the rest of the collaboration policy from
-&lt;a href=&#34;https://uvacs2102.github.io/f16/ps/ps3&#34;&gt;PS3&lt;/a&gt;.&lt;/p&gt;
+&lt;a href=&#34;https://uvacs2102.github.io/ps/ps3&#34;&gt;PS3&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&#34;preparation&#34;&gt;Preparation&lt;/h2&gt;
 
 &lt;p&gt;This problem set focuses on recursive data types and structural
-induction &amp;mdash; Chapter of the MCS book, and &lt;a href=&#34;https://uvacs2102.github.io/f16/class16&#34;&gt;Class 16&lt;/a&gt; and
-&lt;a href=&#34;https://uvacs2102.github.io/f16/class17&#34;&gt;Class 17&lt;/a&gt;.&lt;/p&gt;
+induction &amp;mdash; Chapter of the MCS book, and &lt;a href=&#34;https://uvacs2102.github.io/class16&#34;&gt;Class 16&lt;/a&gt; and
+&lt;a href=&#34;https://uvacs2102.github.io/class17&#34;&gt;Class 17&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&#34;directions&#34;&gt;Directions&lt;/h2&gt;
 
@@ -1239,7 +1239,7 @@ them).&lt;/p&gt;
 &lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;highlightm&#34;&gt;
-    &lt;a href=&#34;https://uvacs2102.github.io/f16/docs/ps8.pdf&#34;&gt;Download PDF for Problems&lt;/a&gt;.
+    &lt;a href=&#34;https://uvacs2102.github.io/docs/ps8.pdf&#34;&gt;Download PDF for Problems&lt;/a&gt;.
    &lt;/div&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;highlightr&#34;&gt;
@@ -1264,7 +1264,7 @@ and reserve &lt;em&gt;list&lt;/em&gt; for the original prepended list):&lt;/p&gt
 
 &lt;ol&gt;
 &lt;li&gt;&lt;p&gt;Define the meaning of the observer operations (similarly to the
-beginning of &lt;a href=&#34;https://uvacs2102.github.io/f16/class17&#34;&gt;Class 17&lt;/a&gt;) for the tsil: $\text{last}: Tsil
+beginning of &lt;a href=&#34;https://uvacs2102.github.io/class17&#34;&gt;Class 17&lt;/a&gt;) for the tsil: $\text{last}: Tsil
 \rightarrow Object$, $\text{frest}: Tsil \rightarrow Tsil$, and
 $\text{empty}: Tsil \rightarrow Boolean$.&lt;/p&gt;&lt;/li&gt;
 
@@ -1276,7 +1276,7 @@ should include a clear definition of what &lt;em&gt;equivalent&lt;/em&gt; means.
 
 &lt;h2 id=&#34;structural-induction-on-trees&#34;&gt;Structural Induction on Trees&lt;/h2&gt;
 
-&lt;p&gt;In &lt;a href=&#34;https://uvacs2102.github.io/f16/class17&#34;&gt;Class 17&lt;/a&gt;, we defined a binary tree as either $\text{\bf
+&lt;p&gt;In &lt;a href=&#34;https://uvacs2102.github.io/class17&#34;&gt;Class 17&lt;/a&gt;, we defined a binary tree as either $\text{\bf
 null}$ or a node constructed from a binary tree, object, and binary
 tree.  Here, we define a binary tree where the labels are natural
 numbers.&lt;/p&gt;
@@ -1325,7 +1325,7 @@ the in-order traversal of the tree shown below would be the list $(4, 8,
 \includegraphics[scale=0.7]{./content/docs/binarytree.pdf}
 \end{center}&lt;/p&gt;
 
-&lt;p&gt;We can define $\text{traverse}$ to produce a (prepend) list as: (note the $+$ operation here is list concatenation, as defined in &lt;a href=&#34;https://uvacs2102.github.io/f16/class17&#34;&gt;Class 17&lt;/a&gt;)
+&lt;p&gt;We can define $\text{traverse}$ to produce a (prepend) list as: (note the $+$ operation here is list concatenation, as defined in &lt;a href=&#34;https://uvacs2102.github.io/class17&#34;&gt;Class 17&lt;/a&gt;)
 \begin{equation&lt;em&gt;}
 \begin{split}
 &amp;amp; \text{traverse}(\text{\bf null}) = \text{\bf null} &lt;br /&gt;
@@ -1383,7 +1383,7 @@ programmer without becoming adept with programming with procedures.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Download:&lt;/strong&gt; &lt;a href=&#34;https://uvacs2102.github.io/docs/pairs.py&#34;&gt;pairs.py&lt;/a&gt; (if the link in the PDF file doesn&amp;rsquo;t work, use &lt;em&gt;&lt;a href=&#34;https://uvacs2102.github.io/docs/pairs.py&#34;&gt;https://uvacs2102.github.io/docs/pairs.py&lt;/a&gt;&lt;/em&gt;).&lt;/p&gt;
 
-&lt;p&gt;In &lt;a href=&#34;https://uvacs2102.github.io/f16/docs/pairs.py&#34;&gt;pairs.py&lt;/a&gt;, we defined &lt;code&gt;make_pair&lt;/code&gt; and various
+&lt;p&gt;In &lt;a href=&#34;https://uvacs2102.github.io/docs/pairs.py&#34;&gt;pairs.py&lt;/a&gt;, we defined &lt;code&gt;make_pair&lt;/code&gt; and various
 procedures for building and using lists.  You should download this code,
 run it in your favorite Python3 environment, and make sure you
 understand it.&lt;/p&gt;
@@ -1418,10 +1418,10 @@ should return the length of the list.&lt;/p&gt;&lt;/li&gt;
     
     <item>
       <title>Problem Set 9</title>
-      <link>https://uvacs2102.github.io/f16/ps/ps9/</link>
+      <link>https://uvacs2102.github.io/ps/ps9/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://uvacs2102.github.io/f16/ps/ps9/</guid>
+      <guid>https://uvacs2102.github.io/ps/ps9/</guid>
       <description>
 
 &lt;div class=&#34;latex&#34;&gt;
@@ -1443,18 +1443,18 @@ single, readable PDF file on the collab site before &lt;strong&gt;6:29pm&lt;/str
 &lt;p&gt;The collaboration policy is identical to that for PS7: you should work
 in groups of &lt;em&gt;one&lt;/em&gt; to &lt;em&gt;four&lt;/em&gt; students of your choice with no
 restrictions, and follow the rest of the collaboration policy from
-&lt;a href=&#34;https://uvacs2102.github.io/f16/ps/ps3&#34;&gt;PS3&lt;/a&gt;.&lt;/p&gt;
+&lt;a href=&#34;https://uvacs2102.github.io/ps/ps3&#34;&gt;PS3&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&#34;preparation&#34;&gt;Preparation&lt;/h2&gt;
 
 &lt;p&gt;This problem set focuses on infinite sets &amp;mdash; Chapter 8 of the MCS book,
-and &lt;a href=&#34;https://uvacs2102.github.io/f16/class18&#34;&gt;Class 18&lt;/a&gt;, &lt;a href=&#34;https://uvacs2102.github.io/f16/class19&#34;&gt;Class 19&lt;/a&gt;, &lt;a href=&#34;https://uvacs2102.github.io/f16/class21&#34;&gt;Class 21&lt;/a&gt; and
-&lt;a href=&#34;https://uvacs2102.github.io/f16/class22&#34;&gt;Class 22&lt;/a&gt;.&lt;/p&gt;
+and &lt;a href=&#34;https://uvacs2102.github.io/class18&#34;&gt;Class 18&lt;/a&gt;, &lt;a href=&#34;https://uvacs2102.github.io/class19&#34;&gt;Class 19&lt;/a&gt;, &lt;a href=&#34;https://uvacs2102.github.io/class21&#34;&gt;Class 21&lt;/a&gt; and
+&lt;a href=&#34;https://uvacs2102.github.io/class22&#34;&gt;Class 22&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;highlightm&#34;&gt;
-    &lt;a href=&#34;https://uvacs2102.github.io/f16/docs/ps9.pdf&#34;&gt;Download PDF for Problems&lt;/a&gt;.
+    &lt;a href=&#34;https://uvacs2102.github.io/docs/ps9.pdf&#34;&gt;Download PDF for Problems&lt;/a&gt;.
    &lt;/div&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;highlightr&#34;&gt;
@@ -1515,10 +1515,10 @@ otherwise unrestricted.&lt;/p&gt;&lt;/li&gt;
     
     <item>
       <title>Problem Set Omega</title>
-      <link>https://uvacs2102.github.io/f16/ps/psz/</link>
+      <link>https://uvacs2102.github.io/ps/psz/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://uvacs2102.github.io/f16/ps/psz/</guid>
+      <guid>https://uvacs2102.github.io/ps/psz/</guid>
       <description>
 
 &lt;p&gt;&amp;nbsp;&lt;/p&gt;
