@@ -1,21 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>cs2102: Discrete Math</title>
-    <link>https://uvacs2102.github.io/index.xml</link>
-    <description>Recent content on cs2102: Discrete Math</description>
+    <title>cs2102: Discrete Math (Fall 2016)</title>
+    <link>https://uvacs2102.github.io/f16/index.xml</link>
+    <description>Recent content on cs2102: Discrete Math (Fall 2016)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 17 Mar 2017 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://uvacs2102.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://uvacs2102.github.io/f16/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Fall 2017 Course</title>
-      <link>https://uvacs2102.github.io/fall2017/</link>
+      <link>https://uvacs2102.github.io/f16/fall2017/</link>
       <pubDate>Fri, 17 Mar 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://uvacs2102.github.io/fall2017/</guid>
-      <description>&lt;p&gt;cs2102 will be offered again in Fall 2017, co-taught by &lt;a href=&#34;https://www.cs.virginia.edu/~mohammad/&#34;&gt;Mohammad Mahmoody&lt;/a&gt; and &lt;a href=&#34;https://www.cs.virginia.edu/evans&#34;&gt;David Evans&lt;/a&gt;.&lt;/p&gt;
+      <guid>https://uvacs2102.github.io/f16/fall2017/</guid>
+      <description>&lt;p&gt;This is the preserved website for the Fall 2016 course.&lt;/p&gt;
+
+&lt;p&gt;cs2102 will be offered again in Fall 2017, co-taught by &lt;a href=&#34;https://www.cs.virginia.edu/~mohammad/&#34;&gt;Mohammad
+Mahmoody&lt;/a&gt; and &lt;a href=&#34;https://www.cs.virginia.edu/evans&#34;&gt;David
+Evans&lt;/a&gt;.  For the Fall 2017 course
+site, see &lt;a href=&#34;https://uvacs2102.github.io/&#34;&gt;https://uvacs2102.github.io/&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Some things about the course are likely to change substantially for
 Fall 2017, but you can see what was done in the Fall 2016 course here.&lt;/p&gt;
@@ -24,11 +29,11 @@ Fall 2017, but you can see what was done in the Fall 2016 course here.&lt;/p&gt;
     
     <item>
       <title>Final Exam Solutions</title>
-      <link>https://uvacs2102.github.io/finalexamsolutions/</link>
+      <link>https://uvacs2102.github.io/f16/finalexamsolutions/</link>
       <pubDate>Thu, 15 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://uvacs2102.github.io/finalexamsolutions/</guid>
-      <description>&lt;p&gt;The solutions to &lt;a href=&#34;https://uvacs2102.github.io/docs/finalexam.pdf&#34;&gt;Final Exam&lt;/a&gt; are here: &lt;a href=&#34;https://uvacs2102.github.io/docs/finalexamsolutions.pdf&#34;&gt;Final
+      <guid>https://uvacs2102.github.io/f16/finalexamsolutions/</guid>
+      <description>&lt;p&gt;The solutions to &lt;a href=&#34;https://uvacs2102.github.io/f16/docs/finalexam.pdf&#34;&gt;Final Exam&lt;/a&gt; are here: &lt;a href=&#34;https://uvacs2102.github.io/f16/docs/finalexamsolutions.pdf&#34;&gt;Final
 Exam Solutions&lt;/a&gt;.  (I promise, no Harambe
 mentions, other than in quotes.)&lt;/p&gt;
 </description>
@@ -36,13 +41,13 @@ mentions, other than in quotes.)&lt;/p&gt;
     
     <item>
       <title>Problem Set Omega Highlights</title>
-      <link>https://uvacs2102.github.io/pszhighlights/</link>
+      <link>https://uvacs2102.github.io/f16/pszhighlights/</link>
       <pubDate>Wed, 14 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://uvacs2102.github.io/pszhighlights/</guid>
+      <guid>https://uvacs2102.github.io/f16/pszhighlights/</guid>
       <description>
 
-&lt;p&gt;Here are some interesting submissions for &lt;a href=&#34;https://uvacs2102.github.io/ps/psz&#34;&gt;Problem Set Omega&lt;/a&gt;
+&lt;p&gt;Here are some interesting submissions for &lt;a href=&#34;https://uvacs2102.github.io/f16/ps/psz&#34;&gt;Problem Set Omega&lt;/a&gt;
 (roughly grouped by topic).  Thanks for all the entertaining and
 illuminating submissions!&lt;/p&gt;
 
@@ -66,7 +71,7 @@ Logical Operators&lt;br&gt;
 &lt;p&gt;&lt;a href=&#34;https://drive.google.com/file/d/0By695UHW09uyWHA5cmk4ZTlZelE/view&#34;&gt;Logic Game [JAR]&lt;/a&gt;&lt;br&gt;
 &lt;b&gt;Temuulen Khurelbaatar&lt;/b&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://uvacs2102.github.io/images/trickxortreat.jpg&#34; width=500&gt;&lt;br&gt;
+&lt;p&gt;&lt;img src=&#34;https://uvacs2102.github.io/f16/images/trickxortreat.jpg&#34; width=500&gt;&lt;br&gt;
 &lt;b&gt;Yiming Wang, Mike Wang, Yingqing Huang&lt;/b&gt;&lt;/p&gt;
 
 &lt;h1 id=&#34;set-theory&#34;&gt;Set Theory&lt;/h1&gt;
@@ -77,7 +82,7 @@ Sets and Superheroes&lt;br&gt;
 
 &lt;p&gt;&lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/key/i9PSakiBUVeVMY&#34; width=&#34;595&#34; height=&#34;485&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; style=&#34;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&#34; allowfullscreen&gt; &lt;/iframe&gt; &lt;div style=&#34;margin-bottom:5px&#34;&gt; &lt;strong&gt; &lt;a href=&#34;//www.slideshare.net/MariaJoseHitoRamos/sets-69572321&#34; title=&#34;Sets&#34; target=&#34;_blank&#34;&gt;Sets&lt;/a&gt; &lt;/strong&gt;&lt;br&gt;&lt;strong&gt;&lt;a target=&#34;_blank&#34; href=&#34;//www.slideshare.net/MariaJoseHitoRamos&#34;&gt;Maria Jose Hito Ramos&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/images/angrybirds.pdf&#34;&gt;Angry Birds: Set Relations&lt;/a&gt;&lt;br&gt;
+&lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/f16/images/angrybirds.pdf&#34;&gt;Angry Birds: Set Relations&lt;/a&gt;&lt;br&gt;
 &lt;b&gt;Brian Li&lt;/b&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://docs.google.com/presentation/d/e/2PACX-1vRH-xmsRoWUWBVqcLrLT9FYH7SoYosQfz9_QGx14Ptu5UL7qcOmdxG4dBJmEXbbX2vrzMgAvHzc8OKA/pub?start=false&amp;loop=false&amp;delayms=3000&amp;slide=id.p&#34;&gt;To Infinite Sets and Beyond!&lt;/a&gt;&lt;br&gt;
@@ -94,20 +99,20 @@ Induction Rap&lt;br&gt;
 &lt;b&gt;Milan Bharadwaj&lt;/b&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://9a8b5089-a-62cb3a1a-s-sites.googlegroups.com/site/problemsetomegabowler2016/home/ProblemSetO.jpg?attachauth=ANoY7cqcv6nnReB4tmh0ZMrRRc2w-8vha3yNzLanjG7jI2TCcYNt4LDRH4fpK50pYnsm94Hsz5-Gde6jio4K4aV-IbwL17LOyOzGg2Zs6DD-uOCdCK7lXyJq0zEGeuojbMbYPmwVXEi9gL2xWFBuHX3rOH5bZ7x0X-2-GxxCtu2TSYrUxJYwM_JcgsD39BmMOQ58rSdzsRyJWx3RQk0E07y1DgfKG3t4OXm_TZ7CQmUtHogLw7KoNl8%3D&amp;attredirects=0&#34;&gt;
-&lt;img src=&#34;https://uvacs2102.github.io/images/bowler.jpg&#34; width=550&gt;&lt;/a&gt;&lt;br&gt;
+&lt;img src=&#34;https://uvacs2102.github.io/f16/images/bowler.jpg&#34; width=550&gt;&lt;/a&gt;&lt;br&gt;
 &lt;a href=&#34;https://9a8b5089-a-62cb3a1a-s-sites.googlegroups.com/site/problemsetomegabowler2016/home/ProblemSetO.jpg?attachauth=ANoY7cqcv6nnReB4tmh0ZMrRRc2w-8vha3yNzLanjG7jI2TCcYNt4LDRH4fpK50pYnsm94Hsz5-Gde6jio4K4aV-IbwL17LOyOzGg2Zs6DD-uOCdCK7lXyJq0zEGeuojbMbYPmwVXEi9gL2xWFBuHX3rOH5bZ7x0X-2-GxxCtu2TSYrUxJYwM_JcgsD39BmMOQ58rSdzsRyJWx3RQk0E07y1DgfKG3t4OXm_TZ7CQmUtHogLw7KoNl8%3D&amp;attredirects=0&#34;&gt;Recursive Nesting Dolls&lt;/a&gt;&lt;br&gt;
 &lt;b&gt;Casey Bowler&lt;/b&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/images/separationinduction.pptx&#34;&gt;Six Degress of Separation [PPTX]&lt;/a&gt;&lt;br&gt;
+&lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/f16/images/separationinduction.pptx&#34;&gt;Six Degress of Separation [PPTX]&lt;/a&gt;&lt;br&gt;
 &lt;b&gt;Fan Feng&lt;/b&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://tracyschristmasquestion.files.wordpress.com/2016/12/problem-set-0.pdf&#34;&gt;Tracy&amp;rsquo;s Christmas Question [PDF]&lt;/a&gt;&lt;br&gt;
 &lt;b&gt;Ryann Consalo, Megan Greatorex&lt;/b&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/images/basketball.pdf&#34;&gt;Basketball Induction&lt;/a&gt;&lt;br&gt;
+&lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/f16/images/basketball.pdf&#34;&gt;Basketball Induction&lt;/a&gt;&lt;br&gt;
 &lt;b&gt;Josh Davis&lt;/b&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://uvacs2102.github.io/images/stronginduction.jpg&#34; width=500&gt;&lt;br&gt;
+&lt;p&gt;&lt;img src=&#34;https://uvacs2102.github.io/f16/images/stronginduction.jpg&#34; width=500&gt;&lt;br&gt;
 &lt;b&gt;Muhammad Sareini&lt;/b&gt;&lt;/p&gt;
 
 &lt;h1 id=&#34;state-machines&#34;&gt;State Machines&lt;/h1&gt;
@@ -141,7 +146,7 @@ Rick Yanhao Zhao&lt;/p&gt;
 
 &lt;h1 id=&#34;recursive-datatypes&#34;&gt;Recursive Datatypes&lt;/h1&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/images/recursive-mak2vr.pdf&#34;&gt;Recursive Data Types for Introductory CS Students&lt;/a&gt;&lt;br&gt;
+&lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/f16/images/recursive-mak2vr.pdf&#34;&gt;Recursive Data Types for Introductory CS Students&lt;/a&gt;&lt;br&gt;
 &lt;b&gt;Matthew Keitelman&lt;/b&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/eVB-wHlxI9w&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;&lt;br&gt;
@@ -165,7 +170,7 @@ Nirali Shah&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/sh/fgdxite5fltzhyr/AAC8zmSDlfVsCM1dYS5DB72Ja?dl=0&#34;&gt;Stable Marriage: Harry Potter Edition (Game)&lt;/a&gt;&lt;br&gt;
 Utkarsha Bhave, Anne Marie Lee, Jessica Virden&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://imgur.com/a/R0qly&#34;&gt;&lt;img src=&#34;https://uvacs2102.github.io/images/gingerbread.jpg&#34; width=550&gt;&lt;/a&gt;&lt;Br&gt;
+&lt;p&gt;&lt;a href=&#34;http://imgur.com/a/R0qly&#34;&gt;&lt;img src=&#34;https://uvacs2102.github.io/f16/images/gingerbread.jpg&#34; width=550&gt;&lt;/a&gt;&lt;Br&gt;
 Gingerbread Matching&lt;br&gt;
 &lt;b&gt;Baylor Towne&lt;/b&gt;
    &lt;p class=&#34;caption&#34;&gt;
@@ -187,7 +192,7 @@ preference lists, this is the only stable matching that could occur.
 
 &lt;p&gt;&lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/key/sW81lpOoPIPxzw&#34; width=&#34;595&#34; height=&#34;485&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; style=&#34;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&#34; allowfullscreen&gt; &lt;/iframe&gt; &lt;div style=&#34;margin-bottom:5px&#34;&gt; &lt;strong&gt; &lt;a href=&#34;//www.slideshare.net/MariaJoseHitoRamos/stable-matching&#34; title=&#34;Stable Matching&#34; target=&#34;_blank&#34;&gt;Stable Matching&lt;/a&gt; &lt;/strong&gt; &lt;br&gt;&lt;strong&gt;&lt;a target=&#34;_blank&#34; href=&#34;//www.slideshare.net/MariaJoseHitoRamos&#34;&gt;Maria Jose Hito Ramos&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/images/StableMatchmakers.pdf&#34;&gt;Stable Matchmakers (Comic) [PDF]&lt;br&gt;
+&lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/f16/images/StableMatchmakers.pdf&#34;&gt;Stable Matchmakers (Comic) [PDF]&lt;br&gt;
 &lt;b&gt;Lauren Phan, Grace Harders&lt;/b&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/s/e1xmi3ed78ov96k/ProblemSet0.pdf?dl=0&#34;&gt;Gale-Shapley&amp;rsquo;s Hotline Bling [PDF]&lt;/a&gt;&lt;br&gt;
@@ -230,20 +235,20 @@ Nancy Zhang, Peter Cybriwsky, Sohum Sontakke&lt;/p&gt;
     
     <item>
       <title>Class 26: Wrap-Up</title>
-      <link>https://uvacs2102.github.io/class26/</link>
+      <link>https://uvacs2102.github.io/f16/class26/</link>
       <pubDate>Tue, 06 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://uvacs2102.github.io/class26/</guid>
+      <guid>https://uvacs2102.github.io/f16/class26/</guid>
       <description>
 
 &lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
 
-&lt;p&gt;Your final (optional) submission for &lt;strong&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/psz&#34;&gt;Problem Set Omega&lt;/a&gt;&lt;/strong&gt;
+&lt;p&gt;Your final (optional) submission for &lt;strong&gt;&lt;a href=&#34;https://uvacs2102.github.io/f16/ps/psz&#34;&gt;Problem Set Omega&lt;/a&gt;&lt;/strong&gt;
 is due by &lt;strong&gt;11:59pm&lt;/strong&gt; tonight (&lt;strong&gt;Tuesday, 6 December&lt;/strong&gt;). You may
 revise and update earlier submissions until this deadline.&lt;/p&gt;
 
 &lt;p&gt;The &lt;strong&gt;final exam&lt;/strong&gt; is scheduled by the registrar for &lt;strong&gt;Saturday, 10
-December, 9am-noon&lt;/strong&gt; in our normal classroom.  See the &lt;a href=&#34;https://uvacs2102.github.io/finalprep&#34;&gt;Final Exam
+December, 9am-noon&lt;/strong&gt; in our normal classroom.  See the &lt;a href=&#34;https://uvacs2102.github.io/f16/finalprep&#34;&gt;Final Exam
 Preparation&lt;/a&gt; handout for more information and some
 &lt;strong&gt;practice problems&lt;/strong&gt;.&lt;/p&gt;
 
@@ -274,11 +279,11 @@ Milan Bharadwaj, &lt;em&gt;Induction Rap&lt;/em&gt;
     
     <item>
       <title>Practice Problems Solutions</title>
-      <link>https://uvacs2102.github.io/practicesolutions/</link>
+      <link>https://uvacs2102.github.io/f16/practicesolutions/</link>
       <pubDate>Fri, 02 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://uvacs2102.github.io/practicesolutions/</guid>
-      <description>&lt;p&gt;After you have tried to solve the &lt;a href=&#34;https://uvacs2102.github.io/docs/finalprep.pdf&#34;&gt;practice
+      <guid>https://uvacs2102.github.io/f16/practicesolutions/</guid>
+      <description>&lt;p&gt;After you have tried to solve the &lt;a href=&#34;https://uvacs2102.github.io/f16/docs/finalprep.pdf&#34;&gt;practice
 problems&lt;/a&gt; on your own, you can obtain solutions
 to them using this form: &lt;a
 href=&#34;https://goo.gl/forms/qZVZJD8HHMc2C5XQ2&#34;&gt;
@@ -288,10 +293,10 @@ href=&#34;https://goo.gl/forms/qZVZJD8HHMc2C5XQ2&#34;&gt;
     
     <item>
       <title>Class 25: Cryptography</title>
-      <link>https://uvacs2102.github.io/class25/</link>
+      <link>https://uvacs2102.github.io/f16/class25/</link>
       <pubDate>Thu, 01 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://uvacs2102.github.io/class25/</guid>
+      <guid>https://uvacs2102.github.io/f16/class25/</guid>
       <description>
 
 &lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
@@ -299,7 +304,7 @@ href=&#34;https://goo.gl/forms/qZVZJD8HHMc2C5XQ2&#34;&gt;
 &lt;p&gt;&lt;em&gt;Lighting of the Lawn&lt;/em&gt; is &lt;strong&gt;tonight&lt;/strong&gt;!  (Starts around 7pm)&lt;/p&gt;
 
 &lt;p&gt;If you would like to present something to the class, you need to
-submit &lt;strong&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/psz&#34;&gt;Problem Set Omega&lt;/a&gt;&lt;/strong&gt; by &lt;strong&gt;Sunday, 4 December&lt;/strong&gt; at
+submit &lt;strong&gt;&lt;a href=&#34;https://uvacs2102.github.io/f16/ps/psz&#34;&gt;Problem Set Omega&lt;/a&gt;&lt;/strong&gt; by &lt;strong&gt;Sunday, 4 December&lt;/strong&gt; at
 &lt;strong&gt;6:29pm&lt;/strong&gt;.  Your submission should include an answer to &amp;ldquo;Presentation
 option&amp;rdquo; question:&lt;/p&gt;
 
@@ -311,7 +316,7 @@ option&amp;rdquo; question:&lt;/p&gt;
 may revise and update earlier submissions until this deadline.&lt;/p&gt;
 
 &lt;p&gt;The &lt;strong&gt;final exam&lt;/strong&gt; is scheduled by the registrar for &lt;strong&gt;Saturday, 10
-December, 9am-noon&lt;/strong&gt; in our normal classroom.  See the &lt;a href=&#34;https://uvacs2102.github.io/finalprep&#34;&gt;Final Exam
+December, 9am-noon&lt;/strong&gt; in our normal classroom.  See the &lt;a href=&#34;https://uvacs2102.github.io/f16/finalprep&#34;&gt;Final Exam
 Preparation&lt;/a&gt; handout for more information and some &lt;strong&gt;practice problems&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;
@@ -320,7 +325,7 @@ Preparation&lt;/a&gt; handout for more information and some &lt;strong&gt;practi
    &lt;/center&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;highlightm&#34;&gt;
-   &lt;a href=&#34;https://uvacs2102.github.io/docs/class25.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes&lt;/b&gt;&lt;/a&gt;.
+   &lt;a href=&#34;https://uvacs2102.github.io/f16/docs/class25.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes&lt;/b&gt;&lt;/a&gt;.
    &lt;/div&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
@@ -407,20 +412,20 @@ $\alpha$, primitive root of $q$&lt;/p&gt;&lt;/li&gt;
     
     <item>
       <title>Class 24: Halting Problems</title>
-      <link>https://uvacs2102.github.io/class24/</link>
+      <link>https://uvacs2102.github.io/f16/class24/</link>
       <pubDate>Tue, 29 Nov 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://uvacs2102.github.io/class24/</guid>
+      <guid>https://uvacs2102.github.io/f16/class24/</guid>
       <description>
 
 &lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
 
-&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/psz&#34;&gt;Problem Set Omega&lt;/a&gt;&lt;/strong&gt; is due on &lt;strong&gt;Sunday, 4 December&lt;/strong&gt; or
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://uvacs2102.github.io/f16/ps/psz&#34;&gt;Problem Set Omega&lt;/a&gt;&lt;/strong&gt; is due on &lt;strong&gt;Sunday, 4 December&lt;/strong&gt; or
 &lt;strong&gt;Tuesday, 6 December&lt;/strong&gt; (see problem set for details).  It is not like
 the others, and counts as a &amp;ldquo;bonus&amp;rdquo; optional assignment.&lt;/p&gt;
 
 &lt;p&gt;The &lt;strong&gt;final exam&lt;/strong&gt; is scheduled by the registrar for &lt;strong&gt;Saturday, 10
-December, 9am-noon&lt;/strong&gt; in our normal classroom.  See the &lt;a href=&#34;https://uvacs2102.github.io/finalprep&#34;&gt;Final Exam
+December, 9am-noon&lt;/strong&gt; in our normal classroom.  See the &lt;a href=&#34;https://uvacs2102.github.io/f16/finalprep&#34;&gt;Final Exam
 Preparation&lt;/a&gt; handout for more information on the final and
 some &lt;strong&gt;practice problems&lt;/strong&gt;.&lt;/p&gt;
 
@@ -430,7 +435,7 @@ some &lt;strong&gt;practice problems&lt;/strong&gt;.&lt;/p&gt;
    &lt;/center&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;highlightm&#34;&gt;
-   &lt;a href=&#34;https://uvacs2102.github.io/docs/class24.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes&lt;/b&gt;&lt;/a&gt;.
+   &lt;a href=&#34;https://uvacs2102.github.io/f16/docs/class24.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes&lt;/b&gt;&lt;/a&gt;.
    &lt;/div&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
@@ -539,10 +544,10 @@ $$&lt;/p&gt;
     
     <item>
       <title>Final Exam Preparation</title>
-      <link>https://uvacs2102.github.io/finalprep/</link>
+      <link>https://uvacs2102.github.io/f16/finalprep/</link>
       <pubDate>Mon, 28 Nov 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://uvacs2102.github.io/finalprep/</guid>
+      <guid>https://uvacs2102.github.io/f16/finalprep/</guid>
       <description>
 
 &lt;h2 id=&#34;final-exam&#34;&gt;Final Exam&lt;/h2&gt;
@@ -625,7 +630,7 @@ problems similar to these on the final exam.&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;
    &lt;div class=&#34;highlightm&#34;&gt;
-   &lt;a href=&#34;https://uvacs2102.github.io/docs/finalprep.pdf&#34;&gt;See PDF Version for &lt;b&gt;Practice Problems&lt;/b&gt;&lt;/a&gt;.
+   &lt;a href=&#34;https://uvacs2102.github.io/f16/docs/finalprep.pdf&#34;&gt;See PDF Version for &lt;b&gt;Practice Problems&lt;/b&gt;&lt;/a&gt;.
    &lt;/div&gt;
    &lt;/div&gt;&lt;!--endpdf--&gt;
    &lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
@@ -633,7 +638,7 @@ problems similar to these on the final exam.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;p&gt;Prove that all well-ordered sets are countable.&lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;The way we defined an execution of a Turing Machine in &lt;a href=&#34;https://uvacs2102.github.io/class23&#34;&gt;Class
+&lt;li&gt;&lt;p&gt;The way we defined an execution of a Turing Machine in &lt;a href=&#34;https://uvacs2102.github.io/f16/class23&#34;&gt;Class
 23&lt;/a&gt; suggested that there could be more than one execution
 of a Turing Machine, $TM = (S, T \subseteq S \times \Gamma \rightarrow
 S \times \Gamma \times \text{\em dir}, q&lt;em&gt;0 \in S, q&lt;/em&gt;{Accept} \subseteq
@@ -688,14 +693,14 @@ $\text{\bf 0}$ symbols).&lt;br /&gt;
     
     <item>
       <title>Trees Challenge</title>
-      <link>https://uvacs2102.github.io/treeschallenge/</link>
+      <link>https://uvacs2102.github.io/f16/treeschallenge/</link>
       <pubDate>Mon, 28 Nov 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://uvacs2102.github.io/treeschallenge/</guid>
+      <guid>https://uvacs2102.github.io/f16/treeschallenge/</guid>
       <description>&lt;p&gt;Henry Spece has solved Challenge 7:&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;highlightg&#34;&gt;
-   &lt;strong&gt;Challenge 7.&lt;/strong&gt; From &lt;a href=&#34;https://uvacs2102.github.io/class19&#34;&gt;Class19&lt;/a&gt;: Determine the carinality of
+   &lt;strong&gt;Challenge 7.&lt;/strong&gt; From &lt;a href=&#34;https://uvacs2102.github.io/f16/class19&#34;&gt;Class19&lt;/a&gt;: Determine the carinality of
   the set of all &lt;em&gt;Tree&lt;/em&gt; objects (as defined on PS8), and provide a convincing
   proof supporting your answer.
    &lt;/div&gt;&lt;/p&gt;
@@ -768,10 +773,10 @@ must be countable.&lt;/p&gt;
     
     <item>
       <title>Problem Set 9 Solutions and Comments</title>
-      <link>https://uvacs2102.github.io/ps9solutions/</link>
+      <link>https://uvacs2102.github.io/f16/ps9solutions/</link>
       <pubDate>Sun, 27 Nov 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://uvacs2102.github.io/ps9solutions/</guid>
+      <guid>https://uvacs2102.github.io/f16/ps9solutions/</guid>
       <description>&lt;p&gt;The Problem Set 9 solutions are now posted:
 &lt;a href=&#34;https://collab.itc.virginia.edu/access/content/group/e0b17949-c94c-466b-835a-196381f3f911/ps9solutions.pdf&#34;&gt;[PDF]&lt;/a&gt;&lt;/p&gt;
 
@@ -781,11 +786,11 @@ must be countable.&lt;/p&gt;
     
     <item>
       <title>Submitting Problem Set Omega</title>
-      <link>https://uvacs2102.github.io/pszsubmit/</link>
+      <link>https://uvacs2102.github.io/f16/pszsubmit/</link>
       <pubDate>Sun, 27 Nov 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://uvacs2102.github.io/pszsubmit/</guid>
-      <description>&lt;p&gt;The form for submitting &lt;a href=&#34;https://uvacs2102.github.io/ps/psz&#34;&gt;Problem Set Omega&lt;/a&gt; is
+      <guid>https://uvacs2102.github.io/f16/pszsubmit/</guid>
+      <description>&lt;p&gt;The form for submitting &lt;a href=&#34;https://uvacs2102.github.io/f16/ps/psz&#34;&gt;Problem Set Omega&lt;/a&gt; is
 &lt;a href=&#34;https://docs.google.com/forms/d/e/1FAIpQLSfMqhD_T3hUvNB0uLWr1Cs8VmIWsJPtHYLajTJV4Y1RLioq1w/viewform&#34;&gt;here&lt;/a&gt;:&lt;/p&gt;
 
 &lt;p&gt;&lt;center&gt;
@@ -796,17 +801,17 @@ must be countable.&lt;/p&gt;
     
     <item>
       <title>Class 23: Universal Machines</title>
-      <link>https://uvacs2102.github.io/class23/</link>
+      <link>https://uvacs2102.github.io/f16/class23/</link>
       <pubDate>Sat, 19 Nov 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://uvacs2102.github.io/class23/</guid>
+      <guid>https://uvacs2102.github.io/f16/class23/</guid>
       <description>
 
 &lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
 
-&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://uvacs2102.github.io/docs/ps9.pdf&#34;&gt;Problem Set 9&lt;/a&gt;&lt;/strong&gt; is tomorrow, &lt;strong&gt;Wednesday, 23 November&lt;/strong&gt; at &lt;strong&gt;6:29pm&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://uvacs2102.github.io/f16/docs/ps9.pdf&#34;&gt;Problem Set 9&lt;/a&gt;&lt;/strong&gt; is tomorrow, &lt;strong&gt;Wednesday, 23 November&lt;/strong&gt; at &lt;strong&gt;6:29pm&lt;/strong&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/psZ&#34;&gt;Problem Set Omega&lt;/a&gt;&lt;/strong&gt; is now posted and due on &lt;strong&gt;Sunday,
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://uvacs2102.github.io/f16/ps/psZ&#34;&gt;Problem Set Omega&lt;/a&gt;&lt;/strong&gt; is now posted and due on &lt;strong&gt;Sunday,
   4 December&lt;/strong&gt; or &lt;strong&gt;Tuesday, 6 December&lt;/strong&gt; (see problem set for
   details).  It is not like the others, and counts as a &amp;ldquo;bonus&amp;rdquo;
   optional assignment.&lt;/p&gt;
@@ -817,12 +822,12 @@ must be countable.&lt;/p&gt;
    &lt;/center&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;highlightm&#34;&gt;
-   &lt;a href=&#34;https://uvacs2102.github.io/docs/class23.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes&lt;/b&gt;&lt;/a&gt;.
+   &lt;a href=&#34;https://uvacs2102.github.io/f16/docs/class23.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes&lt;/b&gt;&lt;/a&gt;.
    &lt;/div&gt;&lt;/p&gt;
 
 &lt;h3 id=&#34;links&#34;&gt;Links&lt;/h3&gt;
 
-&lt;p&gt;Simple Turing Machine simulator (and XOR machine): &lt;a href=&#34;https://uvacs2102.github.io/docs/tm.py&#34;&gt;tm.py&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Simple Turing Machine simulator (and XOR machine): &lt;a href=&#34;https://uvacs2102.github.io/f16/docs/tm.py&#34;&gt;tm.py&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://dori-mic.org&#34;&gt;Dori-Mic and the Universal Machine!&lt;/a&gt;&lt;/p&gt;
 
@@ -920,11 +925,11 @@ simulate(xorm, list(&amp;quot;00+10=10$&amp;quot;))
     
     <item>
       <title>Exam 2 Solutions</title>
-      <link>https://uvacs2102.github.io/exam2solutions/</link>
+      <link>https://uvacs2102.github.io/f16/exam2solutions/</link>
       <pubDate>Sat, 19 Nov 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://uvacs2102.github.io/exam2solutions/</guid>
-      <description>&lt;p&gt;The solutions to &lt;a href=&#34;https://uvacs2102.github.io/docs/exam2.pdf&#34;&gt;Exam 2&lt;/a&gt; are here: &lt;a href=&#34;https://uvacs2102.github.io/docs/exam2solutions.pdf&#34;&gt;Exam 2
+      <guid>https://uvacs2102.github.io/f16/exam2solutions/</guid>
+      <description>&lt;p&gt;The solutions to &lt;a href=&#34;https://uvacs2102.github.io/f16/docs/exam2.pdf&#34;&gt;Exam 2&lt;/a&gt; are here: &lt;a href=&#34;https://uvacs2102.github.io/f16/docs/exam2solutions.pdf&#34;&gt;Exam 2
 Solutions&lt;/a&gt;.  You should, of course, expect
 to see questions like these again on the final.&lt;/p&gt;
 </description>
@@ -932,17 +937,17 @@ to see questions like these again on the final.&lt;/p&gt;
     
     <item>
       <title>Class 22: On Computable Numbers</title>
-      <link>https://uvacs2102.github.io/class22/</link>
+      <link>https://uvacs2102.github.io/f16/class22/</link>
       <pubDate>Thu, 17 Nov 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://uvacs2102.github.io/class22/</guid>
+      <guid>https://uvacs2102.github.io/f16/class22/</guid>
       <description>
 
 &lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
 
-&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://uvacs2102.github.io/docs/ps9.pdf&#34;&gt;Problem Set 9&lt;/a&gt;&lt;/strong&gt; is now due on &lt;strong&gt;Wednesday, 23 November&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://uvacs2102.github.io/f16/docs/ps9.pdf&#34;&gt;Problem Set 9&lt;/a&gt;&lt;/strong&gt; is now due on &lt;strong&gt;Wednesday, 23 November&lt;/strong&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/psZ&#34;&gt;Problem Set Omega&lt;/a&gt;&lt;/strong&gt; is now posted and due on &lt;strong&gt;Sunday,
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://uvacs2102.github.io/f16/ps/psZ&#34;&gt;Problem Set Omega&lt;/a&gt;&lt;/strong&gt; is now posted and due on &lt;strong&gt;Sunday,
   4 December&lt;/strong&gt; or &lt;strong&gt;Tuesday, 6 December&lt;/strong&gt; (see problem set for
   details).  It is not like the others, and counts as a &amp;ldquo;bonus&amp;rdquo;
   optional assignment.&lt;/p&gt;
@@ -953,14 +958,14 @@ to see questions like these again on the final.&lt;/p&gt;
    &lt;/center&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;highlightm&#34;&gt;
-   &lt;a href=&#34;https://uvacs2102.github.io/docs/class22.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes&lt;/b&gt;&lt;/a&gt;.
+   &lt;a href=&#34;https://uvacs2102.github.io/f16/docs/class22.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes&lt;/b&gt;&lt;/a&gt;.
    &lt;/div&gt;&lt;/p&gt;
 
 &lt;h1 id=&#34;links&#34;&gt;Links&lt;/h1&gt;
 
 &lt;p&gt;Fernando Gouvea, &lt;a href=&#34;http://www.maa.org/was-cantor-surprised&#34;&gt;&lt;em&gt;Was Cantor Surprised?&lt;/em&gt;&lt;/a&gt;. American Mathematical Monthly, March 2011.&lt;/p&gt;
 
-&lt;p&gt;A. M. Turing, &lt;a href=&#34;https://uvacs2102.github.io/docs/oncomputablenumbers.pdf&#34;&gt;&lt;em&gt;On Computable Numbers, with an Application to the Entscheidungsproblem&lt;/em&gt;&lt;/a&gt;, 1936.&lt;/p&gt;
+&lt;p&gt;A. M. Turing, &lt;a href=&#34;https://uvacs2102.github.io/f16/docs/oncomputablenumbers.pdf&#34;&gt;&lt;em&gt;On Computable Numbers, with an Application to the Entscheidungsproblem&lt;/em&gt;&lt;/a&gt;, 1936.&lt;/p&gt;
 
 &lt;p&gt;&lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
 
@@ -1024,11 +1029,11 @@ $\text{\em dir} = { \text{\bf Left}, \text{\bf Right}, \text{\bf Halt} }$ is the
     
     <item>
       <title>Problem Set Omega</title>
-      <link>https://uvacs2102.github.io/psomegaannounce/</link>
+      <link>https://uvacs2102.github.io/f16/psomegaannounce/</link>
       <pubDate>Wed, 16 Nov 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://uvacs2102.github.io/psomegaannounce/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Problem Set &amp;omega;&lt;/strong&gt; is &lt;a href=&#34;https://uvacs2102.github.io/ps/psz&#34;&gt;now posted&lt;/a&gt; and due Dec 4 or the last day of class (see the &lt;a href=&#34;https://uvacs2102.github.io/ps/psz&#34;&gt;problem set&lt;/a&gt; for details). It is a &amp;ldquo;bonus&amp;rdquo; problem set, and not like the others.&lt;/p&gt;
+      <guid>https://uvacs2102.github.io/f16/psomegaannounce/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Problem Set &amp;omega;&lt;/strong&gt; is &lt;a href=&#34;https://uvacs2102.github.io/f16/ps/psz&#34;&gt;now posted&lt;/a&gt; and due Dec 4 or the last day of class (see the &lt;a href=&#34;https://uvacs2102.github.io/f16/ps/psz&#34;&gt;problem set&lt;/a&gt; for details). It is a &amp;ldquo;bonus&amp;rdquo; problem set, and not like the others.&lt;/p&gt;
 </description>
     </item>
     
