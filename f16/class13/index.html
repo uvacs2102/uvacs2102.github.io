@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Class 13: State Machines  &middot; cs2102: Discrete Math (Fall 2016)</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="" />
+
+<meta name="keywords" content="">
+
+
+<meta property="og:title" content="Class 13: State Machines  &middot; cs2102: Discrete Math (Fall 2016) ">
+<meta property="og:site_name" content="cs2102: Discrete Math (Fall 2016)"/>
+<meta property="og:url" content="https://uvacs2102.github.io/f16/class13/" />
+<meta property="og:locale" content="en-us">
+
+
+<meta property="og:type" content="article" />
+<meta property="og:description" content=""/>
+<meta property="og:article:published_time" content="2016-10-11T00:00:00Z" />
+<meta property="og:article:modified_time" content="2016-10-11T00:00:00Z" />
+
+  
+
+  
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@" />
+<meta name="twitter:creator" content="@" />
+<meta name="twitter:title" content="Class 13: State Machines" />
+<meta name="twitter:description" content="" />
+<meta name="twitter:url" content="https://uvacs2102.github.io/f16/class13/" />
+<meta name="twitter:domain" content="https://uvacs2102.github.io/f16">
+  
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "headline": "Class 13: State Machines",
+    "author": {
+      "@type": "Person",
+      "name": "http://profiles.google.com/+?rel=author"
+    },
+    "datePublished": "2016-10-11",
+    "description": "",
+    "wordCount":  492 
+  }
+</script>
+
+
+
+<link rel="canonical" href="https://uvacs2102.github.io/f16/class13/" />
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://uvacs2102.github.io/touch-icon-144-precomposed.png">
+<link href="https://uvacs2102.github.io/favicon.png" rel="icon">
+
+<meta name="generator" content="Hugo 0.17" />
+
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<link href='https://fonts.googleapis.com/css?family=Merriweather:300%7CRaleway%7COpen+Sans' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://uvacs2102.github.io/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://uvacs2102.github.io/css/style.css">
+
+
+  
+</head>
+<body>
+  <main id="main-wrapper" class="container main_wrapper has-sidebar">
+    <header id="main-header" class="container main_header">
+  <div class="container brand">
+  <div class="container title h1-like">
+  <a class="baselink" href="https://uvacs2102.github.io/f16">
+  cs2102
+
+</a>
+
+</div>
+
+  
+<div class="container topline">
+  
+  Discrete Mathematics
+
+
+</div>
+
+
+</div>
+
+  <nav class="container nav primary no-print">
+  
+
+
+  
+<a href="https://uvacs2102.github.io/f16/syllabus">Syllabus</a>
+
+<a href="https://uvacs2102.github.io/f16/schedule">Schedule</a>
+
+<a href="https://uvacs2102.github.io/f16/officehours">Office Hours</a>
+
+<a href="https://uvacs2102.github.io/f16/docs/mcs.pdf">MCS Book</a>
+
+<a href="https://uvacs2102.github.io/f16/pledge">Course Pledge</a>
+
+<a href="https://collab.itc.virginia.edu/portal/site/e0b17949-c94c-466b-835a-196381f3f911?panel=Main">Collab Site</a>
+
+<a href="https://uvacs2102.github.io/f16/docs/finalprep.pdf">Final</a>
+
+<a href="https://uvacs2102.github.io/f16/ps/pszhighlights">PS Highlights</a>
+
+<a href="https://uvacs2102.github.io/f16/challenges">Challenges</a>
+
+<a href="https://uvacs2102.github.io/f16/post">Posts</a>
+
+
+</nav>
+
+<div class="container nav secondary no-print">
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+  
+
+</header>
+
+
+<div class="highlightm">
+This is a preserved file from cs2102 Fall 2016. An updated version may exist at <a href="https://uvacs2102.github.io/">https://uvacs2102.github.io/</a>
+</div>
+
+<article id="main-content" class="container main_content single">
+  <header class="container hat">
+  <h1><center>Class 13: State Machines
+</center></h1>
+
+  <div class="metas">
+<time datetime="2016-10-11">11 Oct, 2016</time>
+
+
+  
+  <br>
+  
+
+
+</div>
+
+</header>
+
+  <div class="container content">
+  
+
+<h3 id="schedule">Schedule</h3>
+
+<p><a href="https://uvacs2102.github.io/docs/exam1-solutions.pdf">Exam 1 Solutions</a>
+are now posted.</p>
+
+<p><strong>Drop Date</strong> is today.  If you have any concerns about whether you
+  should stay in the class, please talk to me after class today.</p>
+
+<p>There is no problem set due this week!  <a href="/ps/ps6"><strong>Problem Set 6</strong></a>
+(will be posted later this week) is due <strong>21 October (Friday) at
+6:29pm</strong>.</p>
+
+<p>Exam 1 was returned during class today.  (Exam grades will eventually
+make it into collab, but haven&rsquo;t yet.  When they do, please confirm that
+the score on your exam matches what is recorded in collab, and that
+PS1-5 are all recorded correctly.)</p>
+
+<p><div class="notpdf">
+   <center>
+<script async class="speakerdeck-embed" data-id="e834908c757142c7b5ff50a196a26f43" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+   </center></p>
+
+<p><div class="highlightm">
+   <a href="/docs/class13.pdf">See PDF Version for <b>Notes</b></a>.
+   </div>
+   </div><!--endpdf--></p>
+
+<p><div class="latex"></p>
+
+<h2 id="state-machines">State Machines</h2>
+
+<p>A <em>state machine</em> is a binary relation (called a <em>transition relation</em>)
+on a set (both the domain and codomain are the same set).  One state is
+designated as the <em>start state</em>.</p>
+
+<p>$$M = (S, G: S \times S, q_0 \in S)$$</p>
+
+<p>What does it mean if $G$ is <em>total</em>?</p>
+
+<p>##</p>
+
+<p>What does it mean if $G$ is not a <em>function</em>?</p>
+
+<p>##</p>
+
+<p><strong>Parity Counter.</strong> Describe a state machine that determines if the
+  number of steps is even.</p>
+
+<p>#</p>
+
+<p><strong>Unbounded Counter.</strong> Describe a state machine that counts the number of steps.</p>
+
+<p>#</p>
+
+<p>How well do state machines model real computers?  What kind of
+transition relation does the state machine modeling your computer have?</p>
+
+<!--page-->
+
+<h1 id="invariant-principle">Invariant Principle</h1>
+
+<p>An <em>execution</em> of a state machine $M = (S, G \subseteq S \times S, q_0 \in S)$ is a (possibly infinite) sequence of states, $(x_0, x_1, \cdots, x_n)$ where:</p>
+
+<ol>
+<li>$x_0 = q_0$ (it begins with the start state), and</li>
+<li>$\forall i \in {0, 1, \ldots, n - 1} \ldotp (x<em>i, x</em>{i + 1}) \in G$ (if $q$ and $r$ are consecutive states in the sequence, then there is an edge $q \rightarrow r$ in $G$)</li>
+</ol>
+
+<p>A state $q$ is <em>reachable</em> if it appears in some execution.  (That is,
+there is a sequence of transitions starting from $q_0$, following edges
+in $G$, that ends with $q$.)</p>
+
+<p>$$
+M_1 = (S = \mathbb{N}, G = {(x, y) | y = x^2 }, q_0 = 1)
+$$
+$$
+M_2 = (S = \mathbb{N}, G = {(x, y) | \exists k \in \mathbb{N} \ldotp y = kx }, q_0 = 1)
+$$</p>
+
+<p>Which states are <em>reachable</em> for $M_1$ and $M_2$?</p>
+
+<p>#</p>
+
+<p>A <em>preserved invariant</em> of a state machine $M = (S, G \subseteq S \times
+S, q_0 \in S)$ is a predicate, $P$, on states, such that whenever $P(q)$
+is true of a state $q$, and $q \rightarrow r \in G$, then $P&reg;$ is
+true.</p>
+
+<p><strong>Invariant Principle.</strong> If a <em>preserved invariant</em> of a state machine
+  is true for the start state, it is true for all reachable states.</p>
+
+<p>To show $P(q)$ for machine $M = (S, G \subseteq S \times S, q_0 \in
+  S)$ all $q \in S$, show:</p>
+
+<ol>
+<li>Base case: $P(\fillin)$</li>
+<li>$\forall s \in S \ldotp \fillin \implies \fillin$</li>
+</ol>
+
+<p>Show the invariant principle holds using the principle of induction
+(hint: induction is on the <em>number of steps</em>).</p>
+
+<p>#</p>
+
+<p></div></p>
+
+</div>
+
+
+  <footer class="container">
+  <div class="container navigation no-print">
+  <h2>Navigation</h2>
+  
+  
+
+    
+    <a class="prev" href="https://uvacs2102.github.io/f16/exam1solutions/" title="Exam 1 Solutions">
+      Previous
+    </a>
+    
+
+    
+    <a class="next" href="https://uvacs2102.github.io/f16/class14/" title="Class 14: Invariant Principle">
+      Next
+    </a>
+    
+
+  
+
+
+</div>
+
+</footer>
+
+</article>
+      <footer id="main-footer" class="container main_footer">
+  
+
+  <div class="container nav foot no-print">
+  
+
+  <a class="toplink" href="#">back to top</a>
+
+</div>
+
+  <div class="container credits">
+  
+<div class="container footline">
+  
+  <p align="center">cs2102: Discrete Mathematics | University of Virginia, Fall 2016 | <a href="https://www.cs.virginia.edu/evans">David Evans</a>
+
+
+</div>
+
+
+  
+
+</div>
+
+</footer>
+
+    </main>
+    
+
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-3775212-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+    
+  </body>
+</html>
+

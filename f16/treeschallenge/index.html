@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Trees Challenge  &middot; cs2102: Discrete Math (Fall 2016)</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="" />
+
+<meta name="keywords" content="">
+
+
+<meta property="og:title" content="Trees Challenge  &middot; cs2102: Discrete Math (Fall 2016) ">
+<meta property="og:site_name" content="cs2102: Discrete Math (Fall 2016)"/>
+<meta property="og:url" content="https://uvacs2102.github.io/f16/treeschallenge/" />
+<meta property="og:locale" content="en-us">
+
+
+<meta property="og:type" content="article" />
+<meta property="og:description" content=""/>
+<meta property="og:article:published_time" content="2016-11-28T00:00:00Z" />
+<meta property="og:article:modified_time" content="2016-11-28T00:00:00Z" />
+
+  
+
+  
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@" />
+<meta name="twitter:creator" content="@" />
+<meta name="twitter:title" content="Trees Challenge" />
+<meta name="twitter:description" content="" />
+<meta name="twitter:url" content="https://uvacs2102.github.io/f16/treeschallenge/" />
+<meta name="twitter:domain" content="https://uvacs2102.github.io/f16">
+  
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "headline": "Trees Challenge",
+    "author": {
+      "@type": "Person",
+      "name": "http://profiles.google.com/+?rel=author"
+    },
+    "datePublished": "2016-11-28",
+    "description": "",
+    "wordCount":  375 
+  }
+</script>
+
+
+
+<link rel="canonical" href="https://uvacs2102.github.io/f16/treeschallenge/" />
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://uvacs2102.github.io/touch-icon-144-precomposed.png">
+<link href="https://uvacs2102.github.io/favicon.png" rel="icon">
+
+<meta name="generator" content="Hugo 0.17" />
+
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<link href='https://fonts.googleapis.com/css?family=Merriweather:300%7CRaleway%7COpen+Sans' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://uvacs2102.github.io/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://uvacs2102.github.io/css/style.css">
+
+
+  
+</head>
+<body>
+  <main id="main-wrapper" class="container main_wrapper has-sidebar">
+    <header id="main-header" class="container main_header">
+  <div class="container brand">
+  <div class="container title h1-like">
+  <a class="baselink" href="https://uvacs2102.github.io/f16">
+  cs2102
+
+</a>
+
+</div>
+
+  
+<div class="container topline">
+  
+  Discrete Mathematics
+
+
+</div>
+
+
+</div>
+
+  <nav class="container nav primary no-print">
+  
+
+
+  
+<a href="https://uvacs2102.github.io/f16/syllabus">Syllabus</a>
+
+<a href="https://uvacs2102.github.io/f16/schedule">Schedule</a>
+
+<a href="https://uvacs2102.github.io/f16/officehours">Office Hours</a>
+
+<a href="https://uvacs2102.github.io/f16/docs/mcs.pdf">MCS Book</a>
+
+<a href="https://uvacs2102.github.io/f16/pledge">Course Pledge</a>
+
+<a href="https://collab.itc.virginia.edu/portal/site/e0b17949-c94c-466b-835a-196381f3f911?panel=Main">Collab Site</a>
+
+<a href="https://uvacs2102.github.io/f16/docs/finalprep.pdf">Final</a>
+
+<a href="https://uvacs2102.github.io/f16/ps/pszhighlights">PS Highlights</a>
+
+<a href="https://uvacs2102.github.io/f16/challenges">Challenges</a>
+
+<a href="https://uvacs2102.github.io/f16/post">Posts</a>
+
+
+</nav>
+
+<div class="container nav secondary no-print">
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+  
+
+</header>
+
+
+<div class="highlightm">
+This is a preserved file from cs2102 Fall 2016. An updated version may exist at <a href="https://uvacs2102.github.io/">https://uvacs2102.github.io/</a>
+</div>
+
+<article id="main-content" class="container main_content single">
+  <header class="container hat">
+  <h1><center>Trees Challenge
+</center></h1>
+
+  <div class="metas">
+<time datetime="2016-11-28">28 Nov, 2016</time>
+
+
+  
+  <br>
+  
+
+
+</div>
+
+</header>
+
+  <div class="container content">
+  <p>Henry Spece has solved Challenge 7:</p>
+
+<p><div class="highlightg">
+   <strong>Challenge 7.</strong> From <a href="/class19">Class19</a>: Determine the carinality of
+  the set of all <em>Tree</em> objects (as defined on PS8), and provide a convincing
+  proof supporting your answer.
+   </div></p>
+
+<p>Henry&rsquo;s proof is below:</p>
+
+<p>The set of <em>Tree</em> objects is <em>countable</em>.</p>
+
+<p>The following already proven theorems are used:</p>
+
+<ul>
+<li>The set of all strees is countably infinite.<br /></li>
+<li>the set of all finite sequences of natural numbers is countable.</li>
+<li>The cartesian product of two countable sets is also countable.</li>
+<li>The sub-set of a countable set is countable.</li>
+</ul>
+
+<p>We prove that the set of all trees with natural number labels is
+countable by finding a total injective mapping between the set of all
+trees and a set which is known to be countably infinite.</p>
+
+<p>The set to which we are mapping the trees is the cartesian product of
+the set of finite sequences of natural numbers and the set of all
+strees.  We already know that the set of all strees is countable, as
+well as the set of all finite sequences of natural numbers.  Because
+the cartesian product of two countable sets is also countable, the
+cartesian product of these two sets must be countable, and a total
+injective mapping between the trees and this set would prove the set
+of all trees to also be countably infinite.</p>
+
+<p>It is possible to imagine a mapping that links a tree to a stree,
+representing its structure, and a list of its labels, &ldquo;in-order.&rdquo;
+This is effectively &ldquo;breaking apart&rdquo; the tree into its components,
+resulting in two more manageable data types, or one element of the set
+defined above.</p>
+
+<p>The function is defined more rigorously below, in two parts:</p>
+
+<p><em>Part 1</em> (helper function):</p>
+
+<p><pre>
+   getStree := tree -&gt; stree
+   getStree(null) = null
+   getStree(combine(t1,N,t2)) = combine(getStree(t1),getStree(t2))
+   </pre></p>
+
+<p><em>Part 2</em> (helper function):</p>
+
+<p><pre>
+   getSequence := tree -&gt; sequence
+   getSequence(null) = empty sequence
+   getSequence(combine(t1,N,t2)) = concatenate(getSequence(t1),N,getSequence(t2))
+   </pre></p>
+
+<p><em>Combined</em> (the relation being defined for the proof):
+   <pre>
+   splitTree := tree -&gt; (stree, sequence)
+   splitTree(t) = (getStree(t),getSequence(t))
+   </pre></p>
+
+<p>This relation is defined for all trees, making it total, and produces
+a unique stree-sequence combination for each tree, making it
+injective.</p>
+
+<p>Because we have defined a total injective relation between the trees
+and another set which is known to be countable, the set of all trees
+must be countable.</p>
+
+</div>
+
+
+  <footer class="container">
+  <div class="container navigation no-print">
+  <h2>Navigation</h2>
+  
+  
+
+    
+    <a class="prev" href="https://uvacs2102.github.io/f16/ps9solutions/" title="Problem Set 9 Solutions and Comments">
+      Previous
+    </a>
+    
+
+    
+    <a class="next" href="https://uvacs2102.github.io/f16/finalprep/" title="Final Exam Preparation">
+      Next
+    </a>
+    
+
+  
+
+
+</div>
+
+</footer>
+
+</article>
+      <footer id="main-footer" class="container main_footer">
+  
+
+  <div class="container nav foot no-print">
+  
+
+  <a class="toplink" href="#">back to top</a>
+
+</div>
+
+  <div class="container credits">
+  
+<div class="container footline">
+  
+  <p align="center">cs2102: Discrete Mathematics | University of Virginia, Fall 2016 | <a href="https://www.cs.virginia.edu/evans">David Evans</a>
+
+
+</div>
+
+
+  
+
+</div>
+
+</footer>
+
+    </main>
+    
+
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-3775212-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+    
+  </body>
+</html>
+

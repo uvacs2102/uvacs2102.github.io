@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Class 24: Halting Problems  &middot; cs2102: Discrete Math (Fall 2016)</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="" />
+
+<meta name="keywords" content="">
+
+
+<meta property="og:title" content="Class 24: Halting Problems  &middot; cs2102: Discrete Math (Fall 2016) ">
+<meta property="og:site_name" content="cs2102: Discrete Math (Fall 2016)"/>
+<meta property="og:url" content="https://uvacs2102.github.io/f16/class24/" />
+<meta property="og:locale" content="en-us">
+
+
+<meta property="og:type" content="article" />
+<meta property="og:description" content=""/>
+<meta property="og:article:published_time" content="2016-11-29T00:00:00Z" />
+<meta property="og:article:modified_time" content="2016-11-29T00:00:00Z" />
+
+  
+
+  
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@" />
+<meta name="twitter:creator" content="@" />
+<meta name="twitter:title" content="Class 24: Halting Problems" />
+<meta name="twitter:description" content="" />
+<meta name="twitter:url" content="https://uvacs2102.github.io/f16/class24/" />
+<meta name="twitter:domain" content="https://uvacs2102.github.io/f16">
+  
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "headline": "Class 24: Halting Problems",
+    "author": {
+      "@type": "Person",
+      "name": "http://profiles.google.com/+?rel=author"
+    },
+    "datePublished": "2016-11-29",
+    "description": "",
+    "wordCount":  545 
+  }
+</script>
+
+
+
+<link rel="canonical" href="https://uvacs2102.github.io/f16/class24/" />
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://uvacs2102.github.io/touch-icon-144-precomposed.png">
+<link href="https://uvacs2102.github.io/favicon.png" rel="icon">
+
+<meta name="generator" content="Hugo 0.17" />
+
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<link href='https://fonts.googleapis.com/css?family=Merriweather:300%7CRaleway%7COpen+Sans' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://uvacs2102.github.io/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://uvacs2102.github.io/css/style.css">
+
+
+  
+</head>
+<body>
+  <main id="main-wrapper" class="container main_wrapper has-sidebar">
+    <header id="main-header" class="container main_header">
+  <div class="container brand">
+  <div class="container title h1-like">
+  <a class="baselink" href="https://uvacs2102.github.io/f16">
+  cs2102
+
+</a>
+
+</div>
+
+  
+<div class="container topline">
+  
+  Discrete Mathematics
+
+
+</div>
+
+
+</div>
+
+  <nav class="container nav primary no-print">
+  
+
+
+  
+<a href="https://uvacs2102.github.io/f16/syllabus">Syllabus</a>
+
+<a href="https://uvacs2102.github.io/f16/schedule">Schedule</a>
+
+<a href="https://uvacs2102.github.io/f16/officehours">Office Hours</a>
+
+<a href="https://uvacs2102.github.io/f16/docs/mcs.pdf">MCS Book</a>
+
+<a href="https://uvacs2102.github.io/f16/pledge">Course Pledge</a>
+
+<a href="https://collab.itc.virginia.edu/portal/site/e0b17949-c94c-466b-835a-196381f3f911?panel=Main">Collab Site</a>
+
+<a href="https://uvacs2102.github.io/f16/docs/finalprep.pdf">Final</a>
+
+<a href="https://uvacs2102.github.io/f16/ps/pszhighlights">PS Highlights</a>
+
+<a href="https://uvacs2102.github.io/f16/challenges">Challenges</a>
+
+<a href="https://uvacs2102.github.io/f16/post">Posts</a>
+
+
+</nav>
+
+<div class="container nav secondary no-print">
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+  
+
+</header>
+
+
+<div class="highlightm">
+This is a preserved file from cs2102 Fall 2016. An updated version may exist at <a href="https://uvacs2102.github.io/">https://uvacs2102.github.io/</a>
+</div>
+
+<article id="main-content" class="container main_content single">
+  <header class="container hat">
+  <h1><center>Class 24: Halting Problems
+</center></h1>
+
+  <div class="metas">
+<time datetime="2016-11-29">29 Nov, 2016</time>
+
+
+  
+  <br>
+  
+
+
+</div>
+
+</header>
+
+  <div class="container content">
+  
+
+<h3 id="schedule">Schedule</h3>
+
+<p><strong><a href="/ps/psz">Problem Set Omega</a></strong> is due on <strong>Sunday, 4 December</strong> or
+<strong>Tuesday, 6 December</strong> (see problem set for details).  It is not like
+the others, and counts as a &ldquo;bonus&rdquo; optional assignment.</p>
+
+<p>The <strong>final exam</strong> is scheduled by the registrar for <strong>Saturday, 10
+December, 9am-noon</strong> in our normal classroom.  See the <a href="/finalprep">Final Exam
+Preparation</a> handout for more information on the final and
+some <strong>practice problems</strong>.</p>
+
+<p><div class="notpdf">
+   <center>
+<script async class="speakerdeck-embed" data-id="e2fa98661b6e4202911a96a8418ef219" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+   </center></p>
+
+<p><div class="highlightm">
+   <a href="/docs/class24.pdf">See PDF Version for <b>Notes</b></a>.
+   </div></p>
+
+<h2 id="links">Links</h2>
+
+<p><a href="https://www.youtube.com/watch?v=eB5VXJXxnNU">Ali G on Science</a> (possibly offensive, watch at your own risk!)</p>
+
+<p><a href="https://www.youtube.com/watch?v=macM_MtS_w4">Numberphile on the Halting Problem</a> (HT: John Fry)</p>
+
+<p></div><!--endpdf--></p>
+
+<p><div class="latex"></p>
+
+<h2 id="turing-machine-definitions">Turing Machine Definitions</h2>
+
+<p>$$
+TM = (S, T \subseteq S \times \Gamma \rightarrow S \times \Gamma \times \text{\em dir}, q<em>0 \in S, q</em>{Accept} \subseteq S)
+$$</p>
+
+<p>$S$ is a finite set (the &ldquo;in-the-head&rdquo; processing states)<br />
+$\Gamma$ is a finite set (symbols that can be written on the tape)<br />
+$\text{\em dir} = { \text{\bf Left}, \text{\bf Right}, \text{\bf Halt} }$ is the direction to move on the tape.</p>
+
+<p>An <em>execution</em> of a Turing Machine, $TM = (S, T \subseteq S \times \Gamma \rightarrow S \times \Gamma \times \text{\em dir}, q<em>0 \in S, q</em>{Accept} \subseteq S)$, is a (possibly infinite) sequence of <strong>configurations</strong>, $(x_0, x_1, \ldots)$ where $x_i \in \text{\em Tsil} \times S \times \text{\em List}$ (elements of the lists are in the finite set of symbols, $\Gamma$), such that:</p>
+
+<ul>
+<li>$x_0 = (\text{\bf null}, q_0, \text{\bf input})$</li>
+<li>and all transitions follow the rules (need to be specified in detail).</li>
+</ul>
+
+<h1 id="recognizing-languages">Recognizing Languages</h1>
+
+<p>A Turing Machine, $M = (S, T \subseteq S \times \Gamma \rightarrow S
+\times \Gamma \times \text{\em dir}, q<em>0 \in S, q</em>{Accept} \subseteq
+S)$, <strong>accepts</strong> a string <em>x</em>, if there is an execution of <em>M</em> that
+starts in configuration $(\text{\bf null}, q_0, x)$, and terminates in
+a configuration, $(l, q_f, r)$, where $q<em>f \in q</em>{Accept}$.</p>
+
+<p>A Turing Machine, $M = (S, T \subseteq S \times \Gamma \rightarrow S
+\times \Gamma \times \text{\em dir}, q<em>0 \in S, q</em>{Accept} \subseteq
+S)$, <strong>recognizes</strong> a language $\mathcal{L}$, if for all strings $s
+\in \mathcal{L}$, $M$ accepts $s$, and there is no string $t \notin L$
+such that $M$ accepts $t$.</p>
+
+<p>A Turing Machine, $M = (S, T \subseteq S \times \Gamma \rightarrow S
+\times \Gamma \times \text{\em dir}, q<em>0 \in S, q</em>{Accept} \subseteq
+S)$, <strong>decides</strong> a language $\mathcal{L}$, if for all strings $s \in
+\mathcal{L}$, $M$ accepts $s$, and for all strings $t \notin L$, $M$
+<em>terminates</em> in a non-accepting state.</p>
+
+<p>A language $\mathcal{L}$ is <strong>Turing-recognizable</strong> if there is some
+Turing Machine that recognizes it.  A language $\mathcal{L}$ is
+<strong>Turing-decidable</strong> if there is some Turing Machine that decides it.</p>
+
+<p>Are all Turing-decidable languages Turing-recognizable?</p>
+
+<p>##</p>
+
+<p>Are all Turing-recognizable languages Turing-decidable?</p>
+
+<!--page-->
+
+<h1 id="undecidable-languages">Undecidable Languages</h1>
+
+<p>$$
+\text{SelfRejecting} := { w \in \Sigma^{*} \, | \, w \notin \mathcal{L}(M(w)) }
+$$
+where $M(w)$ is the Turing Machine described by string $w$ if $w$
+describes a valid Turing Machine, otherwise, a $M(w)$ is a machine
+that rejects all inputs.</p>
+
+<p>Is there a $M<em>{SR} = M(w</em>{SR})$ that recognizes the language $\text{SelfRejecting}$?</p>
+
+<p>#</p>
+
+<p>$$
+A_{TM} = { (w, x) \, | \, M(w)\ \text{accepts on input}\ x }
+$$</p>
+
+<p>Is the language $A_{TM}$ Turing-recognizable?</p>
+
+<p>#</p>
+
+<p>Is the language $A_{TM}$ Turing-decidable?</p>
+
+<p>#</p>
+
+<p>#</p>
+
+<p>#</p>
+
+<p>$$
+Halts_{TM} = { (w, x) \, | \, M(w)\ \text{terminates on input}\ x }
+$$</p>
+
+<p>#</p>
+
+<pre><code class="language-Python">def paradox():
+   if halts('paradox()'):
+       while True:
+          pass
+</code></pre>
+
+<p></div></p>
+
+</div>
+
+
+  <footer class="container">
+  <div class="container navigation no-print">
+  <h2>Navigation</h2>
+  
+  
+
+    
+    <a class="prev" href="https://uvacs2102.github.io/f16/finalprep/" title="Final Exam Preparation">
+      Previous
+    </a>
+    
+
+    
+    <a class="next" href="https://uvacs2102.github.io/f16/class25/" title="Class 25: Cryptography">
+      Next
+    </a>
+    
+
+  
+
+
+</div>
+
+</footer>
+
+</article>
+      <footer id="main-footer" class="container main_footer">
+  
+
+  <div class="container nav foot no-print">
+  
+
+  <a class="toplink" href="#">back to top</a>
+
+</div>
+
+  <div class="container credits">
+  
+<div class="container footline">
+  
+  <p align="center">cs2102: Discrete Mathematics | University of Virginia, Fall 2016 | <a href="https://www.cs.virginia.edu/evans">David Evans</a>
+
+
+</div>
+
+
+  
+
+</div>
+
+</footer>
+
+    </main>
+    
+
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-3775212-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+    
+  </body>
+</html>
+
