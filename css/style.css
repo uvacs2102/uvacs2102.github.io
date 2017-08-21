@@ -218,8 +218,8 @@ body {
     margin: 0;
     background-color: #fff;
     color: #212121;
-    font-family: Merriweather, Georgia, serif;
-    line-height: 1.5
+    font-family: 'Fira Sans', sans-serif;
+    line-height: 1.2
 }
 a:active,
 a:focus,
@@ -645,7 +645,7 @@ h4,
 h5,
 h6 {
     line-height: 1;
-    font-family: Merriweather, "Open Sans", Arial, sans-serif;
+    font-family: 'Fira Sans', "Open Sans", Arial, sans-serif;
     color: #000
 }
 .h1-like,
@@ -992,7 +992,7 @@ progress {
 }
 .main_wrapper>.main_header {
     background-color: #663399;
-    font-family: Raleway, "Open Sans", Arial, sans-serif;
+    font-family: 'Fira Sans', sans-serif;
     color: #8cb4ec;
     text-align: center
 }
