@@ -6,13 +6,13 @@
     <description>Recent content on cs2102: Discrete Math</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 21 Aug 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 22 Aug 2017 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://uvacs2102.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Syllabus</title>
       <link>https://uvacs2102.github.io/syllabus/</link>
-      <pubDate>Mon, 21 Aug 2017 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 22 Aug 2017 00:00:00 +0000</pubDate>
       
       <guid>https://uvacs2102.github.io/syllabus/</guid>
       <description>
@@ -502,6 +502,154 @@ implication to a skeptical reader.&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;p&gt;&lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Class 1: What makes it go?</title>
+      <link>https://uvacs2102.github.io/class1/</link>
+      <pubDate>Mon, 22 Aug 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/class1/</guid>
+      <description>
+
+&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
+
+&lt;p&gt;Before &lt;strong&gt;Thursday&amp;rsquo;s class&lt;/strong&gt;: (visit &lt;a href=&#34;https://uvacs2102.github.io/class1&#34;&gt;https://uvacs2102.github.io/class1&lt;/a&gt; for the web version of these notes with links)&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Join the &lt;a href=&#34;https://csmath.slack.com&#34;&gt;cs2102 slack group&lt;/a&gt; and set up
+your profile with a pronouncable name (not your UVA email id) (setting
+up your profile photo is encouraged, but not required).&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Read the &lt;a href=&#34;https://uvacs2102.github.io/syllabus&#34;&gt;Course Syllabus&lt;/a&gt; and post any questions or
+comments you have on it on the course &lt;a href=&#34;https://csmath.slack.com&#34;&gt;slack group
+(#general)&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Read the &lt;em&gt;Introduction&lt;/em&gt; and &lt;em&gt;Chapter 1: What is a Proof?&lt;/em&gt; from the
+&lt;a href=&#34;https://uvacs2102.github.io/docs/mcs.pdf&#34;&gt;Mathematics for Computer Science
+Book&lt;/a&gt; by Eric Lehman,
+F. Thomson Leighton, and Albert R. Meyer (henceforth, &amp;ldquo;MCS&amp;rdquo;).  The
+book is freely available on-line under a Creative Commons License.
+Students are &lt;strong&gt;strongly encrouaged&lt;/strong&gt; to print out the readings to read
+them more effectively on paper.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Before &lt;strong&gt;Friday, 6:29pm&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Read, print, and sign the &lt;a href=&#34;https://uvacs2102.github.io/pledge&#34;&gt;Course Pledge&lt;/a&gt;.  You should print
+the &lt;a href=&#34;https://uvacs2102.github.io/docs/pledge.pdf&#34;&gt;PDF version&lt;/a&gt; for signing, and submit a scan of
+your signed pledge using Collab.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Read Jeremy Kun&amp;rsquo;s &lt;a href=&#34;https://medium.com/@jeremyjkun/habits-of-highly-mathematical-people-b719df12d15e&#34;&gt;&lt;em&gt;Habits of Highly Mathematical People&lt;/em&gt;&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Submit a &lt;a href=&#34;https://goo.gl/forms/DR7nsouNf6sqqIK22&#34;&gt;Course Registration Survey&lt;/a&gt; (which includes some questions based on Kun&amp;rsquo;s essay).&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&#34;notpdf&#34;&gt;
+
+    &lt;div class=&#34;highlightm&#34;&gt;
+    &lt;a href=&#34;https://uvacs2102.github.io/docs/class1.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes and Questions&lt;/b&gt;&lt;/a&gt;.
+    &lt;/div&gt;
+
+&lt;!--
+&lt;center&gt;
+&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;460cc29c74a04fe3971ce197961981f9&#34; data-ratio=&#34;1.77777777777778&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
+&lt;/center&gt;
+--&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
+
+&lt;div class=&#34;latex&#34;&gt;
+
+### Notes and Questions
+
+Why is most of the math used in computer science _discrete_?
+
+&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;
+
+&lt;p&gt;Why is most of the math you have used in school previously &lt;em&gt;continuous&lt;/em&gt;?&lt;/p&gt;
+
+&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;
+
+&lt;p&gt;What are the differences between how scientists, lawyers, and
+mathematicians establish ``&lt;em&gt;truth&lt;/em&gt;&amp;rdquo;?&lt;/p&gt;
+
+&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;
+
+&lt;p&gt;A &lt;em&gt;proposition&lt;/em&gt; is a statement that is either ________ or _________.&lt;/p&gt;
+
+&lt;p&gt;A &lt;em&gt;predicate&lt;/em&gt; is a proposition whose truth may depend on the value of
+variables.&lt;/p&gt;
+
+&lt;h3 id=&#34;proof&#34;&gt;Proof&lt;/h3&gt;
+
+&lt;p&gt;A &lt;em&gt;theorem&lt;/em&gt; is a ____________ that has been proven true.&lt;/p&gt;
+
+&lt;p&gt;An &lt;em&gt;axiom&lt;/em&gt; is a proposition that is &lt;em&gt;accepted to be true&lt;/em&gt;.  Axioms are
+not proven; they are &lt;em&gt;assumed&lt;/em&gt; to be true.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; A &lt;em&gt;mathematical proof&lt;/em&gt; of a proposition is a chain of
+  &lt;em&gt;logical deductions&lt;/em&gt; starting from a set of accepted &lt;em&gt;axioms&lt;/em&gt; that
+  leads to the proposition.&lt;/p&gt;
+
+&lt;h3 id=&#34;rules-of-inference&#34;&gt;Rules of Inference&lt;/h3&gt;
+
+&lt;p&gt;The possible steps that can be used in a proof are logical deductions
+based on inference rules.&lt;/p&gt;
+
+&lt;p&gt;Inference rules are written as:
+$$
+\infer{\textrm{\emph{conclusion}}}{\textrm{\emph{antecedents}}}
+$$
+This means if everything on top of the rule is established to be true,
+then you can conclude what is on the bottom.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Modus Ponens&lt;/em&gt;: To prove &lt;em&gt;Q&lt;/em&gt;, (1) prove &lt;em&gt;P&lt;/em&gt; and (2) prove that &lt;em&gt;P&lt;/em&gt; implies &lt;em&gt;Q&lt;/em&gt;.  ($P \implies Q$ is a notation for $P$ implies $Q$).&lt;/p&gt;
+
+&lt;p&gt;$$
+\infer{Q}{P,\quad P \implies Q}
+$$&lt;/p&gt;
+
+&lt;p&gt;An inference rule is &lt;em&gt;sound&lt;/em&gt; if can never lead to a &lt;strong&gt;false&lt;/strong&gt; conclusion.&lt;/p&gt;
+
+&lt;p&gt;Which of these inference rules are sound?&lt;/p&gt;
+
+&lt;p&gt;$$
+\infer{Q}{P}
+\qquad
+\infer{false}{P, P \implies Q}
+\qquad
+\infer{true}{P, NOT(P)}
+\qquad
+\infer{P \implies NOT(P)}{P, NOT(P)}
+\qquad
+\infer{NOT(Q) \implies P}{NOT(P) \implies Q}
+$$&lt;/p&gt;
+
+&lt;p&gt;##&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Contrapositive:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;$$
+\infer{NOT(Q) \implies NOT(P)}{P \implies Q}
+\qquad
+\infer{P \implies Q}{NOT(Q) \implies NOT(P)}
+$$&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Theorem to Prove:&lt;/strong&gt; If the product of $x$ and $y$ is even, at least one of $x$ or $y$ must be even.&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;##&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;quote&#34;&gt;
+&lt;em&gt;Through violence you may murder a liar but you can&amp;rsquo;t establish truth. Through violence you may murder a hater, but you can&amp;rsquo;t murder hate. Darkness cannot put out darkness. Only light can do that.&lt;/em&gt;&lt;br /&gt;
+Martin Luther King, Jr., &lt;a href=&#34;http://kingencyclopedia.stanford.edu/encyclopedia/documentsentry/where_do_we_go_from_here_delivered_at_the_11th_annual_sclc_convention/&#34;&gt;&lt;em&gt;Where Do We Go From Here?&lt;/em&gt;, address to SCLC 16 August 1967&lt;/a&gt;
+   &lt;/div&gt;&lt;/p&gt;
 </description>
     </item>
     
