@@ -6,8 +6,348 @@
     <description>Recent content on cs2102: Discrete Math</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 17 Mar 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 21 Aug 2017 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://uvacs2102.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Syllabus</title>
+      <link>https://uvacs2102.github.io/syllabus/</link>
+      <pubDate>Mon, 21 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/syllabus/</guid>
+      <description>
+
+&lt;div class=&#34;printing&#34;&gt;&lt;a href=&#34;https://uvacs2102.github.io/docs/syllabus.pdf&#34;&gt;PDF for Printing&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;cs2102: Discrete Mathematics&lt;/strong&gt;&lt;br /&gt;
+&lt;em&gt;University of Virginia&lt;/em&gt;, Fall 2017&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Meetings:&lt;/strong&gt; Tuesdays and Thursdays, 2:00-3:15pm in Chemistry 402.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Course Objective.&lt;/strong&gt; The goal of this course is to help students to
+  understand, explain, and apply the foundational mathematical concepts
+  at the core of computer science.&lt;/p&gt;
+
+&lt;p&gt;The skills students learn in this course are essential for later courses
+  (especially CS 3102 and CS 4102, but also in other courses), where they
+  will be used to reason about and develop algorithms, prove properties
+  about programs, and understand the limits of different models of
+  computation.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Expected Background:&lt;/strong&gt; The official prerequisite for this course is
+  earning credit for CS 1110, 1111, 1112 or 1120 with a grade of C- or
+  higher.  If you have not satisfied the official prerequisite, you need
+  permission from the instructor to enroll in the class.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Materials:&lt;/strong&gt; The primary textbook is:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Eric Lehman, F. Thomson Leighton, and Albert R. Meyer. &lt;a href=&#34;../docs/mcs.pdf&#34;&gt;&lt;em&gt;Mathematics for
+Computer Science&lt;/em&gt;&lt;/a&gt;. (2017/6/15 version).  This book is
+freely available on-line, and generously released under a &lt;a href=&#34;https://creativecommons.org/licenses/by-sa/3.0/&#34;&gt;Creative
+Commons Attribution-ShareAlike 3.0
+License&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The course will mostly cover the first part of this book (Chapters
+1-8), and some selected materials from later chapters (in particular
+chapters 9, 15, 17).  In addition to that textbook, we will have
+selected readings from other sources.&lt;/p&gt;
+
+&lt;h2 id=&#34;staff&#34;&gt;Staff&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Teachers:&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://www.cs.virginia.edu/evans&#34;&gt;David Evans&lt;/a&gt; (evans@virginia.edu, &lt;a href=&#34;http://www.cs.virginia.edu/evans/office&#34;&gt;Rice 507&lt;/a&gt;)&lt;br /&gt;
+&lt;a href=&#34;http://www.cs.virginia.edu/~mohammad&#34;&gt;Mohammad Mahmoody&lt;/a&gt; (mohammad@virginia.edu, Rice 511)&lt;/p&gt;
+
+&lt;p&gt;You can reach both of us using
+&lt;a href=&#34;mailto://uvacs2102staff@gmail.com&#34;&gt;&lt;em&gt;uvacs2102staff@gmail.com&lt;/em&gt;&lt;/a&gt;. Please
+use that address for course-related messages.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Assistant Teachers:&lt;/strong&gt;&lt;br /&gt;
+&lt;div class=&#34;latex&#34;&gt;
+Amar Singh,
+Bhuvanesh Murali,
+Colin Harfst,
+Fan Feng,
+Helen Simecek,
+Henry Spece,
+Jack Herd,
+Joseph Tobin,
+Michael Woon,
+Nate Olsen,
+Sarah Meng,
+Sriram Dandu,
+Xiao Zhang, Xueying Bai,
+Yasasvini Puligundle,
+Zheng Wang.
+&lt;/div&gt;
+&lt;div class=&#34;notpdf&#34;&gt;
+&lt;table width=100% style=&#34;font-size: 85%;&#34;&gt;
+&lt;tr align=&#34;bottom&#34;&gt;
+&lt;td style=&#34;text-align: center; vertical-align: bottom;&#34;&gt;Amar Singh&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: bottom;&#34;&gt;&lt;a href=&#34;https://uvacs2102.github.io/images/staff/bhuvanesh.jpeg&#34;&gt;&lt;img align=&#34;center&#34; src=&#34;https://uvacs2102.github.io/images/staff/bhuvanesh.jpeg&#34; width=&#34;128&#34;&gt;&lt;/a&gt;&lt;br&gt;
+Bhuvanesh&amp;nbsp;Murali&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: bottom;&#34;&gt;
+&lt;a href=&#34;https://uvacs2102.github.io/images/staff/colin.jpeg&#34;&gt;&lt;img align=&#34;center&#34; src=&#34;https://uvacs2102.github.io/images/staff/colin.jpeg&#34; width=&#34;128&#34;&gt;&lt;/a&gt;&lt;br&gt;
+Colin Harfst
+&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: bottom;&#34;&gt;Fan Feng&lt;/td&gt;
+&lt;/tr&gt;&lt;tr&gt;
+&lt;td style=&#34;text-align: center; vertical-align: bottom;&#34;&gt;
+&lt;a href=&#34;https://uvacs2102.github.io/images/staff/helensimecek.jpeg&#34;&gt;&lt;img align=&#34;center&#34; src=&#34;https://uvacs2102.github.io/images/staff/helensimecek.jpeg&#34; width=&#34;128&#34;&gt;&lt;br&gt;
+Helen Simecek&lt;/td&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;td style=&#34;text-align: center; vertical-align: bottom;&#34;&gt;
+&lt;a href=&#34;https://uvacs2102.github.io/images/staff/jackherd.png&#34;&gt;&lt;img align=&#34;center&#34; src=&#34;https://uvacs2102.github.io/images/staff/jackherd.png&#34; width=&#34;128&#34;&gt;&lt;/a&gt;&lt;br&gt;
+Jack Herd&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: bottom;&#34;&gt;
+&lt;a href=&#34;https://uvacs2102.github.io/images/staff/henryspece.png&#34;&gt;&lt;img align=&#34;center&#34; src=&#34;https://uvacs2102.github.io/images/staff/henryspece.png&#34; width=&#34;128&#34;&gt;&lt;/a&gt;&lt;br&gt;Henry Spece&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: bottom;&#34;&gt;
+&lt;a href=&#34;https://uvacs2102.github.io/images/staff/josephtobin.jpeg&#34;&gt;&lt;img align=&#34;center&#34; src=&#34;https://uvacs2102.github.io/images/staff/josephtobin.jpeg&#34; width=&#34;128&#34;&gt;&lt;/a&gt;&lt;br&gt;
+Joseph Tobin
+&lt;/td&gt;
+&lt;/tr&gt;&lt;/tr&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;td style=&#34;text-align: center; vertical-align: bottom;&#34;&gt;&lt;a href=&#34;https://uvacs2102.github.io/images/staff/michaelwoon.png&#34;&gt;&lt;img align=&#34;center&#34; src=&#34;https://uvacs2102.github.io/images/staff/michaelwoon.png&#34; width=&#34;128&#34;&gt;&lt;/a&gt;&lt;br&gt;
+Michael Woon
+&lt;/td&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;td style=&#34;text-align: center; vertical-align: bottom;&#34;&gt;&lt;a href=&#34;https://uvacs2102.github.io/images/staff/nateolsen.jpeg&#34;&gt;&lt;img align=&#34;center&#34; src=&#34;https://uvacs2102.github.io/images/staff/nateolsen.jpeg&#34; width=&#34;128&#34;&gt;&lt;/a&gt;&lt;br&gt;Nate Olsen
+&lt;/td&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;td style=&#34;text-align: center; vertical-align: bottom;&#34;&gt;
+&lt;a href=&#34;https://uvacs2102.github.io/images/staff/sarahmeng.png&#34;&gt;&lt;img align=&#34;center&#34; src=&#34;https://uvacs2102.github.io/images/staff/sarahmeng.png&#34; width=&#34;128&#34;&gt;&lt;/a&gt;&lt;br&gt;Sarah Meng
+&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: bottom;&#34;&gt;
+Sriram Dandu
+&lt;/td&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/tr&gt;&lt;tr&gt;
+&lt;td style=&#34;text-align: center; vertical-align: bottom;&#34;&gt;
+&lt;a href=&#34;https://uvacs2102.github.io/images/staff/xiao.jpeg&#34;&gt;&lt;img align=&#34;center&#34; src=&#34;https://uvacs2102.github.io/images/staff/xiao.jpeg&#34; width=&#34;128&#34;&gt;&lt;/a&gt;&lt;br&gt;
+Xiao Zhang
+&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: bottom;&#34;&gt;
+&lt;a href=&#34;https://uvacs2102.github.io/images/staff/xueyingbai.jpeg&#34;&gt;&lt;img align=&#34;center&#34; src=&#34;https://uvacs2102.github.io/images/staff/xueyingbai.jpeg&#34; width=&#34;128&#34;&gt;&lt;/a&gt;&lt;br&gt;
+Xueying Bai
+&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: bottom;&#34;&gt;
+Yasasvini&amp;nbsp;Puligundle
+&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: bottom;&#34;&gt;
+&lt;a href=&#34;https://uvacs2102.github.io/images/staff/zhengwang.jpeg&#34;&gt;&lt;img align=&#34;center&#34; src=&#34;https://uvacs2102.github.io/images/staff/zhengwang.jpeg&#34; width=&#34;128&#34;&gt;&lt;/a&gt;&lt;br&gt;
+Zheng Wang
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Office Hours:&lt;/strong&gt; &lt;em&gt;The course staff is here to help you.&lt;/em&gt; Please don&amp;rsquo;t
+wait until too late to take advantage of the available help or ask for
+help. For nearly everyone, this course will involve learning new ways of
+thinking that are dramatically different from those to which you are
+accustomed.  It is natural to miss things, and then become lost since
+new ideas build on previous ones.  Come to office hours early to get
+help before you find yourself frustrated and confused.&lt;/p&gt;
+
+&lt;p&gt;The office hours schedule will be &lt;a href=&#34;https://uvacs2102.github.io/officehours&#34;&gt;posted on-line&lt;/a&gt;, and it will
+be kept updated throughout the semester.&lt;/p&gt;
+
+&lt;h2 id=&#34;communications&#34;&gt;Communications&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Course Website:&lt;/strong&gt;
+  &lt;a href=&#34;https://uvacs2102.github.io/&#34;&gt;&lt;em&gt;https://uvacs2102.github.io/&lt;/em&gt;&lt;/a&gt;.  All
+  course materials will be posted on the course website.  This page is
+  updated often and students are expected to visit it regularly. All
+  lectures, notes and assignments for the course will be posted on the
+  web site.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Slack:&lt;/strong&gt; &lt;a href=&#34;https://csmath.slack.com&#34;&gt;&lt;em&gt;https://csmath.slack.com&lt;/em&gt;&lt;/a&gt;.  We
+  will use a slack group for &amp;ldquo;real-time&amp;rdquo; communication for quick help
+  and discussion (including during lectures).  Unlike the course site,
+  which is public and visible to the world, this group will only be
+  visible to people in the class.  There are slack apps for web, iOS and
+  Android.  We encourage students to ask questions about the classes and
+  assignments by posting comments on slack, and the course
+  staff will read and respond to questions there.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Email:&lt;/strong&gt; Feel free to email us with any personal questions or issues
+  that should not be posted publicly. To reach both professors, use
+  &lt;a href=&#34;mailto://uvacs2102staff@gmail.com&#34;&gt;&lt;em&gt;uvacs2102staff@gmail.com&lt;/em&gt;&lt;/a&gt;
+  (please use this instead of our personal emails unless it is an
+  issue that is specific to one of us). For general questions or
+  issues that might be relevant for others in the class, it is better
+  to post publicly to the course website or slack group (both so that
+  others may be able to answer your question, and others may be able
+  to see a response that will be useful to them).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Calendar:&lt;/strong&gt; The course calendar is available &lt;a href=&#34;https://goo.gl/ZtQhVY&#34;&gt;as a Google
+  calendar&lt;/a&gt;.
+  Students are encouraged to incorporate this into your own calendar.  If you use Google Calendar, just click the &amp;ldquo;+&amp;rdquo; at the bottom right of the &lt;a href=&#34;https://goo.gl/ZtQhVY&#34;&gt;calendar page&lt;/a&gt;. If you use another calendar program, you can incorporate this calendar using ical.&lt;/p&gt;
+
+&lt;h2 id=&#34;honor&#34;&gt;Honor&lt;/h2&gt;
+
+&lt;p&gt;We believe strongly in the value of a &lt;em&gt;community of trust&lt;/em&gt;, and expect
+all of the students in this class to contribute to strenghtening and
+enhancing that community.  The course will be better for everyone if
+everyone can assume everyone else is trustworthy. The course staff
+starts with the assumption that all students at the university deserve
+to be trusted.&lt;/p&gt;
+
+&lt;p&gt;To ensure that expectations are clear to everyone, all students are
+required to sign the &lt;a href=&#34;https://uvacs2102.github.io/pledge&#34;&gt;course pledge&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;topics&#34;&gt;Topics&lt;/h2&gt;
+
+&lt;p&gt;The topics covered in cs2102 focus on developing the mathematical
+foundation and skills that are most important for computer science.
+Expected topics include:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Propositions and proofs&lt;/li&gt;
+&lt;li&gt;Proof methods (including proof by construction, contradiction, and induction)&lt;/li&gt;
+&lt;li&gt;Logic (Boolean logic, logical formulas, quantifiers)&lt;/li&gt;
+&lt;li&gt;Binary relations&lt;/li&gt;
+&lt;li&gt;State machines&lt;/li&gt;
+&lt;li&gt;Finite and infinite sets&lt;/li&gt;
+&lt;li&gt;Number theory&lt;/li&gt;
+&lt;li&gt;Counting techniques&lt;/li&gt;
+&lt;li&gt;Probability theory&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;assignments-and-exams&#34;&gt;Assignments and Exams&lt;/h2&gt;
+
+&lt;p&gt;A detailed schedule is &lt;a href=&#34;https://uvacs2102.github.io/schedule&#34;&gt;maintained on the course website&lt;/a&gt; and
+&lt;a href=&#34;https://goo.gl/ZtQhVY&#34;&gt;calendar&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Key dates:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Most Fridays (6:29pm): There will be a homework assignment due on
+Fridays, except for weeks when there are exams (and Thanksgiving
+week).&lt;/li&gt;
+&lt;li&gt;Thursday, 5 Oct: Exam 1 (in class)&lt;/li&gt;
+&lt;li&gt;Thursday, 9 Nov: Exam 2 (in class)&lt;/li&gt;
+&lt;li&gt;Thursday, 7 Dec: Final Exam (9am-noon, scheduled by the registrar)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;grading&#34;&gt;Grading&lt;/h2&gt;
+
+&lt;p&gt;Grading will be based on your performance on the exams and homework
+assignments, with additional adjustments made based on exceptional
+contributions to the class.&lt;/p&gt;
+
+&lt;p&gt;Grades will be calculated with several different weightings, where your
+grade is based primarily on whichever weighting results in the highest
+score.  The range of possible weightings is:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Homeworks: 15-40%&lt;/li&gt;
+&lt;li&gt;Exam 1: 10-25%&lt;/li&gt;
+&lt;li&gt;Exam 2: 15-30%&lt;/li&gt;
+&lt;li&gt;Final Exam: 20-50%&lt;/li&gt;
+&lt;li&gt;Class Contribution: 0-25%
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Spend your energy focusing on what you are learning, instead of
+worrying about your grade.&lt;/p&gt;
+
+&lt;p&gt;Although the material we cover is challenging, and the pace may seem
+overwhelming at times, we are confident that all students who put
+effort into this class and take good advantage of available help will
+do well.  Students who do especially outstanding work in the course
+will be offered positions in our research groups
+(&lt;a href=&#34;http://www.jeffersonswheel.org&#34;&gt;Dave&lt;/a&gt;,
+&lt;a href=&#34;https://www.cs.virginia.edu/~mohammad/&#34;&gt;Mohammad&lt;/a&gt;).&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>cs2102 Course Pledge</title>
+      <link>https://uvacs2102.github.io/pledge/</link>
+      <pubDate>Mon, 21 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/pledge/</guid>
+      <description>
+
+&lt;div class=&#34;printing&#34;&gt;&lt;a href=&#34;https://uvacs2102.github.io/docs/pledge.pdf&#34;&gt;PDF for Printing&lt;/a&gt;&lt;/div&gt;
+
+&lt;h2 id=&#34;honor-expectations&#34;&gt;Honor Expectations&lt;/h2&gt;
+
+&lt;p&gt;As a student at the University of Virginia, you are trusted to be
+honorable and expected to behave in ways that merit that trust. We take
+advantage of this trust to provide a better learning environment for
+everyone. In particular, students in cs2102 are expected to follow these
+rules throughout the course:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;I will not lie, cheat or steal.&lt;/strong&gt; If I am unsure whether something
+  would be considered lying, cheating or stealing, I will ask before
+  doing it.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;I will carefully read and follow the collaboration policy on each
+  assignment.&lt;/strong&gt; I will not abuse resources in ways that would be
+  clearly detrimental to my own learning or unfair to other
+  students. Viewing solutions from previous cs2102 courses is not
+  permitted, except when explicitly allowed.&lt;/p&gt;
+
+&lt;h2 id=&#34;other-expectations&#34;&gt;Other Expectations&lt;/h2&gt;
+
+&lt;p&gt;In addition to the honor rules, students in cs2102 are also expected to
+follow these behaviors:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;I will do what I can to help my fellow classmates learn.&lt;/strong&gt; Except
+when specifically instructed not to, when other students ask me for
+help, I will attempt to provide it. I will listen respectfully to
+other&amp;rsquo;s ideas and discuss what I think is good or bad about their
+answers. When I work with others, I will not give or accept answers
+directly, but instead will make sure everyone understands enough to be
+able to solve the problem themselves, and insist that others explain
+things to me until I fully understand.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;I will ask for help.&lt;/strong&gt; I will make a reasonable effort to do things
+  on my own first (or with classmates when permitted), but will ask
+  the course staff for help before getting overly frustrated. There
+  are many ways to ask for help including the office hours and the
+  course slack group.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;I will be open minded and curious.&lt;/strong&gt; I understand that this course may
+  do things in ways differently from what I expect, and may sometimes
+  buck conventions that have been followed in other courses I have
+  taken.  I will ask questions when things make me uncomfortable, but
+  also accept that being surprised, facing uncertainty and adversity,
+  and being challenged unreasonably are often beneficial for learning
+  new ways of thinking.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;I will value diversity and respect differences.&lt;/strong&gt; I understand that
+  one of the benefits of being at the University is to be part of a
+  vibrant community that encompasses a wide range of backgrounds,
+  ethnicities, personal and family histories, and world views. I will
+  contribute to that community by sharing things that are unique about
+  me with others, fighting against any implicit biases I may have or
+  that I observe in others, and being open to and respectful of people
+  who are different from me.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;I grant the course staff permission to reproduce excerpts from my
+submissions for teaching purposes.&lt;/strong&gt; My work will be attributed when it
+is shown in a postive way, but may be used anonymously if it is used to
+illustrate common pitfalls or other issues.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;I will provide useful feedback.&lt;/strong&gt; I realize that this will be
+  attempting many new things, and that it is important that I let the
+  course staff know what they need to improve the course. I will provide
+  feedback either anonymously or by contacting the course staff
+  directly.  &lt;strong&gt;I will fill out all requested surveys honestly and
+  thoroughly.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;Sign:       ___________________________________________________   &amp;nbsp;&amp;nbsp; &amp;nbsp;&amp;nbsp; Date: _____________&lt;/p&gt;
+
+&lt;p&gt;Print name:  ____________________________________________________&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Fall 2017 Course</title>
@@ -161,6 +501,59 @@ implication to a skeptical reader.&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;p&gt;&lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://uvacs2102.github.io/schedule/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/schedule/</guid>
+      <description>
+
+&lt;h1 id=&#34;course-schedule&#34;&gt;Course Schedule&lt;/h1&gt;
+
+&lt;p&gt;The schedule is subject to change as the semester progresses, and the
+topics covered will be adjusted flexibly.  The exam dates will not
+move other than for exceptional circumstances.&lt;/p&gt;
+
+&lt;table style=&#34;font-size: 80%&#34;&gt;
+&lt;tr bgcolor=&#34;#CCC&#34;&gt;&lt;td&gt;&lt;b&gt;Date&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Class&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Due [Friday 6:29pm unless noted]&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Tuesday, 22 Aug 2017&lt;/td&gt;&lt;td&gt;  1. Discrete Math, Proof&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;     
+&lt;tr&gt;&lt;td&gt;Thursday, 24 Aug 2017&lt;/td&gt;&lt;td&gt; 2. Methods of Proof    &lt;/td&gt;&lt;td&gt; &lt;a href=&#34;https://goo.gl/forms/DR7nsouNf6sqqIK22&#34;&gt;Registration Survey&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Tuesday, 29 Aug 2017&lt;/td&gt;&lt;td&gt;  3. Well Ordering Principle &lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;     
+&lt;tr&gt;&lt;td&gt;Thursday, 31 Aug 2017&lt;/td&gt;&lt;td&gt;  4. Logical Formulas&lt;/td&gt;&lt;td&gt; PS1 (MCS Ch 1, classes 1 and 2)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Tuesday, 5 Sep 2017&lt;/td&gt;&lt;td&gt;   5. CNF, Quantifiers, and Proofs       &lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;      
+&lt;tr&gt;&lt;td&gt;Thursday, 7 Sep 2017&lt;/td&gt;&lt;td&gt;  6. Review &lt;/td&gt;&lt;td&gt; PS2 (MCS Ch 2-3.5, classes 3-4)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Tuesday, 12 Sep 2017&lt;/td&gt;&lt;td&gt;  7. Sets&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;     
+&lt;tr&gt;&lt;td&gt;Thursday, 14 Sep 2017&lt;/td&gt;&lt;td&gt; 8. Functions and Relations&lt;/td&gt;&lt;td&gt; PS3 (MCS Ch 3, classes 5-6)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Tuesday, 19 Sep 2017&lt;/td&gt;&lt;td&gt;  9. Cardinality of Finite Sets&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;   
+&lt;tr&gt;&lt;td&gt;Thursday, 21 Sep 2017&lt;/td&gt;&lt;td&gt; 10. Induction&lt;/td&gt;&lt;td&gt; PS4 (MCS Ch 4.1-4.4, lecture 7-8)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Tuesday, 26 Sep 2017&lt;/td&gt;&lt;td&gt;  11. Strong Induction&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;    
+&lt;tr&gt;&lt;td&gt;Thursday, 28 Sep 2017&lt;/td&gt;&lt;td&gt; 12. Review&lt;/td&gt;&lt;td&gt;PS5 (MCS Ch 4.5, 5, classes 9-10)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Tuesday, 3 Oct 2017&lt;/td&gt;&lt;td colspan=2 bgcolor=&#34;#FFEBCD&#34; style=&#34;text-align: center;&#34;&gt;Reading Days &lt;/td&gt;&lt;/tr&gt;  
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Thursday, 5 Oct 2017&lt;/b&gt;&lt;/td&gt;&lt;td colspan=2 bgcolor=&#34;#FFAAAA&#34; style=&#34;text-align: center;&#34;&gt;Exam 1 (in class) &lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Tuesday, 10 Oct 2017&lt;/td&gt;&lt;td&gt;  13. State Machines    &lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;      
+&lt;tr&gt;&lt;td&gt;Thursday, 12 Oct 2017&lt;/td&gt;&lt;td&gt; 14. Invariant Principle&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;     
+&lt;tr&gt;&lt;td&gt;Tuesday, 17 Oct 2017&lt;/td&gt;&lt;td&gt;  15. Recursive Data Types&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;       
+&lt;tr&gt;&lt;td&gt;Thursday, 19 Oct 2017&lt;/td&gt;&lt;td&gt; 16. Structural Induction&lt;/td&gt;&lt;td&gt; PS6 (MCS Ch 6, class 13-14)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Tuesday, 24 Oct 2017&lt;/td&gt;&lt;td&gt;  17. Infinite Sets&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;     
+&lt;tr&gt;&lt;td&gt;Thursday, 26 Oct 2017&lt;/td&gt;&lt;td&gt; 18. Uncountable Sets&lt;/td&gt;&lt;td&gt; PS7 (MCS Ch 7, class 15-16) &lt;/td&gt;&lt;tr&gt;
+&lt;tr&gt;&lt;td&gt;Tuesday, 31 Oct 2017&lt;/td&gt;&lt;td&gt;  19. Infinite Infinities&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;     
+&lt;tr&gt;&lt;td&gt;Thursday, 2 Nov 2017&lt;/td&gt;&lt;td&gt;  20. Review&lt;/td&gt;&lt;td&gt; PS8 (MCS Ch 8, class 18-19)
+&lt;tr&gt;&lt;td&gt;Tuesday, 7 Nov 2017&lt;/td&gt;&lt;td&gt;   21. Number Theory&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;     
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Thursday, 9 Nov 2017&lt;/b&gt;&lt;/td&gt;&lt;td colspan=2 bgcolor=&#34;#FFAAAA&#34; style=&#34;text-align: center;&#34;&gt; Exam 2 (in class) - covers through PS8&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Tuesday, 14 Nov 2017&lt;/td&gt;&lt;td&gt;  22. Cryptography&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;      
+&lt;tr&gt;&lt;td&gt;Thursday, 16 Nov 2017&lt;/td&gt;&lt;td&gt; 23. Counting&lt;/td&gt;&lt;td&gt; 
+&lt;tr&gt;&lt;td&gt;Tuesday, 21 Nov 2017&lt;/td&gt;&lt;td&gt;  24. Probability&lt;/td&gt;&lt;td&gt;PS9 (MCS Ch 9, classes 21-23) (due 6:29pm Wednesday, 23 Nov)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Thursday, 23 Nov 2017&lt;/td&gt;&lt;td colspan=2 bgcolor=&#34;#FFEBCD&#34; style=&#34;text-align: center;&#34;&gt; Thanksgiving Break&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Tuesday, 28 Nov 2017&lt;/td&gt;&lt;td&gt;  25. Computability&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;   
+&lt;tr&gt;&lt;td&gt;Thursday, 30 Nov 2017&lt;/td&gt;&lt;td&gt;  26. Undecidability&lt;/td&gt;&lt;td&gt;PS&amp;Omega;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Tuesday, 5 Dec 2017&lt;/td&gt;&lt;td&gt;   27. Wrap-Up&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;     
+       
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Thursday, 7 Dec 2017&lt;/b&gt;&lt;/td&gt;&lt;td colspan=2 bgcolor=&#34;#FFAAAA&#34; style=&#34;text-align: center;&#34;&gt;Final Exam (9am-noon)&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
 </description>
     </item>
     
