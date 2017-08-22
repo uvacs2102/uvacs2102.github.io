@@ -10,6 +10,203 @@
     <atom:link href="https://uvacs2102.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Class 1: What makes it go?</title>
+      <link>https://uvacs2102.github.io/class1/</link>
+      <pubDate>Tue, 22 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/class1/</guid>
+      <description>
+
+&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
+
+&lt;p&gt;Before &lt;strong&gt;Thursday&amp;rsquo;s class&lt;/strong&gt;: (visit &lt;a href=&#34;https://uvacs2102.github.io/class1&#34;&gt;https://uvacs2102.github.io/class1&lt;/a&gt; for the web version of these notes with links)&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Join the &lt;a href=&#34;https://csmath.slack.com&#34;&gt;cs2102 slack group&lt;/a&gt; and set up
+your profile with a pronouncable name (not your UVA email id) (setting
+up your profile photo is encouraged, but not required).&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Read the &lt;a href=&#34;https://uvacs2102.github.io/syllabus&#34;&gt;Course Syllabus&lt;/a&gt; and post any questions or
+comments you have on it on the course &lt;a href=&#34;https://csmath.slack.com&#34;&gt;slack group
+(#general)&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Read the &lt;em&gt;Introduction&lt;/em&gt; and &lt;em&gt;Chapter 1: What is a Proof?&lt;/em&gt; from the
+&lt;a href=&#34;https://uvacs2102.github.io/docs/mcs.pdf&#34;&gt;Mathematics for Computer Science
+Book&lt;/a&gt; by Eric Lehman,
+F. Thomson Leighton, and Albert R. Meyer (henceforth, &amp;ldquo;MCS&amp;rdquo;).  The
+book is freely available on-line under a Creative Commons License.
+Students are &lt;strong&gt;strongly encrouaged&lt;/strong&gt; to print out the readings to read
+them more effectively on paper.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Before &lt;strong&gt;Friday, 6:29pm&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Read, print, and sign the &lt;a href=&#34;https://uvacs2102.github.io/pledge&#34;&gt;Course Pledge&lt;/a&gt;.  You should print
+the &lt;a href=&#34;https://uvacs2102.github.io/docs/pledge.pdf&#34;&gt;PDF version&lt;/a&gt; for signing, and submit a scan of
+your signed pledge using Collab.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Read Jeremy Kun&amp;rsquo;s &lt;a href=&#34;https://medium.com/@jeremyjkun/habits-of-highly-mathematical-people-b719df12d15e&#34;&gt;&lt;em&gt;Habits of Highly Mathematical People&lt;/em&gt;&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Submit a &lt;a href=&#34;https://goo.gl/forms/DR7nsouNf6sqqIK22&#34;&gt;Course Registration Survey&lt;/a&gt; (which includes some questions based on Kun&amp;rsquo;s essay).&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&#34;notpdf&#34;&gt;
+
+    &lt;div class=&#34;highlightm&#34;&gt;
+    &lt;a href=&#34;https://uvacs2102.github.io/docs/class1.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes and Questions&lt;/b&gt;&lt;/a&gt;.
+    &lt;/div&gt;
+
+&lt;!--
+&lt;center&gt;
+&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;460cc29c74a04fe3971ce197961981f9&#34; data-ratio=&#34;1.77777777777778&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
+&lt;/center&gt;
+--&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
+
+&lt;div class=&#34;latex&#34;&gt;
+
+### Notes and Questions
+
+Why is most of the math used in computer science _discrete_?
+
+&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;
+
+&lt;p&gt;Why is most of the math you have used in school previously &lt;em&gt;continuous&lt;/em&gt;?&lt;/p&gt;
+
+&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;
+
+&lt;p&gt;What are the differences between how scientists, lawyers, and
+mathematicians establish ``&lt;em&gt;truth&lt;/em&gt;&amp;rdquo;?&lt;/p&gt;
+
+&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;
+
+&lt;p&gt;A &lt;em&gt;proposition&lt;/em&gt; is a statement that is either ________ or _________.&lt;/p&gt;
+
+&lt;p&gt;A &lt;em&gt;predicate&lt;/em&gt; is a proposition whose truth may depend on the value of
+variables.&lt;/p&gt;
+
+&lt;h3 id=&#34;proof&#34;&gt;Proof&lt;/h3&gt;
+
+&lt;p&gt;A &lt;em&gt;theorem&lt;/em&gt; is a ____________ that has been proven true.&lt;/p&gt;
+
+&lt;p&gt;An &lt;em&gt;axiom&lt;/em&gt; is a proposition that is &lt;em&gt;accepted to be true&lt;/em&gt;.  Axioms are
+not proven; they are &lt;em&gt;assumed&lt;/em&gt; to be true.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; A &lt;em&gt;mathematical proof&lt;/em&gt; of a proposition is a chain of
+  &lt;em&gt;logical deductions&lt;/em&gt; starting from a set of accepted &lt;em&gt;axioms&lt;/em&gt; that
+  leads to the proposition.&lt;/p&gt;
+
+&lt;h3 id=&#34;rules-of-inference&#34;&gt;Rules of Inference&lt;/h3&gt;
+
+&lt;p&gt;The possible steps that can be used in a proof are logical deductions
+based on inference rules.&lt;/p&gt;
+
+&lt;p&gt;Inference rules are written as:
+$$
+\infer{\textrm{\emph{conclusion}}}{\textrm{\emph{antecedents}}}
+$$
+This means if everything on top of the rule is established to be true,
+then you can conclude what is on the bottom.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Modus Ponens&lt;/em&gt;: To prove &lt;em&gt;Q&lt;/em&gt;, (1) prove &lt;em&gt;P&lt;/em&gt; and (2) prove that &lt;em&gt;P&lt;/em&gt; implies &lt;em&gt;Q&lt;/em&gt;.  ($P \implies Q$ is a notation for $P$ implies $Q$).&lt;/p&gt;
+
+&lt;p&gt;$$
+\infer{Q}{P,\quad P \implies Q}
+$$&lt;/p&gt;
+
+&lt;p&gt;An inference rule is &lt;em&gt;sound&lt;/em&gt; if can never lead to a &lt;strong&gt;false&lt;/strong&gt; conclusion.&lt;/p&gt;
+
+&lt;p&gt;Which of these inference rules are sound?&lt;/p&gt;
+
+&lt;p&gt;$$
+\infer{Q}{P}
+\qquad
+\infer{false}{P, P \implies Q}
+\qquad
+\infer{true}{P, NOT(P)}
+\qquad
+\infer{P \implies NOT(P)}{P, NOT(P)}
+\qquad
+\infer{NOT(Q) \implies P}{NOT(P) \implies Q}
+$$&lt;/p&gt;
+
+&lt;p&gt;##&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Contrapositive:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;$$
+\infer{NOT(Q) \implies NOT(P)}{P \implies Q}
+\qquad
+\infer{P \implies Q}{NOT(Q) \implies NOT(P)}
+$$&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Theorem to Prove:&lt;/strong&gt; If the product of $x$ and $y$ is even, at least one of $x$ or $y$ must be even.&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;##&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;quote&#34;&gt;
+&lt;em&gt;Through violence you may murder a liar but you can&amp;rsquo;t establish truth. Through violence you may murder a hater, but you can&amp;rsquo;t murder hate. Darkness cannot put out darkness. Only light can do that.&lt;/em&gt;&lt;br /&gt;
+Martin Luther King, Jr., &lt;a href=&#34;http://kingencyclopedia.stanford.edu/encyclopedia/documentsentry/where_do_we_go_from_here_delivered_at_the_11th_annual_sclc_convention/&#34;&gt;&lt;em&gt;Where Do We Go From Here?&lt;/em&gt;, address to SCLC 16 August 1967&lt;/a&gt;
+   &lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Course Schedule</title>
+      <link>https://uvacs2102.github.io/schedule/</link>
+      <pubDate>Tue, 22 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/schedule/</guid>
+      <description>&lt;p&gt;The schedule is subject to change as the semester progresses, and the
+topics covered will be adjusted flexibly.  The exam dates will not
+move other than for exceptional circumstances.&lt;/p&gt;
+
+&lt;table style=&#34;font-size: 80%&#34;&gt;
+&lt;tr bgcolor=&#34;#CCC&#34;&gt;&lt;td&gt;&lt;b&gt;Date&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Class&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Due [Friday 6:29pm unless noted]&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Tuesday, 22 Aug 2017&lt;/td&gt;&lt;td&gt;  1. Discrete Math, Proof&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;     
+&lt;tr&gt;&lt;td&gt;Thursday, 24 Aug 2017&lt;/td&gt;&lt;td&gt; 2. Methods of Proof    &lt;/td&gt;&lt;td&gt; &lt;a href=&#34;https://goo.gl/forms/DR7nsouNf6sqqIK22&#34;&gt;Registration Survey&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Tuesday, 29 Aug 2017&lt;/td&gt;&lt;td&gt;  3. Well Ordering Principle &lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;     
+&lt;tr&gt;&lt;td&gt;Thursday, 31 Aug 2017&lt;/td&gt;&lt;td&gt;  4. Logical Formulas&lt;/td&gt;&lt;td&gt; PS1 (MCS Ch 1, classes 1 and 2)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Tuesday, 5 Sep 2017&lt;/td&gt;&lt;td&gt;   5. CNF, Quantifiers, and Proofs       &lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;      
+&lt;tr&gt;&lt;td&gt;Thursday, 7 Sep 2017&lt;/td&gt;&lt;td&gt;  6. Review &lt;/td&gt;&lt;td&gt; PS2 (MCS Ch 2-3.5, classes 3-4)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Tuesday, 12 Sep 2017&lt;/td&gt;&lt;td&gt;  7. Sets&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;     
+&lt;tr&gt;&lt;td&gt;Thursday, 14 Sep 2017&lt;/td&gt;&lt;td&gt; 8. Functions and Relations&lt;/td&gt;&lt;td&gt; PS3 (MCS Ch 3, classes 5-6)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Tuesday, 19 Sep 2017&lt;/td&gt;&lt;td&gt;  9. Cardinality of Finite Sets&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;   
+&lt;tr&gt;&lt;td&gt;Thursday, 21 Sep 2017&lt;/td&gt;&lt;td&gt; 10. Induction&lt;/td&gt;&lt;td&gt; PS4 (MCS Ch 4.1-4.4, lecture 7-8)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Tuesday, 26 Sep 2017&lt;/td&gt;&lt;td&gt;  11. Strong Induction&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;    
+&lt;tr&gt;&lt;td&gt;Thursday, 28 Sep 2017&lt;/td&gt;&lt;td&gt; 12. Review&lt;/td&gt;&lt;td&gt;PS5 (MCS Ch 4.5, 5, classes 9-10)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Tuesday, 3 Oct 2017&lt;/td&gt;&lt;td colspan=2 bgcolor=&#34;#FFEBCD&#34; style=&#34;text-align: center;&#34;&gt;Reading Days &lt;/td&gt;&lt;/tr&gt;  
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Thursday, 5 Oct 2017&lt;/b&gt;&lt;/td&gt;&lt;td colspan=2 bgcolor=&#34;#FFAAAA&#34; style=&#34;text-align: center;&#34;&gt;Exam 1 (in class) &lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Tuesday, 10 Oct 2017&lt;/td&gt;&lt;td&gt;  13. State Machines    &lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;      
+&lt;tr&gt;&lt;td&gt;Thursday, 12 Oct 2017&lt;/td&gt;&lt;td&gt; 14. Invariant Principle&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;     
+&lt;tr&gt;&lt;td&gt;Tuesday, 17 Oct 2017&lt;/td&gt;&lt;td&gt;  15. Recursive Data Types&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;       
+&lt;tr&gt;&lt;td&gt;Thursday, 19 Oct 2017&lt;/td&gt;&lt;td&gt; 16. Structural Induction&lt;/td&gt;&lt;td&gt; PS6 (MCS Ch 6, class 13-14)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Tuesday, 24 Oct 2017&lt;/td&gt;&lt;td&gt;  17. Infinite Sets&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;     
+&lt;tr&gt;&lt;td&gt;Thursday, 26 Oct 2017&lt;/td&gt;&lt;td&gt; 18. Uncountable Sets&lt;/td&gt;&lt;td&gt; PS7 (MCS Ch 7, class 15-16) &lt;/td&gt;&lt;tr&gt;
+&lt;tr&gt;&lt;td&gt;Tuesday, 31 Oct 2017&lt;/td&gt;&lt;td&gt;  19. Infinite Infinities&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;     
+&lt;tr&gt;&lt;td&gt;Thursday, 2 Nov 2017&lt;/td&gt;&lt;td&gt;  20. Review&lt;/td&gt;&lt;td&gt; PS8 (MCS Ch 8, class 18-19)
+&lt;tr&gt;&lt;td&gt;Tuesday, 7 Nov 2017&lt;/td&gt;&lt;td&gt;   21. Number Theory&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;     
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Thursday, 9 Nov 2017&lt;/b&gt;&lt;/td&gt;&lt;td colspan=2 bgcolor=&#34;#FFAAAA&#34; style=&#34;text-align: center;&#34;&gt; Exam 2 (in class) - covers through PS8&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Tuesday, 14 Nov 2017&lt;/td&gt;&lt;td&gt;  22. Cryptography&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;      
+&lt;tr&gt;&lt;td&gt;Thursday, 16 Nov 2017&lt;/td&gt;&lt;td&gt; 23. Counting&lt;/td&gt;&lt;td&gt; 
+&lt;tr&gt;&lt;td&gt;Tuesday, 21 Nov 2017&lt;/td&gt;&lt;td&gt;  24. Probability&lt;/td&gt;&lt;td&gt;PS9 (MCS Ch 9, classes 21-23) (due 6:29pm Wednesday, 23 Nov)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Thursday, 23 Nov 2017&lt;/td&gt;&lt;td colspan=2 bgcolor=&#34;#FFEBCD&#34; style=&#34;text-align: center;&#34;&gt; Thanksgiving Break&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Tuesday, 28 Nov 2017&lt;/td&gt;&lt;td&gt;  25. Computability&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;   
+&lt;tr&gt;&lt;td&gt;Thursday, 30 Nov 2017&lt;/td&gt;&lt;td&gt;  26. Undecidability&lt;/td&gt;&lt;td&gt;PS&amp;Omega;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Tuesday, 5 Dec 2017&lt;/td&gt;&lt;td&gt;   27. Wrap-Up&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;     
+       
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Thursday, 7 Dec 2017&lt;/b&gt;&lt;/td&gt;&lt;td colspan=2 bgcolor=&#34;#FFAAAA&#34; style=&#34;text-align: center;&#34;&gt;Final Exam (9am-noon)&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Syllabus</title>
       <link>https://uvacs2102.github.io/syllabus/</link>
       <pubDate>Tue, 22 Aug 2017 00:00:00 +0000</pubDate>
@@ -502,207 +699,6 @@ implication to a skeptical reader.&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;p&gt;&lt;/div&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Class 1: What makes it go?</title>
-      <link>https://uvacs2102.github.io/class1/</link>
-      <pubDate>Mon, 22 Aug 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://uvacs2102.github.io/class1/</guid>
-      <description>
-
-&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
-
-&lt;p&gt;Before &lt;strong&gt;Thursday&amp;rsquo;s class&lt;/strong&gt;: (visit &lt;a href=&#34;https://uvacs2102.github.io/class1&#34;&gt;https://uvacs2102.github.io/class1&lt;/a&gt; for the web version of these notes with links)&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Join the &lt;a href=&#34;https://csmath.slack.com&#34;&gt;cs2102 slack group&lt;/a&gt; and set up
-your profile with a pronouncable name (not your UVA email id) (setting
-up your profile photo is encouraged, but not required).&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Read the &lt;a href=&#34;https://uvacs2102.github.io/syllabus&#34;&gt;Course Syllabus&lt;/a&gt; and post any questions or
-comments you have on it on the course &lt;a href=&#34;https://csmath.slack.com&#34;&gt;slack group
-(#general)&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Read the &lt;em&gt;Introduction&lt;/em&gt; and &lt;em&gt;Chapter 1: What is a Proof?&lt;/em&gt; from the
-&lt;a href=&#34;https://uvacs2102.github.io/docs/mcs.pdf&#34;&gt;Mathematics for Computer Science
-Book&lt;/a&gt; by Eric Lehman,
-F. Thomson Leighton, and Albert R. Meyer (henceforth, &amp;ldquo;MCS&amp;rdquo;).  The
-book is freely available on-line under a Creative Commons License.
-Students are &lt;strong&gt;strongly encrouaged&lt;/strong&gt; to print out the readings to read
-them more effectively on paper.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Before &lt;strong&gt;Friday, 6:29pm&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Read, print, and sign the &lt;a href=&#34;https://uvacs2102.github.io/pledge&#34;&gt;Course Pledge&lt;/a&gt;.  You should print
-the &lt;a href=&#34;https://uvacs2102.github.io/docs/pledge.pdf&#34;&gt;PDF version&lt;/a&gt; for signing, and submit a scan of
-your signed pledge using Collab.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Read Jeremy Kun&amp;rsquo;s &lt;a href=&#34;https://medium.com/@jeremyjkun/habits-of-highly-mathematical-people-b719df12d15e&#34;&gt;&lt;em&gt;Habits of Highly Mathematical People&lt;/em&gt;&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Submit a &lt;a href=&#34;https://goo.gl/forms/DR7nsouNf6sqqIK22&#34;&gt;Course Registration Survey&lt;/a&gt; (which includes some questions based on Kun&amp;rsquo;s essay).&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&#34;notpdf&#34;&gt;
-
-    &lt;div class=&#34;highlightm&#34;&gt;
-    &lt;a href=&#34;https://uvacs2102.github.io/docs/class1.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes and Questions&lt;/b&gt;&lt;/a&gt;.
-    &lt;/div&gt;
-
-&lt;!--
-&lt;center&gt;
-&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;460cc29c74a04fe3971ce197961981f9&#34; data-ratio=&#34;1.77777777777778&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
-&lt;/center&gt;
---&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
-
-&lt;div class=&#34;latex&#34;&gt;
-
-### Notes and Questions
-
-Why is most of the math used in computer science _discrete_?
-
-&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;
-
-&lt;p&gt;Why is most of the math you have used in school previously &lt;em&gt;continuous&lt;/em&gt;?&lt;/p&gt;
-
-&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;
-
-&lt;p&gt;What are the differences between how scientists, lawyers, and
-mathematicians establish ``&lt;em&gt;truth&lt;/em&gt;&amp;rdquo;?&lt;/p&gt;
-
-&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;
-
-&lt;p&gt;A &lt;em&gt;proposition&lt;/em&gt; is a statement that is either ________ or _________.&lt;/p&gt;
-
-&lt;p&gt;A &lt;em&gt;predicate&lt;/em&gt; is a proposition whose truth may depend on the value of
-variables.&lt;/p&gt;
-
-&lt;h3 id=&#34;proof&#34;&gt;Proof&lt;/h3&gt;
-
-&lt;p&gt;A &lt;em&gt;theorem&lt;/em&gt; is a ____________ that has been proven true.&lt;/p&gt;
-
-&lt;p&gt;An &lt;em&gt;axiom&lt;/em&gt; is a proposition that is &lt;em&gt;accepted to be true&lt;/em&gt;.  Axioms are
-not proven; they are &lt;em&gt;assumed&lt;/em&gt; to be true.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; A &lt;em&gt;mathematical proof&lt;/em&gt; of a proposition is a chain of
-  &lt;em&gt;logical deductions&lt;/em&gt; starting from a set of accepted &lt;em&gt;axioms&lt;/em&gt; that
-  leads to the proposition.&lt;/p&gt;
-
-&lt;h3 id=&#34;rules-of-inference&#34;&gt;Rules of Inference&lt;/h3&gt;
-
-&lt;p&gt;The possible steps that can be used in a proof are logical deductions
-based on inference rules.&lt;/p&gt;
-
-&lt;p&gt;Inference rules are written as:
-$$
-\infer{\textrm{\emph{conclusion}}}{\textrm{\emph{antecedents}}}
-$$
-This means if everything on top of the rule is established to be true,
-then you can conclude what is on the bottom.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Modus Ponens&lt;/em&gt;: To prove &lt;em&gt;Q&lt;/em&gt;, (1) prove &lt;em&gt;P&lt;/em&gt; and (2) prove that &lt;em&gt;P&lt;/em&gt; implies &lt;em&gt;Q&lt;/em&gt;.  ($P \implies Q$ is a notation for $P$ implies $Q$).&lt;/p&gt;
-
-&lt;p&gt;$$
-\infer{Q}{P,\quad P \implies Q}
-$$&lt;/p&gt;
-
-&lt;p&gt;An inference rule is &lt;em&gt;sound&lt;/em&gt; if can never lead to a &lt;strong&gt;false&lt;/strong&gt; conclusion.&lt;/p&gt;
-
-&lt;p&gt;Which of these inference rules are sound?&lt;/p&gt;
-
-&lt;p&gt;$$
-\infer{Q}{P}
-\qquad
-\infer{false}{P, P \implies Q}
-\qquad
-\infer{true}{P, NOT(P)}
-\qquad
-\infer{P \implies NOT(P)}{P, NOT(P)}
-\qquad
-\infer{NOT(Q) \implies P}{NOT(P) \implies Q}
-$$&lt;/p&gt;
-
-&lt;p&gt;##&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Contrapositive:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;$$
-\infer{NOT(Q) \implies NOT(P)}{P \implies Q}
-\qquad
-\infer{P \implies Q}{NOT(Q) \implies NOT(P)}
-$$&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Theorem to Prove:&lt;/strong&gt; If the product of $x$ and $y$ is even, at least one of $x$ or $y$ must be even.&lt;/p&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;##&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;quote&#34;&gt;
-&lt;em&gt;Through violence you may murder a liar but you can&amp;rsquo;t establish truth. Through violence you may murder a hater, but you can&amp;rsquo;t murder hate. Darkness cannot put out darkness. Only light can do that.&lt;/em&gt;&lt;br /&gt;
-Martin Luther King, Jr., &lt;a href=&#34;http://kingencyclopedia.stanford.edu/encyclopedia/documentsentry/where_do_we_go_from_here_delivered_at_the_11th_annual_sclc_convention/&#34;&gt;&lt;em&gt;Where Do We Go From Here?&lt;/em&gt;, address to SCLC 16 August 1967&lt;/a&gt;
-   &lt;/div&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://uvacs2102.github.io/schedule/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://uvacs2102.github.io/schedule/</guid>
-      <description>
-
-&lt;h1 id=&#34;course-schedule&#34;&gt;Course Schedule&lt;/h1&gt;
-
-&lt;p&gt;The schedule is subject to change as the semester progresses, and the
-topics covered will be adjusted flexibly.  The exam dates will not
-move other than for exceptional circumstances.&lt;/p&gt;
-
-&lt;table style=&#34;font-size: 80%&#34;&gt;
-&lt;tr bgcolor=&#34;#CCC&#34;&gt;&lt;td&gt;&lt;b&gt;Date&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Class&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Due [Friday 6:29pm unless noted]&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Tuesday, 22 Aug 2017&lt;/td&gt;&lt;td&gt;  1. Discrete Math, Proof&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;     
-&lt;tr&gt;&lt;td&gt;Thursday, 24 Aug 2017&lt;/td&gt;&lt;td&gt; 2. Methods of Proof    &lt;/td&gt;&lt;td&gt; &lt;a href=&#34;https://goo.gl/forms/DR7nsouNf6sqqIK22&#34;&gt;Registration Survey&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Tuesday, 29 Aug 2017&lt;/td&gt;&lt;td&gt;  3. Well Ordering Principle &lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;     
-&lt;tr&gt;&lt;td&gt;Thursday, 31 Aug 2017&lt;/td&gt;&lt;td&gt;  4. Logical Formulas&lt;/td&gt;&lt;td&gt; PS1 (MCS Ch 1, classes 1 and 2)&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Tuesday, 5 Sep 2017&lt;/td&gt;&lt;td&gt;   5. CNF, Quantifiers, and Proofs       &lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;      
-&lt;tr&gt;&lt;td&gt;Thursday, 7 Sep 2017&lt;/td&gt;&lt;td&gt;  6. Review &lt;/td&gt;&lt;td&gt; PS2 (MCS Ch 2-3.5, classes 3-4)&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Tuesday, 12 Sep 2017&lt;/td&gt;&lt;td&gt;  7. Sets&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;     
-&lt;tr&gt;&lt;td&gt;Thursday, 14 Sep 2017&lt;/td&gt;&lt;td&gt; 8. Functions and Relations&lt;/td&gt;&lt;td&gt; PS3 (MCS Ch 3, classes 5-6)&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Tuesday, 19 Sep 2017&lt;/td&gt;&lt;td&gt;  9. Cardinality of Finite Sets&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;   
-&lt;tr&gt;&lt;td&gt;Thursday, 21 Sep 2017&lt;/td&gt;&lt;td&gt; 10. Induction&lt;/td&gt;&lt;td&gt; PS4 (MCS Ch 4.1-4.4, lecture 7-8)&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Tuesday, 26 Sep 2017&lt;/td&gt;&lt;td&gt;  11. Strong Induction&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;    
-&lt;tr&gt;&lt;td&gt;Thursday, 28 Sep 2017&lt;/td&gt;&lt;td&gt; 12. Review&lt;/td&gt;&lt;td&gt;PS5 (MCS Ch 4.5, 5, classes 9-10)&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Tuesday, 3 Oct 2017&lt;/td&gt;&lt;td colspan=2 bgcolor=&#34;#FFEBCD&#34; style=&#34;text-align: center;&#34;&gt;Reading Days &lt;/td&gt;&lt;/tr&gt;  
-&lt;tr&gt;&lt;td&gt;&lt;b&gt;Thursday, 5 Oct 2017&lt;/b&gt;&lt;/td&gt;&lt;td colspan=2 bgcolor=&#34;#FFAAAA&#34; style=&#34;text-align: center;&#34;&gt;Exam 1 (in class) &lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Tuesday, 10 Oct 2017&lt;/td&gt;&lt;td&gt;  13. State Machines    &lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;      
-&lt;tr&gt;&lt;td&gt;Thursday, 12 Oct 2017&lt;/td&gt;&lt;td&gt; 14. Invariant Principle&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;     
-&lt;tr&gt;&lt;td&gt;Tuesday, 17 Oct 2017&lt;/td&gt;&lt;td&gt;  15. Recursive Data Types&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;       
-&lt;tr&gt;&lt;td&gt;Thursday, 19 Oct 2017&lt;/td&gt;&lt;td&gt; 16. Structural Induction&lt;/td&gt;&lt;td&gt; PS6 (MCS Ch 6, class 13-14)&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Tuesday, 24 Oct 2017&lt;/td&gt;&lt;td&gt;  17. Infinite Sets&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;     
-&lt;tr&gt;&lt;td&gt;Thursday, 26 Oct 2017&lt;/td&gt;&lt;td&gt; 18. Uncountable Sets&lt;/td&gt;&lt;td&gt; PS7 (MCS Ch 7, class 15-16) &lt;/td&gt;&lt;tr&gt;
-&lt;tr&gt;&lt;td&gt;Tuesday, 31 Oct 2017&lt;/td&gt;&lt;td&gt;  19. Infinite Infinities&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;     
-&lt;tr&gt;&lt;td&gt;Thursday, 2 Nov 2017&lt;/td&gt;&lt;td&gt;  20. Review&lt;/td&gt;&lt;td&gt; PS8 (MCS Ch 8, class 18-19)
-&lt;tr&gt;&lt;td&gt;Tuesday, 7 Nov 2017&lt;/td&gt;&lt;td&gt;   21. Number Theory&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;     
-&lt;tr&gt;&lt;td&gt;&lt;b&gt;Thursday, 9 Nov 2017&lt;/b&gt;&lt;/td&gt;&lt;td colspan=2 bgcolor=&#34;#FFAAAA&#34; style=&#34;text-align: center;&#34;&gt; Exam 2 (in class) - covers through PS8&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Tuesday, 14 Nov 2017&lt;/td&gt;&lt;td&gt;  22. Cryptography&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;      
-&lt;tr&gt;&lt;td&gt;Thursday, 16 Nov 2017&lt;/td&gt;&lt;td&gt; 23. Counting&lt;/td&gt;&lt;td&gt; 
-&lt;tr&gt;&lt;td&gt;Tuesday, 21 Nov 2017&lt;/td&gt;&lt;td&gt;  24. Probability&lt;/td&gt;&lt;td&gt;PS9 (MCS Ch 9, classes 21-23) (due 6:29pm Wednesday, 23 Nov)&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Thursday, 23 Nov 2017&lt;/td&gt;&lt;td colspan=2 bgcolor=&#34;#FFEBCD&#34; style=&#34;text-align: center;&#34;&gt; Thanksgiving Break&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Tuesday, 28 Nov 2017&lt;/td&gt;&lt;td&gt;  25. Computability&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;   
-&lt;tr&gt;&lt;td&gt;Thursday, 30 Nov 2017&lt;/td&gt;&lt;td&gt;  26. Undecidability&lt;/td&gt;&lt;td&gt;PS&amp;Omega;&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Tuesday, 5 Dec 2017&lt;/td&gt;&lt;td&gt;   27. Wrap-Up&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;     
-       
-&lt;tr&gt;&lt;td&gt;&lt;b&gt;Thursday, 7 Dec 2017&lt;/b&gt;&lt;/td&gt;&lt;td colspan=2 bgcolor=&#34;#FFAAAA&#34; style=&#34;text-align: center;&#34;&gt;Final Exam (9am-noon)&lt;/td&gt;&lt;/tr&gt;
-&lt;/table&gt;
 </description>
     </item>
     

@@ -6,30 +6,13 @@
     <description>Recent content in Post-rsses on cs2102: Discrete Math</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 17 Mar 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 22 Aug 2017 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://uvacs2102.github.io/post/index.xml" rel="self" type="application/rss+xml" />
-    
-    <item>
-      <title>Fall 2017 Course</title>
-      <link>https://uvacs2102.github.io/fall2017/</link>
-      <pubDate>Fri, 17 Mar 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://uvacs2102.github.io/fall2017/</guid>
-      <description>&lt;p&gt;cs2102 will be offered in Fall 2017, co-taught by &lt;a href=&#34;https://www.cs.virginia.edu/~mohammad/&#34;&gt;Mohammad
-Mahmoody&lt;/a&gt; and &lt;a href=&#34;https://www.cs.virginia.edu/evans&#34;&gt;David
-Evans&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;For an idea what the course will be like, see last year&amp;rsquo;s &lt;a href=&#34;https://uvacs2102.github.io/f16&#34;&gt;course
-site&lt;/a&gt;. Some things will change,
-though. Course materials for Fall 2017 will appear hear when they are
-available.&lt;/p&gt;
-</description>
-    </item>
     
     <item>
       <title>Class 1: What makes it go?</title>
       <link>https://uvacs2102.github.io/class1/</link>
-      <pubDate>Mon, 22 Aug 2016 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 22 Aug 2017 00:00:00 +0000</pubDate>
       
       <guid>https://uvacs2102.github.io/class1/</guid>
       <description>
@@ -171,6 +154,23 @@ $$&lt;/p&gt;
 &lt;em&gt;Through violence you may murder a liar but you can&amp;rsquo;t establish truth. Through violence you may murder a hater, but you can&amp;rsquo;t murder hate. Darkness cannot put out darkness. Only light can do that.&lt;/em&gt;&lt;br /&gt;
 Martin Luther King, Jr., &lt;a href=&#34;http://kingencyclopedia.stanford.edu/encyclopedia/documentsentry/where_do_we_go_from_here_delivered_at_the_11th_annual_sclc_convention/&#34;&gt;&lt;em&gt;Where Do We Go From Here?&lt;/em&gt;, address to SCLC 16 August 1967&lt;/a&gt;
    &lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Fall 2017 Course</title>
+      <link>https://uvacs2102.github.io/fall2017/</link>
+      <pubDate>Fri, 17 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/fall2017/</guid>
+      <description>&lt;p&gt;cs2102 will be offered in Fall 2017, co-taught by &lt;a href=&#34;https://www.cs.virginia.edu/~mohammad/&#34;&gt;Mohammad
+Mahmoody&lt;/a&gt; and &lt;a href=&#34;https://www.cs.virginia.edu/evans&#34;&gt;David
+Evans&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;For an idea what the course will be like, see last year&amp;rsquo;s &lt;a href=&#34;https://uvacs2102.github.io/f16&#34;&gt;course
+site&lt;/a&gt;. Some things will change,
+though. Course materials for Fall 2017 will appear hear when they are
+available.&lt;/p&gt;
 </description>
     </item>
     
