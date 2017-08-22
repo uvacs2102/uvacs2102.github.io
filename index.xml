@@ -42,7 +42,7 @@
 &lt;p&gt;&lt;strong&gt;Materials:&lt;/strong&gt; The primary textbook is:&lt;/p&gt;
 
 &lt;blockquote&gt;
-&lt;p&gt;Eric Lehman, F. Thomson Leighton, and Albert R. Meyer. &lt;a href=&#34;../docs/mcs17.pdf&#34;&gt;&lt;em&gt;Mathematics for
+&lt;p&gt;Eric Lehman, F. Thomson Leighton, and Albert R. Meyer. &lt;a href=&#34;../docs/mcs.pdf&#34;&gt;&lt;em&gt;Mathematics for
 Computer Science&lt;/em&gt;&lt;/a&gt;. (2017/6/15 version).  This book is
 freely available on-line, and generously released under a &lt;a href=&#34;https://creativecommons.org/licenses/by-sa/3.0/&#34;&gt;Creative
 Commons Attribution-ShareAlike 3.0
@@ -86,49 +86,58 @@ Zheng Wang.
 &lt;table width=100% style=&#34;font-size: 85%;&#34;&gt;
 &lt;tr align=&#34;bottom&#34;&gt;
 &lt;td style=&#34;text-align: center; vertical-align: bottom;&#34;&gt;Amar Singh&lt;/td&gt;
-&lt;td style=&#34;text-align: center; vertical-align: bottom;&#34;&gt;&lt;a href=&#34;https://uvacs2102.github.io/images/staff/bhuvanesh.jpeg&#34;&gt;&lt;img align=&#34;center&#34; src=&#34;https://uvacs2102.github.io/images/staff/bhuvanesh.jpeg&#34; width=&#34;128&#34;&gt;&lt;br&gt;
+&lt;td style=&#34;text-align: center; vertical-align: bottom;&#34;&gt;&lt;a href=&#34;https://uvacs2102.github.io/images/staff/bhuvanesh.jpeg&#34;&gt;&lt;img align=&#34;center&#34; src=&#34;https://uvacs2102.github.io/images/staff/bhuvanesh.jpeg&#34; width=&#34;128&#34;&gt;&lt;/a&gt;&lt;br&gt;
 Bhuvanesh&amp;nbsp;Murali&lt;/td&gt;
 &lt;td style=&#34;text-align: center; vertical-align: bottom;&#34;&gt;
-&lt;a href=&#34;https://uvacs2102.github.io/images/staff/colin.jpeg&#34;&gt;&lt;img align=&#34;center&#34; src=&#34;https://uvacs2102.github.io/images/staff/colin.jpeg&#34; width=&#34;128&#34;&gt;&lt;br&gt;
-Colin Harfst&lt;/a&gt;
+&lt;a href=&#34;https://uvacs2102.github.io/images/staff/colin.jpeg&#34;&gt;&lt;img align=&#34;center&#34; src=&#34;https://uvacs2102.github.io/images/staff/colin.jpeg&#34; width=&#34;128&#34;&gt;&lt;/a&gt;&lt;br&gt;
+Colin Harfst
 &lt;/td&gt;
 &lt;td style=&#34;text-align: center; vertical-align: bottom;&#34;&gt;Fan Feng&lt;/td&gt;
-&lt;td style=&#34;text-align: center; vertical-align: bottom;&#34;&gt;
-&lt;a href=&#34;https://uvacs2102.github.io/images/staff/helensimecek.jpeg&#34;&gt;&lt;img align=&#34;center&#34; src=&#34;https://uvacs2102.github.io/images/staff/helensimecek.jpeg&#34; width=&#34;128&#34;&gt;&lt;br&gt;
-Helen Simecek&lt;/td&gt;
 &lt;/tr&gt;&lt;tr&gt;
 &lt;td style=&#34;text-align: center; vertical-align: bottom;&#34;&gt;
-Jack Herd&lt;/td&gt;
+&lt;a href=&#34;https://uvacs2102.github.io/images/staff/helensimecek.jpeg&#34;&gt;&lt;img align=&#34;center&#34; src=&#34;https://uvacs2102.github.io/images/staff/helensimecek.jpeg&#34; width=&#34;128&#34;&gt;&lt;br&gt;
+Helen Simecek&lt;/td&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;td style=&#34;text-align: center; vertical-align: bottom;&#34;&gt;
+&lt;a href=&#34;https://uvacs2102.github.io/images/staff/henryspece.png&#34;&gt;&lt;img align=&#34;center&#34; src=&#34;https://uvacs2102.github.io/images/staff/henryspece.png&#34; width=&#34;128&#34;&gt;&lt;/a&gt;&lt;br&gt;Henry Spece&lt;/td&gt;
 &lt;td style=&#34;text-align: center; vertical-align: bottom;&#34;&gt;
-&lt;a href=&#34;https://uvacs2102.github.io/images/staff/henryspece.png&#34;&gt;&lt;img align=&#34;center&#34; src=&#34;https://uvacs2102.github.io/images/staff/henryspece.png&#34; width=&#34;128&#34;&gt;&lt;br&gt;Henry Spece&lt;/a&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align: center; vertical-align: bottom;&#34;&gt;Joseph Tobin
-&lt;/td&gt;
-&lt;td style=&#34;text-align: center; vertical-align: bottom;&#34;&gt;&lt;a href=&#34;https://uvacs2102.github.io/images/staff/michaelwoon.png&#34;&gt;&lt;img align=&#34;center&#34; src=&#34;https://uvacs2102.github.io/images/staff/michaelwoon.png&#34; width=&#34;128&#34;&gt;&lt;br&gt;
-Michael Woon&lt;/a&gt;
-&lt;/td&gt;
-&lt;td style=&#34;text-align: center; vertical-align: bottom;&#34;&gt;&lt;a href=&#34;https://uvacs2102.github.io/images/staff/nateolsen.jpeg&#34;&gt;&lt;img align=&#34;center&#34; src=&#34;https://uvacs2102.github.io/images/staff/nateolsen.jpeg&#34; width=&#34;128&#34;&gt;&lt;br&gt;Nate Olsen&lt;/a&gt;
+&lt;a href=&#34;https://uvacs2102.github.io/images/staff/jackherd.png&#34;&gt;&lt;img align=&#34;center&#34; src=&#34;https://uvacs2102.github.io/images/staff/jackherd.png&#34; width=&#34;128&#34;&gt;&lt;/a&gt;&lt;br&gt;
+Jack Herd&lt;/td&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;td style=&#34;text-align: center; vertical-align: bottom;&#34;&gt;
+&lt;a href=&#34;https://uvacs2102.github.io/images/staff/josephtobin.jpeg&#34;&gt;&lt;img align=&#34;center&#34; src=&#34;https://uvacs2102.github.io/images/staff/josephtobin.jpeg&#34; width=&#34;128&#34;&gt;&lt;/a&gt;&lt;br&gt;
+Joseph Tobin
 &lt;/td&gt;
 &lt;/tr&gt;&lt;/tr&gt;&lt;/p&gt;
 
+&lt;p&gt;&lt;td style=&#34;text-align: center; vertical-align: bottom;&#34;&gt;&lt;a href=&#34;https://uvacs2102.github.io/images/staff/michaelwoon.png&#34;&gt;&lt;img align=&#34;center&#34; src=&#34;https://uvacs2102.github.io/images/staff/michaelwoon.png&#34; width=&#34;128&#34;&gt;&lt;/a&gt;&lt;br&gt;
+Michael Woon
+&lt;/td&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;td style=&#34;text-align: center; vertical-align: bottom;&#34;&gt;&lt;a href=&#34;https://uvacs2102.github.io/images/staff/nateolsen.jpeg&#34;&gt;&lt;img align=&#34;center&#34; src=&#34;https://uvacs2102.github.io/images/staff/nateolsen.jpeg&#34; width=&#34;128&#34;&gt;&lt;/a&gt;&lt;br&gt;Nate Olsen
+&lt;/td&gt;&lt;/p&gt;
+
 &lt;p&gt;&lt;td style=&#34;text-align: center; vertical-align: bottom;&#34;&gt;
-&lt;a href=&#34;https://uvacs2102.github.io/images/staff/sarahmeng.png&#34;&gt;&lt;img align=&#34;center&#34; src=&#34;https://uvacs2102.github.io/images/staff/sarahmeng.png&#34; width=&#34;128&#34;&gt;&lt;br&gt;Sarah Meng&lt;/a&gt;
+&lt;a href=&#34;https://uvacs2102.github.io/images/staff/sarahmeng.png&#34;&gt;&lt;img align=&#34;center&#34; src=&#34;https://uvacs2102.github.io/images/staff/sarahmeng.png&#34; width=&#34;128&#34;&gt;&lt;/a&gt;&lt;br&gt;Sarah Meng
 &lt;/td&gt;
 &lt;td style=&#34;text-align: center; vertical-align: bottom;&#34;&gt;
 Sriram Dandu
 &lt;/td&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;td style=&#34;text-align: center; vertical-align: bottom;&#34;&gt;
+&lt;p&gt;&lt;/tr&gt;&lt;tr&gt;
+&lt;td style=&#34;text-align: center; vertical-align: bottom;&#34;&gt;
+&lt;a href=&#34;https://uvacs2102.github.io/images/staff/xiao.jpeg&#34;&gt;&lt;img align=&#34;center&#34; src=&#34;https://uvacs2102.github.io/images/staff/xiao.jpeg&#34; width=&#34;128&#34;&gt;&lt;/a&gt;&lt;br&gt;
 Xiao Zhang
 &lt;/td&gt;
 &lt;td style=&#34;text-align: center; vertical-align: bottom;&#34;&gt;
+&lt;a href=&#34;https://uvacs2102.github.io/images/staff/xueyingbai.jpeg&#34;&gt;&lt;img align=&#34;center&#34; src=&#34;https://uvacs2102.github.io/images/staff/xueyingbai.jpeg&#34; width=&#34;128&#34;&gt;&lt;/a&gt;&lt;br&gt;
 Xueying Bai
 &lt;/td&gt;
 &lt;td style=&#34;text-align: center; vertical-align: bottom;&#34;&gt;
 Yasasvini&amp;nbsp;Puligundle
 &lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
 &lt;td style=&#34;text-align: center; vertical-align: bottom;&#34;&gt;
+&lt;a href=&#34;https://uvacs2102.github.io/images/staff/zhengwang.jpeg&#34;&gt;&lt;img align=&#34;center&#34; src=&#34;https://uvacs2102.github.io/images/staff/zhengwang.jpeg&#34; width=&#34;128&#34;&gt;&lt;/a&gt;&lt;br&gt;
 Zheng Wang
 &lt;/td&gt;
 &lt;/tr&gt;
