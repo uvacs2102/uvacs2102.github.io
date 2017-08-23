@@ -151,9 +151,58 @@ Martin Luther King, Jr., &lt;a href=&#34;http://kingencyclopedia.stanford.edu/en
     </item>
     
     <item>
+      <title>Course Schedule</title>
+      <link>https://uvacs2102.github.io/schedule/</link>
+      <pubDate>Tue, 22 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/schedule/</guid>
+      <description>&lt;p&gt;The schedule is subject to change as the semester progresses, and the
+topics covered will be adjusted flexibly.  The exam dates will not
+move other than for exceptional circumstances.&lt;/p&gt;
+
+&lt;table style=&#34;font-size: 80%&#34;&gt;
+&lt;tr bgcolor=&#34;#CCC&#34;&gt;&lt;td&gt;&lt;b&gt;Date&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Class&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Due [Friday 6:29pm unless noted]&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Tuesday, 22 Aug 2017&lt;/td&gt;&lt;td&gt;  1. Discrete Math, Proof&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;     
+&lt;tr&gt;&lt;td&gt;Thursday, 24 Aug 2017&lt;/td&gt;&lt;td&gt; 2. Methods of Proof    &lt;/td&gt;&lt;td&gt; &lt;a href=&#34;https://goo.gl/forms/DR7nsouNf6sqqIK22&#34;&gt;Registration Survey&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Tuesday, 29 Aug 2017&lt;/td&gt;&lt;td&gt;  3. Well Ordering Principle &lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;     
+&lt;tr&gt;&lt;td&gt;Thursday, 31 Aug 2017&lt;/td&gt;&lt;td&gt;  4. Logical Formulas&lt;/td&gt;&lt;td&gt; PS1 (MCS Ch 1, classes 1 and 2)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Tuesday, 5 Sep 2017&lt;/td&gt;&lt;td&gt;   5. CNF, Quantifiers, and Proofs       &lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;      
+&lt;tr&gt;&lt;td&gt;Thursday, 7 Sep 2017&lt;/td&gt;&lt;td&gt;  6. Review &lt;/td&gt;&lt;td&gt; PS2 (MCS Ch 2-3.5, classes 3-4)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Tuesday, 12 Sep 2017&lt;/td&gt;&lt;td&gt;  7. Sets&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;     
+&lt;tr&gt;&lt;td&gt;Thursday, 14 Sep 2017&lt;/td&gt;&lt;td&gt; 8. Functions and Relations&lt;/td&gt;&lt;td&gt; PS3 (MCS Ch 3, classes 5-6)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Tuesday, 19 Sep 2017&lt;/td&gt;&lt;td&gt;  9. Cardinality of Finite Sets&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;   
+&lt;tr&gt;&lt;td&gt;Thursday, 21 Sep 2017&lt;/td&gt;&lt;td&gt; 10. Induction&lt;/td&gt;&lt;td&gt; PS4 (MCS Ch 4.1-4.4, lecture 7-8)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Tuesday, 26 Sep 2017&lt;/td&gt;&lt;td&gt;  11. Strong Induction&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;    
+&lt;tr&gt;&lt;td&gt;Thursday, 28 Sep 2017&lt;/td&gt;&lt;td&gt; 12. Review&lt;/td&gt;&lt;td&gt;PS5 (MCS Ch 4.5, 5, classes 9-10)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Tuesday, 3 Oct 2017&lt;/td&gt;&lt;td colspan=2 bgcolor=&#34;#FFEBCD&#34; style=&#34;text-align: center;&#34;&gt;Reading Days &lt;/td&gt;&lt;/tr&gt;  
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Thursday, 5 Oct 2017&lt;/b&gt;&lt;/td&gt;&lt;td colspan=2 bgcolor=&#34;#FFAAAA&#34; style=&#34;text-align: center;&#34;&gt;Exam 1 (in class) &lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Tuesday, 10 Oct 2017&lt;/td&gt;&lt;td&gt;  13. State Machines    &lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;      
+&lt;tr&gt;&lt;td&gt;Thursday, 12 Oct 2017&lt;/td&gt;&lt;td&gt; 14. Invariant Principle&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;     
+&lt;tr&gt;&lt;td&gt;Tuesday, 17 Oct 2017&lt;/td&gt;&lt;td&gt;  15. Recursive Data Types&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;       
+&lt;tr&gt;&lt;td&gt;Thursday, 19 Oct 2017&lt;/td&gt;&lt;td&gt; 16. Structural Induction&lt;/td&gt;&lt;td&gt; PS6 (MCS Ch 6, class 13-14)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Tuesday, 24 Oct 2017&lt;/td&gt;&lt;td&gt;  17. Infinite Sets&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;     
+&lt;tr&gt;&lt;td&gt;Thursday, 26 Oct 2017&lt;/td&gt;&lt;td&gt; 18. Uncountable Sets&lt;/td&gt;&lt;td&gt; PS7 (MCS Ch 7, class 15-16) &lt;/td&gt;&lt;tr&gt;
+&lt;tr&gt;&lt;td&gt;Tuesday, 31 Oct 2017&lt;/td&gt;&lt;td&gt;  19. Infinite Infinities&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;     
+&lt;tr&gt;&lt;td&gt;Thursday, 2 Nov 2017&lt;/td&gt;&lt;td&gt;  20. Review&lt;/td&gt;&lt;td&gt; PS8 (MCS Ch 8, class 18-19)
+&lt;tr&gt;&lt;td&gt;Tuesday, 7 Nov 2017&lt;/td&gt;&lt;td&gt;   21. Number Theory&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;     
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Thursday, 9 Nov 2017&lt;/b&gt;&lt;/td&gt;&lt;td colspan=2 bgcolor=&#34;#FFAAAA&#34; style=&#34;text-align: center;&#34;&gt; Exam 2 (in class) - covers through PS8&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Tuesday, 14 Nov 2017&lt;/td&gt;&lt;td&gt;  22. Cryptography&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;      
+&lt;tr&gt;&lt;td&gt;Thursday, 16 Nov 2017&lt;/td&gt;&lt;td&gt; 23. Counting&lt;/td&gt;&lt;td&gt; 
+&lt;tr&gt;&lt;td&gt;Tuesday, 21 Nov 2017&lt;/td&gt;&lt;td&gt;  24. Probability&lt;/td&gt;&lt;td&gt;PS9 (MCS Ch 9, classes 21-23) (due 6:29pm Wednesday, 23 Nov)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Thursday, 23 Nov 2017&lt;/td&gt;&lt;td colspan=2 bgcolor=&#34;#FFEBCD&#34; style=&#34;text-align: center;&#34;&gt; Thanksgiving Break&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Tuesday, 28 Nov 2017&lt;/td&gt;&lt;td&gt;  25. Computability&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;   
+&lt;tr&gt;&lt;td&gt;Thursday, 30 Nov 2017&lt;/td&gt;&lt;td&gt;  26. Undecidability&lt;/td&gt;&lt;td&gt;PS&amp;Omega;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Tuesday, 5 Dec 2017&lt;/td&gt;&lt;td&gt;   27. Wrap-Up&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;     
+       
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Thursday, 7 Dec 2017&lt;/b&gt;&lt;/td&gt;&lt;td colspan=2 bgcolor=&#34;#FFAAAA&#34; style=&#34;text-align: center;&#34;&gt;Final Exam (9am-noon)&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Syllabus</title>
       <link>https://uvacs2102.github.io/syllabus/</link>
-      <pubDate>Mon, 21 Aug 2017 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 22 Aug 2017 00:00:00 +0000</pubDate>
       
       <guid>https://uvacs2102.github.io/syllabus/</guid>
       <description>
@@ -183,7 +232,7 @@ Martin Luther King, Jr., &lt;a href=&#34;http://kingencyclopedia.stanford.edu/en
 &lt;p&gt;&lt;strong&gt;Materials:&lt;/strong&gt; The primary textbook is:&lt;/p&gt;
 
 &lt;blockquote&gt;
-&lt;p&gt;Eric Lehman, F. Thomson Leighton, and Albert R. Meyer. &lt;a href=&#34;../docs/mcs17.pdf&#34;&gt;&lt;em&gt;Mathematics for
+&lt;p&gt;Eric Lehman, F. Thomson Leighton, and Albert R. Meyer. &lt;a href=&#34;../docs/mcs.pdf&#34;&gt;&lt;em&gt;Mathematics for
 Computer Science&lt;/em&gt;&lt;/a&gt;. (2017/6/15 version).  This book is
 freely available on-line, and generously released under a &lt;a href=&#34;https://creativecommons.org/licenses/by-sa/3.0/&#34;&gt;Creative
 Commons Attribution-ShareAlike 3.0
@@ -208,6 +257,7 @@ use that address for course-related messages.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Assistant Teachers:&lt;/strong&gt;&lt;br /&gt;
 &lt;div class=&#34;latex&#34;&gt;
 Amar Singh,
+Anna Wu,
 Bhuvanesh Murali,
 Colin Harfst,
 Fan Feng,
@@ -227,49 +277,62 @@ Zheng Wang.
 &lt;table width=100% style=&#34;font-size: 85%;&#34;&gt;
 &lt;tr align=&#34;bottom&#34;&gt;
 &lt;td style=&#34;text-align: center; vertical-align: bottom;&#34;&gt;Amar Singh&lt;/td&gt;
-&lt;td style=&#34;text-align: center; vertical-align: bottom;&#34;&gt;&lt;a href=&#34;https://uvacs2102.github.io/images/staff/bhuvanesh.jpeg&#34;&gt;&lt;img align=&#34;center&#34; src=&#34;https://uvacs2102.github.io/images/staff/bhuvanesh.jpeg&#34; width=&#34;128&#34;&gt;&lt;br&gt;
+&lt;td style=&#34;text-align: center; vertical-align: bottom;&#34;&gt;Anna Wu&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: bottom;&#34;&gt;&lt;a href=&#34;https://uvacs2102.github.io/images/staff/bhuvanesh.jpeg&#34;&gt;&lt;img align=&#34;center&#34; src=&#34;https://uvacs2102.github.io/images/staff/bhuvanesh.jpeg&#34; width=&#34;128&#34;&gt;&lt;/a&gt;&lt;br&gt;
 Bhuvanesh&amp;nbsp;Murali&lt;/td&gt;
 &lt;td style=&#34;text-align: center; vertical-align: bottom;&#34;&gt;
-&lt;a href=&#34;https://uvacs2102.github.io/images/staff/colin.jpeg&#34;&gt;&lt;img align=&#34;center&#34; src=&#34;https://uvacs2102.github.io/images/staff/colin.jpeg&#34; width=&#34;128&#34;&gt;&lt;br&gt;
-Colin Harfst&lt;/a&gt;
+&lt;a href=&#34;https://uvacs2102.github.io/images/staff/colin.jpeg&#34;&gt;&lt;img align=&#34;center&#34; src=&#34;https://uvacs2102.github.io/images/staff/colin.jpeg&#34; width=&#34;128&#34;&gt;&lt;/a&gt;&lt;br&gt;
+Colin Harfst
 &lt;/td&gt;
+&lt;/tr&gt;
+&lt;table width=100% style=&#34;font-size: 85%;&#34;&gt;
+&lt;tr align=&#34;bottom&#34;&gt;
 &lt;td style=&#34;text-align: center; vertical-align: bottom;&#34;&gt;Fan Feng&lt;/td&gt;
 &lt;td style=&#34;text-align: center; vertical-align: bottom;&#34;&gt;
 &lt;a href=&#34;https://uvacs2102.github.io/images/staff/helensimecek.jpeg&#34;&gt;&lt;img align=&#34;center&#34; src=&#34;https://uvacs2102.github.io/images/staff/helensimecek.jpeg&#34; width=&#34;128&#34;&gt;&lt;br&gt;
 Helen Simecek&lt;/td&gt;
-&lt;/tr&gt;&lt;tr&gt;
 &lt;td style=&#34;text-align: center; vertical-align: bottom;&#34;&gt;
+&lt;a href=&#34;https://uvacs2102.github.io/images/staff/henryspece.png&#34;&gt;&lt;img align=&#34;center&#34; src=&#34;https://uvacs2102.github.io/images/staff/henryspece.png&#34; width=&#34;128&#34;&gt;&lt;/a&gt;&lt;br&gt;Henry Spece&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: bottom;&#34;&gt;
+&lt;a href=&#34;https://uvacs2102.github.io/images/staff/jackherd.png&#34;&gt;&lt;img align=&#34;center&#34; src=&#34;https://uvacs2102.github.io/images/staff/jackherd.png&#34; width=&#34;128&#34;&gt;&lt;/a&gt;&lt;br&gt;
 Jack Herd&lt;/td&gt;
 &lt;td style=&#34;text-align: center; vertical-align: bottom;&#34;&gt;
-&lt;a href=&#34;https://uvacs2102.github.io/images/staff/henryspece.png&#34;&gt;&lt;img align=&#34;center&#34; src=&#34;https://uvacs2102.github.io/images/staff/henryspece.png&#34; width=&#34;128&#34;&gt;&lt;br&gt;Henry Spece&lt;/a&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align: center; vertical-align: bottom;&#34;&gt;Joseph Tobin
+&lt;a href=&#34;https://uvacs2102.github.io/images/staff/josephtobin.jpeg&#34;&gt;&lt;img align=&#34;center&#34; src=&#34;https://uvacs2102.github.io/images/staff/josephtobin.jpeg&#34; width=&#34;128&#34;&gt;&lt;/a&gt;&lt;br&gt;
+Joseph Tobin
 &lt;/td&gt;
-&lt;td style=&#34;text-align: center; vertical-align: bottom;&#34;&gt;&lt;a href=&#34;https://uvacs2102.github.io/images/staff/michaelwoon.png&#34;&gt;&lt;img align=&#34;center&#34; src=&#34;https://uvacs2102.github.io/images/staff/michaelwoon.png&#34; width=&#34;128&#34;&gt;&lt;br&gt;
-Michael Woon&lt;/a&gt;
-&lt;/td&gt;
-&lt;td style=&#34;text-align: center; vertical-align: bottom;&#34;&gt;&lt;a href=&#34;https://uvacs2102.github.io/images/staff/nateolsen.jpeg&#34;&gt;&lt;img align=&#34;center&#34; src=&#34;https://uvacs2102.github.io/images/staff/nateolsen.jpeg&#34; width=&#34;128&#34;&gt;&lt;br&gt;Nate Olsen&lt;/a&gt;
-&lt;/td&gt;
-&lt;/tr&gt;&lt;/tr&gt;&lt;/p&gt;
+&lt;/tr&gt;
+&lt;/table&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;table width=100% style=&#34;font-size: 85%;&#34;&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align: center; vertical-align: bottom;&#34;&gt;&lt;a href=&#34;https://uvacs2102.github.io/images/staff/michaelwoon.png&#34;&gt;&lt;img align=&#34;center&#34; src=&#34;https://uvacs2102.github.io/images/staff/michaelwoon.png&#34; width=&#34;128&#34;&gt;&lt;/a&gt;&lt;br&gt;
+Michael Woon
+&lt;/td&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;td style=&#34;text-align: center; vertical-align: bottom;&#34;&gt;&lt;a href=&#34;https://uvacs2102.github.io/images/staff/nateolsen.jpeg&#34;&gt;&lt;img align=&#34;center&#34; src=&#34;https://uvacs2102.github.io/images/staff/nateolsen.jpeg&#34; width=&#34;128&#34;&gt;&lt;/a&gt;&lt;br&gt;Nate Olsen
+&lt;/td&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;td style=&#34;text-align: center; vertical-align: bottom;&#34;&gt;
-&lt;a href=&#34;https://uvacs2102.github.io/images/staff/sarahmeng.png&#34;&gt;&lt;img align=&#34;center&#34; src=&#34;https://uvacs2102.github.io/images/staff/sarahmeng.png&#34; width=&#34;128&#34;&gt;&lt;br&gt;Sarah Meng&lt;/a&gt;
+&lt;a href=&#34;https://uvacs2102.github.io/images/staff/sarahmeng.png&#34;&gt;&lt;img align=&#34;center&#34; src=&#34;https://uvacs2102.github.io/images/staff/sarahmeng.png&#34; width=&#34;128&#34;&gt;&lt;/a&gt;&lt;br&gt;Sarah Meng
 &lt;/td&gt;
 &lt;td style=&#34;text-align: center; vertical-align: bottom;&#34;&gt;
 Sriram Dandu
 &lt;/td&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;td style=&#34;text-align: center; vertical-align: bottom;&#34;&gt;
+&lt;p&gt;&lt;/tr&gt;&lt;tr&gt;
+&lt;td style=&#34;text-align: center; vertical-align: bottom;&#34;&gt;
+&lt;a href=&#34;https://uvacs2102.github.io/images/staff/xiao.jpeg&#34;&gt;&lt;img align=&#34;center&#34; src=&#34;https://uvacs2102.github.io/images/staff/xiao.jpeg&#34; width=&#34;128&#34;&gt;&lt;/a&gt;&lt;br&gt;
 Xiao Zhang
 &lt;/td&gt;
 &lt;td style=&#34;text-align: center; vertical-align: bottom;&#34;&gt;
+&lt;a href=&#34;https://uvacs2102.github.io/images/staff/xueyingbai.jpeg&#34;&gt;&lt;img align=&#34;center&#34; src=&#34;https://uvacs2102.github.io/images/staff/xueyingbai.jpeg&#34; width=&#34;128&#34;&gt;&lt;/a&gt;&lt;br&gt;
 Xueying Bai
 &lt;/td&gt;
 &lt;td style=&#34;text-align: center; vertical-align: bottom;&#34;&gt;
 Yasasvini&amp;nbsp;Puligundle
 &lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
 &lt;td style=&#34;text-align: center; vertical-align: bottom;&#34;&gt;
+&lt;a href=&#34;https://uvacs2102.github.io/images/staff/zhengwang.jpeg&#34;&gt;&lt;img align=&#34;center&#34; src=&#34;https://uvacs2102.github.io/images/staff/zhengwang.jpeg&#34; width=&#34;128&#34;&gt;&lt;/a&gt;&lt;br&gt;
 Zheng Wang
 &lt;/td&gt;
 &lt;/tr&gt;
@@ -634,59 +697,6 @@ implication to a skeptical reader.&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;p&gt;&lt;/div&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://uvacs2102.github.io/schedule/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://uvacs2102.github.io/schedule/</guid>
-      <description>
-
-&lt;h1 id=&#34;course-schedule&#34;&gt;Course Schedule&lt;/h1&gt;
-
-&lt;p&gt;The schedule is subject to change as the semester progresses, and the
-topics covered will be adjusted flexibly.  The exam dates will not
-move other than for exceptional circumstances.&lt;/p&gt;
-
-&lt;table style=&#34;font-size: 80%&#34;&gt;
-&lt;tr bgcolor=&#34;#CCC&#34;&gt;&lt;td&gt;&lt;b&gt;Date&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Class&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Due [Friday 6:29pm unless noted]&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Tuesday, 22 Aug 2017&lt;/td&gt;&lt;td&gt;  1. Discrete Math, Proof&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;     
-&lt;tr&gt;&lt;td&gt;Thursday, 24 Aug 2017&lt;/td&gt;&lt;td&gt; 2. Methods of Proof    &lt;/td&gt;&lt;td&gt; &lt;a href=&#34;https://goo.gl/forms/DR7nsouNf6sqqIK22&#34;&gt;Registration Survey&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Tuesday, 29 Aug 2017&lt;/td&gt;&lt;td&gt;  3. Well Ordering Principle &lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;     
-&lt;tr&gt;&lt;td&gt;Thursday, 31 Aug 2017&lt;/td&gt;&lt;td&gt;  4. Logical Formulas&lt;/td&gt;&lt;td&gt; PS1 (MCS Ch 1, classes 1 and 2)&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Tuesday, 5 Sep 2017&lt;/td&gt;&lt;td&gt;   5. CNF, Quantifiers, and Proofs       &lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;      
-&lt;tr&gt;&lt;td&gt;Thursday, 7 Sep 2017&lt;/td&gt;&lt;td&gt;  6. Review &lt;/td&gt;&lt;td&gt; PS2 (MCS Ch 2-3.5, classes 3-4)&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Tuesday, 12 Sep 2017&lt;/td&gt;&lt;td&gt;  7. Sets&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;     
-&lt;tr&gt;&lt;td&gt;Thursday, 14 Sep 2017&lt;/td&gt;&lt;td&gt; 8. Functions and Relations&lt;/td&gt;&lt;td&gt; PS3 (MCS Ch 3, classes 5-6)&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Tuesday, 19 Sep 2017&lt;/td&gt;&lt;td&gt;  9. Cardinality of Finite Sets&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;   
-&lt;tr&gt;&lt;td&gt;Thursday, 21 Sep 2017&lt;/td&gt;&lt;td&gt; 10. Induction&lt;/td&gt;&lt;td&gt; PS4 (MCS Ch 4.1-4.4, lecture 7-8)&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Tuesday, 26 Sep 2017&lt;/td&gt;&lt;td&gt;  11. Strong Induction&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;    
-&lt;tr&gt;&lt;td&gt;Thursday, 28 Sep 2017&lt;/td&gt;&lt;td&gt; 12. Review&lt;/td&gt;&lt;td&gt;PS5 (MCS Ch 4.5, 5, classes 9-10)&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Tuesday, 3 Oct 2017&lt;/td&gt;&lt;td colspan=2 bgcolor=&#34;#FFEBCD&#34; style=&#34;text-align: center;&#34;&gt;Reading Days &lt;/td&gt;&lt;/tr&gt;  
-&lt;tr&gt;&lt;td&gt;&lt;b&gt;Thursday, 5 Oct 2017&lt;/b&gt;&lt;/td&gt;&lt;td colspan=2 bgcolor=&#34;#FFAAAA&#34; style=&#34;text-align: center;&#34;&gt;Exam 1 (in class) &lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Tuesday, 10 Oct 2017&lt;/td&gt;&lt;td&gt;  13. State Machines    &lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;      
-&lt;tr&gt;&lt;td&gt;Thursday, 12 Oct 2017&lt;/td&gt;&lt;td&gt; 14. Invariant Principle&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;     
-&lt;tr&gt;&lt;td&gt;Tuesday, 17 Oct 2017&lt;/td&gt;&lt;td&gt;  15. Recursive Data Types&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;       
-&lt;tr&gt;&lt;td&gt;Thursday, 19 Oct 2017&lt;/td&gt;&lt;td&gt; 16. Structural Induction&lt;/td&gt;&lt;td&gt; PS6 (MCS Ch 6, class 13-14)&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Tuesday, 24 Oct 2017&lt;/td&gt;&lt;td&gt;  17. Infinite Sets&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;     
-&lt;tr&gt;&lt;td&gt;Thursday, 26 Oct 2017&lt;/td&gt;&lt;td&gt; 18. Uncountable Sets&lt;/td&gt;&lt;td&gt; PS7 (MCS Ch 7, class 15-16) &lt;/td&gt;&lt;tr&gt;
-&lt;tr&gt;&lt;td&gt;Tuesday, 31 Oct 2017&lt;/td&gt;&lt;td&gt;  19. Infinite Infinities&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;     
-&lt;tr&gt;&lt;td&gt;Thursday, 2 Nov 2017&lt;/td&gt;&lt;td&gt;  20. Review&lt;/td&gt;&lt;td&gt; PS8 (MCS Ch 8, class 18-19)
-&lt;tr&gt;&lt;td&gt;Tuesday, 7 Nov 2017&lt;/td&gt;&lt;td&gt;   21. Number Theory&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;     
-&lt;tr&gt;&lt;td&gt;&lt;b&gt;Thursday, 9 Nov 2017&lt;/b&gt;&lt;/td&gt;&lt;td colspan=2 bgcolor=&#34;#FFAAAA&#34; style=&#34;text-align: center;&#34;&gt; Exam 2 (in class) - covers through PS8&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Tuesday, 14 Nov 2017&lt;/td&gt;&lt;td&gt;  22. Cryptography&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;      
-&lt;tr&gt;&lt;td&gt;Thursday, 16 Nov 2017&lt;/td&gt;&lt;td&gt; 23. Counting&lt;/td&gt;&lt;td&gt; 
-&lt;tr&gt;&lt;td&gt;Tuesday, 21 Nov 2017&lt;/td&gt;&lt;td&gt;  24. Probability&lt;/td&gt;&lt;td&gt;PS9 (MCS Ch 9, classes 21-23) (due 6:29pm Wednesday, 23 Nov)&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Thursday, 23 Nov 2017&lt;/td&gt;&lt;td colspan=2 bgcolor=&#34;#FFEBCD&#34; style=&#34;text-align: center;&#34;&gt; Thanksgiving Break&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Tuesday, 28 Nov 2017&lt;/td&gt;&lt;td&gt;  25. Computability&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;   
-&lt;tr&gt;&lt;td&gt;Thursday, 30 Nov 2017&lt;/td&gt;&lt;td&gt;  26. Undecidability&lt;/td&gt;&lt;td&gt;PS&amp;Omega;&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Tuesday, 5 Dec 2017&lt;/td&gt;&lt;td&gt;   27. Wrap-Up&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;     
-       
-&lt;tr&gt;&lt;td&gt;&lt;b&gt;Thursday, 7 Dec 2017&lt;/b&gt;&lt;/td&gt;&lt;td colspan=2 bgcolor=&#34;#FFAAAA&#34; style=&#34;text-align: center;&#34;&gt;Final Exam (9am-noon)&lt;/td&gt;&lt;/tr&gt;
-&lt;/table&gt;
 </description>
     </item>
     
