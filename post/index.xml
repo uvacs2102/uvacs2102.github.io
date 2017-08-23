@@ -51,6 +51,11 @@ your signed pledge using Collab.&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Submit a &lt;a href=&#34;https://goo.gl/forms/DR7nsouNf6sqqIK22&#34;&gt;Course Registration Survey&lt;/a&gt; (which includes some questions based on Kun&amp;rsquo;s essay).&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
+&lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;
+   &lt;center&gt;
+&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;71562d80d01c4339b64b96e1c160c480&#34; data-ratio=&#34;1.77777777777778&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
+   &lt;/center&gt;&lt;/p&gt;
+
 &lt;div class=&#34;notpdf&#34;&gt;
 
     &lt;div class=&#34;highlightm&#34;&gt;
@@ -133,16 +138,6 @@ $$&lt;/p&gt;
 $$&lt;/p&gt;
 
 &lt;p&gt;##&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Contrapositive:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;$$
-\infer{NOT(Q) \implies NOT(P)}{P \implies Q}
-\qquad
-\infer{P \implies Q}{NOT(Q) \implies NOT(P)}
-$$&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Theorem to Prove:&lt;/strong&gt; If the product of $x$ and $y$ is even, at least one of $x$ or $y$ must be even.&lt;/p&gt;
 
 &lt;p&gt;&lt;/div&gt;&lt;/p&gt;
 
