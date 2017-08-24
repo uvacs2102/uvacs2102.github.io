@@ -114,7 +114,8 @@ always behave correctly&amp;rdquo;.  Argue that this is not a correct statement.
 &lt;h2 id=&#34;inference-rules&#34;&gt;Inference Rules&lt;/h2&gt;
 
 &lt;p&gt;For each candidate rule below, state whether or not the rule is sound.
-Support your answer with a convincing proof.&lt;/p&gt;
+Support your answer with a convincing proof. The variables $P$, $Q$,
+and $R$ are Boolean propositions (either {\bf true} or {\bf false}).&lt;/p&gt;
 
 &lt;ol&gt;
 &lt;li&gt;&lt;p&gt;$\infer{R}{P \implies Q, Q \implies R}$&lt;/p&gt;&lt;/li&gt;
@@ -125,7 +126,7 @@ Support your answer with a convincing proof.&lt;/p&gt;
 
 &lt;li&gt;&lt;p&gt;$\infer{NOT(Q) \implies P}{P}$&lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;$\infer{((NOT(Q) \implies P) \implies Q) \implies NOT(P)}{P \implies NOT(P)}$&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;$\infer{Q \implies NOT(P)}{P \implies NOT(P)}$&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;h2 id=&#34;proofs&#34;&gt;Proofs&lt;/h2&gt;
