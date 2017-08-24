@@ -125,7 +125,7 @@ Support your answer with a convincing proof.&lt;/p&gt;
 
 &lt;li&gt;&lt;p&gt;$\infer{NOT(Q) \implies P}{P}$&lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;$\infer{((NOT(Q) \implies P) \implies Q) \implies NOT(P)}{true}$&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;$\infer{((NOT(Q) \implies P) \implies Q) \implies NOT(P)}{P \implies NOT(P)}$&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;h2 id=&#34;proofs&#34;&gt;Proofs&lt;/h2&gt;
