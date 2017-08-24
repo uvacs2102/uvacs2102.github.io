@@ -200,40 +200,6 @@ move other than for exceptional circumstances.&lt;/p&gt;
     </item>
     
     <item>
-      <title>Scanning Advice</title>
-      <link>https://uvacs2102.github.io/scanning/</link>
-      <pubDate>Tue, 22 Aug 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://uvacs2102.github.io/scanning/</guid>
-      <description>&lt;p&gt;For many of the assignments in this class, you will need to submit
-your assignment as a PDF file. For the &lt;a href=&#34;https://uvacs2102.github.io/pledge&#34;&gt;Course Pledge&lt;/a&gt;, you
-need to print out a page, sign it, and submit a scan of the page. For
-the Problem Sets, you will need to submit your responses as a single
-PDF file (this could be generated using a typesetting tool, but it is
-also find to handwrite your solutions, and produce a scan to submit).&lt;/p&gt;
-
-&lt;p&gt;If you have access to a scanner and can use that to generate a PDF,
-that should produce good results. There are public scanners to use in
-some of the UVA libraries including in Clemons Library.&lt;/p&gt;
-
-&lt;p&gt;If you are careful though, it is also possible to generate a readable
-PDF using a mobile phone camera.  One tool that works for this is
-&lt;a href=&#34;https://www.camscanner.com/user/download&#34;&gt;CamScanner&lt;/a&gt; (available as a
-free app for limited use, for Android, iPhone, and Windows Phone).
-There are lots of other scanning apps that should work - see &lt;a href=&#34;https://www.cnet.com/how-to/best-scanning-apps-for-android-and-iphone/&#34;&gt;&lt;em&gt;The
-best scanning apps for Android and
-iPhone&lt;/em&gt;&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Please look at the file you have generated before submitting it.  If
-it does not look readable to you, please do not submit it, but figure
-out how to generate a more readable PDF.  Submitting the Course Pledge
-is a good opportunity to make sure you have figured out a way to
-generate readable PDFs, since you will need to do this for the problem
-sets also.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Syllabus</title>
       <link>https://uvacs2102.github.io/syllabus/</link>
       <pubDate>Tue, 22 Aug 2017 00:00:00 +0000</pubDate>
@@ -266,7 +232,7 @@ sets also.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Materials:&lt;/strong&gt; The primary textbook is:&lt;/p&gt;
 
 &lt;blockquote&gt;
-&lt;p&gt;Eric Lehman, F. Thomson Leighton, and Albert R. Meyer. &lt;a href=&#34;../docs/mcs17.pdf&#34;&gt;&lt;em&gt;Mathematics for
+&lt;p&gt;Eric Lehman, F. Thomson Leighton, and Albert R. Meyer. &lt;a href=&#34;../docs/mcs.pdf&#34;&gt;&lt;em&gt;Mathematics for
 Computer Science&lt;/em&gt;&lt;/a&gt;. (2017/6/15 version).  This book is
 freely available on-line, and generously released under a &lt;a href=&#34;https://creativecommons.org/licenses/by-sa/3.0/&#34;&gt;Creative
 Commons Attribution-ShareAlike 3.0
@@ -291,7 +257,6 @@ use that address for course-related messages.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Assistant Teachers:&lt;/strong&gt;&lt;br /&gt;
 &lt;div class=&#34;latex&#34;&gt;
 Amar Singh,
-Anna Wu,
 Bhuvanesh Murali,
 Colin Harfst,
 Fan Feng,
@@ -302,6 +267,7 @@ Joseph Tobin,
 Michael Woon,
 Nate Olsen,
 Sarah Meng,
+Sriram Dandu,
 Xiao Zhang, Xueying Bai,
 Yasasvini Puligundle,
 Zheng Wang.
@@ -310,37 +276,31 @@ Zheng Wang.
 &lt;table width=100% style=&#34;font-size: 85%;&#34;&gt;
 &lt;tr align=&#34;bottom&#34;&gt;
 &lt;td style=&#34;text-align: center; vertical-align: bottom;&#34;&gt;Amar Singh&lt;/td&gt;
-&lt;td style=&#34;text-align: center; vertical-align: bottom;&#34;&gt;
-&lt;a href=&#34;https://uvacs2102.github.io/images/staff/annawu.jpeg&#34;&gt;&lt;img align=&#34;center&#34; src=&#34;https://uvacs2102.github.io/images/staff/annawu.jpeg&#34; width=&#34;128&#34;&gt;&lt;/a&gt;&lt;br&gt;
-Anna Wu&lt;/td&gt;
 &lt;td style=&#34;text-align: center; vertical-align: bottom;&#34;&gt;&lt;a href=&#34;https://uvacs2102.github.io/images/staff/bhuvanesh.jpeg&#34;&gt;&lt;img align=&#34;center&#34; src=&#34;https://uvacs2102.github.io/images/staff/bhuvanesh.jpeg&#34; width=&#34;128&#34;&gt;&lt;/a&gt;&lt;br&gt;
 Bhuvanesh&amp;nbsp;Murali&lt;/td&gt;
 &lt;td style=&#34;text-align: center; vertical-align: bottom;&#34;&gt;
 &lt;a href=&#34;https://uvacs2102.github.io/images/staff/colin.jpeg&#34;&gt;&lt;img align=&#34;center&#34; src=&#34;https://uvacs2102.github.io/images/staff/colin.jpeg&#34; width=&#34;128&#34;&gt;&lt;/a&gt;&lt;br&gt;
 Colin Harfst
 &lt;/td&gt;
-&lt;/tr&gt;
-&lt;table width=100% style=&#34;font-size: 85%;&#34;&gt;
-&lt;tr align=&#34;bottom&#34;&gt;
 &lt;td style=&#34;text-align: center; vertical-align: bottom;&#34;&gt;Fan Feng&lt;/td&gt;
+&lt;/tr&gt;&lt;tr&gt;
 &lt;td style=&#34;text-align: center; vertical-align: bottom;&#34;&gt;
 &lt;a href=&#34;https://uvacs2102.github.io/images/staff/helensimecek.jpeg&#34;&gt;&lt;img align=&#34;center&#34; src=&#34;https://uvacs2102.github.io/images/staff/helensimecek.jpeg&#34; width=&#34;128&#34;&gt;&lt;br&gt;
-Helen Simecek&lt;/td&gt;
-&lt;td style=&#34;text-align: center; vertical-align: bottom;&#34;&gt;
+Helen Simecek&lt;/td&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;td style=&#34;text-align: center; vertical-align: bottom;&#34;&gt;
 &lt;a href=&#34;https://uvacs2102.github.io/images/staff/henryspece.png&#34;&gt;&lt;img align=&#34;center&#34; src=&#34;https://uvacs2102.github.io/images/staff/henryspece.png&#34; width=&#34;128&#34;&gt;&lt;/a&gt;&lt;br&gt;Henry Spece&lt;/td&gt;
 &lt;td style=&#34;text-align: center; vertical-align: bottom;&#34;&gt;
 &lt;a href=&#34;https://uvacs2102.github.io/images/staff/jackherd.png&#34;&gt;&lt;img align=&#34;center&#34; src=&#34;https://uvacs2102.github.io/images/staff/jackherd.png&#34; width=&#34;128&#34;&gt;&lt;/a&gt;&lt;br&gt;
-Jack Herd&lt;/td&gt;
-&lt;td style=&#34;text-align: center; vertical-align: bottom;&#34;&gt;
+Jack Herd&lt;/td&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;td style=&#34;text-align: center; vertical-align: bottom;&#34;&gt;
 &lt;a href=&#34;https://uvacs2102.github.io/images/staff/josephtobin.jpeg&#34;&gt;&lt;img align=&#34;center&#34; src=&#34;https://uvacs2102.github.io/images/staff/josephtobin.jpeg&#34; width=&#34;128&#34;&gt;&lt;/a&gt;&lt;br&gt;
 Joseph Tobin
 &lt;/td&gt;
-&lt;/tr&gt;
-&lt;/table&gt;&lt;/p&gt;
+&lt;/tr&gt;&lt;/tr&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;table width=100% style=&#34;font-size: 85%;&#34;&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align: center; vertical-align: bottom;&#34;&gt;&lt;a href=&#34;https://uvacs2102.github.io/images/staff/michaelwoon.png&#34;&gt;&lt;img align=&#34;center&#34; src=&#34;https://uvacs2102.github.io/images/staff/michaelwoon.png&#34; width=&#34;128&#34;&gt;&lt;/a&gt;&lt;br&gt;
+&lt;p&gt;&lt;td style=&#34;text-align: center; vertical-align: bottom;&#34;&gt;&lt;a href=&#34;https://uvacs2102.github.io/images/staff/michaelwoon.png&#34;&gt;&lt;img align=&#34;center&#34; src=&#34;https://uvacs2102.github.io/images/staff/michaelwoon.png&#34; width=&#34;128&#34;&gt;&lt;/a&gt;&lt;br&gt;
 Michael Woon
 &lt;/td&gt;&lt;/p&gt;
 
@@ -349,23 +309,21 @@ Michael Woon
 
 &lt;p&gt;&lt;td style=&#34;text-align: center; vertical-align: bottom;&#34;&gt;
 &lt;a href=&#34;https://uvacs2102.github.io/images/staff/sarahmeng.png&#34;&gt;&lt;img align=&#34;center&#34; src=&#34;https://uvacs2102.github.io/images/staff/sarahmeng.png&#34; width=&#34;128&#34;&gt;&lt;/a&gt;&lt;br&gt;Sarah Meng
+&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: bottom;&#34;&gt;
+Sriram Dandu
 &lt;/td&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;td style=&#34;text-align: center; vertical-align: bottom;&#34;&gt;
+&lt;p&gt;&lt;/tr&gt;&lt;tr&gt;
+&lt;td style=&#34;text-align: center; vertical-align: bottom;&#34;&gt;
 &lt;a href=&#34;https://uvacs2102.github.io/images/staff/xiao.jpeg&#34;&gt;&lt;img align=&#34;center&#34; src=&#34;https://uvacs2102.github.io/images/staff/xiao.jpeg&#34; width=&#34;128&#34;&gt;&lt;/a&gt;&lt;br&gt;
 Xiao Zhang
 &lt;/td&gt;
-&lt;/tr&gt;
-&lt;/table&gt;
-&lt;table width=100% style=&#34;font-size: 85%;&#34;&gt;
-&lt;tr&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;td style=&#34;text-align: center; vertical-align: bottom;&#34;&gt;
+&lt;td style=&#34;text-align: center; vertical-align: bottom;&#34;&gt;
 &lt;a href=&#34;https://uvacs2102.github.io/images/staff/xueyingbai.jpeg&#34;&gt;&lt;img align=&#34;center&#34; src=&#34;https://uvacs2102.github.io/images/staff/xueyingbai.jpeg&#34; width=&#34;128&#34;&gt;&lt;/a&gt;&lt;br&gt;
 Xueying Bai
 &lt;/td&gt;
 &lt;td style=&#34;text-align: center; vertical-align: bottom;&#34;&gt;
-&lt;a href=&#34;https://uvacs2102.github.io/images/staff/yash.jpeg&#34;&gt;&lt;img align=&#34;center&#34; src=&#34;https://uvacs2102.github.io/images/staff/yash.jpeg&#34; width=&#34;128&#34;&gt;&lt;/a&gt;&lt;br&gt;
 Yasasvini&amp;nbsp;Puligundle
 &lt;/td&gt;
 &lt;td style=&#34;text-align: center; vertical-align: bottom;&#34;&gt;
