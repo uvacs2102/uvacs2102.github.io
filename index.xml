@@ -6,8 +6,23 @@
     <description>Recent content on cs2102: Discrete Math</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 24 Aug 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 26 Aug 2017 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://uvacs2102.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Office Hours Posted</title>
+      <link>https://uvacs2102.github.io/officehoursposted/</link>
+      <pubDate>Sat, 26 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/officehoursposted/</guid>
+      <description>&lt;p&gt;The office hours schedule is now posted on the course site (&lt;a href=&#34;https://uvacs2102.github.io/officehours&#34;&gt;Office
+Hours&lt;/a&gt;) and
+&lt;a href=&#34;https://calendar.google.com/calendar/embed?src=5msg7a1mn7fk4ocj1h41cksh80%40group.calendar.google.com&amp;amp;ctz=America/New_York&#34;&gt;Calendar&lt;/a&gt;. The
+schedule will likely be adjusted as the semester progresses. Office
+hours start on Monday (3pm), and will follow the schedule here after
+that.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Class 2: Proof Methods</title>
@@ -855,8 +870,9 @@ available.&lt;/p&gt;
       <guid>https://uvacs2102.github.io/officehours/</guid>
       <description>&lt;p&gt;The tentative office hours schedule is posted below. The schedule may
 be adjusted as the semester progresses, and updates will be posted
-here and in the course calendar (and late changes will be announced in
-the slack group also).&lt;/p&gt;
+here and in the &lt;a href=&#34;https://calendar.google.com/calendar/embed?src=5msg7a1mn7fk4ocj1h41cksh80%40group.calendar.google.com&amp;amp;ctz=America/New_York&#34;&gt;course
+calendar&lt;/a&gt;
+(and late changes will be announced in the slack group also).&lt;/p&gt;
 
 &lt;p&gt;Dave&amp;rsquo;s office hours are in Rice 507; Mohammad&amp;rsquo;s office hours are in
 Rice 511; the TA&amp;rsquo;s office hours are in Rice 436.&lt;/p&gt;
