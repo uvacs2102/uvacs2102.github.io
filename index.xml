@@ -853,17 +853,13 @@ available.&lt;/p&gt;
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://uvacs2102.github.io/officehours/</guid>
-      <description>
-
-&lt;p&gt;The tentative office hours schedule is posted below. The schedule may
+      <description>&lt;p&gt;The tentative office hours schedule is posted below. The schedule may
 be adjusted as the semester progresses, and updates will be posted
 here and in the course calendar (and late changes will be announced in
 the slack group also).&lt;/p&gt;
 
 &lt;p&gt;Dave&amp;rsquo;s office hours are in Rice 507; Mohammad&amp;rsquo;s office hours are in
 Rice 511; the TA&amp;rsquo;s office hours are in Rice 436.&lt;/p&gt;
-
-&lt;h3 id=&#34;mondays&#34;&gt;Mondays&lt;/h3&gt;
 
 &lt;table&gt;
 &lt;tr bgcolor=&#34;#C38EC7&#34;&gt;&lt;td colspan=2 style=&#39;text-align:center;&#39;&gt;&lt;b&gt;Mondays&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;
@@ -914,7 +910,7 @@ Prashant Gorthi (11am-noon)
 &lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;3:30-9pm&lt;/td&gt;&lt;td&gt;
+&lt;td style=&#34;width:20%&#34;&gt;3:30-9pm&lt;/td&gt;&lt;td&gt;
 Henry Spece (3:30-5pm),
 Zheng Wang (4-5pm),
 Jack Herd (5:30-7pm),
