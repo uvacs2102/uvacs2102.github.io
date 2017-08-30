@@ -50,10 +50,10 @@ hours schedule.&lt;/p&gt;
 &lt;p&gt;What properties must a sensible ordering function have?&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; A set is &lt;em&gt;ordered&lt;/em&gt; with respect to an ordering
-  relation (e.g., &amp;lt;), if two things hold. First: every pair of inequal elements a,b in A either satisfy a&amp;lt;b or b&amp;lt;a. Second, a&amp;lt;b and b&amp;lt;a should always imply that a&amp;lt;b.&lt;/p&gt;
+  relation (e.g., $&amp;lt;$), if two things hold. First: every pair of inequal elements a,b in A either satisfy $a&amp;lt;b$ or $b&amp;lt;a$. Second, $a&amp;lt;b$ and $b&amp;lt;a$ should always imply that $a&amp;lt;b$.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; An ordered set,with respect to an ordering
-  relation (e.g., &amp;lt;), is &lt;em&gt;well-ordered&lt;/em&gt;  if all of its non-empty subsets has a minimum
+  relation (e.g., $&amp;lt;$), is &lt;em&gt;well-ordered&lt;/em&gt;  if all of its non-empty subsets has a minimum
   element.&lt;/p&gt;
 
 &lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;
