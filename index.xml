@@ -10,6 +10,19 @@
     <atom:link href="https://uvacs2102.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Additional Resources</title>
+      <link>https://uvacs2102.github.io/additionalresources/</link>
+      <pubDate>Thu, 31 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/additionalresources/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve added a page, &lt;a href=&#34;https://uvacs2102.github.io/resources&#34;&gt;Resources&lt;/a&gt;, with links to some
+suggested resources beyond the course materials. If you find other
+useful resources, please post them in slack and we&amp;rsquo;ll add them to this
+list.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Class 4: Logical Operators and Formulas</title>
       <link>https://uvacs2102.github.io/class4/</link>
       <pubDate>Thu, 31 Aug 2017 00:00:00 +0000</pubDate>
