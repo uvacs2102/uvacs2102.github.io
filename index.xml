@@ -139,6 +139,62 @@ For each of the formulas below, determine if it is _valid_ and if it is _satisfi
     </item>
     
     <item>
+      <title>Resources</title>
+      <link>https://uvacs2102.github.io/resources/</link>
+      <pubDate>Thu, 31 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/resources/</guid>
+      <description>
+
+&lt;p&gt;Here are some links to suggested additional resources for students who
+would like to have more examples and alternate presentations of the
+material we cover in class and the textbook covers.&lt;/p&gt;
+
+&lt;h2 id=&#34;books&#34;&gt;Books&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.people.vcu.edu/~rhammack/BookOfProof/BookOfProof.pdf&#34;&gt;&lt;em&gt;Book of Proof&lt;/em&gt;&lt;/a&gt;, Richard Hammack&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;This is a creative commons textbook all about proofs, that includes
+  many of the topics we cover in cs2102.  Chapter 5 is on
+  &lt;em&gt;Contrapositive Proof&lt;/em&gt; and Chapter 6 is on &lt;em&gt;Proof by Contradiction&lt;/em&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://cseweb.ucsd.edu/~gill/BWLectSite/&#34;&gt;&lt;em&gt;Lectures in Discrete Mathematics&lt;/em&gt;&lt;/a&gt;, Edward A. Bender and S. Gil Williamson&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;This course is structured quite differently from our course, but covers many of the same topics with many examples.  The most likely useful chapters for cs2102 students are: &lt;a href=&#34;http://cseweb.ucsd.edu/~gill/BWLectSite/Resources/C1U2Lo.pdf&#34;&gt;Logic&lt;/a&gt;, &lt;a href=&#34;http://cseweb.ucsd.edu/~gill/BWLectSite/Resources/C1U4SF.pdf&#34;&gt;Sets and Functions&lt;/a&gt;, &lt;a href=&#34;http://cseweb.ucsd.edu/~gill/BWLectSite/Resources/C1U6IS.pdf&#34;&gt;Inductions, Sequences and Series&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&#34;courses&#34;&gt;Courses&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-042j-mathematics-for-computer-science-spring-2015/&#34;&gt;Mathematics for Computer Science&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;This is an MIT course, which the textbook we use developed from. There are may example problems (some with solutions) that were used in the class.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://web.stanford.edu/class/cs103/&#34;&gt;Stanford cs103&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;The first 13 classes cover similar topics to cs2102; the rest of the course is more like cs3102.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www-inst.eecs.berkeley.edu/~cs70/fa16/&#34;&gt;Berkeley CS70&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Not much material is available on-line, but see &lt;a href=&#34;http://www-inst.eecs.berkeley.edu/~cs70/fa16/&#34;&gt;Mike Clancy and David Wagner&amp;rsquo;s version of the course from 2005&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&#34;math&#34;&gt;Math&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.wolframalpha.com/input/?i=(2k+%2B+1)%5E2&#34;&gt;Wolfram Alpha&lt;/a&gt;
+is very good at doing most of the algebra, calculation, etc. you would
+encounter in this class.  It is also &lt;a href=&#34;http://www.wolframalpha.com/input/?i=(P+%3D%3E+NOT(P))+%3D%3E+(Q+%3D%3E+NOT(P))&#34;&gt;pretty good at logic&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Class 3: Well-Ordering Principle</title>
       <link>https://uvacs2102.github.io/class3/</link>
       <pubDate>Tue, 29 Aug 2017 00:00:00 +0000</pubDate>
