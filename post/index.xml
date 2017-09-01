@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Post-rsses on cs2102: Discrete Math</title>
-    <link>https://uvacs2102.github.io/post/index.xml</link>
-    <description>Recent content in Post-rsses on cs2102: Discrete Math</description>
+    <title>Posts on cs2102: Discrete Math</title>
+    <link>https://uvacs2102.github.io/post/</link>
+    <description>Recent content in Posts on cs2102: Discrete Math</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 31 Aug 2017 00:00:00 +0000</lastBuildDate>
@@ -30,7 +30,7 @@ list.&lt;/p&gt;
       <guid>https://uvacs2102.github.io/class4/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule:a69bef1e5f2725722420b5c4a32452b2&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps1&#34;&gt;&lt;strong&gt;Problem Set 1&lt;/strong&gt;&lt;/a&gt; is due &lt;strong&gt;Friday at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
 
@@ -38,15 +38,15 @@ list.&lt;/p&gt;
 Quantifiers).&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;
-   &lt;center&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/center&gt;&lt;/p&gt;
+   &lt;center&gt;
+&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;9785beead9024671b78c03e16f5bfba2&#34; data-ratio=&#34;1.77777777777778&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
+   &lt;/center&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;highlightm&#34;&gt;
    &lt;a href=&#34;https://uvacs2102.github.io/docs/class4.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes and Questions&lt;/b&gt;&lt;/a&gt;.
    &lt;/div&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
+&lt;h2 id=&#34;links:a69bef1e5f2725722420b5c4a32452b2&#34;&gt;Links&lt;/h2&gt;
 
 &lt;p&gt;Scott Brown, &lt;a href=&#34;http://ms.appliedprobability.org/data/files/selected%20articles/39-1-1.pdf&#34;&gt;&lt;em&gt;The Life and Work of Augustus De Morgan&lt;/em&gt;&lt;/a&gt;. Applied Probability 2006.&lt;/p&gt;
 
@@ -56,9 +56,9 @@ Quantifiers).&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;notes-and-questions&#34;&gt;Notes and Questions&lt;/h1&gt;
+&lt;h1 id=&#34;notes-and-questions:a69bef1e5f2725722420b5c4a32452b2&#34;&gt;Notes and Questions&lt;/h1&gt;
 
-&lt;h2 id=&#34;well-ordering-principle-proof&#34;&gt;Well-Ordering Principle Proof&lt;/h2&gt;
+&lt;h2 id=&#34;well-ordering-principle-proof:a69bef1e5f2725722420b5c4a32452b2&#34;&gt;Well-Ordering Principle Proof&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;Odd Summation.&lt;/strong&gt; (Problem 2.12) Prove that for all $n &amp;gt; 0$, the sum of the first $n$ odd numbers is $n^2$.&lt;/p&gt;
 
@@ -159,7 +159,7 @@ For each of the formulas below, determine if it is _valid_ and if it is _satisfi
       <guid>https://uvacs2102.github.io/class3/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule:b9b50bf0a87e56763567aaebbc820d47&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;This week, you should read MCS Chapter 2 and MCS Chapter 3 (at least
 through the end of Section 3.4).&lt;/p&gt;
@@ -179,7 +179,7 @@ hours schedule.&lt;/p&gt;
    &lt;a href=&#34;https://uvacs2102.github.io/docs/class3.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes and Questions&lt;/b&gt;&lt;/a&gt;.
    &lt;/div&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
+&lt;h2 id=&#34;links:b9b50bf0a87e56763567aaebbc820d47&#34;&gt;Links&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://math.berkeley.edu/~kpmann/Well-ordering.pdf&#34;&gt;&lt;em&gt;The Well-Ordering Theorem: one of the Greatest Mathematical Controversies of All Time&lt;/em&gt;&lt;/a&gt;, Kathryn Mann.&lt;/p&gt;
 
@@ -187,7 +187,7 @@ hours schedule.&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;notes-and-questions&#34;&gt;Notes and Questions&lt;/h1&gt;
+&lt;h1 id=&#34;notes-and-questions:b9b50bf0a87e56763567aaebbc820d47&#34;&gt;Notes and Questions&lt;/h1&gt;
 
 &lt;p&gt;What properties must a sensible ordering function have?&lt;/p&gt;
 
@@ -220,7 +220,7 @@ hours schedule.&lt;/p&gt;
 
 &lt;!--page--&gt;
 
-&lt;h3 id=&#34;template-for-well-ordering-proofs-section-2-2&#34;&gt;Template for Well-Ordering Proofs (Section 2.2)&lt;/h3&gt;
+&lt;h3 id=&#34;template-for-well-ordering-proofs-section-2-2:b9b50bf0a87e56763567aaebbc820d47&#34;&gt;Template for Well-Ordering Proofs (Section 2.2)&lt;/h3&gt;
 
 &lt;p&gt;To prove that $P(n)$ is true for all $n \in \mathbb{N}$:&lt;/p&gt;
 
