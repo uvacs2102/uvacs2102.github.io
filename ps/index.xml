@@ -229,6 +229,8 @@ Your response should be &lt;a href=&#34;https://collab.its.virginia.edu/portal/s
 &lt;p&gt;Solve all 10 problems that follow.  For full credit, your
 answers should be correct, clear, well-written, and convincing.&lt;/p&gt;
 
+&lt;p&gt;(Updated: 4 Sept 2017 - reworded question 2 to avoid use of $\prec$.)&lt;/p&gt;
+
 &lt;h2 id=&#34;un-well-ordered-sets&#34;&gt;(Un)Well-Ordered Sets&lt;/h2&gt;
 
 &lt;p&gt;For each of these question, answer if the given set is
@@ -238,7 +240,7 @@ convincing, argument.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;p&gt;The empty set; $&amp;lt;$.&lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;The set of integers less than 2102, and the comparator is $&amp;gt;$ (namely, $a \prec b$ if and only if $a &amp;gt; b$).&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;The set of integers less than 2102, and the comparator is $&amp;gt;$ (namely, $a$ is ordered before $b$ if and only if $a &amp;gt; b$).&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;The set of positive rational numbers with lowest terms,
 $\frac{p}{q}$ where $q &amp;lt; 2102$, under the order imposed by $&amp;lt;$.&lt;/p&gt;&lt;/li&gt;
