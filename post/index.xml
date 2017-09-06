@@ -6,8 +6,125 @@
     <description>Recent content in Post-rsses on cs2102: Discrete Math</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 01 Sep 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 05 Sep 2017 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://uvacs2102.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Class 5: CNF, Computing, Quantifiers</title>
+      <link>https://uvacs2102.github.io/class5/</link>
+      <pubDate>Tue, 05 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/class5/</guid>
+      <description>
+
+&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps2&#34;&gt;&lt;strong&gt;Problem Set 2&lt;/strong&gt;&lt;/a&gt; is due &lt;strong&gt;Friday at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;
+   &lt;center&gt;
+&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;b6468be050744777ac59c696390d3d89&#34; data-ratio=&#34;1.77777777777778&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
+   &lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlightm&#34;&gt;
+   &lt;a href=&#34;https://uvacs2102.github.io/docs/class5.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes and Questions&lt;/b&gt;&lt;/a&gt;.
+   &lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlightrl&#34;&gt;
+&lt;strong&gt;Challenge Problem Opportunity.&lt;/strong&gt; Find the shortest formula that is
+  equivalent to XOR(&lt;em&gt;a&lt;/em&gt;, &lt;em&gt;b&lt;/em&gt;) using just NAND operations. Shortest
+  means the minimum number of NAND operations. A convincing answer
+  would include a proof that no shorter formula exists.
+   &lt;/div&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
+
+&lt;p&gt;If you want to learn more about how to learn the logic implemented by
+a chip and cryptosystems used in car immobolizers, see
+&lt;a href=&#34;https://www.cs.virginia.edu/~evans/pubs/usenix08/usenix08.pdf&#34;&gt;&lt;em&gt;Reverse-Engineering a Cryptographic RFID Tag&lt;/em&gt;&lt;/a&gt;
+(Karsten Nohl, David Evans, Starbug, and Henryk Pl&amp;ouml;tz, &lt;em&gt;USENIX Security Symposium&lt;/em&gt; 2008), or &lt;a href=&#34;https://www.youtube.com/watch?v=fCwY27EnOF8&#34;&gt;this
+video&lt;/a&gt;.  Please don&amp;rsquo;t steal any cars.&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;notes-and-questions&#34;&gt;Notes and Questions&lt;/h1&gt;
+
+&lt;p&gt;&lt;strong&gt;Definition: satisfiable.&lt;/strong&gt; A logical formula is &lt;em&gt;satisfiable&lt;/em&gt; if there
+  is &lt;em&gt;some&lt;/em&gt; way to make it &lt;strong&gt;true&lt;/strong&gt;.  That is, there is at least one
+  assignment of truth value to its variables that makes the forumla
+  true.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Definition: conjunctive normal form (CNF).&lt;/strong&gt; A logical formula that is
+  written as a conjunction of &lt;em&gt;clauses&lt;/em&gt;, where each clause is a
+  disjunction of &lt;em&gt;literals&lt;/em&gt;, and each literal is either a variable or a
+  negation of a variable, is in &lt;em&gt;conjunctive normal form&lt;/em&gt;.  If each
+  clause has excatly three literals, it is called &lt;em&gt;three conjunctive
+  normal form&lt;/em&gt; (3CNF).&lt;/p&gt;
+
+&lt;p&gt;$$
+(a_1 \vee a_2 \vee \neg a_3) \wedge
+(a_1 \vee \neg a_2 \vee a_3) \wedge
+(\neg a_1 \vee a_2 \vee \neg a_3) \wedge
+(\neg a_1 \vee a_2 \vee a_3)
+$$&lt;/p&gt;
+
+&lt;p&gt;##&lt;/p&gt;
+
+&lt;p&gt;Show that every logical formula can be written in 3-conjunctive normal form.&lt;/p&gt;
+
+&lt;div class=&#34;biggap&#34;&gt;&lt;/div&gt;
+
+&lt;p&gt;What is the maximum number of (different) clauses in a 3CNF formula
+involving 5 variables?&lt;/p&gt;
+
+&lt;p&gt;##&lt;/p&gt;
+
+&lt;p&gt;What is the maximum number of (different) clauses in a &lt;em&gt;satisfiable&lt;/em&gt;
+3CNF formula involving 5 variables?&lt;/p&gt;
+
+&lt;p&gt;##&lt;/p&gt;
+
+&lt;p&gt;What is the maximum number of (different) clauses in a &lt;em&gt;valid&lt;/em&gt; 3CNF formula involving 5 variables?&lt;/p&gt;
+
+&lt;p&gt;##&lt;/p&gt;
+
+&lt;!--page--&gt;
+
+&lt;h2 id=&#34;logical-quantifiers&#34;&gt;Logical Quantifiers&lt;/h2&gt;
+
+&lt;p&gt;$\forall x \in S. P(x)$ means $P$ holds for &lt;em&gt;every&lt;/em&gt; element of $S$.&lt;br /&gt;
+$\exists x \in S. P(x)$ means $P$ holds for &lt;em&gt;at least one&lt;/em&gt; element of $S$.&lt;/p&gt;
+
+&lt;p&gt;Define &lt;em&gt;valid&lt;/em&gt; and &lt;em&gt;satisfiable&lt;/em&gt; using logical quantifiers:&lt;/p&gt;
+
+&lt;p&gt;#&lt;/p&gt;
+
+&lt;p&gt;$\forall x \in S. P(x)$ is equivalent to $\neg(\exists x \in S. \qquad \qquad)$&lt;/p&gt;
+
+&lt;p&gt;###&lt;/p&gt;
+
+&lt;p&gt;Notation: $\textrm{pow}(S)$ denotes the &lt;em&gt;powerset&lt;/em&gt; of $S$.  The powerset
+of a set is the set of all possible subsets of that S.  So,
+$\textrm{pow}(\mathbb{N})$ denotes all subsets of the natural numbers.&lt;/p&gt;
+
+&lt;p&gt;Notation: $A - B$ denotes the &lt;em&gt;difference&lt;/em&gt; between two sets.  It is the
+elements of $A$, with every element of $B$ removed.&lt;/p&gt;
+
+&lt;p&gt;Notation: $\varnothing$ is the &lt;em&gt;empty set&lt;/em&gt;.  It is the set with no elements: ${ }$.&lt;/p&gt;
+
+&lt;p&gt;\begin{center}
+\Large&lt;/p&gt;
+
+&lt;p&gt;$$
+\fillin S \in \textrm{pow}(\mathbb{N}) - { \varnothing } \ldotp \fillin m \in S\ldotp \fillin x \in S - {m}\ldotp m &amp;lt; x
+$$
+\end{center}&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Problem Set 2</title>

@@ -6,8 +6,125 @@
     <description>Recent content on cs2102: Discrete Math</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 01 Sep 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 05 Sep 2017 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://uvacs2102.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Class 5: CNF, Computing, Quantifiers</title>
+      <link>https://uvacs2102.github.io/class5/</link>
+      <pubDate>Tue, 05 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/class5/</guid>
+      <description>
+
+&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps2&#34;&gt;&lt;strong&gt;Problem Set 2&lt;/strong&gt;&lt;/a&gt; is due &lt;strong&gt;Friday at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;
+   &lt;center&gt;
+&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;b6468be050744777ac59c696390d3d89&#34; data-ratio=&#34;1.77777777777778&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
+   &lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlightm&#34;&gt;
+   &lt;a href=&#34;https://uvacs2102.github.io/docs/class5.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes and Questions&lt;/b&gt;&lt;/a&gt;.
+   &lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlightrl&#34;&gt;
+&lt;strong&gt;Challenge Problem Opportunity.&lt;/strong&gt; Find the shortest formula that is
+  equivalent to XOR(&lt;em&gt;a&lt;/em&gt;, &lt;em&gt;b&lt;/em&gt;) using just NAND operations. Shortest
+  means the minimum number of NAND operations. A convincing answer
+  would include a proof that no shorter formula exists.
+   &lt;/div&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
+
+&lt;p&gt;If you want to learn more about how to learn the logic implemented by
+a chip and cryptosystems used in car immobolizers, see
+&lt;a href=&#34;https://www.cs.virginia.edu/~evans/pubs/usenix08/usenix08.pdf&#34;&gt;&lt;em&gt;Reverse-Engineering a Cryptographic RFID Tag&lt;/em&gt;&lt;/a&gt;
+(Karsten Nohl, David Evans, Starbug, and Henryk Pl&amp;ouml;tz, &lt;em&gt;USENIX Security Symposium&lt;/em&gt; 2008), or &lt;a href=&#34;https://www.youtube.com/watch?v=fCwY27EnOF8&#34;&gt;this
+video&lt;/a&gt;.  Please don&amp;rsquo;t steal any cars.&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;notes-and-questions&#34;&gt;Notes and Questions&lt;/h1&gt;
+
+&lt;p&gt;&lt;strong&gt;Definition: satisfiable.&lt;/strong&gt; A logical formula is &lt;em&gt;satisfiable&lt;/em&gt; if there
+  is &lt;em&gt;some&lt;/em&gt; way to make it &lt;strong&gt;true&lt;/strong&gt;.  That is, there is at least one
+  assignment of truth value to its variables that makes the forumla
+  true.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Definition: conjunctive normal form (CNF).&lt;/strong&gt; A logical formula that is
+  written as a conjunction of &lt;em&gt;clauses&lt;/em&gt;, where each clause is a
+  disjunction of &lt;em&gt;literals&lt;/em&gt;, and each literal is either a variable or a
+  negation of a variable, is in &lt;em&gt;conjunctive normal form&lt;/em&gt;.  If each
+  clause has excatly three literals, it is called &lt;em&gt;three conjunctive
+  normal form&lt;/em&gt; (3CNF).&lt;/p&gt;
+
+&lt;p&gt;$$
+(a_1 \vee a_2 \vee \neg a_3) \wedge
+(a_1 \vee \neg a_2 \vee a_3) \wedge
+(\neg a_1 \vee a_2 \vee \neg a_3) \wedge
+(\neg a_1 \vee a_2 \vee a_3)
+$$&lt;/p&gt;
+
+&lt;p&gt;##&lt;/p&gt;
+
+&lt;p&gt;Show that every logical formula can be written in 3-conjunctive normal form.&lt;/p&gt;
+
+&lt;div class=&#34;biggap&#34;&gt;&lt;/div&gt;
+
+&lt;p&gt;What is the maximum number of (different) clauses in a 3CNF formula
+involving 5 variables?&lt;/p&gt;
+
+&lt;p&gt;##&lt;/p&gt;
+
+&lt;p&gt;What is the maximum number of (different) clauses in a &lt;em&gt;satisfiable&lt;/em&gt;
+3CNF formula involving 5 variables?&lt;/p&gt;
+
+&lt;p&gt;##&lt;/p&gt;
+
+&lt;p&gt;What is the maximum number of (different) clauses in a &lt;em&gt;valid&lt;/em&gt; 3CNF formula involving 5 variables?&lt;/p&gt;
+
+&lt;p&gt;##&lt;/p&gt;
+
+&lt;!--page--&gt;
+
+&lt;h2 id=&#34;logical-quantifiers&#34;&gt;Logical Quantifiers&lt;/h2&gt;
+
+&lt;p&gt;$\forall x \in S. P(x)$ means $P$ holds for &lt;em&gt;every&lt;/em&gt; element of $S$.&lt;br /&gt;
+$\exists x \in S. P(x)$ means $P$ holds for &lt;em&gt;at least one&lt;/em&gt; element of $S$.&lt;/p&gt;
+
+&lt;p&gt;Define &lt;em&gt;valid&lt;/em&gt; and &lt;em&gt;satisfiable&lt;/em&gt; using logical quantifiers:&lt;/p&gt;
+
+&lt;p&gt;#&lt;/p&gt;
+
+&lt;p&gt;$\forall x \in S. P(x)$ is equivalent to $\neg(\exists x \in S. \qquad \qquad)$&lt;/p&gt;
+
+&lt;p&gt;###&lt;/p&gt;
+
+&lt;p&gt;Notation: $\textrm{pow}(S)$ denotes the &lt;em&gt;powerset&lt;/em&gt; of $S$.  The powerset
+of a set is the set of all possible subsets of that S.  So,
+$\textrm{pow}(\mathbb{N})$ denotes all subsets of the natural numbers.&lt;/p&gt;
+
+&lt;p&gt;Notation: $A - B$ denotes the &lt;em&gt;difference&lt;/em&gt; between two sets.  It is the
+elements of $A$, with every element of $B$ removed.&lt;/p&gt;
+
+&lt;p&gt;Notation: $\varnothing$ is the &lt;em&gt;empty set&lt;/em&gt;.  It is the set with no elements: ${ }$.&lt;/p&gt;
+
+&lt;p&gt;\begin{center}
+\Large&lt;/p&gt;
+
+&lt;p&gt;$$
+\fillin S \in \textrm{pow}(\mathbb{N}) - { \varnothing } \ldotp \fillin m \in S\ldotp \fillin x \in S - {m}\ldotp m &amp;lt; x
+$$
+\end{center}&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Problem Set 2</title>
@@ -737,7 +854,7 @@ move other than for exceptional circumstances.&lt;/p&gt;
 &lt;tr&gt;&lt;td&gt;Thursday, 24 Aug 2017&lt;/td&gt;&lt;td&gt; 2. Methods of Proof    &lt;/td&gt;&lt;td&gt; &lt;a href=&#34;https://goo.gl/forms/DR7nsouNf6sqqIK22&#34;&gt;Registration Survey&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
 &lt;tr&gt;&lt;td&gt;Tuesday, 29 Aug 2017&lt;/td&gt;&lt;td&gt;  3. Well Ordering Principle &lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;     
 &lt;tr&gt;&lt;td&gt;Thursday, 31 Aug 2017&lt;/td&gt;&lt;td&gt;  4. Logical Formulas&lt;/td&gt;&lt;td&gt; &lt;a href=&#34;https://uvacs2102.github.io/ps/ps1/&#34;&gt;PS1&lt;/a&gt; (MCS Ch 1, classes 1 and 2)&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Tuesday, 5 Sep 2017&lt;/td&gt;&lt;td&gt;   5. Logic in Computation, Quantifiers &lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;   
+&lt;tr&gt;&lt;td&gt;Tuesday, 5 Sep 2017&lt;/td&gt;&lt;td&gt;   5. CNF, Logic in Computation, Quantifiers &lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;      
 &lt;tr&gt;&lt;td&gt;Thursday, 7 Sep 2017&lt;/td&gt;&lt;td&gt;  6. Review &lt;/td&gt;&lt;td&gt; &lt;a href=&#34;https://uvacs2102.github.io/ps/ps2/&#34;&gt;PS2&lt;/a&gt; (MCS Ch 2-3.4, classes 3-4)&lt;/td&gt;&lt;/tr&gt;
 &lt;tr&gt;&lt;td&gt;Tuesday, 12 Sep 2017&lt;/td&gt;&lt;td&gt;  7. Sets&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;     
 &lt;tr&gt;&lt;td&gt;Thursday, 14 Sep 2017&lt;/td&gt;&lt;td&gt; 8. Functions and Relations&lt;/td&gt;&lt;td&gt; PS3 (MCS Ch 3, classes 5-6)&lt;/td&gt;&lt;/tr&gt;
@@ -1172,160 +1289,6 @@ Evans&lt;/a&gt;.&lt;/p&gt;
 site&lt;/a&gt;. Some things will change,
 though. Course materials for Fall 2017 will appear hear when they are
 available.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Office Hours Schedule</title>
-      <link>https://uvacs2102.github.io/officehours/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://uvacs2102.github.io/officehours/</guid>
-      <description>&lt;p&gt;The tentative office hours schedule is posted below. The schedule may
-be adjusted as the semester progresses, and updates will be posted
-here and in the &lt;a href=&#34;https://calendar.google.com/calendar/embed?src=5msg7a1mn7fk4ocj1h41cksh80%40group.calendar.google.com&amp;amp;ctz=America/New_York&#34;&gt;course
-calendar&lt;/a&gt;
-(and late changes will be announced in the slack group also).&lt;/p&gt;
-
-&lt;p&gt;Dave&amp;rsquo;s office hours are in Rice 507; Mohammad&amp;rsquo;s office hours are in
-Rice 511; the TA&amp;rsquo;s office hours are in Rice 436.&lt;/p&gt;
-
-&lt;table&gt;
-&lt;tr bgcolor=&#34;#C38EC7&#34;&gt;&lt;td colspan=2 style=&#39;text-align:center;&#39;&gt;&lt;b&gt;Mondays&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;
-
-&lt;tr&gt;&lt;td style=&#34;width:20%&#34;&gt;10:45-11:45am&lt;/td&gt;&lt;td&gt;Mohammad Mahmoody (starting 9/3) (Rice 511)&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td style=&#34;width:20%&#34;&gt;1:00-2:00pm&lt;/td&gt;&lt;td&gt;Bhuvanesh Murali (starting 9/3) (Rice 436)&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td style=&#34;width:20%&#34;&gt;3:00-6:00pm&lt;/td&gt;
-&lt;td style=&#34;width:80%&#34;&gt;Helen Simecek (3-4:30pm), Sarah Meng (4:30-6pm) (Rice 436)&lt;/td&gt;&lt;/tr&gt;
-
-&lt;tr bgcolor=&#34;#C38EC7&#34;&gt;&lt;td colspan=2 style=&#39;text-align:center;&#39;&gt;&lt;b&gt;Tuesdays&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;
-
-&lt;tr&gt;&lt;td style=&#34;width:20%&#34;&gt;9:30am-12:30pm&lt;/td&gt;
-&lt;td style=&#34;width:80%&#34;&gt;
-Jack Herd (9:30-11am), Nate Olsen (10-11:30am), Michael Woon (11am-12:30pm) (Rice 436)&lt;/td&gt;
-&lt;tr&gt;&lt;td style=&#34;width:20%&#34;&gt;3:30-5pm&lt;/td&gt;
-&lt;td style=&#34;width:80%&#34;&gt;Henry Spece (3:30-5pm) (Rice 436)
-&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;&lt;td style=&#34;width:20%&#34;&gt;7-9pm&lt;/td&gt;
-&lt;td&gt;
-Anna Wu (7-8:30pm), Joeseph Tobin (7-9pm) (Rice 436)
-&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr bgcolor=&#34;#C38EC7&#34;&gt;&lt;td colspan=2 style=&#39;text-align:center;&#39;&gt;&lt;b&gt;Wednesdays&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td style=&#34;width:20%&#34;&gt;9:30am-1:30pm&lt;/td&gt;
-&lt;td&gt;
-Colin Harfst (9:30-11am), Michael Woon (10:30am-noon), Anna Wu (noon-1:30pm) (Rice 436)
-&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;&lt;td style=&#34;width:20%&#34;&gt;2:30-3:30pm&lt;/td&gt;
-&lt;td&gt;
-David Evans (Rice 507)
-&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;&lt;td style=&#34;width:20%&#34;&gt;3:00-9pm&lt;/td&gt;
-&lt;td&gt;
-Bhuvanesh Murali (3-5pm), Helen Simecek (3:30-5pm), Yasasvini Puligundle (5-6pm), 
-Xueying Bai (6-7pm), 
-Fan Feng (7-8:30pm),
-Nate Olsen (7:30-9:00pm) (Rice 436)&lt;/td&gt;&lt;/tr&gt;
-
-&lt;tr bgcolor=&#34;#C38EC7&#34;&gt;&lt;td colspan=2 style=&#39;text-align:center;&#39;&gt;&lt;b&gt;Thursdays&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;
-
-&lt;tr&gt;&lt;td style=&#34;width:20%&#34;&gt;9am-noon&lt;/td&gt;
-&lt;td&gt;
-Amar Singh (9am-10:30), 
-Xiao Zhang (10-11am),
-Prashant Gorthi (11am-noon) (Rice 436)
-&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;width:20%&#34;&gt;3:30-9pm&lt;/td&gt;&lt;td&gt;
-Henry Spece (3:30-5pm),
-Zheng Wang (4-5pm),
-Jack Herd (5:30-7pm),
-Colin Harfst (6-7:30pm),
-Sarah Meng (6:30-8pm),
-Amar Singh (7-8:30pm),
-Fan Feng (7:30-9pm) (Rice 436)&lt;/tr&gt;
-&lt;/table&gt;
-
-&lt;!--
-
-1 Jack Herd     1.5+1.5
-2 Sarah Meng    1.5+1.5
-3 Fan Feng      1.5+1.5
-4 Colin Harfst  1.5+1.5
-G1 Xiao Zhang 1
-5 Helen Simecek 1.5+1.5
-6 Michael Woon  1.5+1.5
-G2 Xueying Bai 1
-G3 Zheng Wang 1
-7 Nate Olsen    1.5+1.5
-8 Bhuvanesh Murali 1+2
-9 Henry Spece 1.5+1.5
-10 Joe Tobin 1.5+1.5
-GTA Yash 1
-G Prashant Gorthi 1
-
-NR: Amar, Anna
-
-Room: 
-Sundays, 2-8
-Mondays, 3-7
-Tuesdays, 9-11; 4-8:30
-Wednesdays, 9-noon; 3:30-9pm
-Thursdays, 4-10pm
-Fridays, 9am-noon
-
-Sundays (2-8pm)
-
-
-
-The regular office hours schedule is below, but check the course
-calendar for any weekly changes.
-
-&lt;table&gt;
-&lt;tr style=&#34;height:0px&#34;&gt;&lt;td style=&#34;width:20%&#34;&gt;&lt;/td&gt;&lt;td style=&#34;width:80%&#34;&gt;&lt;/td&gt;&lt;/tr&gt;
-&lt;tr bgcolor=&#34;#C38EC7&#34;&gt;&lt;td colspan=2 style=&#39;text-align:center;&#39;&gt;&lt;b&gt;Mondays&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;
-
-&lt;tr&gt;&lt;td style=&#34;width:20%&#34;&gt;9:30-10:30am&lt;/td&gt;&lt;td style=&#34;width:80%&#34;&gt;Dave (Rice 507)&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;11am-1pm&lt;/td&gt;&lt;td&gt;Brooke&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;4-6:30pm&lt;/td&gt;&lt;td&gt;Adam G. (4-5pm), Sarah (5-6:30pm)&lt;/td&gt;&lt;/tr&gt;
-
-&lt;tr bgcolor=&#34;#C38EC7&#34;&gt;&lt;td colspan=2 style=&#39;text-align:center;&#39;&gt;&lt;b&gt;Tuesdays&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;noon-1:30pm&lt;/td&gt;&lt;td&gt;Riya&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;3:30-5pm&lt;/td&gt;&lt;td&gt;Luke&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;5-6:30pm&lt;/td&gt;&lt;td&gt;Yaser&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;7:30-9:30pm&lt;/td&gt;&lt;td&gt;Han (7:30-8:30), Subhan (8-9:30)&lt;/td&gt;&lt;/tr&gt;
-
-&lt;tr bgcolor=&#34;#C38EC7&#34;&gt;&lt;td colspan=2 style=&#39;text-align:center;&#39;&gt;&lt;b&gt;Wednesdays&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;10am-1pm&lt;/td&gt;&lt;td&gt;Yong Jae (10-11:30), Brooke (11-1pm), Harrison (11-12:30)&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;1-2pm&lt;/td&gt;&lt;td&gt; Dave (Rice 507)&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;2:30-9:30pm&lt;/td&gt;&lt;td&gt;Adam G (2:30-4:30), Gloria (3-5), Adam R. (5-7), Sarah (6:30-7:30), Han Jin (7:30-8:30), Subhan (8-9:30)&lt;/td&gt;&lt;/tr&gt;
-
-&lt;tr bgcolor=&#34;#C38EC7&#34;&gt;&lt;td colspan=2 style=&#39;text-align:center;&#39;&gt;&lt;b&gt;Thursdays&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;10am-noon&lt;/td&gt;&lt;td&gt;Harrison (10-11:30), Luke (11-noon)&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;12:30-1:30pm&lt;/td&gt;&lt;td&gt;Han&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;3:30-10pm&lt;/td&gt;&lt;td&gt; Gloria (3:30-5), Riya (3:30-5), Adam R. (5-7), Christopher (6-7:30), Gloria (7-8:30), Yaser (8:30-10)&lt;/td&gt;&lt;/tr&gt;
-
-&lt;tr bgcolor=&#34;#C38EC7&#34;&gt;&lt;td colspan=2 style=&#39;text-align:center;&#39;&gt;&lt;b&gt;Fridays&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;9-11:30am&lt;/td&gt;&lt;td&gt;Sarah (9-10:30), Yong Jae (10-11:30)&lt;/td&gt;&lt;/tr&gt; 
-&lt;tr&gt;&lt;td&gt;1:30-2:30pm&lt;/td&gt;&lt;td&gt;Luke&lt;/td&gt;&lt;/tr&gt;
-
-&lt;tr bgcolor=&#34;#C38EC7&#34;&gt;&lt;td colspan=2 style=&#39;text-align:center;&#39;&gt;&lt;b&gt;Sundays&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;noon-2pm&lt;/td&gt;&lt;td&gt;Hussain&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;4-5:30pm&lt;/td&gt;&lt;td&gt;Christopher&lt;/td&gt;&lt;/tr&gt;
-
-&lt;/table&gt;
-
-
---&gt;
-
-&lt;p&gt;&lt;div class=&#34;highlightm&#34;&gt;
-   &lt;a href=&#34;https://goo.gl/ZtQhVY&#34;&gt;Course Calendar Link&lt;/a&gt;
-   &lt;/div&gt;&lt;/p&gt;
 </description>
     </item>
     
