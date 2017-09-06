@@ -6,8 +6,18 @@
     <description>Recent content on cs2102: Discrete Math</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 05 Sep 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 06 Sep 2017 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://uvacs2102.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Problem Set 1 Comments</title>
+      <link>https://uvacs2102.github.io/ps1comments/</link>
+      <pubDate>Wed, 06 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/ps1comments/</guid>
+      <description>&lt;p&gt;The Problem Set 1 comments are now posted in collab: &lt;a href=&#34;https://collab.its.virginia.edu/access/content/group/9bd99d1c-6f18-4542-a7d1-8ffc4fccbd3d/ps1solutions.pdf&#34;&gt;PDF&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Class 5: CNF, Computing, Quantifiers</title>
@@ -1272,23 +1282,6 @@ illustrate common pitfalls or other issues.&lt;/p&gt;
 &lt;p&gt;Sign:       ___________________________________________________   &amp;nbsp;&amp;nbsp; &amp;nbsp;&amp;nbsp; Date: _____________&lt;/p&gt;
 
 &lt;p&gt;Print name:  ____________________________________________________&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Fall 2017 Course</title>
-      <link>https://uvacs2102.github.io/fall2017/</link>
-      <pubDate>Fri, 17 Mar 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://uvacs2102.github.io/fall2017/</guid>
-      <description>&lt;p&gt;cs2102 will be offered in Fall 2017, co-taught by &lt;a href=&#34;https://www.cs.virginia.edu/~mohammad/&#34;&gt;Mohammad
-Mahmoody&lt;/a&gt; and &lt;a href=&#34;https://www.cs.virginia.edu/evans&#34;&gt;David
-Evans&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;For an idea what the course will be like, see last year&amp;rsquo;s &lt;a href=&#34;https://uvacs2102.github.io/f16&#34;&gt;course
-site&lt;/a&gt;. Some things will change,
-though. Course materials for Fall 2017 will appear hear when they are
-available.&lt;/p&gt;
 </description>
     </item>
     
