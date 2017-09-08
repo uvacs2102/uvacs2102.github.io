@@ -422,7 +422,7 @@ list.&lt;/p&gt;
       <guid>https://uvacs2102.github.io/class4/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule:a69bef1e5f2725722420b5c4a32452b2&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps1&#34;&gt;&lt;strong&gt;Problem Set 1&lt;/strong&gt;&lt;/a&gt; is due &lt;strong&gt;Friday at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
 
@@ -438,7 +438,7 @@ Quantifiers).&lt;/p&gt;
    &lt;a href=&#34;https://uvacs2102.github.io/docs/class4.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes and Questions&lt;/b&gt;&lt;/a&gt;.
    &lt;/div&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
+&lt;h2 id=&#34;links:a69bef1e5f2725722420b5c4a32452b2&#34;&gt;Links&lt;/h2&gt;
 
 &lt;p&gt;Scott Brown, &lt;a href=&#34;http://ms.appliedprobability.org/data/files/selected%20articles/39-1-1.pdf&#34;&gt;&lt;em&gt;The Life and Work of Augustus De Morgan&lt;/em&gt;&lt;/a&gt;. Applied Probability 2006.&lt;/p&gt;
 
@@ -448,9 +448,9 @@ Quantifiers).&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;notes-and-questions&#34;&gt;Notes and Questions&lt;/h1&gt;
+&lt;h1 id=&#34;notes-and-questions:a69bef1e5f2725722420b5c4a32452b2&#34;&gt;Notes and Questions&lt;/h1&gt;
 
-&lt;h2 id=&#34;well-ordering-principle-proof&#34;&gt;Well-Ordering Principle Proof&lt;/h2&gt;
+&lt;h2 id=&#34;well-ordering-principle-proof:a69bef1e5f2725722420b5c4a32452b2&#34;&gt;Well-Ordering Principle Proof&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;Odd Summation.&lt;/strong&gt; (Problem 2.12) Prove that for all $n &amp;gt; 0$, the sum of the first $n$ odd numbers is $n^2$.&lt;/p&gt;
 
@@ -555,7 +555,7 @@ For each of the formulas below, determine if it is _valid_ and if it is _satisfi
 would like to have more examples and alternate presentations of the
 material we cover in class and the textbook covers.&lt;/p&gt;
 
-&lt;h2 id=&#34;books&#34;&gt;Books&lt;/h2&gt;
+&lt;h2 id=&#34;books:74f7fb04a75e766307d398251c369a21&#34;&gt;Books&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://www.people.vcu.edu/~rhammack/BookOfProof/BookOfProof.pdf&#34;&gt;&lt;em&gt;Book of Proof&lt;/em&gt;&lt;/a&gt;, Richard Hammack&lt;/p&gt;
 
@@ -571,7 +571,7 @@ material we cover in class and the textbook covers.&lt;/p&gt;
 &lt;p&gt;This course is structured quite differently from our course, but covers many of the same topics with many examples.  The most likely useful chapters for cs2102 students are: &lt;a href=&#34;http://cseweb.ucsd.edu/~gill/BWLectSite/Resources/C1U2Lo.pdf&#34;&gt;Logic&lt;/a&gt;, &lt;a href=&#34;http://cseweb.ucsd.edu/~gill/BWLectSite/Resources/C1U4SF.pdf&#34;&gt;Sets and Functions&lt;/a&gt;, &lt;a href=&#34;http://cseweb.ucsd.edu/~gill/BWLectSite/Resources/C1U6IS.pdf&#34;&gt;Inductions, Sequences and Series&lt;/a&gt;.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h2 id=&#34;courses&#34;&gt;Courses&lt;/h2&gt;
+&lt;h2 id=&#34;courses:74f7fb04a75e766307d398251c369a21&#34;&gt;Courses&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-042j-mathematics-for-computer-science-spring-2015/&#34;&gt;Mathematics for Computer Science&lt;/a&gt;&lt;/p&gt;
 
@@ -591,7 +591,7 @@ material we cover in class and the textbook covers.&lt;/p&gt;
 &lt;p&gt;Not much material is available on-line, but see &lt;a href=&#34;http://www-inst.eecs.berkeley.edu/~cs70/fa16/&#34;&gt;Mike Clancy and David Wagner&amp;rsquo;s version of the course from 2005&lt;/a&gt;.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h2 id=&#34;math&#34;&gt;Math&lt;/h2&gt;
+&lt;h2 id=&#34;math:74f7fb04a75e766307d398251c369a21&#34;&gt;Math&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://www.wolframalpha.com/input/?i=(2k+%2B+1&#34;&gt;Wolfram Alpha&lt;/a&gt;%5E2)
 is very good at doing most of the algebra, calculation, etc. you would
@@ -607,7 +607,7 @@ encounter in this class.  It is also &lt;a href=&#34;http://www.wolframalpha.com
       <guid>https://uvacs2102.github.io/class3/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule:b9b50bf0a87e56763567aaebbc820d47&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;This week, you should read MCS Chapter 2 and MCS Chapter 3 (at least
 through the end of Section 3.4).&lt;/p&gt;
@@ -627,7 +627,7 @@ hours schedule.&lt;/p&gt;
    &lt;a href=&#34;https://uvacs2102.github.io/docs/class3.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes and Questions&lt;/b&gt;&lt;/a&gt;.
    &lt;/div&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
+&lt;h2 id=&#34;links:b9b50bf0a87e56763567aaebbc820d47&#34;&gt;Links&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://math.berkeley.edu/~kpmann/Well-ordering.pdf&#34;&gt;&lt;em&gt;The Well-Ordering Theorem: one of the Greatest Mathematical Controversies of All Time&lt;/em&gt;&lt;/a&gt;, Kathryn Mann.&lt;/p&gt;
 
@@ -635,7 +635,7 @@ hours schedule.&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;notes-and-questions&#34;&gt;Notes and Questions&lt;/h1&gt;
+&lt;h1 id=&#34;notes-and-questions:b9b50bf0a87e56763567aaebbc820d47&#34;&gt;Notes and Questions&lt;/h1&gt;
 
 &lt;p&gt;What properties must a sensible ordering function have?&lt;/p&gt;
 
@@ -668,7 +668,7 @@ either satisfy $a&amp;lt;b$ or $b&amp;lt;a$. Second  $a&amp;lt;b$ and $b&amp;lt;
 
 &lt;!--page--&gt;
 
-&lt;h3 id=&#34;template-for-well-ordering-proofs-section-2-2&#34;&gt;Template for Well-Ordering Proofs (Section 2.2)&lt;/h3&gt;
+&lt;h3 id=&#34;template-for-well-ordering-proofs-section-2-2:b9b50bf0a87e56763567aaebbc820d47&#34;&gt;Template for Well-Ordering Proofs (Section 2.2)&lt;/h3&gt;
 
 &lt;p&gt;To prove that $P(n)$ is true for all $n \in \mathbb{N}$:&lt;/p&gt;
 
@@ -726,7 +726,7 @@ that.&lt;/p&gt;
       <guid>https://uvacs2102.github.io/class2/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule:59cb8283a9bd282131a45da3029e68b4&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;Before &lt;strong&gt;Friday, 6:29pm&lt;/strong&gt;:&lt;/p&gt;
 
@@ -1230,7 +1230,7 @@ License&lt;/a&gt;.&lt;/p&gt;
 chapters 9, 15, 17).  In addition to that textbook, we will have
 selected readings from other sources.&lt;/p&gt;
 
-&lt;h2 id=&#34;staff&#34;&gt;Staff&lt;/h2&gt;
+&lt;h2 id=&#34;staff:051025d606153e159a2b11ffecb897d5&#34;&gt;Staff&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;Teachers:&lt;/strong&gt;&lt;br /&gt;
 &lt;a href=&#34;http://www.cs.virginia.edu/evans&#34;&gt;David Evans&lt;/a&gt; (evans@virginia.edu, &lt;a href=&#34;http://www.cs.virginia.edu/evans/office&#34;&gt;Rice 507&lt;/a&gt;)&lt;br /&gt;
@@ -1344,7 +1344,7 @@ help before you find yourself frustrated and confused.&lt;/p&gt;
 &lt;p&gt;The office hours schedule will be &lt;a href=&#34;https://uvacs2102.github.io/officehours&#34;&gt;posted on-line&lt;/a&gt;, and it will
 be kept updated throughout the semester.&lt;/p&gt;
 
-&lt;h2 id=&#34;communications&#34;&gt;Communications&lt;/h2&gt;
+&lt;h2 id=&#34;communications:051025d606153e159a2b11ffecb897d5&#34;&gt;Communications&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;Course Website:&lt;/strong&gt;
   &lt;a href=&#34;https://uvacs2102.github.io/&#34;&gt;&lt;em&gt;https://uvacs2102.github.io/&lt;/em&gt;&lt;/a&gt;.  All
@@ -1376,7 +1376,7 @@ be kept updated throughout the semester.&lt;/p&gt;
   calendar&lt;/a&gt;.
   Students are encouraged to incorporate this into your own calendar.  If you use Google Calendar, just click the &amp;ldquo;+&amp;rdquo; at the bottom right of the &lt;a href=&#34;https://goo.gl/ZtQhVY&#34;&gt;calendar page&lt;/a&gt;. If you use another calendar program, you can incorporate this calendar using ical.&lt;/p&gt;
 
-&lt;h2 id=&#34;honor&#34;&gt;Honor&lt;/h2&gt;
+&lt;h2 id=&#34;honor:051025d606153e159a2b11ffecb897d5&#34;&gt;Honor&lt;/h2&gt;
 
 &lt;p&gt;We believe strongly in the value of a &lt;em&gt;community of trust&lt;/em&gt;, and expect
 all of the students in this class to contribute to strenghtening and
@@ -1388,7 +1388,7 @@ to be trusted.&lt;/p&gt;
 &lt;p&gt;To ensure that expectations are clear to everyone, all students are
 required to sign the &lt;a href=&#34;https://uvacs2102.github.io/pledge&#34;&gt;course pledge&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h2 id=&#34;topics&#34;&gt;Topics&lt;/h2&gt;
+&lt;h2 id=&#34;topics:051025d606153e159a2b11ffecb897d5&#34;&gt;Topics&lt;/h2&gt;
 
 &lt;p&gt;The topics covered in cs2102 focus on developing the mathematical
 foundation and skills that are most important for computer science.
@@ -1406,7 +1406,7 @@ Expected topics include:&lt;/p&gt;
 &lt;li&gt;Probability theory&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;assignments-and-exams&#34;&gt;Assignments and Exams&lt;/h2&gt;
+&lt;h2 id=&#34;assignments-and-exams:051025d606153e159a2b11ffecb897d5&#34;&gt;Assignments and Exams&lt;/h2&gt;
 
 &lt;p&gt;A detailed schedule is &lt;a href=&#34;https://uvacs2102.github.io/schedule&#34;&gt;maintained on the course website&lt;/a&gt; and
 &lt;a href=&#34;https://goo.gl/ZtQhVY&#34;&gt;calendar&lt;/a&gt;.&lt;/p&gt;
@@ -1422,7 +1422,7 @@ week).&lt;/li&gt;
 &lt;li&gt;Thursday, 7 Dec: Final Exam (9am-noon, scheduled by the registrar)&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;grading&#34;&gt;Grading&lt;/h2&gt;
+&lt;h2 id=&#34;grading:051025d606153e159a2b11ffecb897d5&#34;&gt;Grading&lt;/h2&gt;
 
 &lt;p&gt;Grading will be based on your performance on the exams and homework
 assignments, with additional adjustments made based on exceptional
