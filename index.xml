@@ -17,7 +17,7 @@
       <guid>https://uvacs2102.github.io/class6/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule:647dbe1e5b68015679492d34153c74f5&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;Everyone should have received their graded PS1 by now. Please read &lt;a href=&#34;https://collab.its.virginia.edu/access/content/group/9bd99d1c-6f18-4542-a7d1-8ffc4fccbd3d/ps1solutions.pdf&#34;&gt;the comments posted in collab&lt;/a&gt;.&lt;/p&gt;
 
@@ -36,7 +36,7 @@ src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
    &lt;a href=&#34;https://uvacs2102.github.io/docs/class6.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes and Questions&lt;/b&gt;&lt;/a&gt;.
    &lt;/div&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
+&lt;h2 id=&#34;links:647dbe1e5b68015679492d34153c74f5&#34;&gt;Links&lt;/h2&gt;
 
 &lt;p&gt;If you believe real computing systems have the property that the values
 you read from memory will match what you wrote there, see:&lt;/p&gt;
@@ -68,7 +68,7 @@ is the P vs. NP question in this list.&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;programs-and-proofs&#34;&gt;Programs and Proofs&lt;/h1&gt;
+&lt;h1 id=&#34;programs-and-proofs:647dbe1e5b68015679492d34153c74f5&#34;&gt;Programs and Proofs&lt;/h1&gt;
 
 &lt;p&gt;What does it mean to &lt;em&gt;test&lt;/em&gt; a computing system?  What does it mean for a computing system to &lt;em&gt;always behave correctly&lt;/em&gt;?&lt;/p&gt;
 
@@ -78,7 +78,7 @@ is the P vs. NP question in this list.&lt;/p&gt;
 
 &lt;div class=&#34;biggap&#34;&gt;&lt;/div&gt;
 
-&lt;h1 id=&#34;minima&#34;&gt;Minima&lt;/h1&gt;
+&lt;h1 id=&#34;minima:647dbe1e5b68015679492d34153c74f5&#34;&gt;Minima&lt;/h1&gt;
 
 &lt;p&gt;The &lt;em&gt;minimum&lt;/em&gt; of a set with respect to some comparator operator is the
 element which is &amp;ldquo;less than&amp;rdquo; (according to that comparator) every
@@ -89,7 +89,7 @@ $\forall x \in S - { m } . m \prec x$.&lt;/p&gt;
 \forall S \in \textrm{pow}(\mathbb{N}) - { \varnothing } \ldotp \exists m \in S\ldotp \forall x \in S - {m}\ldotp m &amp;lt; x
 $$&lt;/p&gt;
 
-&lt;h1 id=&#34;formulas-propositions-and-inference-rules&#34;&gt;Formulas, Propositions, and Inference Rules&lt;/h1&gt;
+&lt;h1 id=&#34;formulas-propositions-and-inference-rules:647dbe1e5b68015679492d34153c74f5&#34;&gt;Formulas, Propositions, and Inference Rules&lt;/h1&gt;
 
 &lt;p&gt;$P \implies Q$ is a &lt;em&gt;formula&lt;/em&gt;.&lt;br /&gt;
 $\forall P \in { T, F } . \forall Q \in { T, F } . P \implies Q$ is a &lt;em&gt;proposition&lt;/em&gt;.&lt;br /&gt;
@@ -117,7 +117,7 @@ T$.&lt;/p&gt;
 $\infer{Q}{P}$ is sound if and only if the formula
 $P \implies Q$ is valid. So, this way, we can find out whether an inference rule is sound or not, by checking out whether the corresponding formula is valid or not.&lt;/p&gt;
 
-&lt;h1 id=&#34;negating-quantifiers&#34;&gt;Negating Quantifiers&lt;/h1&gt;
+&lt;h1 id=&#34;negating-quantifiers:647dbe1e5b68015679492d34153c74f5&#34;&gt;Negating Quantifiers&lt;/h1&gt;
 
 &lt;p&gt;What is the negation of $\forall x \in S . P(x)$?
 &lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
@@ -125,7 +125,7 @@ $P \implies Q$ is valid. So, this way, we can find out whether an inference rule
 &lt;p&gt;What is the negation of $\exists x \in S . P(x)$?
 &lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;satisfiability&#34;&gt;Satisfiability&lt;/h1&gt;
+&lt;h1 id=&#34;satisfiability:647dbe1e5b68015679492d34153c74f5&#34;&gt;Satisfiability&lt;/h1&gt;
 
 &lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; A formula is in &lt;em&gt;SAT&lt;/em&gt; if it is in CNF form and it is
   satisfiable.&lt;/p&gt;
@@ -220,7 +220,7 @@ x&lt;/em&gt;{49}) \wedge (x&lt;em&gt;{21} \vee x&lt;/em&gt;{40} \vee \overline{x
 x&lt;em&gt;{7}) \wedge (x&lt;/em&gt;{25} \vee x&lt;em&gt;{47} \vee \overline{x&lt;/em&gt;{12}}) \end{math}
 \end{center}&lt;/p&gt;
 
-&lt;h2 id=&#34;converting-truth-tables-to-dnf&#34;&gt;Converting Truth Tables to DNF&lt;/h2&gt;
+&lt;h2 id=&#34;converting-truth-tables-to-dnf:647dbe1e5b68015679492d34153c74f5&#34;&gt;Converting Truth Tables to DNF&lt;/h2&gt;
 
 &lt;p&gt;\begin{tabular}{cc|cc}
 $P$ &amp;amp; $Q$ &amp;amp; $P \implies Q$ &amp;amp; $P \oplus Q$ \ \hline
@@ -234,7 +234,7 @@ $P$ &amp;amp; $Q$ &amp;amp; $P \implies Q$ &amp;amp; $P \oplus Q$ \ \hline
 
 &lt;p&gt;$$(P \wedge \neg Q) \vee (\neg P \wedge Q)$$&lt;/p&gt;
 
-&lt;h2 id=&#34;converting-truth-tables-to-cnf&#34;&gt;Converting Truth Tables to CNF&lt;/h2&gt;
+&lt;h2 id=&#34;converting-truth-tables-to-cnf:647dbe1e5b68015679492d34153c74f5&#34;&gt;Converting Truth Tables to CNF&lt;/h2&gt;
 
 &lt;p&gt;\begin{tabular}{cc|cc}
 $P$ &amp;amp; $Q$ &amp;amp; $P \implies Q$ &amp;amp; $P \oplus Q$ \ \hline
@@ -248,11 +248,12 @@ $P$ &amp;amp; $Q$ &amp;amp; $P \implies Q$ &amp;amp; $P \oplus Q$ \ \hline
 
 &lt;p&gt;$$(\neg P \vee \neg Q) \wedge (P \vee Q)$$&lt;/p&gt;
 
-&lt;h2 id=&#34;the-related-3cnf-formulation&#34;&gt;The related 3CNF formulation&lt;/h2&gt;
+&lt;h2 id=&#34;the-related-3cnf-formulation:647dbe1e5b68015679492d34153c74f5&#34;&gt;The related 3CNF formulation&lt;/h2&gt;
 
 &lt;p&gt;When we are only interested to know whether or not a given formula is satisfiable, we can write a 3CNF that is satisfiable iff the original formula is. In order to do that, we first write an equivalent CNF, and then convert it to a 3CNF (which is not necessarily equivalent, but only guarantees to preserve the &lt;em&gt;satisfiability&lt;/em&gt; feature) as follow. For each clause with less than 3 literals such as $(A \lor \neg B)$ we add a dummy variable $C$ (only for this clause) and interprete the $(A \lor \neg B)$ as a formula over all of $A,B,C$ and write a CNF for them (which happens to be 3CNF!). For longer clauses such as
-$(A \lor B \lor C \lor D)$ we do another trick of breaking them into smaller parts using new dummy variables as follows $(A \lor B \lor \neg X) \wedge (\neg X \lor C \lor D).$
-&lt;/div&gt;&lt;/p&gt;
+$(A \lor B \lor C \lor D)$ we do another trick of breaking them into smaller parts using new dummy variables as follows $(A \lor B \lor \neg X) \wedge (\neg X \lor C \lor D).$&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -421,7 +422,7 @@ list.&lt;/p&gt;
       <guid>https://uvacs2102.github.io/class4/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule:a69bef1e5f2725722420b5c4a32452b2&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps1&#34;&gt;&lt;strong&gt;Problem Set 1&lt;/strong&gt;&lt;/a&gt; is due &lt;strong&gt;Friday at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
 
@@ -437,7 +438,7 @@ Quantifiers).&lt;/p&gt;
    &lt;a href=&#34;https://uvacs2102.github.io/docs/class4.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes and Questions&lt;/b&gt;&lt;/a&gt;.
    &lt;/div&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;links:a69bef1e5f2725722420b5c4a32452b2&#34;&gt;Links&lt;/h2&gt;
+&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
 
 &lt;p&gt;Scott Brown, &lt;a href=&#34;http://ms.appliedprobability.org/data/files/selected%20articles/39-1-1.pdf&#34;&gt;&lt;em&gt;The Life and Work of Augustus De Morgan&lt;/em&gt;&lt;/a&gt;. Applied Probability 2006.&lt;/p&gt;
 
@@ -447,9 +448,9 @@ Quantifiers).&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;notes-and-questions:a69bef1e5f2725722420b5c4a32452b2&#34;&gt;Notes and Questions&lt;/h1&gt;
+&lt;h1 id=&#34;notes-and-questions&#34;&gt;Notes and Questions&lt;/h1&gt;
 
-&lt;h2 id=&#34;well-ordering-principle-proof:a69bef1e5f2725722420b5c4a32452b2&#34;&gt;Well-Ordering Principle Proof&lt;/h2&gt;
+&lt;h2 id=&#34;well-ordering-principle-proof&#34;&gt;Well-Ordering Principle Proof&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;Odd Summation.&lt;/strong&gt; (Problem 2.12) Prove that for all $n &amp;gt; 0$, the sum of the first $n$ odd numbers is $n^2$.&lt;/p&gt;
 
@@ -606,7 +607,7 @@ encounter in this class.  It is also &lt;a href=&#34;http://www.wolframalpha.com
       <guid>https://uvacs2102.github.io/class3/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule:b9b50bf0a87e56763567aaebbc820d47&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;This week, you should read MCS Chapter 2 and MCS Chapter 3 (at least
 through the end of Section 3.4).&lt;/p&gt;
@@ -626,7 +627,7 @@ hours schedule.&lt;/p&gt;
    &lt;a href=&#34;https://uvacs2102.github.io/docs/class3.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes and Questions&lt;/b&gt;&lt;/a&gt;.
    &lt;/div&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
+&lt;h2 id=&#34;links:b9b50bf0a87e56763567aaebbc820d47&#34;&gt;Links&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://math.berkeley.edu/~kpmann/Well-ordering.pdf&#34;&gt;&lt;em&gt;The Well-Ordering Theorem: one of the Greatest Mathematical Controversies of All Time&lt;/em&gt;&lt;/a&gt;, Kathryn Mann.&lt;/p&gt;
 
@@ -634,7 +635,7 @@ hours schedule.&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;notes-and-questions&#34;&gt;Notes and Questions&lt;/h1&gt;
+&lt;h1 id=&#34;notes-and-questions:b9b50bf0a87e56763567aaebbc820d47&#34;&gt;Notes and Questions&lt;/h1&gt;
 
 &lt;p&gt;What properties must a sensible ordering function have?&lt;/p&gt;
 
@@ -667,7 +668,7 @@ either satisfy $a&amp;lt;b$ or $b&amp;lt;a$. Second  $a&amp;lt;b$ and $b&amp;lt;
 
 &lt;!--page--&gt;
 
-&lt;h3 id=&#34;template-for-well-ordering-proofs-section-2-2&#34;&gt;Template for Well-Ordering Proofs (Section 2.2)&lt;/h3&gt;
+&lt;h3 id=&#34;template-for-well-ordering-proofs-section-2-2:b9b50bf0a87e56763567aaebbc820d47&#34;&gt;Template for Well-Ordering Proofs (Section 2.2)&lt;/h3&gt;
 
 &lt;p&gt;To prove that $P(n)$ is true for all $n \in \mathbb{N}$:&lt;/p&gt;
 
@@ -725,7 +726,7 @@ that.&lt;/p&gt;
       <guid>https://uvacs2102.github.io/class2/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule:59cb8283a9bd282131a45da3029e68b4&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;Before &lt;strong&gt;Friday, 6:29pm&lt;/strong&gt;:&lt;/p&gt;
 
@@ -1229,7 +1230,7 @@ License&lt;/a&gt;.&lt;/p&gt;
 chapters 9, 15, 17).  In addition to that textbook, we will have
 selected readings from other sources.&lt;/p&gt;
 
-&lt;h2 id=&#34;staff&#34;&gt;Staff&lt;/h2&gt;
+&lt;h2 id=&#34;staff:051025d606153e159a2b11ffecb897d5&#34;&gt;Staff&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;Teachers:&lt;/strong&gt;&lt;br /&gt;
 &lt;a href=&#34;http://www.cs.virginia.edu/evans&#34;&gt;David Evans&lt;/a&gt; (evans@virginia.edu, &lt;a href=&#34;http://www.cs.virginia.edu/evans/office&#34;&gt;Rice 507&lt;/a&gt;)&lt;br /&gt;
@@ -1343,7 +1344,7 @@ help before you find yourself frustrated and confused.&lt;/p&gt;
 &lt;p&gt;The office hours schedule will be &lt;a href=&#34;https://uvacs2102.github.io/officehours&#34;&gt;posted on-line&lt;/a&gt;, and it will
 be kept updated throughout the semester.&lt;/p&gt;
 
-&lt;h2 id=&#34;communications&#34;&gt;Communications&lt;/h2&gt;
+&lt;h2 id=&#34;communications:051025d606153e159a2b11ffecb897d5&#34;&gt;Communications&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;Course Website:&lt;/strong&gt;
   &lt;a href=&#34;https://uvacs2102.github.io/&#34;&gt;&lt;em&gt;https://uvacs2102.github.io/&lt;/em&gt;&lt;/a&gt;.  All
@@ -1375,7 +1376,7 @@ be kept updated throughout the semester.&lt;/p&gt;
   calendar&lt;/a&gt;.
   Students are encouraged to incorporate this into your own calendar.  If you use Google Calendar, just click the &amp;ldquo;+&amp;rdquo; at the bottom right of the &lt;a href=&#34;https://goo.gl/ZtQhVY&#34;&gt;calendar page&lt;/a&gt;. If you use another calendar program, you can incorporate this calendar using ical.&lt;/p&gt;
 
-&lt;h2 id=&#34;honor&#34;&gt;Honor&lt;/h2&gt;
+&lt;h2 id=&#34;honor:051025d606153e159a2b11ffecb897d5&#34;&gt;Honor&lt;/h2&gt;
 
 &lt;p&gt;We believe strongly in the value of a &lt;em&gt;community of trust&lt;/em&gt;, and expect
 all of the students in this class to contribute to strenghtening and
@@ -1387,7 +1388,7 @@ to be trusted.&lt;/p&gt;
 &lt;p&gt;To ensure that expectations are clear to everyone, all students are
 required to sign the &lt;a href=&#34;https://uvacs2102.github.io/pledge&#34;&gt;course pledge&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h2 id=&#34;topics&#34;&gt;Topics&lt;/h2&gt;
+&lt;h2 id=&#34;topics:051025d606153e159a2b11ffecb897d5&#34;&gt;Topics&lt;/h2&gt;
 
 &lt;p&gt;The topics covered in cs2102 focus on developing the mathematical
 foundation and skills that are most important for computer science.
@@ -1405,7 +1406,7 @@ Expected topics include:&lt;/p&gt;
 &lt;li&gt;Probability theory&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;assignments-and-exams&#34;&gt;Assignments and Exams&lt;/h2&gt;
+&lt;h2 id=&#34;assignments-and-exams:051025d606153e159a2b11ffecb897d5&#34;&gt;Assignments and Exams&lt;/h2&gt;
 
 &lt;p&gt;A detailed schedule is &lt;a href=&#34;https://uvacs2102.github.io/schedule&#34;&gt;maintained on the course website&lt;/a&gt; and
 &lt;a href=&#34;https://goo.gl/ZtQhVY&#34;&gt;calendar&lt;/a&gt;.&lt;/p&gt;
@@ -1421,7 +1422,7 @@ week).&lt;/li&gt;
 &lt;li&gt;Thursday, 7 Dec: Final Exam (9am-noon, scheduled by the registrar)&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;grading&#34;&gt;Grading&lt;/h2&gt;
+&lt;h2 id=&#34;grading:051025d606153e159a2b11ffecb897d5&#34;&gt;Grading&lt;/h2&gt;
 
 &lt;p&gt;Grading will be based on your performance on the exams and homework
 assignments, with additional adjustments made based on exceptional
