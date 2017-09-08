@@ -146,7 +146,7 @@
   <p class="fronthead"><A href="">Class 6: Quantifiers and More</a> (Thu, 7 Sep 2017)</p>
     
 
-<h3 id="schedule:647dbe1e5b68015679492d34153c74f5">Schedule</h3>
+<h3 id="schedule">Schedule</h3>
 
 <p>Everyone should have received their graded PS1 by now. Please read <a href="https://collab.its.virginia.edu/access/content/group/9bd99d1c-6f18-4542-a7d1-8ffc4fccbd3d/ps1solutions.pdf">the comments posted in collab</a>.</p>
 
@@ -165,7 +165,7 @@ src="//speakerdeck.com/assets/embed.js"></script>
    <a href="/docs/class6.pdf">See PDF Version for <b>Notes and Questions</b></a>.
    </div></p>
 
-<h2 id="links:647dbe1e5b68015679492d34153c74f5">Links</h2>
+<h2 id="links">Links</h2>
 
 <p>If you believe real computing systems have the property that the values
 you read from memory will match what you wrote there, see:</p>
@@ -197,7 +197,7 @@ is the P vs. NP question in this list.</p>
 
 <p><div class="latex"></p>
 
-<h1 id="programs-and-proofs:647dbe1e5b68015679492d34153c74f5">Programs and Proofs</h1>
+<h1 id="programs-and-proofs">Programs and Proofs</h1>
 
 <p>What does it mean to <em>test</em> a computing system?  What does it mean for a computing system to <em>always behave correctly</em>?</p>
 
@@ -207,7 +207,7 @@ is the P vs. NP question in this list.</p>
 
 <div class="biggap"></div>
 
-<h1 id="minima:647dbe1e5b68015679492d34153c74f5">Minima</h1>
+<h1 id="minima">Minima</h1>
 
 <p>The <em>minimum</em> of a set with respect to some comparator operator is the
 element which is &ldquo;less than&rdquo; (according to that comparator) every
@@ -218,7 +218,7 @@ $\forall x \in S - { m } . m \prec x$.</p>
 \forall S \in \textrm{pow}(\mathbb{N}) - { \varnothing } \ldotp \exists m \in S\ldotp \forall x \in S - {m}\ldotp m &lt; x
 $$</p>
 
-<h1 id="formulas-propositions-and-inference-rules:647dbe1e5b68015679492d34153c74f5">Formulas, Propositions, and Inference Rules</h1>
+<h1 id="formulas-propositions-and-inference-rules">Formulas, Propositions, and Inference Rules</h1>
 
 <p>$P \implies Q$ is a <em>formula</em>.<br />
 $\forall P \in { T, F } . \forall Q \in { T, F } . P \implies Q$ is a <em>proposition</em>.<br />
@@ -246,7 +246,7 @@ T$.</p>
 $\infer{Q}{P}$ is sound if and only if the formula
 $P \implies Q$ is valid. So, this way, we can find out whether an inference rule is sound or not, by checking out whether the corresponding formula is valid or not.</p>
 
-<h1 id="negating-quantifiers:647dbe1e5b68015679492d34153c74f5">Negating Quantifiers</h1>
+<h1 id="negating-quantifiers">Negating Quantifiers</h1>
 
 <p>What is the negation of $\forall x \in S . P(x)$?
 <div class="gap"></div></p>
@@ -254,7 +254,7 @@ $P \implies Q$ is valid. So, this way, we can find out whether an inference rule
 <p>What is the negation of $\exists x \in S . P(x)$?
 <div class="gap"></div></p>
 
-<h1 id="satisfiability:647dbe1e5b68015679492d34153c74f5">Satisfiability</h1>
+<h1 id="satisfiability">Satisfiability</h1>
 
 <p><strong>Definition.</strong> A formula is in <em>SAT</em> if it is in CNF form and it is
   satisfiable.</p>
@@ -349,7 +349,7 @@ x</em>{49}) \wedge (x<em>{21} \vee x</em>{40} \vee \overline{x<em>{14}}) \wedge
 x<em>{7}) \wedge (x</em>{25} \vee x<em>{47} \vee \overline{x</em>{12}}) \end{math}
 \end{center}</p>
 
-<h2 id="converting-truth-tables-to-dnf:647dbe1e5b68015679492d34153c74f5">Converting Truth Tables to DNF</h2>
+<h2 id="converting-truth-tables-to-dnf">Converting Truth Tables to DNF</h2>
 
 <p>\begin{tabular}{cc|cc}
 $P$ &amp; $Q$ &amp; $P \implies Q$ &amp; $P \oplus Q$ \ \hline
@@ -363,7 +363,7 @@ $P$ &amp; $Q$ &amp; $P \implies Q$ &amp; $P \oplus Q$ \ \hline
 
 <p>$$(P \wedge \neg Q) \vee (\neg P \wedge Q)$$</p>
 
-<h2 id="converting-truth-tables-to-cnf:647dbe1e5b68015679492d34153c74f5">Converting Truth Tables to CNF</h2>
+<h2 id="converting-truth-tables-to-cnf">Converting Truth Tables to CNF</h2>
 
 <p>\begin{tabular}{cc|cc}
 $P$ &amp; $Q$ &amp; $P \implies Q$ &amp; $P \oplus Q$ \ \hline
@@ -377,7 +377,7 @@ $P$ &amp; $Q$ &amp; $P \implies Q$ &amp; $P \oplus Q$ \ \hline
 
 <p>$$(\neg P \vee \neg Q) \wedge (P \vee Q)$$</p>
 
-<h2 id="the-related-3cnf-formulation:647dbe1e5b68015679492d34153c74f5">The related 3CNF formulation</h2>
+<h2 id="the-related-3cnf-formulation">The related 3CNF formulation</h2>
 
 <p>When we are only interested to know whether or not a given formula is satisfiable, we can write a 3CNF that is satisfiable iff the original formula is. In order to do that, we first write an equivalent CNF, and then convert it to a 3CNF (which is not necessarily equivalent, but only guarantees to preserve the <em>satisfiability</em> feature) as follow. For each clause with less than 3 literals such as $(A \lor \neg B)$ we add a dummy variable $C$ (only for this clause) and interprete the $(A \lor \neg B)$ as a formula over all of $A,B,C$ and write a CNF for them (which happens to be 3CNF!). For longer clauses such as
 $(A \lor B \lor C \lor D)$ we do another trick of breaking them into smaller parts using new dummy variables as follows $(A \lor B \lor \neg X) \wedge (\neg X \lor C \lor D).$</p>
