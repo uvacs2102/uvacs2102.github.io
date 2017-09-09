@@ -6,8 +6,19 @@
     <description>Recent content on cs2102: Discrete Math</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 07 Sep 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 08 Sep 2017 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://uvacs2102.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Problem Set 3</title>
+      <link>https://uvacs2102.github.io/ps3posted/</link>
+      <pubDate>Fri, 08 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/ps3posted/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps3&#34;&gt;&lt;strong&gt;Problem Set 3&lt;/strong&gt;&lt;/a&gt; [&lt;a href=&#34;https://uvacs2102.github.io/docs/ps3.pdf&#34;&gt;PDF&lt;/a&gt;] is now posted and
+is due &lt;strong&gt;Friday, 15 September at 6:29:00pm&lt;/strong&gt;.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Class 6: Quantifiers and More</title>
@@ -387,17 +398,6 @@ $$
 \end{center}&lt;/p&gt;
 
 &lt;p&gt;&lt;/div&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Problem Set 2</title>
-      <link>https://uvacs2102.github.io/ps2posted/</link>
-      <pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://uvacs2102.github.io/ps2posted/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps2&#34;&gt;&lt;strong&gt;Problem Set 2&lt;/strong&gt;&lt;/a&gt; [&lt;a href=&#34;https://uvacs2102.github.io/docs/ps2.pdf&#34;&gt;PDF&lt;/a&gt;] is now posted and
-is due &lt;strong&gt;Friday, 8 September at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
 </description>
     </item>
     
@@ -1114,14 +1114,14 @@ move other than for exceptional circumstances.&lt;/p&gt;
 
 &lt;table style=&#34;font-size: 80%&#34;&gt;
 &lt;tr bgcolor=&#34;#CCC&#34;&gt;&lt;td&gt;&lt;b&gt;Date&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Class&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Due [Friday 6:29pm unless noted]&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Tuesday, 22 Aug 2017&lt;/td&gt;&lt;td&gt;  1. Discrete Math, Proof&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;     
-&lt;tr&gt;&lt;td&gt;Thursday, 24 Aug 2017&lt;/td&gt;&lt;td&gt; 2. Methods of Proof    &lt;/td&gt;&lt;td&gt; &lt;a href=&#34;https://goo.gl/forms/DR7nsouNf6sqqIK22&#34;&gt;Registration Survey&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Tuesday, 29 Aug 2017&lt;/td&gt;&lt;td&gt;  3. Well Ordering Principle &lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;     
-&lt;tr&gt;&lt;td&gt;Thursday, 31 Aug 2017&lt;/td&gt;&lt;td&gt;  4. Logical Formulas&lt;/td&gt;&lt;td&gt; &lt;a href=&#34;https://uvacs2102.github.io/ps/ps1/&#34;&gt;PS1&lt;/a&gt; (MCS Ch 1, classes 1 and 2)&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Tuesday, 5 Sep 2017&lt;/td&gt;&lt;td&gt;   5. CNF, Logic in Computation, Quantifiers &lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;      
-&lt;tr&gt;&lt;td&gt;Thursday, 7 Sep 2017&lt;/td&gt;&lt;td&gt;  6. Review &lt;/td&gt;&lt;td&gt; &lt;a href=&#34;https://uvacs2102.github.io/ps/ps2/&#34;&gt;PS2&lt;/a&gt; (MCS Ch 2-3.4, classes 3-4)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Tuesday, 22 Aug 2017&lt;/td&gt;&lt;td&gt;  &lt;a href=&#34;https://uvacs2102.github.io/class1&#34;&gt;1. Discrete Math, Proof&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;   
+&lt;tr&gt;&lt;td&gt;Thursday, 24 Aug 2017&lt;/td&gt;&lt;td&gt; &lt;a href=&#34;https://uvacs2102.github.io/class2&#34;&gt;2. Methods of Proof&lt;/a&gt;&lt;/td&gt;&lt;td&gt; &lt;a href=&#34;https://goo.gl/forms/DR7nsouNf6sqqIK22&#34;&gt;Registration Survey&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Tuesday, 29 Aug 2017&lt;/td&gt;&lt;td&gt;  &lt;a href=&#34;https://uvacs2102.github.io/class3&#34;&gt;3. Well Ordering Principle&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;    
+&lt;tr&gt;&lt;td&gt;Thursday, 31 Aug 2017&lt;/td&gt;&lt;td&gt; &lt;a href=&#34;https://uvacs2102.github.io/class4&#34;&gt;4. Logical Formulas&lt;/a&gt;&lt;/td&gt;&lt;td&gt; &lt;a href=&#34;https://uvacs2102.github.io/ps/ps1/&#34;&gt;PS1&lt;/a&gt; (MCS Ch 1, classes 1 and 2)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Tuesday, 5 Sep 2017&lt;/td&gt;&lt;td&gt;   &lt;a href=&#34;https://uvacs2102.github.io/class5&#34;&gt;5. CNF, Logic in Computation, Quantifiers&lt;/a&gt; &lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;    
+&lt;tr&gt;&lt;td&gt;Thursday, 7 Sep 2017&lt;/td&gt;&lt;td&gt;  &lt;a href=&#34;https://uvacs2102.github.io/class6&#34;&gt;6. Program Correctness, Equivalences, Satisfiability&lt;/td&gt;&lt;td&gt; &lt;a href=&#34;https://uvacs2102.github.io/ps/ps2/&#34;&gt;PS2&lt;/a&gt; (MCS Ch 2-3.4, classes 3-4)&lt;/td&gt;&lt;/tr&gt;
 &lt;tr&gt;&lt;td&gt;Tuesday, 12 Sep 2017&lt;/td&gt;&lt;td&gt;  7. Sets&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;     
-&lt;tr&gt;&lt;td&gt;Thursday, 14 Sep 2017&lt;/td&gt;&lt;td&gt; 8. Functions and Relations&lt;/td&gt;&lt;td&gt; PS3 (MCS Ch 3, classes 5-6)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Thursday, 14 Sep 2017&lt;/td&gt;&lt;td&gt; 8. Functions and Relations&lt;/td&gt;&lt;td&gt; &lt;a href=&#34;https://uvacs2102.github.io/ps/ps3/&#34;&gt;PS3&lt;/a&gt; (MCS Ch 3, classes 5-6)&lt;/td&gt;&lt;/tr&gt;
 &lt;tr&gt;&lt;td&gt;Tuesday, 19 Sep 2017&lt;/td&gt;&lt;td&gt;  9. Cardinality of Finite Sets&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;   
 &lt;tr&gt;&lt;td&gt;Thursday, 21 Sep 2017&lt;/td&gt;&lt;td&gt; 10. Induction&lt;/td&gt;&lt;td&gt; PS4 (MCS Ch 4.1-4.4, lecture 7-8)&lt;/td&gt;&lt;/tr&gt;
 &lt;tr&gt;&lt;td&gt;Tuesday, 26 Sep 2017&lt;/td&gt;&lt;td&gt;  11. Strong Induction&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;    
