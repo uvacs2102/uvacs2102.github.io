@@ -34,7 +34,7 @@
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://uvacs2102.github.io/touch-icon-144-precomposed.png">
 <link href="https://uvacs2102.github.io/favicon.png" rel="icon">
 
-<meta name="generator" content="Hugo 0.16-DEV" />
+<meta name="generator" content="Hugo 0.17" />
 
   <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -143,10 +143,10 @@
   </header>
   
   
-  <p class="fronthead"><A href="">Class 6: Quantifiers and More</a> (Thu, 7 Sep 2017)</p>
+  <p class="fronthead"><A href="/class6/">Class 6: Quantifiers and More</a> (Thu, 7 Sep 2017)</p>
     
 
-<h3 id="schedule:647dbe1e5b68015679492d34153c74f5">Schedule</h3>
+<h3 id="schedule">Schedule</h3>
 
 <p>Everyone should have received their graded PS1 by now. Please read <a href="https://collab.its.virginia.edu/access/content/group/9bd99d1c-6f18-4542-a7d1-8ffc4fccbd3d/ps1solutions.pdf">the comments posted in collab</a>.</p>
 
@@ -165,7 +165,7 @@ src="//speakerdeck.com/assets/embed.js"></script>
    <a href="/docs/class6.pdf">See PDF Version for <b>Notes and Questions</b></a>.
    </div></p>
 
-<h2 id="links:647dbe1e5b68015679492d34153c74f5">Links</h2>
+<h2 id="links">Links</h2>
 
 <p>If you believe real computing systems have the property that the values
 you read from memory will match what you wrote there, see:</p>
@@ -197,7 +197,7 @@ is the P vs. NP question in this list.</p>
 
 <p><div class="latex"></p>
 
-<h1 id="programs-and-proofs:647dbe1e5b68015679492d34153c74f5">Programs and Proofs</h1>
+<h1 id="programs-and-proofs">Programs and Proofs</h1>
 
 <p>What does it mean to <em>test</em> a computing system?  What does it mean for a computing system to <em>always behave correctly</em>?</p>
 
@@ -207,7 +207,7 @@ is the P vs. NP question in this list.</p>
 
 <div class="biggap"></div>
 
-<h1 id="minima:647dbe1e5b68015679492d34153c74f5">Minima</h1>
+<h1 id="minima">Minima</h1>
 
 <p>The <em>minimum</em> of a set with respect to some comparator operator is the
 element which is &ldquo;less than&rdquo; (according to that comparator) every
@@ -218,7 +218,7 @@ $\forall x \in S - { m } . m \prec x$.</p>
 \forall S \in \textrm{pow}(\mathbb{N}) - { \varnothing } \ldotp \exists m \in S\ldotp \forall x \in S - {m}\ldotp m &lt; x
 $$</p>
 
-<h1 id="formulas-propositions-and-inference-rules:647dbe1e5b68015679492d34153c74f5">Formulas, Propositions, and Inference Rules</h1>
+<h1 id="formulas-propositions-and-inference-rules">Formulas, Propositions, and Inference Rules</h1>
 
 <p>$P \implies Q$ is a <em>formula</em>.<br />
 $\forall P \in { T, F } . \forall Q \in { T, F } . P \implies Q$ is a <em>proposition</em>.<br />
@@ -246,7 +246,7 @@ T$.</p>
 $\infer{Q}{P}$ is sound if and only if the formula
 $P \implies Q$ is valid. So, this way, we can find out whether an inference rule is sound or not, by checking out whether the corresponding formula is valid or not.</p>
 
-<h1 id="negating-quantifiers:647dbe1e5b68015679492d34153c74f5">Negating Quantifiers</h1>
+<h1 id="negating-quantifiers">Negating Quantifiers</h1>
 
 <p>What is the negation of $\forall x \in S . P(x)$?
 <div class="gap"></div></p>
@@ -254,7 +254,7 @@ $P \implies Q$ is valid. So, this way, we can find out whether an inference rule
 <p>What is the negation of $\exists x \in S . P(x)$?
 <div class="gap"></div></p>
 
-<h1 id="satisfiability:647dbe1e5b68015679492d34153c74f5">Satisfiability</h1>
+<h1 id="satisfiability">Satisfiability</h1>
 
 <p><strong>Definition.</strong> A formula is in <em>SAT</em> if it is in CNF form and it is
   satisfiable.</p>
@@ -349,35 +349,35 @@ x</em>{49}) \wedge (x<em>{21} \vee x</em>{40} \vee \overline{x<em>{14}}) \wedge
 x<em>{7}) \wedge (x</em>{25} \vee x<em>{47} \vee \overline{x</em>{12}}) \end{math}
 \end{center}</p>
 
-<h2 id="converting-truth-tables-to-dnf:647dbe1e5b68015679492d34153c74f5">Converting Truth Tables to DNF</h2>
+<h2 id="converting-truth-tables-to-dnf">Converting Truth Tables to DNF</h2>
 
 <p>\begin{tabular}{cc|cc}
 $P$ &amp; $Q$ &amp; $P \implies Q$ &amp; $P \oplus Q$ \ \hline
-\T &amp; \T   &amp; \T &amp; \F \
-\T &amp; \F   &amp; \F &amp; \T \
-\F &amp; \T   &amp; \T &amp; \T \
-\F &amp; \F   &amp; \T &amp; \F \
+\T &amp; \T   &amp; \T &amp; \F <br />
+\T &amp; \F   &amp; \F &amp; \T <br />
+\F &amp; \T   &amp; \T &amp; \T <br />
+\F &amp; \F   &amp; \T &amp; \F <br />
 \end{tabular}</p>
 
 <p>The output of the operator is \T\ if and only if the inputs do match <em>one row</em> where the output is \T.  So, to get a DNF we can go over all the rows where hte output is \T, and for each write a clause that means we <em>are</em> in that row. Then we OR all such (conjunctive) clauses. For example, for $P \oplus Q$ we get</p>
 
 <p>$$(P \wedge \neg Q) \vee (\neg P \wedge Q)$$</p>
 
-<h2 id="converting-truth-tables-to-cnf:647dbe1e5b68015679492d34153c74f5">Converting Truth Tables to CNF</h2>
+<h2 id="converting-truth-tables-to-cnf">Converting Truth Tables to CNF</h2>
 
 <p>\begin{tabular}{cc|cc}
 $P$ &amp; $Q$ &amp; $P \implies Q$ &amp; $P \oplus Q$ \ \hline
-\T &amp; \T   &amp; \T &amp; \F \
-\T &amp; \F   &amp; \F &amp; \T \
-\F &amp; \T   &amp; \T &amp; \T \
-\F &amp; \F   &amp; \T &amp; \F \
+\T &amp; \T   &amp; \T &amp; \F <br />
+\T &amp; \F   &amp; \F &amp; \T <br />
+\F &amp; \T   &amp; \T &amp; \T <br />
+\F &amp; \F   &amp; \T &amp; \F <br />
 \end{tabular}</p>
 
 <p>The output of the operator is \T\ if and only if the inputs do not match <em>any row</em> where the output is \F.  So, to get a CNF we can go over all the rows where hte output is \F, and for each write a clause that means we are <em>not</em> in that row. Then we AND all such clauses. For example, for $P \oplus Q$ we get</p>
 
 <p>$$(\neg P \vee \neg Q) \wedge (P \vee Q)$$</p>
 
-<h2 id="the-related-3cnf-formulation:647dbe1e5b68015679492d34153c74f5">The related 3CNF formulation</h2>
+<h2 id="the-related-3cnf-formulation">The related 3CNF formulation</h2>
 
 <p>When we are only interested to know whether or not a given formula is satisfiable, we can write a 3CNF that is satisfiable iff the original formula is. In order to do that, we first write an equivalent CNF, and then convert it to a 3CNF (which is not necessarily equivalent, but only guarantees to preserve the <em>satisfiability</em> feature) as follow. For each clause with less than 3 literals such as $(A \lor \neg B)$ we add a dummy variable $C$ (only for this clause) and interprete the $(A \lor \neg B)$ as a formula over all of $A,B,C$ and write a CNF for them (which happens to be 3CNF!). For longer clauses such as
 $(A \lor B \lor C \lor D)$ we do another trick of breaking them into smaller parts using new dummy variables as follows $(A \lor B \lor \neg X) \wedge (\neg X \lor C \lor D).$</p>
@@ -385,11 +385,11 @@ $(A \lor B \lor C \lor D)$ we do another trick of breaking them into smaller par
 <p></div></p>
  
   
-  <p class="fronthead"><A href="">Problem Set 1 Comments</a> (Wed, 6 Sep 2017)</p>
+  <p class="fronthead"><A href="/ps1comments/">Problem Set 1 Comments</a> (Wed, 6 Sep 2017)</p>
     <p>The Problem Set 1 comments are now posted in collab: <a href="https://collab.its.virginia.edu/access/content/group/9bd99d1c-6f18-4542-a7d1-8ffc4fccbd3d/ps1solutions.pdf">PDF</a></p>
  
   
-  <p class="fronthead"><A href="">Class 5: CNF, Computing, Quantifiers</a> (Tue, 5 Sep 2017)</p>
+  <p class="fronthead"><A href="/class5/">Class 5: CNF, Computing, Quantifiers</a> (Tue, 5 Sep 2017)</p>
     
 
 <h3 id="schedule">Schedule</h3>
@@ -506,22 +506,22 @@ $$
 <p></div></p>
  
   
-  <p class="fronthead"><A href="">Problem Set 2</a> (Fri, 1 Sep 2017)</p>
+  <p class="fronthead"><A href="/ps2posted/">Problem Set 2</a> (Fri, 1 Sep 2017)</p>
     <p><a href="/ps/ps2"><strong>Problem Set 2</strong></a> [<a href="/docs/ps2.pdf">PDF</a>] is now posted and
 is due <strong>Friday, 8 September at 6:29pm</strong>.</p>
  
   
-  <p class="fronthead"><A href="">Additional Resources</a> (Thu, 31 Aug 2017)</p>
+  <p class="fronthead"><A href="/additionalresources/">Additional Resources</a> (Thu, 31 Aug 2017)</p>
     <p>I&rsquo;ve added a page, <a href="/resources">Resources</a>, with links to some
 suggested resources beyond the course materials. If you find other
 useful resources, please post them in slack and we&rsquo;ll add them to this
 list.</p>
  
   
-  <p class="fronthead"><A href="">Class 4: Logical Operators and Formulas</a> (Thu, 31 Aug 2017)</p>
+  <p class="fronthead"><A href="/class4/">Class 4: Logical Operators and Formulas</a> (Thu, 31 Aug 2017)</p>
     
 
-<h3 id="schedule:a69bef1e5f2725722420b5c4a32452b2">Schedule</h3>
+<h3 id="schedule">Schedule</h3>
 
 <p><a href="/ps/ps1"><strong>Problem Set 1</strong></a> is due <strong>Friday at 6:29pm</strong>.</p>
 
@@ -537,7 +537,7 @@ Quantifiers).</p>
    <a href="/docs/class4.pdf">See PDF Version for <b>Notes and Questions</b></a>.
    </div></p>
 
-<h2 id="links:a69bef1e5f2725722420b5c4a32452b2">Links</h2>
+<h2 id="links">Links</h2>
 
 <p>Scott Brown, <a href="http://ms.appliedprobability.org/data/files/selected%20articles/39-1-1.pdf"><em>The Life and Work of Augustus De Morgan</em></a>. Applied Probability 2006.</p>
 
@@ -547,9 +547,9 @@ Quantifiers).</p>
 
 <p><div class="latex"></p>
 
-<h1 id="notes-and-questions:a69bef1e5f2725722420b5c4a32452b2">Notes and Questions</h1>
+<h1 id="notes-and-questions">Notes and Questions</h1>
 
-<h2 id="well-ordering-principle-proof:a69bef1e5f2725722420b5c4a32452b2">Well-Ordering Principle Proof</h2>
+<h2 id="well-ordering-principle-proof">Well-Ordering Principle Proof</h2>
 
 <p><strong>Odd Summation.</strong> (Problem 2.12) Prove that for all $n &gt; 0$, the sum of the first $n$ odd numbers is $n^2$.</p>
 
@@ -641,10 +641,10 @@ For each of the formulas below, determine if it is _valid_ and if it is _satisfi
 </div>
  
   
-  <p class="fronthead"><A href="">Class 3: Well-Ordering Principle</a> (Tue, 29 Aug 2017)</p>
+  <p class="fronthead"><A href="/class3/">Class 3: Well-Ordering Principle</a> (Tue, 29 Aug 2017)</p>
     
 
-<h3 id="schedule:b9b50bf0a87e56763567aaebbc820d47">Schedule</h3>
+<h3 id="schedule">Schedule</h3>
 
 <p>This week, you should read MCS Chapter 2 and MCS Chapter 3 (at least
 through the end of Section 3.4).</p>
@@ -664,7 +664,7 @@ hours schedule.</p>
    <a href="/docs/class3.pdf">See PDF Version for <b>Notes and Questions</b></a>.
    </div></p>
 
-<h2 id="links:b9b50bf0a87e56763567aaebbc820d47">Links</h2>
+<h2 id="links">Links</h2>
 
 <p><a href="https://math.berkeley.edu/~kpmann/Well-ordering.pdf"><em>The Well-Ordering Theorem: one of the Greatest Mathematical Controversies of All Time</em></a>, Kathryn Mann.</p>
 
@@ -672,7 +672,7 @@ hours schedule.</p>
 
 <p><div class="latex"></p>
 
-<h1 id="notes-and-questions:b9b50bf0a87e56763567aaebbc820d47">Notes and Questions</h1>
+<h1 id="notes-and-questions">Notes and Questions</h1>
 
 <p>What properties must a sensible ordering function have?</p>
 
@@ -705,7 +705,7 @@ either satisfy $a&lt;b$ or $b&lt;a$. Second  $a&lt;b$ and $b&lt;a$ should always
 
 <!--page-->
 
-<h3 id="template-for-well-ordering-proofs-section-2-2:b9b50bf0a87e56763567aaebbc820d47">Template for Well-Ordering Proofs (Section 2.2)</h3>
+<h3 id="template-for-well-ordering-proofs-section-2-2">Template for Well-Ordering Proofs (Section 2.2)</h3>
 
 <p>To prove that $P(n)$ is true for all $n \in \mathbb{N}$:</p>
 
@@ -739,7 +739,7 @@ _The whole problem with the world is that fools and fanatics are always so certa
 </div>
  
   
-  <p class="fronthead"><A href="">Office Hours Posted</a> (Sat, 26 Aug 2017)</p>
+  <p class="fronthead"><A href="/officehoursposted/">Office Hours Posted</a> (Sat, 26 Aug 2017)</p>
     <p>The office hours schedule is now posted on the course site (<a href="/officehours">Office
 Hours</a>) and
 <a href="https://calendar.google.com/calendar/embed?src=5msg7a1mn7fk4ocj1h41cksh80%40group.calendar.google.com&amp;ctz=America/New_York">Calendar</a>. The
@@ -748,7 +748,7 @@ hours start on Monday (3pm), and will follow the schedule here after
 that.</p>
  
   
-  <p class="fronthead"><A href="">Class 2: Proof Methods</a> (Thu, 24 Aug 2017)</p>
+  <p class="fronthead"><A href="/class2/">Class 2: Proof Methods</a> (Thu, 24 Aug 2017)</p>
     
 
 <h3 id="schedule">Schedule</h3>
@@ -846,10 +846,10 @@ Frank Wilczek</p>
 <p></div></p>
  
   
-  <p class="fronthead"><A href="">Class 1: What makes it go?</a> (Tue, 22 Aug 2017)</p>
+  <p class="fronthead"><A href="/class1/">Class 1: What makes it go?</a> (Tue, 22 Aug 2017)</p>
     
 
-<h3 id="schedule:e795e40ef5a742faa33766b4d984e8c7">Schedule</h3>
+<h3 id="schedule">Schedule</h3>
 
 <p>Before <strong>Thursday&rsquo;s class</strong>: (visit <a href="https://uvacs2102.github.io/class1">https://uvacs2102.github.io/class1</a> for the web version of these notes with links)</p>
 
@@ -925,7 +925,7 @@ mathematicians establish ``<em>truth</em>&rdquo;?</p>
 <p>A <em>predicate</em> is a proposition whose truth may depend on the value of
 variables.</p>
 
-<h3 id="proof:e795e40ef5a742faa33766b4d984e8c7">Proof</h3>
+<h3 id="proof">Proof</h3>
 
 <p>A <em>theorem</em> is a ____________ that has been proven true.</p>
 
@@ -936,7 +936,7 @@ not proven; they are <em>assumed</em> to be true.</p>
   <em>logical deductions</em> starting from a set of accepted <em>axioms</em> that
   leads to the proposition.</p>
 
-<h3 id="rules-of-inference:e795e40ef5a742faa33766b4d984e8c7">Rules of Inference</h3>
+<h3 id="rules-of-inference">Rules of Inference</h3>
 
 <p>The possible steps that can be used in a proof are logical deductions
 based on inference rules.</p>
