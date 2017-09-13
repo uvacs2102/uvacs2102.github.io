@@ -34,7 +34,7 @@
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://uvacs2102.github.io/touch-icon-144-precomposed.png">
 <link href="https://uvacs2102.github.io/favicon.png" rel="icon">
 
-<meta name="generator" content="Hugo 0.17" />
+<meta name="generator" content="Hugo 0.16-DEV" />
 
   <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -145,15 +145,116 @@
   </header>
   
   
-  <p class="fronthead"><A href="/ps3posted/">Problem Set 3</a> (Fri, 8 Sep 2017)</p>
+  <p class="fronthead"><A href="">Class 7: Sets</a> (Tue, 12 Sep 2017)</p>
+    
+
+<h3 id="schedule">Schedule</h3>
+
+<p><a href="/ps/ps3"><strong>Problem Set 3</strong></a> is due <strong>Friday at 6:29pm</strong>.</p>
+
+<p><div class="notpdf">
+   <center>
+<script async class="speakerdeck-embed" data-id="a5f790a4fb0740d29bb3ad6dce3fa68d" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+   </center></p>
+
+<p><div class="highlightm">
+   <a href="/docs/class7.pdf">See PDF Version for <b>Notes and Questions</b></a>.
+   </div></p>
+
+<h2 id="links">Links</h2>
+
+<p></div><!--endpdf--></p>
+
+<p><div class="latex"></p>
+
+<h1 id="notes-and-questions">Notes and Questions</h1>
+
+<p>What is a <em>data type</em>?  What are the differences between a <em>mathematical
+data type</em> and a data type in your favorite programming language?</p>
+
+<p>#</p>
+
+<p>A <strong>set</strong> is an unordered colection of objects.  A set is defined by its
+membership operation: $x \in S$ is true if $x$ is in the set $S$. When $x$ is not in $S$ we write it as $x \notin S$. A set has only <em>one</em> copy of each element. Namely, there is no repetition in elements of a set. Also, a set $A$ could be a member o another set $B$, denoted by $A \in B$. Note that members of $A$ are not necessarily members of $B$ unless they are explicitly put in $B$ directly.</p>
+
+<h2 id="set-operations">Set Operations</h2>
+
+<p>Subset: $\subseteq$ (note that this does not mean <em>strict subset</em>)
+$$A \subseteq B \iff \forall x \in A. \fillin \in \fillin.$$</p>
+
+<p>Set Equality: $=$
+$$A = B \iff A \fillin B \wedge B \fillin A.$$</p>
+
+<p>Set Union: $\cup$
+$$\forall x. x \in A \cup B \iff x \in A \fillin x \in B.$$</p>
+
+<p>Set Intersection: $\cap$
+$$\forall x. x \in A \cap B \iff x \in A \fillin x \in B.$$</p>
+
+<p>Set Difference: $-$
+$$\forall x. x \in A - B \iff x \in A \wedge x \notin B.$$</p>
+
+<p>Set Complement: $\overline{S}$
+$$ \forall  x \in D. x \in \overline{A} \iff x \notin A.$$</p>
+
+<p>($D$ is the ``domain of discourse&rdquo;, the universe of all objects under
+discussion.)</p>
+
+<!--page-->
+
+<h3 id="russell-s-paradox">Russell&rsquo;s Paradox</h3>
+
+<p>$$ S_{R} = \textrm{ the set of all sets that are not members of themselves} $$</p>
+
+<p>Is $S<em>{R} \in S</em>{R}$?</p>
+
+<p>What is the source of this paradox? Note that in this question, we are implicitly assuming that $S<em>{R}$ is a set, but we have never &ldquo;constructed&rdquo; this set properly to use it. Namely, here we are implicitly assuming that there is already a &ldquo;set of all sets&rdquo; $S</em>{all}$ from which we remove those sets like $T$ for which $T \in T$. By removing all such $T$ from $S_{all}$ we get the set $S_R$.</p>
+
+<h3 id="using-quantifiers-more-carefully">Using Quantifiers More Carefully</h3>
+
+<p>Note that in some of the  propositions that we used to define the set operations (such as union, intersection, etc.) above, we wrote quantified $x$ without saying which set it is from. For example  $\forall x. [\dots]$. It is much preferred to always say what $x$ is belonging to when we quantify over $x$. The reason is to avoid traps like that of Russell&rsquo;s paradox! This should not worry us in this class, as we will always work with well-defined <em>universes</em> that include all the elements of the sets that we work with. Therefore, we can always assume implicitly that $x \in U$ (for a well defined set universe $U$) even if not explicitly mentioned.</p>
+
+<p>#</p>
+
+<h3 id="set-practice">Set Practice</h3>
+
+<p>Here are some practice problems involving sets.  We won&rsquo;t go through
+these in class, but you should ask questions about any are unclear.  (At
+least a few of these will be on Exam 1.)</p>
+
+<ol>
+<li>Define $A \subset B$ (strict subset).</li>
+</ol>
+
+<p>#</p>
+
+<ol>
+<li>Prove $A \cup B \equiv B \cup A$.</li>
+</ol>
+
+<p>#</p>
+
+<ol>
+<li>Prove $A - B = \emptyset \iff A \subseteq B$.</li>
+</ol>
+
+<p>#</p>
+
+<ol>
+<li>Prove $A = B \iff (\forall a \in A \ldotp a \in B) \wedge (\forall b \in B \ldotp b \in A).$
+</div></li>
+</ol>
+ 
+  
+  <p class="fronthead"><A href="">Problem Set 3</a> (Fri, 8 Sep 2017)</p>
     <p><a href="/ps/ps3"><strong>Problem Set 3</strong></a> [<a href="/docs/ps3.pdf">PDF</a>] is now posted and
 is due <strong>Friday, 15 September at 6:29:00pm</strong>.</p>
  
   
-  <p class="fronthead"><A href="/class6/">Class 6: Quantifiers and More</a> (Thu, 7 Sep 2017)</p>
+  <p class="fronthead"><A href="">Class 6: Quantifiers and More</a> (Thu, 7 Sep 2017)</p>
     
 
-<h3 id="schedule">Schedule</h3>
+<h3 id="schedule:647dbe1e5b68015679492d34153c74f5">Schedule</h3>
 
 <p>Everyone should have received their graded PS1 by now. Please read <a href="https://collab.its.virginia.edu/access/content/group/9bd99d1c-6f18-4542-a7d1-8ffc4fccbd3d/ps1solutions.pdf">the comments posted in collab</a>.</p>
 
@@ -172,7 +273,7 @@ src="//speakerdeck.com/assets/embed.js"></script>
    <a href="/docs/class6.pdf">See PDF Version for <b>Notes and Questions</b></a>.
    </div></p>
 
-<h2 id="links">Links</h2>
+<h2 id="links:647dbe1e5b68015679492d34153c74f5">Links</h2>
 
 <p>If you believe real computing systems have the property that the values
 you read from memory will match what you wrote there, see:</p>
@@ -204,7 +305,7 @@ is the P vs. NP question in this list.</p>
 
 <p><div class="latex"></p>
 
-<h1 id="programs-and-proofs">Programs and Proofs</h1>
+<h1 id="programs-and-proofs:647dbe1e5b68015679492d34153c74f5">Programs and Proofs</h1>
 
 <p>What does it mean to <em>test</em> a computing system?  What does it mean for a computing system to <em>always behave correctly</em>?</p>
 
@@ -214,7 +315,7 @@ is the P vs. NP question in this list.</p>
 
 <div class="biggap"></div>
 
-<h1 id="minima">Minima</h1>
+<h1 id="minima:647dbe1e5b68015679492d34153c74f5">Minima</h1>
 
 <p>The <em>minimum</em> of a set with respect to some comparator operator is the
 element which is &ldquo;less than&rdquo; (according to that comparator) every
@@ -225,7 +326,7 @@ $\forall x \in S - { m } . m \prec x$.</p>
 \forall S \in \textrm{pow}(\mathbb{N}) - { \varnothing } \ldotp \exists m \in S\ldotp \forall x \in S - {m}\ldotp m &lt; x
 $$</p>
 
-<h1 id="formulas-propositions-and-inference-rules">Formulas, Propositions, and Inference Rules</h1>
+<h1 id="formulas-propositions-and-inference-rules:647dbe1e5b68015679492d34153c74f5">Formulas, Propositions, and Inference Rules</h1>
 
 <p>$P \implies Q$ is a <em>formula</em>.<br />
 $\forall P \in { T, F } . \forall Q \in { T, F } . P \implies Q$ is a <em>proposition</em>.<br />
@@ -253,7 +354,7 @@ T$.</p>
 $\infer{Q}{P}$ is sound if and only if the formula
 $P \implies Q$ is valid. So, this way, we can find out whether an inference rule is sound or not, by checking out whether the corresponding formula is valid or not.</p>
 
-<h1 id="negating-quantifiers">Negating Quantifiers</h1>
+<h1 id="negating-quantifiers:647dbe1e5b68015679492d34153c74f5">Negating Quantifiers</h1>
 
 <p>What is the negation of $\forall x \in S . P(x)$?
 <div class="gap"></div></p>
@@ -261,7 +362,7 @@ $P \implies Q$ is valid. So, this way, we can find out whether an inference rule
 <p>What is the negation of $\exists x \in S . P(x)$?
 <div class="gap"></div></p>
 
-<h1 id="satisfiability">Satisfiability</h1>
+<h1 id="satisfiability:647dbe1e5b68015679492d34153c74f5">Satisfiability</h1>
 
 <p><strong>Definition.</strong> A formula is in <em>SAT</em> if it is in CNF form and it is
   satisfiable.</p>
@@ -356,35 +457,35 @@ x</em>{49}) \wedge (x<em>{21} \vee x</em>{40} \vee \overline{x<em>{14}}) \wedge
 x<em>{7}) \wedge (x</em>{25} \vee x<em>{47} \vee \overline{x</em>{12}}) \end{math}
 \end{center}</p>
 
-<h2 id="converting-truth-tables-to-dnf">Converting Truth Tables to DNF</h2>
+<h2 id="converting-truth-tables-to-dnf:647dbe1e5b68015679492d34153c74f5">Converting Truth Tables to DNF</h2>
 
 <p>\begin{tabular}{cc|cc}
 $P$ &amp; $Q$ &amp; $P \implies Q$ &amp; $P \oplus Q$ \ \hline
-\T &amp; \T   &amp; \T &amp; \F <br />
-\T &amp; \F   &amp; \F &amp; \T <br />
-\F &amp; \T   &amp; \T &amp; \T <br />
-\F &amp; \F   &amp; \T &amp; \F <br />
+\T &amp; \T   &amp; \T &amp; \F \
+\T &amp; \F   &amp; \F &amp; \T \
+\F &amp; \T   &amp; \T &amp; \T \
+\F &amp; \F   &amp; \T &amp; \F \
 \end{tabular}</p>
 
 <p>The output of the operator is \T\ if and only if the inputs do match <em>one row</em> where the output is \T.  So, to get a DNF we can go over all the rows where hte output is \T, and for each write a clause that means we <em>are</em> in that row. Then we OR all such (conjunctive) clauses. For example, for $P \oplus Q$ we get</p>
 
 <p>$$(P \wedge \neg Q) \vee (\neg P \wedge Q)$$</p>
 
-<h2 id="converting-truth-tables-to-cnf">Converting Truth Tables to CNF</h2>
+<h2 id="converting-truth-tables-to-cnf:647dbe1e5b68015679492d34153c74f5">Converting Truth Tables to CNF</h2>
 
 <p>\begin{tabular}{cc|cc}
 $P$ &amp; $Q$ &amp; $P \implies Q$ &amp; $P \oplus Q$ \ \hline
-\T &amp; \T   &amp; \T &amp; \F <br />
-\T &amp; \F   &amp; \F &amp; \T <br />
-\F &amp; \T   &amp; \T &amp; \T <br />
-\F &amp; \F   &amp; \T &amp; \F <br />
+\T &amp; \T   &amp; \T &amp; \F \
+\T &amp; \F   &amp; \F &amp; \T \
+\F &amp; \T   &amp; \T &amp; \T \
+\F &amp; \F   &amp; \T &amp; \F \
 \end{tabular}</p>
 
 <p>The output of the operator is \T\ if and only if the inputs do not match <em>any row</em> where the output is \F.  So, to get a CNF we can go over all the rows where hte output is \F, and for each write a clause that means we are <em>not</em> in that row. Then we AND all such clauses. For example, for $P \oplus Q$ we get</p>
 
 <p>$$(\neg P \vee \neg Q) \wedge (P \vee Q)$$</p>
 
-<h2 id="the-related-3cnf-formulation">The related 3CNF formulation</h2>
+<h2 id="the-related-3cnf-formulation:647dbe1e5b68015679492d34153c74f5">The related 3CNF formulation</h2>
 
 <p>When we are only interested to know whether or not a given formula is satisfiable, we can write a 3CNF that is satisfiable iff the original formula is. In order to do that, we first write an equivalent CNF, and then convert it to a 3CNF (which is not necessarily equivalent, but only guarantees to preserve the <em>satisfiability</em> feature) as follow. For each clause with less than 3 literals such as $(A \lor \neg B)$ we add a dummy variable $C$ (only for this clause) and interprete the $(A \lor \neg B)$ as a formula over all of $A,B,C$ and write a CNF for them (which happens to be 3CNF!). For longer clauses such as
 $(A \lor B \lor C \lor D)$ we do another trick of breaking them into smaller parts using new dummy variables as follows $(A \lor B \lor \neg X) \wedge (\neg X \lor C \lor D).$</p>
@@ -392,11 +493,11 @@ $(A \lor B \lor C \lor D)$ we do another trick of breaking them into smaller par
 <p></div></p>
  
   
-  <p class="fronthead"><A href="/ps1comments/">Problem Set 1 Comments</a> (Wed, 6 Sep 2017)</p>
+  <p class="fronthead"><A href="">Problem Set 1 Comments</a> (Wed, 6 Sep 2017)</p>
     <p>The Problem Set 1 comments are now posted in collab: <a href="https://collab.its.virginia.edu/access/content/group/9bd99d1c-6f18-4542-a7d1-8ffc4fccbd3d/ps1solutions.pdf">PDF</a></p>
  
   
-  <p class="fronthead"><A href="/class5/">Class 5: CNF, Computing, Quantifiers</a> (Tue, 5 Sep 2017)</p>
+  <p class="fronthead"><A href="">Class 5: CNF, Computing, Quantifiers</a> (Tue, 5 Sep 2017)</p>
     
 
 <h3 id="schedule">Schedule</h3>
@@ -513,17 +614,17 @@ $$
 <p></div></p>
  
   
-  <p class="fronthead"><A href="/additionalresources/">Additional Resources</a> (Thu, 31 Aug 2017)</p>
+  <p class="fronthead"><A href="">Additional Resources</a> (Thu, 31 Aug 2017)</p>
     <p>I&rsquo;ve added a page, <a href="/resources">Resources</a>, with links to some
 suggested resources beyond the course materials. If you find other
 useful resources, please post them in slack and we&rsquo;ll add them to this
 list.</p>
  
   
-  <p class="fronthead"><A href="/class4/">Class 4: Logical Operators and Formulas</a> (Thu, 31 Aug 2017)</p>
+  <p class="fronthead"><A href="">Class 4: Logical Operators and Formulas</a> (Thu, 31 Aug 2017)</p>
     
 
-<h3 id="schedule">Schedule</h3>
+<h3 id="schedule:a69bef1e5f2725722420b5c4a32452b2">Schedule</h3>
 
 <p><a href="/ps/ps1"><strong>Problem Set 1</strong></a> is due <strong>Friday at 6:29pm</strong>.</p>
 
@@ -539,7 +640,7 @@ Quantifiers).</p>
    <a href="/docs/class4.pdf">See PDF Version for <b>Notes and Questions</b></a>.
    </div></p>
 
-<h2 id="links">Links</h2>
+<h2 id="links:a69bef1e5f2725722420b5c4a32452b2">Links</h2>
 
 <p>Scott Brown, <a href="http://ms.appliedprobability.org/data/files/selected%20articles/39-1-1.pdf"><em>The Life and Work of Augustus De Morgan</em></a>. Applied Probability 2006.</p>
 
@@ -549,9 +650,9 @@ Quantifiers).</p>
 
 <p><div class="latex"></p>
 
-<h1 id="notes-and-questions">Notes and Questions</h1>
+<h1 id="notes-and-questions:a69bef1e5f2725722420b5c4a32452b2">Notes and Questions</h1>
 
-<h2 id="well-ordering-principle-proof">Well-Ordering Principle Proof</h2>
+<h2 id="well-ordering-principle-proof:a69bef1e5f2725722420b5c4a32452b2">Well-Ordering Principle Proof</h2>
 
 <p><strong>Odd Summation.</strong> (Problem 2.12) Prove that for all $n &gt; 0$, the sum of the first $n$ odd numbers is $n^2$.</p>
 
@@ -643,10 +744,10 @@ For each of the formulas below, determine if it is _valid_ and if it is _satisfi
 </div>
  
   
-  <p class="fronthead"><A href="/class3/">Class 3: Well-Ordering Principle</a> (Tue, 29 Aug 2017)</p>
+  <p class="fronthead"><A href="">Class 3: Well-Ordering Principle</a> (Tue, 29 Aug 2017)</p>
     
 
-<h3 id="schedule">Schedule</h3>
+<h3 id="schedule:b9b50bf0a87e56763567aaebbc820d47">Schedule</h3>
 
 <p>This week, you should read MCS Chapter 2 and MCS Chapter 3 (at least
 through the end of Section 3.4).</p>
@@ -666,7 +767,7 @@ hours schedule.</p>
    <a href="/docs/class3.pdf">See PDF Version for <b>Notes and Questions</b></a>.
    </div></p>
 
-<h2 id="links">Links</h2>
+<h2 id="links:b9b50bf0a87e56763567aaebbc820d47">Links</h2>
 
 <p><a href="https://math.berkeley.edu/~kpmann/Well-ordering.pdf"><em>The Well-Ordering Theorem: one of the Greatest Mathematical Controversies of All Time</em></a>, Kathryn Mann.</p>
 
@@ -674,7 +775,7 @@ hours schedule.</p>
 
 <p><div class="latex"></p>
 
-<h1 id="notes-and-questions">Notes and Questions</h1>
+<h1 id="notes-and-questions:b9b50bf0a87e56763567aaebbc820d47">Notes and Questions</h1>
 
 <p>What properties must a sensible ordering function have?</p>
 
@@ -707,7 +808,7 @@ either satisfy $a&lt;b$ or $b&lt;a$. Second  $a&lt;b$ and $b&lt;a$ should always
 
 <!--page-->
 
-<h3 id="template-for-well-ordering-proofs-section-2-2">Template for Well-Ordering Proofs (Section 2.2)</h3>
+<h3 id="template-for-well-ordering-proofs-section-2-2:b9b50bf0a87e56763567aaebbc820d47">Template for Well-Ordering Proofs (Section 2.2)</h3>
 
 <p>To prove that $P(n)$ is true for all $n \in \mathbb{N}$:</p>
 
@@ -741,7 +842,7 @@ _The whole problem with the world is that fools and fanatics are always so certa
 </div>
  
   
-  <p class="fronthead"><A href="/officehoursposted/">Office Hours Posted</a> (Sat, 26 Aug 2017)</p>
+  <p class="fronthead"><A href="">Office Hours Posted</a> (Sat, 26 Aug 2017)</p>
     <p>The office hours schedule is now posted on the course site (<a href="/officehours">Office
 Hours</a>) and
 <a href="https://calendar.google.com/calendar/embed?src=5msg7a1mn7fk4ocj1h41cksh80%40group.calendar.google.com&amp;ctz=America/New_York">Calendar</a>. The
@@ -750,10 +851,10 @@ hours start on Monday (3pm), and will follow the schedule here after
 that.</p>
  
   
-  <p class="fronthead"><A href="/class2/">Class 2: Proof Methods</a> (Thu, 24 Aug 2017)</p>
+  <p class="fronthead"><A href="">Class 2: Proof Methods</a> (Thu, 24 Aug 2017)</p>
     
 
-<h3 id="schedule">Schedule</h3>
+<h3 id="schedule:59cb8283a9bd282131a45da3029e68b4">Schedule</h3>
 
 <p>Before <strong>Friday, 6:29pm</strong>:</p>
 
@@ -846,142 +947,6 @@ Adlai Stevenson, A Call to Greatness (1954)
 Frank Wilczek</p>
 
 <p></div></p>
- 
-  
-  <p class="fronthead"><A href="/class1/">Class 1: What makes it go?</a> (Tue, 22 Aug 2017)</p>
-    
-
-<h3 id="schedule">Schedule</h3>
-
-<p>Before <strong>Thursday&rsquo;s class</strong>: (visit <a href="https://uvacs2102.github.io/class1">https://uvacs2102.github.io/class1</a> for the web version of these notes with links)</p>
-
-<ul>
-<li><p>Join the <a href="https://csmath.slack.com">cs2102 slack group</a> and set up
-your profile with a pronouncable name (not your UVA email id) (setting
-up your profile photo is encouraged, but not required).</p></li>
-
-<li><p>Read the <a href="/syllabus">Course Syllabus</a> and post any questions or
-comments you have on it on the course <a href="https://csmath.slack.com">slack group
-(#general)</a>.</p></li>
-
-<li><p>Read the <em>Introduction</em> and <em>Chapter 1: What is a Proof?</em> from the
-<a href="https://uvacs2102.github.io/docs/mcs.pdf">Mathematics for Computer Science
-Book</a> by Eric Lehman,
-F. Thomson Leighton, and Albert R. Meyer (henceforth, &ldquo;MCS&rdquo;).  The
-book is freely available on-line under a Creative Commons License.
-Students are <strong>strongly encrouaged</strong> to print out the readings to read
-them more effectively on paper.</p></li>
-</ul>
-
-<p>Before <strong>Friday, 6:29pm</strong>:</p>
-
-<ul>
-<li><p>Read, print, and sign the <a href="/pledge">Course Pledge</a>.  You should print
-the <a href="/docs/pledge.pdf">PDF version</a> for signing, and submit a scan of
-your signed pledge as a single PDF file using Collab.</p></li>
-
-<li><p>Read Jeremy Kun&rsquo;s <a href="https://medium.com/@jeremyjkun/habits-of-highly-mathematical-people-b719df12d15e"><em>Habits of Highly Mathematical People</em></a>.</p></li>
-
-<li><p>Submit a <a href="https://goo.gl/forms/DR7nsouNf6sqqIK22">Course Registration Survey</a> (which includes some questions based on Kun&rsquo;s essay).</p></li>
-</ul>
-
-<p><div class="notpdf">
-   <center>
-<script async class="speakerdeck-embed" data-id="71562d80d01c4339b64b96e1c160c480" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script><br>
-<a href="https://uva.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=7fbcfe7e-92cc-4e33-b590-c557a9319251"><b>Video</b></a> (requires Collab authentication)
-   </center></p>
-
-<div class="notpdf">
-
-    <div class="highlightm">
-    <a href="/docs/class1.pdf">See PDF Version for <b>Notes and Questions</b></a>.
-    </div>
-
-<!--
-<center>
-<script async class="speakerdeck-embed" data-id="460cc29c74a04fe3971ce197961981f9" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script><br>
-</center>
--->
-
-<p></div><!--endpdf--></p>
-
-<div class="latex">
-
-### Notes and Questions
-
-Why is most of the math used in computer science _discrete_?
-
-<div class="gap"></div>
-
-<p>Why is most of the math you have used in school previously <em>continuous</em>?</p>
-
-<div class="gap"></div>
-
-<p>What are the differences between how scientists, lawyers, and
-mathematicians establish ``<em>truth</em>&rdquo;?</p>
-
-<div class="gap"></div>
-
-<p>A <em>proposition</em> is a statement that is either ________ or _________.</p>
-
-<p>A <em>predicate</em> is a proposition whose truth may depend on the value of
-variables.</p>
-
-<h3 id="proof">Proof</h3>
-
-<p>A <em>theorem</em> is a ____________ that has been proven true.</p>
-
-<p>An <em>axiom</em> is a proposition that is <em>accepted to be true</em>.  Axioms are
-not proven; they are <em>assumed</em> to be true.</p>
-
-<p><strong>Definition.</strong> A <em>mathematical proof</em> of a proposition is a chain of
-  <em>logical deductions</em> starting from a set of accepted <em>axioms</em> that
-  leads to the proposition.</p>
-
-<h3 id="rules-of-inference">Rules of Inference</h3>
-
-<p>The possible steps that can be used in a proof are logical deductions
-based on inference rules.</p>
-
-<p>Inference rules are written as:
-$$
-\infer{\textrm{\emph{conclusion}}}{\textrm{\emph{antecedents}}}
-$$
-This means if everything on top of the rule is established to be true,
-then you can conclude what is on the bottom.</p>
-
-<p><em>Modus Ponens</em>: To prove <em>Q</em>, (1) prove <em>P</em> and (2) prove that <em>P</em> implies <em>Q</em>.  ($P \implies Q$ is a notation for $P$ implies $Q$).</p>
-
-<p>$$
-\infer{Q}{P,\quad P \implies Q}
-$$</p>
-
-<p>An inference rule is <em>sound</em> if can never lead to a <strong>false</strong> conclusion.</p>
-
-<p>Which of these inference rules are sound?</p>
-
-<p>$$
-\infer{Q}{P}
-\qquad
-\infer{false}{P, P \implies Q}
-\qquad
-\infer{true}{P, NOT(P)}
-\qquad
-\infer{P \implies NOT(P)}{P, NOT(P)}
-\qquad
-\infer{NOT(Q) \implies P}{NOT(P) \implies Q}
-$$</p>
-
-<p>##</p>
-
-<p></div></p>
-
-<p></div></p>
-
-<p><div class="quote">
-<em>Through violence you may murder a liar but you can&rsquo;t establish truth. Through violence you may murder a hater, but you can&rsquo;t murder hate. Darkness cannot put out darkness. Only light can do that.</em><br />
-Martin Luther King, Jr., <a href="http://kingencyclopedia.stanford.edu/encyclopedia/documentsentry/where_do_we_go_from_here_delivered_at_the_11th_annual_sclc_convention/"><em>Where Do We Go From Here?</em>, address to SCLC 16 August 1967</a>
-   </div></p>
  
   
   
