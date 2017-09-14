@@ -148,26 +148,26 @@
   <p class="fronthead"><A href="">Class 8: Sequences, Relations, Functions</a> (Thu, 14 Sep 2017)</p>
     
 
-<h3 id="schedule:3a7d0da174b09b839e2f33e1cfd8fab3">Schedule</h3>
+<h3 id="schedule">Schedule</h3>
 
 <p><a href="/ps/ps3"><strong>Problem Set 3</strong></a> is due <strong>Friday at 6:29pm</strong>.</p>
 
 <p><div class="notpdf">
-   <center></p>
-
-<p></center></p>
+   <center>
+<script async class="speakerdeck-embed" data-id="2a3dfdb08071473cb23b4f28b5a67433" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+   </center></p>
 
 <p><div class="highlightm">
    <a href="/docs/class8.pdf">See PDF Version for <b>Notes and Questions</b></a>.
    </div></p>
 
-<h2 id="links:3a7d0da174b09b839e2f33e1cfd8fab3">Links</h2>
+<h2 id="links">Links</h2>
 
 <p></div><!--endpdf--></p>
 
 <p><div class="latex"></p>
 
-<h1 id="sequences:3a7d0da174b09b839e2f33e1cfd8fab3">Sequences</h1>
+<h1 id="sequences">Sequences</h1>
 
 <p>A <strong>sequence</strong> is a mathematical datatype that bears similarities to sets. A sequence $S$ also contains some elements, but we usually refer to them as <em>components</em>. There are two major differences between sets and sequences:</p>
 
@@ -177,7 +177,7 @@
 <li><p>Different components of a sequence could be equal. For example $(a,b,a)$ has $a$ repeating, and this is a different sequence compared to $(a,b,b)$ even though they both have 3 componetns. If we interprete them as <em>sets</em>, then they will be equal sets with $2$ elements each.</p></li>
 </ol>
 
-<h1 id="cartesian-product:3a7d0da174b09b839e2f33e1cfd8fab3">Cartesian Product</h1>
+<h1 id="cartesian-product">Cartesian Product</h1>
 
 <p>We can use set products to get new sets whose elements are sequences. Cartesian product is a very useful way of doing it.</p>
 
@@ -189,7 +189,7 @@
 
 <p>How many elements are in $A \times B$?</p>
 
-<h1 id="relations-and-binary-relations:3a7d0da174b09b839e2f33e1cfd8fab3">Relations and Binary Relations</h1>
+<h1 id="relations-and-binary-relations">Relations and Binary Relations</h1>
 
 <p>A <em>relation</em> between some elements from set $A$ and some elements from set $B$ could be represented by putting all such pairs $(a,b)$ in a set $P$. As you can see, this way, $P$ would be a subset of the cartesian product $A \times B$, namely $P \subseteq A \times B$. More formally we have the following definition.</p>
 
@@ -199,7 +199,7 @@ $R$.</p>
 
 <p>The notion of relations could be generalized to having relations between elements coming from multiple sets $A,B,C$, and we can also talk about relations of the form $P \subseteq A \times B \times C$, but the binary relation remains a very important data type as it allows us to define <em>functions</em>&hellip;</p>
 
-<h1 id="functions:3a7d0da174b09b839e2f33e1cfd8fab3">Functions</h1>
+<h1 id="functions">Functions</h1>
 
 <p>The concept of a function $F$ models is a special form of a binary relation $R$ between $A$ and $B$ where for every element  $a \in A$ there is a <em>unique</em> element in $b \in B$ that is in relation with $a$ (i.e. $(a,b) \in R$). More formally, we use a direct new notation just reserved for working with functions.</p>
 
@@ -220,61 +220,7 @@ one set, called the <em>domain</em>, with elements from another set, called a
 
 <p>$$ f(x) ::= \sqrt{x}  \qquad \qquad \qquad f(S) ::= \textrm{minimum}_{&lt;}(S) $$</p>
 
-<p>##</p>
-
-<!--page-->
-
-<h2 id="properties-of-relations-and-functions:3a7d0da174b09b839e2f33e1cfd8fab3">Properties of Relations and Functions</h2>
-
-<p>If the function is <em>total</em>, every element of the domain has one
-associated codomain element; if the function is <em>partial</em>, there may be
-elements of the domain that do not have an associated codomain element. Note that, unless specified otherwise, we assume that a function is <em>total</em> (this is how we defined a function) but we use the term <em>partial</em> to denote cases where some inputs do not have an output, and reserve the word <em>total</em> to emphasize that no such thing exists.</p>
-
-<p>For which of the above-listed functions are <em>total</em>?</p>
-
-<p>We call a function $F$ from $A$ to $B$ <em>surjective</em> if every element in $B$ is &ldquo;covered&rdquo;, namely,</p>
-
-<p>$$ \forall y \in B. \exists x \in A. F(x)=y .$$</p>
-
-<p>A similar definition could be defined for any binary relation. We also call a function $F$ <em>injective</em> if for any  element $y$ in the codomain $B$ there is <em>at most</em> one $x$ for which $F(x)=y$. How do you write this formally using quantifiers?</p>
-
-<p>When a function is total, surjective, and injective, then we say this is a <em>bijection</em>.</p>
-
-<p>For each statement below, and using the notion of graphs for binary relations and functions, give the name of the described case, and  give at least one example.</p>
-
-<ul>
-<li>A binary relation where no element of $A$ has more than one outgoing edge:</li>
-</ul>
-
-<p>##</p>
-
-<ul>
-<li>A binary relation where every element of $A$ has exactly one outgoing edge:</li>
-</ul>
-
-<p>##</p>
-
-<ul>
-<li>A binary relation where every element of $B$ has exactly one incoming edge:</li>
-</ul>
-
-<p>##</p>
-
-<ul>
-<li>A binary relation where every element of $A$ has exactly one outgoing
-edge and every element of $B$ has exactly one incoming edge:</li>
-</ul>
-
-<p>##</p>
-
-<p>If there exists a <em>bijective</em> relation between $S$ and $T$ defined by the graph $G$ which of these <em>must</em> be true:</p>
-
-<p>a. there exists some <em>injective</em> relation between $S$ and $T$.
-b. there exists some <em>bijective</em> relation between $T$ and $S$.
-c. there exists a <em>total</em> function, $f: S \rightarrow T$.
-d. $S - T = \emptyset$.
-e. the number of elements of $S$ is equal to the number of elements of $T$.
-</div></p>
+<p></div></p>
  
   
   <p class="fronthead"><A href="">Problem Set 2 Comments</a> (Wed, 13 Sep 2017)</p>
@@ -390,7 +336,7 @@ is due <strong>Friday, 15 September at 6:29:00pm</strong>.</p>
   <p class="fronthead"><A href="">Class 6: Quantifiers and More</a> (Thu, 7 Sep 2017)</p>
     
 
-<h3 id="schedule">Schedule</h3>
+<h3 id="schedule:647dbe1e5b68015679492d34153c74f5">Schedule</h3>
 
 <p>Everyone should have received their graded PS1 by now. Please read <a href="https://collab.its.virginia.edu/access/content/group/9bd99d1c-6f18-4542-a7d1-8ffc4fccbd3d/ps1solutions.pdf">the comments posted in collab</a>.</p>
 
@@ -409,7 +355,7 @@ src="//speakerdeck.com/assets/embed.js"></script>
    <a href="/docs/class6.pdf">See PDF Version for <b>Notes and Questions</b></a>.
    </div></p>
 
-<h2 id="links">Links</h2>
+<h2 id="links:647dbe1e5b68015679492d34153c74f5">Links</h2>
 
 <p>If you believe real computing systems have the property that the values
 you read from memory will match what you wrote there, see:</p>
@@ -441,7 +387,7 @@ is the P vs. NP question in this list.</p>
 
 <p><div class="latex"></p>
 
-<h1 id="programs-and-proofs">Programs and Proofs</h1>
+<h1 id="programs-and-proofs:647dbe1e5b68015679492d34153c74f5">Programs and Proofs</h1>
 
 <p>What does it mean to <em>test</em> a computing system?  What does it mean for a computing system to <em>always behave correctly</em>?</p>
 
@@ -451,7 +397,7 @@ is the P vs. NP question in this list.</p>
 
 <div class="biggap"></div>
 
-<h1 id="minima">Minima</h1>
+<h1 id="minima:647dbe1e5b68015679492d34153c74f5">Minima</h1>
 
 <p>The <em>minimum</em> of a set with respect to some comparator operator is the
 element which is &ldquo;less than&rdquo; (according to that comparator) every
@@ -462,7 +408,7 @@ $\forall x \in S - { m } . m \prec x$.</p>
 \forall S \in \textrm{pow}(\mathbb{N}) - { \varnothing } \ldotp \exists m \in S\ldotp \forall x \in S - {m}\ldotp m &lt; x
 $$</p>
 
-<h1 id="formulas-propositions-and-inference-rules">Formulas, Propositions, and Inference Rules</h1>
+<h1 id="formulas-propositions-and-inference-rules:647dbe1e5b68015679492d34153c74f5">Formulas, Propositions, and Inference Rules</h1>
 
 <p>$P \implies Q$ is a <em>formula</em>.<br />
 $\forall P \in { T, F } . \forall Q \in { T, F } . P \implies Q$ is a <em>proposition</em>.<br />
@@ -490,7 +436,7 @@ T$.</p>
 $\infer{Q}{P}$ is sound if and only if the formula
 $P \implies Q$ is valid. So, this way, we can find out whether an inference rule is sound or not, by checking out whether the corresponding formula is valid or not.</p>
 
-<h1 id="negating-quantifiers">Negating Quantifiers</h1>
+<h1 id="negating-quantifiers:647dbe1e5b68015679492d34153c74f5">Negating Quantifiers</h1>
 
 <p>What is the negation of $\forall x \in S . P(x)$?
 <div class="gap"></div></p>
@@ -498,7 +444,7 @@ $P \implies Q$ is valid. So, this way, we can find out whether an inference rule
 <p>What is the negation of $\exists x \in S . P(x)$?
 <div class="gap"></div></p>
 
-<h1 id="satisfiability">Satisfiability</h1>
+<h1 id="satisfiability:647dbe1e5b68015679492d34153c74f5">Satisfiability</h1>
 
 <p><strong>Definition.</strong> A formula is in <em>SAT</em> if it is in CNF form and it is
   satisfiable.</p>
@@ -593,7 +539,7 @@ x</em>{49}) \wedge (x<em>{21} \vee x</em>{40} \vee \overline{x<em>{14}}) \wedge
 x<em>{7}) \wedge (x</em>{25} \vee x<em>{47} \vee \overline{x</em>{12}}) \end{math}
 \end{center}</p>
 
-<h2 id="converting-truth-tables-to-dnf">Converting Truth Tables to DNF</h2>
+<h2 id="converting-truth-tables-to-dnf:647dbe1e5b68015679492d34153c74f5">Converting Truth Tables to DNF</h2>
 
 <p>\begin{tabular}{cc|cc}
 $P$ &amp; $Q$ &amp; $P \implies Q$ &amp; $P \oplus Q$ \ \hline
@@ -607,7 +553,7 @@ $P$ &amp; $Q$ &amp; $P \implies Q$ &amp; $P \oplus Q$ \ \hline
 
 <p>$$(P \wedge \neg Q) \vee (\neg P \wedge Q)$$</p>
 
-<h2 id="converting-truth-tables-to-cnf">Converting Truth Tables to CNF</h2>
+<h2 id="converting-truth-tables-to-cnf:647dbe1e5b68015679492d34153c74f5">Converting Truth Tables to CNF</h2>
 
 <p>\begin{tabular}{cc|cc}
 $P$ &amp; $Q$ &amp; $P \implies Q$ &amp; $P \oplus Q$ \ \hline
@@ -621,7 +567,7 @@ $P$ &amp; $Q$ &amp; $P \implies Q$ &amp; $P \oplus Q$ \ \hline
 
 <p>$$(\neg P \vee \neg Q) \wedge (P \vee Q)$$</p>
 
-<h2 id="the-related-3cnf-formulation">The related 3CNF formulation</h2>
+<h2 id="the-related-3cnf-formulation:647dbe1e5b68015679492d34153c74f5">The related 3CNF formulation</h2>
 
 <p>When we are only interested to know whether or not a given formula is satisfiable, we can write a 3CNF that is satisfiable iff the original formula is. In order to do that, we first write an equivalent CNF, and then convert it to a 3CNF (which is not necessarily equivalent, but only guarantees to preserve the <em>satisfiability</em> feature) as follow. For each clause with less than 3 literals such as $(A \lor \neg B)$ we add a dummy variable $C$ (only for this clause) and interprete the $(A \lor \neg B)$ as a formula over all of $A,B,C$ and write a CNF for them (which happens to be 3CNF!). For longer clauses such as
 $(A \lor B \lor C \lor D)$ we do another trick of breaking them into smaller parts using new dummy variables as follows $(A \lor B \lor \neg X) \wedge (\neg X \lor C \lor D).$</p>
@@ -760,7 +706,7 @@ list.</p>
   <p class="fronthead"><A href="">Class 4: Logical Operators and Formulas</a> (Thu, 31 Aug 2017)</p>
     
 
-<h3 id="schedule:a69bef1e5f2725722420b5c4a32452b2">Schedule</h3>
+<h3 id="schedule">Schedule</h3>
 
 <p><a href="/ps/ps1"><strong>Problem Set 1</strong></a> is due <strong>Friday at 6:29pm</strong>.</p>
 
@@ -776,7 +722,7 @@ Quantifiers).</p>
    <a href="/docs/class4.pdf">See PDF Version for <b>Notes and Questions</b></a>.
    </div></p>
 
-<h2 id="links:a69bef1e5f2725722420b5c4a32452b2">Links</h2>
+<h2 id="links">Links</h2>
 
 <p>Scott Brown, <a href="http://ms.appliedprobability.org/data/files/selected%20articles/39-1-1.pdf"><em>The Life and Work of Augustus De Morgan</em></a>. Applied Probability 2006.</p>
 
@@ -786,9 +732,9 @@ Quantifiers).</p>
 
 <p><div class="latex"></p>
 
-<h1 id="notes-and-questions:a69bef1e5f2725722420b5c4a32452b2">Notes and Questions</h1>
+<h1 id="notes-and-questions">Notes and Questions</h1>
 
-<h2 id="well-ordering-principle-proof:a69bef1e5f2725722420b5c4a32452b2">Well-Ordering Principle Proof</h2>
+<h2 id="well-ordering-principle-proof">Well-Ordering Principle Proof</h2>
 
 <p><strong>Odd Summation.</strong> (Problem 2.12) Prove that for all $n &gt; 0$, the sum of the first $n$ odd numbers is $n^2$.</p>
 
@@ -883,7 +829,7 @@ For each of the formulas below, determine if it is _valid_ and if it is _satisfi
   <p class="fronthead"><A href="">Class 3: Well-Ordering Principle</a> (Tue, 29 Aug 2017)</p>
     
 
-<h3 id="schedule:b9b50bf0a87e56763567aaebbc820d47">Schedule</h3>
+<h3 id="schedule">Schedule</h3>
 
 <p>This week, you should read MCS Chapter 2 and MCS Chapter 3 (at least
 through the end of Section 3.4).</p>
@@ -903,7 +849,7 @@ hours schedule.</p>
    <a href="/docs/class3.pdf">See PDF Version for <b>Notes and Questions</b></a>.
    </div></p>
 
-<h2 id="links:b9b50bf0a87e56763567aaebbc820d47">Links</h2>
+<h2 id="links">Links</h2>
 
 <p><a href="https://math.berkeley.edu/~kpmann/Well-ordering.pdf"><em>The Well-Ordering Theorem: one of the Greatest Mathematical Controversies of All Time</em></a>, Kathryn Mann.</p>
 
@@ -911,7 +857,7 @@ hours schedule.</p>
 
 <p><div class="latex"></p>
 
-<h1 id="notes-and-questions:b9b50bf0a87e56763567aaebbc820d47">Notes and Questions</h1>
+<h1 id="notes-and-questions">Notes and Questions</h1>
 
 <p>What properties must a sensible ordering function have?</p>
 
@@ -944,7 +890,7 @@ either satisfy $a&lt;b$ or $b&lt;a$. Second  $a&lt;b$ and $b&lt;a$ should always
 
 <!--page-->
 
-<h3 id="template-for-well-ordering-proofs-section-2-2:b9b50bf0a87e56763567aaebbc820d47">Template for Well-Ordering Proofs (Section 2.2)</h3>
+<h3 id="template-for-well-ordering-proofs-section-2-2">Template for Well-Ordering Proofs (Section 2.2)</h3>
 
 <p>To prove that $P(n)$ is true for all $n \in \mathbb{N}$:</p>
 
