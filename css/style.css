@@ -219,7 +219,7 @@ body {
     background-color: #fff;
     color: #212121;
     font-family: 'Fira Sans', sans-serif;
-    line-height: 1.2
+    line-height: 1.1;
 }
 a:active,
 a:focus,
@@ -663,7 +663,7 @@ p,
 td,
 textarea,
 th {
-    line-height: 1.8
+    line-height: 1.4
 }
 a {
     text-decoration: underline

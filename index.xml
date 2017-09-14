@@ -6,8 +6,655 @@
     <description>Recent content on cs2102: Discrete Math</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 31 Aug 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 14 Sep 2017 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://uvacs2102.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Class 8: Sequences, Relations, Functions</title>
+      <link>https://uvacs2102.github.io/class8/</link>
+      <pubDate>Thu, 14 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/class8/</guid>
+      <description>
+
+&lt;h3 id=&#34;schedule:3a7d0da174b09b839e2f33e1cfd8fab3&#34;&gt;Schedule&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps3&#34;&gt;&lt;strong&gt;Problem Set 3&lt;/strong&gt;&lt;/a&gt; is due &lt;strong&gt;Friday at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;
+   &lt;center&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlightm&#34;&gt;
+   &lt;a href=&#34;https://uvacs2102.github.io/docs/class8.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes and Questions&lt;/b&gt;&lt;/a&gt;.
+   &lt;/div&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;links:3a7d0da174b09b839e2f33e1cfd8fab3&#34;&gt;Links&lt;/h2&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;sequences:3a7d0da174b09b839e2f33e1cfd8fab3&#34;&gt;Sequences&lt;/h1&gt;
+
+&lt;p&gt;A &lt;strong&gt;sequence&lt;/strong&gt; is a mathematical datatype that bears similarities to sets. A sequence $S$ also contains some elements, but we usually refer to them as &lt;em&gt;components&lt;/em&gt;. There are two major differences between sets and sequences:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Components of a sequence are &lt;strong&gt;ordered&lt;/strong&gt;. There is either $0$, or $1$ or $2$, or &amp;hellip; $n$ components, when the sequence if &lt;em&gt;finite&lt;/em&gt; or it could be an infinite sequence that has an $i$&amp;lsquo;th component for any non-zero natural number $i$.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Different components of a sequence could be equal. For example $(a,b,a)$ has $a$ repeating, and this is a different sequence compared to $(a,b,b)$ even though they both have 3 componetns. If we interprete them as &lt;em&gt;sets&lt;/em&gt;, then they will be equal sets with $2$ elements each.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h1 id=&#34;cartesian-product:3a7d0da174b09b839e2f33e1cfd8fab3&#34;&gt;Cartesian Product&lt;/h1&gt;
+
+&lt;p&gt;We can use set products to get new sets whose elements are sequences. Cartesian product is a very useful way of doing it.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Set Products.&lt;/strong&gt; A &lt;em&gt;Cartesian product&lt;/em&gt; of sets $S_1, S_2, \cdots, S_n$
+  is a set consisting of all possible sequences of $n$ elements where the
+  $i$\textsuperscript{th} element is chosen from $S_i$.&lt;/p&gt;
+
+&lt;p&gt;$$ S_1 \times S_2 \times \cdots \times S_n = { (s_1, s_2, \cdots, s_n) | s_i \in S_i } $$&lt;/p&gt;
+
+&lt;p&gt;How many elements are in $A \times B$?&lt;/p&gt;
+
+&lt;h1 id=&#34;relations-and-binary-relations:3a7d0da174b09b839e2f33e1cfd8fab3&#34;&gt;Relations and Binary Relations&lt;/h1&gt;
+
+&lt;p&gt;A &lt;em&gt;relation&lt;/em&gt; between some elements from set $A$ and some elements from set $B$ could be represented by putting all such pairs $(a,b)$ in a set $P$. As you can see, this way, $P$ would be a subset of the cartesian product $A \times B$, namely $P \subseteq A \times B$. More formally we have the following definition.&lt;/p&gt;
+
+&lt;p&gt;A &lt;strong&gt;binary relation&lt;/strong&gt;, $P$, is defined with respect to a &lt;em&gt;domain&lt;/em&gt; set, $A$, and a
+&lt;em&gt;codomain&lt;/em&gt; set, $B$, and it holds that  $P$ is $P \subseteq A \times B$. When we draw $P$ by connecting elements of $A$ to $B$ based on their membership in $P$, we call this  the &lt;em&gt;graph&lt;/em&gt; of
+$R$.&lt;/p&gt;
+
+&lt;p&gt;The notion of relations could be generalized to having relations between elements coming from multiple sets $A,B,C$, and we can also talk about relations of the form $P \subseteq A \times B \times C$, but the binary relation remains a very important data type as it allows us to define &lt;em&gt;functions&lt;/em&gt;&amp;hellip;&lt;/p&gt;
+
+&lt;h1 id=&#34;functions:3a7d0da174b09b839e2f33e1cfd8fab3&#34;&gt;Functions&lt;/h1&gt;
+
+&lt;p&gt;The concept of a function $F$ models is a special form of a binary relation $R$ between $A$ and $B$ where for every element  $a \in A$ there is a &lt;em&gt;unique&lt;/em&gt; element in $b \in B$ that is in relation with $a$ (i.e. $(a,b) \in R$). More formally, we use a direct new notation just reserved for working with functions.&lt;/p&gt;
+
+&lt;p&gt;A &lt;strong&gt;function&lt;/strong&gt; is a mathematical datatype that associates elements from
+one set, called the &lt;em&gt;domain&lt;/em&gt;, with elements from another set, called a
+&lt;em&gt;codomain&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;$$ f: \textrm{\em domain} \rightarrow \textrm{\em codomain} $$&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Defining a function.&lt;/strong&gt; To define a function, we need to describe how
+  elements in the domain are associated with elements in the codomain.&lt;/p&gt;
+
+&lt;p&gt;#&lt;/p&gt;
+
+&lt;p&gt;What are the (sensible) domains and codomains of each function below:&lt;/p&gt;
+
+&lt;p&gt;$$ f(n) ::= |n| \qquad \qquad f(x) ::= x^2  \qquad\qquad f(n) ::= n + 1 \qquad\qquad f(a, b) ::= a / b $$&lt;/p&gt;
+
+&lt;p&gt;$$ f(x) ::= \sqrt{x}  \qquad \qquad \qquad f(S) ::= \textrm{minimum}_{&amp;lt;}(S) $$&lt;/p&gt;
+
+&lt;p&gt;##&lt;/p&gt;
+
+&lt;!--page--&gt;
+
+&lt;h2 id=&#34;properties-of-relations-and-functions:3a7d0da174b09b839e2f33e1cfd8fab3&#34;&gt;Properties of Relations and Functions&lt;/h2&gt;
+
+&lt;p&gt;If the function is &lt;em&gt;total&lt;/em&gt;, every element of the domain has one
+associated codomain element; if the function is &lt;em&gt;partial&lt;/em&gt;, there may be
+elements of the domain that do not have an associated codomain element. Note that, unless specified otherwise, we assume that a function is &lt;em&gt;total&lt;/em&gt; (this is how we defined a function) but we use the term &lt;em&gt;partial&lt;/em&gt; to denote cases where some inputs do not have an output, and reserve the word &lt;em&gt;total&lt;/em&gt; to emphasize that no such thing exists.&lt;/p&gt;
+
+&lt;p&gt;For which of the above-listed functions are &lt;em&gt;total&lt;/em&gt;?&lt;/p&gt;
+
+&lt;p&gt;We call a function $F$ from $A$ to $B$ &lt;em&gt;surjective&lt;/em&gt; if every element in $B$ is &amp;ldquo;covered&amp;rdquo;, namely,&lt;/p&gt;
+
+&lt;p&gt;$$ \forall y \in B. \exists x \in A. F(x)=y .$$&lt;/p&gt;
+
+&lt;p&gt;A similar definition could be defined for any binary relation. We also call a function $F$ &lt;em&gt;injective&lt;/em&gt; if for any  element $y$ in the codomain $B$ there is &lt;em&gt;at most&lt;/em&gt; one $x$ for which $F(x)=y$. How do you write this formally using quantifiers?&lt;/p&gt;
+
+&lt;p&gt;When a function is total, surjective, and injective, then we say this is a &lt;em&gt;bijection&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;For each statement below, and using the notion of graphs for binary relations and functions, give the name of the described case, and  give at least one example.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;A binary relation where no element of $A$ has more than one outgoing edge:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;##&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;A binary relation where every element of $A$ has exactly one outgoing edge:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;##&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;A binary relation where every element of $B$ has exactly one incoming edge:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;##&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;A binary relation where every element of $A$ has exactly one outgoing
+edge and every element of $B$ has exactly one incoming edge:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;##&lt;/p&gt;
+
+&lt;p&gt;If there exists a &lt;em&gt;bijective&lt;/em&gt; relation between $S$ and $T$ defined by the graph $G$ which of these &lt;em&gt;must&lt;/em&gt; be true:&lt;/p&gt;
+
+&lt;p&gt;a. there exists some &lt;em&gt;injective&lt;/em&gt; relation between $S$ and $T$.
+b. there exists some &lt;em&gt;bijective&lt;/em&gt; relation between $T$ and $S$.
+c. there exists a &lt;em&gt;total&lt;/em&gt; function, $f: S \rightarrow T$.
+d. $S - T = \emptyset$.
+e. the number of elements of $S$ is equal to the number of elements of $T$.
+&lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Problem Set 2 Comments</title>
+      <link>https://uvacs2102.github.io/ps2comments/</link>
+      <pubDate>Wed, 13 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/ps2comments/</guid>
+      <description>&lt;p&gt;The Problem Set 2 solutions and comments are now posted in collab: &lt;a href=&#34;https://collab.its.virginia.edu/access/content/group/9bd99d1c-6f18-4542-a7d1-8ffc4fccbd3d/ps2solutions.pdf&#34;&gt;PDF&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Class 7: Sets</title>
+      <link>https://uvacs2102.github.io/class7/</link>
+      <pubDate>Tue, 12 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/class7/</guid>
+      <description>
+
+&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps3&#34;&gt;&lt;strong&gt;Problem Set 3&lt;/strong&gt;&lt;/a&gt; is due &lt;strong&gt;Friday at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;
+   &lt;center&gt;
+&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;a5f790a4fb0740d29bb3ad6dce3fa68d&#34; data-ratio=&#34;1.77777777777778&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
+   &lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlightm&#34;&gt;
+   &lt;a href=&#34;https://uvacs2102.github.io/docs/class7.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes and Questions&lt;/b&gt;&lt;/a&gt;.
+   &lt;/div&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;notes-and-questions&#34;&gt;Notes and Questions&lt;/h1&gt;
+
+&lt;p&gt;What is a &lt;em&gt;data type&lt;/em&gt;?  What are the differences between a &lt;em&gt;mathematical
+data type&lt;/em&gt; and a data type in your favorite programming language?&lt;/p&gt;
+
+&lt;p&gt;#&lt;/p&gt;
+
+&lt;p&gt;A &lt;strong&gt;set&lt;/strong&gt; is an unordered colection of objects.  A set is defined by its
+membership operation: $x \in S$ is true if $x$ is in the set $S$. When $x$ is not in $S$ we write it as $x \notin S$. A set has only &lt;em&gt;one&lt;/em&gt; copy of each element. Namely, there is no repetition in elements of a set. Also, a set $A$ could be a member o another set $B$, denoted by $A \in B$. Note that members of $A$ are not necessarily members of $B$ unless they are explicitly put in $B$ directly.&lt;/p&gt;
+
+&lt;h2 id=&#34;set-operations&#34;&gt;Set Operations&lt;/h2&gt;
+
+&lt;p&gt;Subset: $\subseteq$ (note that this does not mean &lt;em&gt;strict subset&lt;/em&gt;)
+$$A \subseteq B \iff \forall x \in A. \fillin \in \fillin.$$&lt;/p&gt;
+
+&lt;p&gt;Set Equality: $=$
+$$A = B \iff A \fillin B \wedge B \fillin A.$$&lt;/p&gt;
+
+&lt;p&gt;Set Union: $\cup$
+$$\forall x. x \in A \cup B \iff x \in A \fillin x \in B.$$&lt;/p&gt;
+
+&lt;p&gt;Set Intersection: $\cap$
+$$\forall x. x \in A \cap B \iff x \in A \fillin x \in B.$$&lt;/p&gt;
+
+&lt;p&gt;Set Difference: $-$
+$$\forall x. x \in A - B \iff x \in A \wedge x \notin B.$$&lt;/p&gt;
+
+&lt;p&gt;Set Complement: $\overline{S}$
+$$ \forall  x \in D. x \in \overline{A} \iff x \notin A.$$&lt;/p&gt;
+
+&lt;p&gt;($D$ is the ``domain of discourse&amp;rdquo;, the universe of all objects under
+discussion.)&lt;/p&gt;
+
+&lt;!--page--&gt;
+
+&lt;h3 id=&#34;russell-s-paradox&#34;&gt;Russell&amp;rsquo;s Paradox&lt;/h3&gt;
+
+&lt;p&gt;$$ S_{R} = \textrm{ the set of all sets that are not members of themselves} $$&lt;/p&gt;
+
+&lt;p&gt;Is $S&lt;em&gt;{R} \in S&lt;/em&gt;{R}$?&lt;/p&gt;
+
+&lt;p&gt;What is the source of this paradox? Note that in this question, we are implicitly assuming that $S&lt;em&gt;{R}$ is a set, but we have never &amp;ldquo;constructed&amp;rdquo; this set properly to use it. Namely, here we are implicitly assuming that there is already a &amp;ldquo;set of all sets&amp;rdquo; $S&lt;/em&gt;{all}$ from which we remove those sets like $T$ for which $T \in T$. By removing all such $T$ from $S_{all}$ we get the set $S_R$.&lt;/p&gt;
+
+&lt;h3 id=&#34;using-quantifiers-more-carefully&#34;&gt;Using Quantifiers More Carefully&lt;/h3&gt;
+
+&lt;p&gt;Note that in some of the  propositions that we used to define the set operations (such as union, intersection, etc.) above, we wrote quantified $x$ without saying which set it is from. For example  $\forall x. [\dots]$. It is much preferred to always say what $x$ is belonging to when we quantify over $x$. The reason is to avoid traps like that of Russell&amp;rsquo;s paradox! This should not worry us in this class, as we will always work with well-defined &lt;em&gt;universes&lt;/em&gt; that include all the elements of the sets that we work with. Therefore, we can always assume implicitly that $x \in U$ (for a well defined set universe $U$) even if not explicitly mentioned.&lt;/p&gt;
+
+&lt;p&gt;#&lt;/p&gt;
+
+&lt;h3 id=&#34;set-practice&#34;&gt;Set Practice&lt;/h3&gt;
+
+&lt;p&gt;Here are some practice problems involving sets.  We won&amp;rsquo;t go through
+these in class, but you should ask questions about any are unclear.  (At
+least a few of these will be on Exam 1.)&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Define $A \subset B$ (strict subset).&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;#&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Prove $A \cup B \equiv B \cup A$.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;#&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Prove $A - B = \emptyset \iff A \subseteq B$.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;#&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Prove $A = B \iff (\forall a \in A \ldotp a \in B) \wedge (\forall b \in B \ldotp b \in A).$
+&lt;/div&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Problem Set 3</title>
+      <link>https://uvacs2102.github.io/ps3posted/</link>
+      <pubDate>Fri, 08 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/ps3posted/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps3&#34;&gt;&lt;strong&gt;Problem Set 3&lt;/strong&gt;&lt;/a&gt; [&lt;a href=&#34;https://uvacs2102.github.io/docs/ps3.pdf&#34;&gt;PDF&lt;/a&gt;] is now posted and
+is due &lt;strong&gt;Friday, 15 September at 6:29:00pm&lt;/strong&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Class 6: Quantifiers and More</title>
+      <link>https://uvacs2102.github.io/class6/</link>
+      <pubDate>Thu, 07 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/class6/</guid>
+      <description>
+
+&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
+
+&lt;p&gt;Everyone should have received their graded PS1 by now. Please read &lt;a href=&#34;https://collab.its.virginia.edu/access/content/group/9bd99d1c-6f18-4542-a7d1-8ffc4fccbd3d/ps1solutions.pdf&#34;&gt;the comments posted in collab&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps2&#34;&gt;&lt;strong&gt;Problem Set 2&lt;/strong&gt;&lt;/a&gt; is due &lt;strong&gt;Friday at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;You should finish reading MCS Chapter 3 by Tuesday (12 September).&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;
+   &lt;center&gt;
+&lt;script async class=&#34;speakerdeck-embed&#34; 
+data-id=&#34;44b72b8383c14676af241944ea541667&#34; data-ratio=&#34;1.77777777777778&#34; 
+src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
+   &lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlightm&#34;&gt;
+   &lt;a href=&#34;https://uvacs2102.github.io/docs/class6.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes and Questions&lt;/b&gt;&lt;/a&gt;.
+   &lt;/div&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
+
+&lt;p&gt;If you believe real computing systems have the property that the values
+you read from memory will match what you wrote there, see:&lt;/p&gt;
+
+&lt;p&gt;Sudhakar Govindavajhala and Andrew W. Appel. &lt;a href=&#34;http://sip.cs.princeton.edu/pub/memerr.pdf&#34;&gt;&lt;em&gt;Using Memory Errors to Attack a Virtual Machine&lt;/em&gt;&lt;/a&gt;, IEEE Symposium on Security and Privacy 2003.&lt;/p&gt;
+
+&lt;p&gt;Bianca Schroeder, Eduardo Pinheiro, Wolf-Dietrich Weber. &lt;a href=&#34;http://www.cs.utoronto.ca/~bianca/papers/sigmetrics09.pdf&#34;&gt;&lt;em&gt;DRAM Errors
+in the Wild: A Large-Scale Field
+Study&lt;/em&gt;&lt;/a&gt;. SIGMETRICS 2009.&lt;/p&gt;
+
+&lt;p&gt;Kaveh Razavi, Ben Gras, Erik Bosman, Bart Preneel, Cristiano Giuffrida
+and Herbert Bos. &lt;a href=&#34;https://www.usenix.org/conference/usenixsecurity16/technical-sessions/presentation/razavi&#34;&gt;&lt;em&gt;Flip Feng Shui: Hammering a Needle in the Software
+Stack&lt;/em&gt;&lt;/a&gt;. USENIX
+Security 2016.&lt;/p&gt;
+
+&lt;p&gt;Yuan Xiao, Xiaokuan Zhang, Yinqian Zhang, and Radu Teodorescu. &lt;a href=&#34;https://www.usenix.org/system/files/conference/usenixsecurity16/sec16_paper_xiao.pdf&#34;&gt;&lt;em&gt;One Bit Flips, One Cloud Flops: Cross-VM Row Hammer Attacks and Privilege Escalation&lt;/em&gt;&lt;/a&gt;, USENIX Security 2016.&lt;/p&gt;
+
+&lt;p&gt;Sahand Saba&amp;rsquo;s &lt;a href=&#34;http://sahandsaba.com/understanding-sat-by-implementing-a-simple-sat-solver-in-python.html&#34;&gt;&lt;em&gt;Understanding SAT by Implementing a Simple SAT Solver in
+Python&lt;/em&gt;&lt;/a&gt;  [&lt;a href=&#34;https://github.com/evansuva/simple-sat&#34;&gt;Code with Dave&amp;rsquo;s modifications: https://github.com/evansuva/simple-sat&lt;/a&gt;]&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://baldur.iti.kit.edu/sat-competition-2017/&#34;&gt;SAT Competition 2017&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Millennium Problems on &lt;a href=&#34;http://www.claymath.org/millennium-problems/&#34;&gt;Clay institute&amp;rsquo;s
+website&lt;/a&gt;. Whether or not we can&lt;br /&gt;
+solve the &lt;em&gt;satisfiability&lt;/em&gt; of a given CNF or 3CNF formula in polynomial time,
+is the P vs. NP question in this list.&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;programs-and-proofs&#34;&gt;Programs and Proofs&lt;/h1&gt;
+
+&lt;p&gt;What does it mean to &lt;em&gt;test&lt;/em&gt; a computing system?  What does it mean for a computing system to &lt;em&gt;always behave correctly&lt;/em&gt;?&lt;/p&gt;
+
+&lt;div class=&#34;biggap&#34;&gt;&lt;/div&gt;
+
+&lt;p&gt;Can a mathematical proof guarantee a real computing system will behave correctly?&lt;/p&gt;
+
+&lt;div class=&#34;biggap&#34;&gt;&lt;/div&gt;
+
+&lt;h1 id=&#34;minima&#34;&gt;Minima&lt;/h1&gt;
+
+&lt;p&gt;The &lt;em&gt;minimum&lt;/em&gt; of a set with respect to some comparator operator is the
+element which is &amp;ldquo;less than&amp;rdquo; (according to that comparator) every
+other element: $m \in S$ is the &lt;em&gt;minimum&lt;/em&gt; of $S$ if and only if
+$\forall x \in S - { m } . m \prec x$.&lt;/p&gt;
+
+&lt;p&gt;$$
+\forall S \in \textrm{pow}(\mathbb{N}) - { \varnothing } \ldotp \exists m \in S\ldotp \forall x \in S - {m}\ldotp m &amp;lt; x
+$$&lt;/p&gt;
+
+&lt;h1 id=&#34;formulas-propositions-and-inference-rules&#34;&gt;Formulas, Propositions, and Inference Rules&lt;/h1&gt;
+
+&lt;p&gt;$P \implies Q$ is a &lt;em&gt;formula&lt;/em&gt;.&lt;br /&gt;
+$\forall P \in { T, F } . \forall Q \in { T, F } . P \implies Q$ is a &lt;em&gt;proposition&lt;/em&gt;.&lt;br /&gt;
+$\infer{Q}{P}$ is an &lt;em&gt;inference rule&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;A &lt;em&gt;formula&lt;/em&gt; is &lt;em&gt;satisfiable&lt;/em&gt; if there is some way to make it true.&lt;/p&gt;
+
+&lt;p&gt;$P \implies Q$ is satisfiable:&lt;/p&gt;
+
+&lt;p&gt;$\exists P \in { T, F } . \exists Q \in {T, F } . P \implies Q$&lt;/p&gt;
+
+&lt;p&gt;We can show a formula is satisfiable by giving &lt;em&gt;one&lt;/em&gt; choice for the
+variable assignments that makes it true. For example, $P = T$, $Q =
+T$.&lt;/p&gt;
+
+&lt;p&gt;A &lt;em&gt;formula&lt;/em&gt; is &lt;em&gt;valid&lt;/em&gt; if there is no way to make it false.&lt;/p&gt;
+
+&lt;p&gt;$P \implies Q$ is &lt;em&gt;not&lt;/em&gt; valid:&lt;/p&gt;
+
+&lt;p&gt;$\forall P \in { T, F } . \forall Q \in {T, F } . P \implies Q$&lt;/p&gt;
+
+&lt;p&gt;This proposition is false, we can chose $P = T$, $Q = F$.&lt;/p&gt;
+
+&lt;p&gt;An &lt;em&gt;inference rule&lt;/em&gt; is sound if it never leads to a false conclusion. An inference rule
+$\infer{Q}{P}$ is sound if and only if the formula
+$P \implies Q$ is valid. So, this way, we can find out whether an inference rule is sound or not, by checking out whether the corresponding formula is valid or not.&lt;/p&gt;
+
+&lt;h1 id=&#34;negating-quantifiers&#34;&gt;Negating Quantifiers&lt;/h1&gt;
+
+&lt;p&gt;What is the negation of $\forall x \in S . P(x)$?
+&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;What is the negation of $\exists x \in S . P(x)$?
+&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;satisfiability&#34;&gt;Satisfiability&lt;/h1&gt;
+
+&lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; A formula is in &lt;em&gt;SAT&lt;/em&gt; if it is in CNF form and it is
+  satisfiable.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; A formula is in &lt;em&gt;3SAT&lt;/em&gt; if it is in 3CNF form and it is
+  satisfiable.&lt;/p&gt;
+
+&lt;p&gt;$$
+(x_1 \vee x_2 \vee x_3) \wedge (x_1 \vee \overline{x_2} \vee x_3) \wedge (\overline{x_1} \vee x_2 \vee \overline{x_3})
+$$&lt;/p&gt;
+
+&lt;p&gt;\begin{center} \tiny \begin{math} (x&lt;em&gt;{48} \vee x&lt;/em&gt;{4} \vee \overline{x&lt;em&gt;{9}})
+\wedge (\overline{x&lt;/em&gt;{44}} \vee x&lt;em&gt;{50} \vee \overline{x&lt;/em&gt;{37}}) \wedge
+(\overline{x&lt;em&gt;{8}} \vee \overline{x&lt;/em&gt;{1}} \vee x&lt;em&gt;{28}) \wedge (x&lt;/em&gt;{21} \vee
+x&lt;em&gt;{27} \vee \overline{x&lt;/em&gt;{32}}) \wedge (x&lt;em&gt;{17} \vee x&lt;/em&gt;{29} \vee
+\overline{x&lt;em&gt;{30}}) \wedge (x&lt;/em&gt;{30} \vee x&lt;em&gt;{24} \vee x&lt;/em&gt;{37}) \wedge
+(\overline{x&lt;em&gt;{22}} \vee \overline{x&lt;/em&gt;{27}} \vee \overline{x&lt;em&gt;{44}}) \wedge
+(x&lt;/em&gt;{8} \vee \overline{x&lt;em&gt;{25}} \vee \overline{x&lt;/em&gt;{24}}) \wedge
+(\overline{x&lt;em&gt;{44}} \vee x&lt;/em&gt;{50} \vee x&lt;em&gt;{14}) \wedge (x&lt;/em&gt;{45} \vee x&lt;em&gt;{15} \vee
+x&lt;/em&gt;{37}) \wedge (\overline{x&lt;em&gt;{16}} \vee x&lt;/em&gt;{14} \vee \overline{x&lt;em&gt;{36}}) \wedge
+(\overline{x&lt;/em&gt;{33}} \vee x&lt;em&gt;{5} \vee x&lt;/em&gt;{26}) \wedge (x&lt;em&gt;{18} \vee
+\overline{x&lt;/em&gt;{7}} \vee \overline{x&lt;em&gt;{24}}) \wedge (x&lt;/em&gt;{31} \vee x&lt;em&gt;{38} \vee
+x&lt;/em&gt;{28}) \wedge (x&lt;em&gt;{31} \vee \overline{x&lt;/em&gt;{33}} \vee \overline{x&lt;em&gt;{8}}) \wedge
+(x&lt;/em&gt;{49} \vee x&lt;em&gt;{7} \vee \overline{x&lt;/em&gt;{6}}) \wedge (x&lt;em&gt;{34} \vee
+\overline{x&lt;/em&gt;{8}} \vee x&lt;em&gt;{46}) \wedge (x&lt;/em&gt;{4} \vee \overline{x&lt;em&gt;{5}} \vee
+\overline{x&lt;/em&gt;{35}}) \wedge (x&lt;em&gt;{43} \vee x&lt;/em&gt;{27} \vee x&lt;em&gt;{39}) \wedge
+(\overline{x&lt;/em&gt;{46}} \vee \overline{x&lt;em&gt;{40}} \vee \overline{x&lt;/em&gt;{27}}) \wedge
+(\overline{x&lt;em&gt;{25}} \vee x&lt;/em&gt;{14} \vee \overline{x&lt;em&gt;{49}}) \wedge (x&lt;/em&gt;{38} \vee
+x&lt;em&gt;{5} \vee x&lt;/em&gt;{15}) \wedge (x&lt;em&gt;{9} \vee x&lt;/em&gt;{14} \vee \overline{x&lt;em&gt;{19}}) \wedge
+(x&lt;/em&gt;{45} \vee \overline{x&lt;em&gt;{42}} \vee \overline{x&lt;/em&gt;{39}}) \wedge (x&lt;em&gt;{34} \vee
+\overline{x&lt;/em&gt;{22}} \vee \overline{x&lt;em&gt;{28}}) \wedge (\overline{x&lt;/em&gt;{20}} \vee
+x&lt;em&gt;{15} \vee \overline{x&lt;/em&gt;{8}}) \wedge (\overline{x&lt;em&gt;{44}} \vee
+\overline{x&lt;/em&gt;{10}} \vee \overline{x&lt;em&gt;{9}}) \wedge (x&lt;/em&gt;{22} \vee
+\overline{x&lt;em&gt;{31}} \vee x&lt;/em&gt;{14}) \wedge (\overline{x&lt;em&gt;{9}} \vee
+\overline{x&lt;/em&gt;{42}} \vee \overline{x&lt;em&gt;{15}}) \wedge (\overline{x&lt;/em&gt;{40}} \vee
+x&lt;em&gt;{12} \vee \overline{x&lt;/em&gt;{32}}) \wedge (\overline{x&lt;em&gt;{20}} \vee
+\overline{x&lt;/em&gt;{6}} \vee \overline{x&lt;em&gt;{15}}) \wedge (\overline{x&lt;/em&gt;{37}} \vee
+x&lt;em&gt;{39} \vee \overline{x&lt;/em&gt;{23}}) \wedge (\overline{x&lt;em&gt;{3}} \vee
+\overline{x&lt;/em&gt;{40}} \vee \overline{x&lt;em&gt;{32}}) \wedge (\overline{x&lt;/em&gt;{4}} \vee
+\overline{x&lt;em&gt;{25}} \vee x&lt;/em&gt;{7}) \wedge (\overline{x&lt;em&gt;{20}} \vee
+\overline{x&lt;/em&gt;{36}} \vee \overline{x&lt;em&gt;{37}}) \wedge (\overline{x&lt;/em&gt;{40}} \vee
+\overline{x&lt;em&gt;{35}} \vee x&lt;/em&gt;{39}) \wedge (\overline{x&lt;em&gt;{43}} \vee
+\overline{x&lt;/em&gt;{40}} \vee \overline{x&lt;em&gt;{7}}) \wedge (x&lt;/em&gt;{34} \vee x&lt;em&gt;{44} \vee
+x&lt;/em&gt;{26}) \wedge (x&lt;em&gt;{13} \vee x&lt;/em&gt;{27} \vee x&lt;em&gt;{28}) \wedge (x&lt;/em&gt;{12} \vee
+\overline{x&lt;em&gt;{36}} \vee x&lt;/em&gt;{7}) \wedge (\overline{x&lt;em&gt;{16}} \vee x&lt;/em&gt;{9} \vee
+\overline{x&lt;em&gt;{24}}) \wedge (\overline{x&lt;/em&gt;{48}} \vee x&lt;em&gt;{14} \vee x&lt;/em&gt;{28}) \wedge
+(x&lt;em&gt;{16} \vee x&lt;/em&gt;{4} \vee x&lt;em&gt;{40}) \wedge (\overline{x&lt;/em&gt;{25}} \vee x&lt;em&gt;{15} \vee
+x&lt;/em&gt;{37}) \wedge (x&lt;em&gt;{47} \vee \overline{x&lt;/em&gt;{26}} \vee \overline{x&lt;em&gt;{23}}) \wedge
+(x&lt;/em&gt;{4} \vee \overline{x&lt;em&gt;{13}} \vee x&lt;/em&gt;{36}) \wedge (x&lt;em&gt;{48} \vee
+\overline{x&lt;/em&gt;{13}} \vee \overline{x&lt;em&gt;{37}}) \wedge (x&lt;/em&gt;{4} \vee x&lt;em&gt;{35} \vee
+\overline{x&lt;/em&gt;{27}}) \wedge (\overline{x&lt;em&gt;{22}} \vee x&lt;/em&gt;{47} \vee x&lt;em&gt;{26}) \wedge
+(\overline{x&lt;/em&gt;{22}} \vee \overline{x&lt;em&gt;{46}} \vee x&lt;/em&gt;{27}) \wedge
+(\overline{x&lt;em&gt;{20}} \vee x&lt;/em&gt;{49} \vee x&lt;em&gt;{11}) \wedge (x&lt;/em&gt;{42} \vee
+\overline{x&lt;em&gt;{10}} \vee x&lt;/em&gt;{28}) \wedge (\overline{x&lt;em&gt;{45}} \vee x&lt;/em&gt;{28} \vee
+\overline{x&lt;em&gt;{37}}) \wedge (x&lt;/em&gt;{14} \vee \overline{x&lt;em&gt;{32}} \vee
+\overline{x&lt;/em&gt;{23}}) \wedge (x&lt;em&gt;{22} \vee x&lt;/em&gt;{14} \vee x&lt;em&gt;{23}) \wedge
+(\overline{x&lt;/em&gt;{17}} \vee \overline{x&lt;em&gt;{46}} \vee \overline{x&lt;/em&gt;{7}}) \wedge
+(\overline{x&lt;em&gt;{31}} \vee x&lt;/em&gt;{46} \vee \overline{x&lt;em&gt;{50}}) \wedge (x&lt;/em&gt;{34} \vee
+\overline{x&lt;em&gt;{41}} \vee x&lt;/em&gt;{43}) \wedge (x&lt;em&gt;{17} \vee \overline{x&lt;/em&gt;{9}} \vee
+x&lt;em&gt;{15}) \wedge (x&lt;/em&gt;{46} \vee x&lt;em&gt;{14} \vee \overline{x&lt;/em&gt;{12}}) \wedge
+(\overline{x&lt;em&gt;{20}} \vee x&lt;/em&gt;{12} \vee x&lt;em&gt;{14}) \wedge (x&lt;/em&gt;{41} \vee x&lt;em&gt;{42} \vee
+\overline{x&lt;/em&gt;{15}}) \wedge (x&lt;em&gt;{48} \vee x&lt;/em&gt;{46} \vee \overline{x&lt;em&gt;{36}}) \wedge
+(\overline{x&lt;/em&gt;{22}} \vee \overline{x&lt;em&gt;{4}} \vee \overline{x&lt;/em&gt;{49}}) \wedge
+(x&lt;em&gt;{22} \vee x&lt;/em&gt;{12} \vee \overline{x&lt;em&gt;{42}}) \wedge (x&lt;/em&gt;{13} \vee
+\overline{x&lt;em&gt;{38}} \vee x&lt;/em&gt;{39}) \wedge (x&lt;em&gt;{48} \vee \overline{x&lt;/em&gt;{16}} \vee
+\overline{x&lt;em&gt;{27}}) \wedge (x&lt;/em&gt;{17} \vee \overline{x&lt;em&gt;{18}} \vee
+\overline{x&lt;/em&gt;{26}}) \wedge (x&lt;em&gt;{48} \vee \overline{x&lt;/em&gt;{40}} \vee
+\overline{x&lt;em&gt;{35}}) \wedge (\overline{x&lt;/em&gt;{43}} \vee \overline{x&lt;em&gt;{40}} \vee
+\overline{x&lt;/em&gt;{49}}) \wedge (x&lt;em&gt;{29} \vee x&lt;/em&gt;{11} \vee \overline{x&lt;em&gt;{32}}) \wedge
+(x&lt;/em&gt;{33} \vee \overline{x&lt;em&gt;{17}} \vee x&lt;/em&gt;{39}) \wedge (\overline{x&lt;em&gt;{25}} \vee
+\overline{x&lt;/em&gt;{9}} \vee \overline{x&lt;em&gt;{6}}) \wedge (x&lt;/em&gt;{40} \vee \overline{x&lt;em&gt;{50}}
+\vee x&lt;/em&gt;{19}) \wedge (x&lt;em&gt;{8} \vee x&lt;/em&gt;{10} \vee \overline{x&lt;em&gt;{27}}) \wedge (x&lt;/em&gt;{5}
+\vee x&lt;em&gt;{9} \vee \overline{x&lt;/em&gt;{26}}) \wedge (x&lt;em&gt;{45} \vee \overline{x&lt;/em&gt;{38}} \vee
+\overline{x&lt;em&gt;{27}}) \wedge (\overline{x&lt;/em&gt;{4}} \vee \overline{x&lt;em&gt;{40}} \vee
+\overline{x&lt;/em&gt;{42}}) \wedge (x&lt;em&gt;{21} \vee x&lt;/em&gt;{50} \vee x&lt;em&gt;{12}) \wedge
+(\overline{x&lt;/em&gt;{8}} \vee \overline{x&lt;em&gt;{14}} \vee \overline{x&lt;/em&gt;{42}}) \wedge
+(\overline{x&lt;em&gt;{17}} \vee x&lt;/em&gt;{47} \vee \overline{x&lt;em&gt;{27}}) \wedge (x&lt;/em&gt;{49} \vee
+\overline{x&lt;em&gt;{12}} \vee \overline{x&lt;/em&gt;{6}}) \wedge (x&lt;em&gt;{27} \vee x&lt;/em&gt;{49} \vee
+\overline{x&lt;em&gt;{32}}) \wedge (\overline{x&lt;/em&gt;{29}} \vee \overline{x&lt;em&gt;{12}} \vee
+\overline{x&lt;/em&gt;{26}}) \wedge (x&lt;em&gt;{48} \vee \overline{x&lt;/em&gt;{2}} \vee x&lt;em&gt;{6}) \wedge
+(x&lt;/em&gt;{16} \vee x&lt;em&gt;{36} \vee x&lt;/em&gt;{49}) \wedge (x&lt;em&gt;{33} \vee \overline{x&lt;/em&gt;{12}} \vee
+\overline{x&lt;em&gt;{26}}) \wedge (\overline{x&lt;/em&gt;{33}} \vee x&lt;em&gt;{29} \vee x&lt;/em&gt;{49}) \wedge
+(\overline{x&lt;em&gt;{48}} \vee x&lt;/em&gt;{2} \vee x&lt;em&gt;{19}) \wedge (x&lt;/em&gt;{25} \vee x&lt;em&gt;{36} \vee
+x&lt;/em&gt;{49}) \wedge (x&lt;em&gt;{21} \vee x&lt;/em&gt;{40} \vee \overline{x&lt;em&gt;{14}}) \wedge
+(\overline{x&lt;/em&gt;{34}} \vee \overline{x&lt;em&gt;{44}} \vee \overline{x&lt;/em&gt;{6}}) \wedge
+(x&lt;em&gt;{48} \vee \overline{x&lt;/em&gt;{50}} \vee \overline{x&lt;em&gt;{1}}) \wedge (x&lt;/em&gt;{5} \vee
+\overline{x&lt;em&gt;{12}} \vee x&lt;/em&gt;{7}) \wedge (x&lt;em&gt;{21} \vee \overline{x&lt;/em&gt;{35}} \vee
+\overline{x&lt;em&gt;{27}}) \wedge (\overline{x&lt;/em&gt;{22}} \vee \overline{x&lt;em&gt;{16}} \vee
+\overline{x&lt;/em&gt;{14}}) \wedge (\overline{x&lt;em&gt;{13}} \vee \overline{x&lt;/em&gt;{35}} \vee
+\overline{x&lt;em&gt;{12}}) \wedge (\overline{x&lt;/em&gt;{4}} \vee \overline{x&lt;em&gt;{35}} \vee
+\overline{x&lt;/em&gt;{42}}) \wedge (\overline{x&lt;em&gt;{50}} \vee \overline{x&lt;/em&gt;{40}} \vee
+x&lt;em&gt;{7}) \wedge (x&lt;/em&gt;{25} \vee x&lt;em&gt;{47} \vee \overline{x&lt;/em&gt;{12}}) \end{math}
+\end{center}&lt;/p&gt;
+
+&lt;h2 id=&#34;converting-truth-tables-to-dnf&#34;&gt;Converting Truth Tables to DNF&lt;/h2&gt;
+
+&lt;p&gt;\begin{tabular}{cc|cc}
+$P$ &amp;amp; $Q$ &amp;amp; $P \implies Q$ &amp;amp; $P \oplus Q$ \ \hline
+\T &amp;amp; \T   &amp;amp; \T &amp;amp; \F \
+\T &amp;amp; \F   &amp;amp; \F &amp;amp; \T \
+\F &amp;amp; \T   &amp;amp; \T &amp;amp; \T \
+\F &amp;amp; \F   &amp;amp; \T &amp;amp; \F \
+\end{tabular}&lt;/p&gt;
+
+&lt;p&gt;The output of the operator is \T\ if and only if the inputs do match &lt;em&gt;one row&lt;/em&gt; where the output is \T.  So, to get a DNF we can go over all the rows where hte output is \T, and for each write a clause that means we &lt;em&gt;are&lt;/em&gt; in that row. Then we OR all such (conjunctive) clauses. For example, for $P \oplus Q$ we get&lt;/p&gt;
+
+&lt;p&gt;$$(P \wedge \neg Q) \vee (\neg P \wedge Q)$$&lt;/p&gt;
+
+&lt;h2 id=&#34;converting-truth-tables-to-cnf&#34;&gt;Converting Truth Tables to CNF&lt;/h2&gt;
+
+&lt;p&gt;\begin{tabular}{cc|cc}
+$P$ &amp;amp; $Q$ &amp;amp; $P \implies Q$ &amp;amp; $P \oplus Q$ \ \hline
+\T &amp;amp; \T   &amp;amp; \T &amp;amp; \F \
+\T &amp;amp; \F   &amp;amp; \F &amp;amp; \T \
+\F &amp;amp; \T   &amp;amp; \T &amp;amp; \T \
+\F &amp;amp; \F   &amp;amp; \T &amp;amp; \F \
+\end{tabular}&lt;/p&gt;
+
+&lt;p&gt;The output of the operator is \T\ if and only if the inputs do not match &lt;em&gt;any row&lt;/em&gt; where the output is \F.  So, to get a CNF we can go over all the rows where hte output is \F, and for each write a clause that means we are &lt;em&gt;not&lt;/em&gt; in that row. Then we AND all such clauses. For example, for $P \oplus Q$ we get&lt;/p&gt;
+
+&lt;p&gt;$$(\neg P \vee \neg Q) \wedge (P \vee Q)$$&lt;/p&gt;
+
+&lt;h2 id=&#34;the-related-3cnf-formulation&#34;&gt;The related 3CNF formulation&lt;/h2&gt;
+
+&lt;p&gt;When we are only interested to know whether or not a given formula is satisfiable, we can write a 3CNF that is satisfiable iff the original formula is. In order to do that, we first write an equivalent CNF, and then convert it to a 3CNF (which is not necessarily equivalent, but only guarantees to preserve the &lt;em&gt;satisfiability&lt;/em&gt; feature) as follow. For each clause with less than 3 literals such as $(A \lor \neg B)$ we add a dummy variable $C$ (only for this clause) and interprete the $(A \lor \neg B)$ as a formula over all of $A,B,C$ and write a CNF for them (which happens to be 3CNF!). For longer clauses such as
+$(A \lor B \lor C \lor D)$ we do another trick of breaking them into smaller parts using new dummy variables as follows $(A \lor B \lor \neg X) \wedge (\neg X \lor C \lor D).$&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Problem Set 1 Comments</title>
+      <link>https://uvacs2102.github.io/ps1comments/</link>
+      <pubDate>Wed, 06 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/ps1comments/</guid>
+      <description>&lt;p&gt;The Problem Set 1 comments are now posted in collab: &lt;a href=&#34;https://collab.its.virginia.edu/access/content/group/9bd99d1c-6f18-4542-a7d1-8ffc4fccbd3d/ps1solutions.pdf&#34;&gt;PDF&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Class 5: CNF, Computing, Quantifiers</title>
+      <link>https://uvacs2102.github.io/class5/</link>
+      <pubDate>Tue, 05 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/class5/</guid>
+      <description>
+
+&lt;h3 id=&#34;schedule:d690e1859ec274fb7ed997cd7db3fba5&#34;&gt;Schedule&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps2&#34;&gt;&lt;strong&gt;Problem Set 2&lt;/strong&gt;&lt;/a&gt; is due &lt;strong&gt;Friday at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;
+   &lt;center&gt;
+&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;b6468be050744777ac59c696390d3d89&#34; data-ratio=&#34;1.77777777777778&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
+   &lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlightm&#34;&gt;
+   &lt;a href=&#34;https://uvacs2102.github.io/docs/class5.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes and Questions&lt;/b&gt;&lt;/a&gt;.
+   &lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlightrl&#34;&gt;
+&lt;strong&gt;Challenge Problem Opportunity.&lt;/strong&gt; Find the shortest formula that is
+  equivalent to XOR(&lt;em&gt;a&lt;/em&gt;, &lt;em&gt;b&lt;/em&gt;) using just NAND operations. Shortest
+  means the minimum number of NAND operations. A convincing answer
+  would include a proof that no shorter formula exists.
+   &lt;/div&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;links:d690e1859ec274fb7ed997cd7db3fba5&#34;&gt;Links&lt;/h2&gt;
+
+&lt;p&gt;If you want to learn more about how to learn the logic implemented by a chip
+and cryptosystems used in car immobolizers, see &lt;a href=&#34;https://www.cs.virginia.edu/~evans/pubs/usenix08/usenix08.pdf&#34;&gt;&lt;em&gt;Reverse-Engineering a
+Cryptographic RFID
+Tag&lt;/em&gt;&lt;/a&gt; (Karsten
+Nohl, David Evans, Starbug, and Henryk Pl&amp;ouml;tz, &lt;em&gt;USENIX Security
+Symposium&lt;/em&gt; 2008), or &lt;a href=&#34;https://www.youtube.com/watch?v=fCwY27EnOF8&#34;&gt;this
+video&lt;/a&gt;.  Please don&amp;rsquo;t steal any
+cars.&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;notes-and-questions:d690e1859ec274fb7ed997cd7db3fba5&#34;&gt;Notes and Questions&lt;/h1&gt;
+
+&lt;p&gt;&lt;strong&gt;Definition: satisfiable.&lt;/strong&gt; A logical formula is &lt;em&gt;satisfiable&lt;/em&gt; if there
+  is &lt;em&gt;some&lt;/em&gt; way to make it &lt;strong&gt;true&lt;/strong&gt;.  That is, there is at least one
+  assignment of truth value to its variables that makes the forumla
+  true.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Definition: conjunctive normal form (CNF).&lt;/strong&gt; A logical formula that is
+  written as a conjunction of &lt;em&gt;clauses&lt;/em&gt;, where each clause is a
+  disjunction of &lt;em&gt;literals&lt;/em&gt;, and each literal is either a variable or a
+  negation of a variable, is in &lt;em&gt;conjunctive normal form&lt;/em&gt;.  If each
+  clause has excatly three literals, it is called &lt;em&gt;three conjunctive
+  normal form&lt;/em&gt; (3CNF).&lt;/p&gt;
+
+&lt;p&gt;$$
+(a_1 \vee a_2 \vee \neg a_3) \wedge
+(a_1 \vee \neg a_2 \vee a_3) \wedge
+(\neg a_1 \vee a_2 \vee \neg a_3) \wedge
+(\neg a_1 \vee a_2 \vee a_3)
+$$&lt;/p&gt;
+
+&lt;p&gt;##&lt;/p&gt;
+
+&lt;p&gt;Show that every logical formula can be written in conjunctive normal form.
+Also, show that if we only care about &lt;em&gt;satisfiability&lt;/em&gt; we can always write it
+in 3CNF form. Namely, for every CNF formula $F$, we can write a 3CNF formula
+$G$ such that $F$ is satisfiable if and only if $G$ is satisfiable.&lt;/p&gt;
+
+&lt;div class=&#34;biggap&#34;&gt;&lt;/div&gt;
+
+&lt;p&gt;What is the maximum number of (different) clauses in a 3CNF formula
+involving 5 variables?&lt;/p&gt;
+
+&lt;p&gt;##&lt;/p&gt;
+
+&lt;p&gt;What is the maximum number of (different) clauses in a &lt;em&gt;satisfiable&lt;/em&gt;
+3CNF formula involving 5 variables?&lt;/p&gt;
+
+&lt;p&gt;##&lt;/p&gt;
+
+&lt;p&gt;What is the maximum number of (different) clauses in a &lt;em&gt;valid&lt;/em&gt; 3CNF formula involving 5 variables?&lt;/p&gt;
+
+&lt;p&gt;##&lt;/p&gt;
+
+&lt;!--page--&gt;
+
+&lt;h2 id=&#34;logical-quantifiers:d690e1859ec274fb7ed997cd7db3fba5&#34;&gt;Logical Quantifiers&lt;/h2&gt;
+
+&lt;p&gt;$\forall x \in S. P(x)$ means $P$ holds for &lt;em&gt;every&lt;/em&gt; element of $S$.&lt;br /&gt;
+$\exists x \in S. P(x)$ means $P$ holds for &lt;em&gt;at least one&lt;/em&gt; element of $S$.&lt;/p&gt;
+
+&lt;p&gt;Define &lt;em&gt;valid&lt;/em&gt; and &lt;em&gt;satisfiable&lt;/em&gt; using logical quantifiers:&lt;/p&gt;
+
+&lt;p&gt;#&lt;/p&gt;
+
+&lt;p&gt;$\forall x \in S. P(x)$ is equivalent to $\neg(\exists x \in S. \qquad \qquad)$&lt;/p&gt;
+
+&lt;p&gt;###&lt;/p&gt;
+
+&lt;p&gt;Notation: $\textrm{pow}(S)$ denotes the &lt;em&gt;powerset&lt;/em&gt; of $S$.  The powerset
+of a set is the set of all possible subsets of that S.  So,
+$\textrm{pow}(\mathbb{N})$ denotes all subsets of the natural numbers.&lt;/p&gt;
+
+&lt;p&gt;Notation: $A - B$ denotes the &lt;em&gt;difference&lt;/em&gt; between two sets.  It is the
+elements of $A$, with every element of $B$ removed.&lt;/p&gt;
+
+&lt;p&gt;Notation: $\varnothing$ is the &lt;em&gt;empty set&lt;/em&gt;.  It is the set with no elements: ${ }$.&lt;/p&gt;
+
+&lt;p&gt;\begin{center}
+\Large&lt;/p&gt;
+
+&lt;p&gt;$$
+\fillin S \in \textrm{pow}(\mathbb{N}) - { \varnothing } \ldotp \fillin m \in S\ldotp \fillin x \in S - {m}\ldotp m &amp;lt; x
+$$
+\end{center}&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Additional Resources</title>
@@ -215,7 +862,7 @@ encounter in this class.  It is also &lt;a href=&#34;http://www.wolframalpha.com
       <guid>https://uvacs2102.github.io/class3/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule:b9b50bf0a87e56763567aaebbc820d47&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;This week, you should read MCS Chapter 2 and MCS Chapter 3 (at least
 through the end of Section 3.4).&lt;/p&gt;
@@ -235,7 +882,7 @@ hours schedule.&lt;/p&gt;
    &lt;a href=&#34;https://uvacs2102.github.io/docs/class3.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes and Questions&lt;/b&gt;&lt;/a&gt;.
    &lt;/div&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;links:b9b50bf0a87e56763567aaebbc820d47&#34;&gt;Links&lt;/h2&gt;
+&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://math.berkeley.edu/~kpmann/Well-ordering.pdf&#34;&gt;&lt;em&gt;The Well-Ordering Theorem: one of the Greatest Mathematical Controversies of All Time&lt;/em&gt;&lt;/a&gt;, Kathryn Mann.&lt;/p&gt;
 
@@ -243,12 +890,12 @@ hours schedule.&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;notes-and-questions:b9b50bf0a87e56763567aaebbc820d47&#34;&gt;Notes and Questions&lt;/h1&gt;
+&lt;h1 id=&#34;notes-and-questions&#34;&gt;Notes and Questions&lt;/h1&gt;
 
 &lt;p&gt;What properties must a sensible ordering function have?&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; A set is &lt;em&gt;ordered&lt;/em&gt; with respect to an ordering
-  relation (e.g., $&amp;lt;$), if two things hold. First: every pair of inequal elements a,b in A either satisfy $a&amp;lt;b$ or $b&amp;lt;a$. Second, $a&amp;lt;b$ and $b&amp;lt;a$ should always imply that $a&amp;lt;b$.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; A set is &lt;em&gt;ordered&lt;/em&gt; with respect to an ordering relation (e.g., $&amp;lt;$), if two things hold. First: every pair of inequal elements $a,b$ in $A$
+either satisfy $a&amp;lt;b$ or $b&amp;lt;a$. Second  $a&amp;lt;b$ and $b&amp;lt;a$ should always imply that $a&amp;lt;b$ (this is called the transitivity).&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; An ordered set,with respect to an ordering
   relation (e.g., $&amp;lt;$), is &lt;em&gt;well-ordered&lt;/em&gt;  if all of its non-empty subsets has a minimum
@@ -276,7 +923,7 @@ hours schedule.&lt;/p&gt;
 
 &lt;!--page--&gt;
 
-&lt;h3 id=&#34;template-for-well-ordering-proofs-section-2-2:b9b50bf0a87e56763567aaebbc820d47&#34;&gt;Template for Well-Ordering Proofs (Section 2.2)&lt;/h3&gt;
+&lt;h3 id=&#34;template-for-well-ordering-proofs-section-2-2&#34;&gt;Template for Well-Ordering Proofs (Section 2.2)&lt;/h3&gt;
 
 &lt;p&gt;To prove that $P(n)$ is true for all $n \in \mathbb{N}$:&lt;/p&gt;
 
@@ -707,806 +1354,6 @@ $$&lt;/p&gt;
 &lt;em&gt;Through violence you may murder a liar but you can&amp;rsquo;t establish truth. Through violence you may murder a hater, but you can&amp;rsquo;t murder hate. Darkness cannot put out darkness. Only light can do that.&lt;/em&gt;&lt;br /&gt;
 Martin Luther King, Jr., &lt;a href=&#34;http://kingencyclopedia.stanford.edu/encyclopedia/documentsentry/where_do_we_go_from_here_delivered_at_the_11th_annual_sclc_convention/&#34;&gt;&lt;em&gt;Where Do We Go From Here?&lt;/em&gt;, address to SCLC 16 August 1967&lt;/a&gt;
    &lt;/div&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Course Schedule</title>
-      <link>https://uvacs2102.github.io/schedule/</link>
-      <pubDate>Tue, 22 Aug 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://uvacs2102.github.io/schedule/</guid>
-      <description>&lt;p&gt;The schedule is subject to change as the semester progresses, and the
-topics covered will be adjusted flexibly.  The exam dates will not
-move other than for exceptional circumstances.&lt;/p&gt;
-
-&lt;table style=&#34;font-size: 80%&#34;&gt;
-&lt;tr bgcolor=&#34;#CCC&#34;&gt;&lt;td&gt;&lt;b&gt;Date&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Class&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Due [Friday 6:29pm unless noted]&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Tuesday, 22 Aug 2017&lt;/td&gt;&lt;td&gt;  1. Discrete Math, Proof&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;     
-&lt;tr&gt;&lt;td&gt;Thursday, 24 Aug 2017&lt;/td&gt;&lt;td&gt; 2. Methods of Proof    &lt;/td&gt;&lt;td&gt; &lt;a href=&#34;https://goo.gl/forms/DR7nsouNf6sqqIK22&#34;&gt;Registration Survey&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Tuesday, 29 Aug 2017&lt;/td&gt;&lt;td&gt;  3. Well Ordering Principle &lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;     
-&lt;tr&gt;&lt;td&gt;Thursday, 31 Aug 2017&lt;/td&gt;&lt;td&gt;  4. Logical Formulas&lt;/td&gt;&lt;td&gt; &lt;a href=&#34;https://uvacs2102.github.io/ps/ps1/&#34;&gt;PS1&lt;/a&gt; (MCS Ch 1, classes 1 and 2)&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Tuesday, 5 Sep 2017&lt;/td&gt;&lt;td&gt;   5. CNF, Quantifiers, and Proofs       &lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;      
-&lt;tr&gt;&lt;td&gt;Thursday, 7 Sep 2017&lt;/td&gt;&lt;td&gt;  6. Review &lt;/td&gt;&lt;td&gt; PS2 (MCS Ch 2-3.5, classes 3-4)&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Tuesday, 12 Sep 2017&lt;/td&gt;&lt;td&gt;  7. Sets&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;     
-&lt;tr&gt;&lt;td&gt;Thursday, 14 Sep 2017&lt;/td&gt;&lt;td&gt; 8. Functions and Relations&lt;/td&gt;&lt;td&gt; PS3 (MCS Ch 3, classes 5-6)&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Tuesday, 19 Sep 2017&lt;/td&gt;&lt;td&gt;  9. Cardinality of Finite Sets&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;   
-&lt;tr&gt;&lt;td&gt;Thursday, 21 Sep 2017&lt;/td&gt;&lt;td&gt; 10. Induction&lt;/td&gt;&lt;td&gt; PS4 (MCS Ch 4.1-4.4, lecture 7-8)&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Tuesday, 26 Sep 2017&lt;/td&gt;&lt;td&gt;  11. Strong Induction&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;    
-&lt;tr&gt;&lt;td&gt;Thursday, 28 Sep 2017&lt;/td&gt;&lt;td&gt; 12. Review&lt;/td&gt;&lt;td&gt;PS5 (MCS Ch 4.5, 5, classes 9-10)&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Tuesday, 3 Oct 2017&lt;/td&gt;&lt;td colspan=2 bgcolor=&#34;#FFEBCD&#34; style=&#34;text-align: center;&#34;&gt;Reading Days &lt;/td&gt;&lt;/tr&gt;  
-&lt;tr&gt;&lt;td&gt;&lt;b&gt;Thursday, 5 Oct 2017&lt;/b&gt;&lt;/td&gt;&lt;td colspan=2 bgcolor=&#34;#FFAAAA&#34; style=&#34;text-align: center;&#34;&gt;Exam 1 (in class) &lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Tuesday, 10 Oct 2017&lt;/td&gt;&lt;td&gt;  13. State Machines    &lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;      
-&lt;tr&gt;&lt;td&gt;Thursday, 12 Oct 2017&lt;/td&gt;&lt;td&gt; 14. Invariant Principle&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;     
-&lt;tr&gt;&lt;td&gt;Tuesday, 17 Oct 2017&lt;/td&gt;&lt;td&gt;  15. Recursive Data Types&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;       
-&lt;tr&gt;&lt;td&gt;Thursday, 19 Oct 2017&lt;/td&gt;&lt;td&gt; 16. Structural Induction&lt;/td&gt;&lt;td&gt; PS6 (MCS Ch 6, class 13-14)&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Tuesday, 24 Oct 2017&lt;/td&gt;&lt;td&gt;  17. Infinite Sets&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;     
-&lt;tr&gt;&lt;td&gt;Thursday, 26 Oct 2017&lt;/td&gt;&lt;td&gt; 18. Uncountable Sets&lt;/td&gt;&lt;td&gt; PS7 (MCS Ch 7, class 15-16) &lt;/td&gt;&lt;tr&gt;
-&lt;tr&gt;&lt;td&gt;Tuesday, 31 Oct 2017&lt;/td&gt;&lt;td&gt;  19. Infinite Infinities&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;     
-&lt;tr&gt;&lt;td&gt;Thursday, 2 Nov 2017&lt;/td&gt;&lt;td&gt;  20. Review&lt;/td&gt;&lt;td&gt; PS8 (MCS Ch 8, class 18-19)
-&lt;tr&gt;&lt;td&gt;Tuesday, 7 Nov 2017&lt;/td&gt;&lt;td&gt;   21. Number Theory&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;     
-&lt;tr&gt;&lt;td&gt;&lt;b&gt;Thursday, 9 Nov 2017&lt;/b&gt;&lt;/td&gt;&lt;td colspan=2 bgcolor=&#34;#FFAAAA&#34; style=&#34;text-align: center;&#34;&gt; Exam 2 (in class) - covers through PS8&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Tuesday, 14 Nov 2017&lt;/td&gt;&lt;td&gt;  22. Cryptography&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;      
-&lt;tr&gt;&lt;td&gt;Thursday, 16 Nov 2017&lt;/td&gt;&lt;td&gt; 23. Counting&lt;/td&gt;&lt;td&gt; 
-&lt;tr&gt;&lt;td&gt;Tuesday, 21 Nov 2017&lt;/td&gt;&lt;td&gt;  24. Probability&lt;/td&gt;&lt;td&gt;PS9 (MCS Ch 9, classes 21-23) (due 6:29pm Wednesday, 23 Nov)&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Thursday, 23 Nov 2017&lt;/td&gt;&lt;td colspan=2 bgcolor=&#34;#FFEBCD&#34; style=&#34;text-align: center;&#34;&gt; Thanksgiving Break&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Tuesday, 28 Nov 2017&lt;/td&gt;&lt;td&gt;  25. Computability&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;   
-&lt;tr&gt;&lt;td&gt;Thursday, 30 Nov 2017&lt;/td&gt;&lt;td&gt;  26. Undecidability&lt;/td&gt;&lt;td&gt;PS&amp;Omega;&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Tuesday, 5 Dec 2017&lt;/td&gt;&lt;td&gt;   27. Wrap-Up&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;     
-       
-&lt;tr&gt;&lt;td&gt;&lt;b&gt;Thursday, 7 Dec 2017&lt;/b&gt;&lt;/td&gt;&lt;td colspan=2 bgcolor=&#34;#FFAAAA&#34; style=&#34;text-align: center;&#34;&gt;Final Exam (9am-noon)&lt;/td&gt;&lt;/tr&gt;
-&lt;/table&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Scanning Advice</title>
-      <link>https://uvacs2102.github.io/scanning/</link>
-      <pubDate>Tue, 22 Aug 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://uvacs2102.github.io/scanning/</guid>
-      <description>&lt;p&gt;For many of the assignments in this class, you will need to submit
-your assignment as a PDF file. For the &lt;a href=&#34;https://uvacs2102.github.io/pledge&#34;&gt;Course Pledge&lt;/a&gt;, you
-need to print out a page, sign it, and submit a scan of the page. For
-the Problem Sets, you will need to submit your responses as a single
-PDF file (this could be generated using a typesetting tool, but it is
-also find to handwrite your solutions, and produce a scan to submit).&lt;/p&gt;
-
-&lt;p&gt;If you have access to a scanner and can use that to generate a PDF,
-that should produce good results. There are public scanners to use in
-some of the UVA libraries including in Clemons Library.&lt;/p&gt;
-
-&lt;p&gt;If you are careful though, it is also possible to generate a readable
-PDF using a mobile phone camera.  One tool that works for this is
-&lt;a href=&#34;https://www.camscanner.com/user/download&#34;&gt;CamScanner&lt;/a&gt; (available as a
-free app for limited use, for Android, iPhone, and Windows Phone).
-There are lots of other scanning apps that should work - see &lt;a href=&#34;https://www.cnet.com/how-to/best-scanning-apps-for-android-and-iphone/&#34;&gt;&lt;em&gt;The
-best scanning apps for Android and
-iPhone&lt;/em&gt;&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Please look at the file you have generated before submitting it.  If
-it does not look readable to you, please do not submit it, but figure
-out how to generate a more readable PDF.  Submitting the Course Pledge
-is a good opportunity to make sure you have figured out a way to
-generate readable PDFs, since you will need to do this for the problem
-sets also.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Syllabus</title>
-      <link>https://uvacs2102.github.io/syllabus/</link>
-      <pubDate>Tue, 22 Aug 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://uvacs2102.github.io/syllabus/</guid>
-      <description>
-
-&lt;div class=&#34;printing&#34;&gt;&lt;a href=&#34;https://uvacs2102.github.io/docs/syllabus.pdf&#34;&gt;PDF for Printing&lt;/a&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;cs2102: Discrete Mathematics&lt;/strong&gt;&lt;br /&gt;
-&lt;em&gt;University of Virginia&lt;/em&gt;, Fall 2017&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Meetings:&lt;/strong&gt; Tuesdays and Thursdays, 2:00-3:15pm in Chemistry 402.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Course Objective.&lt;/strong&gt; The goal of this course is to help students to
-  understand, explain, and apply the foundational mathematical concepts
-  at the core of computer science.&lt;/p&gt;
-
-&lt;p&gt;The skills students learn in this course are essential for later courses
-  (especially CS 3102 and CS 4102, but also in other courses), where they
-  will be used to reason about and develop algorithms, prove properties
-  about programs, and understand the limits of different models of
-  computation.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Expected Background:&lt;/strong&gt; The official prerequisite for this course is
-  earning credit for CS 1110, 1111, 1112 or 1120 with a grade of C- or
-  higher.  If you have not satisfied the official prerequisite, you need
-  permission from the instructor to enroll in the class.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Materials:&lt;/strong&gt; The primary textbook is:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;Eric Lehman, F. Thomson Leighton, and Albert R. Meyer. &lt;a href=&#34;../docs/mcs.pdf&#34;&gt;&lt;em&gt;Mathematics for
-Computer Science&lt;/em&gt;&lt;/a&gt;. (2017/6/15 version).  This book is
-freely available on-line, and generously released under a &lt;a href=&#34;https://creativecommons.org/licenses/by-sa/3.0/&#34;&gt;Creative
-Commons Attribution-ShareAlike 3.0
-License&lt;/a&gt;.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;The course will mostly cover the first part of this book (Chapters
-1-8), and some selected materials from later chapters (in particular
-chapters 9, 15, 17).  In addition to that textbook, we will have
-selected readings from other sources.&lt;/p&gt;
-
-&lt;h2 id=&#34;staff:051025d606153e159a2b11ffecb897d5&#34;&gt;Staff&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;Teachers:&lt;/strong&gt;&lt;br /&gt;
-&lt;a href=&#34;http://www.cs.virginia.edu/evans&#34;&gt;David Evans&lt;/a&gt; (evans@virginia.edu, &lt;a href=&#34;http://www.cs.virginia.edu/evans/office&#34;&gt;Rice 507&lt;/a&gt;)&lt;br /&gt;
-&lt;a href=&#34;http://www.cs.virginia.edu/~mohammad&#34;&gt;Mohammad Mahmoody&lt;/a&gt; (mohammad@virginia.edu, Rice 511)&lt;/p&gt;
-
-&lt;p&gt;You can reach both of us using
-&lt;a href=&#34;mailto://uvacs2102staff@gmail.com&#34;&gt;&lt;em&gt;uvacs2102staff@gmail.com&lt;/em&gt;&lt;/a&gt;. Please
-use that address for course-related messages.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Assistant Teachers:&lt;/strong&gt;&lt;br /&gt;
-&lt;div class=&#34;latex&#34;&gt;
-Amar Singh,
-Anna Wu,
-Bhuvanesh Murali,
-Colin Harfst,
-Fan Feng,
-Helen Simecek,
-Henry Spece,
-Jack Herd,
-Joseph Tobin,
-Michael Woon,
-Nate Olsen,
-Sarah Meng,
-Xiao Zhang,
-Xueying Bai,
-Yasasvini Puligundle, and
-Zheng Wang.
-&lt;/div&gt;
-&lt;div class=&#34;notpdf&#34;&gt;
-&lt;table width=100% style=&#34;font-size: 85%;&#34;&gt;
-&lt;tr align=&#34;bottom&#34;&gt;
-&lt;td style=&#34;text-align: center; vertical-align: bottom;&#34;&gt;
-&lt;a href=&#34;https://uvacs2102.github.io/images/staff/amar.png&#34;&gt;&lt;img align=&#34;center&#34; src=&#34;https://uvacs2102.github.io/images/staff/amar.png&#34; width=&#34;142&#34;&gt;&lt;/a&gt;&lt;br&gt;
-Amar Singh&lt;/td&gt;
-&lt;td style=&#34;text-align: center; vertical-align: bottom;&#34;&gt;
-&lt;a href=&#34;https://uvacs2102.github.io/images/staff/annawu.jpeg&#34;&gt;&lt;img align=&#34;center&#34; src=&#34;https://uvacs2102.github.io/images/staff/annawu.jpeg&#34; width=&#34;142&#34;&gt;&lt;/a&gt;&lt;br&gt;
-Anna Wu&lt;/td&gt;
-&lt;td style=&#34;text-align: center; vertical-align: bottom;&#34;&gt;&lt;a href=&#34;https://uvacs2102.github.io/images/staff/bhuvanesh.jpeg&#34;&gt;&lt;img align=&#34;center&#34; src=&#34;https://uvacs2102.github.io/images/staff/bhuvanesh.jpeg&#34; width=&#34;142&#34;&gt;&lt;/a&gt;&lt;br&gt;
-Bhuvanesh&amp;nbsp;Murali&lt;/td&gt;
-&lt;td style=&#34;text-align: center; vertical-align: bottom;&#34;&gt;
-&lt;a href=&#34;https://uvacs2102.github.io/images/staff/colin.jpeg&#34;&gt;&lt;img align=&#34;center&#34; src=&#34;https://uvacs2102.github.io/images/staff/colin.jpeg&#34; width=&#34;142&#34;&gt;&lt;/a&gt;&lt;br&gt;
-Colin Harfst
-&lt;/td&gt;
-&lt;/tr&gt;
-&lt;table width=100% style=&#34;font-size: 85%;&#34;&gt;
-&lt;tr align=&#34;bottom&#34;&gt;
-&lt;td style=&#34;text-align: center; vertical-align: bottom;&#34;&gt;
-&lt;a href=&#34;https://uvacs2102.github.io/images/staff/fan.jpeg&#34;&gt;&lt;img align=&#34;center&#34; src=&#34;https://uvacs2102.github.io/images/staff/fan.jpeg&#34; width=&#34;142&#34;&gt;&lt;/a&gt;&lt;br&gt;
-Fan Feng&lt;/td&gt;
-&lt;td style=&#34;text-align: center; vertical-align: bottom;&#34;&gt;
-&lt;a href=&#34;https://uvacs2102.github.io/images/staff/helensimecek.jpeg&#34;&gt;&lt;img align=&#34;center&#34; src=&#34;https://uvacs2102.github.io/images/staff/helensimecek.jpeg&#34; width=&#34;142&#34;&gt;&lt;br&gt;
-Helen Simecek&lt;/td&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;td style=&#34;text-align: center; vertical-align: bottom;&#34;&gt;
-&lt;a href=&#34;https://uvacs2102.github.io/images/staff/henryspece.png&#34;&gt;&lt;img align=&#34;center&#34; src=&#34;https://uvacs2102.github.io/images/staff/henryspece.png&#34; width=&#34;142&#34;&gt;&lt;/a&gt;&lt;br&gt;Henry Spece&lt;/td&gt;
-&lt;td style=&#34;text-align: center; vertical-align: bottom;&#34;&gt;
-&lt;a href=&#34;https://uvacs2102.github.io/images/staff/jackherd.png&#34;&gt;&lt;img align=&#34;center&#34; src=&#34;https://uvacs2102.github.io/images/staff/jackherd.png&#34; width=&#34;142&#34;&gt;&lt;/a&gt;&lt;br&gt;
-Jack Herd&lt;/td&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/tr&gt;
-&lt;table width=100% style=&#34;font-size: 85%;&#34;&gt;
-&lt;tr align=&#34;bottom&#34;&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;td style=&#34;text-align: center; vertical-align: bottom;&#34;&gt;
-&lt;a href=&#34;https://uvacs2102.github.io/images/staff/josephtobin.jpeg&#34;&gt;&lt;img align=&#34;center&#34; src=&#34;https://uvacs2102.github.io/images/staff/josephtobin.jpeg&#34; width=&#34;142&#34;&gt;&lt;/a&gt;&lt;br&gt;
-Joseph Tobin
-&lt;/td&gt;
-&lt;td style=&#34;text-align: center; vertical-align: bottom;&#34;&gt;&lt;a href=&#34;https://uvacs2102.github.io/images/staff/michaelwoon.png&#34;&gt;&lt;img align=&#34;center&#34; src=&#34;https://uvacs2102.github.io/images/staff/michaelwoon.png&#34; width=&#34;142&#34;&gt;&lt;/a&gt;&lt;br&gt;
-Michael Woon
-&lt;/td&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;td style=&#34;text-align: center; vertical-align: bottom;&#34;&gt;&lt;a href=&#34;https://uvacs2102.github.io/images/staff/nateolsen.jpeg&#34;&gt;&lt;img align=&#34;center&#34; src=&#34;https://uvacs2102.github.io/images/staff/nateolsen.jpeg&#34; width=&#34;142&#34;&gt;&lt;/a&gt;&lt;br&gt;Nate Olsen
-&lt;/td&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;td style=&#34;text-align: center; vertical-align: bottom;&#34;&gt;
-&lt;a href=&#34;https://uvacs2102.github.io/images/staff/sarahmeng.png&#34;&gt;&lt;img align=&#34;center&#34; src=&#34;https://uvacs2102.github.io/images/staff/sarahmeng.png&#34; width=&#34;142&#34;&gt;&lt;/a&gt;&lt;br&gt;Sarah Meng
-&lt;/td&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/tr&gt;
-&lt;table width=100% style=&#34;font-size: 85%;&#34;&gt;
-&lt;tr align=&#34;bottom&#34;&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;td style=&#34;text-align: center; vertical-align: bottom;&#34;&gt;
-&lt;a href=&#34;https://uvacs2102.github.io/images/staff/xiao.jpeg&#34;&gt;&lt;img align=&#34;center&#34; src=&#34;https://uvacs2102.github.io/images/staff/xiao.jpeg&#34; width=&#34;142&#34;&gt;&lt;/a&gt;&lt;br&gt;
-Xiao Zhang
-&lt;/td&gt;
-&lt;td style=&#34;text-align: center; vertical-align: bottom;&#34;&gt;
-&lt;a href=&#34;https://uvacs2102.github.io/images/staff/xueyingbai.jpeg&#34;&gt;&lt;img align=&#34;center&#34; src=&#34;https://uvacs2102.github.io/images/staff/xueyingbai.jpeg&#34; width=&#34;142&#34;&gt;&lt;/a&gt;&lt;br&gt;
-Xueying Bai
-&lt;/td&gt;
-&lt;td style=&#34;text-align: center; vertical-align: bottom;&#34;&gt;
-&lt;a href=&#34;https://uvacs2102.github.io/images/staff/yash.jpeg&#34;&gt;&lt;img align=&#34;center&#34; src=&#34;https://uvacs2102.github.io/images/staff/yash.jpeg&#34; width=&#34;142&#34;&gt;&lt;/a&gt;&lt;br&gt;
-Yasasvini&amp;nbsp;Puligundle
-&lt;/td&gt;
-&lt;td style=&#34;text-align: center; vertical-align: bottom;&#34;&gt;
-&lt;a href=&#34;https://uvacs2102.github.io/images/staff/zhengwang.jpeg&#34;&gt;&lt;img align=&#34;center&#34; src=&#34;https://uvacs2102.github.io/images/staff/zhengwang.jpeg&#34; width=&#34;142&#34;&gt;&lt;/a&gt;&lt;br&gt;
-Zheng Wang
-&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/table&gt;
-&lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Office Hours:&lt;/strong&gt; &lt;em&gt;The course staff is here to help you.&lt;/em&gt; Please don&amp;rsquo;t
-wait until too late to take advantage of the available help or ask for
-help. For nearly everyone, this course will involve learning new ways of
-thinking that are dramatically different from those to which you are
-accustomed.  It is natural to miss things, and then become lost since
-new ideas build on previous ones.  Come to office hours early to get
-help before you find yourself frustrated and confused.&lt;/p&gt;
-
-&lt;p&gt;The office hours schedule will be &lt;a href=&#34;https://uvacs2102.github.io/officehours&#34;&gt;posted on-line&lt;/a&gt;, and it will
-be kept updated throughout the semester.&lt;/p&gt;
-
-&lt;h2 id=&#34;communications:051025d606153e159a2b11ffecb897d5&#34;&gt;Communications&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;Course Website:&lt;/strong&gt;
-  &lt;a href=&#34;https://uvacs2102.github.io/&#34;&gt;&lt;em&gt;https://uvacs2102.github.io/&lt;/em&gt;&lt;/a&gt;.  All
-  course materials will be posted on the course website.  This page is
-  updated often and students are expected to visit it regularly. All
-  lectures, notes and assignments for the course will be posted on the
-  web site.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Slack:&lt;/strong&gt; &lt;a href=&#34;https://csmath.slack.com&#34;&gt;&lt;em&gt;https://csmath.slack.com&lt;/em&gt;&lt;/a&gt;.  We
-  will use a slack group for &amp;ldquo;real-time&amp;rdquo; communication for quick help
-  and discussion (including during lectures).  Unlike the course site,
-  which is public and visible to the world, this group will only be
-  visible to people in the class.  There are slack apps for web, iOS and
-  Android.  We encourage students to ask questions about the classes and
-  assignments by posting comments on slack, and the course
-  staff will read and respond to questions there.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Email:&lt;/strong&gt; Feel free to email us with any personal questions or issues
-  that should not be posted publicly. To reach both professors, use
-  &lt;a href=&#34;mailto://uvacs2102staff@gmail.com&#34;&gt;&lt;em&gt;uvacs2102staff@gmail.com&lt;/em&gt;&lt;/a&gt;
-  (please use this instead of our personal emails unless it is an
-  issue that is specific to one of us). For general questions or
-  issues that might be relevant for others in the class, it is better
-  to post publicly to the course website or slack group (both so that
-  others may be able to answer your question, and others may be able
-  to see a response that will be useful to them).&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Calendar:&lt;/strong&gt; The course calendar is available &lt;a href=&#34;https://goo.gl/ZtQhVY&#34;&gt;as a Google
-  calendar&lt;/a&gt;.
-  Students are encouraged to incorporate this into your own calendar.  If you use Google Calendar, just click the &amp;ldquo;+&amp;rdquo; at the bottom right of the &lt;a href=&#34;https://goo.gl/ZtQhVY&#34;&gt;calendar page&lt;/a&gt;. If you use another calendar program, you can incorporate this calendar using ical.&lt;/p&gt;
-
-&lt;h2 id=&#34;honor:051025d606153e159a2b11ffecb897d5&#34;&gt;Honor&lt;/h2&gt;
-
-&lt;p&gt;We believe strongly in the value of a &lt;em&gt;community of trust&lt;/em&gt;, and expect
-all of the students in this class to contribute to strenghtening and
-enhancing that community.  The course will be better for everyone if
-everyone can assume everyone else is trustworthy. The course staff
-starts with the assumption that all students at the university deserve
-to be trusted.&lt;/p&gt;
-
-&lt;p&gt;To ensure that expectations are clear to everyone, all students are
-required to sign the &lt;a href=&#34;https://uvacs2102.github.io/pledge&#34;&gt;course pledge&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&#34;topics:051025d606153e159a2b11ffecb897d5&#34;&gt;Topics&lt;/h2&gt;
-
-&lt;p&gt;The topics covered in cs2102 focus on developing the mathematical
-foundation and skills that are most important for computer science.
-Expected topics include:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Propositions and proofs&lt;/li&gt;
-&lt;li&gt;Proof methods (including proof by construction, contradiction, and induction)&lt;/li&gt;
-&lt;li&gt;Logic (Boolean logic, logical formulas, quantifiers)&lt;/li&gt;
-&lt;li&gt;Binary relations&lt;/li&gt;
-&lt;li&gt;State machines&lt;/li&gt;
-&lt;li&gt;Finite and infinite sets&lt;/li&gt;
-&lt;li&gt;Number theory&lt;/li&gt;
-&lt;li&gt;Counting techniques&lt;/li&gt;
-&lt;li&gt;Probability theory&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;assignments-and-exams:051025d606153e159a2b11ffecb897d5&#34;&gt;Assignments and Exams&lt;/h2&gt;
-
-&lt;p&gt;A detailed schedule is &lt;a href=&#34;https://uvacs2102.github.io/schedule&#34;&gt;maintained on the course website&lt;/a&gt; and
-&lt;a href=&#34;https://goo.gl/ZtQhVY&#34;&gt;calendar&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Key dates:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Most Fridays (6:29pm): There will be a homework assignment due on
-Fridays, except for weeks when there are exams (and Thanksgiving
-week).&lt;/li&gt;
-&lt;li&gt;Thursday, 5 Oct: Exam 1 (in class)&lt;/li&gt;
-&lt;li&gt;Thursday, 9 Nov: Exam 2 (in class)&lt;/li&gt;
-&lt;li&gt;Thursday, 7 Dec: Final Exam (9am-noon, scheduled by the registrar)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;grading:051025d606153e159a2b11ffecb897d5&#34;&gt;Grading&lt;/h2&gt;
-
-&lt;p&gt;Grading will be based on your performance on the exams and homework
-assignments, with additional adjustments made based on exceptional
-contributions to the class.&lt;/p&gt;
-
-&lt;p&gt;Grades will be calculated with several different weightings, where your
-grade is based primarily on whichever weighting results in the highest
-score.  The range of possible weightings is:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Homeworks: 15-40%&lt;/li&gt;
-&lt;li&gt;Exam 1: 10-25%&lt;/li&gt;
-&lt;li&gt;Exam 2: 15-30%&lt;/li&gt;
-&lt;li&gt;Final Exam: 20-50%&lt;/li&gt;
-&lt;li&gt;Class Contribution: 0-25%&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Spend your energy focusing on what you are learning, instead of
-worrying about your grade.&lt;/p&gt;
-
-&lt;p&gt;Although the material we cover is challenging, and the pace may seem
-overwhelming at times, we are confident that all students who put
-effort into this class and take good advantage of available help will
-do well.  Students who do especially outstanding work in the course
-will be offered positions in our research groups
-(&lt;a href=&#34;http://www.jeffersonswheel.org&#34;&gt;Dave&lt;/a&gt;,
-&lt;a href=&#34;https://www.cs.virginia.edu/~mohammad/&#34;&gt;Mohammad&lt;/a&gt;).&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>cs2102 Course Pledge</title>
-      <link>https://uvacs2102.github.io/pledge/</link>
-      <pubDate>Mon, 21 Aug 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://uvacs2102.github.io/pledge/</guid>
-      <description>
-
-&lt;div class=&#34;printing&#34;&gt;&lt;a href=&#34;https://uvacs2102.github.io/docs/pledge.pdf&#34;&gt;PDF for Printing&lt;/a&gt;&lt;/div&gt;
-
-&lt;h2 id=&#34;honor-expectations:2e559b52838f6d8f14adb281b3dad624&#34;&gt;Honor Expectations&lt;/h2&gt;
-
-&lt;p&gt;As a student at the University of Virginia, you are trusted to be
-honorable and expected to behave in ways that merit that trust. We take
-advantage of this trust to provide a better learning environment for
-everyone. In particular, students in cs2102 are expected to follow these
-rules throughout the course:&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;I will not lie, cheat or steal.&lt;/strong&gt; If I am unsure whether something
-  would be considered lying, cheating or stealing, I will ask before
-  doing it.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;I will carefully read and follow the collaboration policy on each
-  assignment.&lt;/strong&gt; I will not abuse resources in ways that would be
-  clearly detrimental to my own learning or unfair to other
-  students. Viewing solutions from previous cs2102 courses is not
-  permitted, except when explicitly allowed.&lt;/p&gt;
-
-&lt;h2 id=&#34;other-expectations:2e559b52838f6d8f14adb281b3dad624&#34;&gt;Other Expectations&lt;/h2&gt;
-
-&lt;p&gt;In addition to the honor rules, students in cs2102 are also expected to
-follow these behaviors:&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;I will do what I can to help my fellow classmates learn.&lt;/strong&gt; Except
-when specifically instructed not to, when other students ask me for
-help, I will attempt to provide it. I will listen respectfully to
-other&amp;rsquo;s ideas and discuss what I think is good or bad about their
-answers. When I work with others, I will not give or accept answers
-directly, but instead will make sure everyone understands enough to be
-able to solve the problem themselves, and insist that others explain
-things to me until I fully understand.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;I will ask for help.&lt;/strong&gt; I will make a reasonable effort to do things
-  on my own first (or with classmates when permitted), but will ask
-  the course staff for help before getting overly frustrated. There
-  are many ways to ask for help including the office hours and the
-  course slack group.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;I will be open minded and curious.&lt;/strong&gt; I understand that this course may
-  do things in ways differently from what I expect, and may sometimes
-  buck conventions that have been followed in other courses I have
-  taken.  I will ask questions when things make me uncomfortable, but
-  also accept that being surprised, facing uncertainty and adversity,
-  and being challenged unreasonably are often beneficial for learning
-  new ways of thinking.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;I will value diversity and respect differences.&lt;/strong&gt; I understand that
-  one of the benefits of being at the University is to be part of a
-  vibrant community that encompasses a wide range of backgrounds,
-  ethnicities, personal and family histories, and world views. I will
-  contribute to that community by sharing things that are unique about
-  me with others, fighting against any implicit biases I may have or
-  that I observe in others, and being open to and respectful of people
-  who are different from me.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;I grant the course staff permission to reproduce excerpts from my
-submissions for teaching purposes.&lt;/strong&gt; My work will be attributed when it
-is shown in a postive way, but may be used anonymously if it is used to
-illustrate common pitfalls or other issues.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;I will provide useful feedback.&lt;/strong&gt; I realize that this will be
-  attempting many new things, and that it is important that I let the
-  course staff know what they need to improve the course. I will provide
-  feedback either anonymously or by contacting the course staff
-  directly.  &lt;strong&gt;I will fill out all requested surveys honestly and
-  thoroughly.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;Sign:       ___________________________________________________   &amp;nbsp;&amp;nbsp; &amp;nbsp;&amp;nbsp; Date: _____________&lt;/p&gt;
-
-&lt;p&gt;Print name:  ____________________________________________________&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Fall 2017 Course</title>
-      <link>https://uvacs2102.github.io/fall2017/</link>
-      <pubDate>Fri, 17 Mar 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://uvacs2102.github.io/fall2017/</guid>
-      <description>&lt;p&gt;cs2102 will be offered in Fall 2017, co-taught by &lt;a href=&#34;https://www.cs.virginia.edu/~mohammad/&#34;&gt;Mohammad
-Mahmoody&lt;/a&gt; and &lt;a href=&#34;https://www.cs.virginia.edu/evans&#34;&gt;David
-Evans&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;For an idea what the course will be like, see last year&amp;rsquo;s &lt;a href=&#34;https://uvacs2102.github.io/f16&#34;&gt;course
-site&lt;/a&gt;. Some things will change,
-though. Course materials for Fall 2017 will appear hear when they are
-available.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Office Hours Schedule</title>
-      <link>https://uvacs2102.github.io/officehours/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://uvacs2102.github.io/officehours/</guid>
-      <description>&lt;p&gt;The tentative office hours schedule is posted below. The schedule may
-be adjusted as the semester progresses, and updates will be posted
-here and in the &lt;a href=&#34;https://calendar.google.com/calendar/embed?src=5msg7a1mn7fk4ocj1h41cksh80%40group.calendar.google.com&amp;amp;ctz=America/New_York&#34;&gt;course
-calendar&lt;/a&gt;
-(and late changes will be announced in the slack group also).&lt;/p&gt;
-
-&lt;p&gt;Dave&amp;rsquo;s office hours are in Rice 507; Mohammad&amp;rsquo;s office hours are in
-Rice 511; the TA&amp;rsquo;s office hours are in Rice 436.&lt;/p&gt;
-
-&lt;table&gt;
-&lt;tr bgcolor=&#34;#C38EC7&#34;&gt;&lt;td colspan=2 style=&#39;text-align:center;&#39;&gt;&lt;b&gt;Mondays&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;
-
-&lt;tr&gt;&lt;td style=&#34;width:20%&#34;&gt;10:45-11:45am&lt;/td&gt;&lt;td&gt;Mohammad Mahmoody (starting 9/3) (Rice 511)&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td style=&#34;width:20%&#34;&gt;1:00-2:00pm&lt;/td&gt;&lt;td&gt;Bhuvanesh Murali (starting 9/3) (Rice 436)&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td style=&#34;width:20%&#34;&gt;3:00-6:00pm&lt;/td&gt;
-&lt;td style=&#34;width:80%&#34;&gt;Helen Simecek (3-4:30pm), Sarah Meng (4:30-6pm) (Rice 436)&lt;/td&gt;&lt;/tr&gt;
-
-&lt;tr bgcolor=&#34;#C38EC7&#34;&gt;&lt;td colspan=2 style=&#39;text-align:center;&#39;&gt;&lt;b&gt;Tuesdays&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;
-
-&lt;tr&gt;&lt;td style=&#34;width:20%&#34;&gt;9:30am-12:30pm&lt;/td&gt;
-&lt;td style=&#34;width:80%&#34;&gt;
-Jack Herd (9:30-11am), Nate Olsen (10-11:30am), Michael Woon (11am-12:30pm) (Rice 436)&lt;/td&gt;
-&lt;tr&gt;&lt;td style=&#34;width:20%&#34;&gt;3:30-5pm&lt;/td&gt;
-&lt;td style=&#34;width:80%&#34;&gt;Henry Spece (3:30-5pm) (Rice 436)
-&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;&lt;td style=&#34;width:20%&#34;&gt;7-9pm&lt;/td&gt;
-&lt;td&gt;
-Anna Wu (7-8:30pm), Joeseph Tobin (7-9pm) (Rice 436)
-&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr bgcolor=&#34;#C38EC7&#34;&gt;&lt;td colspan=2 style=&#39;text-align:center;&#39;&gt;&lt;b&gt;Wednesdays&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td style=&#34;width:20%&#34;&gt;9:30am-noon&lt;/td&gt;
-&lt;td&gt;
-Colin Harfst (9:30-11am), Michael Woon (10:30am-noon) (Rice 436)
-&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;&lt;td style=&#34;width:20%&#34;&gt;2:30-3:30pm&lt;/td&gt;
-&lt;td&gt;
-David Evans (Rice 507)
-&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;&lt;td style=&#34;width:20%&#34;&gt;3:00-9pm&lt;/td&gt;
-&lt;td&gt;
-Bhuvanesh Murali (3-5pm), Helen Simecek (3:30-5pm), Yasasvini Puligundle (5-6pm), 
-Xueying Bai (6-7pm), 
-Fan Feng (7-8:30pm),
-Anna Wu (7:30-9pm),
-Nate Olsen (7:30-9:00pm) (Rice 436)&lt;/td&gt;&lt;/tr&gt;
-
-&lt;tr bgcolor=&#34;#C38EC7&#34;&gt;&lt;td colspan=2 style=&#39;text-align:center;&#39;&gt;&lt;b&gt;Thursdays&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;
-
-&lt;tr&gt;&lt;td style=&#34;width:20%&#34;&gt;9am-noon&lt;/td&gt;
-&lt;td&gt;
-Amar Singh (9am-10:30), 
-Xiao Zhang (10-11am),
-Prashant Gorthi (11am-noon) (Rice 436)
-&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;width:20%&#34;&gt;3:30-9pm&lt;/td&gt;&lt;td&gt;
-Henry Spece (3:30-5pm),
-Zheng Wang (4-5pm),
-Jack Herd (5:30-7pm),
-Colin Harfst (6-7:30pm),
-Sarah Meng (6:30-8pm),
-Amar Singh (7-8:30pm),
-Fan Feng (7:30-9pm) (Rice 436)&lt;/tr&gt;
-&lt;/table&gt;
-
-&lt;!--
-
-1 Jack Herd     1.5+1.5
-2 Sarah Meng    1.5+1.5
-3 Fan Feng      1.5+1.5
-4 Colin Harfst  1.5+1.5
-G1 Xiao Zhang 1
-5 Helen Simecek 1.5+1.5
-6 Michael Woon  1.5+1.5
-G2 Xueying Bai 1
-G3 Zheng Wang 1
-7 Nate Olsen    1.5+1.5
-8 Bhuvanesh Murali 1+2
-9 Henry Spece 1.5+1.5
-10 Joe Tobin 1.5+1.5
-GTA Yash 1
-G Prashant Gorthi 1
-
-NR: Amar, Anna
-
-Room: 
-Sundays, 2-8
-Mondays, 3-7
-Tuesdays, 9-11; 4-8:30
-Wednesdays, 9-noon; 3:30-9pm
-Thursdays, 4-10pm
-Fridays, 9am-noon
-
-Sundays (2-8pm)
-
-
-
-The regular office hours schedule is below, but check the course
-calendar for any weekly changes.
-
-&lt;table&gt;
-&lt;tr style=&#34;height:0px&#34;&gt;&lt;td style=&#34;width:20%&#34;&gt;&lt;/td&gt;&lt;td style=&#34;width:80%&#34;&gt;&lt;/td&gt;&lt;/tr&gt;
-&lt;tr bgcolor=&#34;#C38EC7&#34;&gt;&lt;td colspan=2 style=&#39;text-align:center;&#39;&gt;&lt;b&gt;Mondays&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;
-
-&lt;tr&gt;&lt;td style=&#34;width:20%&#34;&gt;9:30-10:30am&lt;/td&gt;&lt;td style=&#34;width:80%&#34;&gt;Dave (Rice 507)&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;11am-1pm&lt;/td&gt;&lt;td&gt;Brooke&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;4-6:30pm&lt;/td&gt;&lt;td&gt;Adam G. (4-5pm), Sarah (5-6:30pm)&lt;/td&gt;&lt;/tr&gt;
-
-&lt;tr bgcolor=&#34;#C38EC7&#34;&gt;&lt;td colspan=2 style=&#39;text-align:center;&#39;&gt;&lt;b&gt;Tuesdays&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;noon-1:30pm&lt;/td&gt;&lt;td&gt;Riya&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;3:30-5pm&lt;/td&gt;&lt;td&gt;Luke&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;5-6:30pm&lt;/td&gt;&lt;td&gt;Yaser&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;7:30-9:30pm&lt;/td&gt;&lt;td&gt;Han (7:30-8:30), Subhan (8-9:30)&lt;/td&gt;&lt;/tr&gt;
-
-&lt;tr bgcolor=&#34;#C38EC7&#34;&gt;&lt;td colspan=2 style=&#39;text-align:center;&#39;&gt;&lt;b&gt;Wednesdays&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;10am-1pm&lt;/td&gt;&lt;td&gt;Yong Jae (10-11:30), Brooke (11-1pm), Harrison (11-12:30)&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;1-2pm&lt;/td&gt;&lt;td&gt; Dave (Rice 507)&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;2:30-9:30pm&lt;/td&gt;&lt;td&gt;Adam G (2:30-4:30), Gloria (3-5), Adam R. (5-7), Sarah (6:30-7:30), Han Jin (7:30-8:30), Subhan (8-9:30)&lt;/td&gt;&lt;/tr&gt;
-
-&lt;tr bgcolor=&#34;#C38EC7&#34;&gt;&lt;td colspan=2 style=&#39;text-align:center;&#39;&gt;&lt;b&gt;Thursdays&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;10am-noon&lt;/td&gt;&lt;td&gt;Harrison (10-11:30), Luke (11-noon)&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;12:30-1:30pm&lt;/td&gt;&lt;td&gt;Han&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;3:30-10pm&lt;/td&gt;&lt;td&gt; Gloria (3:30-5), Riya (3:30-5), Adam R. (5-7), Christopher (6-7:30), Gloria (7-8:30), Yaser (8:30-10)&lt;/td&gt;&lt;/tr&gt;
-
-&lt;tr bgcolor=&#34;#C38EC7&#34;&gt;&lt;td colspan=2 style=&#39;text-align:center;&#39;&gt;&lt;b&gt;Fridays&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;9-11:30am&lt;/td&gt;&lt;td&gt;Sarah (9-10:30), Yong Jae (10-11:30)&lt;/td&gt;&lt;/tr&gt; 
-&lt;tr&gt;&lt;td&gt;1:30-2:30pm&lt;/td&gt;&lt;td&gt;Luke&lt;/td&gt;&lt;/tr&gt;
-
-&lt;tr bgcolor=&#34;#C38EC7&#34;&gt;&lt;td colspan=2 style=&#39;text-align:center;&#39;&gt;&lt;b&gt;Sundays&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;noon-2pm&lt;/td&gt;&lt;td&gt;Hussain&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;4-5:30pm&lt;/td&gt;&lt;td&gt;Christopher&lt;/td&gt;&lt;/tr&gt;
-
-&lt;/table&gt;
-
-
---&gt;
-
-&lt;p&gt;&lt;div class=&#34;highlightm&#34;&gt;
-   &lt;a href=&#34;https://goo.gl/ZtQhVY&#34;&gt;Course Calendar Link&lt;/a&gt;
-   &lt;/div&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Problem Set 2</title>
-      <link>https://uvacs2102.github.io/ps/ps2/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://uvacs2102.github.io/ps/ps2/</guid>
-      <description>
-
-&lt;div class=&#34;latex&#34;&gt;
-   \dbox{{\bf Deliverable:} Submit your responses as a
-single PDF file on the collab site before {\bf 6:29pm} on {\bf Friday, 9
-September}.  The PDF you submit can be a scanned handwritten file
-(please check the scan is readable), or a typeset PDF file (e.g.,
-generated by LaTeX or Word).} 
-&lt;/div&gt;
-
-&lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;
-   &lt;div class=&#34;highlightr&#34;&gt;
-   &lt;strong&gt;Deliverable:&lt;/strong&gt; Submit your responses as a
-single PDF file on the collab site before &lt;strong&gt;6:29pm&lt;/strong&gt; on &lt;strong&gt;Friday, 9
-September&lt;/strong&gt;.  The PDF you submit can be a scanned handwritten file
-(please check the scan is readable), or a typeset PDF file (e.g.,
-generated by LaTeX or Word).
-   &lt;/div&gt;
-   &lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;collaboration-policy-read-carefully:e879021a243163cdf3d1d9f61ef73807&#34;&gt;Collaboration Policy - Read Carefully&lt;/h3&gt;
-
-&lt;p&gt;For this assignment, you should work in groups of &lt;em&gt;one&lt;/em&gt; to &lt;em&gt;three&lt;/em&gt;
-students, so long as the &lt;em&gt;total number of siblings the members of your
-group have is divisible by three&lt;/em&gt;.  Note that this means that someone
-with, say, one sibling, should not work alone, but either needs to find
-a teammate with two (or 5 or 8, etc.) siblings, or two teammates whose
-sibling counts sum to the right number.  If you have half-siblings, you
-can decide to count them as either 0, &amp;frac12;, or 1.&lt;/p&gt;
-
-&lt;p&gt;If you work with teammates, you should submit one assignment that
-represents your collective best work with all of your names and UVA ids
-on it.  Everyone on a team should understand everything you turn in for
-the assignment well enough to be able to produce it completely on your
-own.  You are encouraged to use the &lt;code&gt;#teaming&lt;/code&gt; channel to find suitable
-teammates.  You should make a legitimate effort to form a team that
-satisfies the collaboration policy, but if you cannot find suitable
-teammates, it is definitely better to submit an assignment on your own
-than to not do the assignment!&lt;/p&gt;
-
-&lt;p&gt;You may discuss the assignment with anyone you want and get help from
-others, so long as it is help in the spirit of learning how to do things
-yourself not getting answers you don&amp;rsquo;t understand.&lt;/p&gt;
-
-&lt;p&gt;Remember to follow the &lt;a href=&#34;https://uvacs2102.github.io/pledge&#34;&gt;course pledge&lt;/a&gt; you read and signed at
-the beginning of the semester.  For this assignment, you may consult any
-outside resources you want, including books, papers, web sites and
-people.  You may consult an outside person (e.g., another friend who is
-a CS major but is not in this class) who is not a member of the course
-staff, but that person cannot type anything in for you and all work must
-remain your own and outside sources should never give you specific
-answers to problem set questions.  If you use resources other than the
-class materials, lectures and course staff, you should document this
-clearly on your submission.&lt;/p&gt;
-
-&lt;p&gt;You are &lt;b&gt;strongly encouraged&lt;/b&gt; to start early and take advantage of
-the scheduled &lt;a href=&#34;https://uvacs2102.github.io/officehours&#34;&gt;office hours&lt;/a&gt; for this course.&lt;/p&gt;
-
-&lt;h2 id=&#34;preparation:e879021a243163cdf3d1d9f61ef73807&#34;&gt;Preparation&lt;/h2&gt;
-
-&lt;p&gt;This problem set focuses on Chapter 2 and Chapter 3 (through 3.5) of the
-MCS book, and &lt;a href=&#34;https://uvacs2102.github.io/class3&#34;&gt;Class 3&lt;/a&gt; and &lt;a href=&#34;https://uvacs2102.github.io/class4&#34;&gt;Class 4&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;highlightm&#34;&gt;
-    &lt;a href=&#34;https://uvacs2102.github.io/docs/ps2.pdf&#34;&gt;Download PDF for Problems&lt;/a&gt;.
-   &lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;highlightr&#34;&gt;
-Your response should be submitted as a single PDF file using collab:
-&lt;a href=&#34;https://collab.itc.virginia.edu/portal/site/e0b17949-c94c-466b-835a-196381f3f911&#34;&gt;submission link&lt;/a&gt;
-   &lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;directions:e879021a243163cdf3d1d9f61ef73807&#34;&gt;Directions&lt;/h2&gt;
-
-&lt;p&gt;Solve all 12 problems on the next two pages.  For full credit, your
-answers should be correct, clear, well-written, and convincing.&lt;/p&gt;
-
-&lt;!--page--&gt;
-
-&lt;h2 id=&#34;un-well-ordered-sets:e879021a243163cdf3d1d9f61ef73807&#34;&gt;(Un)Well-Ordered Sets&lt;/h2&gt;
-
-&lt;p&gt;For each of these question, answer if the given set and comparator is
-&lt;em&gt;well-ordered&lt;/em&gt;. Support your answer with a brief, but clear and
-convincing, argument.&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;The empty set; $&amp;lt;$.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;The set of integers less than 2102; $&amp;gt;$.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;The set of positive rational numbers with lowest terms,
-$\frac{p}{q}$ where $q &amp;lt; 2102$; $&amp;lt;$.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;The set of positive rational numbers; to compare two rational
-numbers, $a$, $b$, write them as fractions in lowest terms (which we
-know exist because of the well-ordering principle on the integers!), $a
-= \frac{p_a}{q_a}$, $b = \frac{p_b}{q_b}$. Then, $a \prec b$ iff $p_a
-q_b &amp;lt; p_b q_a$.&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&#34;well-ordering-principle-proofs-and-non-proofs:e879021a243163cdf3d1d9f61ef73807&#34;&gt;Well-Ordering Principle Proofs (and Non-Proofs)&lt;/h2&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;MCS Problem 2.2 (explain clearly which proof step is invalid and why).&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;(Similar to Problem 2.6) The &amp;ldquo;Exponential Losses&amp;rdquo; Casino has
-chips with value \$1, \$2, \$4, \$8, \$16, \ldots, \$2$^{k}$, but has a
-rule that bettors may not use more than one of the same value of chip to
-make any bet.  Prove that all integer bets from \$1 to \$2$^{k + 1} - 1$ can
-be made.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;MCS Problem 2.17.&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&#34;logical-operators:e879021a243163cdf3d1d9f61ef73807&#34;&gt;Logical Operators&lt;/h2&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;How many 3-input, 1-output Boolean operators are there?  Support your
-answer with a convincing, concise justification.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Show that is it possible to implement the 3-input Boolean operator,
-\smallcaps{parity}, defined below, using only the 2-input &lt;strong&gt;FTFF&lt;/strong&gt;
-operator and \smallcaps{NOT}.
-\begin{center}
-\begin{tabular}{ccc|c}
-$P$ &amp;amp; $Q$ &amp;amp; $R$ &amp;amp; \smallcaps{parity}$(P, Q, R)$ \ \hline
-\T  &amp;amp; \T  &amp;amp; \T  &amp;amp; \T \
-\T  &amp;amp; \T  &amp;amp; \F  &amp;amp; \F \
-\T  &amp;amp; \F  &amp;amp; \T  &amp;amp; \F \&lt;br /&gt;
-\T  &amp;amp; \F  &amp;amp; \F  &amp;amp; \T \
-\F  &amp;amp; \T  &amp;amp; \T  &amp;amp; \F \
-\F  &amp;amp; \T  &amp;amp; \F  &amp;amp; \T \
-\F  &amp;amp; \F  &amp;amp; \T  &amp;amp; \T \&lt;br /&gt;
-\F  &amp;amp; \F  &amp;amp; \F  &amp;amp; \F \
-\end{tabular}
-\end{center}
-(Note that there are easy, clear ways to do this, and painful, tedious ways.  Try to find an easy, clear way, before spending a lot of effort on a painful, tedious way!)&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&#34;logical-formulas:e879021a243163cdf3d1d9f61ef73807&#34;&gt;Logical Formulas&lt;/h2&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Write the following natural language statement (from the Eighth
-Amendment to the US Constitution) as a logical formula. Your goal is to
-produce a simple and clear statement whose meaning matches what you
-believe is the intent of the natural language statements.  If there are
-logical ambiguities in the statement, explain them.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;em&gt;Excessive bail shall not be required, nor excessive fines
-imposed, nor cruel and unusual punishments inflicted.&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&#34;logical-equivalences:e879021a243163cdf3d1d9f61ef73807&#34;&gt;Logical Equivalences&lt;/h2&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Determine if the following statements are logically equivalent, and
-support your answer with a clear proof.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;$$
-Q \implies (P \implies R) \qquad \textrm{and} \qquad
-(Q \implies P) \implies R
-$$&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Given the following statements, prove $S$:
-$$
-Q,\quad
-\neg P,\quad
-L \implies P,\quad
-Q \implies M,\quad
-\neg(\neg Q \vee P) \implies \neg R,\quad
-(\neg L \wedge M) \implies S \vee R
-$$&lt;/li&gt;
-&lt;/ol&gt;
 </description>
     </item>
     

@@ -5,7 +5,7 @@
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <title>Class 8: Relations  &middot; cs2102: Discrete Math</title>
+  <title>Class 8: Sequences, Relations, Functions  &middot; cs2102: Discrete Math</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="HandheldFriendly" content="True">
 <meta name="MobileOptimized" content="320">
@@ -17,7 +17,7 @@
 <meta name="keywords" content="">
 
 
-<meta property="og:title" content="Class 8: Relations  &middot; cs2102: Discrete Math ">
+<meta property="og:title" content="Class 8: Sequences, Relations, Functions  &middot; cs2102: Discrete Math ">
 <meta property="og:site_name" content="cs2102: Discrete Math"/>
 <meta property="og:url" content="https://uvacs2102.github.io/class8/" />
 <meta property="og:locale" content="en-us">
@@ -25,8 +25,8 @@
 
 <meta property="og:type" content="article" />
 <meta property="og:description" content=""/>
-<meta property="og:article:published_time" content="2016-09-15T00:00:00Z" />
-<meta property="og:article:modified_time" content="2016-09-15T00:00:00Z" />
+<meta property="og:article:published_time" content="2017-09-14T00:00:00Z" />
+<meta property="og:article:modified_time" content="2017-09-14T00:00:00Z" />
 
   
 
@@ -34,7 +34,7 @@
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <meta name="twitter:creator" content="@" />
-<meta name="twitter:title" content="Class 8: Relations" />
+<meta name="twitter:title" content="Class 8: Sequences, Relations, Functions" />
 <meta name="twitter:description" content="" />
 <meta name="twitter:url" content="https://uvacs2102.github.io/class8/" />
 <meta name="twitter:domain" content="https://uvacs2102.github.io">
@@ -44,14 +44,14 @@
   {
     "@context": "http://schema.org",
     "@type": "Article",
-    "headline": "Class 8: Relations",
+    "headline": "Class 8: Sequences, Relations, Functions",
     "author": {
       "@type": "Person",
       "name": "http://profiles.google.com/+?rel=author"
     },
-    "datePublished": "2016-09-15",
+    "datePublished": "2017-09-14",
     "description": "",
-    "wordCount":  547 
+    "wordCount":  902 
   }
 </script>
 
@@ -62,14 +62,14 @@
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://uvacs2102.github.io/touch-icon-144-precomposed.png">
 <link href="https://uvacs2102.github.io/favicon.png" rel="icon">
 
-<meta name="generator" content="Hugo 0.17" />
+<meta name="generator" content="Hugo 0.16-DEV" />
 
   <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
 
-<link href='https://fonts.googleapis.com/css?family=Merriweather:300%7CRaleway%7COpen+Sans' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,400i,700" rel="stylesheet">
 <link rel="stylesheet" href="https://uvacs2102.github.io/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://uvacs2102.github.io/css/style.css">
 
@@ -104,25 +104,31 @@
 
 
   
-<a href="https://uvacs2102.github.io/f16/syllabus">Syllabus</a>
+<a href="https://uvacs2102.github.io/syllabus">Syllabus</a>
 
-<a href="https://uvacs2102.github.io/f16/schedule">Schedule</a>
+<a href="https://uvacs2102.github.io/schedule">Schedule</a>
 
-<a href="https://uvacs2102.github.io/f16/officehours">Office Hours</a>
+<a href="https://uvacs2102.github.io/officehours">Office Hours</a>
 
-<a href="https://uvacs2102.github.io/f16/docs/mcs.pdf">MCS Book</a>
+<a href="https://uvacs2102.github.io/docs/mcs.pdf">MCS Book</a>
 
-<a href="https://uvacs2102.github.io/f16/pledge">Course Pledge</a>
+<a href="https://uvacs2102.github.io/resources">Resources</a>
 
-<a href="https://collab.itc.virginia.edu/portal/site/e0b17949-c94c-466b-835a-196381f3f911?panel=Main">Collab Site</a>
+<a href="https://uvacs2102.github.io/"></a>
 
-<a href="https://uvacs2102.github.io/f16/docs/finalprep.pdf">Final</a>
+<a href="https://uvacs2102.github.io/pledge">Course Pledge</a>
 
-<a href="https://uvacs2102.github.io/f16/ps/pszhighlights">PS Highlights</a>
+<a href="https://uvacs2102.github.io/ps/ps1">Problem Set 1</a>
 
-<a href="https://uvacs2102.github.io/f16/challenges">Challenges</a>
+<a href="https://uvacs2102.github.io/ps/ps2">Problem Set 2</a>
 
-<a href="https://uvacs2102.github.io/f16/post">Posts</a>
+<a href="https://uvacs2102.github.io/ps/ps3">Problem Set 3</a>
+
+<a href="https://collab.its.virginia.edu/portal/site/9bd99d1c-6f18-4542-a7d1-8ffc4fccbd3d">Collab Site</a>
+
+<a href="https://uvacs2102.github.io/"></a>
+
+<a href="https://uvacs2102.github.io/post">Posts</a>
 
 
 </nav>
@@ -161,11 +167,11 @@
 
 <article id="main-content" class="container main_content single">
   <header class="container hat">
-  <h1><center>Class 8: Relations
+  <h1><center>Class 8: Sequences, Relations, Functions
 </center></h1>
 
   <div class="metas">
-<time datetime="2016-09-15">15 Sep, 2016</time>
+<time datetime="2017-09-14">14 Sep, 2017</time>
 
 
   
@@ -180,52 +186,38 @@
   <div class="container content">
   
 
-<h3 id="schedule">Schedule</h3>
+<h3 id="schedule:3a7d0da174b09b839e2f33e1cfd8fab3">Schedule</h3>
 
 <p><a href="/ps/ps3"><strong>Problem Set 3</strong></a> is due <strong>Friday at 6:29pm</strong>.</p>
 
 <p><div class="notpdf">
-   <center>
-<script async class="speakerdeck-embed" data-id="eaabcbbe2383494e9724b1904156f883" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-   </center></p>
+   <center></p>
 
-<p><div class="highlightg"> <strong>Challenge Problem Opportunity.</strong>
-Apparently, people were not entirely convinced by my proof sketch in
-class that the egg came before the chicken.  So, we&rsquo;ll make it a
-challenge problem to write the best proof that answers the question of
-&ldquo;which came first, the chicken or the egg?&rdquo; (That is, you can either
-prove the egg came first, or prove the chicken came first).  A
-convincing proof would need to include clear definitions of &ldquo;chicken&rdquo;
-and &ldquo;egg&rdquo;, and use inference rules, as well as axioms based on
-biological assumptions (clearly stated), to make an irrefutable argument
-supporting your position.  </div></p>
+<p></center></p>
 
 <p><div class="highlightm">
    <a href="/docs/class8.pdf">See PDF Version for <b>Notes and Questions</b></a>.
    </div></p>
 
-<h2 id="links">Links</h2>
-
-<p><a href="https://www.cs.utexas.edu/users/EWD/ewd08xx/EWD831.PDF">Dijkstra&rsquo;s explanation of what the natural numbers should start with 0</a></p>
+<h2 id="links:3a7d0da174b09b839e2f33e1cfd8fab3">Links</h2>
 
 <p></div><!--endpdf--></p>
 
 <p><div class="latex"></p>
 
-<h1 id="functions">Functions</h1>
+<h1 id="sequences:3a7d0da174b09b839e2f33e1cfd8fab3">Sequences</h1>
 
-<p>A <strong>function</strong> is a mathematical datatype that associates elements from
-one set, called the <em>domain</em>, with elements from another set, called a
-<em>codomain</em>.</p>
+<p>A <strong>sequence</strong> is a mathematical datatype that bears similarities to sets. A sequence $S$ also contains some elements, but we usually refer to them as <em>components</em>. There are two major differences between sets and sequences:</p>
 
-<p>$$ f: \textrm{\em domain} \rightarrow \textrm{\em codomain} $$</p>
+<ol>
+<li><p>Components of a sequence are <strong>ordered</strong>. There is either $0$, or $1$ or $2$, or &hellip; $n$ components, when the sequence if <em>finite</em> or it could be an infinite sequence that has an $i$&lsquo;th component for any non-zero natural number $i$.</p></li>
 
-<p>If the function is <em>total</em>, every element of the domain has one
-associated codomain element; if the function is <em>partial</em>, there may be
-elements of the domain that do not have an associated codomain element.</p>
+<li><p>Different components of a sequence could be equal. For example $(a,b,a)$ has $a$ repeating, and this is a different sequence compared to $(a,b,b)$ even though they both have 3 componetns. If we interprete them as <em>sets</em>, then they will be equal sets with $2$ elements each.</p></li>
+</ol>
 
-<p><strong>Defining a function.</strong> To define a function, we need to describe how
-  elements in the domain are associated with elements in the codomain.</p>
+<h1 id="cartesian-product:3a7d0da174b09b839e2f33e1cfd8fab3">Cartesian Product</h1>
+
+<p>We can use set products to get new sets whose elements are sequences. Cartesian product is a very useful way of doing it.</p>
 
 <p><strong>Set Products.</strong> A <em>Cartesian product</em> of sets $S_1, S_2, \cdots, S_n$
   is a set consisting of all possible sequences of $n$ elements where the
@@ -234,6 +226,29 @@ elements of the domain that do not have an associated codomain element.</p>
 <p>$$ S_1 \times S_2 \times \cdots \times S_n = { (s_1, s_2, \cdots, s_n) | s_i \in S_i } $$</p>
 
 <p>How many elements are in $A \times B$?</p>
+
+<h1 id="relations-and-binary-relations:3a7d0da174b09b839e2f33e1cfd8fab3">Relations and Binary Relations</h1>
+
+<p>A <em>relation</em> between some elements from set $A$ and some elements from set $B$ could be represented by putting all such pairs $(a,b)$ in a set $P$. As you can see, this way, $P$ would be a subset of the cartesian product $A \times B$, namely $P \subseteq A \times B$. More formally we have the following definition.</p>
+
+<p>A <strong>binary relation</strong>, $P$, is defined with respect to a <em>domain</em> set, $A$, and a
+<em>codomain</em> set, $B$, and it holds that  $P$ is $P \subseteq A \times B$. When we draw $P$ by connecting elements of $A$ to $B$ based on their membership in $P$, we call this  the <em>graph</em> of
+$R$.</p>
+
+<p>The notion of relations could be generalized to having relations between elements coming from multiple sets $A,B,C$, and we can also talk about relations of the form $P \subseteq A \times B \times C$, but the binary relation remains a very important data type as it allows us to define <em>functions</em>&hellip;</p>
+
+<h1 id="functions:3a7d0da174b09b839e2f33e1cfd8fab3">Functions</h1>
+
+<p>The concept of a function $F$ models is a special form of a binary relation $R$ between $A$ and $B$ where for every element  $a \in A$ there is a <em>unique</em> element in $b \in B$ that is in relation with $a$ (i.e. $(a,b) \in R$). More formally, we use a direct new notation just reserved for working with functions.</p>
+
+<p>A <strong>function</strong> is a mathematical datatype that associates elements from
+one set, called the <em>domain</em>, with elements from another set, called a
+<em>codomain</em>.</p>
+
+<p>$$ f: \textrm{\em domain} \rightarrow \textrm{\em codomain} $$</p>
+
+<p><strong>Defining a function.</strong> To define a function, we need to describe how
+  elements in the domain are associated with elements in the codomain.</p>
 
 <p>#</p>
 
@@ -245,22 +260,25 @@ elements of the domain that do not have an associated codomain element.</p>
 
 <p>##</p>
 
-<p>For which of them is the function <em>total</em>?</p>
-
 <!--page-->
 
-<p>How are functions in your favorite programming language like and unlike
-mathematical functions?</p>
+<h2 id="properties-of-relations-and-functions:3a7d0da174b09b839e2f33e1cfd8fab3">Properties of Relations and Functions</h2>
 
-<p>#</p>
+<p>If the function is <em>total</em>, every element of the domain has one
+associated codomain element; if the function is <em>partial</em>, there may be
+elements of the domain that do not have an associated codomain element. Note that, unless specified otherwise, we assume that a function is <em>total</em> (this is how we defined a function) but we use the term <em>partial</em> to denote cases where some inputs do not have an output, and reserve the word <em>total</em> to emphasize that no such thing exists.</p>
 
-<h2 id="relations">Relations</h2>
+<p>For which of the above-listed functions are <em>total</em>?</p>
 
-<p>A <strong>binary relation</strong>, $R$, consists of a domain set, $A$, and a
-codomain set, $B$, and a subset of $A \times B$ called the <em>graph</em> of
-$R$.</p>
+<p>We call a function $F$ from $A$ to $B$ <em>surjective</em> if every element in $B$ is &ldquo;covered&rdquo;, namely,</p>
 
-<p>For each statement below, give the name and at least one example.</p>
+<p>$$ \forall y \in B. \exists x \in A. F(x)=y .$$</p>
+
+<p>A similar definition could be defined for any binary relation. We also call a function $F$ <em>injective</em> if for any  element $y$ in the codomain $B$ there is <em>at most</em> one $x$ for which $F(x)=y$. How do you write this formally using quantifiers?</p>
+
+<p>When a function is total, surjective, and injective, then we say this is a <em>bijection</em>.</p>
+
+<p>For each statement below, and using the notion of graphs for binary relations and functions, give the name of the described case, and  give at least one example.</p>
 
 <ul>
 <li>A binary relation where no element of $A$ has more than one outgoing edge:</li>
@@ -294,11 +312,7 @@ b. there exists some <em>bijective</em> relation between $T$ and $S$.
 c. there exists a <em>total</em> function, $f: S \rightarrow T$.
 d. $S - T = \emptyset$.
 e. the number of elements of $S$ is equal to the number of elements of $T$.
-f. $G - (S \times T) = \emptyset$.
-g. $(S \times T) - G = \emptyset$.
-h. $(S \times T) - G \neq \emptyset$.</p>
-
-<p></div></p>
+</div></p>
 
 </div>
 
@@ -310,15 +324,11 @@ h. $(S \times T) - G \neq \emptyset$.</p>
   
 
     
-    <a class="prev" href="https://uvacs2102.github.io/pdfs/" title="Generating PDFs">
+    <a class="prev" href="https://uvacs2102.github.io/ps2comments/" title="Problem Set 2 Comments">
       Previous
     </a>
     
 
-    
-    <a class="next" href="https://uvacs2102.github.io/ps4announce/" title="Problem Set 4">
-      Next
-    </a>
     
 
   
@@ -343,7 +353,7 @@ h. $(S \times T) - G \neq \emptyset$.</p>
   
 <div class="container footline">
   
-  <p align="center">cs2102: Discrete Mathematics | University of Virginia, Fall 2016 | <a href="https://www.cs.virginia.edu/evans">David Evans</a>
+  <p align="center">cs2102: Discrete Mathematics | University of Virginia, Fall 2017 | <a href="https://www.cs.virginia.edu/evans">David Evans</a> and <a href="https://www.cs.virginia.edu/~mohammad/">Mohammad Mahmoody
 
 
 </div>
