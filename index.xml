@@ -6,8 +6,18 @@
     <description>Recent content on cs2102: Discrete Math</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 12 Sep 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 13 Sep 2017 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://uvacs2102.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Problem Set 2 Comments</title>
+      <link>https://uvacs2102.github.io/ps2comments/</link>
+      <pubDate>Wed, 13 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/ps2comments/</guid>
+      <description>&lt;p&gt;The Problem Set 2 solutions and comments are now posted in collab: &lt;a href=&#34;https://collab.its.virginia.edu/access/content/group/9bd99d1c-6f18-4542-a7d1-8ffc4fccbd3d/ps2solutions.pdf&#34;&gt;PDF&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Class 7: Sets</title>
@@ -393,7 +403,7 @@ $(A \lor B \lor C \lor D)$ we do another trick of breaking them into smaller par
       <guid>https://uvacs2102.github.io/class5/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule:d690e1859ec274fb7ed997cd7db3fba5&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps2&#34;&gt;&lt;strong&gt;Problem Set 2&lt;/strong&gt;&lt;/a&gt; is due &lt;strong&gt;Friday at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
 
@@ -413,7 +423,7 @@ $(A \lor B \lor C \lor D)$ we do another trick of breaking them into smaller par
   would include a proof that no shorter formula exists.
    &lt;/div&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
+&lt;h2 id=&#34;links:d690e1859ec274fb7ed997cd7db3fba5&#34;&gt;Links&lt;/h2&gt;
 
 &lt;p&gt;If you want to learn more about how to learn the logic implemented by a chip
 and cryptosystems used in car immobolizers, see &lt;a href=&#34;https://www.cs.virginia.edu/~evans/pubs/usenix08/usenix08.pdf&#34;&gt;&lt;em&gt;Reverse-Engineering a
@@ -428,7 +438,7 @@ cars.&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;notes-and-questions&#34;&gt;Notes and Questions&lt;/h1&gt;
+&lt;h1 id=&#34;notes-and-questions:d690e1859ec274fb7ed997cd7db3fba5&#34;&gt;Notes and Questions&lt;/h1&gt;
 
 &lt;p&gt;&lt;strong&gt;Definition: satisfiable.&lt;/strong&gt; A logical formula is &lt;em&gt;satisfiable&lt;/em&gt; if there
   is &lt;em&gt;some&lt;/em&gt; way to make it &lt;strong&gt;true&lt;/strong&gt;.  That is, there is at least one
@@ -474,7 +484,7 @@ involving 5 variables?&lt;/p&gt;
 
 &lt;!--page--&gt;
 
-&lt;h2 id=&#34;logical-quantifiers&#34;&gt;Logical Quantifiers&lt;/h2&gt;
+&lt;h2 id=&#34;logical-quantifiers:d690e1859ec274fb7ed997cd7db3fba5&#34;&gt;Logical Quantifiers&lt;/h2&gt;
 
 &lt;p&gt;$\forall x \in S. P(x)$ means $P$ holds for &lt;em&gt;every&lt;/em&gt; element of $S$.&lt;br /&gt;
 $\exists x \in S. P(x)$ means $P$ holds for &lt;em&gt;at least one&lt;/em&gt; element of $S$.&lt;/p&gt;
@@ -529,7 +539,7 @@ list.&lt;/p&gt;
       <guid>https://uvacs2102.github.io/class4/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule:a69bef1e5f2725722420b5c4a32452b2&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps1&#34;&gt;&lt;strong&gt;Problem Set 1&lt;/strong&gt;&lt;/a&gt; is due &lt;strong&gt;Friday at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
 
@@ -545,7 +555,7 @@ Quantifiers).&lt;/p&gt;
    &lt;a href=&#34;https://uvacs2102.github.io/docs/class4.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes and Questions&lt;/b&gt;&lt;/a&gt;.
    &lt;/div&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;links:a69bef1e5f2725722420b5c4a32452b2&#34;&gt;Links&lt;/h2&gt;
+&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
 
 &lt;p&gt;Scott Brown, &lt;a href=&#34;http://ms.appliedprobability.org/data/files/selected%20articles/39-1-1.pdf&#34;&gt;&lt;em&gt;The Life and Work of Augustus De Morgan&lt;/em&gt;&lt;/a&gt;. Applied Probability 2006.&lt;/p&gt;
 
@@ -555,9 +565,9 @@ Quantifiers).&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;notes-and-questions:a69bef1e5f2725722420b5c4a32452b2&#34;&gt;Notes and Questions&lt;/h1&gt;
+&lt;h1 id=&#34;notes-and-questions&#34;&gt;Notes and Questions&lt;/h1&gt;
 
-&lt;h2 id=&#34;well-ordering-principle-proof:a69bef1e5f2725722420b5c4a32452b2&#34;&gt;Well-Ordering Principle Proof&lt;/h2&gt;
+&lt;h2 id=&#34;well-ordering-principle-proof&#34;&gt;Well-Ordering Principle Proof&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;Odd Summation.&lt;/strong&gt; (Problem 2.12) Prove that for all $n &amp;gt; 0$, the sum of the first $n$ odd numbers is $n^2$.&lt;/p&gt;
 
@@ -662,7 +672,7 @@ For each of the formulas below, determine if it is _valid_ and if it is _satisfi
 would like to have more examples and alternate presentations of the
 material we cover in class and the textbook covers.&lt;/p&gt;
 
-&lt;h2 id=&#34;books:74f7fb04a75e766307d398251c369a21&#34;&gt;Books&lt;/h2&gt;
+&lt;h2 id=&#34;books&#34;&gt;Books&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://www.people.vcu.edu/~rhammack/BookOfProof/BookOfProof.pdf&#34;&gt;&lt;em&gt;Book of Proof&lt;/em&gt;&lt;/a&gt;, Richard Hammack&lt;/p&gt;
 
@@ -678,7 +688,7 @@ material we cover in class and the textbook covers.&lt;/p&gt;
 &lt;p&gt;This course is structured quite differently from our course, but covers many of the same topics with many examples.  The most likely useful chapters for cs2102 students are: &lt;a href=&#34;http://cseweb.ucsd.edu/~gill/BWLectSite/Resources/C1U2Lo.pdf&#34;&gt;Logic&lt;/a&gt;, &lt;a href=&#34;http://cseweb.ucsd.edu/~gill/BWLectSite/Resources/C1U4SF.pdf&#34;&gt;Sets and Functions&lt;/a&gt;, &lt;a href=&#34;http://cseweb.ucsd.edu/~gill/BWLectSite/Resources/C1U6IS.pdf&#34;&gt;Inductions, Sequences and Series&lt;/a&gt;.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h2 id=&#34;courses:74f7fb04a75e766307d398251c369a21&#34;&gt;Courses&lt;/h2&gt;
+&lt;h2 id=&#34;courses&#34;&gt;Courses&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-042j-mathematics-for-computer-science-spring-2015/&#34;&gt;Mathematics for Computer Science&lt;/a&gt;&lt;/p&gt;
 
@@ -698,7 +708,7 @@ material we cover in class and the textbook covers.&lt;/p&gt;
 &lt;p&gt;Not much material is available on-line, but see &lt;a href=&#34;http://www-inst.eecs.berkeley.edu/~cs70/fa16/&#34;&gt;Mike Clancy and David Wagner&amp;rsquo;s version of the course from 2005&lt;/a&gt;.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h2 id=&#34;math:74f7fb04a75e766307d398251c369a21&#34;&gt;Math&lt;/h2&gt;
+&lt;h2 id=&#34;math&#34;&gt;Math&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://www.wolframalpha.com/input/?i=(2k+%2B+1&#34;&gt;Wolfram Alpha&lt;/a&gt;%5E2)
 is very good at doing most of the algebra, calculation, etc. you would
@@ -833,7 +843,7 @@ that.&lt;/p&gt;
       <guid>https://uvacs2102.github.io/class2/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule:59cb8283a9bd282131a45da3029e68b4&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;Before &lt;strong&gt;Friday, 6:29pm&lt;/strong&gt;:&lt;/p&gt;
 
@@ -1255,40 +1265,6 @@ move other than for exceptional circumstances.&lt;/p&gt;
        
 &lt;tr&gt;&lt;td&gt;&lt;b&gt;Thursday, 7 Dec 2017&lt;/b&gt;&lt;/td&gt;&lt;td colspan=2 bgcolor=&#34;#FFAAAA&#34; style=&#34;text-align: center;&#34;&gt;Final Exam (9am-noon)&lt;/td&gt;&lt;/tr&gt;
 &lt;/table&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Scanning Advice</title>
-      <link>https://uvacs2102.github.io/scanning/</link>
-      <pubDate>Tue, 22 Aug 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://uvacs2102.github.io/scanning/</guid>
-      <description>&lt;p&gt;For many of the assignments in this class, you will need to submit
-your assignment as a PDF file. For the &lt;a href=&#34;https://uvacs2102.github.io/pledge&#34;&gt;Course Pledge&lt;/a&gt;, you
-need to print out a page, sign it, and submit a scan of the page. For
-the Problem Sets, you will need to submit your responses as a single
-PDF file (this could be generated using a typesetting tool, but it is
-also find to handwrite your solutions, and produce a scan to submit).&lt;/p&gt;
-
-&lt;p&gt;If you have access to a scanner and can use that to generate a PDF,
-that should produce good results. There are public scanners to use in
-some of the UVA libraries including in Clemons Library.&lt;/p&gt;
-
-&lt;p&gt;If you are careful though, it is also possible to generate a readable
-PDF using a mobile phone camera.  One tool that works for this is
-&lt;a href=&#34;https://www.camscanner.com/user/download&#34;&gt;CamScanner&lt;/a&gt; (available as a
-free app for limited use, for Android, iPhone, and Windows Phone).
-There are lots of other scanning apps that should work - see &lt;a href=&#34;https://www.cnet.com/how-to/best-scanning-apps-for-android-and-iphone/&#34;&gt;&lt;em&gt;The
-best scanning apps for Android and
-iPhone&lt;/em&gt;&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Please look at the file you have generated before submitting it.  If
-it does not look readable to you, please do not submit it, but figure
-out how to generate a more readable PDF.  Submitting the Course Pledge
-is a good opportunity to make sure you have figured out a way to
-generate readable PDFs, since you will need to do this for the problem
-sets also.&lt;/p&gt;
 </description>
     </item>
     
