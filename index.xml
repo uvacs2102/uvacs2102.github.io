@@ -165,7 +165,7 @@ e. the number of elements of $S$ is equal to the number of elements of $T$.
       <guid>https://uvacs2102.github.io/class7/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule:3a08b95a8ad598832d09afa687b9b147&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps3&#34;&gt;&lt;strong&gt;Problem Set 3&lt;/strong&gt;&lt;/a&gt; is due &lt;strong&gt;Friday at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
 
@@ -178,13 +178,13 @@ e. the number of elements of $S$ is equal to the number of elements of $T$.
    &lt;a href=&#34;https://uvacs2102.github.io/docs/class7.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes and Questions&lt;/b&gt;&lt;/a&gt;.
    &lt;/div&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
+&lt;h2 id=&#34;links:3a08b95a8ad598832d09afa687b9b147&#34;&gt;Links&lt;/h2&gt;
 
 &lt;p&gt;&lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;notes-and-questions&#34;&gt;Notes and Questions&lt;/h1&gt;
+&lt;h1 id=&#34;notes-and-questions:3a08b95a8ad598832d09afa687b9b147&#34;&gt;Notes and Questions&lt;/h1&gt;
 
 &lt;p&gt;What is a &lt;em&gt;data type&lt;/em&gt;?  What are the differences between a &lt;em&gt;mathematical
 data type&lt;/em&gt; and a data type in your favorite programming language?&lt;/p&gt;
@@ -194,7 +194,7 @@ data type&lt;/em&gt; and a data type in your favorite programming language?&lt;/
 &lt;p&gt;A &lt;strong&gt;set&lt;/strong&gt; is an unordered colection of objects.  A set is defined by its
 membership operation: $x \in S$ is true if $x$ is in the set $S$. When $x$ is not in $S$ we write it as $x \notin S$. A set has only &lt;em&gt;one&lt;/em&gt; copy of each element. Namely, there is no repetition in elements of a set. Also, a set $A$ could be a member o another set $B$, denoted by $A \in B$. Note that members of $A$ are not necessarily members of $B$ unless they are explicitly put in $B$ directly.&lt;/p&gt;
 
-&lt;h2 id=&#34;set-operations&#34;&gt;Set Operations&lt;/h2&gt;
+&lt;h2 id=&#34;set-operations:3a08b95a8ad598832d09afa687b9b147&#34;&gt;Set Operations&lt;/h2&gt;
 
 &lt;p&gt;Subset: $\subseteq$ (note that this does not mean &lt;em&gt;strict subset&lt;/em&gt;)
 $$A \subseteq B \iff \forall x \in A. \fillin \in \fillin.$$&lt;/p&gt;
@@ -219,7 +219,7 @@ discussion.)&lt;/p&gt;
 
 &lt;!--page--&gt;
 
-&lt;h3 id=&#34;russell-s-paradox&#34;&gt;Russell&amp;rsquo;s Paradox&lt;/h3&gt;
+&lt;h3 id=&#34;russell-s-paradox:3a08b95a8ad598832d09afa687b9b147&#34;&gt;Russell&amp;rsquo;s Paradox&lt;/h3&gt;
 
 &lt;p&gt;$$ S_{R} = \textrm{ the set of all sets that are not members of themselves} $$&lt;/p&gt;
 
@@ -227,13 +227,13 @@ discussion.)&lt;/p&gt;
 
 &lt;p&gt;What is the source of this paradox? Note that in this question, we are implicitly assuming that $S&lt;em&gt;{R}$ is a set, but we have never &amp;ldquo;constructed&amp;rdquo; this set properly to use it. Namely, here we are implicitly assuming that there is already a &amp;ldquo;set of all sets&amp;rdquo; $S&lt;/em&gt;{all}$ from which we remove those sets like $T$ for which $T \in T$. By removing all such $T$ from $S_{all}$ we get the set $S_R$.&lt;/p&gt;
 
-&lt;h3 id=&#34;using-quantifiers-more-carefully&#34;&gt;Using Quantifiers More Carefully&lt;/h3&gt;
+&lt;h3 id=&#34;using-quantifiers-more-carefully:3a08b95a8ad598832d09afa687b9b147&#34;&gt;Using Quantifiers More Carefully&lt;/h3&gt;
 
 &lt;p&gt;Note that in some of the  propositions that we used to define the set operations (such as union, intersection, etc.) above, we wrote quantified $x$ without saying which set it is from. For example  $\forall x. [\dots]$. It is much preferred to always say what $x$ is belonging to when we quantify over $x$. The reason is to avoid traps like that of Russell&amp;rsquo;s paradox! This should not worry us in this class, as we will always work with well-defined &lt;em&gt;universes&lt;/em&gt; that include all the elements of the sets that we work with. Therefore, we can always assume implicitly that $x \in U$ (for a well defined set universe $U$) even if not explicitly mentioned.&lt;/p&gt;
 
 &lt;p&gt;#&lt;/p&gt;
 
-&lt;h3 id=&#34;set-practice&#34;&gt;Set Practice&lt;/h3&gt;
+&lt;h3 id=&#34;set-practice:3a08b95a8ad598832d09afa687b9b147&#34;&gt;Set Practice&lt;/h3&gt;
 
 &lt;p&gt;Here are some practice problems involving sets.  We won&amp;rsquo;t go through
 these in class, but you should ask questions about any are unclear.  (At
@@ -541,7 +541,7 @@ $(A \lor B \lor C \lor D)$ we do another trick of breaking them into smaller par
       <guid>https://uvacs2102.github.io/class5/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule:d690e1859ec274fb7ed997cd7db3fba5&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps2&#34;&gt;&lt;strong&gt;Problem Set 2&lt;/strong&gt;&lt;/a&gt; is due &lt;strong&gt;Friday at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
 
@@ -561,7 +561,7 @@ $(A \lor B \lor C \lor D)$ we do another trick of breaking them into smaller par
   would include a proof that no shorter formula exists.
    &lt;/div&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;links:d690e1859ec274fb7ed997cd7db3fba5&#34;&gt;Links&lt;/h2&gt;
+&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
 
 &lt;p&gt;If you want to learn more about how to learn the logic implemented by a chip
 and cryptosystems used in car immobolizers, see &lt;a href=&#34;https://www.cs.virginia.edu/~evans/pubs/usenix08/usenix08.pdf&#34;&gt;&lt;em&gt;Reverse-Engineering a
@@ -576,7 +576,7 @@ cars.&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;notes-and-questions:d690e1859ec274fb7ed997cd7db3fba5&#34;&gt;Notes and Questions&lt;/h1&gt;
+&lt;h1 id=&#34;notes-and-questions&#34;&gt;Notes and Questions&lt;/h1&gt;
 
 &lt;p&gt;&lt;strong&gt;Definition: satisfiable.&lt;/strong&gt; A logical formula is &lt;em&gt;satisfiable&lt;/em&gt; if there
   is &lt;em&gt;some&lt;/em&gt; way to make it &lt;strong&gt;true&lt;/strong&gt;.  That is, there is at least one
@@ -622,7 +622,7 @@ involving 5 variables?&lt;/p&gt;
 
 &lt;!--page--&gt;
 
-&lt;h2 id=&#34;logical-quantifiers:d690e1859ec274fb7ed997cd7db3fba5&#34;&gt;Logical Quantifiers&lt;/h2&gt;
+&lt;h2 id=&#34;logical-quantifiers&#34;&gt;Logical Quantifiers&lt;/h2&gt;
 
 &lt;p&gt;$\forall x \in S. P(x)$ means $P$ holds for &lt;em&gt;every&lt;/em&gt; element of $S$.&lt;br /&gt;
 $\exists x \in S. P(x)$ means $P$ holds for &lt;em&gt;at least one&lt;/em&gt; element of $S$.&lt;/p&gt;
@@ -862,7 +862,7 @@ encounter in this class.  It is also &lt;a href=&#34;http://www.wolframalpha.com
       <guid>https://uvacs2102.github.io/class3/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule:b9b50bf0a87e56763567aaebbc820d47&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;This week, you should read MCS Chapter 2 and MCS Chapter 3 (at least
 through the end of Section 3.4).&lt;/p&gt;
@@ -882,7 +882,7 @@ hours schedule.&lt;/p&gt;
    &lt;a href=&#34;https://uvacs2102.github.io/docs/class3.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes and Questions&lt;/b&gt;&lt;/a&gt;.
    &lt;/div&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
+&lt;h2 id=&#34;links:b9b50bf0a87e56763567aaebbc820d47&#34;&gt;Links&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://math.berkeley.edu/~kpmann/Well-ordering.pdf&#34;&gt;&lt;em&gt;The Well-Ordering Theorem: one of the Greatest Mathematical Controversies of All Time&lt;/em&gt;&lt;/a&gt;, Kathryn Mann.&lt;/p&gt;
 
@@ -890,7 +890,7 @@ hours schedule.&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;notes-and-questions&#34;&gt;Notes and Questions&lt;/h1&gt;
+&lt;h1 id=&#34;notes-and-questions:b9b50bf0a87e56763567aaebbc820d47&#34;&gt;Notes and Questions&lt;/h1&gt;
 
 &lt;p&gt;What properties must a sensible ordering function have?&lt;/p&gt;
 
@@ -923,7 +923,7 @@ either satisfy $a&amp;lt;b$ or $b&amp;lt;a$. Second  $a&amp;lt;b$ and $b&amp;lt;
 
 &lt;!--page--&gt;
 
-&lt;h3 id=&#34;template-for-well-ordering-proofs-section-2-2&#34;&gt;Template for Well-Ordering Proofs (Section 2.2)&lt;/h3&gt;
+&lt;h3 id=&#34;template-for-well-ordering-proofs-section-2-2:b9b50bf0a87e56763567aaebbc820d47&#34;&gt;Template for Well-Ordering Proofs (Section 2.2)&lt;/h3&gt;
 
 &lt;p&gt;To prove that $P(n)$ is true for all $n \in \mathbb{N}$:&lt;/p&gt;
 
@@ -1223,7 +1223,7 @@ implication to a skeptical reader.&lt;/p&gt;&lt;/li&gt;
       <guid>https://uvacs2102.github.io/class1/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule:e795e40ef5a742faa33766b4d984e8c7&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;Before &lt;strong&gt;Thursday&amp;rsquo;s class&lt;/strong&gt;: (visit &lt;a href=&#34;https://uvacs2102.github.io/class1&#34;&gt;https://uvacs2102.github.io/class1&lt;/a&gt; for the web version of these notes with links)&lt;/p&gt;
 
@@ -1299,7 +1299,7 @@ mathematicians establish ``&lt;em&gt;truth&lt;/em&gt;&amp;rdquo;?&lt;/p&gt;
 &lt;p&gt;A &lt;em&gt;predicate&lt;/em&gt; is a proposition whose truth may depend on the value of
 variables.&lt;/p&gt;
 
-&lt;h3 id=&#34;proof&#34;&gt;Proof&lt;/h3&gt;
+&lt;h3 id=&#34;proof:e795e40ef5a742faa33766b4d984e8c7&#34;&gt;Proof&lt;/h3&gt;
 
 &lt;p&gt;A &lt;em&gt;theorem&lt;/em&gt; is a ____________ that has been proven true.&lt;/p&gt;
 
@@ -1310,7 +1310,7 @@ not proven; they are &lt;em&gt;assumed&lt;/em&gt; to be true.&lt;/p&gt;
   &lt;em&gt;logical deductions&lt;/em&gt; starting from a set of accepted &lt;em&gt;axioms&lt;/em&gt; that
   leads to the proposition.&lt;/p&gt;
 
-&lt;h3 id=&#34;rules-of-inference&#34;&gt;Rules of Inference&lt;/h3&gt;
+&lt;h3 id=&#34;rules-of-inference:e795e40ef5a742faa33766b4d984e8c7&#34;&gt;Rules of Inference&lt;/h3&gt;
 
 &lt;p&gt;The possible steps that can be used in a proof are logical deductions
 based on inference rules.&lt;/p&gt;
