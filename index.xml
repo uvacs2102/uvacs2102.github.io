@@ -2,12 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>cs2102: Discrete Math</title>
-    <link>https://uvacs2102.github.io/</link>
+    <link>https://uvacs2102.github.io/index.xml</link>
     <description>Recent content on cs2102: Discrete Math</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 14 Sep 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 16 Sep 2017 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://uvacs2102.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Problem Set 4</title>
+      <link>https://uvacs2102.github.io/ps4posted/</link>
+      <pubDate>Sat, 16 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/ps4posted/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps4&#34;&gt;&lt;strong&gt;Problem Set 4&lt;/strong&gt;&lt;/a&gt; [&lt;a href=&#34;https://uvacs2102.github.io/docs/ps4.pdf&#34;&gt;PDF&lt;/a&gt;] is now posted and
+is due &lt;strong&gt;Friday, 22 September at 6:29:00pm&lt;/strong&gt;.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Class 8: Sequences, Relations, Functions</title>
@@ -111,7 +122,7 @@ one set, called the &lt;em&gt;domain&lt;/em&gt;, with elements from another set,
       <guid>https://uvacs2102.github.io/class7/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule:3a08b95a8ad598832d09afa687b9b147&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps3&#34;&gt;&lt;strong&gt;Problem Set 3&lt;/strong&gt;&lt;/a&gt; is due &lt;strong&gt;Friday at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
 
@@ -124,13 +135,13 @@ one set, called the &lt;em&gt;domain&lt;/em&gt;, with elements from another set,
    &lt;a href=&#34;https://uvacs2102.github.io/docs/class7.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes and Questions&lt;/b&gt;&lt;/a&gt;.
    &lt;/div&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;links:3a08b95a8ad598832d09afa687b9b147&#34;&gt;Links&lt;/h2&gt;
+&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
 
 &lt;p&gt;&lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;notes-and-questions:3a08b95a8ad598832d09afa687b9b147&#34;&gt;Notes and Questions&lt;/h1&gt;
+&lt;h1 id=&#34;notes-and-questions&#34;&gt;Notes and Questions&lt;/h1&gt;
 
 &lt;p&gt;What is a &lt;em&gt;data type&lt;/em&gt;?  What are the differences between a &lt;em&gt;mathematical
 data type&lt;/em&gt; and a data type in your favorite programming language?&lt;/p&gt;
@@ -140,7 +151,7 @@ data type&lt;/em&gt; and a data type in your favorite programming language?&lt;/
 &lt;p&gt;A &lt;strong&gt;set&lt;/strong&gt; is an unordered colection of objects.  A set is defined by its
 membership operation: $x \in S$ is true if $x$ is in the set $S$. When $x$ is not in $S$ we write it as $x \notin S$. A set has only &lt;em&gt;one&lt;/em&gt; copy of each element. Namely, there is no repetition in elements of a set. Also, a set $A$ could be a member o another set $B$, denoted by $A \in B$. Note that members of $A$ are not necessarily members of $B$ unless they are explicitly put in $B$ directly.&lt;/p&gt;
 
-&lt;h2 id=&#34;set-operations:3a08b95a8ad598832d09afa687b9b147&#34;&gt;Set Operations&lt;/h2&gt;
+&lt;h2 id=&#34;set-operations&#34;&gt;Set Operations&lt;/h2&gt;
 
 &lt;p&gt;Subset: $\subseteq$ (note that this does not mean &lt;em&gt;strict subset&lt;/em&gt;)
 $$A \subseteq B \iff \forall x \in A. \fillin \in \fillin.$$&lt;/p&gt;
@@ -165,7 +176,7 @@ discussion.)&lt;/p&gt;
 
 &lt;!--page--&gt;
 
-&lt;h3 id=&#34;russell-s-paradox:3a08b95a8ad598832d09afa687b9b147&#34;&gt;Russell&amp;rsquo;s Paradox&lt;/h3&gt;
+&lt;h3 id=&#34;russell-s-paradox&#34;&gt;Russell&amp;rsquo;s Paradox&lt;/h3&gt;
 
 &lt;p&gt;$$ S_{R} = \textrm{ the set of all sets that are not members of themselves} $$&lt;/p&gt;
 
@@ -173,13 +184,13 @@ discussion.)&lt;/p&gt;
 
 &lt;p&gt;What is the source of this paradox? Note that in this question, we are implicitly assuming that $S&lt;em&gt;{R}$ is a set, but we have never &amp;ldquo;constructed&amp;rdquo; this set properly to use it. Namely, here we are implicitly assuming that there is already a &amp;ldquo;set of all sets&amp;rdquo; $S&lt;/em&gt;{all}$ from which we remove those sets like $T$ for which $T \in T$. By removing all such $T$ from $S_{all}$ we get the set $S_R$.&lt;/p&gt;
 
-&lt;h3 id=&#34;using-quantifiers-more-carefully:3a08b95a8ad598832d09afa687b9b147&#34;&gt;Using Quantifiers More Carefully&lt;/h3&gt;
+&lt;h3 id=&#34;using-quantifiers-more-carefully&#34;&gt;Using Quantifiers More Carefully&lt;/h3&gt;
 
 &lt;p&gt;Note that in some of the  propositions that we used to define the set operations (such as union, intersection, etc.) above, we wrote quantified $x$ without saying which set it is from. For example  $\forall x. [\dots]$. It is much preferred to always say what $x$ is belonging to when we quantify over $x$. The reason is to avoid traps like that of Russell&amp;rsquo;s paradox! This should not worry us in this class, as we will always work with well-defined &lt;em&gt;universes&lt;/em&gt; that include all the elements of the sets that we work with. Therefore, we can always assume implicitly that $x \in U$ (for a well defined set universe $U$) even if not explicitly mentioned.&lt;/p&gt;
 
 &lt;p&gt;#&lt;/p&gt;
 
-&lt;h3 id=&#34;set-practice:3a08b95a8ad598832d09afa687b9b147&#34;&gt;Set Practice&lt;/h3&gt;
+&lt;h3 id=&#34;set-practice&#34;&gt;Set Practice&lt;/h3&gt;
 
 &lt;p&gt;Here are some practice problems involving sets.  We won&amp;rsquo;t go through
 these in class, but you should ask questions about any are unclear.  (At
@@ -229,7 +240,7 @@ is due &lt;strong&gt;Friday, 15 September at 6:29:00pm&lt;/strong&gt;.&lt;/p&gt;
       <guid>https://uvacs2102.github.io/class6/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule:647dbe1e5b68015679492d34153c74f5&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;Everyone should have received their graded PS1 by now. Please read &lt;a href=&#34;https://collab.its.virginia.edu/access/content/group/9bd99d1c-6f18-4542-a7d1-8ffc4fccbd3d/ps1solutions.pdf&#34;&gt;the comments posted in collab&lt;/a&gt;.&lt;/p&gt;
 
@@ -248,7 +259,7 @@ src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
    &lt;a href=&#34;https://uvacs2102.github.io/docs/class6.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes and Questions&lt;/b&gt;&lt;/a&gt;.
    &lt;/div&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;links:647dbe1e5b68015679492d34153c74f5&#34;&gt;Links&lt;/h2&gt;
+&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
 
 &lt;p&gt;If you believe real computing systems have the property that the values
 you read from memory will match what you wrote there, see:&lt;/p&gt;
@@ -280,7 +291,7 @@ is the P vs. NP question in this list.&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;programs-and-proofs:647dbe1e5b68015679492d34153c74f5&#34;&gt;Programs and Proofs&lt;/h1&gt;
+&lt;h1 id=&#34;programs-and-proofs&#34;&gt;Programs and Proofs&lt;/h1&gt;
 
 &lt;p&gt;What does it mean to &lt;em&gt;test&lt;/em&gt; a computing system?  What does it mean for a computing system to &lt;em&gt;always behave correctly&lt;/em&gt;?&lt;/p&gt;
 
@@ -290,7 +301,7 @@ is the P vs. NP question in this list.&lt;/p&gt;
 
 &lt;div class=&#34;biggap&#34;&gt;&lt;/div&gt;
 
-&lt;h1 id=&#34;minima:647dbe1e5b68015679492d34153c74f5&#34;&gt;Minima&lt;/h1&gt;
+&lt;h1 id=&#34;minima&#34;&gt;Minima&lt;/h1&gt;
 
 &lt;p&gt;The &lt;em&gt;minimum&lt;/em&gt; of a set with respect to some comparator operator is the
 element which is &amp;ldquo;less than&amp;rdquo; (according to that comparator) every
@@ -301,7 +312,7 @@ $\forall x \in S - { m } . m \prec x$.&lt;/p&gt;
 \forall S \in \textrm{pow}(\mathbb{N}) - { \varnothing } \ldotp \exists m \in S\ldotp \forall x \in S - {m}\ldotp m &amp;lt; x
 $$&lt;/p&gt;
 
-&lt;h1 id=&#34;formulas-propositions-and-inference-rules:647dbe1e5b68015679492d34153c74f5&#34;&gt;Formulas, Propositions, and Inference Rules&lt;/h1&gt;
+&lt;h1 id=&#34;formulas-propositions-and-inference-rules&#34;&gt;Formulas, Propositions, and Inference Rules&lt;/h1&gt;
 
 &lt;p&gt;$P \implies Q$ is a &lt;em&gt;formula&lt;/em&gt;.&lt;br /&gt;
 $\forall P \in { T, F } . \forall Q \in { T, F } . P \implies Q$ is a &lt;em&gt;proposition&lt;/em&gt;.&lt;br /&gt;
@@ -329,7 +340,7 @@ T$.&lt;/p&gt;
 $\infer{Q}{P}$ is sound if and only if the formula
 $P \implies Q$ is valid. So, this way, we can find out whether an inference rule is sound or not, by checking out whether the corresponding formula is valid or not.&lt;/p&gt;
 
-&lt;h1 id=&#34;negating-quantifiers:647dbe1e5b68015679492d34153c74f5&#34;&gt;Negating Quantifiers&lt;/h1&gt;
+&lt;h1 id=&#34;negating-quantifiers&#34;&gt;Negating Quantifiers&lt;/h1&gt;
 
 &lt;p&gt;What is the negation of $\forall x \in S . P(x)$?
 &lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
@@ -337,7 +348,7 @@ $P \implies Q$ is valid. So, this way, we can find out whether an inference rule
 &lt;p&gt;What is the negation of $\exists x \in S . P(x)$?
 &lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;satisfiability:647dbe1e5b68015679492d34153c74f5&#34;&gt;Satisfiability&lt;/h1&gt;
+&lt;h1 id=&#34;satisfiability&#34;&gt;Satisfiability&lt;/h1&gt;
 
 &lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; A formula is in &lt;em&gt;SAT&lt;/em&gt; if it is in CNF form and it is
   satisfiable.&lt;/p&gt;
@@ -432,35 +443,35 @@ x&lt;/em&gt;{49}) \wedge (x&lt;em&gt;{21} \vee x&lt;/em&gt;{40} \vee \overline{x
 x&lt;em&gt;{7}) \wedge (x&lt;/em&gt;{25} \vee x&lt;em&gt;{47} \vee \overline{x&lt;/em&gt;{12}}) \end{math}
 \end{center}&lt;/p&gt;
 
-&lt;h2 id=&#34;converting-truth-tables-to-dnf:647dbe1e5b68015679492d34153c74f5&#34;&gt;Converting Truth Tables to DNF&lt;/h2&gt;
+&lt;h2 id=&#34;converting-truth-tables-to-dnf&#34;&gt;Converting Truth Tables to DNF&lt;/h2&gt;
 
 &lt;p&gt;\begin{tabular}{cc|cc}
 $P$ &amp;amp; $Q$ &amp;amp; $P \implies Q$ &amp;amp; $P \oplus Q$ \ \hline
-\T &amp;amp; \T   &amp;amp; \T &amp;amp; \F \
-\T &amp;amp; \F   &amp;amp; \F &amp;amp; \T \
-\F &amp;amp; \T   &amp;amp; \T &amp;amp; \T \
-\F &amp;amp; \F   &amp;amp; \T &amp;amp; \F \
+\T &amp;amp; \T   &amp;amp; \T &amp;amp; \F &lt;br /&gt;
+\T &amp;amp; \F   &amp;amp; \F &amp;amp; \T &lt;br /&gt;
+\F &amp;amp; \T   &amp;amp; \T &amp;amp; \T &lt;br /&gt;
+\F &amp;amp; \F   &amp;amp; \T &amp;amp; \F &lt;br /&gt;
 \end{tabular}&lt;/p&gt;
 
 &lt;p&gt;The output of the operator is \T\ if and only if the inputs do match &lt;em&gt;one row&lt;/em&gt; where the output is \T.  So, to get a DNF we can go over all the rows where hte output is \T, and for each write a clause that means we &lt;em&gt;are&lt;/em&gt; in that row. Then we OR all such (conjunctive) clauses. For example, for $P \oplus Q$ we get&lt;/p&gt;
 
 &lt;p&gt;$$(P \wedge \neg Q) \vee (\neg P \wedge Q)$$&lt;/p&gt;
 
-&lt;h2 id=&#34;converting-truth-tables-to-cnf:647dbe1e5b68015679492d34153c74f5&#34;&gt;Converting Truth Tables to CNF&lt;/h2&gt;
+&lt;h2 id=&#34;converting-truth-tables-to-cnf&#34;&gt;Converting Truth Tables to CNF&lt;/h2&gt;
 
 &lt;p&gt;\begin{tabular}{cc|cc}
 $P$ &amp;amp; $Q$ &amp;amp; $P \implies Q$ &amp;amp; $P \oplus Q$ \ \hline
-\T &amp;amp; \T   &amp;amp; \T &amp;amp; \F \
-\T &amp;amp; \F   &amp;amp; \F &amp;amp; \T \
-\F &amp;amp; \T   &amp;amp; \T &amp;amp; \T \
-\F &amp;amp; \F   &amp;amp; \T &amp;amp; \F \
+\T &amp;amp; \T   &amp;amp; \T &amp;amp; \F &lt;br /&gt;
+\T &amp;amp; \F   &amp;amp; \F &amp;amp; \T &lt;br /&gt;
+\F &amp;amp; \T   &amp;amp; \T &amp;amp; \T &lt;br /&gt;
+\F &amp;amp; \F   &amp;amp; \T &amp;amp; \F &lt;br /&gt;
 \end{tabular}&lt;/p&gt;
 
 &lt;p&gt;The output of the operator is \T\ if and only if the inputs do not match &lt;em&gt;any row&lt;/em&gt; where the output is \F.  So, to get a CNF we can go over all the rows where hte output is \F, and for each write a clause that means we are &lt;em&gt;not&lt;/em&gt; in that row. Then we AND all such clauses. For example, for $P \oplus Q$ we get&lt;/p&gt;
 
 &lt;p&gt;$$(\neg P \vee \neg Q) \wedge (P \vee Q)$$&lt;/p&gt;
 
-&lt;h2 id=&#34;the-related-3cnf-formulation:647dbe1e5b68015679492d34153c74f5&#34;&gt;The related 3CNF formulation&lt;/h2&gt;
+&lt;h2 id=&#34;the-related-3cnf-formulation&#34;&gt;The related 3CNF formulation&lt;/h2&gt;
 
 &lt;p&gt;When we are only interested to know whether or not a given formula is satisfiable, we can write a 3CNF that is satisfiable iff the original formula is. In order to do that, we first write an equivalent CNF, and then convert it to a 3CNF (which is not necessarily equivalent, but only guarantees to preserve the &lt;em&gt;satisfiability&lt;/em&gt; feature) as follow. For each clause with less than 3 literals such as $(A \lor \neg B)$ we add a dummy variable $C$ (only for this clause) and interprete the $(A \lor \neg B)$ as a formula over all of $A,B,C$ and write a CNF for them (which happens to be 3CNF!). For longer clauses such as
 $(A \lor B \lor C \lor D)$ we do another trick of breaking them into smaller parts using new dummy variables as follows $(A \lor B \lor \neg X) \wedge (\neg X \lor C \lor D).$&lt;/p&gt;
@@ -599,6 +610,17 @@ $$
 \end{center}&lt;/p&gt;
 
 &lt;p&gt;&lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Problem Set 2</title>
+      <link>https://uvacs2102.github.io/ps2posted/</link>
+      <pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/ps2posted/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps2&#34;&gt;&lt;strong&gt;Problem Set 2&lt;/strong&gt;&lt;/a&gt; [&lt;a href=&#34;https://uvacs2102.github.io/docs/ps2.pdf&#34;&gt;PDF&lt;/a&gt;] is now posted and
+is due &lt;strong&gt;Friday, 8 September at 6:29:00pm&lt;/strong&gt;.&lt;/p&gt;
 </description>
     </item>
     
@@ -794,9 +816,9 @@ material we cover in class and the textbook covers.&lt;/p&gt;
 
 &lt;h2 id=&#34;math&#34;&gt;Math&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://www.wolframalpha.com/input/?i=(2k+%2B+1&#34;&gt;Wolfram Alpha&lt;/a&gt;%5E2)
+&lt;p&gt;&lt;a href=&#34;http://www.wolframalpha.com/input/?i=(2k+%2B+1)%5E2&#34;&gt;Wolfram Alpha&lt;/a&gt;
 is very good at doing most of the algebra, calculation, etc. you would
-encounter in this class.  It is also &lt;a href=&#34;http://www.wolframalpha.com/input/?i=(P+%3D%3E+NOT(P&#34;&gt;pretty good at logic&lt;/a&gt;)+%3D%3E+(Q+%3D%3E+NOT(P))).&lt;/p&gt;
+encounter in this class.  It is also &lt;a href=&#34;http://www.wolframalpha.com/input/?i=(P+%3D%3E+NOT(P))+%3D%3E+(Q+%3D%3E+NOT(P))&#34;&gt;pretty good at logic&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
@@ -808,7 +830,7 @@ encounter in this class.  It is also &lt;a href=&#34;http://www.wolframalpha.com
       <guid>https://uvacs2102.github.io/class3/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule:b9b50bf0a87e56763567aaebbc820d47&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;This week, you should read MCS Chapter 2 and MCS Chapter 3 (at least
 through the end of Section 3.4).&lt;/p&gt;
@@ -828,7 +850,7 @@ hours schedule.&lt;/p&gt;
    &lt;a href=&#34;https://uvacs2102.github.io/docs/class3.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes and Questions&lt;/b&gt;&lt;/a&gt;.
    &lt;/div&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;links:b9b50bf0a87e56763567aaebbc820d47&#34;&gt;Links&lt;/h2&gt;
+&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://math.berkeley.edu/~kpmann/Well-ordering.pdf&#34;&gt;&lt;em&gt;The Well-Ordering Theorem: one of the Greatest Mathematical Controversies of All Time&lt;/em&gt;&lt;/a&gt;, Kathryn Mann.&lt;/p&gt;
 
@@ -836,7 +858,7 @@ hours schedule.&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;notes-and-questions:b9b50bf0a87e56763567aaebbc820d47&#34;&gt;Notes and Questions&lt;/h1&gt;
+&lt;h1 id=&#34;notes-and-questions&#34;&gt;Notes and Questions&lt;/h1&gt;
 
 &lt;p&gt;What properties must a sensible ordering function have?&lt;/p&gt;
 
@@ -869,7 +891,7 @@ either satisfy $a&amp;lt;b$ or $b&amp;lt;a$. Second  $a&amp;lt;b$ and $b&amp;lt;
 
 &lt;!--page--&gt;
 
-&lt;h3 id=&#34;template-for-well-ordering-proofs-section-2-2:b9b50bf0a87e56763567aaebbc820d47&#34;&gt;Template for Well-Ordering Proofs (Section 2.2)&lt;/h3&gt;
+&lt;h3 id=&#34;template-for-well-ordering-proofs-section-2-2&#34;&gt;Template for Well-Ordering Proofs (Section 2.2)&lt;/h3&gt;
 
 &lt;p&gt;To prove that $P(n)$ is true for all $n \in \mathbb{N}$:&lt;/p&gt;
 
@@ -927,7 +949,7 @@ that.&lt;/p&gt;
       <guid>https://uvacs2102.github.io/class2/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule:59cb8283a9bd282131a45da3029e68b4&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;Before &lt;strong&gt;Friday, 6:29pm&lt;/strong&gt;:&lt;/p&gt;
 
@@ -1020,286 +1042,6 @@ Adlai Stevenson, A Call to Greatness (1954)
 Frank Wilczek&lt;/p&gt;
 
 &lt;p&gt;&lt;/div&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Problem Set 1</title>
-      <link>https://uvacs2102.github.io/ps/ps1/</link>
-      <pubDate>Thu, 24 Aug 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://uvacs2102.github.io/ps/ps1/</guid>
-      <description>
-
-&lt;div class=&#34;latex&#34;&gt;
-   \dbox{{\bf Deliverable:} Submit your responses as a
-single PDF file on the collab site before {\bf 6:29pm} on {\bf Friday, 1
-September}.  The PDF you submit can be a scanned handwritten file
-(please check the scan is readable), or a typeset PDF file (e.g.,
-generated by LaTeX or Word).} 
-&lt;/div&gt;
-
-&lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;
-   &lt;div class=&#34;highlightrl&#34;&gt;
-   &lt;strong&gt;Deliverable:&lt;/strong&gt; Submit your responses as a single PDF file on the collab site before &lt;strong&gt;6:29pm&lt;/strong&gt; on &lt;strong&gt;Friday, 1 September&lt;/strong&gt;.  The PDF you submit can be a scanned handwritten file
-(please check the scan is readable), or a typeset PDF file (e.g.,
-generated by LaTeX). Please make sure the PDF you submit is redable (see &lt;a href=&#34;https://uvacs2102.github.io/scanning&#34;&gt;advice on course site&lt;/a&gt;).
-   &lt;/div&gt;
-   &lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;collaboration-policy-read-carefully:939ea9b9cc2ea0226c5f2d7200883cc7&#34;&gt;Collaboration Policy - Read Carefully&lt;/h3&gt;
-
-&lt;p&gt;Remember to follow the &lt;a href=&#34;https://uvacs2102.github.io/pledge&#34;&gt;course pledge&lt;/a&gt; you read and signed at
-the beginning of the semester.  For this assignment, you may discuss
-the problems and work on solutions with anyone you want (including
-other students in this class), but you must write your own solutions
-and understand and be able to explain all work you submit on your
-own. To confirm your own understanding, after discussing the problems
-with others, you should attempt to write your solutions on your own
-without consulting any notes from group work sessions. If you get
-stuck, you may visit notes from the group work sessions, but should
-make sure you understand things well enough to produce it on your own.
-You may also use any external resources you want, with the exception
-of solutions and comments from last year&amp;rsquo;s offering of this
-course. Since the staff and students benefit from being able to both
-reuse problems from previous years, and from being able to provide
-detailed solutions to students, it is important that students do not
-abuse these materials even if it is easy to find them. &lt;strong&gt;Using
-solutions from last year&amp;rsquo;s course would be detrimental to your
-learning in this course, and is considered an honor violation.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;If you use resources other than the class materials, lectures and
-course staff, you should document this and mention it clearly on your
-submission.  For everyone other than the course staff you work with,
-you should credit them clearly on your assignment, and should find out
-something interesting about their family history (you shouldn&amp;rsquo;t
-include this in your submission, though, especially if they share
-something private with you).&lt;/p&gt;
-
-&lt;p&gt;You are &lt;b&gt;strongly encouraged&lt;/b&gt; to start early and take advantage of
-the scheduled &lt;a href=&#34;https://uvacs2102.github.io/officehours&#34;&gt;office hours&lt;/a&gt; for this course.&lt;/p&gt;
-
-&lt;h2 id=&#34;preparation:939ea9b9cc2ea0226c5f2d7200883cc7&#34;&gt;Preparation&lt;/h2&gt;
-
-&lt;p&gt;This problem set focuses on Chapter 1 of the MCS book, and &lt;a href=&#34;https://uvacs2102.github.io/class1&#34;&gt;Class
-1&lt;/a&gt; and &lt;a href=&#34;https://uvacs2102.github.io/class2&#34;&gt;Class 2&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;highlightm&#34;&gt;
-    &lt;a href=&#34;https://uvacs2102.github.io/docs/ps1.pdf&#34;&gt;Download PDF for Problems&lt;/a&gt;.
-   &lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;highlightr&#34;&gt;
-Your response should be submitted as a single PDF file using collab: &lt;a href=&#34;https://collab.its.virginia.edu/portal/site/9bd99d1c-6f18-4542-a7d1-8ffc4fccbd3d/tool/db29109f-5ace-4dcc-8e11-ded9d5adc92b?panel=Main&#34;&gt;submission link&lt;/a&gt;.
-   &lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;directions:939ea9b9cc2ea0226c5f2d7200883cc7&#34;&gt;Directions&lt;/h2&gt;
-
-&lt;p&gt;Solve all the problems on the next page.  For full credit, your answers
-should be correct, clear, well-written, and convincing.&lt;/p&gt;
-
-&lt;!--page--&gt;
-
-&lt;h2 id=&#34;proofs-and-certification:939ea9b9cc2ea0226c5f2d7200883cc7&#34;&gt;Proofs and Certification&lt;/h2&gt;
-
-&lt;p&gt;The introduction for the MCS book states,&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&amp;ldquo;Proofs also play a growing role in computer science; they are used to
-certify that software and hardware will &lt;em&gt;always&lt;/em&gt; behave correctly,
-something that no amount of testing can do.&amp;rdquo;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;The statement suggests &amp;ldquo;no amount of testing can certify software
-will always behave correctly&amp;rdquo;.  Is this claim valid or invalid?  Support
-your answer with a short justification.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;The statement suggests &amp;ldquo;proofs can certify that software will
-always behave correctly&amp;rdquo;.  Argue that this is not a correct statement.&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&#34;inference-rules:939ea9b9cc2ea0226c5f2d7200883cc7&#34;&gt;Inference Rules&lt;/h2&gt;
-
-&lt;p&gt;For each candidate rule below, state whether or not the rule is sound.
-Support your answer with a convincing proof. The variables $P$, $Q$,
-and $R$ are Boolean propositions (either &lt;strong&gt;true&lt;/strong&gt; or &lt;strong&gt;false&lt;/strong&gt;).&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;$\infer{R}{P \implies Q, Q \implies R}$&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;$\infer{P}{(NOT(NOT(P)))}$&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;$\infer{Q \implies P}{P \implies Q}$&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;$\infer{NOT(Q) \implies P}{P}$&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;$\infer{Q \implies NOT(P)}{P \implies NOT(P)}$&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&#34;proofs:939ea9b9cc2ea0226c5f2d7200883cc7&#34;&gt;Proofs&lt;/h2&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;The proof that $\sqrt{2}$ is irrational (Theorem 1.8.1) in the
-book includes relies on this implication: $d^2$ is a multiple of two
-implies $d$ is a multiple of 2.  Prove that this is a valid
-implication to a skeptical reader.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Problem 1.4 (parts a, b, and c) from the MCS book.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Prove that for any non-negative real numbers, $x$ and $y$, if $xy
-= n$ then the minimum of $x$ and $y$ is not greater than $\sqrt{n}$.
-(Hint: prove by contradiction.)&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Class 1: What makes it go?</title>
-      <link>https://uvacs2102.github.io/class1/</link>
-      <pubDate>Tue, 22 Aug 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://uvacs2102.github.io/class1/</guid>
-      <description>
-
-&lt;h3 id=&#34;schedule:e795e40ef5a742faa33766b4d984e8c7&#34;&gt;Schedule&lt;/h3&gt;
-
-&lt;p&gt;Before &lt;strong&gt;Thursday&amp;rsquo;s class&lt;/strong&gt;: (visit &lt;a href=&#34;https://uvacs2102.github.io/class1&#34;&gt;https://uvacs2102.github.io/class1&lt;/a&gt; for the web version of these notes with links)&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Join the &lt;a href=&#34;https://csmath.slack.com&#34;&gt;cs2102 slack group&lt;/a&gt; and set up
-your profile with a pronouncable name (not your UVA email id) (setting
-up your profile photo is encouraged, but not required).&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Read the &lt;a href=&#34;https://uvacs2102.github.io/syllabus&#34;&gt;Course Syllabus&lt;/a&gt; and post any questions or
-comments you have on it on the course &lt;a href=&#34;https://csmath.slack.com&#34;&gt;slack group
-(#general)&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Read the &lt;em&gt;Introduction&lt;/em&gt; and &lt;em&gt;Chapter 1: What is a Proof?&lt;/em&gt; from the
-&lt;a href=&#34;https://uvacs2102.github.io/docs/mcs.pdf&#34;&gt;Mathematics for Computer Science
-Book&lt;/a&gt; by Eric Lehman,
-F. Thomson Leighton, and Albert R. Meyer (henceforth, &amp;ldquo;MCS&amp;rdquo;).  The
-book is freely available on-line under a Creative Commons License.
-Students are &lt;strong&gt;strongly encrouaged&lt;/strong&gt; to print out the readings to read
-them more effectively on paper.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Before &lt;strong&gt;Friday, 6:29pm&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Read, print, and sign the &lt;a href=&#34;https://uvacs2102.github.io/pledge&#34;&gt;Course Pledge&lt;/a&gt;.  You should print
-the &lt;a href=&#34;https://uvacs2102.github.io/docs/pledge.pdf&#34;&gt;PDF version&lt;/a&gt; for signing, and submit a scan of
-your signed pledge as a single PDF file using Collab.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Read Jeremy Kun&amp;rsquo;s &lt;a href=&#34;https://medium.com/@jeremyjkun/habits-of-highly-mathematical-people-b719df12d15e&#34;&gt;&lt;em&gt;Habits of Highly Mathematical People&lt;/em&gt;&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Submit a &lt;a href=&#34;https://goo.gl/forms/DR7nsouNf6sqqIK22&#34;&gt;Course Registration Survey&lt;/a&gt; (which includes some questions based on Kun&amp;rsquo;s essay).&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;
-   &lt;center&gt;
-&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;71562d80d01c4339b64b96e1c160c480&#34; data-ratio=&#34;1.77777777777778&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;&lt;br&gt;
-&lt;a href=&#34;https://uva.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=7fbcfe7e-92cc-4e33-b590-c557a9319251&#34;&gt;&lt;b&gt;Video&lt;/b&gt;&lt;/a&gt; (requires Collab authentication)
-   &lt;/center&gt;&lt;/p&gt;
-
-&lt;div class=&#34;notpdf&#34;&gt;
-
-    &lt;div class=&#34;highlightm&#34;&gt;
-    &lt;a href=&#34;https://uvacs2102.github.io/docs/class1.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes and Questions&lt;/b&gt;&lt;/a&gt;.
-    &lt;/div&gt;
-
-&lt;!--
-&lt;center&gt;
-&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;460cc29c74a04fe3971ce197961981f9&#34; data-ratio=&#34;1.77777777777778&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;&lt;br&gt;
-&lt;/center&gt;
---&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
-
-&lt;div class=&#34;latex&#34;&gt;
-
-### Notes and Questions
-
-Why is most of the math used in computer science _discrete_?
-
-&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;
-
-&lt;p&gt;Why is most of the math you have used in school previously &lt;em&gt;continuous&lt;/em&gt;?&lt;/p&gt;
-
-&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;
-
-&lt;p&gt;What are the differences between how scientists, lawyers, and
-mathematicians establish ``&lt;em&gt;truth&lt;/em&gt;&amp;rdquo;?&lt;/p&gt;
-
-&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;
-
-&lt;p&gt;A &lt;em&gt;proposition&lt;/em&gt; is a statement that is either ________ or _________.&lt;/p&gt;
-
-&lt;p&gt;A &lt;em&gt;predicate&lt;/em&gt; is a proposition whose truth may depend on the value of
-variables.&lt;/p&gt;
-
-&lt;h3 id=&#34;proof:e795e40ef5a742faa33766b4d984e8c7&#34;&gt;Proof&lt;/h3&gt;
-
-&lt;p&gt;A &lt;em&gt;theorem&lt;/em&gt; is a ____________ that has been proven true.&lt;/p&gt;
-
-&lt;p&gt;An &lt;em&gt;axiom&lt;/em&gt; is a proposition that is &lt;em&gt;accepted to be true&lt;/em&gt;.  Axioms are
-not proven; they are &lt;em&gt;assumed&lt;/em&gt; to be true.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; A &lt;em&gt;mathematical proof&lt;/em&gt; of a proposition is a chain of
-  &lt;em&gt;logical deductions&lt;/em&gt; starting from a set of accepted &lt;em&gt;axioms&lt;/em&gt; that
-  leads to the proposition.&lt;/p&gt;
-
-&lt;h3 id=&#34;rules-of-inference:e795e40ef5a742faa33766b4d984e8c7&#34;&gt;Rules of Inference&lt;/h3&gt;
-
-&lt;p&gt;The possible steps that can be used in a proof are logical deductions
-based on inference rules.&lt;/p&gt;
-
-&lt;p&gt;Inference rules are written as:
-$$
-\infer{\textrm{\emph{conclusion}}}{\textrm{\emph{antecedents}}}
-$$
-This means if everything on top of the rule is established to be true,
-then you can conclude what is on the bottom.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Modus Ponens&lt;/em&gt;: To prove &lt;em&gt;Q&lt;/em&gt;, (1) prove &lt;em&gt;P&lt;/em&gt; and (2) prove that &lt;em&gt;P&lt;/em&gt; implies &lt;em&gt;Q&lt;/em&gt;.  ($P \implies Q$ is a notation for $P$ implies $Q$).&lt;/p&gt;
-
-&lt;p&gt;$$
-\infer{Q}{P,\quad P \implies Q}
-$$&lt;/p&gt;
-
-&lt;p&gt;An inference rule is &lt;em&gt;sound&lt;/em&gt; if can never lead to a &lt;strong&gt;false&lt;/strong&gt; conclusion.&lt;/p&gt;
-
-&lt;p&gt;Which of these inference rules are sound?&lt;/p&gt;
-
-&lt;p&gt;$$
-\infer{Q}{P}
-\qquad
-\infer{false}{P, P \implies Q}
-\qquad
-\infer{true}{P, NOT(P)}
-\qquad
-\infer{P \implies NOT(P)}{P, NOT(P)}
-\qquad
-\infer{NOT(Q) \implies P}{NOT(P) \implies Q}
-$$&lt;/p&gt;
-
-&lt;p&gt;##&lt;/p&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;quote&#34;&gt;
-&lt;em&gt;Through violence you may murder a liar but you can&amp;rsquo;t establish truth. Through violence you may murder a hater, but you can&amp;rsquo;t murder hate. Darkness cannot put out darkness. Only light can do that.&lt;/em&gt;&lt;br /&gt;
-Martin Luther King, Jr., &lt;a href=&#34;http://kingencyclopedia.stanford.edu/encyclopedia/documentsentry/where_do_we_go_from_here_delivered_at_the_11th_annual_sclc_convention/&#34;&gt;&lt;em&gt;Where Do We Go From Here?&lt;/em&gt;, address to SCLC 16 August 1967&lt;/a&gt;
-   &lt;/div&gt;&lt;/p&gt;
 </description>
     </item>
     
