@@ -17,7 +17,7 @@
       <guid>https://uvacs2102.github.io/class8/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule:3a7d0da174b09b839e2f33e1cfd8fab3&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps3&#34;&gt;&lt;strong&gt;Problem Set 3&lt;/strong&gt;&lt;/a&gt; is due &lt;strong&gt;Friday at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
 
@@ -30,13 +30,13 @@
    &lt;a href=&#34;https://uvacs2102.github.io/docs/class8.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes and Questions&lt;/b&gt;&lt;/a&gt;.
    &lt;/div&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
+&lt;h2 id=&#34;links:3a7d0da174b09b839e2f33e1cfd8fab3&#34;&gt;Links&lt;/h2&gt;
 
 &lt;p&gt;&lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;sequences&#34;&gt;Sequences&lt;/h1&gt;
+&lt;h1 id=&#34;sequences:3a7d0da174b09b839e2f33e1cfd8fab3&#34;&gt;Sequences&lt;/h1&gt;
 
 &lt;p&gt;A &lt;strong&gt;sequence&lt;/strong&gt; is a mathematical datatype that bears similarities to sets. A sequence $S$ also contains some elements, but we usually refer to them as &lt;em&gt;components&lt;/em&gt;. There are two major differences between sets and sequences:&lt;/p&gt;
 
@@ -46,7 +46,7 @@
 &lt;li&gt;&lt;p&gt;Different components of a sequence could be equal. For example $(a,b,a)$ has $a$ repeating, and this is a different sequence compared to $(a,b,b)$ even though they both have 3 componetns. If we interprete them as &lt;em&gt;sets&lt;/em&gt;, then they will be equal sets with $2$ elements each.&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h1 id=&#34;cartesian-product&#34;&gt;Cartesian Product&lt;/h1&gt;
+&lt;h1 id=&#34;cartesian-product:3a7d0da174b09b839e2f33e1cfd8fab3&#34;&gt;Cartesian Product&lt;/h1&gt;
 
 &lt;p&gt;We can use set products to get new sets whose elements are sequences. Cartesian product is a very useful way of doing it.&lt;/p&gt;
 
@@ -58,7 +58,7 @@
 
 &lt;p&gt;How many elements are in $A \times B$?&lt;/p&gt;
 
-&lt;h1 id=&#34;relations-and-binary-relations&#34;&gt;Relations and Binary Relations&lt;/h1&gt;
+&lt;h1 id=&#34;relations-and-binary-relations:3a7d0da174b09b839e2f33e1cfd8fab3&#34;&gt;Relations and Binary Relations&lt;/h1&gt;
 
 &lt;p&gt;A &lt;em&gt;relation&lt;/em&gt; between some elements from set $A$ and some elements from set $B$ could be represented by putting all such pairs $(a,b)$ in a set $P$. As you can see, this way, $P$ would be a subset of the cartesian product $A \times B$, namely $P \subseteq A \times B$. More formally we have the following definition.&lt;/p&gt;
 
@@ -68,7 +68,7 @@ $R$.&lt;/p&gt;
 
 &lt;p&gt;The notion of relations could be generalized to having relations between elements coming from multiple sets $A,B,C$, and we can also talk about relations of the form $P \subseteq A \times B \times C$, but the binary relation remains a very important data type as it allows us to define &lt;em&gt;functions&lt;/em&gt;&amp;hellip;&lt;/p&gt;
 
-&lt;h1 id=&#34;functions&#34;&gt;Functions&lt;/h1&gt;
+&lt;h1 id=&#34;functions:3a7d0da174b09b839e2f33e1cfd8fab3&#34;&gt;Functions&lt;/h1&gt;
 
 &lt;p&gt;The concept of a function $F$ models is a special form of a binary relation $R$ between $A$ and $B$ where for every element  $a \in A$ there is a &lt;em&gt;unique&lt;/em&gt; element in $b \in B$ that is in relation with $a$ (i.e. $(a,b) \in R$). More formally, we use a direct new notation just reserved for working with functions.&lt;/p&gt;
 
@@ -229,7 +229,7 @@ is due &lt;strong&gt;Friday, 15 September at 6:29:00pm&lt;/strong&gt;.&lt;/p&gt;
       <guid>https://uvacs2102.github.io/class6/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule:647dbe1e5b68015679492d34153c74f5&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;Everyone should have received their graded PS1 by now. Please read &lt;a href=&#34;https://collab.its.virginia.edu/access/content/group/9bd99d1c-6f18-4542-a7d1-8ffc4fccbd3d/ps1solutions.pdf&#34;&gt;the comments posted in collab&lt;/a&gt;.&lt;/p&gt;
 
@@ -248,7 +248,7 @@ src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
    &lt;a href=&#34;https://uvacs2102.github.io/docs/class6.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes and Questions&lt;/b&gt;&lt;/a&gt;.
    &lt;/div&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;links:647dbe1e5b68015679492d34153c74f5&#34;&gt;Links&lt;/h2&gt;
+&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
 
 &lt;p&gt;If you believe real computing systems have the property that the values
 you read from memory will match what you wrote there, see:&lt;/p&gt;
@@ -280,7 +280,7 @@ is the P vs. NP question in this list.&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;programs-and-proofs:647dbe1e5b68015679492d34153c74f5&#34;&gt;Programs and Proofs&lt;/h1&gt;
+&lt;h1 id=&#34;programs-and-proofs&#34;&gt;Programs and Proofs&lt;/h1&gt;
 
 &lt;p&gt;What does it mean to &lt;em&gt;test&lt;/em&gt; a computing system?  What does it mean for a computing system to &lt;em&gt;always behave correctly&lt;/em&gt;?&lt;/p&gt;
 
@@ -290,7 +290,7 @@ is the P vs. NP question in this list.&lt;/p&gt;
 
 &lt;div class=&#34;biggap&#34;&gt;&lt;/div&gt;
 
-&lt;h1 id=&#34;minima:647dbe1e5b68015679492d34153c74f5&#34;&gt;Minima&lt;/h1&gt;
+&lt;h1 id=&#34;minima&#34;&gt;Minima&lt;/h1&gt;
 
 &lt;p&gt;The &lt;em&gt;minimum&lt;/em&gt; of a set with respect to some comparator operator is the
 element which is &amp;ldquo;less than&amp;rdquo; (according to that comparator) every
@@ -301,7 +301,7 @@ $\forall x \in S - { m } . m \prec x$.&lt;/p&gt;
 \forall S \in \textrm{pow}(\mathbb{N}) - { \varnothing } \ldotp \exists m \in S\ldotp \forall x \in S - {m}\ldotp m &amp;lt; x
 $$&lt;/p&gt;
 
-&lt;h1 id=&#34;formulas-propositions-and-inference-rules:647dbe1e5b68015679492d34153c74f5&#34;&gt;Formulas, Propositions, and Inference Rules&lt;/h1&gt;
+&lt;h1 id=&#34;formulas-propositions-and-inference-rules&#34;&gt;Formulas, Propositions, and Inference Rules&lt;/h1&gt;
 
 &lt;p&gt;$P \implies Q$ is a &lt;em&gt;formula&lt;/em&gt;.&lt;br /&gt;
 $\forall P \in { T, F } . \forall Q \in { T, F } . P \implies Q$ is a &lt;em&gt;proposition&lt;/em&gt;.&lt;br /&gt;
@@ -329,7 +329,7 @@ T$.&lt;/p&gt;
 $\infer{Q}{P}$ is sound if and only if the formula
 $P \implies Q$ is valid. So, this way, we can find out whether an inference rule is sound or not, by checking out whether the corresponding formula is valid or not.&lt;/p&gt;
 
-&lt;h1 id=&#34;negating-quantifiers:647dbe1e5b68015679492d34153c74f5&#34;&gt;Negating Quantifiers&lt;/h1&gt;
+&lt;h1 id=&#34;negating-quantifiers&#34;&gt;Negating Quantifiers&lt;/h1&gt;
 
 &lt;p&gt;What is the negation of $\forall x \in S . P(x)$?
 &lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
@@ -337,7 +337,7 @@ $P \implies Q$ is valid. So, this way, we can find out whether an inference rule
 &lt;p&gt;What is the negation of $\exists x \in S . P(x)$?
 &lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;satisfiability:647dbe1e5b68015679492d34153c74f5&#34;&gt;Satisfiability&lt;/h1&gt;
+&lt;h1 id=&#34;satisfiability&#34;&gt;Satisfiability&lt;/h1&gt;
 
 &lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; A formula is in &lt;em&gt;SAT&lt;/em&gt; if it is in CNF form and it is
   satisfiable.&lt;/p&gt;
@@ -432,7 +432,7 @@ x&lt;/em&gt;{49}) \wedge (x&lt;em&gt;{21} \vee x&lt;/em&gt;{40} \vee \overline{x
 x&lt;em&gt;{7}) \wedge (x&lt;/em&gt;{25} \vee x&lt;em&gt;{47} \vee \overline{x&lt;/em&gt;{12}}) \end{math}
 \end{center}&lt;/p&gt;
 
-&lt;h2 id=&#34;converting-truth-tables-to-dnf:647dbe1e5b68015679492d34153c74f5&#34;&gt;Converting Truth Tables to DNF&lt;/h2&gt;
+&lt;h2 id=&#34;converting-truth-tables-to-dnf&#34;&gt;Converting Truth Tables to DNF&lt;/h2&gt;
 
 &lt;p&gt;\begin{tabular}{cc|cc}
 $P$ &amp;amp; $Q$ &amp;amp; $P \implies Q$ &amp;amp; $P \oplus Q$ \ \hline
@@ -446,7 +446,7 @@ $P$ &amp;amp; $Q$ &amp;amp; $P \implies Q$ &amp;amp; $P \oplus Q$ \ \hline
 
 &lt;p&gt;$$(P \wedge \neg Q) \vee (\neg P \wedge Q)$$&lt;/p&gt;
 
-&lt;h2 id=&#34;converting-truth-tables-to-cnf:647dbe1e5b68015679492d34153c74f5&#34;&gt;Converting Truth Tables to CNF&lt;/h2&gt;
+&lt;h2 id=&#34;converting-truth-tables-to-cnf&#34;&gt;Converting Truth Tables to CNF&lt;/h2&gt;
 
 &lt;p&gt;\begin{tabular}{cc|cc}
 $P$ &amp;amp; $Q$ &amp;amp; $P \implies Q$ &amp;amp; $P \oplus Q$ \ \hline
@@ -460,7 +460,7 @@ $P$ &amp;amp; $Q$ &amp;amp; $P \implies Q$ &amp;amp; $P \oplus Q$ \ \hline
 
 &lt;p&gt;$$(\neg P \vee \neg Q) \wedge (P \vee Q)$$&lt;/p&gt;
 
-&lt;h2 id=&#34;the-related-3cnf-formulation:647dbe1e5b68015679492d34153c74f5&#34;&gt;The related 3CNF formulation&lt;/h2&gt;
+&lt;h2 id=&#34;the-related-3cnf-formulation&#34;&gt;The related 3CNF formulation&lt;/h2&gt;
 
 &lt;p&gt;When we are only interested to know whether or not a given formula is satisfiable, we can write a 3CNF that is satisfiable iff the original formula is. In order to do that, we first write an equivalent CNF, and then convert it to a 3CNF (which is not necessarily equivalent, but only guarantees to preserve the &lt;em&gt;satisfiability&lt;/em&gt; feature) as follow. For each clause with less than 3 literals such as $(A \lor \neg B)$ we add a dummy variable $C$ (only for this clause) and interprete the $(A \lor \neg B)$ as a formula over all of $A,B,C$ and write a CNF for them (which happens to be 3CNF!). For longer clauses such as
 $(A \lor B \lor C \lor D)$ we do another trick of breaking them into smaller parts using new dummy variables as follows $(A \lor B \lor \neg X) \wedge (\neg X \lor C \lor D).$&lt;/p&gt;
@@ -487,7 +487,7 @@ $(A \lor B \lor C \lor D)$ we do another trick of breaking them into smaller par
       <guid>https://uvacs2102.github.io/class5/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule:d690e1859ec274fb7ed997cd7db3fba5&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps2&#34;&gt;&lt;strong&gt;Problem Set 2&lt;/strong&gt;&lt;/a&gt; is due &lt;strong&gt;Friday at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
 
@@ -507,7 +507,7 @@ $(A \lor B \lor C \lor D)$ we do another trick of breaking them into smaller par
   would include a proof that no shorter formula exists.
    &lt;/div&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
+&lt;h2 id=&#34;links:d690e1859ec274fb7ed997cd7db3fba5&#34;&gt;Links&lt;/h2&gt;
 
 &lt;p&gt;If you want to learn more about how to learn the logic implemented by a chip
 and cryptosystems used in car immobolizers, see &lt;a href=&#34;https://www.cs.virginia.edu/~evans/pubs/usenix08/usenix08.pdf&#34;&gt;&lt;em&gt;Reverse-Engineering a
@@ -522,7 +522,7 @@ cars.&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;notes-and-questions&#34;&gt;Notes and Questions&lt;/h1&gt;
+&lt;h1 id=&#34;notes-and-questions:d690e1859ec274fb7ed997cd7db3fba5&#34;&gt;Notes and Questions&lt;/h1&gt;
 
 &lt;p&gt;&lt;strong&gt;Definition: satisfiable.&lt;/strong&gt; A logical formula is &lt;em&gt;satisfiable&lt;/em&gt; if there
   is &lt;em&gt;some&lt;/em&gt; way to make it &lt;strong&gt;true&lt;/strong&gt;.  That is, there is at least one
@@ -568,7 +568,7 @@ involving 5 variables?&lt;/p&gt;
 
 &lt;!--page--&gt;
 
-&lt;h2 id=&#34;logical-quantifiers&#34;&gt;Logical Quantifiers&lt;/h2&gt;
+&lt;h2 id=&#34;logical-quantifiers:d690e1859ec274fb7ed997cd7db3fba5&#34;&gt;Logical Quantifiers&lt;/h2&gt;
 
 &lt;p&gt;$\forall x \in S. P(x)$ means $P$ holds for &lt;em&gt;every&lt;/em&gt; element of $S$.&lt;br /&gt;
 $\exists x \in S. P(x)$ means $P$ holds for &lt;em&gt;at least one&lt;/em&gt; element of $S$.&lt;/p&gt;
@@ -623,7 +623,7 @@ list.&lt;/p&gt;
       <guid>https://uvacs2102.github.io/class4/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule:a69bef1e5f2725722420b5c4a32452b2&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps1&#34;&gt;&lt;strong&gt;Problem Set 1&lt;/strong&gt;&lt;/a&gt; is due &lt;strong&gt;Friday at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
 
@@ -639,7 +639,7 @@ Quantifiers).&lt;/p&gt;
    &lt;a href=&#34;https://uvacs2102.github.io/docs/class4.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes and Questions&lt;/b&gt;&lt;/a&gt;.
    &lt;/div&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
+&lt;h2 id=&#34;links:a69bef1e5f2725722420b5c4a32452b2&#34;&gt;Links&lt;/h2&gt;
 
 &lt;p&gt;Scott Brown, &lt;a href=&#34;http://ms.appliedprobability.org/data/files/selected%20articles/39-1-1.pdf&#34;&gt;&lt;em&gt;The Life and Work of Augustus De Morgan&lt;/em&gt;&lt;/a&gt;. Applied Probability 2006.&lt;/p&gt;
 
@@ -649,9 +649,9 @@ Quantifiers).&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;notes-and-questions&#34;&gt;Notes and Questions&lt;/h1&gt;
+&lt;h1 id=&#34;notes-and-questions:a69bef1e5f2725722420b5c4a32452b2&#34;&gt;Notes and Questions&lt;/h1&gt;
 
-&lt;h2 id=&#34;well-ordering-principle-proof&#34;&gt;Well-Ordering Principle Proof&lt;/h2&gt;
+&lt;h2 id=&#34;well-ordering-principle-proof:a69bef1e5f2725722420b5c4a32452b2&#34;&gt;Well-Ordering Principle Proof&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;Odd Summation.&lt;/strong&gt; (Problem 2.12) Prove that for all $n &amp;gt; 0$, the sum of the first $n$ odd numbers is $n^2$.&lt;/p&gt;
 
@@ -752,7 +752,7 @@ For each of the formulas below, determine if it is _valid_ and if it is _satisfi
       <guid>https://uvacs2102.github.io/class3/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule:b9b50bf0a87e56763567aaebbc820d47&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;This week, you should read MCS Chapter 2 and MCS Chapter 3 (at least
 through the end of Section 3.4).&lt;/p&gt;
@@ -772,7 +772,7 @@ hours schedule.&lt;/p&gt;
    &lt;a href=&#34;https://uvacs2102.github.io/docs/class3.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes and Questions&lt;/b&gt;&lt;/a&gt;.
    &lt;/div&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
+&lt;h2 id=&#34;links:b9b50bf0a87e56763567aaebbc820d47&#34;&gt;Links&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://math.berkeley.edu/~kpmann/Well-ordering.pdf&#34;&gt;&lt;em&gt;The Well-Ordering Theorem: one of the Greatest Mathematical Controversies of All Time&lt;/em&gt;&lt;/a&gt;, Kathryn Mann.&lt;/p&gt;
 
@@ -780,7 +780,7 @@ hours schedule.&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;notes-and-questions&#34;&gt;Notes and Questions&lt;/h1&gt;
+&lt;h1 id=&#34;notes-and-questions:b9b50bf0a87e56763567aaebbc820d47&#34;&gt;Notes and Questions&lt;/h1&gt;
 
 &lt;p&gt;What properties must a sensible ordering function have?&lt;/p&gt;
 
@@ -813,7 +813,7 @@ either satisfy $a&amp;lt;b$ or $b&amp;lt;a$. Second  $a&amp;lt;b$ and $b&amp;lt;
 
 &lt;!--page--&gt;
 
-&lt;h3 id=&#34;template-for-well-ordering-proofs-section-2-2&#34;&gt;Template for Well-Ordering Proofs (Section 2.2)&lt;/h3&gt;
+&lt;h3 id=&#34;template-for-well-ordering-proofs-section-2-2:b9b50bf0a87e56763567aaebbc820d47&#34;&gt;Template for Well-Ordering Proofs (Section 2.2)&lt;/h3&gt;
 
 &lt;p&gt;To prove that $P(n)$ is true for all $n \in \mathbb{N}$:&lt;/p&gt;
 
@@ -975,7 +975,7 @@ Frank Wilczek&lt;/p&gt;
       <guid>https://uvacs2102.github.io/class1/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule:e795e40ef5a742faa33766b4d984e8c7&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;Before &lt;strong&gt;Thursday&amp;rsquo;s class&lt;/strong&gt;: (visit &lt;a href=&#34;https://uvacs2102.github.io/class1&#34;&gt;https://uvacs2102.github.io/class1&lt;/a&gt; for the web version of these notes with links)&lt;/p&gt;
 
@@ -1051,7 +1051,7 @@ mathematicians establish ``&lt;em&gt;truth&lt;/em&gt;&amp;rdquo;?&lt;/p&gt;
 &lt;p&gt;A &lt;em&gt;predicate&lt;/em&gt; is a proposition whose truth may depend on the value of
 variables.&lt;/p&gt;
 
-&lt;h3 id=&#34;proof:e795e40ef5a742faa33766b4d984e8c7&#34;&gt;Proof&lt;/h3&gt;
+&lt;h3 id=&#34;proof&#34;&gt;Proof&lt;/h3&gt;
 
 &lt;p&gt;A &lt;em&gt;theorem&lt;/em&gt; is a ____________ that has been proven true.&lt;/p&gt;
 
@@ -1062,7 +1062,7 @@ not proven; they are &lt;em&gt;assumed&lt;/em&gt; to be true.&lt;/p&gt;
   &lt;em&gt;logical deductions&lt;/em&gt; starting from a set of accepted &lt;em&gt;axioms&lt;/em&gt; that
   leads to the proposition.&lt;/p&gt;
 
-&lt;h3 id=&#34;rules-of-inference:e795e40ef5a742faa33766b4d984e8c7&#34;&gt;Rules of Inference&lt;/h3&gt;
+&lt;h3 id=&#34;rules-of-inference&#34;&gt;Rules of Inference&lt;/h3&gt;
 
 &lt;p&gt;The possible steps that can be used in a proof are logical deductions
 based on inference rules.&lt;/p&gt;

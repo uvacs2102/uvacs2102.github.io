@@ -1,0 +1,24 @@
+writing things without unspecified quantifier.
+
+showing that different universe/domains lead to different complements (but not different minuses).
+
+proving the "deMorgan" law using deMorgan?
+
+show a sequence is a functin of {1,...n} to A. 
+
+
+
+cartesian product. what if one of them is infinite?
+what if one infinite and one empty?
+
+complement of a relation.
+
+seeing a binary relation as a boolean function from CP to 0/1
+
+seeing Boolean operators as relation rather than Boolean functions.
+
+domain / co domain of last slide.
+
+---
+
+changes: 5b, 6b, 7, 8, 9.
