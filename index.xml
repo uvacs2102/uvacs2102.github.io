@@ -23,7 +23,7 @@
 using NANDs to test them for logical equivalence to XOR.&lt;/p&gt;
 
 &lt;p&gt;You can find the Python code he used to do the search here: &lt;a href=&#34;https://github.com/ION28/CS2102_ChallengeProblemSolutions/blob/master/CP1_NAND_Brute_Force.py&#34;&gt;
-_https://github.com/ION28/CS2102_ChallengeProblemSolutions/blob/master/CP1_NAND_Brute&lt;em&gt;Force.py&lt;/em&gt;&lt;/a&gt;.&lt;/p&gt;
+https://github.com/ION28/CS2102_ChallengeProblemSolutions/blob/master/CP1_NAND_Brute_Force.py&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;His write-up of the solution, including a list of all 200 ways to
 define XOR using 5 NAND operations is here: &lt;a href=&#34;https://uvacs2102.github.io/docs/jts5np_Challenge01_NAND_BruteForce_Submission_2.pdf&#34;&gt;Solution (PDF)&lt;/a&gt;&lt;/p&gt;
