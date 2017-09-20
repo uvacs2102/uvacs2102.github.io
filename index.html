@@ -147,6 +147,126 @@
   </header>
   
   
+  <p class="fronthead"><A href="/class9/">Class 9: Relations, Finite Set Cardinality</a> (Tue, 19 Sep 2017)</p>
+    
+
+<h3 id="schedule">Schedule</h3>
+
+<p>This week you should finish reading MCS Chapter 4 (section 4.5) and
+Section 5.1.  We will discuss Induction (Section 5.1) next class.</p>
+
+<p><a href="/ps/ps4"><strong>Problem Set 4</strong></a> is due <strong>Friday at 6:29pm</strong>.  The
+original version of Problem Set 4, Question 6, asked for a <em>function</em>,
+when we really meant to ask for a <em>total function</em> (as we defined it
+in class today, and the book defines it). The problem set is updated
+now to specify this. If you already answered the original question,
+you do not need to update your answer, just indicate clearly for which
+questions the function you defined is partial. Sorry for the
+confusion!</p>
+
+<p><strong>Problem Set 5</strong> (not yet posted) will be due Friday, 29 September.</p>
+
+<p><strong>Exam 1</strong> will be in-class on Thursday, 5 October. It will cover
+  Classes 1 - 11, Problem Sets 1 - 5, and MCS Chapters 1 - 5.</p>
+
+<p><div class="notpdf">
+   <center>
+<script async class="speakerdeck-embed" data-id="c60255e3f2074eed9581407ac4fb3871" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+   </center></p>
+
+<p><div class="highlightm">
+   <a href="/docs/class9.pdf">See PDF Version for <b>Notes and Questions</b></a>.
+   </div></p>
+
+<h2 id="links">Links</h2>
+
+<p></div><!--endpdf--></p>
+
+<p><div class="latex"></p>
+
+<h2 id="total-and-partial-functions">Total and Partial Functions</h2>
+
+<p>A <strong>function</strong> is a mathematical datatype that associates elements from
+one set, called the <em>domain</em>, with elements from another set, called a
+<em>codomain</em>.</p>
+
+<p>$$ f: \textrm{\em domain} \rightarrow \textrm{\em codomain} $$</p>
+
+<p>If the function is <em>total</em>, every element of the domain has one
+associated codomain element; if the function is <em>partial</em>, there may be
+elements of the domain that do not have an associated codomain element.</p>
+
+<h2 id="relation-relationships">Relation Relationships</h2>
+
+<p>Definition review: <strong>binary relation</strong>, $R$, consists of a domain set,
+$A$, and a codomain set, $B$, and a subset of $A \times B$ called the
+<em>graph</em> of $R$.</p>
+
+<p>For each statement below, give the name and at least one example.</p>
+
+<ul>
+<li>A binary relation where no element of $A$ has more than one outgoing edge:</li>
+</ul>
+
+<p>##</p>
+
+<ul>
+<li>A binary relation where every element of $A$ has exactly one outgoing edge:</li>
+</ul>
+
+<p>##</p>
+
+<ul>
+<li>A binary relation where every element of $B$ has exactly one incoming edge:</li>
+</ul>
+
+<p>##</p>
+
+<ul>
+<li>A binary relation where every element of $A$ has exactly one outgoing
+edge and every element of $B$ has exactly one incoming edge:</li>
+</ul>
+
+<p>##</p>
+
+<p>If there exists a <em>bijective</em> relation between $S$ and $T$ defined by the graph $G$ which of these <em>must</em> be true:</p>
+
+<p>a. there exists some <em>injective</em> relation between $S$ and $T$.
+b. there exists some <em>bijective</em> relation between $T$ and $S$.
+c. there exists a <em>total</em> function, $f: S \rightarrow T$.
+d. $S - T = \emptyset$.
+e. the number of elements of $S$ is equal to the number of elements of $T$.
+f. $G - (S \times T) = \emptyset$.
+g. $(S \times T) - G = \emptyset$.
+h. $(S \times T) - G \neq \emptyset$.</p>
+
+<h1 id="relation-practice">Relation Practice</h1>
+
+<p>The <em>inverse</em> of a relation $R: A \rightarrow B, G \subseteq A \times B$ is defined by reversing all the arrows:
+$$
+R^{-1}: B \rightarrow A, G^{-1} \subseteq B \times A
+$$</p>
+
+<p>$$
+(b, a) \in G^{-1} \iff \fillin\fillin\fillin\fillin
+$$</p>
+
+<p>What does it mean if $R \equiv R^{-1}$?</p>
+
+<h1 id="set-cardinality">Set Cardinality</h1>
+
+<p><strong>Finite Cardinality.</strong> The book&rsquo;s definition is: ``If $A$ is a finite set, the <em>cardinality</em> of
+  $A$, written $|A|$, is the number of elements in $A$.&rdquo;</p>
+
+<p>Does this definition require adding a new fundamental set operation,
+or is it meaningful with just the set operations we have defined?</p>
+
+<p><strong>Alternate definition:</strong> The <em>cardinality</em> of the set $$ N_k = { n |
+n \in \mathbb{N} \wedge n &lt; k } $$ is $k$. (Next class, we&rsquo;ll use
+this to define the <em>cardinality</em> of any set. You should be able to
+figure out how to do this on your own with what you know now.)</p>
+ 
+  
   <p class="fronthead"><A href="/nandxorchallengesolved/">NAND/XOR Challenge Solved!</a> (Sat, 16 Sep 2017)</p>
     <p>Congratulations to Jake Smith for solving the NAND/XOR challenge from <a href="/class5">Class 5</a>!</p>
 
@@ -183,8 +303,6 @@ is due <strong>Friday, 22 September at 6:29:00pm</strong>.</p>
    <a href="/docs/class8.pdf">See PDF Version for <b>Notes and Questions</b></a>.
    </div></p>
 
-<h2 id="links">Links</h2>
-
 <p></div><!--endpdf--></p>
 
 <p><div class="latex"></p>
@@ -219,15 +337,23 @@ is due <strong>Friday, 22 September at 6:29:00pm</strong>.</p>
 <em>codomain</em> set, $B$, and it holds that  $P$ is $P \subseteq A \times B$. When we draw $P$ by connecting elements of $A$ to $B$ based on their membership in $P$, we call this  the <em>graph</em> of
 $R$.</p>
 
-<p>The notion of relations could be generalized to having relations between elements coming from multiple sets $A,B,C$, and we can also talk about relations of the form $P \subseteq A \times B \times C$, but the binary relation remains a very important data type as it allows us to define <em>functions</em>&hellip;</p>
+<p>The notion of relations could be generalized to having relations
+between elements coming from multiple sets $A,B,C$, and we can also
+talk about relations of the form $P \subseteq A \times B \times C$,
+but the binary relation remains a very important data type as it
+allows us to define <em>functions</em>.</p>
 
 <h1 id="functions">Functions</h1>
 
-<p>The concept of a function $F$ models is a special form of a binary relation $R$ between $A$ and $B$ where for every element  $a \in A$ there is a <em>unique</em> element in $b \in B$ that is in relation with $a$ (i.e. $(a,b) \in R$). More formally, we use a direct new notation just reserved for working with functions.</p>
+<p>The concept of a function $F$ models is a special form of a binary
+relation $R$ between $A$ and $B$ where for every element $a \in A$
+there is <em>at most one</em> element in $b \in B$ that is in relation with
+$a$ (i.e. $(a,b) \in R$). More formally, we use a direct new notation
+just reserved for working with functions.</p>
 
-<p>A <strong>function</strong> is a mathematical datatype that associates elements from
-one set, called the <em>domain</em>, with elements from another set, called a
-<em>codomain</em>.</p>
+<p>A <strong>function</strong> is a mathematical datatype that associates
+elements from one set, called the <em>domain</em>, with elements from another
+set, called a <em>codomain</em>.</p>
 
 <p>$$ f: \textrm{\em domain} \rightarrow \textrm{\em codomain} $$</p>
 
@@ -716,11 +842,6 @@ $$
 \end{center}</p>
 
 <p></div></p>
- 
-  
-  <p class="fronthead"><A href="/ps2posted/">Problem Set 2</a> (Fri, 1 Sep 2017)</p>
-    <p><a href="/ps/ps2"><strong>Problem Set 2</strong></a> [<a href="/docs/ps2.pdf">PDF</a>] is now posted and
-is due <strong>Friday, 8 September at 6:29:00pm</strong>.</p>
  
   
   

@@ -554,10 +554,17 @@ for any sets $A,B$ and a universe $U$ where $A \subseteq U$ and $B  \subseteq U$
 
 &lt;ol&gt;
 &lt;li&gt;For each expression below, identify a &lt;em&gt;domain&lt;/em&gt; and &lt;em&gt;codomain&lt;/em&gt; that
-make $f$ a function. For example, for $f(x) ::=
-1/x$ you could correctly answer that a possible domain is $\mathbb{R} - { 0
-}$ for which a possible codomain is $\mathbb{R}$. But the domain, in this case, could not be $\mathbb{R}$ (because $1/0$ is not defined) and also for domain  $\mathbb{R} - { 0
-}$ the codomain could not be the rationals $\mathbb{Q}$ (because $1/\sqrt{2}$ is not a rational).&lt;/li&gt;
+make $f$ a &lt;em&gt;total function&lt;/em&gt;.\footnote{This is updated from the
+original version of PS4, where the question used &lt;code&gt;function&#39;&#39; but we
+intended to mean&lt;/code&gt;total function&amp;rdquo;. If you answered the original
+question already, you do not need to update your answer, just indicate
+clearly for which questions the function you defined is partial.}  For
+example, for $f(x) ::= 1/x$ you could correctly answer that a possible
+domain is $\mathbb{R} - { 0 }$ for which a possible codomain is
+$\mathbb{R}$. But the domain, in this case, could not be $\mathbb{R}$
+(because $1/0$ is not defined) and also for domain $\mathbb{R} - { 0
+}$ the codomain could not be the rationals $\mathbb{Q}$ (because
+$1/\sqrt{2}$ is not a rational).&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;p&gt;\begin{quote}

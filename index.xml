@@ -6,8 +6,134 @@
     <description>Recent content on cs2102: Discrete Math</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 16 Sep 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 19 Sep 2017 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://uvacs2102.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Class 9: Relations, Finite Set Cardinality</title>
+      <link>https://uvacs2102.github.io/class9/</link>
+      <pubDate>Tue, 19 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/class9/</guid>
+      <description>
+
+&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
+
+&lt;p&gt;This week you should finish reading MCS Chapter 4 (section 4.5) and
+Section 5.1.  We will discuss Induction (Section 5.1) next class.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps4&#34;&gt;&lt;strong&gt;Problem Set 4&lt;/strong&gt;&lt;/a&gt; is due &lt;strong&gt;Friday at 6:29pm&lt;/strong&gt;.  The
+original version of Problem Set 4, Question 6, asked for a &lt;em&gt;function&lt;/em&gt;,
+when we really meant to ask for a &lt;em&gt;total function&lt;/em&gt; (as we defined it
+in class today, and the book defines it). The problem set is updated
+now to specify this. If you already answered the original question,
+you do not need to update your answer, just indicate clearly for which
+questions the function you defined is partial. Sorry for the
+confusion!&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Problem Set 5&lt;/strong&gt; (not yet posted) will be due Friday, 29 September.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Exam 1&lt;/strong&gt; will be in-class on Thursday, 5 October. It will cover
+  Classes 1 - 11, Problem Sets 1 - 5, and MCS Chapters 1 - 5.&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;
+   &lt;center&gt;
+&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;c60255e3f2074eed9581407ac4fb3871&#34; data-ratio=&#34;1.77777777777778&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
+   &lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlightm&#34;&gt;
+   &lt;a href=&#34;https://uvacs2102.github.io/docs/class9.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes and Questions&lt;/b&gt;&lt;/a&gt;.
+   &lt;/div&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;total-and-partial-functions&#34;&gt;Total and Partial Functions&lt;/h2&gt;
+
+&lt;p&gt;A &lt;strong&gt;function&lt;/strong&gt; is a mathematical datatype that associates elements from
+one set, called the &lt;em&gt;domain&lt;/em&gt;, with elements from another set, called a
+&lt;em&gt;codomain&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;$$ f: \textrm{\em domain} \rightarrow \textrm{\em codomain} $$&lt;/p&gt;
+
+&lt;p&gt;If the function is &lt;em&gt;total&lt;/em&gt;, every element of the domain has one
+associated codomain element; if the function is &lt;em&gt;partial&lt;/em&gt;, there may be
+elements of the domain that do not have an associated codomain element.&lt;/p&gt;
+
+&lt;h2 id=&#34;relation-relationships&#34;&gt;Relation Relationships&lt;/h2&gt;
+
+&lt;p&gt;Definition review: &lt;strong&gt;binary relation&lt;/strong&gt;, $R$, consists of a domain set,
+$A$, and a codomain set, $B$, and a subset of $A \times B$ called the
+&lt;em&gt;graph&lt;/em&gt; of $R$.&lt;/p&gt;
+
+&lt;p&gt;For each statement below, give the name and at least one example.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;A binary relation where no element of $A$ has more than one outgoing edge:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;##&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;A binary relation where every element of $A$ has exactly one outgoing edge:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;##&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;A binary relation where every element of $B$ has exactly one incoming edge:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;##&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;A binary relation where every element of $A$ has exactly one outgoing
+edge and every element of $B$ has exactly one incoming edge:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;##&lt;/p&gt;
+
+&lt;p&gt;If there exists a &lt;em&gt;bijective&lt;/em&gt; relation between $S$ and $T$ defined by the graph $G$ which of these &lt;em&gt;must&lt;/em&gt; be true:&lt;/p&gt;
+
+&lt;p&gt;a. there exists some &lt;em&gt;injective&lt;/em&gt; relation between $S$ and $T$.
+b. there exists some &lt;em&gt;bijective&lt;/em&gt; relation between $T$ and $S$.
+c. there exists a &lt;em&gt;total&lt;/em&gt; function, $f: S \rightarrow T$.
+d. $S - T = \emptyset$.
+e. the number of elements of $S$ is equal to the number of elements of $T$.
+f. $G - (S \times T) = \emptyset$.
+g. $(S \times T) - G = \emptyset$.
+h. $(S \times T) - G \neq \emptyset$.&lt;/p&gt;
+
+&lt;h1 id=&#34;relation-practice&#34;&gt;Relation Practice&lt;/h1&gt;
+
+&lt;p&gt;The &lt;em&gt;inverse&lt;/em&gt; of a relation $R: A \rightarrow B, G \subseteq A \times B$ is defined by reversing all the arrows:
+$$
+R^{-1}: B \rightarrow A, G^{-1} \subseteq B \times A
+$$&lt;/p&gt;
+
+&lt;p&gt;$$
+(b, a) \in G^{-1} \iff \fillin\fillin\fillin\fillin
+$$&lt;/p&gt;
+
+&lt;p&gt;What does it mean if $R \equiv R^{-1}$?&lt;/p&gt;
+
+&lt;h1 id=&#34;set-cardinality&#34;&gt;Set Cardinality&lt;/h1&gt;
+
+&lt;p&gt;&lt;strong&gt;Finite Cardinality.&lt;/strong&gt; The book&amp;rsquo;s definition is: ``If $A$ is a finite set, the &lt;em&gt;cardinality&lt;/em&gt; of
+  $A$, written $|A|$, is the number of elements in $A$.&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;Does this definition require adding a new fundamental set operation,
+or is it meaningful with just the set operations we have defined?&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Alternate definition:&lt;/strong&gt; The &lt;em&gt;cardinality&lt;/em&gt; of the set $$ N_k = { n |
+n \in \mathbb{N} \wedge n &amp;lt; k } $$ is $k$. (Next class, we&amp;rsquo;ll use
+this to define the &lt;em&gt;cardinality&lt;/em&gt; of any set. You should be able to
+figure out how to do this on your own with what you know now.)&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>NAND/XOR Challenge Solved!</title>
@@ -62,8 +188,6 @@ is due &lt;strong&gt;Friday, 22 September at 6:29:00pm&lt;/strong&gt;.&lt;/p&gt;
    &lt;a href=&#34;https://uvacs2102.github.io/docs/class8.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes and Questions&lt;/b&gt;&lt;/a&gt;.
    &lt;/div&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
-
 &lt;p&gt;&lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
@@ -98,15 +222,23 @@ is due &lt;strong&gt;Friday, 22 September at 6:29:00pm&lt;/strong&gt;.&lt;/p&gt;
 &lt;em&gt;codomain&lt;/em&gt; set, $B$, and it holds that  $P$ is $P \subseteq A \times B$. When we draw $P$ by connecting elements of $A$ to $B$ based on their membership in $P$, we call this  the &lt;em&gt;graph&lt;/em&gt; of
 $R$.&lt;/p&gt;
 
-&lt;p&gt;The notion of relations could be generalized to having relations between elements coming from multiple sets $A,B,C$, and we can also talk about relations of the form $P \subseteq A \times B \times C$, but the binary relation remains a very important data type as it allows us to define &lt;em&gt;functions&lt;/em&gt;&amp;hellip;&lt;/p&gt;
+&lt;p&gt;The notion of relations could be generalized to having relations
+between elements coming from multiple sets $A,B,C$, and we can also
+talk about relations of the form $P \subseteq A \times B \times C$,
+but the binary relation remains a very important data type as it
+allows us to define &lt;em&gt;functions&lt;/em&gt;.&lt;/p&gt;
 
 &lt;h1 id=&#34;functions&#34;&gt;Functions&lt;/h1&gt;
 
-&lt;p&gt;The concept of a function $F$ models is a special form of a binary relation $R$ between $A$ and $B$ where for every element  $a \in A$ there is a &lt;em&gt;unique&lt;/em&gt; element in $b \in B$ that is in relation with $a$ (i.e. $(a,b) \in R$). More formally, we use a direct new notation just reserved for working with functions.&lt;/p&gt;
+&lt;p&gt;The concept of a function $F$ models is a special form of a binary
+relation $R$ between $A$ and $B$ where for every element $a \in A$
+there is &lt;em&gt;at most one&lt;/em&gt; element in $b \in B$ that is in relation with
+$a$ (i.e. $(a,b) \in R$). More formally, we use a direct new notation
+just reserved for working with functions.&lt;/p&gt;
 
-&lt;p&gt;A &lt;strong&gt;function&lt;/strong&gt; is a mathematical datatype that associates elements from
-one set, called the &lt;em&gt;domain&lt;/em&gt;, with elements from another set, called a
-&lt;em&gt;codomain&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;A &lt;strong&gt;function&lt;/strong&gt; is a mathematical datatype that associates
+elements from one set, called the &lt;em&gt;domain&lt;/em&gt;, with elements from another
+set, called a &lt;em&gt;codomain&lt;/em&gt;.&lt;/p&gt;
 
 &lt;p&gt;$$ f: \textrm{\em domain} \rightarrow \textrm{\em codomain} $$&lt;/p&gt;
 
@@ -944,21 +1076,6 @@ either satisfy $a&amp;lt;b$ or $b&amp;lt;a$. Second  $a&amp;lt;b$ and $b&amp;lt;
 _The whole problem with the world is that fools and fanatics are always so certain of themselves, and wiser people so full of doubts._ Bertrand Russell
 
 &lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Office Hours Posted</title>
-      <link>https://uvacs2102.github.io/officehoursposted/</link>
-      <pubDate>Sat, 26 Aug 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://uvacs2102.github.io/officehoursposted/</guid>
-      <description>&lt;p&gt;The office hours schedule is now posted on the course site (&lt;a href=&#34;https://uvacs2102.github.io/officehours&#34;&gt;Office
-Hours&lt;/a&gt;) and
-&lt;a href=&#34;https://calendar.google.com/calendar/embed?src=5msg7a1mn7fk4ocj1h41cksh80%40group.calendar.google.com&amp;amp;ctz=America/New_York&#34;&gt;Calendar&lt;/a&gt;. The
-schedule will likely be adjusted as the semester progresses. Office
-hours start on Monday (3pm), and will follow the schedule here after
-that.&lt;/p&gt;
 </description>
     </item>
     
