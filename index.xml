@@ -6,8 +6,18 @@
     <description>Recent content on cs2102: Discrete Math</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 19 Sep 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 20 Sep 2017 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://uvacs2102.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Problem Set 3 Comments</title>
+      <link>https://uvacs2102.github.io/ps3comments/</link>
+      <pubDate>Wed, 20 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/ps3comments/</guid>
+      <description>&lt;p&gt;The Problem Set 3 solutions and comments are now posted in collab: &lt;a href=&#34;https://collab.its.virginia.edu/access/content/group/9bd99d1c-6f18-4542-a7d1-8ffc4fccbd3d/ps3solutions.pdf&#34;&gt;PDF&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Class 9: Relations, Finite Set Cardinality</title>
@@ -970,110 +980,6 @@ material we cover in class and the textbook covers.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;http://www.wolframalpha.com/input/?i=(2k+%2B+1)%5E2&#34;&gt;Wolfram Alpha&lt;/a&gt;
 is very good at doing most of the algebra, calculation, etc. you would
 encounter in this class.  It is also &lt;a href=&#34;http://www.wolframalpha.com/input/?i=(P+%3D%3E+NOT(P))+%3D%3E+(Q+%3D%3E+NOT(P))&#34;&gt;pretty good at logic&lt;/a&gt;.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Class 3: Well-Ordering Principle</title>
-      <link>https://uvacs2102.github.io/class3/</link>
-      <pubDate>Tue, 29 Aug 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://uvacs2102.github.io/class3/</guid>
-      <description>
-
-&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
-
-&lt;p&gt;This week, you should read MCS Chapter 2 and MCS Chapter 3 (at least
-through the end of Section 3.4).&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps1&#34;&gt;&lt;strong&gt;Problem Set 1&lt;/strong&gt;&lt;/a&gt; is due &lt;strong&gt;Friday at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;Office hours started Monday afternoon. See &lt;a href=&#34;https://uvacs2102.github.io/officehours/&#34;&gt;the course
-calendar&lt;/a&gt; for the full office
-hours schedule.&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;
-   &lt;center&gt;
-&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;dd5193b1df334282a62697cf2343ad3a&#34; data-ratio=&#34;1.77777777777778&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
-   &lt;/center&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;highlightm&#34;&gt;
-   &lt;a href=&#34;https://uvacs2102.github.io/docs/class3.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes and Questions&lt;/b&gt;&lt;/a&gt;.
-   &lt;/div&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://math.berkeley.edu/~kpmann/Well-ordering.pdf&#34;&gt;&lt;em&gt;The Well-Ordering Theorem: one of the Greatest Mathematical Controversies of All Time&lt;/em&gt;&lt;/a&gt;, Kathryn Mann.&lt;/p&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;notes-and-questions&#34;&gt;Notes and Questions&lt;/h1&gt;
-
-&lt;p&gt;What properties must a sensible ordering function have?&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; A set is &lt;em&gt;ordered&lt;/em&gt; with respect to an ordering relation (e.g., $&amp;lt;$), if two things hold. First: every pair of inequal elements $a,b$ in $A$
-either satisfy $a&amp;lt;b$ or $b&amp;lt;a$. Second  $a&amp;lt;b$ and $b&amp;lt;a$ should always imply that $a&amp;lt;b$ (this is called the transitivity).&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; An ordered set,with respect to an ordering
-  relation (e.g., $&amp;lt;$), is &lt;em&gt;well-ordered&lt;/em&gt;  if all of its non-empty subsets has a minimum
-  element.&lt;/p&gt;
-
-&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;
-
-&lt;p&gt;Which of these are well-ordered?&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;The set of non-negative integers, comparator $&amp;lt;$.&lt;/li&gt;
-&lt;li&gt;The set of integers, comparator $&amp;lt;$.&lt;/li&gt;
-&lt;li&gt;The set of integers, comparator $|a| &amp;lt; |b|$.&lt;/li&gt;
-&lt;li&gt;The set of integers, comparator if |a| = |b|: $a &amp;lt; b$, else: $|a| &amp;lt; |b|$.&lt;/li&gt;
-&lt;li&gt;The set of national soccer teams, comparator winning games.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Prove the set of positive rationals is &lt;em&gt;not&lt;/em&gt; well-ordered under $&amp;lt;$.&lt;/p&gt;
-
-&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;
-
-&lt;p&gt;#&lt;/p&gt;
-
-&lt;p&gt;Provide a comparison function that can be used to well-order the positive rationals.&lt;/p&gt;
-
-&lt;!--page--&gt;
-
-&lt;h3 id=&#34;template-for-well-ordering-proofs-section-2-2&#34;&gt;Template for Well-Ordering Proofs (Section 2.2)&lt;/h3&gt;
-
-&lt;p&gt;To prove that $P(n)$ is true for all $n \in \mathbb{N}$:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Define the set of counterexamples, $C ::= { n \in \mathbb{N} | NOT(P(n)) }$.&lt;/li&gt;
-&lt;li&gt;Assume for contradiction that $C$ is ______________. &lt;!-- non-empty.--&gt;&lt;/li&gt;
-&lt;li&gt;By the well-ordering principle, there must be __________________ &lt;!-- some smallest element--&gt;, $m \in C$.&lt;/li&gt;
-&lt;li&gt;Reach a contradiction (this is the creative part!).  One way to reach a contradiction would be to show $P(m)$.  Another way is to show there must be an element $m&amp;rsquo; \in C$ where $m&amp;rsquo; &amp;lt; m$.&lt;/li&gt;
-&lt;li&gt;Conclude that $C$ must be empty, hence there are no counter-examples and $P(n)$ always holds.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;strong&gt;Example: Betable Numbers.&lt;/strong&gt; A number is &lt;em&gt;betable&lt;/em&gt; if it can be
-  produced using some combination of \$2 and \$5 chips.  Prove that all
-  integer values greater than \$3 are betable.&lt;/p&gt;
-
-&lt;div class=&#34;biggap&#34;&gt;&lt;/div&gt;
-#
-#
-#
-
-**Example: Division Property.** Given integer $a$ and positive integer $b$, there exist integers $q$ and $r$ such that:
-      $a = qb + r$ and $0 \le r &lt; b$.
-
-&lt;div class=&#34;biggap&#34;&gt;&lt;/div&gt;
-#
-#
-
-
-_The whole problem with the world is that fools and fanatics are always so certain of themselves, and wiser people so full of doubts._ Bertrand Russell
-
-&lt;/div&gt;
 </description>
     </item>
     

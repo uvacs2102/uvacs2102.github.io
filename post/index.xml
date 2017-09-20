@@ -6,8 +6,18 @@
     <description>Recent content in Post-rsses on cs2102: Discrete Math</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 19 Sep 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 20 Sep 2017 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://uvacs2102.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Problem Set 3 Comments</title>
+      <link>https://uvacs2102.github.io/ps3comments/</link>
+      <pubDate>Wed, 20 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/ps3comments/</guid>
+      <description>&lt;p&gt;The Problem Set 3 solutions and comments are now posted in collab: &lt;a href=&#34;https://collab.its.virginia.edu/access/content/group/9bd99d1c-6f18-4542-a7d1-8ffc4fccbd3d/ps3solutions.pdf&#34;&gt;PDF&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Class 9: Relations, Finite Set Cardinality</title>
@@ -1018,21 +1028,6 @@ either satisfy $a&amp;lt;b$ or $b&amp;lt;a$. Second  $a&amp;lt;b$ and $b&amp;lt;
 _The whole problem with the world is that fools and fanatics are always so certain of themselves, and wiser people so full of doubts._ Bertrand Russell
 
 &lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Office Hours Posted</title>
-      <link>https://uvacs2102.github.io/officehoursposted/</link>
-      <pubDate>Sat, 26 Aug 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://uvacs2102.github.io/officehoursposted/</guid>
-      <description>&lt;p&gt;The office hours schedule is now posted on the course site (&lt;a href=&#34;https://uvacs2102.github.io/officehours&#34;&gt;Office
-Hours&lt;/a&gt;) and
-&lt;a href=&#34;https://calendar.google.com/calendar/embed?src=5msg7a1mn7fk4ocj1h41cksh80%40group.calendar.google.com&amp;amp;ctz=America/New_York&#34;&gt;Calendar&lt;/a&gt;. The
-schedule will likely be adjusted as the semester progresses. Office
-hours start on Monday (3pm), and will follow the schedule here after
-that.&lt;/p&gt;
 </description>
     </item>
     
