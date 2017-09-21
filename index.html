@@ -147,6 +147,119 @@
   </header>
   
   
+  <p class="fronthead"><A href="/class10/">Class 10: Set Cardinality, Induction</a> (Thu, 21 Sep 2017)</p>
+    
+
+<h3 id="schedule">Schedule</h3>
+
+<p>This week you should finish reading MCS Chapter 4 (section 4.5) and
+Section 5.1.  We will discuss Induction (Section 5.1) next class.</p>
+
+<p><a href="/ps/ps4"><strong>Problem Set 4</strong></a> is due <strong>Friday at 6:29pm</strong>.  The
+original version of Problem Set 4, Question 6, asked for a <em>function</em>,
+when we really meant to ask for a <em>total function</em> (as we defined it
+in class today, and the book defines it). The problem set is updated
+now to specify this. If you already answered the original question,
+you do not need to update your answer, just indicate clearly for which
+questions the function you defined is partial. Sorry for the
+confusion!</p>
+
+<p><strong>Problem Set 5</strong> (not yet posted) will be due Friday, 29 September.</p>
+
+<p><strong>Exam 1</strong> will be in-class on Thursday, 5 October. It will cover
+  Classes 1 - 11, Problem Sets 1 - 5, and MCS Chapters 1 - 5.</p>
+
+<p><div class="notpdf">
+   <center>
+<script async class="speakerdeck-embed" data-id="3dc8afcc1d1e4a979715fe94298dd84a" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+   </center></p>
+
+<p><div class="highlightm">
+   <a href="/docs/class10.pdf">See PDF Version for <b>Notes and Questions</b></a>.
+   </div></p>
+
+<p></div><!--endpdf--></p>
+
+<p><div class="latex"></p>
+
+<p><strong>Alternate definition:</strong> The <em>cardinality</em> of the set
+$$
+N_k = { n | n \in \mathbb{N} \wedge n &lt; k }
+$$
+is $k$.  If there is a <em>bijection</em> between two sets, they have the same
+cardinality.</p>
+
+<p>#</p>
+
+<p>If there is a <em>surjective relation</em> between $A$ and $B$ what do we know
+about their cardinalities?</p>
+
+<p>##</p>
+
+<p>If there is a <em>surjective function</em> between $A$ and $B$ what do we know
+about their cardinalities?</p>
+
+<!--page-->
+
+<p>If there is a <em>total surjective function</em> between $A$ and $B$ what do we know
+about their cardinalities?</p>
+
+<p>##</p>
+
+<p>If there is a <em>total surjective injective function</em> between $A$ and $B$
+what do we know about their cardinalities?</p>
+
+<p>##</p>
+
+<p>What is the cardinality of $A \cup B$?</p>
+
+<p>#</p>
+
+<h1 id="induction-principle">Induction Principle</h1>
+
+<p>Let $P$ be a predicated on $\mathbb{N}$.  If</p>
+
+<ul>
+<li>$P(0)$ is true, and</li>
+<li>$P(n) \implies P(n + 1)$ for all $n \in \mathbb{N}$,</li>
+</ul>
+
+<p>then</p>
+
+<ul>
+<li>$P(m)$ is true for all $m \in \mathbb{N}$.</li>
+</ul>
+
+<h2 id="template-for-induction-proofs">Template for Induction Proofs</h2>
+
+<ol>
+<li>State, &ldquo;We prove by induction.&rdquo;</li>
+<li>Define a predicate, $P(n)$.  This is the <em>induction hypothesis</em>.  Our goal is to show that $P(n)$ is true for all $n \in \mathbb{N}$.</li>
+<li>Prove $P(0)$ is true.  (<em>base case</em> or <em>basis step</em>.)</li>
+<li>Prove that $P(n) \implies P(n + 1)$ for every $n \in \mathbb{N}$.  (<em>induction step</em>)</li>
+<li>Conclude that $P(n)$ is true for all $n \in \mathbb{N}$ by induction.</li>
+</ol>
+
+<p>How is the method of <em>proof by induction principle</em> similar to and different from <em>proof by well-ordering principle</em>?</p>
+
+<h1 id="power-sets">Power Sets</h1>
+
+<p>The <strong>power set</strong> of $A$ ($\textrm{pow}(A)$)is the set of all subsets of $A$:
+$$
+B \in \textrm{pow}(A) \iff B \subseteq A.
+$$</p>
+
+<p>Prove that the size of the power set of a set $S$ with $|S| = N$ is
+$2^N$ using induction. (We&rsquo;ll do this in Class 11, but see how far you
+can get on your own.)</p>
+
+<p>#</p>
+
+<p>#</p>
+
+<p></div></p>
+ 
+  
   <p class="fronthead"><A href="/ps3comments/">Problem Set 3 Comments</a> (Wed, 20 Sep 2017)</p>
     <p>The Problem Set 3 solutions and comments are now posted in collab: <a href="https://collab.its.virginia.edu/access/content/group/9bd99d1c-6f18-4542-a7d1-8ffc4fccbd3d/ps3solutions.pdf">PDF</a></p>
  
@@ -727,10 +840,6 @@ $(A \lor B \lor C \lor D)$ we do another trick of breaking them into smaller par
 <p></div></p>
  
   
-  <p class="fronthead"><A href="/ps1comments/">Problem Set 1 Comments</a> (Wed, 6 Sep 2017)</p>
-    <p>The Problem Set 1 comments are now posted in collab: <a href="https://collab.its.virginia.edu/access/content/group/9bd99d1c-6f18-4542-a7d1-8ffc4fccbd3d/ps1solutions.pdf">PDF</a></p>
- 
-  
   
 <div class="container pagination">
   
@@ -753,12 +862,16 @@ $(A \lor B \lor C \lor D)$ we do another trick of breaking them into smaller par
   2
 </a>
 
+<a href="https://uvacs2102.github.io/page/3/">
+  3
+</a>
+
 
 <a aria-label="Next" href="https://uvacs2102.github.io/page/2/">
   <span aria-hidden="true">»</span>
 </a>
 
-<a aria-label="Last" href="https://uvacs2102.github.io/page/2/">
+<a aria-label="Last" href="https://uvacs2102.github.io/page/3/">
   <span aria-hidden="true">»»</span>
 </a>
 

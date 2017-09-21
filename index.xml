@@ -6,8 +6,127 @@
     <description>Recent content on cs2102: Discrete Math</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 20 Sep 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 21 Sep 2017 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://uvacs2102.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Class 10: Set Cardinality, Induction</title>
+      <link>https://uvacs2102.github.io/class10/</link>
+      <pubDate>Thu, 21 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/class10/</guid>
+      <description>
+
+&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
+
+&lt;p&gt;This week you should finish reading MCS Chapter 4 (section 4.5) and
+Section 5.1.  We will discuss Induction (Section 5.1) next class.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps4&#34;&gt;&lt;strong&gt;Problem Set 4&lt;/strong&gt;&lt;/a&gt; is due &lt;strong&gt;Friday at 6:29pm&lt;/strong&gt;.  The
+original version of Problem Set 4, Question 6, asked for a &lt;em&gt;function&lt;/em&gt;,
+when we really meant to ask for a &lt;em&gt;total function&lt;/em&gt; (as we defined it
+in class today, and the book defines it). The problem set is updated
+now to specify this. If you already answered the original question,
+you do not need to update your answer, just indicate clearly for which
+questions the function you defined is partial. Sorry for the
+confusion!&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Problem Set 5&lt;/strong&gt; (not yet posted) will be due Friday, 29 September.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Exam 1&lt;/strong&gt; will be in-class on Thursday, 5 October. It will cover
+  Classes 1 - 11, Problem Sets 1 - 5, and MCS Chapters 1 - 5.&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;
+   &lt;center&gt;
+&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;3dc8afcc1d1e4a979715fe94298dd84a&#34; data-ratio=&#34;1.77777777777778&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
+   &lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlightm&#34;&gt;
+   &lt;a href=&#34;https://uvacs2102.github.io/docs/class10.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes and Questions&lt;/b&gt;&lt;/a&gt;.
+   &lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Alternate definition:&lt;/strong&gt; The &lt;em&gt;cardinality&lt;/em&gt; of the set
+$$
+N_k = { n | n \in \mathbb{N} \wedge n &amp;lt; k }
+$$
+is $k$.  If there is a &lt;em&gt;bijection&lt;/em&gt; between two sets, they have the same
+cardinality.&lt;/p&gt;
+
+&lt;p&gt;#&lt;/p&gt;
+
+&lt;p&gt;If there is a &lt;em&gt;surjective relation&lt;/em&gt; between $A$ and $B$ what do we know
+about their cardinalities?&lt;/p&gt;
+
+&lt;p&gt;##&lt;/p&gt;
+
+&lt;p&gt;If there is a &lt;em&gt;surjective function&lt;/em&gt; between $A$ and $B$ what do we know
+about their cardinalities?&lt;/p&gt;
+
+&lt;!--page--&gt;
+
+&lt;p&gt;If there is a &lt;em&gt;total surjective function&lt;/em&gt; between $A$ and $B$ what do we know
+about their cardinalities?&lt;/p&gt;
+
+&lt;p&gt;##&lt;/p&gt;
+
+&lt;p&gt;If there is a &lt;em&gt;total surjective injective function&lt;/em&gt; between $A$ and $B$
+what do we know about their cardinalities?&lt;/p&gt;
+
+&lt;p&gt;##&lt;/p&gt;
+
+&lt;p&gt;What is the cardinality of $A \cup B$?&lt;/p&gt;
+
+&lt;p&gt;#&lt;/p&gt;
+
+&lt;h1 id=&#34;induction-principle&#34;&gt;Induction Principle&lt;/h1&gt;
+
+&lt;p&gt;Let $P$ be a predicated on $\mathbb{N}$.  If&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;$P(0)$ is true, and&lt;/li&gt;
+&lt;li&gt;$P(n) \implies P(n + 1)$ for all $n \in \mathbb{N}$,&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;then&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;$P(m)$ is true for all $m \in \mathbb{N}$.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;template-for-induction-proofs&#34;&gt;Template for Induction Proofs&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt;State, &amp;ldquo;We prove by induction.&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;Define a predicate, $P(n)$.  This is the &lt;em&gt;induction hypothesis&lt;/em&gt;.  Our goal is to show that $P(n)$ is true for all $n \in \mathbb{N}$.&lt;/li&gt;
+&lt;li&gt;Prove $P(0)$ is true.  (&lt;em&gt;base case&lt;/em&gt; or &lt;em&gt;basis step&lt;/em&gt;.)&lt;/li&gt;
+&lt;li&gt;Prove that $P(n) \implies P(n + 1)$ for every $n \in \mathbb{N}$.  (&lt;em&gt;induction step&lt;/em&gt;)&lt;/li&gt;
+&lt;li&gt;Conclude that $P(n)$ is true for all $n \in \mathbb{N}$ by induction.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;How is the method of &lt;em&gt;proof by induction principle&lt;/em&gt; similar to and different from &lt;em&gt;proof by well-ordering principle&lt;/em&gt;?&lt;/p&gt;
+
+&lt;h1 id=&#34;power-sets&#34;&gt;Power Sets&lt;/h1&gt;
+
+&lt;p&gt;The &lt;strong&gt;power set&lt;/strong&gt; of $A$ ($\textrm{pow}(A)$)is the set of all subsets of $A$:
+$$
+B \in \textrm{pow}(A) \iff B \subseteq A.
+$$&lt;/p&gt;
+
+&lt;p&gt;Prove that the size of the power set of a set $S$ with $|S| = N$ is
+$2^N$ using induction. (We&amp;rsquo;ll do this in Class 11, but see how far you
+can get on your own.)&lt;/p&gt;
+
+&lt;p&gt;#&lt;/p&gt;
+
+&lt;p&gt;#&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Problem Set 3 Comments</title>
@@ -926,62 +1045,6 @@ For each of the formulas below, determine if it is _valid_ and if it is _satisfi
 
 
 &lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Resources</title>
-      <link>https://uvacs2102.github.io/resources/</link>
-      <pubDate>Thu, 31 Aug 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://uvacs2102.github.io/resources/</guid>
-      <description>
-
-&lt;p&gt;Here are some links to suggested additional resources for students who
-would like to have more examples and alternate presentations of the
-material we cover in class and the textbook covers.&lt;/p&gt;
-
-&lt;h2 id=&#34;books&#34;&gt;Books&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.people.vcu.edu/~rhammack/BookOfProof/BookOfProof.pdf&#34;&gt;&lt;em&gt;Book of Proof&lt;/em&gt;&lt;/a&gt;, Richard Hammack&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;This is a creative commons textbook all about proofs, that includes
-  many of the topics we cover in cs2102.  Chapter 5 is on
-  &lt;em&gt;Contrapositive Proof&lt;/em&gt; and Chapter 6 is on &lt;em&gt;Proof by Contradiction&lt;/em&gt;.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://cseweb.ucsd.edu/~gill/BWLectSite/&#34;&gt;&lt;em&gt;Lectures in Discrete Mathematics&lt;/em&gt;&lt;/a&gt;, Edward A. Bender and S. Gil Williamson&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;This course is structured quite differently from our course, but covers many of the same topics with many examples.  The most likely useful chapters for cs2102 students are: &lt;a href=&#34;http://cseweb.ucsd.edu/~gill/BWLectSite/Resources/C1U2Lo.pdf&#34;&gt;Logic&lt;/a&gt;, &lt;a href=&#34;http://cseweb.ucsd.edu/~gill/BWLectSite/Resources/C1U4SF.pdf&#34;&gt;Sets and Functions&lt;/a&gt;, &lt;a href=&#34;http://cseweb.ucsd.edu/~gill/BWLectSite/Resources/C1U6IS.pdf&#34;&gt;Inductions, Sequences and Series&lt;/a&gt;.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&#34;courses&#34;&gt;Courses&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-042j-mathematics-for-computer-science-spring-2015/&#34;&gt;Mathematics for Computer Science&lt;/a&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;This is an MIT course, which the textbook we use developed from. There are may example problems (some with solutions) that were used in the class.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://web.stanford.edu/class/cs103/&#34;&gt;Stanford cs103&lt;/a&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;The first 13 classes cover similar topics to cs2102; the rest of the course is more like cs3102.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www-inst.eecs.berkeley.edu/~cs70/fa16/&#34;&gt;Berkeley CS70&lt;/a&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;Not much material is available on-line, but see &lt;a href=&#34;http://www-inst.eecs.berkeley.edu/~cs70/fa16/&#34;&gt;Mike Clancy and David Wagner&amp;rsquo;s version of the course from 2005&lt;/a&gt;.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&#34;math&#34;&gt;Math&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.wolframalpha.com/input/?i=(2k+%2B+1)%5E2&#34;&gt;Wolfram Alpha&lt;/a&gt;
-is very good at doing most of the algebra, calculation, etc. you would
-encounter in this class.  It is also &lt;a href=&#34;http://www.wolframalpha.com/input/?i=(P+%3D%3E+NOT(P))+%3D%3E+(Q+%3D%3E+NOT(P))&#34;&gt;pretty good at logic&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
