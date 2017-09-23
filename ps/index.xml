@@ -658,17 +658,19 @@ you may use the &lt;code&gt;#teaming&lt;/code&gt; channel on slack.&lt;/p&gt;
 
 &lt;h2 id=&#34;preparation&#34;&gt;Preparation&lt;/h2&gt;
 
-&lt;p&gt;This problem set focuses on Chapter 4, including Section 4.5 (Cadrinality of Finite Sets) and
-Chapter 5 (Induction) of the MCS book, and &lt;a href=&#34;https://uvacs2102.github.io/class9&#34;&gt;Class 9&lt;/a&gt; and &lt;a href=&#34;https://uvacs2102.github.io/class10&#34;&gt;Class
-10&lt;/a&gt;.
-   &lt;div class=&#34;notpdf&#34;&gt;&lt;/p&gt;
+&lt;p&gt;This problem set focuses on Chapter 4, including Section 4.5
+(Cadrinality of Finite Sets) and Chapter 5 (Induction) of the MCS
+book, and &lt;a href=&#34;https://uvacs2102.github.io/class9&#34;&gt;Class 9&lt;/a&gt; and &lt;a href=&#34;https://uvacs2102.github.io/class10&#34;&gt;Class 10&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;div class=&#34;highlightm&#34;&gt;
+&lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;
+   &lt;div class=&#34;highlightm&#34;&gt;
     &lt;a href=&#34;https://uvacs2102.github.io/docs/ps5.pdf&#34;&gt;Download PDF for Problems&lt;/a&gt;.
    &lt;/div&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;highlightr&#34;&gt;
-Your response should be submitted as a single PDF file using collab.  Please read and follow the &lt;a href=&#34;https://uvacs2102.github.io/pdfs/&#34;&gt;Generating PDFs&lt;/a&gt; advice on the course site.
+Your response should be submitted as a single PDF file using collab.
+Please read and follow the &lt;a href=&#34;https://uvacs2102.github.io/pdfs/&#34;&gt;Generating
+PDFs&lt;/a&gt; advice on the course site.
    &lt;/div&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
@@ -677,21 +679,24 @@ Your response should be submitted as a single PDF file using collab.  Please rea
 
 &lt;h2 id=&#34;directions&#34;&gt;Directions&lt;/h2&gt;
 
-&lt;p&gt;Solve as many of the nine problems as you can.  For maximum credit, your
-answers should be correct, clear, well-written, and convincing. The problem (4) marked with $(\star)$
-is more challenging than others, and so it is not necessary to solve it fully to get
-a ``green-star level&amp;rdquo; grade on this assignment (although we certainly
+&lt;p&gt;Solve as many of the nine problems as you can.  For maximum credit,
+your answers should be correct, clear, well-written, and
+convincing. The problem (4) marked with $(\star)$ is more challenging
+than others, and so it is not necessary to solve it fully to get a
+``green-star level&amp;rdquo; grade on this assignment (although we certainly
 hope you will try and some will succeed!)&lt;/p&gt;
 
 &lt;h1 id=&#34;properties-of-functions-and-relations&#34;&gt;Properties of functions and relations&lt;/h1&gt;
 
 &lt;ol&gt;
-&lt;li&gt;&lt;p&gt;In last week&amp;rsquo;s problem set we considered the relation, $\le$, with the domain set, $\mathbb{N}$ and
-codomain set $\mathbb{N}$. Which of these properties does the relation have: function, total, injective, surjective, bijective? (You do
-not need to provide a detailed proof, but should support your answer
-with a very brief explanation.)&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;In last week&amp;rsquo;s problem set we considered the relation, $\le$, with
+the domain set, $\mathbb{N}$ and codomain set $\mathbb{N}$. Which of
+these properties does the relation have: function, total, injective,
+surjective, bijective? (You do not need to provide a detailed proof,
+but should support your answer with a very brief explanation.)&lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;As we saw in class, five basic properties of binary relations $R : A \rightarrow B$ are:
+&lt;li&gt;&lt;p&gt;As we saw in class, five basic properties of binary relations $R :
+A \rightarrow B$ are:
 \begin{quote}
 \begin{enumerate}[(1)]
 \item $R$ is a surjection [$\ge 1$ in]
@@ -700,8 +705,9 @@ with a very brief explanation.)&lt;/p&gt;&lt;/li&gt;
 \item $R$ is total [$\ge 1$ out]
 \item $R$ is empty [$= 0$ out]
 \end{enumerate}
-\end{quote}
-Below are some assertions about a relation $R$. For each assertion,
+\end{quote}&lt;/p&gt;
+
+&lt;p&gt;Below are some assertions about a relation $R$. For each assertion,
 write the numbers (1, 2, 3, 4, 5 from above) of all properties above
 that the relation $R$ &lt;em&gt;must&lt;/em&gt; have (that is, the properties that are
 implied by the stated assertion); write ``none&amp;rdquo; if $R$ might not have
