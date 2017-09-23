@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>cs2102: Discrete Math</title>
-    <link>https://uvacs2102.github.io/</link>
+    <link>https://uvacs2102.github.io/index.xml</link>
     <description>Recent content on cs2102: Discrete Math</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -16,7 +16,10 @@
       
       <guid>https://uvacs2102.github.io/ps5posted/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps5&#34;&gt;&lt;strong&gt;Problem Set 5&lt;/strong&gt;&lt;/a&gt; [&lt;a href=&#34;https://uvacs2102.github.io/docs/ps5.pdf&#34;&gt;PDF&lt;/a&gt;] is now posted and
-is due &lt;strong&gt;Friday, 29 September at 6:29:00pm&lt;/strong&gt;.&lt;/p&gt;
+is due &lt;strong&gt;Friday, 29 September at 6:29:00pm&lt;/strong&gt;. Please read the
+collaboration policy carefully - unlike previous assignments the
+&lt;em&gt;Students&lt;/em&gt; &amp;rarr; &lt;em&gt;Submissions&lt;/em&gt; relation for this assignment may be
+surjective.&lt;/p&gt;
 </description>
     </item>
     
@@ -28,7 +31,7 @@ is due &lt;strong&gt;Friday, 29 September at 6:29:00pm&lt;/strong&gt;.&lt;/p&gt;
       <guid>https://uvacs2102.github.io/class10/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule:cefb84ebc6e45e7105a37c4f4d413033&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;This week you should finish reading MCS Chapter 4 (section 4.5) and
 Section 5.1.  We will discuss Induction (Section 5.1) next class.&lt;/p&gt;
@@ -93,7 +96,7 @@ what do we know about their cardinalities?&lt;/p&gt;
 
 &lt;p&gt;#&lt;/p&gt;
 
-&lt;h1 id=&#34;induction-principle:cefb84ebc6e45e7105a37c4f4d413033&#34;&gt;Induction Principle&lt;/h1&gt;
+&lt;h1 id=&#34;induction-principle&#34;&gt;Induction Principle&lt;/h1&gt;
 
 &lt;p&gt;Let $P$ be a predicated on $\mathbb{N}$.  If&lt;/p&gt;
 
@@ -108,7 +111,7 @@ what do we know about their cardinalities?&lt;/p&gt;
 &lt;li&gt;$P(m)$ is true for all $m \in \mathbb{N}$.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;template-for-induction-proofs:cefb84ebc6e45e7105a37c4f4d413033&#34;&gt;Template for Induction Proofs&lt;/h2&gt;
+&lt;h2 id=&#34;template-for-induction-proofs&#34;&gt;Template for Induction Proofs&lt;/h2&gt;
 
 &lt;ol&gt;
 &lt;li&gt;State, &amp;ldquo;We prove by induction.&amp;rdquo;&lt;/li&gt;
@@ -120,7 +123,7 @@ what do we know about their cardinalities?&lt;/p&gt;
 
 &lt;p&gt;How is the method of &lt;em&gt;proof by induction principle&lt;/em&gt; similar to and different from &lt;em&gt;proof by well-ordering principle&lt;/em&gt;?&lt;/p&gt;
 
-&lt;h1 id=&#34;power-sets:cefb84ebc6e45e7105a37c4f4d413033&#34;&gt;Power Sets&lt;/h1&gt;
+&lt;h1 id=&#34;power-sets&#34;&gt;Power Sets&lt;/h1&gt;
 
 &lt;p&gt;The &lt;strong&gt;power set&lt;/strong&gt; of $A$ ($\textrm{pow}(A)$)is the set of all subsets of $A$:
 $$
@@ -157,7 +160,7 @@ can get on your own.)&lt;/p&gt;
       <guid>https://uvacs2102.github.io/class9/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule:b1685b9d514e4fd02cc72721228d457c&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;This week you should finish reading MCS Chapter 4 (section 4.5) and
 Section 5.1.  We will discuss Induction (Section 5.1) next class.&lt;/p&gt;
@@ -189,7 +192,7 @@ confusion!&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;total-and-partial-functions:b1685b9d514e4fd02cc72721228d457c&#34;&gt;Total and Partial Functions&lt;/h2&gt;
+&lt;h2 id=&#34;total-and-partial-functions&#34;&gt;Total and Partial Functions&lt;/h2&gt;
 
 &lt;p&gt;A &lt;strong&gt;function&lt;/strong&gt; is a mathematical datatype that associates elements from
 one set, called the &lt;em&gt;domain&lt;/em&gt;, with elements from another set, called a
@@ -201,7 +204,7 @@ one set, called the &lt;em&gt;domain&lt;/em&gt;, with elements from another set,
 associated codomain element; if the function is &lt;em&gt;partial&lt;/em&gt;, there may be
 elements of the domain that do not have an associated codomain element.&lt;/p&gt;
 
-&lt;h2 id=&#34;relation-relationships:b1685b9d514e4fd02cc72721228d457c&#34;&gt;Relation Relationships&lt;/h2&gt;
+&lt;h2 id=&#34;relation-relationships&#34;&gt;Relation Relationships&lt;/h2&gt;
 
 &lt;p&gt;Definition review: &lt;strong&gt;binary relation&lt;/strong&gt;, $R$, consists of a domain set,
 $A$, and a codomain set, $B$, and a subset of $A \times B$ called the
@@ -245,7 +248,7 @@ f. $G - (S \times T) = \emptyset$.
 g. $(S \times T) - G = \emptyset$.
 h. $(S \times T) - G \neq \emptyset$.&lt;/p&gt;
 
-&lt;h1 id=&#34;relation-practice:b1685b9d514e4fd02cc72721228d457c&#34;&gt;Relation Practice&lt;/h1&gt;
+&lt;h1 id=&#34;relation-practice&#34;&gt;Relation Practice&lt;/h1&gt;
 
 &lt;p&gt;The &lt;em&gt;inverse&lt;/em&gt; of a relation $R: A \rightarrow B, G \subseteq A \times B$ is defined by reversing all the arrows:
 $$
@@ -258,7 +261,7 @@ $$&lt;/p&gt;
 
 &lt;p&gt;What does it mean if $R \equiv R^{-1}$?&lt;/p&gt;
 
-&lt;h1 id=&#34;set-cardinality:b1685b9d514e4fd02cc72721228d457c&#34;&gt;Set Cardinality&lt;/h1&gt;
+&lt;h1 id=&#34;set-cardinality&#34;&gt;Set Cardinality&lt;/h1&gt;
 
 &lt;p&gt;&lt;strong&gt;Finite Cardinality.&lt;/strong&gt; The book&amp;rsquo;s definition is: ``If $A$ is a finite set, the &lt;em&gt;cardinality&lt;/em&gt; of
   $A$, written $|A|$, is the number of elements in $A$.&amp;rdquo;&lt;/p&gt;
@@ -415,7 +418,7 @@ set, called a &lt;em&gt;codomain&lt;/em&gt;.&lt;/p&gt;
       <guid>https://uvacs2102.github.io/class7/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule:3a08b95a8ad598832d09afa687b9b147&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps3&#34;&gt;&lt;strong&gt;Problem Set 3&lt;/strong&gt;&lt;/a&gt; is due &lt;strong&gt;Friday at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
 
@@ -428,13 +431,13 @@ set, called a &lt;em&gt;codomain&lt;/em&gt;.&lt;/p&gt;
    &lt;a href=&#34;https://uvacs2102.github.io/docs/class7.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes and Questions&lt;/b&gt;&lt;/a&gt;.
    &lt;/div&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;links:3a08b95a8ad598832d09afa687b9b147&#34;&gt;Links&lt;/h2&gt;
+&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
 
 &lt;p&gt;&lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;notes-and-questions:3a08b95a8ad598832d09afa687b9b147&#34;&gt;Notes and Questions&lt;/h1&gt;
+&lt;h1 id=&#34;notes-and-questions&#34;&gt;Notes and Questions&lt;/h1&gt;
 
 &lt;p&gt;What is a &lt;em&gt;data type&lt;/em&gt;?  What are the differences between a &lt;em&gt;mathematical
 data type&lt;/em&gt; and a data type in your favorite programming language?&lt;/p&gt;
@@ -444,7 +447,7 @@ data type&lt;/em&gt; and a data type in your favorite programming language?&lt;/
 &lt;p&gt;A &lt;strong&gt;set&lt;/strong&gt; is an unordered colection of objects.  A set is defined by its
 membership operation: $x \in S$ is true if $x$ is in the set $S$. When $x$ is not in $S$ we write it as $x \notin S$. A set has only &lt;em&gt;one&lt;/em&gt; copy of each element. Namely, there is no repetition in elements of a set. Also, a set $A$ could be a member o another set $B$, denoted by $A \in B$. Note that members of $A$ are not necessarily members of $B$ unless they are explicitly put in $B$ directly.&lt;/p&gt;
 
-&lt;h2 id=&#34;set-operations:3a08b95a8ad598832d09afa687b9b147&#34;&gt;Set Operations&lt;/h2&gt;
+&lt;h2 id=&#34;set-operations&#34;&gt;Set Operations&lt;/h2&gt;
 
 &lt;p&gt;Subset: $\subseteq$ (note that this does not mean &lt;em&gt;strict subset&lt;/em&gt;)
 $$A \subseteq B \iff \forall x \in A. \fillin \in \fillin.$$&lt;/p&gt;
@@ -469,7 +472,7 @@ discussion.)&lt;/p&gt;
 
 &lt;!--page--&gt;
 
-&lt;h3 id=&#34;russell-s-paradox:3a08b95a8ad598832d09afa687b9b147&#34;&gt;Russell&amp;rsquo;s Paradox&lt;/h3&gt;
+&lt;h3 id=&#34;russell-s-paradox&#34;&gt;Russell&amp;rsquo;s Paradox&lt;/h3&gt;
 
 &lt;p&gt;$$ S_{R} = \textrm{ the set of all sets that are not members of themselves} $$&lt;/p&gt;
 
@@ -477,13 +480,13 @@ discussion.)&lt;/p&gt;
 
 &lt;p&gt;What is the source of this paradox? Note that in this question, we are implicitly assuming that $S&lt;em&gt;{R}$ is a set, but we have never &amp;ldquo;constructed&amp;rdquo; this set properly to use it. Namely, here we are implicitly assuming that there is already a &amp;ldquo;set of all sets&amp;rdquo; $S&lt;/em&gt;{all}$ from which we remove those sets like $T$ for which $T \in T$. By removing all such $T$ from $S_{all}$ we get the set $S_R$.&lt;/p&gt;
 
-&lt;h3 id=&#34;using-quantifiers-more-carefully:3a08b95a8ad598832d09afa687b9b147&#34;&gt;Using Quantifiers More Carefully&lt;/h3&gt;
+&lt;h3 id=&#34;using-quantifiers-more-carefully&#34;&gt;Using Quantifiers More Carefully&lt;/h3&gt;
 
 &lt;p&gt;Note that in some of the  propositions that we used to define the set operations (such as union, intersection, etc.) above, we wrote quantified $x$ without saying which set it is from. For example  $\forall x. [\dots]$. It is much preferred to always say what $x$ is belonging to when we quantify over $x$. The reason is to avoid traps like that of Russell&amp;rsquo;s paradox! This should not worry us in this class, as we will always work with well-defined &lt;em&gt;universes&lt;/em&gt; that include all the elements of the sets that we work with. Therefore, we can always assume implicitly that $x \in U$ (for a well defined set universe $U$) even if not explicitly mentioned.&lt;/p&gt;
 
 &lt;p&gt;#&lt;/p&gt;
 
-&lt;h3 id=&#34;set-practice:3a08b95a8ad598832d09afa687b9b147&#34;&gt;Set Practice&lt;/h3&gt;
+&lt;h3 id=&#34;set-practice&#34;&gt;Set Practice&lt;/h3&gt;
 
 &lt;p&gt;Here are some practice problems involving sets.  We won&amp;rsquo;t go through
 these in class, but you should ask questions about any are unclear.  (At
@@ -740,10 +743,10 @@ x&lt;em&gt;{7}) \wedge (x&lt;/em&gt;{25} \vee x&lt;em&gt;{47} \vee \overline{x&l
 
 &lt;p&gt;\begin{tabular}{cc|cc}
 $P$ &amp;amp; $Q$ &amp;amp; $P \implies Q$ &amp;amp; $P \oplus Q$ \ \hline
-\T &amp;amp; \T   &amp;amp; \T &amp;amp; \F \
-\T &amp;amp; \F   &amp;amp; \F &amp;amp; \T \
-\F &amp;amp; \T   &amp;amp; \T &amp;amp; \T \
-\F &amp;amp; \F   &amp;amp; \T &amp;amp; \F \
+\T &amp;amp; \T   &amp;amp; \T &amp;amp; \F &lt;br /&gt;
+\T &amp;amp; \F   &amp;amp; \F &amp;amp; \T &lt;br /&gt;
+\F &amp;amp; \T   &amp;amp; \T &amp;amp; \T &lt;br /&gt;
+\F &amp;amp; \F   &amp;amp; \T &amp;amp; \F &lt;br /&gt;
 \end{tabular}&lt;/p&gt;
 
 &lt;p&gt;The output of the operator is \T\ if and only if the inputs do match &lt;em&gt;one row&lt;/em&gt; where the output is \T.  So, to get a DNF we can go over all the rows where hte output is \T, and for each write a clause that means we &lt;em&gt;are&lt;/em&gt; in that row. Then we OR all such (conjunctive) clauses. For example, for $P \oplus Q$ we get&lt;/p&gt;
@@ -754,10 +757,10 @@ $P$ &amp;amp; $Q$ &amp;amp; $P \implies Q$ &amp;amp; $P \oplus Q$ \ \hline
 
 &lt;p&gt;\begin{tabular}{cc|cc}
 $P$ &amp;amp; $Q$ &amp;amp; $P \implies Q$ &amp;amp; $P \oplus Q$ \ \hline
-\T &amp;amp; \T   &amp;amp; \T &amp;amp; \F \
-\T &amp;amp; \F   &amp;amp; \F &amp;amp; \T \
-\F &amp;amp; \T   &amp;amp; \T &amp;amp; \T \
-\F &amp;amp; \F   &amp;amp; \T &amp;amp; \F \
+\T &amp;amp; \T   &amp;amp; \T &amp;amp; \F &lt;br /&gt;
+\T &amp;amp; \F   &amp;amp; \F &amp;amp; \T &lt;br /&gt;
+\F &amp;amp; \T   &amp;amp; \T &amp;amp; \T &lt;br /&gt;
+\F &amp;amp; \F   &amp;amp; \T &amp;amp; \F &lt;br /&gt;
 \end{tabular}&lt;/p&gt;
 
 &lt;p&gt;The output of the operator is \T\ if and only if the inputs do not match &lt;em&gt;any row&lt;/em&gt; where the output is \F.  So, to get a CNF we can go over all the rows where hte output is \F, and for each write a clause that means we are &lt;em&gt;not&lt;/em&gt; in that row. Then we AND all such clauses. For example, for $P \oplus Q$ we get&lt;/p&gt;
@@ -791,7 +794,7 @@ $(A \lor B \lor C \lor D)$ we do another trick of breaking them into smaller par
       <guid>https://uvacs2102.github.io/class5/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule:d690e1859ec274fb7ed997cd7db3fba5&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps2&#34;&gt;&lt;strong&gt;Problem Set 2&lt;/strong&gt;&lt;/a&gt; is due &lt;strong&gt;Friday at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
 
@@ -811,7 +814,7 @@ $(A \lor B \lor C \lor D)$ we do another trick of breaking them into smaller par
   would include a proof that no shorter formula exists.
    &lt;/div&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;links:d690e1859ec274fb7ed997cd7db3fba5&#34;&gt;Links&lt;/h2&gt;
+&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
 
 &lt;p&gt;If you want to learn more about how to learn the logic implemented by a chip
 and cryptosystems used in car immobolizers, see &lt;a href=&#34;https://www.cs.virginia.edu/~evans/pubs/usenix08/usenix08.pdf&#34;&gt;&lt;em&gt;Reverse-Engineering a
@@ -826,7 +829,7 @@ cars.&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;notes-and-questions:d690e1859ec274fb7ed997cd7db3fba5&#34;&gt;Notes and Questions&lt;/h1&gt;
+&lt;h1 id=&#34;notes-and-questions&#34;&gt;Notes and Questions&lt;/h1&gt;
 
 &lt;p&gt;&lt;strong&gt;Definition: satisfiable.&lt;/strong&gt; A logical formula is &lt;em&gt;satisfiable&lt;/em&gt; if there
   is &lt;em&gt;some&lt;/em&gt; way to make it &lt;strong&gt;true&lt;/strong&gt;.  That is, there is at least one
@@ -872,7 +875,7 @@ involving 5 variables?&lt;/p&gt;
 
 &lt;!--page--&gt;
 
-&lt;h2 id=&#34;logical-quantifiers:d690e1859ec274fb7ed997cd7db3fba5&#34;&gt;Logical Quantifiers&lt;/h2&gt;
+&lt;h2 id=&#34;logical-quantifiers&#34;&gt;Logical Quantifiers&lt;/h2&gt;
 
 &lt;p&gt;$\forall x \in S. P(x)$ means $P$ holds for &lt;em&gt;every&lt;/em&gt; element of $S$.&lt;br /&gt;
 $\exists x \in S. P(x)$ means $P$ holds for &lt;em&gt;at least one&lt;/em&gt; element of $S$.&lt;/p&gt;
