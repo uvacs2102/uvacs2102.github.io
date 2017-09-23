@@ -17,7 +17,7 @@
       <guid>https://uvacs2102.github.io/class10/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule:cefb84ebc6e45e7105a37c4f4d413033&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;This week you should finish reading MCS Chapter 4 (section 4.5) and
 Section 5.1.  We will discuss Induction (Section 5.1) next class.&lt;/p&gt;
@@ -82,7 +82,7 @@ what do we know about their cardinalities?&lt;/p&gt;
 
 &lt;p&gt;#&lt;/p&gt;
 
-&lt;h1 id=&#34;induction-principle&#34;&gt;Induction Principle&lt;/h1&gt;
+&lt;h1 id=&#34;induction-principle:cefb84ebc6e45e7105a37c4f4d413033&#34;&gt;Induction Principle&lt;/h1&gt;
 
 &lt;p&gt;Let $P$ be a predicated on $\mathbb{N}$.  If&lt;/p&gt;
 
@@ -97,7 +97,7 @@ what do we know about their cardinalities?&lt;/p&gt;
 &lt;li&gt;$P(m)$ is true for all $m \in \mathbb{N}$.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;template-for-induction-proofs&#34;&gt;Template for Induction Proofs&lt;/h2&gt;
+&lt;h2 id=&#34;template-for-induction-proofs:cefb84ebc6e45e7105a37c4f4d413033&#34;&gt;Template for Induction Proofs&lt;/h2&gt;
 
 &lt;ol&gt;
 &lt;li&gt;State, &amp;ldquo;We prove by induction.&amp;rdquo;&lt;/li&gt;
@@ -109,7 +109,7 @@ what do we know about their cardinalities?&lt;/p&gt;
 
 &lt;p&gt;How is the method of &lt;em&gt;proof by induction principle&lt;/em&gt; similar to and different from &lt;em&gt;proof by well-ordering principle&lt;/em&gt;?&lt;/p&gt;
 
-&lt;h1 id=&#34;power-sets&#34;&gt;Power Sets&lt;/h1&gt;
+&lt;h1 id=&#34;power-sets:cefb84ebc6e45e7105a37c4f4d413033&#34;&gt;Power Sets&lt;/h1&gt;
 
 &lt;p&gt;The &lt;strong&gt;power set&lt;/strong&gt; of $A$ ($\textrm{pow}(A)$)is the set of all subsets of $A$:
 $$
@@ -146,7 +146,7 @@ can get on your own.)&lt;/p&gt;
       <guid>https://uvacs2102.github.io/class9/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule:b1685b9d514e4fd02cc72721228d457c&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;This week you should finish reading MCS Chapter 4 (section 4.5) and
 Section 5.1.  We will discuss Induction (Section 5.1) next class.&lt;/p&gt;
@@ -178,7 +178,7 @@ confusion!&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;total-and-partial-functions&#34;&gt;Total and Partial Functions&lt;/h2&gt;
+&lt;h2 id=&#34;total-and-partial-functions:b1685b9d514e4fd02cc72721228d457c&#34;&gt;Total and Partial Functions&lt;/h2&gt;
 
 &lt;p&gt;A &lt;strong&gt;function&lt;/strong&gt; is a mathematical datatype that associates elements from
 one set, called the &lt;em&gt;domain&lt;/em&gt;, with elements from another set, called a
@@ -190,7 +190,7 @@ one set, called the &lt;em&gt;domain&lt;/em&gt;, with elements from another set,
 associated codomain element; if the function is &lt;em&gt;partial&lt;/em&gt;, there may be
 elements of the domain that do not have an associated codomain element.&lt;/p&gt;
 
-&lt;h2 id=&#34;relation-relationships&#34;&gt;Relation Relationships&lt;/h2&gt;
+&lt;h2 id=&#34;relation-relationships:b1685b9d514e4fd02cc72721228d457c&#34;&gt;Relation Relationships&lt;/h2&gt;
 
 &lt;p&gt;Definition review: &lt;strong&gt;binary relation&lt;/strong&gt;, $R$, consists of a domain set,
 $A$, and a codomain set, $B$, and a subset of $A \times B$ called the
@@ -234,7 +234,7 @@ f. $G - (S \times T) = \emptyset$.
 g. $(S \times T) - G = \emptyset$.
 h. $(S \times T) - G \neq \emptyset$.&lt;/p&gt;
 
-&lt;h1 id=&#34;relation-practice&#34;&gt;Relation Practice&lt;/h1&gt;
+&lt;h1 id=&#34;relation-practice:b1685b9d514e4fd02cc72721228d457c&#34;&gt;Relation Practice&lt;/h1&gt;
 
 &lt;p&gt;The &lt;em&gt;inverse&lt;/em&gt; of a relation $R: A \rightarrow B, G \subseteq A \times B$ is defined by reversing all the arrows:
 $$
@@ -247,7 +247,7 @@ $$&lt;/p&gt;
 
 &lt;p&gt;What does it mean if $R \equiv R^{-1}$?&lt;/p&gt;
 
-&lt;h1 id=&#34;set-cardinality&#34;&gt;Set Cardinality&lt;/h1&gt;
+&lt;h1 id=&#34;set-cardinality:b1685b9d514e4fd02cc72721228d457c&#34;&gt;Set Cardinality&lt;/h1&gt;
 
 &lt;p&gt;&lt;strong&gt;Finite Cardinality.&lt;/strong&gt; The book&amp;rsquo;s definition is: ``If $A$ is a finite set, the &lt;em&gt;cardinality&lt;/em&gt; of
   $A$, written $|A|$, is the number of elements in $A$.&amp;rdquo;&lt;/p&gt;
@@ -927,7 +927,7 @@ list.&lt;/p&gt;
       <guid>https://uvacs2102.github.io/class4/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule:a69bef1e5f2725722420b5c4a32452b2&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps1&#34;&gt;&lt;strong&gt;Problem Set 1&lt;/strong&gt;&lt;/a&gt; is due &lt;strong&gt;Friday at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
 
@@ -943,7 +943,7 @@ Quantifiers).&lt;/p&gt;
    &lt;a href=&#34;https://uvacs2102.github.io/docs/class4.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes and Questions&lt;/b&gt;&lt;/a&gt;.
    &lt;/div&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
+&lt;h2 id=&#34;links:a69bef1e5f2725722420b5c4a32452b2&#34;&gt;Links&lt;/h2&gt;
 
 &lt;p&gt;Scott Brown, &lt;a href=&#34;http://ms.appliedprobability.org/data/files/selected%20articles/39-1-1.pdf&#34;&gt;&lt;em&gt;The Life and Work of Augustus De Morgan&lt;/em&gt;&lt;/a&gt;. Applied Probability 2006.&lt;/p&gt;
 
@@ -953,9 +953,9 @@ Quantifiers).&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;notes-and-questions&#34;&gt;Notes and Questions&lt;/h1&gt;
+&lt;h1 id=&#34;notes-and-questions:a69bef1e5f2725722420b5c4a32452b2&#34;&gt;Notes and Questions&lt;/h1&gt;
 
-&lt;h2 id=&#34;well-ordering-principle-proof&#34;&gt;Well-Ordering Principle Proof&lt;/h2&gt;
+&lt;h2 id=&#34;well-ordering-principle-proof:a69bef1e5f2725722420b5c4a32452b2&#34;&gt;Well-Ordering Principle Proof&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;Odd Summation.&lt;/strong&gt; (Problem 2.12) Prove that for all $n &amp;gt; 0$, the sum of the first $n$ odd numbers is $n^2$.&lt;/p&gt;
 
