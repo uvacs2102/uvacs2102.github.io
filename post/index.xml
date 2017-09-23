@@ -6,8 +6,19 @@
     <description>Recent content in Posts on cs2102: Discrete Math</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 21 Sep 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 23 Sep 2017 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://uvacs2102.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Problem Set 5</title>
+      <link>https://uvacs2102.github.io/ps5posted/</link>
+      <pubDate>Sat, 23 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/ps5posted/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps5&#34;&gt;&lt;strong&gt;Problem Set 4&lt;/strong&gt;&lt;/a&gt; [&lt;a href=&#34;https://uvacs2102.github.io/docs/ps5.pdf&#34;&gt;PDF&lt;/a&gt;] is now posted and
+is due &lt;strong&gt;Friday, 29 September at 6:29:00pm&lt;/strong&gt;.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Class 10: Set Cardinality, Induction</title>
@@ -17,7 +28,7 @@
       <guid>https://uvacs2102.github.io/class10/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule:cefb84ebc6e45e7105a37c4f4d413033&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;This week you should finish reading MCS Chapter 4 (section 4.5) and
 Section 5.1.  We will discuss Induction (Section 5.1) next class.&lt;/p&gt;
@@ -82,7 +93,7 @@ what do we know about their cardinalities?&lt;/p&gt;
 
 &lt;p&gt;#&lt;/p&gt;
 
-&lt;h1 id=&#34;induction-principle:cefb84ebc6e45e7105a37c4f4d413033&#34;&gt;Induction Principle&lt;/h1&gt;
+&lt;h1 id=&#34;induction-principle&#34;&gt;Induction Principle&lt;/h1&gt;
 
 &lt;p&gt;Let $P$ be a predicated on $\mathbb{N}$.  If&lt;/p&gt;
 
@@ -97,7 +108,7 @@ what do we know about their cardinalities?&lt;/p&gt;
 &lt;li&gt;$P(m)$ is true for all $m \in \mathbb{N}$.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;template-for-induction-proofs:cefb84ebc6e45e7105a37c4f4d413033&#34;&gt;Template for Induction Proofs&lt;/h2&gt;
+&lt;h2 id=&#34;template-for-induction-proofs&#34;&gt;Template for Induction Proofs&lt;/h2&gt;
 
 &lt;ol&gt;
 &lt;li&gt;State, &amp;ldquo;We prove by induction.&amp;rdquo;&lt;/li&gt;
@@ -109,7 +120,7 @@ what do we know about their cardinalities?&lt;/p&gt;
 
 &lt;p&gt;How is the method of &lt;em&gt;proof by induction principle&lt;/em&gt; similar to and different from &lt;em&gt;proof by well-ordering principle&lt;/em&gt;?&lt;/p&gt;
 
-&lt;h1 id=&#34;power-sets:cefb84ebc6e45e7105a37c4f4d413033&#34;&gt;Power Sets&lt;/h1&gt;
+&lt;h1 id=&#34;power-sets&#34;&gt;Power Sets&lt;/h1&gt;
 
 &lt;p&gt;The &lt;strong&gt;power set&lt;/strong&gt; of $A$ ($\textrm{pow}(A)$)is the set of all subsets of $A$:
 $$
@@ -780,7 +791,7 @@ $(A \lor B \lor C \lor D)$ we do another trick of breaking them into smaller par
       <guid>https://uvacs2102.github.io/class5/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule:d690e1859ec274fb7ed997cd7db3fba5&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps2&#34;&gt;&lt;strong&gt;Problem Set 2&lt;/strong&gt;&lt;/a&gt; is due &lt;strong&gt;Friday at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
 
@@ -800,7 +811,7 @@ $(A \lor B \lor C \lor D)$ we do another trick of breaking them into smaller par
   would include a proof that no shorter formula exists.
    &lt;/div&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;links:d690e1859ec274fb7ed997cd7db3fba5&#34;&gt;Links&lt;/h2&gt;
+&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
 
 &lt;p&gt;If you want to learn more about how to learn the logic implemented by a chip
 and cryptosystems used in car immobolizers, see &lt;a href=&#34;https://www.cs.virginia.edu/~evans/pubs/usenix08/usenix08.pdf&#34;&gt;&lt;em&gt;Reverse-Engineering a
@@ -815,7 +826,7 @@ cars.&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;notes-and-questions:d690e1859ec274fb7ed997cd7db3fba5&#34;&gt;Notes and Questions&lt;/h1&gt;
+&lt;h1 id=&#34;notes-and-questions&#34;&gt;Notes and Questions&lt;/h1&gt;
 
 &lt;p&gt;&lt;strong&gt;Definition: satisfiable.&lt;/strong&gt; A logical formula is &lt;em&gt;satisfiable&lt;/em&gt; if there
   is &lt;em&gt;some&lt;/em&gt; way to make it &lt;strong&gt;true&lt;/strong&gt;.  That is, there is at least one
@@ -861,7 +872,7 @@ involving 5 variables?&lt;/p&gt;
 
 &lt;!--page--&gt;
 
-&lt;h2 id=&#34;logical-quantifiers:d690e1859ec274fb7ed997cd7db3fba5&#34;&gt;Logical Quantifiers&lt;/h2&gt;
+&lt;h2 id=&#34;logical-quantifiers&#34;&gt;Logical Quantifiers&lt;/h2&gt;
 
 &lt;p&gt;$\forall x \in S. P(x)$ means $P$ holds for &lt;em&gt;every&lt;/em&gt; element of $S$.&lt;br /&gt;
 $\exists x \in S. P(x)$ means $P$ holds for &lt;em&gt;at least one&lt;/em&gt; element of $S$.&lt;/p&gt;
@@ -916,135 +927,6 @@ is due &lt;strong&gt;Friday, 8 September at 6:29:00pm&lt;/strong&gt;.&lt;/p&gt;
 suggested resources beyond the course materials. If you find other
 useful resources, please post them in slack and we&amp;rsquo;ll add them to this
 list.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Class 4: Logical Operators and Formulas</title>
-      <link>https://uvacs2102.github.io/class4/</link>
-      <pubDate>Thu, 31 Aug 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://uvacs2102.github.io/class4/</guid>
-      <description>
-
-&lt;h3 id=&#34;schedule:a69bef1e5f2725722420b5c4a32452b2&#34;&gt;Schedule&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps1&#34;&gt;&lt;strong&gt;Problem Set 1&lt;/strong&gt;&lt;/a&gt; is due &lt;strong&gt;Friday at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;Next week, we will cover the rest of Chapter 3 (Satisfiability and
-Quantifiers).&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;
-   &lt;center&gt;
-&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;9785beead9024671b78c03e16f5bfba2&#34; data-ratio=&#34;1.77777777777778&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
-   &lt;/center&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;highlightm&#34;&gt;
-   &lt;a href=&#34;https://uvacs2102.github.io/docs/class4.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes and Questions&lt;/b&gt;&lt;/a&gt;.
-   &lt;/div&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;links:a69bef1e5f2725722420b5c4a32452b2&#34;&gt;Links&lt;/h2&gt;
-
-&lt;p&gt;Scott Brown, &lt;a href=&#34;http://ms.appliedprobability.org/data/files/selected%20articles/39-1-1.pdf&#34;&gt;&lt;em&gt;The Life and Work of Augustus De Morgan&lt;/em&gt;&lt;/a&gt;. Applied Probability 2006.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.claymath.org/content/correspondence-de-morgan-0&#34;&gt;Ada&amp;rsquo;s Correspondence with De Morgan&lt;/a&gt; (Clay Mathematics Institute)&lt;/p&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;notes-and-questions:a69bef1e5f2725722420b5c4a32452b2&#34;&gt;Notes and Questions&lt;/h1&gt;
-
-&lt;h2 id=&#34;well-ordering-principle-proof:a69bef1e5f2725722420b5c4a32452b2&#34;&gt;Well-Ordering Principle Proof&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;Odd Summation.&lt;/strong&gt; (Problem 2.12) Prove that for all $n &amp;gt; 0$, the sum of the first $n$ odd numbers is $n^2$.&lt;/p&gt;
-
-&lt;div class=&#34;biggap&#34;&gt;&lt;/div&gt;
-#
-#
-
-## Notations
-
-Mathematics and other domains often use many symbols to mean the same
-thing.  Section 3.2 of the book gives some common notations, but there
-are others in common use.
-
-\begin{center}
-\begin{tabular}{cccc}
-English &amp; Logic &amp; C, Java, Rust &amp; Python \\ \hline
-$P$ \smallcaps{implies} $Q$ &amp; $P \implies Q$ {\em or} $P \longrightarrow Q$ &amp; - &amp; - \\
-\smallcaps{not}$(P)$ &amp; $\neg P$ {\em or} $\overline{P}$ &amp; \verb+!p+ &amp; \verb+not p+ \\
-$P$ \smallcaps{and} $Q$ &amp; $P \wedge Q$ &amp; \verb+p &amp;&amp; q+ &amp; \verb+p and q+ \\
-$P$ \smallcaps{or} $Q$ &amp; $P \vee Q$ &amp; \verb+P || Q+ &amp; \verb+p or q+ \\
-$P$ \smallcaps{xor} $Q$ &amp; $P \oplus Q$ &amp; \verb+p ^ q+ (bitwise) or \verb+p != q+ &amp; \verb+p ^ q+ \\
-\end{tabular}
-\end{center}
-
-For what values in Java or C are \verb+p ^ q+ and \verb+p != q+ both valid, but have different meanings?
-
-## Logical Formulas
-
-\begin{center}
-\begin{tabular}{c|c|c}
-$P$ &amp; \smallcaps{not}$(P)$ &amp; \_\_\_\_\_\_\_\_ \\ \hline
-\T &amp; \F &amp; \\
-\F &amp; \T &amp; \\
-\end{tabular}
-\end{center}
-
-How many one-input Boolean operators are there?  How many do we need to
-produce them all?
-
-#
-
-\begin{center}
-\begin{tabular}{cc|c|c|c|c|c}
-$P$ &amp; $Q$ &amp; $P \wedge Q$ &amp; $P \vee Q$ &amp; $P \implies Q$ &amp; \_\_\_\_\_\_\_\_ &amp; $P \oplus Q$ \\ \hline
-\T &amp; \T   &amp; \T &amp; \T &amp; &amp; \T &amp; \F \\
-\T &amp; \F   &amp;    &amp; \T &amp; &amp; \F &amp; \T \\
-\F &amp; \T   &amp;    &amp; \T &amp; &amp; \F &amp; \T \\
-\F &amp; \F   &amp;   &amp; \F &amp;  &amp; \T &amp; \F \\
-\end{tabular}
-\end{center}
-
-How many two-input Boolean operators are there?
-
-#
-
-**De Morgan&#39;s Laws:** 
-$$\neg(P \wedge Q) \equiv (\neg P) \vee (\neg Q)  \qquad \neg(P \vee Q) \equiv (\neg P) \wedge (\neg Q)$$
-
-How can these be written without the $\neg$ in front?
-
-##
-
-Prove that it is possible to make all two-input Boolean operators using
-just \smallcaps{not} and any _odd_ two-input operator. (An operator is _odd_,
-if the number of outputs that are **True** are odd.)
-
-##
-
-**Definition: valid.** A logical formula is _valid_ if there is no way
-  to make it **false**.  That is, no matter what truth values its
-  variables have, it is always **true**.  (Another name for this is a
-  _tautology_.)
-
-**Definition: satisfiable.** A logical formula is _satisfiable_ if there
-  is _some_ way to make it **true**.  That is, there is at least one
-  assignment of truth value to its variables that makes the forumla
-  true.
-
-For each of the formulas below, determine if it is _valid_ and if it is _satisfiable_.
-
-1. $(P \vee \neg P)$
-
-2. $(P \vee Q) \wedge (\neg P \vee Q)$
-
-3. $((P \implies Q) \wedge (Q \implies P)) \vee (P \xor Q)$
-
-
-
-&lt;/div&gt;
 </description>
     </item>
     
