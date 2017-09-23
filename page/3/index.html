@@ -34,14 +34,14 @@
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://uvacs2102.github.io/touch-icon-144-precomposed.png">
 <link href="https://uvacs2102.github.io/favicon.png" rel="icon">
 
-<meta name="generator" content="Hugo 0.17" />
+<meta name="generator" content="Hugo 0.16-DEV" />
 
   <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
 
-<link href='https://fonts.googleapis.com/css?family=Merriweather:300%7CRaleway%7COpen+Sans' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,400i,700" rel="stylesheet">
 <link rel="stylesheet" href="https://uvacs2102.github.io/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://uvacs2102.github.io/css/style.css">
 
@@ -76,25 +76,35 @@
 
 
   
-<a href="https://uvacs2102.github.io/f16/syllabus">Syllabus</a>
+<a href="https://uvacs2102.github.io/syllabus">Syllabus</a>
 
-<a href="https://uvacs2102.github.io/f16/schedule">Schedule</a>
+<a href="https://uvacs2102.github.io/schedule">Schedule</a>
 
-<a href="https://uvacs2102.github.io/f16/officehours">Office Hours</a>
+<a href="https://uvacs2102.github.io/officehours">Office Hours</a>
 
-<a href="https://uvacs2102.github.io/f16/docs/mcs.pdf">MCS Book</a>
+<a href="https://uvacs2102.github.io/docs/mcs.pdf">MCS Book</a>
 
-<a href="https://uvacs2102.github.io/f16/pledge">Course Pledge</a>
+<a href="https://uvacs2102.github.io/resources">Resources</a>
 
-<a href="https://collab.itc.virginia.edu/portal/site/e0b17949-c94c-466b-835a-196381f3f911?panel=Main">Collab Site</a>
+<a href="https://uvacs2102.github.io/"></a>
 
-<a href="https://uvacs2102.github.io/f16/docs/finalprep.pdf">Final</a>
+<a href="https://uvacs2102.github.io/pledge">Course Pledge</a>
 
-<a href="https://uvacs2102.github.io/f16/ps/pszhighlights">PS Highlights</a>
+<a href="https://uvacs2102.github.io/ps/ps1">Problem Set 1</a>
 
-<a href="https://uvacs2102.github.io/f16/challenges">Challenges</a>
+<a href="https://uvacs2102.github.io/ps/ps2">Problem Set 2</a>
 
-<a href="https://uvacs2102.github.io/f16/post">Posts</a>
+<a href="https://uvacs2102.github.io/ps/ps3">Problem Set 3</a>
+
+<a href="https://uvacs2102.github.io/ps/ps4">Problem Set 4</a>
+
+<a href="https://uvacs2102.github.io/ps/ps5">Problem Set 5</a>
+
+<a href="https://collab.its.virginia.edu/portal/site/9bd99d1c-6f18-4542-a7d1-8ffc4fccbd3d">Collab Site</a>
+
+<a href="https://uvacs2102.github.io/"></a>
+
+<a href="https://uvacs2102.github.io/post">Posts</a>
 
 
 </nav>
@@ -139,561 +149,15 @@
   </header>
   
   
-  <p class="fronthead"><A href="/ps8revisions/">Problem Set 8 Revisions</a> (Thu, 3 Nov 2016)</p>
-    <p>There are three important revisions to <a href="/docs/ps8.pdf">Problem Set 8</a>:</p>
-
-<ol>
-<li><p>The definition of <em>height</em> for Problem 4 should have included that
-the height of the <strong>null</strong> tree is 0.</p></li>
-
-<li><p>The definition of the <em>OrderedBinaryTree</em> before Problem 7 did not
-make sense for constructing nodes where one (or both) of the subtrees
-are <strong>null</strong>.  I have added clauses that allow empty trees to be used as
-the subtrees in a node.  Without these, it would not be possible to
-construct any trees (other than the base <strong>null</strong> tree), since it would
-not be sensible to satisfy the maximum or minimum constraints for the
-null tree.  It makes more sense to consider these undefined for the
-<strong>null</strong> tree, so it would be impossible to satisfy the constructor
-constraints without adding the disjunction clauses that allow the
-sub-trees to be <strong>null</strong>.</p></li>
-
-<li><p>For Problem 11, the definition of length using <code>list_accumulate</code>
-should be <code>list_accumulate(lambda a, b: b + 1, lst, 0)</code>.</p></li>
-</ol>
-
-<p>The version now posted has these revisions.  If you already found
-work-arounds to these problems in your solutions, you can add a note to
-your assignment indicating this and don&rsquo;t need to revisit them, but
-otherwise, please solve the revised problems.</p>
- 
-  
-  <p class="fronthead"><A href="/class18/">Class 18: Infinite Sets</a> (Tue, 1 Nov 2016)</p>
-    
-
-<h3 id="schedule">Schedule</h3>
-
-<p>Before Thursday, everyone should have finished reading MCS Chapter 8.</p>
-
-<p><a href="/ps/ps8"><strong>Problem Set 8</strong></a> is due <strong>Friday (4 November) at 6:29pm</strong>.</p>
-
-<p>I am out of town Wednesday and will not be able to hold my normal office
-hours.</p>
-
-<p>Friday, 4 November at 11am (Rotunda Dome Room): <strong>Steve Huffman</strong> (BSCS
-2005, co-founder and CEO of Reddit), <em>Computer Science Distinguished
-Alumni Speaker</em>.</p>
-
-<h2 id="exam-2">Exam 2</h2>
-
-<p><strong>Exam 2</strong> will be in class on <strong>Thursday, 10 November</strong>.  It will be
-  similar in format to Exam 1.  If you need to make special arrangements
-  for taking Exam 2, please contact me by the end of this week (Nov 6).</p>
-
-<p><strong>Resources.</strong> As with Exam 1, you will be permitted to use a single
-paper page of notes that you prepare and bring to the exam.  It is fine
-to collaborate with others to prepare your notes.  The page should be no
-larger than a US Letter size page ($8.5 \times 11$ inches), and you may
-write (or print) on both sides of the page.  No other resources are
-permitted during the exam.</p>
-
-<p><strong>Content.</strong> The problems on the exam will cover material from Classes
-  1&ndash;17, Problem Sets 1&ndash;8 (including the provided solutions), and MCS
-  Chapters 1&ndash;7.  Exam 2 will emphasize material covered since Exam 1
-  (Classes 12&ndash;17, Problem Sets 6&ndash;8, and MCS Chapters 6&ndash;7), but will
-  also include questions that cover earlier material in the class.  In
-  particular, you should not be at all surprised if Exam 2 includes
-  questions very similar to Problem 4 and Problem 8 from Exam 1, so it
-  would be quite foolish for any student to go into the exam without
-  making sure they understand those problems and their solutions.  There
-  will not be any questions about trick-xor-treat protocols, despite
-  their practical importance and mathematical beauty.  If you understand
-  the problems on the problem sets and questions on the class notes well
-  enough to be able to answer similar questions, you should do well on
-  the exam.</p>
-
-<p>The main topics the exam will cover include:</p>
-
-<ul>
-<li><p>State Machines (how to interpret and reason about a state machine
-given its formal description, how to model a problem with a state
-machine)</p></li>
-
-<li><p>Invariant Principle (you should be able to construct a proof that uses
-the invariant principle to reason about properties of reachable
-states, and be able to understand proofs that use and mis-use the
-invariant principle)</p></li>
-
-<li><p>Termination Proofs (you should be able to prove a state machine
-eventually reaches a terminating state, or that a program eventually
-terminates)</p></li>
-
-<li><p>Stable Matching (you should understand the definition of a stable
-matching and the Gale-Shalpey algorithm for finding a stable matching,
-and be able to prove properties about matchings)</p></li>
-
-<li><p>Recursive Data Types (how to define a data type constructively,
-operations on recursive data types; lists, trees, and other
-recursively defined data types)</p></li>
-
-<li><p>Structural Induction (how to use the principle of structural induction
-to reason about all objects of a recursive data type; understand the
-connections and differences between structural induction, invariant
-principle, and induction on the natural numbers)</p></li>
-</ul>
-
-<p>For most students, I believe the best way to prepare for the exam will
-be to (1) go over exam 1 and the problem sets and their solutions, and
-make sure you understand well any of the problems you did not get
-before; (2) go through the questions in the class notes and convince
-yourself you can answer them well; (3) re-read chapters of the book,
-solving the associated practice problems, especially for any sections on
-topics where you had difficulty on the problem sets.  If you do #1 and
-understand well the problems on the problem set, you should be confident
-you&rsquo;ll do well on the exam; if you struggled on the problem sets, you
-would benefit from doing #2 and #3 as well.  If you have anything you
-want me to review before the exam, post on slack before Monday (7
-November).</p>
-
-<p><div class="notpdf">
-   <center>
-<script async class="speakerdeck-embed" data-id="bce1aef8374f4dffbf5f11d517397e0a" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-   </center></p>
-
-<h1 id="links">Links</h1>
-
-<p>Apostolos Doxiadis and <a href="https://people.eecs.berkeley.edu/~christos/">Christos Papadimitriou</a>. <a href="https://www.amazon.com/Logicomix-search-truth-Apostolos-Doxiadis/dp/1596914521/"><em>Logicomix: An epic
-search for
-truth</em></a>, Bloomsbury USA, 2009.</p>
-
-<p><a href="http://pi.math.virginia.edu/History/1800s.htm">Math Professors at UVa (1825-1900)</a></p>
-
-<blockquote>
-<p><em>Courtenay&rsquo;s tenure at Virginia was, in contrast to that of his predecessor, a resounding success. He was described as a model professor: &ldquo;He never by look, act, word, or emphasis disparaged the efforts or undervalued the acquirements of his pupils. His pleasant smile and kind voice, when he would say, &lsquo;Is that answer perfectly correct?&rsquo; gave hope to many minds struggling with science&rdquo;</em></p>
-</blockquote>
-
-<p><a href="http://www.encyclopediavirginia.org/Bonnycastle_Charles_1796-1840#start_entry">Charles Bonnycastle</a>, UVA&rsquo;s Professor of Mathematics, 1825-1840</p>
-
-<blockquote>
-<p>As mathematics professor, &ldquo;Old Bonny,&rdquo; as he was fondly called, replaced the antiquated British approach to mathematical pedagogy typified by his own father&rsquo;s texts with a new approach borrowed from French mathematicians. British writers had imitated Euclid by clinging to the deductive manner of presenting material. They opened their texts with axioms and definitions and proceeded to the derivation of facts and theorems. Although logically satisfying to mathematicians, the method did little to motivate beginning students. French textbook writers, on the other hand, approached mathematics analytically, leading from concrete examples to abstractions. Bonnycastle introduced this method at the University of Virginia and published his own college textbook, <em>Inductive Geometry, or, An Analysis of the Relations of Form and Magnitude: Commencing with the Elementary Ideas Derived Through the Senses, and Proceeding by a Train of Inductive Reasoning to Develop the Present State of the Science</em> (1834). Painfully prolix even by nineteenth-century standards, the innovative book was not a financial success.  (Excerpt from article by Karen Parshall)</p>
-</blockquote>
-
-<p><div class="highlightm">
-   <a href="/docs/class18.pdf">See PDF Version for <b>Notes</b></a>.
-   </div></p>
-
-<p></div><!--endpdf--></p>
-
-<p><div class="latex"></p>
-
-<h1 id="infinite-sets">Infinite Sets</h1>
-
-<p><strong>Finite Cardinality.</strong> The <em>cardinality</em> of the set
-$$
-\mathbb{N}_k = { n | n \in \mathbb{N} \wedge n &lt; k }
-$$
-is $k$.  If there is a <em>bijection</em> between two sets, they have the same
-cardinality.  (Class 9)</p>
-
-<p>Does this definition tell us the cardinality of $\mathbb{N}$?</p>
-
-<p>###</p>
-
-<p><strong>Definition.</strong> A set $C$ is <em>infinite</em> if there is no bijection between
-  $C$ and any set $\mathbb{N}_k$ (as defined above).</p>
-
-<p><strong>Dedekind-Infinite.</strong> A set $A$ is <em>Dedekind-infinite</em> if and only if there exists a strict subset of $A$ with the same cardinality as $A$.  That is,
-$$\exists B \subset A \ldotp \exists R \ldotp R\ \text{is a bijection between}\ A\ \text{and}\ B.$$</p>
-
-<p>Are the definitions of (standard) <em>infinite</em> and <em>Dedekind-infinite</em>
-equivalent?</p>
-
-<p>##</p>
-
-<p><strong>Definition.</strong> A set $C$ is <em>countable</em> if and only if there exists a
-  surjective function from $\mathbb{N}$ to $C$.  (That is, $\le 1$ arrow
-  out from $\mathbb{N}$, $ge 1$ arrow in to $C$.)</p>
-
-<p><strong>Definition.</strong> A set $C$ is <em>countably infinite</em> if and only if there
-  exists a bijection between $C$ and $\mathbb{N}$.</p>
-
-<p>Must a <em>countable</em> set that is <em>Dedekind-infinite</em> be <em>countably infinite</em>?</p>
-
-<p>Prove that these sets are countable: $\mathbb{Z}$, $\mathbb{N} \times
-\mathbb{N}$, $\mathbb{Q}$ (rationals), $\emptyset$, $\mathbb{N} \cup (\mathbb{N} \times \mathbb{N}) \cup (\mathbb{N} \times \mathbb{N} \times \mathbb{N})$, all finite sequences of elements of $\mathbb{N}$.</p>
-
-<p></div></p>
- 
-  
-  <p class="fronthead"><A href="/ps6comments/">Problem Set 6 Comments</a> (Tue, 1 Nov 2016)</p>
-    <p>The solutions and comments for PS6 are now posted in collab:
-<a href="https://collab.itc.virginia.edu/access/content/group/e0b17949-c94c-466b-835a-196381f3f911/ps6solutions.pdf">PDF</a>.</p>
- 
-  
-  <p class="fronthead"><A href="/ps8announce/">Problem Set 8</a> (Fri, 28 Oct 2016)</p>
-    <p><strong>Problem Set 8</strong> is <a href="/docs/ps8.pdf">now posted</a>, and is due on
-  <strong>Friday, 4 November at 6:29pm</strong>.</p>
- 
-  
-  <p class="fronthead"><A href="/class17/">Class 17: Structural Induction</a> (Thu, 27 Oct 2016)</p>
-    
-
-<h3 id="schedule">Schedule</h3>
-
-<p><a href="/ps/ps7"><strong>Problem Set 7</strong></a> is due <strong>tomorrow at 6:29pm</strong>.</p>
-
-<p>Next week Friday, 4 November at 11am, <strong>Steve Huffman</strong> (BSCS 2005,
-co-founder and CEO of Reddit) will give a Computer Science Distinguished
-Alumni talk in the Rotunda.  If you would like to meet with Steve
-(either at a lunch after the talk or a meeting with students later that
-afternoon), send me an email with a good reason why you should be
-invited (only a very limited number of spaces available).</p>
-
-<p><div class="notpdf">
-   <center>
-<script async class="speakerdeck-embed" data-id="f0c0a93cfbf64e3ba1df906dc4c2e2b5" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-   </center></p>
-
-<p><div class="highlightm">
-   <a href="/docs/class17.pdf">See PDF Version for <b>Notes</b></a>.
-   </div></p>
-
-<p></div><!--endpdf--></p>
-
-<p><div class="latex"></p>
-
-<h1 id="lists">Lists</h1>
-
-<p><strong>Definition.</strong> A <em>list</em> is an ordered sequence of objects.  A list is
-  either the empty list ($\lambda$), or the result of $\text{prepend}(e,
-  l)$ for some object $e$ and list $l$.</p>
-
-<p>\begin{equation<em>}
-\begin{split}
-\text{\em first}(\text{prepend}(e, l)) &amp;= e <br />
-\text{\em rest}(\text{prepend}(e, l)) &amp;= l <br />
-\text{\em empty}(\text{prepend}(e, l)) &amp;= \text{\bf False} <br />
-\text{\em empty}(\text{\bf null}) &amp;= \text{\bf True} <br />
-\end{split}
-\end{equation</em>}</p>
-
-<p><strong>Definition.</strong> The <em>length</em> of a list, $p$, is:
-\begin{equation<em>}
-\begin{split}
-\begin{cases}
-0 &amp; \text{if}\ p\ \text{is \bf null} <br />
-\text{\em length}(q) + 1 &amp; \text{otherwise}\ p = \text{\em prepend}(e, q)\ \text{for some object}\ e\ \text{and some list}\ q <br />
-\end{cases}
-\end{split}
-\end{equation</em>}</p>
-
-<pre><code class="language-Python">def list_length(l):
-    if list_empty(l):
-        return 0
-    else:
-        return 1 + list_length(list_rest(l))
-
-</code></pre>
-
-<p>Prove: for all lists, $p$, <code>list_length(p)</code> returns the length of the list $p$.</p>
-
-<!--page-->
-
-<h2 id="concatenation">Concatenation</h2>
-
-<p><strong>Definition.</strong> The <em>concatenation</em> of two lists, $p = (p_1, p_2, \cdots, p_n)$ and $q = (q_1, q_2, \cdots, q_m)$ is
-$$(p_1, p_2, \cdots, p_n, q_1, q_2, \cdots, q_m).$$</p>
-
-<p>Provide a <em>constructuve</em> definition of <em>concatenation</em>.</p>
-
-<p>#
-##</p>
-
-<p>Prove. For any two lists, $p$ and $q$, $\text{length}(p + q) = \text{length}(p) + \text{length}(q)$.</p>
-
-<p>#
-##</p>
-
-<h2 id="induction-summary">Induction Summary</h2>
-
-<p>\begin{center}
-\begin{tabular}{lccc}
-&amp; {\bf Regular Induction} &amp; {\bf Invariant Principle} &amp; {\bf Structural Induction} \ \hline
-Works on: &amp; natural numbers &amp; state machines &amp; data types <br />
-To prove $P(\cdot)$ &amp; {\em for all natural numbers} &amp; {\em for all reachable states} &amp; {\em for all data type objects} <br />
-Prove {\bf base case(s)} &amp; $P(0)$ &amp; $P(q_0)$ &amp; $P(\text{base object(s)})$ <br />
-and {\bf inductive step} &amp; $\forall m \in \mathbb{N} \ldotp$ &amp; $\forall (q, r) \in G \ldotp $ &amp; $\forall s \in \text{\em Type} \ldotp$ <br />
-  &amp; $P(m) \implies P(m+1)$ &amp; $P(q) \implies P&reg;$ &amp; $P(s) \implies P(t)$ <br />
- &amp; &amp; &amp; $\quad \forall t\ \text{constructable from}\ s$ \
-\end{tabular}
-\end{center}</p>
-
-<h1 id="challenge-response-protocols">Challenge-Response Protocols</h1>
-
-<ol>
-<li><p><strong>Verifier:</strong> picks random challenge, $y$.</p></li>
-
-<li><p><strong>Prover:</strong> proves knowledge of $x$ by revealing $f(x, y)$.</p></li>
-
-<li><p><strong>Verifer:</strong> can verify prover knows $x$ from response, but learns nothing (useful) about $x$.</p></li>
-</ol>
-
-<p>How can you know the website you are sending your password to is what you think it is?</p>
-
-<p></div></p>
- 
-  
-  <p class="fronthead"><A href="/class16/">Class 16: Recursive Data Types</a> (Tue, 25 Oct 2016)</p>
-    
-
-<h3 id="schedule">Schedule</h3>
-
-<p>You should read MCS Chapter 7 this week.</p>
-
-<p><a href="/ps/ps7"><strong>Problem Set 7</strong></a> is due <strong>28 October (Friday) at 6:29pm</strong>.</p>
-
-<p><div class="notpdf">
-   <center>
-<script async class="speakerdeck-embed" data-id="b350014169664ae49e537a2999b851b2" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-   </center></p>
-
-<h2 id="links">Links</h2>
-
-<p>Python code from class and list definitions: <a href="/docs/pairs.py">pairs.py</a></p>
-
-<p><div class="highlightm">
-   <a href="/docs/class16.pdf">See PDF Version for <b>Notes</b></a>.
-   </div></p>
-
-<p></div><!--endpdf--></p>
-
-<p><div class="latex"></p>
-
-<h1 id="structural-induction">Structural Induction</h1>
-
-<p>We can show a property holds for <em>all objects of a data type</em> by:</p>
-
-<ol>
-<li><p>Showing the property holds for all base objects.</p></li>
-
-<li><p>Showing that all the ways of constructing new objects, preserve the property.</p></li>
-</ol>
-
-<p>What is the difference between scalar data and compound data structures?</p>
-
-<p>#</p>
-
-<h1 id="pairs">Pairs</h1>
-
-<p><strong>Definition.</strong> A $\text{\em Pair}$ is a datatype that supports these three operations:<br />
-\begin{quote}
-     $\text{\em make_pair}: \text{\em Object} \times \text{\em Object} \rightarrow \text{\em Pair}$<br />
-     $\text{\em pair_first}: \text{\em Pair} \rightarrow \text{\em Object}$\<br />
-     $\text{\em pair_last}: \text{\em Pair} \rightarrow \text{\em Object}$\<br />
-\end{quote}
-where, for any objects $a$ and $b$, $\text{\em pair_first}(\text{\em make_pair}(a, b)) = a$ and $\text{\em pair_last}(\text{\em make_pair}(a, b)) = b$.</p>
-
-<h1 id="lists">Lists</h1>
-
-<p><strong>Definition (1).</strong> A <em>List</em> is either (1) a <em>Pair</em> where the second part of
-  the pair is a <em>List</em>, or (2) the empty list.</p>
-
-<p><strong>Definition (2).</strong> A <em>List</em> is a ordered sequence of objects.</p>
-
-<!--page-->
-
-<h2 id="list-operations">List Operations</h2>
-
-<p>\begin{equation<em>}
-\begin{split}
-\text{\em first}(\text{\em prepend}(e, l)) &amp;= \fillin <br />
-\text{\em rest}(\text{\em prepend}(e, l)) &amp;= \fillin <br />
-\text{\em empty}(\text{\em prepend}(e, l)) &amp;= \text{\bf False} <br />
-\text{\em empty}(\fillin) &amp;= \text{\bf True} <br />
-\end{split}
-\end{equation</em>}</p>
-
-<p><strong>Definition.</strong> The <em>length</em> of a list, $p$, is:
-\begin{equation<em>}
-\begin{split}
-\begin{cases}
-0 &amp; p\ \text{is \bf null} <br />
-\bigfillin %\text{\em length}(q) + 1
-&amp; p = \text{\em prepend}(e, q)\ \text{for some object}\ e\ \text{and some list}\ q <br />
-\end{cases}
-\end{split}
-\end{equation</em>}</p>
-
-<p><strong>Unique Construction</strong> property:</p>
-
-<p>\begin{equation<em>}
-\begin{split}
-\forall p \in \text{\em List} - { \text{\bf null} } \ldotp \exists q \in \text{\em List}, e \in \text{\em Object} \ldotp p = \text{\em prepend}(e, q) \; \wedge <br />
-(\forall r \in \text{\em List}, f \in \text{\em Object} \ldotp p = \text{\em prepend}(f, r) \implies r = q \wedge f = e)
-\end{split}
-\end{equation</em>}</p>
-
-<p>Why is this necessary for our length definition?</p>
-
-<p>##</p>
-
-<pre><code class="language-python">def list_prepend(e, l):
-    return make_pair(e, l)
-
-def list_first(l):
-    return pair_first(l)
-
-def list_rest(l):
-    return pair_last(l)
-
-def list_empty(l):
-    return l == None
-
-def list_length(l):
-    if list_empty(l):
-        return 0
-    else:
-        return 1 + list_length(list_rest(l))
-
-</code></pre>
-
-<p>Prove: for all lists, $p$, <code>list_length(p)</code> returns the length of the list $p$.</p>
-
-<p></div></p>
- 
-  
-  <p class="fronthead"><A href="/ps7revised/">Problem Set 7 - Revised</a> (Sun, 23 Oct 2016)</p>
-    <p>A revised version of <strong>Problem Set 7</strong> is <a href="/docs/ps7.pdf">now posted</a>.
-The change is that an additional constrait was added to the state
-machine transitions (<span class="math"><em>G</em></span>):
-<center>
-<span class="math">&forall; <em>b</em> &isin; <em>B</em> . (<em>a<sub>i</sub></em>, <em>b</em>) &notin; <em>pairings</em></span>
-</center></p>
-
-<p>This constraint is needed since without it, a member of <span
-class="math"><em>A</em></span> might give up a better match for a worse
-one!</p>
-
-<p>(Thanks especially to Luke Botti for noticing this problem.)</p>
- 
-  
-  <p class="fronthead"><A href="/ps7announce/">Problem Set 7</a> (Fri, 21 Oct 2016)</p>
-    <p><strong>Problem Set 7</strong> is <a href="/docs/ps7.pdf">now posted</a>, and is due on <strong>Friday, 28 October at 7:29pm</strong>.</p>
- 
-  
-  <p class="fronthead"><A href="/class15/">Class 15: Stable Matchings</a> (Tue, 18 Oct 2016)</p>
-    
-
-<h3 id="schedule">Schedule</h3>
-
-<p><strong>There is no class Thursday (Oct 20).</strong> Please use the class time to do
-  something worthwhile and fulfilling, preferably outdoors.</p>
-
-<p><a href="/ps/ps6"><strong>Problem Set 6</strong></a> (is posted now) is due <strong>21
-October (Friday) at 6:29pm</strong>.</p>
-
-<p><div class="notpdf">
-   <center>
-<script async class="speakerdeck-embed" data-id="6f50f3a2e5be484eacedeffdf2c98620" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-   </center></p>
-
-<h1 id="links">Links</h1>
-
-<p>Download the full matching code: <a href="/docs/matching.py">matching.py</a> (assertions and comments removed here for space)</p>
-
-<p>We didn&rsquo;t get to talk about Secure Stable Mathing today, but will in a
-future class.  (For now, feel free to read the links, of coure.)</p>
-
-<p><a href="http://www.nytimes.com/2014/12/07/nyregion/how-game-theory-helped-improve-new-york-city-high-school-application-process.html?_r=0">How Game Theory Helped Improve New York City’s High School Application Process</a>, New York Times, 5 December 2014.</p>
-
-<p><a href="http://www.nrmp.org/match-process/match-algorithm/">National Resident Matching Program</a> (how medical school graduates are matched to residency programs)</p>
-
-<blockquote>
-<p><em>Can anyone else see my rank order list (ROL)</em>?<br />
-Your rank order list is confidential.  Program rank order lists can be seen only by the program director and coordinator, the institutional official and administrator, and NRMP staff (unless you give your username and password to someone else, which is a violation of the Match agreement).
-(<a href="http://www.nrmp.org/match-process/match-algorithm/">Frequently Asked Question</a> on NRMP)</p>
-</blockquote>
-
-<p><a href="http://www.oblivc.org/matching">Secure Stable Matching</a>: <a href="https://jackdoerner.net/">Jack Doerner</a> (UVA BSCS and Studio Art, 2015),
-David Evans, abhi shelat. <a href="http://oblivc.org/docs/matching.pdf"><em>Secure Stable Matching at
-Scale</em></a>.  In <a href="https://www.sigsac.org/ccs/CCS2016/"><em>23<sup>rd</sup> ACM
-Conference on Computer and Communications
-Security</em></a> (CCS). Vienna,
-Austria. 24-28 October 2016.</p>
-
-<p><div class="highlightm">
-   <a href="/docs/class15.pdf">See PDF Version for <b>Notes</b></a>.
-   </div></p>
-
-<p></div><!--endpdf--></p>
-
-<p><div class="latex"></p>
-
-<h1 id="stable-matching">Stable Matching</h1>
-
-<p><strong>Definition.</strong> $M = { (a_1, b_1), (a_2, b_2), \cdots, (a_n, b_n) }$ is a
-  <em>stable matching</em> between two sets $A = { a_1, \cdots, a_n }$ and $B
-  = { b_1, \cdots, b_n }$ with respective preference orderings $\prec_A$ and $\prec_B$ if there is no pair $(a_i, b_j)$ where $b<em>i \prec</em>{a_i} b_j$ and $a<em>j \prec</em>{b_j} a_i$.</p>
-
-<p>How do we know there is always a stable matching between any two
-equal-size sets?</p>
-
-<p>##</p>
-
-<h1 id="gale-shapley-algorithm">Gale-Shapley Algorithm</h1>
-
-<pre><code class="language-python">def gale_shapley(A, B):
-    pairings = {} # dictionary b: a pairings
-    unpaired = set(a for a in A.keys()) # unpaired a's
-    proposals = {a: 0 for a in A.keys()} # keep track of who gets next proposal
-
-    while unpaired:
-        a = unpaired.pop()
-        ap = A[a] # a's preference list
-        assert proposals[a] &lt; len(ap)
-        choice = ap[proposals[a]]
-        proposals[a] += 1
-        if choice in pairings: # a's choice already has a match
-            amatch = pairings[choice]
-            bp = B[choice]
-            if bp.index(a) &lt; bp.index(amatch):
-                pairings[choice] = a
-                unpaired.add(amatch) # lost match
-            else:
-                unpaired.add(a)
-        else:
-            pairings[choice] = a
-    return [(a, b) for (b, a) in pairings.items()]
-</code></pre>
-
-<!--page-->
-
-<pre><code class="language-python">A = {&quot;Anna&quot;: [&quot;Kristoff&quot;, &quot;Olaf&quot;], &quot;Elsa&quot;: [&quot;Olaf&quot;, &quot;Kristoff&quot;]}
-B = {&quot;Kristoff&quot;: [&quot;Anna&quot;, &quot;Elsa&quot;], &quot;Olaf&quot;: [&quot;Elsa&quot;, &quot;Anna&quot;]}
-gale_shapley(A, B)
-</code></pre>
-
-<h2 id="modeling-the-gale-shapley-program-as-a-state-machine">Modeling the Gale-Shapley program as a state machine</h2>
-
-<p>$S = $</p>
-
-<p>$G = $</p>
-
-<p>$q_0 = $</p>
-
-<p><strong>Prove termination.</strong> The Gale-Shapley program, modeled by the state
-  machine, eventually returns.</p>
-
-<p>#</p>
-
-<p>#</p>
-
-<p><strong>Prove correctness.</strong> The Gale-Shapley program returns a <em>stable matching</em> of the two input sets and preferences.</p>
-
-<p></div></p>
- 
-  
-  <p class="fronthead"><A href="/ps6announce/">Problem Set 6</a> (Fri, 14 Oct 2016)</p>
-    <p><strong>Problem Set 6</strong> is <a href="/docs/ps6.pdf">now posted</a>, and is due on <strong>Friday, 21 October at 6:29pm</strong>.</p>
+  <p class="fronthead"><A href="">Fall 2017 Course</a> (Fri, 17 Mar 2017)</p>
+    <p>cs2102 will be offered in Fall 2017, co-taught by <a href="https://www.cs.virginia.edu/~mohammad/">Mohammad
+Mahmoody</a> and <a href="https://www.cs.virginia.edu/evans">David
+Evans</a>.</p>
+
+<p>For an idea what the course will be like, see last year&rsquo;s <a href="https://uvacs2102.github.io/f16">course
+site</a>. Some things will change,
+though. Course materials for Fall 2017 will appear hear when they are
+available.</p>
  
   
   
@@ -722,28 +186,12 @@ gale_shapley(A, B)
   3
 </a>
 
-<a href="https://uvacs2102.github.io/page/4/">
-  4
-</a>
 
-<a href="https://uvacs2102.github.io/page/5/">
-  5
-</a>
-
-<a href="https://uvacs2102.github.io/page/6/">
-  6
-</a>
-
-<a href="https://uvacs2102.github.io/page/7/">
-  7
-</a>
-
-
-<a aria-label="Next" href="https://uvacs2102.github.io/page/4/">
+<a class="disabled" aria-label="Next" href="#">
   <span aria-hidden="true">»</span>
 </a>
 
-<a aria-label="Last" href="https://uvacs2102.github.io/page/7/">
+<a aria-label="Last" href="https://uvacs2102.github.io/page/3/">
   <span aria-hidden="true">»»</span>
 </a>
 
@@ -767,7 +215,7 @@ gale_shapley(A, B)
   
 <div class="container footline">
   
-  <p align="center">cs2102: Discrete Mathematics | University of Virginia, Fall 2016 | <a href="https://www.cs.virginia.edu/evans">David Evans</a>
+  <p align="center">cs2102: Discrete Mathematics | University of Virginia, Fall 2017 | <a href="https://www.cs.virginia.edu/evans">David Evans</a> and <a href="https://www.cs.virginia.edu/~mohammad/">Mohammad Mahmoody
 
 
 </div>

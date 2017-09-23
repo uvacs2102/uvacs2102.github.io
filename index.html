@@ -34,7 +34,7 @@
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://uvacs2102.github.io/touch-icon-144-precomposed.png">
 <link href="https://uvacs2102.github.io/favicon.png" rel="icon">
 
-<meta name="generator" content="Hugo 0.17" />
+<meta name="generator" content="Hugo 0.16-DEV" />
 
   <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -98,6 +98,8 @@
 
 <a href="https://uvacs2102.github.io/ps/ps4">Problem Set 4</a>
 
+<a href="https://uvacs2102.github.io/ps/ps5">Problem Set 5</a>
+
 <a href="https://collab.its.virginia.edu/portal/site/9bd99d1c-6f18-4542-a7d1-8ffc4fccbd3d">Collab Site</a>
 
 <a href="https://uvacs2102.github.io/"></a>
@@ -147,7 +149,124 @@
   </header>
   
   
-  <p class="fronthead"><A href="/class9/">Class 9: Relations, Finite Set Cardinality</a> (Tue, 19 Sep 2017)</p>
+  <p class="fronthead"><A href="">Class 10: Set Cardinality, Induction</a> (Thu, 21 Sep 2017)</p>
+    
+
+<h3 id="schedule">Schedule</h3>
+
+<p>This week you should finish reading MCS Chapter 4 (section 4.5) and
+Section 5.1.  We will discuss Induction (Section 5.1) next class.</p>
+
+<p><a href="/ps/ps4"><strong>Problem Set 4</strong></a> is due <strong>Friday at 6:29pm</strong>.  The
+original version of Problem Set 4, Question 6, asked for a <em>function</em>,
+when we really meant to ask for a <em>total function</em> (as we defined it
+in class today, and the book defines it). The problem set is updated
+now to specify this. If you already answered the original question,
+you do not need to update your answer, just indicate clearly for which
+questions the function you defined is partial. Sorry for the
+confusion!</p>
+
+<p><strong>Problem Set 5</strong> (not yet posted) will be due Friday, 29 September.</p>
+
+<p><strong>Exam 1</strong> will be in-class on Thursday, 5 October. It will cover
+  Classes 1 - 11, Problem Sets 1 - 5, and MCS Chapters 1 - 5.</p>
+
+<p><div class="notpdf">
+   <center>
+<script async class="speakerdeck-embed" data-id="3dc8afcc1d1e4a979715fe94298dd84a" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+   </center></p>
+
+<p><div class="highlightm">
+   <a href="/docs/class10.pdf">See PDF Version for <b>Notes and Questions</b></a>.
+   </div></p>
+
+<p></div><!--endpdf--></p>
+
+<p><div class="latex"></p>
+
+<p><strong>Alternate definition:</strong> The <em>cardinality</em> of the set
+$$
+N_k = { n | n \in \mathbb{N} \wedge n &lt; k }
+$$
+is $k$.  If there is a <em>bijection</em> between two sets, they have the same
+cardinality.</p>
+
+<p>#</p>
+
+<p>If there is a <em>surjective relation</em> between $A$ and $B$ what do we know
+about their cardinalities?</p>
+
+<p>##</p>
+
+<p>If there is a <em>surjective function</em> between $A$ and $B$ what do we know
+about their cardinalities?</p>
+
+<p>##</p>
+
+<p>If there is a <em>total surjective function</em> between $A$ and $B$ what do we know
+about their cardinalities?</p>
+
+<p>##</p>
+
+<p>If there is a <em>total surjective injective function</em> between $A$ and $B$
+what do we know about their cardinalities?</p>
+
+<p>##</p>
+
+<p>What is the cardinality of $A \cup B$?</p>
+
+<p>#</p>
+
+<h1 id="induction-principle">Induction Principle</h1>
+
+<p>Let $P$ be a predicated on $\mathbb{N}$.  If</p>
+
+<ul>
+<li>$P(0)$ is true, and</li>
+<li>$P(n) \implies P(n + 1)$ for all $n \in \mathbb{N}$,</li>
+</ul>
+
+<p>then</p>
+
+<ul>
+<li>$P(m)$ is true for all $m \in \mathbb{N}$.</li>
+</ul>
+
+<h2 id="template-for-induction-proofs">Template for Induction Proofs</h2>
+
+<ol>
+<li>State, &ldquo;We prove by induction.&rdquo;</li>
+<li>Define a predicate, $P(n)$.  This is the <em>induction hypothesis</em>.  Our goal is to show that $P(n)$ is true for all $n \in \mathbb{N}$.</li>
+<li>Prove $P(0)$ is true.  (<em>base case</em> or <em>basis step</em>.)</li>
+<li>Prove that $P(n) \implies P(n + 1)$ for every $n \in \mathbb{N}$.  (<em>induction step</em>)</li>
+<li>Conclude that $P(n)$ is true for all $n \in \mathbb{N}$ by induction.</li>
+</ol>
+
+<p>How is the method of <em>proof by induction principle</em> similar to and different from <em>proof by well-ordering principle</em>?</p>
+
+<h1 id="power-sets">Power Sets</h1>
+
+<p>The <strong>power set</strong> of $A$ ($\textrm{pow}(A)$)is the set of all subsets of $A$:
+$$
+B \in \textrm{pow}(A) \iff B \subseteq A.
+$$</p>
+
+<p>Prove that the size of the power set of a set $S$ with $|S| = N$ is
+$2^N$ using induction. (We&rsquo;ll do this in Class 11, but see how far you
+can get on your own.)</p>
+
+<p>#</p>
+
+<p>#</p>
+
+<p></div></p>
+ 
+  
+  <p class="fronthead"><A href="">Problem Set 3 Comments</a> (Wed, 20 Sep 2017)</p>
+    <p>The Problem Set 3 solutions and comments are now posted in collab: <a href="https://collab.its.virginia.edu/access/content/group/9bd99d1c-6f18-4542-a7d1-8ffc4fccbd3d/ps3solutions.pdf">PDF</a></p>
+ 
+  
+  <p class="fronthead"><A href="">Class 9: Relations, Finite Set Cardinality</a> (Tue, 19 Sep 2017)</p>
     
 
 <h3 id="schedule">Schedule</h3>
@@ -263,9 +382,11 @@ or is it meaningful with just the set operations we have defined?</p>
 n \in \mathbb{N} \wedge n &lt; k } $$ is $k$. (Next class, we&rsquo;ll use
 this to define the <em>cardinality</em> of any set. You should be able to
 figure out how to do this on your own with what you know now.)</p>
+
+<p></div></p>
  
   
-  <p class="fronthead"><A href="/nandxorchallengesolved/">NAND/XOR Challenge Solved!</a> (Sat, 16 Sep 2017)</p>
+  <p class="fronthead"><A href="">NAND/XOR Challenge Solved!</a> (Sat, 16 Sep 2017)</p>
     <p>Congratulations to Jake Smith for solving the NAND/XOR challenge from <a href="/class5">Class 5</a>!</p>
 
 <p>The minimum number of NAND gates needed to implement XOR is <strong>5</strong>.</p>
@@ -280,15 +401,15 @@ https://github.com/ION28/CS2102_ChallengeProblemSolutions/blob/master/CP1_NAND_B
 define XOR using 5 NAND operations is here: <a href="/docs/jts5np_Challenge01_NAND_BruteForce_Submission_2.pdf">Solution (PDF)</a></p>
  
   
-  <p class="fronthead"><A href="/ps4posted/">Problem Set 4</a> (Sat, 16 Sep 2017)</p>
+  <p class="fronthead"><A href="">Problem Set 4</a> (Sat, 16 Sep 2017)</p>
     <p><a href="/ps/ps4"><strong>Problem Set 4</strong></a> [<a href="/docs/ps4.pdf">PDF</a>] is now posted and
 is due <strong>Friday, 22 September at 6:29:00pm</strong>.</p>
  
   
-  <p class="fronthead"><A href="/class8/">Class 8: Sequences, Relations, Functions</a> (Thu, 14 Sep 2017)</p>
+  <p class="fronthead"><A href="">Class 8: Sequences, Relations, Functions</a> (Thu, 14 Sep 2017)</p>
     
 
-<h3 id="schedule">Schedule</h3>
+<h3 id="schedule:3a7d0da174b09b839e2f33e1cfd8fab3">Schedule</h3>
 
 <p><a href="/ps/ps3"><strong>Problem Set 3</strong></a> is due <strong>Friday at 6:29pm</strong>.</p>
 
@@ -305,7 +426,7 @@ is due <strong>Friday, 22 September at 6:29:00pm</strong>.</p>
 
 <p><div class="latex"></p>
 
-<h1 id="sequences">Sequences</h1>
+<h1 id="sequences:3a7d0da174b09b839e2f33e1cfd8fab3">Sequences</h1>
 
 <p>A <strong>sequence</strong> is a mathematical datatype that bears similarities to sets. A sequence $S$ also contains some elements, but we usually refer to them as <em>components</em>. There are two major differences between sets and sequences:</p>
 
@@ -315,7 +436,7 @@ is due <strong>Friday, 22 September at 6:29:00pm</strong>.</p>
 <li><p>Different components of a sequence could be equal. For example $(a,b,a)$ has $a$ repeating, and this is a different sequence compared to $(a,b,b)$ even though they both have 3 componetns. If we interprete them as <em>sets</em>, then they will be equal sets with $2$ elements each.</p></li>
 </ol>
 
-<h1 id="cartesian-product">Cartesian Product</h1>
+<h1 id="cartesian-product:3a7d0da174b09b839e2f33e1cfd8fab3">Cartesian Product</h1>
 
 <p>We can use set products to get new sets whose elements are sequences. Cartesian product is a very useful way of doing it.</p>
 
@@ -327,7 +448,7 @@ is due <strong>Friday, 22 September at 6:29:00pm</strong>.</p>
 
 <p>How many elements are in $A \times B$?</p>
 
-<h1 id="relations-and-binary-relations">Relations and Binary Relations</h1>
+<h1 id="relations-and-binary-relations:3a7d0da174b09b839e2f33e1cfd8fab3">Relations and Binary Relations</h1>
 
 <p>A <em>relation</em> between some elements from set $A$ and some elements from set $B$ could be represented by putting all such pairs $(a,b)$ in a set $P$. As you can see, this way, $P$ would be a subset of the cartesian product $A \times B$, namely $P \subseteq A \times B$. More formally we have the following definition.</p>
 
@@ -341,7 +462,7 @@ talk about relations of the form $P \subseteq A \times B \times C$,
 but the binary relation remains a very important data type as it
 allows us to define <em>functions</em>.</p>
 
-<h1 id="functions">Functions</h1>
+<h1 id="functions:3a7d0da174b09b839e2f33e1cfd8fab3">Functions</h1>
 
 <p>The concept of a function $F$ models is a special form of a binary
 relation $R$ between $A$ and $B$ where for every element $a \in A$
@@ -369,14 +490,14 @@ set, called a <em>codomain</em>.</p>
 <p></div></p>
  
   
-  <p class="fronthead"><A href="/ps2comments/">Problem Set 2 Comments</a> (Wed, 13 Sep 2017)</p>
+  <p class="fronthead"><A href="">Problem Set 2 Comments</a> (Wed, 13 Sep 2017)</p>
     <p>The Problem Set 2 solutions and comments are now posted in collab: <a href="https://collab.its.virginia.edu/access/content/group/9bd99d1c-6f18-4542-a7d1-8ffc4fccbd3d/ps2solutions.pdf">PDF</a></p>
  
   
-  <p class="fronthead"><A href="/class7/">Class 7: Sets</a> (Tue, 12 Sep 2017)</p>
+  <p class="fronthead"><A href="">Class 7: Sets</a> (Tue, 12 Sep 2017)</p>
     
 
-<h3 id="schedule">Schedule</h3>
+<h3 id="schedule:3a08b95a8ad598832d09afa687b9b147">Schedule</h3>
 
 <p><a href="/ps/ps3"><strong>Problem Set 3</strong></a> is due <strong>Friday at 6:29pm</strong>.</p>
 
@@ -389,13 +510,13 @@ set, called a <em>codomain</em>.</p>
    <a href="/docs/class7.pdf">See PDF Version for <b>Notes and Questions</b></a>.
    </div></p>
 
-<h2 id="links">Links</h2>
+<h2 id="links:3a08b95a8ad598832d09afa687b9b147">Links</h2>
 
 <p></div><!--endpdf--></p>
 
 <p><div class="latex"></p>
 
-<h1 id="notes-and-questions">Notes and Questions</h1>
+<h1 id="notes-and-questions:3a08b95a8ad598832d09afa687b9b147">Notes and Questions</h1>
 
 <p>What is a <em>data type</em>?  What are the differences between a <em>mathematical
 data type</em> and a data type in your favorite programming language?</p>
@@ -405,7 +526,7 @@ data type</em> and a data type in your favorite programming language?</p>
 <p>A <strong>set</strong> is an unordered colection of objects.  A set is defined by its
 membership operation: $x \in S$ is true if $x$ is in the set $S$. When $x$ is not in $S$ we write it as $x \notin S$. A set has only <em>one</em> copy of each element. Namely, there is no repetition in elements of a set. Also, a set $A$ could be a member o another set $B$, denoted by $A \in B$. Note that members of $A$ are not necessarily members of $B$ unless they are explicitly put in $B$ directly.</p>
 
-<h2 id="set-operations">Set Operations</h2>
+<h2 id="set-operations:3a08b95a8ad598832d09afa687b9b147">Set Operations</h2>
 
 <p>Subset: $\subseteq$ (note that this does not mean <em>strict subset</em>)
 $$A \subseteq B \iff \forall x \in A. \fillin \in \fillin.$$</p>
@@ -430,7 +551,7 @@ discussion.)</p>
 
 <!--page-->
 
-<h3 id="russell-s-paradox">Russell&rsquo;s Paradox</h3>
+<h3 id="russell-s-paradox:3a08b95a8ad598832d09afa687b9b147">Russell&rsquo;s Paradox</h3>
 
 <p>$$ S_{R} = \textrm{ the set of all sets that are not members of themselves} $$</p>
 
@@ -438,13 +559,13 @@ discussion.)</p>
 
 <p>What is the source of this paradox? Note that in this question, we are implicitly assuming that $S<em>{R}$ is a set, but we have never &ldquo;constructed&rdquo; this set properly to use it. Namely, here we are implicitly assuming that there is already a &ldquo;set of all sets&rdquo; $S</em>{all}$ from which we remove those sets like $T$ for which $T \in T$. By removing all such $T$ from $S_{all}$ we get the set $S_R$.</p>
 
-<h3 id="using-quantifiers-more-carefully">Using Quantifiers More Carefully</h3>
+<h3 id="using-quantifiers-more-carefully:3a08b95a8ad598832d09afa687b9b147">Using Quantifiers More Carefully</h3>
 
 <p>Note that in some of the  propositions that we used to define the set operations (such as union, intersection, etc.) above, we wrote quantified $x$ without saying which set it is from. For example  $\forall x. [\dots]$. It is much preferred to always say what $x$ is belonging to when we quantify over $x$. The reason is to avoid traps like that of Russell&rsquo;s paradox! This should not worry us in this class, as we will always work with well-defined <em>universes</em> that include all the elements of the sets that we work with. Therefore, we can always assume implicitly that $x \in U$ (for a well defined set universe $U$) even if not explicitly mentioned.</p>
 
 <p>#</p>
 
-<h3 id="set-practice">Set Practice</h3>
+<h3 id="set-practice:3a08b95a8ad598832d09afa687b9b147">Set Practice</h3>
 
 <p>Here are some practice problems involving sets.  We won&rsquo;t go through
 these in class, but you should ask questions about any are unclear.  (At
@@ -474,15 +595,15 @@ least a few of these will be on Exam 1.)</p>
 </ol>
  
   
-  <p class="fronthead"><A href="/ps3posted/">Problem Set 3</a> (Fri, 8 Sep 2017)</p>
+  <p class="fronthead"><A href="">Problem Set 3</a> (Fri, 8 Sep 2017)</p>
     <p><a href="/ps/ps3"><strong>Problem Set 3</strong></a> [<a href="/docs/ps3.pdf">PDF</a>] is now posted and
 is due <strong>Friday, 15 September at 6:29:00pm</strong>.</p>
  
   
-  <p class="fronthead"><A href="/class6/">Class 6: Quantifiers and More</a> (Thu, 7 Sep 2017)</p>
+  <p class="fronthead"><A href="">Class 6: Quantifiers and More</a> (Thu, 7 Sep 2017)</p>
     
 
-<h3 id="schedule">Schedule</h3>
+<h3 id="schedule:647dbe1e5b68015679492d34153c74f5">Schedule</h3>
 
 <p>Everyone should have received their graded PS1 by now. Please read <a href="https://collab.its.virginia.edu/access/content/group/9bd99d1c-6f18-4542-a7d1-8ffc4fccbd3d/ps1solutions.pdf">the comments posted in collab</a>.</p>
 
@@ -501,7 +622,7 @@ src="//speakerdeck.com/assets/embed.js"></script>
    <a href="/docs/class6.pdf">See PDF Version for <b>Notes and Questions</b></a>.
    </div></p>
 
-<h2 id="links">Links</h2>
+<h2 id="links:647dbe1e5b68015679492d34153c74f5">Links</h2>
 
 <p>If you believe real computing systems have the property that the values
 you read from memory will match what you wrote there, see:</p>
@@ -533,7 +654,7 @@ is the P vs. NP question in this list.</p>
 
 <p><div class="latex"></p>
 
-<h1 id="programs-and-proofs">Programs and Proofs</h1>
+<h1 id="programs-and-proofs:647dbe1e5b68015679492d34153c74f5">Programs and Proofs</h1>
 
 <p>What does it mean to <em>test</em> a computing system?  What does it mean for a computing system to <em>always behave correctly</em>?</p>
 
@@ -543,7 +664,7 @@ is the P vs. NP question in this list.</p>
 
 <div class="biggap"></div>
 
-<h1 id="minima">Minima</h1>
+<h1 id="minima:647dbe1e5b68015679492d34153c74f5">Minima</h1>
 
 <p>The <em>minimum</em> of a set with respect to some comparator operator is the
 element which is &ldquo;less than&rdquo; (according to that comparator) every
@@ -554,7 +675,7 @@ $\forall x \in S - { m } . m \prec x$.</p>
 \forall S \in \textrm{pow}(\mathbb{N}) - { \varnothing } \ldotp \exists m \in S\ldotp \forall x \in S - {m}\ldotp m &lt; x
 $$</p>
 
-<h1 id="formulas-propositions-and-inference-rules">Formulas, Propositions, and Inference Rules</h1>
+<h1 id="formulas-propositions-and-inference-rules:647dbe1e5b68015679492d34153c74f5">Formulas, Propositions, and Inference Rules</h1>
 
 <p>$P \implies Q$ is a <em>formula</em>.<br />
 $\forall P \in { T, F } . \forall Q \in { T, F } . P \implies Q$ is a <em>proposition</em>.<br />
@@ -582,7 +703,7 @@ T$.</p>
 $\infer{Q}{P}$ is sound if and only if the formula
 $P \implies Q$ is valid. So, this way, we can find out whether an inference rule is sound or not, by checking out whether the corresponding formula is valid or not.</p>
 
-<h1 id="negating-quantifiers">Negating Quantifiers</h1>
+<h1 id="negating-quantifiers:647dbe1e5b68015679492d34153c74f5">Negating Quantifiers</h1>
 
 <p>What is the negation of $\forall x \in S . P(x)$?
 <div class="gap"></div></p>
@@ -590,7 +711,7 @@ $P \implies Q$ is valid. So, this way, we can find out whether an inference rule
 <p>What is the negation of $\exists x \in S . P(x)$?
 <div class="gap"></div></p>
 
-<h1 id="satisfiability">Satisfiability</h1>
+<h1 id="satisfiability:647dbe1e5b68015679492d34153c74f5">Satisfiability</h1>
 
 <p><strong>Definition.</strong> A formula is in <em>SAT</em> if it is in CNF form and it is
   satisfiable.</p>
@@ -685,159 +806,38 @@ x</em>{49}) \wedge (x<em>{21} \vee x</em>{40} \vee \overline{x<em>{14}}) \wedge
 x<em>{7}) \wedge (x</em>{25} \vee x<em>{47} \vee \overline{x</em>{12}}) \end{math}
 \end{center}</p>
 
-<h2 id="converting-truth-tables-to-dnf">Converting Truth Tables to DNF</h2>
+<h2 id="converting-truth-tables-to-dnf:647dbe1e5b68015679492d34153c74f5">Converting Truth Tables to DNF</h2>
 
 <p>\begin{tabular}{cc|cc}
 $P$ &amp; $Q$ &amp; $P \implies Q$ &amp; $P \oplus Q$ \ \hline
-\T &amp; \T   &amp; \T &amp; \F <br />
-\T &amp; \F   &amp; \F &amp; \T <br />
-\F &amp; \T   &amp; \T &amp; \T <br />
-\F &amp; \F   &amp; \T &amp; \F <br />
+\T &amp; \T   &amp; \T &amp; \F \
+\T &amp; \F   &amp; \F &amp; \T \
+\F &amp; \T   &amp; \T &amp; \T \
+\F &amp; \F   &amp; \T &amp; \F \
 \end{tabular}</p>
 
 <p>The output of the operator is \T\ if and only if the inputs do match <em>one row</em> where the output is \T.  So, to get a DNF we can go over all the rows where hte output is \T, and for each write a clause that means we <em>are</em> in that row. Then we OR all such (conjunctive) clauses. For example, for $P \oplus Q$ we get</p>
 
 <p>$$(P \wedge \neg Q) \vee (\neg P \wedge Q)$$</p>
 
-<h2 id="converting-truth-tables-to-cnf">Converting Truth Tables to CNF</h2>
+<h2 id="converting-truth-tables-to-cnf:647dbe1e5b68015679492d34153c74f5">Converting Truth Tables to CNF</h2>
 
 <p>\begin{tabular}{cc|cc}
 $P$ &amp; $Q$ &amp; $P \implies Q$ &amp; $P \oplus Q$ \ \hline
-\T &amp; \T   &amp; \T &amp; \F <br />
-\T &amp; \F   &amp; \F &amp; \T <br />
-\F &amp; \T   &amp; \T &amp; \T <br />
-\F &amp; \F   &amp; \T &amp; \F <br />
+\T &amp; \T   &amp; \T &amp; \F \
+\T &amp; \F   &amp; \F &amp; \T \
+\F &amp; \T   &amp; \T &amp; \T \
+\F &amp; \F   &amp; \T &amp; \F \
 \end{tabular}</p>
 
 <p>The output of the operator is \T\ if and only if the inputs do not match <em>any row</em> where the output is \F.  So, to get a CNF we can go over all the rows where hte output is \F, and for each write a clause that means we are <em>not</em> in that row. Then we AND all such clauses. For example, for $P \oplus Q$ we get</p>
 
 <p>$$(\neg P \vee \neg Q) \wedge (P \vee Q)$$</p>
 
-<h2 id="the-related-3cnf-formulation">The related 3CNF formulation</h2>
+<h2 id="the-related-3cnf-formulation:647dbe1e5b68015679492d34153c74f5">The related 3CNF formulation</h2>
 
 <p>When we are only interested to know whether or not a given formula is satisfiable, we can write a 3CNF that is satisfiable iff the original formula is. In order to do that, we first write an equivalent CNF, and then convert it to a 3CNF (which is not necessarily equivalent, but only guarantees to preserve the <em>satisfiability</em> feature) as follow. For each clause with less than 3 literals such as $(A \lor \neg B)$ we add a dummy variable $C$ (only for this clause) and interprete the $(A \lor \neg B)$ as a formula over all of $A,B,C$ and write a CNF for them (which happens to be 3CNF!). For longer clauses such as
 $(A \lor B \lor C \lor D)$ we do another trick of breaking them into smaller parts using new dummy variables as follows $(A \lor B \lor \neg X) \wedge (\neg X \lor C \lor D).$</p>
-
-<p></div></p>
- 
-  
-  <p class="fronthead"><A href="/ps1comments/">Problem Set 1 Comments</a> (Wed, 6 Sep 2017)</p>
-    <p>The Problem Set 1 comments are now posted in collab: <a href="https://collab.its.virginia.edu/access/content/group/9bd99d1c-6f18-4542-a7d1-8ffc4fccbd3d/ps1solutions.pdf">PDF</a></p>
- 
-  
-  <p class="fronthead"><A href="/class5/">Class 5: CNF, Computing, Quantifiers</a> (Tue, 5 Sep 2017)</p>
-    
-
-<h3 id="schedule">Schedule</h3>
-
-<p><a href="/ps/ps2"><strong>Problem Set 2</strong></a> is due <strong>Friday at 6:29pm</strong>.</p>
-
-<p><div class="notpdf">
-   <center>
-<script async class="speakerdeck-embed" data-id="b6468be050744777ac59c696390d3d89" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-   </center></p>
-
-<p><div class="highlightm">
-   <a href="/docs/class5.pdf">See PDF Version for <b>Notes and Questions</b></a>.
-   </div></p>
-
-<p><div class="highlightrl">
-<strong>Challenge Problem Opportunity.</strong> Find the shortest formula that is
-  equivalent to XOR(<em>a</em>, <em>b</em>) using just NAND operations. Shortest
-  means the minimum number of NAND operations. A convincing answer
-  would include a proof that no shorter formula exists.
-   </div></p>
-
-<h2 id="links">Links</h2>
-
-<p>If you want to learn more about how to learn the logic implemented by a chip
-and cryptosystems used in car immobolizers, see <a href="https://www.cs.virginia.edu/~evans/pubs/usenix08/usenix08.pdf"><em>Reverse-Engineering a
-Cryptographic RFID
-Tag</em></a> (Karsten
-Nohl, David Evans, Starbug, and Henryk Pl&ouml;tz, <em>USENIX Security
-Symposium</em> 2008), or <a href="https://www.youtube.com/watch?v=fCwY27EnOF8">this
-video</a>.  Please don&rsquo;t steal any
-cars.</p>
-
-<p></div><!--endpdf--></p>
-
-<p><div class="latex"></p>
-
-<h1 id="notes-and-questions">Notes and Questions</h1>
-
-<p><strong>Definition: satisfiable.</strong> A logical formula is <em>satisfiable</em> if there
-  is <em>some</em> way to make it <strong>true</strong>.  That is, there is at least one
-  assignment of truth value to its variables that makes the forumla
-  true.</p>
-
-<p><strong>Definition: conjunctive normal form (CNF).</strong> A logical formula that is
-  written as a conjunction of <em>clauses</em>, where each clause is a
-  disjunction of <em>literals</em>, and each literal is either a variable or a
-  negation of a variable, is in <em>conjunctive normal form</em>.  If each
-  clause has excatly three literals, it is called <em>three conjunctive
-  normal form</em> (3CNF).</p>
-
-<p>$$
-(a_1 \vee a_2 \vee \neg a_3) \wedge
-(a_1 \vee \neg a_2 \vee a_3) \wedge
-(\neg a_1 \vee a_2 \vee \neg a_3) \wedge
-(\neg a_1 \vee a_2 \vee a_3)
-$$</p>
-
-<p>##</p>
-
-<p>Show that every logical formula can be written in conjunctive normal form.
-Also, show that if we only care about <em>satisfiability</em> we can always write it
-in 3CNF form. Namely, for every CNF formula $F$, we can write a 3CNF formula
-$G$ such that $F$ is satisfiable if and only if $G$ is satisfiable.</p>
-
-<div class="biggap"></div>
-
-<p>What is the maximum number of (different) clauses in a 3CNF formula
-involving 5 variables?</p>
-
-<p>##</p>
-
-<p>What is the maximum number of (different) clauses in a <em>satisfiable</em>
-3CNF formula involving 5 variables?</p>
-
-<p>##</p>
-
-<p>What is the maximum number of (different) clauses in a <em>valid</em> 3CNF formula involving 5 variables?</p>
-
-<p>##</p>
-
-<!--page-->
-
-<h2 id="logical-quantifiers">Logical Quantifiers</h2>
-
-<p>$\forall x \in S. P(x)$ means $P$ holds for <em>every</em> element of $S$.<br />
-$\exists x \in S. P(x)$ means $P$ holds for <em>at least one</em> element of $S$.</p>
-
-<p>Define <em>valid</em> and <em>satisfiable</em> using logical quantifiers:</p>
-
-<p>#</p>
-
-<p>$\forall x \in S. P(x)$ is equivalent to $\neg(\exists x \in S. \qquad \qquad)$</p>
-
-<p>###</p>
-
-<p>Notation: $\textrm{pow}(S)$ denotes the <em>powerset</em> of $S$.  The powerset
-of a set is the set of all possible subsets of that S.  So,
-$\textrm{pow}(\mathbb{N})$ denotes all subsets of the natural numbers.</p>
-
-<p>Notation: $A - B$ denotes the <em>difference</em> between two sets.  It is the
-elements of $A$, with every element of $B$ removed.</p>
-
-<p>Notation: $\varnothing$ is the <em>empty set</em>.  It is the set with no elements: ${ }$.</p>
-
-<p>\begin{center}
-\Large</p>
-
-<p>$$
-\fillin S \in \textrm{pow}(\mathbb{N}) - { \varnothing } \ldotp \fillin m \in S\ldotp \fillin x \in S - {m}\ldotp m &lt; x
-$$
-\end{center}</p>
 
 <p></div></p>
  
@@ -864,12 +864,16 @@ $$
   2
 </a>
 
+<a href="https://uvacs2102.github.io/page/3/">
+  3
+</a>
+
 
 <a aria-label="Next" href="https://uvacs2102.github.io/page/2/">
   <span aria-hidden="true">»</span>
 </a>
 
-<a aria-label="Last" href="https://uvacs2102.github.io/page/2/">
+<a aria-label="Last" href="https://uvacs2102.github.io/page/3/">
   <span aria-hidden="true">»»</span>
 </a>
 

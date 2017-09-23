@@ -2,12 +2,141 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>cs2102: Discrete Math</title>
-    <link>https://uvacs2102.github.io/index.xml</link>
+    <link>https://uvacs2102.github.io/</link>
     <description>Recent content on cs2102: Discrete Math</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 19 Sep 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 21 Sep 2017 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://uvacs2102.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Class 10: Set Cardinality, Induction</title>
+      <link>https://uvacs2102.github.io/class10/</link>
+      <pubDate>Thu, 21 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/class10/</guid>
+      <description>
+
+&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
+
+&lt;p&gt;This week you should finish reading MCS Chapter 4 (section 4.5) and
+Section 5.1.  We will discuss Induction (Section 5.1) next class.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps4&#34;&gt;&lt;strong&gt;Problem Set 4&lt;/strong&gt;&lt;/a&gt; is due &lt;strong&gt;Friday at 6:29pm&lt;/strong&gt;.  The
+original version of Problem Set 4, Question 6, asked for a &lt;em&gt;function&lt;/em&gt;,
+when we really meant to ask for a &lt;em&gt;total function&lt;/em&gt; (as we defined it
+in class today, and the book defines it). The problem set is updated
+now to specify this. If you already answered the original question,
+you do not need to update your answer, just indicate clearly for which
+questions the function you defined is partial. Sorry for the
+confusion!&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Problem Set 5&lt;/strong&gt; (not yet posted) will be due Friday, 29 September.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Exam 1&lt;/strong&gt; will be in-class on Thursday, 5 October. It will cover
+  Classes 1 - 11, Problem Sets 1 - 5, and MCS Chapters 1 - 5.&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;
+   &lt;center&gt;
+&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;3dc8afcc1d1e4a979715fe94298dd84a&#34; data-ratio=&#34;1.77777777777778&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
+   &lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlightm&#34;&gt;
+   &lt;a href=&#34;https://uvacs2102.github.io/docs/class10.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes and Questions&lt;/b&gt;&lt;/a&gt;.
+   &lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Alternate definition:&lt;/strong&gt; The &lt;em&gt;cardinality&lt;/em&gt; of the set
+$$
+N_k = { n | n \in \mathbb{N} \wedge n &amp;lt; k }
+$$
+is $k$.  If there is a &lt;em&gt;bijection&lt;/em&gt; between two sets, they have the same
+cardinality.&lt;/p&gt;
+
+&lt;p&gt;#&lt;/p&gt;
+
+&lt;p&gt;If there is a &lt;em&gt;surjective relation&lt;/em&gt; between $A$ and $B$ what do we know
+about their cardinalities?&lt;/p&gt;
+
+&lt;p&gt;##&lt;/p&gt;
+
+&lt;p&gt;If there is a &lt;em&gt;surjective function&lt;/em&gt; between $A$ and $B$ what do we know
+about their cardinalities?&lt;/p&gt;
+
+&lt;p&gt;##&lt;/p&gt;
+
+&lt;p&gt;If there is a &lt;em&gt;total surjective function&lt;/em&gt; between $A$ and $B$ what do we know
+about their cardinalities?&lt;/p&gt;
+
+&lt;p&gt;##&lt;/p&gt;
+
+&lt;p&gt;If there is a &lt;em&gt;total surjective injective function&lt;/em&gt; between $A$ and $B$
+what do we know about their cardinalities?&lt;/p&gt;
+
+&lt;p&gt;##&lt;/p&gt;
+
+&lt;p&gt;What is the cardinality of $A \cup B$?&lt;/p&gt;
+
+&lt;p&gt;#&lt;/p&gt;
+
+&lt;h1 id=&#34;induction-principle&#34;&gt;Induction Principle&lt;/h1&gt;
+
+&lt;p&gt;Let $P$ be a predicated on $\mathbb{N}$.  If&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;$P(0)$ is true, and&lt;/li&gt;
+&lt;li&gt;$P(n) \implies P(n + 1)$ for all $n \in \mathbb{N}$,&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;then&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;$P(m)$ is true for all $m \in \mathbb{N}$.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;template-for-induction-proofs&#34;&gt;Template for Induction Proofs&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt;State, &amp;ldquo;We prove by induction.&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;Define a predicate, $P(n)$.  This is the &lt;em&gt;induction hypothesis&lt;/em&gt;.  Our goal is to show that $P(n)$ is true for all $n \in \mathbb{N}$.&lt;/li&gt;
+&lt;li&gt;Prove $P(0)$ is true.  (&lt;em&gt;base case&lt;/em&gt; or &lt;em&gt;basis step&lt;/em&gt;.)&lt;/li&gt;
+&lt;li&gt;Prove that $P(n) \implies P(n + 1)$ for every $n \in \mathbb{N}$.  (&lt;em&gt;induction step&lt;/em&gt;)&lt;/li&gt;
+&lt;li&gt;Conclude that $P(n)$ is true for all $n \in \mathbb{N}$ by induction.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;How is the method of &lt;em&gt;proof by induction principle&lt;/em&gt; similar to and different from &lt;em&gt;proof by well-ordering principle&lt;/em&gt;?&lt;/p&gt;
+
+&lt;h1 id=&#34;power-sets&#34;&gt;Power Sets&lt;/h1&gt;
+
+&lt;p&gt;The &lt;strong&gt;power set&lt;/strong&gt; of $A$ ($\textrm{pow}(A)$)is the set of all subsets of $A$:
+$$
+B \in \textrm{pow}(A) \iff B \subseteq A.
+$$&lt;/p&gt;
+
+&lt;p&gt;Prove that the size of the power set of a set $S$ with $|S| = N$ is
+$2^N$ using induction. (We&amp;rsquo;ll do this in Class 11, but see how far you
+can get on your own.)&lt;/p&gt;
+
+&lt;p&gt;#&lt;/p&gt;
+
+&lt;p&gt;#&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Problem Set 3 Comments</title>
+      <link>https://uvacs2102.github.io/ps3comments/</link>
+      <pubDate>Wed, 20 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/ps3comments/</guid>
+      <description>&lt;p&gt;The Problem Set 3 solutions and comments are now posted in collab: &lt;a href=&#34;https://collab.its.virginia.edu/access/content/group/9bd99d1c-6f18-4542-a7d1-8ffc4fccbd3d/ps3solutions.pdf&#34;&gt;PDF&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Class 9: Relations, Finite Set Cardinality</title>
@@ -130,6 +259,8 @@ or is it meaningful with just the set operations we have defined?&lt;/p&gt;
 n \in \mathbb{N} \wedge n &amp;lt; k } $$ is $k$. (Next class, we&amp;rsquo;ll use
 this to define the &lt;em&gt;cardinality&lt;/em&gt; of any set. You should be able to
 figure out how to do this on your own with what you know now.)&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -173,7 +304,7 @@ is due &lt;strong&gt;Friday, 22 September at 6:29:00pm&lt;/strong&gt;.&lt;/p&gt;
       <guid>https://uvacs2102.github.io/class8/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule:3a7d0da174b09b839e2f33e1cfd8fab3&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps3&#34;&gt;&lt;strong&gt;Problem Set 3&lt;/strong&gt;&lt;/a&gt; is due &lt;strong&gt;Friday at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
 
@@ -190,7 +321,7 @@ is due &lt;strong&gt;Friday, 22 September at 6:29:00pm&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;sequences&#34;&gt;Sequences&lt;/h1&gt;
+&lt;h1 id=&#34;sequences:3a7d0da174b09b839e2f33e1cfd8fab3&#34;&gt;Sequences&lt;/h1&gt;
 
 &lt;p&gt;A &lt;strong&gt;sequence&lt;/strong&gt; is a mathematical datatype that bears similarities to sets. A sequence $S$ also contains some elements, but we usually refer to them as &lt;em&gt;components&lt;/em&gt;. There are two major differences between sets and sequences:&lt;/p&gt;
 
@@ -200,7 +331,7 @@ is due &lt;strong&gt;Friday, 22 September at 6:29:00pm&lt;/strong&gt;.&lt;/p&gt;
 &lt;li&gt;&lt;p&gt;Different components of a sequence could be equal. For example $(a,b,a)$ has $a$ repeating, and this is a different sequence compared to $(a,b,b)$ even though they both have 3 componetns. If we interprete them as &lt;em&gt;sets&lt;/em&gt;, then they will be equal sets with $2$ elements each.&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h1 id=&#34;cartesian-product&#34;&gt;Cartesian Product&lt;/h1&gt;
+&lt;h1 id=&#34;cartesian-product:3a7d0da174b09b839e2f33e1cfd8fab3&#34;&gt;Cartesian Product&lt;/h1&gt;
 
 &lt;p&gt;We can use set products to get new sets whose elements are sequences. Cartesian product is a very useful way of doing it.&lt;/p&gt;
 
@@ -212,7 +343,7 @@ is due &lt;strong&gt;Friday, 22 September at 6:29:00pm&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;p&gt;How many elements are in $A \times B$?&lt;/p&gt;
 
-&lt;h1 id=&#34;relations-and-binary-relations&#34;&gt;Relations and Binary Relations&lt;/h1&gt;
+&lt;h1 id=&#34;relations-and-binary-relations:3a7d0da174b09b839e2f33e1cfd8fab3&#34;&gt;Relations and Binary Relations&lt;/h1&gt;
 
 &lt;p&gt;A &lt;em&gt;relation&lt;/em&gt; between some elements from set $A$ and some elements from set $B$ could be represented by putting all such pairs $(a,b)$ in a set $P$. As you can see, this way, $P$ would be a subset of the cartesian product $A \times B$, namely $P \subseteq A \times B$. More formally we have the following definition.&lt;/p&gt;
 
@@ -226,7 +357,7 @@ talk about relations of the form $P \subseteq A \times B \times C$,
 but the binary relation remains a very important data type as it
 allows us to define &lt;em&gt;functions&lt;/em&gt;.&lt;/p&gt;
 
-&lt;h1 id=&#34;functions&#34;&gt;Functions&lt;/h1&gt;
+&lt;h1 id=&#34;functions:3a7d0da174b09b839e2f33e1cfd8fab3&#34;&gt;Functions&lt;/h1&gt;
 
 &lt;p&gt;The concept of a function $F$ models is a special form of a binary
 relation $R$ between $A$ and $B$ where for every element $a \in A$
@@ -273,7 +404,7 @@ set, called a &lt;em&gt;codomain&lt;/em&gt;.&lt;/p&gt;
       <guid>https://uvacs2102.github.io/class7/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule:3a08b95a8ad598832d09afa687b9b147&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps3&#34;&gt;&lt;strong&gt;Problem Set 3&lt;/strong&gt;&lt;/a&gt; is due &lt;strong&gt;Friday at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
 
@@ -286,13 +417,13 @@ set, called a &lt;em&gt;codomain&lt;/em&gt;.&lt;/p&gt;
    &lt;a href=&#34;https://uvacs2102.github.io/docs/class7.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes and Questions&lt;/b&gt;&lt;/a&gt;.
    &lt;/div&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
+&lt;h2 id=&#34;links:3a08b95a8ad598832d09afa687b9b147&#34;&gt;Links&lt;/h2&gt;
 
 &lt;p&gt;&lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;notes-and-questions&#34;&gt;Notes and Questions&lt;/h1&gt;
+&lt;h1 id=&#34;notes-and-questions:3a08b95a8ad598832d09afa687b9b147&#34;&gt;Notes and Questions&lt;/h1&gt;
 
 &lt;p&gt;What is a &lt;em&gt;data type&lt;/em&gt;?  What are the differences between a &lt;em&gt;mathematical
 data type&lt;/em&gt; and a data type in your favorite programming language?&lt;/p&gt;
@@ -302,7 +433,7 @@ data type&lt;/em&gt; and a data type in your favorite programming language?&lt;/
 &lt;p&gt;A &lt;strong&gt;set&lt;/strong&gt; is an unordered colection of objects.  A set is defined by its
 membership operation: $x \in S$ is true if $x$ is in the set $S$. When $x$ is not in $S$ we write it as $x \notin S$. A set has only &lt;em&gt;one&lt;/em&gt; copy of each element. Namely, there is no repetition in elements of a set. Also, a set $A$ could be a member o another set $B$, denoted by $A \in B$. Note that members of $A$ are not necessarily members of $B$ unless they are explicitly put in $B$ directly.&lt;/p&gt;
 
-&lt;h2 id=&#34;set-operations&#34;&gt;Set Operations&lt;/h2&gt;
+&lt;h2 id=&#34;set-operations:3a08b95a8ad598832d09afa687b9b147&#34;&gt;Set Operations&lt;/h2&gt;
 
 &lt;p&gt;Subset: $\subseteq$ (note that this does not mean &lt;em&gt;strict subset&lt;/em&gt;)
 $$A \subseteq B \iff \forall x \in A. \fillin \in \fillin.$$&lt;/p&gt;
@@ -327,7 +458,7 @@ discussion.)&lt;/p&gt;
 
 &lt;!--page--&gt;
 
-&lt;h3 id=&#34;russell-s-paradox&#34;&gt;Russell&amp;rsquo;s Paradox&lt;/h3&gt;
+&lt;h3 id=&#34;russell-s-paradox:3a08b95a8ad598832d09afa687b9b147&#34;&gt;Russell&amp;rsquo;s Paradox&lt;/h3&gt;
 
 &lt;p&gt;$$ S_{R} = \textrm{ the set of all sets that are not members of themselves} $$&lt;/p&gt;
 
@@ -335,13 +466,13 @@ discussion.)&lt;/p&gt;
 
 &lt;p&gt;What is the source of this paradox? Note that in this question, we are implicitly assuming that $S&lt;em&gt;{R}$ is a set, but we have never &amp;ldquo;constructed&amp;rdquo; this set properly to use it. Namely, here we are implicitly assuming that there is already a &amp;ldquo;set of all sets&amp;rdquo; $S&lt;/em&gt;{all}$ from which we remove those sets like $T$ for which $T \in T$. By removing all such $T$ from $S_{all}$ we get the set $S_R$.&lt;/p&gt;
 
-&lt;h3 id=&#34;using-quantifiers-more-carefully&#34;&gt;Using Quantifiers More Carefully&lt;/h3&gt;
+&lt;h3 id=&#34;using-quantifiers-more-carefully:3a08b95a8ad598832d09afa687b9b147&#34;&gt;Using Quantifiers More Carefully&lt;/h3&gt;
 
 &lt;p&gt;Note that in some of the  propositions that we used to define the set operations (such as union, intersection, etc.) above, we wrote quantified $x$ without saying which set it is from. For example  $\forall x. [\dots]$. It is much preferred to always say what $x$ is belonging to when we quantify over $x$. The reason is to avoid traps like that of Russell&amp;rsquo;s paradox! This should not worry us in this class, as we will always work with well-defined &lt;em&gt;universes&lt;/em&gt; that include all the elements of the sets that we work with. Therefore, we can always assume implicitly that $x \in U$ (for a well defined set universe $U$) even if not explicitly mentioned.&lt;/p&gt;
 
 &lt;p&gt;#&lt;/p&gt;
 
-&lt;h3 id=&#34;set-practice&#34;&gt;Set Practice&lt;/h3&gt;
+&lt;h3 id=&#34;set-practice:3a08b95a8ad598832d09afa687b9b147&#34;&gt;Set Practice&lt;/h3&gt;
 
 &lt;p&gt;Here are some practice problems involving sets.  We won&amp;rsquo;t go through
 these in class, but you should ask questions about any are unclear.  (At
@@ -391,7 +522,7 @@ is due &lt;strong&gt;Friday, 15 September at 6:29:00pm&lt;/strong&gt;.&lt;/p&gt;
       <guid>https://uvacs2102.github.io/class6/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule:647dbe1e5b68015679492d34153c74f5&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;Everyone should have received their graded PS1 by now. Please read &lt;a href=&#34;https://collab.its.virginia.edu/access/content/group/9bd99d1c-6f18-4542-a7d1-8ffc4fccbd3d/ps1solutions.pdf&#34;&gt;the comments posted in collab&lt;/a&gt;.&lt;/p&gt;
 
@@ -410,7 +541,7 @@ src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
    &lt;a href=&#34;https://uvacs2102.github.io/docs/class6.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes and Questions&lt;/b&gt;&lt;/a&gt;.
    &lt;/div&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
+&lt;h2 id=&#34;links:647dbe1e5b68015679492d34153c74f5&#34;&gt;Links&lt;/h2&gt;
 
 &lt;p&gt;If you believe real computing systems have the property that the values
 you read from memory will match what you wrote there, see:&lt;/p&gt;
@@ -442,7 +573,7 @@ is the P vs. NP question in this list.&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;programs-and-proofs&#34;&gt;Programs and Proofs&lt;/h1&gt;
+&lt;h1 id=&#34;programs-and-proofs:647dbe1e5b68015679492d34153c74f5&#34;&gt;Programs and Proofs&lt;/h1&gt;
 
 &lt;p&gt;What does it mean to &lt;em&gt;test&lt;/em&gt; a computing system?  What does it mean for a computing system to &lt;em&gt;always behave correctly&lt;/em&gt;?&lt;/p&gt;
 
@@ -452,7 +583,7 @@ is the P vs. NP question in this list.&lt;/p&gt;
 
 &lt;div class=&#34;biggap&#34;&gt;&lt;/div&gt;
 
-&lt;h1 id=&#34;minima&#34;&gt;Minima&lt;/h1&gt;
+&lt;h1 id=&#34;minima:647dbe1e5b68015679492d34153c74f5&#34;&gt;Minima&lt;/h1&gt;
 
 &lt;p&gt;The &lt;em&gt;minimum&lt;/em&gt; of a set with respect to some comparator operator is the
 element which is &amp;ldquo;less than&amp;rdquo; (according to that comparator) every
@@ -463,7 +594,7 @@ $\forall x \in S - { m } . m \prec x$.&lt;/p&gt;
 \forall S \in \textrm{pow}(\mathbb{N}) - { \varnothing } \ldotp \exists m \in S\ldotp \forall x \in S - {m}\ldotp m &amp;lt; x
 $$&lt;/p&gt;
 
-&lt;h1 id=&#34;formulas-propositions-and-inference-rules&#34;&gt;Formulas, Propositions, and Inference Rules&lt;/h1&gt;
+&lt;h1 id=&#34;formulas-propositions-and-inference-rules:647dbe1e5b68015679492d34153c74f5&#34;&gt;Formulas, Propositions, and Inference Rules&lt;/h1&gt;
 
 &lt;p&gt;$P \implies Q$ is a &lt;em&gt;formula&lt;/em&gt;.&lt;br /&gt;
 $\forall P \in { T, F } . \forall Q \in { T, F } . P \implies Q$ is a &lt;em&gt;proposition&lt;/em&gt;.&lt;br /&gt;
@@ -491,7 +622,7 @@ T$.&lt;/p&gt;
 $\infer{Q}{P}$ is sound if and only if the formula
 $P \implies Q$ is valid. So, this way, we can find out whether an inference rule is sound or not, by checking out whether the corresponding formula is valid or not.&lt;/p&gt;
 
-&lt;h1 id=&#34;negating-quantifiers&#34;&gt;Negating Quantifiers&lt;/h1&gt;
+&lt;h1 id=&#34;negating-quantifiers:647dbe1e5b68015679492d34153c74f5&#34;&gt;Negating Quantifiers&lt;/h1&gt;
 
 &lt;p&gt;What is the negation of $\forall x \in S . P(x)$?
 &lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
@@ -499,7 +630,7 @@ $P \implies Q$ is valid. So, this way, we can find out whether an inference rule
 &lt;p&gt;What is the negation of $\exists x \in S . P(x)$?
 &lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;satisfiability&#34;&gt;Satisfiability&lt;/h1&gt;
+&lt;h1 id=&#34;satisfiability:647dbe1e5b68015679492d34153c74f5&#34;&gt;Satisfiability&lt;/h1&gt;
 
 &lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; A formula is in &lt;em&gt;SAT&lt;/em&gt; if it is in CNF form and it is
   satisfiable.&lt;/p&gt;
@@ -594,35 +725,35 @@ x&lt;/em&gt;{49}) \wedge (x&lt;em&gt;{21} \vee x&lt;/em&gt;{40} \vee \overline{x
 x&lt;em&gt;{7}) \wedge (x&lt;/em&gt;{25} \vee x&lt;em&gt;{47} \vee \overline{x&lt;/em&gt;{12}}) \end{math}
 \end{center}&lt;/p&gt;
 
-&lt;h2 id=&#34;converting-truth-tables-to-dnf&#34;&gt;Converting Truth Tables to DNF&lt;/h2&gt;
+&lt;h2 id=&#34;converting-truth-tables-to-dnf:647dbe1e5b68015679492d34153c74f5&#34;&gt;Converting Truth Tables to DNF&lt;/h2&gt;
 
 &lt;p&gt;\begin{tabular}{cc|cc}
 $P$ &amp;amp; $Q$ &amp;amp; $P \implies Q$ &amp;amp; $P \oplus Q$ \ \hline
-\T &amp;amp; \T   &amp;amp; \T &amp;amp; \F &lt;br /&gt;
-\T &amp;amp; \F   &amp;amp; \F &amp;amp; \T &lt;br /&gt;
-\F &amp;amp; \T   &amp;amp; \T &amp;amp; \T &lt;br /&gt;
-\F &amp;amp; \F   &amp;amp; \T &amp;amp; \F &lt;br /&gt;
+\T &amp;amp; \T   &amp;amp; \T &amp;amp; \F \
+\T &amp;amp; \F   &amp;amp; \F &amp;amp; \T \
+\F &amp;amp; \T   &amp;amp; \T &amp;amp; \T \
+\F &amp;amp; \F   &amp;amp; \T &amp;amp; \F \
 \end{tabular}&lt;/p&gt;
 
 &lt;p&gt;The output of the operator is \T\ if and only if the inputs do match &lt;em&gt;one row&lt;/em&gt; where the output is \T.  So, to get a DNF we can go over all the rows where hte output is \T, and for each write a clause that means we &lt;em&gt;are&lt;/em&gt; in that row. Then we OR all such (conjunctive) clauses. For example, for $P \oplus Q$ we get&lt;/p&gt;
 
 &lt;p&gt;$$(P \wedge \neg Q) \vee (\neg P \wedge Q)$$&lt;/p&gt;
 
-&lt;h2 id=&#34;converting-truth-tables-to-cnf&#34;&gt;Converting Truth Tables to CNF&lt;/h2&gt;
+&lt;h2 id=&#34;converting-truth-tables-to-cnf:647dbe1e5b68015679492d34153c74f5&#34;&gt;Converting Truth Tables to CNF&lt;/h2&gt;
 
 &lt;p&gt;\begin{tabular}{cc|cc}
 $P$ &amp;amp; $Q$ &amp;amp; $P \implies Q$ &amp;amp; $P \oplus Q$ \ \hline
-\T &amp;amp; \T   &amp;amp; \T &amp;amp; \F &lt;br /&gt;
-\T &amp;amp; \F   &amp;amp; \F &amp;amp; \T &lt;br /&gt;
-\F &amp;amp; \T   &amp;amp; \T &amp;amp; \T &lt;br /&gt;
-\F &amp;amp; \F   &amp;amp; \T &amp;amp; \F &lt;br /&gt;
+\T &amp;amp; \T   &amp;amp; \T &amp;amp; \F \
+\T &amp;amp; \F   &amp;amp; \F &amp;amp; \T \
+\F &amp;amp; \T   &amp;amp; \T &amp;amp; \T \
+\F &amp;amp; \F   &amp;amp; \T &amp;amp; \F \
 \end{tabular}&lt;/p&gt;
 
 &lt;p&gt;The output of the operator is \T\ if and only if the inputs do not match &lt;em&gt;any row&lt;/em&gt; where the output is \F.  So, to get a CNF we can go over all the rows where hte output is \F, and for each write a clause that means we are &lt;em&gt;not&lt;/em&gt; in that row. Then we AND all such clauses. For example, for $P \oplus Q$ we get&lt;/p&gt;
 
 &lt;p&gt;$$(\neg P \vee \neg Q) \wedge (P \vee Q)$$&lt;/p&gt;
 
-&lt;h2 id=&#34;the-related-3cnf-formulation&#34;&gt;The related 3CNF formulation&lt;/h2&gt;
+&lt;h2 id=&#34;the-related-3cnf-formulation:647dbe1e5b68015679492d34153c74f5&#34;&gt;The related 3CNF formulation&lt;/h2&gt;
 
 &lt;p&gt;When we are only interested to know whether or not a given formula is satisfiable, we can write a 3CNF that is satisfiable iff the original formula is. In order to do that, we first write an equivalent CNF, and then convert it to a 3CNF (which is not necessarily equivalent, but only guarantees to preserve the &lt;em&gt;satisfiability&lt;/em&gt; feature) as follow. For each clause with less than 3 literals such as $(A \lor \neg B)$ we add a dummy variable $C$ (only for this clause) and interprete the $(A \lor \neg B)$ as a formula over all of $A,B,C$ and write a CNF for them (which happens to be 3CNF!). For longer clauses such as
 $(A \lor B \lor C \lor D)$ we do another trick of breaking them into smaller parts using new dummy variables as follows $(A \lor B \lor \neg X) \wedge (\neg X \lor C \lor D).$&lt;/p&gt;
@@ -649,7 +780,7 @@ $(A \lor B \lor C \lor D)$ we do another trick of breaking them into smaller par
       <guid>https://uvacs2102.github.io/class5/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule:d690e1859ec274fb7ed997cd7db3fba5&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps2&#34;&gt;&lt;strong&gt;Problem Set 2&lt;/strong&gt;&lt;/a&gt; is due &lt;strong&gt;Friday at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
 
@@ -669,7 +800,7 @@ $(A \lor B \lor C \lor D)$ we do another trick of breaking them into smaller par
   would include a proof that no shorter formula exists.
    &lt;/div&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
+&lt;h2 id=&#34;links:d690e1859ec274fb7ed997cd7db3fba5&#34;&gt;Links&lt;/h2&gt;
 
 &lt;p&gt;If you want to learn more about how to learn the logic implemented by a chip
 and cryptosystems used in car immobolizers, see &lt;a href=&#34;https://www.cs.virginia.edu/~evans/pubs/usenix08/usenix08.pdf&#34;&gt;&lt;em&gt;Reverse-Engineering a
@@ -684,7 +815,7 @@ cars.&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;notes-and-questions&#34;&gt;Notes and Questions&lt;/h1&gt;
+&lt;h1 id=&#34;notes-and-questions:d690e1859ec274fb7ed997cd7db3fba5&#34;&gt;Notes and Questions&lt;/h1&gt;
 
 &lt;p&gt;&lt;strong&gt;Definition: satisfiable.&lt;/strong&gt; A logical formula is &lt;em&gt;satisfiable&lt;/em&gt; if there
   is &lt;em&gt;some&lt;/em&gt; way to make it &lt;strong&gt;true&lt;/strong&gt;.  That is, there is at least one
@@ -730,7 +861,7 @@ involving 5 variables?&lt;/p&gt;
 
 &lt;!--page--&gt;
 
-&lt;h2 id=&#34;logical-quantifiers&#34;&gt;Logical Quantifiers&lt;/h2&gt;
+&lt;h2 id=&#34;logical-quantifiers:d690e1859ec274fb7ed997cd7db3fba5&#34;&gt;Logical Quantifiers&lt;/h2&gt;
 
 &lt;p&gt;$\forall x \in S. P(x)$ means $P$ holds for &lt;em&gt;every&lt;/em&gt; element of $S$.&lt;br /&gt;
 $\exists x \in S. P(x)$ means $P$ holds for &lt;em&gt;at least one&lt;/em&gt; element of $S$.&lt;/p&gt;
@@ -912,166 +1043,6 @@ For each of the formulas below, determine if it is _valid_ and if it is _satisfi
 3. $((P \implies Q) \wedge (Q \implies P)) \vee (P \xor Q)$
 
 
-
-&lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Resources</title>
-      <link>https://uvacs2102.github.io/resources/</link>
-      <pubDate>Thu, 31 Aug 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://uvacs2102.github.io/resources/</guid>
-      <description>
-
-&lt;p&gt;Here are some links to suggested additional resources for students who
-would like to have more examples and alternate presentations of the
-material we cover in class and the textbook covers.&lt;/p&gt;
-
-&lt;h2 id=&#34;books&#34;&gt;Books&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.people.vcu.edu/~rhammack/BookOfProof/BookOfProof.pdf&#34;&gt;&lt;em&gt;Book of Proof&lt;/em&gt;&lt;/a&gt;, Richard Hammack&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;This is a creative commons textbook all about proofs, that includes
-  many of the topics we cover in cs2102.  Chapter 5 is on
-  &lt;em&gt;Contrapositive Proof&lt;/em&gt; and Chapter 6 is on &lt;em&gt;Proof by Contradiction&lt;/em&gt;.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://cseweb.ucsd.edu/~gill/BWLectSite/&#34;&gt;&lt;em&gt;Lectures in Discrete Mathematics&lt;/em&gt;&lt;/a&gt;, Edward A. Bender and S. Gil Williamson&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;This course is structured quite differently from our course, but covers many of the same topics with many examples.  The most likely useful chapters for cs2102 students are: &lt;a href=&#34;http://cseweb.ucsd.edu/~gill/BWLectSite/Resources/C1U2Lo.pdf&#34;&gt;Logic&lt;/a&gt;, &lt;a href=&#34;http://cseweb.ucsd.edu/~gill/BWLectSite/Resources/C1U4SF.pdf&#34;&gt;Sets and Functions&lt;/a&gt;, &lt;a href=&#34;http://cseweb.ucsd.edu/~gill/BWLectSite/Resources/C1U6IS.pdf&#34;&gt;Inductions, Sequences and Series&lt;/a&gt;.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&#34;courses&#34;&gt;Courses&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-042j-mathematics-for-computer-science-spring-2015/&#34;&gt;Mathematics for Computer Science&lt;/a&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;This is an MIT course, which the textbook we use developed from. There are may example problems (some with solutions) that were used in the class.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://web.stanford.edu/class/cs103/&#34;&gt;Stanford cs103&lt;/a&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;The first 13 classes cover similar topics to cs2102; the rest of the course is more like cs3102.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www-inst.eecs.berkeley.edu/~cs70/fa16/&#34;&gt;Berkeley CS70&lt;/a&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;Not much material is available on-line, but see &lt;a href=&#34;http://www-inst.eecs.berkeley.edu/~cs70/fa16/&#34;&gt;Mike Clancy and David Wagner&amp;rsquo;s version of the course from 2005&lt;/a&gt;.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&#34;math&#34;&gt;Math&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.wolframalpha.com/input/?i=(2k+%2B+1)%5E2&#34;&gt;Wolfram Alpha&lt;/a&gt;
-is very good at doing most of the algebra, calculation, etc. you would
-encounter in this class.  It is also &lt;a href=&#34;http://www.wolframalpha.com/input/?i=(P+%3D%3E+NOT(P))+%3D%3E+(Q+%3D%3E+NOT(P))&#34;&gt;pretty good at logic&lt;/a&gt;.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Class 3: Well-Ordering Principle</title>
-      <link>https://uvacs2102.github.io/class3/</link>
-      <pubDate>Tue, 29 Aug 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://uvacs2102.github.io/class3/</guid>
-      <description>
-
-&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
-
-&lt;p&gt;This week, you should read MCS Chapter 2 and MCS Chapter 3 (at least
-through the end of Section 3.4).&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps1&#34;&gt;&lt;strong&gt;Problem Set 1&lt;/strong&gt;&lt;/a&gt; is due &lt;strong&gt;Friday at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;Office hours started Monday afternoon. See &lt;a href=&#34;https://uvacs2102.github.io/officehours/&#34;&gt;the course
-calendar&lt;/a&gt; for the full office
-hours schedule.&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;
-   &lt;center&gt;
-&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;dd5193b1df334282a62697cf2343ad3a&#34; data-ratio=&#34;1.77777777777778&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
-   &lt;/center&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;highlightm&#34;&gt;
-   &lt;a href=&#34;https://uvacs2102.github.io/docs/class3.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes and Questions&lt;/b&gt;&lt;/a&gt;.
-   &lt;/div&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://math.berkeley.edu/~kpmann/Well-ordering.pdf&#34;&gt;&lt;em&gt;The Well-Ordering Theorem: one of the Greatest Mathematical Controversies of All Time&lt;/em&gt;&lt;/a&gt;, Kathryn Mann.&lt;/p&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;notes-and-questions&#34;&gt;Notes and Questions&lt;/h1&gt;
-
-&lt;p&gt;What properties must a sensible ordering function have?&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; A set is &lt;em&gt;ordered&lt;/em&gt; with respect to an ordering relation (e.g., $&amp;lt;$), if two things hold. First: every pair of inequal elements $a,b$ in $A$
-either satisfy $a&amp;lt;b$ or $b&amp;lt;a$. Second  $a&amp;lt;b$ and $b&amp;lt;a$ should always imply that $a&amp;lt;b$ (this is called the transitivity).&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; An ordered set,with respect to an ordering
-  relation (e.g., $&amp;lt;$), is &lt;em&gt;well-ordered&lt;/em&gt;  if all of its non-empty subsets has a minimum
-  element.&lt;/p&gt;
-
-&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;
-
-&lt;p&gt;Which of these are well-ordered?&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;The set of non-negative integers, comparator $&amp;lt;$.&lt;/li&gt;
-&lt;li&gt;The set of integers, comparator $&amp;lt;$.&lt;/li&gt;
-&lt;li&gt;The set of integers, comparator $|a| &amp;lt; |b|$.&lt;/li&gt;
-&lt;li&gt;The set of integers, comparator if |a| = |b|: $a &amp;lt; b$, else: $|a| &amp;lt; |b|$.&lt;/li&gt;
-&lt;li&gt;The set of national soccer teams, comparator winning games.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Prove the set of positive rationals is &lt;em&gt;not&lt;/em&gt; well-ordered under $&amp;lt;$.&lt;/p&gt;
-
-&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;
-
-&lt;p&gt;#&lt;/p&gt;
-
-&lt;p&gt;Provide a comparison function that can be used to well-order the positive rationals.&lt;/p&gt;
-
-&lt;!--page--&gt;
-
-&lt;h3 id=&#34;template-for-well-ordering-proofs-section-2-2&#34;&gt;Template for Well-Ordering Proofs (Section 2.2)&lt;/h3&gt;
-
-&lt;p&gt;To prove that $P(n)$ is true for all $n \in \mathbb{N}$:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Define the set of counterexamples, $C ::= { n \in \mathbb{N} | NOT(P(n)) }$.&lt;/li&gt;
-&lt;li&gt;Assume for contradiction that $C$ is ______________. &lt;!-- non-empty.--&gt;&lt;/li&gt;
-&lt;li&gt;By the well-ordering principle, there must be __________________ &lt;!-- some smallest element--&gt;, $m \in C$.&lt;/li&gt;
-&lt;li&gt;Reach a contradiction (this is the creative part!).  One way to reach a contradiction would be to show $P(m)$.  Another way is to show there must be an element $m&amp;rsquo; \in C$ where $m&amp;rsquo; &amp;lt; m$.&lt;/li&gt;
-&lt;li&gt;Conclude that $C$ must be empty, hence there are no counter-examples and $P(n)$ always holds.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;strong&gt;Example: Betable Numbers.&lt;/strong&gt; A number is &lt;em&gt;betable&lt;/em&gt; if it can be
-  produced using some combination of \$2 and \$5 chips.  Prove that all
-  integer values greater than \$3 are betable.&lt;/p&gt;
-
-&lt;div class=&#34;biggap&#34;&gt;&lt;/div&gt;
-#
-#
-#
-
-**Example: Division Property.** Given integer $a$ and positive integer $b$, there exist integers $q$ and $r$ such that:
-      $a = qb + r$ and $0 \le r &lt; b$.
-
-&lt;div class=&#34;biggap&#34;&gt;&lt;/div&gt;
-#
-#
-
-
-_The whole problem with the world is that fools and fanatics are always so certain of themselves, and wiser people so full of doubts._ Bertrand Russell
 
 &lt;/div&gt;
 </description>
