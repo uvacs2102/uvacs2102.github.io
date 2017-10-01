@@ -10,6 +10,50 @@
     <atom:link href="https://uvacs2102.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Fall Break Office Hours</title>
+      <link>https://uvacs2102.github.io/fbofficehours/</link>
+      <pubDate>Sun, 01 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/fbofficehours/</guid>
+      <description>
+
+&lt;p&gt;The office hours schedule for next week will be different from normal
+because of “Fall Break” and the Exam (as usual, all will be in Rice
+436 except mine and Prof. Mahmoody’s as noted):&lt;/p&gt;
+
+&lt;h3 id=&#34;monday&#34;&gt;Monday&lt;/h3&gt;
+
+&lt;p&gt;Mohammad Mahmoody (Rice 511), 10:45-11:45am&lt;br /&gt;
+Sarah Meng, 4:30-6:00pm&lt;/p&gt;
+
+&lt;h3 id=&#34;tuesday&#34;&gt;Tuesday&lt;/h3&gt;
+
+&lt;p&gt;Nate Olsen, 10-11:30am&lt;br /&gt;
+Michael Woon, 11am-12:30pm&lt;br /&gt;
+Henry Spece, 3:30-5pm&lt;/p&gt;
+
+&lt;h3 id=&#34;wednesday&#34;&gt;Wednesday&lt;/h3&gt;
+
+&lt;p&gt;Colin Harfst, 9:30am-12:30pm&lt;br /&gt;
+Anna Wu, noon-1:30pm&lt;br /&gt;
+Michael Woon, 12:30-2:00pm&lt;br /&gt;
+David Evans (Rice 507), 2:30-3:30pm&lt;br /&gt;
+Bhuvanesh Murali, 3-5pm&lt;br /&gt;
+Helen Simecek, 3:30-5pm&lt;br /&gt;
+Yasasvini Puligundle, 5-6pm&lt;br /&gt;
+Xueying Bai, 6-7pm&lt;br /&gt;
+Fan Feng, 7-8:30pm&lt;br /&gt;
+Nate Olsen, 7:30-9:00pm&lt;/p&gt;
+
+&lt;h3 id=&#34;thursday&#34;&gt;Thursday&lt;/h3&gt;
+
+&lt;p&gt;Amar Singh, 9am-10:30&lt;br /&gt;
+Xiao Zhang, 10-11am&lt;br /&gt;
+Prashant Gorthi, 11am-noon&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Problem Set 5 Comments</title>
       <link>https://uvacs2102.github.io/ps5comments/</link>
       <pubDate>Sun, 01 Oct 2017 00:00:00 +0000</pubDate>
@@ -837,254 +881,6 @@ least a few of these will be on Exam 1.)&lt;/p&gt;
       <guid>https://uvacs2102.github.io/ps3posted/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps3&#34;&gt;&lt;strong&gt;Problem Set 3&lt;/strong&gt;&lt;/a&gt; [&lt;a href=&#34;https://uvacs2102.github.io/docs/ps3.pdf&#34;&gt;PDF&lt;/a&gt;] is now posted and
 is due &lt;strong&gt;Friday, 15 September at 6:29:00pm&lt;/strong&gt;.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Class 6: Quantifiers and More</title>
-      <link>https://uvacs2102.github.io/class6/</link>
-      <pubDate>Thu, 07 Sep 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://uvacs2102.github.io/class6/</guid>
-      <description>
-
-&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
-
-&lt;p&gt;Everyone should have received their graded PS1 by now. Please read &lt;a href=&#34;https://collab.its.virginia.edu/access/content/group/9bd99d1c-6f18-4542-a7d1-8ffc4fccbd3d/ps1solutions.pdf&#34;&gt;the comments posted in collab&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps2&#34;&gt;&lt;strong&gt;Problem Set 2&lt;/strong&gt;&lt;/a&gt; is due &lt;strong&gt;Friday at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;You should finish reading MCS Chapter 3 by Tuesday (12 September).&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;
-   &lt;center&gt;
-&lt;script async class=&#34;speakerdeck-embed&#34; 
-data-id=&#34;44b72b8383c14676af241944ea541667&#34; data-ratio=&#34;1.77777777777778&#34; 
-src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
-   &lt;/center&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;highlightm&#34;&gt;
-   &lt;a href=&#34;https://uvacs2102.github.io/docs/class6.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes and Questions&lt;/b&gt;&lt;/a&gt;.
-   &lt;/div&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
-
-&lt;p&gt;If you believe real computing systems have the property that the values
-you read from memory will match what you wrote there, see:&lt;/p&gt;
-
-&lt;p&gt;Sudhakar Govindavajhala and Andrew W. Appel. &lt;a href=&#34;http://sip.cs.princeton.edu/pub/memerr.pdf&#34;&gt;&lt;em&gt;Using Memory Errors to Attack a Virtual Machine&lt;/em&gt;&lt;/a&gt;, IEEE Symposium on Security and Privacy 2003.&lt;/p&gt;
-
-&lt;p&gt;Bianca Schroeder, Eduardo Pinheiro, Wolf-Dietrich Weber. &lt;a href=&#34;http://www.cs.utoronto.ca/~bianca/papers/sigmetrics09.pdf&#34;&gt;&lt;em&gt;DRAM Errors
-in the Wild: A Large-Scale Field
-Study&lt;/em&gt;&lt;/a&gt;. SIGMETRICS 2009.&lt;/p&gt;
-
-&lt;p&gt;Kaveh Razavi, Ben Gras, Erik Bosman, Bart Preneel, Cristiano Giuffrida
-and Herbert Bos. &lt;a href=&#34;https://www.usenix.org/conference/usenixsecurity16/technical-sessions/presentation/razavi&#34;&gt;&lt;em&gt;Flip Feng Shui: Hammering a Needle in the Software
-Stack&lt;/em&gt;&lt;/a&gt;. USENIX
-Security 2016.&lt;/p&gt;
-
-&lt;p&gt;Yuan Xiao, Xiaokuan Zhang, Yinqian Zhang, and Radu Teodorescu. &lt;a href=&#34;https://www.usenix.org/system/files/conference/usenixsecurity16/sec16_paper_xiao.pdf&#34;&gt;&lt;em&gt;One Bit Flips, One Cloud Flops: Cross-VM Row Hammer Attacks and Privilege Escalation&lt;/em&gt;&lt;/a&gt;, USENIX Security 2016.&lt;/p&gt;
-
-&lt;p&gt;Sahand Saba&amp;rsquo;s &lt;a href=&#34;http://sahandsaba.com/understanding-sat-by-implementing-a-simple-sat-solver-in-python.html&#34;&gt;&lt;em&gt;Understanding SAT by Implementing a Simple SAT Solver in
-Python&lt;/em&gt;&lt;/a&gt;  [&lt;a href=&#34;https://github.com/evansuva/simple-sat&#34;&gt;Code with Dave&amp;rsquo;s modifications: https://github.com/evansuva/simple-sat&lt;/a&gt;]&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://baldur.iti.kit.edu/sat-competition-2017/&#34;&gt;SAT Competition 2017&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Millennium Problems on &lt;a href=&#34;http://www.claymath.org/millennium-problems/&#34;&gt;Clay institute&amp;rsquo;s
-website&lt;/a&gt;. Whether or not we can&lt;br /&gt;
-solve the &lt;em&gt;satisfiability&lt;/em&gt; of a given CNF or 3CNF formula in polynomial time,
-is the P vs. NP question in this list.&lt;/p&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;programs-and-proofs&#34;&gt;Programs and Proofs&lt;/h1&gt;
-
-&lt;p&gt;What does it mean to &lt;em&gt;test&lt;/em&gt; a computing system?  What does it mean for a computing system to &lt;em&gt;always behave correctly&lt;/em&gt;?&lt;/p&gt;
-
-&lt;div class=&#34;biggap&#34;&gt;&lt;/div&gt;
-
-&lt;p&gt;Can a mathematical proof guarantee a real computing system will behave correctly?&lt;/p&gt;
-
-&lt;div class=&#34;biggap&#34;&gt;&lt;/div&gt;
-
-&lt;h1 id=&#34;minima&#34;&gt;Minima&lt;/h1&gt;
-
-&lt;p&gt;The &lt;em&gt;minimum&lt;/em&gt; of a set with respect to some comparator operator is the
-element which is &amp;ldquo;less than&amp;rdquo; (according to that comparator) every
-other element: $m \in S$ is the &lt;em&gt;minimum&lt;/em&gt; of $S$ if and only if
-$\forall x \in S - { m } . m \prec x$.&lt;/p&gt;
-
-&lt;p&gt;$$
-\forall S \in \textrm{pow}(\mathbb{N}) - { \varnothing } \ldotp \exists m \in S\ldotp \forall x \in S - {m}\ldotp m &amp;lt; x
-$$&lt;/p&gt;
-
-&lt;h1 id=&#34;formulas-propositions-and-inference-rules&#34;&gt;Formulas, Propositions, and Inference Rules&lt;/h1&gt;
-
-&lt;p&gt;$P \implies Q$ is a &lt;em&gt;formula&lt;/em&gt;.&lt;br /&gt;
-$\forall P \in { T, F } . \forall Q \in { T, F } . P \implies Q$ is a &lt;em&gt;proposition&lt;/em&gt;.&lt;br /&gt;
-$\infer{Q}{P}$ is an &lt;em&gt;inference rule&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;A &lt;em&gt;formula&lt;/em&gt; is &lt;em&gt;satisfiable&lt;/em&gt; if there is some way to make it true.&lt;/p&gt;
-
-&lt;p&gt;$P \implies Q$ is satisfiable:&lt;/p&gt;
-
-&lt;p&gt;$\exists P \in { T, F } . \exists Q \in {T, F } . P \implies Q$&lt;/p&gt;
-
-&lt;p&gt;We can show a formula is satisfiable by giving &lt;em&gt;one&lt;/em&gt; choice for the
-variable assignments that makes it true. For example, $P = T$, $Q =
-T$.&lt;/p&gt;
-
-&lt;p&gt;A &lt;em&gt;formula&lt;/em&gt; is &lt;em&gt;valid&lt;/em&gt; if there is no way to make it false.&lt;/p&gt;
-
-&lt;p&gt;$P \implies Q$ is &lt;em&gt;not&lt;/em&gt; valid:&lt;/p&gt;
-
-&lt;p&gt;$\forall P \in { T, F } . \forall Q \in {T, F } . P \implies Q$&lt;/p&gt;
-
-&lt;p&gt;This proposition is false, we can chose $P = T$, $Q = F$.&lt;/p&gt;
-
-&lt;p&gt;An &lt;em&gt;inference rule&lt;/em&gt; is sound if it never leads to a false conclusion. An inference rule
-$\infer{Q}{P}$ is sound if and only if the formula
-$P \implies Q$ is valid. So, this way, we can find out whether an inference rule is sound or not, by checking out whether the corresponding formula is valid or not.&lt;/p&gt;
-
-&lt;h1 id=&#34;negating-quantifiers&#34;&gt;Negating Quantifiers&lt;/h1&gt;
-
-&lt;p&gt;What is the negation of $\forall x \in S . P(x)$?
-&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;What is the negation of $\exists x \in S . P(x)$?
-&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;satisfiability&#34;&gt;Satisfiability&lt;/h1&gt;
-
-&lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; A formula is in &lt;em&gt;SAT&lt;/em&gt; if it is in CNF form and it is
-  satisfiable.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; A formula is in &lt;em&gt;3SAT&lt;/em&gt; if it is in 3CNF form and it is
-  satisfiable.&lt;/p&gt;
-
-&lt;p&gt;$$
-(x_1 \vee x_2 \vee x_3) \wedge (x_1 \vee \overline{x_2} \vee x_3) \wedge (\overline{x_1} \vee x_2 \vee \overline{x_3})
-$$&lt;/p&gt;
-
-&lt;p&gt;\begin{center} \tiny \begin{math} (x&lt;em&gt;{48} \vee x&lt;/em&gt;{4} \vee \overline{x&lt;em&gt;{9}})
-\wedge (\overline{x&lt;/em&gt;{44}} \vee x&lt;em&gt;{50} \vee \overline{x&lt;/em&gt;{37}}) \wedge
-(\overline{x&lt;em&gt;{8}} \vee \overline{x&lt;/em&gt;{1}} \vee x&lt;em&gt;{28}) \wedge (x&lt;/em&gt;{21} \vee
-x&lt;em&gt;{27} \vee \overline{x&lt;/em&gt;{32}}) \wedge (x&lt;em&gt;{17} \vee x&lt;/em&gt;{29} \vee
-\overline{x&lt;em&gt;{30}}) \wedge (x&lt;/em&gt;{30} \vee x&lt;em&gt;{24} \vee x&lt;/em&gt;{37}) \wedge
-(\overline{x&lt;em&gt;{22}} \vee \overline{x&lt;/em&gt;{27}} \vee \overline{x&lt;em&gt;{44}}) \wedge
-(x&lt;/em&gt;{8} \vee \overline{x&lt;em&gt;{25}} \vee \overline{x&lt;/em&gt;{24}}) \wedge
-(\overline{x&lt;em&gt;{44}} \vee x&lt;/em&gt;{50} \vee x&lt;em&gt;{14}) \wedge (x&lt;/em&gt;{45} \vee x&lt;em&gt;{15} \vee
-x&lt;/em&gt;{37}) \wedge (\overline{x&lt;em&gt;{16}} \vee x&lt;/em&gt;{14} \vee \overline{x&lt;em&gt;{36}}) \wedge
-(\overline{x&lt;/em&gt;{33}} \vee x&lt;em&gt;{5} \vee x&lt;/em&gt;{26}) \wedge (x&lt;em&gt;{18} \vee
-\overline{x&lt;/em&gt;{7}} \vee \overline{x&lt;em&gt;{24}}) \wedge (x&lt;/em&gt;{31} \vee x&lt;em&gt;{38} \vee
-x&lt;/em&gt;{28}) \wedge (x&lt;em&gt;{31} \vee \overline{x&lt;/em&gt;{33}} \vee \overline{x&lt;em&gt;{8}}) \wedge
-(x&lt;/em&gt;{49} \vee x&lt;em&gt;{7} \vee \overline{x&lt;/em&gt;{6}}) \wedge (x&lt;em&gt;{34} \vee
-\overline{x&lt;/em&gt;{8}} \vee x&lt;em&gt;{46}) \wedge (x&lt;/em&gt;{4} \vee \overline{x&lt;em&gt;{5}} \vee
-\overline{x&lt;/em&gt;{35}}) \wedge (x&lt;em&gt;{43} \vee x&lt;/em&gt;{27} \vee x&lt;em&gt;{39}) \wedge
-(\overline{x&lt;/em&gt;{46}} \vee \overline{x&lt;em&gt;{40}} \vee \overline{x&lt;/em&gt;{27}}) \wedge
-(\overline{x&lt;em&gt;{25}} \vee x&lt;/em&gt;{14} \vee \overline{x&lt;em&gt;{49}}) \wedge (x&lt;/em&gt;{38} \vee
-x&lt;em&gt;{5} \vee x&lt;/em&gt;{15}) \wedge (x&lt;em&gt;{9} \vee x&lt;/em&gt;{14} \vee \overline{x&lt;em&gt;{19}}) \wedge
-(x&lt;/em&gt;{45} \vee \overline{x&lt;em&gt;{42}} \vee \overline{x&lt;/em&gt;{39}}) \wedge (x&lt;em&gt;{34} \vee
-\overline{x&lt;/em&gt;{22}} \vee \overline{x&lt;em&gt;{28}}) \wedge (\overline{x&lt;/em&gt;{20}} \vee
-x&lt;em&gt;{15} \vee \overline{x&lt;/em&gt;{8}}) \wedge (\overline{x&lt;em&gt;{44}} \vee
-\overline{x&lt;/em&gt;{10}} \vee \overline{x&lt;em&gt;{9}}) \wedge (x&lt;/em&gt;{22} \vee
-\overline{x&lt;em&gt;{31}} \vee x&lt;/em&gt;{14}) \wedge (\overline{x&lt;em&gt;{9}} \vee
-\overline{x&lt;/em&gt;{42}} \vee \overline{x&lt;em&gt;{15}}) \wedge (\overline{x&lt;/em&gt;{40}} \vee
-x&lt;em&gt;{12} \vee \overline{x&lt;/em&gt;{32}}) \wedge (\overline{x&lt;em&gt;{20}} \vee
-\overline{x&lt;/em&gt;{6}} \vee \overline{x&lt;em&gt;{15}}) \wedge (\overline{x&lt;/em&gt;{37}} \vee
-x&lt;em&gt;{39} \vee \overline{x&lt;/em&gt;{23}}) \wedge (\overline{x&lt;em&gt;{3}} \vee
-\overline{x&lt;/em&gt;{40}} \vee \overline{x&lt;em&gt;{32}}) \wedge (\overline{x&lt;/em&gt;{4}} \vee
-\overline{x&lt;em&gt;{25}} \vee x&lt;/em&gt;{7}) \wedge (\overline{x&lt;em&gt;{20}} \vee
-\overline{x&lt;/em&gt;{36}} \vee \overline{x&lt;em&gt;{37}}) \wedge (\overline{x&lt;/em&gt;{40}} \vee
-\overline{x&lt;em&gt;{35}} \vee x&lt;/em&gt;{39}) \wedge (\overline{x&lt;em&gt;{43}} \vee
-\overline{x&lt;/em&gt;{40}} \vee \overline{x&lt;em&gt;{7}}) \wedge (x&lt;/em&gt;{34} \vee x&lt;em&gt;{44} \vee
-x&lt;/em&gt;{26}) \wedge (x&lt;em&gt;{13} \vee x&lt;/em&gt;{27} \vee x&lt;em&gt;{28}) \wedge (x&lt;/em&gt;{12} \vee
-\overline{x&lt;em&gt;{36}} \vee x&lt;/em&gt;{7}) \wedge (\overline{x&lt;em&gt;{16}} \vee x&lt;/em&gt;{9} \vee
-\overline{x&lt;em&gt;{24}}) \wedge (\overline{x&lt;/em&gt;{48}} \vee x&lt;em&gt;{14} \vee x&lt;/em&gt;{28}) \wedge
-(x&lt;em&gt;{16} \vee x&lt;/em&gt;{4} \vee x&lt;em&gt;{40}) \wedge (\overline{x&lt;/em&gt;{25}} \vee x&lt;em&gt;{15} \vee
-x&lt;/em&gt;{37}) \wedge (x&lt;em&gt;{47} \vee \overline{x&lt;/em&gt;{26}} \vee \overline{x&lt;em&gt;{23}}) \wedge
-(x&lt;/em&gt;{4} \vee \overline{x&lt;em&gt;{13}} \vee x&lt;/em&gt;{36}) \wedge (x&lt;em&gt;{48} \vee
-\overline{x&lt;/em&gt;{13}} \vee \overline{x&lt;em&gt;{37}}) \wedge (x&lt;/em&gt;{4} \vee x&lt;em&gt;{35} \vee
-\overline{x&lt;/em&gt;{27}}) \wedge (\overline{x&lt;em&gt;{22}} \vee x&lt;/em&gt;{47} \vee x&lt;em&gt;{26}) \wedge
-(\overline{x&lt;/em&gt;{22}} \vee \overline{x&lt;em&gt;{46}} \vee x&lt;/em&gt;{27}) \wedge
-(\overline{x&lt;em&gt;{20}} \vee x&lt;/em&gt;{49} \vee x&lt;em&gt;{11}) \wedge (x&lt;/em&gt;{42} \vee
-\overline{x&lt;em&gt;{10}} \vee x&lt;/em&gt;{28}) \wedge (\overline{x&lt;em&gt;{45}} \vee x&lt;/em&gt;{28} \vee
-\overline{x&lt;em&gt;{37}}) \wedge (x&lt;/em&gt;{14} \vee \overline{x&lt;em&gt;{32}} \vee
-\overline{x&lt;/em&gt;{23}}) \wedge (x&lt;em&gt;{22} \vee x&lt;/em&gt;{14} \vee x&lt;em&gt;{23}) \wedge
-(\overline{x&lt;/em&gt;{17}} \vee \overline{x&lt;em&gt;{46}} \vee \overline{x&lt;/em&gt;{7}}) \wedge
-(\overline{x&lt;em&gt;{31}} \vee x&lt;/em&gt;{46} \vee \overline{x&lt;em&gt;{50}}) \wedge (x&lt;/em&gt;{34} \vee
-\overline{x&lt;em&gt;{41}} \vee x&lt;/em&gt;{43}) \wedge (x&lt;em&gt;{17} \vee \overline{x&lt;/em&gt;{9}} \vee
-x&lt;em&gt;{15}) \wedge (x&lt;/em&gt;{46} \vee x&lt;em&gt;{14} \vee \overline{x&lt;/em&gt;{12}}) \wedge
-(\overline{x&lt;em&gt;{20}} \vee x&lt;/em&gt;{12} \vee x&lt;em&gt;{14}) \wedge (x&lt;/em&gt;{41} \vee x&lt;em&gt;{42} \vee
-\overline{x&lt;/em&gt;{15}}) \wedge (x&lt;em&gt;{48} \vee x&lt;/em&gt;{46} \vee \overline{x&lt;em&gt;{36}}) \wedge
-(\overline{x&lt;/em&gt;{22}} \vee \overline{x&lt;em&gt;{4}} \vee \overline{x&lt;/em&gt;{49}}) \wedge
-(x&lt;em&gt;{22} \vee x&lt;/em&gt;{12} \vee \overline{x&lt;em&gt;{42}}) \wedge (x&lt;/em&gt;{13} \vee
-\overline{x&lt;em&gt;{38}} \vee x&lt;/em&gt;{39}) \wedge (x&lt;em&gt;{48} \vee \overline{x&lt;/em&gt;{16}} \vee
-\overline{x&lt;em&gt;{27}}) \wedge (x&lt;/em&gt;{17} \vee \overline{x&lt;em&gt;{18}} \vee
-\overline{x&lt;/em&gt;{26}}) \wedge (x&lt;em&gt;{48} \vee \overline{x&lt;/em&gt;{40}} \vee
-\overline{x&lt;em&gt;{35}}) \wedge (\overline{x&lt;/em&gt;{43}} \vee \overline{x&lt;em&gt;{40}} \vee
-\overline{x&lt;/em&gt;{49}}) \wedge (x&lt;em&gt;{29} \vee x&lt;/em&gt;{11} \vee \overline{x&lt;em&gt;{32}}) \wedge
-(x&lt;/em&gt;{33} \vee \overline{x&lt;em&gt;{17}} \vee x&lt;/em&gt;{39}) \wedge (\overline{x&lt;em&gt;{25}} \vee
-\overline{x&lt;/em&gt;{9}} \vee \overline{x&lt;em&gt;{6}}) \wedge (x&lt;/em&gt;{40} \vee \overline{x&lt;em&gt;{50}}
-\vee x&lt;/em&gt;{19}) \wedge (x&lt;em&gt;{8} \vee x&lt;/em&gt;{10} \vee \overline{x&lt;em&gt;{27}}) \wedge (x&lt;/em&gt;{5}
-\vee x&lt;em&gt;{9} \vee \overline{x&lt;/em&gt;{26}}) \wedge (x&lt;em&gt;{45} \vee \overline{x&lt;/em&gt;{38}} \vee
-\overline{x&lt;em&gt;{27}}) \wedge (\overline{x&lt;/em&gt;{4}} \vee \overline{x&lt;em&gt;{40}} \vee
-\overline{x&lt;/em&gt;{42}}) \wedge (x&lt;em&gt;{21} \vee x&lt;/em&gt;{50} \vee x&lt;em&gt;{12}) \wedge
-(\overline{x&lt;/em&gt;{8}} \vee \overline{x&lt;em&gt;{14}} \vee \overline{x&lt;/em&gt;{42}}) \wedge
-(\overline{x&lt;em&gt;{17}} \vee x&lt;/em&gt;{47} \vee \overline{x&lt;em&gt;{27}}) \wedge (x&lt;/em&gt;{49} \vee
-\overline{x&lt;em&gt;{12}} \vee \overline{x&lt;/em&gt;{6}}) \wedge (x&lt;em&gt;{27} \vee x&lt;/em&gt;{49} \vee
-\overline{x&lt;em&gt;{32}}) \wedge (\overline{x&lt;/em&gt;{29}} \vee \overline{x&lt;em&gt;{12}} \vee
-\overline{x&lt;/em&gt;{26}}) \wedge (x&lt;em&gt;{48} \vee \overline{x&lt;/em&gt;{2}} \vee x&lt;em&gt;{6}) \wedge
-(x&lt;/em&gt;{16} \vee x&lt;em&gt;{36} \vee x&lt;/em&gt;{49}) \wedge (x&lt;em&gt;{33} \vee \overline{x&lt;/em&gt;{12}} \vee
-\overline{x&lt;em&gt;{26}}) \wedge (\overline{x&lt;/em&gt;{33}} \vee x&lt;em&gt;{29} \vee x&lt;/em&gt;{49}) \wedge
-(\overline{x&lt;em&gt;{48}} \vee x&lt;/em&gt;{2} \vee x&lt;em&gt;{19}) \wedge (x&lt;/em&gt;{25} \vee x&lt;em&gt;{36} \vee
-x&lt;/em&gt;{49}) \wedge (x&lt;em&gt;{21} \vee x&lt;/em&gt;{40} \vee \overline{x&lt;em&gt;{14}}) \wedge
-(\overline{x&lt;/em&gt;{34}} \vee \overline{x&lt;em&gt;{44}} \vee \overline{x&lt;/em&gt;{6}}) \wedge
-(x&lt;em&gt;{48} \vee \overline{x&lt;/em&gt;{50}} \vee \overline{x&lt;em&gt;{1}}) \wedge (x&lt;/em&gt;{5} \vee
-\overline{x&lt;em&gt;{12}} \vee x&lt;/em&gt;{7}) \wedge (x&lt;em&gt;{21} \vee \overline{x&lt;/em&gt;{35}} \vee
-\overline{x&lt;em&gt;{27}}) \wedge (\overline{x&lt;/em&gt;{22}} \vee \overline{x&lt;em&gt;{16}} \vee
-\overline{x&lt;/em&gt;{14}}) \wedge (\overline{x&lt;em&gt;{13}} \vee \overline{x&lt;/em&gt;{35}} \vee
-\overline{x&lt;em&gt;{12}}) \wedge (\overline{x&lt;/em&gt;{4}} \vee \overline{x&lt;em&gt;{35}} \vee
-\overline{x&lt;/em&gt;{42}}) \wedge (\overline{x&lt;em&gt;{50}} \vee \overline{x&lt;/em&gt;{40}} \vee
-x&lt;em&gt;{7}) \wedge (x&lt;/em&gt;{25} \vee x&lt;em&gt;{47} \vee \overline{x&lt;/em&gt;{12}}) \end{math}
-\end{center}&lt;/p&gt;
-
-&lt;h2 id=&#34;converting-truth-tables-to-dnf&#34;&gt;Converting Truth Tables to DNF&lt;/h2&gt;
-
-&lt;p&gt;\begin{tabular}{cc|cc}
-$P$ &amp;amp; $Q$ &amp;amp; $P \implies Q$ &amp;amp; $P \oplus Q$ \ \hline
-\T &amp;amp; \T   &amp;amp; \T &amp;amp; \F &lt;br /&gt;
-\T &amp;amp; \F   &amp;amp; \F &amp;amp; \T &lt;br /&gt;
-\F &amp;amp; \T   &amp;amp; \T &amp;amp; \T &lt;br /&gt;
-\F &amp;amp; \F   &amp;amp; \T &amp;amp; \F &lt;br /&gt;
-\end{tabular}&lt;/p&gt;
-
-&lt;p&gt;The output of the operator is \T\ if and only if the inputs do match &lt;em&gt;one row&lt;/em&gt; where the output is \T.  So, to get a DNF we can go over all the rows where hte output is \T, and for each write a clause that means we &lt;em&gt;are&lt;/em&gt; in that row. Then we OR all such (conjunctive) clauses. For example, for $P \oplus Q$ we get&lt;/p&gt;
-
-&lt;p&gt;$$(P \wedge \neg Q) \vee (\neg P \wedge Q)$$&lt;/p&gt;
-
-&lt;h2 id=&#34;converting-truth-tables-to-cnf&#34;&gt;Converting Truth Tables to CNF&lt;/h2&gt;
-
-&lt;p&gt;\begin{tabular}{cc|cc}
-$P$ &amp;amp; $Q$ &amp;amp; $P \implies Q$ &amp;amp; $P \oplus Q$ \ \hline
-\T &amp;amp; \T   &amp;amp; \T &amp;amp; \F &lt;br /&gt;
-\T &amp;amp; \F   &amp;amp; \F &amp;amp; \T &lt;br /&gt;
-\F &amp;amp; \T   &amp;amp; \T &amp;amp; \T &lt;br /&gt;
-\F &amp;amp; \F   &amp;amp; \T &amp;amp; \F &lt;br /&gt;
-\end{tabular}&lt;/p&gt;
-
-&lt;p&gt;The output of the operator is \T\ if and only if the inputs do not match &lt;em&gt;any row&lt;/em&gt; where the output is \F.  So, to get a CNF we can go over all the rows where hte output is \F, and for each write a clause that means we are &lt;em&gt;not&lt;/em&gt; in that row. Then we AND all such clauses. For example, for $P \oplus Q$ we get&lt;/p&gt;
-
-&lt;p&gt;$$(\neg P \vee \neg Q) \wedge (P \vee Q)$$&lt;/p&gt;
-
-&lt;h2 id=&#34;the-related-3cnf-formulation&#34;&gt;The related 3CNF formulation&lt;/h2&gt;
-
-&lt;p&gt;When we are only interested to know whether or not a given formula is satisfiable, we can write a 3CNF that is satisfiable iff the original formula is. In order to do that, we first write an equivalent CNF, and then convert it to a 3CNF (which is not necessarily equivalent, but only guarantees to preserve the &lt;em&gt;satisfiability&lt;/em&gt; feature) as follow. For each clause with less than 3 literals such as $(A \lor \neg B)$ we add a dummy variable $C$ (only for this clause) and interprete the $(A \lor \neg B)$ as a formula over all of $A,B,C$ and write a CNF for them (which happens to be 3CNF!). For longer clauses such as
-$(A \lor B \lor C \lor D)$ we do another trick of breaking them into smaller parts using new dummy variables as follows $(A \lor B \lor \neg X) \wedge (\neg X \lor C \lor D).$&lt;/p&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
 </description>
     </item>
     
