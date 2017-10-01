@@ -6,8 +6,155 @@
     <description>Recent content on cs2102: Discrete Math</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 27 Sep 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 01 Oct 2017 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://uvacs2102.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Problem Set 5 Comments</title>
+      <link>https://uvacs2102.github.io/ps5comments/</link>
+      <pubDate>Sun, 01 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/ps5comments/</guid>
+      <description>&lt;p&gt;The Problem Set 5 solutions and comments are now posted in collab: &lt;a href=&#34;https://collab.its.virginia.edu/access/content/group/9bd99d1c-6f18-4542-a7d1-8ffc4fccbd3d/ps5solutions.pdf&#34;&gt;PDF&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Class 12: Review</title>
+      <link>https://uvacs2102.github.io/class12/</link>
+      <pubDate>Thu, 28 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/class12/</guid>
+      <description>
+
+&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps5&#34;&gt;&lt;strong&gt;Problem Set 5&lt;/strong&gt;&lt;/a&gt; is due &lt;strong&gt;Friday at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;See &lt;a href=&#34;https://uvacs2102.github.io/class11&#34;&gt;Class 11 Notes&lt;/a&gt; for information and preparation advice for Exam 1, which will be in class next Thursday, 5 October.&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;
+   &lt;center&gt;
+&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;f6aa2e5580f940d984c6508ff6f26d46&#34; data-ratio=&#34;1.77777777777778&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
+   &lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlightm&#34;&gt;
+   &lt;a href=&#34;https://uvacs2102.github.io/docs/class12.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes and Questions&lt;/b&gt;&lt;/a&gt;.
+   &lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;strong-induction-principle&#34;&gt;Strong Induction Principle&lt;/h2&gt;
+
+&lt;p&gt;Let $P$ be a predicated on $\mathbb{N}$.  If&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;$P(0)$ is true, and&lt;/li&gt;
+&lt;li&gt;$(\forall m \in \mathbb{N}, m \le n . P(n)) \implies P(n + 1)$ for all $n \in \mathbb{N}$,&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;then&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;$P(m)$ is true for all $m \in \mathbb{N}$.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;As an inference rule:&lt;/p&gt;
+
+&lt;p&gt;$$
+\infer{\forall m \in \mathbb{N} . P(m)}{P(0), \forall n \in \mathbb{N} . (P(0) \vee P(1) \wedge \cdots \wedge P(n)) \implies P(n + 1)}
+$$&lt;/p&gt;
+
+&lt;p&gt;With arbitrary basis, $b \in \mathbb{N}$:&lt;/p&gt;
+
+&lt;p&gt;$$
+\infer{\forall m \in { b, b+1, b+2, \ldots } . P(m)}{P(b), \forall n \in \mathbb{N} . (P(b) \vee P(b + 1) \wedge \cdots \wedge P(n)) \implies P(n + 1)}
+$$&lt;/p&gt;
+
+&lt;p&gt;Show that &lt;em&gt;strong&lt;/em&gt; induction is not actually stronger than regular induction. (Hint: if the predicate for strong induction is $P(m)$, explain how to construct a predicate, $P&amp;rsquo;(m)$, that works with regular induction.)&lt;/p&gt;
+
+&lt;p&gt;##&lt;/p&gt;
+
+&lt;h3 id=&#34;example-strong-induction-proof&#34;&gt;Example Strong Induction Proof&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Theorem:&lt;/strong&gt; Every number, $n \in \mathbb{N}, n \geq 4$ can be written as $\alpha \cdot 2 + \beta \cdot 5$ where $\alpha, \beta \in \mathbb{N}$.&lt;/p&gt;
+
+&lt;p&gt;Proof by Strong Induction:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;First we need to define the predicate: $$P(n) := \exists \alpha, \beta \in \mathbb{N} . n = \alpha \cdot 2 + \beta \cdot 5$$.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Basis: we are proving for all $n &amp;gt; 3$:&lt;/p&gt;
+
+&lt;p&gt;$P(4)$: $\alpha = 2, \beta = 0$ gives $4 = 2 \cdot 2 + 0 \cdot 5$.
+$P(5)$: $\alpha = 0, \beta = 1$ gives $5 = 0 \cdot 2 + 1 \cdot 5$.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Induction step: $\forall n \in {6, \ldots }$&lt;/p&gt;
+
+&lt;p&gt;By strong induction, assume $P(m)$ is true for all $m \in { 4, 5, 6,
+\ldots, m}$.&lt;/p&gt;
+
+&lt;p&gt;Show $P(m + 1)$: Since $P(m - 1)$ is true (by the \emph{strong} induction
+hypothesis), we know $\exists \alpha, \beta \in \mathbb{N} . m - 1 =
+\alpha \cdot 2 + \beta \cdot 5$. We can show $P(m + 1)$ since
+$m + 1 = (\alpha + 1) \cdot 2 + \beta \cdot 5$.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&#34;proof-by-contra-positive-review&#34;&gt;Proof by Contra-Positive (Review)&lt;/h2&gt;
+
+&lt;p&gt;Recall: $P \implies Q$ is equivalent to $\neg Q \implies \neg P$. (If
+you are shaky on this, prove it to yourself using a truth table.)&lt;/p&gt;
+
+&lt;p&gt;Typical use: where the negation of the proposition is easier to reason
+about than the original proposition (e.g., irrational is a complex
+property to describe, but rational (NOT irrational) is a simple one. So to prove that ``If $r$ is irrational then $\sqrt{r}$ is also irrational&amp;rdquo; we can prove the contrapositive which is &amp;ldquo;if $\sqrt{r}$&amp;rdquo; is rational, then $r$ is also rational$ which is quite straightforward.&lt;/p&gt;
+
+&lt;h2 id=&#34;proof-by-contradiction-review&#34;&gt;Proof by Contradiction (Review)&lt;/h2&gt;
+
+&lt;p&gt;To prove $P$, show $\neg P \implies False$.&lt;/p&gt;
+
+&lt;p&gt;Example: Proving the $\mathbb{Z}$ is not well ordered.&lt;/p&gt;
+
+&lt;p&gt;Goal: proving the proposition $G$ saying ``$\mathbb{Z}$ has no minimum&amp;rdquo;.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;To prove by contradiction, assume $\neg G$ (that is, $\mathbb{Z}$ does have a minimum).&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Then, $\exists m \in \mathbb{Z}$ that is the minimum of $\mathbb{Z}$.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;But, this leads to a contradiction: $m - 1 \in \mathbb{Z}$ and $m - 1 &amp;lt; m$. So, even though the number $m$ was said to be the minimum of $\mathbb{Z}$, it is in fact not the minimum.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Thus, we have a contradiction, so something must be wrong. All our logical inferences after step 1 are correct, so the assumption we made in step 1 must be invalid. If $\neg G$ is invalid, $G$ must be true.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Typical use: when the statment we want to prove has universal quantifier. for example, $\forall x \in \mathbb{Z}. P(x)$. Note that the statment that $\mathbb{Z}$ has \emph{no} minimum, when written formally, uses a universal quantifier (make sure to double check it). Then, instead of arguing that for all $x \in A$, $P(x)$ holds, we assume (for sake of contradiction) that there exists one $x$ for which $\neg(P(x))$ (note that this is indeed the negated statement) from which  we get a contradiction.&lt;/p&gt;
+
+&lt;h1 id=&#34;binary-relation-properties&#34;&gt;Binary Relation Properties&lt;/h1&gt;
+
+&lt;p&gt;When we draw the graph of binary relations, the Domain (&lt;code&gt;input&amp;quot; set) has outgoing edges. Codomain (&lt;/code&gt;output&amp;rdquo; set) has
+incoming edges. So when we use the compact notation referring to different properties of binary relations, keep in mind that the words ``in-out&amp;rdquo; refer to the edge (not the input/output sets).  The properties about outgoing edges are &lt;em&gt;function&lt;/em&gt;
+($\le 1 out$) and &lt;em&gt;total&lt;/em&gt; ($\ge 1$ out). Adding elements to the
+codomain cannot effect these properties.  The properties about
+incoming edges are &lt;em&gt;surjection&lt;/em&gt; ($\ge 1$ in) and &lt;em&gt;injection&lt;/em&gt; ($\le 1$
+in). Adding elements to the domain cannot effect these properties.&lt;/p&gt;
+
+&lt;p&gt;When we say the any relation with property $X$ (e.g., $\ge 1$ out) about the relations \emph{must} also have propety $Y$. It means that property $X$ implies $Y$ logically (about relations). In case the answer is &amp;ldquo;no&amp;rdquo; (i.e. that property $X$ does not imply $Y$) all we have to find is one relation $R$ that satisfies property $X$ but not property $Y$. If the answer is `yes&amp;rsquo; we need to show that for all $R$, if property $X$ holds, so does $Y$. So doing so might need more work.&lt;/p&gt;
+
+&lt;p&gt;If an edge is added to the graph of a relation, which properties
+&lt;em&gt;might&lt;/em&gt; be impacted?&lt;/p&gt;
+
+&lt;p&gt;If an edge is removed to the graph of a relation, which properties
+&lt;em&gt;might&lt;/em&gt; be impacted?&lt;/p&gt;
+
+&lt;p&gt;If an element is removed from the domain of a relation, which properties
+&lt;em&gt;might&lt;/em&gt; be impacted?&lt;/p&gt;
+
+&lt;p&gt;If an element is removed from the codomain of a relation, which
+properties &lt;em&gt;might&lt;/em&gt; be impacted?&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Problem Set 4 Comments</title>
@@ -27,7 +174,7 @@
       <guid>https://uvacs2102.github.io/class11/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule:af81afa25b288e26509ba0728268a3b7&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps5&#34;&gt;&lt;strong&gt;Problem Set 5&lt;/strong&gt;&lt;/a&gt; is due &lt;strong&gt;Friday at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
 
@@ -40,7 +187,7 @@
 &lt;li&gt;more than 10 requests implies we should spend Thursday’s class on reviewing requested topics, no exam exemptions.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;exam-1&#34;&gt;Exam 1&lt;/h3&gt;
+&lt;h3 id=&#34;exam-1:af81afa25b288e26509ba0728268a3b7&#34;&gt;Exam 1&lt;/h3&gt;
 
 &lt;p&gt;Exam 1 will be in class on Thursday, 5 October.  You can get a good
 idea what to expect on Exam 1 by looking at the &lt;a href=&#34;https://uvacs2102.github.io/docs/practiceexam1.pdf&#34;&gt;Practice Exam
@@ -123,7 +270,7 @@ benefit from doing #3 and #4 as well.&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;induction-principle&#34;&gt;Induction Principle&lt;/h2&gt;
+&lt;h2 id=&#34;induction-principle:af81afa25b288e26509ba0728268a3b7&#34;&gt;Induction Principle&lt;/h2&gt;
 
 &lt;p&gt;Let $P$ be a predicated on $\mathbb{N}$.  If&lt;/p&gt;
 
@@ -146,7 +293,7 @@ benefit from doing #3 and #4 as well.&lt;/p&gt;
 
 &lt;div class=&#34;biggap&#34;&gt;&lt;/div&gt;
 
-&lt;h3 id=&#34;generalizing-to-well-ordered-sets&#34;&gt;Generalizing to Well-Ordered Sets&lt;/h3&gt;
+&lt;h3 id=&#34;generalizing-to-well-ordered-sets:af81afa25b288e26509ba0728268a3b7&#34;&gt;Generalizing to Well-Ordered Sets&lt;/h3&gt;
 
 &lt;p&gt;We can use Induction for any well-ordered set, where there is an
 operation (like &amp;lsquo;+ 1&amp;rsquo;) and a starting point (like &amp;lsquo;0&amp;rsquo;) that covers the
@@ -156,7 +303,7 @@ whole set.&lt;/p&gt;
 
 &lt;div class=&#34;biggap&#34;&gt;&lt;/div&gt;
 
-&lt;h2 id=&#34;induction-practice&#34;&gt;Induction Practice&lt;/h2&gt;
+&lt;h2 id=&#34;induction-practice:af81afa25b288e26509ba0728268a3b7&#34;&gt;Induction Practice&lt;/h2&gt;
 
 &lt;p&gt;Take-Away Game: start with $n$ sticks; at each turn a player must remove
 1, 2 or 3 sticks; player who takes the last stick wins.&lt;/p&gt;
@@ -481,7 +628,7 @@ is due &lt;strong&gt;Friday, 22 September at 6:29:00pm&lt;/strong&gt;.&lt;/p&gt;
       <guid>https://uvacs2102.github.io/class8/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule:3a7d0da174b09b839e2f33e1cfd8fab3&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps3&#34;&gt;&lt;strong&gt;Problem Set 3&lt;/strong&gt;&lt;/a&gt; is due &lt;strong&gt;Friday at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
 
@@ -498,7 +645,7 @@ is due &lt;strong&gt;Friday, 22 September at 6:29:00pm&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;sequences:3a7d0da174b09b839e2f33e1cfd8fab3&#34;&gt;Sequences&lt;/h1&gt;
+&lt;h1 id=&#34;sequences&#34;&gt;Sequences&lt;/h1&gt;
 
 &lt;p&gt;A &lt;strong&gt;sequence&lt;/strong&gt; is a mathematical datatype that bears similarities to sets. A sequence $S$ also contains some elements, but we usually refer to them as &lt;em&gt;components&lt;/em&gt;. There are two major differences between sets and sequences:&lt;/p&gt;
 
@@ -508,7 +655,7 @@ is due &lt;strong&gt;Friday, 22 September at 6:29:00pm&lt;/strong&gt;.&lt;/p&gt;
 &lt;li&gt;&lt;p&gt;Different components of a sequence could be equal. For example $(a,b,a)$ has $a$ repeating, and this is a different sequence compared to $(a,b,b)$ even though they both have 3 componetns. If we interprete them as &lt;em&gt;sets&lt;/em&gt;, then they will be equal sets with $2$ elements each.&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h1 id=&#34;cartesian-product:3a7d0da174b09b839e2f33e1cfd8fab3&#34;&gt;Cartesian Product&lt;/h1&gt;
+&lt;h1 id=&#34;cartesian-product&#34;&gt;Cartesian Product&lt;/h1&gt;
 
 &lt;p&gt;We can use set products to get new sets whose elements are sequences. Cartesian product is a very useful way of doing it.&lt;/p&gt;
 
@@ -520,7 +667,7 @@ is due &lt;strong&gt;Friday, 22 September at 6:29:00pm&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;p&gt;How many elements are in $A \times B$?&lt;/p&gt;
 
-&lt;h1 id=&#34;relations-and-binary-relations:3a7d0da174b09b839e2f33e1cfd8fab3&#34;&gt;Relations and Binary Relations&lt;/h1&gt;
+&lt;h1 id=&#34;relations-and-binary-relations&#34;&gt;Relations and Binary Relations&lt;/h1&gt;
 
 &lt;p&gt;A &lt;em&gt;relation&lt;/em&gt; between some elements from set $A$ and some elements from set $B$ could be represented by putting all such pairs $(a,b)$ in a set $P$. As you can see, this way, $P$ would be a subset of the cartesian product $A \times B$, namely $P \subseteq A \times B$. More formally we have the following definition.&lt;/p&gt;
 
@@ -534,7 +681,7 @@ talk about relations of the form $P \subseteq A \times B \times C$,
 but the binary relation remains a very important data type as it
 allows us to define &lt;em&gt;functions&lt;/em&gt;.&lt;/p&gt;
 
-&lt;h1 id=&#34;functions:3a7d0da174b09b839e2f33e1cfd8fab3&#34;&gt;Functions&lt;/h1&gt;
+&lt;h1 id=&#34;functions&#34;&gt;Functions&lt;/h1&gt;
 
 &lt;p&gt;The concept of a function $F$ models is a special form of a binary
 relation $R$ between $A$ and $B$ where for every element $a \in A$
@@ -934,139 +1081,6 @@ $P$ &amp;amp; $Q$ &amp;amp; $P \implies Q$ &amp;amp; $P \oplus Q$ \ \hline
 
 &lt;p&gt;When we are only interested to know whether or not a given formula is satisfiable, we can write a 3CNF that is satisfiable iff the original formula is. In order to do that, we first write an equivalent CNF, and then convert it to a 3CNF (which is not necessarily equivalent, but only guarantees to preserve the &lt;em&gt;satisfiability&lt;/em&gt; feature) as follow. For each clause with less than 3 literals such as $(A \lor \neg B)$ we add a dummy variable $C$ (only for this clause) and interprete the $(A \lor \neg B)$ as a formula over all of $A,B,C$ and write a CNF for them (which happens to be 3CNF!). For longer clauses such as
 $(A \lor B \lor C \lor D)$ we do another trick of breaking them into smaller parts using new dummy variables as follows $(A \lor B \lor \neg X) \wedge (\neg X \lor C \lor D).$&lt;/p&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Problem Set 1 Comments</title>
-      <link>https://uvacs2102.github.io/ps1comments/</link>
-      <pubDate>Wed, 06 Sep 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://uvacs2102.github.io/ps1comments/</guid>
-      <description>&lt;p&gt;The Problem Set 1 comments are now posted in collab: &lt;a href=&#34;https://collab.its.virginia.edu/access/content/group/9bd99d1c-6f18-4542-a7d1-8ffc4fccbd3d/ps1solutions.pdf&#34;&gt;PDF&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Class 5: CNF, Computing, Quantifiers</title>
-      <link>https://uvacs2102.github.io/class5/</link>
-      <pubDate>Tue, 05 Sep 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://uvacs2102.github.io/class5/</guid>
-      <description>
-
-&lt;h3 id=&#34;schedule:d690e1859ec274fb7ed997cd7db3fba5&#34;&gt;Schedule&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps2&#34;&gt;&lt;strong&gt;Problem Set 2&lt;/strong&gt;&lt;/a&gt; is due &lt;strong&gt;Friday at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;
-   &lt;center&gt;
-&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;b6468be050744777ac59c696390d3d89&#34; data-ratio=&#34;1.77777777777778&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
-   &lt;/center&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;highlightm&#34;&gt;
-   &lt;a href=&#34;https://uvacs2102.github.io/docs/class5.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes and Questions&lt;/b&gt;&lt;/a&gt;.
-   &lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;highlightrl&#34;&gt;
-&lt;strong&gt;Challenge Problem Opportunity.&lt;/strong&gt; Find the shortest formula that is
-  equivalent to XOR(&lt;em&gt;a&lt;/em&gt;, &lt;em&gt;b&lt;/em&gt;) using just NAND operations. Shortest
-  means the minimum number of NAND operations. A convincing answer
-  would include a proof that no shorter formula exists.
-   &lt;/div&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;links:d690e1859ec274fb7ed997cd7db3fba5&#34;&gt;Links&lt;/h2&gt;
-
-&lt;p&gt;If you want to learn more about how to learn the logic implemented by a chip
-and cryptosystems used in car immobolizers, see &lt;a href=&#34;https://www.cs.virginia.edu/~evans/pubs/usenix08/usenix08.pdf&#34;&gt;&lt;em&gt;Reverse-Engineering a
-Cryptographic RFID
-Tag&lt;/em&gt;&lt;/a&gt; (Karsten
-Nohl, David Evans, Starbug, and Henryk Pl&amp;ouml;tz, &lt;em&gt;USENIX Security
-Symposium&lt;/em&gt; 2008), or &lt;a href=&#34;https://www.youtube.com/watch?v=fCwY27EnOF8&#34;&gt;this
-video&lt;/a&gt;.  Please don&amp;rsquo;t steal any
-cars.&lt;/p&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;notes-and-questions:d690e1859ec274fb7ed997cd7db3fba5&#34;&gt;Notes and Questions&lt;/h1&gt;
-
-&lt;p&gt;&lt;strong&gt;Definition: satisfiable.&lt;/strong&gt; A logical formula is &lt;em&gt;satisfiable&lt;/em&gt; if there
-  is &lt;em&gt;some&lt;/em&gt; way to make it &lt;strong&gt;true&lt;/strong&gt;.  That is, there is at least one
-  assignment of truth value to its variables that makes the forumla
-  true.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Definition: conjunctive normal form (CNF).&lt;/strong&gt; A logical formula that is
-  written as a conjunction of &lt;em&gt;clauses&lt;/em&gt;, where each clause is a
-  disjunction of &lt;em&gt;literals&lt;/em&gt;, and each literal is either a variable or a
-  negation of a variable, is in &lt;em&gt;conjunctive normal form&lt;/em&gt;.  If each
-  clause has excatly three literals, it is called &lt;em&gt;three conjunctive
-  normal form&lt;/em&gt; (3CNF).&lt;/p&gt;
-
-&lt;p&gt;$$
-(a_1 \vee a_2 \vee \neg a_3) \wedge
-(a_1 \vee \neg a_2 \vee a_3) \wedge
-(\neg a_1 \vee a_2 \vee \neg a_3) \wedge
-(\neg a_1 \vee a_2 \vee a_3)
-$$&lt;/p&gt;
-
-&lt;p&gt;##&lt;/p&gt;
-
-&lt;p&gt;Show that every logical formula can be written in conjunctive normal form.
-Also, show that if we only care about &lt;em&gt;satisfiability&lt;/em&gt; we can always write it
-in 3CNF form. Namely, for every CNF formula $F$, we can write a 3CNF formula
-$G$ such that $F$ is satisfiable if and only if $G$ is satisfiable.&lt;/p&gt;
-
-&lt;div class=&#34;biggap&#34;&gt;&lt;/div&gt;
-
-&lt;p&gt;What is the maximum number of (different) clauses in a 3CNF formula
-involving 5 variables?&lt;/p&gt;
-
-&lt;p&gt;##&lt;/p&gt;
-
-&lt;p&gt;What is the maximum number of (different) clauses in a &lt;em&gt;satisfiable&lt;/em&gt;
-3CNF formula involving 5 variables?&lt;/p&gt;
-
-&lt;p&gt;##&lt;/p&gt;
-
-&lt;p&gt;What is the maximum number of (different) clauses in a &lt;em&gt;valid&lt;/em&gt; 3CNF formula involving 5 variables?&lt;/p&gt;
-
-&lt;p&gt;##&lt;/p&gt;
-
-&lt;!--page--&gt;
-
-&lt;h2 id=&#34;logical-quantifiers:d690e1859ec274fb7ed997cd7db3fba5&#34;&gt;Logical Quantifiers&lt;/h2&gt;
-
-&lt;p&gt;$\forall x \in S. P(x)$ means $P$ holds for &lt;em&gt;every&lt;/em&gt; element of $S$.&lt;br /&gt;
-$\exists x \in S. P(x)$ means $P$ holds for &lt;em&gt;at least one&lt;/em&gt; element of $S$.&lt;/p&gt;
-
-&lt;p&gt;Define &lt;em&gt;valid&lt;/em&gt; and &lt;em&gt;satisfiable&lt;/em&gt; using logical quantifiers:&lt;/p&gt;
-
-&lt;p&gt;#&lt;/p&gt;
-
-&lt;p&gt;$\forall x \in S. P(x)$ is equivalent to $\neg(\exists x \in S. \qquad \qquad)$&lt;/p&gt;
-
-&lt;p&gt;###&lt;/p&gt;
-
-&lt;p&gt;Notation: $\textrm{pow}(S)$ denotes the &lt;em&gt;powerset&lt;/em&gt; of $S$.  The powerset
-of a set is the set of all possible subsets of that S.  So,
-$\textrm{pow}(\mathbb{N})$ denotes all subsets of the natural numbers.&lt;/p&gt;
-
-&lt;p&gt;Notation: $A - B$ denotes the &lt;em&gt;difference&lt;/em&gt; between two sets.  It is the
-elements of $A$, with every element of $B$ removed.&lt;/p&gt;
-
-&lt;p&gt;Notation: $\varnothing$ is the &lt;em&gt;empty set&lt;/em&gt;.  It is the set with no elements: ${ }$.&lt;/p&gt;
-
-&lt;p&gt;\begin{center}
-\Large&lt;/p&gt;
-
-&lt;p&gt;$$
-\fillin S \in \textrm{pow}(\mathbb{N}) - { \varnothing } \ldotp \fillin m \in S\ldotp \fillin x \in S - {m}\ldotp m &amp;lt; x
-$$
-\end{center}&lt;/p&gt;
 
 &lt;p&gt;&lt;/div&gt;&lt;/p&gt;
 </description>
