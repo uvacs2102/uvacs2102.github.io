@@ -6,8 +6,103 @@
     <description>Recent content in Post-rsses on cs2102: Discrete Math</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 01 Oct 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 10 Oct 2017 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://uvacs2102.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Class 13: State Machines</title>
+      <link>https://uvacs2102.github.io/class13/</link>
+      <pubDate>Tue, 10 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/class13/</guid>
+      <description>
+
+&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
+
+&lt;p&gt;There is no Problem Set due this week. &lt;a href=&#34;https://uvacs2102.github.io/ps/ps6&#34;&gt;&lt;strong&gt;Problem Set 6&lt;/strong&gt;&lt;/a&gt; will be posted soon and due next &lt;strong&gt;Friday (October 20) at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Exam 1 was returned in class today.  Please read the solutions posted
+in collab: &lt;a href=&#34;https://collab.its.virginia.edu/access/content/group/9bd99d1c-6f18-4542-a7d1-8ffc4fccbd3d/exam1comments.pdf&#34;&gt;Exam 1
+Comments&lt;/a&gt;.
+If you didn&amp;rsquo;t pick up Exam 1 in class today, you can get it at Dave&amp;rsquo;s
+office hours tomorrow, or before or after class on Thursday.&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;
+   &lt;center&gt;
+&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;a9794b8b691346209a71c909a67e860c&#34; data-ratio=&#34;1.77777777777778&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
+   &lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlightm&#34;&gt;
+   &lt;a href=&#34;https://uvacs2102.github.io/docs/class13.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes and Questions&lt;/b&gt;&lt;/a&gt;.
+   &lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;
+   &lt;center&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlightm&#34;&gt;
+   &lt;a href=&#34;https://uvacs2102.github.io/docs/class13.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes&lt;/b&gt;&lt;/a&gt;.
+   &lt;/div&gt;
+   &lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;state-machines&#34;&gt;State Machines&lt;/h2&gt;
+
+&lt;p&gt;A &lt;em&gt;state machine&lt;/em&gt; is a binary relation (called a &lt;em&gt;transition relation&lt;/em&gt;)
+on a set (both the domain and codomain are the same set).  One state is
+designated as the &lt;em&gt;start state&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;$$M = (S, G: S \times S, q_0 \in S)$$&lt;/p&gt;
+
+&lt;p&gt;What does it mean if $G$ is &lt;em&gt;total&lt;/em&gt;?&lt;/p&gt;
+
+&lt;p&gt;##&lt;/p&gt;
+
+&lt;p&gt;What does it mean if $G$ is not a &lt;em&gt;function&lt;/em&gt;?&lt;/p&gt;
+
+&lt;p&gt;##&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Parity Counter.&lt;/strong&gt; Describe a state machine that determines if the
+  number of steps is even.&lt;/p&gt;
+
+&lt;p&gt;#&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Unbounded Counter.&lt;/strong&gt; Describe a state machine that counts the number of steps.&lt;/p&gt;
+
+&lt;p&gt;#&lt;/p&gt;
+
+&lt;p&gt;How well do state machines model real computers?  What kind of
+transition relation does the state machine modeling your computer have?&lt;/p&gt;
+
+&lt;h2 id=&#34;state-machine-execution&#34;&gt;State Machine Execution&lt;/h2&gt;
+
+&lt;p&gt;An &lt;em&gt;execution&lt;/em&gt; of a state machine $M = (S, G \subseteq S \times S, q_0 \in S)$ is a (possibly infinite) sequence of states, $(x_0, x_1, \cdots, x_n)$ where:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;$x_0 = q_0$ (it begins with the start state), and&lt;/li&gt;
+&lt;li&gt;$\forall i \in {0, 1, \ldots, n - 1} \ldotp (x&lt;em&gt;i, x&lt;/em&gt;{i + 1}) \in G$ (if $q$ and $r$ are consecutive states in the sequence, then there is an edge $q \rightarrow r$ in $G$)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;A state $q$ is &lt;em&gt;reachable&lt;/em&gt; if it appears in some execution.  (That is,
+there is a sequence of transitions starting from $q_0$, following edges
+in $G$, that ends with $q$.)&lt;/p&gt;
+
+&lt;p&gt;$$
+M_1 = (S = \mathbb{N}, G = {(x, y) | y = x^2 }, q_0 = 1)
+$$
+$$
+M_2 = (S = \mathbb{N}, G = {(x, y) | \exists k \in \mathbb{N} \ldotp y = kx }, q_0 = 1)
+$$&lt;/p&gt;
+
+&lt;p&gt;Which states are &lt;em&gt;reachable&lt;/em&gt; for $M_1$ and $M_2$?&lt;/p&gt;
+
+&lt;p&gt;#&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Fall Break Office Hours</title>
@@ -873,17 +968,6 @@ least a few of these will be on Exam 1.)&lt;/p&gt;
 &lt;li&gt;Prove $A = B \iff (\forall a \in A \ldotp a \in B) \wedge (\forall b \in B \ldotp b \in A).$
 &lt;/div&gt;&lt;/li&gt;
 &lt;/ol&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Problem Set 3</title>
-      <link>https://uvacs2102.github.io/ps3posted/</link>
-      <pubDate>Fri, 08 Sep 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://uvacs2102.github.io/ps3posted/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps3&#34;&gt;&lt;strong&gt;Problem Set 3&lt;/strong&gt;&lt;/a&gt; [&lt;a href=&#34;https://uvacs2102.github.io/docs/ps3.pdf&#34;&gt;PDF&lt;/a&gt;] is now posted and
-is due &lt;strong&gt;Friday, 15 September at 6:29:00pm&lt;/strong&gt;.&lt;/p&gt;
 </description>
     </item>
     

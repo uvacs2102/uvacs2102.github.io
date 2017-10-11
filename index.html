@@ -149,6 +149,95 @@
   </header>
   
   
+  <p class="fronthead"><A href="/class13/">Class 13: State Machines</a> (Tue, 10 Oct 2017)</p>
+    
+
+<h3 id="schedule">Schedule</h3>
+
+<p>There is no Problem Set due this week. <a href="/ps/ps6"><strong>Problem Set 6</strong></a> will be posted soon and due next <strong>Friday (October 20) at 6:29pm</strong>.</p>
+
+<p>Exam 1 was returned in class today.  Please read the solutions posted
+in collab: <a href="https://collab.its.virginia.edu/access/content/group/9bd99d1c-6f18-4542-a7d1-8ffc4fccbd3d/exam1comments.pdf">Exam 1
+Comments</a>.
+If you didn&rsquo;t pick up Exam 1 in class today, you can get it at Dave&rsquo;s
+office hours tomorrow, or before or after class on Thursday.</p>
+
+<p><div class="notpdf">
+   <center>
+<script async class="speakerdeck-embed" data-id="a9794b8b691346209a71c909a67e860c" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+   </center></p>
+
+<p><div class="highlightm">
+   <a href="/docs/class13.pdf">See PDF Version for <b>Notes and Questions</b></a>.
+   </div></p>
+
+<p><div class="notpdf">
+   <center></p>
+
+<p></center></p>
+
+<p><div class="highlightm">
+   <a href="/docs/class13.pdf">See PDF Version for <b>Notes</b></a>.
+   </div>
+   </div><!--endpdf--></p>
+
+<p><div class="latex"></p>
+
+<h2 id="state-machines">State Machines</h2>
+
+<p>A <em>state machine</em> is a binary relation (called a <em>transition relation</em>)
+on a set (both the domain and codomain are the same set).  One state is
+designated as the <em>start state</em>.</p>
+
+<p>$$M = (S, G: S \times S, q_0 \in S)$$</p>
+
+<p>What does it mean if $G$ is <em>total</em>?</p>
+
+<p>##</p>
+
+<p>What does it mean if $G$ is not a <em>function</em>?</p>
+
+<p>##</p>
+
+<p><strong>Parity Counter.</strong> Describe a state machine that determines if the
+  number of steps is even.</p>
+
+<p>#</p>
+
+<p><strong>Unbounded Counter.</strong> Describe a state machine that counts the number of steps.</p>
+
+<p>#</p>
+
+<p>How well do state machines model real computers?  What kind of
+transition relation does the state machine modeling your computer have?</p>
+
+<h2 id="state-machine-execution">State Machine Execution</h2>
+
+<p>An <em>execution</em> of a state machine $M = (S, G \subseteq S \times S, q_0 \in S)$ is a (possibly infinite) sequence of states, $(x_0, x_1, \cdots, x_n)$ where:</p>
+
+<ol>
+<li>$x_0 = q_0$ (it begins with the start state), and</li>
+<li>$\forall i \in {0, 1, \ldots, n - 1} \ldotp (x<em>i, x</em>{i + 1}) \in G$ (if $q$ and $r$ are consecutive states in the sequence, then there is an edge $q \rightarrow r$ in $G$)</li>
+</ol>
+
+<p>A state $q$ is <em>reachable</em> if it appears in some execution.  (That is,
+there is a sequence of transitions starting from $q_0$, following edges
+in $G$, that ends with $q$.)</p>
+
+<p>$$
+M_1 = (S = \mathbb{N}, G = {(x, y) | y = x^2 }, q_0 = 1)
+$$
+$$
+M_2 = (S = \mathbb{N}, G = {(x, y) | \exists k \in \mathbb{N} \ldotp y = kx }, q_0 = 1)
+$$</p>
+
+<p>Which states are <em>reachable</em> for $M_1$ and $M_2$?</p>
+
+<p>#</p>
+
+<p></div></p>
+ 
+  
   <p class="fronthead"><A href="/fbofficehours/">Fall Break Office Hours</a> (Sun, 1 Oct 2017)</p>
     
 
@@ -721,21 +810,6 @@ this to define the <em>cardinality</em> of any set. You should be able to
 figure out how to do this on your own with what you know now.)</p>
 
 <p></div></p>
- 
-  
-  <p class="fronthead"><A href="/nandxorchallengesolved/">NAND/XOR Challenge Solved!</a> (Sat, 16 Sep 2017)</p>
-    <p>Congratulations to Jake Smith for solving the NAND/XOR challenge from <a href="/class5">Class 5</a>!</p>
-
-<p>The minimum number of NAND gates needed to implement XOR is <strong>5</strong>.</p>
-
-<p>His solution used a brute force search through all possible formulas
-using NANDs to test them for logical equivalence to XOR.</p>
-
-<p>You can find the Python code he used to do the search here: <a href="https://github.com/ION28/CS2102_ChallengeProblemSolutions/blob/master/CP1_NAND_Brute_Force.py">
-https://github.com/ION28/CS2102_ChallengeProblemSolutions/blob/master/CP1_NAND_Brute_Force.py</a>.</p>
-
-<p>His write-up of the solution, including a list of all 200 ways to
-define XOR using 5 NAND operations is here: <a href="/docs/jts5np_Challenge01_NAND_BruteForce_Submission_2.pdf">Solution (PDF)</a></p>
  
   
   
