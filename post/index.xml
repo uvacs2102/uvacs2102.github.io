@@ -6,8 +6,589 @@
     <description>Recent content in Posts on cs2102: Discrete Math</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 23 Sep 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 12 Oct 2017 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://uvacs2102.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Class 14: Invariant Principle</title>
+      <link>https://uvacs2102.github.io/class14/</link>
+      <pubDate>Thu, 12 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/class14/</guid>
+      <description>
+
+&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps6&#34;&gt;&lt;strong&gt;Problem Set 6&lt;/strong&gt;&lt;/a&gt; (will be posted after class today) is due
+&lt;strong&gt;20 October (Friday) at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Exam 1 was returned Tuesday.  If you did not pick yours up yet, you
+can get it after class today.  We will start charging
+exponentially-increasing storage fees for inexcusably unclaimed exams
+starting after Prof. Mahmoody&amp;rsquo;s office hours Monday.&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;
+   &lt;center&gt;
+&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;02ef275aa1474918a22516979d995c6d&#34; data-ratio=&#34;1.77777777777778&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
+   &lt;/center&gt;
+   &lt;div class=&#34;highlightm&#34;&gt;
+   &lt;a href=&#34;https://uvacs2102.github.io/docs/class14.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes&lt;/b&gt;&lt;/a&gt;.
+   &lt;/div&gt;
+   &lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;state-machines-review-from-class-13&#34;&gt;State Machines (review from Class 13)&lt;/h2&gt;
+
+&lt;p&gt;A &lt;em&gt;state machine&lt;/em&gt;, $M = (S, G: S \times S, q_0 \in S)$, is a binary
+relation (called a &lt;em&gt;transition relation&lt;/em&gt;) on a set (both the domain and
+codomain are the same set).  One state, denoted $q_0$, is designated as
+the &lt;em&gt;start state&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;An &lt;em&gt;execution&lt;/em&gt; of a state machine $M = (S, G \subseteq S \times S, q_0
+\in S)$ is a (possibly infinite) sequence of states, $(x_0, x_1, \cdots,
+x_n)$ where (1) $x_0 = q_0$ (it begins with the start state), and (2)
+$\forall i \in {0, 1, \ldots, n - 1} \ldotp (x&lt;em&gt;i, x&lt;/em&gt;{i + 1}) \in G$
+(if $q$ and $r$ are consecutive states in the sequence, then there is an
+edge $q \rightarrow r$ in $G$).&lt;/p&gt;
+
+&lt;p&gt;A state $q$ is &lt;em&gt;reachable&lt;/em&gt; if it appears in some execution.&lt;/p&gt;
+
+&lt;p&gt;A &lt;em&gt;preserved invariant&lt;/em&gt; of a state machine $M = (S, G \subseteq S \times
+S, q_0 \in S)$ is a predicate, $P$, on states, such that whenever $P(q)$
+is true of a state $q$, and $q \rightarrow r \in G$, then $P&amp;reg;$ is
+true.&lt;/p&gt;
+
+&lt;h3 id=&#34;bishop-state-machine&#34;&gt;Bishop State Machine&lt;/h3&gt;
+
+&lt;p&gt;$S = { (\fillin ) \, | \, r, c \in \mathbb{N} }$
+$G = { (r, c) \rightarrow (r&amp;rsquo;, c&amp;rsquo;) \, | \, r, c \in \mathbb{N} \wedge (\exists d \in \mathbb{N}^{+} \textrm{ such that } r&amp;rsquo; = r \fillin d \wedge r&amp;rsquo; \ge 0 \wedge c&amp;rsquo; = c \fillin d \wedge c&amp;rsquo; \ge 0 }$
+$q_0 = (0, 2)$&lt;/p&gt;
+
+&lt;p&gt;What states are &lt;em&gt;reachable&lt;/em&gt;?&lt;/p&gt;
+
+&lt;p&gt;#&lt;/p&gt;
+
+&lt;h3 id=&#34;progress-machine&#34;&gt;``Progress&amp;rdquo; Machine&lt;/h3&gt;
+
+&lt;p&gt;$S = { (x, d) \, | \, x \in \mathbb{Z}, d \in { \mathrm{\bf F}, \mathrm{\bf B}} }$
+$G = { (x, \mathrm{\bf F}) \rightarrow (x + 1, \mathrm{\bf B}) \, | \, x \in \mathbb{Z} } \cup
+     { (x, \mathrm{\bf B}) \rightarrow (x - 2, \mathrm{\bf F}) \, | \, x \in \mathbb{Z} }$
+$q_0 = (0, \mathrm{\bf F})$&lt;/p&gt;
+
+&lt;p&gt;Which states are &lt;em&gt;reachable&lt;/em&gt;?&lt;/p&gt;
+
+&lt;!--page--&gt;
+
+&lt;h2 id=&#34;preserved-invariants&#34;&gt;Preserved Invariants&lt;/h2&gt;
+
+&lt;p&gt;A predicate $P(q)$ is a &lt;em&gt;preserved invariant&lt;/em&gt; of machine $M = (S, G \subseteq S \times S, q_0 \in
+  S)$ if:
+$$
+\forall q \in S \ldotp (P(q) \wedge (q \rightarrow r) \in G) \implies P&amp;reg;
+$$&lt;/p&gt;
+
+&lt;p&gt;What are some &lt;em&gt;preserved invariants&lt;/em&gt; for the (original) Bishop State Machine?&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Invariant Principle.&lt;/strong&gt; If a &lt;em&gt;preserved invariant&lt;/em&gt; of a state machine
+  is true for the start state, it is true for all reachable states.&lt;/p&gt;
+
+&lt;p&gt;To show $P(q)$ for machine $M = (S, G \subseteq S \times S, q_0 \in
+  S)$ all $q \in S$, show:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Base case: $P(\fillin)$&lt;/li&gt;
+&lt;li&gt;$\forall s \in S \ldotp \fillin \implies \fillin$&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Prove that the original Bishop State Machine never reaches a square where $r + c$ is odd.&lt;/p&gt;
+
+&lt;!--page--&gt;
+
+&lt;h1 id=&#34;slow-exponentiation&#34;&gt;Slow Exponentiation&lt;/h1&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def slow_power(a, b):
+   y = 1
+   z = b
+   while z &amp;gt; 0:
+      y = y * a
+      z = z - 1
+   return y
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;$S ::= \mathbb{N} \times \mathbb{N}$
+$G ::= { (y, z) \rightarrow (y \cdot a, z - 1) \, | \, \forall y, z \in \mathbb{N}^{+}}$
+$q_0 ::= (1, b)$&lt;/p&gt;
+
+&lt;p&gt;Prove &lt;code&gt;slow_power(a, b)&lt;/code&gt; = $a^b$.&lt;/p&gt;
+
+&lt;p&gt;#&lt;/p&gt;
+
+&lt;h1 id=&#34;fast-exponentiation&#34;&gt;Fast Exponentiation&lt;/h1&gt;
+
+&lt;p&gt;This is the algorithm from Section 6.3.1 written as Python code:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def power(a, b):
+   x = a
+   y = 1
+   z = b
+   while z &amp;gt; 0:
+      r = z % 2 # remainder of z / 2
+      z = z // 2 # quotient of z / 2
+      if r == 1:
+         y = x * y
+      x = x * x
+   return y
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Class 13: State Machines</title>
+      <link>https://uvacs2102.github.io/class13/</link>
+      <pubDate>Tue, 10 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/class13/</guid>
+      <description>
+
+&lt;h3 id=&#34;schedule:af2ff3ef0db44829d3ff131eac0d7ec7&#34;&gt;Schedule&lt;/h3&gt;
+
+&lt;p&gt;There is no Problem Set due this week. &lt;a href=&#34;https://uvacs2102.github.io/ps/ps6&#34;&gt;&lt;strong&gt;Problem Set 6&lt;/strong&gt;&lt;/a&gt; will be posted soon and due next &lt;strong&gt;Friday (October 20) at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Exam 1 was returned in class today.  Please read the solutions posted
+in collab: &lt;a href=&#34;https://collab.its.virginia.edu/access/content/group/9bd99d1c-6f18-4542-a7d1-8ffc4fccbd3d/exam1comments.pdf&#34;&gt;Exam 1
+Comments&lt;/a&gt;.
+If you didn&amp;rsquo;t pick up Exam 1 in class today, you can get it at Dave&amp;rsquo;s
+office hours tomorrow, or before or after class on Thursday.&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;
+   &lt;center&gt;
+&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;a9794b8b691346209a71c909a67e860c&#34; data-ratio=&#34;1.77777777777778&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
+   &lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlightm&#34;&gt;
+   &lt;a href=&#34;https://uvacs2102.github.io/docs/class13.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes and Questions&lt;/b&gt;&lt;/a&gt;.
+   &lt;/div&gt;
+   &lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;state-machines:af2ff3ef0db44829d3ff131eac0d7ec7&#34;&gt;State Machines&lt;/h2&gt;
+
+&lt;p&gt;A &lt;em&gt;state machine&lt;/em&gt; is a binary relation (called a &lt;em&gt;transition relation&lt;/em&gt;)
+on a set (both the domain and codomain are the same set).  One state is
+designated as the &lt;em&gt;start state&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;$$M = (S, G: S \times S, q_0 \in S)$$&lt;/p&gt;
+
+&lt;p&gt;What does it mean if $G$ is &lt;em&gt;total&lt;/em&gt;?&lt;/p&gt;
+
+&lt;p&gt;##&lt;/p&gt;
+
+&lt;p&gt;What does it mean if $G$ is not a &lt;em&gt;function&lt;/em&gt;?&lt;/p&gt;
+
+&lt;p&gt;##&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Parity Counter.&lt;/strong&gt; Describe a state machine that determines if the
+  number of steps is even.&lt;/p&gt;
+
+&lt;p&gt;#&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Unbounded Counter.&lt;/strong&gt; Describe a state machine that counts the number of steps.&lt;/p&gt;
+
+&lt;p&gt;#&lt;/p&gt;
+
+&lt;p&gt;How well do state machines model real computers?  What kind of
+transition relation does the state machine modeling your computer have?&lt;/p&gt;
+
+&lt;h2 id=&#34;state-machine-execution:af2ff3ef0db44829d3ff131eac0d7ec7&#34;&gt;State Machine Execution&lt;/h2&gt;
+
+&lt;p&gt;An &lt;em&gt;execution&lt;/em&gt; of a state machine $M = (S, G \subseteq S \times S, q_0 \in S)$ is a (possibly infinite) sequence of states, $(x_0, x_1, \cdots, x_n)$ where:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;$x_0 = q_0$ (it begins with the start state), and&lt;/li&gt;
+&lt;li&gt;$\forall i \in {0, 1, \ldots, n - 1} \ldotp (x&lt;em&gt;i, x&lt;/em&gt;{i + 1}) \in G$ (if $q$ and $r$ are consecutive states in the sequence, then there is an edge $q \rightarrow r$ in $G$)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;A state $q$ is &lt;em&gt;reachable&lt;/em&gt; if it appears in some execution.  (That is,
+there is a sequence of transitions starting from $q_0$, following edges
+in $G$, that ends with $q$.)&lt;/p&gt;
+
+&lt;p&gt;$$
+M_1 = (S = \mathbb{N}, G = {(x, y) | y = x^2 }, q_0 = 1)
+$$
+$$
+M_2 = (S = \mathbb{N}, G = {(x, y) | \exists k \in \mathbb{N} \ldotp y = kx }, q_0 = 1)
+$$&lt;/p&gt;
+
+&lt;p&gt;Which states are &lt;em&gt;reachable&lt;/em&gt; for $M_1$ and $M_2$?&lt;/p&gt;
+
+&lt;p&gt;#&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Fall Break Office Hours</title>
+      <link>https://uvacs2102.github.io/fbofficehours/</link>
+      <pubDate>Sun, 01 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/fbofficehours/</guid>
+      <description>
+
+&lt;p&gt;The office hours schedule for next week will be different from normal
+because of “Fall Break” and the Exam (as usual, all will be in Rice
+436 except the professors&amp;rsquo; as noted):&lt;/p&gt;
+
+&lt;h4 id=&#34;monday-2-oct&#34;&gt;Monday (2 Oct)&lt;/h4&gt;
+
+&lt;p&gt;Mohammad Mahmoody (Rice 511), 10:45-11:45am&lt;br /&gt;
+Sarah Meng, 4:30-6:00pm&lt;/p&gt;
+
+&lt;h4 id=&#34;tuesday-3-oct&#34;&gt;Tuesday (3 Oct)&lt;/h4&gt;
+
+&lt;p&gt;Nate Olsen, 10-11:30am&lt;br /&gt;
+Michael Woon, 11am-12:30pm&lt;br /&gt;
+Henry Spece, 3:30-5pm&lt;/p&gt;
+
+&lt;h4 id=&#34;wednesday-4-oct&#34;&gt;Wednesday (4 Oct)&lt;/h4&gt;
+
+&lt;p&gt;Colin Harfst, 9:30am-12:30pm&lt;br /&gt;
+Anna Wu, noon-1:30pm&lt;br /&gt;
+Michael Woon, 12:30-2:00pm&lt;br /&gt;
+David Evans (Rice 507), 2:30-3:30pm&lt;br /&gt;
+Bhuvanesh Murali, 3-5pm&lt;br /&gt;
+Helen Simecek, 3:30-5pm&lt;br /&gt;
+Yasasvini Puligundle, 5-6pm&lt;br /&gt;
+Xueying Bai, 6-7pm&lt;br /&gt;
+Fan Feng, 7-8:30pm&lt;br /&gt;
+Nate Olsen, 7:30-9:00pm&lt;/p&gt;
+
+&lt;h4 id=&#34;thursday-5-oct&#34;&gt;Thursday (5 Oct)&lt;/h4&gt;
+
+&lt;p&gt;Amar Singh, 9am-10:30&lt;br /&gt;
+Xiao Zhang, 10-11am&lt;br /&gt;
+Prashant Gorthi, 11am-noon&lt;/p&gt;
+
+&lt;p&gt;No office hours Thursday afternnon and evening. The normal office
+hours schedule will resume on Monday, 9 October.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Problem Set 5 Comments</title>
+      <link>https://uvacs2102.github.io/ps5comments/</link>
+      <pubDate>Sun, 01 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/ps5comments/</guid>
+      <description>&lt;p&gt;The Problem Set 5 solutions and comments are now posted in collab: &lt;a href=&#34;https://collab.its.virginia.edu/access/content/group/9bd99d1c-6f18-4542-a7d1-8ffc4fccbd3d/ps5solutions.pdf&#34;&gt;PDF&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Class 12: Review</title>
+      <link>https://uvacs2102.github.io/class12/</link>
+      <pubDate>Thu, 28 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/class12/</guid>
+      <description>
+
+&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps5&#34;&gt;&lt;strong&gt;Problem Set 5&lt;/strong&gt;&lt;/a&gt; is due &lt;strong&gt;Friday at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;See &lt;a href=&#34;https://uvacs2102.github.io/class11&#34;&gt;Class 11 Notes&lt;/a&gt; for information and preparation advice for Exam 1, which will be in class next Thursday, 5 October.&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;
+   &lt;center&gt;
+&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;f6aa2e5580f940d984c6508ff6f26d46&#34; data-ratio=&#34;1.77777777777778&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
+   &lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlightm&#34;&gt;
+   &lt;a href=&#34;https://uvacs2102.github.io/docs/class12.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes and Questions&lt;/b&gt;&lt;/a&gt;.
+   &lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;strong-induction-principle&#34;&gt;Strong Induction Principle&lt;/h2&gt;
+
+&lt;p&gt;Let $P$ be a predicated on $\mathbb{N}$.  If&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;$P(0)$ is true, and&lt;/li&gt;
+&lt;li&gt;$(\forall m \in \mathbb{N}, m \le n . P(n)) \implies P(n + 1)$ for all $n \in \mathbb{N}$,&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;then&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;$P(m)$ is true for all $m \in \mathbb{N}$.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;As an inference rule:&lt;/p&gt;
+
+&lt;p&gt;$$
+\infer{\forall m \in \mathbb{N} . P(m)}{P(0), \forall n \in \mathbb{N} . (P(0) \vee P(1) \wedge \cdots \wedge P(n)) \implies P(n + 1)}
+$$&lt;/p&gt;
+
+&lt;p&gt;With arbitrary basis, $b \in \mathbb{N}$:&lt;/p&gt;
+
+&lt;p&gt;$$
+\infer{\forall m \in { b, b+1, b+2, \ldots } . P(m)}{P(b), \forall n \in \mathbb{N} . (P(b) \vee P(b + 1) \wedge \cdots \wedge P(n)) \implies P(n + 1)}
+$$&lt;/p&gt;
+
+&lt;p&gt;Show that &lt;em&gt;strong&lt;/em&gt; induction is not actually stronger than regular induction. (Hint: if the predicate for strong induction is $P(m)$, explain how to construct a predicate, $P&amp;rsquo;(m)$, that works with regular induction.)&lt;/p&gt;
+
+&lt;p&gt;##&lt;/p&gt;
+
+&lt;h3 id=&#34;example-strong-induction-proof&#34;&gt;Example Strong Induction Proof&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Theorem:&lt;/strong&gt; Every number, $n \in \mathbb{N}, n \geq 4$ can be written as $\alpha \cdot 2 + \beta \cdot 5$ where $\alpha, \beta \in \mathbb{N}$.&lt;/p&gt;
+
+&lt;p&gt;Proof by Strong Induction:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;First we need to define the predicate: $$P(n) := \exists \alpha, \beta \in \mathbb{N} . n = \alpha \cdot 2 + \beta \cdot 5$$.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Basis: we are proving for all $n &amp;gt; 3$:&lt;/p&gt;
+
+&lt;p&gt;$P(4)$: $\alpha = 2, \beta = 0$ gives $4 = 2 \cdot 2 + 0 \cdot 5$.
+$P(5)$: $\alpha = 0, \beta = 1$ gives $5 = 0 \cdot 2 + 1 \cdot 5$.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Induction step: $\forall n \in {6, \ldots }$&lt;/p&gt;
+
+&lt;p&gt;By strong induction, assume $P(m)$ is true for all $m \in { 4, 5, 6,
+\ldots, m}$.&lt;/p&gt;
+
+&lt;p&gt;Show $P(m + 1)$: Since $P(m - 1)$ is true (by the \emph{strong} induction
+hypothesis), we know $\exists \alpha, \beta \in \mathbb{N} . m - 1 =
+\alpha \cdot 2 + \beta \cdot 5$. We can show $P(m + 1)$ since
+$m + 1 = (\alpha + 1) \cdot 2 + \beta \cdot 5$.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&#34;proof-by-contra-positive-review&#34;&gt;Proof by Contra-Positive (Review)&lt;/h2&gt;
+
+&lt;p&gt;Recall: $P \implies Q$ is equivalent to $\neg Q \implies \neg P$. (If
+you are shaky on this, prove it to yourself using a truth table.)&lt;/p&gt;
+
+&lt;p&gt;Typical use: where the negation of the proposition is easier to reason
+about than the original proposition (e.g., irrational is a complex
+property to describe, but rational (NOT irrational) is a simple one. So to prove that ``If $r$ is irrational then $\sqrt{r}$ is also irrational&amp;rdquo; we can prove the contrapositive which is &amp;ldquo;if $\sqrt{r}$&amp;rdquo; is rational, then $r$ is also rational$ which is quite straightforward.&lt;/p&gt;
+
+&lt;h2 id=&#34;proof-by-contradiction-review&#34;&gt;Proof by Contradiction (Review)&lt;/h2&gt;
+
+&lt;p&gt;To prove $P$, show $\neg P \implies False$.&lt;/p&gt;
+
+&lt;p&gt;Example: Proving the $\mathbb{Z}$ is not well ordered.&lt;/p&gt;
+
+&lt;p&gt;Goal: proving the proposition $G$ saying ``$\mathbb{Z}$ has no minimum&amp;rdquo;.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;To prove by contradiction, assume $\neg G$ (that is, $\mathbb{Z}$ does have a minimum).&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Then, $\exists m \in \mathbb{Z}$ that is the minimum of $\mathbb{Z}$.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;But, this leads to a contradiction: $m - 1 \in \mathbb{Z}$ and $m - 1 &amp;lt; m$. So, even though the number $m$ was said to be the minimum of $\mathbb{Z}$, it is in fact not the minimum.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Thus, we have a contradiction, so something must be wrong. All our logical inferences after step 1 are correct, so the assumption we made in step 1 must be invalid. If $\neg G$ is invalid, $G$ must be true.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Typical use: when the statment we want to prove has universal quantifier. for example, $\forall x \in \mathbb{Z}. P(x)$. Note that the statment that $\mathbb{Z}$ has \emph{no} minimum, when written formally, uses a universal quantifier (make sure to double check it). Then, instead of arguing that for all $x \in A$, $P(x)$ holds, we assume (for sake of contradiction) that there exists one $x$ for which $\neg(P(x))$ (note that this is indeed the negated statement) from which  we get a contradiction.&lt;/p&gt;
+
+&lt;h1 id=&#34;binary-relation-properties&#34;&gt;Binary Relation Properties&lt;/h1&gt;
+
+&lt;p&gt;When we draw the graph of binary relations, the Domain (&lt;code&gt;input&amp;quot; set) has outgoing edges. Codomain (&lt;/code&gt;output&amp;rdquo; set) has
+incoming edges. So when we use the compact notation referring to different properties of binary relations, keep in mind that the words ``in-out&amp;rdquo; refer to the edge (not the input/output sets).  The properties about outgoing edges are &lt;em&gt;function&lt;/em&gt;
+($\le 1 out$) and &lt;em&gt;total&lt;/em&gt; ($\ge 1$ out). Adding elements to the
+codomain cannot effect these properties.  The properties about
+incoming edges are &lt;em&gt;surjection&lt;/em&gt; ($\ge 1$ in) and &lt;em&gt;injection&lt;/em&gt; ($\le 1$
+in). Adding elements to the domain cannot effect these properties.&lt;/p&gt;
+
+&lt;p&gt;When we say the any relation with property $X$ (e.g., $\ge 1$ out) about the relations \emph{must} also have propety $Y$. It means that property $X$ implies $Y$ logically (about relations). In case the answer is &amp;ldquo;no&amp;rdquo; (i.e. that property $X$ does not imply $Y$) all we have to find is one relation $R$ that satisfies property $X$ but not property $Y$. If the answer is `yes&amp;rsquo; we need to show that for all $R$, if property $X$ holds, so does $Y$. So doing so might need more work.&lt;/p&gt;
+
+&lt;p&gt;If an edge is added to the graph of a relation, which properties
+&lt;em&gt;might&lt;/em&gt; be impacted?&lt;/p&gt;
+
+&lt;p&gt;If an edge is removed to the graph of a relation, which properties
+&lt;em&gt;might&lt;/em&gt; be impacted?&lt;/p&gt;
+
+&lt;p&gt;If an element is removed from the domain of a relation, which properties
+&lt;em&gt;might&lt;/em&gt; be impacted?&lt;/p&gt;
+
+&lt;p&gt;If an element is removed from the codomain of a relation, which
+properties &lt;em&gt;might&lt;/em&gt; be impacted?&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Problem Set 4 Comments</title>
+      <link>https://uvacs2102.github.io/ps4comments/</link>
+      <pubDate>Wed, 27 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/ps4comments/</guid>
+      <description>&lt;p&gt;The Problem Set 4 solutions and comments are now posted in collab: &lt;a href=&#34;https://collab.its.virginia.edu/access/content/group/9bd99d1c-6f18-4542-a7d1-8ffc4fccbd3d/ps4solutions.pdf&#34;&gt;PDF&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Class 11: Induction Practice</title>
+      <link>https://uvacs2102.github.io/class11/</link>
+      <pubDate>Tue, 26 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/class11/</guid>
+      <description>
+
+&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps5&#34;&gt;&lt;strong&gt;Problem Set 5&lt;/strong&gt;&lt;/a&gt; is due &lt;strong&gt;Friday at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Thursday&amp;rsquo;s Class&lt;/strong&gt; may include review for Exam 1.  Before 6:59pm
+  Wednesday, send &lt;a href=&#34;mailto:uvacs2102staff@gmail.com&#34;&gt;&lt;em&gt;uvacs2102staff@gmail.com&lt;/em&gt;&lt;/a&gt; topics you would like to review:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;fewer than 10 total requests: class is not being sufficiently challenged and we should be doing more difficult material (except for the 10 requestors who get exam exemptions).&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;exactly 10 total requests: all requestors get automatic exam exemptions, review requested topics.&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;more than 10 requests implies we should spend Thursday’s class on reviewing requested topics, no exam exemptions.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;exam-1&#34;&gt;Exam 1&lt;/h3&gt;
+
+&lt;p&gt;Exam 1 will be in class on Thursday, 5 October.  You can get a good
+idea what to expect on Exam 1 by looking at the &lt;a href=&#34;https://uvacs2102.github.io/docs/practiceexam1.pdf&#34;&gt;Practice Exam
+1&lt;/a&gt; (from last year&amp;rsquo;s class). We strongly
+encourage you to try to problems on your own, before looking at the
+&lt;a href=&#34;https://uvacs2102.github.io/docs/practiceexam1-solutions.pdf&#34;&gt;posted solutions&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Resources.&lt;/strong&gt; You will be permitted to use a &lt;em&gt;single paper page&lt;/em&gt; of
+notes that you prepare and bring to the exam.  It is fine to
+collaborate with others to prepare your notes.  The page should be no
+larger than a US Letter size page ($8.5 \times 11$ inches), and you
+may write (or print) on both sides of the page.  You may not use any
+special devices (e.g., magnifying glasses) to read your page. No other
+resources, other than your own brain, body, and writing instrument,
+are permitted during the exam.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Content.&lt;/strong&gt; The problems on the exam will cover material from Classes
+  1&amp;ndash;11, Problem Sets 1&amp;ndash;5 (including the provided solutions), and MCS
+  Chapters 1&amp;ndash;5.  Everything on the exam will be something you have seen
+  in at least two of these (Classes, Problem Sets, and MCS Book), and
+  most of the exam will be things you have seen in all three.  If you
+  understand the problems on the problem sets and questions on the class
+  notes well enough to be able to answer similar questions, you should
+  do well on the exam.&lt;/p&gt;
+
+&lt;p&gt;The main topics the exam will cover include:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Propositions, axioms, and proofs (you should understand what each of
+these are and how to define them precisely)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Inference rules (how to determine and show if an inference rule is
+sound or unsound, how to correctly use inference rules in a proof)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Logical formula (how to interpret logical formulas and convert English
+statements into logic, determine the validity or satisfiability of a
+formula, and show equivalence or non-equivalence of two formulas)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Logical quantifiers (how to reason about logical formula using
+$\forall$ and $\exists$, including showing logical equivalence and
+implication)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Proof methods (you should be able to read and write proofs that use
+direct proof, contrapositive proof, and proof by contradiction)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Well ordering (you should be able to explain what it means for a set
+to be well ordered, determine if a given set and operator is well
+ordered, and be able to construct proofs using the well ordering
+principle and identify flaws in misuses of the well ordering
+principle)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Induction (you should understand mathematical induction and be able to
+construct proofs using induction and identify flaws in misuses of
+induction in proofs)&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;For most students, we believe the best way to prepare for the exam
+will be to (1) go over the problem sets and their solutions, and make
+sure you understand well any of the problems you did not get before;
+(2) go through the provided practice exam and try to solve all the
+problems on your own before reading the solutions; (3) go through the
+questions in the class notes and convince yourself you can answer them
+well; (4) re-read chapters of the book, solving the associated
+practice problems, especially for any sections on topics where you had
+difficulty on the problem sets.  If you do #1 and #2 and understand
+well the problems on the practice exam, you should be confident you&amp;rsquo;ll
+do well on the exam; if you struggled on the problem sets, you would
+benefit from doing #3 and #4 as well.&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;
+   &lt;center&gt;
+&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;0efd2b7dcbe64ad9993d64508a604213&#34; data-ratio=&#34;1.77777777777778&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
+   &lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlightm&#34;&gt;
+   &lt;a href=&#34;https://uvacs2102.github.io/docs/class11.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes and Questions&lt;/b&gt;&lt;/a&gt;.
+   &lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;induction-principle&#34;&gt;Induction Principle&lt;/h2&gt;
+
+&lt;p&gt;Let $P$ be a predicated on $\mathbb{N}$.  If&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;$P(0)$ is true, and&lt;/li&gt;
+&lt;li&gt;$P(n) \implies P(n + 1)$ for all $n \in \mathbb{N}$,&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;then&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;$P(m)$ is true for all $m \in \mathbb{N}$.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Prove:&lt;/strong&gt; For all sets $A$, $|pow(A)| = 2^|A|$.&lt;/p&gt;
+
+&lt;div class=&#34;biggap&#34;&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Prove:&lt;/strong&gt; The sum of the first $n$ positive integers is $\frac{n(n+1)}{2}$.&lt;/p&gt;
+
+&lt;div class=&#34;biggap&#34;&gt;&lt;/div&gt;
+
+&lt;h3 id=&#34;generalizing-to-well-ordered-sets&#34;&gt;Generalizing to Well-Ordered Sets&lt;/h3&gt;
+
+&lt;p&gt;We can use Induction for any well-ordered set, where there is an
+operation (like &amp;lsquo;+ 1&amp;rsquo;) and a starting point (like &amp;lsquo;0&amp;rsquo;) that covers the
+whole set.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Prove.&lt;/strong&gt; All non-empty finite subsets of $\mathbb{N}$ have a minimum element.&lt;/p&gt;
+
+&lt;div class=&#34;biggap&#34;&gt;&lt;/div&gt;
+
+&lt;h2 id=&#34;induction-practice&#34;&gt;Induction Practice&lt;/h2&gt;
+
+&lt;p&gt;Take-Away Game: start with $n$ sticks; at each turn a player must remove
+1, 2 or 3 sticks; player who takes the last stick wins.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Prove: for a Take-Away game with any initial number of sticks, $n$, either
+Player 1 has a winning strategy or Player 2 does.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Prove: Player 1 has a winning strategy for a Take-Away game with $n$ sticks, if \bigfillin.  Otherwise, Player 2 has a winning strategy.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Problem Set 5</title>
@@ -16,7 +597,10 @@
       
       <guid>https://uvacs2102.github.io/ps5posted/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps5&#34;&gt;&lt;strong&gt;Problem Set 5&lt;/strong&gt;&lt;/a&gt; [&lt;a href=&#34;https://uvacs2102.github.io/docs/ps5.pdf&#34;&gt;PDF&lt;/a&gt;] is now posted and
-is due &lt;strong&gt;Friday, 29 September at 6:29:00pm&lt;/strong&gt;.&lt;/p&gt;
+is due &lt;strong&gt;Friday, 29 September at 6:29:00pm&lt;/strong&gt;. Please read the
+collaboration policy carefully - unlike previous assignments the
+&lt;em&gt;Students&lt;/em&gt; &amp;rarr; &lt;em&gt;Submissions&lt;/em&gt; relation for this assignment may not be
+injective.&lt;/p&gt;
 </description>
     </item>
     
@@ -28,7 +612,7 @@ is due &lt;strong&gt;Friday, 29 September at 6:29:00pm&lt;/strong&gt;.&lt;/p&gt;
       <guid>https://uvacs2102.github.io/class10/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule:cefb84ebc6e45e7105a37c4f4d413033&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;This week you should finish reading MCS Chapter 4 (section 4.5) and
 Section 5.1.  We will discuss Induction (Section 5.1) next class.&lt;/p&gt;
@@ -93,7 +677,7 @@ what do we know about their cardinalities?&lt;/p&gt;
 
 &lt;p&gt;#&lt;/p&gt;
 
-&lt;h1 id=&#34;induction-principle:cefb84ebc6e45e7105a37c4f4d413033&#34;&gt;Induction Principle&lt;/h1&gt;
+&lt;h1 id=&#34;induction-principle&#34;&gt;Induction Principle&lt;/h1&gt;
 
 &lt;p&gt;Let $P$ be a predicated on $\mathbb{N}$.  If&lt;/p&gt;
 
@@ -108,7 +692,7 @@ what do we know about their cardinalities?&lt;/p&gt;
 &lt;li&gt;$P(m)$ is true for all $m \in \mathbb{N}$.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;template-for-induction-proofs:cefb84ebc6e45e7105a37c4f4d413033&#34;&gt;Template for Induction Proofs&lt;/h2&gt;
+&lt;h2 id=&#34;template-for-induction-proofs&#34;&gt;Template for Induction Proofs&lt;/h2&gt;
 
 &lt;ol&gt;
 &lt;li&gt;State, &amp;ldquo;We prove by induction.&amp;rdquo;&lt;/li&gt;
@@ -120,7 +704,7 @@ what do we know about their cardinalities?&lt;/p&gt;
 
 &lt;p&gt;How is the method of &lt;em&gt;proof by induction principle&lt;/em&gt; similar to and different from &lt;em&gt;proof by well-ordering principle&lt;/em&gt;?&lt;/p&gt;
 
-&lt;h1 id=&#34;power-sets:cefb84ebc6e45e7105a37c4f4d413033&#34;&gt;Power Sets&lt;/h1&gt;
+&lt;h1 id=&#34;power-sets&#34;&gt;Power Sets&lt;/h1&gt;
 
 &lt;p&gt;The &lt;strong&gt;power set&lt;/strong&gt; of $A$ ($\textrm{pow}(A)$)is the set of all subsets of $A$:
 $$
@@ -404,529 +988,6 @@ set, called a &lt;em&gt;codomain&lt;/em&gt;.&lt;/p&gt;
       
       <guid>https://uvacs2102.github.io/ps2comments/</guid>
       <description>&lt;p&gt;The Problem Set 2 solutions and comments are now posted in collab: &lt;a href=&#34;https://collab.its.virginia.edu/access/content/group/9bd99d1c-6f18-4542-a7d1-8ffc4fccbd3d/ps2solutions.pdf&#34;&gt;PDF&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Class 7: Sets</title>
-      <link>https://uvacs2102.github.io/class7/</link>
-      <pubDate>Tue, 12 Sep 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://uvacs2102.github.io/class7/</guid>
-      <description>
-
-&lt;h3 id=&#34;schedule:3a08b95a8ad598832d09afa687b9b147&#34;&gt;Schedule&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps3&#34;&gt;&lt;strong&gt;Problem Set 3&lt;/strong&gt;&lt;/a&gt; is due &lt;strong&gt;Friday at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;
-   &lt;center&gt;
-&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;a5f790a4fb0740d29bb3ad6dce3fa68d&#34; data-ratio=&#34;1.77777777777778&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
-   &lt;/center&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;highlightm&#34;&gt;
-   &lt;a href=&#34;https://uvacs2102.github.io/docs/class7.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes and Questions&lt;/b&gt;&lt;/a&gt;.
-   &lt;/div&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;links:3a08b95a8ad598832d09afa687b9b147&#34;&gt;Links&lt;/h2&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;notes-and-questions:3a08b95a8ad598832d09afa687b9b147&#34;&gt;Notes and Questions&lt;/h1&gt;
-
-&lt;p&gt;What is a &lt;em&gt;data type&lt;/em&gt;?  What are the differences between a &lt;em&gt;mathematical
-data type&lt;/em&gt; and a data type in your favorite programming language?&lt;/p&gt;
-
-&lt;p&gt;#&lt;/p&gt;
-
-&lt;p&gt;A &lt;strong&gt;set&lt;/strong&gt; is an unordered colection of objects.  A set is defined by its
-membership operation: $x \in S$ is true if $x$ is in the set $S$. When $x$ is not in $S$ we write it as $x \notin S$. A set has only &lt;em&gt;one&lt;/em&gt; copy of each element. Namely, there is no repetition in elements of a set. Also, a set $A$ could be a member o another set $B$, denoted by $A \in B$. Note that members of $A$ are not necessarily members of $B$ unless they are explicitly put in $B$ directly.&lt;/p&gt;
-
-&lt;h2 id=&#34;set-operations:3a08b95a8ad598832d09afa687b9b147&#34;&gt;Set Operations&lt;/h2&gt;
-
-&lt;p&gt;Subset: $\subseteq$ (note that this does not mean &lt;em&gt;strict subset&lt;/em&gt;)
-$$A \subseteq B \iff \forall x \in A. \fillin \in \fillin.$$&lt;/p&gt;
-
-&lt;p&gt;Set Equality: $=$
-$$A = B \iff A \fillin B \wedge B \fillin A.$$&lt;/p&gt;
-
-&lt;p&gt;Set Union: $\cup$
-$$\forall x. x \in A \cup B \iff x \in A \fillin x \in B.$$&lt;/p&gt;
-
-&lt;p&gt;Set Intersection: $\cap$
-$$\forall x. x \in A \cap B \iff x \in A \fillin x \in B.$$&lt;/p&gt;
-
-&lt;p&gt;Set Difference: $-$
-$$\forall x. x \in A - B \iff x \in A \wedge x \notin B.$$&lt;/p&gt;
-
-&lt;p&gt;Set Complement: $\overline{S}$
-$$ \forall  x \in D. x \in \overline{A} \iff x \notin A.$$&lt;/p&gt;
-
-&lt;p&gt;($D$ is the ``domain of discourse&amp;rdquo;, the universe of all objects under
-discussion.)&lt;/p&gt;
-
-&lt;!--page--&gt;
-
-&lt;h3 id=&#34;russell-s-paradox:3a08b95a8ad598832d09afa687b9b147&#34;&gt;Russell&amp;rsquo;s Paradox&lt;/h3&gt;
-
-&lt;p&gt;$$ S_{R} = \textrm{ the set of all sets that are not members of themselves} $$&lt;/p&gt;
-
-&lt;p&gt;Is $S&lt;em&gt;{R} \in S&lt;/em&gt;{R}$?&lt;/p&gt;
-
-&lt;p&gt;What is the source of this paradox? Note that in this question, we are implicitly assuming that $S&lt;em&gt;{R}$ is a set, but we have never &amp;ldquo;constructed&amp;rdquo; this set properly to use it. Namely, here we are implicitly assuming that there is already a &amp;ldquo;set of all sets&amp;rdquo; $S&lt;/em&gt;{all}$ from which we remove those sets like $T$ for which $T \in T$. By removing all such $T$ from $S_{all}$ we get the set $S_R$.&lt;/p&gt;
-
-&lt;h3 id=&#34;using-quantifiers-more-carefully:3a08b95a8ad598832d09afa687b9b147&#34;&gt;Using Quantifiers More Carefully&lt;/h3&gt;
-
-&lt;p&gt;Note that in some of the  propositions that we used to define the set operations (such as union, intersection, etc.) above, we wrote quantified $x$ without saying which set it is from. For example  $\forall x. [\dots]$. It is much preferred to always say what $x$ is belonging to when we quantify over $x$. The reason is to avoid traps like that of Russell&amp;rsquo;s paradox! This should not worry us in this class, as we will always work with well-defined &lt;em&gt;universes&lt;/em&gt; that include all the elements of the sets that we work with. Therefore, we can always assume implicitly that $x \in U$ (for a well defined set universe $U$) even if not explicitly mentioned.&lt;/p&gt;
-
-&lt;p&gt;#&lt;/p&gt;
-
-&lt;h3 id=&#34;set-practice:3a08b95a8ad598832d09afa687b9b147&#34;&gt;Set Practice&lt;/h3&gt;
-
-&lt;p&gt;Here are some practice problems involving sets.  We won&amp;rsquo;t go through
-these in class, but you should ask questions about any are unclear.  (At
-least a few of these will be on Exam 1.)&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Define $A \subset B$ (strict subset).&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;#&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Prove $A \cup B \equiv B \cup A$.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;#&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Prove $A - B = \emptyset \iff A \subseteq B$.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;#&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Prove $A = B \iff (\forall a \in A \ldotp a \in B) \wedge (\forall b \in B \ldotp b \in A).$
-&lt;/div&gt;&lt;/li&gt;
-&lt;/ol&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Problem Set 3</title>
-      <link>https://uvacs2102.github.io/ps3posted/</link>
-      <pubDate>Fri, 08 Sep 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://uvacs2102.github.io/ps3posted/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps3&#34;&gt;&lt;strong&gt;Problem Set 3&lt;/strong&gt;&lt;/a&gt; [&lt;a href=&#34;https://uvacs2102.github.io/docs/ps3.pdf&#34;&gt;PDF&lt;/a&gt;] is now posted and
-is due &lt;strong&gt;Friday, 15 September at 6:29:00pm&lt;/strong&gt;.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Class 6: Quantifiers and More</title>
-      <link>https://uvacs2102.github.io/class6/</link>
-      <pubDate>Thu, 07 Sep 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://uvacs2102.github.io/class6/</guid>
-      <description>
-
-&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
-
-&lt;p&gt;Everyone should have received their graded PS1 by now. Please read &lt;a href=&#34;https://collab.its.virginia.edu/access/content/group/9bd99d1c-6f18-4542-a7d1-8ffc4fccbd3d/ps1solutions.pdf&#34;&gt;the comments posted in collab&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps2&#34;&gt;&lt;strong&gt;Problem Set 2&lt;/strong&gt;&lt;/a&gt; is due &lt;strong&gt;Friday at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;You should finish reading MCS Chapter 3 by Tuesday (12 September).&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;
-   &lt;center&gt;
-&lt;script async class=&#34;speakerdeck-embed&#34; 
-data-id=&#34;44b72b8383c14676af241944ea541667&#34; data-ratio=&#34;1.77777777777778&#34; 
-src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
-   &lt;/center&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;highlightm&#34;&gt;
-   &lt;a href=&#34;https://uvacs2102.github.io/docs/class6.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes and Questions&lt;/b&gt;&lt;/a&gt;.
-   &lt;/div&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
-
-&lt;p&gt;If you believe real computing systems have the property that the values
-you read from memory will match what you wrote there, see:&lt;/p&gt;
-
-&lt;p&gt;Sudhakar Govindavajhala and Andrew W. Appel. &lt;a href=&#34;http://sip.cs.princeton.edu/pub/memerr.pdf&#34;&gt;&lt;em&gt;Using Memory Errors to Attack a Virtual Machine&lt;/em&gt;&lt;/a&gt;, IEEE Symposium on Security and Privacy 2003.&lt;/p&gt;
-
-&lt;p&gt;Bianca Schroeder, Eduardo Pinheiro, Wolf-Dietrich Weber. &lt;a href=&#34;http://www.cs.utoronto.ca/~bianca/papers/sigmetrics09.pdf&#34;&gt;&lt;em&gt;DRAM Errors
-in the Wild: A Large-Scale Field
-Study&lt;/em&gt;&lt;/a&gt;. SIGMETRICS 2009.&lt;/p&gt;
-
-&lt;p&gt;Kaveh Razavi, Ben Gras, Erik Bosman, Bart Preneel, Cristiano Giuffrida
-and Herbert Bos. &lt;a href=&#34;https://www.usenix.org/conference/usenixsecurity16/technical-sessions/presentation/razavi&#34;&gt;&lt;em&gt;Flip Feng Shui: Hammering a Needle in the Software
-Stack&lt;/em&gt;&lt;/a&gt;. USENIX
-Security 2016.&lt;/p&gt;
-
-&lt;p&gt;Yuan Xiao, Xiaokuan Zhang, Yinqian Zhang, and Radu Teodorescu. &lt;a href=&#34;https://www.usenix.org/system/files/conference/usenixsecurity16/sec16_paper_xiao.pdf&#34;&gt;&lt;em&gt;One Bit Flips, One Cloud Flops: Cross-VM Row Hammer Attacks and Privilege Escalation&lt;/em&gt;&lt;/a&gt;, USENIX Security 2016.&lt;/p&gt;
-
-&lt;p&gt;Sahand Saba&amp;rsquo;s &lt;a href=&#34;http://sahandsaba.com/understanding-sat-by-implementing-a-simple-sat-solver-in-python.html&#34;&gt;&lt;em&gt;Understanding SAT by Implementing a Simple SAT Solver in
-Python&lt;/em&gt;&lt;/a&gt;  [&lt;a href=&#34;https://github.com/evansuva/simple-sat&#34;&gt;Code with Dave&amp;rsquo;s modifications: https://github.com/evansuva/simple-sat&lt;/a&gt;]&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://baldur.iti.kit.edu/sat-competition-2017/&#34;&gt;SAT Competition 2017&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Millennium Problems on &lt;a href=&#34;http://www.claymath.org/millennium-problems/&#34;&gt;Clay institute&amp;rsquo;s
-website&lt;/a&gt;. Whether or not we can&lt;br /&gt;
-solve the &lt;em&gt;satisfiability&lt;/em&gt; of a given CNF or 3CNF formula in polynomial time,
-is the P vs. NP question in this list.&lt;/p&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;programs-and-proofs&#34;&gt;Programs and Proofs&lt;/h1&gt;
-
-&lt;p&gt;What does it mean to &lt;em&gt;test&lt;/em&gt; a computing system?  What does it mean for a computing system to &lt;em&gt;always behave correctly&lt;/em&gt;?&lt;/p&gt;
-
-&lt;div class=&#34;biggap&#34;&gt;&lt;/div&gt;
-
-&lt;p&gt;Can a mathematical proof guarantee a real computing system will behave correctly?&lt;/p&gt;
-
-&lt;div class=&#34;biggap&#34;&gt;&lt;/div&gt;
-
-&lt;h1 id=&#34;minima&#34;&gt;Minima&lt;/h1&gt;
-
-&lt;p&gt;The &lt;em&gt;minimum&lt;/em&gt; of a set with respect to some comparator operator is the
-element which is &amp;ldquo;less than&amp;rdquo; (according to that comparator) every
-other element: $m \in S$ is the &lt;em&gt;minimum&lt;/em&gt; of $S$ if and only if
-$\forall x \in S - { m } . m \prec x$.&lt;/p&gt;
-
-&lt;p&gt;$$
-\forall S \in \textrm{pow}(\mathbb{N}) - { \varnothing } \ldotp \exists m \in S\ldotp \forall x \in S - {m}\ldotp m &amp;lt; x
-$$&lt;/p&gt;
-
-&lt;h1 id=&#34;formulas-propositions-and-inference-rules&#34;&gt;Formulas, Propositions, and Inference Rules&lt;/h1&gt;
-
-&lt;p&gt;$P \implies Q$ is a &lt;em&gt;formula&lt;/em&gt;.&lt;br /&gt;
-$\forall P \in { T, F } . \forall Q \in { T, F } . P \implies Q$ is a &lt;em&gt;proposition&lt;/em&gt;.&lt;br /&gt;
-$\infer{Q}{P}$ is an &lt;em&gt;inference rule&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;A &lt;em&gt;formula&lt;/em&gt; is &lt;em&gt;satisfiable&lt;/em&gt; if there is some way to make it true.&lt;/p&gt;
-
-&lt;p&gt;$P \implies Q$ is satisfiable:&lt;/p&gt;
-
-&lt;p&gt;$\exists P \in { T, F } . \exists Q \in {T, F } . P \implies Q$&lt;/p&gt;
-
-&lt;p&gt;We can show a formula is satisfiable by giving &lt;em&gt;one&lt;/em&gt; choice for the
-variable assignments that makes it true. For example, $P = T$, $Q =
-T$.&lt;/p&gt;
-
-&lt;p&gt;A &lt;em&gt;formula&lt;/em&gt; is &lt;em&gt;valid&lt;/em&gt; if there is no way to make it false.&lt;/p&gt;
-
-&lt;p&gt;$P \implies Q$ is &lt;em&gt;not&lt;/em&gt; valid:&lt;/p&gt;
-
-&lt;p&gt;$\forall P \in { T, F } . \forall Q \in {T, F } . P \implies Q$&lt;/p&gt;
-
-&lt;p&gt;This proposition is false, we can chose $P = T$, $Q = F$.&lt;/p&gt;
-
-&lt;p&gt;An &lt;em&gt;inference rule&lt;/em&gt; is sound if it never leads to a false conclusion. An inference rule
-$\infer{Q}{P}$ is sound if and only if the formula
-$P \implies Q$ is valid. So, this way, we can find out whether an inference rule is sound or not, by checking out whether the corresponding formula is valid or not.&lt;/p&gt;
-
-&lt;h1 id=&#34;negating-quantifiers&#34;&gt;Negating Quantifiers&lt;/h1&gt;
-
-&lt;p&gt;What is the negation of $\forall x \in S . P(x)$?
-&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;What is the negation of $\exists x \in S . P(x)$?
-&lt;div class=&#34;gap&#34;&gt;&lt;/div&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;satisfiability&#34;&gt;Satisfiability&lt;/h1&gt;
-
-&lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; A formula is in &lt;em&gt;SAT&lt;/em&gt; if it is in CNF form and it is
-  satisfiable.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; A formula is in &lt;em&gt;3SAT&lt;/em&gt; if it is in 3CNF form and it is
-  satisfiable.&lt;/p&gt;
-
-&lt;p&gt;$$
-(x_1 \vee x_2 \vee x_3) \wedge (x_1 \vee \overline{x_2} \vee x_3) \wedge (\overline{x_1} \vee x_2 \vee \overline{x_3})
-$$&lt;/p&gt;
-
-&lt;p&gt;\begin{center} \tiny \begin{math} (x&lt;em&gt;{48} \vee x&lt;/em&gt;{4} \vee \overline{x&lt;em&gt;{9}})
-\wedge (\overline{x&lt;/em&gt;{44}} \vee x&lt;em&gt;{50} \vee \overline{x&lt;/em&gt;{37}}) \wedge
-(\overline{x&lt;em&gt;{8}} \vee \overline{x&lt;/em&gt;{1}} \vee x&lt;em&gt;{28}) \wedge (x&lt;/em&gt;{21} \vee
-x&lt;em&gt;{27} \vee \overline{x&lt;/em&gt;{32}}) \wedge (x&lt;em&gt;{17} \vee x&lt;/em&gt;{29} \vee
-\overline{x&lt;em&gt;{30}}) \wedge (x&lt;/em&gt;{30} \vee x&lt;em&gt;{24} \vee x&lt;/em&gt;{37}) \wedge
-(\overline{x&lt;em&gt;{22}} \vee \overline{x&lt;/em&gt;{27}} \vee \overline{x&lt;em&gt;{44}}) \wedge
-(x&lt;/em&gt;{8} \vee \overline{x&lt;em&gt;{25}} \vee \overline{x&lt;/em&gt;{24}}) \wedge
-(\overline{x&lt;em&gt;{44}} \vee x&lt;/em&gt;{50} \vee x&lt;em&gt;{14}) \wedge (x&lt;/em&gt;{45} \vee x&lt;em&gt;{15} \vee
-x&lt;/em&gt;{37}) \wedge (\overline{x&lt;em&gt;{16}} \vee x&lt;/em&gt;{14} \vee \overline{x&lt;em&gt;{36}}) \wedge
-(\overline{x&lt;/em&gt;{33}} \vee x&lt;em&gt;{5} \vee x&lt;/em&gt;{26}) \wedge (x&lt;em&gt;{18} \vee
-\overline{x&lt;/em&gt;{7}} \vee \overline{x&lt;em&gt;{24}}) \wedge (x&lt;/em&gt;{31} \vee x&lt;em&gt;{38} \vee
-x&lt;/em&gt;{28}) \wedge (x&lt;em&gt;{31} \vee \overline{x&lt;/em&gt;{33}} \vee \overline{x&lt;em&gt;{8}}) \wedge
-(x&lt;/em&gt;{49} \vee x&lt;em&gt;{7} \vee \overline{x&lt;/em&gt;{6}}) \wedge (x&lt;em&gt;{34} \vee
-\overline{x&lt;/em&gt;{8}} \vee x&lt;em&gt;{46}) \wedge (x&lt;/em&gt;{4} \vee \overline{x&lt;em&gt;{5}} \vee
-\overline{x&lt;/em&gt;{35}}) \wedge (x&lt;em&gt;{43} \vee x&lt;/em&gt;{27} \vee x&lt;em&gt;{39}) \wedge
-(\overline{x&lt;/em&gt;{46}} \vee \overline{x&lt;em&gt;{40}} \vee \overline{x&lt;/em&gt;{27}}) \wedge
-(\overline{x&lt;em&gt;{25}} \vee x&lt;/em&gt;{14} \vee \overline{x&lt;em&gt;{49}}) \wedge (x&lt;/em&gt;{38} \vee
-x&lt;em&gt;{5} \vee x&lt;/em&gt;{15}) \wedge (x&lt;em&gt;{9} \vee x&lt;/em&gt;{14} \vee \overline{x&lt;em&gt;{19}}) \wedge
-(x&lt;/em&gt;{45} \vee \overline{x&lt;em&gt;{42}} \vee \overline{x&lt;/em&gt;{39}}) \wedge (x&lt;em&gt;{34} \vee
-\overline{x&lt;/em&gt;{22}} \vee \overline{x&lt;em&gt;{28}}) \wedge (\overline{x&lt;/em&gt;{20}} \vee
-x&lt;em&gt;{15} \vee \overline{x&lt;/em&gt;{8}}) \wedge (\overline{x&lt;em&gt;{44}} \vee
-\overline{x&lt;/em&gt;{10}} \vee \overline{x&lt;em&gt;{9}}) \wedge (x&lt;/em&gt;{22} \vee
-\overline{x&lt;em&gt;{31}} \vee x&lt;/em&gt;{14}) \wedge (\overline{x&lt;em&gt;{9}} \vee
-\overline{x&lt;/em&gt;{42}} \vee \overline{x&lt;em&gt;{15}}) \wedge (\overline{x&lt;/em&gt;{40}} \vee
-x&lt;em&gt;{12} \vee \overline{x&lt;/em&gt;{32}}) \wedge (\overline{x&lt;em&gt;{20}} \vee
-\overline{x&lt;/em&gt;{6}} \vee \overline{x&lt;em&gt;{15}}) \wedge (\overline{x&lt;/em&gt;{37}} \vee
-x&lt;em&gt;{39} \vee \overline{x&lt;/em&gt;{23}}) \wedge (\overline{x&lt;em&gt;{3}} \vee
-\overline{x&lt;/em&gt;{40}} \vee \overline{x&lt;em&gt;{32}}) \wedge (\overline{x&lt;/em&gt;{4}} \vee
-\overline{x&lt;em&gt;{25}} \vee x&lt;/em&gt;{7}) \wedge (\overline{x&lt;em&gt;{20}} \vee
-\overline{x&lt;/em&gt;{36}} \vee \overline{x&lt;em&gt;{37}}) \wedge (\overline{x&lt;/em&gt;{40}} \vee
-\overline{x&lt;em&gt;{35}} \vee x&lt;/em&gt;{39}) \wedge (\overline{x&lt;em&gt;{43}} \vee
-\overline{x&lt;/em&gt;{40}} \vee \overline{x&lt;em&gt;{7}}) \wedge (x&lt;/em&gt;{34} \vee x&lt;em&gt;{44} \vee
-x&lt;/em&gt;{26}) \wedge (x&lt;em&gt;{13} \vee x&lt;/em&gt;{27} \vee x&lt;em&gt;{28}) \wedge (x&lt;/em&gt;{12} \vee
-\overline{x&lt;em&gt;{36}} \vee x&lt;/em&gt;{7}) \wedge (\overline{x&lt;em&gt;{16}} \vee x&lt;/em&gt;{9} \vee
-\overline{x&lt;em&gt;{24}}) \wedge (\overline{x&lt;/em&gt;{48}} \vee x&lt;em&gt;{14} \vee x&lt;/em&gt;{28}) \wedge
-(x&lt;em&gt;{16} \vee x&lt;/em&gt;{4} \vee x&lt;em&gt;{40}) \wedge (\overline{x&lt;/em&gt;{25}} \vee x&lt;em&gt;{15} \vee
-x&lt;/em&gt;{37}) \wedge (x&lt;em&gt;{47} \vee \overline{x&lt;/em&gt;{26}} \vee \overline{x&lt;em&gt;{23}}) \wedge
-(x&lt;/em&gt;{4} \vee \overline{x&lt;em&gt;{13}} \vee x&lt;/em&gt;{36}) \wedge (x&lt;em&gt;{48} \vee
-\overline{x&lt;/em&gt;{13}} \vee \overline{x&lt;em&gt;{37}}) \wedge (x&lt;/em&gt;{4} \vee x&lt;em&gt;{35} \vee
-\overline{x&lt;/em&gt;{27}}) \wedge (\overline{x&lt;em&gt;{22}} \vee x&lt;/em&gt;{47} \vee x&lt;em&gt;{26}) \wedge
-(\overline{x&lt;/em&gt;{22}} \vee \overline{x&lt;em&gt;{46}} \vee x&lt;/em&gt;{27}) \wedge
-(\overline{x&lt;em&gt;{20}} \vee x&lt;/em&gt;{49} \vee x&lt;em&gt;{11}) \wedge (x&lt;/em&gt;{42} \vee
-\overline{x&lt;em&gt;{10}} \vee x&lt;/em&gt;{28}) \wedge (\overline{x&lt;em&gt;{45}} \vee x&lt;/em&gt;{28} \vee
-\overline{x&lt;em&gt;{37}}) \wedge (x&lt;/em&gt;{14} \vee \overline{x&lt;em&gt;{32}} \vee
-\overline{x&lt;/em&gt;{23}}) \wedge (x&lt;em&gt;{22} \vee x&lt;/em&gt;{14} \vee x&lt;em&gt;{23}) \wedge
-(\overline{x&lt;/em&gt;{17}} \vee \overline{x&lt;em&gt;{46}} \vee \overline{x&lt;/em&gt;{7}}) \wedge
-(\overline{x&lt;em&gt;{31}} \vee x&lt;/em&gt;{46} \vee \overline{x&lt;em&gt;{50}}) \wedge (x&lt;/em&gt;{34} \vee
-\overline{x&lt;em&gt;{41}} \vee x&lt;/em&gt;{43}) \wedge (x&lt;em&gt;{17} \vee \overline{x&lt;/em&gt;{9}} \vee
-x&lt;em&gt;{15}) \wedge (x&lt;/em&gt;{46} \vee x&lt;em&gt;{14} \vee \overline{x&lt;/em&gt;{12}}) \wedge
-(\overline{x&lt;em&gt;{20}} \vee x&lt;/em&gt;{12} \vee x&lt;em&gt;{14}) \wedge (x&lt;/em&gt;{41} \vee x&lt;em&gt;{42} \vee
-\overline{x&lt;/em&gt;{15}}) \wedge (x&lt;em&gt;{48} \vee x&lt;/em&gt;{46} \vee \overline{x&lt;em&gt;{36}}) \wedge
-(\overline{x&lt;/em&gt;{22}} \vee \overline{x&lt;em&gt;{4}} \vee \overline{x&lt;/em&gt;{49}}) \wedge
-(x&lt;em&gt;{22} \vee x&lt;/em&gt;{12} \vee \overline{x&lt;em&gt;{42}}) \wedge (x&lt;/em&gt;{13} \vee
-\overline{x&lt;em&gt;{38}} \vee x&lt;/em&gt;{39}) \wedge (x&lt;em&gt;{48} \vee \overline{x&lt;/em&gt;{16}} \vee
-\overline{x&lt;em&gt;{27}}) \wedge (x&lt;/em&gt;{17} \vee \overline{x&lt;em&gt;{18}} \vee
-\overline{x&lt;/em&gt;{26}}) \wedge (x&lt;em&gt;{48} \vee \overline{x&lt;/em&gt;{40}} \vee
-\overline{x&lt;em&gt;{35}}) \wedge (\overline{x&lt;/em&gt;{43}} \vee \overline{x&lt;em&gt;{40}} \vee
-\overline{x&lt;/em&gt;{49}}) \wedge (x&lt;em&gt;{29} \vee x&lt;/em&gt;{11} \vee \overline{x&lt;em&gt;{32}}) \wedge
-(x&lt;/em&gt;{33} \vee \overline{x&lt;em&gt;{17}} \vee x&lt;/em&gt;{39}) \wedge (\overline{x&lt;em&gt;{25}} \vee
-\overline{x&lt;/em&gt;{9}} \vee \overline{x&lt;em&gt;{6}}) \wedge (x&lt;/em&gt;{40} \vee \overline{x&lt;em&gt;{50}}
-\vee x&lt;/em&gt;{19}) \wedge (x&lt;em&gt;{8} \vee x&lt;/em&gt;{10} \vee \overline{x&lt;em&gt;{27}}) \wedge (x&lt;/em&gt;{5}
-\vee x&lt;em&gt;{9} \vee \overline{x&lt;/em&gt;{26}}) \wedge (x&lt;em&gt;{45} \vee \overline{x&lt;/em&gt;{38}} \vee
-\overline{x&lt;em&gt;{27}}) \wedge (\overline{x&lt;/em&gt;{4}} \vee \overline{x&lt;em&gt;{40}} \vee
-\overline{x&lt;/em&gt;{42}}) \wedge (x&lt;em&gt;{21} \vee x&lt;/em&gt;{50} \vee x&lt;em&gt;{12}) \wedge
-(\overline{x&lt;/em&gt;{8}} \vee \overline{x&lt;em&gt;{14}} \vee \overline{x&lt;/em&gt;{42}}) \wedge
-(\overline{x&lt;em&gt;{17}} \vee x&lt;/em&gt;{47} \vee \overline{x&lt;em&gt;{27}}) \wedge (x&lt;/em&gt;{49} \vee
-\overline{x&lt;em&gt;{12}} \vee \overline{x&lt;/em&gt;{6}}) \wedge (x&lt;em&gt;{27} \vee x&lt;/em&gt;{49} \vee
-\overline{x&lt;em&gt;{32}}) \wedge (\overline{x&lt;/em&gt;{29}} \vee \overline{x&lt;em&gt;{12}} \vee
-\overline{x&lt;/em&gt;{26}}) \wedge (x&lt;em&gt;{48} \vee \overline{x&lt;/em&gt;{2}} \vee x&lt;em&gt;{6}) \wedge
-(x&lt;/em&gt;{16} \vee x&lt;em&gt;{36} \vee x&lt;/em&gt;{49}) \wedge (x&lt;em&gt;{33} \vee \overline{x&lt;/em&gt;{12}} \vee
-\overline{x&lt;em&gt;{26}}) \wedge (\overline{x&lt;/em&gt;{33}} \vee x&lt;em&gt;{29} \vee x&lt;/em&gt;{49}) \wedge
-(\overline{x&lt;em&gt;{48}} \vee x&lt;/em&gt;{2} \vee x&lt;em&gt;{19}) \wedge (x&lt;/em&gt;{25} \vee x&lt;em&gt;{36} \vee
-x&lt;/em&gt;{49}) \wedge (x&lt;em&gt;{21} \vee x&lt;/em&gt;{40} \vee \overline{x&lt;em&gt;{14}}) \wedge
-(\overline{x&lt;/em&gt;{34}} \vee \overline{x&lt;em&gt;{44}} \vee \overline{x&lt;/em&gt;{6}}) \wedge
-(x&lt;em&gt;{48} \vee \overline{x&lt;/em&gt;{50}} \vee \overline{x&lt;em&gt;{1}}) \wedge (x&lt;/em&gt;{5} \vee
-\overline{x&lt;em&gt;{12}} \vee x&lt;/em&gt;{7}) \wedge (x&lt;em&gt;{21} \vee \overline{x&lt;/em&gt;{35}} \vee
-\overline{x&lt;em&gt;{27}}) \wedge (\overline{x&lt;/em&gt;{22}} \vee \overline{x&lt;em&gt;{16}} \vee
-\overline{x&lt;/em&gt;{14}}) \wedge (\overline{x&lt;em&gt;{13}} \vee \overline{x&lt;/em&gt;{35}} \vee
-\overline{x&lt;em&gt;{12}}) \wedge (\overline{x&lt;/em&gt;{4}} \vee \overline{x&lt;em&gt;{35}} \vee
-\overline{x&lt;/em&gt;{42}}) \wedge (\overline{x&lt;em&gt;{50}} \vee \overline{x&lt;/em&gt;{40}} \vee
-x&lt;em&gt;{7}) \wedge (x&lt;/em&gt;{25} \vee x&lt;em&gt;{47} \vee \overline{x&lt;/em&gt;{12}}) \end{math}
-\end{center}&lt;/p&gt;
-
-&lt;h2 id=&#34;converting-truth-tables-to-dnf&#34;&gt;Converting Truth Tables to DNF&lt;/h2&gt;
-
-&lt;p&gt;\begin{tabular}{cc|cc}
-$P$ &amp;amp; $Q$ &amp;amp; $P \implies Q$ &amp;amp; $P \oplus Q$ \ \hline
-\T &amp;amp; \T   &amp;amp; \T &amp;amp; \F \
-\T &amp;amp; \F   &amp;amp; \F &amp;amp; \T \
-\F &amp;amp; \T   &amp;amp; \T &amp;amp; \T \
-\F &amp;amp; \F   &amp;amp; \T &amp;amp; \F \
-\end{tabular}&lt;/p&gt;
-
-&lt;p&gt;The output of the operator is \T\ if and only if the inputs do match &lt;em&gt;one row&lt;/em&gt; where the output is \T.  So, to get a DNF we can go over all the rows where hte output is \T, and for each write a clause that means we &lt;em&gt;are&lt;/em&gt; in that row. Then we OR all such (conjunctive) clauses. For example, for $P \oplus Q$ we get&lt;/p&gt;
-
-&lt;p&gt;$$(P \wedge \neg Q) \vee (\neg P \wedge Q)$$&lt;/p&gt;
-
-&lt;h2 id=&#34;converting-truth-tables-to-cnf&#34;&gt;Converting Truth Tables to CNF&lt;/h2&gt;
-
-&lt;p&gt;\begin{tabular}{cc|cc}
-$P$ &amp;amp; $Q$ &amp;amp; $P \implies Q$ &amp;amp; $P \oplus Q$ \ \hline
-\T &amp;amp; \T   &amp;amp; \T &amp;amp; \F \
-\T &amp;amp; \F   &amp;amp; \F &amp;amp; \T \
-\F &amp;amp; \T   &amp;amp; \T &amp;amp; \T \
-\F &amp;amp; \F   &amp;amp; \T &amp;amp; \F \
-\end{tabular}&lt;/p&gt;
-
-&lt;p&gt;The output of the operator is \T\ if and only if the inputs do not match &lt;em&gt;any row&lt;/em&gt; where the output is \F.  So, to get a CNF we can go over all the rows where hte output is \F, and for each write a clause that means we are &lt;em&gt;not&lt;/em&gt; in that row. Then we AND all such clauses. For example, for $P \oplus Q$ we get&lt;/p&gt;
-
-&lt;p&gt;$$(\neg P \vee \neg Q) \wedge (P \vee Q)$$&lt;/p&gt;
-
-&lt;h2 id=&#34;the-related-3cnf-formulation&#34;&gt;The related 3CNF formulation&lt;/h2&gt;
-
-&lt;p&gt;When we are only interested to know whether or not a given formula is satisfiable, we can write a 3CNF that is satisfiable iff the original formula is. In order to do that, we first write an equivalent CNF, and then convert it to a 3CNF (which is not necessarily equivalent, but only guarantees to preserve the &lt;em&gt;satisfiability&lt;/em&gt; feature) as follow. For each clause with less than 3 literals such as $(A \lor \neg B)$ we add a dummy variable $C$ (only for this clause) and interprete the $(A \lor \neg B)$ as a formula over all of $A,B,C$ and write a CNF for them (which happens to be 3CNF!). For longer clauses such as
-$(A \lor B \lor C \lor D)$ we do another trick of breaking them into smaller parts using new dummy variables as follows $(A \lor B \lor \neg X) \wedge (\neg X \lor C \lor D).$&lt;/p&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Problem Set 1 Comments</title>
-      <link>https://uvacs2102.github.io/ps1comments/</link>
-      <pubDate>Wed, 06 Sep 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://uvacs2102.github.io/ps1comments/</guid>
-      <description>&lt;p&gt;The Problem Set 1 comments are now posted in collab: &lt;a href=&#34;https://collab.its.virginia.edu/access/content/group/9bd99d1c-6f18-4542-a7d1-8ffc4fccbd3d/ps1solutions.pdf&#34;&gt;PDF&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Class 5: CNF, Computing, Quantifiers</title>
-      <link>https://uvacs2102.github.io/class5/</link>
-      <pubDate>Tue, 05 Sep 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://uvacs2102.github.io/class5/</guid>
-      <description>
-
-&lt;h3 id=&#34;schedule:d690e1859ec274fb7ed997cd7db3fba5&#34;&gt;Schedule&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps2&#34;&gt;&lt;strong&gt;Problem Set 2&lt;/strong&gt;&lt;/a&gt; is due &lt;strong&gt;Friday at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;
-   &lt;center&gt;
-&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;b6468be050744777ac59c696390d3d89&#34; data-ratio=&#34;1.77777777777778&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
-   &lt;/center&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;highlightm&#34;&gt;
-   &lt;a href=&#34;https://uvacs2102.github.io/docs/class5.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes and Questions&lt;/b&gt;&lt;/a&gt;.
-   &lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;highlightrl&#34;&gt;
-&lt;strong&gt;Challenge Problem Opportunity.&lt;/strong&gt; Find the shortest formula that is
-  equivalent to XOR(&lt;em&gt;a&lt;/em&gt;, &lt;em&gt;b&lt;/em&gt;) using just NAND operations. Shortest
-  means the minimum number of NAND operations. A convincing answer
-  would include a proof that no shorter formula exists.
-   &lt;/div&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;links:d690e1859ec274fb7ed997cd7db3fba5&#34;&gt;Links&lt;/h2&gt;
-
-&lt;p&gt;If you want to learn more about how to learn the logic implemented by a chip
-and cryptosystems used in car immobolizers, see &lt;a href=&#34;https://www.cs.virginia.edu/~evans/pubs/usenix08/usenix08.pdf&#34;&gt;&lt;em&gt;Reverse-Engineering a
-Cryptographic RFID
-Tag&lt;/em&gt;&lt;/a&gt; (Karsten
-Nohl, David Evans, Starbug, and Henryk Pl&amp;ouml;tz, &lt;em&gt;USENIX Security
-Symposium&lt;/em&gt; 2008), or &lt;a href=&#34;https://www.youtube.com/watch?v=fCwY27EnOF8&#34;&gt;this
-video&lt;/a&gt;.  Please don&amp;rsquo;t steal any
-cars.&lt;/p&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;notes-and-questions:d690e1859ec274fb7ed997cd7db3fba5&#34;&gt;Notes and Questions&lt;/h1&gt;
-
-&lt;p&gt;&lt;strong&gt;Definition: satisfiable.&lt;/strong&gt; A logical formula is &lt;em&gt;satisfiable&lt;/em&gt; if there
-  is &lt;em&gt;some&lt;/em&gt; way to make it &lt;strong&gt;true&lt;/strong&gt;.  That is, there is at least one
-  assignment of truth value to its variables that makes the forumla
-  true.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Definition: conjunctive normal form (CNF).&lt;/strong&gt; A logical formula that is
-  written as a conjunction of &lt;em&gt;clauses&lt;/em&gt;, where each clause is a
-  disjunction of &lt;em&gt;literals&lt;/em&gt;, and each literal is either a variable or a
-  negation of a variable, is in &lt;em&gt;conjunctive normal form&lt;/em&gt;.  If each
-  clause has excatly three literals, it is called &lt;em&gt;three conjunctive
-  normal form&lt;/em&gt; (3CNF).&lt;/p&gt;
-
-&lt;p&gt;$$
-(a_1 \vee a_2 \vee \neg a_3) \wedge
-(a_1 \vee \neg a_2 \vee a_3) \wedge
-(\neg a_1 \vee a_2 \vee \neg a_3) \wedge
-(\neg a_1 \vee a_2 \vee a_3)
-$$&lt;/p&gt;
-
-&lt;p&gt;##&lt;/p&gt;
-
-&lt;p&gt;Show that every logical formula can be written in conjunctive normal form.
-Also, show that if we only care about &lt;em&gt;satisfiability&lt;/em&gt; we can always write it
-in 3CNF form. Namely, for every CNF formula $F$, we can write a 3CNF formula
-$G$ such that $F$ is satisfiable if and only if $G$ is satisfiable.&lt;/p&gt;
-
-&lt;div class=&#34;biggap&#34;&gt;&lt;/div&gt;
-
-&lt;p&gt;What is the maximum number of (different) clauses in a 3CNF formula
-involving 5 variables?&lt;/p&gt;
-
-&lt;p&gt;##&lt;/p&gt;
-
-&lt;p&gt;What is the maximum number of (different) clauses in a &lt;em&gt;satisfiable&lt;/em&gt;
-3CNF formula involving 5 variables?&lt;/p&gt;
-
-&lt;p&gt;##&lt;/p&gt;
-
-&lt;p&gt;What is the maximum number of (different) clauses in a &lt;em&gt;valid&lt;/em&gt; 3CNF formula involving 5 variables?&lt;/p&gt;
-
-&lt;p&gt;##&lt;/p&gt;
-
-&lt;!--page--&gt;
-
-&lt;h2 id=&#34;logical-quantifiers:d690e1859ec274fb7ed997cd7db3fba5&#34;&gt;Logical Quantifiers&lt;/h2&gt;
-
-&lt;p&gt;$\forall x \in S. P(x)$ means $P$ holds for &lt;em&gt;every&lt;/em&gt; element of $S$.&lt;br /&gt;
-$\exists x \in S. P(x)$ means $P$ holds for &lt;em&gt;at least one&lt;/em&gt; element of $S$.&lt;/p&gt;
-
-&lt;p&gt;Define &lt;em&gt;valid&lt;/em&gt; and &lt;em&gt;satisfiable&lt;/em&gt; using logical quantifiers:&lt;/p&gt;
-
-&lt;p&gt;#&lt;/p&gt;
-
-&lt;p&gt;$\forall x \in S. P(x)$ is equivalent to $\neg(\exists x \in S. \qquad \qquad)$&lt;/p&gt;
-
-&lt;p&gt;###&lt;/p&gt;
-
-&lt;p&gt;Notation: $\textrm{pow}(S)$ denotes the &lt;em&gt;powerset&lt;/em&gt; of $S$.  The powerset
-of a set is the set of all possible subsets of that S.  So,
-$\textrm{pow}(\mathbb{N})$ denotes all subsets of the natural numbers.&lt;/p&gt;
-
-&lt;p&gt;Notation: $A - B$ denotes the &lt;em&gt;difference&lt;/em&gt; between two sets.  It is the
-elements of $A$, with every element of $B$ removed.&lt;/p&gt;
-
-&lt;p&gt;Notation: $\varnothing$ is the &lt;em&gt;empty set&lt;/em&gt;.  It is the set with no elements: ${ }$.&lt;/p&gt;
-
-&lt;p&gt;\begin{center}
-\Large&lt;/p&gt;
-
-&lt;p&gt;$$
-\fillin S \in \textrm{pow}(\mathbb{N}) - { \varnothing } \ldotp \fillin m \in S\ldotp \fillin x \in S - {m}\ldotp m &amp;lt; x
-$$
-\end{center}&lt;/p&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Problem Set 2</title>
-      <link>https://uvacs2102.github.io/ps2posted/</link>
-      <pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://uvacs2102.github.io/ps2posted/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps2&#34;&gt;&lt;strong&gt;Problem Set 2&lt;/strong&gt;&lt;/a&gt; [&lt;a href=&#34;https://uvacs2102.github.io/docs/ps2.pdf&#34;&gt;PDF&lt;/a&gt;] is now posted and
-is due &lt;strong&gt;Friday, 8 September at 6:29:00pm&lt;/strong&gt;.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Additional Resources</title>
-      <link>https://uvacs2102.github.io/additionalresources/</link>
-      <pubDate>Thu, 31 Aug 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://uvacs2102.github.io/additionalresources/</guid>
-      <description>&lt;p&gt;I&amp;rsquo;ve added a page, &lt;a href=&#34;https://uvacs2102.github.io/resources&#34;&gt;Resources&lt;/a&gt;, with links to some
-suggested resources beyond the course materials. If you find other
-useful resources, please post them in slack and we&amp;rsquo;ll add them to this
-list.&lt;/p&gt;
 </description>
     </item>
     

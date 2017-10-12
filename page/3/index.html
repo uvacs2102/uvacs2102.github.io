@@ -149,6 +149,482 @@
   </header>
   
   
+  <p class="fronthead"><A href="">Problem Set 2</a> (Fri, 1 Sep 2017)</p>
+    <p><a href="/ps/ps2"><strong>Problem Set 2</strong></a> [<a href="/docs/ps2.pdf">PDF</a>] is now posted and
+is due <strong>Friday, 8 September at 6:29:00pm</strong>.</p>
+ 
+  
+  <p class="fronthead"><A href="">Additional Resources</a> (Thu, 31 Aug 2017)</p>
+    <p>I&rsquo;ve added a page, <a href="/resources">Resources</a>, with links to some
+suggested resources beyond the course materials. If you find other
+useful resources, please post them in slack and we&rsquo;ll add them to this
+list.</p>
+ 
+  
+  <p class="fronthead"><A href="">Class 4: Logical Operators and Formulas</a> (Thu, 31 Aug 2017)</p>
+    
+
+<h3 id="schedule">Schedule</h3>
+
+<p><a href="/ps/ps1"><strong>Problem Set 1</strong></a> is due <strong>Friday at 6:29pm</strong>.</p>
+
+<p>Next week, we will cover the rest of Chapter 3 (Satisfiability and
+Quantifiers).</p>
+
+<p><div class="notpdf">
+   <center>
+<script async class="speakerdeck-embed" data-id="9785beead9024671b78c03e16f5bfba2" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+   </center></p>
+
+<p><div class="highlightm">
+   <a href="/docs/class4.pdf">See PDF Version for <b>Notes and Questions</b></a>.
+   </div></p>
+
+<h2 id="links">Links</h2>
+
+<p>Scott Brown, <a href="http://ms.appliedprobability.org/data/files/selected%20articles/39-1-1.pdf"><em>The Life and Work of Augustus De Morgan</em></a>. Applied Probability 2006.</p>
+
+<p><a href="http://www.claymath.org/content/correspondence-de-morgan-0">Ada&rsquo;s Correspondence with De Morgan</a> (Clay Mathematics Institute)</p>
+
+<p></div><!--endpdf--></p>
+
+<p><div class="latex"></p>
+
+<h1 id="notes-and-questions">Notes and Questions</h1>
+
+<h2 id="well-ordering-principle-proof">Well-Ordering Principle Proof</h2>
+
+<p><strong>Odd Summation.</strong> (Problem 2.12) Prove that for all $n &gt; 0$, the sum of the first $n$ odd numbers is $n^2$.</p>
+
+<div class="biggap"></div>
+#
+#
+
+## Notations
+
+Mathematics and other domains often use many symbols to mean the same
+thing.  Section 3.2 of the book gives some common notations, but there
+are others in common use.
+
+\begin{center}
+\begin{tabular}{cccc}
+English & Logic & C, Java, Rust & Python \\ \hline
+$P$ \smallcaps{implies} $Q$ & $P \implies Q$ {\em or} $P \longrightarrow Q$ & - & - \\
+\smallcaps{not}$(P)$ & $\neg P$ {\em or} $\overline{P}$ & \verb+!p+ & \verb+not p+ \\
+$P$ \smallcaps{and} $Q$ & $P \wedge Q$ & \verb+p && q+ & \verb+p and q+ \\
+$P$ \smallcaps{or} $Q$ & $P \vee Q$ & \verb+P || Q+ & \verb+p or q+ \\
+$P$ \smallcaps{xor} $Q$ & $P \oplus Q$ & \verb+p ^ q+ (bitwise) or \verb+p != q+ & \verb+p ^ q+ \\
+\end{tabular}
+\end{center}
+
+For what values in Java or C are \verb+p ^ q+ and \verb+p != q+ both valid, but have different meanings?
+
+## Logical Formulas
+
+\begin{center}
+\begin{tabular}{c|c|c}
+$P$ & \smallcaps{not}$(P)$ & \_\_\_\_\_\_\_\_ \\ \hline
+\T & \F & \\
+\F & \T & \\
+\end{tabular}
+\end{center}
+
+How many one-input Boolean operators are there?  How many do we need to
+produce them all?
+
+#
+
+\begin{center}
+\begin{tabular}{cc|c|c|c|c|c}
+$P$ & $Q$ & $P \wedge Q$ & $P \vee Q$ & $P \implies Q$ & \_\_\_\_\_\_\_\_ & $P \oplus Q$ \\ \hline
+\T & \T   & \T & \T & & \T & \F \\
+\T & \F   &    & \T & & \F & \T \\
+\F & \T   &    & \T & & \F & \T \\
+\F & \F   &   & \F &  & \T & \F \\
+\end{tabular}
+\end{center}
+
+How many two-input Boolean operators are there?
+
+#
+
+**De Morgan's Laws:** 
+$$\neg(P \wedge Q) \equiv (\neg P) \vee (\neg Q)  \qquad \neg(P \vee Q) \equiv (\neg P) \wedge (\neg Q)$$
+
+How can these be written without the $\neg$ in front?
+
+##
+
+Prove that it is possible to make all two-input Boolean operators using
+just \smallcaps{not} and any _odd_ two-input operator. (An operator is _odd_,
+if the number of outputs that are **True** are odd.)
+
+##
+
+**Definition: valid.** A logical formula is _valid_ if there is no way
+  to make it **false**.  That is, no matter what truth values its
+  variables have, it is always **true**.  (Another name for this is a
+  _tautology_.)
+
+**Definition: satisfiable.** A logical formula is _satisfiable_ if there
+  is _some_ way to make it **true**.  That is, there is at least one
+  assignment of truth value to its variables that makes the forumla
+  true.
+
+For each of the formulas below, determine if it is _valid_ and if it is _satisfiable_.
+
+1. $(P \vee \neg P)$
+
+2. $(P \vee Q) \wedge (\neg P \vee Q)$
+
+3. $((P \implies Q) \wedge (Q \implies P)) \vee (P \xor Q)$
+
+
+
+</div>
+ 
+  
+  <p class="fronthead"><A href="">Class 3: Well-Ordering Principle</a> (Tue, 29 Aug 2017)</p>
+    
+
+<h3 id="schedule">Schedule</h3>
+
+<p>This week, you should read MCS Chapter 2 and MCS Chapter 3 (at least
+through the end of Section 3.4).</p>
+
+<p><a href="/ps/ps1"><strong>Problem Set 1</strong></a> is due <strong>Friday at 6:29pm</strong>.</p>
+
+<p>Office hours started Monday afternoon. See <a href="https://uvacs2102.github.io/officehours/">the course
+calendar</a> for the full office
+hours schedule.</p>
+
+<p><div class="notpdf">
+   <center>
+<script async class="speakerdeck-embed" data-id="dd5193b1df334282a62697cf2343ad3a" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+   </center></p>
+
+<p><div class="highlightm">
+   <a href="/docs/class3.pdf">See PDF Version for <b>Notes and Questions</b></a>.
+   </div></p>
+
+<h2 id="links">Links</h2>
+
+<p><a href="https://math.berkeley.edu/~kpmann/Well-ordering.pdf"><em>The Well-Ordering Theorem: one of the Greatest Mathematical Controversies of All Time</em></a>, Kathryn Mann.</p>
+
+<p></div><!--endpdf--></p>
+
+<p><div class="latex"></p>
+
+<h1 id="notes-and-questions">Notes and Questions</h1>
+
+<p>What properties must a sensible ordering function have?</p>
+
+<p><strong>Definition.</strong> A set is <em>ordered</em> with respect to an ordering relation (e.g., $&lt;$), if two things hold. First: every pair of inequal elements $a,b$ in $A$
+either satisfy $a&lt;b$ or $b&lt;a$. Second  $a&lt;b$ and $b&lt;a$ should always imply that $a&lt;b$ (this is called the transitivity).</p>
+
+<p><strong>Definition.</strong> An ordered set,with respect to an ordering
+  relation (e.g., $&lt;$), is <em>well-ordered</em>  if all of its non-empty subsets has a minimum
+  element.</p>
+
+<div class="gap"></div>
+
+<p>Which of these are well-ordered?</p>
+
+<ul>
+<li>The set of non-negative integers, comparator $&lt;$.</li>
+<li>The set of integers, comparator $&lt;$.</li>
+<li>The set of integers, comparator $|a| &lt; |b|$.</li>
+<li>The set of integers, comparator if |a| = |b|: $a &lt; b$, else: $|a| &lt; |b|$.</li>
+<li>The set of national soccer teams, comparator winning games.</li>
+</ul>
+
+<p>Prove the set of positive rationals is <em>not</em> well-ordered under $&lt;$.</p>
+
+<div class="gap"></div>
+
+<p>#</p>
+
+<p>Provide a comparison function that can be used to well-order the positive rationals.</p>
+
+<!--page-->
+
+<h3 id="template-for-well-ordering-proofs-section-2-2">Template for Well-Ordering Proofs (Section 2.2)</h3>
+
+<p>To prove that $P(n)$ is true for all $n \in \mathbb{N}$:</p>
+
+<ol>
+<li>Define the set of counterexamples, $C ::= { n \in \mathbb{N} | NOT(P(n)) }$.</li>
+<li>Assume for contradiction that $C$ is ______________. <!-- non-empty.--></li>
+<li>By the well-ordering principle, there must be __________________ <!-- some smallest element-->, $m \in C$.</li>
+<li>Reach a contradiction (this is the creative part!).  One way to reach a contradiction would be to show $P(m)$.  Another way is to show there must be an element $m&rsquo; \in C$ where $m&rsquo; &lt; m$.</li>
+<li>Conclude that $C$ must be empty, hence there are no counter-examples and $P(n)$ always holds.</li>
+</ol>
+
+<p><strong>Example: Betable Numbers.</strong> A number is <em>betable</em> if it can be
+  produced using some combination of \$2 and \$5 chips.  Prove that all
+  integer values greater than \$3 are betable.</p>
+
+<div class="biggap"></div>
+#
+#
+#
+
+**Example: Division Property.** Given integer $a$ and positive integer $b$, there exist integers $q$ and $r$ such that:
+      $a = qb + r$ and $0 \le r < b$.
+
+<div class="biggap"></div>
+#
+#
+
+
+_The whole problem with the world is that fools and fanatics are always so certain of themselves, and wiser people so full of doubts._ Bertrand Russell
+
+</div>
+ 
+  
+  <p class="fronthead"><A href="">Office Hours Posted</a> (Sat, 26 Aug 2017)</p>
+    <p>The office hours schedule is now posted on the course site (<a href="/officehours">Office
+Hours</a>) and
+<a href="https://calendar.google.com/calendar/embed?src=5msg7a1mn7fk4ocj1h41cksh80%40group.calendar.google.com&amp;ctz=America/New_York">Calendar</a>. The
+schedule will likely be adjusted as the semester progresses. Office
+hours start on Monday (3pm), and will follow the schedule here after
+that.</p>
+ 
+  
+  <p class="fronthead"><A href="">Class 2: Proof Methods</a> (Thu, 24 Aug 2017)</p>
+    
+
+<h3 id="schedule:59cb8283a9bd282131a45da3029e68b4">Schedule</h3>
+
+<p>Before <strong>Friday, 6:29pm</strong>:</p>
+
+<ul>
+<li><p>Read, print, and sign the <a href="/pledge">Course Pledge</a>.  You should print
+the <a href="/docs/pledge.pdf">PDF version</a> for signing, and submit a scan of
+your signed pledge as a PDF file using Collab.</p></li>
+
+<li><p>Read Jeremy Kun&rsquo;s <a href="https://medium.com/@jeremyjkun/habits-of-highly-mathematical-people-b719df12d15e"><em>Habits of Highly Mathematical People</em></a>.</p></li>
+
+<li><p>Submit a <a href="https://goo.gl/forms/DR7nsouNf6sqqIK22">Course Registration Survey</a> (which includes some questions based on Kun&rsquo;s essay).</p></li>
+</ul>
+
+<p>Next week:</p>
+
+<ul>
+<li>Before Tuesday&rsquo;s class: Read MCS Chapter 2</li>
+<li>Before Thursday&rsquo;s class: Read MCS Chapter 3</li>
+<li>Due Friday at 6:29pm: <a href="/ps/ps1"><strong>Problem Set 1</strong></a> (now posted)</li>
+</ul>
+
+<div class="notpdf">
+   <div class="highlightm">
+   <a href="/docs/class2.pdf">See PDF Version for <b>Notes and Questions</b></a>.
+   </div>
+
+<p><center>
+<script async class="speakerdeck-embed" data-id="70680d1d66fe484a96bcb37e03677657" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script><br>
+<a href="https://uva.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=7de9ca1e-3adc-4559-8a58-c10bcee9ec92"><b>Video</b></a> (requires collab authentication)
+   </center></p>
+
+<p></div><!--endpdf--></p>
+
+<div class="latex">
+
+# Notes and Questions
+
+**Contrapositive Inference Rule**  
+
+$$
+\infer{NOT(Q) \implies NOT(P)}{P \implies Q} 
+\qquad
+\infer{P \implies Q}{NOT(Q) \implies NOT(P)}
+$$
+
+
+**Theorem to Prove:** If the product of $x$ and $y$ is even, at least one of $x$ or $y$ must be even.
+
+#
+
+An integer, $z$, is **even** if there exists an integer $k$ such that $z = 2k$.  Is this a _definition_, _axiom_, or _proposition_?
+
+##
+
+An integer, $z$, is **odd** if there exists an integer $k$ such that $z
+= 2k + 1$.  (Note that there is no connection between the variables used
+here, and to define even above.)
+
+To prove an implication, $P \implies Q$:  
+
+   1. assume $P$.  
+
+   2. Show chain of logical deductions that leads to $Q$.
+
+<!--page-->
+
+_Thinking implies disagreement; and disagreement implies nonconformity; and nonconformity implies heresy; and heresy implies disloyalty—so, obviously, thinking must be stopped._  
+Adlai Stevenson, A Call to Greatness (1954)
+
+
+**Odd-Even Lemma:** If an integer is not even, it is odd.  Note: A
+  _lemma_ is just a name for a theorem, typically used for proving
+  another theorem.
+
+<div class="biggap"></div>
+
+<p>How should one decide what can be accepted as an axiom, and what must be proven?</p>
+
+<div class="gap"></div>
+
+<p>What is the purpose of a <em>proof</em>?  (in cs2102? in software development? in algorithm design?)</p>
+
+<div class="biggap"></div>
+
+<p>Why do meaningful digital signatures require discrete mathematics?</p>
+
+<div class="biggap"></div>
+
+<p><em>In physics, your solution should convince a reasonable person. In math, you have to convince a person who&rsquo;s trying to make trouble.</em>
+Frank Wilczek</p>
+
+<p></div></p>
+ 
+  
+  <p class="fronthead"><A href="">Class 1: What makes it go?</a> (Tue, 22 Aug 2017)</p>
+    
+
+<h3 id="schedule:e795e40ef5a742faa33766b4d984e8c7">Schedule</h3>
+
+<p>Before <strong>Thursday&rsquo;s class</strong>: (visit <a href="https://uvacs2102.github.io/class1">https://uvacs2102.github.io/class1</a> for the web version of these notes with links)</p>
+
+<ul>
+<li><p>Join the <a href="https://csmath.slack.com">cs2102 slack group</a> and set up
+your profile with a pronouncable name (not your UVA email id) (setting
+up your profile photo is encouraged, but not required).</p></li>
+
+<li><p>Read the <a href="/syllabus">Course Syllabus</a> and post any questions or
+comments you have on it on the course <a href="https://csmath.slack.com">slack group
+(#general)</a>.</p></li>
+
+<li><p>Read the <em>Introduction</em> and <em>Chapter 1: What is a Proof?</em> from the
+<a href="https://uvacs2102.github.io/docs/mcs.pdf">Mathematics for Computer Science
+Book</a> by Eric Lehman,
+F. Thomson Leighton, and Albert R. Meyer (henceforth, &ldquo;MCS&rdquo;).  The
+book is freely available on-line under a Creative Commons License.
+Students are <strong>strongly encrouaged</strong> to print out the readings to read
+them more effectively on paper.</p></li>
+</ul>
+
+<p>Before <strong>Friday, 6:29pm</strong>:</p>
+
+<ul>
+<li><p>Read, print, and sign the <a href="/pledge">Course Pledge</a>.  You should print
+the <a href="/docs/pledge.pdf">PDF version</a> for signing, and submit a scan of
+your signed pledge as a single PDF file using Collab.</p></li>
+
+<li><p>Read Jeremy Kun&rsquo;s <a href="https://medium.com/@jeremyjkun/habits-of-highly-mathematical-people-b719df12d15e"><em>Habits of Highly Mathematical People</em></a>.</p></li>
+
+<li><p>Submit a <a href="https://goo.gl/forms/DR7nsouNf6sqqIK22">Course Registration Survey</a> (which includes some questions based on Kun&rsquo;s essay).</p></li>
+</ul>
+
+<p><div class="notpdf">
+   <center>
+<script async class="speakerdeck-embed" data-id="71562d80d01c4339b64b96e1c160c480" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script><br>
+<a href="https://uva.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=7fbcfe7e-92cc-4e33-b590-c557a9319251"><b>Video</b></a> (requires Collab authentication)
+   </center></p>
+
+<div class="notpdf">
+
+    <div class="highlightm">
+    <a href="/docs/class1.pdf">See PDF Version for <b>Notes and Questions</b></a>.
+    </div>
+
+<!--
+<center>
+<script async class="speakerdeck-embed" data-id="460cc29c74a04fe3971ce197961981f9" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script><br>
+</center>
+-->
+
+<p></div><!--endpdf--></p>
+
+<div class="latex">
+
+### Notes and Questions
+
+Why is most of the math used in computer science _discrete_?
+
+<div class="gap"></div>
+
+<p>Why is most of the math you have used in school previously <em>continuous</em>?</p>
+
+<div class="gap"></div>
+
+<p>What are the differences between how scientists, lawyers, and
+mathematicians establish ``<em>truth</em>&rdquo;?</p>
+
+<div class="gap"></div>
+
+<p>A <em>proposition</em> is a statement that is either ________ or _________.</p>
+
+<p>A <em>predicate</em> is a proposition whose truth may depend on the value of
+variables.</p>
+
+<h3 id="proof:e795e40ef5a742faa33766b4d984e8c7">Proof</h3>
+
+<p>A <em>theorem</em> is a ____________ that has been proven true.</p>
+
+<p>An <em>axiom</em> is a proposition that is <em>accepted to be true</em>.  Axioms are
+not proven; they are <em>assumed</em> to be true.</p>
+
+<p><strong>Definition.</strong> A <em>mathematical proof</em> of a proposition is a chain of
+  <em>logical deductions</em> starting from a set of accepted <em>axioms</em> that
+  leads to the proposition.</p>
+
+<h3 id="rules-of-inference:e795e40ef5a742faa33766b4d984e8c7">Rules of Inference</h3>
+
+<p>The possible steps that can be used in a proof are logical deductions
+based on inference rules.</p>
+
+<p>Inference rules are written as:
+$$
+\infer{\textrm{\emph{conclusion}}}{\textrm{\emph{antecedents}}}
+$$
+This means if everything on top of the rule is established to be true,
+then you can conclude what is on the bottom.</p>
+
+<p><em>Modus Ponens</em>: To prove <em>Q</em>, (1) prove <em>P</em> and (2) prove that <em>P</em> implies <em>Q</em>.  ($P \implies Q$ is a notation for $P$ implies $Q$).</p>
+
+<p>$$
+\infer{Q}{P,\quad P \implies Q}
+$$</p>
+
+<p>An inference rule is <em>sound</em> if can never lead to a <strong>false</strong> conclusion.</p>
+
+<p>Which of these inference rules are sound?</p>
+
+<p>$$
+\infer{Q}{P}
+\qquad
+\infer{false}{P, P \implies Q}
+\qquad
+\infer{true}{P, NOT(P)}
+\qquad
+\infer{P \implies NOT(P)}{P, NOT(P)}
+\qquad
+\infer{NOT(Q) \implies P}{NOT(P) \implies Q}
+$$</p>
+
+<p>##</p>
+
+<p></div></p>
+
+<p></div></p>
+
+<p><div class="quote">
+<em>Through violence you may murder a liar but you can&rsquo;t establish truth. Through violence you may murder a hater, but you can&rsquo;t murder hate. Darkness cannot put out darkness. Only light can do that.</em><br />
+Martin Luther King, Jr., <a href="http://kingencyclopedia.stanford.edu/encyclopedia/documentsentry/where_do_we_go_from_here_delivered_at_the_11th_annual_sclc_convention/"><em>Where Do We Go From Here?</em>, address to SCLC 16 August 1967</a>
+   </div></p>
+ 
+  
   <p class="fronthead"><A href="">Scanning Advice</a> (Tue, 22 Aug 2017)</p>
     <p>For many of the assignments in this class, you will need to submit
 your assignment as a PDF file. For the <a href="/pledge">Course Pledge</a>, you
