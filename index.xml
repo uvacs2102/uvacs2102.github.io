@@ -80,6 +80,8 @@ $q_0 = (0, \mathrm{\bf F})$&lt;/p&gt;
 
 &lt;!--page--&gt;
 
+&lt;h2 id=&#34;preserved-invariants&#34;&gt;Preserved Invariants&lt;/h2&gt;
+
 &lt;p&gt;A predicate $P(q)$ is a &lt;em&gt;preserved invariant&lt;/em&gt; of machine $M = (S, G \subseteq S \times S, q_0 \in
   S)$ if:
 $$
@@ -101,7 +103,7 @@ $$&lt;/p&gt;
 
 &lt;p&gt;Prove that the original Bishop State Machine never reaches a square where $r + c$ is odd.&lt;/p&gt;
 
-&lt;p&gt;#&lt;/p&gt;
+&lt;!--page--&gt;
 
 &lt;h1 id=&#34;slow-exponentiation&#34;&gt;Slow Exponentiation&lt;/h1&gt;
 
