@@ -255,18 +255,18 @@ $$&lt;/p&gt;
 because of “Fall Break” and the Exam (as usual, all will be in Rice
 436 except the professors&amp;rsquo; as noted):&lt;/p&gt;
 
-&lt;h4 id=&#34;monday-2-oct&#34;&gt;Monday (2 Oct)&lt;/h4&gt;
+&lt;h4 id=&#34;monday-2-oct:d0632df39174fbd03a717f33cd2b5853&#34;&gt;Monday (2 Oct)&lt;/h4&gt;
 
 &lt;p&gt;Mohammad Mahmoody (Rice 511), 10:45-11:45am&lt;br /&gt;
 Sarah Meng, 4:30-6:00pm&lt;/p&gt;
 
-&lt;h4 id=&#34;tuesday-3-oct&#34;&gt;Tuesday (3 Oct)&lt;/h4&gt;
+&lt;h4 id=&#34;tuesday-3-oct:d0632df39174fbd03a717f33cd2b5853&#34;&gt;Tuesday (3 Oct)&lt;/h4&gt;
 
 &lt;p&gt;Nate Olsen, 10-11:30am&lt;br /&gt;
 Michael Woon, 11am-12:30pm&lt;br /&gt;
 Henry Spece, 3:30-5pm&lt;/p&gt;
 
-&lt;h4 id=&#34;wednesday-4-oct&#34;&gt;Wednesday (4 Oct)&lt;/h4&gt;
+&lt;h4 id=&#34;wednesday-4-oct:d0632df39174fbd03a717f33cd2b5853&#34;&gt;Wednesday (4 Oct)&lt;/h4&gt;
 
 &lt;p&gt;Colin Harfst, 9:30am-12:30pm&lt;br /&gt;
 Anna Wu, noon-1:30pm&lt;br /&gt;
@@ -279,7 +279,7 @@ Xueying Bai, 6-7pm&lt;br /&gt;
 Fan Feng, 7-8:30pm&lt;br /&gt;
 Nate Olsen, 7:30-9:00pm&lt;/p&gt;
 
-&lt;h4 id=&#34;thursday-5-oct&#34;&gt;Thursday (5 Oct)&lt;/h4&gt;
+&lt;h4 id=&#34;thursday-5-oct:d0632df39174fbd03a717f33cd2b5853&#34;&gt;Thursday (5 Oct)&lt;/h4&gt;
 
 &lt;p&gt;Amar Singh, 9am-10:30&lt;br /&gt;
 Xiao Zhang, 10-11am&lt;br /&gt;
@@ -457,7 +457,7 @@ properties &lt;em&gt;might&lt;/em&gt; be impacted?&lt;/p&gt;
       <guid>https://uvacs2102.github.io/class11/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule:af81afa25b288e26509ba0728268a3b7&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps5&#34;&gt;&lt;strong&gt;Problem Set 5&lt;/strong&gt;&lt;/a&gt; is due &lt;strong&gt;Friday at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
 
@@ -470,7 +470,7 @@ properties &lt;em&gt;might&lt;/em&gt; be impacted?&lt;/p&gt;
 &lt;li&gt;more than 10 requests implies we should spend Thursday’s class on reviewing requested topics, no exam exemptions.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;exam-1&#34;&gt;Exam 1&lt;/h3&gt;
+&lt;h3 id=&#34;exam-1:af81afa25b288e26509ba0728268a3b7&#34;&gt;Exam 1&lt;/h3&gt;
 
 &lt;p&gt;Exam 1 will be in class on Thursday, 5 October.  You can get a good
 idea what to expect on Exam 1 by looking at the &lt;a href=&#34;https://uvacs2102.github.io/docs/practiceexam1.pdf&#34;&gt;Practice Exam
@@ -553,7 +553,7 @@ benefit from doing #3 and #4 as well.&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;induction-principle&#34;&gt;Induction Principle&lt;/h2&gt;
+&lt;h2 id=&#34;induction-principle:af81afa25b288e26509ba0728268a3b7&#34;&gt;Induction Principle&lt;/h2&gt;
 
 &lt;p&gt;Let $P$ be a predicated on $\mathbb{N}$.  If&lt;/p&gt;
 
@@ -576,7 +576,7 @@ benefit from doing #3 and #4 as well.&lt;/p&gt;
 
 &lt;div class=&#34;biggap&#34;&gt;&lt;/div&gt;
 
-&lt;h3 id=&#34;generalizing-to-well-ordered-sets&#34;&gt;Generalizing to Well-Ordered Sets&lt;/h3&gt;
+&lt;h3 id=&#34;generalizing-to-well-ordered-sets:af81afa25b288e26509ba0728268a3b7&#34;&gt;Generalizing to Well-Ordered Sets&lt;/h3&gt;
 
 &lt;p&gt;We can use Induction for any well-ordered set, where there is an
 operation (like &amp;lsquo;+ 1&amp;rsquo;) and a starting point (like &amp;lsquo;0&amp;rsquo;) that covers the
@@ -586,7 +586,7 @@ whole set.&lt;/p&gt;
 
 &lt;div class=&#34;biggap&#34;&gt;&lt;/div&gt;
 
-&lt;h2 id=&#34;induction-practice&#34;&gt;Induction Practice&lt;/h2&gt;
+&lt;h2 id=&#34;induction-practice:af81afa25b288e26509ba0728268a3b7&#34;&gt;Induction Practice&lt;/h2&gt;
 
 &lt;p&gt;Take-Away Game: start with $n$ sticks; at each turn a player must remove
 1, 2 or 3 sticks; player who takes the last stick wins.&lt;/p&gt;
@@ -911,7 +911,7 @@ is due &lt;strong&gt;Friday, 22 September at 6:29:00pm&lt;/strong&gt;.&lt;/p&gt;
       <guid>https://uvacs2102.github.io/class8/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule:3a7d0da174b09b839e2f33e1cfd8fab3&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps3&#34;&gt;&lt;strong&gt;Problem Set 3&lt;/strong&gt;&lt;/a&gt; is due &lt;strong&gt;Friday at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
 
@@ -928,7 +928,7 @@ is due &lt;strong&gt;Friday, 22 September at 6:29:00pm&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;sequences:3a7d0da174b09b839e2f33e1cfd8fab3&#34;&gt;Sequences&lt;/h1&gt;
+&lt;h1 id=&#34;sequences&#34;&gt;Sequences&lt;/h1&gt;
 
 &lt;p&gt;A &lt;strong&gt;sequence&lt;/strong&gt; is a mathematical datatype that bears similarities to sets. A sequence $S$ also contains some elements, but we usually refer to them as &lt;em&gt;components&lt;/em&gt;. There are two major differences between sets and sequences:&lt;/p&gt;
 
@@ -938,7 +938,7 @@ is due &lt;strong&gt;Friday, 22 September at 6:29:00pm&lt;/strong&gt;.&lt;/p&gt;
 &lt;li&gt;&lt;p&gt;Different components of a sequence could be equal. For example $(a,b,a)$ has $a$ repeating, and this is a different sequence compared to $(a,b,b)$ even though they both have 3 componetns. If we interprete them as &lt;em&gt;sets&lt;/em&gt;, then they will be equal sets with $2$ elements each.&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h1 id=&#34;cartesian-product:3a7d0da174b09b839e2f33e1cfd8fab3&#34;&gt;Cartesian Product&lt;/h1&gt;
+&lt;h1 id=&#34;cartesian-product&#34;&gt;Cartesian Product&lt;/h1&gt;
 
 &lt;p&gt;We can use set products to get new sets whose elements are sequences. Cartesian product is a very useful way of doing it.&lt;/p&gt;
 
@@ -950,7 +950,7 @@ is due &lt;strong&gt;Friday, 22 September at 6:29:00pm&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;p&gt;How many elements are in $A \times B$?&lt;/p&gt;
 
-&lt;h1 id=&#34;relations-and-binary-relations:3a7d0da174b09b839e2f33e1cfd8fab3&#34;&gt;Relations and Binary Relations&lt;/h1&gt;
+&lt;h1 id=&#34;relations-and-binary-relations&#34;&gt;Relations and Binary Relations&lt;/h1&gt;
 
 &lt;p&gt;A &lt;em&gt;relation&lt;/em&gt; between some elements from set $A$ and some elements from set $B$ could be represented by putting all such pairs $(a,b)$ in a set $P$. As you can see, this way, $P$ would be a subset of the cartesian product $A \times B$, namely $P \subseteq A \times B$. More formally we have the following definition.&lt;/p&gt;
 
@@ -964,7 +964,7 @@ talk about relations of the form $P \subseteq A \times B \times C$,
 but the binary relation remains a very important data type as it
 allows us to define &lt;em&gt;functions&lt;/em&gt;.&lt;/p&gt;
 
-&lt;h1 id=&#34;functions:3a7d0da174b09b839e2f33e1cfd8fab3&#34;&gt;Functions&lt;/h1&gt;
+&lt;h1 id=&#34;functions&#34;&gt;Functions&lt;/h1&gt;
 
 &lt;p&gt;The concept of a function $F$ models is a special form of a binary
 relation $R$ between $A$ and $B$ where for every element $a \in A$
