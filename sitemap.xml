@@ -3,8 +3,28 @@
   
   <url>
     <loc>https://uvacs2102.github.io/</loc>
-    <lastmod>2017-10-01T00:00:00+00:00</lastmod>
+    <lastmod>2017-10-12T00:00:00+00:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://uvacs2102.github.io/class14/</loc>
+    <lastmod>2017-10-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://uvacs2102.github.io/ps6posted/</loc>
+    <lastmod>2017-10-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://uvacs2102.github.io/class13/</loc>
+    <lastmod>2017-10-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://uvacs2102.github.io/fbofficehours/</loc>
+    <lastmod>2017-10-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -180,6 +200,10 @@
   
   <url>
     <loc>https://uvacs2102.github.io/ps/ps5/</loc>
+  </url>
+  
+  <url>
+    <loc>https://uvacs2102.github.io/ps/ps6/</loc>
   </url>
   
 </urlset>
