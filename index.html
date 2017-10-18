@@ -266,7 +266,7 @@ def pair_last(p):
   <p class="fronthead"><A href="">Class 14: Invariant Principle</a> (Thu, 12 Oct 2017)</p>
     
 
-<h3 id="schedule">Schedule</h3>
+<h3 id="schedule:69e304a0e65e98722637abe379145c02">Schedule</h3>
 
 <p><a href="/ps/ps6"><strong>Problem Set 6</strong></a> is due <strong>20 October (Friday) at 6:29pm</strong>.</p>
 
@@ -286,7 +286,7 @@ starting after Prof. Mahmoody&rsquo;s office hours Monday.</p>
 
 <p><div class="latex"></p>
 
-<h2 id="state-machines-review-from-class-13">State Machines (review from Class 13)</h2>
+<h2 id="state-machines-review-from-class-13:69e304a0e65e98722637abe379145c02">State Machines (review from Class 13)</h2>
 
 <p>A <em>state machine</em>, $M = (S, G: S \times S, q_0 \in S)$, is a binary
 relation (called a <em>transition relation</em>) on a set (both the domain and
@@ -307,7 +307,7 @@ S, q_0 \in S)$ is a predicate, $P$, on states, such that whenever $P(q)$
 is true of a state $q$, and $q \rightarrow r \in G$, then $P&reg;$ is
 true.</p>
 
-<h3 id="bishop-state-machine">Bishop State Machine</h3>
+<h3 id="bishop-state-machine:69e304a0e65e98722637abe379145c02">Bishop State Machine</h3>
 
 <p>$S = { (\fillin ) \, | \, r, c \in \mathbb{N} }$
 $G = { (r, c) \rightarrow (r&rsquo;, c&rsquo;) \, | \, r, c \in \mathbb{N} \wedge (\exists d \in \mathbb{N}^{+} \textrm{ such that } r&rsquo; = r \fillin d \wedge r&rsquo; \ge 0 \wedge c&rsquo; = c \fillin d \wedge c&rsquo; \ge 0 }$
@@ -317,7 +317,7 @@ $q_0 = (0, 2)$</p>
 
 <p>#</p>
 
-<h3 id="progress-machine">``Progress&rdquo; Machine</h3>
+<h3 id="progress-machine:69e304a0e65e98722637abe379145c02">``Progress&rdquo; Machine</h3>
 
 <p>$S = { (x, d) \, | \, x \in \mathbb{Z}, d \in { \mathrm{\bf F}, \mathrm{\bf B}} }$
 $G = { (x, \mathrm{\bf F}) \rightarrow (x + 1, \mathrm{\bf B}) \, | \, x \in \mathbb{Z} } \cup
@@ -328,7 +328,7 @@ $q_0 = (0, \mathrm{\bf F})$</p>
 
 <!--page-->
 
-<h2 id="preserved-invariants">Preserved Invariants</h2>
+<h2 id="preserved-invariants:69e304a0e65e98722637abe379145c02">Preserved Invariants</h2>
 
 <p>A predicate $P(q)$ is a <em>preserved invariant</em> of machine $M = (S, G \subseteq S \times S, q_0 \in
   S)$ if:
@@ -353,7 +353,7 @@ $$</p>
 
 <!--page-->
 
-<h1 id="slow-exponentiation">Slow Exponentiation</h1>
+<h1 id="slow-exponentiation:69e304a0e65e98722637abe379145c02">Slow Exponentiation</h1>
 
 <pre><code class="language-python">def slow_power(a, b):
    y = 1
@@ -372,7 +372,7 @@ $q_0 ::= (1, b)$</p>
 
 <p>#</p>
 
-<h1 id="fast-exponentiation">Fast Exponentiation</h1>
+<h1 id="fast-exponentiation:69e304a0e65e98722637abe379145c02">Fast Exponentiation</h1>
 
 <p>This is the algorithm from Section 6.3.1 written as Python code:</p>
 
@@ -526,7 +526,7 @@ hours schedule will resume on Monday, 9 October.</p>
   <p class="fronthead"><A href="">Class 12: Review</a> (Thu, 28 Sep 2017)</p>
     
 
-<h3 id="schedule:bc216d98f3ca2300699af2d41b8a2a45">Schedule</h3>
+<h3 id="schedule">Schedule</h3>
 
 <p><a href="/ps/ps5"><strong>Problem Set 5</strong></a> is due <strong>Friday at 6:29pm</strong>.</p>
 
@@ -545,7 +545,7 @@ hours schedule will resume on Monday, 9 October.</p>
 
 <p><div class="latex"></p>
 
-<h2 id="strong-induction-principle:bc216d98f3ca2300699af2d41b8a2a45">Strong Induction Principle</h2>
+<h2 id="strong-induction-principle">Strong Induction Principle</h2>
 
 <p>Let $P$ be a predicated on $\mathbb{N}$.  If</p>
 
@@ -576,7 +576,7 @@ $$</p>
 
 <p>##</p>
 
-<h3 id="example-strong-induction-proof:bc216d98f3ca2300699af2d41b8a2a45">Example Strong Induction Proof</h3>
+<h3 id="example-strong-induction-proof">Example Strong Induction Proof</h3>
 
 <p><strong>Theorem:</strong> Every number, $n \in \mathbb{N}, n \geq 4$ can be written as $\alpha \cdot 2 + \beta \cdot 5$ where $\alpha, \beta \in \mathbb{N}$.</p>
 
@@ -601,7 +601,7 @@ hypothesis), we know $\exists \alpha, \beta \in \mathbb{N} . m - 1 =
 $m + 1 = (\alpha + 1) \cdot 2 + \beta \cdot 5$.</p></li>
 </ol>
 
-<h2 id="proof-by-contra-positive-review:bc216d98f3ca2300699af2d41b8a2a45">Proof by Contra-Positive (Review)</h2>
+<h2 id="proof-by-contra-positive-review">Proof by Contra-Positive (Review)</h2>
 
 <p>Recall: $P \implies Q$ is equivalent to $\neg Q \implies \neg P$. (If
 you are shaky on this, prove it to yourself using a truth table.)</p>
@@ -610,7 +610,7 @@ you are shaky on this, prove it to yourself using a truth table.)</p>
 about than the original proposition (e.g., irrational is a complex
 property to describe, but rational (NOT irrational) is a simple one. So to prove that ``If $r$ is irrational then $\sqrt{r}$ is also irrational&rdquo; we can prove the contrapositive which is &ldquo;if $\sqrt{r}$&rdquo; is rational, then $r$ is also rational$ which is quite straightforward.</p>
 
-<h2 id="proof-by-contradiction-review:bc216d98f3ca2300699af2d41b8a2a45">Proof by Contradiction (Review)</h2>
+<h2 id="proof-by-contradiction-review">Proof by Contradiction (Review)</h2>
 
 <p>To prove $P$, show $\neg P \implies False$.</p>
 
@@ -630,7 +630,7 @@ property to describe, but rational (NOT irrational) is a simple one. So to prove
 
 <p>Typical use: when the statment we want to prove has universal quantifier. for example, $\forall x \in \mathbb{Z}. P(x)$. Note that the statment that $\mathbb{Z}$ has \emph{no} minimum, when written formally, uses a universal quantifier (make sure to double check it). Then, instead of arguing that for all $x \in A$, $P(x)$ holds, we assume (for sake of contradiction) that there exists one $x$ for which $\neg(P(x))$ (note that this is indeed the negated statement) from which  we get a contradiction.</p>
 
-<h1 id="binary-relation-properties:bc216d98f3ca2300699af2d41b8a2a45">Binary Relation Properties</h1>
+<h1 id="binary-relation-properties">Binary Relation Properties</h1>
 
 <p>When we draw the graph of binary relations, the Domain (<code>input&quot; set) has outgoing edges. Codomain (</code>output&rdquo; set) has
 incoming edges. So when we use the compact notation referring to different properties of binary relations, keep in mind that the words ``in-out&rdquo; refer to the edge (not the input/output sets).  The properties about outgoing edges are <em>function</em>

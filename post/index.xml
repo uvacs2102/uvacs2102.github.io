@@ -135,7 +135,7 @@ def pair_last(p):
       <guid>https://uvacs2102.github.io/class14/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule:69e304a0e65e98722637abe379145c02&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps6&#34;&gt;&lt;strong&gt;Problem Set 6&lt;/strong&gt;&lt;/a&gt; is due &lt;strong&gt;20 October (Friday) at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
 
@@ -155,7 +155,7 @@ starting after Prof. Mahmoody&amp;rsquo;s office hours Monday.&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;state-machines-review-from-class-13&#34;&gt;State Machines (review from Class 13)&lt;/h2&gt;
+&lt;h2 id=&#34;state-machines-review-from-class-13:69e304a0e65e98722637abe379145c02&#34;&gt;State Machines (review from Class 13)&lt;/h2&gt;
 
 &lt;p&gt;A &lt;em&gt;state machine&lt;/em&gt;, $M = (S, G: S \times S, q_0 \in S)$, is a binary
 relation (called a &lt;em&gt;transition relation&lt;/em&gt;) on a set (both the domain and
@@ -176,7 +176,7 @@ S, q_0 \in S)$ is a predicate, $P$, on states, such that whenever $P(q)$
 is true of a state $q$, and $q \rightarrow r \in G$, then $P&amp;reg;$ is
 true.&lt;/p&gt;
 
-&lt;h3 id=&#34;bishop-state-machine&#34;&gt;Bishop State Machine&lt;/h3&gt;
+&lt;h3 id=&#34;bishop-state-machine:69e304a0e65e98722637abe379145c02&#34;&gt;Bishop State Machine&lt;/h3&gt;
 
 &lt;p&gt;$S = { (\fillin ) \, | \, r, c \in \mathbb{N} }$
 $G = { (r, c) \rightarrow (r&amp;rsquo;, c&amp;rsquo;) \, | \, r, c \in \mathbb{N} \wedge (\exists d \in \mathbb{N}^{+} \textrm{ such that } r&amp;rsquo; = r \fillin d \wedge r&amp;rsquo; \ge 0 \wedge c&amp;rsquo; = c \fillin d \wedge c&amp;rsquo; \ge 0 }$
@@ -186,7 +186,7 @@ $q_0 = (0, 2)$&lt;/p&gt;
 
 &lt;p&gt;#&lt;/p&gt;
 
-&lt;h3 id=&#34;progress-machine&#34;&gt;``Progress&amp;rdquo; Machine&lt;/h3&gt;
+&lt;h3 id=&#34;progress-machine:69e304a0e65e98722637abe379145c02&#34;&gt;``Progress&amp;rdquo; Machine&lt;/h3&gt;
 
 &lt;p&gt;$S = { (x, d) \, | \, x \in \mathbb{Z}, d \in { \mathrm{\bf F}, \mathrm{\bf B}} }$
 $G = { (x, \mathrm{\bf F}) \rightarrow (x + 1, \mathrm{\bf B}) \, | \, x \in \mathbb{Z} } \cup
@@ -197,7 +197,7 @@ $q_0 = (0, \mathrm{\bf F})$&lt;/p&gt;
 
 &lt;!--page--&gt;
 
-&lt;h2 id=&#34;preserved-invariants&#34;&gt;Preserved Invariants&lt;/h2&gt;
+&lt;h2 id=&#34;preserved-invariants:69e304a0e65e98722637abe379145c02&#34;&gt;Preserved Invariants&lt;/h2&gt;
 
 &lt;p&gt;A predicate $P(q)$ is a &lt;em&gt;preserved invariant&lt;/em&gt; of machine $M = (S, G \subseteq S \times S, q_0 \in
   S)$ if:
@@ -222,7 +222,7 @@ $$&lt;/p&gt;
 
 &lt;!--page--&gt;
 
-&lt;h1 id=&#34;slow-exponentiation&#34;&gt;Slow Exponentiation&lt;/h1&gt;
+&lt;h1 id=&#34;slow-exponentiation:69e304a0e65e98722637abe379145c02&#34;&gt;Slow Exponentiation&lt;/h1&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def slow_power(a, b):
    y = 1
@@ -241,7 +241,7 @@ $q_0 ::= (1, b)$&lt;/p&gt;
 
 &lt;p&gt;#&lt;/p&gt;
 
-&lt;h1 id=&#34;fast-exponentiation&#34;&gt;Fast Exponentiation&lt;/h1&gt;
+&lt;h1 id=&#34;fast-exponentiation:69e304a0e65e98722637abe379145c02&#34;&gt;Fast Exponentiation&lt;/h1&gt;
 
 &lt;p&gt;This is the algorithm from Section 6.3.1 written as Python code:&lt;/p&gt;
 
@@ -425,7 +425,7 @@ hours schedule will resume on Monday, 9 October.&lt;/p&gt;
       <guid>https://uvacs2102.github.io/class12/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule:bc216d98f3ca2300699af2d41b8a2a45&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps5&#34;&gt;&lt;strong&gt;Problem Set 5&lt;/strong&gt;&lt;/a&gt; is due &lt;strong&gt;Friday at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
 
@@ -444,7 +444,7 @@ hours schedule will resume on Monday, 9 October.&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;strong-induction-principle:bc216d98f3ca2300699af2d41b8a2a45&#34;&gt;Strong Induction Principle&lt;/h2&gt;
+&lt;h2 id=&#34;strong-induction-principle&#34;&gt;Strong Induction Principle&lt;/h2&gt;
 
 &lt;p&gt;Let $P$ be a predicated on $\mathbb{N}$.  If&lt;/p&gt;
 
@@ -475,7 +475,7 @@ $$&lt;/p&gt;
 
 &lt;p&gt;##&lt;/p&gt;
 
-&lt;h3 id=&#34;example-strong-induction-proof:bc216d98f3ca2300699af2d41b8a2a45&#34;&gt;Example Strong Induction Proof&lt;/h3&gt;
+&lt;h3 id=&#34;example-strong-induction-proof&#34;&gt;Example Strong Induction Proof&lt;/h3&gt;
 
 &lt;p&gt;&lt;strong&gt;Theorem:&lt;/strong&gt; Every number, $n \in \mathbb{N}, n \geq 4$ can be written as $\alpha \cdot 2 + \beta \cdot 5$ where $\alpha, \beta \in \mathbb{N}$.&lt;/p&gt;
 
@@ -500,7 +500,7 @@ hypothesis), we know $\exists \alpha, \beta \in \mathbb{N} . m - 1 =
 $m + 1 = (\alpha + 1) \cdot 2 + \beta \cdot 5$.&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h2 id=&#34;proof-by-contra-positive-review:bc216d98f3ca2300699af2d41b8a2a45&#34;&gt;Proof by Contra-Positive (Review)&lt;/h2&gt;
+&lt;h2 id=&#34;proof-by-contra-positive-review&#34;&gt;Proof by Contra-Positive (Review)&lt;/h2&gt;
 
 &lt;p&gt;Recall: $P \implies Q$ is equivalent to $\neg Q \implies \neg P$. (If
 you are shaky on this, prove it to yourself using a truth table.)&lt;/p&gt;
@@ -509,7 +509,7 @@ you are shaky on this, prove it to yourself using a truth table.)&lt;/p&gt;
 about than the original proposition (e.g., irrational is a complex
 property to describe, but rational (NOT irrational) is a simple one. So to prove that ``If $r$ is irrational then $\sqrt{r}$ is also irrational&amp;rdquo; we can prove the contrapositive which is &amp;ldquo;if $\sqrt{r}$&amp;rdquo; is rational, then $r$ is also rational$ which is quite straightforward.&lt;/p&gt;
 
-&lt;h2 id=&#34;proof-by-contradiction-review:bc216d98f3ca2300699af2d41b8a2a45&#34;&gt;Proof by Contradiction (Review)&lt;/h2&gt;
+&lt;h2 id=&#34;proof-by-contradiction-review&#34;&gt;Proof by Contradiction (Review)&lt;/h2&gt;
 
 &lt;p&gt;To prove $P$, show $\neg P \implies False$.&lt;/p&gt;
 
@@ -529,7 +529,7 @@ property to describe, but rational (NOT irrational) is a simple one. So to prove
 
 &lt;p&gt;Typical use: when the statment we want to prove has universal quantifier. for example, $\forall x \in \mathbb{Z}. P(x)$. Note that the statment that $\mathbb{Z}$ has \emph{no} minimum, when written formally, uses a universal quantifier (make sure to double check it). Then, instead of arguing that for all $x \in A$, $P(x)$ holds, we assume (for sake of contradiction) that there exists one $x$ for which $\neg(P(x))$ (note that this is indeed the negated statement) from which  we get a contradiction.&lt;/p&gt;
 
-&lt;h1 id=&#34;binary-relation-properties:bc216d98f3ca2300699af2d41b8a2a45&#34;&gt;Binary Relation Properties&lt;/h1&gt;
+&lt;h1 id=&#34;binary-relation-properties&#34;&gt;Binary Relation Properties&lt;/h1&gt;
 
 &lt;p&gt;When we draw the graph of binary relations, the Domain (&lt;code&gt;input&amp;quot; set) has outgoing edges. Codomain (&lt;/code&gt;output&amp;rdquo; set) has
 incoming edges. So when we use the compact notation referring to different properties of binary relations, keep in mind that the words ``in-out&amp;rdquo; refer to the edge (not the input/output sets).  The properties about outgoing edges are &lt;em&gt;function&lt;/em&gt;
@@ -741,7 +741,7 @@ injective.&lt;/p&gt;
       <guid>https://uvacs2102.github.io/class10/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule:cefb84ebc6e45e7105a37c4f4d413033&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;This week you should finish reading MCS Chapter 4 (section 4.5) and
 Section 5.1.  We will discuss Induction (Section 5.1) next class.&lt;/p&gt;
@@ -806,7 +806,7 @@ what do we know about their cardinalities?&lt;/p&gt;
 
 &lt;p&gt;#&lt;/p&gt;
 
-&lt;h1 id=&#34;induction-principle:cefb84ebc6e45e7105a37c4f4d413033&#34;&gt;Induction Principle&lt;/h1&gt;
+&lt;h1 id=&#34;induction-principle&#34;&gt;Induction Principle&lt;/h1&gt;
 
 &lt;p&gt;Let $P$ be a predicated on $\mathbb{N}$.  If&lt;/p&gt;
 
@@ -821,7 +821,7 @@ what do we know about their cardinalities?&lt;/p&gt;
 &lt;li&gt;$P(m)$ is true for all $m \in \mathbb{N}$.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;template-for-induction-proofs:cefb84ebc6e45e7105a37c4f4d413033&#34;&gt;Template for Induction Proofs&lt;/h2&gt;
+&lt;h2 id=&#34;template-for-induction-proofs&#34;&gt;Template for Induction Proofs&lt;/h2&gt;
 
 &lt;ol&gt;
 &lt;li&gt;State, &amp;ldquo;We prove by induction.&amp;rdquo;&lt;/li&gt;
@@ -833,7 +833,7 @@ what do we know about their cardinalities?&lt;/p&gt;
 
 &lt;p&gt;How is the method of &lt;em&gt;proof by induction principle&lt;/em&gt; similar to and different from &lt;em&gt;proof by well-ordering principle&lt;/em&gt;?&lt;/p&gt;
 
-&lt;h1 id=&#34;power-sets:cefb84ebc6e45e7105a37c4f4d413033&#34;&gt;Power Sets&lt;/h1&gt;
+&lt;h1 id=&#34;power-sets&#34;&gt;Power Sets&lt;/h1&gt;
 
 &lt;p&gt;The &lt;strong&gt;power set&lt;/strong&gt; of $A$ ($\textrm{pow}(A)$)is the set of all subsets of $A$:
 $$
@@ -870,7 +870,7 @@ can get on your own.)&lt;/p&gt;
       <guid>https://uvacs2102.github.io/class9/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule:b1685b9d514e4fd02cc72721228d457c&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;This week you should finish reading MCS Chapter 4 (section 4.5) and
 Section 5.1.  We will discuss Induction (Section 5.1) next class.&lt;/p&gt;
@@ -902,7 +902,7 @@ confusion!&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;total-and-partial-functions:b1685b9d514e4fd02cc72721228d457c&#34;&gt;Total and Partial Functions&lt;/h2&gt;
+&lt;h2 id=&#34;total-and-partial-functions&#34;&gt;Total and Partial Functions&lt;/h2&gt;
 
 &lt;p&gt;A &lt;strong&gt;function&lt;/strong&gt; is a mathematical datatype that associates elements from
 one set, called the &lt;em&gt;domain&lt;/em&gt;, with elements from another set, called a
@@ -914,7 +914,7 @@ one set, called the &lt;em&gt;domain&lt;/em&gt;, with elements from another set,
 associated codomain element; if the function is &lt;em&gt;partial&lt;/em&gt;, there may be
 elements of the domain that do not have an associated codomain element.&lt;/p&gt;
 
-&lt;h2 id=&#34;relation-relationships:b1685b9d514e4fd02cc72721228d457c&#34;&gt;Relation Relationships&lt;/h2&gt;
+&lt;h2 id=&#34;relation-relationships&#34;&gt;Relation Relationships&lt;/h2&gt;
 
 &lt;p&gt;Definition review: &lt;strong&gt;binary relation&lt;/strong&gt;, $R$, consists of a domain set,
 $A$, and a codomain set, $B$, and a subset of $A \times B$ called the
@@ -958,7 +958,7 @@ f. $G - (S \times T) = \emptyset$.
 g. $(S \times T) - G = \emptyset$.
 h. $(S \times T) - G \neq \emptyset$.&lt;/p&gt;
 
-&lt;h1 id=&#34;relation-practice:b1685b9d514e4fd02cc72721228d457c&#34;&gt;Relation Practice&lt;/h1&gt;
+&lt;h1 id=&#34;relation-practice&#34;&gt;Relation Practice&lt;/h1&gt;
 
 &lt;p&gt;The &lt;em&gt;inverse&lt;/em&gt; of a relation $R: A \rightarrow B, G \subseteq A \times B$ is defined by reversing all the arrows:
 $$
@@ -971,7 +971,7 @@ $$&lt;/p&gt;
 
 &lt;p&gt;What does it mean if $R \equiv R^{-1}$?&lt;/p&gt;
 
-&lt;h1 id=&#34;set-cardinality:b1685b9d514e4fd02cc72721228d457c&#34;&gt;Set Cardinality&lt;/h1&gt;
+&lt;h1 id=&#34;set-cardinality&#34;&gt;Set Cardinality&lt;/h1&gt;
 
 &lt;p&gt;&lt;strong&gt;Finite Cardinality.&lt;/strong&gt; The book&amp;rsquo;s definition is: ``If $A$ is a finite set, the &lt;em&gt;cardinality&lt;/em&gt; of
   $A$, written $|A|$, is the number of elements in $A$.&amp;rdquo;&lt;/p&gt;
