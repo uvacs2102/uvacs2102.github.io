@@ -1,6 +1,5 @@
-
 ##
-## cs2102 - Class 16 and 17
+## cs2102 - Class 15
 ##
 ## Making Lists from functions
 ##
@@ -58,5 +57,3 @@ def list_reverse(l):
 
 
 list123 = list_prepend(1, list_prepend(2, list_prepend(3, None)))
-
-    

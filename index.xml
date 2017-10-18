@@ -6,8 +6,126 @@
     <description>Recent content on cs2102: Discrete Math</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 12 Oct 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 18 Oct 2017 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://uvacs2102.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Class 15: Recursive Data Types</title>
+      <link>https://uvacs2102.github.io/class15/</link>
+      <pubDate>Wed, 18 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/class15/</guid>
+      <description>
+
+&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
+
+&lt;p&gt;You should read MCS Chapter 7 this week.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps6&#34;&gt;&lt;strong&gt;Problem Set 6&lt;/strong&gt;&lt;/a&gt; is due &lt;strong&gt;20 October (Friday) at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;
+   &lt;center&gt;
+&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;9d25492c6e134346a212652c6d0052ab&#34; data-ratio=&#34;1.77777777777778&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
+   &lt;/center&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
+
+&lt;p&gt;Python code from class and list definitions: &lt;a href=&#34;https://uvacs2102.github.io/docs/pairs.py&#34;&gt;pairs.py&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlightm&#34;&gt;
+   &lt;a href=&#34;https://uvacs2102.github.io/docs/class15.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes&lt;/b&gt;&lt;/a&gt;.
+   &lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;proving-correctness&#34;&gt;Proving Correctness&lt;/h1&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def slow_power(a, b):
+   y = 1
+   z = b
+   while z &amp;gt; 0:
+      y = y * a
+      z = z - 1
+   return y
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;We model the Python program with a state machine:&lt;/p&gt;
+
+&lt;p&gt;$S ::= \mathbb{N} \times \mathbb{N}$&lt;br /&gt;
+$G ::= { (y, z) \rightarrow (y \cdot a, z - 1) \, | \, \forall y, z \in \mathbb{N}^{+}}$&lt;br /&gt;
+$q_0 ::= (1, b)$&lt;/p&gt;
+
+&lt;p&gt;It is important to remember this is a &lt;em&gt;model&lt;/em&gt;. It does not capture
+many important aspects of execution of a real Python program. In
+particular, it only models inputs in $\mathbb{N}$, when the actual
+inputs could be other types in PYthon.  It also assume all math
+opderations work mathematically, not Pythonically.&lt;/p&gt;
+
+&lt;p&gt;To prove partial correctness, we show $P(q = (y, z)) := y = a^{b-z}$
+is a &lt;em&gt;preserved invariant&lt;/em&gt;. Then, we show that it holds in state
+$q_0$.  Finally, we show that in all final states, $y = a^b$.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Invariant is Preserved:&lt;/strong&gt; We need to show that $\forall q \in S . \forall t \in S . (q, t) \in G \implies P(q) \implies P(t)$.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;$q = (y, z)$. $P(q = (y, z))$: $y = a^{b-z}$.&lt;/li&gt;
+&lt;li&gt;If there is an edge from $q$ to $t$, that means $t = (y \cdot a, z-1)$ and $z \ge 1$ since this is the only edge from $q$ in $G$.&lt;/li&gt;
+&lt;li&gt;We show $P(t = (y \cdot a, z-1))$ holds by multiplying both sides of $P(q)$ by $a$: $$ya = (a^{b -z}) \cdot a = a^{b - z + 1} = a ^{b - (z - 1)}.$$&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;Invariant holds in $q_0$:&lt;/strong&gt; $q_0 = (1, b)$. So, we need to show $P(q_0 = (1, b))$: $1 = a^{b - b}$. This holds since $a^{0} = 1$.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Final states:&lt;/strong&gt; All states where $z \ge 1$ have an outgoing edge, but no states where $z = 0$ do. So, the final states are all of the form $(\alpha, 0)$. If a final state is reachable from $q_0$, the invariant must hold since we proved it is preserve. Hence, in the final state $(\alpha, 0)$ we know $\alpha = a^{b}$.&lt;/p&gt;
+
+&lt;p&gt;This proves &lt;em&gt;partial correctness&lt;/em&gt;: if the program terminates, it
+terminates in a state where the property ($y = a^b$ is satisfied).  To
+prove &lt;em&gt;total correctness&lt;/em&gt; we also need to know the execution
+&lt;em&gt;eventually&lt;/em&gt; reaches a final state.&lt;/p&gt;
+
+&lt;p&gt;We prove this by showing that from any initial state $q_0 = (1, b)$,
+the machine will reach a final state $q_f = (y, 0)$ in $b$ steps.  The
+proof in class used the Well Ordering Principle. You could also prove
+this using regular Induction.&lt;/p&gt;
+
+&lt;h1 id=&#34;pairs&#34;&gt;Pairs&lt;/h1&gt;
+
+&lt;p&gt;What is the difference between scalar data and compound data structures?&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; A $\text{\em Pair}$ is a datatype that supports these three operations:&lt;br /&gt;
+\begin{quote}
+     $\text{\em make_pair}: \text{\em Object} \times \text{\em Object} \rightarrow \text{\em Pair}$&lt;br /&gt;
+     $\text{\em pair_first}: \text{\em Pair} \rightarrow \text{\em Object}$\&lt;br /&gt;
+     $\text{\em pair_last}: \text{\em Pair} \rightarrow \text{\em Object}$\&lt;br /&gt;
+\end{quote}
+where, for any objects $a$ and $b$, $\text{\em pair_first}(\text{\em make_pair}(a, b)) = a$ and $\text{\em pair_last}(\text{\em make_pair}(a, b)) = b$.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-Python&#34;&gt;def make_pair(a, b):
+    def selector(which):
+        if which:
+            return a
+        else:
+            return b
+    return selector
+
+def pair_first(p):
+    return p(True)
+
+def pair_last(p):
+    return p(False)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h1 id=&#34;lists&#34;&gt;Lists&lt;/h1&gt;
+
+&lt;p&gt;&lt;strong&gt;Definition (1).&lt;/strong&gt; A &lt;em&gt;List&lt;/em&gt; is either (1) a &lt;em&gt;Pair&lt;/em&gt; where the second part of
+  the pair is a &lt;em&gt;List&lt;/em&gt;, or (2) the empty list.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Definition (2).&lt;/strong&gt; A &lt;em&gt;List&lt;/em&gt; is a ordered sequence of objects.&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Class 14: Invariant Principle</title>
@@ -899,96 +1017,6 @@ define XOR using 5 NAND operations is here: &lt;a href=&#34;https://uvacs2102.gi
       <guid>https://uvacs2102.github.io/ps4posted/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps4&#34;&gt;&lt;strong&gt;Problem Set 4&lt;/strong&gt;&lt;/a&gt; [&lt;a href=&#34;https://uvacs2102.github.io/docs/ps4.pdf&#34;&gt;PDF&lt;/a&gt;] is now posted and
 is due &lt;strong&gt;Friday, 22 September at 6:29:00pm&lt;/strong&gt;.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Class 8: Sequences, Relations, Functions</title>
-      <link>https://uvacs2102.github.io/class8/</link>
-      <pubDate>Thu, 14 Sep 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://uvacs2102.github.io/class8/</guid>
-      <description>
-
-&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps3&#34;&gt;&lt;strong&gt;Problem Set 3&lt;/strong&gt;&lt;/a&gt; is due &lt;strong&gt;Friday at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;
-   &lt;center&gt;
-&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;2a3dfdb08071473cb23b4f28b5a67433&#34; data-ratio=&#34;1.77777777777778&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
-   &lt;/center&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;highlightm&#34;&gt;
-   &lt;a href=&#34;https://uvacs2102.github.io/docs/class8.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes and Questions&lt;/b&gt;&lt;/a&gt;.
-   &lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;sequences&#34;&gt;Sequences&lt;/h1&gt;
-
-&lt;p&gt;A &lt;strong&gt;sequence&lt;/strong&gt; is a mathematical datatype that bears similarities to sets. A sequence $S$ also contains some elements, but we usually refer to them as &lt;em&gt;components&lt;/em&gt;. There are two major differences between sets and sequences:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;Components of a sequence are &lt;strong&gt;ordered&lt;/strong&gt;. There is either $0$, or $1$ or $2$, or &amp;hellip; $n$ components, when the sequence if &lt;em&gt;finite&lt;/em&gt; or it could be an infinite sequence that has an $i$&amp;lsquo;th component for any non-zero natural number $i$.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Different components of a sequence could be equal. For example $(a,b,a)$ has $a$ repeating, and this is a different sequence compared to $(a,b,b)$ even though they both have 3 componetns. If we interprete them as &lt;em&gt;sets&lt;/em&gt;, then they will be equal sets with $2$ elements each.&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h1 id=&#34;cartesian-product&#34;&gt;Cartesian Product&lt;/h1&gt;
-
-&lt;p&gt;We can use set products to get new sets whose elements are sequences. Cartesian product is a very useful way of doing it.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Set Products.&lt;/strong&gt; A &lt;em&gt;Cartesian product&lt;/em&gt; of sets $S_1, S_2, \cdots, S_n$
-  is a set consisting of all possible sequences of $n$ elements where the
-  $i$\textsuperscript{th} element is chosen from $S_i$.&lt;/p&gt;
-
-&lt;p&gt;$$ S_1 \times S_2 \times \cdots \times S_n = { (s_1, s_2, \cdots, s_n) | s_i \in S_i } $$&lt;/p&gt;
-
-&lt;p&gt;How many elements are in $A \times B$?&lt;/p&gt;
-
-&lt;h1 id=&#34;relations-and-binary-relations&#34;&gt;Relations and Binary Relations&lt;/h1&gt;
-
-&lt;p&gt;A &lt;em&gt;relation&lt;/em&gt; between some elements from set $A$ and some elements from set $B$ could be represented by putting all such pairs $(a,b)$ in a set $P$. As you can see, this way, $P$ would be a subset of the cartesian product $A \times B$, namely $P \subseteq A \times B$. More formally we have the following definition.&lt;/p&gt;
-
-&lt;p&gt;A &lt;strong&gt;binary relation&lt;/strong&gt;, $P$, is defined with respect to a &lt;em&gt;domain&lt;/em&gt; set, $A$, and a
-&lt;em&gt;codomain&lt;/em&gt; set, $B$, and it holds that  $P$ is $P \subseteq A \times B$. When we draw $P$ by connecting elements of $A$ to $B$ based on their membership in $P$, we call this  the &lt;em&gt;graph&lt;/em&gt; of
-$R$.&lt;/p&gt;
-
-&lt;p&gt;The notion of relations could be generalized to having relations
-between elements coming from multiple sets $A,B,C$, and we can also
-talk about relations of the form $P \subseteq A \times B \times C$,
-but the binary relation remains a very important data type as it
-allows us to define &lt;em&gt;functions&lt;/em&gt;.&lt;/p&gt;
-
-&lt;h1 id=&#34;functions&#34;&gt;Functions&lt;/h1&gt;
-
-&lt;p&gt;The concept of a function $F$ models is a special form of a binary
-relation $R$ between $A$ and $B$ where for every element $a \in A$
-there is &lt;em&gt;at most one&lt;/em&gt; element in $b \in B$ that is in relation with
-$a$ (i.e. $(a,b) \in R$). More formally, we use a direct new notation
-just reserved for working with functions.&lt;/p&gt;
-
-&lt;p&gt;A &lt;strong&gt;function&lt;/strong&gt; is a mathematical datatype that associates
-elements from one set, called the &lt;em&gt;domain&lt;/em&gt;, with elements from another
-set, called a &lt;em&gt;codomain&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;$$ f: \textrm{\em domain} \rightarrow \textrm{\em codomain} $$&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Defining a function.&lt;/strong&gt; To define a function, we need to describe how
-  elements in the domain are associated with elements in the codomain.&lt;/p&gt;
-
-&lt;p&gt;#&lt;/p&gt;
-
-&lt;p&gt;What are the (sensible) domains and codomains of each function below:&lt;/p&gt;
-
-&lt;p&gt;$$ f(n) ::= |n| \qquad \qquad f(x) ::= x^2  \qquad\qquad f(n) ::= n + 1 \qquad\qquad f(a, b) ::= a / b $$&lt;/p&gt;
-
-&lt;p&gt;$$ f(x) ::= \sqrt{x}  \qquad \qquad \qquad f(S) ::= \textrm{minimum}_{&amp;lt;}(S) $$&lt;/p&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
 </description>
     </item>
     

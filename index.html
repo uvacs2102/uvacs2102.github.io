@@ -151,6 +151,118 @@
   </header>
   
   
+  <p class="fronthead"><A href="/class15/">Class 15: Recursive Data Types</a> (Wed, 18 Oct 2017)</p>
+    
+
+<h3 id="schedule">Schedule</h3>
+
+<p>You should read MCS Chapter 7 this week.</p>
+
+<p><a href="/ps/ps6"><strong>Problem Set 6</strong></a> is due <strong>20 October (Friday) at 6:29pm</strong>.</p>
+
+<p><div class="notpdf">
+   <center>
+<script async class="speakerdeck-embed" data-id="9d25492c6e134346a212652c6d0052ab" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+   </center></p>
+
+<h2 id="links">Links</h2>
+
+<p>Python code from class and list definitions: <a href="/docs/pairs.py">pairs.py</a></p>
+
+<p><div class="highlightm">
+   <a href="/docs/class15.pdf">See PDF Version for <b>Notes</b></a>.
+   </div></p>
+
+<p></div><!--endpdf--></p>
+
+<p><div class="latex"></p>
+
+<h1 id="proving-correctness">Proving Correctness</h1>
+
+<pre><code class="language-python">def slow_power(a, b):
+   y = 1
+   z = b
+   while z &gt; 0:
+      y = y * a
+      z = z - 1
+   return y
+</code></pre>
+
+<p>We model the Python program with a state machine:</p>
+
+<p>$S ::= \mathbb{N} \times \mathbb{N}$<br />
+$G ::= { (y, z) \rightarrow (y \cdot a, z - 1) \, | \, \forall y, z \in \mathbb{N}^{+}}$<br />
+$q_0 ::= (1, b)$</p>
+
+<p>It is important to remember this is a <em>model</em>. It does not capture
+many important aspects of execution of a real Python program. In
+particular, it only models inputs in $\mathbb{N}$, when the actual
+inputs could be other types in PYthon.  It also assume all math
+opderations work mathematically, not Pythonically.</p>
+
+<p>To prove partial correctness, we show $P(q = (y, z)) := y = a^{b-z}$
+is a <em>preserved invariant</em>. Then, we show that it holds in state
+$q_0$.  Finally, we show that in all final states, $y = a^b$.</p>
+
+<p><strong>Invariant is Preserved:</strong> We need to show that $\forall q \in S . \forall t \in S . (q, t) \in G \implies P(q) \implies P(t)$.</p>
+
+<ol>
+<li>$q = (y, z)$. $P(q = (y, z))$: $y = a^{b-z}$.</li>
+<li>If there is an edge from $q$ to $t$, that means $t = (y \cdot a, z-1)$ and $z \ge 1$ since this is the only edge from $q$ in $G$.</li>
+<li>We show $P(t = (y \cdot a, z-1))$ holds by multiplying both sides of $P(q)$ by $a$: $$ya = (a^{b -z}) \cdot a = a^{b - z + 1} = a ^{b - (z - 1)}.$$</li>
+</ol>
+
+<p><strong>Invariant holds in $q_0$:</strong> $q_0 = (1, b)$. So, we need to show $P(q_0 = (1, b))$: $1 = a^{b - b}$. This holds since $a^{0} = 1$.</p>
+
+<p><strong>Final states:</strong> All states where $z \ge 1$ have an outgoing edge, but no states where $z = 0$ do. So, the final states are all of the form $(\alpha, 0)$. If a final state is reachable from $q_0$, the invariant must hold since we proved it is preserve. Hence, in the final state $(\alpha, 0)$ we know $\alpha = a^{b}$.</p>
+
+<p>This proves <em>partial correctness</em>: if the program terminates, it
+terminates in a state where the property ($y = a^b$ is satisfied).  To
+prove <em>total correctness</em> we also need to know the execution
+<em>eventually</em> reaches a final state.</p>
+
+<p>We prove this by showing that from any initial state $q_0 = (1, b)$,
+the machine will reach a final state $q_f = (y, 0)$ in $b$ steps.  The
+proof in class used the Well Ordering Principle. You could also prove
+this using regular Induction.</p>
+
+<h1 id="pairs">Pairs</h1>
+
+<p>What is the difference between scalar data and compound data structures?</p>
+
+<p><strong>Definition.</strong> A $\text{\em Pair}$ is a datatype that supports these three operations:<br />
+\begin{quote}
+     $\text{\em make_pair}: \text{\em Object} \times \text{\em Object} \rightarrow \text{\em Pair}$<br />
+     $\text{\em pair_first}: \text{\em Pair} \rightarrow \text{\em Object}$\<br />
+     $\text{\em pair_last}: \text{\em Pair} \rightarrow \text{\em Object}$\<br />
+\end{quote}
+where, for any objects $a$ and $b$, $\text{\em pair_first}(\text{\em make_pair}(a, b)) = a$ and $\text{\em pair_last}(\text{\em make_pair}(a, b)) = b$.</p>
+
+<pre><code class="language-Python">def make_pair(a, b):
+    def selector(which):
+        if which:
+            return a
+        else:
+            return b
+    return selector
+
+def pair_first(p):
+    return p(True)
+
+def pair_last(p):
+    return p(False)
+</code></pre>
+
+<h1 id="lists">Lists</h1>
+
+<p><strong>Definition (1).</strong> A <em>List</em> is either (1) a <em>Pair</em> where the second part of
+  the pair is a <em>List</em>, or (2) the empty list.</p>
+
+<p><strong>Definition (2).</strong> A <em>List</em> is a ordered sequence of objects.</p>
+
+<p></div></p>
+ 
+  
   <p class="fronthead"><A href="/class14/">Class 14: Invariant Principle</a> (Thu, 12 Oct 2017)</p>
     
 
@@ -703,119 +815,6 @@ collaboration policy carefully - unlike previous assignments the
 injective.</p>
  
   
-  <p class="fronthead"><A href="/class10/">Class 10: Set Cardinality, Induction</a> (Thu, 21 Sep 2017)</p>
-    
-
-<h3 id="schedule">Schedule</h3>
-
-<p>This week you should finish reading MCS Chapter 4 (section 4.5) and
-Section 5.1.  We will discuss Induction (Section 5.1) next class.</p>
-
-<p><a href="/ps/ps4"><strong>Problem Set 4</strong></a> is due <strong>Friday at 6:29pm</strong>.  The
-original version of Problem Set 4, Question 6, asked for a <em>function</em>,
-when we really meant to ask for a <em>total function</em> (as we defined it
-in class today, and the book defines it). The problem set is updated
-now to specify this. If you already answered the original question,
-you do not need to update your answer, just indicate clearly for which
-questions the function you defined is partial. Sorry for the
-confusion!</p>
-
-<p><strong>Problem Set 5</strong> (not yet posted) will be due Friday, 29 September.</p>
-
-<p><strong>Exam 1</strong> will be in-class on Thursday, 5 October. It will cover
-  Classes 1 - 11, Problem Sets 1 - 5, and MCS Chapters 1 - 5.</p>
-
-<p><div class="notpdf">
-   <center>
-<script async class="speakerdeck-embed" data-id="3dc8afcc1d1e4a979715fe94298dd84a" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-   </center></p>
-
-<p><div class="highlightm">
-   <a href="/docs/class10.pdf">See PDF Version for <b>Notes and Questions</b></a>.
-   </div></p>
-
-<p></div><!--endpdf--></p>
-
-<p><div class="latex"></p>
-
-<p><strong>Alternate definition:</strong> The <em>cardinality</em> of the set
-$$
-N_k = { n | n \in \mathbb{N} \wedge n &lt; k }
-$$
-is $k$.  If there is a <em>bijection</em> between two sets, they have the same
-cardinality.</p>
-
-<p>#</p>
-
-<p>If there is a <em>surjective relation</em> between $A$ and $B$ what do we know
-about their cardinalities?</p>
-
-<p>##</p>
-
-<p>If there is a <em>surjective function</em> between $A$ and $B$ what do we know
-about their cardinalities?</p>
-
-<p>##</p>
-
-<p>If there is a <em>total surjective function</em> between $A$ and $B$ what do we know
-about their cardinalities?</p>
-
-<p>##</p>
-
-<p>If there is a <em>total surjective injective function</em> between $A$ and $B$
-what do we know about their cardinalities?</p>
-
-<p>##</p>
-
-<p>What is the cardinality of $A \cup B$?</p>
-
-<p>#</p>
-
-<h1 id="induction-principle">Induction Principle</h1>
-
-<p>Let $P$ be a predicated on $\mathbb{N}$.  If</p>
-
-<ul>
-<li>$P(0)$ is true, and</li>
-<li>$P(n) \implies P(n + 1)$ for all $n \in \mathbb{N}$,</li>
-</ul>
-
-<p>then</p>
-
-<ul>
-<li>$P(m)$ is true for all $m \in \mathbb{N}$.</li>
-</ul>
-
-<h2 id="template-for-induction-proofs">Template for Induction Proofs</h2>
-
-<ol>
-<li>State, &ldquo;We prove by induction.&rdquo;</li>
-<li>Define a predicate, $P(n)$.  This is the <em>induction hypothesis</em>.  Our goal is to show that $P(n)$ is true for all $n \in \mathbb{N}$.</li>
-<li>Prove $P(0)$ is true.  (<em>base case</em> or <em>basis step</em>.)</li>
-<li>Prove that $P(n) \implies P(n + 1)$ for every $n \in \mathbb{N}$.  (<em>induction step</em>)</li>
-<li>Conclude that $P(n)$ is true for all $n \in \mathbb{N}$ by induction.</li>
-</ol>
-
-<p>How is the method of <em>proof by induction principle</em> similar to and different from <em>proof by well-ordering principle</em>?</p>
-
-<h1 id="power-sets">Power Sets</h1>
-
-<p>The <strong>power set</strong> of $A$ ($\textrm{pow}(A)$)is the set of all subsets of $A$:
-$$
-B \in \textrm{pow}(A) \iff B \subseteq A.
-$$</p>
-
-<p>Prove that the size of the power set of a set $S$ with $|S| = N$ is
-$2^N$ using induction. (We&rsquo;ll do this in Class 11, but see how far you
-can get on your own.)</p>
-
-<p>#</p>
-
-<p>#</p>
-
-<p></div></p>
- 
-  
   
 <div class="container pagination">
   
@@ -842,12 +841,16 @@ can get on your own.)</p>
   3
 </a>
 
+<a href="https://uvacs2102.github.io/page/4/">
+  4
+</a>
+
 
 <a aria-label="Next" href="https://uvacs2102.github.io/page/2/">
   <span aria-hidden="true">»</span>
 </a>
 
-<a aria-label="Last" href="https://uvacs2102.github.io/page/3/">
+<a aria-label="Last" href="https://uvacs2102.github.io/page/4/">
   <span aria-hidden="true">»»</span>
 </a>
 
