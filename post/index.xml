@@ -6,13 +6,122 @@
     <description>Recent content in Posts on cs2102: Discrete Math</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 18 Oct 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 19 Oct 2017 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://uvacs2102.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Class 16: Structural Induction</title>
+      <link>https://uvacs2102.github.io/class16/</link>
+      <pubDate>Thu, 19 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/class16/</guid>
+      <description>
+
+&lt;h3 id=&#34;schedule:e5faf2b6fe551ee3e6bfd5f1acfee2f5&#34;&gt;Schedule&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps7&#34;&gt;&lt;strong&gt;Problem Set 6&lt;/strong&gt;&lt;/a&gt; is due &lt;strong&gt;tomorrow at 6:29pm&lt;/strong&gt;. Make sure to read the corrected version of Problem 7.&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;
+   &lt;center&gt;
+&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;df7755f817fe4902abc3b73573f79752&#34; data-ratio=&#34;1.77777777777778&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
+   &lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlightm&#34;&gt;
+   &lt;a href=&#34;https://uvacs2102.github.io/docs/class16.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes&lt;/b&gt;&lt;/a&gt;.
+   &lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;lists:e5faf2b6fe551ee3e6bfd5f1acfee2f5&#34;&gt;Lists&lt;/h1&gt;
+
+&lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; A &lt;em&gt;list&lt;/em&gt; is an ordered sequence of objects.  A list is
+  either the empty list ($\lambda$), or the result of $\text{prepend}(e,
+  l)$ for some object $e$ and list $l$.&lt;/p&gt;
+
+&lt;p&gt;\begin{equation&lt;em&gt;}
+\begin{split}
+\text{\em first}(\text{prepend}(e, l)) &amp;amp;= e \
+\text{\em rest}(\text{prepend}(e, l)) &amp;amp;= l \
+\text{\em empty}(\text{prepend}(e, l)) &amp;amp;= \text{\bf False} \
+\text{\em empty}(\text{\bf null}) &amp;amp;= \text{\bf True} \
+\end{split}
+\end{equation&lt;/em&gt;}&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; The &lt;em&gt;length&lt;/em&gt; of a list, $p$, is:
+\begin{equation&lt;em&gt;}
+\begin{split}
+\begin{cases}
+0 &amp;amp; \text{if}\ p\ \text{is \bf null} \
+\text{\em length}(q) + 1 &amp;amp; \text{otherwise}\ p = \text{\em prepend}(e, q)\ \text{for some object}\ e\ \text{and some list}\ q \
+\end{cases}
+\end{split}
+\end{equation&lt;/em&gt;}&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-Python&#34;&gt;def list_length(l):
+    if list_empty(l):
+        return 0
+    else:
+        return 1 + list_length(list_rest(l))
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Prove: for all lists, $p$, &lt;code&gt;list_length(p)&lt;/code&gt; returns the length of the list $p$.&lt;/p&gt;
+
+&lt;!--page--&gt;
+
+&lt;h2 id=&#34;concatenation:e5faf2b6fe551ee3e6bfd5f1acfee2f5&#34;&gt;Concatenation&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; The &lt;em&gt;concatenation&lt;/em&gt; of two lists, $p = (p_1, p_2, \cdots, p_n)$ and $q = (q_1, q_2, \cdots, q_m)$ is
+$$(p_1, p_2, \cdots, p_n, q_1, q_2, \cdots, q_m).$$&lt;/p&gt;
+
+&lt;p&gt;Provide a &lt;em&gt;constructuve&lt;/em&gt; definition of &lt;em&gt;concatenation&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Note that $\text{prepend}(p,q)$ is not a good idea for two reasons. If we use this definition, then the first element of the constructed list will be the object (list) $p$ (as a whole) rather than the first element $p_1$ of the list $p$. Also, if we want to &lt;em&gt;only&lt;/em&gt; define lists of &lt;em&gt;specific&lt;/em&gt; objects, for example integers, we can still use the same recursive/constructive definition of lists by substituting &amp;ldquo;object&amp;rdquo; with &amp;ldquo;integer&amp;rdquo;, but in that case $\text{prepend}(p,q)$ will not even well defined, as it can only accept integers as first input.&lt;/p&gt;
+
+&lt;p&gt;#&lt;/p&gt;
+
+&lt;h2 id=&#34;structural-induction:e5faf2b6fe551ee3e6bfd5f1acfee2f5&#34;&gt;Structural Induction&lt;/h2&gt;
+
+&lt;p&gt;To prove proposition $P(x)$ for element $x \in D$ where $D$ is a
+recursively-constructed data type, we do two things:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Show $P(x)$ is true for all $x \in D$ that are defined using base cases.&lt;/li&gt;
+&lt;li&gt;Show that if $P(y)$ is true for element $y$ and $x$ is constructed from $y$
+using any &amp;ldquo;construct case&amp;rdquo; rules, then $P(x)$ is true as well.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&#34;comparing-various-forms-of-induction:e5faf2b6fe551ee3e6bfd5f1acfee2f5&#34;&gt;Comparing Various forms of Induction&lt;/h2&gt;
+
+&lt;p&gt;\begin{center}
+\begin{tabular}{lccc}
+&amp;amp; {\bf Regular Induction} &amp;amp; {\bf Invariant Principle} &amp;amp; {\bf Structural Induction} \ \hline
+Works on: &amp;amp; natural numbers &amp;amp; state machines &amp;amp; data types \
+To prove $P(\cdot)$ &amp;amp; {\em for all natural numbers} &amp;amp; {\em for all reachable states} &amp;amp; {\em for all data type objects} \
+Prove {\bf base case(s)} &amp;amp; $P(0)$ &amp;amp; $P(q_0)$ &amp;amp; $P(\text{base object(s)})$ \
+and {\bf inductive step} &amp;amp; $\forall m \in \mathbb{N} \ldotp$ &amp;amp; $\forall (q, r) \in G \ldotp $ &amp;amp; $\forall s \in \text{\em Type} \ldotp$ \
+  &amp;amp; $P(m) \implies P(m+1)$ &amp;amp; $P(q) \implies P&amp;reg;$ &amp;amp; $P(s) \implies P(t)$ \
+ &amp;amp; &amp;amp; &amp;amp; $\quad \forall t\ \text{constructable from}\ s$ \
+\end{tabular}
+\end{center}&lt;/p&gt;
+
+&lt;p&gt;#
+##&lt;/p&gt;
+
+&lt;p&gt;Prove. For any two lists, $p$ and $q$, $\text{length}(p + q) = \text{length}(p) + \text{length}(q)$.&lt;/p&gt;
+
+&lt;p&gt;#&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Class 15: Recursive Data Types</title>
       <link>https://uvacs2102.github.io/class15/</link>
-      <pubDate>Wed, 18 Oct 2017 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 17 Oct 2017 00:00:00 +0000</pubDate>
       
       <guid>https://uvacs2102.github.io/class15/</guid>
       <description>
@@ -574,7 +683,7 @@ properties &lt;em&gt;might&lt;/em&gt; be impacted?&lt;/p&gt;
       <guid>https://uvacs2102.github.io/class11/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule:af81afa25b288e26509ba0728268a3b7&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps5&#34;&gt;&lt;strong&gt;Problem Set 5&lt;/strong&gt;&lt;/a&gt; is due &lt;strong&gt;Friday at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
 
@@ -587,7 +696,7 @@ properties &lt;em&gt;might&lt;/em&gt; be impacted?&lt;/p&gt;
 &lt;li&gt;more than 10 requests implies we should spend Thursday’s class on reviewing requested topics, no exam exemptions.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;exam-1&#34;&gt;Exam 1&lt;/h3&gt;
+&lt;h3 id=&#34;exam-1:af81afa25b288e26509ba0728268a3b7&#34;&gt;Exam 1&lt;/h3&gt;
 
 &lt;p&gt;Exam 1 will be in class on Thursday, 5 October.  You can get a good
 idea what to expect on Exam 1 by looking at the &lt;a href=&#34;https://uvacs2102.github.io/docs/practiceexam1.pdf&#34;&gt;Practice Exam
@@ -670,7 +779,7 @@ benefit from doing #3 and #4 as well.&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;induction-principle&#34;&gt;Induction Principle&lt;/h2&gt;
+&lt;h2 id=&#34;induction-principle:af81afa25b288e26509ba0728268a3b7&#34;&gt;Induction Principle&lt;/h2&gt;
 
 &lt;p&gt;Let $P$ be a predicated on $\mathbb{N}$.  If&lt;/p&gt;
 
@@ -693,7 +802,7 @@ benefit from doing #3 and #4 as well.&lt;/p&gt;
 
 &lt;div class=&#34;biggap&#34;&gt;&lt;/div&gt;
 
-&lt;h3 id=&#34;generalizing-to-well-ordered-sets&#34;&gt;Generalizing to Well-Ordered Sets&lt;/h3&gt;
+&lt;h3 id=&#34;generalizing-to-well-ordered-sets:af81afa25b288e26509ba0728268a3b7&#34;&gt;Generalizing to Well-Ordered Sets&lt;/h3&gt;
 
 &lt;p&gt;We can use Induction for any well-ordered set, where there is an
 operation (like &amp;lsquo;+ 1&amp;rsquo;) and a starting point (like &amp;lsquo;0&amp;rsquo;) that covers the
@@ -703,7 +812,7 @@ whole set.&lt;/p&gt;
 
 &lt;div class=&#34;biggap&#34;&gt;&lt;/div&gt;
 
-&lt;h2 id=&#34;induction-practice&#34;&gt;Induction Practice&lt;/h2&gt;
+&lt;h2 id=&#34;induction-practice:af81afa25b288e26509ba0728268a3b7&#34;&gt;Induction Practice&lt;/h2&gt;
 
 &lt;p&gt;Take-Away Game: start with $n$ sticks; at each turn a player must remove
 1, 2 or 3 sticks; player who takes the last stick wins.&lt;/p&gt;
@@ -741,7 +850,7 @@ injective.&lt;/p&gt;
       <guid>https://uvacs2102.github.io/class10/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule:cefb84ebc6e45e7105a37c4f4d413033&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;This week you should finish reading MCS Chapter 4 (section 4.5) and
 Section 5.1.  We will discuss Induction (Section 5.1) next class.&lt;/p&gt;
@@ -806,7 +915,7 @@ what do we know about their cardinalities?&lt;/p&gt;
 
 &lt;p&gt;#&lt;/p&gt;
 
-&lt;h1 id=&#34;induction-principle&#34;&gt;Induction Principle&lt;/h1&gt;
+&lt;h1 id=&#34;induction-principle:cefb84ebc6e45e7105a37c4f4d413033&#34;&gt;Induction Principle&lt;/h1&gt;
 
 &lt;p&gt;Let $P$ be a predicated on $\mathbb{N}$.  If&lt;/p&gt;
 
@@ -821,7 +930,7 @@ what do we know about their cardinalities?&lt;/p&gt;
 &lt;li&gt;$P(m)$ is true for all $m \in \mathbb{N}$.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;template-for-induction-proofs&#34;&gt;Template for Induction Proofs&lt;/h2&gt;
+&lt;h2 id=&#34;template-for-induction-proofs:cefb84ebc6e45e7105a37c4f4d413033&#34;&gt;Template for Induction Proofs&lt;/h2&gt;
 
 &lt;ol&gt;
 &lt;li&gt;State, &amp;ldquo;We prove by induction.&amp;rdquo;&lt;/li&gt;
@@ -833,7 +942,7 @@ what do we know about their cardinalities?&lt;/p&gt;
 
 &lt;p&gt;How is the method of &lt;em&gt;proof by induction principle&lt;/em&gt; similar to and different from &lt;em&gt;proof by well-ordering principle&lt;/em&gt;?&lt;/p&gt;
 
-&lt;h1 id=&#34;power-sets&#34;&gt;Power Sets&lt;/h1&gt;
+&lt;h1 id=&#34;power-sets:cefb84ebc6e45e7105a37c4f4d413033&#34;&gt;Power Sets&lt;/h1&gt;
 
 &lt;p&gt;The &lt;strong&gt;power set&lt;/strong&gt; of $A$ ($\textrm{pow}(A)$)is the set of all subsets of $A$:
 $$
@@ -1006,17 +1115,6 @@ https://github.com/ION28/CS2102_ChallengeProblemSolutions/blob/master/CP1_NAND_B
 
 &lt;p&gt;His write-up of the solution, including a list of all 200 ways to
 define XOR using 5 NAND operations is here: &lt;a href=&#34;https://uvacs2102.github.io/docs/jts5np_Challenge01_NAND_BruteForce_Submission_2.pdf&#34;&gt;Solution (PDF)&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Problem Set 4</title>
-      <link>https://uvacs2102.github.io/ps4posted/</link>
-      <pubDate>Sat, 16 Sep 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://uvacs2102.github.io/ps4posted/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps4&#34;&gt;&lt;strong&gt;Problem Set 4&lt;/strong&gt;&lt;/a&gt; [&lt;a href=&#34;https://uvacs2102.github.io/docs/ps4.pdf&#34;&gt;PDF&lt;/a&gt;] is now posted and
-is due &lt;strong&gt;Friday, 22 September at 6:29:00pm&lt;/strong&gt;.&lt;/p&gt;
 </description>
     </item>
     

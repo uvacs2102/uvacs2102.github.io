@@ -151,7 +151,110 @@
   </header>
   
   
-  <p class="fronthead"><A href="">Class 15: Recursive Data Types</a> (Wed, 18 Oct 2017)</p>
+  <p class="fronthead"><A href="">Class 16: Structural Induction</a> (Thu, 19 Oct 2017)</p>
+    
+
+<h3 id="schedule:e5faf2b6fe551ee3e6bfd5f1acfee2f5">Schedule</h3>
+
+<p><a href="/ps/ps7"><strong>Problem Set 6</strong></a> is due <strong>tomorrow at 6:29pm</strong>. Make sure to read the corrected version of Problem 7.</p>
+
+<p><div class="notpdf">
+   <center>
+<script async class="speakerdeck-embed" data-id="df7755f817fe4902abc3b73573f79752" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+   </center></p>
+
+<p><div class="highlightm">
+   <a href="/docs/class16.pdf">See PDF Version for <b>Notes</b></a>.
+   </div></p>
+
+<p></div><!--endpdf--></p>
+
+<p><div class="latex"></p>
+
+<h1 id="lists:e5faf2b6fe551ee3e6bfd5f1acfee2f5">Lists</h1>
+
+<p><strong>Definition.</strong> A <em>list</em> is an ordered sequence of objects.  A list is
+  either the empty list ($\lambda$), or the result of $\text{prepend}(e,
+  l)$ for some object $e$ and list $l$.</p>
+
+<p>\begin{equation<em>}
+\begin{split}
+\text{\em first}(\text{prepend}(e, l)) &amp;= e \
+\text{\em rest}(\text{prepend}(e, l)) &amp;= l \
+\text{\em empty}(\text{prepend}(e, l)) &amp;= \text{\bf False} \
+\text{\em empty}(\text{\bf null}) &amp;= \text{\bf True} \
+\end{split}
+\end{equation</em>}</p>
+
+<p><strong>Definition.</strong> The <em>length</em> of a list, $p$, is:
+\begin{equation<em>}
+\begin{split}
+\begin{cases}
+0 &amp; \text{if}\ p\ \text{is \bf null} \
+\text{\em length}(q) + 1 &amp; \text{otherwise}\ p = \text{\em prepend}(e, q)\ \text{for some object}\ e\ \text{and some list}\ q \
+\end{cases}
+\end{split}
+\end{equation</em>}</p>
+
+<pre><code class="language-Python">def list_length(l):
+    if list_empty(l):
+        return 0
+    else:
+        return 1 + list_length(list_rest(l))
+
+</code></pre>
+
+<p>Prove: for all lists, $p$, <code>list_length(p)</code> returns the length of the list $p$.</p>
+
+<!--page-->
+
+<h2 id="concatenation:e5faf2b6fe551ee3e6bfd5f1acfee2f5">Concatenation</h2>
+
+<p><strong>Definition.</strong> The <em>concatenation</em> of two lists, $p = (p_1, p_2, \cdots, p_n)$ and $q = (q_1, q_2, \cdots, q_m)$ is
+$$(p_1, p_2, \cdots, p_n, q_1, q_2, \cdots, q_m).$$</p>
+
+<p>Provide a <em>constructuve</em> definition of <em>concatenation</em>.</p>
+
+<p>Note that $\text{prepend}(p,q)$ is not a good idea for two reasons. If we use this definition, then the first element of the constructed list will be the object (list) $p$ (as a whole) rather than the first element $p_1$ of the list $p$. Also, if we want to <em>only</em> define lists of <em>specific</em> objects, for example integers, we can still use the same recursive/constructive definition of lists by substituting &ldquo;object&rdquo; with &ldquo;integer&rdquo;, but in that case $\text{prepend}(p,q)$ will not even well defined, as it can only accept integers as first input.</p>
+
+<p>#</p>
+
+<h2 id="structural-induction:e5faf2b6fe551ee3e6bfd5f1acfee2f5">Structural Induction</h2>
+
+<p>To prove proposition $P(x)$ for element $x \in D$ where $D$ is a
+recursively-constructed data type, we do two things:</p>
+
+<ol>
+<li>Show $P(x)$ is true for all $x \in D$ that are defined using base cases.</li>
+<li>Show that if $P(y)$ is true for element $y$ and $x$ is constructed from $y$
+using any &ldquo;construct case&rdquo; rules, then $P(x)$ is true as well.</li>
+</ol>
+
+<h2 id="comparing-various-forms-of-induction:e5faf2b6fe551ee3e6bfd5f1acfee2f5">Comparing Various forms of Induction</h2>
+
+<p>\begin{center}
+\begin{tabular}{lccc}
+&amp; {\bf Regular Induction} &amp; {\bf Invariant Principle} &amp; {\bf Structural Induction} \ \hline
+Works on: &amp; natural numbers &amp; state machines &amp; data types \
+To prove $P(\cdot)$ &amp; {\em for all natural numbers} &amp; {\em for all reachable states} &amp; {\em for all data type objects} \
+Prove {\bf base case(s)} &amp; $P(0)$ &amp; $P(q_0)$ &amp; $P(\text{base object(s)})$ \
+and {\bf inductive step} &amp; $\forall m \in \mathbb{N} \ldotp$ &amp; $\forall (q, r) \in G \ldotp $ &amp; $\forall s \in \text{\em Type} \ldotp$ \
+  &amp; $P(m) \implies P(m+1)$ &amp; $P(q) \implies P&reg;$ &amp; $P(s) \implies P(t)$ \
+ &amp; &amp; &amp; $\quad \forall t\ \text{constructable from}\ s$ \
+\end{tabular}
+\end{center}</p>
+
+<p>#
+##</p>
+
+<p>Prove. For any two lists, $p$ and $q$, $\text{length}(p + q) = \text{length}(p) + \text{length}(q)$.</p>
+
+<p>#</p>
+
+<p></div></p>
+ 
+  
+  <p class="fronthead"><A href="">Class 15: Recursive Data Types</a> (Tue, 17 Oct 2017)</p>
     
 
 <h3 id="schedule:82758e0aba59693fe0fb1bf5353fa6c7">Schedule</h3>
@@ -663,7 +766,7 @@ properties <em>might</em> be impacted?</p>
   <p class="fronthead"><A href="">Class 11: Induction Practice</a> (Tue, 26 Sep 2017)</p>
     
 
-<h3 id="schedule">Schedule</h3>
+<h3 id="schedule:af81afa25b288e26509ba0728268a3b7">Schedule</h3>
 
 <p><a href="/ps/ps5"><strong>Problem Set 5</strong></a> is due <strong>Friday at 6:29pm</strong>.</p>
 
@@ -676,7 +779,7 @@ properties <em>might</em> be impacted?</p>
 <li>more than 10 requests implies we should spend Thursday’s class on reviewing requested topics, no exam exemptions.</li>
 </ul>
 
-<h3 id="exam-1">Exam 1</h3>
+<h3 id="exam-1:af81afa25b288e26509ba0728268a3b7">Exam 1</h3>
 
 <p>Exam 1 will be in class on Thursday, 5 October.  You can get a good
 idea what to expect on Exam 1 by looking at the <a href="/docs/practiceexam1.pdf">Practice Exam
@@ -759,7 +862,7 @@ benefit from doing #3 and #4 as well.</p>
 
 <p><div class="latex"></p>
 
-<h2 id="induction-principle">Induction Principle</h2>
+<h2 id="induction-principle:af81afa25b288e26509ba0728268a3b7">Induction Principle</h2>
 
 <p>Let $P$ be a predicated on $\mathbb{N}$.  If</p>
 
@@ -782,7 +885,7 @@ benefit from doing #3 and #4 as well.</p>
 
 <div class="biggap"></div>
 
-<h3 id="generalizing-to-well-ordered-sets">Generalizing to Well-Ordered Sets</h3>
+<h3 id="generalizing-to-well-ordered-sets:af81afa25b288e26509ba0728268a3b7">Generalizing to Well-Ordered Sets</h3>
 
 <p>We can use Induction for any well-ordered set, where there is an
 operation (like &lsquo;+ 1&rsquo;) and a starting point (like &lsquo;0&rsquo;) that covers the
@@ -792,7 +895,7 @@ whole set.</p>
 
 <div class="biggap"></div>
 
-<h2 id="induction-practice">Induction Practice</h2>
+<h2 id="induction-practice:af81afa25b288e26509ba0728268a3b7">Induction Practice</h2>
 
 <p>Take-Away Game: start with $n$ sticks; at each turn a player must remove
 1, 2 or 3 sticks; player who takes the last stick wins.</p>
@@ -805,14 +908,6 @@ Player 1 has a winning strategy or Player 2 does.</p></li>
 </ul>
 
 <p></div></p>
- 
-  
-  <p class="fronthead"><A href="">Problem Set 5</a> (Sat, 23 Sep 2017)</p>
-    <p><a href="/ps/ps5"><strong>Problem Set 5</strong></a> [<a href="/docs/ps5.pdf">PDF</a>] is now posted and
-is due <strong>Friday, 29 September at 6:29:00pm</strong>. Please read the
-collaboration policy carefully - unlike previous assignments the
-<em>Students</em> &rarr; <em>Submissions</em> relation for this assignment may not be
-injective.</p>
  
   
   

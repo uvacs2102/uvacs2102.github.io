@@ -151,6 +151,248 @@
   </header>
   
   
+  <p class="fronthead"><A href="">Class 6: Quantifiers and More</a> (Thu, 7 Sep 2017)</p>
+    
+
+<h3 id="schedule:647dbe1e5b68015679492d34153c74f5">Schedule</h3>
+
+<p>Everyone should have received their graded PS1 by now. Please read <a href="https://collab.its.virginia.edu/access/content/group/9bd99d1c-6f18-4542-a7d1-8ffc4fccbd3d/ps1solutions.pdf">the comments posted in collab</a>.</p>
+
+<p><a href="/ps/ps2"><strong>Problem Set 2</strong></a> is due <strong>Friday at 6:29pm</strong>.</p>
+
+<p>You should finish reading MCS Chapter 3 by Tuesday (12 September).</p>
+
+<p><div class="notpdf">
+   <center>
+<script async class="speakerdeck-embed" 
+data-id="44b72b8383c14676af241944ea541667" data-ratio="1.77777777777778" 
+src="//speakerdeck.com/assets/embed.js"></script>
+   </center></p>
+
+<p><div class="highlightm">
+   <a href="/docs/class6.pdf">See PDF Version for <b>Notes and Questions</b></a>.
+   </div></p>
+
+<h2 id="links:647dbe1e5b68015679492d34153c74f5">Links</h2>
+
+<p>If you believe real computing systems have the property that the values
+you read from memory will match what you wrote there, see:</p>
+
+<p>Sudhakar Govindavajhala and Andrew W. Appel. <a href="http://sip.cs.princeton.edu/pub/memerr.pdf"><em>Using Memory Errors to Attack a Virtual Machine</em></a>, IEEE Symposium on Security and Privacy 2003.</p>
+
+<p>Bianca Schroeder, Eduardo Pinheiro, Wolf-Dietrich Weber. <a href="http://www.cs.utoronto.ca/~bianca/papers/sigmetrics09.pdf"><em>DRAM Errors
+in the Wild: A Large-Scale Field
+Study</em></a>. SIGMETRICS 2009.</p>
+
+<p>Kaveh Razavi, Ben Gras, Erik Bosman, Bart Preneel, Cristiano Giuffrida
+and Herbert Bos. <a href="https://www.usenix.org/conference/usenixsecurity16/technical-sessions/presentation/razavi"><em>Flip Feng Shui: Hammering a Needle in the Software
+Stack</em></a>. USENIX
+Security 2016.</p>
+
+<p>Yuan Xiao, Xiaokuan Zhang, Yinqian Zhang, and Radu Teodorescu. <a href="https://www.usenix.org/system/files/conference/usenixsecurity16/sec16_paper_xiao.pdf"><em>One Bit Flips, One Cloud Flops: Cross-VM Row Hammer Attacks and Privilege Escalation</em></a>, USENIX Security 2016.</p>
+
+<p>Sahand Saba&rsquo;s <a href="http://sahandsaba.com/understanding-sat-by-implementing-a-simple-sat-solver-in-python.html"><em>Understanding SAT by Implementing a Simple SAT Solver in
+Python</em></a>  [<a href="https://github.com/evansuva/simple-sat">Code with Dave&rsquo;s modifications: https://github.com/evansuva/simple-sat</a>]</p>
+
+<p><a href="https://baldur.iti.kit.edu/sat-competition-2017/">SAT Competition 2017</a></p>
+
+<p>Millennium Problems on <a href="http://www.claymath.org/millennium-problems/">Clay institute&rsquo;s
+website</a>. Whether or not we can<br />
+solve the <em>satisfiability</em> of a given CNF or 3CNF formula in polynomial time,
+is the P vs. NP question in this list.</p>
+
+<p></div><!--endpdf--></p>
+
+<p><div class="latex"></p>
+
+<h1 id="programs-and-proofs:647dbe1e5b68015679492d34153c74f5">Programs and Proofs</h1>
+
+<p>What does it mean to <em>test</em> a computing system?  What does it mean for a computing system to <em>always behave correctly</em>?</p>
+
+<div class="biggap"></div>
+
+<p>Can a mathematical proof guarantee a real computing system will behave correctly?</p>
+
+<div class="biggap"></div>
+
+<h1 id="minima:647dbe1e5b68015679492d34153c74f5">Minima</h1>
+
+<p>The <em>minimum</em> of a set with respect to some comparator operator is the
+element which is &ldquo;less than&rdquo; (according to that comparator) every
+other element: $m \in S$ is the <em>minimum</em> of $S$ if and only if
+$\forall x \in S - { m } . m \prec x$.</p>
+
+<p>$$
+\forall S \in \textrm{pow}(\mathbb{N}) - { \varnothing } \ldotp \exists m \in S\ldotp \forall x \in S - {m}\ldotp m &lt; x
+$$</p>
+
+<h1 id="formulas-propositions-and-inference-rules:647dbe1e5b68015679492d34153c74f5">Formulas, Propositions, and Inference Rules</h1>
+
+<p>$P \implies Q$ is a <em>formula</em>.<br />
+$\forall P \in { T, F } . \forall Q \in { T, F } . P \implies Q$ is a <em>proposition</em>.<br />
+$\infer{Q}{P}$ is an <em>inference rule</em>.</p>
+
+<p>A <em>formula</em> is <em>satisfiable</em> if there is some way to make it true.</p>
+
+<p>$P \implies Q$ is satisfiable:</p>
+
+<p>$\exists P \in { T, F } . \exists Q \in {T, F } . P \implies Q$</p>
+
+<p>We can show a formula is satisfiable by giving <em>one</em> choice for the
+variable assignments that makes it true. For example, $P = T$, $Q =
+T$.</p>
+
+<p>A <em>formula</em> is <em>valid</em> if there is no way to make it false.</p>
+
+<p>$P \implies Q$ is <em>not</em> valid:</p>
+
+<p>$\forall P \in { T, F } . \forall Q \in {T, F } . P \implies Q$</p>
+
+<p>This proposition is false, we can chose $P = T$, $Q = F$.</p>
+
+<p>An <em>inference rule</em> is sound if it never leads to a false conclusion. An inference rule
+$\infer{Q}{P}$ is sound if and only if the formula
+$P \implies Q$ is valid. So, this way, we can find out whether an inference rule is sound or not, by checking out whether the corresponding formula is valid or not.</p>
+
+<h1 id="negating-quantifiers:647dbe1e5b68015679492d34153c74f5">Negating Quantifiers</h1>
+
+<p>What is the negation of $\forall x \in S . P(x)$?
+<div class="gap"></div></p>
+
+<p>What is the negation of $\exists x \in S . P(x)$?
+<div class="gap"></div></p>
+
+<h1 id="satisfiability:647dbe1e5b68015679492d34153c74f5">Satisfiability</h1>
+
+<p><strong>Definition.</strong> A formula is in <em>SAT</em> if it is in CNF form and it is
+  satisfiable.</p>
+
+<p><strong>Definition.</strong> A formula is in <em>3SAT</em> if it is in 3CNF form and it is
+  satisfiable.</p>
+
+<p>$$
+(x_1 \vee x_2 \vee x_3) \wedge (x_1 \vee \overline{x_2} \vee x_3) \wedge (\overline{x_1} \vee x_2 \vee \overline{x_3})
+$$</p>
+
+<p>\begin{center} \tiny \begin{math} (x<em>{48} \vee x</em>{4} \vee \overline{x<em>{9}})
+\wedge (\overline{x</em>{44}} \vee x<em>{50} \vee \overline{x</em>{37}}) \wedge
+(\overline{x<em>{8}} \vee \overline{x</em>{1}} \vee x<em>{28}) \wedge (x</em>{21} \vee
+x<em>{27} \vee \overline{x</em>{32}}) \wedge (x<em>{17} \vee x</em>{29} \vee
+\overline{x<em>{30}}) \wedge (x</em>{30} \vee x<em>{24} \vee x</em>{37}) \wedge
+(\overline{x<em>{22}} \vee \overline{x</em>{27}} \vee \overline{x<em>{44}}) \wedge
+(x</em>{8} \vee \overline{x<em>{25}} \vee \overline{x</em>{24}}) \wedge
+(\overline{x<em>{44}} \vee x</em>{50} \vee x<em>{14}) \wedge (x</em>{45} \vee x<em>{15} \vee
+x</em>{37}) \wedge (\overline{x<em>{16}} \vee x</em>{14} \vee \overline{x<em>{36}}) \wedge
+(\overline{x</em>{33}} \vee x<em>{5} \vee x</em>{26}) \wedge (x<em>{18} \vee
+\overline{x</em>{7}} \vee \overline{x<em>{24}}) \wedge (x</em>{31} \vee x<em>{38} \vee
+x</em>{28}) \wedge (x<em>{31} \vee \overline{x</em>{33}} \vee \overline{x<em>{8}}) \wedge
+(x</em>{49} \vee x<em>{7} \vee \overline{x</em>{6}}) \wedge (x<em>{34} \vee
+\overline{x</em>{8}} \vee x<em>{46}) \wedge (x</em>{4} \vee \overline{x<em>{5}} \vee
+\overline{x</em>{35}}) \wedge (x<em>{43} \vee x</em>{27} \vee x<em>{39}) \wedge
+(\overline{x</em>{46}} \vee \overline{x<em>{40}} \vee \overline{x</em>{27}}) \wedge
+(\overline{x<em>{25}} \vee x</em>{14} \vee \overline{x<em>{49}}) \wedge (x</em>{38} \vee
+x<em>{5} \vee x</em>{15}) \wedge (x<em>{9} \vee x</em>{14} \vee \overline{x<em>{19}}) \wedge
+(x</em>{45} \vee \overline{x<em>{42}} \vee \overline{x</em>{39}}) \wedge (x<em>{34} \vee
+\overline{x</em>{22}} \vee \overline{x<em>{28}}) \wedge (\overline{x</em>{20}} \vee
+x<em>{15} \vee \overline{x</em>{8}}) \wedge (\overline{x<em>{44}} \vee
+\overline{x</em>{10}} \vee \overline{x<em>{9}}) \wedge (x</em>{22} \vee
+\overline{x<em>{31}} \vee x</em>{14}) \wedge (\overline{x<em>{9}} \vee
+\overline{x</em>{42}} \vee \overline{x<em>{15}}) \wedge (\overline{x</em>{40}} \vee
+x<em>{12} \vee \overline{x</em>{32}}) \wedge (\overline{x<em>{20}} \vee
+\overline{x</em>{6}} \vee \overline{x<em>{15}}) \wedge (\overline{x</em>{37}} \vee
+x<em>{39} \vee \overline{x</em>{23}}) \wedge (\overline{x<em>{3}} \vee
+\overline{x</em>{40}} \vee \overline{x<em>{32}}) \wedge (\overline{x</em>{4}} \vee
+\overline{x<em>{25}} \vee x</em>{7}) \wedge (\overline{x<em>{20}} \vee
+\overline{x</em>{36}} \vee \overline{x<em>{37}}) \wedge (\overline{x</em>{40}} \vee
+\overline{x<em>{35}} \vee x</em>{39}) \wedge (\overline{x<em>{43}} \vee
+\overline{x</em>{40}} \vee \overline{x<em>{7}}) \wedge (x</em>{34} \vee x<em>{44} \vee
+x</em>{26}) \wedge (x<em>{13} \vee x</em>{27} \vee x<em>{28}) \wedge (x</em>{12} \vee
+\overline{x<em>{36}} \vee x</em>{7}) \wedge (\overline{x<em>{16}} \vee x</em>{9} \vee
+\overline{x<em>{24}}) \wedge (\overline{x</em>{48}} \vee x<em>{14} \vee x</em>{28}) \wedge
+(x<em>{16} \vee x</em>{4} \vee x<em>{40}) \wedge (\overline{x</em>{25}} \vee x<em>{15} \vee
+x</em>{37}) \wedge (x<em>{47} \vee \overline{x</em>{26}} \vee \overline{x<em>{23}}) \wedge
+(x</em>{4} \vee \overline{x<em>{13}} \vee x</em>{36}) \wedge (x<em>{48} \vee
+\overline{x</em>{13}} \vee \overline{x<em>{37}}) \wedge (x</em>{4} \vee x<em>{35} \vee
+\overline{x</em>{27}}) \wedge (\overline{x<em>{22}} \vee x</em>{47} \vee x<em>{26}) \wedge
+(\overline{x</em>{22}} \vee \overline{x<em>{46}} \vee x</em>{27}) \wedge
+(\overline{x<em>{20}} \vee x</em>{49} \vee x<em>{11}) \wedge (x</em>{42} \vee
+\overline{x<em>{10}} \vee x</em>{28}) \wedge (\overline{x<em>{45}} \vee x</em>{28} \vee
+\overline{x<em>{37}}) \wedge (x</em>{14} \vee \overline{x<em>{32}} \vee
+\overline{x</em>{23}}) \wedge (x<em>{22} \vee x</em>{14} \vee x<em>{23}) \wedge
+(\overline{x</em>{17}} \vee \overline{x<em>{46}} \vee \overline{x</em>{7}}) \wedge
+(\overline{x<em>{31}} \vee x</em>{46} \vee \overline{x<em>{50}}) \wedge (x</em>{34} \vee
+\overline{x<em>{41}} \vee x</em>{43}) \wedge (x<em>{17} \vee \overline{x</em>{9}} \vee
+x<em>{15}) \wedge (x</em>{46} \vee x<em>{14} \vee \overline{x</em>{12}}) \wedge
+(\overline{x<em>{20}} \vee x</em>{12} \vee x<em>{14}) \wedge (x</em>{41} \vee x<em>{42} \vee
+\overline{x</em>{15}}) \wedge (x<em>{48} \vee x</em>{46} \vee \overline{x<em>{36}}) \wedge
+(\overline{x</em>{22}} \vee \overline{x<em>{4}} \vee \overline{x</em>{49}}) \wedge
+(x<em>{22} \vee x</em>{12} \vee \overline{x<em>{42}}) \wedge (x</em>{13} \vee
+\overline{x<em>{38}} \vee x</em>{39}) \wedge (x<em>{48} \vee \overline{x</em>{16}} \vee
+\overline{x<em>{27}}) \wedge (x</em>{17} \vee \overline{x<em>{18}} \vee
+\overline{x</em>{26}}) \wedge (x<em>{48} \vee \overline{x</em>{40}} \vee
+\overline{x<em>{35}}) \wedge (\overline{x</em>{43}} \vee \overline{x<em>{40}} \vee
+\overline{x</em>{49}}) \wedge (x<em>{29} \vee x</em>{11} \vee \overline{x<em>{32}}) \wedge
+(x</em>{33} \vee \overline{x<em>{17}} \vee x</em>{39}) \wedge (\overline{x<em>{25}} \vee
+\overline{x</em>{9}} \vee \overline{x<em>{6}}) \wedge (x</em>{40} \vee \overline{x<em>{50}}
+\vee x</em>{19}) \wedge (x<em>{8} \vee x</em>{10} \vee \overline{x<em>{27}}) \wedge (x</em>{5}
+\vee x<em>{9} \vee \overline{x</em>{26}}) \wedge (x<em>{45} \vee \overline{x</em>{38}} \vee
+\overline{x<em>{27}}) \wedge (\overline{x</em>{4}} \vee \overline{x<em>{40}} \vee
+\overline{x</em>{42}}) \wedge (x<em>{21} \vee x</em>{50} \vee x<em>{12}) \wedge
+(\overline{x</em>{8}} \vee \overline{x<em>{14}} \vee \overline{x</em>{42}}) \wedge
+(\overline{x<em>{17}} \vee x</em>{47} \vee \overline{x<em>{27}}) \wedge (x</em>{49} \vee
+\overline{x<em>{12}} \vee \overline{x</em>{6}}) \wedge (x<em>{27} \vee x</em>{49} \vee
+\overline{x<em>{32}}) \wedge (\overline{x</em>{29}} \vee \overline{x<em>{12}} \vee
+\overline{x</em>{26}}) \wedge (x<em>{48} \vee \overline{x</em>{2}} \vee x<em>{6}) \wedge
+(x</em>{16} \vee x<em>{36} \vee x</em>{49}) \wedge (x<em>{33} \vee \overline{x</em>{12}} \vee
+\overline{x<em>{26}}) \wedge (\overline{x</em>{33}} \vee x<em>{29} \vee x</em>{49}) \wedge
+(\overline{x<em>{48}} \vee x</em>{2} \vee x<em>{19}) \wedge (x</em>{25} \vee x<em>{36} \vee
+x</em>{49}) \wedge (x<em>{21} \vee x</em>{40} \vee \overline{x<em>{14}}) \wedge
+(\overline{x</em>{34}} \vee \overline{x<em>{44}} \vee \overline{x</em>{6}}) \wedge
+(x<em>{48} \vee \overline{x</em>{50}} \vee \overline{x<em>{1}}) \wedge (x</em>{5} \vee
+\overline{x<em>{12}} \vee x</em>{7}) \wedge (x<em>{21} \vee \overline{x</em>{35}} \vee
+\overline{x<em>{27}}) \wedge (\overline{x</em>{22}} \vee \overline{x<em>{16}} \vee
+\overline{x</em>{14}}) \wedge (\overline{x<em>{13}} \vee \overline{x</em>{35}} \vee
+\overline{x<em>{12}}) \wedge (\overline{x</em>{4}} \vee \overline{x<em>{35}} \vee
+\overline{x</em>{42}}) \wedge (\overline{x<em>{50}} \vee \overline{x</em>{40}} \vee
+x<em>{7}) \wedge (x</em>{25} \vee x<em>{47} \vee \overline{x</em>{12}}) \end{math}
+\end{center}</p>
+
+<h2 id="converting-truth-tables-to-dnf:647dbe1e5b68015679492d34153c74f5">Converting Truth Tables to DNF</h2>
+
+<p>\begin{tabular}{cc|cc}
+$P$ &amp; $Q$ &amp; $P \implies Q$ &amp; $P \oplus Q$ \ \hline
+\T &amp; \T   &amp; \T &amp; \F \
+\T &amp; \F   &amp; \F &amp; \T \
+\F &amp; \T   &amp; \T &amp; \T \
+\F &amp; \F   &amp; \T &amp; \F \
+\end{tabular}</p>
+
+<p>The output of the operator is \T\ if and only if the inputs do match <em>one row</em> where the output is \T.  So, to get a DNF we can go over all the rows where hte output is \T, and for each write a clause that means we <em>are</em> in that row. Then we OR all such (conjunctive) clauses. For example, for $P \oplus Q$ we get</p>
+
+<p>$$(P \wedge \neg Q) \vee (\neg P \wedge Q)$$</p>
+
+<h2 id="converting-truth-tables-to-cnf:647dbe1e5b68015679492d34153c74f5">Converting Truth Tables to CNF</h2>
+
+<p>\begin{tabular}{cc|cc}
+$P$ &amp; $Q$ &amp; $P \implies Q$ &amp; $P \oplus Q$ \ \hline
+\T &amp; \T   &amp; \T &amp; \F \
+\T &amp; \F   &amp; \F &amp; \T \
+\F &amp; \T   &amp; \T &amp; \T \
+\F &amp; \F   &amp; \T &amp; \F \
+\end{tabular}</p>
+
+<p>The output of the operator is \T\ if and only if the inputs do not match <em>any row</em> where the output is \F.  So, to get a CNF we can go over all the rows where hte output is \F, and for each write a clause that means we are <em>not</em> in that row. Then we AND all such clauses. For example, for $P \oplus Q$ we get</p>
+
+<p>$$(\neg P \vee \neg Q) \wedge (P \vee Q)$$</p>
+
+<h2 id="the-related-3cnf-formulation:647dbe1e5b68015679492d34153c74f5">The related 3CNF formulation</h2>
+
+<p>When we are only interested to know whether or not a given formula is satisfiable, we can write a 3CNF that is satisfiable iff the original formula is. In order to do that, we first write an equivalent CNF, and then convert it to a 3CNF (which is not necessarily equivalent, but only guarantees to preserve the <em>satisfiability</em> feature) as follow. For each clause with less than 3 literals such as $(A \lor \neg B)$ we add a dummy variable $C$ (only for this clause) and interprete the $(A \lor \neg B)$ as a formula over all of $A,B,C$ and write a CNF for them (which happens to be 3CNF!). For longer clauses such as
+$(A \lor B \lor C \lor D)$ we do another trick of breaking them into smaller parts using new dummy variables as follows $(A \lor B \lor \neg X) \wedge (\neg X \lor C \lor D).$</p>
+
+<p></div></p>
+ 
+  
   <p class="fronthead"><A href="">Problem Set 1 Comments</a> (Wed, 6 Sep 2017)</p>
     <p>The Problem Set 1 comments are now posted in collab: <a href="https://collab.its.virginia.edu/access/content/group/9bd99d1c-6f18-4542-a7d1-8ffc4fccbd3d/ps1solutions.pdf">PDF</a></p>
  
@@ -158,7 +400,7 @@
   <p class="fronthead"><A href="">Class 5: CNF, Computing, Quantifiers</a> (Tue, 5 Sep 2017)</p>
     
 
-<h3 id="schedule:d690e1859ec274fb7ed997cd7db3fba5">Schedule</h3>
+<h3 id="schedule">Schedule</h3>
 
 <p><a href="/ps/ps2"><strong>Problem Set 2</strong></a> is due <strong>Friday at 6:29pm</strong>.</p>
 
@@ -178,7 +420,7 @@
   would include a proof that no shorter formula exists.
    </div></p>
 
-<h2 id="links:d690e1859ec274fb7ed997cd7db3fba5">Links</h2>
+<h2 id="links">Links</h2>
 
 <p>If you want to learn more about how to learn the logic implemented by a chip
 and cryptosystems used in car immobolizers, see <a href="https://www.cs.virginia.edu/~evans/pubs/usenix08/usenix08.pdf"><em>Reverse-Engineering a
@@ -193,7 +435,7 @@ cars.</p>
 
 <p><div class="latex"></p>
 
-<h1 id="notes-and-questions:d690e1859ec274fb7ed997cd7db3fba5">Notes and Questions</h1>
+<h1 id="notes-and-questions">Notes and Questions</h1>
 
 <p><strong>Definition: satisfiable.</strong> A logical formula is <em>satisfiable</em> if there
   is <em>some</em> way to make it <strong>true</strong>.  That is, there is at least one
@@ -239,7 +481,7 @@ involving 5 variables?</p>
 
 <!--page-->
 
-<h2 id="logical-quantifiers:d690e1859ec274fb7ed997cd7db3fba5">Logical Quantifiers</h2>
+<h2 id="logical-quantifiers">Logical Quantifiers</h2>
 
 <p>$\forall x \in S. P(x)$ means $P$ holds for <em>every</em> element of $S$.<br />
 $\exists x \in S. P(x)$ means $P$ holds for <em>at least one</em> element of $S$.</p>
@@ -410,7 +652,7 @@ For each of the formulas below, determine if it is _valid_ and if it is _satisfi
   <p class="fronthead"><A href="">Class 3: Well-Ordering Principle</a> (Tue, 29 Aug 2017)</p>
     
 
-<h3 id="schedule:b9b50bf0a87e56763567aaebbc820d47">Schedule</h3>
+<h3 id="schedule">Schedule</h3>
 
 <p>This week, you should read MCS Chapter 2 and MCS Chapter 3 (at least
 through the end of Section 3.4).</p>
@@ -430,7 +672,7 @@ hours schedule.</p>
    <a href="/docs/class3.pdf">See PDF Version for <b>Notes and Questions</b></a>.
    </div></p>
 
-<h2 id="links:b9b50bf0a87e56763567aaebbc820d47">Links</h2>
+<h2 id="links">Links</h2>
 
 <p><a href="https://math.berkeley.edu/~kpmann/Well-ordering.pdf"><em>The Well-Ordering Theorem: one of the Greatest Mathematical Controversies of All Time</em></a>, Kathryn Mann.</p>
 
@@ -438,7 +680,7 @@ hours schedule.</p>
 
 <p><div class="latex"></p>
 
-<h1 id="notes-and-questions:b9b50bf0a87e56763567aaebbc820d47">Notes and Questions</h1>
+<h1 id="notes-and-questions">Notes and Questions</h1>
 
 <p>What properties must a sensible ordering function have?</p>
 
@@ -471,7 +713,7 @@ either satisfy $a&lt;b$ or $b&lt;a$. Second  $a&lt;b$ and $b&lt;a$ should always
 
 <!--page-->
 
-<h3 id="template-for-well-ordering-proofs-section-2-2:b9b50bf0a87e56763567aaebbc820d47">Template for Well-Ordering Proofs (Section 2.2)</h3>
+<h3 id="template-for-well-ordering-proofs-section-2-2">Template for Well-Ordering Proofs (Section 2.2)</h3>
 
 <p>To prove that $P(n)$ is true for all $n \in \mathbb{N}$:</p>
 
@@ -746,34 +988,6 @@ $$</p>
 <em>Through violence you may murder a liar but you can&rsquo;t establish truth. Through violence you may murder a hater, but you can&rsquo;t murder hate. Darkness cannot put out darkness. Only light can do that.</em><br />
 Martin Luther King, Jr., <a href="http://kingencyclopedia.stanford.edu/encyclopedia/documentsentry/where_do_we_go_from_here_delivered_at_the_11th_annual_sclc_convention/"><em>Where Do We Go From Here?</em>, address to SCLC 16 August 1967</a>
    </div></p>
- 
-  
-  <p class="fronthead"><A href="">Scanning Advice</a> (Tue, 22 Aug 2017)</p>
-    <p>For many of the assignments in this class, you will need to submit
-your assignment as a PDF file. For the <a href="/pledge">Course Pledge</a>, you
-need to print out a page, sign it, and submit a scan of the page. For
-the Problem Sets, you will need to submit your responses as a single
-PDF file (this could be generated using a typesetting tool, but it is
-also find to handwrite your solutions, and produce a scan to submit).</p>
-
-<p>If you have access to a scanner and can use that to generate a PDF,
-that should produce good results. There are public scanners to use in
-some of the UVA libraries including in Clemons Library.</p>
-
-<p>If you are careful though, it is also possible to generate a readable
-PDF using a mobile phone camera.  One tool that works for this is
-<a href="https://www.camscanner.com/user/download">CamScanner</a> (available as a
-free app for limited use, for Android, iPhone, and Windows Phone).
-There are lots of other scanning apps that should work - see <a href="https://www.cnet.com/how-to/best-scanning-apps-for-android-and-iphone/"><em>The
-best scanning apps for Android and
-iPhone</em></a>.</p>
-
-<p>Please look at the file you have generated before submitting it.  If
-it does not look readable to you, please do not submit it, but figure
-out how to generate a more readable PDF.  Submitting the Course Pledge
-is a good opportunity to make sure you have figured out a way to
-generate readable PDFs, since you will need to do this for the problem
-sets also.</p>
  
   
   
