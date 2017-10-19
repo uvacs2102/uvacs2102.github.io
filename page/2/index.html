@@ -34,7 +34,7 @@
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://uvacs2102.github.io/touch-icon-144-precomposed.png">
 <link href="https://uvacs2102.github.io/favicon.png" rel="icon">
 
-<meta name="generator" content="Hugo 0.16-DEV" />
+<meta name="generator" content="Hugo 0.17" />
 
   <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -151,7 +151,15 @@
   </header>
   
   
-  <p class="fronthead"><A href="">Class 10: Set Cardinality, Induction</a> (Thu, 21 Sep 2017)</p>
+  <p class="fronthead"><A href="/ps5posted/">Problem Set 5</a> (Sat, 23 Sep 2017)</p>
+    <p><a href="/ps/ps5"><strong>Problem Set 5</strong></a> [<a href="/docs/ps5.pdf">PDF</a>] is now posted and
+is due <strong>Friday, 29 September at 6:29:00pm</strong>. Please read the
+collaboration policy carefully - unlike previous assignments the
+<em>Students</em> &rarr; <em>Submissions</em> relation for this assignment may not be
+injective.</p>
+ 
+  
+  <p class="fronthead"><A href="/class10/">Class 10: Set Cardinality, Induction</a> (Thu, 21 Sep 2017)</p>
     
 
 <h3 id="schedule">Schedule</h3>
@@ -264,11 +272,11 @@ can get on your own.)</p>
 <p></div></p>
  
   
-  <p class="fronthead"><A href="">Problem Set 3 Comments</a> (Wed, 20 Sep 2017)</p>
+  <p class="fronthead"><A href="/ps3comments/">Problem Set 3 Comments</a> (Wed, 20 Sep 2017)</p>
     <p>The Problem Set 3 solutions and comments are now posted in collab: <a href="https://collab.its.virginia.edu/access/content/group/9bd99d1c-6f18-4542-a7d1-8ffc4fccbd3d/ps3solutions.pdf">PDF</a></p>
  
   
-  <p class="fronthead"><A href="">Class 9: Relations, Finite Set Cardinality</a> (Tue, 19 Sep 2017)</p>
+  <p class="fronthead"><A href="/class9/">Class 9: Relations, Finite Set Cardinality</a> (Tue, 19 Sep 2017)</p>
     
 
 <h3 id="schedule">Schedule</h3>
@@ -388,7 +396,7 @@ figure out how to do this on your own with what you know now.)</p>
 <p></div></p>
  
   
-  <p class="fronthead"><A href="">NAND/XOR Challenge Solved!</a> (Sat, 16 Sep 2017)</p>
+  <p class="fronthead"><A href="/nandxorchallengesolved/">NAND/XOR Challenge Solved!</a> (Sat, 16 Sep 2017)</p>
     <p>Congratulations to Jake Smith for solving the NAND/XOR challenge from <a href="/class5">Class 5</a>!</p>
 
 <p>The minimum number of NAND gates needed to implement XOR is <strong>5</strong>.</p>
@@ -403,15 +411,15 @@ https://github.com/ION28/CS2102_ChallengeProblemSolutions/blob/master/CP1_NAND_B
 define XOR using 5 NAND operations is here: <a href="/docs/jts5np_Challenge01_NAND_BruteForce_Submission_2.pdf">Solution (PDF)</a></p>
  
   
-  <p class="fronthead"><A href="">Problem Set 4</a> (Sat, 16 Sep 2017)</p>
+  <p class="fronthead"><A href="/ps4posted/">Problem Set 4</a> (Sat, 16 Sep 2017)</p>
     <p><a href="/ps/ps4"><strong>Problem Set 4</strong></a> [<a href="/docs/ps4.pdf">PDF</a>] is now posted and
 is due <strong>Friday, 22 September at 6:29:00pm</strong>.</p>
  
   
-  <p class="fronthead"><A href="">Class 8: Sequences, Relations, Functions</a> (Thu, 14 Sep 2017)</p>
+  <p class="fronthead"><A href="/class8/">Class 8: Sequences, Relations, Functions</a> (Thu, 14 Sep 2017)</p>
     
 
-<h3 id="schedule:3a7d0da174b09b839e2f33e1cfd8fab3">Schedule</h3>
+<h3 id="schedule">Schedule</h3>
 
 <p><a href="/ps/ps3"><strong>Problem Set 3</strong></a> is due <strong>Friday at 6:29pm</strong>.</p>
 
@@ -428,7 +436,7 @@ is due <strong>Friday, 22 September at 6:29:00pm</strong>.</p>
 
 <p><div class="latex"></p>
 
-<h1 id="sequences:3a7d0da174b09b839e2f33e1cfd8fab3">Sequences</h1>
+<h1 id="sequences">Sequences</h1>
 
 <p>A <strong>sequence</strong> is a mathematical datatype that bears similarities to sets. A sequence $S$ also contains some elements, but we usually refer to them as <em>components</em>. There are two major differences between sets and sequences:</p>
 
@@ -438,7 +446,7 @@ is due <strong>Friday, 22 September at 6:29:00pm</strong>.</p>
 <li><p>Different components of a sequence could be equal. For example $(a,b,a)$ has $a$ repeating, and this is a different sequence compared to $(a,b,b)$ even though they both have 3 componetns. If we interprete them as <em>sets</em>, then they will be equal sets with $2$ elements each.</p></li>
 </ol>
 
-<h1 id="cartesian-product:3a7d0da174b09b839e2f33e1cfd8fab3">Cartesian Product</h1>
+<h1 id="cartesian-product">Cartesian Product</h1>
 
 <p>We can use set products to get new sets whose elements are sequences. Cartesian product is a very useful way of doing it.</p>
 
@@ -450,7 +458,7 @@ is due <strong>Friday, 22 September at 6:29:00pm</strong>.</p>
 
 <p>How many elements are in $A \times B$?</p>
 
-<h1 id="relations-and-binary-relations:3a7d0da174b09b839e2f33e1cfd8fab3">Relations and Binary Relations</h1>
+<h1 id="relations-and-binary-relations">Relations and Binary Relations</h1>
 
 <p>A <em>relation</em> between some elements from set $A$ and some elements from set $B$ could be represented by putting all such pairs $(a,b)$ in a set $P$. As you can see, this way, $P$ would be a subset of the cartesian product $A \times B$, namely $P \subseteq A \times B$. More formally we have the following definition.</p>
 
@@ -464,7 +472,7 @@ talk about relations of the form $P \subseteq A \times B \times C$,
 but the binary relation remains a very important data type as it
 allows us to define <em>functions</em>.</p>
 
-<h1 id="functions:3a7d0da174b09b839e2f33e1cfd8fab3">Functions</h1>
+<h1 id="functions">Functions</h1>
 
 <p>The concept of a function $F$ models is a special form of a binary
 relation $R$ between $A$ and $B$ where for every element $a \in A$
@@ -492,11 +500,11 @@ set, called a <em>codomain</em>.</p>
 <p></div></p>
  
   
-  <p class="fronthead"><A href="">Problem Set 2 Comments</a> (Wed, 13 Sep 2017)</p>
+  <p class="fronthead"><A href="/ps2comments/">Problem Set 2 Comments</a> (Wed, 13 Sep 2017)</p>
     <p>The Problem Set 2 solutions and comments are now posted in collab: <a href="https://collab.its.virginia.edu/access/content/group/9bd99d1c-6f18-4542-a7d1-8ffc4fccbd3d/ps2solutions.pdf">PDF</a></p>
  
   
-  <p class="fronthead"><A href="">Class 7: Sets</a> (Tue, 12 Sep 2017)</p>
+  <p class="fronthead"><A href="/class7/">Class 7: Sets</a> (Tue, 12 Sep 2017)</p>
     
 
 <h3 id="schedule">Schedule</h3>
@@ -597,251 +605,9 @@ least a few of these will be on Exam 1.)</p>
 </ol>
  
   
-  <p class="fronthead"><A href="">Problem Set 3</a> (Fri, 8 Sep 2017)</p>
+  <p class="fronthead"><A href="/ps3posted/">Problem Set 3</a> (Fri, 8 Sep 2017)</p>
     <p><a href="/ps/ps3"><strong>Problem Set 3</strong></a> [<a href="/docs/ps3.pdf">PDF</a>] is now posted and
 is due <strong>Friday, 15 September at 6:29:00pm</strong>.</p>
- 
-  
-  <p class="fronthead"><A href="">Class 6: Quantifiers and More</a> (Thu, 7 Sep 2017)</p>
-    
-
-<h3 id="schedule:647dbe1e5b68015679492d34153c74f5">Schedule</h3>
-
-<p>Everyone should have received their graded PS1 by now. Please read <a href="https://collab.its.virginia.edu/access/content/group/9bd99d1c-6f18-4542-a7d1-8ffc4fccbd3d/ps1solutions.pdf">the comments posted in collab</a>.</p>
-
-<p><a href="/ps/ps2"><strong>Problem Set 2</strong></a> is due <strong>Friday at 6:29pm</strong>.</p>
-
-<p>You should finish reading MCS Chapter 3 by Tuesday (12 September).</p>
-
-<p><div class="notpdf">
-   <center>
-<script async class="speakerdeck-embed" 
-data-id="44b72b8383c14676af241944ea541667" data-ratio="1.77777777777778" 
-src="//speakerdeck.com/assets/embed.js"></script>
-   </center></p>
-
-<p><div class="highlightm">
-   <a href="/docs/class6.pdf">See PDF Version for <b>Notes and Questions</b></a>.
-   </div></p>
-
-<h2 id="links:647dbe1e5b68015679492d34153c74f5">Links</h2>
-
-<p>If you believe real computing systems have the property that the values
-you read from memory will match what you wrote there, see:</p>
-
-<p>Sudhakar Govindavajhala and Andrew W. Appel. <a href="http://sip.cs.princeton.edu/pub/memerr.pdf"><em>Using Memory Errors to Attack a Virtual Machine</em></a>, IEEE Symposium on Security and Privacy 2003.</p>
-
-<p>Bianca Schroeder, Eduardo Pinheiro, Wolf-Dietrich Weber. <a href="http://www.cs.utoronto.ca/~bianca/papers/sigmetrics09.pdf"><em>DRAM Errors
-in the Wild: A Large-Scale Field
-Study</em></a>. SIGMETRICS 2009.</p>
-
-<p>Kaveh Razavi, Ben Gras, Erik Bosman, Bart Preneel, Cristiano Giuffrida
-and Herbert Bos. <a href="https://www.usenix.org/conference/usenixsecurity16/technical-sessions/presentation/razavi"><em>Flip Feng Shui: Hammering a Needle in the Software
-Stack</em></a>. USENIX
-Security 2016.</p>
-
-<p>Yuan Xiao, Xiaokuan Zhang, Yinqian Zhang, and Radu Teodorescu. <a href="https://www.usenix.org/system/files/conference/usenixsecurity16/sec16_paper_xiao.pdf"><em>One Bit Flips, One Cloud Flops: Cross-VM Row Hammer Attacks and Privilege Escalation</em></a>, USENIX Security 2016.</p>
-
-<p>Sahand Saba&rsquo;s <a href="http://sahandsaba.com/understanding-sat-by-implementing-a-simple-sat-solver-in-python.html"><em>Understanding SAT by Implementing a Simple SAT Solver in
-Python</em></a>  [<a href="https://github.com/evansuva/simple-sat">Code with Dave&rsquo;s modifications: https://github.com/evansuva/simple-sat</a>]</p>
-
-<p><a href="https://baldur.iti.kit.edu/sat-competition-2017/">SAT Competition 2017</a></p>
-
-<p>Millennium Problems on <a href="http://www.claymath.org/millennium-problems/">Clay institute&rsquo;s
-website</a>. Whether or not we can<br />
-solve the <em>satisfiability</em> of a given CNF or 3CNF formula in polynomial time,
-is the P vs. NP question in this list.</p>
-
-<p></div><!--endpdf--></p>
-
-<p><div class="latex"></p>
-
-<h1 id="programs-and-proofs:647dbe1e5b68015679492d34153c74f5">Programs and Proofs</h1>
-
-<p>What does it mean to <em>test</em> a computing system?  What does it mean for a computing system to <em>always behave correctly</em>?</p>
-
-<div class="biggap"></div>
-
-<p>Can a mathematical proof guarantee a real computing system will behave correctly?</p>
-
-<div class="biggap"></div>
-
-<h1 id="minima:647dbe1e5b68015679492d34153c74f5">Minima</h1>
-
-<p>The <em>minimum</em> of a set with respect to some comparator operator is the
-element which is &ldquo;less than&rdquo; (according to that comparator) every
-other element: $m \in S$ is the <em>minimum</em> of $S$ if and only if
-$\forall x \in S - { m } . m \prec x$.</p>
-
-<p>$$
-\forall S \in \textrm{pow}(\mathbb{N}) - { \varnothing } \ldotp \exists m \in S\ldotp \forall x \in S - {m}\ldotp m &lt; x
-$$</p>
-
-<h1 id="formulas-propositions-and-inference-rules:647dbe1e5b68015679492d34153c74f5">Formulas, Propositions, and Inference Rules</h1>
-
-<p>$P \implies Q$ is a <em>formula</em>.<br />
-$\forall P \in { T, F } . \forall Q \in { T, F } . P \implies Q$ is a <em>proposition</em>.<br />
-$\infer{Q}{P}$ is an <em>inference rule</em>.</p>
-
-<p>A <em>formula</em> is <em>satisfiable</em> if there is some way to make it true.</p>
-
-<p>$P \implies Q$ is satisfiable:</p>
-
-<p>$\exists P \in { T, F } . \exists Q \in {T, F } . P \implies Q$</p>
-
-<p>We can show a formula is satisfiable by giving <em>one</em> choice for the
-variable assignments that makes it true. For example, $P = T$, $Q =
-T$.</p>
-
-<p>A <em>formula</em> is <em>valid</em> if there is no way to make it false.</p>
-
-<p>$P \implies Q$ is <em>not</em> valid:</p>
-
-<p>$\forall P \in { T, F } . \forall Q \in {T, F } . P \implies Q$</p>
-
-<p>This proposition is false, we can chose $P = T$, $Q = F$.</p>
-
-<p>An <em>inference rule</em> is sound if it never leads to a false conclusion. An inference rule
-$\infer{Q}{P}$ is sound if and only if the formula
-$P \implies Q$ is valid. So, this way, we can find out whether an inference rule is sound or not, by checking out whether the corresponding formula is valid or not.</p>
-
-<h1 id="negating-quantifiers:647dbe1e5b68015679492d34153c74f5">Negating Quantifiers</h1>
-
-<p>What is the negation of $\forall x \in S . P(x)$?
-<div class="gap"></div></p>
-
-<p>What is the negation of $\exists x \in S . P(x)$?
-<div class="gap"></div></p>
-
-<h1 id="satisfiability:647dbe1e5b68015679492d34153c74f5">Satisfiability</h1>
-
-<p><strong>Definition.</strong> A formula is in <em>SAT</em> if it is in CNF form and it is
-  satisfiable.</p>
-
-<p><strong>Definition.</strong> A formula is in <em>3SAT</em> if it is in 3CNF form and it is
-  satisfiable.</p>
-
-<p>$$
-(x_1 \vee x_2 \vee x_3) \wedge (x_1 \vee \overline{x_2} \vee x_3) \wedge (\overline{x_1} \vee x_2 \vee \overline{x_3})
-$$</p>
-
-<p>\begin{center} \tiny \begin{math} (x<em>{48} \vee x</em>{4} \vee \overline{x<em>{9}})
-\wedge (\overline{x</em>{44}} \vee x<em>{50} \vee \overline{x</em>{37}}) \wedge
-(\overline{x<em>{8}} \vee \overline{x</em>{1}} \vee x<em>{28}) \wedge (x</em>{21} \vee
-x<em>{27} \vee \overline{x</em>{32}}) \wedge (x<em>{17} \vee x</em>{29} \vee
-\overline{x<em>{30}}) \wedge (x</em>{30} \vee x<em>{24} \vee x</em>{37}) \wedge
-(\overline{x<em>{22}} \vee \overline{x</em>{27}} \vee \overline{x<em>{44}}) \wedge
-(x</em>{8} \vee \overline{x<em>{25}} \vee \overline{x</em>{24}}) \wedge
-(\overline{x<em>{44}} \vee x</em>{50} \vee x<em>{14}) \wedge (x</em>{45} \vee x<em>{15} \vee
-x</em>{37}) \wedge (\overline{x<em>{16}} \vee x</em>{14} \vee \overline{x<em>{36}}) \wedge
-(\overline{x</em>{33}} \vee x<em>{5} \vee x</em>{26}) \wedge (x<em>{18} \vee
-\overline{x</em>{7}} \vee \overline{x<em>{24}}) \wedge (x</em>{31} \vee x<em>{38} \vee
-x</em>{28}) \wedge (x<em>{31} \vee \overline{x</em>{33}} \vee \overline{x<em>{8}}) \wedge
-(x</em>{49} \vee x<em>{7} \vee \overline{x</em>{6}}) \wedge (x<em>{34} \vee
-\overline{x</em>{8}} \vee x<em>{46}) \wedge (x</em>{4} \vee \overline{x<em>{5}} \vee
-\overline{x</em>{35}}) \wedge (x<em>{43} \vee x</em>{27} \vee x<em>{39}) \wedge
-(\overline{x</em>{46}} \vee \overline{x<em>{40}} \vee \overline{x</em>{27}}) \wedge
-(\overline{x<em>{25}} \vee x</em>{14} \vee \overline{x<em>{49}}) \wedge (x</em>{38} \vee
-x<em>{5} \vee x</em>{15}) \wedge (x<em>{9} \vee x</em>{14} \vee \overline{x<em>{19}}) \wedge
-(x</em>{45} \vee \overline{x<em>{42}} \vee \overline{x</em>{39}}) \wedge (x<em>{34} \vee
-\overline{x</em>{22}} \vee \overline{x<em>{28}}) \wedge (\overline{x</em>{20}} \vee
-x<em>{15} \vee \overline{x</em>{8}}) \wedge (\overline{x<em>{44}} \vee
-\overline{x</em>{10}} \vee \overline{x<em>{9}}) \wedge (x</em>{22} \vee
-\overline{x<em>{31}} \vee x</em>{14}) \wedge (\overline{x<em>{9}} \vee
-\overline{x</em>{42}} \vee \overline{x<em>{15}}) \wedge (\overline{x</em>{40}} \vee
-x<em>{12} \vee \overline{x</em>{32}}) \wedge (\overline{x<em>{20}} \vee
-\overline{x</em>{6}} \vee \overline{x<em>{15}}) \wedge (\overline{x</em>{37}} \vee
-x<em>{39} \vee \overline{x</em>{23}}) \wedge (\overline{x<em>{3}} \vee
-\overline{x</em>{40}} \vee \overline{x<em>{32}}) \wedge (\overline{x</em>{4}} \vee
-\overline{x<em>{25}} \vee x</em>{7}) \wedge (\overline{x<em>{20}} \vee
-\overline{x</em>{36}} \vee \overline{x<em>{37}}) \wedge (\overline{x</em>{40}} \vee
-\overline{x<em>{35}} \vee x</em>{39}) \wedge (\overline{x<em>{43}} \vee
-\overline{x</em>{40}} \vee \overline{x<em>{7}}) \wedge (x</em>{34} \vee x<em>{44} \vee
-x</em>{26}) \wedge (x<em>{13} \vee x</em>{27} \vee x<em>{28}) \wedge (x</em>{12} \vee
-\overline{x<em>{36}} \vee x</em>{7}) \wedge (\overline{x<em>{16}} \vee x</em>{9} \vee
-\overline{x<em>{24}}) \wedge (\overline{x</em>{48}} \vee x<em>{14} \vee x</em>{28}) \wedge
-(x<em>{16} \vee x</em>{4} \vee x<em>{40}) \wedge (\overline{x</em>{25}} \vee x<em>{15} \vee
-x</em>{37}) \wedge (x<em>{47} \vee \overline{x</em>{26}} \vee \overline{x<em>{23}}) \wedge
-(x</em>{4} \vee \overline{x<em>{13}} \vee x</em>{36}) \wedge (x<em>{48} \vee
-\overline{x</em>{13}} \vee \overline{x<em>{37}}) \wedge (x</em>{4} \vee x<em>{35} \vee
-\overline{x</em>{27}}) \wedge (\overline{x<em>{22}} \vee x</em>{47} \vee x<em>{26}) \wedge
-(\overline{x</em>{22}} \vee \overline{x<em>{46}} \vee x</em>{27}) \wedge
-(\overline{x<em>{20}} \vee x</em>{49} \vee x<em>{11}) \wedge (x</em>{42} \vee
-\overline{x<em>{10}} \vee x</em>{28}) \wedge (\overline{x<em>{45}} \vee x</em>{28} \vee
-\overline{x<em>{37}}) \wedge (x</em>{14} \vee \overline{x<em>{32}} \vee
-\overline{x</em>{23}}) \wedge (x<em>{22} \vee x</em>{14} \vee x<em>{23}) \wedge
-(\overline{x</em>{17}} \vee \overline{x<em>{46}} \vee \overline{x</em>{7}}) \wedge
-(\overline{x<em>{31}} \vee x</em>{46} \vee \overline{x<em>{50}}) \wedge (x</em>{34} \vee
-\overline{x<em>{41}} \vee x</em>{43}) \wedge (x<em>{17} \vee \overline{x</em>{9}} \vee
-x<em>{15}) \wedge (x</em>{46} \vee x<em>{14} \vee \overline{x</em>{12}}) \wedge
-(\overline{x<em>{20}} \vee x</em>{12} \vee x<em>{14}) \wedge (x</em>{41} \vee x<em>{42} \vee
-\overline{x</em>{15}}) \wedge (x<em>{48} \vee x</em>{46} \vee \overline{x<em>{36}}) \wedge
-(\overline{x</em>{22}} \vee \overline{x<em>{4}} \vee \overline{x</em>{49}}) \wedge
-(x<em>{22} \vee x</em>{12} \vee \overline{x<em>{42}}) \wedge (x</em>{13} \vee
-\overline{x<em>{38}} \vee x</em>{39}) \wedge (x<em>{48} \vee \overline{x</em>{16}} \vee
-\overline{x<em>{27}}) \wedge (x</em>{17} \vee \overline{x<em>{18}} \vee
-\overline{x</em>{26}}) \wedge (x<em>{48} \vee \overline{x</em>{40}} \vee
-\overline{x<em>{35}}) \wedge (\overline{x</em>{43}} \vee \overline{x<em>{40}} \vee
-\overline{x</em>{49}}) \wedge (x<em>{29} \vee x</em>{11} \vee \overline{x<em>{32}}) \wedge
-(x</em>{33} \vee \overline{x<em>{17}} \vee x</em>{39}) \wedge (\overline{x<em>{25}} \vee
-\overline{x</em>{9}} \vee \overline{x<em>{6}}) \wedge (x</em>{40} \vee \overline{x<em>{50}}
-\vee x</em>{19}) \wedge (x<em>{8} \vee x</em>{10} \vee \overline{x<em>{27}}) \wedge (x</em>{5}
-\vee x<em>{9} \vee \overline{x</em>{26}}) \wedge (x<em>{45} \vee \overline{x</em>{38}} \vee
-\overline{x<em>{27}}) \wedge (\overline{x</em>{4}} \vee \overline{x<em>{40}} \vee
-\overline{x</em>{42}}) \wedge (x<em>{21} \vee x</em>{50} \vee x<em>{12}) \wedge
-(\overline{x</em>{8}} \vee \overline{x<em>{14}} \vee \overline{x</em>{42}}) \wedge
-(\overline{x<em>{17}} \vee x</em>{47} \vee \overline{x<em>{27}}) \wedge (x</em>{49} \vee
-\overline{x<em>{12}} \vee \overline{x</em>{6}}) \wedge (x<em>{27} \vee x</em>{49} \vee
-\overline{x<em>{32}}) \wedge (\overline{x</em>{29}} \vee \overline{x<em>{12}} \vee
-\overline{x</em>{26}}) \wedge (x<em>{48} \vee \overline{x</em>{2}} \vee x<em>{6}) \wedge
-(x</em>{16} \vee x<em>{36} \vee x</em>{49}) \wedge (x<em>{33} \vee \overline{x</em>{12}} \vee
-\overline{x<em>{26}}) \wedge (\overline{x</em>{33}} \vee x<em>{29} \vee x</em>{49}) \wedge
-(\overline{x<em>{48}} \vee x</em>{2} \vee x<em>{19}) \wedge (x</em>{25} \vee x<em>{36} \vee
-x</em>{49}) \wedge (x<em>{21} \vee x</em>{40} \vee \overline{x<em>{14}}) \wedge
-(\overline{x</em>{34}} \vee \overline{x<em>{44}} \vee \overline{x</em>{6}}) \wedge
-(x<em>{48} \vee \overline{x</em>{50}} \vee \overline{x<em>{1}}) \wedge (x</em>{5} \vee
-\overline{x<em>{12}} \vee x</em>{7}) \wedge (x<em>{21} \vee \overline{x</em>{35}} \vee
-\overline{x<em>{27}}) \wedge (\overline{x</em>{22}} \vee \overline{x<em>{16}} \vee
-\overline{x</em>{14}}) \wedge (\overline{x<em>{13}} \vee \overline{x</em>{35}} \vee
-\overline{x<em>{12}}) \wedge (\overline{x</em>{4}} \vee \overline{x<em>{35}} \vee
-\overline{x</em>{42}}) \wedge (\overline{x<em>{50}} \vee \overline{x</em>{40}} \vee
-x<em>{7}) \wedge (x</em>{25} \vee x<em>{47} \vee \overline{x</em>{12}}) \end{math}
-\end{center}</p>
-
-<h2 id="converting-truth-tables-to-dnf:647dbe1e5b68015679492d34153c74f5">Converting Truth Tables to DNF</h2>
-
-<p>\begin{tabular}{cc|cc}
-$P$ &amp; $Q$ &amp; $P \implies Q$ &amp; $P \oplus Q$ \ \hline
-\T &amp; \T   &amp; \T &amp; \F \
-\T &amp; \F   &amp; \F &amp; \T \
-\F &amp; \T   &amp; \T &amp; \T \
-\F &amp; \F   &amp; \T &amp; \F \
-\end{tabular}</p>
-
-<p>The output of the operator is \T\ if and only if the inputs do match <em>one row</em> where the output is \T.  So, to get a DNF we can go over all the rows where hte output is \T, and for each write a clause that means we <em>are</em> in that row. Then we OR all such (conjunctive) clauses. For example, for $P \oplus Q$ we get</p>
-
-<p>$$(P \wedge \neg Q) \vee (\neg P \wedge Q)$$</p>
-
-<h2 id="converting-truth-tables-to-cnf:647dbe1e5b68015679492d34153c74f5">Converting Truth Tables to CNF</h2>
-
-<p>\begin{tabular}{cc|cc}
-$P$ &amp; $Q$ &amp; $P \implies Q$ &amp; $P \oplus Q$ \ \hline
-\T &amp; \T   &amp; \T &amp; \F \
-\T &amp; \F   &amp; \F &amp; \T \
-\F &amp; \T   &amp; \T &amp; \T \
-\F &amp; \F   &amp; \T &amp; \F \
-\end{tabular}</p>
-
-<p>The output of the operator is \T\ if and only if the inputs do not match <em>any row</em> where the output is \F.  So, to get a CNF we can go over all the rows where hte output is \F, and for each write a clause that means we are <em>not</em> in that row. Then we AND all such clauses. For example, for $P \oplus Q$ we get</p>
-
-<p>$$(\neg P \vee \neg Q) \wedge (P \vee Q)$$</p>
-
-<h2 id="the-related-3cnf-formulation:647dbe1e5b68015679492d34153c74f5">The related 3CNF formulation</h2>
-
-<p>When we are only interested to know whether or not a given formula is satisfiable, we can write a 3CNF that is satisfiable iff the original formula is. In order to do that, we first write an equivalent CNF, and then convert it to a 3CNF (which is not necessarily equivalent, but only guarantees to preserve the <em>satisfiability</em> feature) as follow. For each clause with less than 3 literals such as $(A \lor \neg B)$ we add a dummy variable $C$ (only for this clause) and interprete the $(A \lor \neg B)$ as a formula over all of $A,B,C$ and write a CNF for them (which happens to be 3CNF!). For longer clauses such as
-$(A \lor B \lor C \lor D)$ we do another trick of breaking them into smaller parts using new dummy variables as follows $(A \lor B \lor \neg X) \wedge (\neg X \lor C \lor D).$</p>
-
-<p></div></p>
  
   
   
