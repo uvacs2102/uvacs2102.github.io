@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Problem Set 7  &middot; cs2102: Discrete Math</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="" />
+
+<meta name="keywords" content="">
+
+
+<meta property="og:title" content="Problem Set 7  &middot; cs2102: Discrete Math ">
+<meta property="og:site_name" content="cs2102: Discrete Math"/>
+<meta property="og:url" content="https://uvacs2102.github.io/ps/ps7/" />
+<meta property="og:locale" content="en-us">
+
+
+<meta property="og:type" content="article" />
+<meta property="og:description" content=""/>
+<meta property="og:article:published_time" content="0001-01-01T00:00:00Z" />
+<meta property="og:article:modified_time" content="0001-01-01T00:00:00Z" />
+
+  
+
+  
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@" />
+<meta name="twitter:creator" content="@" />
+<meta name="twitter:title" content="Problem Set 7" />
+<meta name="twitter:description" content="" />
+<meta name="twitter:url" content="https://uvacs2102.github.io/ps/ps7/" />
+<meta name="twitter:domain" content="https://uvacs2102.github.io">
+  
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "headline": "Problem Set 7",
+    "author": {
+      "@type": "Person",
+      "name": "http://profiles.google.com/+?rel=author"
+    },
+    "datePublished": "0001-01-01",
+    "description": "",
+    "wordCount":  1275 
+  }
+</script>
+
+
+
+<link rel="canonical" href="https://uvacs2102.github.io/ps/ps7/" />
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://uvacs2102.github.io/touch-icon-144-precomposed.png">
+<link href="https://uvacs2102.github.io/favicon.png" rel="icon">
+
+<meta name="generator" content="Hugo 0.17" />
+
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,400i,700" rel="stylesheet">
+<link rel="stylesheet" href="https://uvacs2102.github.io/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://uvacs2102.github.io/css/style.css">
+
+
+  
+</head>
+<body>
+  <main id="main-wrapper" class="container main_wrapper has-sidebar">
+    <header id="main-header" class="container main_header">
+  <div class="container brand">
+  <div class="container title h1-like">
+  <a class="baselink" href="https://uvacs2102.github.io">
+  cs2102
+
+</a>
+
+</div>
+
+  
+<div class="container topline">
+  
+  Discrete Mathematics
+
+
+</div>
+
+
+</div>
+
+  <nav class="container nav primary no-print">
+  
+
+
+  
+<a href="https://uvacs2102.github.io/syllabus">Syllabus</a>
+
+<a href="https://uvacs2102.github.io/schedule">Schedule</a>
+
+<a href="https://uvacs2102.github.io/officehours">Office Hours</a>
+
+<a href="https://uvacs2102.github.io/docs/mcs.pdf">MCS Book</a>
+
+<a href="https://uvacs2102.github.io/resources">Resources</a>
+
+<a href="https://uvacs2102.github.io/"></a>
+
+<a href="https://uvacs2102.github.io/pledge">Course Pledge</a>
+
+<a href="https://uvacs2102.github.io/ps/ps1">Problem Set 1</a>
+
+<a href="https://uvacs2102.github.io/ps/ps2">Problem Set 2</a>
+
+<a href="https://uvacs2102.github.io/ps/ps3">Problem Set 3</a>
+
+<a href="https://uvacs2102.github.io/ps/ps4">Problem Set 4</a>
+
+<a href="https://uvacs2102.github.io/ps/ps5">Problem Set 5</a>
+
+<a href="https://uvacs2102.github.io/ps/ps6">Problem Set 6</a>
+
+<a href="https://collab.its.virginia.edu/portal/site/9bd99d1c-6f18-4542-a7d1-8ffc4fccbd3d">Collab Site</a>
+
+<a href="https://uvacs2102.github.io/"></a>
+
+<a href="https://uvacs2102.github.io/post">Posts</a>
+
+
+</nav>
+
+<div class="container nav secondary no-print">
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+  
+
+</header>
+
+
+<article id="main-content" class="container main_content single">
+  <header class="container hat">
+  <h1><center>Problem Set 7
+</center></h1>
+
+</header>
+
+  <div class="container content">
+  
+
+<div class="latex">
+   \dbox{{\bf Deliverable:} Submit your responses as a
+single, readable PDF file on the collab site before {\bf 6:29pm} on {\bf
+   Friday, 27 Oct}.  
+}
+</div>
+
+<p><div class="notpdf">
+   <div class="highlightr">
+   <strong>Deliverable:</strong> Submit your responses as a
+single, readable PDF file on the collab site before <strong>6:29pm</strong> on
+   <strong>Friday, 27 October</strong>.
+   </div>
+   </div><!--endpdf--></p>
+
+<h3 id="collaboration-policy-identical-to-ps5">Collaboration Policy (identical to PS5)</h3>
+
+<p>For this assignment, you may work in groups of one to three students
+to write-up a solution together.  If you work with teammates, exactly
+one of your should submit one assignment that represents your
+collective best work with all of your names and UVA ids clearly marked
+on it on it.  <em>Everyone on a team should understand everything you
+turn in for the assignment well enough to be able to produce it
+completely on your own.</em> All teammates must review the submissions
+before it is submitted to make sure you understand everything on it
+and that your name and UVA id are clearly marked on it.</p>
+
+<h2 id="preparation">Preparation</h2>
+
+<p>This problem set focuses on recursive data types and structural
+induction &mdash; read Chapter 7 of the MCS book, and <a href="/class15">Class 15</a>
+and <a href="/class16">Class 16</a>.</p>
+
+<h2 id="directions">Directions</h2>
+
+<p>Problems 1&ndash;8 are expected for everyone; solve as many as you can.  The
+Programming with Procedures problems are optional (see the note before
+them).</p>
+
+<p><div class="notpdf"></p>
+
+<p><div class="highlightm">
+    <a href="/docs/ps7.pdf">Download PDF for Problems</a>.
+   </div></p>
+
+<p><div class="highlightr">
+Your response should be submitted as a single PDF file using collab.  Please read and follow the <a href="https://uvacs2102.github.io/pdfs/">Generating PDFs</a> advice on the course site.
+   </div></p>
+
+<p></div><!--endpdf--></p>
+
+<p><div class="latex"></p>
+
+<h2 id="tsilly-lists">Tsilly Lists</h2>
+
+<p>Consider an alternate way of defining a list from the one we used in
+Class 15 and 16, where instead of <em>prepend</em>, lists are constructed using
+<em>postpend</em> (to avoid confusion, we call our postpended list a <em>tsil</em>,
+and reserve <em>list</em> for the original prepended list):</p>
+
+<blockquote>
+<p>A <em>tsil</em> is either the empty tsil ($\lambda$), or the result of
+  $\text{postpend}(t, e)$ for some tsil $t$ and object $e$.</p>
+</blockquote>
+
+<ol>
+<li><p>Define the meaning of the following operations (similarly to the
+beginning of <a href="/class16">Class 16</a>) for the tsil: $\text{last}: Tsil
+\rightarrow Object$, $\text{frest}: Tsil \rightarrow Tsil$, and
+$\text{empty}: Tsil \rightarrow Boolean$.</p></li>
+
+<li><p>Provide a constructive definition of <em>length</em> for the tsil data type.</p></li>
+
+<li><p>Prove that there is an equivalent tsil for every list.  (Your answer
+should include a clear definition of what <em>equivalent</em> means.)</p></li>
+</ol>
+
+<h2 id="structural-induction-on-trees">Structural Induction on Trees</h2>
+
+<p>In <a href="/class16">Class 16</a>, we defined a recursive data type, lists, that
+only relied on <em>one</em> (smaller) list in its recursive definition.  Here
+we give a recursive definition for the data type of \emph{binary}
+trees. In a binary tree, each node can have 0,1,or 2 children, and
+each node has a label of its own that (in this case) is always a
+natural number.</p>
+
+<p>The main two operators corresponding to the base and the construct cases are are:</p>
+
+<p>\begin{equation<em>}
+\begin{split}
+\qquad &amp; \text{\bf null}: \text{\em Tree} <br />
+       &amp; \text{node}: \text{\em Tree} \times \mathbb{N} \times \text{\em Tree} \rightarrow \text{\em Tree}
+\end{split}
+\end{equation</em>}</p>
+
+<p>We also define the following operations on binary trees.</p>
+
+<p>The meaning of the operations is defined for all trees $t_1, t_2$, and all $n \in \mathbb{N}$, by:
+\begin{equation<em>}
+\begin{split}
+\text{label}: \text{\em Tree} \rightarrow \mathbb{N} \colon \qquad &amp; \text{label}(\text{node}(t_1, n, t_2)) \rightarrow n <br />
+\text{left}: \text{\em Tree} \rightarrow \text{\em Tree} \colon  \qquad &amp; \text{left}(\text{node}(t_1, n, t_2)) \rightarrow t_1 <br />
+\text{right}: \text{\em Tree} \rightarrow \text{\em Tree} \colon \qquad &amp; \text{right}(\text{node}(t_1, n, t_2)) \rightarrow t_2 <br />
+\text{empty}: \text{\em Tree} \rightarrow { \T, \F } \colon  \qquad &amp; \text{empty}(\text{\bf null}) \rightarrow \T <br />
+\qquad &amp; \text{empty}(\text{node}(t_1, n, t_2) \rightarrow \F <br />
+\end{split}
+\end{equation</em>}</p>
+
+<ol>
+<li><p>The <em>height</em> of a tree is the <em>maximum</em> distance (number of edges) from
+its root (the one node that has no parent node) to a leaf. For example the hight of the tree at the bottom of this page is 2. Provide a
+<em>constructive</em> definition of <em>height</em> for our binary tree type.  (Hint:
+the height of $\text{node}(\text{\bf null}, n, \text{\bf null})$ is
+$0$.  The height of $\text{\bf null}$ should also be $0$.)</p></li>
+
+<li><p>Prove that the maximum number of nodes in a binary tree of height $h$
+is $2^{h + 1} - 1$.</p></li>
+</ol>
+
+<p>The in-order traversal of a binary tree is a list of the node labels in
+the order they appear from left-to-right across the tree.  For example,
+the in-order traversal of the tree shown below would be the list $(4, 8,
+9, 13, 22, 27)$.</p>
+
+<p>\begin{center}
+\includegraphics[scale=0.7]{./content/docs/binarytree.pdf}
+\end{center}</p>
+
+<p>We can define $\text{traverse}$ to produce a (prepend) list as follows (note the $+$ operation here is list concatenation, as defined in <a href="/class16">Class 16</a>) :
+\begin{equation<em>}
+\begin{split}
+&amp; \text{traverse}(\text{\bf null}) = \text{\bf null} <br />
+&amp; \text{traverse}(\text{node}(t_1, n, t_2)) = \text{traverse}(t_1) + \text{prepend}(n, \text{traverse}(t_2)) <br />
+\end{split}
+\end{equation</em>}</p>
+
+<ol>
+<li>Prove that for all trees $t$ with $n$ nodes, the result of
+$\text{traverse(t)}$ is a list of length $n$.</li>
+</ol>
+
+<h2 id="ordered-binary-trees">Ordered Binary Trees</h2>
+
+<p>Here we would like to  define an $\text{\em OrderedBinaryTree}$ as a data type where for each node  with label $n$, all of the children in the left sub-tree have labels <em>smaller</em> than $n$, and all the children in the right sub-tree have labels <em>larger</em> than $n$.</p>
+
+<ul>
+<li><p><strong>Base case:</strong> $\text{\bf null} \in \text{\em OrderedBinaryTree}$.</p></li>
+
+<li><p><strong>Constructor case:</strong> if $t_1, t_2 \in \text{\em OrderedBinaryTree}$
+and $n \in \mathbb{N}$, and $(\text{empty}(t_1) \vee \text{maximum}(t_1) &lt; n)$ and
+$(\text{empty}(t_1) \vee \text{minimum}(t_2) &gt; n)$, then $\text{node}(t_1, n, t_2) \in \text{\em OrderedBinaryTree}$.</p></li>
+</ul>
+
+<p>You may assume all the other tree operations (including
+$\text{traverse}$ from question 5) are defined for \text{\em
+OrderedBinaryTree} s also.</p>
+
+<ol>
+<li><p>Define the $\text{minimum}: \text{\em OrderedBinaryTree} \rightarrow
+\mathbb{N}$ and $\text{maximum}: \text{\em OrderedBinaryTree}
+\rightarrow \mathbb{N}$ operations used in the definition of $\text{\em
+OrderedBinaryTree}$ above.</p></li>
+
+<li><p>($\star$) Prove that $\forall t \in \text{\em OrderedBinaryTree}
+\ldotp \text{traverse}(t)$ is an ordered list.  (A list, $p = (p_1, p_2,
+\cdots, p_n)$ is an ordered list if $\forall i \in { 1, \cdots, n-1 }
+\ldotp p<em>i &lt; p</em>{i + 1}$.)</p></li>
+</ol>
+
+<h2 id="programming-with-procedures">Programming with Procedures</h2>
+
+<p>\dbox{These problems are {\em optional}, and provided to give students
+who are interested some experience with functional programming which
+will make you a more powerful, snazzy, and prolific programmer.  You
+do not need to do them to earn &ldquo;gold star&rdquo; level credit on this
+assignment, and nothing on the exams will depend on them.  You will
+receive &ldquo;bonus&rdquo; credit on this assignment for turning in good answers
+to these questions.}</p>
+
+<p>These questions assume you have some experience programming in Python,
+but are sadly lacking in previous experience using procedures as
+parameters and results and realize that you cannot be a true kunoichi
+programmer without becoming adept with programming with procedures.</p>
+
+<p><strong>Download:</strong> <a href="https://uvacs2102.github.io/docs/pairs.py">pairs.py</a> (if the link in the PDF file doesn&rsquo;t work, use <em><a href="https://uvacs2102.github.io/docs/pairs.py">https://uvacs2102.github.io/docs/pairs.py</a></em>).</p>
+
+<p>In <a href="/docs/pairs.py">pairs.py</a>, we defined <code>make_pair</code> and various
+procedures for building and using lists.  You should download this code,
+run it in your favorite Python3 environment, and make sure you
+understand it.</p>
+
+<ol>
+<li><p>Define a function <code>list_tostring(lst)</code> that takes a list (constructed
+using the <code>list_append</code> function from <code>pairs.py</code>) as its input and
+returns a string representation of that list.  For example,
+<code>list_tostring(list_prepend(1, list_prepend(2, list_prepend(3, None))))</code>
+should print out <code>[1, 2, 3]</code>.  (You can use <code>str(x)</code> to turn any Python
+object <code>x</code> into a string.)</p></li>
+
+<li><p>Define a function <code>list_map(fn, lst)</code> that takes as inputs a
+function and a list, and returns a list that is the result of applying
+the input function to each element of <code>lst</code>.  For example,
+<code>list_map(lambda x: x + 1, list123)</code>
+should return the list <code>[2, 3, 4]</code>.</p></li>
+
+<li><p>Define a function <code>list_accumulate(fn, lst, base)</code> that takes as
+inputs a function, a list, and a base value, and returns the result of
+applying the function through the list.  For example,
+<code>list_accumulate(lambda a, b: a + b, lst, 0)</code>
+should return the sum of all the elements in the list, and
+<code>list_accumulate(lambda a, b: a * b, lst, 1)</code>
+should return their product, and <code>list_accumulate(lambda a, b: b + 1, lst, 0)</code>
+should return the length of the list.</p></li>
+
+<li><p>Define <code>list_map</code> (as in problem 10) using <code>list_accumulate</code>.</p></li>
+</ol>
+
+</div>
+
+
+  
+</article>
+      <footer id="main-footer" class="container main_footer">
+  
+
+  <div class="container nav foot no-print">
+  
+
+  <a class="toplink" href="#">back to top</a>
+
+</div>
+
+  <div class="container credits">
+  
+<div class="container footline">
+  
+  <p align="center">cs2102: Discrete Mathematics | University of Virginia, Fall 2017 | <a href="https://www.cs.virginia.edu/evans">David Evans</a> and <a href="https://www.cs.virginia.edu/~mohammad/">Mohammad Mahmoody
+
+
+</div>
+
+
+  
+
+</div>
+
+</footer>
+
+    </main>
+    
+
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-3775212-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+    
+  </body>
+</html>
+

@@ -34,7 +34,7 @@
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://uvacs2102.github.io/touch-icon-144-precomposed.png">
 <link href="https://uvacs2102.github.io/favicon.png" rel="icon">
 
-<meta name="generator" content="Hugo 0.16-DEV" />
+<meta name="generator" content="Hugo 0.17" />
 
   <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -151,7 +151,12 @@
   </header>
   
   
-  <p class="fronthead"><A href="">Class 6: Quantifiers and More</a> (Thu, 7 Sep 2017)</p>
+  <p class="fronthead"><A href="/ps3posted/">Problem Set 3</a> (Fri, 8 Sep 2017)</p>
+    <p><a href="/ps/ps3"><strong>Problem Set 3</strong></a> [<a href="/docs/ps3.pdf">PDF</a>] is now posted and
+is due <strong>Friday, 15 September at 6:29:00pm</strong>.</p>
+ 
+  
+  <p class="fronthead"><A href="/class6/">Class 6: Quantifiers and More</a> (Thu, 7 Sep 2017)</p>
     
 
 <h3 id="schedule">Schedule</h3>
@@ -361,10 +366,10 @@ x<em>{7}) \wedge (x</em>{25} \vee x<em>{47} \vee \overline{x</em>{12}}) \end{mat
 
 <p>\begin{tabular}{cc|cc}
 $P$ &amp; $Q$ &amp; $P \implies Q$ &amp; $P \oplus Q$ \ \hline
-\T &amp; \T   &amp; \T &amp; \F \
-\T &amp; \F   &amp; \F &amp; \T \
-\F &amp; \T   &amp; \T &amp; \T \
-\F &amp; \F   &amp; \T &amp; \F \
+\T &amp; \T   &amp; \T &amp; \F <br />
+\T &amp; \F   &amp; \F &amp; \T <br />
+\F &amp; \T   &amp; \T &amp; \T <br />
+\F &amp; \F   &amp; \T &amp; \F <br />
 \end{tabular}</p>
 
 <p>The output of the operator is \T\ if and only if the inputs do match <em>one row</em> where the output is \T.  So, to get a DNF we can go over all the rows where hte output is \T, and for each write a clause that means we <em>are</em> in that row. Then we OR all such (conjunctive) clauses. For example, for $P \oplus Q$ we get</p>
@@ -375,10 +380,10 @@ $P$ &amp; $Q$ &amp; $P \implies Q$ &amp; $P \oplus Q$ \ \hline
 
 <p>\begin{tabular}{cc|cc}
 $P$ &amp; $Q$ &amp; $P \implies Q$ &amp; $P \oplus Q$ \ \hline
-\T &amp; \T   &amp; \T &amp; \F \
-\T &amp; \F   &amp; \F &amp; \T \
-\F &amp; \T   &amp; \T &amp; \T \
-\F &amp; \F   &amp; \T &amp; \F \
+\T &amp; \T   &amp; \T &amp; \F <br />
+\T &amp; \F   &amp; \F &amp; \T <br />
+\F &amp; \T   &amp; \T &amp; \T <br />
+\F &amp; \F   &amp; \T &amp; \F <br />
 \end{tabular}</p>
 
 <p>The output of the operator is \T\ if and only if the inputs do not match <em>any row</em> where the output is \F.  So, to get a CNF we can go over all the rows where hte output is \F, and for each write a clause that means we are <em>not</em> in that row. Then we AND all such clauses. For example, for $P \oplus Q$ we get</p>
@@ -393,14 +398,14 @@ $(A \lor B \lor C \lor D)$ we do another trick of breaking them into smaller par
 <p></div></p>
  
   
-  <p class="fronthead"><A href="">Problem Set 1 Comments</a> (Wed, 6 Sep 2017)</p>
+  <p class="fronthead"><A href="/ps1comments/">Problem Set 1 Comments</a> (Wed, 6 Sep 2017)</p>
     <p>The Problem Set 1 comments are now posted in collab: <a href="https://collab.its.virginia.edu/access/content/group/9bd99d1c-6f18-4542-a7d1-8ffc4fccbd3d/ps1solutions.pdf">PDF</a></p>
  
   
-  <p class="fronthead"><A href="">Class 5: CNF, Computing, Quantifiers</a> (Tue, 5 Sep 2017)</p>
+  <p class="fronthead"><A href="/class5/">Class 5: CNF, Computing, Quantifiers</a> (Tue, 5 Sep 2017)</p>
     
 
-<h3 id="schedule:d690e1859ec274fb7ed997cd7db3fba5">Schedule</h3>
+<h3 id="schedule">Schedule</h3>
 
 <p><a href="/ps/ps2"><strong>Problem Set 2</strong></a> is due <strong>Friday at 6:29pm</strong>.</p>
 
@@ -420,7 +425,7 @@ $(A \lor B \lor C \lor D)$ we do another trick of breaking them into smaller par
   would include a proof that no shorter formula exists.
    </div></p>
 
-<h2 id="links:d690e1859ec274fb7ed997cd7db3fba5">Links</h2>
+<h2 id="links">Links</h2>
 
 <p>If you want to learn more about how to learn the logic implemented by a chip
 and cryptosystems used in car immobolizers, see <a href="https://www.cs.virginia.edu/~evans/pubs/usenix08/usenix08.pdf"><em>Reverse-Engineering a
@@ -435,7 +440,7 @@ cars.</p>
 
 <p><div class="latex"></p>
 
-<h1 id="notes-and-questions:d690e1859ec274fb7ed997cd7db3fba5">Notes and Questions</h1>
+<h1 id="notes-and-questions">Notes and Questions</h1>
 
 <p><strong>Definition: satisfiable.</strong> A logical formula is <em>satisfiable</em> if there
   is <em>some</em> way to make it <strong>true</strong>.  That is, there is at least one
@@ -481,7 +486,7 @@ involving 5 variables?</p>
 
 <!--page-->
 
-<h2 id="logical-quantifiers:d690e1859ec274fb7ed997cd7db3fba5">Logical Quantifiers</h2>
+<h2 id="logical-quantifiers">Logical Quantifiers</h2>
 
 <p>$\forall x \in S. P(x)$ means $P$ holds for <em>every</em> element of $S$.<br />
 $\exists x \in S. P(x)$ means $P$ holds for <em>at least one</em> element of $S$.</p>
@@ -514,19 +519,19 @@ $$
 <p></div></p>
  
   
-  <p class="fronthead"><A href="">Problem Set 2</a> (Fri, 1 Sep 2017)</p>
+  <p class="fronthead"><A href="/ps2posted/">Problem Set 2</a> (Fri, 1 Sep 2017)</p>
     <p><a href="/ps/ps2"><strong>Problem Set 2</strong></a> [<a href="/docs/ps2.pdf">PDF</a>] is now posted and
 is due <strong>Friday, 8 September at 6:29:00pm</strong>.</p>
  
   
-  <p class="fronthead"><A href="">Additional Resources</a> (Thu, 31 Aug 2017)</p>
+  <p class="fronthead"><A href="/additionalresources/">Additional Resources</a> (Thu, 31 Aug 2017)</p>
     <p>I&rsquo;ve added a page, <a href="/resources">Resources</a>, with links to some
 suggested resources beyond the course materials. If you find other
 useful resources, please post them in slack and we&rsquo;ll add them to this
 list.</p>
  
   
-  <p class="fronthead"><A href="">Class 4: Logical Operators and Formulas</a> (Thu, 31 Aug 2017)</p>
+  <p class="fronthead"><A href="/class4/">Class 4: Logical Operators and Formulas</a> (Thu, 31 Aug 2017)</p>
     
 
 <h3 id="schedule">Schedule</h3>
@@ -649,10 +654,10 @@ For each of the formulas below, determine if it is _valid_ and if it is _satisfi
 </div>
  
   
-  <p class="fronthead"><A href="">Class 3: Well-Ordering Principle</a> (Tue, 29 Aug 2017)</p>
+  <p class="fronthead"><A href="/class3/">Class 3: Well-Ordering Principle</a> (Tue, 29 Aug 2017)</p>
     
 
-<h3 id="schedule:b9b50bf0a87e56763567aaebbc820d47">Schedule</h3>
+<h3 id="schedule">Schedule</h3>
 
 <p>This week, you should read MCS Chapter 2 and MCS Chapter 3 (at least
 through the end of Section 3.4).</p>
@@ -672,7 +677,7 @@ hours schedule.</p>
    <a href="/docs/class3.pdf">See PDF Version for <b>Notes and Questions</b></a>.
    </div></p>
 
-<h2 id="links:b9b50bf0a87e56763567aaebbc820d47">Links</h2>
+<h2 id="links">Links</h2>
 
 <p><a href="https://math.berkeley.edu/~kpmann/Well-ordering.pdf"><em>The Well-Ordering Theorem: one of the Greatest Mathematical Controversies of All Time</em></a>, Kathryn Mann.</p>
 
@@ -680,7 +685,7 @@ hours schedule.</p>
 
 <p><div class="latex"></p>
 
-<h1 id="notes-and-questions:b9b50bf0a87e56763567aaebbc820d47">Notes and Questions</h1>
+<h1 id="notes-and-questions">Notes and Questions</h1>
 
 <p>What properties must a sensible ordering function have?</p>
 
@@ -713,7 +718,7 @@ either satisfy $a&lt;b$ or $b&lt;a$. Second  $a&lt;b$ and $b&lt;a$ should always
 
 <!--page-->
 
-<h3 id="template-for-well-ordering-proofs-section-2-2:b9b50bf0a87e56763567aaebbc820d47">Template for Well-Ordering Proofs (Section 2.2)</h3>
+<h3 id="template-for-well-ordering-proofs-section-2-2">Template for Well-Ordering Proofs (Section 2.2)</h3>
 
 <p>To prove that $P(n)$ is true for all $n \in \mathbb{N}$:</p>
 
@@ -747,7 +752,7 @@ _The whole problem with the world is that fools and fanatics are always so certa
 </div>
  
   
-  <p class="fronthead"><A href="">Office Hours Posted</a> (Sat, 26 Aug 2017)</p>
+  <p class="fronthead"><A href="/officehoursposted/">Office Hours Posted</a> (Sat, 26 Aug 2017)</p>
     <p>The office hours schedule is now posted on the course site (<a href="/officehours">Office
 Hours</a>) and
 <a href="https://calendar.google.com/calendar/embed?src=5msg7a1mn7fk4ocj1h41cksh80%40group.calendar.google.com&amp;ctz=America/New_York">Calendar</a>. The
@@ -756,10 +761,10 @@ hours start on Monday (3pm), and will follow the schedule here after
 that.</p>
  
   
-  <p class="fronthead"><A href="">Class 2: Proof Methods</a> (Thu, 24 Aug 2017)</p>
+  <p class="fronthead"><A href="/class2/">Class 2: Proof Methods</a> (Thu, 24 Aug 2017)</p>
     
 
-<h3 id="schedule:59cb8283a9bd282131a45da3029e68b4">Schedule</h3>
+<h3 id="schedule">Schedule</h3>
 
 <p>Before <strong>Friday, 6:29pm</strong>:</p>
 
@@ -852,142 +857,6 @@ Adlai Stevenson, A Call to Greatness (1954)
 Frank Wilczek</p>
 
 <p></div></p>
- 
-  
-  <p class="fronthead"><A href="">Class 1: What makes it go?</a> (Tue, 22 Aug 2017)</p>
-    
-
-<h3 id="schedule">Schedule</h3>
-
-<p>Before <strong>Thursday&rsquo;s class</strong>: (visit <a href="https://uvacs2102.github.io/class1">https://uvacs2102.github.io/class1</a> for the web version of these notes with links)</p>
-
-<ul>
-<li><p>Join the <a href="https://csmath.slack.com">cs2102 slack group</a> and set up
-your profile with a pronouncable name (not your UVA email id) (setting
-up your profile photo is encouraged, but not required).</p></li>
-
-<li><p>Read the <a href="/syllabus">Course Syllabus</a> and post any questions or
-comments you have on it on the course <a href="https://csmath.slack.com">slack group
-(#general)</a>.</p></li>
-
-<li><p>Read the <em>Introduction</em> and <em>Chapter 1: What is a Proof?</em> from the
-<a href="https://uvacs2102.github.io/docs/mcs.pdf">Mathematics for Computer Science
-Book</a> by Eric Lehman,
-F. Thomson Leighton, and Albert R. Meyer (henceforth, &ldquo;MCS&rdquo;).  The
-book is freely available on-line under a Creative Commons License.
-Students are <strong>strongly encrouaged</strong> to print out the readings to read
-them more effectively on paper.</p></li>
-</ul>
-
-<p>Before <strong>Friday, 6:29pm</strong>:</p>
-
-<ul>
-<li><p>Read, print, and sign the <a href="/pledge">Course Pledge</a>.  You should print
-the <a href="/docs/pledge.pdf">PDF version</a> for signing, and submit a scan of
-your signed pledge as a single PDF file using Collab.</p></li>
-
-<li><p>Read Jeremy Kun&rsquo;s <a href="https://medium.com/@jeremyjkun/habits-of-highly-mathematical-people-b719df12d15e"><em>Habits of Highly Mathematical People</em></a>.</p></li>
-
-<li><p>Submit a <a href="https://goo.gl/forms/DR7nsouNf6sqqIK22">Course Registration Survey</a> (which includes some questions based on Kun&rsquo;s essay).</p></li>
-</ul>
-
-<p><div class="notpdf">
-   <center>
-<script async class="speakerdeck-embed" data-id="71562d80d01c4339b64b96e1c160c480" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script><br>
-<a href="https://uva.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=7fbcfe7e-92cc-4e33-b590-c557a9319251"><b>Video</b></a> (requires Collab authentication)
-   </center></p>
-
-<div class="notpdf">
-
-    <div class="highlightm">
-    <a href="/docs/class1.pdf">See PDF Version for <b>Notes and Questions</b></a>.
-    </div>
-
-<!--
-<center>
-<script async class="speakerdeck-embed" data-id="460cc29c74a04fe3971ce197961981f9" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script><br>
-</center>
--->
-
-<p></div><!--endpdf--></p>
-
-<div class="latex">
-
-### Notes and Questions
-
-Why is most of the math used in computer science _discrete_?
-
-<div class="gap"></div>
-
-<p>Why is most of the math you have used in school previously <em>continuous</em>?</p>
-
-<div class="gap"></div>
-
-<p>What are the differences between how scientists, lawyers, and
-mathematicians establish ``<em>truth</em>&rdquo;?</p>
-
-<div class="gap"></div>
-
-<p>A <em>proposition</em> is a statement that is either ________ or _________.</p>
-
-<p>A <em>predicate</em> is a proposition whose truth may depend on the value of
-variables.</p>
-
-<h3 id="proof">Proof</h3>
-
-<p>A <em>theorem</em> is a ____________ that has been proven true.</p>
-
-<p>An <em>axiom</em> is a proposition that is <em>accepted to be true</em>.  Axioms are
-not proven; they are <em>assumed</em> to be true.</p>
-
-<p><strong>Definition.</strong> A <em>mathematical proof</em> of a proposition is a chain of
-  <em>logical deductions</em> starting from a set of accepted <em>axioms</em> that
-  leads to the proposition.</p>
-
-<h3 id="rules-of-inference">Rules of Inference</h3>
-
-<p>The possible steps that can be used in a proof are logical deductions
-based on inference rules.</p>
-
-<p>Inference rules are written as:
-$$
-\infer{\textrm{\emph{conclusion}}}{\textrm{\emph{antecedents}}}
-$$
-This means if everything on top of the rule is established to be true,
-then you can conclude what is on the bottom.</p>
-
-<p><em>Modus Ponens</em>: To prove <em>Q</em>, (1) prove <em>P</em> and (2) prove that <em>P</em> implies <em>Q</em>.  ($P \implies Q$ is a notation for $P$ implies $Q$).</p>
-
-<p>$$
-\infer{Q}{P,\quad P \implies Q}
-$$</p>
-
-<p>An inference rule is <em>sound</em> if can never lead to a <strong>false</strong> conclusion.</p>
-
-<p>Which of these inference rules are sound?</p>
-
-<p>$$
-\infer{Q}{P}
-\qquad
-\infer{false}{P, P \implies Q}
-\qquad
-\infer{true}{P, NOT(P)}
-\qquad
-\infer{P \implies NOT(P)}{P, NOT(P)}
-\qquad
-\infer{NOT(Q) \implies P}{NOT(P) \implies Q}
-$$</p>
-
-<p>##</p>
-
-<p></div></p>
-
-<p></div></p>
-
-<p><div class="quote">
-<em>Through violence you may murder a liar but you can&rsquo;t establish truth. Through violence you may murder a hater, but you can&rsquo;t murder hate. Darkness cannot put out darkness. Only light can do that.</em><br />
-Martin Luther King, Jr., <a href="http://kingencyclopedia.stanford.edu/encyclopedia/documentsentry/where_do_we_go_from_here_delivered_at_the_11th_annual_sclc_convention/"><em>Where Do We Go From Here?</em>, address to SCLC 16 August 1967</a>
-   </div></p>
  
   
   
