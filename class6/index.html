@@ -51,7 +51,7 @@
     },
     "datePublished": "2017-09-07",
     "description": "",
-    "wordCount":  1610 
+    "wordCount":  1618 
   }
 </script>
 
@@ -62,7 +62,7 @@
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://uvacs2102.github.io/touch-icon-144-precomposed.png">
 <link href="https://uvacs2102.github.io/favicon.png" rel="icon">
 
-<meta name="generator" content="Hugo 0.17" />
+<meta name="generator" content="Hugo 0.16-DEV" />
 
   <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -129,6 +129,8 @@
 <a href="https://uvacs2102.github.io/ps/ps5">Problem Set 5</a>
 
 <a href="https://uvacs2102.github.io/ps/ps6">Problem Set 6</a>
+
+<a href="https://uvacs2102.github.io/ps/ps7">Problem Set 7</a>
 
 <a href="https://collab.its.virginia.edu/portal/site/9bd99d1c-6f18-4542-a7d1-8ffc4fccbd3d">Collab Site</a>
 
@@ -399,10 +401,10 @@ x<em>{7}) \wedge (x</em>{25} \vee x<em>{47} \vee \overline{x</em>{12}}) \end{mat
 
 <p>\begin{tabular}{cc|cc}
 $P$ &amp; $Q$ &amp; $P \implies Q$ &amp; $P \oplus Q$ \ \hline
-\T &amp; \T   &amp; \T &amp; \F <br />
-\T &amp; \F   &amp; \F &amp; \T <br />
-\F &amp; \T   &amp; \T &amp; \T <br />
-\F &amp; \F   &amp; \T &amp; \F <br />
+\T &amp; \T   &amp; \T &amp; \F \
+\T &amp; \F   &amp; \F &amp; \T \
+\F &amp; \T   &amp; \T &amp; \T \
+\F &amp; \F   &amp; \T &amp; \F \
 \end{tabular}</p>
 
 <p>The output of the operator is \T\ if and only if the inputs do match <em>one row</em> where the output is \T.  So, to get a DNF we can go over all the rows where hte output is \T, and for each write a clause that means we <em>are</em> in that row. Then we OR all such (conjunctive) clauses. For example, for $P \oplus Q$ we get</p>
@@ -413,10 +415,10 @@ $P$ &amp; $Q$ &amp; $P \implies Q$ &amp; $P \oplus Q$ \ \hline
 
 <p>\begin{tabular}{cc|cc}
 $P$ &amp; $Q$ &amp; $P \implies Q$ &amp; $P \oplus Q$ \ \hline
-\T &amp; \T   &amp; \T &amp; \F <br />
-\T &amp; \F   &amp; \F &amp; \T <br />
-\F &amp; \T   &amp; \T &amp; \T <br />
-\F &amp; \F   &amp; \T &amp; \F <br />
+\T &amp; \T   &amp; \T &amp; \F \
+\T &amp; \F   &amp; \F &amp; \T \
+\F &amp; \T   &amp; \T &amp; \T \
+\F &amp; \F   &amp; \T &amp; \F \
 \end{tabular}</p>
 
 <p>The output of the operator is \T\ if and only if the inputs do not match <em>any row</em> where the output is \F.  So, to get a CNF we can go over all the rows where hte output is \F, and for each write a clause that means we are <em>not</em> in that row. Then we AND all such clauses. For example, for $P \oplus Q$ we get</p>
