@@ -51,7 +51,7 @@
     },
     "datePublished": "2017-10-19",
     "description": "",
-    "wordCount":  467 
+    "wordCount":  478 
   }
 </script>
 
@@ -62,7 +62,7 @@
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://uvacs2102.github.io/touch-icon-144-precomposed.png">
 <link href="https://uvacs2102.github.io/favicon.png" rel="icon">
 
-<meta name="generator" content="Hugo 0.17" />
+<meta name="generator" content="Hugo 0.16-DEV" />
 
   <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -194,7 +194,7 @@
   <div class="container content">
   
 
-<h3 id="schedule">Schedule</h3>
+<h3 id="schedule:e5faf2b6fe551ee3e6bfd5f1acfee2f5">Schedule</h3>
 
 <p><a href="/ps/ps7"><strong>Problem Set 6</strong></a> is due <strong>tomorrow at 6:29pm</strong>. Make sure to read the corrected version of Problem 7.</p>
 
@@ -211,7 +211,7 @@
 
 <p><div class="latex"></p>
 
-<h1 id="lists">Lists</h1>
+<h1 id="lists:e5faf2b6fe551ee3e6bfd5f1acfee2f5">Lists</h1>
 
 <p><strong>Definition.</strong> A <em>list</em> is an ordered sequence of objects.  A list is
   either the empty list ($\lambda$), or the result of $\text{prepend}(e,
@@ -219,10 +219,10 @@
 
 <p>\begin{equation<em>}
 \begin{split}
-\text{\em first}(\text{prepend}(e, l)) &amp;= e <br />
-\text{\em rest}(\text{prepend}(e, l)) &amp;= l <br />
-\text{\em empty}(\text{prepend}(e, l)) &amp;= \text{\bf False} <br />
-\text{\em empty}(\text{\bf null}) &amp;= \text{\bf True} <br />
+\text{\em first}(\text{prepend}(e, l)) &amp;= e \
+\text{\em rest}(\text{prepend}(e, l)) &amp;= l \
+\text{\em empty}(\text{prepend}(e, l)) &amp;= \text{\bf False} \
+\text{\em empty}(\text{\bf null}) &amp;= \text{\bf True} \
 \end{split}
 \end{equation</em>}</p>
 
@@ -230,8 +230,8 @@
 \begin{equation<em>}
 \begin{split}
 \begin{cases}
-0 &amp; \text{if}\ p\ \text{is \bf null} <br />
-\text{\em length}(q) + 1 &amp; \text{otherwise}\ p = \text{\em prepend}(e, q)\ \text{for some object}\ e\ \text{and some list}\ q <br />
+0 &amp; \text{if}\ p\ \text{is \bf null} \
+\text{\em length}(q) + 1 &amp; \text{otherwise}\ p = \text{\em prepend}(e, q)\ \text{for some object}\ e\ \text{and some list}\ q \
 \end{cases}
 \end{split}
 \end{equation</em>}</p>
@@ -248,7 +248,7 @@
 
 <!--page-->
 
-<h2 id="concatenation">Concatenation</h2>
+<h2 id="concatenation:e5faf2b6fe551ee3e6bfd5f1acfee2f5">Concatenation</h2>
 
 <p><strong>Definition.</strong> The <em>concatenation</em> of two lists, $p = (p_1, p_2, \cdots, p_n)$ and $q = (q_1, q_2, \cdots, q_m)$ is
 $$(p_1, p_2, \cdots, p_n, q_1, q_2, \cdots, q_m).$$</p>
@@ -259,7 +259,7 @@ $$(p_1, p_2, \cdots, p_n, q_1, q_2, \cdots, q_m).$$</p>
 
 <p>#</p>
 
-<h2 id="structural-induction">Structural Induction</h2>
+<h2 id="structural-induction:e5faf2b6fe551ee3e6bfd5f1acfee2f5">Structural Induction</h2>
 
 <p>To prove proposition $P(x)$ for element $x \in D$ where $D$ is a
 recursively-constructed data type, we do two things:</p>
@@ -270,16 +270,16 @@ recursively-constructed data type, we do two things:</p>
 using any &ldquo;construct case&rdquo; rules, then $P(x)$ is true as well.</li>
 </ol>
 
-<h2 id="comparing-various-forms-of-induction">Comparing Various forms of Induction</h2>
+<h2 id="comparing-various-forms-of-induction:e5faf2b6fe551ee3e6bfd5f1acfee2f5">Comparing Various forms of Induction</h2>
 
 <p>\begin{center}
 \begin{tabular}{lccc}
 &amp; {\bf Regular Induction} &amp; {\bf Invariant Principle} &amp; {\bf Structural Induction} \ \hline
-Works on: &amp; natural numbers &amp; state machines &amp; data types <br />
-To prove $P(\cdot)$ &amp; {\em for all natural numbers} &amp; {\em for all reachable states} &amp; {\em for all data type objects} <br />
-Prove {\bf base case(s)} &amp; $P(0)$ &amp; $P(q_0)$ &amp; $P(\text{base object(s)})$ <br />
-and {\bf inductive step} &amp; $\forall m \in \mathbb{N} \ldotp$ &amp; $\forall (q, r) \in G \ldotp $ &amp; $\forall s \in \text{\em Type} \ldotp$ <br />
-  &amp; $P(m) \implies P(m+1)$ &amp; $P(q) \implies P&reg;$ &amp; $P(s) \implies P(t)$ <br />
+Works on: &amp; natural numbers &amp; state machines &amp; data types \
+To prove $P(\cdot)$ &amp; {\em for all natural numbers} &amp; {\em for all reachable states} &amp; {\em for all data type objects} \
+Prove {\bf base case(s)} &amp; $P(0)$ &amp; $P(q_0)$ &amp; $P(\text{base object(s)})$ \
+and {\bf inductive step} &amp; $\forall m \in \mathbb{N} \ldotp$ &amp; $\forall (q, r) \in G \ldotp $ &amp; $\forall s \in \text{\em Type} \ldotp$ \
+  &amp; $P(m) \implies P(m+1)$ &amp; $P(q) \implies P&reg;$ &amp; $P(s) \implies P(t)$ \
  &amp; &amp; &amp; $\quad \forall t\ \text{constructable from}\ s$ \
 \end{tabular}
 \end{center}</p>
