@@ -1,13 +1,109 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on cs2102: Discrete Math</title>
-    <link>https://uvacs2102.github.io/post/</link>
-    <description>Recent content in Posts on cs2102: Discrete Math</description>
+    <title>Post-rsses on cs2102: Discrete Math</title>
+    <link>https://uvacs2102.github.io/post/index.xml</link>
+    <description>Recent content in Post-rsses on cs2102: Discrete Math</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 20 Oct 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 24 Oct 2017 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://uvacs2102.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Class 17: Infinite Sets</title>
+      <link>https://uvacs2102.github.io/class17/</link>
+      <pubDate>Tue, 24 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/class17/</guid>
+      <description>
+
+&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
+
+&lt;p&gt;Before Thursday, everyone should have finished reading MCS Chapter 8.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps7&#34;&gt;&lt;strong&gt;Problem Set 7&lt;/strong&gt;&lt;/a&gt; is due &lt;strong&gt;Friday (27 Oct) at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;
+   &lt;center&gt;
+   &lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlightm&#34;&gt;
+   &lt;a href=&#34;https://uvacs2102.github.io/docs/class17.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes&lt;/b&gt;&lt;/a&gt;.
+   &lt;/div&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.cs.cornell.edu/courses/cs2800/2017fa/lectures/lec14-cantor.html&#34;&gt;Proof of Schr&amp;ouml;der-Bernstein Theorem&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;infinite-sets&#34;&gt;Infinite Sets&lt;/h1&gt;
+
+&lt;p&gt;&lt;strong&gt;Finite Cardinality.&lt;/strong&gt; The &lt;em&gt;cardinality&lt;/em&gt; of the set
+$$
+\mathbb{N}_k = { n | n \in \mathbb{N} \wedge n &amp;lt; k }
+$$
+is $k$.  If there is a &lt;em&gt;bijection&lt;/em&gt; between two sets, they have the same
+cardinality.  (Class 9)&lt;/p&gt;
+
+&lt;p&gt;Does this definition tell us the cardinality of $\mathbb{N}$?&lt;/p&gt;
+
+&lt;p&gt;###&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; A set $S$ is &lt;em&gt;infinite&lt;/em&gt; if there is no bijection between
+  $S$ and any set $\mathbb{N}_k$ (as defined above).&lt;/p&gt;
+
+&lt;p&gt;Show that $\mathbb{Z}$ is infinite.&lt;/p&gt;
+
+&lt;h3 id=&#34;cardinality-of-infinite-sets&#34;&gt;Cardinality of Infinite Sets&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Equal Carinalities.&lt;/strong&gt; We say $|A|\; = |B|$  for arbitrary sets $A,B$ (and say that they have the same cardinality), if there is a bijection between $A$ and $B$.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Comparing Cardinalities.&lt;/strong&gt; We say $|B|\; \leq |A|$  for arbitrary sets $A,B$ (and say that $B$&amp;rsquo;s cardinality is less than or equal to the cardinality of $A$), if there is a &lt;em&gt;surjective function&lt;/em&gt; from $A$ to $B$.&lt;/p&gt;
+
+&lt;p&gt;Show that $|A|\; = |B|$ implies $|B|\; \leq |A|$ and $|A|\; \leq |B|$. Be careful as these sets might not be finite, in which case we cannot simply use natural numbers to denote their cardinalities.&lt;/p&gt;
+
+&lt;p&gt;##&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Schr\wrap{\&amp;ldquo;{o}}der-Bernstein Theorem:&lt;/strong&gt; If $|A|\; \leq |B|$ and $|B|\; \leq |A|$, then there is a bijection between $A$ and $B$, namely $|A|\; = |B|$. (Not proven in cs2102; this is somewhat tricky to prove! For a full proof, see &lt;a href=&#34;http://www.cs.cornell.edu/courses/cs2800/2017fa/lectures/lec14-cantor.html&#34;&gt;the linked lecture notes&lt;/a&gt;.)&lt;/p&gt;
+
+&lt;h3 id=&#34;other-definitions-for-infinite-sets&#34;&gt;Other Definitions for Infinite Sets&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Dedekind-Infinite.&lt;/strong&gt; A set $A$ is &lt;em&gt;Dedekind-infinite&lt;/em&gt; if and only if there exists a &lt;em&gt;strict subset&lt;/em&gt; of $A$ with the same cardinality as $A$.  That is,
+$$\exists B \subset A \ldotp \exists R \ldotp R\ \text{is a bijection between}\ A\ \text{and}\ B.$$&lt;/p&gt;
+
+&lt;p&gt;Recall the definition of strict subset:
+$$B \subset A \iff B \subseteq A \wedge \exists x \in A\; .\; x \notin B.$$&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Third Definition.&lt;/strong&gt; A set $S$ is &lt;em&gt;third-definition infinite&lt;/em&gt; if $|S|\; \geq |\mathbb{N}|$ (as defined on the previous page).  Namely, there is a &lt;em&gt;surjective function&lt;/em&gt; from $S$ to $\mathbb{N}$.&lt;/p&gt;
+
+&lt;p&gt;Are the above three definitions of (standard) &lt;em&gt;infinite&lt;/em&gt; and &lt;em&gt;Dedekind-infinite&lt;/em&gt; and &lt;em&gt;third-definition infinite&lt;/em&gt;
+equivalent definitions?&lt;/p&gt;
+
+&lt;p&gt;##&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; A set $S$ is &lt;em&gt;countable&lt;/em&gt; if and only if there exists a
+  surjective function from $\mathbb{N}$ to $S$.  (That is, $\le 1$ arrow
+  out from $\mathbb{N}$, $\ge 1$ arrow in to $S$.) Using our notation defined above, this means $|S|\; \leq |\mathbb{N}|$.&lt;/p&gt;
+
+&lt;p&gt;Prove that these sets are countable: $\mathbb{Z}$, $\mathbb{N} \times
+\mathbb{N}$, $\mathbb{Q}$ (rationals), $\emptyset$, $\mathbb{N} \cup (\mathbb{N} \times \mathbb{N}) \cup (\mathbb{N} \times \mathbb{N} \times \mathbb{N})$, all finite sequences of elements of $\mathbb{N}$.&lt;/p&gt;
+
+&lt;p&gt;#&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; A set $S$ is &lt;em&gt;countably infinite&lt;/em&gt; if and only if it is &lt;em&gt;countable&lt;/em&gt; and it is &lt;em&gt;infinite&lt;/em&gt; (according to standard definition).&lt;/p&gt;
+
+&lt;p&gt;Must a &lt;em&gt;countable&lt;/em&gt; set that is &lt;em&gt;Dedekind-infinite&lt;/em&gt; be &lt;em&gt;countably infinite&lt;/em&gt;?&lt;/p&gt;
+
+&lt;p&gt;#&lt;/p&gt;
+
+&lt;p&gt;Using the definition of countable, and third definition of infinite, show that $S$ is countably infinite if and only if there is a bijection between $S$ and $\mathbb{N}$. (We might as well use this definition in the future.)&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Problem Set 7</title>
@@ -29,7 +125,7 @@ collaboration policy carefully.&lt;/p&gt;
       <guid>https://uvacs2102.github.io/class16/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule:e5faf2b6fe551ee3e6bfd5f1acfee2f5&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps7&#34;&gt;&lt;strong&gt;Problem Set 6&lt;/strong&gt;&lt;/a&gt; is due &lt;strong&gt;tomorrow at 6:29pm&lt;/strong&gt;. Make sure to read the corrected version of Problem 7.&lt;/p&gt;
 
@@ -46,7 +142,7 @@ collaboration policy carefully.&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;lists:e5faf2b6fe551ee3e6bfd5f1acfee2f5&#34;&gt;Lists&lt;/h1&gt;
+&lt;h1 id=&#34;lists&#34;&gt;Lists&lt;/h1&gt;
 
 &lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; A &lt;em&gt;list&lt;/em&gt; is an ordered sequence of objects.  A list is
   either the empty list ($\lambda$), or the result of $\text{prepend}(e,
@@ -54,10 +150,10 @@ collaboration policy carefully.&lt;/p&gt;
 
 &lt;p&gt;\begin{equation&lt;em&gt;}
 \begin{split}
-\text{\em first}(\text{prepend}(e, l)) &amp;amp;= e \
-\text{\em rest}(\text{prepend}(e, l)) &amp;amp;= l \
-\text{\em empty}(\text{prepend}(e, l)) &amp;amp;= \text{\bf False} \
-\text{\em empty}(\text{\bf null}) &amp;amp;= \text{\bf True} \
+\text{\em first}(\text{prepend}(e, l)) &amp;amp;= e &lt;br /&gt;
+\text{\em rest}(\text{prepend}(e, l)) &amp;amp;= l &lt;br /&gt;
+\text{\em empty}(\text{prepend}(e, l)) &amp;amp;= \text{\bf False} &lt;br /&gt;
+\text{\em empty}(\text{\bf null}) &amp;amp;= \text{\bf True} &lt;br /&gt;
 \end{split}
 \end{equation&lt;/em&gt;}&lt;/p&gt;
 
@@ -65,8 +161,8 @@ collaboration policy carefully.&lt;/p&gt;
 \begin{equation&lt;em&gt;}
 \begin{split}
 \begin{cases}
-0 &amp;amp; \text{if}\ p\ \text{is \bf null} \
-\text{\em length}(q) + 1 &amp;amp; \text{otherwise}\ p = \text{\em prepend}(e, q)\ \text{for some object}\ e\ \text{and some list}\ q \
+0 &amp;amp; \text{if}\ p\ \text{is \bf null} &lt;br /&gt;
+\text{\em length}(q) + 1 &amp;amp; \text{otherwise}\ p = \text{\em prepend}(e, q)\ \text{for some object}\ e\ \text{and some list}\ q &lt;br /&gt;
 \end{cases}
 \end{split}
 \end{equation&lt;/em&gt;}&lt;/p&gt;
@@ -83,7 +179,7 @@ collaboration policy carefully.&lt;/p&gt;
 
 &lt;!--page--&gt;
 
-&lt;h2 id=&#34;concatenation:e5faf2b6fe551ee3e6bfd5f1acfee2f5&#34;&gt;Concatenation&lt;/h2&gt;
+&lt;h2 id=&#34;concatenation&#34;&gt;Concatenation&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; The &lt;em&gt;concatenation&lt;/em&gt; of two lists, $p = (p_1, p_2, \cdots, p_n)$ and $q = (q_1, q_2, \cdots, q_m)$ is
 $$(p_1, p_2, \cdots, p_n, q_1, q_2, \cdots, q_m).$$&lt;/p&gt;
@@ -94,7 +190,7 @@ $$(p_1, p_2, \cdots, p_n, q_1, q_2, \cdots, q_m).$$&lt;/p&gt;
 
 &lt;p&gt;#&lt;/p&gt;
 
-&lt;h2 id=&#34;structural-induction:e5faf2b6fe551ee3e6bfd5f1acfee2f5&#34;&gt;Structural Induction&lt;/h2&gt;
+&lt;h2 id=&#34;structural-induction&#34;&gt;Structural Induction&lt;/h2&gt;
 
 &lt;p&gt;To prove proposition $P(x)$ for element $x \in D$ where $D$ is a
 recursively-constructed data type, we do two things:&lt;/p&gt;
@@ -105,16 +201,16 @@ recursively-constructed data type, we do two things:&lt;/p&gt;
 using any &amp;ldquo;construct case&amp;rdquo; rules, then $P(x)$ is true as well.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h2 id=&#34;comparing-various-forms-of-induction:e5faf2b6fe551ee3e6bfd5f1acfee2f5&#34;&gt;Comparing Various forms of Induction&lt;/h2&gt;
+&lt;h2 id=&#34;comparing-various-forms-of-induction&#34;&gt;Comparing Various forms of Induction&lt;/h2&gt;
 
 &lt;p&gt;\begin{center}
 \begin{tabular}{lccc}
 &amp;amp; {\bf Regular Induction} &amp;amp; {\bf Invariant Principle} &amp;amp; {\bf Structural Induction} \ \hline
-Works on: &amp;amp; natural numbers &amp;amp; state machines &amp;amp; data types \
-To prove $P(\cdot)$ &amp;amp; {\em for all natural numbers} &amp;amp; {\em for all reachable states} &amp;amp; {\em for all data type objects} \
-Prove {\bf base case(s)} &amp;amp; $P(0)$ &amp;amp; $P(q_0)$ &amp;amp; $P(\text{base object(s)})$ \
-and {\bf inductive step} &amp;amp; $\forall m \in \mathbb{N} \ldotp$ &amp;amp; $\forall (q, r) \in G \ldotp $ &amp;amp; $\forall s \in \text{\em Type} \ldotp$ \
-  &amp;amp; $P(m) \implies P(m+1)$ &amp;amp; $P(q) \implies P&amp;reg;$ &amp;amp; $P(s) \implies P(t)$ \
+Works on: &amp;amp; natural numbers &amp;amp; state machines &amp;amp; data types &lt;br /&gt;
+To prove $P(\cdot)$ &amp;amp; {\em for all natural numbers} &amp;amp; {\em for all reachable states} &amp;amp; {\em for all data type objects} &lt;br /&gt;
+Prove {\bf base case(s)} &amp;amp; $P(0)$ &amp;amp; $P(q_0)$ &amp;amp; $P(\text{base object(s)})$ &lt;br /&gt;
+and {\bf inductive step} &amp;amp; $\forall m \in \mathbb{N} \ldotp$ &amp;amp; $\forall (q, r) \in G \ldotp $ &amp;amp; $\forall s \in \text{\em Type} \ldotp$ &lt;br /&gt;
+  &amp;amp; $P(m) \implies P(m+1)$ &amp;amp; $P(q) \implies P&amp;reg;$ &amp;amp; $P(s) \implies P(t)$ &lt;br /&gt;
  &amp;amp; &amp;amp; &amp;amp; $\quad \forall t\ \text{constructable from}\ s$ \
 \end{tabular}
 \end{center}&lt;/p&gt;
@@ -216,7 +312,7 @@ this using regular Induction.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; A $\text{\em Pair}$ is a datatype that supports these three operations:&lt;br /&gt;
 \begin{quote}
-     $\text{\em make_pair}: \text{\em Object} \times \text{\em Object} \rightarrow \text{\em Pair}$\
+     $\text{\em make_pair}: \text{\em Object} \times \text{\em Object} \rightarrow \text{\em Pair}$&lt;br /&gt;
      $\text{\em pair_first}: \text{\em Pair} \rightarrow \text{\em Object}$\&lt;br /&gt;
      $\text{\em pair_last}: \text{\em Pair} \rightarrow \text{\em Object}$\&lt;br /&gt;
 \end{quote}
@@ -256,7 +352,7 @@ def pair_last(p):
       <guid>https://uvacs2102.github.io/class14/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule:69e304a0e65e98722637abe379145c02&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps6&#34;&gt;&lt;strong&gt;Problem Set 6&lt;/strong&gt;&lt;/a&gt; is due &lt;strong&gt;20 October (Friday) at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
 
@@ -276,7 +372,7 @@ starting after Prof. Mahmoody&amp;rsquo;s office hours Monday.&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;state-machines-review-from-class-13:69e304a0e65e98722637abe379145c02&#34;&gt;State Machines (review from Class 13)&lt;/h2&gt;
+&lt;h2 id=&#34;state-machines-review-from-class-13&#34;&gt;State Machines (review from Class 13)&lt;/h2&gt;
 
 &lt;p&gt;A &lt;em&gt;state machine&lt;/em&gt;, $M = (S, G: S \times S, q_0 \in S)$, is a binary
 relation (called a &lt;em&gt;transition relation&lt;/em&gt;) on a set (both the domain and
@@ -297,7 +393,7 @@ S, q_0 \in S)$ is a predicate, $P$, on states, such that whenever $P(q)$
 is true of a state $q$, and $q \rightarrow r \in G$, then $P&amp;reg;$ is
 true.&lt;/p&gt;
 
-&lt;h3 id=&#34;bishop-state-machine:69e304a0e65e98722637abe379145c02&#34;&gt;Bishop State Machine&lt;/h3&gt;
+&lt;h3 id=&#34;bishop-state-machine&#34;&gt;Bishop State Machine&lt;/h3&gt;
 
 &lt;p&gt;$S = { (\fillin ) \, | \, r, c \in \mathbb{N} }$
 $G = { (r, c) \rightarrow (r&amp;rsquo;, c&amp;rsquo;) \, | \, r, c \in \mathbb{N} \wedge (\exists d \in \mathbb{N}^{+} \textrm{ such that } r&amp;rsquo; = r \fillin d \wedge r&amp;rsquo; \ge 0 \wedge c&amp;rsquo; = c \fillin d \wedge c&amp;rsquo; \ge 0 }$
@@ -307,7 +403,7 @@ $q_0 = (0, 2)$&lt;/p&gt;
 
 &lt;p&gt;#&lt;/p&gt;
 
-&lt;h3 id=&#34;progress-machine:69e304a0e65e98722637abe379145c02&#34;&gt;``Progress&amp;rdquo; Machine&lt;/h3&gt;
+&lt;h3 id=&#34;progress-machine&#34;&gt;``Progress&amp;rdquo; Machine&lt;/h3&gt;
 
 &lt;p&gt;$S = { (x, d) \, | \, x \in \mathbb{Z}, d \in { \mathrm{\bf F}, \mathrm{\bf B}} }$
 $G = { (x, \mathrm{\bf F}) \rightarrow (x + 1, \mathrm{\bf B}) \, | \, x \in \mathbb{Z} } \cup
@@ -318,7 +414,7 @@ $q_0 = (0, \mathrm{\bf F})$&lt;/p&gt;
 
 &lt;!--page--&gt;
 
-&lt;h2 id=&#34;preserved-invariants:69e304a0e65e98722637abe379145c02&#34;&gt;Preserved Invariants&lt;/h2&gt;
+&lt;h2 id=&#34;preserved-invariants&#34;&gt;Preserved Invariants&lt;/h2&gt;
 
 &lt;p&gt;A predicate $P(q)$ is a &lt;em&gt;preserved invariant&lt;/em&gt; of machine $M = (S, G \subseteq S \times S, q_0 \in
   S)$ if:
@@ -343,7 +439,7 @@ $$&lt;/p&gt;
 
 &lt;!--page--&gt;
 
-&lt;h1 id=&#34;slow-exponentiation:69e304a0e65e98722637abe379145c02&#34;&gt;Slow Exponentiation&lt;/h1&gt;
+&lt;h1 id=&#34;slow-exponentiation&#34;&gt;Slow Exponentiation&lt;/h1&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def slow_power(a, b):
    y = 1
@@ -362,7 +458,7 @@ $q_0 ::= (1, b)$&lt;/p&gt;
 
 &lt;p&gt;#&lt;/p&gt;
 
-&lt;h1 id=&#34;fast-exponentiation:69e304a0e65e98722637abe379145c02&#34;&gt;Fast Exponentiation&lt;/h1&gt;
+&lt;h1 id=&#34;fast-exponentiation&#34;&gt;Fast Exponentiation&lt;/h1&gt;
 
 &lt;p&gt;This is the algorithm from Section 6.3.1 written as Python code:&lt;/p&gt;
 
@@ -403,7 +499,7 @@ collaboration policy carefully.&lt;/p&gt;
       <guid>https://uvacs2102.github.io/class13/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule:af2ff3ef0db44829d3ff131eac0d7ec7&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;There is no Problem Set due this week. &lt;a href=&#34;https://uvacs2102.github.io/ps/ps6&#34;&gt;&lt;strong&gt;Problem Set 6&lt;/strong&gt;&lt;/a&gt; will be posted soon and due next &lt;strong&gt;Friday (October 20) at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
 
@@ -425,7 +521,7 @@ office hours tomorrow, or before or after class on Thursday.&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;state-machines:af2ff3ef0db44829d3ff131eac0d7ec7&#34;&gt;State Machines&lt;/h2&gt;
+&lt;h2 id=&#34;state-machines&#34;&gt;State Machines&lt;/h2&gt;
 
 &lt;p&gt;A &lt;em&gt;state machine&lt;/em&gt; is a binary relation (called a &lt;em&gt;transition relation&lt;/em&gt;)
 on a set (both the domain and codomain are the same set).  One state is
@@ -453,7 +549,7 @@ designated as the &lt;em&gt;start state&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;How well do state machines model real computers?  What kind of
 transition relation does the state machine modeling your computer have?&lt;/p&gt;
 
-&lt;h2 id=&#34;state-machine-execution:af2ff3ef0db44829d3ff131eac0d7ec7&#34;&gt;State Machine Execution&lt;/h2&gt;
+&lt;h2 id=&#34;state-machine-execution&#34;&gt;State Machine Execution&lt;/h2&gt;
 
 &lt;p&gt;An &lt;em&gt;execution&lt;/em&gt; of a state machine $M = (S, G \subseteq S \times S, q_0 \in S)$ is a (possibly infinite) sequence of states, $(x_0, x_1, \cdots, x_n)$ where:&lt;/p&gt;
 
@@ -493,18 +589,18 @@ $$&lt;/p&gt;
 because of “Fall Break” and the Exam (as usual, all will be in Rice
 436 except the professors&amp;rsquo; as noted):&lt;/p&gt;
 
-&lt;h4 id=&#34;monday-2-oct:d0632df39174fbd03a717f33cd2b5853&#34;&gt;Monday (2 Oct)&lt;/h4&gt;
+&lt;h4 id=&#34;monday-2-oct&#34;&gt;Monday (2 Oct)&lt;/h4&gt;
 
 &lt;p&gt;Mohammad Mahmoody (Rice 511), 10:45-11:45am&lt;br /&gt;
 Sarah Meng, 4:30-6:00pm&lt;/p&gt;
 
-&lt;h4 id=&#34;tuesday-3-oct:d0632df39174fbd03a717f33cd2b5853&#34;&gt;Tuesday (3 Oct)&lt;/h4&gt;
+&lt;h4 id=&#34;tuesday-3-oct&#34;&gt;Tuesday (3 Oct)&lt;/h4&gt;
 
 &lt;p&gt;Nate Olsen, 10-11:30am&lt;br /&gt;
 Michael Woon, 11am-12:30pm&lt;br /&gt;
 Henry Spece, 3:30-5pm&lt;/p&gt;
 
-&lt;h4 id=&#34;wednesday-4-oct:d0632df39174fbd03a717f33cd2b5853&#34;&gt;Wednesday (4 Oct)&lt;/h4&gt;
+&lt;h4 id=&#34;wednesday-4-oct&#34;&gt;Wednesday (4 Oct)&lt;/h4&gt;
 
 &lt;p&gt;Colin Harfst, 9:30am-12:30pm&lt;br /&gt;
 Anna Wu, noon-1:30pm&lt;br /&gt;
@@ -517,7 +613,7 @@ Xueying Bai, 6-7pm&lt;br /&gt;
 Fan Feng, 7-8:30pm&lt;br /&gt;
 Nate Olsen, 7:30-9:00pm&lt;/p&gt;
 
-&lt;h4 id=&#34;thursday-5-oct:d0632df39174fbd03a717f33cd2b5853&#34;&gt;Thursday (5 Oct)&lt;/h4&gt;
+&lt;h4 id=&#34;thursday-5-oct&#34;&gt;Thursday (5 Oct)&lt;/h4&gt;
 
 &lt;p&gt;Amar Singh, 9am-10:30&lt;br /&gt;
 Xiao Zhang, 10-11am&lt;br /&gt;
@@ -980,132 +1076,6 @@ can get on your own.)&lt;/p&gt;
       
       <guid>https://uvacs2102.github.io/ps3comments/</guid>
       <description>&lt;p&gt;The Problem Set 3 solutions and comments are now posted in collab: &lt;a href=&#34;https://collab.its.virginia.edu/access/content/group/9bd99d1c-6f18-4542-a7d1-8ffc4fccbd3d/ps3solutions.pdf&#34;&gt;PDF&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Class 9: Relations, Finite Set Cardinality</title>
-      <link>https://uvacs2102.github.io/class9/</link>
-      <pubDate>Tue, 19 Sep 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://uvacs2102.github.io/class9/</guid>
-      <description>
-
-&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
-
-&lt;p&gt;This week you should finish reading MCS Chapter 4 (section 4.5) and
-Section 5.1.  We will discuss Induction (Section 5.1) next class.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps4&#34;&gt;&lt;strong&gt;Problem Set 4&lt;/strong&gt;&lt;/a&gt; is due &lt;strong&gt;Friday at 6:29pm&lt;/strong&gt;.  The
-original version of Problem Set 4, Question 6, asked for a &lt;em&gt;function&lt;/em&gt;,
-when we really meant to ask for a &lt;em&gt;total function&lt;/em&gt; (as we defined it
-in class today, and the book defines it). The problem set is updated
-now to specify this. If you already answered the original question,
-you do not need to update your answer, just indicate clearly for which
-questions the function you defined is partial. Sorry for the
-confusion!&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Problem Set 5&lt;/strong&gt; (not yet posted) will be due Friday, 29 September.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Exam 1&lt;/strong&gt; will be in-class on Thursday, 5 October. It will cover
-  Classes 1 - 11, Problem Sets 1 - 5, and MCS Chapters 1 - 5.&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;
-   &lt;center&gt;
-&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;c60255e3f2074eed9581407ac4fb3871&#34; data-ratio=&#34;1.77777777777778&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
-   &lt;/center&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;highlightm&#34;&gt;
-   &lt;a href=&#34;https://uvacs2102.github.io/docs/class9.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes and Questions&lt;/b&gt;&lt;/a&gt;.
-   &lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;total-and-partial-functions&#34;&gt;Total and Partial Functions&lt;/h2&gt;
-
-&lt;p&gt;A &lt;strong&gt;function&lt;/strong&gt; is a mathematical datatype that associates elements from
-one set, called the &lt;em&gt;domain&lt;/em&gt;, with elements from another set, called a
-&lt;em&gt;codomain&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;$$ f: \textrm{\em domain} \rightarrow \textrm{\em codomain} $$&lt;/p&gt;
-
-&lt;p&gt;If the function is &lt;em&gt;total&lt;/em&gt;, every element of the domain has one
-associated codomain element; if the function is &lt;em&gt;partial&lt;/em&gt;, there may be
-elements of the domain that do not have an associated codomain element.&lt;/p&gt;
-
-&lt;h2 id=&#34;relation-relationships&#34;&gt;Relation Relationships&lt;/h2&gt;
-
-&lt;p&gt;Definition review: &lt;strong&gt;binary relation&lt;/strong&gt;, $R$, consists of a domain set,
-$A$, and a codomain set, $B$, and a subset of $A \times B$ called the
-&lt;em&gt;graph&lt;/em&gt; of $R$.&lt;/p&gt;
-
-&lt;p&gt;For each statement below, give the name and at least one example.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;A binary relation where no element of $A$ has more than one outgoing edge:&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;##&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;A binary relation where every element of $A$ has exactly one outgoing edge:&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;##&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;A binary relation where every element of $B$ has exactly one incoming edge:&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;##&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;A binary relation where every element of $A$ has exactly one outgoing
-edge and every element of $B$ has exactly one incoming edge:&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;##&lt;/p&gt;
-
-&lt;p&gt;If there exists a &lt;em&gt;bijective&lt;/em&gt; relation between $S$ and $T$ defined by the graph $G$ which of these &lt;em&gt;must&lt;/em&gt; be true:&lt;/p&gt;
-
-&lt;p&gt;a. there exists some &lt;em&gt;injective&lt;/em&gt; relation between $S$ and $T$.
-b. there exists some &lt;em&gt;bijective&lt;/em&gt; relation between $T$ and $S$.
-c. there exists a &lt;em&gt;total&lt;/em&gt; function, $f: S \rightarrow T$.
-d. $S - T = \emptyset$.
-e. the number of elements of $S$ is equal to the number of elements of $T$.
-f. $G - (S \times T) = \emptyset$.
-g. $(S \times T) - G = \emptyset$.
-h. $(S \times T) - G \neq \emptyset$.&lt;/p&gt;
-
-&lt;h1 id=&#34;relation-practice&#34;&gt;Relation Practice&lt;/h1&gt;
-
-&lt;p&gt;The &lt;em&gt;inverse&lt;/em&gt; of a relation $R: A \rightarrow B, G \subseteq A \times B$ is defined by reversing all the arrows:
-$$
-R^{-1}: B \rightarrow A, G^{-1} \subseteq B \times A
-$$&lt;/p&gt;
-
-&lt;p&gt;$$
-(b, a) \in G^{-1} \iff \fillin\fillin\fillin\fillin
-$$&lt;/p&gt;
-
-&lt;p&gt;What does it mean if $R \equiv R^{-1}$?&lt;/p&gt;
-
-&lt;h1 id=&#34;set-cardinality&#34;&gt;Set Cardinality&lt;/h1&gt;
-
-&lt;p&gt;&lt;strong&gt;Finite Cardinality.&lt;/strong&gt; The book&amp;rsquo;s definition is: ``If $A$ is a finite set, the &lt;em&gt;cardinality&lt;/em&gt; of
-  $A$, written $|A|$, is the number of elements in $A$.&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;Does this definition require adding a new fundamental set operation,
-or is it meaningful with just the set operations we have defined?&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Alternate definition:&lt;/strong&gt; The &lt;em&gt;cardinality&lt;/em&gt; of the set $$ N_k = { n |
-n \in \mathbb{N} \wedge n &amp;lt; k } $$ is $k$. (Next class, we&amp;rsquo;ll use
-this to define the &lt;em&gt;cardinality&lt;/em&gt; of any set. You should be able to
-figure out how to do this on your own with what you know now.)&lt;/p&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
 </description>
     </item>
     
