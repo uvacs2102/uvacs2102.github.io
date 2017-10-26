@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>cs2102: Discrete Math</title>
-    <link>https://uvacs2102.github.io/</link>
+    <link>https://uvacs2102.github.io/index.xml</link>
     <description>Recent content on cs2102: Discrete Math</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -27,21 +27,22 @@
       <guid>https://uvacs2102.github.io/class17/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule:8b7b3a27abcb870c301f99da90607ac1&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
 
-&lt;p&gt;Before Thursday, everyone should have finished reading MCS Chapter 8.
-&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;57544e0622ea4b4cbe07b4e4385eca85&#34; data-ratio=&#34;1.77777777777778&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
-&lt;a href=&#34;https://uvacs2102.github.io/ps/ps7&#34;&gt;&lt;strong&gt;Problem Set 7&lt;/strong&gt;&lt;/a&gt; is due &lt;strong&gt;Friday (27 Oct) at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Before Thursday, everyone should have finished reading MCS Chapter 8.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps7&#34;&gt;&lt;strong&gt;Problem Set 7&lt;/strong&gt;&lt;/a&gt; is due &lt;strong&gt;Friday (27 Oct) at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;
    &lt;center&gt;
+&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;57544e0622ea4b4cbe07b4e4385eca85&#34; data-ratio=&#34;1.77777777777778&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
    &lt;/center&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;highlightm&#34;&gt;
    &lt;a href=&#34;https://uvacs2102.github.io/docs/class17.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes&lt;/b&gt;&lt;/a&gt;.
    &lt;/div&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;links:8b7b3a27abcb870c301f99da90607ac1&#34;&gt;Links&lt;/h2&gt;
+&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://www.cs.cornell.edu/courses/cs2800/2017fa/lectures/lec14-cantor.html&#34;&gt;Proof of Schr&amp;ouml;der-Bernstein Theorem&lt;/a&gt;&lt;/p&gt;
 
@@ -49,7 +50,7 @@
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;infinite-sets:8b7b3a27abcb870c301f99da90607ac1&#34;&gt;Infinite Sets&lt;/h1&gt;
+&lt;h1 id=&#34;infinite-sets&#34;&gt;Infinite Sets&lt;/h1&gt;
 
 &lt;p&gt;&lt;strong&gt;Finite Cardinality.&lt;/strong&gt; The &lt;em&gt;cardinality&lt;/em&gt; of the set
 $$
@@ -67,7 +68,7 @@ cardinality.  (Class 9)&lt;/p&gt;
 
 &lt;p&gt;Show that $\mathbb{Z}$ is infinite.&lt;/p&gt;
 
-&lt;h3 id=&#34;cardinality-of-infinite-sets:8b7b3a27abcb870c301f99da90607ac1&#34;&gt;Cardinality of Infinite Sets&lt;/h3&gt;
+&lt;h3 id=&#34;cardinality-of-infinite-sets&#34;&gt;Cardinality of Infinite Sets&lt;/h3&gt;
 
 &lt;p&gt;&lt;strong&gt;Equal Carinalities.&lt;/strong&gt; We say $|A|\; = |B|$  for arbitrary sets $A,B$ (and say that they have the same cardinality), if there is a bijection between $A$ and $B$.&lt;/p&gt;
 
@@ -79,7 +80,7 @@ cardinality.  (Class 9)&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Schr\wrap{\&amp;ldquo;{o}}der-Bernstein Theorem:&lt;/strong&gt; If $|A|\; \leq |B|$ and $|B|\; \leq |A|$, then there is a bijection between $A$ and $B$, namely $|A|\; = |B|$. (Not proven in cs2102; this is somewhat tricky to prove! For a full proof, see &lt;a href=&#34;http://www.cs.cornell.edu/courses/cs2800/2017fa/lectures/lec14-cantor.html&#34;&gt;the linked lecture notes&lt;/a&gt;.)&lt;/p&gt;
 
-&lt;h3 id=&#34;other-definitions-for-infinite-sets:8b7b3a27abcb870c301f99da90607ac1&#34;&gt;Other Definitions for Infinite Sets&lt;/h3&gt;
+&lt;h3 id=&#34;other-definitions-for-infinite-sets&#34;&gt;Other Definitions for Infinite Sets&lt;/h3&gt;
 
 &lt;p&gt;&lt;strong&gt;Dedekind-Infinite.&lt;/strong&gt; A set $A$ is &lt;em&gt;Dedekind-infinite&lt;/em&gt; if and only if there exists a &lt;em&gt;strict subset&lt;/em&gt; of $A$ with the same cardinality as $A$.  That is,
 $$\exists B \subset A \ldotp \exists R \ldotp R\ \text{is a bijection between}\ A\ \text{and}\ B.$$&lt;/p&gt;
@@ -135,7 +136,7 @@ collaboration policy carefully.&lt;/p&gt;
       <guid>https://uvacs2102.github.io/class16/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule:e5faf2b6fe551ee3e6bfd5f1acfee2f5&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps7&#34;&gt;&lt;strong&gt;Problem Set 6&lt;/strong&gt;&lt;/a&gt; is due &lt;strong&gt;tomorrow at 6:29pm&lt;/strong&gt;. Make sure to read the corrected version of Problem 7.&lt;/p&gt;
 
@@ -152,7 +153,7 @@ collaboration policy carefully.&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;lists:e5faf2b6fe551ee3e6bfd5f1acfee2f5&#34;&gt;Lists&lt;/h1&gt;
+&lt;h1 id=&#34;lists&#34;&gt;Lists&lt;/h1&gt;
 
 &lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; A &lt;em&gt;list&lt;/em&gt; is an ordered sequence of objects.  A list is
   either the empty list ($\lambda$), or the result of $\text{prepend}(e,
@@ -160,10 +161,10 @@ collaboration policy carefully.&lt;/p&gt;
 
 &lt;p&gt;\begin{equation&lt;em&gt;}
 \begin{split}
-\text{\em first}(\text{prepend}(e, l)) &amp;amp;= e \
-\text{\em rest}(\text{prepend}(e, l)) &amp;amp;= l \
-\text{\em empty}(\text{prepend}(e, l)) &amp;amp;= \text{\bf False} \
-\text{\em empty}(\text{\bf null}) &amp;amp;= \text{\bf True} \
+\text{\em first}(\text{prepend}(e, l)) &amp;amp;= e &lt;br /&gt;
+\text{\em rest}(\text{prepend}(e, l)) &amp;amp;= l &lt;br /&gt;
+\text{\em empty}(\text{prepend}(e, l)) &amp;amp;= \text{\bf False} &lt;br /&gt;
+\text{\em empty}(\text{\bf null}) &amp;amp;= \text{\bf True} &lt;br /&gt;
 \end{split}
 \end{equation&lt;/em&gt;}&lt;/p&gt;
 
@@ -171,8 +172,8 @@ collaboration policy carefully.&lt;/p&gt;
 \begin{equation&lt;em&gt;}
 \begin{split}
 \begin{cases}
-0 &amp;amp; \text{if}\ p\ \text{is \bf null} \
-\text{\em length}(q) + 1 &amp;amp; \text{otherwise}\ p = \text{\em prepend}(e, q)\ \text{for some object}\ e\ \text{and some list}\ q \
+0 &amp;amp; \text{if}\ p\ \text{is \bf null} &lt;br /&gt;
+\text{\em length}(q) + 1 &amp;amp; \text{otherwise}\ p = \text{\em prepend}(e, q)\ \text{for some object}\ e\ \text{and some list}\ q &lt;br /&gt;
 \end{cases}
 \end{split}
 \end{equation&lt;/em&gt;}&lt;/p&gt;
@@ -189,7 +190,7 @@ collaboration policy carefully.&lt;/p&gt;
 
 &lt;!--page--&gt;
 
-&lt;h2 id=&#34;concatenation:e5faf2b6fe551ee3e6bfd5f1acfee2f5&#34;&gt;Concatenation&lt;/h2&gt;
+&lt;h2 id=&#34;concatenation&#34;&gt;Concatenation&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; The &lt;em&gt;concatenation&lt;/em&gt; of two lists, $p = (p_1, p_2, \cdots, p_n)$ and $q = (q_1, q_2, \cdots, q_m)$ is
 $$(p_1, p_2, \cdots, p_n, q_1, q_2, \cdots, q_m).$$&lt;/p&gt;
@@ -200,7 +201,7 @@ $$(p_1, p_2, \cdots, p_n, q_1, q_2, \cdots, q_m).$$&lt;/p&gt;
 
 &lt;p&gt;#&lt;/p&gt;
 
-&lt;h2 id=&#34;structural-induction:e5faf2b6fe551ee3e6bfd5f1acfee2f5&#34;&gt;Structural Induction&lt;/h2&gt;
+&lt;h2 id=&#34;structural-induction&#34;&gt;Structural Induction&lt;/h2&gt;
 
 &lt;p&gt;To prove proposition $P(x)$ for element $x \in D$ where $D$ is a
 recursively-constructed data type, we do two things:&lt;/p&gt;
@@ -211,16 +212,16 @@ recursively-constructed data type, we do two things:&lt;/p&gt;
 using any &amp;ldquo;construct case&amp;rdquo; rules, then $P(x)$ is true as well.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h2 id=&#34;comparing-various-forms-of-induction:e5faf2b6fe551ee3e6bfd5f1acfee2f5&#34;&gt;Comparing Various forms of Induction&lt;/h2&gt;
+&lt;h2 id=&#34;comparing-various-forms-of-induction&#34;&gt;Comparing Various forms of Induction&lt;/h2&gt;
 
 &lt;p&gt;\begin{center}
 \begin{tabular}{lccc}
 &amp;amp; {\bf Regular Induction} &amp;amp; {\bf Invariant Principle} &amp;amp; {\bf Structural Induction} \ \hline
-Works on: &amp;amp; natural numbers &amp;amp; state machines &amp;amp; data types \
-To prove $P(\cdot)$ &amp;amp; {\em for all natural numbers} &amp;amp; {\em for all reachable states} &amp;amp; {\em for all data type objects} \
-Prove {\bf base case(s)} &amp;amp; $P(0)$ &amp;amp; $P(q_0)$ &amp;amp; $P(\text{base object(s)})$ \
-and {\bf inductive step} &amp;amp; $\forall m \in \mathbb{N} \ldotp$ &amp;amp; $\forall (q, r) \in G \ldotp $ &amp;amp; $\forall s \in \text{\em Type} \ldotp$ \
-  &amp;amp; $P(m) \implies P(m+1)$ &amp;amp; $P(q) \implies P&amp;reg;$ &amp;amp; $P(s) \implies P(t)$ \
+Works on: &amp;amp; natural numbers &amp;amp; state machines &amp;amp; data types &lt;br /&gt;
+To prove $P(\cdot)$ &amp;amp; {\em for all natural numbers} &amp;amp; {\em for all reachable states} &amp;amp; {\em for all data type objects} &lt;br /&gt;
+Prove {\bf base case(s)} &amp;amp; $P(0)$ &amp;amp; $P(q_0)$ &amp;amp; $P(\text{base object(s)})$ &lt;br /&gt;
+and {\bf inductive step} &amp;amp; $\forall m \in \mathbb{N} \ldotp$ &amp;amp; $\forall (q, r) \in G \ldotp $ &amp;amp; $\forall s \in \text{\em Type} \ldotp$ &lt;br /&gt;
+  &amp;amp; $P(m) \implies P(m+1)$ &amp;amp; $P(q) \implies P&amp;reg;$ &amp;amp; $P(s) \implies P(t)$ &lt;br /&gt;
  &amp;amp; &amp;amp; &amp;amp; $\quad \forall t\ \text{constructable from}\ s$ \
 \end{tabular}
 \end{center}&lt;/p&gt;
@@ -244,7 +245,7 @@ and {\bf inductive step} &amp;amp; $\forall m \in \mathbb{N} \ldotp$ &amp;amp; $
       <guid>https://uvacs2102.github.io/class15/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule:82758e0aba59693fe0fb1bf5353fa6c7&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;You should read MCS Chapter 7 this week.&lt;/p&gt;
 
@@ -255,7 +256,7 @@ and {\bf inductive step} &amp;amp; $\forall m \in \mathbb{N} \ldotp$ &amp;amp; $
 &lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;9d25492c6e134346a212652c6d0052ab&#34; data-ratio=&#34;1.77777777777778&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
    &lt;/center&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;links:82758e0aba59693fe0fb1bf5353fa6c7&#34;&gt;Links&lt;/h2&gt;
+&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
 
 &lt;p&gt;Python code from class and list definitions: &lt;a href=&#34;https://uvacs2102.github.io/docs/pairs.py&#34;&gt;pairs.py&lt;/a&gt;&lt;/p&gt;
 
@@ -267,7 +268,7 @@ and {\bf inductive step} &amp;amp; $\forall m \in \mathbb{N} \ldotp$ &amp;amp; $
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;proving-correctness:82758e0aba59693fe0fb1bf5353fa6c7&#34;&gt;Proving Correctness&lt;/h1&gt;
+&lt;h1 id=&#34;proving-correctness&#34;&gt;Proving Correctness&lt;/h1&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def slow_power(a, b):
    y = 1
@@ -316,13 +317,13 @@ the machine will reach a final state $q_f = (y, 0)$ in $b$ steps.  The
 proof in class used the Well Ordering Principle. You could also prove
 this using regular Induction.&lt;/p&gt;
 
-&lt;h1 id=&#34;pairs:82758e0aba59693fe0fb1bf5353fa6c7&#34;&gt;Pairs&lt;/h1&gt;
+&lt;h1 id=&#34;pairs&#34;&gt;Pairs&lt;/h1&gt;
 
 &lt;p&gt;What is the difference between scalar data and compound data structures?&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; A $\text{\em Pair}$ is a datatype that supports these three operations:&lt;br /&gt;
 \begin{quote}
-     $\text{\em make_pair}: \text{\em Object} \times \text{\em Object} \rightarrow \text{\em Pair}$\
+     $\text{\em make_pair}: \text{\em Object} \times \text{\em Object} \rightarrow \text{\em Pair}$&lt;br /&gt;
      $\text{\em pair_first}: \text{\em Pair} \rightarrow \text{\em Object}$\&lt;br /&gt;
      $\text{\em pair_last}: \text{\em Pair} \rightarrow \text{\em Object}$\&lt;br /&gt;
 \end{quote}
@@ -343,7 +344,7 @@ def pair_last(p):
     return p(False)
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h1 id=&#34;lists:82758e0aba59693fe0fb1bf5353fa6c7&#34;&gt;Lists&lt;/h1&gt;
+&lt;h1 id=&#34;lists&#34;&gt;Lists&lt;/h1&gt;
 
 &lt;p&gt;&lt;strong&gt;Definition (1).&lt;/strong&gt; A &lt;em&gt;List&lt;/em&gt; is either (1) a &lt;em&gt;Pair&lt;/em&gt; where the second part of
   the pair is a &lt;em&gt;List&lt;/em&gt;, or (2) the empty list.&lt;/p&gt;
@@ -512,7 +513,7 @@ that $0! = 1$.)&lt;/p&gt;
       <guid>https://uvacs2102.github.io/class14/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule:69e304a0e65e98722637abe379145c02&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps6&#34;&gt;&lt;strong&gt;Problem Set 6&lt;/strong&gt;&lt;/a&gt; is due &lt;strong&gt;20 October (Friday) at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
 
@@ -532,7 +533,7 @@ starting after Prof. Mahmoody&amp;rsquo;s office hours Monday.&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;state-machines-review-from-class-13:69e304a0e65e98722637abe379145c02&#34;&gt;State Machines (review from Class 13)&lt;/h2&gt;
+&lt;h2 id=&#34;state-machines-review-from-class-13&#34;&gt;State Machines (review from Class 13)&lt;/h2&gt;
 
 &lt;p&gt;A &lt;em&gt;state machine&lt;/em&gt;, $M = (S, G: S \times S, q_0 \in S)$, is a binary
 relation (called a &lt;em&gt;transition relation&lt;/em&gt;) on a set (both the domain and
@@ -553,7 +554,7 @@ S, q_0 \in S)$ is a predicate, $P$, on states, such that whenever $P(q)$
 is true of a state $q$, and $q \rightarrow r \in G$, then $P&amp;reg;$ is
 true.&lt;/p&gt;
 
-&lt;h3 id=&#34;bishop-state-machine:69e304a0e65e98722637abe379145c02&#34;&gt;Bishop State Machine&lt;/h3&gt;
+&lt;h3 id=&#34;bishop-state-machine&#34;&gt;Bishop State Machine&lt;/h3&gt;
 
 &lt;p&gt;$S = { (\fillin ) \, | \, r, c \in \mathbb{N} }$
 $G = { (r, c) \rightarrow (r&amp;rsquo;, c&amp;rsquo;) \, | \, r, c \in \mathbb{N} \wedge (\exists d \in \mathbb{N}^{+} \textrm{ such that } r&amp;rsquo; = r \fillin d \wedge r&amp;rsquo; \ge 0 \wedge c&amp;rsquo; = c \fillin d \wedge c&amp;rsquo; \ge 0 }$
@@ -563,7 +564,7 @@ $q_0 = (0, 2)$&lt;/p&gt;
 
 &lt;p&gt;#&lt;/p&gt;
 
-&lt;h3 id=&#34;progress-machine:69e304a0e65e98722637abe379145c02&#34;&gt;``Progress&amp;rdquo; Machine&lt;/h3&gt;
+&lt;h3 id=&#34;progress-machine&#34;&gt;``Progress&amp;rdquo; Machine&lt;/h3&gt;
 
 &lt;p&gt;$S = { (x, d) \, | \, x \in \mathbb{Z}, d \in { \mathrm{\bf F}, \mathrm{\bf B}} }$
 $G = { (x, \mathrm{\bf F}) \rightarrow (x + 1, \mathrm{\bf B}) \, | \, x \in \mathbb{Z} } \cup
@@ -574,7 +575,7 @@ $q_0 = (0, \mathrm{\bf F})$&lt;/p&gt;
 
 &lt;!--page--&gt;
 
-&lt;h2 id=&#34;preserved-invariants:69e304a0e65e98722637abe379145c02&#34;&gt;Preserved Invariants&lt;/h2&gt;
+&lt;h2 id=&#34;preserved-invariants&#34;&gt;Preserved Invariants&lt;/h2&gt;
 
 &lt;p&gt;A predicate $P(q)$ is a &lt;em&gt;preserved invariant&lt;/em&gt; of machine $M = (S, G \subseteq S \times S, q_0 \in
   S)$ if:
@@ -599,7 +600,7 @@ $$&lt;/p&gt;
 
 &lt;!--page--&gt;
 
-&lt;h1 id=&#34;slow-exponentiation:69e304a0e65e98722637abe379145c02&#34;&gt;Slow Exponentiation&lt;/h1&gt;
+&lt;h1 id=&#34;slow-exponentiation&#34;&gt;Slow Exponentiation&lt;/h1&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def slow_power(a, b):
    y = 1
@@ -618,7 +619,7 @@ $q_0 ::= (1, b)$&lt;/p&gt;
 
 &lt;p&gt;#&lt;/p&gt;
 
-&lt;h1 id=&#34;fast-exponentiation:69e304a0e65e98722637abe379145c02&#34;&gt;Fast Exponentiation&lt;/h1&gt;
+&lt;h1 id=&#34;fast-exponentiation&#34;&gt;Fast Exponentiation&lt;/h1&gt;
 
 &lt;p&gt;This is the algorithm from Section 6.3.1 written as Python code:&lt;/p&gt;
 
@@ -749,18 +750,18 @@ $$&lt;/p&gt;
 because of “Fall Break” and the Exam (as usual, all will be in Rice
 436 except the professors&amp;rsquo; as noted):&lt;/p&gt;
 
-&lt;h4 id=&#34;monday-2-oct:d0632df39174fbd03a717f33cd2b5853&#34;&gt;Monday (2 Oct)&lt;/h4&gt;
+&lt;h4 id=&#34;monday-2-oct&#34;&gt;Monday (2 Oct)&lt;/h4&gt;
 
 &lt;p&gt;Mohammad Mahmoody (Rice 511), 10:45-11:45am&lt;br /&gt;
 Sarah Meng, 4:30-6:00pm&lt;/p&gt;
 
-&lt;h4 id=&#34;tuesday-3-oct:d0632df39174fbd03a717f33cd2b5853&#34;&gt;Tuesday (3 Oct)&lt;/h4&gt;
+&lt;h4 id=&#34;tuesday-3-oct&#34;&gt;Tuesday (3 Oct)&lt;/h4&gt;
 
 &lt;p&gt;Nate Olsen, 10-11:30am&lt;br /&gt;
 Michael Woon, 11am-12:30pm&lt;br /&gt;
 Henry Spece, 3:30-5pm&lt;/p&gt;
 
-&lt;h4 id=&#34;wednesday-4-oct:d0632df39174fbd03a717f33cd2b5853&#34;&gt;Wednesday (4 Oct)&lt;/h4&gt;
+&lt;h4 id=&#34;wednesday-4-oct&#34;&gt;Wednesday (4 Oct)&lt;/h4&gt;
 
 &lt;p&gt;Colin Harfst, 9:30am-12:30pm&lt;br /&gt;
 Anna Wu, noon-1:30pm&lt;br /&gt;
@@ -773,7 +774,7 @@ Xueying Bai, 6-7pm&lt;br /&gt;
 Fan Feng, 7-8:30pm&lt;br /&gt;
 Nate Olsen, 7:30-9:00pm&lt;/p&gt;
 
-&lt;h4 id=&#34;thursday-5-oct:d0632df39174fbd03a717f33cd2b5853&#34;&gt;Thursday (5 Oct)&lt;/h4&gt;
+&lt;h4 id=&#34;thursday-5-oct&#34;&gt;Thursday (5 Oct)&lt;/h4&gt;
 
 &lt;p&gt;Amar Singh, 9am-10:30&lt;br /&gt;
 Xiao Zhang, 10-11am&lt;br /&gt;
@@ -802,7 +803,7 @@ hours schedule will resume on Monday, 9 October.&lt;/p&gt;
       <guid>https://uvacs2102.github.io/class12/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule:bc216d98f3ca2300699af2d41b8a2a45&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps5&#34;&gt;&lt;strong&gt;Problem Set 5&lt;/strong&gt;&lt;/a&gt; is due &lt;strong&gt;Friday at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
 
@@ -821,7 +822,7 @@ hours schedule will resume on Monday, 9 October.&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;strong-induction-principle:bc216d98f3ca2300699af2d41b8a2a45&#34;&gt;Strong Induction Principle&lt;/h2&gt;
+&lt;h2 id=&#34;strong-induction-principle&#34;&gt;Strong Induction Principle&lt;/h2&gt;
 
 &lt;p&gt;Let $P$ be a predicated on $\mathbb{N}$.  If&lt;/p&gt;
 
@@ -852,7 +853,7 @@ $$&lt;/p&gt;
 
 &lt;p&gt;##&lt;/p&gt;
 
-&lt;h3 id=&#34;example-strong-induction-proof:bc216d98f3ca2300699af2d41b8a2a45&#34;&gt;Example Strong Induction Proof&lt;/h3&gt;
+&lt;h3 id=&#34;example-strong-induction-proof&#34;&gt;Example Strong Induction Proof&lt;/h3&gt;
 
 &lt;p&gt;&lt;strong&gt;Theorem:&lt;/strong&gt; Every number, $n \in \mathbb{N}, n \geq 4$ can be written as $\alpha \cdot 2 + \beta \cdot 5$ where $\alpha, \beta \in \mathbb{N}$.&lt;/p&gt;
 
@@ -877,7 +878,7 @@ hypothesis), we know $\exists \alpha, \beta \in \mathbb{N} . m - 1 =
 $m + 1 = (\alpha + 1) \cdot 2 + \beta \cdot 5$.&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h2 id=&#34;proof-by-contra-positive-review:bc216d98f3ca2300699af2d41b8a2a45&#34;&gt;Proof by Contra-Positive (Review)&lt;/h2&gt;
+&lt;h2 id=&#34;proof-by-contra-positive-review&#34;&gt;Proof by Contra-Positive (Review)&lt;/h2&gt;
 
 &lt;p&gt;Recall: $P \implies Q$ is equivalent to $\neg Q \implies \neg P$. (If
 you are shaky on this, prove it to yourself using a truth table.)&lt;/p&gt;
@@ -886,7 +887,7 @@ you are shaky on this, prove it to yourself using a truth table.)&lt;/p&gt;
 about than the original proposition (e.g., irrational is a complex
 property to describe, but rational (NOT irrational) is a simple one. So to prove that ``If $r$ is irrational then $\sqrt{r}$ is also irrational&amp;rdquo; we can prove the contrapositive which is &amp;ldquo;if $\sqrt{r}$&amp;rdquo; is rational, then $r$ is also rational$ which is quite straightforward.&lt;/p&gt;
 
-&lt;h2 id=&#34;proof-by-contradiction-review:bc216d98f3ca2300699af2d41b8a2a45&#34;&gt;Proof by Contradiction (Review)&lt;/h2&gt;
+&lt;h2 id=&#34;proof-by-contradiction-review&#34;&gt;Proof by Contradiction (Review)&lt;/h2&gt;
 
 &lt;p&gt;To prove $P$, show $\neg P \implies False$.&lt;/p&gt;
 
@@ -906,7 +907,7 @@ property to describe, but rational (NOT irrational) is a simple one. So to prove
 
 &lt;p&gt;Typical use: when the statment we want to prove has universal quantifier. for example, $\forall x \in \mathbb{Z}. P(x)$. Note that the statment that $\mathbb{Z}$ has \emph{no} minimum, when written formally, uses a universal quantifier (make sure to double check it). Then, instead of arguing that for all $x \in A$, $P(x)$ holds, we assume (for sake of contradiction) that there exists one $x$ for which $\neg(P(x))$ (note that this is indeed the negated statement) from which  we get a contradiction.&lt;/p&gt;
 
-&lt;h1 id=&#34;binary-relation-properties:bc216d98f3ca2300699af2d41b8a2a45&#34;&gt;Binary Relation Properties&lt;/h1&gt;
+&lt;h1 id=&#34;binary-relation-properties&#34;&gt;Binary Relation Properties&lt;/h1&gt;
 
 &lt;p&gt;When we draw the graph of binary relations, the Domain (&lt;code&gt;input&amp;quot; set) has outgoing edges. Codomain (&lt;/code&gt;output&amp;rdquo; set) has
 incoming edges. So when we use the compact notation referring to different properties of binary relations, keep in mind that the words ``in-out&amp;rdquo; refer to the edge (not the input/output sets).  The properties about outgoing edges are &lt;em&gt;function&lt;/em&gt;

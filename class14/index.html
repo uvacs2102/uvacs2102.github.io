@@ -62,7 +62,7 @@
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://uvacs2102.github.io/touch-icon-144-precomposed.png">
 <link href="https://uvacs2102.github.io/favicon.png" rel="icon">
 
-<meta name="generator" content="Hugo 0.16-DEV" />
+<meta name="generator" content="Hugo 0.17" />
 
   <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -194,7 +194,7 @@
   <div class="container content">
   
 
-<h3 id="schedule:69e304a0e65e98722637abe379145c02">Schedule</h3>
+<h3 id="schedule">Schedule</h3>
 
 <p><a href="/ps/ps6"><strong>Problem Set 6</strong></a> is due <strong>20 October (Friday) at 6:29pm</strong>.</p>
 
@@ -214,7 +214,7 @@ starting after Prof. Mahmoody&rsquo;s office hours Monday.</p>
 
 <p><div class="latex"></p>
 
-<h2 id="state-machines-review-from-class-13:69e304a0e65e98722637abe379145c02">State Machines (review from Class 13)</h2>
+<h2 id="state-machines-review-from-class-13">State Machines (review from Class 13)</h2>
 
 <p>A <em>state machine</em>, $M = (S, G: S \times S, q_0 \in S)$, is a binary
 relation (called a <em>transition relation</em>) on a set (both the domain and
@@ -235,7 +235,7 @@ S, q_0 \in S)$ is a predicate, $P$, on states, such that whenever $P(q)$
 is true of a state $q$, and $q \rightarrow r \in G$, then $P&reg;$ is
 true.</p>
 
-<h3 id="bishop-state-machine:69e304a0e65e98722637abe379145c02">Bishop State Machine</h3>
+<h3 id="bishop-state-machine">Bishop State Machine</h3>
 
 <p>$S = { (\fillin ) \, | \, r, c \in \mathbb{N} }$
 $G = { (r, c) \rightarrow (r&rsquo;, c&rsquo;) \, | \, r, c \in \mathbb{N} \wedge (\exists d \in \mathbb{N}^{+} \textrm{ such that } r&rsquo; = r \fillin d \wedge r&rsquo; \ge 0 \wedge c&rsquo; = c \fillin d \wedge c&rsquo; \ge 0 }$
@@ -245,7 +245,7 @@ $q_0 = (0, 2)$</p>
 
 <p>#</p>
 
-<h3 id="progress-machine:69e304a0e65e98722637abe379145c02">``Progress&rdquo; Machine</h3>
+<h3 id="progress-machine">``Progress&rdquo; Machine</h3>
 
 <p>$S = { (x, d) \, | \, x \in \mathbb{Z}, d \in { \mathrm{\bf F}, \mathrm{\bf B}} }$
 $G = { (x, \mathrm{\bf F}) \rightarrow (x + 1, \mathrm{\bf B}) \, | \, x \in \mathbb{Z} } \cup
@@ -256,7 +256,7 @@ $q_0 = (0, \mathrm{\bf F})$</p>
 
 <!--page-->
 
-<h2 id="preserved-invariants:69e304a0e65e98722637abe379145c02">Preserved Invariants</h2>
+<h2 id="preserved-invariants">Preserved Invariants</h2>
 
 <p>A predicate $P(q)$ is a <em>preserved invariant</em> of machine $M = (S, G \subseteq S \times S, q_0 \in
   S)$ if:
@@ -281,7 +281,7 @@ $$</p>
 
 <!--page-->
 
-<h1 id="slow-exponentiation:69e304a0e65e98722637abe379145c02">Slow Exponentiation</h1>
+<h1 id="slow-exponentiation">Slow Exponentiation</h1>
 
 <pre><code class="language-python">def slow_power(a, b):
    y = 1
@@ -300,7 +300,7 @@ $q_0 ::= (1, b)$</p>
 
 <p>#</p>
 
-<h1 id="fast-exponentiation:69e304a0e65e98722637abe379145c02">Fast Exponentiation</h1>
+<h1 id="fast-exponentiation">Fast Exponentiation</h1>
 
 <p>This is the algorithm from Section 6.3.1 written as Python code:</p>
 
