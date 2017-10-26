@@ -153,6 +153,10 @@
   </header>
   
   
+  <p class="fronthead"><A href="">Problem Set 6 Comments</a> (Wed, 25 Oct 2017)</p>
+    <p>The Problem Set 6 solutions and comments are now posted in collab: <a href="https://collab.its.virginia.edu/access/content/group/9bd99d1c-6f18-4542-a7d1-8ffc4fccbd3d/ps6solutions.pdf">PDF</a></p>
+ 
+  
   <p class="fronthead"><A href="">Class 17: Infinite Sets</a> (Tue, 24 Oct 2017)</p>
     
 
@@ -355,7 +359,7 @@ and {\bf inductive step} &amp; $\forall m \in \mathbb{N} \ldotp$ &amp; $\forall 
   <p class="fronthead"><A href="">Class 15: Recursive Data Types</a> (Tue, 17 Oct 2017)</p>
     
 
-<h3 id="schedule">Schedule</h3>
+<h3 id="schedule:82758e0aba59693fe0fb1bf5353fa6c7">Schedule</h3>
 
 <p>You should read MCS Chapter 7 this week.</p>
 
@@ -366,7 +370,7 @@ and {\bf inductive step} &amp; $\forall m \in \mathbb{N} \ldotp$ &amp; $\forall 
 <script async class="speakerdeck-embed" data-id="9d25492c6e134346a212652c6d0052ab" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
    </center></p>
 
-<h2 id="links">Links</h2>
+<h2 id="links:82758e0aba59693fe0fb1bf5353fa6c7">Links</h2>
 
 <p>Python code from class and list definitions: <a href="/docs/pairs.py">pairs.py</a></p>
 
@@ -378,7 +382,7 @@ and {\bf inductive step} &amp; $\forall m \in \mathbb{N} \ldotp$ &amp; $\forall 
 
 <p><div class="latex"></p>
 
-<h1 id="proving-correctness">Proving Correctness</h1>
+<h1 id="proving-correctness:82758e0aba59693fe0fb1bf5353fa6c7">Proving Correctness</h1>
 
 <pre><code class="language-python">def slow_power(a, b):
    y = 1
@@ -427,7 +431,7 @@ the machine will reach a final state $q_f = (y, 0)$ in $b$ steps.  The
 proof in class used the Well Ordering Principle. You could also prove
 this using regular Induction.</p>
 
-<h1 id="pairs">Pairs</h1>
+<h1 id="pairs:82758e0aba59693fe0fb1bf5353fa6c7">Pairs</h1>
 
 <p>What is the difference between scalar data and compound data structures?</p>
 
@@ -454,7 +458,7 @@ def pair_last(p):
     return p(False)
 </code></pre>
 
-<h1 id="lists">Lists</h1>
+<h1 id="lists:82758e0aba59693fe0fb1bf5353fa6c7">Lists</h1>
 
 <p><strong>Definition (1).</strong> A <em>List</em> is either (1) a <em>Pair</em> where the second part of
   the pair is a <em>List</em>, or (2) the empty list.</p>
@@ -467,7 +471,7 @@ def pair_last(p):
   <p class="fronthead"><A href="">Class 14: Invariant Principle</a> (Thu, 12 Oct 2017)</p>
     
 
-<h3 id="schedule">Schedule</h3>
+<h3 id="schedule:69e304a0e65e98722637abe379145c02">Schedule</h3>
 
 <p><a href="/ps/ps6"><strong>Problem Set 6</strong></a> is due <strong>20 October (Friday) at 6:29pm</strong>.</p>
 
@@ -487,7 +491,7 @@ starting after Prof. Mahmoody&rsquo;s office hours Monday.</p>
 
 <p><div class="latex"></p>
 
-<h2 id="state-machines-review-from-class-13">State Machines (review from Class 13)</h2>
+<h2 id="state-machines-review-from-class-13:69e304a0e65e98722637abe379145c02">State Machines (review from Class 13)</h2>
 
 <p>A <em>state machine</em>, $M = (S, G: S \times S, q_0 \in S)$, is a binary
 relation (called a <em>transition relation</em>) on a set (both the domain and
@@ -508,7 +512,7 @@ S, q_0 \in S)$ is a predicate, $P$, on states, such that whenever $P(q)$
 is true of a state $q$, and $q \rightarrow r \in G$, then $P&reg;$ is
 true.</p>
 
-<h3 id="bishop-state-machine">Bishop State Machine</h3>
+<h3 id="bishop-state-machine:69e304a0e65e98722637abe379145c02">Bishop State Machine</h3>
 
 <p>$S = { (\fillin ) \, | \, r, c \in \mathbb{N} }$
 $G = { (r, c) \rightarrow (r&rsquo;, c&rsquo;) \, | \, r, c \in \mathbb{N} \wedge (\exists d \in \mathbb{N}^{+} \textrm{ such that } r&rsquo; = r \fillin d \wedge r&rsquo; \ge 0 \wedge c&rsquo; = c \fillin d \wedge c&rsquo; \ge 0 }$
@@ -518,7 +522,7 @@ $q_0 = (0, 2)$</p>
 
 <p>#</p>
 
-<h3 id="progress-machine">``Progress&rdquo; Machine</h3>
+<h3 id="progress-machine:69e304a0e65e98722637abe379145c02">``Progress&rdquo; Machine</h3>
 
 <p>$S = { (x, d) \, | \, x \in \mathbb{Z}, d \in { \mathrm{\bf F}, \mathrm{\bf B}} }$
 $G = { (x, \mathrm{\bf F}) \rightarrow (x + 1, \mathrm{\bf B}) \, | \, x \in \mathbb{Z} } \cup
@@ -529,7 +533,7 @@ $q_0 = (0, \mathrm{\bf F})$</p>
 
 <!--page-->
 
-<h2 id="preserved-invariants">Preserved Invariants</h2>
+<h2 id="preserved-invariants:69e304a0e65e98722637abe379145c02">Preserved Invariants</h2>
 
 <p>A predicate $P(q)$ is a <em>preserved invariant</em> of machine $M = (S, G \subseteq S \times S, q_0 \in
   S)$ if:
@@ -554,7 +558,7 @@ $$</p>
 
 <!--page-->
 
-<h1 id="slow-exponentiation">Slow Exponentiation</h1>
+<h1 id="slow-exponentiation:69e304a0e65e98722637abe379145c02">Slow Exponentiation</h1>
 
 <pre><code class="language-python">def slow_power(a, b):
    y = 1
@@ -573,7 +577,7 @@ $q_0 ::= (1, b)$</p>
 
 <p>#</p>
 
-<h1 id="fast-exponentiation">Fast Exponentiation</h1>
+<h1 id="fast-exponentiation:69e304a0e65e98722637abe379145c02">Fast Exponentiation</h1>
 
 <p>This is the algorithm from Section 6.3.1 written as Python code:</p>
 
@@ -602,7 +606,7 @@ collaboration policy carefully.</p>
   <p class="fronthead"><A href="">Class 13: State Machines</a> (Tue, 10 Oct 2017)</p>
     
 
-<h3 id="schedule:af2ff3ef0db44829d3ff131eac0d7ec7">Schedule</h3>
+<h3 id="schedule">Schedule</h3>
 
 <p>There is no Problem Set due this week. <a href="/ps/ps6"><strong>Problem Set 6</strong></a> will be posted soon and due next <strong>Friday (October 20) at 6:29pm</strong>.</p>
 
@@ -624,7 +628,7 @@ office hours tomorrow, or before or after class on Thursday.</p>
 
 <p><div class="latex"></p>
 
-<h2 id="state-machines:af2ff3ef0db44829d3ff131eac0d7ec7">State Machines</h2>
+<h2 id="state-machines">State Machines</h2>
 
 <p>A <em>state machine</em> is a binary relation (called a <em>transition relation</em>)
 on a set (both the domain and codomain are the same set).  One state is
@@ -652,7 +656,7 @@ designated as the <em>start state</em>.</p>
 <p>How well do state machines model real computers?  What kind of
 transition relation does the state machine modeling your computer have?</p>
 
-<h2 id="state-machine-execution:af2ff3ef0db44829d3ff131eac0d7ec7">State Machine Execution</h2>
+<h2 id="state-machine-execution">State Machine Execution</h2>
 
 <p>An <em>execution</em> of a state machine $M = (S, G \subseteq S \times S, q_0 \in S)$ is a (possibly infinite) sequence of states, $(x_0, x_1, \cdots, x_n)$ where:</p>
 
@@ -722,139 +726,6 @@ hours schedule will resume on Monday, 9 October.</p>
   
   <p class="fronthead"><A href="">Problem Set 5 Comments</a> (Sun, 1 Oct 2017)</p>
     <p>The Problem Set 5 solutions and comments are now posted in collab: <a href="https://collab.its.virginia.edu/access/content/group/9bd99d1c-6f18-4542-a7d1-8ffc4fccbd3d/ps5solutions.pdf">PDF</a></p>
- 
-  
-  <p class="fronthead"><A href="">Class 12: Review</a> (Thu, 28 Sep 2017)</p>
-    
-
-<h3 id="schedule:bc216d98f3ca2300699af2d41b8a2a45">Schedule</h3>
-
-<p><a href="/ps/ps5"><strong>Problem Set 5</strong></a> is due <strong>Friday at 6:29pm</strong>.</p>
-
-<p>See <a href="/class11">Class 11 Notes</a> for information and preparation advice for Exam 1, which will be in class next Thursday, 5 October.</p>
-
-<p><div class="notpdf">
-   <center>
-<script async class="speakerdeck-embed" data-id="f6aa2e5580f940d984c6508ff6f26d46" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-   </center></p>
-
-<p><div class="highlightm">
-   <a href="/docs/class12.pdf">See PDF Version for <b>Notes and Questions</b></a>.
-   </div></p>
-
-<p></div><!--endpdf--></p>
-
-<p><div class="latex"></p>
-
-<h2 id="strong-induction-principle:bc216d98f3ca2300699af2d41b8a2a45">Strong Induction Principle</h2>
-
-<p>Let $P$ be a predicated on $\mathbb{N}$.  If</p>
-
-<ul>
-<li>$P(0)$ is true, and</li>
-<li>$(\forall m \in \mathbb{N}, m \le n . P(n)) \implies P(n + 1)$ for all $n \in \mathbb{N}$,</li>
-</ul>
-
-<p>then</p>
-
-<ul>
-<li>$P(m)$ is true for all $m \in \mathbb{N}$.</li>
-</ul>
-
-<p>As an inference rule:</p>
-
-<p>$$
-\infer{\forall m \in \mathbb{N} . P(m)}{P(0), \forall n \in \mathbb{N} . (P(0) \vee P(1) \wedge \cdots \wedge P(n)) \implies P(n + 1)}
-$$</p>
-
-<p>With arbitrary basis, $b \in \mathbb{N}$:</p>
-
-<p>$$
-\infer{\forall m \in { b, b+1, b+2, \ldots } . P(m)}{P(b), \forall n \in \mathbb{N} . (P(b) \vee P(b + 1) \wedge \cdots \wedge P(n)) \implies P(n + 1)}
-$$</p>
-
-<p>Show that <em>strong</em> induction is not actually stronger than regular induction. (Hint: if the predicate for strong induction is $P(m)$, explain how to construct a predicate, $P&rsquo;(m)$, that works with regular induction.)</p>
-
-<p>##</p>
-
-<h3 id="example-strong-induction-proof:bc216d98f3ca2300699af2d41b8a2a45">Example Strong Induction Proof</h3>
-
-<p><strong>Theorem:</strong> Every number, $n \in \mathbb{N}, n \geq 4$ can be written as $\alpha \cdot 2 + \beta \cdot 5$ where $\alpha, \beta \in \mathbb{N}$.</p>
-
-<p>Proof by Strong Induction:</p>
-
-<ol>
-<li><p>First we need to define the predicate: $$P(n) := \exists \alpha, \beta \in \mathbb{N} . n = \alpha \cdot 2 + \beta \cdot 5$$.</p></li>
-
-<li><p>Basis: we are proving for all $n &gt; 3$:</p>
-
-<p>$P(4)$: $\alpha = 2, \beta = 0$ gives $4 = 2 \cdot 2 + 0 \cdot 5$.
-$P(5)$: $\alpha = 0, \beta = 1$ gives $5 = 0 \cdot 2 + 1 \cdot 5$.</p></li>
-
-<li><p>Induction step: $\forall n \in {6, \ldots }$</p>
-
-<p>By strong induction, assume $P(m)$ is true for all $m \in { 4, 5, 6,
-\ldots, m}$.</p>
-
-<p>Show $P(m + 1)$: Since $P(m - 1)$ is true (by the \emph{strong} induction
-hypothesis), we know $\exists \alpha, \beta \in \mathbb{N} . m - 1 =
-\alpha \cdot 2 + \beta \cdot 5$. We can show $P(m + 1)$ since
-$m + 1 = (\alpha + 1) \cdot 2 + \beta \cdot 5$.</p></li>
-</ol>
-
-<h2 id="proof-by-contra-positive-review:bc216d98f3ca2300699af2d41b8a2a45">Proof by Contra-Positive (Review)</h2>
-
-<p>Recall: $P \implies Q$ is equivalent to $\neg Q \implies \neg P$. (If
-you are shaky on this, prove it to yourself using a truth table.)</p>
-
-<p>Typical use: where the negation of the proposition is easier to reason
-about than the original proposition (e.g., irrational is a complex
-property to describe, but rational (NOT irrational) is a simple one. So to prove that ``If $r$ is irrational then $\sqrt{r}$ is also irrational&rdquo; we can prove the contrapositive which is &ldquo;if $\sqrt{r}$&rdquo; is rational, then $r$ is also rational$ which is quite straightforward.</p>
-
-<h2 id="proof-by-contradiction-review:bc216d98f3ca2300699af2d41b8a2a45">Proof by Contradiction (Review)</h2>
-
-<p>To prove $P$, show $\neg P \implies False$.</p>
-
-<p>Example: Proving the $\mathbb{Z}$ is not well ordered.</p>
-
-<p>Goal: proving the proposition $G$ saying ``$\mathbb{Z}$ has no minimum&rdquo;.</p>
-
-<ol>
-<li><p>To prove by contradiction, assume $\neg G$ (that is, $\mathbb{Z}$ does have a minimum).</p></li>
-
-<li><p>Then, $\exists m \in \mathbb{Z}$ that is the minimum of $\mathbb{Z}$.</p></li>
-
-<li><p>But, this leads to a contradiction: $m - 1 \in \mathbb{Z}$ and $m - 1 &lt; m$. So, even though the number $m$ was said to be the minimum of $\mathbb{Z}$, it is in fact not the minimum.</p></li>
-
-<li><p>Thus, we have a contradiction, so something must be wrong. All our logical inferences after step 1 are correct, so the assumption we made in step 1 must be invalid. If $\neg G$ is invalid, $G$ must be true.</p></li>
-</ol>
-
-<p>Typical use: when the statment we want to prove has universal quantifier. for example, $\forall x \in \mathbb{Z}. P(x)$. Note that the statment that $\mathbb{Z}$ has \emph{no} minimum, when written formally, uses a universal quantifier (make sure to double check it). Then, instead of arguing that for all $x \in A$, $P(x)$ holds, we assume (for sake of contradiction) that there exists one $x$ for which $\neg(P(x))$ (note that this is indeed the negated statement) from which  we get a contradiction.</p>
-
-<h1 id="binary-relation-properties:bc216d98f3ca2300699af2d41b8a2a45">Binary Relation Properties</h1>
-
-<p>When we draw the graph of binary relations, the Domain (<code>input&quot; set) has outgoing edges. Codomain (</code>output&rdquo; set) has
-incoming edges. So when we use the compact notation referring to different properties of binary relations, keep in mind that the words ``in-out&rdquo; refer to the edge (not the input/output sets).  The properties about outgoing edges are <em>function</em>
-($\le 1 out$) and <em>total</em> ($\ge 1$ out). Adding elements to the
-codomain cannot effect these properties.  The properties about
-incoming edges are <em>surjection</em> ($\ge 1$ in) and <em>injection</em> ($\le 1$
-in). Adding elements to the domain cannot effect these properties.</p>
-
-<p>When we say the any relation with property $X$ (e.g., $\ge 1$ out) about the relations \emph{must} also have propety $Y$. It means that property $X$ implies $Y$ logically (about relations). In case the answer is &ldquo;no&rdquo; (i.e. that property $X$ does not imply $Y$) all we have to find is one relation $R$ that satisfies property $X$ but not property $Y$. If the answer is `yes&rsquo; we need to show that for all $R$, if property $X$ holds, so does $Y$. So doing so might need more work.</p>
-
-<p>If an edge is added to the graph of a relation, which properties
-<em>might</em> be impacted?</p>
-
-<p>If an edge is removed to the graph of a relation, which properties
-<em>might</em> be impacted?</p>
-
-<p>If an element is removed from the domain of a relation, which properties
-<em>might</em> be impacted?</p>
-
-<p>If an element is removed from the codomain of a relation, which
-properties <em>might</em> be impacted?</p>
-
-<p></div></p>
  
   
   
