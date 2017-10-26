@@ -6,8 +6,97 @@
     <description>Recent content in Post-rsses on cs2102: Discrete Math</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 25 Oct 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 26 Oct 2017 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://uvacs2102.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Class 18: Spooky Infinities</title>
+      <link>https://uvacs2102.github.io/class18/</link>
+      <pubDate>Thu, 26 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/class18/</guid>
+      <description>
+
+&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps7&#34;&gt;&lt;strong&gt;Problem Set 7&lt;/strong&gt;&lt;/a&gt; is due &lt;strong&gt;Friday (27 Oct) at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Exam 2&lt;/strong&gt; is two weeks from today (November 9, in class).  We will
+  post more information about Exam 2 soon.&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;
+   &lt;center&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlightm&#34;&gt;
+   &lt;a href=&#34;https://uvacs2102.github.io/docs/class18.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes&lt;/b&gt;&lt;/a&gt;.
+   &lt;/div&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.amazon.com/Logicomix-search-truth-Apostolos-Doxiadis/dp/1596914521/&#34;&gt;&lt;em&gt;Logicomix: An epic search for truth&lt;/em&gt;&lt;/a&gt;, comic book by Apostolos Doxiadis and &lt;a href=&#34;https://people.eecs.berkeley.edu/~christos/&#34;&gt;Christos H. Papadimitrou&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Last year, there was a &lt;a href=&#34;https://uvacs2102.github.io/f16/ps/psz/&#34;&gt;Problem Set &amp;omega;&lt;/a&gt; - you can see some examples of &lt;a href=&#34;https://uvacs2102.github.io/f16/pszhighlights/&#34;&gt;student&amp;rsquo;s work&lt;/a&gt;. (Note that having a PS &amp;omega; does not imply any limit on the number of regular problem sets, since there are infinitely many natural numbers before &amp;omega;!)&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;countable-and-uncountable-sets&#34;&gt;Countable and Uncountable Sets&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; A set $S$ is &lt;em&gt;countably infinite&lt;/em&gt; if and only if there
+  exists a bijection between $S$ and $\mathbb{N}$.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; A set $S$ is &lt;em&gt;uncountable&lt;/em&gt;, if there exists no bijection
+  between $S$ and $\mathbb{N}$.&lt;/p&gt;
+
+&lt;p&gt;The &lt;strong&gt;power set&lt;/strong&gt; of $A$ ($\textrm{pow}(A)$)is the set of all subsets of $A$:
+$$
+B \in \textrm{pow}(A) \iff B \subseteq A.
+$$&lt;/p&gt;
+
+&lt;p&gt;For all &lt;strong&gt;finite&lt;/strong&gt; sets $S$, $|pow(S)| = 2^{|S|}$.&lt;/p&gt;
+
+&lt;p&gt;#
+#&lt;/p&gt;
+
+&lt;p&gt;For &lt;strong&gt;all&lt;/strong&gt; sets $S$, $|pow(S)| &amp;gt; |S|$.&lt;/p&gt;
+
+&lt;p&gt;#&lt;/p&gt;
+
+&lt;p&gt;Prove $pow(\mathbb{N})$ is uncountable.&lt;/p&gt;
+
+&lt;p&gt;#&lt;/p&gt;
+
+&lt;p&gt;$\text{bitstrings} = \forall n \in \mathbb{N} . {0, 1}^n$.&lt;/p&gt;
+
+&lt;p&gt;#&lt;/p&gt;
+
+&lt;!--page--&gt;
+
+&lt;h2 id=&#34;ordinal-and-cardinal-numbers&#34;&gt;Ordinal and Cardinal Numbers&lt;/h2&gt;
+
+&lt;p&gt;$\omega$ is the &lt;em&gt;smallest infinite ordinal&lt;/em&gt;.  The first ordinal after
+$0, 1, 2, \cdots$.&lt;/p&gt;
+
+&lt;p&gt;What is the difference between an &lt;em&gt;ordinal&lt;/em&gt; and &lt;em&gt;cardinal&lt;/em&gt; number?&lt;/p&gt;
+
+&lt;p&gt;##&lt;/p&gt;
+
+&lt;p&gt;What should $2\omega$ mean?&lt;/p&gt;
+
+&lt;p&gt;##&lt;/p&gt;
+
+&lt;p&gt;Is $\text{InfiniteBitStrings} = {0, 1}^\omega$ countable?&lt;/p&gt;
+
+&lt;p&gt;#&lt;/p&gt;
+
+&lt;p&gt;Prove the number of real numbers in the interval $[0, 1]$ is uncountable.&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Problem Set 6 Comments</title>
@@ -958,125 +1047,6 @@ is due &lt;strong&gt;Friday, 29 September at 6:29:00pm&lt;/strong&gt;. Please re
 collaboration policy carefully - unlike previous assignments the
 &lt;em&gt;Students&lt;/em&gt; &amp;rarr; &lt;em&gt;Submissions&lt;/em&gt; relation for this assignment may not be
 injective.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Class 10: Set Cardinality, Induction</title>
-      <link>https://uvacs2102.github.io/class10/</link>
-      <pubDate>Thu, 21 Sep 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://uvacs2102.github.io/class10/</guid>
-      <description>
-
-&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
-
-&lt;p&gt;This week you should finish reading MCS Chapter 4 (section 4.5) and
-Section 5.1.  We will discuss Induction (Section 5.1) next class.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps4&#34;&gt;&lt;strong&gt;Problem Set 4&lt;/strong&gt;&lt;/a&gt; is due &lt;strong&gt;Friday at 6:29pm&lt;/strong&gt;.  The
-original version of Problem Set 4, Question 6, asked for a &lt;em&gt;function&lt;/em&gt;,
-when we really meant to ask for a &lt;em&gt;total function&lt;/em&gt; (as we defined it
-in class today, and the book defines it). The problem set is updated
-now to specify this. If you already answered the original question,
-you do not need to update your answer, just indicate clearly for which
-questions the function you defined is partial. Sorry for the
-confusion!&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Problem Set 5&lt;/strong&gt; (not yet posted) will be due Friday, 29 September.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Exam 1&lt;/strong&gt; will be in-class on Thursday, 5 October. It will cover
-  Classes 1 - 11, Problem Sets 1 - 5, and MCS Chapters 1 - 5.&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;
-   &lt;center&gt;
-&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;3dc8afcc1d1e4a979715fe94298dd84a&#34; data-ratio=&#34;1.77777777777778&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
-   &lt;/center&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;highlightm&#34;&gt;
-   &lt;a href=&#34;https://uvacs2102.github.io/docs/class10.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes and Questions&lt;/b&gt;&lt;/a&gt;.
-   &lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Alternate definition:&lt;/strong&gt; The &lt;em&gt;cardinality&lt;/em&gt; of the set
-$$
-N_k = { n | n \in \mathbb{N} \wedge n &amp;lt; k }
-$$
-is $k$.  If there is a &lt;em&gt;bijection&lt;/em&gt; between two sets, they have the same
-cardinality.&lt;/p&gt;
-
-&lt;p&gt;#&lt;/p&gt;
-
-&lt;p&gt;If there is a &lt;em&gt;surjective relation&lt;/em&gt; between $A$ and $B$ what do we know
-about their cardinalities?&lt;/p&gt;
-
-&lt;p&gt;##&lt;/p&gt;
-
-&lt;p&gt;If there is a &lt;em&gt;surjective function&lt;/em&gt; between $A$ and $B$ what do we know
-about their cardinalities?&lt;/p&gt;
-
-&lt;p&gt;##&lt;/p&gt;
-
-&lt;p&gt;If there is a &lt;em&gt;total surjective function&lt;/em&gt; between $A$ and $B$ what do we know
-about their cardinalities?&lt;/p&gt;
-
-&lt;p&gt;##&lt;/p&gt;
-
-&lt;p&gt;If there is a &lt;em&gt;total surjective injective function&lt;/em&gt; between $A$ and $B$
-what do we know about their cardinalities?&lt;/p&gt;
-
-&lt;p&gt;##&lt;/p&gt;
-
-&lt;p&gt;What is the cardinality of $A \cup B$?&lt;/p&gt;
-
-&lt;p&gt;#&lt;/p&gt;
-
-&lt;h1 id=&#34;induction-principle&#34;&gt;Induction Principle&lt;/h1&gt;
-
-&lt;p&gt;Let $P$ be a predicated on $\mathbb{N}$.  If&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;$P(0)$ is true, and&lt;/li&gt;
-&lt;li&gt;$P(n) \implies P(n + 1)$ for all $n \in \mathbb{N}$,&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;then&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;$P(m)$ is true for all $m \in \mathbb{N}$.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;template-for-induction-proofs&#34;&gt;Template for Induction Proofs&lt;/h2&gt;
-
-&lt;ol&gt;
-&lt;li&gt;State, &amp;ldquo;We prove by induction.&amp;rdquo;&lt;/li&gt;
-&lt;li&gt;Define a predicate, $P(n)$.  This is the &lt;em&gt;induction hypothesis&lt;/em&gt;.  Our goal is to show that $P(n)$ is true for all $n \in \mathbb{N}$.&lt;/li&gt;
-&lt;li&gt;Prove $P(0)$ is true.  (&lt;em&gt;base case&lt;/em&gt; or &lt;em&gt;basis step&lt;/em&gt;.)&lt;/li&gt;
-&lt;li&gt;Prove that $P(n) \implies P(n + 1)$ for every $n \in \mathbb{N}$.  (&lt;em&gt;induction step&lt;/em&gt;)&lt;/li&gt;
-&lt;li&gt;Conclude that $P(n)$ is true for all $n \in \mathbb{N}$ by induction.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;How is the method of &lt;em&gt;proof by induction principle&lt;/em&gt; similar to and different from &lt;em&gt;proof by well-ordering principle&lt;/em&gt;?&lt;/p&gt;
-
-&lt;h1 id=&#34;power-sets&#34;&gt;Power Sets&lt;/h1&gt;
-
-&lt;p&gt;The &lt;strong&gt;power set&lt;/strong&gt; of $A$ ($\textrm{pow}(A)$)is the set of all subsets of $A$:
-$$
-B \in \textrm{pow}(A) \iff B \subseteq A.
-$$&lt;/p&gt;
-
-&lt;p&gt;Prove that the size of the power set of a set $S$ with $|S| = N$ is
-$2^N$ using induction. (We&amp;rsquo;ll do this in Class 11, but see how far you
-can get on your own.)&lt;/p&gt;
-
-&lt;p&gt;#&lt;/p&gt;
-
-&lt;p&gt;#&lt;/p&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
 </description>
     </item>
     

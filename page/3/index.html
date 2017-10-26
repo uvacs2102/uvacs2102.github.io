@@ -153,6 +153,90 @@
   </header>
   
   
+  <p class="fronthead"><A href="/class8/">Class 8: Sequences, Relations, Functions</a> (Thu, 14 Sep 2017)</p>
+    
+
+<h3 id="schedule">Schedule</h3>
+
+<p><a href="/ps/ps3"><strong>Problem Set 3</strong></a> is due <strong>Friday at 6:29pm</strong>.</p>
+
+<p><div class="notpdf">
+   <center>
+<script async class="speakerdeck-embed" data-id="2a3dfdb08071473cb23b4f28b5a67433" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+   </center></p>
+
+<p><div class="highlightm">
+   <a href="/docs/class8.pdf">See PDF Version for <b>Notes and Questions</b></a>.
+   </div></p>
+
+<p></div><!--endpdf--></p>
+
+<p><div class="latex"></p>
+
+<h1 id="sequences">Sequences</h1>
+
+<p>A <strong>sequence</strong> is a mathematical datatype that bears similarities to sets. A sequence $S$ also contains some elements, but we usually refer to them as <em>components</em>. There are two major differences between sets and sequences:</p>
+
+<ol>
+<li><p>Components of a sequence are <strong>ordered</strong>. There is either $0$, or $1$ or $2$, or &hellip; $n$ components, when the sequence if <em>finite</em> or it could be an infinite sequence that has an $i$&lsquo;th component for any non-zero natural number $i$.</p></li>
+
+<li><p>Different components of a sequence could be equal. For example $(a,b,a)$ has $a$ repeating, and this is a different sequence compared to $(a,b,b)$ even though they both have 3 componetns. If we interprete them as <em>sets</em>, then they will be equal sets with $2$ elements each.</p></li>
+</ol>
+
+<h1 id="cartesian-product">Cartesian Product</h1>
+
+<p>We can use set products to get new sets whose elements are sequences. Cartesian product is a very useful way of doing it.</p>
+
+<p><strong>Set Products.</strong> A <em>Cartesian product</em> of sets $S_1, S_2, \cdots, S_n$
+  is a set consisting of all possible sequences of $n$ elements where the
+  $i$\textsuperscript{th} element is chosen from $S_i$.</p>
+
+<p>$$ S_1 \times S_2 \times \cdots \times S_n = { (s_1, s_2, \cdots, s_n) | s_i \in S_i } $$</p>
+
+<p>How many elements are in $A \times B$?</p>
+
+<h1 id="relations-and-binary-relations">Relations and Binary Relations</h1>
+
+<p>A <em>relation</em> between some elements from set $A$ and some elements from set $B$ could be represented by putting all such pairs $(a,b)$ in a set $P$. As you can see, this way, $P$ would be a subset of the cartesian product $A \times B$, namely $P \subseteq A \times B$. More formally we have the following definition.</p>
+
+<p>A <strong>binary relation</strong>, $P$, is defined with respect to a <em>domain</em> set, $A$, and a
+<em>codomain</em> set, $B$, and it holds that  $P$ is $P \subseteq A \times B$. When we draw $P$ by connecting elements of $A$ to $B$ based on their membership in $P$, we call this  the <em>graph</em> of
+$R$.</p>
+
+<p>The notion of relations could be generalized to having relations
+between elements coming from multiple sets $A,B,C$, and we can also
+talk about relations of the form $P \subseteq A \times B \times C$,
+but the binary relation remains a very important data type as it
+allows us to define <em>functions</em>.</p>
+
+<h1 id="functions">Functions</h1>
+
+<p>The concept of a function $F$ models is a special form of a binary
+relation $R$ between $A$ and $B$ where for every element $a \in A$
+there is <em>at most one</em> element in $b \in B$ that is in relation with
+$a$ (i.e. $(a,b) \in R$). More formally, we use a direct new notation
+just reserved for working with functions.</p>
+
+<p>A <strong>function</strong> is a mathematical datatype that associates
+elements from one set, called the <em>domain</em>, with elements from another
+set, called a <em>codomain</em>.</p>
+
+<p>$$ f: \textrm{\em domain} \rightarrow \textrm{\em codomain} $$</p>
+
+<p><strong>Defining a function.</strong> To define a function, we need to describe how
+  elements in the domain are associated with elements in the codomain.</p>
+
+<p>#</p>
+
+<p>What are the (sensible) domains and codomains of each function below:</p>
+
+<p>$$ f(n) ::= |n| \qquad \qquad f(x) ::= x^2  \qquad\qquad f(n) ::= n + 1 \qquad\qquad f(a, b) ::= a / b $$</p>
+
+<p>$$ f(x) ::= \sqrt{x}  \qquad \qquad \qquad f(S) ::= \textrm{minimum}_{&lt;}(S) $$</p>
+
+<p></div></p>
+ 
+  
   <p class="fronthead"><A href="/ps2comments/">Problem Set 2 Comments</a> (Wed, 13 Sep 2017)</p>
     <p>The Problem Set 2 solutions and comments are now posted in collab: <a href="https://collab.its.virginia.edu/access/content/group/9bd99d1c-6f18-4542-a7d1-8ffc4fccbd3d/ps2solutions.pdf">PDF</a></p>
  
@@ -757,104 +841,6 @@ For each of the formulas below, determine if it is _valid_ and if it is _satisfi
 3. $((P \implies Q) \wedge (Q \implies P)) \vee (P \xor Q)$
 
 
-
-</div>
- 
-  
-  <p class="fronthead"><A href="/class3/">Class 3: Well-Ordering Principle</a> (Tue, 29 Aug 2017)</p>
-    
-
-<h3 id="schedule">Schedule</h3>
-
-<p>This week, you should read MCS Chapter 2 and MCS Chapter 3 (at least
-through the end of Section 3.4).</p>
-
-<p><a href="/ps/ps1"><strong>Problem Set 1</strong></a> is due <strong>Friday at 6:29pm</strong>.</p>
-
-<p>Office hours started Monday afternoon. See <a href="https://uvacs2102.github.io/officehours/">the course
-calendar</a> for the full office
-hours schedule.</p>
-
-<p><div class="notpdf">
-   <center>
-<script async class="speakerdeck-embed" data-id="dd5193b1df334282a62697cf2343ad3a" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-   </center></p>
-
-<p><div class="highlightm">
-   <a href="/docs/class3.pdf">See PDF Version for <b>Notes and Questions</b></a>.
-   </div></p>
-
-<h2 id="links">Links</h2>
-
-<p><a href="https://math.berkeley.edu/~kpmann/Well-ordering.pdf"><em>The Well-Ordering Theorem: one of the Greatest Mathematical Controversies of All Time</em></a>, Kathryn Mann.</p>
-
-<p></div><!--endpdf--></p>
-
-<p><div class="latex"></p>
-
-<h1 id="notes-and-questions">Notes and Questions</h1>
-
-<p>What properties must a sensible ordering function have?</p>
-
-<p><strong>Definition.</strong> A set is <em>ordered</em> with respect to an ordering relation (e.g., $&lt;$), if two things hold. First: every pair of inequal elements $a,b$ in $A$
-either satisfy $a&lt;b$ or $b&lt;a$. Second  $a&lt;b$ and $b&lt;a$ should always imply that $a&lt;b$ (this is called the transitivity).</p>
-
-<p><strong>Definition.</strong> An ordered set,with respect to an ordering
-  relation (e.g., $&lt;$), is <em>well-ordered</em>  if all of its non-empty subsets has a minimum
-  element.</p>
-
-<div class="gap"></div>
-
-<p>Which of these are well-ordered?</p>
-
-<ul>
-<li>The set of non-negative integers, comparator $&lt;$.</li>
-<li>The set of integers, comparator $&lt;$.</li>
-<li>The set of integers, comparator $|a| &lt; |b|$.</li>
-<li>The set of integers, comparator if |a| = |b|: $a &lt; b$, else: $|a| &lt; |b|$.</li>
-<li>The set of national soccer teams, comparator winning games.</li>
-</ul>
-
-<p>Prove the set of positive rationals is <em>not</em> well-ordered under $&lt;$.</p>
-
-<div class="gap"></div>
-
-<p>#</p>
-
-<p>Provide a comparison function that can be used to well-order the positive rationals.</p>
-
-<!--page-->
-
-<h3 id="template-for-well-ordering-proofs-section-2-2">Template for Well-Ordering Proofs (Section 2.2)</h3>
-
-<p>To prove that $P(n)$ is true for all $n \in \mathbb{N}$:</p>
-
-<ol>
-<li>Define the set of counterexamples, $C ::= { n \in \mathbb{N} | NOT(P(n)) }$.</li>
-<li>Assume for contradiction that $C$ is ______________. <!-- non-empty.--></li>
-<li>By the well-ordering principle, there must be __________________ <!-- some smallest element-->, $m \in C$.</li>
-<li>Reach a contradiction (this is the creative part!).  One way to reach a contradiction would be to show $P(m)$.  Another way is to show there must be an element $m&rsquo; \in C$ where $m&rsquo; &lt; m$.</li>
-<li>Conclude that $C$ must be empty, hence there are no counter-examples and $P(n)$ always holds.</li>
-</ol>
-
-<p><strong>Example: Betable Numbers.</strong> A number is <em>betable</em> if it can be
-  produced using some combination of \$2 and \$5 chips.  Prove that all
-  integer values greater than \$3 are betable.</p>
-
-<div class="biggap"></div>
-#
-#
-#
-
-**Example: Division Property.** Given integer $a$ and positive integer $b$, there exist integers $q$ and $r$ such that:
-      $a = qb + r$ and $0 \le r < b$.
-
-<div class="biggap"></div>
-#
-#
-
-
-_The whole problem with the world is that fools and fanatics are always so certain of themselves, and wiser people so full of doubts._ Bertrand Russell
 
 </div>
  

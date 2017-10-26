@@ -6,8 +6,97 @@
     <description>Recent content on cs2102: Discrete Math</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 25 Oct 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 26 Oct 2017 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://uvacs2102.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Class 18: Spooky Infinities</title>
+      <link>https://uvacs2102.github.io/class18/</link>
+      <pubDate>Thu, 26 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/class18/</guid>
+      <description>
+
+&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps7&#34;&gt;&lt;strong&gt;Problem Set 7&lt;/strong&gt;&lt;/a&gt; is due &lt;strong&gt;Friday (27 Oct) at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Exam 2&lt;/strong&gt; is two weeks from today (November 9, in class).  We will
+  post more information about Exam 2 soon.&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;
+   &lt;center&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlightm&#34;&gt;
+   &lt;a href=&#34;https://uvacs2102.github.io/docs/class18.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes&lt;/b&gt;&lt;/a&gt;.
+   &lt;/div&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.amazon.com/Logicomix-search-truth-Apostolos-Doxiadis/dp/1596914521/&#34;&gt;&lt;em&gt;Logicomix: An epic search for truth&lt;/em&gt;&lt;/a&gt;, comic book by Apostolos Doxiadis and &lt;a href=&#34;https://people.eecs.berkeley.edu/~christos/&#34;&gt;Christos H. Papadimitrou&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Last year, there was a &lt;a href=&#34;https://uvacs2102.github.io/f16/ps/psz/&#34;&gt;Problem Set &amp;omega;&lt;/a&gt; - you can see some examples of &lt;a href=&#34;https://uvacs2102.github.io/f16/pszhighlights/&#34;&gt;student&amp;rsquo;s work&lt;/a&gt;. (Note that having a PS &amp;omega; does not imply any limit on the number of regular problem sets, since there are infinitely many natural numbers before &amp;omega;!)&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;countable-and-uncountable-sets&#34;&gt;Countable and Uncountable Sets&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; A set $S$ is &lt;em&gt;countably infinite&lt;/em&gt; if and only if there
+  exists a bijection between $S$ and $\mathbb{N}$.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; A set $S$ is &lt;em&gt;uncountable&lt;/em&gt;, if there exists no bijection
+  between $S$ and $\mathbb{N}$.&lt;/p&gt;
+
+&lt;p&gt;The &lt;strong&gt;power set&lt;/strong&gt; of $A$ ($\textrm{pow}(A)$)is the set of all subsets of $A$:
+$$
+B \in \textrm{pow}(A) \iff B \subseteq A.
+$$&lt;/p&gt;
+
+&lt;p&gt;For all &lt;strong&gt;finite&lt;/strong&gt; sets $S$, $|pow(S)| = 2^{|S|}$.&lt;/p&gt;
+
+&lt;p&gt;#
+#&lt;/p&gt;
+
+&lt;p&gt;For &lt;strong&gt;all&lt;/strong&gt; sets $S$, $|pow(S)| &amp;gt; |S|$.&lt;/p&gt;
+
+&lt;p&gt;#&lt;/p&gt;
+
+&lt;p&gt;Prove $pow(\mathbb{N})$ is uncountable.&lt;/p&gt;
+
+&lt;p&gt;#&lt;/p&gt;
+
+&lt;p&gt;$\text{bitstrings} = \forall n \in \mathbb{N} . {0, 1}^n$.&lt;/p&gt;
+
+&lt;p&gt;#&lt;/p&gt;
+
+&lt;!--page--&gt;
+
+&lt;h2 id=&#34;ordinal-and-cardinal-numbers&#34;&gt;Ordinal and Cardinal Numbers&lt;/h2&gt;
+
+&lt;p&gt;$\omega$ is the &lt;em&gt;smallest infinite ordinal&lt;/em&gt;.  The first ordinal after
+$0, 1, 2, \cdots$.&lt;/p&gt;
+
+&lt;p&gt;What is the difference between an &lt;em&gt;ordinal&lt;/em&gt; and &lt;em&gt;cardinal&lt;/em&gt; number?&lt;/p&gt;
+
+&lt;p&gt;##&lt;/p&gt;
+
+&lt;p&gt;What should $2\omega$ mean?&lt;/p&gt;
+
+&lt;p&gt;##&lt;/p&gt;
+
+&lt;p&gt;Is $\text{InfiniteBitStrings} = {0, 1}^\omega$ countable?&lt;/p&gt;
+
+&lt;p&gt;#&lt;/p&gt;
+
+&lt;p&gt;Prove the number of real numbers in the interval $[0, 1]$ is uncountable.&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Problem Set 6 Comments</title>
@@ -1094,20 +1183,6 @@ Player 1 has a winning strategy or Player 2 does.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;/div&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Problem Set 5</title>
-      <link>https://uvacs2102.github.io/ps5posted/</link>
-      <pubDate>Sat, 23 Sep 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://uvacs2102.github.io/ps5posted/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps5&#34;&gt;&lt;strong&gt;Problem Set 5&lt;/strong&gt;&lt;/a&gt; [&lt;a href=&#34;https://uvacs2102.github.io/docs/ps5.pdf&#34;&gt;PDF&lt;/a&gt;] is now posted and
-is due &lt;strong&gt;Friday, 29 September at 6:29:00pm&lt;/strong&gt;. Please read the
-collaboration policy carefully - unlike previous assignments the
-&lt;em&gt;Students&lt;/em&gt; &amp;rarr; &lt;em&gt;Submissions&lt;/em&gt; relation for this assignment may not be
-injective.&lt;/p&gt;
 </description>
     </item>
     
