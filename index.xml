@@ -2,12 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>cs2102: Discrete Math</title>
-    <link>https://uvacs2102.github.io/index.xml</link>
+    <link>https://uvacs2102.github.io/</link>
     <description>Recent content on cs2102: Discrete Math</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 26 Oct 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 28 Oct 2017 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://uvacs2102.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Problem Set 8</title>
+      <link>https://uvacs2102.github.io/ps8posted/</link>
+      <pubDate>Sat, 28 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/ps8posted/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps8&#34;&gt;&lt;strong&gt;Problem Set 8&lt;/strong&gt;&lt;/a&gt; [&lt;a href=&#34;https://uvacs2102.github.io/docs/ps8.pdf&#34;&gt;PDF&lt;/a&gt;] is now posted and
+is due &lt;strong&gt;Friday, 3 Nov at 6:29:00pm&lt;/strong&gt;. Please read the
+collaboration policy carefully.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Class 18: Spooky Infinities</title>
@@ -250,10 +262,10 @@ collaboration policy carefully.&lt;/p&gt;
 
 &lt;p&gt;\begin{equation&lt;em&gt;}
 \begin{split}
-\text{\em first}(\text{prepend}(e, l)) &amp;amp;= e &lt;br /&gt;
-\text{\em rest}(\text{prepend}(e, l)) &amp;amp;= l &lt;br /&gt;
-\text{\em empty}(\text{prepend}(e, l)) &amp;amp;= \text{\bf False} &lt;br /&gt;
-\text{\em empty}(\text{\bf null}) &amp;amp;= \text{\bf True} &lt;br /&gt;
+\text{\em first}(\text{prepend}(e, l)) &amp;amp;= e \
+\text{\em rest}(\text{prepend}(e, l)) &amp;amp;= l \
+\text{\em empty}(\text{prepend}(e, l)) &amp;amp;= \text{\bf False} \
+\text{\em empty}(\text{\bf null}) &amp;amp;= \text{\bf True} \
 \end{split}
 \end{equation&lt;/em&gt;}&lt;/p&gt;
 
@@ -261,8 +273,8 @@ collaboration policy carefully.&lt;/p&gt;
 \begin{equation&lt;em&gt;}
 \begin{split}
 \begin{cases}
-0 &amp;amp; \text{if}\ p\ \text{is \bf null} &lt;br /&gt;
-\text{\em length}(q) + 1 &amp;amp; \text{otherwise}\ p = \text{\em prepend}(e, q)\ \text{for some object}\ e\ \text{and some list}\ q &lt;br /&gt;
+0 &amp;amp; \text{if}\ p\ \text{is \bf null} \
+\text{\em length}(q) + 1 &amp;amp; \text{otherwise}\ p = \text{\em prepend}(e, q)\ \text{for some object}\ e\ \text{and some list}\ q \
 \end{cases}
 \end{split}
 \end{equation&lt;/em&gt;}&lt;/p&gt;
@@ -306,11 +318,11 @@ using any &amp;ldquo;construct case&amp;rdquo; rules, then $P(x)$ is true as wel
 &lt;p&gt;\begin{center}
 \begin{tabular}{lccc}
 &amp;amp; {\bf Regular Induction} &amp;amp; {\bf Invariant Principle} &amp;amp; {\bf Structural Induction} \ \hline
-Works on: &amp;amp; natural numbers &amp;amp; state machines &amp;amp; data types &lt;br /&gt;
-To prove $P(\cdot)$ &amp;amp; {\em for all natural numbers} &amp;amp; {\em for all reachable states} &amp;amp; {\em for all data type objects} &lt;br /&gt;
-Prove {\bf base case(s)} &amp;amp; $P(0)$ &amp;amp; $P(q_0)$ &amp;amp; $P(\text{base object(s)})$ &lt;br /&gt;
-and {\bf inductive step} &amp;amp; $\forall m \in \mathbb{N} \ldotp$ &amp;amp; $\forall (q, r) \in G \ldotp $ &amp;amp; $\forall s \in \text{\em Type} \ldotp$ &lt;br /&gt;
-  &amp;amp; $P(m) \implies P(m+1)$ &amp;amp; $P(q) \implies P&amp;reg;$ &amp;amp; $P(s) \implies P(t)$ &lt;br /&gt;
+Works on: &amp;amp; natural numbers &amp;amp; state machines &amp;amp; data types \
+To prove $P(\cdot)$ &amp;amp; {\em for all natural numbers} &amp;amp; {\em for all reachable states} &amp;amp; {\em for all data type objects} \
+Prove {\bf base case(s)} &amp;amp; $P(0)$ &amp;amp; $P(q_0)$ &amp;amp; $P(\text{base object(s)})$ \
+and {\bf inductive step} &amp;amp; $\forall m \in \mathbb{N} \ldotp$ &amp;amp; $\forall (q, r) \in G \ldotp $ &amp;amp; $\forall s \in \text{\em Type} \ldotp$ \
+  &amp;amp; $P(m) \implies P(m+1)$ &amp;amp; $P(q) \implies P&amp;reg;$ &amp;amp; $P(s) \implies P(t)$ \
  &amp;amp; &amp;amp; &amp;amp; $\quad \forall t\ \text{constructable from}\ s$ \
 \end{tabular}
 \end{center}&lt;/p&gt;
@@ -334,7 +346,7 @@ and {\bf inductive step} &amp;amp; $\forall m \in \mathbb{N} \ldotp$ &amp;amp; $
       <guid>https://uvacs2102.github.io/class15/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule:82758e0aba59693fe0fb1bf5353fa6c7&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;You should read MCS Chapter 7 this week.&lt;/p&gt;
 
@@ -345,7 +357,7 @@ and {\bf inductive step} &amp;amp; $\forall m \in \mathbb{N} \ldotp$ &amp;amp; $
 &lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;9d25492c6e134346a212652c6d0052ab&#34; data-ratio=&#34;1.77777777777778&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
    &lt;/center&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
+&lt;h2 id=&#34;links:82758e0aba59693fe0fb1bf5353fa6c7&#34;&gt;Links&lt;/h2&gt;
 
 &lt;p&gt;Python code from class and list definitions: &lt;a href=&#34;https://uvacs2102.github.io/docs/pairs.py&#34;&gt;pairs.py&lt;/a&gt;&lt;/p&gt;
 
@@ -357,7 +369,7 @@ and {\bf inductive step} &amp;amp; $\forall m \in \mathbb{N} \ldotp$ &amp;amp; $
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;proving-correctness&#34;&gt;Proving Correctness&lt;/h1&gt;
+&lt;h1 id=&#34;proving-correctness:82758e0aba59693fe0fb1bf5353fa6c7&#34;&gt;Proving Correctness&lt;/h1&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def slow_power(a, b):
    y = 1
@@ -406,13 +418,13 @@ the machine will reach a final state $q_f = (y, 0)$ in $b$ steps.  The
 proof in class used the Well Ordering Principle. You could also prove
 this using regular Induction.&lt;/p&gt;
 
-&lt;h1 id=&#34;pairs&#34;&gt;Pairs&lt;/h1&gt;
+&lt;h1 id=&#34;pairs:82758e0aba59693fe0fb1bf5353fa6c7&#34;&gt;Pairs&lt;/h1&gt;
 
 &lt;p&gt;What is the difference between scalar data and compound data structures?&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; A $\text{\em Pair}$ is a datatype that supports these three operations:&lt;br /&gt;
 \begin{quote}
-     $\text{\em make_pair}: \text{\em Object} \times \text{\em Object} \rightarrow \text{\em Pair}$&lt;br /&gt;
+     $\text{\em make_pair}: \text{\em Object} \times \text{\em Object} \rightarrow \text{\em Pair}$\
      $\text{\em pair_first}: \text{\em Pair} \rightarrow \text{\em Object}$\&lt;br /&gt;
      $\text{\em pair_last}: \text{\em Pair} \rightarrow \text{\em Object}$\&lt;br /&gt;
 \end{quote}
@@ -433,7 +445,7 @@ def pair_last(p):
     return p(False)
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h1 id=&#34;lists&#34;&gt;Lists&lt;/h1&gt;
+&lt;h1 id=&#34;lists:82758e0aba59693fe0fb1bf5353fa6c7&#34;&gt;Lists&lt;/h1&gt;
 
 &lt;p&gt;&lt;strong&gt;Definition (1).&lt;/strong&gt; A &lt;em&gt;List&lt;/em&gt; is either (1) a &lt;em&gt;Pair&lt;/em&gt; where the second part of
   the pair is a &lt;em&gt;List&lt;/em&gt;, or (2) the empty list.&lt;/p&gt;
@@ -602,7 +614,7 @@ that $0! = 1$.)&lt;/p&gt;
       <guid>https://uvacs2102.github.io/class14/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule:69e304a0e65e98722637abe379145c02&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps6&#34;&gt;&lt;strong&gt;Problem Set 6&lt;/strong&gt;&lt;/a&gt; is due &lt;strong&gt;20 October (Friday) at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
 
@@ -622,7 +634,7 @@ starting after Prof. Mahmoody&amp;rsquo;s office hours Monday.&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;state-machines-review-from-class-13&#34;&gt;State Machines (review from Class 13)&lt;/h2&gt;
+&lt;h2 id=&#34;state-machines-review-from-class-13:69e304a0e65e98722637abe379145c02&#34;&gt;State Machines (review from Class 13)&lt;/h2&gt;
 
 &lt;p&gt;A &lt;em&gt;state machine&lt;/em&gt;, $M = (S, G: S \times S, q_0 \in S)$, is a binary
 relation (called a &lt;em&gt;transition relation&lt;/em&gt;) on a set (both the domain and
@@ -643,7 +655,7 @@ S, q_0 \in S)$ is a predicate, $P$, on states, such that whenever $P(q)$
 is true of a state $q$, and $q \rightarrow r \in G$, then $P&amp;reg;$ is
 true.&lt;/p&gt;
 
-&lt;h3 id=&#34;bishop-state-machine&#34;&gt;Bishop State Machine&lt;/h3&gt;
+&lt;h3 id=&#34;bishop-state-machine:69e304a0e65e98722637abe379145c02&#34;&gt;Bishop State Machine&lt;/h3&gt;
 
 &lt;p&gt;$S = { (\fillin ) \, | \, r, c \in \mathbb{N} }$
 $G = { (r, c) \rightarrow (r&amp;rsquo;, c&amp;rsquo;) \, | \, r, c \in \mathbb{N} \wedge (\exists d \in \mathbb{N}^{+} \textrm{ such that } r&amp;rsquo; = r \fillin d \wedge r&amp;rsquo; \ge 0 \wedge c&amp;rsquo; = c \fillin d \wedge c&amp;rsquo; \ge 0 }$
@@ -653,7 +665,7 @@ $q_0 = (0, 2)$&lt;/p&gt;
 
 &lt;p&gt;#&lt;/p&gt;
 
-&lt;h3 id=&#34;progress-machine&#34;&gt;``Progress&amp;rdquo; Machine&lt;/h3&gt;
+&lt;h3 id=&#34;progress-machine:69e304a0e65e98722637abe379145c02&#34;&gt;``Progress&amp;rdquo; Machine&lt;/h3&gt;
 
 &lt;p&gt;$S = { (x, d) \, | \, x \in \mathbb{Z}, d \in { \mathrm{\bf F}, \mathrm{\bf B}} }$
 $G = { (x, \mathrm{\bf F}) \rightarrow (x + 1, \mathrm{\bf B}) \, | \, x \in \mathbb{Z} } \cup
@@ -664,7 +676,7 @@ $q_0 = (0, \mathrm{\bf F})$&lt;/p&gt;
 
 &lt;!--page--&gt;
 
-&lt;h2 id=&#34;preserved-invariants&#34;&gt;Preserved Invariants&lt;/h2&gt;
+&lt;h2 id=&#34;preserved-invariants:69e304a0e65e98722637abe379145c02&#34;&gt;Preserved Invariants&lt;/h2&gt;
 
 &lt;p&gt;A predicate $P(q)$ is a &lt;em&gt;preserved invariant&lt;/em&gt; of machine $M = (S, G \subseteq S \times S, q_0 \in
   S)$ if:
@@ -689,7 +701,7 @@ $$&lt;/p&gt;
 
 &lt;!--page--&gt;
 
-&lt;h1 id=&#34;slow-exponentiation&#34;&gt;Slow Exponentiation&lt;/h1&gt;
+&lt;h1 id=&#34;slow-exponentiation:69e304a0e65e98722637abe379145c02&#34;&gt;Slow Exponentiation&lt;/h1&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def slow_power(a, b):
    y = 1
@@ -708,7 +720,7 @@ $q_0 ::= (1, b)$&lt;/p&gt;
 
 &lt;p&gt;#&lt;/p&gt;
 
-&lt;h1 id=&#34;fast-exponentiation&#34;&gt;Fast Exponentiation&lt;/h1&gt;
+&lt;h1 id=&#34;fast-exponentiation:69e304a0e65e98722637abe379145c02&#34;&gt;Fast Exponentiation&lt;/h1&gt;
 
 &lt;p&gt;This is the algorithm from Section 6.3.1 written as Python code:&lt;/p&gt;
 
@@ -839,18 +851,18 @@ $$&lt;/p&gt;
 because of “Fall Break” and the Exam (as usual, all will be in Rice
 436 except the professors&amp;rsquo; as noted):&lt;/p&gt;
 
-&lt;h4 id=&#34;monday-2-oct&#34;&gt;Monday (2 Oct)&lt;/h4&gt;
+&lt;h4 id=&#34;monday-2-oct:d0632df39174fbd03a717f33cd2b5853&#34;&gt;Monday (2 Oct)&lt;/h4&gt;
 
 &lt;p&gt;Mohammad Mahmoody (Rice 511), 10:45-11:45am&lt;br /&gt;
 Sarah Meng, 4:30-6:00pm&lt;/p&gt;
 
-&lt;h4 id=&#34;tuesday-3-oct&#34;&gt;Tuesday (3 Oct)&lt;/h4&gt;
+&lt;h4 id=&#34;tuesday-3-oct:d0632df39174fbd03a717f33cd2b5853&#34;&gt;Tuesday (3 Oct)&lt;/h4&gt;
 
 &lt;p&gt;Nate Olsen, 10-11:30am&lt;br /&gt;
 Michael Woon, 11am-12:30pm&lt;br /&gt;
 Henry Spece, 3:30-5pm&lt;/p&gt;
 
-&lt;h4 id=&#34;wednesday-4-oct&#34;&gt;Wednesday (4 Oct)&lt;/h4&gt;
+&lt;h4 id=&#34;wednesday-4-oct:d0632df39174fbd03a717f33cd2b5853&#34;&gt;Wednesday (4 Oct)&lt;/h4&gt;
 
 &lt;p&gt;Colin Harfst, 9:30am-12:30pm&lt;br /&gt;
 Anna Wu, noon-1:30pm&lt;br /&gt;
@@ -863,7 +875,7 @@ Xueying Bai, 6-7pm&lt;br /&gt;
 Fan Feng, 7-8:30pm&lt;br /&gt;
 Nate Olsen, 7:30-9:00pm&lt;/p&gt;
 
-&lt;h4 id=&#34;thursday-5-oct&#34;&gt;Thursday (5 Oct)&lt;/h4&gt;
+&lt;h4 id=&#34;thursday-5-oct:d0632df39174fbd03a717f33cd2b5853&#34;&gt;Thursday (5 Oct)&lt;/h4&gt;
 
 &lt;p&gt;Amar Singh, 9am-10:30&lt;br /&gt;
 Xiao Zhang, 10-11am&lt;br /&gt;
@@ -892,7 +904,7 @@ hours schedule will resume on Monday, 9 October.&lt;/p&gt;
       <guid>https://uvacs2102.github.io/class12/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule:bc216d98f3ca2300699af2d41b8a2a45&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps5&#34;&gt;&lt;strong&gt;Problem Set 5&lt;/strong&gt;&lt;/a&gt; is due &lt;strong&gt;Friday at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
 
@@ -911,7 +923,7 @@ hours schedule will resume on Monday, 9 October.&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;strong-induction-principle&#34;&gt;Strong Induction Principle&lt;/h2&gt;
+&lt;h2 id=&#34;strong-induction-principle:bc216d98f3ca2300699af2d41b8a2a45&#34;&gt;Strong Induction Principle&lt;/h2&gt;
 
 &lt;p&gt;Let $P$ be a predicated on $\mathbb{N}$.  If&lt;/p&gt;
 
@@ -942,7 +954,7 @@ $$&lt;/p&gt;
 
 &lt;p&gt;##&lt;/p&gt;
 
-&lt;h3 id=&#34;example-strong-induction-proof&#34;&gt;Example Strong Induction Proof&lt;/h3&gt;
+&lt;h3 id=&#34;example-strong-induction-proof:bc216d98f3ca2300699af2d41b8a2a45&#34;&gt;Example Strong Induction Proof&lt;/h3&gt;
 
 &lt;p&gt;&lt;strong&gt;Theorem:&lt;/strong&gt; Every number, $n \in \mathbb{N}, n \geq 4$ can be written as $\alpha \cdot 2 + \beta \cdot 5$ where $\alpha, \beta \in \mathbb{N}$.&lt;/p&gt;
 
@@ -967,7 +979,7 @@ hypothesis), we know $\exists \alpha, \beta \in \mathbb{N} . m - 1 =
 $m + 1 = (\alpha + 1) \cdot 2 + \beta \cdot 5$.&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h2 id=&#34;proof-by-contra-positive-review&#34;&gt;Proof by Contra-Positive (Review)&lt;/h2&gt;
+&lt;h2 id=&#34;proof-by-contra-positive-review:bc216d98f3ca2300699af2d41b8a2a45&#34;&gt;Proof by Contra-Positive (Review)&lt;/h2&gt;
 
 &lt;p&gt;Recall: $P \implies Q$ is equivalent to $\neg Q \implies \neg P$. (If
 you are shaky on this, prove it to yourself using a truth table.)&lt;/p&gt;
@@ -976,7 +988,7 @@ you are shaky on this, prove it to yourself using a truth table.)&lt;/p&gt;
 about than the original proposition (e.g., irrational is a complex
 property to describe, but rational (NOT irrational) is a simple one. So to prove that ``If $r$ is irrational then $\sqrt{r}$ is also irrational&amp;rdquo; we can prove the contrapositive which is &amp;ldquo;if $\sqrt{r}$&amp;rdquo; is rational, then $r$ is also rational$ which is quite straightforward.&lt;/p&gt;
 
-&lt;h2 id=&#34;proof-by-contradiction-review&#34;&gt;Proof by Contradiction (Review)&lt;/h2&gt;
+&lt;h2 id=&#34;proof-by-contradiction-review:bc216d98f3ca2300699af2d41b8a2a45&#34;&gt;Proof by Contradiction (Review)&lt;/h2&gt;
 
 &lt;p&gt;To prove $P$, show $\neg P \implies False$.&lt;/p&gt;
 
@@ -996,7 +1008,7 @@ property to describe, but rational (NOT irrational) is a simple one. So to prove
 
 &lt;p&gt;Typical use: when the statment we want to prove has universal quantifier. for example, $\forall x \in \mathbb{Z}. P(x)$. Note that the statment that $\mathbb{Z}$ has \emph{no} minimum, when written formally, uses a universal quantifier (make sure to double check it). Then, instead of arguing that for all $x \in A$, $P(x)$ holds, we assume (for sake of contradiction) that there exists one $x$ for which $\neg(P(x))$ (note that this is indeed the negated statement) from which  we get a contradiction.&lt;/p&gt;
 
-&lt;h1 id=&#34;binary-relation-properties&#34;&gt;Binary Relation Properties&lt;/h1&gt;
+&lt;h1 id=&#34;binary-relation-properties:bc216d98f3ca2300699af2d41b8a2a45&#34;&gt;Binary Relation Properties&lt;/h1&gt;
 
 &lt;p&gt;When we draw the graph of binary relations, the Domain (&lt;code&gt;input&amp;quot; set) has outgoing edges. Codomain (&lt;/code&gt;output&amp;rdquo; set) has
 incoming edges. So when we use the compact notation referring to different properties of binary relations, keep in mind that the words ``in-out&amp;rdquo; refer to the edge (not the input/output sets).  The properties about outgoing edges are &lt;em&gt;function&lt;/em&gt;
@@ -1030,159 +1042,6 @@ properties &lt;em&gt;might&lt;/em&gt; be impacted?&lt;/p&gt;
       
       <guid>https://uvacs2102.github.io/ps4comments/</guid>
       <description>&lt;p&gt;The Problem Set 4 solutions and comments are now posted in collab: &lt;a href=&#34;https://collab.its.virginia.edu/access/content/group/9bd99d1c-6f18-4542-a7d1-8ffc4fccbd3d/ps4solutions.pdf&#34;&gt;PDF&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Class 11: Induction Practice</title>
-      <link>https://uvacs2102.github.io/class11/</link>
-      <pubDate>Tue, 26 Sep 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://uvacs2102.github.io/class11/</guid>
-      <description>
-
-&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps5&#34;&gt;&lt;strong&gt;Problem Set 5&lt;/strong&gt;&lt;/a&gt; is due &lt;strong&gt;Friday at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Thursday&amp;rsquo;s Class&lt;/strong&gt; may include review for Exam 1.  Before 6:59pm
-  Wednesday, send &lt;a href=&#34;mailto:uvacs2102staff@gmail.com&#34;&gt;&lt;em&gt;uvacs2102staff@gmail.com&lt;/em&gt;&lt;/a&gt; topics you would like to review:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;fewer than 10 total requests: class is not being sufficiently challenged and we should be doing more difficult material (except for the 10 requestors who get exam exemptions).&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;exactly 10 total requests: all requestors get automatic exam exemptions, review requested topics.&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;more than 10 requests implies we should spend Thursday’s class on reviewing requested topics, no exam exemptions.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;exam-1&#34;&gt;Exam 1&lt;/h3&gt;
-
-&lt;p&gt;Exam 1 will be in class on Thursday, 5 October.  You can get a good
-idea what to expect on Exam 1 by looking at the &lt;a href=&#34;https://uvacs2102.github.io/docs/practiceexam1.pdf&#34;&gt;Practice Exam
-1&lt;/a&gt; (from last year&amp;rsquo;s class). We strongly
-encourage you to try to problems on your own, before looking at the
-&lt;a href=&#34;https://uvacs2102.github.io/docs/practiceexam1-solutions.pdf&#34;&gt;posted solutions&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Resources.&lt;/strong&gt; You will be permitted to use a &lt;em&gt;single paper page&lt;/em&gt; of
-notes that you prepare and bring to the exam.  It is fine to
-collaborate with others to prepare your notes.  The page should be no
-larger than a US Letter size page ($8.5 \times 11$ inches), and you
-may write (or print) on both sides of the page.  You may not use any
-special devices (e.g., magnifying glasses) to read your page. No other
-resources, other than your own brain, body, and writing instrument,
-are permitted during the exam.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Content.&lt;/strong&gt; The problems on the exam will cover material from Classes
-  1&amp;ndash;11, Problem Sets 1&amp;ndash;5 (including the provided solutions), and MCS
-  Chapters 1&amp;ndash;5.  Everything on the exam will be something you have seen
-  in at least two of these (Classes, Problem Sets, and MCS Book), and
-  most of the exam will be things you have seen in all three.  If you
-  understand the problems on the problem sets and questions on the class
-  notes well enough to be able to answer similar questions, you should
-  do well on the exam.&lt;/p&gt;
-
-&lt;p&gt;The main topics the exam will cover include:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Propositions, axioms, and proofs (you should understand what each of
-these are and how to define them precisely)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Inference rules (how to determine and show if an inference rule is
-sound or unsound, how to correctly use inference rules in a proof)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Logical formula (how to interpret logical formulas and convert English
-statements into logic, determine the validity or satisfiability of a
-formula, and show equivalence or non-equivalence of two formulas)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Logical quantifiers (how to reason about logical formula using
-$\forall$ and $\exists$, including showing logical equivalence and
-implication)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Proof methods (you should be able to read and write proofs that use
-direct proof, contrapositive proof, and proof by contradiction)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Well ordering (you should be able to explain what it means for a set
-to be well ordered, determine if a given set and operator is well
-ordered, and be able to construct proofs using the well ordering
-principle and identify flaws in misuses of the well ordering
-principle)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Induction (you should understand mathematical induction and be able to
-construct proofs using induction and identify flaws in misuses of
-induction in proofs)&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;For most students, we believe the best way to prepare for the exam
-will be to (1) go over the problem sets and their solutions, and make
-sure you understand well any of the problems you did not get before;
-(2) go through the provided practice exam and try to solve all the
-problems on your own before reading the solutions; (3) go through the
-questions in the class notes and convince yourself you can answer them
-well; (4) re-read chapters of the book, solving the associated
-practice problems, especially for any sections on topics where you had
-difficulty on the problem sets.  If you do #1 and #2 and understand
-well the problems on the practice exam, you should be confident you&amp;rsquo;ll
-do well on the exam; if you struggled on the problem sets, you would
-benefit from doing #3 and #4 as well.&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;
-   &lt;center&gt;
-&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;0efd2b7dcbe64ad9993d64508a604213&#34; data-ratio=&#34;1.77777777777778&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
-   &lt;/center&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;highlightm&#34;&gt;
-   &lt;a href=&#34;https://uvacs2102.github.io/docs/class11.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes and Questions&lt;/b&gt;&lt;/a&gt;.
-   &lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;induction-principle&#34;&gt;Induction Principle&lt;/h2&gt;
-
-&lt;p&gt;Let $P$ be a predicated on $\mathbb{N}$.  If&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;$P(0)$ is true, and&lt;/li&gt;
-&lt;li&gt;$P(n) \implies P(n + 1)$ for all $n \in \mathbb{N}$,&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;then&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;$P(m)$ is true for all $m \in \mathbb{N}$.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Prove:&lt;/strong&gt; For all sets $A$, $|pow(A)| = 2^|A|$.&lt;/p&gt;
-
-&lt;div class=&#34;biggap&#34;&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;Prove:&lt;/strong&gt; The sum of the first $n$ positive integers is $\frac{n(n+1)}{2}$.&lt;/p&gt;
-
-&lt;div class=&#34;biggap&#34;&gt;&lt;/div&gt;
-
-&lt;h3 id=&#34;generalizing-to-well-ordered-sets&#34;&gt;Generalizing to Well-Ordered Sets&lt;/h3&gt;
-
-&lt;p&gt;We can use Induction for any well-ordered set, where there is an
-operation (like &amp;lsquo;+ 1&amp;rsquo;) and a starting point (like &amp;lsquo;0&amp;rsquo;) that covers the
-whole set.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Prove.&lt;/strong&gt; All non-empty finite subsets of $\mathbb{N}$ have a minimum element.&lt;/p&gt;
-
-&lt;div class=&#34;biggap&#34;&gt;&lt;/div&gt;
-
-&lt;h2 id=&#34;induction-practice&#34;&gt;Induction Practice&lt;/h2&gt;
-
-&lt;p&gt;Take-Away Game: start with $n$ sticks; at each turn a player must remove
-1, 2 or 3 sticks; player who takes the last stick wins.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Prove: for a Take-Away game with any initial number of sticks, $n$, either
-Player 1 has a winning strategy or Player 2 does.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Prove: Player 1 has a winning strategy for a Take-Away game with $n$ sticks, if \bigfillin.  Otherwise, Player 2 has a winning strategy.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
 </description>
     </item>
     

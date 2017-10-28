@@ -34,7 +34,7 @@
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://uvacs2102.github.io/touch-icon-144-precomposed.png">
 <link href="https://uvacs2102.github.io/favicon.png" rel="icon">
 
-<meta name="generator" content="Hugo 0.17" />
+<meta name="generator" content="Hugo 0.16-DEV" />
 
   <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -104,6 +104,8 @@
 
 <a href="https://uvacs2102.github.io/ps/ps7">Problem Set 7</a>
 
+<a href="https://uvacs2102.github.io/ps/ps8">Problem Set 8</a>
+
 <a href="https://collab.its.virginia.edu/portal/site/9bd99d1c-6f18-4542-a7d1-8ffc4fccbd3d">Collab Site</a>
 
 <a href="https://uvacs2102.github.io/"></a>
@@ -153,7 +155,13 @@
   </header>
   
   
-  <p class="fronthead"><A href="/class18/">Class 18: Spooky Infinities</a> (Thu, 26 Oct 2017)</p>
+  <p class="fronthead"><A href="">Problem Set 8</a> (Sat, 28 Oct 2017)</p>
+    <p><a href="/ps/ps8"><strong>Problem Set 8</strong></a> [<a href="/docs/ps8.pdf">PDF</a>] is now posted and
+is due <strong>Friday, 3 Nov at 6:29:00pm</strong>. Please read the
+collaboration policy carefully.</p>
+ 
+  
+  <p class="fronthead"><A href="">Class 18: Spooky Infinities</a> (Thu, 26 Oct 2017)</p>
     
 
 <h3 id="schedule">Schedule</h3>
@@ -236,11 +244,11 @@ $0, 1, 2, \cdots$.</p>
 <p></div></p>
  
   
-  <p class="fronthead"><A href="/ps6comments/">Problem Set 6 Comments</a> (Wed, 25 Oct 2017)</p>
+  <p class="fronthead"><A href="">Problem Set 6 Comments</a> (Wed, 25 Oct 2017)</p>
     <p>The Problem Set 6 solutions and comments are now posted in collab: <a href="https://collab.its.virginia.edu/access/content/group/9bd99d1c-6f18-4542-a7d1-8ffc4fccbd3d/ps6solutions.pdf">PDF</a></p>
  
   
-  <p class="fronthead"><A href="/class17/">Class 17: Infinite Sets</a> (Tue, 24 Oct 2017)</p>
+  <p class="fronthead"><A href="">Class 17: Infinite Sets</a> (Tue, 24 Oct 2017)</p>
     
 
 <h3 id="schedule">Schedule</h3>
@@ -331,13 +339,13 @@ equivalent definitions?</p>
 <p></div></p>
  
   
-  <p class="fronthead"><A href="/ps7posted/">Problem Set 7</a> (Fri, 20 Oct 2017)</p>
+  <p class="fronthead"><A href="">Problem Set 7</a> (Fri, 20 Oct 2017)</p>
     <p><a href="/ps/ps7"><strong>Problem Set 7</strong></a> [<a href="/docs/ps7.pdf">PDF</a>] is now posted and
 is due <strong>Friday, 27 Oct at 6:29:00pm</strong>. Please read the
 collaboration policy carefully.</p>
  
   
-  <p class="fronthead"><A href="/class16/">Class 16: Structural Induction</a> (Thu, 19 Oct 2017)</p>
+  <p class="fronthead"><A href="">Class 16: Structural Induction</a> (Thu, 19 Oct 2017)</p>
     
 
 <h3 id="schedule">Schedule</h3>
@@ -365,10 +373,10 @@ collaboration policy carefully.</p>
 
 <p>\begin{equation<em>}
 \begin{split}
-\text{\em first}(\text{prepend}(e, l)) &amp;= e <br />
-\text{\em rest}(\text{prepend}(e, l)) &amp;= l <br />
-\text{\em empty}(\text{prepend}(e, l)) &amp;= \text{\bf False} <br />
-\text{\em empty}(\text{\bf null}) &amp;= \text{\bf True} <br />
+\text{\em first}(\text{prepend}(e, l)) &amp;= e \
+\text{\em rest}(\text{prepend}(e, l)) &amp;= l \
+\text{\em empty}(\text{prepend}(e, l)) &amp;= \text{\bf False} \
+\text{\em empty}(\text{\bf null}) &amp;= \text{\bf True} \
 \end{split}
 \end{equation</em>}</p>
 
@@ -376,8 +384,8 @@ collaboration policy carefully.</p>
 \begin{equation<em>}
 \begin{split}
 \begin{cases}
-0 &amp; \text{if}\ p\ \text{is \bf null} <br />
-\text{\em length}(q) + 1 &amp; \text{otherwise}\ p = \text{\em prepend}(e, q)\ \text{for some object}\ e\ \text{and some list}\ q <br />
+0 &amp; \text{if}\ p\ \text{is \bf null} \
+\text{\em length}(q) + 1 &amp; \text{otherwise}\ p = \text{\em prepend}(e, q)\ \text{for some object}\ e\ \text{and some list}\ q \
 \end{cases}
 \end{split}
 \end{equation</em>}</p>
@@ -421,11 +429,11 @@ using any &ldquo;construct case&rdquo; rules, then $P(x)$ is true as well.</li>
 <p>\begin{center}
 \begin{tabular}{lccc}
 &amp; {\bf Regular Induction} &amp; {\bf Invariant Principle} &amp; {\bf Structural Induction} \ \hline
-Works on: &amp; natural numbers &amp; state machines &amp; data types <br />
-To prove $P(\cdot)$ &amp; {\em for all natural numbers} &amp; {\em for all reachable states} &amp; {\em for all data type objects} <br />
-Prove {\bf base case(s)} &amp; $P(0)$ &amp; $P(q_0)$ &amp; $P(\text{base object(s)})$ <br />
-and {\bf inductive step} &amp; $\forall m \in \mathbb{N} \ldotp$ &amp; $\forall (q, r) \in G \ldotp $ &amp; $\forall s \in \text{\em Type} \ldotp$ <br />
-  &amp; $P(m) \implies P(m+1)$ &amp; $P(q) \implies P&reg;$ &amp; $P(s) \implies P(t)$ <br />
+Works on: &amp; natural numbers &amp; state machines &amp; data types \
+To prove $P(\cdot)$ &amp; {\em for all natural numbers} &amp; {\em for all reachable states} &amp; {\em for all data type objects} \
+Prove {\bf base case(s)} &amp; $P(0)$ &amp; $P(q_0)$ &amp; $P(\text{base object(s)})$ \
+and {\bf inductive step} &amp; $\forall m \in \mathbb{N} \ldotp$ &amp; $\forall (q, r) \in G \ldotp $ &amp; $\forall s \in \text{\em Type} \ldotp$ \
+  &amp; $P(m) \implies P(m+1)$ &amp; $P(q) \implies P&reg;$ &amp; $P(s) \implies P(t)$ \
  &amp; &amp; &amp; $\quad \forall t\ \text{constructable from}\ s$ \
 \end{tabular}
 \end{center}</p>
@@ -440,10 +448,10 @@ and {\bf inductive step} &amp; $\forall m \in \mathbb{N} \ldotp$ &amp; $\forall 
 <p></div></p>
  
   
-  <p class="fronthead"><A href="/class15/">Class 15: Recursive Data Types</a> (Tue, 17 Oct 2017)</p>
+  <p class="fronthead"><A href="">Class 15: Recursive Data Types</a> (Tue, 17 Oct 2017)</p>
     
 
-<h3 id="schedule">Schedule</h3>
+<h3 id="schedule:82758e0aba59693fe0fb1bf5353fa6c7">Schedule</h3>
 
 <p>You should read MCS Chapter 7 this week.</p>
 
@@ -454,7 +462,7 @@ and {\bf inductive step} &amp; $\forall m \in \mathbb{N} \ldotp$ &amp; $\forall 
 <script async class="speakerdeck-embed" data-id="9d25492c6e134346a212652c6d0052ab" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
    </center></p>
 
-<h2 id="links">Links</h2>
+<h2 id="links:82758e0aba59693fe0fb1bf5353fa6c7">Links</h2>
 
 <p>Python code from class and list definitions: <a href="/docs/pairs.py">pairs.py</a></p>
 
@@ -466,7 +474,7 @@ and {\bf inductive step} &amp; $\forall m \in \mathbb{N} \ldotp$ &amp; $\forall 
 
 <p><div class="latex"></p>
 
-<h1 id="proving-correctness">Proving Correctness</h1>
+<h1 id="proving-correctness:82758e0aba59693fe0fb1bf5353fa6c7">Proving Correctness</h1>
 
 <pre><code class="language-python">def slow_power(a, b):
    y = 1
@@ -515,13 +523,13 @@ the machine will reach a final state $q_f = (y, 0)$ in $b$ steps.  The
 proof in class used the Well Ordering Principle. You could also prove
 this using regular Induction.</p>
 
-<h1 id="pairs">Pairs</h1>
+<h1 id="pairs:82758e0aba59693fe0fb1bf5353fa6c7">Pairs</h1>
 
 <p>What is the difference between scalar data and compound data structures?</p>
 
 <p><strong>Definition.</strong> A $\text{\em Pair}$ is a datatype that supports these three operations:<br />
 \begin{quote}
-     $\text{\em make_pair}: \text{\em Object} \times \text{\em Object} \rightarrow \text{\em Pair}$<br />
+     $\text{\em make_pair}: \text{\em Object} \times \text{\em Object} \rightarrow \text{\em Pair}$\
      $\text{\em pair_first}: \text{\em Pair} \rightarrow \text{\em Object}$\<br />
      $\text{\em pair_last}: \text{\em Pair} \rightarrow \text{\em Object}$\<br />
 \end{quote}
@@ -542,7 +550,7 @@ def pair_last(p):
     return p(False)
 </code></pre>
 
-<h1 id="lists">Lists</h1>
+<h1 id="lists:82758e0aba59693fe0fb1bf5353fa6c7">Lists</h1>
 
 <p><strong>Definition (1).</strong> A <em>List</em> is either (1) a <em>Pair</em> where the second part of
   the pair is a <em>List</em>, or (2) the empty list.</p>
@@ -552,10 +560,10 @@ def pair_last(p):
 <p></div></p>
  
   
-  <p class="fronthead"><A href="/class14/">Class 14: Invariant Principle</a> (Thu, 12 Oct 2017)</p>
+  <p class="fronthead"><A href="">Class 14: Invariant Principle</a> (Thu, 12 Oct 2017)</p>
     
 
-<h3 id="schedule">Schedule</h3>
+<h3 id="schedule:69e304a0e65e98722637abe379145c02">Schedule</h3>
 
 <p><a href="/ps/ps6"><strong>Problem Set 6</strong></a> is due <strong>20 October (Friday) at 6:29pm</strong>.</p>
 
@@ -575,7 +583,7 @@ starting after Prof. Mahmoody&rsquo;s office hours Monday.</p>
 
 <p><div class="latex"></p>
 
-<h2 id="state-machines-review-from-class-13">State Machines (review from Class 13)</h2>
+<h2 id="state-machines-review-from-class-13:69e304a0e65e98722637abe379145c02">State Machines (review from Class 13)</h2>
 
 <p>A <em>state machine</em>, $M = (S, G: S \times S, q_0 \in S)$, is a binary
 relation (called a <em>transition relation</em>) on a set (both the domain and
@@ -596,7 +604,7 @@ S, q_0 \in S)$ is a predicate, $P$, on states, such that whenever $P(q)$
 is true of a state $q$, and $q \rightarrow r \in G$, then $P&reg;$ is
 true.</p>
 
-<h3 id="bishop-state-machine">Bishop State Machine</h3>
+<h3 id="bishop-state-machine:69e304a0e65e98722637abe379145c02">Bishop State Machine</h3>
 
 <p>$S = { (\fillin ) \, | \, r, c \in \mathbb{N} }$
 $G = { (r, c) \rightarrow (r&rsquo;, c&rsquo;) \, | \, r, c \in \mathbb{N} \wedge (\exists d \in \mathbb{N}^{+} \textrm{ such that } r&rsquo; = r \fillin d \wedge r&rsquo; \ge 0 \wedge c&rsquo; = c \fillin d \wedge c&rsquo; \ge 0 }$
@@ -606,7 +614,7 @@ $q_0 = (0, 2)$</p>
 
 <p>#</p>
 
-<h3 id="progress-machine">``Progress&rdquo; Machine</h3>
+<h3 id="progress-machine:69e304a0e65e98722637abe379145c02">``Progress&rdquo; Machine</h3>
 
 <p>$S = { (x, d) \, | \, x \in \mathbb{Z}, d \in { \mathrm{\bf F}, \mathrm{\bf B}} }$
 $G = { (x, \mathrm{\bf F}) \rightarrow (x + 1, \mathrm{\bf B}) \, | \, x \in \mathbb{Z} } \cup
@@ -617,7 +625,7 @@ $q_0 = (0, \mathrm{\bf F})$</p>
 
 <!--page-->
 
-<h2 id="preserved-invariants">Preserved Invariants</h2>
+<h2 id="preserved-invariants:69e304a0e65e98722637abe379145c02">Preserved Invariants</h2>
 
 <p>A predicate $P(q)$ is a <em>preserved invariant</em> of machine $M = (S, G \subseteq S \times S, q_0 \in
   S)$ if:
@@ -642,7 +650,7 @@ $$</p>
 
 <!--page-->
 
-<h1 id="slow-exponentiation">Slow Exponentiation</h1>
+<h1 id="slow-exponentiation:69e304a0e65e98722637abe379145c02">Slow Exponentiation</h1>
 
 <pre><code class="language-python">def slow_power(a, b):
    y = 1
@@ -661,7 +669,7 @@ $q_0 ::= (1, b)$</p>
 
 <p>#</p>
 
-<h1 id="fast-exponentiation">Fast Exponentiation</h1>
+<h1 id="fast-exponentiation:69e304a0e65e98722637abe379145c02">Fast Exponentiation</h1>
 
 <p>This is the algorithm from Section 6.3.1 written as Python code:</p>
 
@@ -681,13 +689,13 @@ $q_0 ::= (1, b)$</p>
 <p></div></p>
  
   
-  <p class="fronthead"><A href="/ps6posted/">Problem Set 6</a> (Thu, 12 Oct 2017)</p>
+  <p class="fronthead"><A href="">Problem Set 6</a> (Thu, 12 Oct 2017)</p>
     <p><a href="/ps/ps6"><strong>Problem Set 6</strong></a> [<a href="/docs/ps6.pdf">PDF</a>] is now posted and
 is due <strong>Friday, 20 Oct at 6:29:00pm</strong>. Please read the
 collaboration policy carefully.</p>
  
   
-  <p class="fronthead"><A href="/class13/">Class 13: State Machines</a> (Tue, 10 Oct 2017)</p>
+  <p class="fronthead"><A href="">Class 13: State Machines</a> (Tue, 10 Oct 2017)</p>
     
 
 <h3 id="schedule">Schedule</h3>
@@ -765,47 +773,6 @@ $$</p>
 <p>#</p>
 
 <p></div></p>
- 
-  
-  <p class="fronthead"><A href="/fbofficehours/">Fall Break Office Hours</a> (Sun, 1 Oct 2017)</p>
-    
-
-<p>The office hours schedule for next week will be different from normal
-because of “Fall Break” and the Exam (as usual, all will be in Rice
-436 except the professors&rsquo; as noted):</p>
-
-<h4 id="monday-2-oct">Monday (2 Oct)</h4>
-
-<p>Mohammad Mahmoody (Rice 511), 10:45-11:45am<br />
-Sarah Meng, 4:30-6:00pm</p>
-
-<h4 id="tuesday-3-oct">Tuesday (3 Oct)</h4>
-
-<p>Nate Olsen, 10-11:30am<br />
-Michael Woon, 11am-12:30pm<br />
-Henry Spece, 3:30-5pm</p>
-
-<h4 id="wednesday-4-oct">Wednesday (4 Oct)</h4>
-
-<p>Colin Harfst, 9:30am-12:30pm<br />
-Anna Wu, noon-1:30pm<br />
-Michael Woon, 12:30-2:00pm<br />
-David Evans (Rice 507), 2:30-3:30pm<br />
-Bhuvanesh Murali, 3-5pm<br />
-Helen Simecek, 3:30-5pm<br />
-Yasasvini Puligundle, 5-6pm<br />
-Xueying Bai, 6-7pm<br />
-Fan Feng, 7-8:30pm<br />
-Nate Olsen, 7:30-9:00pm</p>
-
-<h4 id="thursday-5-oct">Thursday (5 Oct)</h4>
-
-<p>Amar Singh, 9am-10:30<br />
-Xiao Zhang, 10-11am<br />
-Prashant Gorthi, 11am-noon</p>
-
-<p>No office hours Thursday afternnon and evening. The normal office
-hours schedule will resume on Monday, 9 October.</p>
  
   
   
