@@ -29,7 +29,7 @@ collaboration policy carefully.&lt;/p&gt;
       <guid>https://uvacs2102.github.io/class18/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule:31a24b707f457b52726ca1d5e1ddffba&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps7&#34;&gt;&lt;strong&gt;Problem Set 7&lt;/strong&gt;&lt;/a&gt; is due &lt;strong&gt;Friday (27 Oct) at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
 
@@ -45,7 +45,7 @@ collaboration policy carefully.&lt;/p&gt;
    &lt;a href=&#34;https://uvacs2102.github.io/docs/class18.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes&lt;/b&gt;&lt;/a&gt;.
    &lt;/div&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;links:31a24b707f457b52726ca1d5e1ddffba&#34;&gt;Links&lt;/h2&gt;
+&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://www.amazon.com/Logicomix-search-truth-Apostolos-Doxiadis/dp/1596914521/&#34;&gt;&lt;em&gt;Logicomix: An epic search for truth&lt;/em&gt;&lt;/a&gt;, comic book by Apostolos Doxiadis and &lt;a href=&#34;https://people.eecs.berkeley.edu/~christos/&#34;&gt;Christos H. Papadimitrou&lt;/a&gt;.&lt;/p&gt;
 
@@ -55,7 +55,7 @@ collaboration policy carefully.&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;countable-and-uncountable-sets:31a24b707f457b52726ca1d5e1ddffba&#34;&gt;Countable and Uncountable Sets&lt;/h2&gt;
+&lt;h2 id=&#34;countable-and-uncountable-sets&#34;&gt;Countable and Uncountable Sets&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; A set $S$ is &lt;em&gt;countably infinite&lt;/em&gt; if and only if there
   exists a bijection between $S$ and $\mathbb{N}$.&lt;/p&gt;
@@ -87,7 +87,7 @@ $$&lt;/p&gt;
 
 &lt;!--page--&gt;
 
-&lt;h2 id=&#34;ordinal-and-cardinal-numbers:31a24b707f457b52726ca1d5e1ddffba&#34;&gt;Ordinal and Cardinal Numbers&lt;/h2&gt;
+&lt;h2 id=&#34;ordinal-and-cardinal-numbers&#34;&gt;Ordinal and Cardinal Numbers&lt;/h2&gt;
 
 &lt;p&gt;$\omega$ is the &lt;em&gt;smallest infinite ordinal&lt;/em&gt;.  The first ordinal after
 $0, 1, 2, \cdots$.&lt;/p&gt;
@@ -237,7 +237,7 @@ collaboration policy carefully.&lt;/p&gt;
       <guid>https://uvacs2102.github.io/class16/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule:e5faf2b6fe551ee3e6bfd5f1acfee2f5&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps7&#34;&gt;&lt;strong&gt;Problem Set 6&lt;/strong&gt;&lt;/a&gt; is due &lt;strong&gt;tomorrow at 6:29pm&lt;/strong&gt;. Make sure to read the corrected version of Problem 7.&lt;/p&gt;
 
@@ -254,7 +254,7 @@ collaboration policy carefully.&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;lists&#34;&gt;Lists&lt;/h1&gt;
+&lt;h1 id=&#34;lists:e5faf2b6fe551ee3e6bfd5f1acfee2f5&#34;&gt;Lists&lt;/h1&gt;
 
 &lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; A &lt;em&gt;list&lt;/em&gt; is an ordered sequence of objects.  A list is
   either the empty list ($\lambda$), or the result of $\text{prepend}(e,
@@ -291,7 +291,7 @@ collaboration policy carefully.&lt;/p&gt;
 
 &lt;!--page--&gt;
 
-&lt;h2 id=&#34;concatenation&#34;&gt;Concatenation&lt;/h2&gt;
+&lt;h2 id=&#34;concatenation:e5faf2b6fe551ee3e6bfd5f1acfee2f5&#34;&gt;Concatenation&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; The &lt;em&gt;concatenation&lt;/em&gt; of two lists, $p = (p_1, p_2, \cdots, p_n)$ and $q = (q_1, q_2, \cdots, q_m)$ is
 $$(p_1, p_2, \cdots, p_n, q_1, q_2, \cdots, q_m).$$&lt;/p&gt;
@@ -302,7 +302,7 @@ $$(p_1, p_2, \cdots, p_n, q_1, q_2, \cdots, q_m).$$&lt;/p&gt;
 
 &lt;p&gt;#&lt;/p&gt;
 
-&lt;h2 id=&#34;structural-induction&#34;&gt;Structural Induction&lt;/h2&gt;
+&lt;h2 id=&#34;structural-induction:e5faf2b6fe551ee3e6bfd5f1acfee2f5&#34;&gt;Structural Induction&lt;/h2&gt;
 
 &lt;p&gt;To prove proposition $P(x)$ for element $x \in D$ where $D$ is a
 recursively-constructed data type, we do two things:&lt;/p&gt;
@@ -313,7 +313,7 @@ recursively-constructed data type, we do two things:&lt;/p&gt;
 using any &amp;ldquo;construct case&amp;rdquo; rules, then $P(x)$ is true as well.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h2 id=&#34;comparing-various-forms-of-induction&#34;&gt;Comparing Various forms of Induction&lt;/h2&gt;
+&lt;h2 id=&#34;comparing-various-forms-of-induction:e5faf2b6fe551ee3e6bfd5f1acfee2f5&#34;&gt;Comparing Various forms of Induction&lt;/h2&gt;
 
 &lt;p&gt;\begin{center}
 \begin{tabular}{lccc}
@@ -346,7 +346,7 @@ and {\bf inductive step} &amp;amp; $\forall m \in \mathbb{N} \ldotp$ &amp;amp; $
       <guid>https://uvacs2102.github.io/class15/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule:82758e0aba59693fe0fb1bf5353fa6c7&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;You should read MCS Chapter 7 this week.&lt;/p&gt;
 
@@ -357,7 +357,7 @@ and {\bf inductive step} &amp;amp; $\forall m \in \mathbb{N} \ldotp$ &amp;amp; $
 &lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;9d25492c6e134346a212652c6d0052ab&#34; data-ratio=&#34;1.77777777777778&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
    &lt;/center&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
+&lt;h2 id=&#34;links:82758e0aba59693fe0fb1bf5353fa6c7&#34;&gt;Links&lt;/h2&gt;
 
 &lt;p&gt;Python code from class and list definitions: &lt;a href=&#34;https://uvacs2102.github.io/docs/pairs.py&#34;&gt;pairs.py&lt;/a&gt;&lt;/p&gt;
 
@@ -369,7 +369,7 @@ and {\bf inductive step} &amp;amp; $\forall m \in \mathbb{N} \ldotp$ &amp;amp; $
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;proving-correctness&#34;&gt;Proving Correctness&lt;/h1&gt;
+&lt;h1 id=&#34;proving-correctness:82758e0aba59693fe0fb1bf5353fa6c7&#34;&gt;Proving Correctness&lt;/h1&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def slow_power(a, b):
    y = 1
@@ -418,7 +418,7 @@ the machine will reach a final state $q_f = (y, 0)$ in $b$ steps.  The
 proof in class used the Well Ordering Principle. You could also prove
 this using regular Induction.&lt;/p&gt;
 
-&lt;h1 id=&#34;pairs&#34;&gt;Pairs&lt;/h1&gt;
+&lt;h1 id=&#34;pairs:82758e0aba59693fe0fb1bf5353fa6c7&#34;&gt;Pairs&lt;/h1&gt;
 
 &lt;p&gt;What is the difference between scalar data and compound data structures?&lt;/p&gt;
 
@@ -445,7 +445,7 @@ def pair_last(p):
     return p(False)
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h1 id=&#34;lists&#34;&gt;Lists&lt;/h1&gt;
+&lt;h1 id=&#34;lists:82758e0aba59693fe0fb1bf5353fa6c7&#34;&gt;Lists&lt;/h1&gt;
 
 &lt;p&gt;&lt;strong&gt;Definition (1).&lt;/strong&gt; A &lt;em&gt;List&lt;/em&gt; is either (1) a &lt;em&gt;Pair&lt;/em&gt; where the second part of
   the pair is a &lt;em&gt;List&lt;/em&gt;, or (2) the empty list.&lt;/p&gt;
@@ -761,7 +761,7 @@ collaboration policy carefully.&lt;/p&gt;
       <guid>https://uvacs2102.github.io/class13/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule:af2ff3ef0db44829d3ff131eac0d7ec7&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;There is no Problem Set due this week. &lt;a href=&#34;https://uvacs2102.github.io/ps/ps6&#34;&gt;&lt;strong&gt;Problem Set 6&lt;/strong&gt;&lt;/a&gt; will be posted soon and due next &lt;strong&gt;Friday (October 20) at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
 
@@ -783,7 +783,7 @@ office hours tomorrow, or before or after class on Thursday.&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;state-machines:af2ff3ef0db44829d3ff131eac0d7ec7&#34;&gt;State Machines&lt;/h2&gt;
+&lt;h2 id=&#34;state-machines&#34;&gt;State Machines&lt;/h2&gt;
 
 &lt;p&gt;A &lt;em&gt;state machine&lt;/em&gt; is a binary relation (called a &lt;em&gt;transition relation&lt;/em&gt;)
 on a set (both the domain and codomain are the same set).  One state is
@@ -811,7 +811,7 @@ designated as the &lt;em&gt;start state&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;How well do state machines model real computers?  What kind of
 transition relation does the state machine modeling your computer have?&lt;/p&gt;
 
-&lt;h2 id=&#34;state-machine-execution:af2ff3ef0db44829d3ff131eac0d7ec7&#34;&gt;State Machine Execution&lt;/h2&gt;
+&lt;h2 id=&#34;state-machine-execution&#34;&gt;State Machine Execution&lt;/h2&gt;
 
 &lt;p&gt;An &lt;em&gt;execution&lt;/em&gt; of a state machine $M = (S, G \subseteq S \times S, q_0 \in S)$ is a (possibly infinite) sequence of states, $(x_0, x_1, \cdots, x_n)$ where:&lt;/p&gt;
 
@@ -904,7 +904,7 @@ hours schedule will resume on Monday, 9 October.&lt;/p&gt;
       <guid>https://uvacs2102.github.io/class12/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule:bc216d98f3ca2300699af2d41b8a2a45&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps5&#34;&gt;&lt;strong&gt;Problem Set 5&lt;/strong&gt;&lt;/a&gt; is due &lt;strong&gt;Friday at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
 
@@ -923,7 +923,7 @@ hours schedule will resume on Monday, 9 October.&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;strong-induction-principle:bc216d98f3ca2300699af2d41b8a2a45&#34;&gt;Strong Induction Principle&lt;/h2&gt;
+&lt;h2 id=&#34;strong-induction-principle&#34;&gt;Strong Induction Principle&lt;/h2&gt;
 
 &lt;p&gt;Let $P$ be a predicated on $\mathbb{N}$.  If&lt;/p&gt;
 
@@ -954,7 +954,7 @@ $$&lt;/p&gt;
 
 &lt;p&gt;##&lt;/p&gt;
 
-&lt;h3 id=&#34;example-strong-induction-proof:bc216d98f3ca2300699af2d41b8a2a45&#34;&gt;Example Strong Induction Proof&lt;/h3&gt;
+&lt;h3 id=&#34;example-strong-induction-proof&#34;&gt;Example Strong Induction Proof&lt;/h3&gt;
 
 &lt;p&gt;&lt;strong&gt;Theorem:&lt;/strong&gt; Every number, $n \in \mathbb{N}, n \geq 4$ can be written as $\alpha \cdot 2 + \beta \cdot 5$ where $\alpha, \beta \in \mathbb{N}$.&lt;/p&gt;
 
@@ -979,7 +979,7 @@ hypothesis), we know $\exists \alpha, \beta \in \mathbb{N} . m - 1 =
 $m + 1 = (\alpha + 1) \cdot 2 + \beta \cdot 5$.&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h2 id=&#34;proof-by-contra-positive-review:bc216d98f3ca2300699af2d41b8a2a45&#34;&gt;Proof by Contra-Positive (Review)&lt;/h2&gt;
+&lt;h2 id=&#34;proof-by-contra-positive-review&#34;&gt;Proof by Contra-Positive (Review)&lt;/h2&gt;
 
 &lt;p&gt;Recall: $P \implies Q$ is equivalent to $\neg Q \implies \neg P$. (If
 you are shaky on this, prove it to yourself using a truth table.)&lt;/p&gt;
@@ -988,7 +988,7 @@ you are shaky on this, prove it to yourself using a truth table.)&lt;/p&gt;
 about than the original proposition (e.g., irrational is a complex
 property to describe, but rational (NOT irrational) is a simple one. So to prove that ``If $r$ is irrational then $\sqrt{r}$ is also irrational&amp;rdquo; we can prove the contrapositive which is &amp;ldquo;if $\sqrt{r}$&amp;rdquo; is rational, then $r$ is also rational$ which is quite straightforward.&lt;/p&gt;
 
-&lt;h2 id=&#34;proof-by-contradiction-review:bc216d98f3ca2300699af2d41b8a2a45&#34;&gt;Proof by Contradiction (Review)&lt;/h2&gt;
+&lt;h2 id=&#34;proof-by-contradiction-review&#34;&gt;Proof by Contradiction (Review)&lt;/h2&gt;
 
 &lt;p&gt;To prove $P$, show $\neg P \implies False$.&lt;/p&gt;
 
@@ -1008,7 +1008,7 @@ property to describe, but rational (NOT irrational) is a simple one. So to prove
 
 &lt;p&gt;Typical use: when the statment we want to prove has universal quantifier. for example, $\forall x \in \mathbb{Z}. P(x)$. Note that the statment that $\mathbb{Z}$ has \emph{no} minimum, when written formally, uses a universal quantifier (make sure to double check it). Then, instead of arguing that for all $x \in A$, $P(x)$ holds, we assume (for sake of contradiction) that there exists one $x$ for which $\neg(P(x))$ (note that this is indeed the negated statement) from which  we get a contradiction.&lt;/p&gt;
 
-&lt;h1 id=&#34;binary-relation-properties:bc216d98f3ca2300699af2d41b8a2a45&#34;&gt;Binary Relation Properties&lt;/h1&gt;
+&lt;h1 id=&#34;binary-relation-properties&#34;&gt;Binary Relation Properties&lt;/h1&gt;
 
 &lt;p&gt;When we draw the graph of binary relations, the Domain (&lt;code&gt;input&amp;quot; set) has outgoing edges. Codomain (&lt;/code&gt;output&amp;rdquo; set) has
 incoming edges. So when we use the compact notation referring to different properties of binary relations, keep in mind that the words ``in-out&amp;rdquo; refer to the edge (not the input/output sets).  The properties about outgoing edges are &lt;em&gt;function&lt;/em&gt;
