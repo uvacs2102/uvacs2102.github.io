@@ -17,14 +17,14 @@
       <guid>https://uvacs2102.github.io/class19/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule:90174cd8255fa2ab935573c4a489ebf1&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;&lt;strong&gt;Problem Set 8&lt;/strong&gt; is now due on &lt;strong&gt;Friday, Nov 3&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;
-   &lt;center&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/center&gt;
+   &lt;center&gt;
+&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;5db039183a334bca9708c9f6c0d3b9dc&#34; data-ratio=&#34;1.77777777777778&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
+   &lt;/center&gt;
    &lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;highlightm&#34;&gt;
@@ -35,7 +35,7 @@
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;comparing-sets-recap:90174cd8255fa2ab935573c4a489ebf1&#34;&gt;Comparing sets Recap:&lt;/h1&gt;
+&lt;h1 id=&#34;comparing-sets-recap&#34;&gt;Comparing sets Recap:&lt;/h1&gt;
 
 &lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; Sets $A$ and $B$ have the same cardinality, denoted by $|A|=|B|$ if there is a bijection between $A$ and $B$.&lt;/p&gt;
 
@@ -45,7 +45,7 @@
 \item There is a total injective function from $B$ to $A$.
 \end{enumerate}&lt;/p&gt;
 
-&lt;h1 id=&#34;infinite-sets-recap:90174cd8255fa2ab935573c4a489ebf1&#34;&gt;Infinite Sets Recap&lt;/h1&gt;
+&lt;h1 id=&#34;infinite-sets-recap&#34;&gt;Infinite Sets Recap&lt;/h1&gt;
 
 &lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; A set $C$ is &lt;em&gt;infinite&lt;/em&gt; if and only if &lt;em&gt;either&lt;/em&gt; of the following happens (they are all equivalnet).
 \begin{enumerate}&lt;/p&gt;
@@ -67,7 +67,7 @@
 &lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; A set $C$ is &lt;em&gt;countably infinite&lt;/em&gt; if and only if there
   exists a bijection between $C$ and $\mathbb{N}$.&lt;/p&gt;
 
-&lt;h1 id=&#34;cantor-s-theorem:90174cd8255fa2ab935573c4a489ebf1&#34;&gt;Cantor&amp;rsquo;s Theorem&lt;/h1&gt;
+&lt;h1 id=&#34;cantor-s-theorem&#34;&gt;Cantor&amp;rsquo;s Theorem&lt;/h1&gt;
 
 &lt;p&gt;For &lt;strong&gt;all&lt;/strong&gt; sets, $S$, $| pow(S) | &amp;gt; | S |$.&lt;/p&gt;
 
@@ -75,18 +75,13 @@
 
 &lt;p&gt;#&lt;/p&gt;
 
-&lt;p&gt;What is the cardinality of all the real numbers?&lt;/p&gt;
+&lt;p&gt;Show there is a bijection between $[0, 1]$ and $pow(\mathbb{N})$.&lt;/p&gt;
 
 &lt;p&gt;#&lt;/p&gt;
 
-&lt;p&gt;Show there is a bijection between $(0, 1)$ and $pow(\mathbb{N})$.&lt;/p&gt;
+&lt;p&gt;What is the cardinality of all the real numbers? Show a bijection between $[0, 1]$ and all real numbers. Hint, first show a bijection between $(0, 1)$ and real numbers, and then a bijection between $[0, 1]$ and $(0, 1)$.&lt;/p&gt;
 
 &lt;p&gt;#&lt;/p&gt;
-
-&lt;p&gt;Show there is a bijection between $[0,1]$ and the cube $[0,1] \times [0,1] \times [0,1]$.&lt;/p&gt;
-
-&lt;p&gt;#
-#&lt;/p&gt;
 
 &lt;p&gt;&lt;/div&gt;&lt;/p&gt;
 </description>
@@ -211,7 +206,7 @@ $0, 1, 2, \cdots$.&lt;/p&gt;
       <guid>https://uvacs2102.github.io/class17/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule:8b7b3a27abcb870c301f99da90607ac1&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;Before Thursday, everyone should have finished reading MCS Chapter 8.&lt;/p&gt;
 
@@ -226,7 +221,7 @@ $0, 1, 2, \cdots$.&lt;/p&gt;
    &lt;a href=&#34;https://uvacs2102.github.io/docs/class17.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes&lt;/b&gt;&lt;/a&gt;.
    &lt;/div&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
+&lt;h2 id=&#34;links:8b7b3a27abcb870c301f99da90607ac1&#34;&gt;Links&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://www.cs.cornell.edu/courses/cs2800/2017fa/lectures/lec14-cantor.html&#34;&gt;Proof of Schr&amp;ouml;der-Bernstein Theorem&lt;/a&gt;&lt;/p&gt;
 
@@ -234,7 +229,7 @@ $0, 1, 2, \cdots$.&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;infinite-sets&#34;&gt;Infinite Sets&lt;/h1&gt;
+&lt;h1 id=&#34;infinite-sets:8b7b3a27abcb870c301f99da90607ac1&#34;&gt;Infinite Sets&lt;/h1&gt;
 
 &lt;p&gt;&lt;strong&gt;Finite Cardinality.&lt;/strong&gt; The &lt;em&gt;cardinality&lt;/em&gt; of the set
 $$
@@ -252,7 +247,7 @@ cardinality.  (Class 9)&lt;/p&gt;
 
 &lt;p&gt;Show that $\mathbb{Z}$ is infinite.&lt;/p&gt;
 
-&lt;h3 id=&#34;cardinality-of-infinite-sets&#34;&gt;Cardinality of Infinite Sets&lt;/h3&gt;
+&lt;h3 id=&#34;cardinality-of-infinite-sets:8b7b3a27abcb870c301f99da90607ac1&#34;&gt;Cardinality of Infinite Sets&lt;/h3&gt;
 
 &lt;p&gt;&lt;strong&gt;Equal Carinalities.&lt;/strong&gt; We say $|A|\; = |B|$  for arbitrary sets $A,B$ (and say that they have the same cardinality), if there is a bijection between $A$ and $B$.&lt;/p&gt;
 
@@ -264,7 +259,7 @@ cardinality.  (Class 9)&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Schr\wrap{\&amp;ldquo;{o}}der-Bernstein Theorem:&lt;/strong&gt; If $|A|\; \leq |B|$ and $|B|\; \leq |A|$, then there is a bijection between $A$ and $B$, namely $|A|\; = |B|$. (Not proven in cs2102; this is somewhat tricky to prove! For a full proof, see &lt;a href=&#34;http://www.cs.cornell.edu/courses/cs2800/2017fa/lectures/lec14-cantor.html&#34;&gt;the linked lecture notes&lt;/a&gt;.)&lt;/p&gt;
 
-&lt;h3 id=&#34;other-definitions-for-infinite-sets&#34;&gt;Other Definitions for Infinite Sets&lt;/h3&gt;
+&lt;h3 id=&#34;other-definitions-for-infinite-sets:8b7b3a27abcb870c301f99da90607ac1&#34;&gt;Other Definitions for Infinite Sets&lt;/h3&gt;
 
 &lt;p&gt;&lt;strong&gt;Dedekind-Infinite.&lt;/strong&gt; A set $A$ is &lt;em&gt;Dedekind-infinite&lt;/em&gt; if and only if there exists a &lt;em&gt;strict subset&lt;/em&gt; of $A$ with the same cardinality as $A$.  That is,
 $$\exists B \subset A \ldotp \exists R \ldotp R\ \text{is a bijection between}\ A\ \text{and}\ B.$$&lt;/p&gt;
@@ -320,7 +315,7 @@ collaboration policy carefully.&lt;/p&gt;
       <guid>https://uvacs2102.github.io/class16/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule:e5faf2b6fe551ee3e6bfd5f1acfee2f5&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps7&#34;&gt;&lt;strong&gt;Problem Set 6&lt;/strong&gt;&lt;/a&gt; is due &lt;strong&gt;tomorrow at 6:29pm&lt;/strong&gt;. Make sure to read the corrected version of Problem 7.&lt;/p&gt;
 
@@ -337,7 +332,7 @@ collaboration policy carefully.&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;lists:e5faf2b6fe551ee3e6bfd5f1acfee2f5&#34;&gt;Lists&lt;/h1&gt;
+&lt;h1 id=&#34;lists&#34;&gt;Lists&lt;/h1&gt;
 
 &lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; A &lt;em&gt;list&lt;/em&gt; is an ordered sequence of objects.  A list is
   either the empty list ($\lambda$), or the result of $\text{prepend}(e,
@@ -374,7 +369,7 @@ collaboration policy carefully.&lt;/p&gt;
 
 &lt;!--page--&gt;
 
-&lt;h2 id=&#34;concatenation:e5faf2b6fe551ee3e6bfd5f1acfee2f5&#34;&gt;Concatenation&lt;/h2&gt;
+&lt;h2 id=&#34;concatenation&#34;&gt;Concatenation&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; The &lt;em&gt;concatenation&lt;/em&gt; of two lists, $p = (p_1, p_2, \cdots, p_n)$ and $q = (q_1, q_2, \cdots, q_m)$ is
 $$(p_1, p_2, \cdots, p_n, q_1, q_2, \cdots, q_m).$$&lt;/p&gt;
@@ -385,7 +380,7 @@ $$(p_1, p_2, \cdots, p_n, q_1, q_2, \cdots, q_m).$$&lt;/p&gt;
 
 &lt;p&gt;#&lt;/p&gt;
 
-&lt;h2 id=&#34;structural-induction:e5faf2b6fe551ee3e6bfd5f1acfee2f5&#34;&gt;Structural Induction&lt;/h2&gt;
+&lt;h2 id=&#34;structural-induction&#34;&gt;Structural Induction&lt;/h2&gt;
 
 &lt;p&gt;To prove proposition $P(x)$ for element $x \in D$ where $D$ is a
 recursively-constructed data type, we do two things:&lt;/p&gt;
@@ -396,7 +391,7 @@ recursively-constructed data type, we do two things:&lt;/p&gt;
 using any &amp;ldquo;construct case&amp;rdquo; rules, then $P(x)$ is true as well.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h2 id=&#34;comparing-various-forms-of-induction:e5faf2b6fe551ee3e6bfd5f1acfee2f5&#34;&gt;Comparing Various forms of Induction&lt;/h2&gt;
+&lt;h2 id=&#34;comparing-various-forms-of-induction&#34;&gt;Comparing Various forms of Induction&lt;/h2&gt;
 
 &lt;p&gt;\begin{center}
 \begin{tabular}{lccc}
@@ -694,7 +689,7 @@ collaboration policy carefully.&lt;/p&gt;
       <guid>https://uvacs2102.github.io/class13/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule:af2ff3ef0db44829d3ff131eac0d7ec7&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;There is no Problem Set due this week. &lt;a href=&#34;https://uvacs2102.github.io/ps/ps6&#34;&gt;&lt;strong&gt;Problem Set 6&lt;/strong&gt;&lt;/a&gt; will be posted soon and due next &lt;strong&gt;Friday (October 20) at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
 
@@ -716,7 +711,7 @@ office hours tomorrow, or before or after class on Thursday.&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;state-machines:af2ff3ef0db44829d3ff131eac0d7ec7&#34;&gt;State Machines&lt;/h2&gt;
+&lt;h2 id=&#34;state-machines&#34;&gt;State Machines&lt;/h2&gt;
 
 &lt;p&gt;A &lt;em&gt;state machine&lt;/em&gt; is a binary relation (called a &lt;em&gt;transition relation&lt;/em&gt;)
 on a set (both the domain and codomain are the same set).  One state is
@@ -744,7 +739,7 @@ designated as the &lt;em&gt;start state&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;How well do state machines model real computers?  What kind of
 transition relation does the state machine modeling your computer have?&lt;/p&gt;
 
-&lt;h2 id=&#34;state-machine-execution:af2ff3ef0db44829d3ff131eac0d7ec7&#34;&gt;State Machine Execution&lt;/h2&gt;
+&lt;h2 id=&#34;state-machine-execution&#34;&gt;State Machine Execution&lt;/h2&gt;
 
 &lt;p&gt;An &lt;em&gt;execution&lt;/em&gt; of a state machine $M = (S, G \subseteq S \times S, q_0 \in S)$ is a (possibly infinite) sequence of states, $(x_0, x_1, \cdots, x_n)$ where:&lt;/p&gt;
 
