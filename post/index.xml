@@ -29,7 +29,7 @@ collaboration policy carefully.&lt;/p&gt;
       <guid>https://uvacs2102.github.io/class18/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule:31a24b707f457b52726ca1d5e1ddffba&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps7&#34;&gt;&lt;strong&gt;Problem Set 7&lt;/strong&gt;&lt;/a&gt; is due &lt;strong&gt;Friday (27 Oct) at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
 
@@ -45,7 +45,7 @@ collaboration policy carefully.&lt;/p&gt;
    &lt;a href=&#34;https://uvacs2102.github.io/docs/class18.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes&lt;/b&gt;&lt;/a&gt;.
    &lt;/div&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
+&lt;h2 id=&#34;links:31a24b707f457b52726ca1d5e1ddffba&#34;&gt;Links&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://www.amazon.com/Logicomix-search-truth-Apostolos-Doxiadis/dp/1596914521/&#34;&gt;&lt;em&gt;Logicomix: An epic search for truth&lt;/em&gt;&lt;/a&gt;, comic book by Apostolos Doxiadis and &lt;a href=&#34;https://people.eecs.berkeley.edu/~christos/&#34;&gt;Christos H. Papadimitrou&lt;/a&gt;.&lt;/p&gt;
 
@@ -55,7 +55,7 @@ collaboration policy carefully.&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;countable-and-uncountable-sets&#34;&gt;Countable and Uncountable Sets&lt;/h2&gt;
+&lt;h2 id=&#34;countable-and-uncountable-sets:31a24b707f457b52726ca1d5e1ddffba&#34;&gt;Countable and Uncountable Sets&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; A set $S$ is &lt;em&gt;countably infinite&lt;/em&gt; if and only if there
   exists a bijection between $S$ and $\mathbb{N}$.&lt;/p&gt;
@@ -87,7 +87,7 @@ $$&lt;/p&gt;
 
 &lt;!--page--&gt;
 
-&lt;h2 id=&#34;ordinal-and-cardinal-numbers&#34;&gt;Ordinal and Cardinal Numbers&lt;/h2&gt;
+&lt;h2 id=&#34;ordinal-and-cardinal-numbers:31a24b707f457b52726ca1d5e1ddffba&#34;&gt;Ordinal and Cardinal Numbers&lt;/h2&gt;
 
 &lt;p&gt;$\omega$ is the &lt;em&gt;smallest infinite ordinal&lt;/em&gt;.  The first ordinal after
 $0, 1, 2, \cdots$.&lt;/p&gt;
@@ -346,7 +346,7 @@ and {\bf inductive step} &amp;amp; $\forall m \in \mathbb{N} \ldotp$ &amp;amp; $
       <guid>https://uvacs2102.github.io/class15/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule:82758e0aba59693fe0fb1bf5353fa6c7&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;You should read MCS Chapter 7 this week.&lt;/p&gt;
 
@@ -357,7 +357,7 @@ and {\bf inductive step} &amp;amp; $\forall m \in \mathbb{N} \ldotp$ &amp;amp; $
 &lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;9d25492c6e134346a212652c6d0052ab&#34; data-ratio=&#34;1.77777777777778&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
    &lt;/center&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;links:82758e0aba59693fe0fb1bf5353fa6c7&#34;&gt;Links&lt;/h2&gt;
+&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
 
 &lt;p&gt;Python code from class and list definitions: &lt;a href=&#34;https://uvacs2102.github.io/docs/pairs.py&#34;&gt;pairs.py&lt;/a&gt;&lt;/p&gt;
 
@@ -369,7 +369,7 @@ and {\bf inductive step} &amp;amp; $\forall m \in \mathbb{N} \ldotp$ &amp;amp; $
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;proving-correctness:82758e0aba59693fe0fb1bf5353fa6c7&#34;&gt;Proving Correctness&lt;/h1&gt;
+&lt;h1 id=&#34;proving-correctness&#34;&gt;Proving Correctness&lt;/h1&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def slow_power(a, b):
    y = 1
@@ -418,7 +418,7 @@ the machine will reach a final state $q_f = (y, 0)$ in $b$ steps.  The
 proof in class used the Well Ordering Principle. You could also prove
 this using regular Induction.&lt;/p&gt;
 
-&lt;h1 id=&#34;pairs:82758e0aba59693fe0fb1bf5353fa6c7&#34;&gt;Pairs&lt;/h1&gt;
+&lt;h1 id=&#34;pairs&#34;&gt;Pairs&lt;/h1&gt;
 
 &lt;p&gt;What is the difference between scalar data and compound data structures?&lt;/p&gt;
 
@@ -445,7 +445,7 @@ def pair_last(p):
     return p(False)
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h1 id=&#34;lists:82758e0aba59693fe0fb1bf5353fa6c7&#34;&gt;Lists&lt;/h1&gt;
+&lt;h1 id=&#34;lists&#34;&gt;Lists&lt;/h1&gt;
 
 &lt;p&gt;&lt;strong&gt;Definition (1).&lt;/strong&gt; A &lt;em&gt;List&lt;/em&gt; is either (1) a &lt;em&gt;Pair&lt;/em&gt; where the second part of
   the pair is a &lt;em&gt;List&lt;/em&gt;, or (2) the empty list.&lt;/p&gt;
@@ -611,7 +611,7 @@ collaboration policy carefully.&lt;/p&gt;
       <guid>https://uvacs2102.github.io/class13/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule:af2ff3ef0db44829d3ff131eac0d7ec7&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;There is no Problem Set due this week. &lt;a href=&#34;https://uvacs2102.github.io/ps/ps6&#34;&gt;&lt;strong&gt;Problem Set 6&lt;/strong&gt;&lt;/a&gt; will be posted soon and due next &lt;strong&gt;Friday (October 20) at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
 
@@ -633,7 +633,7 @@ office hours tomorrow, or before or after class on Thursday.&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;state-machines&#34;&gt;State Machines&lt;/h2&gt;
+&lt;h2 id=&#34;state-machines:af2ff3ef0db44829d3ff131eac0d7ec7&#34;&gt;State Machines&lt;/h2&gt;
 
 &lt;p&gt;A &lt;em&gt;state machine&lt;/em&gt; is a binary relation (called a &lt;em&gt;transition relation&lt;/em&gt;)
 on a set (both the domain and codomain are the same set).  One state is
@@ -661,7 +661,7 @@ designated as the &lt;em&gt;start state&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;How well do state machines model real computers?  What kind of
 transition relation does the state machine modeling your computer have?&lt;/p&gt;
 
-&lt;h2 id=&#34;state-machine-execution&#34;&gt;State Machine Execution&lt;/h2&gt;
+&lt;h2 id=&#34;state-machine-execution:af2ff3ef0db44829d3ff131eac0d7ec7&#34;&gt;State Machine Execution&lt;/h2&gt;
 
 &lt;p&gt;An &lt;em&gt;execution&lt;/em&gt; of a state machine $M = (S, G \subseteq S \times S, q_0 \in S)$ is a (possibly infinite) sequence of states, $(x_0, x_1, \cdots, x_n)$ where:&lt;/p&gt;
 
@@ -701,18 +701,18 @@ $$&lt;/p&gt;
 because of “Fall Break” and the Exam (as usual, all will be in Rice
 436 except the professors&amp;rsquo; as noted):&lt;/p&gt;
 
-&lt;h4 id=&#34;monday-2-oct:d0632df39174fbd03a717f33cd2b5853&#34;&gt;Monday (2 Oct)&lt;/h4&gt;
+&lt;h4 id=&#34;monday-2-oct&#34;&gt;Monday (2 Oct)&lt;/h4&gt;
 
 &lt;p&gt;Mohammad Mahmoody (Rice 511), 10:45-11:45am&lt;br /&gt;
 Sarah Meng, 4:30-6:00pm&lt;/p&gt;
 
-&lt;h4 id=&#34;tuesday-3-oct:d0632df39174fbd03a717f33cd2b5853&#34;&gt;Tuesday (3 Oct)&lt;/h4&gt;
+&lt;h4 id=&#34;tuesday-3-oct&#34;&gt;Tuesday (3 Oct)&lt;/h4&gt;
 
 &lt;p&gt;Nate Olsen, 10-11:30am&lt;br /&gt;
 Michael Woon, 11am-12:30pm&lt;br /&gt;
 Henry Spece, 3:30-5pm&lt;/p&gt;
 
-&lt;h4 id=&#34;wednesday-4-oct:d0632df39174fbd03a717f33cd2b5853&#34;&gt;Wednesday (4 Oct)&lt;/h4&gt;
+&lt;h4 id=&#34;wednesday-4-oct&#34;&gt;Wednesday (4 Oct)&lt;/h4&gt;
 
 &lt;p&gt;Colin Harfst, 9:30am-12:30pm&lt;br /&gt;
 Anna Wu, noon-1:30pm&lt;br /&gt;
@@ -725,7 +725,7 @@ Xueying Bai, 6-7pm&lt;br /&gt;
 Fan Feng, 7-8:30pm&lt;br /&gt;
 Nate Olsen, 7:30-9:00pm&lt;/p&gt;
 
-&lt;h4 id=&#34;thursday-5-oct:d0632df39174fbd03a717f33cd2b5853&#34;&gt;Thursday (5 Oct)&lt;/h4&gt;
+&lt;h4 id=&#34;thursday-5-oct&#34;&gt;Thursday (5 Oct)&lt;/h4&gt;
 
 &lt;p&gt;Amar Singh, 9am-10:30&lt;br /&gt;
 Xiao Zhang, 10-11am&lt;br /&gt;
