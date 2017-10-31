@@ -6,8 +6,91 @@
     <description>Recent content on cs2102: Discrete Math</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 28 Oct 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 31 Oct 2017 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://uvacs2102.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Class 19: Reviewing Infinities</title>
+      <link>https://uvacs2102.github.io/class19/</link>
+      <pubDate>Tue, 31 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/class19/</guid>
+      <description>
+
+&lt;h3 id=&#34;schedule:90174cd8255fa2ab935573c4a489ebf1&#34;&gt;Schedule&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Problem Set 8&lt;/strong&gt; is now due on &lt;strong&gt;Friday, Nov 3&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;
+   &lt;center&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/center&gt;
+   &lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlightm&#34;&gt;
+   &lt;a href=&#34;https://uvacs2102.github.io/docs/class19.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes&lt;/b&gt;&lt;/a&gt;.
+   &lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;comparing-sets-recap:90174cd8255fa2ab935573c4a489ebf1&#34;&gt;Comparing sets Recap:&lt;/h1&gt;
+
+&lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; Sets $A$ and $B$ have the same cardinality, denoted by $|A|=|B|$ if there is a bijection between $A$ and $B$.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; Cardinality of $A$ is at least as big as cardinality of $B$, denoted by $|A|\geq |B|$ if and only if &lt;em&gt;either&lt;/em&gt; of the following is true (they are equivalent).
+\begin{enumerate}
+\item There is a surjective function from $A$ to $B$.
+\item There is a total injective function from $B$ to $A$.
+\end{enumerate}&lt;/p&gt;
+
+&lt;h1 id=&#34;infinite-sets-recap:90174cd8255fa2ab935573c4a489ebf1&#34;&gt;Infinite Sets Recap&lt;/h1&gt;
+
+&lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; A set $C$ is &lt;em&gt;infinite&lt;/em&gt; if and only if &lt;em&gt;either&lt;/em&gt; of the following happens (they are all equivalnet).
+\begin{enumerate}&lt;/p&gt;
+
+&lt;p&gt;\item Dedekind-infinite: There is a bijection between $C$ and a strict subset $B$ of $C$.&lt;/p&gt;
+
+&lt;p&gt;\item There is \emph{no} bijection between $C$ and any $\mathbb{N}_k$ for any natural number $ k \in \mathbb{N}$.&lt;/p&gt;
+
+&lt;p&gt;\item There exists a
+  surjective function from $C$ to $\mathbb{N}$.&lt;/p&gt;
+
+&lt;p&gt;\item There exists a total injective function from $\mathbb{N}$  to $C$.
+\end{enumerate}&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; A set $C$ is &lt;em&gt;countable&lt;/em&gt; if and only if there exists a
+  surjective function from $\mathbb{N}$ to $C$.  (That is, $\le 1$ arrow
+  out from $\mathbb{N}$, $\ge 1$ arrow in to $C$.)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; A set $C$ is &lt;em&gt;countably infinite&lt;/em&gt; if and only if there
+  exists a bijection between $C$ and $\mathbb{N}$.&lt;/p&gt;
+
+&lt;h1 id=&#34;cantor-s-theorem:90174cd8255fa2ab935573c4a489ebf1&#34;&gt;Cantor&amp;rsquo;s Theorem&lt;/h1&gt;
+
+&lt;p&gt;For &lt;strong&gt;all&lt;/strong&gt; sets, $S$, $| pow(S) | &amp;gt; | S |$.&lt;/p&gt;
+
+&lt;p&gt;What does this mean for $| \mathbb{N} |$?&lt;/p&gt;
+
+&lt;p&gt;#&lt;/p&gt;
+
+&lt;p&gt;What is the cardinality of all the real numbers?&lt;/p&gt;
+
+&lt;p&gt;#&lt;/p&gt;
+
+&lt;p&gt;Show there is a bijection between $(0, 1)$ and $pow(\mathbb{N})$.&lt;/p&gt;
+
+&lt;p&gt;#&lt;/p&gt;
+
+&lt;p&gt;Show there is a bijection between $[0,1]$ and the cube $[0,1] \times [0,1] \times [0,1]$.&lt;/p&gt;
+
+&lt;p&gt;#
+#&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Problem Set 8</title>
@@ -761,7 +844,7 @@ collaboration policy carefully.&lt;/p&gt;
       <guid>https://uvacs2102.github.io/class13/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule:af2ff3ef0db44829d3ff131eac0d7ec7&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;There is no Problem Set due this week. &lt;a href=&#34;https://uvacs2102.github.io/ps/ps6&#34;&gt;&lt;strong&gt;Problem Set 6&lt;/strong&gt;&lt;/a&gt; will be posted soon and due next &lt;strong&gt;Friday (October 20) at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
 
@@ -783,7 +866,7 @@ office hours tomorrow, or before or after class on Thursday.&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;state-machines&#34;&gt;State Machines&lt;/h2&gt;
+&lt;h2 id=&#34;state-machines:af2ff3ef0db44829d3ff131eac0d7ec7&#34;&gt;State Machines&lt;/h2&gt;
 
 &lt;p&gt;A &lt;em&gt;state machine&lt;/em&gt; is a binary relation (called a &lt;em&gt;transition relation&lt;/em&gt;)
 on a set (both the domain and codomain are the same set).  One state is
@@ -811,7 +894,7 @@ designated as the &lt;em&gt;start state&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;How well do state machines model real computers?  What kind of
 transition relation does the state machine modeling your computer have?&lt;/p&gt;
 
-&lt;h2 id=&#34;state-machine-execution&#34;&gt;State Machine Execution&lt;/h2&gt;
+&lt;h2 id=&#34;state-machine-execution:af2ff3ef0db44829d3ff131eac0d7ec7&#34;&gt;State Machine Execution&lt;/h2&gt;
 
 &lt;p&gt;An &lt;em&gt;execution&lt;/em&gt; of a state machine $M = (S, G \subseteq S \times S, q_0 \in S)$ is a (possibly infinite) sequence of states, $(x_0, x_1, \cdots, x_n)$ where:&lt;/p&gt;
 
@@ -1032,16 +1115,6 @@ in). Adding elements to the domain cannot effect these properties.&lt;/p&gt;
 properties &lt;em&gt;might&lt;/em&gt; be impacted?&lt;/p&gt;
 
 &lt;p&gt;&lt;/div&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Problem Set 4 Comments</title>
-      <link>https://uvacs2102.github.io/ps4comments/</link>
-      <pubDate>Wed, 27 Sep 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://uvacs2102.github.io/ps4comments/</guid>
-      <description>&lt;p&gt;The Problem Set 4 solutions and comments are now posted in collab: &lt;a href=&#34;https://collab.its.virginia.edu/access/content/group/9bd99d1c-6f18-4542-a7d1-8ffc4fccbd3d/ps4solutions.pdf&#34;&gt;PDF&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     

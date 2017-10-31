@@ -155,6 +155,83 @@
   </header>
   
   
+  <p class="fronthead"><A href="">Class 19: Reviewing Infinities</a> (Tue, 31 Oct 2017)</p>
+    
+
+<h3 id="schedule:90174cd8255fa2ab935573c4a489ebf1">Schedule</h3>
+
+<p><strong>Problem Set 8</strong> is now due on <strong>Friday, Nov 3</strong>.</p>
+
+<p><div class="notpdf">
+   <center></p>
+
+<p></center>
+   </div><!--endpdf--></p>
+
+<p><div class="highlightm">
+   <a href="/docs/class19.pdf">See PDF Version for <b>Notes</b></a>.
+   </div></p>
+
+<p></div><!--endpdf--></p>
+
+<p><div class="latex"></p>
+
+<h1 id="comparing-sets-recap:90174cd8255fa2ab935573c4a489ebf1">Comparing sets Recap:</h1>
+
+<p><strong>Definition.</strong> Sets $A$ and $B$ have the same cardinality, denoted by $|A|=|B|$ if there is a bijection between $A$ and $B$.</p>
+
+<p><strong>Definition.</strong> Cardinality of $A$ is at least as big as cardinality of $B$, denoted by $|A|\geq |B|$ if and only if <em>either</em> of the following is true (they are equivalent).
+\begin{enumerate}
+\item There is a surjective function from $A$ to $B$.
+\item There is a total injective function from $B$ to $A$.
+\end{enumerate}</p>
+
+<h1 id="infinite-sets-recap:90174cd8255fa2ab935573c4a489ebf1">Infinite Sets Recap</h1>
+
+<p><strong>Definition.</strong> A set $C$ is <em>infinite</em> if and only if <em>either</em> of the following happens (they are all equivalnet).
+\begin{enumerate}</p>
+
+<p>\item Dedekind-infinite: There is a bijection between $C$ and a strict subset $B$ of $C$.</p>
+
+<p>\item There is \emph{no} bijection between $C$ and any $\mathbb{N}_k$ for any natural number $ k \in \mathbb{N}$.</p>
+
+<p>\item There exists a
+  surjective function from $C$ to $\mathbb{N}$.</p>
+
+<p>\item There exists a total injective function from $\mathbb{N}$  to $C$.
+\end{enumerate}</p>
+
+<p><strong>Definition.</strong> A set $C$ is <em>countable</em> if and only if there exists a
+  surjective function from $\mathbb{N}$ to $C$.  (That is, $\le 1$ arrow
+  out from $\mathbb{N}$, $\ge 1$ arrow in to $C$.)</p>
+
+<p><strong>Definition.</strong> A set $C$ is <em>countably infinite</em> if and only if there
+  exists a bijection between $C$ and $\mathbb{N}$.</p>
+
+<h1 id="cantor-s-theorem:90174cd8255fa2ab935573c4a489ebf1">Cantor&rsquo;s Theorem</h1>
+
+<p>For <strong>all</strong> sets, $S$, $| pow(S) | &gt; | S |$.</p>
+
+<p>What does this mean for $| \mathbb{N} |$?</p>
+
+<p>#</p>
+
+<p>What is the cardinality of all the real numbers?</p>
+
+<p>#</p>
+
+<p>Show there is a bijection between $(0, 1)$ and $pow(\mathbb{N})$.</p>
+
+<p>#</p>
+
+<p>Show there is a bijection between $[0,1]$ and the cube $[0,1] \times [0,1] \times [0,1]$.</p>
+
+<p>#
+#</p>
+
+<p></div></p>
+ 
+  
   <p class="fronthead"><A href="">Problem Set 8</a> (Sat, 28 Oct 2017)</p>
     <p><a href="/ps/ps8"><strong>Problem Set 8</strong></a> [<a href="/docs/ps8.pdf">PDF</a>] is now posted and
 is due <strong>Friday, 3 Nov at 6:29:00pm</strong>. Please read the
@@ -693,86 +770,6 @@ $q_0 ::= (1, b)$</p>
     <p><a href="/ps/ps6"><strong>Problem Set 6</strong></a> [<a href="/docs/ps6.pdf">PDF</a>] is now posted and
 is due <strong>Friday, 20 Oct at 6:29:00pm</strong>. Please read the
 collaboration policy carefully.</p>
- 
-  
-  <p class="fronthead"><A href="">Class 13: State Machines</a> (Tue, 10 Oct 2017)</p>
-    
-
-<h3 id="schedule">Schedule</h3>
-
-<p>There is no Problem Set due this week. <a href="/ps/ps6"><strong>Problem Set 6</strong></a> will be posted soon and due next <strong>Friday (October 20) at 6:29pm</strong>.</p>
-
-<p>Exam 1 was returned in class today.  Please read the solutions posted
-in collab: <a href="https://collab.its.virginia.edu/access/content/group/9bd99d1c-6f18-4542-a7d1-8ffc4fccbd3d/exam1comments.pdf">Exam 1
-Comments</a>.
-If you didn&rsquo;t pick up Exam 1 in class today, you can get it at Dave&rsquo;s
-office hours tomorrow, or before or after class on Thursday.</p>
-
-<p><div class="notpdf">
-   <center>
-<script async class="speakerdeck-embed" data-id="a9794b8b691346209a71c909a67e860c" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-   </center></p>
-
-<p><div class="highlightm">
-   <a href="/docs/class13.pdf">See PDF Version for <b>Notes and Questions</b></a>.
-   </div>
-   </div><!--endpdf--></p>
-
-<p><div class="latex"></p>
-
-<h2 id="state-machines">State Machines</h2>
-
-<p>A <em>state machine</em> is a binary relation (called a <em>transition relation</em>)
-on a set (both the domain and codomain are the same set).  One state is
-designated as the <em>start state</em>.</p>
-
-<p>$$M = (S, G: S \times S, q_0 \in S)$$</p>
-
-<p>What does it mean if $G$ is <em>total</em>?</p>
-
-<p>##</p>
-
-<p>What does it mean if $G$ is not a <em>function</em>?</p>
-
-<p>##</p>
-
-<p><strong>Parity Counter.</strong> Describe a state machine that determines if the
-  number of steps is even.</p>
-
-<p>#</p>
-
-<p><strong>Unbounded Counter.</strong> Describe a state machine that counts the number of steps.</p>
-
-<p>#</p>
-
-<p>How well do state machines model real computers?  What kind of
-transition relation does the state machine modeling your computer have?</p>
-
-<h2 id="state-machine-execution">State Machine Execution</h2>
-
-<p>An <em>execution</em> of a state machine $M = (S, G \subseteq S \times S, q_0 \in S)$ is a (possibly infinite) sequence of states, $(x_0, x_1, \cdots, x_n)$ where:</p>
-
-<ol>
-<li>$x_0 = q_0$ (it begins with the start state), and</li>
-<li>$\forall i \in {0, 1, \ldots, n - 1} \ldotp (x<em>i, x</em>{i + 1}) \in G$ (if $q$ and $r$ are consecutive states in the sequence, then there is an edge $q \rightarrow r$ in $G$)</li>
-</ol>
-
-<p>A state $q$ is <em>reachable</em> if it appears in some execution.  (That is,
-there is a sequence of transitions starting from $q_0$, following edges
-in $G$, that ends with $q$.)</p>
-
-<p>$$
-M_1 = (S = \mathbb{N}, G = {(x, y) | y = x^2 }, q_0 = 1)
-$$
-$$
-M_2 = (S = \mathbb{N}, G = {(x, y) | \exists k \in \mathbb{N} \ldotp y = kx }, q_0 = 1)
-$$</p>
-
-<p>Which states are <em>reachable</em> for $M_1$ and $M_2$?</p>
-
-<p>#</p>
-
-<p></div></p>
  
   
   
