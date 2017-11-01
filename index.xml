@@ -6,8 +6,18 @@
     <description>Recent content on cs2102: Discrete Math</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 31 Oct 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 01 Nov 2017 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://uvacs2102.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Problem Set 7 Comments</title>
+      <link>https://uvacs2102.github.io/ps7comments/</link>
+      <pubDate>Wed, 01 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/ps7comments/</guid>
+      <description>&lt;p&gt;The Problem Set 7 solutions and comments are now posted in collab: &lt;a href=&#34;https://collab.its.virginia.edu/access/content/group/9bd99d1c-6f18-4542-a7d1-8ffc4fccbd3d/ps7solutions.pdf&#34;&gt;PDF&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Class 19: Reviewing Infinities</title>
@@ -107,7 +117,7 @@ collaboration policy carefully.&lt;/p&gt;
       <guid>https://uvacs2102.github.io/class18/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule:31a24b707f457b52726ca1d5e1ddffba&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps7&#34;&gt;&lt;strong&gt;Problem Set 7&lt;/strong&gt;&lt;/a&gt; is due &lt;strong&gt;Friday (27 Oct) at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
 
@@ -123,7 +133,7 @@ collaboration policy carefully.&lt;/p&gt;
    &lt;a href=&#34;https://uvacs2102.github.io/docs/class18.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes&lt;/b&gt;&lt;/a&gt;.
    &lt;/div&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
+&lt;h2 id=&#34;links:31a24b707f457b52726ca1d5e1ddffba&#34;&gt;Links&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://www.amazon.com/Logicomix-search-truth-Apostolos-Doxiadis/dp/1596914521/&#34;&gt;&lt;em&gt;Logicomix: An epic search for truth&lt;/em&gt;&lt;/a&gt;, comic book by Apostolos Doxiadis and &lt;a href=&#34;https://people.eecs.berkeley.edu/~christos/&#34;&gt;Christos H. Papadimitrou&lt;/a&gt;.&lt;/p&gt;
 
@@ -133,7 +143,7 @@ collaboration policy carefully.&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;countable-and-uncountable-sets&#34;&gt;Countable and Uncountable Sets&lt;/h2&gt;
+&lt;h2 id=&#34;countable-and-uncountable-sets:31a24b707f457b52726ca1d5e1ddffba&#34;&gt;Countable and Uncountable Sets&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; A set $S$ is &lt;em&gt;countably infinite&lt;/em&gt; if and only if there
   exists a bijection between $S$ and $\mathbb{N}$.&lt;/p&gt;
@@ -165,7 +175,7 @@ $$&lt;/p&gt;
 
 &lt;!--page--&gt;
 
-&lt;h2 id=&#34;ordinal-and-cardinal-numbers&#34;&gt;Ordinal and Cardinal Numbers&lt;/h2&gt;
+&lt;h2 id=&#34;ordinal-and-cardinal-numbers:31a24b707f457b52726ca1d5e1ddffba&#34;&gt;Ordinal and Cardinal Numbers&lt;/h2&gt;
 
 &lt;p&gt;$\omega$ is the &lt;em&gt;smallest infinite ordinal&lt;/em&gt;.  The first ordinal after
 $0, 1, 2, \cdots$.&lt;/p&gt;
@@ -206,7 +216,7 @@ $0, 1, 2, \cdots$.&lt;/p&gt;
       <guid>https://uvacs2102.github.io/class17/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule:8b7b3a27abcb870c301f99da90607ac1&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;Before Thursday, everyone should have finished reading MCS Chapter 8.&lt;/p&gt;
 
@@ -221,7 +231,7 @@ $0, 1, 2, \cdots$.&lt;/p&gt;
    &lt;a href=&#34;https://uvacs2102.github.io/docs/class17.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes&lt;/b&gt;&lt;/a&gt;.
    &lt;/div&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;links:8b7b3a27abcb870c301f99da90607ac1&#34;&gt;Links&lt;/h2&gt;
+&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://www.cs.cornell.edu/courses/cs2800/2017fa/lectures/lec14-cantor.html&#34;&gt;Proof of Schr&amp;ouml;der-Bernstein Theorem&lt;/a&gt;&lt;/p&gt;
 
@@ -229,7 +239,7 @@ $0, 1, 2, \cdots$.&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;infinite-sets:8b7b3a27abcb870c301f99da90607ac1&#34;&gt;Infinite Sets&lt;/h1&gt;
+&lt;h1 id=&#34;infinite-sets&#34;&gt;Infinite Sets&lt;/h1&gt;
 
 &lt;p&gt;&lt;strong&gt;Finite Cardinality.&lt;/strong&gt; The &lt;em&gt;cardinality&lt;/em&gt; of the set
 $$
@@ -247,7 +257,7 @@ cardinality.  (Class 9)&lt;/p&gt;
 
 &lt;p&gt;Show that $\mathbb{Z}$ is infinite.&lt;/p&gt;
 
-&lt;h3 id=&#34;cardinality-of-infinite-sets:8b7b3a27abcb870c301f99da90607ac1&#34;&gt;Cardinality of Infinite Sets&lt;/h3&gt;
+&lt;h3 id=&#34;cardinality-of-infinite-sets&#34;&gt;Cardinality of Infinite Sets&lt;/h3&gt;
 
 &lt;p&gt;&lt;strong&gt;Equal Carinalities.&lt;/strong&gt; We say $|A|\; = |B|$  for arbitrary sets $A,B$ (and say that they have the same cardinality), if there is a bijection between $A$ and $B$.&lt;/p&gt;
 
@@ -259,7 +269,7 @@ cardinality.  (Class 9)&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Schr\wrap{\&amp;ldquo;{o}}der-Bernstein Theorem:&lt;/strong&gt; If $|A|\; \leq |B|$ and $|B|\; \leq |A|$, then there is a bijection between $A$ and $B$, namely $|A|\; = |B|$. (Not proven in cs2102; this is somewhat tricky to prove! For a full proof, see &lt;a href=&#34;http://www.cs.cornell.edu/courses/cs2800/2017fa/lectures/lec14-cantor.html&#34;&gt;the linked lecture notes&lt;/a&gt;.)&lt;/p&gt;
 
-&lt;h3 id=&#34;other-definitions-for-infinite-sets:8b7b3a27abcb870c301f99da90607ac1&#34;&gt;Other Definitions for Infinite Sets&lt;/h3&gt;
+&lt;h3 id=&#34;other-definitions-for-infinite-sets&#34;&gt;Other Definitions for Infinite Sets&lt;/h3&gt;
 
 &lt;p&gt;&lt;strong&gt;Dedekind-Infinite.&lt;/strong&gt; A set $A$ is &lt;em&gt;Dedekind-infinite&lt;/em&gt; if and only if there exists a &lt;em&gt;strict subset&lt;/em&gt; of $A$ with the same cardinality as $A$.  That is,
 $$\exists B \subset A \ldotp \exists R \ldotp R\ \text{is a bijection between}\ A\ \text{and}\ B.$$&lt;/p&gt;
@@ -560,13 +570,13 @@ generated by LaTeX or Word).
    &lt;/div&gt;
    &lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;collaboration-policy-read-carefully:97a803e9c8ff1f8cb49cdf4deb507492&#34;&gt;Collaboration Policy - Read Carefully&lt;/h3&gt;
+&lt;h3 id=&#34;collaboration-policy-read-carefully&#34;&gt;Collaboration Policy - Read Carefully&lt;/h3&gt;
 
 &lt;p&gt;As with PS5, you should work in groups of one to three students to
 write-up a solution together. The rest of the collaboration policy is
 identical to what it was on &lt;a href=&#34;https://uvacs2102.github.io/ps/ps5&#34;&gt;PS5&lt;/a&gt;, and is not repeated here.&lt;/p&gt;
 
-&lt;h2 id=&#34;preparation:97a803e9c8ff1f8cb49cdf4deb507492&#34;&gt;Preparation&lt;/h2&gt;
+&lt;h2 id=&#34;preparation&#34;&gt;Preparation&lt;/h2&gt;
 
 &lt;p&gt;This problem set focuses on Sections 6.1-6.3 of the MCS book, and &lt;a href=&#34;https://uvacs2102.github.io/class13&#34;&gt;Class
 13&lt;/a&gt; and &lt;a href=&#34;https://uvacs2102.github.io/class14&#34;&gt;Class 14&lt;/a&gt;.&lt;/p&gt;
@@ -586,7 +596,7 @@ PDFs&lt;/a&gt; advice on the course site.
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;directions:97a803e9c8ff1f8cb49cdf4deb507492&#34;&gt;Directions&lt;/h2&gt;
+&lt;h2 id=&#34;directions&#34;&gt;Directions&lt;/h2&gt;
 
 &lt;p&gt;Solve as many of the 8 problems as you can.  For maximum credit, your
 answers should be correct, clear, well-written, and convincing.&lt;/p&gt;
@@ -596,7 +606,7 @@ necessary to solve them well to get a ``gold-star level&amp;rdquo; grade on this
 assignment (although we certainly hope you will try and some will
 succeed!)&lt;/p&gt;
 
-&lt;h1 id=&#34;state-machines:97a803e9c8ff1f8cb49cdf4deb507492&#34;&gt;State Machines&lt;/h1&gt;
+&lt;h1 id=&#34;state-machines&#34;&gt;State Machines&lt;/h1&gt;
 
 &lt;ol&gt;
 &lt;li&gt;&lt;p&gt;Describe a state machine that can be used to determine if the number
@@ -620,7 +630,7 @@ $S$ to be unreachable.&lt;/p&gt;&lt;/li&gt;
 
 &lt;!--page--&gt;
 
-&lt;h1 id=&#34;knight-s-moves:97a803e9c8ff1f8cb49cdf4deb507492&#34;&gt;Knight&amp;rsquo;s Moves&lt;/h1&gt;
+&lt;h1 id=&#34;knight-s-moves&#34;&gt;Knight&amp;rsquo;s Moves&lt;/h1&gt;
 
 &lt;ol&gt;
 &lt;li&gt;&lt;p&gt;($\star$) A &lt;em&gt;knight&lt;/em&gt; in chess can move two squares up, down, left, or right, followed by one square in a direction perpendicular to the two squares (so, it can move two squares up or down, followed by one square left or right; or, can move two squares left or right, followed by one square up or down).  We can define the possible moves of a knight on an infinite chess board as the Knight State Machine (similarly to how we defined the Bishop State Machine in &lt;a href=&#34;https://uvacs2102.github.io/class14&#34;&gt;Class 14&lt;/a&gt;):&lt;/p&gt;
@@ -636,7 +646,7 @@ $P(n)$ or break the proof into two separate induction proofs to show you
 can reach any column and can reach any rwo.)&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h1 id=&#34;invariant-principle:97a803e9c8ff1f8cb49cdf4deb507492&#34;&gt;Invariant Principle&lt;/h1&gt;
+&lt;h1 id=&#34;invariant-principle&#34;&gt;Invariant Principle&lt;/h1&gt;
 
 &lt;ol&gt;
 &lt;li&gt;&lt;p&gt;MCS Problem 6.3.&lt;/p&gt;&lt;/li&gt;
@@ -839,7 +849,7 @@ collaboration policy carefully.&lt;/p&gt;
       <guid>https://uvacs2102.github.io/class13/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule:af2ff3ef0db44829d3ff131eac0d7ec7&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;There is no Problem Set due this week. &lt;a href=&#34;https://uvacs2102.github.io/ps/ps6&#34;&gt;&lt;strong&gt;Problem Set 6&lt;/strong&gt;&lt;/a&gt; will be posted soon and due next &lt;strong&gt;Friday (October 20) at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
 
@@ -861,7 +871,7 @@ office hours tomorrow, or before or after class on Thursday.&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;state-machines&#34;&gt;State Machines&lt;/h2&gt;
+&lt;h2 id=&#34;state-machines:af2ff3ef0db44829d3ff131eac0d7ec7&#34;&gt;State Machines&lt;/h2&gt;
 
 &lt;p&gt;A &lt;em&gt;state machine&lt;/em&gt; is a binary relation (called a &lt;em&gt;transition relation&lt;/em&gt;)
 on a set (both the domain and codomain are the same set).  One state is
@@ -889,7 +899,7 @@ designated as the &lt;em&gt;start state&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;How well do state machines model real computers?  What kind of
 transition relation does the state machine modeling your computer have?&lt;/p&gt;
 
-&lt;h2 id=&#34;state-machine-execution&#34;&gt;State Machine Execution&lt;/h2&gt;
+&lt;h2 id=&#34;state-machine-execution:af2ff3ef0db44829d3ff131eac0d7ec7&#34;&gt;State Machine Execution&lt;/h2&gt;
 
 &lt;p&gt;An &lt;em&gt;execution&lt;/em&gt; of a state machine $M = (S, G \subseteq S \times S, q_0 \in S)$ is a (possibly infinite) sequence of states, $(x_0, x_1, \cdots, x_n)$ where:&lt;/p&gt;
 
@@ -929,18 +939,18 @@ $$&lt;/p&gt;
 because of “Fall Break” and the Exam (as usual, all will be in Rice
 436 except the professors&amp;rsquo; as noted):&lt;/p&gt;
 
-&lt;h4 id=&#34;monday-2-oct&#34;&gt;Monday (2 Oct)&lt;/h4&gt;
+&lt;h4 id=&#34;monday-2-oct:d0632df39174fbd03a717f33cd2b5853&#34;&gt;Monday (2 Oct)&lt;/h4&gt;
 
 &lt;p&gt;Mohammad Mahmoody (Rice 511), 10:45-11:45am&lt;br /&gt;
 Sarah Meng, 4:30-6:00pm&lt;/p&gt;
 
-&lt;h4 id=&#34;tuesday-3-oct&#34;&gt;Tuesday (3 Oct)&lt;/h4&gt;
+&lt;h4 id=&#34;tuesday-3-oct:d0632df39174fbd03a717f33cd2b5853&#34;&gt;Tuesday (3 Oct)&lt;/h4&gt;
 
 &lt;p&gt;Nate Olsen, 10-11:30am&lt;br /&gt;
 Michael Woon, 11am-12:30pm&lt;br /&gt;
 Henry Spece, 3:30-5pm&lt;/p&gt;
 
-&lt;h4 id=&#34;wednesday-4-oct&#34;&gt;Wednesday (4 Oct)&lt;/h4&gt;
+&lt;h4 id=&#34;wednesday-4-oct:d0632df39174fbd03a717f33cd2b5853&#34;&gt;Wednesday (4 Oct)&lt;/h4&gt;
 
 &lt;p&gt;Colin Harfst, 9:30am-12:30pm&lt;br /&gt;
 Anna Wu, noon-1:30pm&lt;br /&gt;
@@ -953,7 +963,7 @@ Xueying Bai, 6-7pm&lt;br /&gt;
 Fan Feng, 7-8:30pm&lt;br /&gt;
 Nate Olsen, 7:30-9:00pm&lt;/p&gt;
 
-&lt;h4 id=&#34;thursday-5-oct&#34;&gt;Thursday (5 Oct)&lt;/h4&gt;
+&lt;h4 id=&#34;thursday-5-oct:d0632df39174fbd03a717f33cd2b5853&#34;&gt;Thursday (5 Oct)&lt;/h4&gt;
 
 &lt;p&gt;Amar Singh, 9am-10:30&lt;br /&gt;
 Xiao Zhang, 10-11am&lt;br /&gt;
@@ -971,145 +981,6 @@ hours schedule will resume on Monday, 9 October.&lt;/p&gt;
       
       <guid>https://uvacs2102.github.io/ps5comments/</guid>
       <description>&lt;p&gt;The Problem Set 5 solutions and comments are now posted in collab: &lt;a href=&#34;https://collab.its.virginia.edu/access/content/group/9bd99d1c-6f18-4542-a7d1-8ffc4fccbd3d/ps5solutions.pdf&#34;&gt;PDF&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Class 12: Review</title>
-      <link>https://uvacs2102.github.io/class12/</link>
-      <pubDate>Thu, 28 Sep 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://uvacs2102.github.io/class12/</guid>
-      <description>
-
-&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps5&#34;&gt;&lt;strong&gt;Problem Set 5&lt;/strong&gt;&lt;/a&gt; is due &lt;strong&gt;Friday at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;See &lt;a href=&#34;https://uvacs2102.github.io/class11&#34;&gt;Class 11 Notes&lt;/a&gt; for information and preparation advice for Exam 1, which will be in class next Thursday, 5 October.&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;
-   &lt;center&gt;
-&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;f6aa2e5580f940d984c6508ff6f26d46&#34; data-ratio=&#34;1.77777777777778&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
-   &lt;/center&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;highlightm&#34;&gt;
-   &lt;a href=&#34;https://uvacs2102.github.io/docs/class12.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes and Questions&lt;/b&gt;&lt;/a&gt;.
-   &lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;strong-induction-principle&#34;&gt;Strong Induction Principle&lt;/h2&gt;
-
-&lt;p&gt;Let $P$ be a predicated on $\mathbb{N}$.  If&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;$P(0)$ is true, and&lt;/li&gt;
-&lt;li&gt;$(\forall m \in \mathbb{N}, m \le n . P(n)) \implies P(n + 1)$ for all $n \in \mathbb{N}$,&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;then&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;$P(m)$ is true for all $m \in \mathbb{N}$.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;As an inference rule:&lt;/p&gt;
-
-&lt;p&gt;$$
-\infer{\forall m \in \mathbb{N} . P(m)}{P(0), \forall n \in \mathbb{N} . (P(0) \vee P(1) \wedge \cdots \wedge P(n)) \implies P(n + 1)}
-$$&lt;/p&gt;
-
-&lt;p&gt;With arbitrary basis, $b \in \mathbb{N}$:&lt;/p&gt;
-
-&lt;p&gt;$$
-\infer{\forall m \in { b, b+1, b+2, \ldots } . P(m)}{P(b), \forall n \in \mathbb{N} . (P(b) \vee P(b + 1) \wedge \cdots \wedge P(n)) \implies P(n + 1)}
-$$&lt;/p&gt;
-
-&lt;p&gt;Show that &lt;em&gt;strong&lt;/em&gt; induction is not actually stronger than regular induction. (Hint: if the predicate for strong induction is $P(m)$, explain how to construct a predicate, $P&amp;rsquo;(m)$, that works with regular induction.)&lt;/p&gt;
-
-&lt;p&gt;##&lt;/p&gt;
-
-&lt;h3 id=&#34;example-strong-induction-proof&#34;&gt;Example Strong Induction Proof&lt;/h3&gt;
-
-&lt;p&gt;&lt;strong&gt;Theorem:&lt;/strong&gt; Every number, $n \in \mathbb{N}, n \geq 4$ can be written as $\alpha \cdot 2 + \beta \cdot 5$ where $\alpha, \beta \in \mathbb{N}$.&lt;/p&gt;
-
-&lt;p&gt;Proof by Strong Induction:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;First we need to define the predicate: $$P(n) := \exists \alpha, \beta \in \mathbb{N} . n = \alpha \cdot 2 + \beta \cdot 5$$.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Basis: we are proving for all $n &amp;gt; 3$:&lt;/p&gt;
-
-&lt;p&gt;$P(4)$: $\alpha = 2, \beta = 0$ gives $4 = 2 \cdot 2 + 0 \cdot 5$.
-$P(5)$: $\alpha = 0, \beta = 1$ gives $5 = 0 \cdot 2 + 1 \cdot 5$.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Induction step: $\forall n \in {6, \ldots }$&lt;/p&gt;
-
-&lt;p&gt;By strong induction, assume $P(m)$ is true for all $m \in { 4, 5, 6,
-\ldots, m}$.&lt;/p&gt;
-
-&lt;p&gt;Show $P(m + 1)$: Since $P(m - 1)$ is true (by the \emph{strong} induction
-hypothesis), we know $\exists \alpha, \beta \in \mathbb{N} . m - 1 =
-\alpha \cdot 2 + \beta \cdot 5$. We can show $P(m + 1)$ since
-$m + 1 = (\alpha + 1) \cdot 2 + \beta \cdot 5$.&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&#34;proof-by-contra-positive-review&#34;&gt;Proof by Contra-Positive (Review)&lt;/h2&gt;
-
-&lt;p&gt;Recall: $P \implies Q$ is equivalent to $\neg Q \implies \neg P$. (If
-you are shaky on this, prove it to yourself using a truth table.)&lt;/p&gt;
-
-&lt;p&gt;Typical use: where the negation of the proposition is easier to reason
-about than the original proposition (e.g., irrational is a complex
-property to describe, but rational (NOT irrational) is a simple one. So to prove that ``If $r$ is irrational then $\sqrt{r}$ is also irrational&amp;rdquo; we can prove the contrapositive which is &amp;ldquo;if $\sqrt{r}$&amp;rdquo; is rational, then $r$ is also rational$ which is quite straightforward.&lt;/p&gt;
-
-&lt;h2 id=&#34;proof-by-contradiction-review&#34;&gt;Proof by Contradiction (Review)&lt;/h2&gt;
-
-&lt;p&gt;To prove $P$, show $\neg P \implies False$.&lt;/p&gt;
-
-&lt;p&gt;Example: Proving the $\mathbb{Z}$ is not well ordered.&lt;/p&gt;
-
-&lt;p&gt;Goal: proving the proposition $G$ saying ``$\mathbb{Z}$ has no minimum&amp;rdquo;.&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;To prove by contradiction, assume $\neg G$ (that is, $\mathbb{Z}$ does have a minimum).&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Then, $\exists m \in \mathbb{Z}$ that is the minimum of $\mathbb{Z}$.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;But, this leads to a contradiction: $m - 1 \in \mathbb{Z}$ and $m - 1 &amp;lt; m$. So, even though the number $m$ was said to be the minimum of $\mathbb{Z}$, it is in fact not the minimum.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Thus, we have a contradiction, so something must be wrong. All our logical inferences after step 1 are correct, so the assumption we made in step 1 must be invalid. If $\neg G$ is invalid, $G$ must be true.&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Typical use: when the statment we want to prove has universal quantifier. for example, $\forall x \in \mathbb{Z}. P(x)$. Note that the statment that $\mathbb{Z}$ has \emph{no} minimum, when written formally, uses a universal quantifier (make sure to double check it). Then, instead of arguing that for all $x \in A$, $P(x)$ holds, we assume (for sake of contradiction) that there exists one $x$ for which $\neg(P(x))$ (note that this is indeed the negated statement) from which  we get a contradiction.&lt;/p&gt;
-
-&lt;h1 id=&#34;binary-relation-properties&#34;&gt;Binary Relation Properties&lt;/h1&gt;
-
-&lt;p&gt;When we draw the graph of binary relations, the Domain (&lt;code&gt;input&amp;quot; set) has outgoing edges. Codomain (&lt;/code&gt;output&amp;rdquo; set) has
-incoming edges. So when we use the compact notation referring to different properties of binary relations, keep in mind that the words ``in-out&amp;rdquo; refer to the edge (not the input/output sets).  The properties about outgoing edges are &lt;em&gt;function&lt;/em&gt;
-($\le 1 out$) and &lt;em&gt;total&lt;/em&gt; ($\ge 1$ out). Adding elements to the
-codomain cannot effect these properties.  The properties about
-incoming edges are &lt;em&gt;surjection&lt;/em&gt; ($\ge 1$ in) and &lt;em&gt;injection&lt;/em&gt; ($\le 1$
-in). Adding elements to the domain cannot effect these properties.&lt;/p&gt;
-
-&lt;p&gt;When we say the any relation with property $X$ (e.g., $\ge 1$ out) about the relations \emph{must} also have propety $Y$. It means that property $X$ implies $Y$ logically (about relations). In case the answer is &amp;ldquo;no&amp;rdquo; (i.e. that property $X$ does not imply $Y$) all we have to find is one relation $R$ that satisfies property $X$ but not property $Y$. If the answer is `yes&amp;rsquo; we need to show that for all $R$, if property $X$ holds, so does $Y$. So doing so might need more work.&lt;/p&gt;
-
-&lt;p&gt;If an edge is added to the graph of a relation, which properties
-&lt;em&gt;might&lt;/em&gt; be impacted?&lt;/p&gt;
-
-&lt;p&gt;If an edge is removed to the graph of a relation, which properties
-&lt;em&gt;might&lt;/em&gt; be impacted?&lt;/p&gt;
-
-&lt;p&gt;If an element is removed from the domain of a relation, which properties
-&lt;em&gt;might&lt;/em&gt; be impacted?&lt;/p&gt;
-
-&lt;p&gt;If an element is removed from the codomain of a relation, which
-properties &lt;em&gt;might&lt;/em&gt; be impacted?&lt;/p&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
 </description>
     </item>
     
