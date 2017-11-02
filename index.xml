@@ -6,8 +6,161 @@
     <description>Recent content on cs2102: Discrete Math</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 01 Nov 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 02 Nov 2017 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://uvacs2102.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Class 20: Number Theory</title>
+      <link>https://uvacs2102.github.io/class20/</link>
+      <pubDate>Thu, 02 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/class20/</guid>
+      <description>
+
+&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps8&#34;&gt;&lt;strong&gt;Problem Set 8&lt;/strong&gt;&lt;/a&gt; is due &lt;strong&gt;Friday at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Tuesday&amp;rsquo;s class&lt;/strong&gt; will include a review for Exam 2.  Before 6:59pm
+  Monday, send to &lt;a href=&#34;mailto:uvacs2102staff@gmail.com&#34;&gt;&lt;em&gt;uvacs2102staff@gmail.com&lt;/em&gt;&lt;/a&gt; topics you would like to review. We will have a similar rule to Exam 1:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Fewer than 10 total requests: it means, class is not being sufficiently challenged and we should be doing more difficult material (except for the 10 requestors who get exam exemptions).&lt;/li&gt;
+&lt;li&gt;Exactly 10 total requests: all requestors get automatic exam exemptions, review requested topics.&lt;/li&gt;
+&lt;li&gt;More than 10 requests implies we should spend Thursday’s class on reviewing requested topics, no exam exemptions.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;exam-2&#34;&gt;Exam 2&lt;/h3&gt;
+
+&lt;p&gt;Exam 1 will be in class on Thursday, 9 Nov.  You can get a good
+idea for what to expect on Exam 2 based on Exam 1, and also by looking at the &lt;a href=&#34;https://uvacs2102.github.io/docs/practiceexam2.pdf&#34;&gt;Practice Exam
+2&lt;/a&gt; (from last year&amp;rsquo;s class). We strongly
+encourage you to try to problems on your own, before looking at the
+&lt;a href=&#34;https://uvacs2102.github.io/docs/practiceexam2-solutions.pdf&#34;&gt;posted solutions&lt;/a&gt;. The main difference is that this year, we did not cover the topic of &amp;ldquo;stable marriage&amp;rdquo;, but the our exam 2 will also cover the topic of infinities (i.e. infinite sets, countable and uncountable sets, etc.) as well.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Resources.&lt;/strong&gt; Similarly to Exam 1, you will be permitted to use a &lt;em&gt;single paper page&lt;/em&gt; of
+notes that you prepare and bring to the exam.  It is fine to
+collaborate with others to prepare your notes.  The page should be no
+larger than a US Letter size page ($8.5 \times 11$ inches), and you
+may write (or print) on both sides of the page.  You may not use any
+special devices (e.g., magnifying glasses) to read your page. No other
+resources, other than your own brain, body, and writing instrument,
+are permitted during the exam.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Content.&lt;/strong&gt; The problems on the exam will cover material from Classes
+  1&amp;ndash;19, Problem Sets 1&amp;ndash;8 (including the provided solutions), and the relevant material from MCS
+  Chapters 1&amp;ndash;8. However, only one problem will be about the material covered by Exam 1, and the rest will be on the material we covered since Exam 1 (namely, classes 13-19, problem sets 6&amp;ndash;8, and chapters 6,7,8).  Everything on the exam will be something you have seen
+  in at least two of these (Classes, Problem Sets, and MCS Book), and
+  most of the exam will be things you have seen in all three.  If you
+  understand the problems on the problem sets and questions on the class
+  notes well enough to be able to answer similar questions, you should
+  do well on the exam.&lt;/p&gt;
+
+&lt;p&gt;Simiarly to Exam 1, for most students, we believe the best way to prepare for the exam
+will be to (1) go over the problem sets and their solutions, and make
+sure you understand well any of the problems you did not get before;
+(2) go through the provided practice exam and try to solve all the
+problems on your own before reading the solutions; (3) go through the
+questions in the class notes and convince yourself you can answer them
+well; (4) re-read chapters of the book, solving the associated
+practice problems, especially for any sections on topics where you had
+difficulty on the problem sets.  If you do #1 and #2 and understand
+well the problems on the practice exam, you should be confident you&amp;rsquo;ll
+do well on the exam; if you struggled on the problem sets, you would
+benefit from doing #3 and #4 as well.&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;
+   &lt;center&gt;
+&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;e587be0cca304366bf9242a5a79d42de&#34; data-ratio=&#34;1.77777777777778&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
+   &lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlightm&#34;&gt;
+   &lt;a href=&#34;https://uvacs2102.github.io/docs/class20.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes and Questions&lt;/b&gt;&lt;/a&gt;.
+   &lt;/div&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Goldbach%27s_conjecture&#34;&gt;Goldbach&amp;rsquo;s conjecture&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.britannica.com/topic/twin-prime-conjecture&#34;&gt;Twin Prime&amp;rsquo;s conjecture&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Fermat%27s_Last_Theorem&#34;&gt;Fermat&amp;rsquo;s last theorem&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;divisibility&#34;&gt;Divisibility&lt;/h2&gt;
+
+&lt;p&gt;Number theory is a study of integers $\mathbb{Z}={0,-1,1,-2,2,\dots}$. Adding, multiplying, and negating, are 3 operators on integers that we can define in a straight-forward way. Dividing is more tricky. For that, we first define the notation $a \mid b$ to denote the simpler situation where $b = k \cdot a$ for some $k \in \mathbb{Z}$. In this case, we say that $a$ is a &lt;em&gt;divisor&lt;/em&gt; of $b$ and that $b$ is a &lt;em&gt;multiple&lt;/em&gt; of $a$.&lt;/p&gt;
+
+&lt;p&gt;Show that if we assume $a \mid b$ and $a \mid c$ (for any integers $a,b,c$), then for all integers $x,y$ it will hold that $a \mid xa + yb$.&lt;/p&gt;
+
+&lt;p&gt;#&lt;/p&gt;
+
+&lt;p&gt;When   $b$ is \emph{not} a multiple of $a$, we can still have some form of division, stated in the following theorem.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Theorem [Division Theorem]&lt;/strong&gt; For all integers $n,d$, there are integers $q$ (called the quotiont) and $r$ (called the remainder, denoted by $rem(m,d)$) such that
+$$n = q \cdot d + r \text{&lt;del&gt;and&lt;/del&gt;}  0\leq r &amp;lt; |d|.$$
+Note that the remainder, as defined here, is always non-negative. For example when dividing $-3$ by $5$ we get $q=-1$ and $r=2$.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Definition&lt;/strong&gt; A &lt;em&gt;prime&lt;/em&gt; $p$, is an integer $p&amp;gt;1$ such that  $1$ and $p$ are the only positive divisors of $p$. Other $n&amp;gt;1$ numbers (that are not prime) are called composite.&lt;/p&gt;
+
+&lt;p&gt;The following well-known  theorem can be proved by strong induction on $n$.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Theorem [Fundamental theorem of arithmetic]&lt;/strong&gt;. Any $n&amp;gt;1$ has a unique represention in the following form:
+$$ n = p_1^{a_1} \dots p_k^{a_k}$$
+where $p&lt;em&gt;i &amp;lt; p&lt;/em&gt;{i+1}$ and $p_i$ is prime for all $i$.&lt;/p&gt;
+
+&lt;p&gt;Hint for proof: Use strong induction on $n$, and try to show that any two different representations for $n$ will have the same `smallest&amp;rsquo; prime $p_1$ and the same power $a_1$ for $p_1$.&lt;/p&gt;
+
+&lt;h2 id=&#34;easy-to-state-but-hard-to-solve-problems&#34;&gt;Easy-to-state, but hard-to-solve problems&lt;/h2&gt;
+
+&lt;p&gt;In number theory, we can easily state problems that are super hard to solve. These are some examples.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Goldbach&amp;rsquo;s conjecture:&lt;/strong&gt; Any even integer $n&amp;gt;2$ can be written as $n=p+q$ where $p,q$ are both primes. The conjecture is still open, though we know that it is correct for all $n \leq 10^{18}$.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Twin prime&amp;rsquo;s conjecture:&lt;/strong&gt; There infinite prime numbers $p$ where $p+2$ is also prime. Note that we cannot `check the conjecture up to $n$&amp;rsquo; anymore! And it is still open&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Fermat&amp;rsquo;s last theorem:&lt;/strong&gt; For any integer $n&amp;gt;2$ there are no integers $a,b,c$ where $a^n + b^n = c^n$. Note that for $n=2$ there are integer solutions like $3^2 + 4^2 = 5^2$. Fermat claimed to have a proof, but nobody knows if he really did or not. Andrew Wiles eventually proved this in 1994, hence we call it a &lt;em&gt;theorem&lt;/em&gt; and not a conjecture anymore.&lt;/p&gt;
+
+&lt;h2 id=&#34;greatest-common-divisor&#34;&gt;Greatest Common Divisor&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Definition&lt;/strong&gt; For natural numbers $m,n&amp;gt;0$ we call $d&amp;gt;0$ their \emph{greatest common divisor}, denoted by $d=gcd(m,n)$ if $d$ is the largest number such that $d \mid m$ and $d \mid n$. (Make sure to verify why we can always say that such $d$ exists.)&lt;/p&gt;
+
+&lt;p&gt;We can use the fundamental theorem of arithmetic, to &lt;em&gt;compute&lt;/em&gt; the gcd of any given pairs of integers. But how efficient is it? The problem is that factoring numbers $m,n$ into their prime factors is not something we know how to do efficiently. In particular, no known algorithm is guaranteed to factor all numbers with $1000,000$ digits in less than an (estimated) thousand years! The conjecture is that no such `efficient&amp;rsquo; algorithm exists, and many cryptographic algorithms &lt;em&gt;assume&lt;/em&gt; this is the case!&lt;/p&gt;
+
+&lt;h2 id=&#34;euclid-s-algorithm&#34;&gt;Euclid&amp;rsquo;s Algorithm&lt;/h2&gt;
+
+&lt;p&gt;Despite not knowing how to factor integers efficiently, Euclid showed how to find gcd quite efficiently. This shows, even if the most ``natural&amp;rdquo; algorithm fails for doing something efficiently, we should always consider the possibility that an alternative way could still exist.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def Euclid_gcd(m, n):
+   while n &amp;gt; 0:
+      r = rem(m,n)
+      m = n
+      n = r
+   return m
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;What is a good state machine modeling the behavior of Euclid&amp;rsquo;s algorithm?&lt;/p&gt;
+
+&lt;p&gt;Suppose $d$ is any integer (in particular, it could be the gcd of the original state $(m,n)$ of the state machine for Eclid&amp;rsquo;s algorithm). Show that $gcd(a,b)=d$ is a preserved invariant for the transition graph of this state machine. Namely, if we go from one state to another state, the gcd does not change.&lt;/p&gt;
+
+&lt;p&gt;#&lt;/p&gt;
+
+&lt;p&gt;If the Euclid&amp;rsquo;s algorithm ends, at the very last step we will have $n=0$ which means $m$ is indeed the right gcd for that particular (final) state. Together with the preserved invariant (that you proved above), argue that the program has \emph{partial correctness}. Namely: if it ends, it outputs correctly.&lt;/p&gt;
+
+&lt;p&gt;#&lt;/p&gt;
+
+&lt;p&gt;Now prove the termination. Namely, show that the Euclid&amp;rsquo;s gcd algorithm will always end. Hint, look at $a+b$ for any state $(a,b)$ that we are in, and show that it always
+decreases.&lt;/p&gt;
+
+&lt;p&gt;#&lt;/p&gt;
+
+&lt;p&gt;Amazing thing about Euclid&amp;rsquo;s algorithm is that it is indeed quite efficient. A better analysis shows that it will always terminate in $\log (m+n)$ steps. (Hint: show that after two steps, $m$ will be at most &lt;em&gt;half&lt;/em&gt; of what it was before..)
+&lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Problem Set 7 Comments</title>
@@ -27,7 +180,7 @@
       <guid>https://uvacs2102.github.io/class19/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule:90174cd8255fa2ab935573c4a489ebf1&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;&lt;strong&gt;Problem Set 8&lt;/strong&gt; is now due on &lt;strong&gt;Friday, Nov 3&lt;/strong&gt;.&lt;/p&gt;
 
@@ -45,7 +198,7 @@
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;comparing-sets-recap&#34;&gt;Comparing sets Recap:&lt;/h1&gt;
+&lt;h1 id=&#34;comparing-sets-recap:90174cd8255fa2ab935573c4a489ebf1&#34;&gt;Comparing sets Recap:&lt;/h1&gt;
 
 &lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; Sets $A$ and $B$ have the same cardinality, denoted by $|A|=|B|$ if there is a bijection between $A$ and $B$.&lt;/p&gt;
 
@@ -55,7 +208,7 @@
 \item There is a total injective function from $B$ to $A$.
 \end{enumerate}&lt;/p&gt;
 
-&lt;h1 id=&#34;infinite-sets-recap&#34;&gt;Infinite Sets Recap&lt;/h1&gt;
+&lt;h1 id=&#34;infinite-sets-recap:90174cd8255fa2ab935573c4a489ebf1&#34;&gt;Infinite Sets Recap&lt;/h1&gt;
 
 &lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; A set $C$ is &lt;em&gt;infinite&lt;/em&gt; if and only if &lt;em&gt;either&lt;/em&gt; of the following happens (they are all equivalnet).
 \begin{enumerate}&lt;/p&gt;
@@ -77,7 +230,7 @@
 &lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; A set $C$ is &lt;em&gt;countably infinite&lt;/em&gt; if and only if there
   exists a bijection between $C$ and $\mathbb{N}$.&lt;/p&gt;
 
-&lt;h1 id=&#34;cantor-s-theorem&#34;&gt;Cantor&amp;rsquo;s Theorem&lt;/h1&gt;
+&lt;h1 id=&#34;cantor-s-theorem:90174cd8255fa2ab935573c4a489ebf1&#34;&gt;Cantor&amp;rsquo;s Theorem&lt;/h1&gt;
 
 &lt;p&gt;For &lt;strong&gt;all&lt;/strong&gt; sets, $S$, $| pow(S) | &amp;gt; | S |$.&lt;/p&gt;
 
@@ -117,7 +270,7 @@ collaboration policy carefully.&lt;/p&gt;
       <guid>https://uvacs2102.github.io/class18/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule:31a24b707f457b52726ca1d5e1ddffba&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps7&#34;&gt;&lt;strong&gt;Problem Set 7&lt;/strong&gt;&lt;/a&gt; is due &lt;strong&gt;Friday (27 Oct) at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
 
@@ -133,7 +286,7 @@ collaboration policy carefully.&lt;/p&gt;
    &lt;a href=&#34;https://uvacs2102.github.io/docs/class18.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes&lt;/b&gt;&lt;/a&gt;.
    &lt;/div&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;links:31a24b707f457b52726ca1d5e1ddffba&#34;&gt;Links&lt;/h2&gt;
+&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://www.amazon.com/Logicomix-search-truth-Apostolos-Doxiadis/dp/1596914521/&#34;&gt;&lt;em&gt;Logicomix: An epic search for truth&lt;/em&gt;&lt;/a&gt;, comic book by Apostolos Doxiadis and &lt;a href=&#34;https://people.eecs.berkeley.edu/~christos/&#34;&gt;Christos H. Papadimitrou&lt;/a&gt;.&lt;/p&gt;
 
@@ -143,7 +296,7 @@ collaboration policy carefully.&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;countable-and-uncountable-sets:31a24b707f457b52726ca1d5e1ddffba&#34;&gt;Countable and Uncountable Sets&lt;/h2&gt;
+&lt;h2 id=&#34;countable-and-uncountable-sets&#34;&gt;Countable and Uncountable Sets&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; A set $S$ is &lt;em&gt;countably infinite&lt;/em&gt; if and only if there
   exists a bijection between $S$ and $\mathbb{N}$.&lt;/p&gt;
@@ -175,7 +328,7 @@ $$&lt;/p&gt;
 
 &lt;!--page--&gt;
 
-&lt;h2 id=&#34;ordinal-and-cardinal-numbers:31a24b707f457b52726ca1d5e1ddffba&#34;&gt;Ordinal and Cardinal Numbers&lt;/h2&gt;
+&lt;h2 id=&#34;ordinal-and-cardinal-numbers&#34;&gt;Ordinal and Cardinal Numbers&lt;/h2&gt;
 
 &lt;p&gt;$\omega$ is the &lt;em&gt;smallest infinite ordinal&lt;/em&gt;.  The first ordinal after
 $0, 1, 2, \cdots$.&lt;/p&gt;
@@ -570,13 +723,13 @@ generated by LaTeX or Word).
    &lt;/div&gt;
    &lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;collaboration-policy-read-carefully&#34;&gt;Collaboration Policy - Read Carefully&lt;/h3&gt;
+&lt;h3 id=&#34;collaboration-policy-read-carefully:97a803e9c8ff1f8cb49cdf4deb507492&#34;&gt;Collaboration Policy - Read Carefully&lt;/h3&gt;
 
 &lt;p&gt;As with PS5, you should work in groups of one to three students to
 write-up a solution together. The rest of the collaboration policy is
 identical to what it was on &lt;a href=&#34;https://uvacs2102.github.io/ps/ps5&#34;&gt;PS5&lt;/a&gt;, and is not repeated here.&lt;/p&gt;
 
-&lt;h2 id=&#34;preparation&#34;&gt;Preparation&lt;/h2&gt;
+&lt;h2 id=&#34;preparation:97a803e9c8ff1f8cb49cdf4deb507492&#34;&gt;Preparation&lt;/h2&gt;
 
 &lt;p&gt;This problem set focuses on Sections 6.1-6.3 of the MCS book, and &lt;a href=&#34;https://uvacs2102.github.io/class13&#34;&gt;Class
 13&lt;/a&gt; and &lt;a href=&#34;https://uvacs2102.github.io/class14&#34;&gt;Class 14&lt;/a&gt;.&lt;/p&gt;
@@ -596,7 +749,7 @@ PDFs&lt;/a&gt; advice on the course site.
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;directions&#34;&gt;Directions&lt;/h2&gt;
+&lt;h2 id=&#34;directions:97a803e9c8ff1f8cb49cdf4deb507492&#34;&gt;Directions&lt;/h2&gt;
 
 &lt;p&gt;Solve as many of the 8 problems as you can.  For maximum credit, your
 answers should be correct, clear, well-written, and convincing.&lt;/p&gt;
@@ -606,7 +759,7 @@ necessary to solve them well to get a ``gold-star level&amp;rdquo; grade on this
 assignment (although we certainly hope you will try and some will
 succeed!)&lt;/p&gt;
 
-&lt;h1 id=&#34;state-machines&#34;&gt;State Machines&lt;/h1&gt;
+&lt;h1 id=&#34;state-machines:97a803e9c8ff1f8cb49cdf4deb507492&#34;&gt;State Machines&lt;/h1&gt;
 
 &lt;ol&gt;
 &lt;li&gt;&lt;p&gt;Describe a state machine that can be used to determine if the number
@@ -630,7 +783,7 @@ $S$ to be unreachable.&lt;/p&gt;&lt;/li&gt;
 
 &lt;!--page--&gt;
 
-&lt;h1 id=&#34;knight-s-moves&#34;&gt;Knight&amp;rsquo;s Moves&lt;/h1&gt;
+&lt;h1 id=&#34;knight-s-moves:97a803e9c8ff1f8cb49cdf4deb507492&#34;&gt;Knight&amp;rsquo;s Moves&lt;/h1&gt;
 
 &lt;ol&gt;
 &lt;li&gt;&lt;p&gt;($\star$) A &lt;em&gt;knight&lt;/em&gt; in chess can move two squares up, down, left, or right, followed by one square in a direction perpendicular to the two squares (so, it can move two squares up or down, followed by one square left or right; or, can move two squares left or right, followed by one square up or down).  We can define the possible moves of a knight on an infinite chess board as the Knight State Machine (similarly to how we defined the Bishop State Machine in &lt;a href=&#34;https://uvacs2102.github.io/class14&#34;&gt;Class 14&lt;/a&gt;):&lt;/p&gt;
@@ -646,7 +799,7 @@ $P(n)$ or break the proof into two separate induction proofs to show you
 can reach any column and can reach any rwo.)&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h1 id=&#34;invariant-principle&#34;&gt;Invariant Principle&lt;/h1&gt;
+&lt;h1 id=&#34;invariant-principle:97a803e9c8ff1f8cb49cdf4deb507492&#34;&gt;Invariant Principle&lt;/h1&gt;
 
 &lt;ol&gt;
 &lt;li&gt;&lt;p&gt;MCS Problem 6.3.&lt;/p&gt;&lt;/li&gt;
@@ -702,7 +855,7 @@ that $0! = 1$.)&lt;/p&gt;
       <guid>https://uvacs2102.github.io/class14/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule:69e304a0e65e98722637abe379145c02&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps6&#34;&gt;&lt;strong&gt;Problem Set 6&lt;/strong&gt;&lt;/a&gt; is due &lt;strong&gt;20 October (Friday) at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
 
@@ -722,7 +875,7 @@ starting after Prof. Mahmoody&amp;rsquo;s office hours Monday.&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;state-machines-review-from-class-13:69e304a0e65e98722637abe379145c02&#34;&gt;State Machines (review from Class 13)&lt;/h2&gt;
+&lt;h2 id=&#34;state-machines-review-from-class-13&#34;&gt;State Machines (review from Class 13)&lt;/h2&gt;
 
 &lt;p&gt;A &lt;em&gt;state machine&lt;/em&gt;, $M = (S, G: S \times S, q_0 \in S)$, is a binary
 relation (called a &lt;em&gt;transition relation&lt;/em&gt;) on a set (both the domain and
@@ -743,7 +896,7 @@ S, q_0 \in S)$ is a predicate, $P$, on states, such that whenever $P(q)$
 is true of a state $q$, and $q \rightarrow r \in G$, then $P&amp;reg;$ is
 true.&lt;/p&gt;
 
-&lt;h3 id=&#34;bishop-state-machine:69e304a0e65e98722637abe379145c02&#34;&gt;Bishop State Machine&lt;/h3&gt;
+&lt;h3 id=&#34;bishop-state-machine&#34;&gt;Bishop State Machine&lt;/h3&gt;
 
 &lt;p&gt;$S = { (\fillin ) \, | \, r, c \in \mathbb{N} }$
 $G = { (r, c) \rightarrow (r&amp;rsquo;, c&amp;rsquo;) \, | \, r, c \in \mathbb{N} \wedge (\exists d \in \mathbb{N}^{+} \textrm{ such that } r&amp;rsquo; = r \fillin d \wedge r&amp;rsquo; \ge 0 \wedge c&amp;rsquo; = c \fillin d \wedge c&amp;rsquo; \ge 0 }$
@@ -753,7 +906,7 @@ $q_0 = (0, 2)$&lt;/p&gt;
 
 &lt;p&gt;#&lt;/p&gt;
 
-&lt;h3 id=&#34;progress-machine:69e304a0e65e98722637abe379145c02&#34;&gt;``Progress&amp;rdquo; Machine&lt;/h3&gt;
+&lt;h3 id=&#34;progress-machine&#34;&gt;``Progress&amp;rdquo; Machine&lt;/h3&gt;
 
 &lt;p&gt;$S = { (x, d) \, | \, x \in \mathbb{Z}, d \in { \mathrm{\bf F}, \mathrm{\bf B}} }$
 $G = { (x, \mathrm{\bf F}) \rightarrow (x + 1, \mathrm{\bf B}) \, | \, x \in \mathbb{Z} } \cup
@@ -764,7 +917,7 @@ $q_0 = (0, \mathrm{\bf F})$&lt;/p&gt;
 
 &lt;!--page--&gt;
 
-&lt;h2 id=&#34;preserved-invariants:69e304a0e65e98722637abe379145c02&#34;&gt;Preserved Invariants&lt;/h2&gt;
+&lt;h2 id=&#34;preserved-invariants&#34;&gt;Preserved Invariants&lt;/h2&gt;
 
 &lt;p&gt;A predicate $P(q)$ is a &lt;em&gt;preserved invariant&lt;/em&gt; of machine $M = (S, G \subseteq S \times S, q_0 \in
   S)$ if:
@@ -789,7 +942,7 @@ $$&lt;/p&gt;
 
 &lt;!--page--&gt;
 
-&lt;h1 id=&#34;slow-exponentiation:69e304a0e65e98722637abe379145c02&#34;&gt;Slow Exponentiation&lt;/h1&gt;
+&lt;h1 id=&#34;slow-exponentiation&#34;&gt;Slow Exponentiation&lt;/h1&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def slow_power(a, b):
    y = 1
@@ -808,7 +961,7 @@ $q_0 ::= (1, b)$&lt;/p&gt;
 
 &lt;p&gt;#&lt;/p&gt;
 
-&lt;h1 id=&#34;fast-exponentiation:69e304a0e65e98722637abe379145c02&#34;&gt;Fast Exponentiation&lt;/h1&gt;
+&lt;h1 id=&#34;fast-exponentiation&#34;&gt;Fast Exponentiation&lt;/h1&gt;
 
 &lt;p&gt;This is the algorithm from Section 6.3.1 written as Python code:&lt;/p&gt;
 
@@ -849,7 +1002,7 @@ collaboration policy carefully.&lt;/p&gt;
       <guid>https://uvacs2102.github.io/class13/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule:af2ff3ef0db44829d3ff131eac0d7ec7&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;There is no Problem Set due this week. &lt;a href=&#34;https://uvacs2102.github.io/ps/ps6&#34;&gt;&lt;strong&gt;Problem Set 6&lt;/strong&gt;&lt;/a&gt; will be posted soon and due next &lt;strong&gt;Friday (October 20) at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
 
@@ -871,7 +1024,7 @@ office hours tomorrow, or before or after class on Thursday.&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;state-machines:af2ff3ef0db44829d3ff131eac0d7ec7&#34;&gt;State Machines&lt;/h2&gt;
+&lt;h2 id=&#34;state-machines&#34;&gt;State Machines&lt;/h2&gt;
 
 &lt;p&gt;A &lt;em&gt;state machine&lt;/em&gt; is a binary relation (called a &lt;em&gt;transition relation&lt;/em&gt;)
 on a set (both the domain and codomain are the same set).  One state is
@@ -899,7 +1052,7 @@ designated as the &lt;em&gt;start state&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;How well do state machines model real computers?  What kind of
 transition relation does the state machine modeling your computer have?&lt;/p&gt;
 
-&lt;h2 id=&#34;state-machine-execution:af2ff3ef0db44829d3ff131eac0d7ec7&#34;&gt;State Machine Execution&lt;/h2&gt;
+&lt;h2 id=&#34;state-machine-execution&#34;&gt;State Machine Execution&lt;/h2&gt;
 
 &lt;p&gt;An &lt;em&gt;execution&lt;/em&gt; of a state machine $M = (S, G \subseteq S \times S, q_0 \in S)$ is a (possibly infinite) sequence of states, $(x_0, x_1, \cdots, x_n)$ where:&lt;/p&gt;
 
@@ -939,18 +1092,18 @@ $$&lt;/p&gt;
 because of “Fall Break” and the Exam (as usual, all will be in Rice
 436 except the professors&amp;rsquo; as noted):&lt;/p&gt;
 
-&lt;h4 id=&#34;monday-2-oct:d0632df39174fbd03a717f33cd2b5853&#34;&gt;Monday (2 Oct)&lt;/h4&gt;
+&lt;h4 id=&#34;monday-2-oct&#34;&gt;Monday (2 Oct)&lt;/h4&gt;
 
 &lt;p&gt;Mohammad Mahmoody (Rice 511), 10:45-11:45am&lt;br /&gt;
 Sarah Meng, 4:30-6:00pm&lt;/p&gt;
 
-&lt;h4 id=&#34;tuesday-3-oct:d0632df39174fbd03a717f33cd2b5853&#34;&gt;Tuesday (3 Oct)&lt;/h4&gt;
+&lt;h4 id=&#34;tuesday-3-oct&#34;&gt;Tuesday (3 Oct)&lt;/h4&gt;
 
 &lt;p&gt;Nate Olsen, 10-11:30am&lt;br /&gt;
 Michael Woon, 11am-12:30pm&lt;br /&gt;
 Henry Spece, 3:30-5pm&lt;/p&gt;
 
-&lt;h4 id=&#34;wednesday-4-oct:d0632df39174fbd03a717f33cd2b5853&#34;&gt;Wednesday (4 Oct)&lt;/h4&gt;
+&lt;h4 id=&#34;wednesday-4-oct&#34;&gt;Wednesday (4 Oct)&lt;/h4&gt;
 
 &lt;p&gt;Colin Harfst, 9:30am-12:30pm&lt;br /&gt;
 Anna Wu, noon-1:30pm&lt;br /&gt;
@@ -963,7 +1116,7 @@ Xueying Bai, 6-7pm&lt;br /&gt;
 Fan Feng, 7-8:30pm&lt;br /&gt;
 Nate Olsen, 7:30-9:00pm&lt;/p&gt;
 
-&lt;h4 id=&#34;thursday-5-oct:d0632df39174fbd03a717f33cd2b5853&#34;&gt;Thursday (5 Oct)&lt;/h4&gt;
+&lt;h4 id=&#34;thursday-5-oct&#34;&gt;Thursday (5 Oct)&lt;/h4&gt;
 
 &lt;p&gt;Amar Singh, 9am-10:30&lt;br /&gt;
 Xiao Zhang, 10-11am&lt;br /&gt;
@@ -971,16 +1124,6 @@ Prashant Gorthi, 11am-noon&lt;/p&gt;
 
 &lt;p&gt;No office hours Thursday afternnon and evening. The normal office
 hours schedule will resume on Monday, 9 October.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Problem Set 5 Comments</title>
-      <link>https://uvacs2102.github.io/ps5comments/</link>
-      <pubDate>Sun, 01 Oct 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://uvacs2102.github.io/ps5comments/</guid>
-      <description>&lt;p&gt;The Problem Set 5 solutions and comments are now posted in collab: &lt;a href=&#34;https://collab.its.virginia.edu/access/content/group/9bd99d1c-6f18-4542-a7d1-8ffc4fccbd3d/ps5solutions.pdf&#34;&gt;PDF&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
