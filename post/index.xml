@@ -705,7 +705,7 @@ def pair_last(p):
       <guid>https://uvacs2102.github.io/class14/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule:69e304a0e65e98722637abe379145c02&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps6&#34;&gt;&lt;strong&gt;Problem Set 6&lt;/strong&gt;&lt;/a&gt; is due &lt;strong&gt;20 October (Friday) at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
 
@@ -725,7 +725,7 @@ starting after Prof. Mahmoody&amp;rsquo;s office hours Monday.&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;state-machines-review-from-class-13&#34;&gt;State Machines (review from Class 13)&lt;/h2&gt;
+&lt;h2 id=&#34;state-machines-review-from-class-13:69e304a0e65e98722637abe379145c02&#34;&gt;State Machines (review from Class 13)&lt;/h2&gt;
 
 &lt;p&gt;A &lt;em&gt;state machine&lt;/em&gt;, $M = (S, G: S \times S, q_0 \in S)$, is a binary
 relation (called a &lt;em&gt;transition relation&lt;/em&gt;) on a set (both the domain and
@@ -746,7 +746,7 @@ S, q_0 \in S)$ is a predicate, $P$, on states, such that whenever $P(q)$
 is true of a state $q$, and $q \rightarrow r \in G$, then $P&amp;reg;$ is
 true.&lt;/p&gt;
 
-&lt;h3 id=&#34;bishop-state-machine&#34;&gt;Bishop State Machine&lt;/h3&gt;
+&lt;h3 id=&#34;bishop-state-machine:69e304a0e65e98722637abe379145c02&#34;&gt;Bishop State Machine&lt;/h3&gt;
 
 &lt;p&gt;$S = { (\fillin ) \, | \, r, c \in \mathbb{N} }$
 $G = { (r, c) \rightarrow (r&amp;rsquo;, c&amp;rsquo;) \, | \, r, c \in \mathbb{N} \wedge (\exists d \in \mathbb{N}^{+} \textrm{ such that } r&amp;rsquo; = r \fillin d \wedge r&amp;rsquo; \ge 0 \wedge c&amp;rsquo; = c \fillin d \wedge c&amp;rsquo; \ge 0 }$
@@ -756,7 +756,7 @@ $q_0 = (0, 2)$&lt;/p&gt;
 
 &lt;p&gt;#&lt;/p&gt;
 
-&lt;h3 id=&#34;progress-machine&#34;&gt;``Progress&amp;rdquo; Machine&lt;/h3&gt;
+&lt;h3 id=&#34;progress-machine:69e304a0e65e98722637abe379145c02&#34;&gt;``Progress&amp;rdquo; Machine&lt;/h3&gt;
 
 &lt;p&gt;$S = { (x, d) \, | \, x \in \mathbb{Z}, d \in { \mathrm{\bf F}, \mathrm{\bf B}} }$
 $G = { (x, \mathrm{\bf F}) \rightarrow (x + 1, \mathrm{\bf B}) \, | \, x \in \mathbb{Z} } \cup
@@ -767,7 +767,7 @@ $q_0 = (0, \mathrm{\bf F})$&lt;/p&gt;
 
 &lt;!--page--&gt;
 
-&lt;h2 id=&#34;preserved-invariants&#34;&gt;Preserved Invariants&lt;/h2&gt;
+&lt;h2 id=&#34;preserved-invariants:69e304a0e65e98722637abe379145c02&#34;&gt;Preserved Invariants&lt;/h2&gt;
 
 &lt;p&gt;A predicate $P(q)$ is a &lt;em&gt;preserved invariant&lt;/em&gt; of machine $M = (S, G \subseteq S \times S, q_0 \in
   S)$ if:
@@ -792,7 +792,7 @@ $$&lt;/p&gt;
 
 &lt;!--page--&gt;
 
-&lt;h1 id=&#34;slow-exponentiation&#34;&gt;Slow Exponentiation&lt;/h1&gt;
+&lt;h1 id=&#34;slow-exponentiation:69e304a0e65e98722637abe379145c02&#34;&gt;Slow Exponentiation&lt;/h1&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def slow_power(a, b):
    y = 1
@@ -811,7 +811,7 @@ $q_0 ::= (1, b)$&lt;/p&gt;
 
 &lt;p&gt;#&lt;/p&gt;
 
-&lt;h1 id=&#34;fast-exponentiation&#34;&gt;Fast Exponentiation&lt;/h1&gt;
+&lt;h1 id=&#34;fast-exponentiation:69e304a0e65e98722637abe379145c02&#34;&gt;Fast Exponentiation&lt;/h1&gt;
 
 &lt;p&gt;This is the algorithm from Section 6.3.1 written as Python code:&lt;/p&gt;
 
