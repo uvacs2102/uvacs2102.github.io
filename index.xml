@@ -6,8 +6,18 @@
     <description>Recent content on cs2102: Discrete Math</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 02 Nov 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 04 Nov 2017 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://uvacs2102.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Problem Set 8 Comments</title>
+      <link>https://uvacs2102.github.io/ps8comments/</link>
+      <pubDate>Sat, 04 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/ps8comments/</guid>
+      <description>&lt;p&gt;The Problem Set 8 solutions and comments are now posted in collab: &lt;a href=&#34;https://collab.its.virginia.edu/access/content/group/9bd99d1c-6f18-4542-a7d1-8ffc4fccbd3d/ps8solutions.pdf&#34;&gt;PDF&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Class 20: Number Theory</title>
@@ -17,7 +27,7 @@
       <guid>https://uvacs2102.github.io/class20/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule:dcf75d114d0b27f85507ff1ab741294c&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps8&#34;&gt;&lt;strong&gt;Problem Set 8&lt;/strong&gt;&lt;/a&gt; is due &lt;strong&gt;Friday at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
 
@@ -30,7 +40,7 @@
 &lt;li&gt;More than 10 requests implies we should spend Thursday’s class on reviewing requested topics, no exam exemptions.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;exam-2&#34;&gt;Exam 2&lt;/h3&gt;
+&lt;h3 id=&#34;exam-2:dcf75d114d0b27f85507ff1ab741294c&#34;&gt;Exam 2&lt;/h3&gt;
 
 &lt;p&gt;Exam 1 will be in class on Thursday, 9 Nov.  You can get a good
 idea for what to expect on Exam 2 based on Exam 1, and also by looking at the &lt;a href=&#34;https://uvacs2102.github.io/docs/practiceexam2.pdf&#34;&gt;Practice Exam
@@ -78,7 +88,7 @@ benefit from doing #3 and #4 as well.&lt;/p&gt;
    &lt;a href=&#34;https://uvacs2102.github.io/docs/class20.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes and Questions&lt;/b&gt;&lt;/a&gt;.
    &lt;/div&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
+&lt;h2 id=&#34;links:dcf75d114d0b27f85507ff1ab741294c&#34;&gt;Links&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Goldbach%27s_conjecture&#34;&gt;Goldbach&amp;rsquo;s conjecture&lt;/a&gt;&lt;/p&gt;
 
@@ -90,7 +100,7 @@ benefit from doing #3 and #4 as well.&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;divisibility&#34;&gt;Divisibility&lt;/h2&gt;
+&lt;h2 id=&#34;divisibility:dcf75d114d0b27f85507ff1ab741294c&#34;&gt;Divisibility&lt;/h2&gt;
 
 &lt;p&gt;Number theory is a study of integers $\mathbb{Z}={0,-1,1,-2,2,\dots}$. Adding, multiplying, and negating, are 3 operators on integers that we can define in a straight-forward way. Dividing is more tricky. For that, we first define the notation $a \mid b$ to denote the simpler situation where $b = k \cdot a$ for some $k \in \mathbb{Z}$. In this case, we say that $a$ is a &lt;em&gt;divisor&lt;/em&gt; of $b$ and that $b$ is a &lt;em&gt;multiple&lt;/em&gt; of $a$.&lt;/p&gt;
 
@@ -114,7 +124,7 @@ where $p&lt;em&gt;i &amp;lt; p&lt;/em&gt;{i+1}$ and $p_i$ is prime for all $i$.&
 
 &lt;p&gt;Hint for proof: Use strong induction on $n$, and try to show that any two different representations for $n$ will have the same `smallest&amp;rsquo; prime $p_1$ and the same power $a_1$ for $p_1$.&lt;/p&gt;
 
-&lt;h2 id=&#34;easy-to-state-but-hard-to-solve-problems&#34;&gt;Easy-to-state, but hard-to-solve problems&lt;/h2&gt;
+&lt;h2 id=&#34;easy-to-state-but-hard-to-solve-problems:dcf75d114d0b27f85507ff1ab741294c&#34;&gt;Easy-to-state, but hard-to-solve problems&lt;/h2&gt;
 
 &lt;p&gt;In number theory, we can easily state problems that are super hard to solve. These are some examples.&lt;/p&gt;
 
@@ -124,13 +134,13 @@ where $p&lt;em&gt;i &amp;lt; p&lt;/em&gt;{i+1}$ and $p_i$ is prime for all $i$.&
 
 &lt;p&gt;&lt;strong&gt;Fermat&amp;rsquo;s last theorem:&lt;/strong&gt; For any integer $n&amp;gt;2$ there are no integers $a,b,c$ where $a^n + b^n = c^n$. Note that for $n=2$ there are integer solutions like $3^2 + 4^2 = 5^2$. Fermat claimed to have a proof, but nobody knows if he really did or not. Andrew Wiles eventually proved this in 1994, hence we call it a &lt;em&gt;theorem&lt;/em&gt; and not a conjecture anymore.&lt;/p&gt;
 
-&lt;h2 id=&#34;greatest-common-divisor&#34;&gt;Greatest Common Divisor&lt;/h2&gt;
+&lt;h2 id=&#34;greatest-common-divisor:dcf75d114d0b27f85507ff1ab741294c&#34;&gt;Greatest Common Divisor&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;Definition&lt;/strong&gt; For natural numbers $m,n&amp;gt;0$ we call $d&amp;gt;0$ their \emph{greatest common divisor}, denoted by $d=gcd(m,n)$ if $d$ is the largest number such that $d \mid m$ and $d \mid n$. (Make sure to verify why we can always say that such $d$ exists.)&lt;/p&gt;
 
 &lt;p&gt;We can use the fundamental theorem of arithmetic, to &lt;em&gt;compute&lt;/em&gt; the gcd of any given pairs of integers. But how efficient is it? The problem is that factoring numbers $m,n$ into their prime factors is not something we know how to do efficiently. In particular, no known algorithm is guaranteed to factor all numbers with $1000,000$ digits in less than an (estimated) thousand years! The conjecture is that no such `efficient&amp;rsquo; algorithm exists, and many cryptographic algorithms &lt;em&gt;assume&lt;/em&gt; this is the case!&lt;/p&gt;
 
-&lt;h2 id=&#34;euclid-s-algorithm&#34;&gt;Euclid&amp;rsquo;s Algorithm&lt;/h2&gt;
+&lt;h2 id=&#34;euclid-s-algorithm:dcf75d114d0b27f85507ff1ab741294c&#34;&gt;Euclid&amp;rsquo;s Algorithm&lt;/h2&gt;
 
 &lt;p&gt;Despite not knowing how to factor integers efficiently, Euclid showed how to find gcd quite efficiently. This shows, even if the most ``natural&amp;rdquo; algorithm fails for doing something efficiently, we should always consider the possibility that an alternative way could still exist.&lt;/p&gt;
 
@@ -180,7 +190,7 @@ decreases.&lt;/p&gt;
       <guid>https://uvacs2102.github.io/class19/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule:90174cd8255fa2ab935573c4a489ebf1&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;&lt;strong&gt;Problem Set 8&lt;/strong&gt; is now due on &lt;strong&gt;Friday, Nov 3&lt;/strong&gt;.&lt;/p&gt;
 
@@ -198,7 +208,7 @@ decreases.&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;comparing-sets-recap:90174cd8255fa2ab935573c4a489ebf1&#34;&gt;Comparing sets Recap:&lt;/h1&gt;
+&lt;h1 id=&#34;comparing-sets-recap&#34;&gt;Comparing sets Recap:&lt;/h1&gt;
 
 &lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; Sets $A$ and $B$ have the same cardinality, denoted by $|A|=|B|$ if there is a bijection between $A$ and $B$.&lt;/p&gt;
 
@@ -208,7 +218,7 @@ decreases.&lt;/p&gt;
 \item There is a total injective function from $B$ to $A$.
 \end{enumerate}&lt;/p&gt;
 
-&lt;h1 id=&#34;infinite-sets-recap:90174cd8255fa2ab935573c4a489ebf1&#34;&gt;Infinite Sets Recap&lt;/h1&gt;
+&lt;h1 id=&#34;infinite-sets-recap&#34;&gt;Infinite Sets Recap&lt;/h1&gt;
 
 &lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; A set $C$ is &lt;em&gt;infinite&lt;/em&gt; if and only if &lt;em&gt;either&lt;/em&gt; of the following happens (they are all equivalnet).
 \begin{enumerate}&lt;/p&gt;
@@ -230,7 +240,7 @@ decreases.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; A set $C$ is &lt;em&gt;countably infinite&lt;/em&gt; if and only if there
   exists a bijection between $C$ and $\mathbb{N}$.&lt;/p&gt;
 
-&lt;h1 id=&#34;cantor-s-theorem:90174cd8255fa2ab935573c4a489ebf1&#34;&gt;Cantor&amp;rsquo;s Theorem&lt;/h1&gt;
+&lt;h1 id=&#34;cantor-s-theorem&#34;&gt;Cantor&amp;rsquo;s Theorem&lt;/h1&gt;
 
 &lt;p&gt;For &lt;strong&gt;all&lt;/strong&gt; sets, $S$, $| pow(S) | &amp;gt; | S |$.&lt;/p&gt;
 
@@ -270,7 +280,7 @@ collaboration policy carefully.&lt;/p&gt;
       <guid>https://uvacs2102.github.io/class18/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule:31a24b707f457b52726ca1d5e1ddffba&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps7&#34;&gt;&lt;strong&gt;Problem Set 7&lt;/strong&gt;&lt;/a&gt; is due &lt;strong&gt;Friday (27 Oct) at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
 
@@ -286,7 +296,7 @@ collaboration policy carefully.&lt;/p&gt;
    &lt;a href=&#34;https://uvacs2102.github.io/docs/class18.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes&lt;/b&gt;&lt;/a&gt;.
    &lt;/div&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
+&lt;h2 id=&#34;links:31a24b707f457b52726ca1d5e1ddffba&#34;&gt;Links&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://www.amazon.com/Logicomix-search-truth-Apostolos-Doxiadis/dp/1596914521/&#34;&gt;&lt;em&gt;Logicomix: An epic search for truth&lt;/em&gt;&lt;/a&gt;, comic book by Apostolos Doxiadis and &lt;a href=&#34;https://people.eecs.berkeley.edu/~christos/&#34;&gt;Christos H. Papadimitrou&lt;/a&gt;.&lt;/p&gt;
 
@@ -296,7 +306,7 @@ collaboration policy carefully.&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;countable-and-uncountable-sets&#34;&gt;Countable and Uncountable Sets&lt;/h2&gt;
+&lt;h2 id=&#34;countable-and-uncountable-sets:31a24b707f457b52726ca1d5e1ddffba&#34;&gt;Countable and Uncountable Sets&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; A set $S$ is &lt;em&gt;countably infinite&lt;/em&gt; if and only if there
   exists a bijection between $S$ and $\mathbb{N}$.&lt;/p&gt;
@@ -328,7 +338,7 @@ $$&lt;/p&gt;
 
 &lt;!--page--&gt;
 
-&lt;h2 id=&#34;ordinal-and-cardinal-numbers&#34;&gt;Ordinal and Cardinal Numbers&lt;/h2&gt;
+&lt;h2 id=&#34;ordinal-and-cardinal-numbers:31a24b707f457b52726ca1d5e1ddffba&#34;&gt;Ordinal and Cardinal Numbers&lt;/h2&gt;
 
 &lt;p&gt;$\omega$ is the &lt;em&gt;smallest infinite ordinal&lt;/em&gt;.  The first ordinal after
 $0, 1, 2, \cdots$.&lt;/p&gt;
@@ -369,7 +379,7 @@ $0, 1, 2, \cdots$.&lt;/p&gt;
       <guid>https://uvacs2102.github.io/class17/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule:8b7b3a27abcb870c301f99da90607ac1&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;Before Thursday, everyone should have finished reading MCS Chapter 8.&lt;/p&gt;
 
@@ -384,7 +394,7 @@ $0, 1, 2, \cdots$.&lt;/p&gt;
    &lt;a href=&#34;https://uvacs2102.github.io/docs/class17.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes&lt;/b&gt;&lt;/a&gt;.
    &lt;/div&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
+&lt;h2 id=&#34;links:8b7b3a27abcb870c301f99da90607ac1&#34;&gt;Links&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://www.cs.cornell.edu/courses/cs2800/2017fa/lectures/lec14-cantor.html&#34;&gt;Proof of Schr&amp;ouml;der-Bernstein Theorem&lt;/a&gt;&lt;/p&gt;
 
@@ -392,7 +402,7 @@ $0, 1, 2, \cdots$.&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;infinite-sets&#34;&gt;Infinite Sets&lt;/h1&gt;
+&lt;h1 id=&#34;infinite-sets:8b7b3a27abcb870c301f99da90607ac1&#34;&gt;Infinite Sets&lt;/h1&gt;
 
 &lt;p&gt;&lt;strong&gt;Finite Cardinality.&lt;/strong&gt; The &lt;em&gt;cardinality&lt;/em&gt; of the set
 $$
@@ -410,7 +420,7 @@ cardinality.  (Class 9)&lt;/p&gt;
 
 &lt;p&gt;Show that $\mathbb{Z}$ is infinite.&lt;/p&gt;
 
-&lt;h3 id=&#34;cardinality-of-infinite-sets&#34;&gt;Cardinality of Infinite Sets&lt;/h3&gt;
+&lt;h3 id=&#34;cardinality-of-infinite-sets:8b7b3a27abcb870c301f99da90607ac1&#34;&gt;Cardinality of Infinite Sets&lt;/h3&gt;
 
 &lt;p&gt;&lt;strong&gt;Equal Carinalities.&lt;/strong&gt; We say $|A|\; = |B|$  for arbitrary sets $A,B$ (and say that they have the same cardinality), if there is a bijection between $A$ and $B$.&lt;/p&gt;
 
@@ -422,7 +432,7 @@ cardinality.  (Class 9)&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Schr\wrap{\&amp;ldquo;{o}}der-Bernstein Theorem:&lt;/strong&gt; If $|A|\; \leq |B|$ and $|B|\; \leq |A|$, then there is a bijection between $A$ and $B$, namely $|A|\; = |B|$. (Not proven in cs2102; this is somewhat tricky to prove! For a full proof, see &lt;a href=&#34;http://www.cs.cornell.edu/courses/cs2800/2017fa/lectures/lec14-cantor.html&#34;&gt;the linked lecture notes&lt;/a&gt;.)&lt;/p&gt;
 
-&lt;h3 id=&#34;other-definitions-for-infinite-sets&#34;&gt;Other Definitions for Infinite Sets&lt;/h3&gt;
+&lt;h3 id=&#34;other-definitions-for-infinite-sets:8b7b3a27abcb870c301f99da90607ac1&#34;&gt;Other Definitions for Infinite Sets&lt;/h3&gt;
 
 &lt;p&gt;&lt;strong&gt;Dedekind-Infinite.&lt;/strong&gt; A set $A$ is &lt;em&gt;Dedekind-infinite&lt;/em&gt; if and only if there exists a &lt;em&gt;strict subset&lt;/em&gt; of $A$ with the same cardinality as $A$.  That is,
 $$\exists B \subset A \ldotp \exists R \ldotp R\ \text{is a bijection between}\ A\ \text{and}\ B.$$&lt;/p&gt;
@@ -478,7 +488,7 @@ collaboration policy carefully.&lt;/p&gt;
       <guid>https://uvacs2102.github.io/class16/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule:e5faf2b6fe551ee3e6bfd5f1acfee2f5&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps7&#34;&gt;&lt;strong&gt;Problem Set 6&lt;/strong&gt;&lt;/a&gt; is due &lt;strong&gt;tomorrow at 6:29pm&lt;/strong&gt;. Make sure to read the corrected version of Problem 7.&lt;/p&gt;
 
@@ -495,7 +505,7 @@ collaboration policy carefully.&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;lists&#34;&gt;Lists&lt;/h1&gt;
+&lt;h1 id=&#34;lists:e5faf2b6fe551ee3e6bfd5f1acfee2f5&#34;&gt;Lists&lt;/h1&gt;
 
 &lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; A &lt;em&gt;list&lt;/em&gt; is an ordered sequence of objects.  A list is
   either the empty list ($\lambda$), or the result of $\text{prepend}(e,
@@ -532,7 +542,7 @@ collaboration policy carefully.&lt;/p&gt;
 
 &lt;!--page--&gt;
 
-&lt;h2 id=&#34;concatenation&#34;&gt;Concatenation&lt;/h2&gt;
+&lt;h2 id=&#34;concatenation:e5faf2b6fe551ee3e6bfd5f1acfee2f5&#34;&gt;Concatenation&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; The &lt;em&gt;concatenation&lt;/em&gt; of two lists, $p = (p_1, p_2, \cdots, p_n)$ and $q = (q_1, q_2, \cdots, q_m)$ is
 $$(p_1, p_2, \cdots, p_n, q_1, q_2, \cdots, q_m).$$&lt;/p&gt;
@@ -543,7 +553,7 @@ $$(p_1, p_2, \cdots, p_n, q_1, q_2, \cdots, q_m).$$&lt;/p&gt;
 
 &lt;p&gt;#&lt;/p&gt;
 
-&lt;h2 id=&#34;structural-induction&#34;&gt;Structural Induction&lt;/h2&gt;
+&lt;h2 id=&#34;structural-induction:e5faf2b6fe551ee3e6bfd5f1acfee2f5&#34;&gt;Structural Induction&lt;/h2&gt;
 
 &lt;p&gt;To prove proposition $P(x)$ for element $x \in D$ where $D$ is a
 recursively-constructed data type, we do two things:&lt;/p&gt;
@@ -554,7 +564,7 @@ recursively-constructed data type, we do two things:&lt;/p&gt;
 using any &amp;ldquo;construct case&amp;rdquo; rules, then $P(x)$ is true as well.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h2 id=&#34;comparing-various-forms-of-induction&#34;&gt;Comparing Various forms of Induction&lt;/h2&gt;
+&lt;h2 id=&#34;comparing-various-forms-of-induction:e5faf2b6fe551ee3e6bfd5f1acfee2f5&#34;&gt;Comparing Various forms of Induction&lt;/h2&gt;
 
 &lt;p&gt;\begin{center}
 \begin{tabular}{lccc}
@@ -587,7 +597,7 @@ and {\bf inductive step} &amp;amp; $\forall m \in \mathbb{N} \ldotp$ &amp;amp; $
       <guid>https://uvacs2102.github.io/class15/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule:82758e0aba59693fe0fb1bf5353fa6c7&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;You should read MCS Chapter 7 this week.&lt;/p&gt;
 
@@ -598,7 +608,7 @@ and {\bf inductive step} &amp;amp; $\forall m \in \mathbb{N} \ldotp$ &amp;amp; $
 &lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;9d25492c6e134346a212652c6d0052ab&#34; data-ratio=&#34;1.77777777777778&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
    &lt;/center&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;links:82758e0aba59693fe0fb1bf5353fa6c7&#34;&gt;Links&lt;/h2&gt;
+&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
 
 &lt;p&gt;Python code from class and list definitions: &lt;a href=&#34;https://uvacs2102.github.io/docs/pairs.py&#34;&gt;pairs.py&lt;/a&gt;&lt;/p&gt;
 
@@ -610,7 +620,7 @@ and {\bf inductive step} &amp;amp; $\forall m \in \mathbb{N} \ldotp$ &amp;amp; $
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;proving-correctness:82758e0aba59693fe0fb1bf5353fa6c7&#34;&gt;Proving Correctness&lt;/h1&gt;
+&lt;h1 id=&#34;proving-correctness&#34;&gt;Proving Correctness&lt;/h1&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def slow_power(a, b):
    y = 1
@@ -659,7 +669,7 @@ the machine will reach a final state $q_f = (y, 0)$ in $b$ steps.  The
 proof in class used the Well Ordering Principle. You could also prove
 this using regular Induction.&lt;/p&gt;
 
-&lt;h1 id=&#34;pairs:82758e0aba59693fe0fb1bf5353fa6c7&#34;&gt;Pairs&lt;/h1&gt;
+&lt;h1 id=&#34;pairs&#34;&gt;Pairs&lt;/h1&gt;
 
 &lt;p&gt;What is the difference between scalar data and compound data structures?&lt;/p&gt;
 
@@ -686,7 +696,7 @@ def pair_last(p):
     return p(False)
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h1 id=&#34;lists:82758e0aba59693fe0fb1bf5353fa6c7&#34;&gt;Lists&lt;/h1&gt;
+&lt;h1 id=&#34;lists&#34;&gt;Lists&lt;/h1&gt;
 
 &lt;p&gt;&lt;strong&gt;Definition (1).&lt;/strong&gt; A &lt;em&gt;List&lt;/em&gt; is either (1) a &lt;em&gt;Pair&lt;/em&gt; where the second part of
   the pair is a &lt;em&gt;List&lt;/em&gt;, or (2) the empty list.&lt;/p&gt;
@@ -723,13 +733,13 @@ generated by LaTeX or Word).
    &lt;/div&gt;
    &lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;collaboration-policy-read-carefully:97a803e9c8ff1f8cb49cdf4deb507492&#34;&gt;Collaboration Policy - Read Carefully&lt;/h3&gt;
+&lt;h3 id=&#34;collaboration-policy-read-carefully&#34;&gt;Collaboration Policy - Read Carefully&lt;/h3&gt;
 
 &lt;p&gt;As with PS5, you should work in groups of one to three students to
 write-up a solution together. The rest of the collaboration policy is
 identical to what it was on &lt;a href=&#34;https://uvacs2102.github.io/ps/ps5&#34;&gt;PS5&lt;/a&gt;, and is not repeated here.&lt;/p&gt;
 
-&lt;h2 id=&#34;preparation:97a803e9c8ff1f8cb49cdf4deb507492&#34;&gt;Preparation&lt;/h2&gt;
+&lt;h2 id=&#34;preparation&#34;&gt;Preparation&lt;/h2&gt;
 
 &lt;p&gt;This problem set focuses on Sections 6.1-6.3 of the MCS book, and &lt;a href=&#34;https://uvacs2102.github.io/class13&#34;&gt;Class
 13&lt;/a&gt; and &lt;a href=&#34;https://uvacs2102.github.io/class14&#34;&gt;Class 14&lt;/a&gt;.&lt;/p&gt;
@@ -749,7 +759,7 @@ PDFs&lt;/a&gt; advice on the course site.
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;directions:97a803e9c8ff1f8cb49cdf4deb507492&#34;&gt;Directions&lt;/h2&gt;
+&lt;h2 id=&#34;directions&#34;&gt;Directions&lt;/h2&gt;
 
 &lt;p&gt;Solve as many of the 8 problems as you can.  For maximum credit, your
 answers should be correct, clear, well-written, and convincing.&lt;/p&gt;
@@ -759,7 +769,7 @@ necessary to solve them well to get a ``gold-star level&amp;rdquo; grade on this
 assignment (although we certainly hope you will try and some will
 succeed!)&lt;/p&gt;
 
-&lt;h1 id=&#34;state-machines:97a803e9c8ff1f8cb49cdf4deb507492&#34;&gt;State Machines&lt;/h1&gt;
+&lt;h1 id=&#34;state-machines&#34;&gt;State Machines&lt;/h1&gt;
 
 &lt;ol&gt;
 &lt;li&gt;&lt;p&gt;Describe a state machine that can be used to determine if the number
@@ -783,7 +793,7 @@ $S$ to be unreachable.&lt;/p&gt;&lt;/li&gt;
 
 &lt;!--page--&gt;
 
-&lt;h1 id=&#34;knight-s-moves:97a803e9c8ff1f8cb49cdf4deb507492&#34;&gt;Knight&amp;rsquo;s Moves&lt;/h1&gt;
+&lt;h1 id=&#34;knight-s-moves&#34;&gt;Knight&amp;rsquo;s Moves&lt;/h1&gt;
 
 &lt;ol&gt;
 &lt;li&gt;&lt;p&gt;($\star$) A &lt;em&gt;knight&lt;/em&gt; in chess can move two squares up, down, left, or right, followed by one square in a direction perpendicular to the two squares (so, it can move two squares up or down, followed by one square left or right; or, can move two squares left or right, followed by one square up or down).  We can define the possible moves of a knight on an infinite chess board as the Knight State Machine (similarly to how we defined the Bishop State Machine in &lt;a href=&#34;https://uvacs2102.github.io/class14&#34;&gt;Class 14&lt;/a&gt;):&lt;/p&gt;
@@ -799,7 +809,7 @@ $P(n)$ or break the proof into two separate induction proofs to show you
 can reach any column and can reach any rwo.)&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h1 id=&#34;invariant-principle:97a803e9c8ff1f8cb49cdf4deb507492&#34;&gt;Invariant Principle&lt;/h1&gt;
+&lt;h1 id=&#34;invariant-principle&#34;&gt;Invariant Principle&lt;/h1&gt;
 
 &lt;ol&gt;
 &lt;li&gt;&lt;p&gt;MCS Problem 6.3.&lt;/p&gt;&lt;/li&gt;
@@ -1002,7 +1012,7 @@ collaboration policy carefully.&lt;/p&gt;
       <guid>https://uvacs2102.github.io/class13/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule:af2ff3ef0db44829d3ff131eac0d7ec7&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;There is no Problem Set due this week. &lt;a href=&#34;https://uvacs2102.github.io/ps/ps6&#34;&gt;&lt;strong&gt;Problem Set 6&lt;/strong&gt;&lt;/a&gt; will be posted soon and due next &lt;strong&gt;Friday (October 20) at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
 
@@ -1024,7 +1034,7 @@ office hours tomorrow, or before or after class on Thursday.&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;state-machines&#34;&gt;State Machines&lt;/h2&gt;
+&lt;h2 id=&#34;state-machines:af2ff3ef0db44829d3ff131eac0d7ec7&#34;&gt;State Machines&lt;/h2&gt;
 
 &lt;p&gt;A &lt;em&gt;state machine&lt;/em&gt; is a binary relation (called a &lt;em&gt;transition relation&lt;/em&gt;)
 on a set (both the domain and codomain are the same set).  One state is
@@ -1052,7 +1062,7 @@ designated as the &lt;em&gt;start state&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;How well do state machines model real computers?  What kind of
 transition relation does the state machine modeling your computer have?&lt;/p&gt;
 
-&lt;h2 id=&#34;state-machine-execution&#34;&gt;State Machine Execution&lt;/h2&gt;
+&lt;h2 id=&#34;state-machine-execution:af2ff3ef0db44829d3ff131eac0d7ec7&#34;&gt;State Machine Execution&lt;/h2&gt;
 
 &lt;p&gt;An &lt;em&gt;execution&lt;/em&gt; of a state machine $M = (S, G \subseteq S \times S, q_0 \in S)$ is a (possibly infinite) sequence of states, $(x_0, x_1, \cdots, x_n)$ where:&lt;/p&gt;
 
@@ -1077,53 +1087,6 @@ $$&lt;/p&gt;
 &lt;p&gt;#&lt;/p&gt;
 
 &lt;p&gt;&lt;/div&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Fall Break Office Hours</title>
-      <link>https://uvacs2102.github.io/fbofficehours/</link>
-      <pubDate>Sun, 01 Oct 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://uvacs2102.github.io/fbofficehours/</guid>
-      <description>
-
-&lt;p&gt;The office hours schedule for next week will be different from normal
-because of “Fall Break” and the Exam (as usual, all will be in Rice
-436 except the professors&amp;rsquo; as noted):&lt;/p&gt;
-
-&lt;h4 id=&#34;monday-2-oct&#34;&gt;Monday (2 Oct)&lt;/h4&gt;
-
-&lt;p&gt;Mohammad Mahmoody (Rice 511), 10:45-11:45am&lt;br /&gt;
-Sarah Meng, 4:30-6:00pm&lt;/p&gt;
-
-&lt;h4 id=&#34;tuesday-3-oct&#34;&gt;Tuesday (3 Oct)&lt;/h4&gt;
-
-&lt;p&gt;Nate Olsen, 10-11:30am&lt;br /&gt;
-Michael Woon, 11am-12:30pm&lt;br /&gt;
-Henry Spece, 3:30-5pm&lt;/p&gt;
-
-&lt;h4 id=&#34;wednesday-4-oct&#34;&gt;Wednesday (4 Oct)&lt;/h4&gt;
-
-&lt;p&gt;Colin Harfst, 9:30am-12:30pm&lt;br /&gt;
-Anna Wu, noon-1:30pm&lt;br /&gt;
-Michael Woon, 12:30-2:00pm&lt;br /&gt;
-David Evans (Rice 507), 2:30-3:30pm&lt;br /&gt;
-Bhuvanesh Murali, 3-5pm&lt;br /&gt;
-Helen Simecek, 3:30-5pm&lt;br /&gt;
-Yasasvini Puligundle, 5-6pm&lt;br /&gt;
-Xueying Bai, 6-7pm&lt;br /&gt;
-Fan Feng, 7-8:30pm&lt;br /&gt;
-Nate Olsen, 7:30-9:00pm&lt;/p&gt;
-
-&lt;h4 id=&#34;thursday-5-oct&#34;&gt;Thursday (5 Oct)&lt;/h4&gt;
-
-&lt;p&gt;Amar Singh, 9am-10:30&lt;br /&gt;
-Xiao Zhang, 10-11am&lt;br /&gt;
-Prashant Gorthi, 11am-noon&lt;/p&gt;
-
-&lt;p&gt;No office hours Thursday afternnon and evening. The normal office
-hours schedule will resume on Monday, 9 October.&lt;/p&gt;
 </description>
     </item>
     

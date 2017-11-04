@@ -155,6 +155,119 @@
   </header>
   
   
+  <p class="fronthead"><A href="">Class 10: Set Cardinality, Induction</a> (Thu, 21 Sep 2017)</p>
+    
+
+<h3 id="schedule:cefb84ebc6e45e7105a37c4f4d413033">Schedule</h3>
+
+<p>This week you should finish reading MCS Chapter 4 (section 4.5) and
+Section 5.1.  We will discuss Induction (Section 5.1) next class.</p>
+
+<p><a href="/ps/ps4"><strong>Problem Set 4</strong></a> is due <strong>Friday at 6:29pm</strong>.  The
+original version of Problem Set 4, Question 6, asked for a <em>function</em>,
+when we really meant to ask for a <em>total function</em> (as we defined it
+in class today, and the book defines it). The problem set is updated
+now to specify this. If you already answered the original question,
+you do not need to update your answer, just indicate clearly for which
+questions the function you defined is partial. Sorry for the
+confusion!</p>
+
+<p><strong>Problem Set 5</strong> (not yet posted) will be due Friday, 29 September.</p>
+
+<p><strong>Exam 1</strong> will be in-class on Thursday, 5 October. It will cover
+  Classes 1 - 11, Problem Sets 1 - 5, and MCS Chapters 1 - 5.</p>
+
+<p><div class="notpdf">
+   <center>
+<script async class="speakerdeck-embed" data-id="3dc8afcc1d1e4a979715fe94298dd84a" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+   </center></p>
+
+<p><div class="highlightm">
+   <a href="/docs/class10.pdf">See PDF Version for <b>Notes and Questions</b></a>.
+   </div></p>
+
+<p></div><!--endpdf--></p>
+
+<p><div class="latex"></p>
+
+<p><strong>Alternate definition:</strong> The <em>cardinality</em> of the set
+$$
+N_k = { n | n \in \mathbb{N} \wedge n &lt; k }
+$$
+is $k$.  If there is a <em>bijection</em> between two sets, they have the same
+cardinality.</p>
+
+<p>#</p>
+
+<p>If there is a <em>surjective relation</em> between $A$ and $B$ what do we know
+about their cardinalities?</p>
+
+<p>##</p>
+
+<p>If there is a <em>surjective function</em> between $A$ and $B$ what do we know
+about their cardinalities?</p>
+
+<p>##</p>
+
+<p>If there is a <em>total surjective function</em> between $A$ and $B$ what do we know
+about their cardinalities?</p>
+
+<p>##</p>
+
+<p>If there is a <em>total surjective injective function</em> between $A$ and $B$
+what do we know about their cardinalities?</p>
+
+<p>##</p>
+
+<p>What is the cardinality of $A \cup B$?</p>
+
+<p>#</p>
+
+<h1 id="induction-principle:cefb84ebc6e45e7105a37c4f4d413033">Induction Principle</h1>
+
+<p>Let $P$ be a predicated on $\mathbb{N}$.  If</p>
+
+<ul>
+<li>$P(0)$ is true, and</li>
+<li>$P(n) \implies P(n + 1)$ for all $n \in \mathbb{N}$,</li>
+</ul>
+
+<p>then</p>
+
+<ul>
+<li>$P(m)$ is true for all $m \in \mathbb{N}$.</li>
+</ul>
+
+<h2 id="template-for-induction-proofs:cefb84ebc6e45e7105a37c4f4d413033">Template for Induction Proofs</h2>
+
+<ol>
+<li>State, &ldquo;We prove by induction.&rdquo;</li>
+<li>Define a predicate, $P(n)$.  This is the <em>induction hypothesis</em>.  Our goal is to show that $P(n)$ is true for all $n \in \mathbb{N}$.</li>
+<li>Prove $P(0)$ is true.  (<em>base case</em> or <em>basis step</em>.)</li>
+<li>Prove that $P(n) \implies P(n + 1)$ for every $n \in \mathbb{N}$.  (<em>induction step</em>)</li>
+<li>Conclude that $P(n)$ is true for all $n \in \mathbb{N}$ by induction.</li>
+</ol>
+
+<p>How is the method of <em>proof by induction principle</em> similar to and different from <em>proof by well-ordering principle</em>?</p>
+
+<h1 id="power-sets:cefb84ebc6e45e7105a37c4f4d413033">Power Sets</h1>
+
+<p>The <strong>power set</strong> of $A$ ($\textrm{pow}(A)$)is the set of all subsets of $A$:
+$$
+B \in \textrm{pow}(A) \iff B \subseteq A.
+$$</p>
+
+<p>Prove that the size of the power set of a set $S$ with $|S| = N$ is
+$2^N$ using induction. (We&rsquo;ll do this in Class 11, but see how far you
+can get on your own.)</p>
+
+<p>#</p>
+
+<p>#</p>
+
+<p></div></p>
+ 
+  
   <p class="fronthead"><A href="">Problem Set 3 Comments</a> (Wed, 20 Sep 2017)</p>
     <p>The Problem Set 3 solutions and comments are now posted in collab: <a href="https://collab.its.virginia.edu/access/content/group/9bd99d1c-6f18-4542-a7d1-8ffc4fccbd3d/ps3solutions.pdf">PDF</a></p>
  
@@ -162,7 +275,7 @@
   <p class="fronthead"><A href="">Class 9: Relations, Finite Set Cardinality</a> (Tue, 19 Sep 2017)</p>
     
 
-<h3 id="schedule">Schedule</h3>
+<h3 id="schedule:b1685b9d514e4fd02cc72721228d457c">Schedule</h3>
 
 <p>This week you should finish reading MCS Chapter 4 (section 4.5) and
 Section 5.1.  We will discuss Induction (Section 5.1) next class.</p>
@@ -194,7 +307,7 @@ confusion!</p>
 
 <p><div class="latex"></p>
 
-<h2 id="total-and-partial-functions">Total and Partial Functions</h2>
+<h2 id="total-and-partial-functions:b1685b9d514e4fd02cc72721228d457c">Total and Partial Functions</h2>
 
 <p>A <strong>function</strong> is a mathematical datatype that associates elements from
 one set, called the <em>domain</em>, with elements from another set, called a
@@ -206,7 +319,7 @@ one set, called the <em>domain</em>, with elements from another set, called a
 associated codomain element; if the function is <em>partial</em>, there may be
 elements of the domain that do not have an associated codomain element.</p>
 
-<h2 id="relation-relationships">Relation Relationships</h2>
+<h2 id="relation-relationships:b1685b9d514e4fd02cc72721228d457c">Relation Relationships</h2>
 
 <p>Definition review: <strong>binary relation</strong>, $R$, consists of a domain set,
 $A$, and a codomain set, $B$, and a subset of $A \times B$ called the
@@ -250,7 +363,7 @@ f. $G - (S \times T) = \emptyset$.
 g. $(S \times T) - G = \emptyset$.
 h. $(S \times T) - G \neq \emptyset$.</p>
 
-<h1 id="relation-practice">Relation Practice</h1>
+<h1 id="relation-practice:b1685b9d514e4fd02cc72721228d457c">Relation Practice</h1>
 
 <p>The <em>inverse</em> of a relation $R: A \rightarrow B, G \subseteq A \times B$ is defined by reversing all the arrows:
 $$
@@ -263,7 +376,7 @@ $$</p>
 
 <p>What does it mean if $R \equiv R^{-1}$?</p>
 
-<h1 id="set-cardinality">Set Cardinality</h1>
+<h1 id="set-cardinality:b1685b9d514e4fd02cc72721228d457c">Set Cardinality</h1>
 
 <p><strong>Finite Cardinality.</strong> The book&rsquo;s definition is: ``If $A$ is a finite set, the <em>cardinality</em> of
   $A$, written $|A|$, is the number of elements in $A$.&rdquo;</p>
@@ -390,7 +503,7 @@ set, called a <em>codomain</em>.</p>
   <p class="fronthead"><A href="">Class 7: Sets</a> (Tue, 12 Sep 2017)</p>
     
 
-<h3 id="schedule">Schedule</h3>
+<h3 id="schedule:3a08b95a8ad598832d09afa687b9b147">Schedule</h3>
 
 <p><a href="/ps/ps3"><strong>Problem Set 3</strong></a> is due <strong>Friday at 6:29pm</strong>.</p>
 
@@ -403,13 +516,13 @@ set, called a <em>codomain</em>.</p>
    <a href="/docs/class7.pdf">See PDF Version for <b>Notes and Questions</b></a>.
    </div></p>
 
-<h2 id="links">Links</h2>
+<h2 id="links:3a08b95a8ad598832d09afa687b9b147">Links</h2>
 
 <p></div><!--endpdf--></p>
 
 <p><div class="latex"></p>
 
-<h1 id="notes-and-questions">Notes and Questions</h1>
+<h1 id="notes-and-questions:3a08b95a8ad598832d09afa687b9b147">Notes and Questions</h1>
 
 <p>What is a <em>data type</em>?  What are the differences between a <em>mathematical
 data type</em> and a data type in your favorite programming language?</p>
@@ -419,7 +532,7 @@ data type</em> and a data type in your favorite programming language?</p>
 <p>A <strong>set</strong> is an unordered colection of objects.  A set is defined by its
 membership operation: $x \in S$ is true if $x$ is in the set $S$. When $x$ is not in $S$ we write it as $x \notin S$. A set has only <em>one</em> copy of each element. Namely, there is no repetition in elements of a set. Also, a set $A$ could be a member o another set $B$, denoted by $A \in B$. Note that members of $A$ are not necessarily members of $B$ unless they are explicitly put in $B$ directly.</p>
 
-<h2 id="set-operations">Set Operations</h2>
+<h2 id="set-operations:3a08b95a8ad598832d09afa687b9b147">Set Operations</h2>
 
 <p>Subset: $\subseteq$ (note that this does not mean <em>strict subset</em>)
 $$A \subseteq B \iff \forall x \in A. \fillin \in \fillin.$$</p>
@@ -444,7 +557,7 @@ discussion.)</p>
 
 <!--page-->
 
-<h3 id="russell-s-paradox">Russell&rsquo;s Paradox</h3>
+<h3 id="russell-s-paradox:3a08b95a8ad598832d09afa687b9b147">Russell&rsquo;s Paradox</h3>
 
 <p>$$ S_{R} = \textrm{ the set of all sets that are not members of themselves} $$</p>
 
@@ -452,13 +565,13 @@ discussion.)</p>
 
 <p>What is the source of this paradox? Note that in this question, we are implicitly assuming that $S<em>{R}$ is a set, but we have never &ldquo;constructed&rdquo; this set properly to use it. Namely, here we are implicitly assuming that there is already a &ldquo;set of all sets&rdquo; $S</em>{all}$ from which we remove those sets like $T$ for which $T \in T$. By removing all such $T$ from $S_{all}$ we get the set $S_R$.</p>
 
-<h3 id="using-quantifiers-more-carefully">Using Quantifiers More Carefully</h3>
+<h3 id="using-quantifiers-more-carefully:3a08b95a8ad598832d09afa687b9b147">Using Quantifiers More Carefully</h3>
 
 <p>Note that in some of the  propositions that we used to define the set operations (such as union, intersection, etc.) above, we wrote quantified $x$ without saying which set it is from. For example  $\forall x. [\dots]$. It is much preferred to always say what $x$ is belonging to when we quantify over $x$. The reason is to avoid traps like that of Russell&rsquo;s paradox! This should not worry us in this class, as we will always work with well-defined <em>universes</em> that include all the elements of the sets that we work with. Therefore, we can always assume implicitly that $x \in U$ (for a well defined set universe $U$) even if not explicitly mentioned.</p>
 
 <p>#</p>
 
-<h3 id="set-practice">Set Practice</h3>
+<h3 id="set-practice:3a08b95a8ad598832d09afa687b9b147">Set Practice</h3>
 
 <p>Here are some practice problems involving sets.  We won&rsquo;t go through
 these in class, but you should ask questions about any are unclear.  (At
@@ -735,10 +848,6 @@ $(A \lor B \lor C \lor D)$ we do another trick of breaking them into smaller par
 <p></div></p>
  
   
-  <p class="fronthead"><A href="">Problem Set 1 Comments</a> (Wed, 6 Sep 2017)</p>
-    <p>The Problem Set 1 comments are now posted in collab: <a href="https://collab.its.virginia.edu/access/content/group/9bd99d1c-6f18-4542-a7d1-8ffc4fccbd3d/ps1solutions.pdf">PDF</a></p>
- 
-  
   
 <div class="container pagination">
   
@@ -769,12 +878,16 @@ $(A \lor B \lor C \lor D)$ we do another trick of breaking them into smaller par
   4
 </a>
 
+<a href="https://uvacs2102.github.io/page/5/">
+  5
+</a>
+
 
 <a aria-label="Next" href="https://uvacs2102.github.io/page/4/">
   <span aria-hidden="true">»</span>
 </a>
 
-<a aria-label="Last" href="https://uvacs2102.github.io/page/4/">
+<a aria-label="Last" href="https://uvacs2102.github.io/page/5/">
   <span aria-hidden="true">»»</span>
 </a>
 
