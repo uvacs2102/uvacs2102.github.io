@@ -6,8 +6,49 @@
     <description>Recent content on cs2102: Discrete Math</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 04 Nov 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 07 Nov 2017 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://uvacs2102.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Class 21: Review</title>
+      <link>https://uvacs2102.github.io/class21/</link>
+      <pubDate>Tue, 07 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/class21/</guid>
+      <description>
+
+&lt;h3 id=&#34;exam-2&#34;&gt;Exam 2&lt;/h3&gt;
+
+&lt;p&gt;Exam 2 will be in class on Thursday, 9 Nov. Make sure to go over the notes about the exam posted in &lt;a href=&#34;https://uvacs2102.github.io/docs/class20.pdf&#34;&gt;Class 20&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;
+   &lt;center&gt;
+&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;13a56eac91bd4098840e980ed10fc01f&#34; data-ratio=&#34;1.77777777777778&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
+   &lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlightm&#34;&gt;
+   &lt;a href=&#34;https://uvacs2102.github.io/docs/class21.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes and Questions&lt;/b&gt;&lt;/a&gt;.
+   &lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;the-reviwed-topics&#34;&gt;The reviwed topics.&lt;/h2&gt;
+
+&lt;p&gt;Today we review the topics that we learned after exam 1 with the exaception of number theory. Therefore, it will be the following topics.&lt;/p&gt;
+
+&lt;p&gt;\begin{itemize}
+\item State Machine and how to argue about correctness of programs.&lt;/p&gt;
+
+&lt;p&gt;\item Recursive Definitions and how to prove statements about them using structural induction.&lt;/p&gt;
+
+&lt;p&gt;\item Infinite Sets and Cardinalities, and how to show sets are finite, infinite, countable, or uncountable.
+\end{itemize}&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Problem Set 8 Comments</title>
@@ -27,7 +68,7 @@
       <guid>https://uvacs2102.github.io/class20/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule:dcf75d114d0b27f85507ff1ab741294c&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps8&#34;&gt;&lt;strong&gt;Problem Set 8&lt;/strong&gt;&lt;/a&gt; is due &lt;strong&gt;Friday at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
 
@@ -40,9 +81,9 @@
 &lt;li&gt;More than 10 requests implies we should spend Thursday’s class on reviewing requested topics, no exam exemptions.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;exam-2:dcf75d114d0b27f85507ff1ab741294c&#34;&gt;Exam 2&lt;/h3&gt;
+&lt;h3 id=&#34;exam-2&#34;&gt;Exam 2&lt;/h3&gt;
 
-&lt;p&gt;Exam 1 will be in class on Thursday, 9 Nov.  You can get a good
+&lt;p&gt;Exam 2 will be in class on Thursday, 9 Nov.  You can get a good
 idea for what to expect on Exam 2 based on Exam 1, and also by looking at the &lt;a href=&#34;https://uvacs2102.github.io/docs/practiceexam2.pdf&#34;&gt;Practice Exam
 2&lt;/a&gt; (from last year&amp;rsquo;s class). We strongly
 encourage you to try to problems on your own, before looking at the
@@ -88,7 +129,7 @@ benefit from doing #3 and #4 as well.&lt;/p&gt;
    &lt;a href=&#34;https://uvacs2102.github.io/docs/class20.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes and Questions&lt;/b&gt;&lt;/a&gt;.
    &lt;/div&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;links:dcf75d114d0b27f85507ff1ab741294c&#34;&gt;Links&lt;/h2&gt;
+&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Goldbach%27s_conjecture&#34;&gt;Goldbach&amp;rsquo;s conjecture&lt;/a&gt;&lt;/p&gt;
 
@@ -100,7 +141,7 @@ benefit from doing #3 and #4 as well.&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;divisibility:dcf75d114d0b27f85507ff1ab741294c&#34;&gt;Divisibility&lt;/h2&gt;
+&lt;h2 id=&#34;divisibility&#34;&gt;Divisibility&lt;/h2&gt;
 
 &lt;p&gt;Number theory is a study of integers $\mathbb{Z}={0,-1,1,-2,2,\dots}$. Adding, multiplying, and negating, are 3 operators on integers that we can define in a straight-forward way. Dividing is more tricky. For that, we first define the notation $a \mid b$ to denote the simpler situation where $b = k \cdot a$ for some $k \in \mathbb{Z}$. In this case, we say that $a$ is a &lt;em&gt;divisor&lt;/em&gt; of $b$ and that $b$ is a &lt;em&gt;multiple&lt;/em&gt; of $a$.&lt;/p&gt;
 
@@ -124,7 +165,7 @@ where $p&lt;em&gt;i &amp;lt; p&lt;/em&gt;{i+1}$ and $p_i$ is prime for all $i$.&
 
 &lt;p&gt;Hint for proof: Use strong induction on $n$, and try to show that any two different representations for $n$ will have the same `smallest&amp;rsquo; prime $p_1$ and the same power $a_1$ for $p_1$.&lt;/p&gt;
 
-&lt;h2 id=&#34;easy-to-state-but-hard-to-solve-problems:dcf75d114d0b27f85507ff1ab741294c&#34;&gt;Easy-to-state, but hard-to-solve problems&lt;/h2&gt;
+&lt;h2 id=&#34;easy-to-state-but-hard-to-solve-problems&#34;&gt;Easy-to-state, but hard-to-solve problems&lt;/h2&gt;
 
 &lt;p&gt;In number theory, we can easily state problems that are super hard to solve. These are some examples.&lt;/p&gt;
 
@@ -134,13 +175,13 @@ where $p&lt;em&gt;i &amp;lt; p&lt;/em&gt;{i+1}$ and $p_i$ is prime for all $i$.&
 
 &lt;p&gt;&lt;strong&gt;Fermat&amp;rsquo;s last theorem:&lt;/strong&gt; For any integer $n&amp;gt;2$ there are no integers $a,b,c$ where $a^n + b^n = c^n$. Note that for $n=2$ there are integer solutions like $3^2 + 4^2 = 5^2$. Fermat claimed to have a proof, but nobody knows if he really did or not. Andrew Wiles eventually proved this in 1994, hence we call it a &lt;em&gt;theorem&lt;/em&gt; and not a conjecture anymore.&lt;/p&gt;
 
-&lt;h2 id=&#34;greatest-common-divisor:dcf75d114d0b27f85507ff1ab741294c&#34;&gt;Greatest Common Divisor&lt;/h2&gt;
+&lt;h2 id=&#34;greatest-common-divisor&#34;&gt;Greatest Common Divisor&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;Definition&lt;/strong&gt; For natural numbers $m,n&amp;gt;0$ we call $d&amp;gt;0$ their \emph{greatest common divisor}, denoted by $d=gcd(m,n)$ if $d$ is the largest number such that $d \mid m$ and $d \mid n$. (Make sure to verify why we can always say that such $d$ exists.)&lt;/p&gt;
 
 &lt;p&gt;We can use the fundamental theorem of arithmetic, to &lt;em&gt;compute&lt;/em&gt; the gcd of any given pairs of integers. But how efficient is it? The problem is that factoring numbers $m,n$ into their prime factors is not something we know how to do efficiently. In particular, no known algorithm is guaranteed to factor all numbers with $1000,000$ digits in less than an (estimated) thousand years! The conjecture is that no such `efficient&amp;rsquo; algorithm exists, and many cryptographic algorithms &lt;em&gt;assume&lt;/em&gt; this is the case!&lt;/p&gt;
 
-&lt;h2 id=&#34;euclid-s-algorithm:dcf75d114d0b27f85507ff1ab741294c&#34;&gt;Euclid&amp;rsquo;s Algorithm&lt;/h2&gt;
+&lt;h2 id=&#34;euclid-s-algorithm&#34;&gt;Euclid&amp;rsquo;s Algorithm&lt;/h2&gt;
 
 &lt;p&gt;Despite not knowing how to factor integers efficiently, Euclid showed how to find gcd quite efficiently. This shows, even if the most ``natural&amp;rdquo; algorithm fails for doing something efficiently, we should always consider the possibility that an alternative way could still exist.&lt;/p&gt;
 
@@ -1001,92 +1042,6 @@ $q_0 ::= (1, b)$&lt;/p&gt;
       <description>&lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps6&#34;&gt;&lt;strong&gt;Problem Set 6&lt;/strong&gt;&lt;/a&gt; [&lt;a href=&#34;https://uvacs2102.github.io/docs/ps6.pdf&#34;&gt;PDF&lt;/a&gt;] is now posted and
 is due &lt;strong&gt;Friday, 20 Oct at 6:29:00pm&lt;/strong&gt;. Please read the
 collaboration policy carefully.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Class 13: State Machines</title>
-      <link>https://uvacs2102.github.io/class13/</link>
-      <pubDate>Tue, 10 Oct 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://uvacs2102.github.io/class13/</guid>
-      <description>
-
-&lt;h3 id=&#34;schedule:af2ff3ef0db44829d3ff131eac0d7ec7&#34;&gt;Schedule&lt;/h3&gt;
-
-&lt;p&gt;There is no Problem Set due this week. &lt;a href=&#34;https://uvacs2102.github.io/ps/ps6&#34;&gt;&lt;strong&gt;Problem Set 6&lt;/strong&gt;&lt;/a&gt; will be posted soon and due next &lt;strong&gt;Friday (October 20) at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;Exam 1 was returned in class today.  Please read the solutions posted
-in collab: &lt;a href=&#34;https://collab.its.virginia.edu/access/content/group/9bd99d1c-6f18-4542-a7d1-8ffc4fccbd3d/exam1comments.pdf&#34;&gt;Exam 1
-Comments&lt;/a&gt;.
-If you didn&amp;rsquo;t pick up Exam 1 in class today, you can get it at Dave&amp;rsquo;s
-office hours tomorrow, or before or after class on Thursday.&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;
-   &lt;center&gt;
-&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;a9794b8b691346209a71c909a67e860c&#34; data-ratio=&#34;1.77777777777778&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
-   &lt;/center&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;highlightm&#34;&gt;
-   &lt;a href=&#34;https://uvacs2102.github.io/docs/class13.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes and Questions&lt;/b&gt;&lt;/a&gt;.
-   &lt;/div&gt;
-   &lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;state-machines:af2ff3ef0db44829d3ff131eac0d7ec7&#34;&gt;State Machines&lt;/h2&gt;
-
-&lt;p&gt;A &lt;em&gt;state machine&lt;/em&gt; is a binary relation (called a &lt;em&gt;transition relation&lt;/em&gt;)
-on a set (both the domain and codomain are the same set).  One state is
-designated as the &lt;em&gt;start state&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;$$M = (S, G: S \times S, q_0 \in S)$$&lt;/p&gt;
-
-&lt;p&gt;What does it mean if $G$ is &lt;em&gt;total&lt;/em&gt;?&lt;/p&gt;
-
-&lt;p&gt;##&lt;/p&gt;
-
-&lt;p&gt;What does it mean if $G$ is not a &lt;em&gt;function&lt;/em&gt;?&lt;/p&gt;
-
-&lt;p&gt;##&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Parity Counter.&lt;/strong&gt; Describe a state machine that determines if the
-  number of steps is even.&lt;/p&gt;
-
-&lt;p&gt;#&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Unbounded Counter.&lt;/strong&gt; Describe a state machine that counts the number of steps.&lt;/p&gt;
-
-&lt;p&gt;#&lt;/p&gt;
-
-&lt;p&gt;How well do state machines model real computers?  What kind of
-transition relation does the state machine modeling your computer have?&lt;/p&gt;
-
-&lt;h2 id=&#34;state-machine-execution:af2ff3ef0db44829d3ff131eac0d7ec7&#34;&gt;State Machine Execution&lt;/h2&gt;
-
-&lt;p&gt;An &lt;em&gt;execution&lt;/em&gt; of a state machine $M = (S, G \subseteq S \times S, q_0 \in S)$ is a (possibly infinite) sequence of states, $(x_0, x_1, \cdots, x_n)$ where:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;$x_0 = q_0$ (it begins with the start state), and&lt;/li&gt;
-&lt;li&gt;$\forall i \in {0, 1, \ldots, n - 1} \ldotp (x&lt;em&gt;i, x&lt;/em&gt;{i + 1}) \in G$ (if $q$ and $r$ are consecutive states in the sequence, then there is an edge $q \rightarrow r$ in $G$)&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;A state $q$ is &lt;em&gt;reachable&lt;/em&gt; if it appears in some execution.  (That is,
-there is a sequence of transitions starting from $q_0$, following edges
-in $G$, that ends with $q$.)&lt;/p&gt;
-
-&lt;p&gt;$$
-M_1 = (S = \mathbb{N}, G = {(x, y) | y = x^2 }, q_0 = 1)
-$$
-$$
-M_2 = (S = \mathbb{N}, G = {(x, y) | \exists k \in \mathbb{N} \ldotp y = kx }, q_0 = 1)
-$$&lt;/p&gt;
-
-&lt;p&gt;Which states are &lt;em&gt;reachable&lt;/em&gt; for $M_1$ and $M_2$?&lt;/p&gt;
-
-&lt;p&gt;#&lt;/p&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
 </description>
     </item>
     
