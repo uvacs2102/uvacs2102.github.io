@@ -19,7 +19,7 @@
 
 &lt;h3 id=&#34;exam-2&#34;&gt;Exam 2&lt;/h3&gt;
 
-&lt;p&gt;Exam 2 will be in class on Thursday, 9 Nov. Make sure to go over the notes about the exam posted in &lt;a href=&#34;https://uvacs2102.github.io/docs/class20.pdf&#34;&gt;Class 20&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Exam 2 will be in class on Thursday, 9 Nov. See &lt;a href=&#34;https://uvacs2102.github.io/docs/class20.pdf&#34;&gt;Class 20&lt;/a&gt; notes for details on the exam.&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;
    &lt;center&gt;
@@ -68,14 +68,26 @@ $$ \forall q \in S. (P(q) \wedge (q \rightarrow r) \in G) \implies P&amp;reg;$$&
 
 &lt;li&gt;&lt;p&gt;Show that $M$ eventually terminates.&lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;Show partial correctness: in all terminating states, the output is correct.&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;Show partial correctness:&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Find a suitable preserved invariant $P$ for $M$.&lt;/li&gt;
-&lt;li&gt;Show that $P(q)$ for all terminating states implies the output correctness property.&lt;/li&gt;
+&lt;li&gt;Show that $P(q)$ for all final states implies the output correctness property. (Final states are states where the execution terminates.)&lt;/li&gt;
 &lt;li&gt;Show $P(q_0)$ &amp;mdash; the perserved invariant holds for the start state.&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ol&gt;
+
+&lt;!--page--&gt;
+
+&lt;h2 id=&#34;recursive-data-types&#34;&gt;Recursive Data Types&lt;/h2&gt;
+
+&lt;p&gt;To define a recursive data type $D$:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Define one or more &lt;strong&gt;base&lt;/strong&gt; objects, $d \in D$.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Define one or more &lt;strong&gt;constructor&lt;/strong&gt; cases that specify how to construct a new object $d \in D$ from one or more previoulsy-constructed objects, $d_1, d_2, \ldots \in D$.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;&lt;/div&gt;&lt;/p&gt;
 </description>

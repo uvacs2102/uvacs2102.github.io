@@ -51,7 +51,7 @@
     },
     "datePublished": "2017-11-07",
     "description": "",
-    "wordCount":  223 
+    "wordCount":  265 
   }
 </script>
 
@@ -192,7 +192,7 @@
 
 <h3 id="exam-2">Exam 2</h3>
 
-<p>Exam 2 will be in class on Thursday, 9 Nov. Make sure to go over the notes about the exam posted in <a href="/docs/class20.pdf">Class 20</a>.</p>
+<p>Exam 2 will be in class on Thursday, 9 Nov. See <a href="/docs/class20.pdf">Class 20</a> notes for details on the exam.</p>
 
 <p><div class="notpdf">
    <center>
@@ -241,14 +241,26 @@ $$ \forall q \in S. (P(q) \wedge (q \rightarrow r) \in G) \implies P&reg;$$</p>
 
 <li><p>Show that $M$ eventually terminates.</p></li>
 
-<li><p>Show partial correctness: in all terminating states, the output is correct.</p>
+<li><p>Show partial correctness:</p>
 
 <ul>
 <li>Find a suitable preserved invariant $P$ for $M$.</li>
-<li>Show that $P(q)$ for all terminating states implies the output correctness property.</li>
+<li>Show that $P(q)$ for all final states implies the output correctness property. (Final states are states where the execution terminates.)</li>
 <li>Show $P(q_0)$ &mdash; the perserved invariant holds for the start state.</li>
 </ul></li>
 </ol>
+
+<!--page-->
+
+<h2 id="recursive-data-types">Recursive Data Types</h2>
+
+<p>To define a recursive data type $D$:</p>
+
+<ul>
+<li><p>Define one or more <strong>base</strong> objects, $d \in D$.</p></li>
+
+<li><p>Define one or more <strong>constructor</strong> cases that specify how to construct a new object $d \in D$ from one or more previoulsy-constructed objects, $d_1, d_2, \ldots \in D$.</p></li>
+</ul>
 
 <p></div></p>
 
