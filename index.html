@@ -194,6 +194,24 @@ $$ \forall q \in S. (P(q) \wedge (q \rightarrow r) \in G) \implies P&reg;$$</p>
   $P(q_0)$ is true, then property $P$ is true for all <strong>reachable
   states</strong>.</p>
 
+<h2 id="proving-program-correctness">Proving Program Correctness</h2>
+
+<p>To prove a program $R$ produces the correct output:</p>
+
+<ol>
+<li><p>Model it as a state machine, $M$.</p></li>
+
+<li><p>Show that $M$ eventually terminates.</p></li>
+
+<li><p>Show partial correctness: in all terminating states, the output is correct.</p>
+
+<ul>
+<li>Find a suitable preserved invariant $P$ for $M$.</li>
+<li>Show that $P(q)$ for all terminating states implies the output correctness property.</li>
+<li>Show $P(q_0)$ &mdash; the perserved invariant holds for the start state.</li>
+</ul></li>
+</ol>
+
 <p></div></p>
  
   
