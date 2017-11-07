@@ -51,7 +51,7 @@
     },
     "datePublished": "2017-11-07",
     "description": "",
-    "wordCount":  102 
+    "wordCount":  157 
   }
 </script>
 
@@ -62,7 +62,7 @@
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://uvacs2102.github.io/touch-icon-144-precomposed.png">
 <link href="https://uvacs2102.github.io/favicon.png" rel="icon">
 
-<meta name="generator" content="Hugo 0.16-DEV" />
+<meta name="generator" content="Hugo 0.17" />
 
   <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -118,21 +118,15 @@
 
 <a href="https://uvacs2102.github.io/pledge">Course Pledge</a>
 
-<a href="https://uvacs2102.github.io/ps/ps1">Problem Set 1</a>
-
-<a href="https://uvacs2102.github.io/ps/ps2">Problem Set 2</a>
-
-<a href="https://uvacs2102.github.io/ps/ps3">Problem Set 3</a>
-
-<a href="https://uvacs2102.github.io/ps/ps4">Problem Set 4</a>
-
-<a href="https://uvacs2102.github.io/ps/ps5">Problem Set 5</a>
-
-<a href="https://uvacs2102.github.io/ps/ps6">Problem Set 6</a>
+<a href="https://uvacs2102.github.io/ps/ps8">Problem Set 8</a>
 
 <a href="https://uvacs2102.github.io/ps/ps7">Problem Set 7</a>
 
-<a href="https://uvacs2102.github.io/ps/ps8">Problem Set 8</a>
+<a href="https://uvacs2102.github.io/ps/ps6">Problem Set 6</a>
+
+<a href="https://uvacs2102.github.io/ps/ps5">Problem Set 5</a>
+
+<a href="https://uvacs2102.github.io/ps/">More Problem Sets...</a>
 
 <a href="https://collab.its.virginia.edu/portal/site/9bd99d1c-6f18-4542-a7d1-8ffc4fccbd3d">Collab Site</a>
 
@@ -213,17 +207,30 @@
 
 <p><div class="latex"></p>
 
-<h2 id="the-reviwed-topics">The reviwed topics.</h2>
+<h2 id="main-topics-for-review">Main Topics for Review</h2>
 
-<p>Today we review the topics that we learned after exam 1 with the exaception of number theory. Therefore, it will be the following topics.</p>
+<p>Today we review the topics that we learned after Exam 1 with the
+exception of number theory (which will not be included in Exam
+2).</p>
 
-<p>\begin{itemize}
-\item State Machine and how to argue about correctness of programs.</p>
+<ul>
+<li><p>State Machines and how to argue about correctness of programs.</p></li>
 
-<p>\item Recursive Definitions and how to prove statements about them using structural induction.</p>
+<li><p>Recursive Definitions and how to prove statements about them using structural induction.</p></li>
 
-<p>\item Infinite Sets and Cardinalities, and how to show sets are finite, infinite, countable, or uncountable.
-\end{itemize}</p>
+<li><p>Infinite Sets and Cardinalities, and how to show sets are finite, infinite, countable, or uncountable.</p></li>
+</ul>
+
+<h2 id="state-machines">State Machines</h2>
+
+<p>$M = (S, G \subset S \times S, q_0 \in S)$ defines a state machine.</p>
+
+<p>$P$ is a <em>preserved invariant</em> if:
+$$ \forall q \in S. (P(q) \wedge (q \rightarrow r) \in G) \implies P&reg;$$</p>
+
+<p><strong>Invariant Principle:</strong> If $P$ is a <em>preserved invariant</em> and
+  $P(q_0)$ is true, then property $P$ is true for all <strong>reachable
+  states</strong>.</p>
 
 <p></div></p>
 

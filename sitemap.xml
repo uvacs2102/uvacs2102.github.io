@@ -4,7 +4,6 @@
   <url>
     <loc>https://uvacs2102.github.io/</loc>
     <lastmod>2017-11-07T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -38,6 +37,11 @@
   </url>
   
   <url>
+    <loc>https://uvacs2102.github.io/ps/ps8/</loc>
+    <lastmod>2017-10-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://uvacs2102.github.io/class18/</loc>
     <lastmod>2017-10-26T00:00:00+00:00</lastmod>
   </url>
@@ -54,6 +58,11 @@
   
   <url>
     <loc>https://uvacs2102.github.io/ps7posted/</loc>
+    <lastmod>2017-10-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://uvacs2102.github.io/ps/ps7/</loc>
     <lastmod>2017-10-20T00:00:00+00:00</lastmod>
   </url>
   
@@ -113,6 +122,11 @@
   </url>
   
   <url>
+    <loc>https://uvacs2102.github.io/ps/ps5/</loc>
+    <lastmod>2017-09-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://uvacs2102.github.io/ps5posted/</loc>
     <lastmod>2017-09-23T00:00:00+00:00</lastmod>
   </url>
@@ -148,6 +162,11 @@
   </url>
   
   <url>
+    <loc>https://uvacs2102.github.io/ps/ps4/</loc>
+    <lastmod>2017-09-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://uvacs2102.github.io/ps2comments/</loc>
     <lastmod>2017-09-13T00:00:00+00:00</lastmod>
   </url>
@@ -168,6 +187,11 @@
   </url>
   
   <url>
+    <loc>https://uvacs2102.github.io/ps/ps3/</loc>
+    <lastmod>2017-09-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://uvacs2102.github.io/ps1comments/</loc>
     <lastmod>2017-09-06T00:00:00+00:00</lastmod>
   </url>
@@ -179,6 +203,11 @@
   
   <url>
     <loc>https://uvacs2102.github.io/ps2posted/</loc>
+    <lastmod>2017-09-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://uvacs2102.github.io/ps/ps2/</loc>
     <lastmod>2017-09-01T00:00:00+00:00</lastmod>
   </url>
   
@@ -249,30 +278,6 @@
   
   <url>
     <loc>https://uvacs2102.github.io/officehours/</loc>
-  </url>
-  
-  <url>
-    <loc>https://uvacs2102.github.io/ps/ps2/</loc>
-  </url>
-  
-  <url>
-    <loc>https://uvacs2102.github.io/ps/ps3/</loc>
-  </url>
-  
-  <url>
-    <loc>https://uvacs2102.github.io/ps/ps4/</loc>
-  </url>
-  
-  <url>
-    <loc>https://uvacs2102.github.io/ps/ps5/</loc>
-  </url>
-  
-  <url>
-    <loc>https://uvacs2102.github.io/ps/ps7/</loc>
-  </url>
-  
-  <url>
-    <loc>https://uvacs2102.github.io/ps/ps8/</loc>
   </url>
   
 </urlset>
