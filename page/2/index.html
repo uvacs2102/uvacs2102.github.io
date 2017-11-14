@@ -149,6 +149,97 @@
   </header>
   
   
+  <p class="fronthead"><A href="/class17/">Class 17: Infinite Sets</a> (Tue, 24 Oct 2017)</p>
+    
+
+<h3 id="schedule">Schedule</h3>
+
+<p>Before Thursday, everyone should have finished reading MCS Chapter 8.</p>
+
+<p><a href="/ps/ps7"><strong>Problem Set 7</strong></a> is due <strong>Friday (27 Oct) at 6:29pm</strong>.</p>
+
+<p><div class="notpdf">
+   <center>
+<script async class="speakerdeck-embed" data-id="57544e0622ea4b4cbe07b4e4385eca85" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+   </center></p>
+
+<p><div class="highlightm">
+   <a href="/docs/class17.pdf">See PDF Version for <b>Notes</b></a>.
+   </div></p>
+
+<h2 id="links">Links</h2>
+
+<p><a href="http://www.cs.cornell.edu/courses/cs2800/2017fa/lectures/lec14-cantor.html">Proof of Schr&ouml;der-Bernstein Theorem</a></p>
+
+<p></div><!--endpdf--></p>
+
+<p><div class="latex"></p>
+
+<h1 id="infinite-sets">Infinite Sets</h1>
+
+<p><strong>Finite Cardinality.</strong> The <em>cardinality</em> of the set
+$$
+\mathbb{N}_k = { n | n \in \mathbb{N} \wedge n &lt; k }
+$$
+is $k$.  If there is a <em>bijection</em> between two sets, they have the same
+cardinality.  (Class 9)</p>
+
+<p>Does this definition tell us the cardinality of $\mathbb{N}$?</p>
+
+<p>###</p>
+
+<p><strong>Definition.</strong> A set $S$ is <em>infinite</em> if there is no bijection between
+  $S$ and any set $\mathbb{N}_k$ (as defined above).</p>
+
+<p>Show that $\mathbb{Z}$ is infinite.</p>
+
+<h3 id="cardinality-of-infinite-sets">Cardinality of Infinite Sets</h3>
+
+<p><strong>Equal Carinalities.</strong> We say $|A|\; = |B|$  for arbitrary sets $A,B$ (and say that they have the same cardinality), if there is a bijection between $A$ and $B$.</p>
+
+<p><strong>Comparing Cardinalities.</strong> We say $|B|\; \leq |A|$  for arbitrary sets $A,B$ (and say that $B$&rsquo;s cardinality is less than or equal to the cardinality of $A$), if there is a <em>surjective function</em> from $A$ to $B$.</p>
+
+<p>Show that $|A|\; = |B|$ implies $|B|\; \leq |A|$ and $|A|\; \leq |B|$. Be careful as these sets might not be finite, in which case we cannot simply use natural numbers to denote their cardinalities.</p>
+
+<p>##</p>
+
+<p><strong>Schr\wrap{\&ldquo;{o}}der-Bernstein Theorem:</strong> If $|A|\; \leq |B|$ and $|B|\; \leq |A|$, then there is a bijection between $A$ and $B$, namely $|A|\; = |B|$. (Not proven in cs2102; this is somewhat tricky to prove! For a full proof, see <a href="http://www.cs.cornell.edu/courses/cs2800/2017fa/lectures/lec14-cantor.html">the linked lecture notes</a>.)</p>
+
+<h3 id="other-definitions-for-infinite-sets">Other Definitions for Infinite Sets</h3>
+
+<p><strong>Dedekind-Infinite.</strong> A set $A$ is <em>Dedekind-infinite</em> if and only if there exists a <em>strict subset</em> of $A$ with the same cardinality as $A$.  That is,
+$$\exists B \subset A \ldotp \exists R \ldotp R\ \text{is a bijection between}\ A\ \text{and}\ B.$$</p>
+
+<p>Recall the definition of strict subset:
+$$B \subset A \iff B \subseteq A \wedge \exists x \in A\; .\; x \notin B.$$</p>
+
+<p><strong>Third Definition.</strong> A set $S$ is <em>third-definition infinite</em> if $|S|\; \geq |\mathbb{N}|$ (as defined on the previous page).  Namely, there is a <em>surjective function</em> from $S$ to $\mathbb{N}$.</p>
+
+<p>Are the above three definitions of (standard) <em>infinite</em> and <em>Dedekind-infinite</em> and <em>third-definition infinite</em>
+equivalent definitions?</p>
+
+<p>##</p>
+
+<p><strong>Definition.</strong> A set $S$ is <em>countable</em> if and only if there exists a
+  surjective function from $\mathbb{N}$ to $S$.  (That is, $\le 1$ arrow
+  out from $\mathbb{N}$, $\ge 1$ arrow in to $S$.) Using our notation defined above, this means $|S|\; \leq |\mathbb{N}|$.</p>
+
+<p>Prove that these sets are countable: $\mathbb{Z}$, $\mathbb{N} \times
+\mathbb{N}$, $\mathbb{Q}$ (rationals), $\emptyset$, $\mathbb{N} \cup (\mathbb{N} \times \mathbb{N}) \cup (\mathbb{N} \times \mathbb{N} \times \mathbb{N})$, all finite sequences of elements of $\mathbb{N}$.</p>
+
+<p>#</p>
+
+<p><strong>Definition.</strong> A set $S$ is <em>countably infinite</em> if and only if it is <em>countable</em> and it is <em>infinite</em> (according to standard definition).</p>
+
+<p>Must a <em>countable</em> set that is <em>Dedekind-infinite</em> be <em>countably infinite</em>?</p>
+
+<p>#</p>
+
+<p>Using the definition of countable, and third definition of infinite, show that $S$ is countably infinite if and only if there is a bijection between $S$ and $\mathbb{N}$. (We might as well use this definition in the future.)</p>
+
+<p></div></p>
+ 
+  
   <p class="fronthead"><A href="/ps7posted/">Problem Set 7</a> (Fri, 20 Oct 2017)</p>
     <p><a href="/ps/ps7"><strong>Problem Set 7</strong></a> [<a href="/docs/ps7.pdf">PDF</a>] is now posted and
 is due <strong>Friday, 27 Oct at 6:29:00pm</strong>. Please read the
@@ -761,10 +852,6 @@ in). Adding elements to the domain cannot effect these properties.</p>
 properties <em>might</em> be impacted?</p>
 
 <p></div></p>
- 
-  
-  <p class="fronthead"><A href="/ps4comments/">Problem Set 4 Comments</a> (Wed, 27 Sep 2017)</p>
-    <p>The Problem Set 4 solutions and comments are now posted in collab: <a href="https://collab.its.virginia.edu/access/content/group/9bd99d1c-6f18-4542-a7d1-8ffc4fccbd3d/ps4solutions.pdf">PDF</a></p>
  
   
   
