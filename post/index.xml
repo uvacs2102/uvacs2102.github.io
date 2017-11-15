@@ -41,9 +41,9 @@ number of NAND operations (using gates, not formulas) is here: &lt;a href=&#34;h
 to office hours with any questions you have, especially if you had
 difficulties on any of the exam problems.&lt;/p&gt;
 
-&lt;p&gt;&lt;center&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/center&gt;&lt;/p&gt;
+&lt;p&gt;&lt;center&gt;
+&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;7aeb7c43977640d88007004a0332b314&#34; data-ratio=&#34;1.77777777777778&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
+   &lt;/center&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;highlightm&#34;&gt;
    &lt;a href=&#34;https://uvacs2102.github.io/docs/class22.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes and Questions&lt;/b&gt;&lt;/a&gt;.
@@ -283,14 +283,7 @@ only by itself and 1.&lt;/p&gt;
 
 &lt;!--page--&gt;
 
-&lt;h2 id=&#34;modular-arithmetic&#34;&gt;Modular Arithmetic&lt;/h2&gt;
-
-&lt;p&gt;Definition: A number $a$ is &lt;em&gt;congruent&lt;/em&gt; to $b$ modulo $n$ if and only if $n\, | \, (a - b)$.&lt;br /&gt;
-We can write this as $a \equiv b \;\; (\text{mod}; n)$.&lt;/p&gt;
-
-&lt;p&gt;Prove: $a \equiv b \;\; (\text{mod}\; n)$ iff $\text{rem}(a, n) = \text{rem}(b, n)$.&lt;/p&gt;
-
-&lt;p&gt;#&lt;/p&gt;
+&lt;h2 id=&#34;groups-and-rings&#34;&gt;Groups and Rings&lt;/h2&gt;
 
 &lt;p&gt;$R$ is an Abelian group with respect to binary operation $P$ if it is:&lt;/p&gt;
 
