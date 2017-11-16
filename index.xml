@@ -6,8 +6,69 @@
     <description>Recent content on cs2102: Discrete Math</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 14 Nov 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 16 Nov 2017 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://uvacs2102.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Class 23: Cryptosystems</title>
+      <link>https://uvacs2102.github.io/class23/</link>
+      <pubDate>Thu, 16 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/class23/</guid>
+      <description>
+
+&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
+
+&lt;p&gt;Here&amp;rsquo;s the updated (and final) schedule for the rest of the semester:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Problem Set 9&lt;/strong&gt;: due on Friday, 1 December at 6:29pm. (This will be posted on 19 November.)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/psomega&#34;&gt;Problem Set &amp;omega;&lt;/a&gt;&lt;/strong&gt; (this is optional, and not like the others, hence it uncountable number): due on Monday, 4 December at 11:59pm. See the &lt;a href=&#34;https://uvacs2102.github.io/ps/psomega&#34;&gt;Problem Set &amp;omega;&lt;/a&gt; description for examples from previous students.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Final Exam&lt;/strong&gt;: Thursday, 7 December, 9am-noon (in the normal lecture room)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;galois&#34;&gt;Galois&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://plus.maths.org/content/genius-stupidity-and-genius-again&#34;&gt;&lt;em&gt;Genius, stupidity and genius again&lt;/em&gt;&lt;/a&gt; (the short life of Evariste Galois), by Tope Omitola.&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;
+&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;fd58537c3f514ae193402ee5f4ce9dc4&#34; data-ratio=&#34;1.77777777777778&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
+   &lt;/center&gt;&lt;/p&gt;
+
+&lt;!--   &lt;div class=&#34;highlightm&#34;&gt;
+   &lt;a href=&#34;https://uvacs2102.github.io/docs/class23.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes and Questions&lt;/b&gt;&lt;/a&gt;.
+   &lt;/div&gt;
+--&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;!--endpdf--&gt;
+   &lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;modular-arithmetic&#34;&gt;Modular Arithmetic&lt;/h2&gt;
+
+&lt;p&gt;Definition: A number $a$ is &lt;em&gt;congruent&lt;/em&gt; to $b$ modulo $n$ if and only
+if $n\, | \, (a - b)$.  We can write this as $a \equiv b \;\;
+(\text{mod}; n)$.&lt;/p&gt;
+
+&lt;p&gt;Prove: $a \equiv b \;\; (\text{mod}\; n)$ iff $\text{rem}(a, n) =
+\text{rem}(b, n)$.&lt;/p&gt;
+
+&lt;p&gt;#&lt;/p&gt;
+
+&lt;h2 id=&#34;groups-rings-and-fields&#34;&gt;Groups, Rings, and Fields&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Abelian group:&lt;/strong&gt; set $R$, with a binary operation $+$:&lt;br /&gt;
+   associative, commutative, additive identity (&lt;strong&gt;0&lt;/strong&gt;), additive inverse ($−a$)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Ring:&lt;/strong&gt; set $R$, with two binary operations $+$, $\times$:
+   Abelian group under $+$&lt;br /&gt;
+   associative, multiplicative identity (&lt;strong&gt;1&lt;/strong&gt;) under $\times$&lt;/p&gt;
+
+&lt;p&gt;TODO: finish
+&lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Class 22: Prime Detectives</title>
@@ -1209,115 +1270,6 @@ should return the length of the list.&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;Define &lt;code&gt;list_map&lt;/code&gt; (as in problem 10) using &lt;code&gt;list_accumulate&lt;/code&gt;.&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Class 16: Structural Induction</title>
-      <link>https://uvacs2102.github.io/class16/</link>
-      <pubDate>Thu, 19 Oct 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://uvacs2102.github.io/class16/</guid>
-      <description>
-
-&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps7&#34;&gt;&lt;strong&gt;Problem Set 6&lt;/strong&gt;&lt;/a&gt; is due &lt;strong&gt;tomorrow at 6:29pm&lt;/strong&gt;. Make sure to read the corrected version of Problem 7.&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;
-   &lt;center&gt;
-&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;df7755f817fe4902abc3b73573f79752&#34; data-ratio=&#34;1.77777777777778&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
-   &lt;/center&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;highlightm&#34;&gt;
-   &lt;a href=&#34;https://uvacs2102.github.io/docs/class16.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes&lt;/b&gt;&lt;/a&gt;.
-   &lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;lists&#34;&gt;Lists&lt;/h1&gt;
-
-&lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; A &lt;em&gt;list&lt;/em&gt; is an ordered sequence of objects.  A list is
-  either the empty list ($\lambda$), or the result of $\text{prepend}(e,
-  l)$ for some object $e$ and list $l$.&lt;/p&gt;
-
-&lt;p&gt;\begin{equation&lt;em&gt;}
-\begin{split}
-\text{\em first}(\text{prepend}(e, l)) &amp;amp;= e &lt;br /&gt;
-\text{\em rest}(\text{prepend}(e, l)) &amp;amp;= l &lt;br /&gt;
-\text{\em empty}(\text{prepend}(e, l)) &amp;amp;= \text{\bf False} &lt;br /&gt;
-\text{\em empty}(\text{\bf null}) &amp;amp;= \text{\bf True} &lt;br /&gt;
-\end{split}
-\end{equation&lt;/em&gt;}&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; The &lt;em&gt;length&lt;/em&gt; of a list, $p$, is:
-\begin{equation&lt;em&gt;}
-\begin{split}
-\begin{cases}
-0 &amp;amp; \text{if}\ p\ \text{is \bf null} &lt;br /&gt;
-\text{\em length}(q) + 1 &amp;amp; \text{otherwise}\ p = \text{\em prepend}(e, q)\ \text{for some object}\ e\ \text{and some list}\ q &lt;br /&gt;
-\end{cases}
-\end{split}
-\end{equation&lt;/em&gt;}&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-Python&#34;&gt;def list_length(l):
-    if list_empty(l):
-        return 0
-    else:
-        return 1 + list_length(list_rest(l))
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Prove: for all lists, $p$, &lt;code&gt;list_length(p)&lt;/code&gt; returns the length of the list $p$.&lt;/p&gt;
-
-&lt;!--page--&gt;
-
-&lt;h2 id=&#34;concatenation&#34;&gt;Concatenation&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; The &lt;em&gt;concatenation&lt;/em&gt; of two lists, $p = (p_1, p_2, \cdots, p_n)$ and $q = (q_1, q_2, \cdots, q_m)$ is
-$$(p_1, p_2, \cdots, p_n, q_1, q_2, \cdots, q_m).$$&lt;/p&gt;
-
-&lt;p&gt;Provide a &lt;em&gt;constructuve&lt;/em&gt; definition of &lt;em&gt;concatenation&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;Note that $\text{prepend}(p,q)$ is not a good idea for two reasons. If we use this definition, then the first element of the constructed list will be the object (list) $p$ (as a whole) rather than the first element $p_1$ of the list $p$. Also, if we want to &lt;em&gt;only&lt;/em&gt; define lists of &lt;em&gt;specific&lt;/em&gt; objects, for example integers, we can still use the same recursive/constructive definition of lists by substituting &amp;ldquo;object&amp;rdquo; with &amp;ldquo;integer&amp;rdquo;, but in that case $\text{prepend}(p,q)$ will not even well defined, as it can only accept integers as first input.&lt;/p&gt;
-
-&lt;p&gt;#&lt;/p&gt;
-
-&lt;h2 id=&#34;structural-induction&#34;&gt;Structural Induction&lt;/h2&gt;
-
-&lt;p&gt;To prove proposition $P(x)$ for element $x \in D$ where $D$ is a
-recursively-constructed data type, we do two things:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Show $P(x)$ is true for all $x \in D$ that are defined using base cases.&lt;/li&gt;
-&lt;li&gt;Show that if $P(y)$ is true for element $y$ and $x$ is constructed from $y$
-using any &amp;ldquo;construct case&amp;rdquo; rules, then $P(x)$ is true as well.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&#34;comparing-various-forms-of-induction&#34;&gt;Comparing Various forms of Induction&lt;/h2&gt;
-
-&lt;p&gt;\begin{center}
-\begin{tabular}{lccc}
-&amp;amp; {\bf Regular Induction} &amp;amp; {\bf Invariant Principle} &amp;amp; {\bf Structural Induction} \ \hline
-Works on: &amp;amp; natural numbers &amp;amp; state machines &amp;amp; data types &lt;br /&gt;
-To prove $P(\cdot)$ &amp;amp; {\em for all natural numbers} &amp;amp; {\em for all reachable states} &amp;amp; {\em for all data type objects} &lt;br /&gt;
-Prove {\bf base case(s)} &amp;amp; $P(0)$ &amp;amp; $P(q_0)$ &amp;amp; $P(\text{base object(s)})$ &lt;br /&gt;
-and {\bf inductive step} &amp;amp; $\forall m \in \mathbb{N} \ldotp$ &amp;amp; $\forall (q, r) \in G \ldotp $ &amp;amp; $\forall s \in \text{\em Type} \ldotp$ &lt;br /&gt;
-  &amp;amp; $P(m) \implies P(m+1)$ &amp;amp; $P(q) \implies P&amp;reg;$ &amp;amp; $P(s) \implies P(t)$ &lt;br /&gt;
- &amp;amp; &amp;amp; &amp;amp; $\quad \forall t\ \text{constructable from}\ s$ \
-\end{tabular}
-\end{center}&lt;/p&gt;
-
-&lt;p&gt;#
-##&lt;/p&gt;
-
-&lt;p&gt;Prove. For any two lists, $p$ and $q$, $\text{length}(p + q) = \text{length}(p) + \text{length}(q)$.&lt;/p&gt;
-
-&lt;p&gt;#&lt;/p&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
 </description>
     </item>
     

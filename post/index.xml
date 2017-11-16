@@ -6,8 +6,69 @@
     <description>Recent content in Post-rsses on cs2102: Discrete Math</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 14 Nov 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 16 Nov 2017 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://uvacs2102.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Class 23: Cryptosystems</title>
+      <link>https://uvacs2102.github.io/class23/</link>
+      <pubDate>Thu, 16 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/class23/</guid>
+      <description>
+
+&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
+
+&lt;p&gt;Here&amp;rsquo;s the updated (and final) schedule for the rest of the semester:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Problem Set 9&lt;/strong&gt;: due on Friday, 1 December at 6:29pm. (This will be posted on 19 November.)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/psomega&#34;&gt;Problem Set &amp;omega;&lt;/a&gt;&lt;/strong&gt; (this is optional, and not like the others, hence it uncountable number): due on Monday, 4 December at 11:59pm. See the &lt;a href=&#34;https://uvacs2102.github.io/ps/psomega&#34;&gt;Problem Set &amp;omega;&lt;/a&gt; description for examples from previous students.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Final Exam&lt;/strong&gt;: Thursday, 7 December, 9am-noon (in the normal lecture room)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;galois&#34;&gt;Galois&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://plus.maths.org/content/genius-stupidity-and-genius-again&#34;&gt;&lt;em&gt;Genius, stupidity and genius again&lt;/em&gt;&lt;/a&gt; (the short life of Evariste Galois), by Tope Omitola.&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;
+&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;fd58537c3f514ae193402ee5f4ce9dc4&#34; data-ratio=&#34;1.77777777777778&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
+   &lt;/center&gt;&lt;/p&gt;
+
+&lt;!--   &lt;div class=&#34;highlightm&#34;&gt;
+   &lt;a href=&#34;https://uvacs2102.github.io/docs/class23.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes and Questions&lt;/b&gt;&lt;/a&gt;.
+   &lt;/div&gt;
+--&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;!--endpdf--&gt;
+   &lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;modular-arithmetic&#34;&gt;Modular Arithmetic&lt;/h2&gt;
+
+&lt;p&gt;Definition: A number $a$ is &lt;em&gt;congruent&lt;/em&gt; to $b$ modulo $n$ if and only
+if $n\, | \, (a - b)$.  We can write this as $a \equiv b \;\;
+(\text{mod}; n)$.&lt;/p&gt;
+
+&lt;p&gt;Prove: $a \equiv b \;\; (\text{mod}\; n)$ iff $\text{rem}(a, n) =
+\text{rem}(b, n)$.&lt;/p&gt;
+
+&lt;p&gt;#&lt;/p&gt;
+
+&lt;h2 id=&#34;groups-rings-and-fields&#34;&gt;Groups, Rings, and Fields&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Abelian group:&lt;/strong&gt; set $R$, with a binary operation $+$:&lt;br /&gt;
+   associative, commutative, additive identity (&lt;strong&gt;0&lt;/strong&gt;), additive inverse ($−a$)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Ring:&lt;/strong&gt; set $R$, with two binary operations $+$, $\times$:
+   Abelian group under $+$&lt;br /&gt;
+   associative, multiplicative identity (&lt;strong&gt;1&lt;/strong&gt;) under $\times$&lt;/p&gt;
+
+&lt;p&gt;TODO: finish
+&lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Class 22: Prime Detectives</title>
@@ -1107,141 +1168,6 @@ def pair_last(p):
   the pair is a &lt;em&gt;List&lt;/em&gt;, or (2) the empty list.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Definition (2).&lt;/strong&gt; A &lt;em&gt;List&lt;/em&gt; is a ordered sequence of objects.&lt;/p&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Class 14: Invariant Principle</title>
-      <link>https://uvacs2102.github.io/class14/</link>
-      <pubDate>Thu, 12 Oct 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://uvacs2102.github.io/class14/</guid>
-      <description>
-
-&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps6&#34;&gt;&lt;strong&gt;Problem Set 6&lt;/strong&gt;&lt;/a&gt; is due &lt;strong&gt;20 October (Friday) at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;Exam 1 was returned Tuesday.  If you did not pick yours up yet, you
-can get it after class today.  We will start charging
-exponentially-increasing storage fees for inexcusably unclaimed exams
-starting after Prof. Mahmoody&amp;rsquo;s office hours Monday.&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;
-   &lt;center&gt;
-&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;02ef275aa1474918a22516979d995c6d&#34; data-ratio=&#34;1.77777777777778&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
-   &lt;/center&gt;
-   &lt;div class=&#34;highlightm&#34;&gt;
-   &lt;a href=&#34;https://uvacs2102.github.io/docs/class14.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes&lt;/b&gt;&lt;/a&gt;.
-   &lt;/div&gt;
-   &lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;state-machines-review-from-class-13&#34;&gt;State Machines (review from Class 13)&lt;/h2&gt;
-
-&lt;p&gt;A &lt;em&gt;state machine&lt;/em&gt;, $M = (S, G: S \times S, q_0 \in S)$, is a binary
-relation (called a &lt;em&gt;transition relation&lt;/em&gt;) on a set (both the domain and
-codomain are the same set).  One state, denoted $q_0$, is designated as
-the &lt;em&gt;start state&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;An &lt;em&gt;execution&lt;/em&gt; of a state machine $M = (S, G \subseteq S \times S, q_0
-\in S)$ is a (possibly infinite) sequence of states, $(x_0, x_1, \cdots,
-x_n)$ where (1) $x_0 = q_0$ (it begins with the start state), and (2)
-$\forall i \in {0, 1, \ldots, n - 1} \ldotp (x&lt;em&gt;i, x&lt;/em&gt;{i + 1}) \in G$
-(if $q$ and $r$ are consecutive states in the sequence, then there is an
-edge $q \rightarrow r$ in $G$).&lt;/p&gt;
-
-&lt;p&gt;A state $q$ is &lt;em&gt;reachable&lt;/em&gt; if it appears in some execution.&lt;/p&gt;
-
-&lt;p&gt;A &lt;em&gt;preserved invariant&lt;/em&gt; of a state machine $M = (S, G \subseteq S \times
-S, q_0 \in S)$ is a predicate, $P$, on states, such that whenever $P(q)$
-is true of a state $q$, and $q \rightarrow r \in G$, then $P&amp;reg;$ is
-true.&lt;/p&gt;
-
-&lt;h3 id=&#34;bishop-state-machine&#34;&gt;Bishop State Machine&lt;/h3&gt;
-
-&lt;p&gt;$S = { (\fillin ) \, | \, r, c \in \mathbb{N} }$
-$G = { (r, c) \rightarrow (r&amp;rsquo;, c&amp;rsquo;) \, | \, r, c \in \mathbb{N} \wedge (\exists d \in \mathbb{N}^{+} \textrm{ such that } r&amp;rsquo; = r \fillin d \wedge r&amp;rsquo; \ge 0 \wedge c&amp;rsquo; = c \fillin d \wedge c&amp;rsquo; \ge 0 }$
-$q_0 = (0, 2)$&lt;/p&gt;
-
-&lt;p&gt;What states are &lt;em&gt;reachable&lt;/em&gt;?&lt;/p&gt;
-
-&lt;p&gt;#&lt;/p&gt;
-
-&lt;h3 id=&#34;progress-machine&#34;&gt;``Progress&amp;rdquo; Machine&lt;/h3&gt;
-
-&lt;p&gt;$S = { (x, d) \, | \, x \in \mathbb{Z}, d \in { \mathrm{\bf F}, \mathrm{\bf B}} }$
-$G = { (x, \mathrm{\bf F}) \rightarrow (x + 1, \mathrm{\bf B}) \, | \, x \in \mathbb{Z} } \cup
-     { (x, \mathrm{\bf B}) \rightarrow (x - 2, \mathrm{\bf F}) \, | \, x \in \mathbb{Z} }$
-$q_0 = (0, \mathrm{\bf F})$&lt;/p&gt;
-
-&lt;p&gt;Which states are &lt;em&gt;reachable&lt;/em&gt;?&lt;/p&gt;
-
-&lt;!--page--&gt;
-
-&lt;h2 id=&#34;preserved-invariants&#34;&gt;Preserved Invariants&lt;/h2&gt;
-
-&lt;p&gt;A predicate $P(q)$ is a &lt;em&gt;preserved invariant&lt;/em&gt; of machine $M = (S, G \subseteq S \times S, q_0 \in
-  S)$ if:
-$$
-\forall q \in S \ldotp (P(q) \wedge (q \rightarrow r) \in G) \implies P&amp;reg;
-$$&lt;/p&gt;
-
-&lt;p&gt;What are some &lt;em&gt;preserved invariants&lt;/em&gt; for the (original) Bishop State Machine?&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Invariant Principle.&lt;/strong&gt; If a &lt;em&gt;preserved invariant&lt;/em&gt; of a state machine
-  is true for the start state, it is true for all reachable states.&lt;/p&gt;
-
-&lt;p&gt;To show $P(q)$ for machine $M = (S, G \subseteq S \times S, q_0 \in
-  S)$ all $q \in S$, show:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Base case: $P(\fillin)$&lt;/li&gt;
-&lt;li&gt;$\forall s \in S \ldotp \fillin \implies \fillin$&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Prove that the original Bishop State Machine never reaches a square where $r + c$ is odd.&lt;/p&gt;
-
-&lt;!--page--&gt;
-
-&lt;h1 id=&#34;slow-exponentiation&#34;&gt;Slow Exponentiation&lt;/h1&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def slow_power(a, b):
-   y = 1
-   z = b
-   while z &amp;gt; 0:
-      y = y * a
-      z = z - 1
-   return y
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;$S ::= \mathbb{N} \times \mathbb{N}$
-$G ::= { (y, z) \rightarrow (y \cdot a, z - 1) \, | \, \forall y, z \in \mathbb{N}^{+}}$
-$q_0 ::= (1, b)$&lt;/p&gt;
-
-&lt;p&gt;Prove &lt;code&gt;slow_power(a, b)&lt;/code&gt; = $a^b$.&lt;/p&gt;
-
-&lt;p&gt;#&lt;/p&gt;
-
-&lt;h1 id=&#34;fast-exponentiation&#34;&gt;Fast Exponentiation&lt;/h1&gt;
-
-&lt;p&gt;This is the algorithm from Section 6.3.1 written as Python code:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def power(a, b):
-   x = a
-   y = 1
-   z = b
-   while z &amp;gt; 0:
-      r = z % 2 # remainder of z / 2
-      z = z // 2 # quotient of z / 2
-      if r == 1:
-         y = x * y
-      x = x * x
-   return y
-&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;&lt;/div&gt;&lt;/p&gt;
 </description>

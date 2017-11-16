@@ -90,6 +90,8 @@
 
 <a href="https://uvacs2102.github.io/pledge">Course Pledge</a>
 
+<a href="https://uvacs2102.github.io/ps/psomega">Problem Set Omega</a>
+
 <a href="https://uvacs2102.github.io/ps/ps8">Problem Set 8</a>
 
 <a href="https://uvacs2102.github.io/ps/ps7">Problem Set 7</a>
@@ -148,6 +150,139 @@
 
   </header>
   
+  
+  <p class="fronthead"><A href="/class12/">Class 12: Review</a> (Thu, 28 Sep 2017)</p>
+    
+
+<h3 id="schedule">Schedule</h3>
+
+<p><a href="/ps/ps5"><strong>Problem Set 5</strong></a> is due <strong>Friday at 6:29pm</strong>.</p>
+
+<p>See <a href="/class11">Class 11 Notes</a> for information and preparation advice for Exam 1, which will be in class next Thursday, 5 October.</p>
+
+<p><div class="notpdf">
+   <center>
+<script async class="speakerdeck-embed" data-id="f6aa2e5580f940d984c6508ff6f26d46" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+   </center></p>
+
+<p><div class="highlightm">
+   <a href="/docs/class12.pdf">See PDF Version for <b>Notes and Questions</b></a>.
+   </div></p>
+
+<p></div><!--endpdf--></p>
+
+<p><div class="latex"></p>
+
+<h2 id="strong-induction-principle">Strong Induction Principle</h2>
+
+<p>Let $P$ be a predicated on $\mathbb{N}$.  If</p>
+
+<ul>
+<li>$P(0)$ is true, and</li>
+<li>$(\forall m \in \mathbb{N}, m \le n . P(n)) \implies P(n + 1)$ for all $n \in \mathbb{N}$,</li>
+</ul>
+
+<p>then</p>
+
+<ul>
+<li>$P(m)$ is true for all $m \in \mathbb{N}$.</li>
+</ul>
+
+<p>As an inference rule:</p>
+
+<p>$$
+\infer{\forall m \in \mathbb{N} . P(m)}{P(0), \forall n \in \mathbb{N} . (P(0) \vee P(1) \wedge \cdots \wedge P(n)) \implies P(n + 1)}
+$$</p>
+
+<p>With arbitrary basis, $b \in \mathbb{N}$:</p>
+
+<p>$$
+\infer{\forall m \in { b, b+1, b+2, \ldots } . P(m)}{P(b), \forall n \in \mathbb{N} . (P(b) \vee P(b + 1) \wedge \cdots \wedge P(n)) \implies P(n + 1)}
+$$</p>
+
+<p>Show that <em>strong</em> induction is not actually stronger than regular induction. (Hint: if the predicate for strong induction is $P(m)$, explain how to construct a predicate, $P&rsquo;(m)$, that works with regular induction.)</p>
+
+<p>##</p>
+
+<h3 id="example-strong-induction-proof">Example Strong Induction Proof</h3>
+
+<p><strong>Theorem:</strong> Every number, $n \in \mathbb{N}, n \geq 4$ can be written as $\alpha \cdot 2 + \beta \cdot 5$ where $\alpha, \beta \in \mathbb{N}$.</p>
+
+<p>Proof by Strong Induction:</p>
+
+<ol>
+<li><p>First we need to define the predicate: $$P(n) := \exists \alpha, \beta \in \mathbb{N} . n = \alpha \cdot 2 + \beta \cdot 5$$.</p></li>
+
+<li><p>Basis: we are proving for all $n &gt; 3$:</p>
+
+<p>$P(4)$: $\alpha = 2, \beta = 0$ gives $4 = 2 \cdot 2 + 0 \cdot 5$.
+$P(5)$: $\alpha = 0, \beta = 1$ gives $5 = 0 \cdot 2 + 1 \cdot 5$.</p></li>
+
+<li><p>Induction step: $\forall n \in {6, \ldots }$</p>
+
+<p>By strong induction, assume $P(m)$ is true for all $m \in { 4, 5, 6,
+\ldots, m}$.</p>
+
+<p>Show $P(m + 1)$: Since $P(m - 1)$ is true (by the \emph{strong} induction
+hypothesis), we know $\exists \alpha, \beta \in \mathbb{N} . m - 1 =
+\alpha \cdot 2 + \beta \cdot 5$. We can show $P(m + 1)$ since
+$m + 1 = (\alpha + 1) \cdot 2 + \beta \cdot 5$.</p></li>
+</ol>
+
+<h2 id="proof-by-contra-positive-review">Proof by Contra-Positive (Review)</h2>
+
+<p>Recall: $P \implies Q$ is equivalent to $\neg Q \implies \neg P$. (If
+you are shaky on this, prove it to yourself using a truth table.)</p>
+
+<p>Typical use: where the negation of the proposition is easier to reason
+about than the original proposition (e.g., irrational is a complex
+property to describe, but rational (NOT irrational) is a simple one. So to prove that ``If $r$ is irrational then $\sqrt{r}$ is also irrational&rdquo; we can prove the contrapositive which is &ldquo;if $\sqrt{r}$&rdquo; is rational, then $r$ is also rational$ which is quite straightforward.</p>
+
+<h2 id="proof-by-contradiction-review">Proof by Contradiction (Review)</h2>
+
+<p>To prove $P$, show $\neg P \implies False$.</p>
+
+<p>Example: Proving the $\mathbb{Z}$ is not well ordered.</p>
+
+<p>Goal: proving the proposition $G$ saying ``$\mathbb{Z}$ has no minimum&rdquo;.</p>
+
+<ol>
+<li><p>To prove by contradiction, assume $\neg G$ (that is, $\mathbb{Z}$ does have a minimum).</p></li>
+
+<li><p>Then, $\exists m \in \mathbb{Z}$ that is the minimum of $\mathbb{Z}$.</p></li>
+
+<li><p>But, this leads to a contradiction: $m - 1 \in \mathbb{Z}$ and $m - 1 &lt; m$. So, even though the number $m$ was said to be the minimum of $\mathbb{Z}$, it is in fact not the minimum.</p></li>
+
+<li><p>Thus, we have a contradiction, so something must be wrong. All our logical inferences after step 1 are correct, so the assumption we made in step 1 must be invalid. If $\neg G$ is invalid, $G$ must be true.</p></li>
+</ol>
+
+<p>Typical use: when the statment we want to prove has universal quantifier. for example, $\forall x \in \mathbb{Z}. P(x)$. Note that the statment that $\mathbb{Z}$ has \emph{no} minimum, when written formally, uses a universal quantifier (make sure to double check it). Then, instead of arguing that for all $x \in A$, $P(x)$ holds, we assume (for sake of contradiction) that there exists one $x$ for which $\neg(P(x))$ (note that this is indeed the negated statement) from which  we get a contradiction.</p>
+
+<h1 id="binary-relation-properties">Binary Relation Properties</h1>
+
+<p>When we draw the graph of binary relations, the Domain (<code>input&quot; set) has outgoing edges. Codomain (</code>output&rdquo; set) has
+incoming edges. So when we use the compact notation referring to different properties of binary relations, keep in mind that the words ``in-out&rdquo; refer to the edge (not the input/output sets).  The properties about outgoing edges are <em>function</em>
+($\le 1 out$) and <em>total</em> ($\ge 1$ out). Adding elements to the
+codomain cannot effect these properties.  The properties about
+incoming edges are <em>surjection</em> ($\ge 1$ in) and <em>injection</em> ($\le 1$
+in). Adding elements to the domain cannot effect these properties.</p>
+
+<p>When we say the any relation with property $X$ (e.g., $\ge 1$ out) about the relations \emph{must} also have propety $Y$. It means that property $X$ implies $Y$ logically (about relations). In case the answer is &ldquo;no&rdquo; (i.e. that property $X$ does not imply $Y$) all we have to find is one relation $R$ that satisfies property $X$ but not property $Y$. If the answer is `yes&rsquo; we need to show that for all $R$, if property $X$ holds, so does $Y$. So doing so might need more work.</p>
+
+<p>If an edge is added to the graph of a relation, which properties
+<em>might</em> be impacted?</p>
+
+<p>If an edge is removed to the graph of a relation, which properties
+<em>might</em> be impacted?</p>
+
+<p>If an element is removed from the domain of a relation, which properties
+<em>might</em> be impacted?</p>
+
+<p>If an element is removed from the codomain of a relation, which
+properties <em>might</em> be impacted?</p>
+
+<p></div></p>
+ 
   
   <p class="fronthead"><A href="/ps4comments/">Problem Set 4 Comments</a> (Wed, 27 Sep 2017)</p>
     <p>The Problem Set 4 solutions and comments are now posted in collab: <a href="https://collab.its.virginia.edu/access/content/group/9bd99d1c-6f18-4542-a7d1-8ffc4fccbd3d/ps4solutions.pdf">PDF</a></p>
@@ -647,10 +782,6 @@ set, called a <em>codomain</em>.</p>
 <p>$$ f(x) ::= \sqrt{x}  \qquad \qquad \qquad f(S) ::= \textrm{minimum}_{&lt;}(S) $$</p>
 
 <p></div></p>
- 
-  
-  <p class="fronthead"><A href="/ps2comments/">Problem Set 2 Comments</a> (Wed, 13 Sep 2017)</p>
-    <p>The Problem Set 2 solutions and comments are now posted in collab: <a href="https://collab.its.virginia.edu/access/content/group/9bd99d1c-6f18-4542-a7d1-8ffc4fccbd3d/ps2solutions.pdf">PDF</a></p>
  
   
   
