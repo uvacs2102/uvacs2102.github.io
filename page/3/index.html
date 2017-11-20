@@ -90,21 +90,17 @@
 
 <a href="https://uvacs2102.github.io/pledge">Course Pledge</a>
 
-<a href="https://uvacs2102.github.io/ps/ps1">Problem Set 1</a>
+<a href="https://uvacs2102.github.io/ps/psomega">Problem Set Omega</a>
 
-<a href="https://uvacs2102.github.io/ps/ps2">Problem Set 2</a>
-
-<a href="https://uvacs2102.github.io/ps/ps3">Problem Set 3</a>
-
-<a href="https://uvacs2102.github.io/ps/ps4">Problem Set 4</a>
-
-<a href="https://uvacs2102.github.io/ps/ps5">Problem Set 5</a>
-
-<a href="https://uvacs2102.github.io/ps/ps6">Problem Set 6</a>
+<a href="https://uvacs2102.github.io/ps/ps8">Problem Set 8</a>
 
 <a href="https://uvacs2102.github.io/ps/ps7">Problem Set 7</a>
 
-<a href="https://uvacs2102.github.io/ps/ps8">Problem Set 8</a>
+<a href="https://uvacs2102.github.io/ps/ps6">Problem Set 6</a>
+
+<a href="https://uvacs2102.github.io/ps/ps5">Problem Set 5</a>
+
+<a href="https://uvacs2102.github.io/ps/">More Problem Sets...</a>
 
 <a href="https://collab.its.virginia.edu/portal/site/9bd99d1c-6f18-4542-a7d1-8ffc4fccbd3d">Collab Site</a>
 
@@ -155,6 +151,415 @@
   </header>
   
   
+  <p class="fronthead"><A href="">Problem Set 5 Comments</a> (Sun, 1 Oct 2017)</p>
+    <p>The Problem Set 5 solutions and comments are now posted in collab: <a href="https://collab.its.virginia.edu/access/content/group/9bd99d1c-6f18-4542-a7d1-8ffc4fccbd3d/ps5solutions.pdf">PDF</a></p>
+ 
+  
+  <p class="fronthead"><A href="">Class 12: Review</a> (Thu, 28 Sep 2017)</p>
+    
+
+<h3 id="schedule:bc216d98f3ca2300699af2d41b8a2a45">Schedule</h3>
+
+<p><a href="/ps/ps5"><strong>Problem Set 5</strong></a> is due <strong>Friday at 6:29pm</strong>.</p>
+
+<p>See <a href="/class11">Class 11 Notes</a> for information and preparation advice for Exam 1, which will be in class next Thursday, 5 October.</p>
+
+<p><div class="notpdf">
+   <center>
+<script async class="speakerdeck-embed" data-id="f6aa2e5580f940d984c6508ff6f26d46" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+   </center></p>
+
+<p><div class="highlightm">
+   <a href="/docs/class12.pdf">See PDF Version for <b>Notes and Questions</b></a>.
+   </div></p>
+
+<p></div><!--endpdf--></p>
+
+<p><div class="latex"></p>
+
+<h2 id="strong-induction-principle:bc216d98f3ca2300699af2d41b8a2a45">Strong Induction Principle</h2>
+
+<p>Let $P$ be a predicated on $\mathbb{N}$.  If</p>
+
+<ul>
+<li>$P(0)$ is true, and</li>
+<li>$(\forall m \in \mathbb{N}, m \le n . P(n)) \implies P(n + 1)$ for all $n \in \mathbb{N}$,</li>
+</ul>
+
+<p>then</p>
+
+<ul>
+<li>$P(m)$ is true for all $m \in \mathbb{N}$.</li>
+</ul>
+
+<p>As an inference rule:</p>
+
+<p>$$
+\infer{\forall m \in \mathbb{N} . P(m)}{P(0), \forall n \in \mathbb{N} . (P(0) \vee P(1) \wedge \cdots \wedge P(n)) \implies P(n + 1)}
+$$</p>
+
+<p>With arbitrary basis, $b \in \mathbb{N}$:</p>
+
+<p>$$
+\infer{\forall m \in { b, b+1, b+2, \ldots } . P(m)}{P(b), \forall n \in \mathbb{N} . (P(b) \vee P(b + 1) \wedge \cdots \wedge P(n)) \implies P(n + 1)}
+$$</p>
+
+<p>Show that <em>strong</em> induction is not actually stronger than regular induction. (Hint: if the predicate for strong induction is $P(m)$, explain how to construct a predicate, $P&rsquo;(m)$, that works with regular induction.)</p>
+
+<p>##</p>
+
+<h3 id="example-strong-induction-proof:bc216d98f3ca2300699af2d41b8a2a45">Example Strong Induction Proof</h3>
+
+<p><strong>Theorem:</strong> Every number, $n \in \mathbb{N}, n \geq 4$ can be written as $\alpha \cdot 2 + \beta \cdot 5$ where $\alpha, \beta \in \mathbb{N}$.</p>
+
+<p>Proof by Strong Induction:</p>
+
+<ol>
+<li><p>First we need to define the predicate: $$P(n) := \exists \alpha, \beta \in \mathbb{N} . n = \alpha \cdot 2 + \beta \cdot 5$$.</p></li>
+
+<li><p>Basis: we are proving for all $n &gt; 3$:</p>
+
+<p>$P(4)$: $\alpha = 2, \beta = 0$ gives $4 = 2 \cdot 2 + 0 \cdot 5$.
+$P(5)$: $\alpha = 0, \beta = 1$ gives $5 = 0 \cdot 2 + 1 \cdot 5$.</p></li>
+
+<li><p>Induction step: $\forall n \in {6, \ldots }$</p>
+
+<p>By strong induction, assume $P(m)$ is true for all $m \in { 4, 5, 6,
+\ldots, m}$.</p>
+
+<p>Show $P(m + 1)$: Since $P(m - 1)$ is true (by the \emph{strong} induction
+hypothesis), we know $\exists \alpha, \beta \in \mathbb{N} . m - 1 =
+\alpha \cdot 2 + \beta \cdot 5$. We can show $P(m + 1)$ since
+$m + 1 = (\alpha + 1) \cdot 2 + \beta \cdot 5$.</p></li>
+</ol>
+
+<h2 id="proof-by-contra-positive-review:bc216d98f3ca2300699af2d41b8a2a45">Proof by Contra-Positive (Review)</h2>
+
+<p>Recall: $P \implies Q$ is equivalent to $\neg Q \implies \neg P$. (If
+you are shaky on this, prove it to yourself using a truth table.)</p>
+
+<p>Typical use: where the negation of the proposition is easier to reason
+about than the original proposition (e.g., irrational is a complex
+property to describe, but rational (NOT irrational) is a simple one. So to prove that ``If $r$ is irrational then $\sqrt{r}$ is also irrational&rdquo; we can prove the contrapositive which is &ldquo;if $\sqrt{r}$&rdquo; is rational, then $r$ is also rational$ which is quite straightforward.</p>
+
+<h2 id="proof-by-contradiction-review:bc216d98f3ca2300699af2d41b8a2a45">Proof by Contradiction (Review)</h2>
+
+<p>To prove $P$, show $\neg P \implies False$.</p>
+
+<p>Example: Proving the $\mathbb{Z}$ is not well ordered.</p>
+
+<p>Goal: proving the proposition $G$ saying ``$\mathbb{Z}$ has no minimum&rdquo;.</p>
+
+<ol>
+<li><p>To prove by contradiction, assume $\neg G$ (that is, $\mathbb{Z}$ does have a minimum).</p></li>
+
+<li><p>Then, $\exists m \in \mathbb{Z}$ that is the minimum of $\mathbb{Z}$.</p></li>
+
+<li><p>But, this leads to a contradiction: $m - 1 \in \mathbb{Z}$ and $m - 1 &lt; m$. So, even though the number $m$ was said to be the minimum of $\mathbb{Z}$, it is in fact not the minimum.</p></li>
+
+<li><p>Thus, we have a contradiction, so something must be wrong. All our logical inferences after step 1 are correct, so the assumption we made in step 1 must be invalid. If $\neg G$ is invalid, $G$ must be true.</p></li>
+</ol>
+
+<p>Typical use: when the statment we want to prove has universal quantifier. for example, $\forall x \in \mathbb{Z}. P(x)$. Note that the statment that $\mathbb{Z}$ has \emph{no} minimum, when written formally, uses a universal quantifier (make sure to double check it). Then, instead of arguing that for all $x \in A$, $P(x)$ holds, we assume (for sake of contradiction) that there exists one $x$ for which $\neg(P(x))$ (note that this is indeed the negated statement) from which  we get a contradiction.</p>
+
+<h1 id="binary-relation-properties:bc216d98f3ca2300699af2d41b8a2a45">Binary Relation Properties</h1>
+
+<p>When we draw the graph of binary relations, the Domain (<code>input&quot; set) has outgoing edges. Codomain (</code>output&rdquo; set) has
+incoming edges. So when we use the compact notation referring to different properties of binary relations, keep in mind that the words ``in-out&rdquo; refer to the edge (not the input/output sets).  The properties about outgoing edges are <em>function</em>
+($\le 1 out$) and <em>total</em> ($\ge 1$ out). Adding elements to the
+codomain cannot effect these properties.  The properties about
+incoming edges are <em>surjection</em> ($\ge 1$ in) and <em>injection</em> ($\le 1$
+in). Adding elements to the domain cannot effect these properties.</p>
+
+<p>When we say the any relation with property $X$ (e.g., $\ge 1$ out) about the relations \emph{must} also have propety $Y$. It means that property $X$ implies $Y$ logically (about relations). In case the answer is &ldquo;no&rdquo; (i.e. that property $X$ does not imply $Y$) all we have to find is one relation $R$ that satisfies property $X$ but not property $Y$. If the answer is `yes&rsquo; we need to show that for all $R$, if property $X$ holds, so does $Y$. So doing so might need more work.</p>
+
+<p>If an edge is added to the graph of a relation, which properties
+<em>might</em> be impacted?</p>
+
+<p>If an edge is removed to the graph of a relation, which properties
+<em>might</em> be impacted?</p>
+
+<p>If an element is removed from the domain of a relation, which properties
+<em>might</em> be impacted?</p>
+
+<p>If an element is removed from the codomain of a relation, which
+properties <em>might</em> be impacted?</p>
+
+<p></div></p>
+ 
+  
+  <p class="fronthead"><A href="">Problem Set 4 Comments</a> (Wed, 27 Sep 2017)</p>
+    <p>The Problem Set 4 solutions and comments are now posted in collab: <a href="https://collab.its.virginia.edu/access/content/group/9bd99d1c-6f18-4542-a7d1-8ffc4fccbd3d/ps4solutions.pdf">PDF</a></p>
+ 
+  
+  <p class="fronthead"><A href="">Class 11: Induction Practice</a> (Tue, 26 Sep 2017)</p>
+    
+
+<h3 id="schedule">Schedule</h3>
+
+<p><a href="/ps/ps5"><strong>Problem Set 5</strong></a> is due <strong>Friday at 6:29pm</strong>.</p>
+
+<p><strong>Thursday&rsquo;s Class</strong> may include review for Exam 1.  Before 6:59pm
+  Wednesday, send <a href="mailto:uvacs2102staff@gmail.com"><em>uvacs2102staff@gmail.com</em></a> topics you would like to review:</p>
+
+<ul>
+<li>fewer than 10 total requests: class is not being sufficiently challenged and we should be doing more difficult material (except for the 10 requestors who get exam exemptions).<br /></li>
+<li>exactly 10 total requests: all requestors get automatic exam exemptions, review requested topics.<br /></li>
+<li>more than 10 requests implies we should spend Thursday’s class on reviewing requested topics, no exam exemptions.</li>
+</ul>
+
+<h3 id="exam-1">Exam 1</h3>
+
+<p>Exam 1 will be in class on Thursday, 5 October.  You can get a good
+idea what to expect on Exam 1 by looking at the <a href="/docs/practiceexam1.pdf">Practice Exam
+1</a> (from last year&rsquo;s class). We strongly
+encourage you to try to problems on your own, before looking at the
+<a href="/docs/practiceexam1-solutions.pdf">posted solutions</a>.</p>
+
+<p><strong>Resources.</strong> You will be permitted to use a <em>single paper page</em> of
+notes that you prepare and bring to the exam.  It is fine to
+collaborate with others to prepare your notes.  The page should be no
+larger than a US Letter size page ($8.5 \times 11$ inches), and you
+may write (or print) on both sides of the page.  You may not use any
+special devices (e.g., magnifying glasses) to read your page. No other
+resources, other than your own brain, body, and writing instrument,
+are permitted during the exam.</p>
+
+<p><strong>Content.</strong> The problems on the exam will cover material from Classes
+  1&ndash;11, Problem Sets 1&ndash;5 (including the provided solutions), and MCS
+  Chapters 1&ndash;5.  Everything on the exam will be something you have seen
+  in at least two of these (Classes, Problem Sets, and MCS Book), and
+  most of the exam will be things you have seen in all three.  If you
+  understand the problems on the problem sets and questions on the class
+  notes well enough to be able to answer similar questions, you should
+  do well on the exam.</p>
+
+<p>The main topics the exam will cover include:</p>
+
+<ul>
+<li><p>Propositions, axioms, and proofs (you should understand what each of
+these are and how to define them precisely)</p></li>
+
+<li><p>Inference rules (how to determine and show if an inference rule is
+sound or unsound, how to correctly use inference rules in a proof)</p></li>
+
+<li><p>Logical formula (how to interpret logical formulas and convert English
+statements into logic, determine the validity or satisfiability of a
+formula, and show equivalence or non-equivalence of two formulas)</p></li>
+
+<li><p>Logical quantifiers (how to reason about logical formula using
+$\forall$ and $\exists$, including showing logical equivalence and
+implication)</p></li>
+
+<li><p>Proof methods (you should be able to read and write proofs that use
+direct proof, contrapositive proof, and proof by contradiction)</p></li>
+
+<li><p>Well ordering (you should be able to explain what it means for a set
+to be well ordered, determine if a given set and operator is well
+ordered, and be able to construct proofs using the well ordering
+principle and identify flaws in misuses of the well ordering
+principle)</p></li>
+
+<li><p>Induction (you should understand mathematical induction and be able to
+construct proofs using induction and identify flaws in misuses of
+induction in proofs)</p></li>
+</ul>
+
+<p>For most students, we believe the best way to prepare for the exam
+will be to (1) go over the problem sets and their solutions, and make
+sure you understand well any of the problems you did not get before;
+(2) go through the provided practice exam and try to solve all the
+problems on your own before reading the solutions; (3) go through the
+questions in the class notes and convince yourself you can answer them
+well; (4) re-read chapters of the book, solving the associated
+practice problems, especially for any sections on topics where you had
+difficulty on the problem sets.  If you do #1 and #2 and understand
+well the problems on the practice exam, you should be confident you&rsquo;ll
+do well on the exam; if you struggled on the problem sets, you would
+benefit from doing #3 and #4 as well.</p>
+
+<p><div class="notpdf">
+   <center>
+<script async class="speakerdeck-embed" data-id="0efd2b7dcbe64ad9993d64508a604213" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+   </center></p>
+
+<p><div class="highlightm">
+   <a href="/docs/class11.pdf">See PDF Version for <b>Notes and Questions</b></a>.
+   </div></p>
+
+<p></div><!--endpdf--></p>
+
+<p><div class="latex"></p>
+
+<h2 id="induction-principle">Induction Principle</h2>
+
+<p>Let $P$ be a predicated on $\mathbb{N}$.  If</p>
+
+<ul>
+<li>$P(0)$ is true, and</li>
+<li>$P(n) \implies P(n + 1)$ for all $n \in \mathbb{N}$,</li>
+</ul>
+
+<p>then</p>
+
+<ul>
+<li>$P(m)$ is true for all $m \in \mathbb{N}$.</li>
+</ul>
+
+<p><strong>Prove:</strong> For all sets $A$, $|pow(A)| = 2^|A|$.</p>
+
+<div class="biggap"></div>
+
+<p><strong>Prove:</strong> The sum of the first $n$ positive integers is $\frac{n(n+1)}{2}$.</p>
+
+<div class="biggap"></div>
+
+<h3 id="generalizing-to-well-ordered-sets">Generalizing to Well-Ordered Sets</h3>
+
+<p>We can use Induction for any well-ordered set, where there is an
+operation (like &lsquo;+ 1&rsquo;) and a starting point (like &lsquo;0&rsquo;) that covers the
+whole set.</p>
+
+<p><strong>Prove.</strong> All non-empty finite subsets of $\mathbb{N}$ have a minimum element.</p>
+
+<div class="biggap"></div>
+
+<h2 id="induction-practice">Induction Practice</h2>
+
+<p>Take-Away Game: start with $n$ sticks; at each turn a player must remove
+1, 2 or 3 sticks; player who takes the last stick wins.</p>
+
+<ul>
+<li><p>Prove: for a Take-Away game with any initial number of sticks, $n$, either
+Player 1 has a winning strategy or Player 2 does.</p></li>
+
+<li><p>Prove: Player 1 has a winning strategy for a Take-Away game with $n$ sticks, if \bigfillin.  Otherwise, Player 2 has a winning strategy.</p></li>
+</ul>
+
+<p></div></p>
+ 
+  
+  <p class="fronthead"><A href="">Problem Set 5</a> (Sat, 23 Sep 2017)</p>
+    <p><a href="/ps/ps5"><strong>Problem Set 5</strong></a> [<a href="/docs/ps5.pdf">PDF</a>] is now posted and
+is due <strong>Friday, 29 September at 6:29:00pm</strong>. Please read the
+collaboration policy carefully - unlike previous assignments the
+<em>Students</em> &rarr; <em>Submissions</em> relation for this assignment may not be
+injective.</p>
+ 
+  
+  <p class="fronthead"><A href="">Class 10: Set Cardinality, Induction</a> (Thu, 21 Sep 2017)</p>
+    
+
+<h3 id="schedule:cefb84ebc6e45e7105a37c4f4d413033">Schedule</h3>
+
+<p>This week you should finish reading MCS Chapter 4 (section 4.5) and
+Section 5.1.  We will discuss Induction (Section 5.1) next class.</p>
+
+<p><a href="/ps/ps4"><strong>Problem Set 4</strong></a> is due <strong>Friday at 6:29pm</strong>.  The
+original version of Problem Set 4, Question 6, asked for a <em>function</em>,
+when we really meant to ask for a <em>total function</em> (as we defined it
+in class today, and the book defines it). The problem set is updated
+now to specify this. If you already answered the original question,
+you do not need to update your answer, just indicate clearly for which
+questions the function you defined is partial. Sorry for the
+confusion!</p>
+
+<p><strong>Problem Set 5</strong> (not yet posted) will be due Friday, 29 September.</p>
+
+<p><strong>Exam 1</strong> will be in-class on Thursday, 5 October. It will cover
+  Classes 1 - 11, Problem Sets 1 - 5, and MCS Chapters 1 - 5.</p>
+
+<p><div class="notpdf">
+   <center>
+<script async class="speakerdeck-embed" data-id="3dc8afcc1d1e4a979715fe94298dd84a" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+   </center></p>
+
+<p><div class="highlightm">
+   <a href="/docs/class10.pdf">See PDF Version for <b>Notes and Questions</b></a>.
+   </div></p>
+
+<p></div><!--endpdf--></p>
+
+<p><div class="latex"></p>
+
+<p><strong>Alternate definition:</strong> The <em>cardinality</em> of the set
+$$
+N_k = { n | n \in \mathbb{N} \wedge n &lt; k }
+$$
+is $k$.  If there is a <em>bijection</em> between two sets, they have the same
+cardinality.</p>
+
+<p>#</p>
+
+<p>If there is a <em>surjective relation</em> between $A$ and $B$ what do we know
+about their cardinalities?</p>
+
+<p>##</p>
+
+<p>If there is a <em>surjective function</em> between $A$ and $B$ what do we know
+about their cardinalities?</p>
+
+<p>##</p>
+
+<p>If there is a <em>total surjective function</em> between $A$ and $B$ what do we know
+about their cardinalities?</p>
+
+<p>##</p>
+
+<p>If there is a <em>total surjective injective function</em> between $A$ and $B$
+what do we know about their cardinalities?</p>
+
+<p>##</p>
+
+<p>What is the cardinality of $A \cup B$?</p>
+
+<p>#</p>
+
+<h1 id="induction-principle:cefb84ebc6e45e7105a37c4f4d413033">Induction Principle</h1>
+
+<p>Let $P$ be a predicated on $\mathbb{N}$.  If</p>
+
+<ul>
+<li>$P(0)$ is true, and</li>
+<li>$P(n) \implies P(n + 1)$ for all $n \in \mathbb{N}$,</li>
+</ul>
+
+<p>then</p>
+
+<ul>
+<li>$P(m)$ is true for all $m \in \mathbb{N}$.</li>
+</ul>
+
+<h2 id="template-for-induction-proofs:cefb84ebc6e45e7105a37c4f4d413033">Template for Induction Proofs</h2>
+
+<ol>
+<li>State, &ldquo;We prove by induction.&rdquo;</li>
+<li>Define a predicate, $P(n)$.  This is the <em>induction hypothesis</em>.  Our goal is to show that $P(n)$ is true for all $n \in \mathbb{N}$.</li>
+<li>Prove $P(0)$ is true.  (<em>base case</em> or <em>basis step</em>.)</li>
+<li>Prove that $P(n) \implies P(n + 1)$ for every $n \in \mathbb{N}$.  (<em>induction step</em>)</li>
+<li>Conclude that $P(n)$ is true for all $n \in \mathbb{N}$ by induction.</li>
+</ol>
+
+<p>How is the method of <em>proof by induction principle</em> similar to and different from <em>proof by well-ordering principle</em>?</p>
+
+<h1 id="power-sets:cefb84ebc6e45e7105a37c4f4d413033">Power Sets</h1>
+
+<p>The <strong>power set</strong> of $A$ ($\textrm{pow}(A)$)is the set of all subsets of $A$:
+$$
+B \in \textrm{pow}(A) \iff B \subseteq A.
+$$</p>
+
+<p>Prove that the size of the power set of a set $S$ with $|S| = N$ is
+$2^N$ using induction. (We&rsquo;ll do this in Class 11, but see how far you
+can get on your own.)</p>
+
+<p>#</p>
+
+<p>#</p>
+
+<p></div></p>
+ 
+  
   <p class="fronthead"><A href="">Problem Set 3 Comments</a> (Wed, 20 Sep 2017)</p>
     <p>The Problem Set 3 solutions and comments are now posted in collab: <a href="https://collab.its.virginia.edu/access/content/group/9bd99d1c-6f18-4542-a7d1-8ffc4fccbd3d/ps3solutions.pdf">PDF</a></p>
  
@@ -162,7 +567,7 @@
   <p class="fronthead"><A href="">Class 9: Relations, Finite Set Cardinality</a> (Tue, 19 Sep 2017)</p>
     
 
-<h3 id="schedule">Schedule</h3>
+<h3 id="schedule:b1685b9d514e4fd02cc72721228d457c">Schedule</h3>
 
 <p>This week you should finish reading MCS Chapter 4 (section 4.5) and
 Section 5.1.  We will discuss Induction (Section 5.1) next class.</p>
@@ -194,7 +599,7 @@ confusion!</p>
 
 <p><div class="latex"></p>
 
-<h2 id="total-and-partial-functions">Total and Partial Functions</h2>
+<h2 id="total-and-partial-functions:b1685b9d514e4fd02cc72721228d457c">Total and Partial Functions</h2>
 
 <p>A <strong>function</strong> is a mathematical datatype that associates elements from
 one set, called the <em>domain</em>, with elements from another set, called a
@@ -206,7 +611,7 @@ one set, called the <em>domain</em>, with elements from another set, called a
 associated codomain element; if the function is <em>partial</em>, there may be
 elements of the domain that do not have an associated codomain element.</p>
 
-<h2 id="relation-relationships">Relation Relationships</h2>
+<h2 id="relation-relationships:b1685b9d514e4fd02cc72721228d457c">Relation Relationships</h2>
 
 <p>Definition review: <strong>binary relation</strong>, $R$, consists of a domain set,
 $A$, and a codomain set, $B$, and a subset of $A \times B$ called the
@@ -250,7 +655,7 @@ f. $G - (S \times T) = \emptyset$.
 g. $(S \times T) - G = \emptyset$.
 h. $(S \times T) - G \neq \emptyset$.</p>
 
-<h1 id="relation-practice">Relation Practice</h1>
+<h1 id="relation-practice:b1685b9d514e4fd02cc72721228d457c">Relation Practice</h1>
 
 <p>The <em>inverse</em> of a relation $R: A \rightarrow B, G \subseteq A \times B$ is defined by reversing all the arrows:
 $$
@@ -263,7 +668,7 @@ $$</p>
 
 <p>What does it mean if $R \equiv R^{-1}$?</p>
 
-<h1 id="set-cardinality">Set Cardinality</h1>
+<h1 id="set-cardinality:b1685b9d514e4fd02cc72721228d457c">Set Cardinality</h1>
 
 <p><strong>Finite Cardinality.</strong> The book&rsquo;s definition is: ``If $A$ is a finite set, the <em>cardinality</em> of
   $A$, written $|A|$, is the number of elements in $A$.&rdquo;</p>
@@ -299,446 +704,6 @@ define XOR using 5 NAND operations is here: <a href="/docs/jts5np_Challenge01_NA
 is due <strong>Friday, 22 September at 6:29:00pm</strong>.</p>
  
   
-  <p class="fronthead"><A href="">Class 8: Sequences, Relations, Functions</a> (Thu, 14 Sep 2017)</p>
-    
-
-<h3 id="schedule:3a7d0da174b09b839e2f33e1cfd8fab3">Schedule</h3>
-
-<p><a href="/ps/ps3"><strong>Problem Set 3</strong></a> is due <strong>Friday at 6:29pm</strong>.</p>
-
-<p><div class="notpdf">
-   <center>
-<script async class="speakerdeck-embed" data-id="2a3dfdb08071473cb23b4f28b5a67433" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-   </center></p>
-
-<p><div class="highlightm">
-   <a href="/docs/class8.pdf">See PDF Version for <b>Notes and Questions</b></a>.
-   </div></p>
-
-<p></div><!--endpdf--></p>
-
-<p><div class="latex"></p>
-
-<h1 id="sequences:3a7d0da174b09b839e2f33e1cfd8fab3">Sequences</h1>
-
-<p>A <strong>sequence</strong> is a mathematical datatype that bears similarities to sets. A sequence $S$ also contains some elements, but we usually refer to them as <em>components</em>. There are two major differences between sets and sequences:</p>
-
-<ol>
-<li><p>Components of a sequence are <strong>ordered</strong>. There is either $0$, or $1$ or $2$, or &hellip; $n$ components, when the sequence if <em>finite</em> or it could be an infinite sequence that has an $i$&lsquo;th component for any non-zero natural number $i$.</p></li>
-
-<li><p>Different components of a sequence could be equal. For example $(a,b,a)$ has $a$ repeating, and this is a different sequence compared to $(a,b,b)$ even though they both have 3 componetns. If we interprete them as <em>sets</em>, then they will be equal sets with $2$ elements each.</p></li>
-</ol>
-
-<h1 id="cartesian-product:3a7d0da174b09b839e2f33e1cfd8fab3">Cartesian Product</h1>
-
-<p>We can use set products to get new sets whose elements are sequences. Cartesian product is a very useful way of doing it.</p>
-
-<p><strong>Set Products.</strong> A <em>Cartesian product</em> of sets $S_1, S_2, \cdots, S_n$
-  is a set consisting of all possible sequences of $n$ elements where the
-  $i$\textsuperscript{th} element is chosen from $S_i$.</p>
-
-<p>$$ S_1 \times S_2 \times \cdots \times S_n = { (s_1, s_2, \cdots, s_n) | s_i \in S_i } $$</p>
-
-<p>How many elements are in $A \times B$?</p>
-
-<h1 id="relations-and-binary-relations:3a7d0da174b09b839e2f33e1cfd8fab3">Relations and Binary Relations</h1>
-
-<p>A <em>relation</em> between some elements from set $A$ and some elements from set $B$ could be represented by putting all such pairs $(a,b)$ in a set $P$. As you can see, this way, $P$ would be a subset of the cartesian product $A \times B$, namely $P \subseteq A \times B$. More formally we have the following definition.</p>
-
-<p>A <strong>binary relation</strong>, $P$, is defined with respect to a <em>domain</em> set, $A$, and a
-<em>codomain</em> set, $B$, and it holds that  $P$ is $P \subseteq A \times B$. When we draw $P$ by connecting elements of $A$ to $B$ based on their membership in $P$, we call this  the <em>graph</em> of
-$R$.</p>
-
-<p>The notion of relations could be generalized to having relations
-between elements coming from multiple sets $A,B,C$, and we can also
-talk about relations of the form $P \subseteq A \times B \times C$,
-but the binary relation remains a very important data type as it
-allows us to define <em>functions</em>.</p>
-
-<h1 id="functions:3a7d0da174b09b839e2f33e1cfd8fab3">Functions</h1>
-
-<p>The concept of a function $F$ models is a special form of a binary
-relation $R$ between $A$ and $B$ where for every element $a \in A$
-there is <em>at most one</em> element in $b \in B$ that is in relation with
-$a$ (i.e. $(a,b) \in R$). More formally, we use a direct new notation
-just reserved for working with functions.</p>
-
-<p>A <strong>function</strong> is a mathematical datatype that associates
-elements from one set, called the <em>domain</em>, with elements from another
-set, called a <em>codomain</em>.</p>
-
-<p>$$ f: \textrm{\em domain} \rightarrow \textrm{\em codomain} $$</p>
-
-<p><strong>Defining a function.</strong> To define a function, we need to describe how
-  elements in the domain are associated with elements in the codomain.</p>
-
-<p>#</p>
-
-<p>What are the (sensible) domains and codomains of each function below:</p>
-
-<p>$$ f(n) ::= |n| \qquad \qquad f(x) ::= x^2  \qquad\qquad f(n) ::= n + 1 \qquad\qquad f(a, b) ::= a / b $$</p>
-
-<p>$$ f(x) ::= \sqrt{x}  \qquad \qquad \qquad f(S) ::= \textrm{minimum}_{&lt;}(S) $$</p>
-
-<p></div></p>
- 
-  
-  <p class="fronthead"><A href="">Problem Set 2 Comments</a> (Wed, 13 Sep 2017)</p>
-    <p>The Problem Set 2 solutions and comments are now posted in collab: <a href="https://collab.its.virginia.edu/access/content/group/9bd99d1c-6f18-4542-a7d1-8ffc4fccbd3d/ps2solutions.pdf">PDF</a></p>
- 
-  
-  <p class="fronthead"><A href="">Class 7: Sets</a> (Tue, 12 Sep 2017)</p>
-    
-
-<h3 id="schedule">Schedule</h3>
-
-<p><a href="/ps/ps3"><strong>Problem Set 3</strong></a> is due <strong>Friday at 6:29pm</strong>.</p>
-
-<p><div class="notpdf">
-   <center>
-<script async class="speakerdeck-embed" data-id="a5f790a4fb0740d29bb3ad6dce3fa68d" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-   </center></p>
-
-<p><div class="highlightm">
-   <a href="/docs/class7.pdf">See PDF Version for <b>Notes and Questions</b></a>.
-   </div></p>
-
-<h2 id="links">Links</h2>
-
-<p></div><!--endpdf--></p>
-
-<p><div class="latex"></p>
-
-<h1 id="notes-and-questions">Notes and Questions</h1>
-
-<p>What is a <em>data type</em>?  What are the differences between a <em>mathematical
-data type</em> and a data type in your favorite programming language?</p>
-
-<p>#</p>
-
-<p>A <strong>set</strong> is an unordered colection of objects.  A set is defined by its
-membership operation: $x \in S$ is true if $x$ is in the set $S$. When $x$ is not in $S$ we write it as $x \notin S$. A set has only <em>one</em> copy of each element. Namely, there is no repetition in elements of a set. Also, a set $A$ could be a member o another set $B$, denoted by $A \in B$. Note that members of $A$ are not necessarily members of $B$ unless they are explicitly put in $B$ directly.</p>
-
-<h2 id="set-operations">Set Operations</h2>
-
-<p>Subset: $\subseteq$ (note that this does not mean <em>strict subset</em>)
-$$A \subseteq B \iff \forall x \in A. \fillin \in \fillin.$$</p>
-
-<p>Set Equality: $=$
-$$A = B \iff A \fillin B \wedge B \fillin A.$$</p>
-
-<p>Set Union: $\cup$
-$$\forall x. x \in A \cup B \iff x \in A \fillin x \in B.$$</p>
-
-<p>Set Intersection: $\cap$
-$$\forall x. x \in A \cap B \iff x \in A \fillin x \in B.$$</p>
-
-<p>Set Difference: $-$
-$$\forall x. x \in A - B \iff x \in A \wedge x \notin B.$$</p>
-
-<p>Set Complement: $\overline{S}$
-$$ \forall  x \in D. x \in \overline{A} \iff x \notin A.$$</p>
-
-<p>($D$ is the ``domain of discourse&rdquo;, the universe of all objects under
-discussion.)</p>
-
-<!--page-->
-
-<h3 id="russell-s-paradox">Russell&rsquo;s Paradox</h3>
-
-<p>$$ S_{R} = \textrm{ the set of all sets that are not members of themselves} $$</p>
-
-<p>Is $S<em>{R} \in S</em>{R}$?</p>
-
-<p>What is the source of this paradox? Note that in this question, we are implicitly assuming that $S<em>{R}$ is a set, but we have never &ldquo;constructed&rdquo; this set properly to use it. Namely, here we are implicitly assuming that there is already a &ldquo;set of all sets&rdquo; $S</em>{all}$ from which we remove those sets like $T$ for which $T \in T$. By removing all such $T$ from $S_{all}$ we get the set $S_R$.</p>
-
-<h3 id="using-quantifiers-more-carefully">Using Quantifiers More Carefully</h3>
-
-<p>Note that in some of the  propositions that we used to define the set operations (such as union, intersection, etc.) above, we wrote quantified $x$ without saying which set it is from. For example  $\forall x. [\dots]$. It is much preferred to always say what $x$ is belonging to when we quantify over $x$. The reason is to avoid traps like that of Russell&rsquo;s paradox! This should not worry us in this class, as we will always work with well-defined <em>universes</em> that include all the elements of the sets that we work with. Therefore, we can always assume implicitly that $x \in U$ (for a well defined set universe $U$) even if not explicitly mentioned.</p>
-
-<p>#</p>
-
-<h3 id="set-practice">Set Practice</h3>
-
-<p>Here are some practice problems involving sets.  We won&rsquo;t go through
-these in class, but you should ask questions about any are unclear.  (At
-least a few of these will be on Exam 1.)</p>
-
-<ol>
-<li>Define $A \subset B$ (strict subset).</li>
-</ol>
-
-<p>#</p>
-
-<ol>
-<li>Prove $A \cup B \equiv B \cup A$.</li>
-</ol>
-
-<p>#</p>
-
-<ol>
-<li>Prove $A - B = \emptyset \iff A \subseteq B$.</li>
-</ol>
-
-<p>#</p>
-
-<ol>
-<li>Prove $A = B \iff (\forall a \in A \ldotp a \in B) \wedge (\forall b \in B \ldotp b \in A).$
-</div></li>
-</ol>
- 
-  
-  <p class="fronthead"><A href="">Problem Set 3</a> (Fri, 8 Sep 2017)</p>
-    <p><a href="/ps/ps3"><strong>Problem Set 3</strong></a> [<a href="/docs/ps3.pdf">PDF</a>] is now posted and
-is due <strong>Friday, 15 September at 6:29:00pm</strong>.</p>
- 
-  
-  <p class="fronthead"><A href="">Class 6: Quantifiers and More</a> (Thu, 7 Sep 2017)</p>
-    
-
-<h3 id="schedule">Schedule</h3>
-
-<p>Everyone should have received their graded PS1 by now. Please read <a href="https://collab.its.virginia.edu/access/content/group/9bd99d1c-6f18-4542-a7d1-8ffc4fccbd3d/ps1solutions.pdf">the comments posted in collab</a>.</p>
-
-<p><a href="/ps/ps2"><strong>Problem Set 2</strong></a> is due <strong>Friday at 6:29pm</strong>.</p>
-
-<p>You should finish reading MCS Chapter 3 by Tuesday (12 September).</p>
-
-<p><div class="notpdf">
-   <center>
-<script async class="speakerdeck-embed" 
-data-id="44b72b8383c14676af241944ea541667" data-ratio="1.77777777777778" 
-src="//speakerdeck.com/assets/embed.js"></script>
-   </center></p>
-
-<p><div class="highlightm">
-   <a href="/docs/class6.pdf">See PDF Version for <b>Notes and Questions</b></a>.
-   </div></p>
-
-<h2 id="links">Links</h2>
-
-<p>If you believe real computing systems have the property that the values
-you read from memory will match what you wrote there, see:</p>
-
-<p>Sudhakar Govindavajhala and Andrew W. Appel. <a href="http://sip.cs.princeton.edu/pub/memerr.pdf"><em>Using Memory Errors to Attack a Virtual Machine</em></a>, IEEE Symposium on Security and Privacy 2003.</p>
-
-<p>Bianca Schroeder, Eduardo Pinheiro, Wolf-Dietrich Weber. <a href="http://www.cs.utoronto.ca/~bianca/papers/sigmetrics09.pdf"><em>DRAM Errors
-in the Wild: A Large-Scale Field
-Study</em></a>. SIGMETRICS 2009.</p>
-
-<p>Kaveh Razavi, Ben Gras, Erik Bosman, Bart Preneel, Cristiano Giuffrida
-and Herbert Bos. <a href="https://www.usenix.org/conference/usenixsecurity16/technical-sessions/presentation/razavi"><em>Flip Feng Shui: Hammering a Needle in the Software
-Stack</em></a>. USENIX
-Security 2016.</p>
-
-<p>Yuan Xiao, Xiaokuan Zhang, Yinqian Zhang, and Radu Teodorescu. <a href="https://www.usenix.org/system/files/conference/usenixsecurity16/sec16_paper_xiao.pdf"><em>One Bit Flips, One Cloud Flops: Cross-VM Row Hammer Attacks and Privilege Escalation</em></a>, USENIX Security 2016.</p>
-
-<p>Sahand Saba&rsquo;s <a href="http://sahandsaba.com/understanding-sat-by-implementing-a-simple-sat-solver-in-python.html"><em>Understanding SAT by Implementing a Simple SAT Solver in
-Python</em></a>  [<a href="https://github.com/evansuva/simple-sat">Code with Dave&rsquo;s modifications: https://github.com/evansuva/simple-sat</a>]</p>
-
-<p><a href="https://baldur.iti.kit.edu/sat-competition-2017/">SAT Competition 2017</a></p>
-
-<p>Millennium Problems on <a href="http://www.claymath.org/millennium-problems/">Clay institute&rsquo;s
-website</a>. Whether or not we can<br />
-solve the <em>satisfiability</em> of a given CNF or 3CNF formula in polynomial time,
-is the P vs. NP question in this list.</p>
-
-<p></div><!--endpdf--></p>
-
-<p><div class="latex"></p>
-
-<h1 id="programs-and-proofs">Programs and Proofs</h1>
-
-<p>What does it mean to <em>test</em> a computing system?  What does it mean for a computing system to <em>always behave correctly</em>?</p>
-
-<div class="biggap"></div>
-
-<p>Can a mathematical proof guarantee a real computing system will behave correctly?</p>
-
-<div class="biggap"></div>
-
-<h1 id="minima">Minima</h1>
-
-<p>The <em>minimum</em> of a set with respect to some comparator operator is the
-element which is &ldquo;less than&rdquo; (according to that comparator) every
-other element: $m \in S$ is the <em>minimum</em> of $S$ if and only if
-$\forall x \in S - { m } . m \prec x$.</p>
-
-<p>$$
-\forall S \in \textrm{pow}(\mathbb{N}) - { \varnothing } \ldotp \exists m \in S\ldotp \forall x \in S - {m}\ldotp m &lt; x
-$$</p>
-
-<h1 id="formulas-propositions-and-inference-rules">Formulas, Propositions, and Inference Rules</h1>
-
-<p>$P \implies Q$ is a <em>formula</em>.<br />
-$\forall P \in { T, F } . \forall Q \in { T, F } . P \implies Q$ is a <em>proposition</em>.<br />
-$\infer{Q}{P}$ is an <em>inference rule</em>.</p>
-
-<p>A <em>formula</em> is <em>satisfiable</em> if there is some way to make it true.</p>
-
-<p>$P \implies Q$ is satisfiable:</p>
-
-<p>$\exists P \in { T, F } . \exists Q \in {T, F } . P \implies Q$</p>
-
-<p>We can show a formula is satisfiable by giving <em>one</em> choice for the
-variable assignments that makes it true. For example, $P = T$, $Q =
-T$.</p>
-
-<p>A <em>formula</em> is <em>valid</em> if there is no way to make it false.</p>
-
-<p>$P \implies Q$ is <em>not</em> valid:</p>
-
-<p>$\forall P \in { T, F } . \forall Q \in {T, F } . P \implies Q$</p>
-
-<p>This proposition is false, we can chose $P = T$, $Q = F$.</p>
-
-<p>An <em>inference rule</em> is sound if it never leads to a false conclusion. An inference rule
-$\infer{Q}{P}$ is sound if and only if the formula
-$P \implies Q$ is valid. So, this way, we can find out whether an inference rule is sound or not, by checking out whether the corresponding formula is valid or not.</p>
-
-<h1 id="negating-quantifiers">Negating Quantifiers</h1>
-
-<p>What is the negation of $\forall x \in S . P(x)$?
-<div class="gap"></div></p>
-
-<p>What is the negation of $\exists x \in S . P(x)$?
-<div class="gap"></div></p>
-
-<h1 id="satisfiability">Satisfiability</h1>
-
-<p><strong>Definition.</strong> A formula is in <em>SAT</em> if it is in CNF form and it is
-  satisfiable.</p>
-
-<p><strong>Definition.</strong> A formula is in <em>3SAT</em> if it is in 3CNF form and it is
-  satisfiable.</p>
-
-<p>$$
-(x_1 \vee x_2 \vee x_3) \wedge (x_1 \vee \overline{x_2} \vee x_3) \wedge (\overline{x_1} \vee x_2 \vee \overline{x_3})
-$$</p>
-
-<p>\begin{center} \tiny \begin{math} (x<em>{48} \vee x</em>{4} \vee \overline{x<em>{9}})
-\wedge (\overline{x</em>{44}} \vee x<em>{50} \vee \overline{x</em>{37}}) \wedge
-(\overline{x<em>{8}} \vee \overline{x</em>{1}} \vee x<em>{28}) \wedge (x</em>{21} \vee
-x<em>{27} \vee \overline{x</em>{32}}) \wedge (x<em>{17} \vee x</em>{29} \vee
-\overline{x<em>{30}}) \wedge (x</em>{30} \vee x<em>{24} \vee x</em>{37}) \wedge
-(\overline{x<em>{22}} \vee \overline{x</em>{27}} \vee \overline{x<em>{44}}) \wedge
-(x</em>{8} \vee \overline{x<em>{25}} \vee \overline{x</em>{24}}) \wedge
-(\overline{x<em>{44}} \vee x</em>{50} \vee x<em>{14}) \wedge (x</em>{45} \vee x<em>{15} \vee
-x</em>{37}) \wedge (\overline{x<em>{16}} \vee x</em>{14} \vee \overline{x<em>{36}}) \wedge
-(\overline{x</em>{33}} \vee x<em>{5} \vee x</em>{26}) \wedge (x<em>{18} \vee
-\overline{x</em>{7}} \vee \overline{x<em>{24}}) \wedge (x</em>{31} \vee x<em>{38} \vee
-x</em>{28}) \wedge (x<em>{31} \vee \overline{x</em>{33}} \vee \overline{x<em>{8}}) \wedge
-(x</em>{49} \vee x<em>{7} \vee \overline{x</em>{6}}) \wedge (x<em>{34} \vee
-\overline{x</em>{8}} \vee x<em>{46}) \wedge (x</em>{4} \vee \overline{x<em>{5}} \vee
-\overline{x</em>{35}}) \wedge (x<em>{43} \vee x</em>{27} \vee x<em>{39}) \wedge
-(\overline{x</em>{46}} \vee \overline{x<em>{40}} \vee \overline{x</em>{27}}) \wedge
-(\overline{x<em>{25}} \vee x</em>{14} \vee \overline{x<em>{49}}) \wedge (x</em>{38} \vee
-x<em>{5} \vee x</em>{15}) \wedge (x<em>{9} \vee x</em>{14} \vee \overline{x<em>{19}}) \wedge
-(x</em>{45} \vee \overline{x<em>{42}} \vee \overline{x</em>{39}}) \wedge (x<em>{34} \vee
-\overline{x</em>{22}} \vee \overline{x<em>{28}}) \wedge (\overline{x</em>{20}} \vee
-x<em>{15} \vee \overline{x</em>{8}}) \wedge (\overline{x<em>{44}} \vee
-\overline{x</em>{10}} \vee \overline{x<em>{9}}) \wedge (x</em>{22} \vee
-\overline{x<em>{31}} \vee x</em>{14}) \wedge (\overline{x<em>{9}} \vee
-\overline{x</em>{42}} \vee \overline{x<em>{15}}) \wedge (\overline{x</em>{40}} \vee
-x<em>{12} \vee \overline{x</em>{32}}) \wedge (\overline{x<em>{20}} \vee
-\overline{x</em>{6}} \vee \overline{x<em>{15}}) \wedge (\overline{x</em>{37}} \vee
-x<em>{39} \vee \overline{x</em>{23}}) \wedge (\overline{x<em>{3}} \vee
-\overline{x</em>{40}} \vee \overline{x<em>{32}}) \wedge (\overline{x</em>{4}} \vee
-\overline{x<em>{25}} \vee x</em>{7}) \wedge (\overline{x<em>{20}} \vee
-\overline{x</em>{36}} \vee \overline{x<em>{37}}) \wedge (\overline{x</em>{40}} \vee
-\overline{x<em>{35}} \vee x</em>{39}) \wedge (\overline{x<em>{43}} \vee
-\overline{x</em>{40}} \vee \overline{x<em>{7}}) \wedge (x</em>{34} \vee x<em>{44} \vee
-x</em>{26}) \wedge (x<em>{13} \vee x</em>{27} \vee x<em>{28}) \wedge (x</em>{12} \vee
-\overline{x<em>{36}} \vee x</em>{7}) \wedge (\overline{x<em>{16}} \vee x</em>{9} \vee
-\overline{x<em>{24}}) \wedge (\overline{x</em>{48}} \vee x<em>{14} \vee x</em>{28}) \wedge
-(x<em>{16} \vee x</em>{4} \vee x<em>{40}) \wedge (\overline{x</em>{25}} \vee x<em>{15} \vee
-x</em>{37}) \wedge (x<em>{47} \vee \overline{x</em>{26}} \vee \overline{x<em>{23}}) \wedge
-(x</em>{4} \vee \overline{x<em>{13}} \vee x</em>{36}) \wedge (x<em>{48} \vee
-\overline{x</em>{13}} \vee \overline{x<em>{37}}) \wedge (x</em>{4} \vee x<em>{35} \vee
-\overline{x</em>{27}}) \wedge (\overline{x<em>{22}} \vee x</em>{47} \vee x<em>{26}) \wedge
-(\overline{x</em>{22}} \vee \overline{x<em>{46}} \vee x</em>{27}) \wedge
-(\overline{x<em>{20}} \vee x</em>{49} \vee x<em>{11}) \wedge (x</em>{42} \vee
-\overline{x<em>{10}} \vee x</em>{28}) \wedge (\overline{x<em>{45}} \vee x</em>{28} \vee
-\overline{x<em>{37}}) \wedge (x</em>{14} \vee \overline{x<em>{32}} \vee
-\overline{x</em>{23}}) \wedge (x<em>{22} \vee x</em>{14} \vee x<em>{23}) \wedge
-(\overline{x</em>{17}} \vee \overline{x<em>{46}} \vee \overline{x</em>{7}}) \wedge
-(\overline{x<em>{31}} \vee x</em>{46} \vee \overline{x<em>{50}}) \wedge (x</em>{34} \vee
-\overline{x<em>{41}} \vee x</em>{43}) \wedge (x<em>{17} \vee \overline{x</em>{9}} \vee
-x<em>{15}) \wedge (x</em>{46} \vee x<em>{14} \vee \overline{x</em>{12}}) \wedge
-(\overline{x<em>{20}} \vee x</em>{12} \vee x<em>{14}) \wedge (x</em>{41} \vee x<em>{42} \vee
-\overline{x</em>{15}}) \wedge (x<em>{48} \vee x</em>{46} \vee \overline{x<em>{36}}) \wedge
-(\overline{x</em>{22}} \vee \overline{x<em>{4}} \vee \overline{x</em>{49}}) \wedge
-(x<em>{22} \vee x</em>{12} \vee \overline{x<em>{42}}) \wedge (x</em>{13} \vee
-\overline{x<em>{38}} \vee x</em>{39}) \wedge (x<em>{48} \vee \overline{x</em>{16}} \vee
-\overline{x<em>{27}}) \wedge (x</em>{17} \vee \overline{x<em>{18}} \vee
-\overline{x</em>{26}}) \wedge (x<em>{48} \vee \overline{x</em>{40}} \vee
-\overline{x<em>{35}}) \wedge (\overline{x</em>{43}} \vee \overline{x<em>{40}} \vee
-\overline{x</em>{49}}) \wedge (x<em>{29} \vee x</em>{11} \vee \overline{x<em>{32}}) \wedge
-(x</em>{33} \vee \overline{x<em>{17}} \vee x</em>{39}) \wedge (\overline{x<em>{25}} \vee
-\overline{x</em>{9}} \vee \overline{x<em>{6}}) \wedge (x</em>{40} \vee \overline{x<em>{50}}
-\vee x</em>{19}) \wedge (x<em>{8} \vee x</em>{10} \vee \overline{x<em>{27}}) \wedge (x</em>{5}
-\vee x<em>{9} \vee \overline{x</em>{26}}) \wedge (x<em>{45} \vee \overline{x</em>{38}} \vee
-\overline{x<em>{27}}) \wedge (\overline{x</em>{4}} \vee \overline{x<em>{40}} \vee
-\overline{x</em>{42}}) \wedge (x<em>{21} \vee x</em>{50} \vee x<em>{12}) \wedge
-(\overline{x</em>{8}} \vee \overline{x<em>{14}} \vee \overline{x</em>{42}}) \wedge
-(\overline{x<em>{17}} \vee x</em>{47} \vee \overline{x<em>{27}}) \wedge (x</em>{49} \vee
-\overline{x<em>{12}} \vee \overline{x</em>{6}}) \wedge (x<em>{27} \vee x</em>{49} \vee
-\overline{x<em>{32}}) \wedge (\overline{x</em>{29}} \vee \overline{x<em>{12}} \vee
-\overline{x</em>{26}}) \wedge (x<em>{48} \vee \overline{x</em>{2}} \vee x<em>{6}) \wedge
-(x</em>{16} \vee x<em>{36} \vee x</em>{49}) \wedge (x<em>{33} \vee \overline{x</em>{12}} \vee
-\overline{x<em>{26}}) \wedge (\overline{x</em>{33}} \vee x<em>{29} \vee x</em>{49}) \wedge
-(\overline{x<em>{48}} \vee x</em>{2} \vee x<em>{19}) \wedge (x</em>{25} \vee x<em>{36} \vee
-x</em>{49}) \wedge (x<em>{21} \vee x</em>{40} \vee \overline{x<em>{14}}) \wedge
-(\overline{x</em>{34}} \vee \overline{x<em>{44}} \vee \overline{x</em>{6}}) \wedge
-(x<em>{48} \vee \overline{x</em>{50}} \vee \overline{x<em>{1}}) \wedge (x</em>{5} \vee
-\overline{x<em>{12}} \vee x</em>{7}) \wedge (x<em>{21} \vee \overline{x</em>{35}} \vee
-\overline{x<em>{27}}) \wedge (\overline{x</em>{22}} \vee \overline{x<em>{16}} \vee
-\overline{x</em>{14}}) \wedge (\overline{x<em>{13}} \vee \overline{x</em>{35}} \vee
-\overline{x<em>{12}}) \wedge (\overline{x</em>{4}} \vee \overline{x<em>{35}} \vee
-\overline{x</em>{42}}) \wedge (\overline{x<em>{50}} \vee \overline{x</em>{40}} \vee
-x<em>{7}) \wedge (x</em>{25} \vee x<em>{47} \vee \overline{x</em>{12}}) \end{math}
-\end{center}</p>
-
-<h2 id="converting-truth-tables-to-dnf">Converting Truth Tables to DNF</h2>
-
-<p>\begin{tabular}{cc|cc}
-$P$ &amp; $Q$ &amp; $P \implies Q$ &amp; $P \oplus Q$ \ \hline
-\T &amp; \T   &amp; \T &amp; \F \
-\T &amp; \F   &amp; \F &amp; \T \
-\F &amp; \T   &amp; \T &amp; \T \
-\F &amp; \F   &amp; \T &amp; \F \
-\end{tabular}</p>
-
-<p>The output of the operator is \T\ if and only if the inputs do match <em>one row</em> where the output is \T.  So, to get a DNF we can go over all the rows where hte output is \T, and for each write a clause that means we <em>are</em> in that row. Then we OR all such (conjunctive) clauses. For example, for $P \oplus Q$ we get</p>
-
-<p>$$(P \wedge \neg Q) \vee (\neg P \wedge Q)$$</p>
-
-<h2 id="converting-truth-tables-to-cnf">Converting Truth Tables to CNF</h2>
-
-<p>\begin{tabular}{cc|cc}
-$P$ &amp; $Q$ &amp; $P \implies Q$ &amp; $P \oplus Q$ \ \hline
-\T &amp; \T   &amp; \T &amp; \F \
-\T &amp; \F   &amp; \F &amp; \T \
-\F &amp; \T   &amp; \T &amp; \T \
-\F &amp; \F   &amp; \T &amp; \F \
-\end{tabular}</p>
-
-<p>The output of the operator is \T\ if and only if the inputs do not match <em>any row</em> where the output is \F.  So, to get a CNF we can go over all the rows where hte output is \F, and for each write a clause that means we are <em>not</em> in that row. Then we AND all such clauses. For example, for $P \oplus Q$ we get</p>
-
-<p>$$(\neg P \vee \neg Q) \wedge (P \vee Q)$$</p>
-
-<h2 id="the-related-3cnf-formulation">The related 3CNF formulation</h2>
-
-<p>When we are only interested to know whether or not a given formula is satisfiable, we can write a 3CNF that is satisfiable iff the original formula is. In order to do that, we first write an equivalent CNF, and then convert it to a 3CNF (which is not necessarily equivalent, but only guarantees to preserve the <em>satisfiability</em> feature) as follow. For each clause with less than 3 literals such as $(A \lor \neg B)$ we add a dummy variable $C$ (only for this clause) and interprete the $(A \lor \neg B)$ as a formula over all of $A,B,C$ and write a CNF for them (which happens to be 3CNF!). For longer clauses such as
-$(A \lor B \lor C \lor D)$ we do another trick of breaking them into smaller parts using new dummy variables as follows $(A \lor B \lor \neg X) \wedge (\neg X \lor C \lor D).$</p>
-
-<p></div></p>
- 
-  
-  <p class="fronthead"><A href="">Problem Set 1 Comments</a> (Wed, 6 Sep 2017)</p>
-    <p>The Problem Set 1 comments are now posted in collab: <a href="https://collab.its.virginia.edu/access/content/group/9bd99d1c-6f18-4542-a7d1-8ffc4fccbd3d/ps1solutions.pdf">PDF</a></p>
- 
-  
   
 <div class="container pagination">
   
@@ -769,12 +734,16 @@ $(A \lor B \lor C \lor D)$ we do another trick of breaking them into smaller par
   4
 </a>
 
+<a href="https://uvacs2102.github.io/page/5/">
+  5
+</a>
+
 
 <a aria-label="Next" href="https://uvacs2102.github.io/page/4/">
   <span aria-hidden="true">»</span>
 </a>
 
-<a aria-label="Last" href="https://uvacs2102.github.io/page/4/">
+<a aria-label="Last" href="https://uvacs2102.github.io/page/5/">
   <span aria-hidden="true">»»</span>
 </a>
 
