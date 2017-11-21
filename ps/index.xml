@@ -31,6 +31,8 @@ single, readable PDF file on the collab site before &lt;strong&gt;6:29pm&lt;/str
    &lt;/div&gt;
    &lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
 
+&lt;p&gt;&lt;em&gt;Version:&lt;/em&gt; updated 21 November 2017 (just fixing typos, cosmetic changes, and added $\star$ for problem 9).&lt;/p&gt;
+
 &lt;h3 id=&#34;collaboration-policy-collaboration-policy-identical-to-ps5&#34;&gt;Collaboration Policy - Collaboration Policy (identical to PS5)&lt;/h3&gt;
 
 &lt;p&gt;For this assignment, you may work in groups of one to three students
@@ -46,7 +48,7 @@ and that your name and UVA id are clearly marked on it.&lt;/p&gt;
 &lt;h2 id=&#34;preparation&#34;&gt;Preparation&lt;/h2&gt;
 
 &lt;p&gt;This problem set focuses on number theory &amp;mdash; Chapter 9 of the MCS book,
-and &lt;a href=&#34;https://uvacs2102.github.io/class20&#34;&gt;Class 20&lt;/a&gt;, &lt;a href=&#34;https://uvacs2102.github.io/class22&#34;&gt;Class 22&lt;/a&gt;, and &lt;a href=&#34;https://uvacs2102.github.io/class23&#34;&gt;Class 23&lt;/a&gt;.&lt;/p&gt;
+and &lt;a href=&#34;https://uvacs2102.github.io/class20&#34;&gt;Classes 20&lt;/a&gt;, &lt;a href=&#34;https://uvacs2102.github.io/class22&#34;&gt;22&lt;/a&gt;, and &lt;a href=&#34;https://uvacs2102.github.io/class23&#34;&gt;23&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;&lt;/p&gt;
 
@@ -66,29 +68,37 @@ Your response should be submitted as a single PDF file using collab.  Please rea
 
 &lt;p&gt;Solve all the 9 problems.  Your answers should be clear, consise, and convincing.&lt;/p&gt;
 
-&lt;h3 id=&#34;number-theory&#34;&gt;Number Theory&lt;/h3&gt;
+&lt;h3 id=&#34;wily-theorem&#34;&gt;Wily Theorem&lt;/h3&gt;
 
 &lt;ol&gt;
 &lt;li&gt;&lt;p&gt;Fermat&amp;rsquo;s last theorem, proved by Andrew Wiles in 1994, states that: for any natural $n&amp;gt;2$ there are \emph{no} natural numbers $a,b,c$ such that
 $$ a^n + b^n = c^n.$$
-Assuming Fermat&amp;rsquo;s theorem, give a simple proof that $\sqrt[n]{2}$ is \emph{not} a rational number. Hint: you can also give a dirct proof that does not use the Fermat&amp;rsquo;s last theorem, but note that you then might loose the joy of proving a corollary to Fermat&amp;rsquo;s theorem :)&lt;/p&gt;&lt;/li&gt;
+Assuming Fermat&amp;rsquo;s theorem, give a simple proof that $\sqrt[n]{2}$ is \emph{not} a rational number.&lt;/p&gt;
 
-&lt;li&gt;&lt;p&gt;In the Diffie Hellman key-exchange protocol described in &lt;a href=&#34;https://uvacs2102.github.io/class23&#34;&gt;Class 23&lt;/a&gt;, Alice and Bob need to compute $g^x \mod p$ and $g^y \mod p$ for some  $1 \leq g,x,y \leq p-1$. Suppose $p$ is a (prime) number that has 1000 digits when represented in binary.&lt;/p&gt;
+&lt;p&gt;(Hint: you can also give a dirct proof that does not use the Fermat&amp;rsquo;s last theorem, but note that you then might loose the joy of proving a corollary to Fermat&amp;rsquo;s theorem :)&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
 
-&lt;p&gt;(a). Explain  what is wrong (from a practical efficiency point of view) with using the following algorithm for computing $g^x$. (The $rem(a,p)$ operation computes the remainder of $a$ modulo $p$ using the well-known efficient division algorithm.)&lt;/p&gt;
+&lt;!--page--&gt;
+
+&lt;h1 id=&#34;fast-exponentiation&#34;&gt;Fast Exponentiation&lt;/h1&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;In the Diffie Hellman key-exchange protocol described in &lt;a href=&#34;https://uvacs2102.github.io/class23&#34;&gt;Class 23&lt;/a&gt;, Alice and Bob need to compute $g^x \mod p$ and $g^y \mod p$ for some  $1 \leq g,x,y \leq p-1$. Suppose $p$ is a (prime) number that has 1000 bits when represented in binary.&lt;/p&gt;
+
+&lt;p&gt;(a) Explain  what is wrong (from a practical efficiency point of view) with using the following algorithm for computing $g^x$. (The $rem(a,p)$ operation computes the remainder of $a$ modulo $p$ using the well-known efficient division algorithm.)&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def SlowExp(g,p,x):
-    a = 1 
-    while x &amp;gt; 0:
-        a = a * g
-        a = rem(a,p)
-        x = x - 1
-    return a
+        a = 1 
+        while x &amp;gt; 0:
+            a = a * g
+            a = rem(a,p)
+            x = x - 1
+        return a
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Hint: try to estimate how many multiplications are used.&lt;/p&gt;
 
-&lt;p&gt;(b). Describe a modified version of the &amp;ldquo;Fast Exponentiation Program&amp;rdquo; in Section 6.3.1 of the book that is useful computing $g^x \mod p$. How many multiplications does this program do in maximum  to obtain $g^x$ for an arbitrary $1\leq x\leq p-1$ for a 1000 digit $p$?&lt;/p&gt;&lt;/li&gt;
+&lt;p&gt;(b) Describe a modified version of the &amp;ldquo;Fast Exponentiation Program&amp;rdquo; in Section 6.3.1 of the book that is useful computing $g^x \mod p$. How many multiplications does this program do in maximum  to obtain $g^x$ for an arbitrary $1\leq x\leq p-1$ for a 1000 digit $p$?&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;h3 id=&#34;abelian-groups&#34;&gt;Abelian Groups&lt;/h3&gt;
@@ -126,13 +136,20 @@ $P&lt;em&gt;+ = { (\sharp, \sharp) \rightarrow \sharp, (\sharp, \flat) \rightarr
 $P&lt;/em&gt;\times = { (\sharp, \sharp) \rightarrow \sharp, (\sharp, \flat) \rightarrow \sharp, (\flat, \sharp) \rightarrow \sharp, (\flat, \flat) \rightarrow \flat }.$&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;$R = \mathbb{N}&lt;em&gt;{31}, P&lt;/em&gt;+ = \times\; (\text{mod}\, 31), P_\times = +\; (\text{mod}\, 31)$.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Suppopse $R$ is an arbitrary field with some additive and multiplicative operations $P&lt;em&gt;+, P&lt;/em&gt;\times$. Suppose we are given any $a,b,c\in R$ where $a \neq 0$; namely, $a$ is not the additive identity element (usually denoted with $0$). Then prove  that there is a unique solution for variable $x \in R$ that satisfies $(a ~P&lt;em&gt;\times~ x) ~P&lt;/em&gt;+~ b = c$.&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
+
+&lt;h2 id=&#34;field-properties&#34;&gt;Field Properties&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;($\star$) Suppose $R$ is an arbitrary field with some additive and multiplicative operations $P&lt;em&gt;+, P&lt;/em&gt;\times$. Suppose we are given any $a,b,c\in R$ where $a \neq 0$; namely, $a$ is not the additive identity element (usually denoted with $0$). Then prove  that there is a unique solution for variable $x \in R$ that satisfies $(a ~P&lt;em&gt;\times~ x) ~P&lt;/em&gt;+~ b = c$.&lt;/p&gt;
 
 &lt;p&gt;Hint: use the properties of the fields and describe a step by step process to actually find $x$.&lt;/p&gt;
 
-&lt;p&gt;(Note the interesting message of this problem: Fields, shape the  abstract notion that allows solving linear equations. Here we show it for a single variable linear equation, but the idea actually extens to multi-variable systems of equations.)&lt;/p&gt;
+&lt;p&gt;(Note the interesting message of this problem: fields shape the
+abstract notion that allows solving linear equations. Here we show it
+for a single variable linear equation, but the idea actually extends to
+multi-variable systems of equations.)&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
 </description>
     </item>
     

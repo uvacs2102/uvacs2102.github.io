@@ -51,7 +51,7 @@
     },
     "datePublished": "2017-11-19",
     "description": "",
-    "wordCount":  808 
+    "wordCount":  827 
   }
 </script>
 
@@ -193,6 +193,8 @@ single, readable PDF file on the collab site before <strong>6:29pm</strong> on
    </div>
    </div><!--endpdf--></p>
 
+<p><em>Version:</em> updated 21 November 2017 (just fixing typos, cosmetic changes, and added $\star$ for problem 9).</p>
+
 <h3 id="collaboration-policy-collaboration-policy-identical-to-ps5">Collaboration Policy - Collaboration Policy (identical to PS5)</h3>
 
 <p>For this assignment, you may work in groups of one to three students
@@ -208,7 +210,7 @@ and that your name and UVA id are clearly marked on it.</p>
 <h2 id="preparation">Preparation</h2>
 
 <p>This problem set focuses on number theory &mdash; Chapter 9 of the MCS book,
-and <a href="/class20">Class 20</a>, <a href="/class22">Class 22</a>, and <a href="/class23">Class 23</a>.</p>
+and <a href="/class20">Classes 20</a>, <a href="/class22">22</a>, and <a href="/class23">23</a>.</p>
 
 <p><div class="notpdf"></p>
 
@@ -228,29 +230,37 @@ Your response should be submitted as a single PDF file using collab.  Please rea
 
 <p>Solve all the 9 problems.  Your answers should be clear, consise, and convincing.</p>
 
-<h3 id="number-theory">Number Theory</h3>
+<h3 id="wily-theorem">Wily Theorem</h3>
 
 <ol>
 <li><p>Fermat&rsquo;s last theorem, proved by Andrew Wiles in 1994, states that: for any natural $n&gt;2$ there are \emph{no} natural numbers $a,b,c$ such that
 $$ a^n + b^n = c^n.$$
-Assuming Fermat&rsquo;s theorem, give a simple proof that $\sqrt[n]{2}$ is \emph{not} a rational number. Hint: you can also give a dirct proof that does not use the Fermat&rsquo;s last theorem, but note that you then might loose the joy of proving a corollary to Fermat&rsquo;s theorem :)</p></li>
+Assuming Fermat&rsquo;s theorem, give a simple proof that $\sqrt[n]{2}$ is \emph{not} a rational number.</p>
 
-<li><p>In the Diffie Hellman key-exchange protocol described in <a href="/class23">Class 23</a>, Alice and Bob need to compute $g^x \mod p$ and $g^y \mod p$ for some  $1 \leq g,x,y \leq p-1$. Suppose $p$ is a (prime) number that has 1000 digits when represented in binary.</p>
+<p>(Hint: you can also give a dirct proof that does not use the Fermat&rsquo;s last theorem, but note that you then might loose the joy of proving a corollary to Fermat&rsquo;s theorem :)</p></li>
+</ol>
 
-<p>(a). Explain  what is wrong (from a practical efficiency point of view) with using the following algorithm for computing $g^x$. (The $rem(a,p)$ operation computes the remainder of $a$ modulo $p$ using the well-known efficient division algorithm.)</p>
+<!--page-->
+
+<h1 id="fast-exponentiation">Fast Exponentiation</h1>
+
+<ol>
+<li><p>In the Diffie Hellman key-exchange protocol described in <a href="/class23">Class 23</a>, Alice and Bob need to compute $g^x \mod p$ and $g^y \mod p$ for some  $1 \leq g,x,y \leq p-1$. Suppose $p$ is a (prime) number that has 1000 bits when represented in binary.</p>
+
+<p>(a) Explain  what is wrong (from a practical efficiency point of view) with using the following algorithm for computing $g^x$. (The $rem(a,p)$ operation computes the remainder of $a$ modulo $p$ using the well-known efficient division algorithm.)</p>
 
 <pre><code class="language-python">def SlowExp(g,p,x):
-    a = 1 
-    while x &gt; 0:
-        a = a * g
-        a = rem(a,p)
-        x = x - 1
-    return a
+        a = 1 
+        while x &gt; 0:
+            a = a * g
+            a = rem(a,p)
+            x = x - 1
+        return a
 </code></pre>
 
 <p>Hint: try to estimate how many multiplications are used.</p>
 
-<p>(b). Describe a modified version of the &ldquo;Fast Exponentiation Program&rdquo; in Section 6.3.1 of the book that is useful computing $g^x \mod p$. How many multiplications does this program do in maximum  to obtain $g^x$ for an arbitrary $1\leq x\leq p-1$ for a 1000 digit $p$?</p></li>
+<p>(b) Describe a modified version of the &ldquo;Fast Exponentiation Program&rdquo; in Section 6.3.1 of the book that is useful computing $g^x \mod p$. How many multiplications does this program do in maximum  to obtain $g^x$ for an arbitrary $1\leq x\leq p-1$ for a 1000 digit $p$?</p></li>
 </ol>
 
 <h3 id="abelian-groups">Abelian Groups</h3>
@@ -288,13 +298,20 @@ $P<em>+ = { (\sharp, \sharp) \rightarrow \sharp, (\sharp, \flat) \rightarrow \fl
 $P</em>\times = { (\sharp, \sharp) \rightarrow \sharp, (\sharp, \flat) \rightarrow \sharp, (\flat, \sharp) \rightarrow \sharp, (\flat, \flat) \rightarrow \flat }.$</p></li>
 
 <li><p>$R = \mathbb{N}<em>{31}, P</em>+ = \times\; (\text{mod}\, 31), P_\times = +\; (\text{mod}\, 31)$.</p></li>
-
-<li><p>Suppopse $R$ is an arbitrary field with some additive and multiplicative operations $P<em>+, P</em>\times$. Suppose we are given any $a,b,c\in R$ where $a \neq 0$; namely, $a$ is not the additive identity element (usually denoted with $0$). Then prove  that there is a unique solution for variable $x \in R$ that satisfies $(a ~P<em>\times~ x) ~P</em>+~ b = c$.</p></li>
 </ol>
+
+<h2 id="field-properties">Field Properties</h2>
+
+<ol>
+<li><p>($\star$) Suppose $R$ is an arbitrary field with some additive and multiplicative operations $P<em>+, P</em>\times$. Suppose we are given any $a,b,c\in R$ where $a \neq 0$; namely, $a$ is not the additive identity element (usually denoted with $0$). Then prove  that there is a unique solution for variable $x \in R$ that satisfies $(a ~P<em>\times~ x) ~P</em>+~ b = c$.</p>
 
 <p>Hint: use the properties of the fields and describe a step by step process to actually find $x$.</p>
 
-<p>(Note the interesting message of this problem: Fields, shape the  abstract notion that allows solving linear equations. Here we show it for a single variable linear equation, but the idea actually extens to multi-variable systems of equations.)</p>
+<p>(Note the interesting message of this problem: fields shape the
+abstract notion that allows solving linear equations. Here we show it
+for a single variable linear equation, but the idea actually extends to
+multi-variable systems of equations.)</p></li>
+</ol>
 
 </div>
 
