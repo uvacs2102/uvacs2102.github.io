@@ -6,8 +6,589 @@
     <description>Recent content on cs2102: Discrete Math</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 07 Nov 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 21 Nov 2017 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://uvacs2102.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Class 24: Return of ROCA</title>
+      <link>https://uvacs2102.github.io/class24/</link>
+      <pubDate>Tue, 21 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/class24/</guid>
+      <description>
+
+&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
+
+&lt;p&gt;Happy Thanksgiving!  (There is no class on Thursday.)&lt;/p&gt;
+
+&lt;p&gt;Here&amp;rsquo;s the updated (and final) schedule for the rest of the semester:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps9&#34;&gt;Problem Set 9&lt;/a&gt;&lt;/strong&gt;: due on Friday, 1 December at 6:29pm.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/psomega&#34;&gt;Problem Set &amp;omega;&lt;/a&gt;&lt;/strong&gt; (this is optional, and not like the others, hence it uncountable number): due on Monday, 4 December at 11:59pm. See the &lt;a href=&#34;https://uvacs2102.github.io/ps/psomega&#34;&gt;Problem Set &amp;omega;&lt;/a&gt; description for examples from previous students.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Final Exam&lt;/strong&gt;: Thursday, 7 December, 9am-noon (in the normal lecture room)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
+
+&lt;p&gt;Ron Rivest, Adi Shamir, and Leonard Adleman. &lt;a href=&#34;https://people.csail.mit.edu/rivest/Rsapaper.pdf&#34;&gt;&lt;em&gt;A Method for Obtaining Digital Signatures and Public-Key Cryptosystems&lt;/em&gt;&lt;/a&gt;, 1977.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://crocs.fi.muni.cz/public/papers/rsa_ccs17&#34;&gt;ROCA Attack&lt;/a&gt;: &lt;a href=&#34;https://crocs.fi.muni.cz/_media/public/papers/nemec_roca_ccs17_preprint.pdf&#34;&gt;Paper PDF&lt;/a&gt;, &lt;a href=&#34;https://crocs.fi.muni.cz/_media/public/papers/ccs-nemec-handout.pdf&#34;&gt;Slides&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;
+&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;dac618e6455c425fbacdcc40ee858f9b&#34; data-ratio=&#34;1.77777777777778&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
+   &lt;/center&gt;&lt;/p&gt;
+
+&lt;!--   &lt;div class=&#34;highlightm&#34;&gt;
+   &lt;a href=&#34;https://uvacs2102.github.io/docs/class23.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes and Questions&lt;/b&gt;&lt;/a&gt;.
+   &lt;/div&gt;
+--&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;!--endpdf--&gt;
+   &lt;div class=&#34;latex&#34;&gt;
+   &lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Problem Set 9</title>
+      <link>https://uvacs2102.github.io/ps8posted/</link>
+      <pubDate>Sun, 19 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/ps8posted/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps9&#34;&gt;&lt;strong&gt;Problem Set 9&lt;/strong&gt;&lt;/a&gt; [&lt;a href=&#34;https://uvacs2102.github.io/docs/ps9.pdf&#34;&gt;PDF&lt;/a&gt;] is now posted and
+is due &lt;strong&gt;Friday, 1 Dec at 6:29:00pm&lt;/strong&gt;. Please read the
+collaboration policy carefully.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Problem Set 9</title>
+      <link>https://uvacs2102.github.io/ps/ps9/</link>
+      <pubDate>Sun, 19 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/ps/ps9/</guid>
+      <description>
+
+&lt;div class=&#34;latex&#34;&gt;
+   \dbox{{\bf Deliverable:} Submit your responses as a
+single, readable PDF file on the collab site before {\bf 6:29pm} on {\bf
+   Friday, 1 December}.}
+   &lt;/div&gt;
+
+&lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;
+   &lt;div class=&#34;highlightr&#34;&gt;
+   &lt;strong&gt;Deliverable:&lt;/strong&gt; Submit your responses as a
+single, readable PDF file on the collab site before &lt;strong&gt;6:29pm&lt;/strong&gt; on
+   &lt;strong&gt;Friday, 1 December&lt;/strong&gt;.
+   &lt;/div&gt;
+   &lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Version:&lt;/em&gt; updated 21 November 2017 (just fixing typos, cosmetic changes, and added $\star$ for problem 9).&lt;/p&gt;
+
+&lt;h3 id=&#34;collaboration-policy-collaboration-policy-identical-to-ps5:8a4d4dedc1ccaf65c5e582a2df1d4b81&#34;&gt;Collaboration Policy - Collaboration Policy (identical to PS5)&lt;/h3&gt;
+
+&lt;p&gt;For this assignment, you may work in groups of one to three students
+to write-up a solution together.  If you work with teammates, exactly
+one of you should submit one assignment that represents your
+collective best work with all of your names and UVA ids clearly marked
+on it.  &lt;em&gt;Everyone on a team should understand everything you
+turn in for the assignment well enough to be able to produce it
+completely on your own.&lt;/em&gt; All teammates must review the submissions
+before it is submitted to make sure you understand everything on it
+and that your name and UVA id are clearly marked on it.&lt;/p&gt;
+
+&lt;h2 id=&#34;preparation:8a4d4dedc1ccaf65c5e582a2df1d4b81&#34;&gt;Preparation&lt;/h2&gt;
+
+&lt;p&gt;This problem set focuses on number theory &amp;mdash; Chapter 9 of the MCS book,
+and &lt;a href=&#34;https://uvacs2102.github.io/class20&#34;&gt;Classes 20&lt;/a&gt;, &lt;a href=&#34;https://uvacs2102.github.io/class22&#34;&gt;22&lt;/a&gt;, and &lt;a href=&#34;https://uvacs2102.github.io/class23&#34;&gt;23&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlightm&#34;&gt;
+    &lt;a href=&#34;https://uvacs2102.github.io/docs/ps9.pdf&#34;&gt;Download PDF for Problems&lt;/a&gt;.
+   &lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlightr&#34;&gt;
+Your response should be submitted as a single PDF file using collab.  Please read and follow the &lt;a href=&#34;https://uvacs2102.github.io/pdfs/&#34;&gt;Generating PDFs&lt;/a&gt; advice on the course site.
+   &lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;directions:8a4d4dedc1ccaf65c5e582a2df1d4b81&#34;&gt;Directions&lt;/h2&gt;
+
+&lt;p&gt;Solve all the 9 problems.  Your answers should be clear, consise, and convincing.&lt;/p&gt;
+
+&lt;h3 id=&#34;wily-theorem:8a4d4dedc1ccaf65c5e582a2df1d4b81&#34;&gt;Wily Theorem&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Fermat&amp;rsquo;s last theorem, proved by Andrew Wiles in 1994, states that: for any natural $n&amp;gt;2$ there are \emph{no} natural numbers $a,b,c$ such that
+$$ a^n + b^n = c^n.$$
+Assuming Fermat&amp;rsquo;s theorem, give a simple proof that $\sqrt[n]{2}$ is \emph{not} a rational number.&lt;/p&gt;
+
+&lt;p&gt;(Hint: you can also give a dirct proof that does not use the Fermat&amp;rsquo;s last theorem, but note that you then might loose the joy of proving a corollary to Fermat&amp;rsquo;s theorem :)&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;!--page--&gt;
+
+&lt;h1 id=&#34;fast-exponentiation:8a4d4dedc1ccaf65c5e582a2df1d4b81&#34;&gt;Fast Exponentiation&lt;/h1&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;In the Diffie Hellman key-exchange protocol described in &lt;a href=&#34;https://uvacs2102.github.io/class23&#34;&gt;Class 23&lt;/a&gt;, Alice and Bob need to compute $g^x \mod p$ and $g^y \mod p$ for some  $1 \leq g,x,y \leq p-1$. Suppose $p$ is a (prime) number that has 1000 bits when represented in binary.&lt;/p&gt;
+
+&lt;p&gt;(a) Explain  what is wrong (from a practical efficiency point of view) with using the following algorithm for computing $g^x$. (The $rem(a,p)$ operation computes the remainder of $a$ modulo $p$ using the well-known efficient division algorithm.)&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def SlowExp(g,p,x):
+        a = 1 
+        while x &amp;gt; 0:
+            a = a * g
+            a = rem(a,p)
+            x = x - 1
+        return a
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Hint: try to estimate how many multiplications are used.&lt;/p&gt;
+
+&lt;p&gt;(b) Describe a modified version of the &amp;ldquo;Fast Exponentiation Program&amp;rdquo; in Section 6.3.1 of the book that is useful computing $g^x \mod p$. How many multiplications does this program do in maximum  to obtain $g^x$ for an arbitrary $1\leq x\leq p-1$ for a 1000 digit $p$?&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&#34;abelian-groups:8a4d4dedc1ccaf65c5e582a2df1d4b81&#34;&gt;Abelian Groups&lt;/h3&gt;
+
+&lt;p&gt;For each set ($R$) and operator ($P$) described below, explain why it
+is not an Abelian group (defined in &lt;a href=&#34;https://uvacs2102.github.io/class22&#34;&gt;Class 22&lt;/a&gt;). Your answer
+should include a convincing supporting argument that shows why the
+given set and operator do not satisfy at least one of the required
+properties.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;$R = \mathbb{Z}, P = \text{\em gcd}$ where $\text{\em gcd}$ is a binary operator that takes two integers as input and outputs their greatest common divisor.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;$R = \mathbb{Z}, P = -$.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;$R = {T, F}, P = \text{OR}$. (Hint: what must the identity be,
+and which element has no inverse?)&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&#34;fields:8a4d4dedc1ccaf65c5e582a2df1d4b81&#34;&gt;Fields&lt;/h3&gt;
+
+&lt;p&gt;For each set ($R$) and first and second operations ($P&lt;em&gt;+$,
+$P&lt;/em&gt;\times$), answer if the set and operations are a &lt;em&gt;field&lt;/em&gt; (as
+defined in &lt;a href=&#34;https://uvacs2102.github.io/class23&#34;&gt;Class 23&lt;/a&gt;). A good answer will either show how
+the given set and operations satisfy the required properties
+(including explaning what the additive identify and multiplicative
+identity are), or show how it fails to satisfy one of the required
+properties.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;$R = \mathbb{N}&lt;em&gt;{12}, P&lt;/em&gt;+ = +\; (\text{mod}\, 12), P_\times = \times\; (\text{mod}\, 12)$.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;$R = { \sharp, \flat }$
+$P&lt;em&gt;+ = { (\sharp, \sharp) \rightarrow \sharp, (\sharp, \flat) \rightarrow \flat, (\flat, \sharp) \rightarrow \flat, (\flat, \flat) \rightarrow \sharp }$ and
+$P&lt;/em&gt;\times = { (\sharp, \sharp) \rightarrow \sharp, (\sharp, \flat) \rightarrow \sharp, (\flat, \sharp) \rightarrow \sharp, (\flat, \flat) \rightarrow \flat }.$&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;$R = \mathbb{N}&lt;em&gt;{31}, P&lt;/em&gt;+ = \times\; (\text{mod}\, 31), P_\times = +\; (\text{mod}\, 31)$.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&#34;field-properties:8a4d4dedc1ccaf65c5e582a2df1d4b81&#34;&gt;Field Properties&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;($\star$) Suppose $R$ is an arbitrary field with some additive and multiplicative operations $P&lt;em&gt;+, P&lt;/em&gt;\times$. Suppose we are given any $a,b,c\in R$ where $a \neq 0$; namely, $a$ is not the additive identity element (usually denoted with $0$). Then prove  that there is a unique solution for variable $x \in R$ that satisfies $(a ~P&lt;em&gt;\times~ x) ~P&lt;/em&gt;+~ b = c$.&lt;/p&gt;
+
+&lt;p&gt;Hint: use the properties of the fields and describe a step by step process to actually find $x$.&lt;/p&gt;
+
+&lt;p&gt;(Note the interesting message of this problem: fields shape the
+abstract notion that allows solving linear equations. Here we show it
+for a single variable linear equation, but the idea actually extends to
+multi-variable systems of equations.)&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Class 23: Cryptosystems</title>
+      <link>https://uvacs2102.github.io/class23/</link>
+      <pubDate>Thu, 16 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/class23/</guid>
+      <description>
+
+&lt;h3 id=&#34;schedule:5745b40601045f50f1418eebe2f9ce59&#34;&gt;Schedule&lt;/h3&gt;
+
+&lt;p&gt;Here&amp;rsquo;s the updated (and final) schedule for the rest of the semester:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Problem Set 9&lt;/strong&gt;: due on Friday, 1 December at 6:29pm. (This will be posted on 19 November.)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/psomega&#34;&gt;Problem Set &amp;omega;&lt;/a&gt;&lt;/strong&gt; (this is optional, and not like the others, hence it uncountable number): due on Monday, 4 December at 11:59pm. See the &lt;a href=&#34;https://uvacs2102.github.io/ps/psomega&#34;&gt;Problem Set &amp;omega;&lt;/a&gt; description for examples from previous students.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Final Exam&lt;/strong&gt;: Thursday, 7 December, 9am-noon (in the normal lecture room)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;galois:5745b40601045f50f1418eebe2f9ce59&#34;&gt;Galois&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://plus.maths.org/content/genius-stupidity-and-genius-again&#34;&gt;&lt;em&gt;Genius, stupidity and genius again&lt;/em&gt;&lt;/a&gt; (the short life of Evariste Galois), by Tope Omitola.&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;
+&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;fd58537c3f514ae193402ee5f4ce9dc4&#34; data-ratio=&#34;1.77777777777778&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
+   &lt;/center&gt;&lt;/p&gt;
+
+&lt;!--   &lt;div class=&#34;highlightm&#34;&gt;
+   &lt;a href=&#34;https://uvacs2102.github.io/docs/class23.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes and Questions&lt;/b&gt;&lt;/a&gt;.
+   &lt;/div&gt;
+--&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;!--endpdf--&gt;
+   &lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;modular-arithmetic:5745b40601045f50f1418eebe2f9ce59&#34;&gt;Modular Arithmetic&lt;/h2&gt;
+
+&lt;p&gt;Definition: A number $a$ is &lt;em&gt;congruent&lt;/em&gt; to $b$ modulo $n$ if and only
+if $n\, | \, (a - b)$.  We can write this as $a \equiv b \;\;
+(\text{mod}; n)$.&lt;/p&gt;
+
+&lt;p&gt;Prove: $a \equiv b \;\; (\text{mod}\; n)$ iff $\text{rem}(a, n) =
+\text{rem}(b, n)$.&lt;/p&gt;
+
+&lt;p&gt;#&lt;/p&gt;
+
+&lt;h2 id=&#34;groups-rings-and-fields:5745b40601045f50f1418eebe2f9ce59&#34;&gt;Groups, Rings, and Fields&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Abelian group:&lt;/strong&gt; set $R$, with a binary operation $+$:&lt;br /&gt;
+   associative, commutative, additive identity (&lt;strong&gt;0&lt;/strong&gt;), additive inverse ($−a$)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Ring:&lt;/strong&gt; set $R$, with two binary operations $+$, $\times$:
+   Abelian group under $+$&lt;br /&gt;
+   associative, multiplicative identity (&lt;strong&gt;1&lt;/strong&gt;) under $\times$&lt;/p&gt;
+
+&lt;p&gt;TODO: finish
+&lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Class 22: Prime Detectives</title>
+      <link>https://uvacs2102.github.io/class22/</link>
+      <pubDate>Tue, 14 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/class22/</guid>
+      <description>
+
+&lt;h3 id=&#34;schedule:b1f171c11b7e766822270107caa74abd&#34;&gt;Schedule&lt;/h3&gt;
+
+&lt;p&gt;Here&amp;rsquo;s the updated (and final) schedule for the rest of the semester:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Problem Set 9&lt;/strong&gt;: due on Friday, 1 December at 6:29pm. (This will be posted on 19 November.)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Problem Set Omega&lt;/strong&gt; (this is optional, and not like the others, hence it uncountable number): due on Monday, 4 December at 11:59pm.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Final Exam&lt;/strong&gt;: Thursday, 7 December, 9am-noon (in the normal lecture room)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;challenge-solution:b1f171c11b7e766822270107caa74abd&#34;&gt;Challenge Solution&lt;/h2&gt;
+
+&lt;p&gt;Connor Roos&amp;rsquo; solution to the challenge problem about the minimum
+number of NAND operations (using gates, not formulas) is here: &lt;a href=&#34;https://uvacs2102.github.io/docs/nandgates.pdf&#34;&gt;Description (PDF)&lt;/a&gt;, &lt;a href=&#34;https://gist.github.com/cgr3mu/4dd59c1e2994d6b3eb3906dfceb0a5b6&#34;&gt;Code (Java)&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;exam-2-solutions:b1f171c11b7e766822270107caa74abd&#34;&gt;Exam 2 Solutions&lt;/h2&gt;
+
+&lt;p&gt;The solutions for Exam 2 are here:
+&lt;a href=&#34;https://uvacs2102.github.io/docs/exam2comments.pdf&#34;&gt;PDF&lt;/a&gt;. Please read these carefully and come
+to office hours with any questions you have, especially if you had
+difficulties on any of the exam problems.&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;
+&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;7aeb7c43977640d88007004a0332b314&#34; data-ratio=&#34;1.77777777777778&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
+   &lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlightm&#34;&gt;
+   &lt;a href=&#34;https://uvacs2102.github.io/docs/class22.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes and Questions&lt;/b&gt;&lt;/a&gt;.
+   &lt;/div&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;excerpt:b1f171c11b7e766822270107caa74abd&#34;&gt;Excerpt&lt;/h2&gt;
+
+&lt;p&gt;G. H. Hardy, &lt;a href=&#34;http://www.math.ualberta.ca/~mss/misc/A%20Mathematician&#39;s%20Apology.pdf&#34;&gt;&lt;em&gt;A Mathematician&amp;rsquo;s Apology&lt;/em&gt;&lt;/a&gt;, 1940.&lt;/p&gt;
+
+&lt;p&gt;&lt;blockquote&gt;
+A man &lt;font color=&#34;gray&#34;&gt;(sic - Hardy&amp;rsquo;s quote, unfortunately, but typical for 1940, uses &lt;a href=&#34;https://www.cs.virginia.edu/~evans/cs655/readings/purity.html&#34;&gt;sexist language&lt;/a&gt; throughout, but I will leave it as written, but &amp;ldquo;man&amp;rdquo; here means &amp;ldquo;person&amp;rdquo;, and &amp;ldquo;he&amp;rdquo; and &amp;ldquo;his&amp;rdquo; are not meant to be limited to males)&lt;/font&gt; who sets out to justify his existence and his activities
+has to distinguish two different questions. The first is whether the
+work which he does is worth doing; and the second is why he does it,
+whatever its value may be. The first question is often very difficult,
+and the answer very discouraging, but most people will find the second
+easy enough even then. Their answers, if they are honest, will usually
+take one or other of two forms; and the second form is a merely a
+humbler variation of the first, which is the only answer we need
+consider seriously.&lt;/p&gt;
+
+&lt;p&gt;(1) ‘I do what I do because it is the one and only thing that I
+can do at all well. I am a lawyer, or a stockbroker, or a professional
+cricketer, because I have some real talent for that particular
+job. I am a lawyer because I have a fluent tongue, and am
+interested in legal subtleties; I am a stockbroker because my
+judgment of the markets is quick and sound; I am a professional
+cricketer because I can bat unusually well. I agree that it might be
+better to be a poet or a mathematician, but unfortunately I have no
+talent for such pursuits.’&lt;/p&gt;
+
+&lt;p&gt;I am not suggesting that this is a defence which can be made
+by most people, since most people can do nothing at all well. But
+it is impregnable when it can be made without absurdity, as it can
+by a substantial minority: perhaps five or even ten percent of men
+can do something rather well. It is a tiny minority who can do
+something really well, and the number of men who can do two
+things well is negligible. If a man has any genuine talent he
+should be ready to make almost any sacrifice in order to cultivate
+it to the full.&lt;/p&gt;
+
+&lt;p&gt;&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;There is also what I call the ‘humbler variation’ of the standard
+apology; but I may dismiss this in a very few words.&lt;/p&gt;
+
+&lt;p&gt;(2) ‘There is nothing that I can do particularly well. I do what I
+do because it came my way. I really never had a chance of doing
+anything else.’ And this apology too I accept as conclusive. It is
+quite true that most people can do nothing well. If so, it matters
+very little what career they choose, and there is really nothing
+more to say about it. It is a conclusive reply, but hardly one likely
+to be made by a man with any pride; and I may assume that none
+of us would be content with it.&lt;/p&gt;
+
+&lt;p&gt;&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;A man’s first duty, a young man’s at any rate, is to be
+ambitious. Ambition is a noble passion which may legitimately take
+many forms; there was something noble in the ambitions of Attila or
+Napoleon; but the noblest ambition is that of leaving behind something
+of permanent value &amp;mdash;
+&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;There are many highly respected motives which may lead men
+to prosecute research, but three which are much more important
+than the rest. The first (without which the rest must come to
+nothing) is intellectual curiosity, desire to know the truth. Then,
+professional pride, anxiety to be satisfied with one’s performance,
+the shame that overcomes any self-respecting craftsman when his
+work is unworthy of his talent. Finally, ambition, desire for
+reputation, and the position, even the power or the money, which
+it brings. It may be fine to feel, when you have done your work,
+that you have added to the happiness or alleviated the sufferings
+of others, but that will not be why you did it. So if a mathematician,
+or a chemist, or even a physiologist, were to tell me that the
+driving force in his work had been the desired to benefit
+humanity, then I should not believe him (nor should I think the
+better of him if I did). His dominant motives have been those
+which I have stated, and in which, surely, there is nothing of
+which any decent man need be ashamed.&lt;/p&gt;
+
+&lt;p&gt;If intellectual curiosity, professional pride, and ambition are the
+dominant incentives to research, then assuredly no one has a
+fairer chance of satisfying them than a mathematician. His subject
+is the most curious of all—there is none in which truth plays such
+odd pranks. It has the most elaborate and the most fascinating
+technique, and gives unrivalled openings for the display of sheer
+professional skill. Finally, as history proves abundantly,
+mathematical achievement, whatever its intrinsic worth, is the
+most enduring of all.&lt;/p&gt;
+
+&lt;p&gt;&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;A mathematician, like a painter or a poet, is a maker of patterns.  If
+his patterns are more permanent than theirs, it is because they are
+made with &lt;em&gt;ideas&lt;/em&gt;. &amp;hellip; The mathematician’s patterns, like the
+painter&amp;rsquo;s or the poet&amp;rsquo;s must be beautiful; the ideas like the colours
+or the words, must fit together in a harmonious way. Beauty is the
+first test: there is no permanent place in the world for ugly
+mathematics.&lt;/p&gt;
+
+&lt;p&gt;&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;The fact is that there are few more ‘popular’ subjects than
+mathematics. Most people have some appreciation of mathematics,
+just as most people can enjoy a pleasant tune; and there are
+probably more people really interested in mathematics than in
+music. Appearances suggest the contrary, but there are easy
+explanations. Music can be used to stimulate mass emotion, while
+mathematics cannot; and musical incapacity is recognized (no
+doubt rightly) as mildly discreditable, whereas most people are so
+frightened of the name of mathematics that they are ready, quite
+unaffectedly, to exaggerate their own mathematical stupidity.&lt;/p&gt;
+
+&lt;p&gt;&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;It is undeniable that a good deal of
+elementary mathematics—and I use the word ‘elementary’ in the
+sense in which professional mathematicians use it, in which it
+includes, for example, a fair working knowledge of the differential
+and integral calculus—has considerable practical utility.
+These parts of mathematics are, on the whole, rather dull; they are
+just the parts which have the least aesthetic value. The ‘real’
+mathematics of the ‘real’ mathematicians, the mathematics of
+Fermat and Euler and Gauss and Abel and Riemann, is almost
+wholly ‘useless’ (and this is as true of ‘applied’ as of ‘pure’
+mathematics). It is not possible to justify the life of any genuine
+professional mathematician on the ground of the ‘utility’ of his
+work.&lt;/p&gt;
+
+&lt;p&gt;But here I must deal with a misconception. It is sometimes suggested
+that pure mathematicians glory in the uselessness of their work, and
+make it a boast that it has no practical applications.  The imputation
+is usually based on an incautious saying attributed to Gauss, to the
+effect that, if mathematics is the queen of the sciences, then the
+theory of numbers is, because of its supreme uselessness, the queen of
+mathematics—I have never been able to find an exact quotation. I am
+sure that Gauss’s saying (if indeed it be his) has been rather crudely
+misinterpreted.  If the theory of numbers could be employed for any
+practical and obviously honourable purpose, if it could be turned
+directly to the furtherance of human happiness or the relief of human
+suffering, as physiology and even chemistry can, then surely neither
+Gauss nor any other mathematician would have been so foolish as to
+decry or regret such applications. &lt;b&gt;But science works for evil as well
+as for good (and particularly, of course, in time of war); and both
+Gauss and less mathematicians may be justified in rejoicing that there
+is one science at any rate, and that their own, whose very remoteness
+from ordinary human activities should keep it gentle and clean.&lt;/b&gt;&lt;/p&gt;
+
+&lt;p&gt;&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;We have concluded that the trivial mathematics is, on the whole,
+useful, and that the real mathematics, on the whole, is not; that the
+trivial mathematics does, and the real mathematics does not, ‘do good’
+in a certain sense; but we have still to ask whether either sort of
+mathematics does harm. It would be paradoxical to suggest that
+mathematics of any sort does much harm in time of peace, so that we
+are driven to the consideration of the effects of mathematics
+on war. It is every difficult to argue such questions at all
+dispassionately now, and I should have preferred to avoid them;
+but some sort of discussion seems inevitable. Fortunately, it need
+not be a long one.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;There is one comforting conclusions which is easy for a real
+mathematician. Real mathematics has no effects on war. No one has yet
+discovered any warlike purpose to be served by the theory of numbers
+or relativity, and it seems very unlikely that anyone will do so for
+many years.&lt;/b&gt; It is true that there are branches of applied
+mathematics, such as ballistics and aerodynamics, which have been
+developed deliberately for war and demand a quite elaborate technique:
+it is perhaps hard to call them ‘trivial’, but none of them has any
+claim to rank as ‘real’. They are indeed repulsively ugly and
+intolerably dull; even Littlewood could not make ballistics
+respectable, and if he could not who can? So a real mathematician has
+his conscience clear; there is nothing to be set against any value his
+work may have; mathematics is, as I said at Oxford, a ‘harmless and
+innocent’ occupation.&lt;/p&gt;
+
+&lt;p&gt;The trivial mathematics, on the other hand, has many applications
+in war. The gunnery experts and aeroplane designers, for
+example, could not do their work without it. And the general
+effect of these applications is plain: mathematics facilitates (if not
+so obviously as physics or chemistry) modern, scientific, ‘total’
+war.&lt;/p&gt;
+
+&lt;p&gt;It is not so clear as it might seem that this is to be regretted,
+since there are two sharply contrasted views about modern scientific
+war. The first and the most obvious is that the effect of science on
+war is merely to magnify its horror, both by increasing the sufferings
+of the minority who have to fight and by extending them to other
+classes. This is the most natural and orthodox view.  But there is a
+very different view which seems also quite tenable, and which has been
+stated with great force by Haldane in &lt;em&gt;Callinicus&lt;/em&gt;. It can be
+maintained that modern warfare is less horrible than the warfare of
+pre-scientific times; that bombs are probably more merciful than
+bayonets; that lachrymatory gas and mustard gas are perhaps the most
+humane weapons yet devised by military science; and that the orthodox
+view rests solely on loos-thinking sentimentalism. It may also by
+urged (though this was not one of Haldane’s theses) that the
+equalization of risks which science was expected to bring would be in
+the long range salutary; that a civilian’s life is not worth more than
+a soldier’s, nor a woman’s more than a man’s; that anything is better
+than the concentration of savagery on one particular class; and that,
+in short, the sooner war comes ‘all out’ the better.&lt;/p&gt;
+
+&lt;p&gt;I do not know which of these views is nearer to the truth. It is
+an urgent and a moving question, but I need not argue it here. It
+concerns only the ‘trivial’ mathematics, which it would be
+Hogben’s business to defend rather than mine. The cases for his
+mathematics may be rather more than a little soiled; the case for
+mine is unaffected.&lt;/p&gt;
+
+&lt;p&gt;Indeed, there is more to be said, since there is one purpose at any
+rate which the real mathematics may serve in war. When the world is
+mad, a mathematician may find in mathematics an incomparable anodyne.
+   &lt;/blockquote&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;number-theory:b1f171c11b7e766822270107caa74abd&#34;&gt;Number Theory&lt;/h2&gt;
+
+&lt;p&gt;Definition: $a$ divides $b$ ($a\, |\, b$) iff there is an integer $k$ such that $ak = b$.&lt;/p&gt;
+
+&lt;p&gt;Definition: A &lt;em&gt;prime&lt;/em&gt; is a number greater than 1 that is divisible
+only by itself and 1.&lt;/p&gt;
+
+&lt;p&gt;Theorem: There are &lt;em&gt;infinitely&lt;/em&gt; many prime numbers.&lt;/p&gt;
+
+&lt;p&gt;Prove by contradiction (and well ordering principle):&lt;/p&gt;
+
+&lt;p&gt;#
+##&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Fundamental theorem of arithmetic&lt;/strong&gt;: every positive number $n$ can be written uniquely as a product of primes: $n = p_1 \cdot p_2 \cdot \cdots \cdot p_k$ where $p&lt;em&gt;i \le p&lt;/em&gt;{i + 1}$.&lt;/p&gt;
+
+&lt;!--page--&gt;
+
+&lt;h2 id=&#34;groups-and-rings:b1f171c11b7e766822270107caa74abd&#34;&gt;Groups and Rings&lt;/h2&gt;
+
+&lt;p&gt;$R$ is an Abelian group with respect to binary operation $P$ if it is:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;associative: $\forall a, b, c \in R. (a P b) P c = a P (b P c)$.&lt;/li&gt;
+&lt;li&gt;commutative: $\forall a, b \in R. a P b = b P a$.&lt;/li&gt;
+&lt;li&gt;has an identity: $\exists z \in R . \forall a \in R . a P z = a$.&lt;/li&gt;
+&lt;li&gt;every element has an inverse with respect to that identity: $\forall a \in R . \exists w \in R . a P w = z$.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Which of these are Abelian groups:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;$R = \mathbb{N}, P = +$.&lt;/li&gt;
+&lt;li&gt;$R = \mathbb{N}, P = \times$.&lt;/li&gt;
+&lt;li&gt;$R = \mathbb{Z}, P = +$.&lt;/li&gt;
+&lt;li&gt;$R = \mathbb{Q}, P = \times$.&lt;/li&gt;
+&lt;li&gt;$R = { T, F}, P = NAND$.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Schedule Updates</title>
+      <link>https://uvacs2102.github.io/scheduleupdates/</link>
+      <pubDate>Sun, 12 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/scheduleupdates/</guid>
+      <description>&lt;p&gt;We are adjusting the schedule for Problem Set 9 and Problem Set
+&amp;Omega; from the original schedule. Instead of being due on Wednesday,
+November 22 as previously scheduled, Problem Set 9 will now be due on
+Friday, 1 December (6:29pm). Its scope will be expanded to include
+Classes 20-24, and we expect to posted it on November 19.&lt;/p&gt;
+
+&lt;p&gt;Problem Set &amp;Omega; (which is optional and different, and will be
+discussed in class this week) will now be due on Monday, 4 December
+(11:59pm).&lt;/p&gt;
+
+&lt;p&gt;If the schedule change causes any hardship for you, and you would
+prefer to have a PS9 due on Nov 22, let one of the professors know and
+we can arrange something different.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Class 21: Review</title>
@@ -17,9 +598,9 @@
       <guid>https://uvacs2102.github.io/class21/</guid>
       <description>
 
-&lt;h3 id=&#34;exam-2&#34;&gt;Exam 2&lt;/h3&gt;
+&lt;h3 id=&#34;exam-2:575cd0e814aa195b2fbaa50f10d15a07&#34;&gt;Exam 2&lt;/h3&gt;
 
-&lt;p&gt;Exam 2 will be in class on Thursday, 9 Nov. Make sure to go over the notes about the exam posted in &lt;a href=&#34;https://uvacs2102.github.io/docs/class20.pdf&#34;&gt;Class 20&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Exam 2 will be in class on Thursday, 9 Nov. See &lt;a href=&#34;https://uvacs2102.github.io/docs/class20.pdf&#34;&gt;Class 20&lt;/a&gt; notes for details on the exam.&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;
    &lt;center&gt;
@@ -34,17 +615,60 @@
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;the-reviwed-topics&#34;&gt;The reviwed topics.&lt;/h2&gt;
+&lt;h2 id=&#34;main-topics-for-review:575cd0e814aa195b2fbaa50f10d15a07&#34;&gt;Main Topics for Review&lt;/h2&gt;
 
-&lt;p&gt;Today we review the topics that we learned after exam 1 with the exaception of number theory. Therefore, it will be the following topics.&lt;/p&gt;
+&lt;p&gt;Today we review the topics that we learned after Exam 1 with the
+exception of number theory (which will not be included in Exam
+2).&lt;/p&gt;
 
-&lt;p&gt;\begin{itemize}
-\item State Machine and how to argue about correctness of programs.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;State Machines and how to argue about correctness of programs.&lt;/p&gt;&lt;/li&gt;
 
-&lt;p&gt;\item Recursive Definitions and how to prove statements about them using structural induction.&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;Recursive Definitions and how to prove statements about them using structural induction.&lt;/p&gt;&lt;/li&gt;
 
-&lt;p&gt;\item Infinite Sets and Cardinalities, and how to show sets are finite, infinite, countable, or uncountable.
-\end{itemize}&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;Infinite Sets and Cardinalities, and how to show sets are finite, infinite, countable, or uncountable.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;state-machines:575cd0e814aa195b2fbaa50f10d15a07&#34;&gt;State Machines&lt;/h2&gt;
+
+&lt;p&gt;$M = (S, G \subset S \times S, q_0 \in S)$ defines a state machine.&lt;/p&gt;
+
+&lt;p&gt;$P$ is a &lt;em&gt;preserved invariant&lt;/em&gt; if:
+$$ \forall q \in S. (P(q) \wedge (q \rightarrow r) \in G) \implies P&amp;reg;$$&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Invariant Principle:&lt;/strong&gt; If $P$ is a &lt;em&gt;preserved invariant&lt;/em&gt; and
+  $P(q_0)$ is true, then property $P$ is true for all &lt;strong&gt;reachable
+  states&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;proving-program-correctness:575cd0e814aa195b2fbaa50f10d15a07&#34;&gt;Proving Program Correctness&lt;/h2&gt;
+
+&lt;p&gt;To prove a program $R$ produces the correct output:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Model it as a state machine, $M$.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Show that $M$ eventually terminates.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Show partial correctness:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Find a suitable preserved invariant $P$ for $M$.&lt;/li&gt;
+&lt;li&gt;Show that $P(q)$ for all final states implies the output correctness property. (Final states are states where the execution terminates.)&lt;/li&gt;
+&lt;li&gt;Show $P(q_0)$ &amp;mdash; the perserved invariant holds for the start state.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;!--page--&gt;
+
+&lt;h2 id=&#34;recursive-data-types:575cd0e814aa195b2fbaa50f10d15a07&#34;&gt;Recursive Data Types&lt;/h2&gt;
+
+&lt;p&gt;To define a recursive data type $D$:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Define one or more &lt;strong&gt;base&lt;/strong&gt; objects, $d \in D$.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Define one or more &lt;strong&gt;constructor&lt;/strong&gt; cases that specify how to construct a new object $d \in D$ from one or more previoulsy-constructed objects, $d_1, d_2, \ldots \in D$.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;&lt;/div&gt;&lt;/p&gt;
 </description>
@@ -314,6 +938,106 @@ collaboration policy carefully.&lt;/p&gt;
     </item>
     
     <item>
+      <title>Problem Set 8</title>
+      <link>https://uvacs2102.github.io/ps/ps8/</link>
+      <pubDate>Fri, 27 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/ps/ps8/</guid>
+      <description>
+
+&lt;div class=&#34;latex&#34;&gt;
+   \dbox{{\bf Deliverable:} Submit your responses as a
+single, readable PDF file on the collab site before {\bf 6:29pm} on {\bf
+   Friday, 3 November}.}
+   &lt;/div&gt;
+
+&lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;
+   &lt;div class=&#34;highlightr&#34;&gt;
+   &lt;strong&gt;Deliverable:&lt;/strong&gt; Submit your responses as a
+single, readable PDF file on the collab site before &lt;strong&gt;6:29pm&lt;/strong&gt; on
+   &lt;strong&gt;Friday, 3 November&lt;/strong&gt;.
+   &lt;/div&gt;
+   &lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;collaboration-policy-collaboration-policy-identical-to-ps5&#34;&gt;Collaboration Policy - Collaboration Policy (identical to PS5)&lt;/h3&gt;
+
+&lt;p&gt;For this assignment, you may work in groups of one to three students
+to write-up a solution together.  If you work with teammates, exactly
+one of you should submit one assignment that represents your
+collective best work with all of your names and UVA ids clearly marked
+on it on it.  &lt;em&gt;Everyone on a team should understand everything you
+turn in for the assignment well enough to be able to produce it
+completely on your own.&lt;/em&gt; All teammates must review the submissions
+before it is submitted to make sure you understand everything on it
+and that your name and UVA id are clearly marked on it.&lt;/p&gt;
+
+&lt;h2 id=&#34;preparation&#34;&gt;Preparation&lt;/h2&gt;
+
+&lt;p&gt;This problem set focuses on infinite sets &amp;mdash; Chapter 8 of the MCS book,
+and &lt;a href=&#34;https://uvacs2102.github.io/class17&#34;&gt;Class 17&lt;/a&gt;, &lt;a href=&#34;https://uvacs2102.github.io/class18&#34;&gt;Class 18&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlightm&#34;&gt;
+    &lt;a href=&#34;https://uvacs2102.github.io/docs/ps8.pdf&#34;&gt;Download PDF for Problems&lt;/a&gt;.
+   &lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlightr&#34;&gt;
+Your response should be submitted as a single PDF file using collab.  Please read and follow the &lt;a href=&#34;https://uvacs2102.github.io/pdfs/&#34;&gt;Generating PDFs&lt;/a&gt; advice on the course site.
+   &lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;directions&#34;&gt;Directions&lt;/h2&gt;
+
+&lt;p&gt;Solve all 8 problems.  Your answers should be clear, consise, and convincing.&lt;/p&gt;
+
+&lt;h3 id=&#34;countable-sets&#34;&gt;Countable Sets&lt;/h3&gt;
+
+&lt;p&gt;For each set defined below, prove that the set described is &lt;em&gt;countable&lt;/em&gt;.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;$\text{\em Evens} = { 2n \, | \, n \in \mathbb{N} }$&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;$\mathbb{N} \cup { \pi, \tau }$ (where $\pi$ is the ratio of a circle&amp;rsquo;s circumference to its diameter and $\tau$ is the ratio of a circle&amp;rsquo;s circumference to its radius)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;The set $X$ of all finite state machines, $M = (S, G, q_0)$ where $S = \mathbb{N}_k$
+for &lt;em&gt;some&lt;/em&gt; natural number $k&amp;gt;0$, and $G \subseteq S \times S$ and $q_0 \in S$ are
+otherwise unrestricted. (Note that here we are &lt;em&gt;not&lt;/em&gt; working with a fixed $k$, and for example machines with  $S = \mathbb{N}_2$ and machines with $S = \mathbb{N}_9$ are both counted in the set $X$).&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&#34;possibly-countable-sets&#34;&gt;Possibly Countable Sets&lt;/h3&gt;
+
+&lt;p&gt;For each set defined below, determine if the set is &lt;em&gt;countable&lt;/em&gt; or
+&lt;em&gt;uncountable&lt;/em&gt; and support your answer with a convincing proof.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;The set of all &lt;em&gt;stree&lt;/em&gt; objects, defined by:
+\begin{itemize}
+\item Base object: $\text{\bf null}$ is an {\em stree}.
+\item Constructor: for any {\em stree} objects $q_1, q_2$, $\text{combine}(q_1, q_2)$ is an {\em stree}.
+\end{itemize}&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;$\mathbb{R} - \mathbb{Q}$.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;The set of all &lt;em&gt;infinite&lt;/em&gt; state machines, $M = (S, G, q_0)$ where $S = \mathbb{N}$, and $G \subseteq S \times S$ and $q_0 \in S$ are
+otherwise unrestricted.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&#34;properties-of-infinite-sets&#34;&gt;Properties of Infinite Sets&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;In class 17 we defined a set $C$ to be countable, if there is a surjective function $f: \mathbb{N} \rightarrow C$. Prove that we get an equivalent definition if we call $C$ countable whenever then there is a &lt;em&gt;total&lt;/em&gt; surjective function, $$f: \mathbb{N} \rightarrow C.$$
+Note that you  need to prove &lt;em&gt;two&lt;/em&gt; directions, that whenever $C$ satisfies in the first definition of countable, it does satisfy in the second definition of countable, and vice versa.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;MCS Problem 8.23.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Class 18: Spooky Infinities</title>
       <link>https://uvacs2102.github.io/class18/</link>
       <pubDate>Thu, 26 Oct 2017 00:00:00 +0000</pubDate>
@@ -321,7 +1045,7 @@ collaboration policy carefully.&lt;/p&gt;
       <guid>https://uvacs2102.github.io/class18/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule:31a24b707f457b52726ca1d5e1ddffba&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps7&#34;&gt;&lt;strong&gt;Problem Set 7&lt;/strong&gt;&lt;/a&gt; is due &lt;strong&gt;Friday (27 Oct) at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
 
@@ -337,7 +1061,7 @@ collaboration policy carefully.&lt;/p&gt;
    &lt;a href=&#34;https://uvacs2102.github.io/docs/class18.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes&lt;/b&gt;&lt;/a&gt;.
    &lt;/div&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;links:31a24b707f457b52726ca1d5e1ddffba&#34;&gt;Links&lt;/h2&gt;
+&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://www.amazon.com/Logicomix-search-truth-Apostolos-Doxiadis/dp/1596914521/&#34;&gt;&lt;em&gt;Logicomix: An epic search for truth&lt;/em&gt;&lt;/a&gt;, comic book by Apostolos Doxiadis and &lt;a href=&#34;https://people.eecs.berkeley.edu/~christos/&#34;&gt;Christos H. Papadimitrou&lt;/a&gt;.&lt;/p&gt;
 
@@ -347,7 +1071,7 @@ collaboration policy carefully.&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;countable-and-uncountable-sets:31a24b707f457b52726ca1d5e1ddffba&#34;&gt;Countable and Uncountable Sets&lt;/h2&gt;
+&lt;h2 id=&#34;countable-and-uncountable-sets&#34;&gt;Countable and Uncountable Sets&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; A set $S$ is &lt;em&gt;countably infinite&lt;/em&gt; if and only if there
   exists a bijection between $S$ and $\mathbb{N}$.&lt;/p&gt;
@@ -379,7 +1103,7 @@ $$&lt;/p&gt;
 
 &lt;!--page--&gt;
 
-&lt;h2 id=&#34;ordinal-and-cardinal-numbers:31a24b707f457b52726ca1d5e1ddffba&#34;&gt;Ordinal and Cardinal Numbers&lt;/h2&gt;
+&lt;h2 id=&#34;ordinal-and-cardinal-numbers&#34;&gt;Ordinal and Cardinal Numbers&lt;/h2&gt;
 
 &lt;p&gt;$\omega$ is the &lt;em&gt;smallest infinite ordinal&lt;/em&gt;.  The first ordinal after
 $0, 1, 2, \cdots$.&lt;/p&gt;
@@ -409,639 +1133,6 @@ $0, 1, 2, \cdots$.&lt;/p&gt;
       
       <guid>https://uvacs2102.github.io/ps6comments/</guid>
       <description>&lt;p&gt;The Problem Set 6 solutions and comments are now posted in collab: &lt;a href=&#34;https://collab.its.virginia.edu/access/content/group/9bd99d1c-6f18-4542-a7d1-8ffc4fccbd3d/ps6solutions.pdf&#34;&gt;PDF&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Class 17: Infinite Sets</title>
-      <link>https://uvacs2102.github.io/class17/</link>
-      <pubDate>Tue, 24 Oct 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://uvacs2102.github.io/class17/</guid>
-      <description>
-
-&lt;h3 id=&#34;schedule:8b7b3a27abcb870c301f99da90607ac1&#34;&gt;Schedule&lt;/h3&gt;
-
-&lt;p&gt;Before Thursday, everyone should have finished reading MCS Chapter 8.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps7&#34;&gt;&lt;strong&gt;Problem Set 7&lt;/strong&gt;&lt;/a&gt; is due &lt;strong&gt;Friday (27 Oct) at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;
-   &lt;center&gt;
-&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;57544e0622ea4b4cbe07b4e4385eca85&#34; data-ratio=&#34;1.77777777777778&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
-   &lt;/center&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;highlightm&#34;&gt;
-   &lt;a href=&#34;https://uvacs2102.github.io/docs/class17.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes&lt;/b&gt;&lt;/a&gt;.
-   &lt;/div&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;links:8b7b3a27abcb870c301f99da90607ac1&#34;&gt;Links&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.cs.cornell.edu/courses/cs2800/2017fa/lectures/lec14-cantor.html&#34;&gt;Proof of Schr&amp;ouml;der-Bernstein Theorem&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;infinite-sets:8b7b3a27abcb870c301f99da90607ac1&#34;&gt;Infinite Sets&lt;/h1&gt;
-
-&lt;p&gt;&lt;strong&gt;Finite Cardinality.&lt;/strong&gt; The &lt;em&gt;cardinality&lt;/em&gt; of the set
-$$
-\mathbb{N}_k = { n | n \in \mathbb{N} \wedge n &amp;lt; k }
-$$
-is $k$.  If there is a &lt;em&gt;bijection&lt;/em&gt; between two sets, they have the same
-cardinality.  (Class 9)&lt;/p&gt;
-
-&lt;p&gt;Does this definition tell us the cardinality of $\mathbb{N}$?&lt;/p&gt;
-
-&lt;p&gt;###&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; A set $S$ is &lt;em&gt;infinite&lt;/em&gt; if there is no bijection between
-  $S$ and any set $\mathbb{N}_k$ (as defined above).&lt;/p&gt;
-
-&lt;p&gt;Show that $\mathbb{Z}$ is infinite.&lt;/p&gt;
-
-&lt;h3 id=&#34;cardinality-of-infinite-sets:8b7b3a27abcb870c301f99da90607ac1&#34;&gt;Cardinality of Infinite Sets&lt;/h3&gt;
-
-&lt;p&gt;&lt;strong&gt;Equal Carinalities.&lt;/strong&gt; We say $|A|\; = |B|$  for arbitrary sets $A,B$ (and say that they have the same cardinality), if there is a bijection between $A$ and $B$.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Comparing Cardinalities.&lt;/strong&gt; We say $|B|\; \leq |A|$  for arbitrary sets $A,B$ (and say that $B$&amp;rsquo;s cardinality is less than or equal to the cardinality of $A$), if there is a &lt;em&gt;surjective function&lt;/em&gt; from $A$ to $B$.&lt;/p&gt;
-
-&lt;p&gt;Show that $|A|\; = |B|$ implies $|B|\; \leq |A|$ and $|A|\; \leq |B|$. Be careful as these sets might not be finite, in which case we cannot simply use natural numbers to denote their cardinalities.&lt;/p&gt;
-
-&lt;p&gt;##&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Schr\wrap{\&amp;ldquo;{o}}der-Bernstein Theorem:&lt;/strong&gt; If $|A|\; \leq |B|$ and $|B|\; \leq |A|$, then there is a bijection between $A$ and $B$, namely $|A|\; = |B|$. (Not proven in cs2102; this is somewhat tricky to prove! For a full proof, see &lt;a href=&#34;http://www.cs.cornell.edu/courses/cs2800/2017fa/lectures/lec14-cantor.html&#34;&gt;the linked lecture notes&lt;/a&gt;.)&lt;/p&gt;
-
-&lt;h3 id=&#34;other-definitions-for-infinite-sets:8b7b3a27abcb870c301f99da90607ac1&#34;&gt;Other Definitions for Infinite Sets&lt;/h3&gt;
-
-&lt;p&gt;&lt;strong&gt;Dedekind-Infinite.&lt;/strong&gt; A set $A$ is &lt;em&gt;Dedekind-infinite&lt;/em&gt; if and only if there exists a &lt;em&gt;strict subset&lt;/em&gt; of $A$ with the same cardinality as $A$.  That is,
-$$\exists B \subset A \ldotp \exists R \ldotp R\ \text{is a bijection between}\ A\ \text{and}\ B.$$&lt;/p&gt;
-
-&lt;p&gt;Recall the definition of strict subset:
-$$B \subset A \iff B \subseteq A \wedge \exists x \in A\; .\; x \notin B.$$&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Third Definition.&lt;/strong&gt; A set $S$ is &lt;em&gt;third-definition infinite&lt;/em&gt; if $|S|\; \geq |\mathbb{N}|$ (as defined on the previous page).  Namely, there is a &lt;em&gt;surjective function&lt;/em&gt; from $S$ to $\mathbb{N}$.&lt;/p&gt;
-
-&lt;p&gt;Are the above three definitions of (standard) &lt;em&gt;infinite&lt;/em&gt; and &lt;em&gt;Dedekind-infinite&lt;/em&gt; and &lt;em&gt;third-definition infinite&lt;/em&gt;
-equivalent definitions?&lt;/p&gt;
-
-&lt;p&gt;##&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; A set $S$ is &lt;em&gt;countable&lt;/em&gt; if and only if there exists a
-  surjective function from $\mathbb{N}$ to $S$.  (That is, $\le 1$ arrow
-  out from $\mathbb{N}$, $\ge 1$ arrow in to $S$.) Using our notation defined above, this means $|S|\; \leq |\mathbb{N}|$.&lt;/p&gt;
-
-&lt;p&gt;Prove that these sets are countable: $\mathbb{Z}$, $\mathbb{N} \times
-\mathbb{N}$, $\mathbb{Q}$ (rationals), $\emptyset$, $\mathbb{N} \cup (\mathbb{N} \times \mathbb{N}) \cup (\mathbb{N} \times \mathbb{N} \times \mathbb{N})$, all finite sequences of elements of $\mathbb{N}$.&lt;/p&gt;
-
-&lt;p&gt;#&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; A set $S$ is &lt;em&gt;countably infinite&lt;/em&gt; if and only if it is &lt;em&gt;countable&lt;/em&gt; and it is &lt;em&gt;infinite&lt;/em&gt; (according to standard definition).&lt;/p&gt;
-
-&lt;p&gt;Must a &lt;em&gt;countable&lt;/em&gt; set that is &lt;em&gt;Dedekind-infinite&lt;/em&gt; be &lt;em&gt;countably infinite&lt;/em&gt;?&lt;/p&gt;
-
-&lt;p&gt;#&lt;/p&gt;
-
-&lt;p&gt;Using the definition of countable, and third definition of infinite, show that $S$ is countably infinite if and only if there is a bijection between $S$ and $\mathbb{N}$. (We might as well use this definition in the future.)&lt;/p&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Problem Set 7</title>
-      <link>https://uvacs2102.github.io/ps7posted/</link>
-      <pubDate>Fri, 20 Oct 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://uvacs2102.github.io/ps7posted/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps7&#34;&gt;&lt;strong&gt;Problem Set 7&lt;/strong&gt;&lt;/a&gt; [&lt;a href=&#34;https://uvacs2102.github.io/docs/ps7.pdf&#34;&gt;PDF&lt;/a&gt;] is now posted and
-is due &lt;strong&gt;Friday, 27 Oct at 6:29:00pm&lt;/strong&gt;. Please read the
-collaboration policy carefully.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Class 16: Structural Induction</title>
-      <link>https://uvacs2102.github.io/class16/</link>
-      <pubDate>Thu, 19 Oct 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://uvacs2102.github.io/class16/</guid>
-      <description>
-
-&lt;h3 id=&#34;schedule:e5faf2b6fe551ee3e6bfd5f1acfee2f5&#34;&gt;Schedule&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps7&#34;&gt;&lt;strong&gt;Problem Set 6&lt;/strong&gt;&lt;/a&gt; is due &lt;strong&gt;tomorrow at 6:29pm&lt;/strong&gt;. Make sure to read the corrected version of Problem 7.&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;
-   &lt;center&gt;
-&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;df7755f817fe4902abc3b73573f79752&#34; data-ratio=&#34;1.77777777777778&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
-   &lt;/center&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;highlightm&#34;&gt;
-   &lt;a href=&#34;https://uvacs2102.github.io/docs/class16.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes&lt;/b&gt;&lt;/a&gt;.
-   &lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;lists:e5faf2b6fe551ee3e6bfd5f1acfee2f5&#34;&gt;Lists&lt;/h1&gt;
-
-&lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; A &lt;em&gt;list&lt;/em&gt; is an ordered sequence of objects.  A list is
-  either the empty list ($\lambda$), or the result of $\text{prepend}(e,
-  l)$ for some object $e$ and list $l$.&lt;/p&gt;
-
-&lt;p&gt;\begin{equation&lt;em&gt;}
-\begin{split}
-\text{\em first}(\text{prepend}(e, l)) &amp;amp;= e \
-\text{\em rest}(\text{prepend}(e, l)) &amp;amp;= l \
-\text{\em empty}(\text{prepend}(e, l)) &amp;amp;= \text{\bf False} \
-\text{\em empty}(\text{\bf null}) &amp;amp;= \text{\bf True} \
-\end{split}
-\end{equation&lt;/em&gt;}&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; The &lt;em&gt;length&lt;/em&gt; of a list, $p$, is:
-\begin{equation&lt;em&gt;}
-\begin{split}
-\begin{cases}
-0 &amp;amp; \text{if}\ p\ \text{is \bf null} \
-\text{\em length}(q) + 1 &amp;amp; \text{otherwise}\ p = \text{\em prepend}(e, q)\ \text{for some object}\ e\ \text{and some list}\ q \
-\end{cases}
-\end{split}
-\end{equation&lt;/em&gt;}&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-Python&#34;&gt;def list_length(l):
-    if list_empty(l):
-        return 0
-    else:
-        return 1 + list_length(list_rest(l))
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Prove: for all lists, $p$, &lt;code&gt;list_length(p)&lt;/code&gt; returns the length of the list $p$.&lt;/p&gt;
-
-&lt;!--page--&gt;
-
-&lt;h2 id=&#34;concatenation:e5faf2b6fe551ee3e6bfd5f1acfee2f5&#34;&gt;Concatenation&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; The &lt;em&gt;concatenation&lt;/em&gt; of two lists, $p = (p_1, p_2, \cdots, p_n)$ and $q = (q_1, q_2, \cdots, q_m)$ is
-$$(p_1, p_2, \cdots, p_n, q_1, q_2, \cdots, q_m).$$&lt;/p&gt;
-
-&lt;p&gt;Provide a &lt;em&gt;constructuve&lt;/em&gt; definition of &lt;em&gt;concatenation&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;Note that $\text{prepend}(p,q)$ is not a good idea for two reasons. If we use this definition, then the first element of the constructed list will be the object (list) $p$ (as a whole) rather than the first element $p_1$ of the list $p$. Also, if we want to &lt;em&gt;only&lt;/em&gt; define lists of &lt;em&gt;specific&lt;/em&gt; objects, for example integers, we can still use the same recursive/constructive definition of lists by substituting &amp;ldquo;object&amp;rdquo; with &amp;ldquo;integer&amp;rdquo;, but in that case $\text{prepend}(p,q)$ will not even well defined, as it can only accept integers as first input.&lt;/p&gt;
-
-&lt;p&gt;#&lt;/p&gt;
-
-&lt;h2 id=&#34;structural-induction:e5faf2b6fe551ee3e6bfd5f1acfee2f5&#34;&gt;Structural Induction&lt;/h2&gt;
-
-&lt;p&gt;To prove proposition $P(x)$ for element $x \in D$ where $D$ is a
-recursively-constructed data type, we do two things:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Show $P(x)$ is true for all $x \in D$ that are defined using base cases.&lt;/li&gt;
-&lt;li&gt;Show that if $P(y)$ is true for element $y$ and $x$ is constructed from $y$
-using any &amp;ldquo;construct case&amp;rdquo; rules, then $P(x)$ is true as well.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&#34;comparing-various-forms-of-induction:e5faf2b6fe551ee3e6bfd5f1acfee2f5&#34;&gt;Comparing Various forms of Induction&lt;/h2&gt;
-
-&lt;p&gt;\begin{center}
-\begin{tabular}{lccc}
-&amp;amp; {\bf Regular Induction} &amp;amp; {\bf Invariant Principle} &amp;amp; {\bf Structural Induction} \ \hline
-Works on: &amp;amp; natural numbers &amp;amp; state machines &amp;amp; data types \
-To prove $P(\cdot)$ &amp;amp; {\em for all natural numbers} &amp;amp; {\em for all reachable states} &amp;amp; {\em for all data type objects} \
-Prove {\bf base case(s)} &amp;amp; $P(0)$ &amp;amp; $P(q_0)$ &amp;amp; $P(\text{base object(s)})$ \
-and {\bf inductive step} &amp;amp; $\forall m \in \mathbb{N} \ldotp$ &amp;amp; $\forall (q, r) \in G \ldotp $ &amp;amp; $\forall s \in \text{\em Type} \ldotp$ \
-  &amp;amp; $P(m) \implies P(m+1)$ &amp;amp; $P(q) \implies P&amp;reg;$ &amp;amp; $P(s) \implies P(t)$ \
- &amp;amp; &amp;amp; &amp;amp; $\quad \forall t\ \text{constructable from}\ s$ \
-\end{tabular}
-\end{center}&lt;/p&gt;
-
-&lt;p&gt;#
-##&lt;/p&gt;
-
-&lt;p&gt;Prove. For any two lists, $p$ and $q$, $\text{length}(p + q) = \text{length}(p) + \text{length}(q)$.&lt;/p&gt;
-
-&lt;p&gt;#&lt;/p&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Class 15: Recursive Data Types</title>
-      <link>https://uvacs2102.github.io/class15/</link>
-      <pubDate>Tue, 17 Oct 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://uvacs2102.github.io/class15/</guid>
-      <description>
-
-&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
-
-&lt;p&gt;You should read MCS Chapter 7 this week.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps6&#34;&gt;&lt;strong&gt;Problem Set 6&lt;/strong&gt;&lt;/a&gt; is due &lt;strong&gt;20 October (Friday) at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;
-   &lt;center&gt;
-&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;9d25492c6e134346a212652c6d0052ab&#34; data-ratio=&#34;1.77777777777778&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
-   &lt;/center&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
-
-&lt;p&gt;Python code from class and list definitions: &lt;a href=&#34;https://uvacs2102.github.io/docs/pairs.py&#34;&gt;pairs.py&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;highlightm&#34;&gt;
-   &lt;a href=&#34;https://uvacs2102.github.io/docs/class15.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes&lt;/b&gt;&lt;/a&gt;.
-   &lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;proving-correctness&#34;&gt;Proving Correctness&lt;/h1&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def slow_power(a, b):
-   y = 1
-   z = b
-   while z &amp;gt; 0:
-      y = y * a
-      z = z - 1
-   return y
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;We model the Python program with a state machine:&lt;/p&gt;
-
-&lt;p&gt;$S ::= \mathbb{N} \times \mathbb{N}$&lt;br /&gt;
-$G ::= { (y, z) \rightarrow (y \cdot a, z - 1) \, | \, \forall y, z \in \mathbb{N}^{+}}$&lt;br /&gt;
-$q_0 ::= (1, b)$&lt;/p&gt;
-
-&lt;p&gt;It is important to remember this is a &lt;em&gt;model&lt;/em&gt;. It does not capture
-many important aspects of execution of a real Python program. In
-particular, it only models inputs in $\mathbb{N}$, when the actual
-inputs could be other types in PYthon.  It also assume all math
-opderations work mathematically, not Pythonically.&lt;/p&gt;
-
-&lt;p&gt;To prove partial correctness, we show $P(q = (y, z)) := y = a^{b-z}$
-is a &lt;em&gt;preserved invariant&lt;/em&gt;. Then, we show that it holds in state
-$q_0$.  Finally, we show that in all final states, $y = a^b$.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Invariant is Preserved:&lt;/strong&gt; We need to show that $\forall q \in S . \forall t \in S . (q, t) \in G \implies P(q) \implies P(t)$.&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;$q = (y, z)$. $P(q = (y, z))$: $y = a^{b-z}$.&lt;/li&gt;
-&lt;li&gt;If there is an edge from $q$ to $t$, that means $t = (y \cdot a, z-1)$ and $z \ge 1$ since this is the only edge from $q$ in $G$.&lt;/li&gt;
-&lt;li&gt;We show $P(t = (y \cdot a, z-1))$ holds by multiplying both sides of $P(q)$ by $a$: $$ya = (a^{b -z}) \cdot a = a^{b - z + 1} = a ^{b - (z - 1)}.$$&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;strong&gt;Invariant holds in $q_0$:&lt;/strong&gt; $q_0 = (1, b)$. So, we need to show $P(q_0 = (1, b))$: $1 = a^{b - b}$. This holds since $a^{0} = 1$.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Final states:&lt;/strong&gt; All states where $z \ge 1$ have an outgoing edge, but no states where $z = 0$ do. So, the final states are all of the form $(\alpha, 0)$. If a final state is reachable from $q_0$, the invariant must hold since we proved it is preserve. Hence, in the final state $(\alpha, 0)$ we know $\alpha = a^{b}$.&lt;/p&gt;
-
-&lt;p&gt;This proves &lt;em&gt;partial correctness&lt;/em&gt;: if the program terminates, it
-terminates in a state where the property ($y = a^b$ is satisfied).  To
-prove &lt;em&gt;total correctness&lt;/em&gt; we also need to know the execution
-&lt;em&gt;eventually&lt;/em&gt; reaches a final state.&lt;/p&gt;
-
-&lt;p&gt;We prove this by showing that from any initial state $q_0 = (1, b)$,
-the machine will reach a final state $q_f = (y, 0)$ in $b$ steps.  The
-proof in class used the Well Ordering Principle. You could also prove
-this using regular Induction.&lt;/p&gt;
-
-&lt;h1 id=&#34;pairs&#34;&gt;Pairs&lt;/h1&gt;
-
-&lt;p&gt;What is the difference between scalar data and compound data structures?&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; A $\text{\em Pair}$ is a datatype that supports these three operations:&lt;br /&gt;
-\begin{quote}
-     $\text{\em make_pair}: \text{\em Object} \times \text{\em Object} \rightarrow \text{\em Pair}$\
-     $\text{\em pair_first}: \text{\em Pair} \rightarrow \text{\em Object}$\&lt;br /&gt;
-     $\text{\em pair_last}: \text{\em Pair} \rightarrow \text{\em Object}$\&lt;br /&gt;
-\end{quote}
-where, for any objects $a$ and $b$, $\text{\em pair_first}(\text{\em make_pair}(a, b)) = a$ and $\text{\em pair_last}(\text{\em make_pair}(a, b)) = b$.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-Python&#34;&gt;def make_pair(a, b):
-    def selector(which):
-        if which:
-            return a
-        else:
-            return b
-    return selector
-
-def pair_first(p):
-    return p(True)
-
-def pair_last(p):
-    return p(False)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h1 id=&#34;lists&#34;&gt;Lists&lt;/h1&gt;
-
-&lt;p&gt;&lt;strong&gt;Definition (1).&lt;/strong&gt; A &lt;em&gt;List&lt;/em&gt; is either (1) a &lt;em&gt;Pair&lt;/em&gt; where the second part of
-  the pair is a &lt;em&gt;List&lt;/em&gt;, or (2) the empty list.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Definition (2).&lt;/strong&gt; A &lt;em&gt;List&lt;/em&gt; is a ordered sequence of objects.&lt;/p&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Problem Set 6</title>
-      <link>https://uvacs2102.github.io/ps/ps6/</link>
-      <pubDate>Fri, 13 Oct 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://uvacs2102.github.io/ps/ps6/</guid>
-      <description>
-
-&lt;div class=&#34;latex&#34;&gt;
-   \dbox{{\bf Deliverable:} Submit your responses as a
-single, readable PDF file on the collab site before {\bf 6:29pm} on {\bf Friday, 20 October}.  
-The PDF you submit can be a scanned handwritten file
-(please check the scan is readable), or a typeset PDF file (e.g.,
-generated by LaTeX).}
-&lt;/div&gt;
-
-&lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;
-   &lt;div class=&#34;highlightr&#34;&gt;
-   &lt;strong&gt;Deliverable:&lt;/strong&gt; Submit your responses as a
-single, readable PDF file on the collab site before &lt;strong&gt;6:29pm&lt;/strong&gt; on &lt;strong&gt;Friday, 20
-October&lt;/strong&gt;. The PDF you submit can be a scanned handwritten file
-(please check the scan is readable), or a typeset PDF file (e.g.,
-generated by LaTeX or Word).
-   &lt;/div&gt;
-   &lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;collaboration-policy-read-carefully&#34;&gt;Collaboration Policy - Read Carefully&lt;/h3&gt;
-
-&lt;p&gt;As with PS5, you should work in groups of one to three students to
-write-up a solution together. The rest of the collaboration policy is
-identical to what it was on &lt;a href=&#34;https://uvacs2102.github.io/ps/ps5&#34;&gt;PS5&lt;/a&gt;, and is not repeated here.&lt;/p&gt;
-
-&lt;h2 id=&#34;preparation&#34;&gt;Preparation&lt;/h2&gt;
-
-&lt;p&gt;This problem set focuses on Sections 6.1-6.3 of the MCS book, and &lt;a href=&#34;https://uvacs2102.github.io/class13&#34;&gt;Class
-13&lt;/a&gt; and &lt;a href=&#34;https://uvacs2102.github.io/class14&#34;&gt;Class 14&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;
-   &lt;div class=&#34;highlightm&#34;&gt;
-    &lt;a href=&#34;https://uvacs2102.github.io/docs/ps6.pdf&#34;&gt;Download PDF for Problems&lt;/a&gt;.
-   &lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;highlightr&#34;&gt;
-Your response should be submitted as a single PDF file using collab.
-Please read and follow the &lt;a href=&#34;https://uvacs2102.github.io/pdfs/&#34;&gt;Generating
-PDFs&lt;/a&gt; advice on the course site.
-   &lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;directions&#34;&gt;Directions&lt;/h2&gt;
-
-&lt;p&gt;Solve as many of the 8 problems as you can.  For maximum credit, your
-answers should be correct, clear, well-written, and convincing.&lt;/p&gt;
-
-&lt;p&gt;Problems marked with $(\star)$ are challenging enough that it is not
-necessary to solve them well to get a ``gold-star level&amp;rdquo; grade on this
-assignment (although we certainly hope you will try and some will
-succeed!)&lt;/p&gt;
-
-&lt;h1 id=&#34;state-machines&#34;&gt;State Machines&lt;/h1&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;Describe a state machine that can be used to determine if the number
-of steps is divisible by 3.  You should clearly define the set of states
-in your machine, and how each is interpreted, and the transition
-relation.  (Don&amp;rsquo;t forget to also specify $q_0$.)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Describe the set of states that are &lt;em&gt;reachable&lt;/em&gt; for the ``Progress&amp;rdquo;
-Machine defined as $M = (S, G, q_0)$:&lt;/p&gt;
-
-&lt;p&gt;$S = { (x, d) \, | \, x \in \mathbb{Z}, d \in { \mathrm{\bf F}, \mathrm{\bf B}} }$&lt;br /&gt;
-$G = { (x, \mathrm{\bf F}) \rightarrow (x + 1, \mathrm{\bf B}) \, | \, x \in \mathbb{Z} } \cup
- { (x, \mathrm{\bf B}) \rightarrow (x - 2, \mathrm{\bf F}) \, | \, x \in \mathbb{Z} }$&lt;br /&gt;
-$q_0 = (0, \mathrm{\bf F})$&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;$M = (S, G \subseteq S \times S, q_0 \in S)$ is a state machine where
-the cardinality of $S$ is finite, and transition relation, $G$, is a
-total injective function.  Show that it is possible for some states in
-$S$ to be unreachable.&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;!--page--&gt;
-
-&lt;h1 id=&#34;knight-s-moves&#34;&gt;Knight&amp;rsquo;s Moves&lt;/h1&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;($\star$) A &lt;em&gt;knight&lt;/em&gt; in chess can move two squares up, down, left, or right, followed by one square in a direction perpendicular to the two squares (so, it can move two squares up or down, followed by one square left or right; or, can move two squares left or right, followed by one square up or down).  We can define the possible moves of a knight on an infinite chess board as the Knight State Machine (similarly to how we defined the Bishop State Machine in &lt;a href=&#34;https://uvacs2102.github.io/class14&#34;&gt;Class 14&lt;/a&gt;):&lt;/p&gt;
-
-&lt;p&gt;$S = { (r, c) \, | \, r, c \in \mathbb{N} }$
-$G = { (r, c) \rightarrow (r&amp;rsquo;, c&amp;rsquo;) \, | \, r, c \in \mathbb{N} \wedge
-((r&amp;rsquo; = r \pm 2 \wedge c&amp;rsquo; = c \pm 1) \vee (r&amp;rsquo; = r \pm 1 \wedge c&amp;rsquo; = c \pm 2)) \wedge r&amp;rsquo; \ge 0 \wedge c&amp;rsquo; \ge 0 }$
-$q_0 = (0, 0)$&lt;/p&gt;
-
-&lt;p&gt;Prove that all states in $S$ are reachable for the Knight State Machine.
-(Hint: use induction, but be careful to either set up an appropriate
-$P(n)$ or break the proof into two separate induction proofs to show you
-can reach any column and can reach any rwo.)&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h1 id=&#34;invariant-principle&#34;&gt;Invariant Principle&lt;/h1&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;MCS Problem 6.3.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Use the principle of induction to prove the invariant principle.
-(Hint: your induction predicate, $P(n)$ should use $n$ as the number of
-steps.)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;MCS Problem 6.11. Parts  (b) and &amp;copy; are considered ($\star$)-ed parts. For part (a) you can only list the items that are preserved invariants, but for part (b) and &amp;copy;
-your answers should contain full proofs for any claims or answers (even for part (b) where the wording of the problem in the book asks for only a number).&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;There is also some typos in how the part (a) is listd. The actual (simpler-to-solve) peroperties are as follows. $rem(a,b)$ is the remainder of dividing $a$ by $b$ and is the same as $a \mod b$.&lt;/p&gt;
-
-&lt;p&gt;(6.5) $rem(n_b+n_w, 3) \neq 2$&lt;/p&gt;
-
-&lt;p&gt;(6.6) $rem(n_w-n_b, 3) = 2$&lt;/p&gt;
-
-&lt;p&gt;(6.7) $rem(n_b-n_w, 3) = 2$&lt;/p&gt;
-
-&lt;p&gt;(6.8) $n_b + n_w &amp;gt; 5$&lt;/p&gt;
-
-&lt;p&gt;(6.9) $n_b + n_w &amp;lt; 5$&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;($\star$) Prove the Python program below is a correct implementation of the
-factorial function.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def factorial(n):
-    x = 1 # poor choices of variable names for programmers
-    y = 1 
-    while x &amp;lt;= n:
-        y = y * x
-        x = x + 1
-    return y
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;To be &lt;em&gt;correct&lt;/em&gt;, for any input $n \in \mathbb{N}$, the program should
-always return a result equal to $n!$.  The factorial of $n$ is defined
-as the product of all positive integers up to and including $n$.  (Note
-that $0! = 1$.)&lt;/p&gt;
-
-&lt;p&gt;A good answer will explain (1) how to map the program to a state machine, (2) come up with a preserved invariant property that (2.a) holds at the beginning and (2.b) if it holds at the termination, it implies the right answer is produced. A perfect answer also shall argue why the program terminates.&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Class 14: Invariant Principle</title>
-      <link>https://uvacs2102.github.io/class14/</link>
-      <pubDate>Thu, 12 Oct 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://uvacs2102.github.io/class14/</guid>
-      <description>
-
-&lt;h3 id=&#34;schedule:69e304a0e65e98722637abe379145c02&#34;&gt;Schedule&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps6&#34;&gt;&lt;strong&gt;Problem Set 6&lt;/strong&gt;&lt;/a&gt; is due &lt;strong&gt;20 October (Friday) at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;Exam 1 was returned Tuesday.  If you did not pick yours up yet, you
-can get it after class today.  We will start charging
-exponentially-increasing storage fees for inexcusably unclaimed exams
-starting after Prof. Mahmoody&amp;rsquo;s office hours Monday.&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;
-   &lt;center&gt;
-&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;02ef275aa1474918a22516979d995c6d&#34; data-ratio=&#34;1.77777777777778&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
-   &lt;/center&gt;
-   &lt;div class=&#34;highlightm&#34;&gt;
-   &lt;a href=&#34;https://uvacs2102.github.io/docs/class14.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes&lt;/b&gt;&lt;/a&gt;.
-   &lt;/div&gt;
-   &lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;state-machines-review-from-class-13:69e304a0e65e98722637abe379145c02&#34;&gt;State Machines (review from Class 13)&lt;/h2&gt;
-
-&lt;p&gt;A &lt;em&gt;state machine&lt;/em&gt;, $M = (S, G: S \times S, q_0 \in S)$, is a binary
-relation (called a &lt;em&gt;transition relation&lt;/em&gt;) on a set (both the domain and
-codomain are the same set).  One state, denoted $q_0$, is designated as
-the &lt;em&gt;start state&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;An &lt;em&gt;execution&lt;/em&gt; of a state machine $M = (S, G \subseteq S \times S, q_0
-\in S)$ is a (possibly infinite) sequence of states, $(x_0, x_1, \cdots,
-x_n)$ where (1) $x_0 = q_0$ (it begins with the start state), and (2)
-$\forall i \in {0, 1, \ldots, n - 1} \ldotp (x&lt;em&gt;i, x&lt;/em&gt;{i + 1}) \in G$
-(if $q$ and $r$ are consecutive states in the sequence, then there is an
-edge $q \rightarrow r$ in $G$).&lt;/p&gt;
-
-&lt;p&gt;A state $q$ is &lt;em&gt;reachable&lt;/em&gt; if it appears in some execution.&lt;/p&gt;
-
-&lt;p&gt;A &lt;em&gt;preserved invariant&lt;/em&gt; of a state machine $M = (S, G \subseteq S \times
-S, q_0 \in S)$ is a predicate, $P$, on states, such that whenever $P(q)$
-is true of a state $q$, and $q \rightarrow r \in G$, then $P&amp;reg;$ is
-true.&lt;/p&gt;
-
-&lt;h3 id=&#34;bishop-state-machine:69e304a0e65e98722637abe379145c02&#34;&gt;Bishop State Machine&lt;/h3&gt;
-
-&lt;p&gt;$S = { (\fillin ) \, | \, r, c \in \mathbb{N} }$
-$G = { (r, c) \rightarrow (r&amp;rsquo;, c&amp;rsquo;) \, | \, r, c \in \mathbb{N} \wedge (\exists d \in \mathbb{N}^{+} \textrm{ such that } r&amp;rsquo; = r \fillin d \wedge r&amp;rsquo; \ge 0 \wedge c&amp;rsquo; = c \fillin d \wedge c&amp;rsquo; \ge 0 }$
-$q_0 = (0, 2)$&lt;/p&gt;
-
-&lt;p&gt;What states are &lt;em&gt;reachable&lt;/em&gt;?&lt;/p&gt;
-
-&lt;p&gt;#&lt;/p&gt;
-
-&lt;h3 id=&#34;progress-machine:69e304a0e65e98722637abe379145c02&#34;&gt;``Progress&amp;rdquo; Machine&lt;/h3&gt;
-
-&lt;p&gt;$S = { (x, d) \, | \, x \in \mathbb{Z}, d \in { \mathrm{\bf F}, \mathrm{\bf B}} }$
-$G = { (x, \mathrm{\bf F}) \rightarrow (x + 1, \mathrm{\bf B}) \, | \, x \in \mathbb{Z} } \cup
-     { (x, \mathrm{\bf B}) \rightarrow (x - 2, \mathrm{\bf F}) \, | \, x \in \mathbb{Z} }$
-$q_0 = (0, \mathrm{\bf F})$&lt;/p&gt;
-
-&lt;p&gt;Which states are &lt;em&gt;reachable&lt;/em&gt;?&lt;/p&gt;
-
-&lt;!--page--&gt;
-
-&lt;h2 id=&#34;preserved-invariants:69e304a0e65e98722637abe379145c02&#34;&gt;Preserved Invariants&lt;/h2&gt;
-
-&lt;p&gt;A predicate $P(q)$ is a &lt;em&gt;preserved invariant&lt;/em&gt; of machine $M = (S, G \subseteq S \times S, q_0 \in
-  S)$ if:
-$$
-\forall q \in S \ldotp (P(q) \wedge (q \rightarrow r) \in G) \implies P&amp;reg;
-$$&lt;/p&gt;
-
-&lt;p&gt;What are some &lt;em&gt;preserved invariants&lt;/em&gt; for the (original) Bishop State Machine?&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Invariant Principle.&lt;/strong&gt; If a &lt;em&gt;preserved invariant&lt;/em&gt; of a state machine
-  is true for the start state, it is true for all reachable states.&lt;/p&gt;
-
-&lt;p&gt;To show $P(q)$ for machine $M = (S, G \subseteq S \times S, q_0 \in
-  S)$ all $q \in S$, show:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Base case: $P(\fillin)$&lt;/li&gt;
-&lt;li&gt;$\forall s \in S \ldotp \fillin \implies \fillin$&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Prove that the original Bishop State Machine never reaches a square where $r + c$ is odd.&lt;/p&gt;
-
-&lt;!--page--&gt;
-
-&lt;h1 id=&#34;slow-exponentiation:69e304a0e65e98722637abe379145c02&#34;&gt;Slow Exponentiation&lt;/h1&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def slow_power(a, b):
-   y = 1
-   z = b
-   while z &amp;gt; 0:
-      y = y * a
-      z = z - 1
-   return y
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;$S ::= \mathbb{N} \times \mathbb{N}$
-$G ::= { (y, z) \rightarrow (y \cdot a, z - 1) \, | \, \forall y, z \in \mathbb{N}^{+}}$
-$q_0 ::= (1, b)$&lt;/p&gt;
-
-&lt;p&gt;Prove &lt;code&gt;slow_power(a, b)&lt;/code&gt; = $a^b$.&lt;/p&gt;
-
-&lt;p&gt;#&lt;/p&gt;
-
-&lt;h1 id=&#34;fast-exponentiation:69e304a0e65e98722637abe379145c02&#34;&gt;Fast Exponentiation&lt;/h1&gt;
-
-&lt;p&gt;This is the algorithm from Section 6.3.1 written as Python code:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def power(a, b):
-   x = a
-   y = 1
-   z = b
-   while z &amp;gt; 0:
-      r = z % 2 # remainder of z / 2
-      z = z // 2 # quotient of z / 2
-      if r == 1:
-         y = x * y
-      x = x * x
-   return y
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Problem Set 6</title>
-      <link>https://uvacs2102.github.io/ps6posted/</link>
-      <pubDate>Thu, 12 Oct 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://uvacs2102.github.io/ps6posted/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps6&#34;&gt;&lt;strong&gt;Problem Set 6&lt;/strong&gt;&lt;/a&gt; [&lt;a href=&#34;https://uvacs2102.github.io/docs/ps6.pdf&#34;&gt;PDF&lt;/a&gt;] is now posted and
-is due &lt;strong&gt;Friday, 20 Oct at 6:29:00pm&lt;/strong&gt;. Please read the
-collaboration policy carefully.&lt;/p&gt;
 </description>
     </item>
     

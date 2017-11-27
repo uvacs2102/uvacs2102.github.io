@@ -51,7 +51,7 @@
     },
     "datePublished": "2017-11-07",
     "description": "",
-    "wordCount":  102 
+    "wordCount":  265 
   }
 </script>
 
@@ -118,21 +118,15 @@
 
 <a href="https://uvacs2102.github.io/pledge">Course Pledge</a>
 
-<a href="https://uvacs2102.github.io/ps/ps1">Problem Set 1</a>
+<a href="https://uvacs2102.github.io/ps/psomega">Problem Set Omega</a>
 
-<a href="https://uvacs2102.github.io/ps/ps2">Problem Set 2</a>
+<a href="https://uvacs2102.github.io/ps/ps9">Problem Set 9</a>
 
-<a href="https://uvacs2102.github.io/ps/ps3">Problem Set 3</a>
-
-<a href="https://uvacs2102.github.io/ps/ps4">Problem Set 4</a>
-
-<a href="https://uvacs2102.github.io/ps/ps5">Problem Set 5</a>
-
-<a href="https://uvacs2102.github.io/ps/ps6">Problem Set 6</a>
+<a href="https://uvacs2102.github.io/ps/ps8">Problem Set 8</a>
 
 <a href="https://uvacs2102.github.io/ps/ps7">Problem Set 7</a>
 
-<a href="https://uvacs2102.github.io/ps/ps8">Problem Set 8</a>
+<a href="https://uvacs2102.github.io/ps/">More Problem Sets...</a>
 
 <a href="https://collab.its.virginia.edu/portal/site/9bd99d1c-6f18-4542-a7d1-8ffc4fccbd3d">Collab Site</a>
 
@@ -196,9 +190,9 @@
   <div class="container content">
   
 
-<h3 id="exam-2">Exam 2</h3>
+<h3 id="exam-2:575cd0e814aa195b2fbaa50f10d15a07">Exam 2</h3>
 
-<p>Exam 2 will be in class on Thursday, 9 Nov. Make sure to go over the notes about the exam posted in <a href="/docs/class20.pdf">Class 20</a>.</p>
+<p>Exam 2 will be in class on Thursday, 9 Nov. See <a href="/docs/class20.pdf">Class 20</a> notes for details on the exam.</p>
 
 <p><div class="notpdf">
    <center>
@@ -213,17 +207,60 @@
 
 <p><div class="latex"></p>
 
-<h2 id="the-reviwed-topics">The reviwed topics.</h2>
+<h2 id="main-topics-for-review:575cd0e814aa195b2fbaa50f10d15a07">Main Topics for Review</h2>
 
-<p>Today we review the topics that we learned after exam 1 with the exaception of number theory. Therefore, it will be the following topics.</p>
+<p>Today we review the topics that we learned after Exam 1 with the
+exception of number theory (which will not be included in Exam
+2).</p>
 
-<p>\begin{itemize}
-\item State Machine and how to argue about correctness of programs.</p>
+<ul>
+<li><p>State Machines and how to argue about correctness of programs.</p></li>
 
-<p>\item Recursive Definitions and how to prove statements about them using structural induction.</p>
+<li><p>Recursive Definitions and how to prove statements about them using structural induction.</p></li>
 
-<p>\item Infinite Sets and Cardinalities, and how to show sets are finite, infinite, countable, or uncountable.
-\end{itemize}</p>
+<li><p>Infinite Sets and Cardinalities, and how to show sets are finite, infinite, countable, or uncountable.</p></li>
+</ul>
+
+<h2 id="state-machines:575cd0e814aa195b2fbaa50f10d15a07">State Machines</h2>
+
+<p>$M = (S, G \subset S \times S, q_0 \in S)$ defines a state machine.</p>
+
+<p>$P$ is a <em>preserved invariant</em> if:
+$$ \forall q \in S. (P(q) \wedge (q \rightarrow r) \in G) \implies P&reg;$$</p>
+
+<p><strong>Invariant Principle:</strong> If $P$ is a <em>preserved invariant</em> and
+  $P(q_0)$ is true, then property $P$ is true for all <strong>reachable
+  states</strong>.</p>
+
+<h2 id="proving-program-correctness:575cd0e814aa195b2fbaa50f10d15a07">Proving Program Correctness</h2>
+
+<p>To prove a program $R$ produces the correct output:</p>
+
+<ol>
+<li><p>Model it as a state machine, $M$.</p></li>
+
+<li><p>Show that $M$ eventually terminates.</p></li>
+
+<li><p>Show partial correctness:</p>
+
+<ul>
+<li>Find a suitable preserved invariant $P$ for $M$.</li>
+<li>Show that $P(q)$ for all final states implies the output correctness property. (Final states are states where the execution terminates.)</li>
+<li>Show $P(q_0)$ &mdash; the perserved invariant holds for the start state.</li>
+</ul></li>
+</ol>
+
+<!--page-->
+
+<h2 id="recursive-data-types:575cd0e814aa195b2fbaa50f10d15a07">Recursive Data Types</h2>
+
+<p>To define a recursive data type $D$:</p>
+
+<ul>
+<li><p>Define one or more <strong>base</strong> objects, $d \in D$.</p></li>
+
+<li><p>Define one or more <strong>constructor</strong> cases that specify how to construct a new object $d \in D$ from one or more previoulsy-constructed objects, $d_1, d_2, \ldots \in D$.</p></li>
+</ul>
 
 <p></div></p>
 
@@ -242,6 +279,10 @@
     </a>
     
 
+    
+    <a class="next" href="https://uvacs2102.github.io/scheduleupdates/" title="Schedule Updates">
+      Next
+    </a>
     
 
   
