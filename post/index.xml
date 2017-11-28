@@ -17,7 +17,7 @@
       <guid>https://uvacs2102.github.io/class25/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule:48c09636ef2a37766db0522980dbf8fc&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;Reminder for the schedule for the rest of the semester:&lt;/p&gt;
 
@@ -42,7 +42,7 @@
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;examples&#34;&gt;Examples&lt;/h1&gt;
+&lt;h1 id=&#34;examples:48c09636ef2a37766db0522980dbf8fc&#34;&gt;Examples&lt;/h1&gt;
 
 &lt;p&gt;Today, we want to bre able to answer the following questions. The first two are already discussed in class, but we will study them more generally.
 \begin{enumerate}
@@ -54,7 +54,7 @@
 
 &lt;p&gt;The first two have the same answers $2^n$. In fact, because there is a bijection between the set of answers to problem 1 and problem 2, then we already knew that they have the same answers. More generally, all counting problems of today&amp;rsquo;s class could be described as &amp;ldquo;what is the size of a set $A$?&amp;rdquo; We use the definitino of finite cardinality from Class 9, to study these questions. Namely, we try to find another set $B$ whose cardinality is knwon, and that there is a bijection between $A$ and $B$.&lt;/p&gt;
 
-&lt;h1 id=&#34;why-counting&#34;&gt;Why Counting?&lt;/h1&gt;
+&lt;h1 id=&#34;why-counting:48c09636ef2a37766db0522980dbf8fc&#34;&gt;Why Counting?&lt;/h1&gt;
 
 &lt;p&gt;Being able to count (exactly or even approximately) is important for many reasons, some of which are:
 \begin{itemize}
@@ -63,7 +63,7 @@
 \item Counting is the fundamental to probability theory.
 \end{itemize}&lt;/p&gt;
 
-&lt;h1 id=&#34;counting-rules&#34;&gt;Counting Rules&lt;/h1&gt;
+&lt;h1 id=&#34;counting-rules:48c09636ef2a37766db0522980dbf8fc&#34;&gt;Counting Rules&lt;/h1&gt;
 
 &lt;p&gt;&lt;strong&gt;Product Rule&lt;/strong&gt; If $A_1,\dots,A_n$ are finite sets, then the size of their cartesian product is
 $$|A_1 \times \dots \times A_n| = |A_1| \cdot |A_2| \dots |A_n| $$&lt;/p&gt;
@@ -93,7 +93,7 @@ $$|A_1 \cup \dots \cup A_n| = |A_1| + |A_2| \dots +|A_n|.$$&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Division Rule&lt;/strong&gt;. If $f \colon A \to B$ is a $k$ to $1$ (total surjective) function, and if $A,B$ are finite sets then, $|A| = k \cdot |B|$.&lt;/p&gt;
 
-&lt;h1 id=&#34;counting-when-order-does-not-matter&#34;&gt;Counting  when order does not matter&lt;/h1&gt;
+&lt;h1 id=&#34;counting-when-order-does-not-matter:48c09636ef2a37766db0522980dbf8fc&#34;&gt;Counting  when order does not matter&lt;/h1&gt;
 
 &lt;p&gt;The number of subsets of size $k$ of  ${1,\dots,n}$ captures a counting problem in which the order of the $k$
  selected elements does not matter. This number is so important that has its own notation ${n \choose k}$.&lt;/p&gt;
@@ -113,7 +113,7 @@ $$|A_1 \cup \dots \cup A_n| = |A_1| + |A_2| \dots +|A_n|.$$&lt;/p&gt;
 &lt;p&gt;#
 #&lt;/p&gt;
 
-&lt;h1 id=&#34;proof-by-counting&#34;&gt;Proof by counting&lt;/h1&gt;
+&lt;h1 id=&#34;proof-by-counting:48c09636ef2a37766db0522980dbf8fc&#34;&gt;Proof by counting&lt;/h1&gt;
 
 &lt;p&gt;Prove Pascal&amp;rsquo;s triangle identity:
 $${n \choose k} = {n \choose k-1} + {n-1 \choose k-1}.$$&lt;/p&gt;
@@ -130,7 +130,7 @@ $${n \choose k} = {n \choose k-1} + {n-1 \choose k-1}.$$&lt;/p&gt;
       <guid>https://uvacs2102.github.io/class24/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule:86508045a4d3421b9227629a04fa6324&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;Happy Thanksgiving!  (There is no class on Thursday.)&lt;/p&gt;
 
@@ -144,7 +144,7 @@ $${n \choose k} = {n \choose k-1} + {n-1 \choose k-1}.$$&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
+&lt;h2 id=&#34;links:86508045a4d3421b9227629a04fa6324&#34;&gt;Links&lt;/h2&gt;
 
 &lt;p&gt;Ron Rivest, Adi Shamir, and Leonard Adleman. &lt;a href=&#34;https://people.csail.mit.edu/rivest/Rsapaper.pdf&#34;&gt;&lt;em&gt;A Method for Obtaining Digital Signatures and Public-Key Cryptosystems&lt;/em&gt;&lt;/a&gt;, 1977.&lt;/p&gt;
 
@@ -246,7 +246,7 @@ if $n\, | \, (a - b)$.  We can write this as $a \equiv b \;\;
       <guid>https://uvacs2102.github.io/class22/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule:b1f171c11b7e766822270107caa74abd&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;Here&amp;rsquo;s the updated (and final) schedule for the rest of the semester:&lt;/p&gt;
 
@@ -258,12 +258,12 @@ if $n\, | \, (a - b)$.  We can write this as $a \equiv b \;\;
 
 &lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;challenge-solution&#34;&gt;Challenge Solution&lt;/h2&gt;
+&lt;h2 id=&#34;challenge-solution:b1f171c11b7e766822270107caa74abd&#34;&gt;Challenge Solution&lt;/h2&gt;
 
 &lt;p&gt;Connor Roos&amp;rsquo; solution to the challenge problem about the minimum
 number of NAND operations (using gates, not formulas) is here: &lt;a href=&#34;https://uvacs2102.github.io/docs/nandgates.pdf&#34;&gt;Description (PDF)&lt;/a&gt;, &lt;a href=&#34;https://gist.github.com/cgr3mu/4dd59c1e2994d6b3eb3906dfceb0a5b6&#34;&gt;Code (Java)&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h2 id=&#34;exam-2-solutions&#34;&gt;Exam 2 Solutions&lt;/h2&gt;
+&lt;h2 id=&#34;exam-2-solutions:b1f171c11b7e766822270107caa74abd&#34;&gt;Exam 2 Solutions&lt;/h2&gt;
 
 &lt;p&gt;The solutions for Exam 2 are here:
 &lt;a href=&#34;https://uvacs2102.github.io/docs/exam2comments.pdf&#34;&gt;PDF&lt;/a&gt;. Please read these carefully and come
@@ -278,7 +278,7 @@ difficulties on any of the exam problems.&lt;/p&gt;
    &lt;a href=&#34;https://uvacs2102.github.io/docs/class22.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes and Questions&lt;/b&gt;&lt;/a&gt;.
    &lt;/div&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;excerpt&#34;&gt;Excerpt&lt;/h2&gt;
+&lt;h2 id=&#34;excerpt:b1f171c11b7e766822270107caa74abd&#34;&gt;Excerpt&lt;/h2&gt;
 
 &lt;p&gt;G. H. Hardy, &lt;a href=&#34;http://www.math.ualberta.ca/~mss/misc/A%20Mathematician&#39;s%20Apology.pdf&#34;&gt;&lt;em&gt;A Mathematician&amp;rsquo;s Apology&lt;/em&gt;&lt;/a&gt;, 1940.&lt;/p&gt;
 
@@ -494,7 +494,7 @@ mad, a mathematician may find in mathematics an incomparable anodyne.
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;number-theory&#34;&gt;Number Theory&lt;/h2&gt;
+&lt;h2 id=&#34;number-theory:b1f171c11b7e766822270107caa74abd&#34;&gt;Number Theory&lt;/h2&gt;
 
 &lt;p&gt;Definition: $a$ divides $b$ ($a\, |\, b$) iff there is an integer $k$ such that $ak = b$.&lt;/p&gt;
 
@@ -512,7 +512,7 @@ only by itself and 1.&lt;/p&gt;
 
 &lt;!--page--&gt;
 
-&lt;h2 id=&#34;groups-and-rings&#34;&gt;Groups and Rings&lt;/h2&gt;
+&lt;h2 id=&#34;groups-and-rings:b1f171c11b7e766822270107caa74abd&#34;&gt;Groups and Rings&lt;/h2&gt;
 
 &lt;p&gt;$R$ is an Abelian group with respect to binary operation $P$ if it is:&lt;/p&gt;
 
@@ -567,7 +567,7 @@ we can arrange something different.&lt;/p&gt;
       <guid>https://uvacs2102.github.io/class21/</guid>
       <description>
 
-&lt;h3 id=&#34;exam-2&#34;&gt;Exam 2&lt;/h3&gt;
+&lt;h3 id=&#34;exam-2:575cd0e814aa195b2fbaa50f10d15a07&#34;&gt;Exam 2&lt;/h3&gt;
 
 &lt;p&gt;Exam 2 will be in class on Thursday, 9 Nov. See &lt;a href=&#34;https://uvacs2102.github.io/docs/class20.pdf&#34;&gt;Class 20&lt;/a&gt; notes for details on the exam.&lt;/p&gt;
 
@@ -584,7 +584,7 @@ we can arrange something different.&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;main-topics-for-review&#34;&gt;Main Topics for Review&lt;/h2&gt;
+&lt;h2 id=&#34;main-topics-for-review:575cd0e814aa195b2fbaa50f10d15a07&#34;&gt;Main Topics for Review&lt;/h2&gt;
 
 &lt;p&gt;Today we review the topics that we learned after Exam 1 with the
 exception of number theory (which will not be included in Exam
@@ -598,7 +598,7 @@ exception of number theory (which will not be included in Exam
 &lt;li&gt;&lt;p&gt;Infinite Sets and Cardinalities, and how to show sets are finite, infinite, countable, or uncountable.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;state-machines&#34;&gt;State Machines&lt;/h2&gt;
+&lt;h2 id=&#34;state-machines:575cd0e814aa195b2fbaa50f10d15a07&#34;&gt;State Machines&lt;/h2&gt;
 
 &lt;p&gt;$M = (S, G \subset S \times S, q_0 \in S)$ defines a state machine.&lt;/p&gt;
 
@@ -609,7 +609,7 @@ $$ \forall q \in S. (P(q) \wedge (q \rightarrow r) \in G) \implies P&amp;reg;$$&
   $P(q_0)$ is true, then property $P$ is true for all &lt;strong&gt;reachable
   states&lt;/strong&gt;.&lt;/p&gt;
 
-&lt;h2 id=&#34;proving-program-correctness&#34;&gt;Proving Program Correctness&lt;/h2&gt;
+&lt;h2 id=&#34;proving-program-correctness:575cd0e814aa195b2fbaa50f10d15a07&#34;&gt;Proving Program Correctness&lt;/h2&gt;
 
 &lt;p&gt;To prove a program $R$ produces the correct output:&lt;/p&gt;
 
@@ -629,7 +629,7 @@ $$ \forall q \in S. (P(q) \wedge (q \rightarrow r) \in G) \implies P&amp;reg;$$&
 
 &lt;!--page--&gt;
 
-&lt;h2 id=&#34;recursive-data-types&#34;&gt;Recursive Data Types&lt;/h2&gt;
+&lt;h2 id=&#34;recursive-data-types:575cd0e814aa195b2fbaa50f10d15a07&#34;&gt;Recursive Data Types&lt;/h2&gt;
 
 &lt;p&gt;To define a recursive data type $D$:&lt;/p&gt;
 
@@ -661,7 +661,7 @@ $$ \forall q \in S. (P(q) \wedge (q \rightarrow r) \in G) \implies P&amp;reg;$$&
       <guid>https://uvacs2102.github.io/class20/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule:dcf75d114d0b27f85507ff1ab741294c&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps8&#34;&gt;&lt;strong&gt;Problem Set 8&lt;/strong&gt;&lt;/a&gt; is due &lt;strong&gt;Friday at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
 
@@ -674,7 +674,7 @@ $$ \forall q \in S. (P(q) \wedge (q \rightarrow r) \in G) \implies P&amp;reg;$$&
 &lt;li&gt;More than 10 requests implies we should spend Thursday’s class on reviewing requested topics, no exam exemptions.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;exam-2&#34;&gt;Exam 2&lt;/h3&gt;
+&lt;h3 id=&#34;exam-2:dcf75d114d0b27f85507ff1ab741294c&#34;&gt;Exam 2&lt;/h3&gt;
 
 &lt;p&gt;Exam 2 will be in class on Thursday, 9 Nov.  You can get a good
 idea for what to expect on Exam 2 based on Exam 1, and also by looking at the &lt;a href=&#34;https://uvacs2102.github.io/docs/practiceexam2.pdf&#34;&gt;Practice Exam
@@ -722,7 +722,7 @@ benefit from doing #3 and #4 as well.&lt;/p&gt;
    &lt;a href=&#34;https://uvacs2102.github.io/docs/class20.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes and Questions&lt;/b&gt;&lt;/a&gt;.
    &lt;/div&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
+&lt;h2 id=&#34;links:dcf75d114d0b27f85507ff1ab741294c&#34;&gt;Links&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Goldbach%27s_conjecture&#34;&gt;Goldbach&amp;rsquo;s conjecture&lt;/a&gt;&lt;/p&gt;
 
@@ -734,7 +734,7 @@ benefit from doing #3 and #4 as well.&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;divisibility&#34;&gt;Divisibility&lt;/h2&gt;
+&lt;h2 id=&#34;divisibility:dcf75d114d0b27f85507ff1ab741294c&#34;&gt;Divisibility&lt;/h2&gt;
 
 &lt;p&gt;Number theory is a study of integers $\mathbb{Z}={0,-1,1,-2,2,\dots}$. Adding, multiplying, and negating, are 3 operators on integers that we can define in a straight-forward way. Dividing is more tricky. For that, we first define the notation $a \mid b$ to denote the simpler situation where $b = k \cdot a$ for some $k \in \mathbb{Z}$. In this case, we say that $a$ is a &lt;em&gt;divisor&lt;/em&gt; of $b$ and that $b$ is a &lt;em&gt;multiple&lt;/em&gt; of $a$.&lt;/p&gt;
 
@@ -758,7 +758,7 @@ where $p&lt;em&gt;i &amp;lt; p&lt;/em&gt;{i+1}$ and $p_i$ is prime for all $i$.&
 
 &lt;p&gt;Hint for proof: Use strong induction on $n$, and try to show that any two different representations for $n$ will have the same `smallest&amp;rsquo; prime $p_1$ and the same power $a_1$ for $p_1$.&lt;/p&gt;
 
-&lt;h2 id=&#34;easy-to-state-but-hard-to-solve-problems&#34;&gt;Easy-to-state, but hard-to-solve problems&lt;/h2&gt;
+&lt;h2 id=&#34;easy-to-state-but-hard-to-solve-problems:dcf75d114d0b27f85507ff1ab741294c&#34;&gt;Easy-to-state, but hard-to-solve problems&lt;/h2&gt;
 
 &lt;p&gt;In number theory, we can easily state problems that are super hard to solve. These are some examples.&lt;/p&gt;
 
@@ -768,13 +768,13 @@ where $p&lt;em&gt;i &amp;lt; p&lt;/em&gt;{i+1}$ and $p_i$ is prime for all $i$.&
 
 &lt;p&gt;&lt;strong&gt;Fermat&amp;rsquo;s last theorem:&lt;/strong&gt; For any integer $n&amp;gt;2$ there are no integers $a,b,c$ where $a^n + b^n = c^n$. Note that for $n=2$ there are integer solutions like $3^2 + 4^2 = 5^2$. Fermat claimed to have a proof, but nobody knows if he really did or not. Andrew Wiles eventually proved this in 1994, hence we call it a &lt;em&gt;theorem&lt;/em&gt; and not a conjecture anymore.&lt;/p&gt;
 
-&lt;h2 id=&#34;greatest-common-divisor&#34;&gt;Greatest Common Divisor&lt;/h2&gt;
+&lt;h2 id=&#34;greatest-common-divisor:dcf75d114d0b27f85507ff1ab741294c&#34;&gt;Greatest Common Divisor&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;Definition&lt;/strong&gt; For natural numbers $m,n&amp;gt;0$ we call $d&amp;gt;0$ their \emph{greatest common divisor}, denoted by $d=gcd(m,n)$ if $d$ is the largest number such that $d \mid m$ and $d \mid n$. (Make sure to verify why we can always say that such $d$ exists.)&lt;/p&gt;
 
 &lt;p&gt;We can use the fundamental theorem of arithmetic, to &lt;em&gt;compute&lt;/em&gt; the gcd of any given pairs of integers. But how efficient is it? The problem is that factoring numbers $m,n$ into their prime factors is not something we know how to do efficiently. In particular, no known algorithm is guaranteed to factor all numbers with $1000,000$ digits in less than an (estimated) thousand years! The conjecture is that no such `efficient&amp;rsquo; algorithm exists, and many cryptographic algorithms &lt;em&gt;assume&lt;/em&gt; this is the case!&lt;/p&gt;
 
-&lt;h2 id=&#34;euclid-s-algorithm&#34;&gt;Euclid&amp;rsquo;s Algorithm&lt;/h2&gt;
+&lt;h2 id=&#34;euclid-s-algorithm:dcf75d114d0b27f85507ff1ab741294c&#34;&gt;Euclid&amp;rsquo;s Algorithm&lt;/h2&gt;
 
 &lt;p&gt;Despite not knowing how to factor integers efficiently, Euclid showed how to find gcd quite efficiently. This shows, even if the most ``natural&amp;rdquo; algorithm fails for doing something efficiently, we should always consider the possibility that an alternative way could still exist.&lt;/p&gt;
 
@@ -824,7 +824,7 @@ decreases.&lt;/p&gt;
       <guid>https://uvacs2102.github.io/class19/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule:90174cd8255fa2ab935573c4a489ebf1&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;&lt;strong&gt;Problem Set 8&lt;/strong&gt; is now due on &lt;strong&gt;Friday, Nov 3&lt;/strong&gt;.&lt;/p&gt;
 
@@ -842,7 +842,7 @@ decreases.&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;comparing-sets-recap&#34;&gt;Comparing sets Recap:&lt;/h1&gt;
+&lt;h1 id=&#34;comparing-sets-recap:90174cd8255fa2ab935573c4a489ebf1&#34;&gt;Comparing sets Recap:&lt;/h1&gt;
 
 &lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; Sets $A$ and $B$ have the same cardinality, denoted by $|A|=|B|$ if there is a bijection between $A$ and $B$.&lt;/p&gt;
 
@@ -852,7 +852,7 @@ decreases.&lt;/p&gt;
 \item There is a total injective function from $B$ to $A$.
 \end{enumerate}&lt;/p&gt;
 
-&lt;h1 id=&#34;infinite-sets-recap&#34;&gt;Infinite Sets Recap&lt;/h1&gt;
+&lt;h1 id=&#34;infinite-sets-recap:90174cd8255fa2ab935573c4a489ebf1&#34;&gt;Infinite Sets Recap&lt;/h1&gt;
 
 &lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; A set $C$ is &lt;em&gt;infinite&lt;/em&gt; if and only if &lt;em&gt;either&lt;/em&gt; of the following happens (they are all equivalnet).
 \begin{enumerate}&lt;/p&gt;
@@ -874,7 +874,7 @@ decreases.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; A set $C$ is &lt;em&gt;countably infinite&lt;/em&gt; if and only if there
   exists a bijection between $C$ and $\mathbb{N}$.&lt;/p&gt;
 
-&lt;h1 id=&#34;cantor-s-theorem&#34;&gt;Cantor&amp;rsquo;s Theorem&lt;/h1&gt;
+&lt;h1 id=&#34;cantor-s-theorem:90174cd8255fa2ab935573c4a489ebf1&#34;&gt;Cantor&amp;rsquo;s Theorem&lt;/h1&gt;
 
 &lt;p&gt;For &lt;strong&gt;all&lt;/strong&gt; sets, $S$, $| pow(S) | &amp;gt; | S |$.&lt;/p&gt;
 
@@ -914,7 +914,7 @@ collaboration policy carefully.&lt;/p&gt;
       <guid>https://uvacs2102.github.io/class18/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule:31a24b707f457b52726ca1d5e1ddffba&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps7&#34;&gt;&lt;strong&gt;Problem Set 7&lt;/strong&gt;&lt;/a&gt; is due &lt;strong&gt;Friday (27 Oct) at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
 
@@ -930,7 +930,7 @@ collaboration policy carefully.&lt;/p&gt;
    &lt;a href=&#34;https://uvacs2102.github.io/docs/class18.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes&lt;/b&gt;&lt;/a&gt;.
    &lt;/div&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
+&lt;h2 id=&#34;links:31a24b707f457b52726ca1d5e1ddffba&#34;&gt;Links&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://www.amazon.com/Logicomix-search-truth-Apostolos-Doxiadis/dp/1596914521/&#34;&gt;&lt;em&gt;Logicomix: An epic search for truth&lt;/em&gt;&lt;/a&gt;, comic book by Apostolos Doxiadis and &lt;a href=&#34;https://people.eecs.berkeley.edu/~christos/&#34;&gt;Christos H. Papadimitrou&lt;/a&gt;.&lt;/p&gt;
 
@@ -940,7 +940,7 @@ collaboration policy carefully.&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;countable-and-uncountable-sets&#34;&gt;Countable and Uncountable Sets&lt;/h2&gt;
+&lt;h2 id=&#34;countable-and-uncountable-sets:31a24b707f457b52726ca1d5e1ddffba&#34;&gt;Countable and Uncountable Sets&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; A set $S$ is &lt;em&gt;countably infinite&lt;/em&gt; if and only if there
   exists a bijection between $S$ and $\mathbb{N}$.&lt;/p&gt;
@@ -972,7 +972,7 @@ $$&lt;/p&gt;
 
 &lt;!--page--&gt;
 
-&lt;h2 id=&#34;ordinal-and-cardinal-numbers&#34;&gt;Ordinal and Cardinal Numbers&lt;/h2&gt;
+&lt;h2 id=&#34;ordinal-and-cardinal-numbers:31a24b707f457b52726ca1d5e1ddffba&#34;&gt;Ordinal and Cardinal Numbers&lt;/h2&gt;
 
 &lt;p&gt;$\omega$ is the &lt;em&gt;smallest infinite ordinal&lt;/em&gt;.  The first ordinal after
 $0, 1, 2, \cdots$.&lt;/p&gt;
@@ -1013,7 +1013,7 @@ $0, 1, 2, \cdots$.&lt;/p&gt;
       <guid>https://uvacs2102.github.io/class17/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule:8b7b3a27abcb870c301f99da90607ac1&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;Before Thursday, everyone should have finished reading MCS Chapter 8.&lt;/p&gt;
 
@@ -1028,7 +1028,7 @@ $0, 1, 2, \cdots$.&lt;/p&gt;
    &lt;a href=&#34;https://uvacs2102.github.io/docs/class17.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes&lt;/b&gt;&lt;/a&gt;.
    &lt;/div&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;links:8b7b3a27abcb870c301f99da90607ac1&#34;&gt;Links&lt;/h2&gt;
+&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://www.cs.cornell.edu/courses/cs2800/2017fa/lectures/lec14-cantor.html&#34;&gt;Proof of Schr&amp;ouml;der-Bernstein Theorem&lt;/a&gt;&lt;/p&gt;
 
@@ -1036,7 +1036,7 @@ $0, 1, 2, \cdots$.&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;infinite-sets:8b7b3a27abcb870c301f99da90607ac1&#34;&gt;Infinite Sets&lt;/h1&gt;
+&lt;h1 id=&#34;infinite-sets&#34;&gt;Infinite Sets&lt;/h1&gt;
 
 &lt;p&gt;&lt;strong&gt;Finite Cardinality.&lt;/strong&gt; The &lt;em&gt;cardinality&lt;/em&gt; of the set
 $$
@@ -1054,7 +1054,7 @@ cardinality.  (Class 9)&lt;/p&gt;
 
 &lt;p&gt;Show that $\mathbb{Z}$ is infinite.&lt;/p&gt;
 
-&lt;h3 id=&#34;cardinality-of-infinite-sets:8b7b3a27abcb870c301f99da90607ac1&#34;&gt;Cardinality of Infinite Sets&lt;/h3&gt;
+&lt;h3 id=&#34;cardinality-of-infinite-sets&#34;&gt;Cardinality of Infinite Sets&lt;/h3&gt;
 
 &lt;p&gt;&lt;strong&gt;Equal Carinalities.&lt;/strong&gt; We say $|A|\; = |B|$  for arbitrary sets $A,B$ (and say that they have the same cardinality), if there is a bijection between $A$ and $B$.&lt;/p&gt;
 
@@ -1066,7 +1066,7 @@ cardinality.  (Class 9)&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Schr\wrap{\&amp;ldquo;{o}}der-Bernstein Theorem:&lt;/strong&gt; If $|A|\; \leq |B|$ and $|B|\; \leq |A|$, then there is a bijection between $A$ and $B$, namely $|A|\; = |B|$. (Not proven in cs2102; this is somewhat tricky to prove! For a full proof, see &lt;a href=&#34;http://www.cs.cornell.edu/courses/cs2800/2017fa/lectures/lec14-cantor.html&#34;&gt;the linked lecture notes&lt;/a&gt;.)&lt;/p&gt;
 
-&lt;h3 id=&#34;other-definitions-for-infinite-sets:8b7b3a27abcb870c301f99da90607ac1&#34;&gt;Other Definitions for Infinite Sets&lt;/h3&gt;
+&lt;h3 id=&#34;other-definitions-for-infinite-sets&#34;&gt;Other Definitions for Infinite Sets&lt;/h3&gt;
 
 &lt;p&gt;&lt;strong&gt;Dedekind-Infinite.&lt;/strong&gt; A set $A$ is &lt;em&gt;Dedekind-infinite&lt;/em&gt; if and only if there exists a &lt;em&gt;strict subset&lt;/em&gt; of $A$ with the same cardinality as $A$.  That is,
 $$\exists B \subset A \ldotp \exists R \ldotp R\ \text{is a bijection between}\ A\ \text{and}\ B.$$&lt;/p&gt;
