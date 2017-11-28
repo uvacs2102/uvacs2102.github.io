@@ -97,7 +97,9 @@ characters exist if the first character can be an english letter
 the characters are either a letter or digit ($(26 \times 2) + 10$
 possibilities).&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Generalized product rule&lt;/strong&gt; Suppose $S$ is a set containing length-$k$ sequences like $(a_1,\dots,a_k)$. If there are $n_i$ possibilities for $i$&amp;lsquo;th entry $a_i$ for any possible prefix $a&lt;em&gt;1,\dots,a&lt;/em&gt;{i-1}$, then  $|S|=n_1 \cdot n_2 \dots n_k$.&lt;/p&gt;
+&lt;p&gt;#&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Generalized product rule.&lt;/strong&gt; Suppose $S$ is a set containing length-$k$ sequences like $(a_1,\dots,a_k)$. If there are $n_i$ possibilities for $i^{\text th}$ entry $a_i$ for any possible prefix $a&lt;em&gt;1,\dots,a&lt;/em&gt;{i-1}$, then  $|S|=n_1 \cdot n_2 \dots n_k$.&lt;/p&gt;
 
 &lt;p&gt;Using the generalizd product rule, prove that the number of permutations over any set $S={s_1,\dots,s_n}$ is $n!$. A permutation is simply a sequence $(a_1,\dots,a_n)$ where each $s_i$ appears in that sequence exactly once.&lt;/p&gt;
 
@@ -107,14 +109,14 @@ possibilities).&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Division Rule&lt;/strong&gt;. If $f \colon A \to B$ is a $k$ to $1$ (total surjective) function, and if $A,B$ are finite sets then, $|A| = k \cdot |B|$.&lt;/p&gt;
 
-&lt;h1 id=&#34;counting-when-order-does-not-matter&#34;&gt;Counting  when order does not matter&lt;/h1&gt;
+&lt;h1 id=&#34;counting-when-order-does-not-matter&#34;&gt;Counting when order does not matter&lt;/h1&gt;
 
 &lt;p&gt;The number of subsets of size $k$ of  ${1,\dots,n}$ captures a counting problem in which the order of the $k$
  selected elements does not matter. This number is so important that has its own notation ${n \choose k}$.&lt;/p&gt;
 
 &lt;p&gt;Using the division rule, prove that ${n \choose k} = \frac{n!}{k! (n-k)!}$&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;when repetition is allowed&lt;/strong&gt;. Note that in the problem above, we cannot select the same element $s_i$ from $S$ more than once, but suppose we consider the selections to be &amp;ldquo;multi-sets&amp;rdquo; where the order of elements do not matter, but they could be selected more than once. This is a way to model the third example problem about donuts.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;When repetition is allowed&lt;/strong&gt;. Note that in the problem above, we cannot select the same element $s_i$ from $S$ more than once, but suppose we consider the selections to be &amp;ldquo;multi-sets&amp;rdquo; where the order of elements do not matter, but they could be selected more than once. This is a way to model the third example problem about donuts.&lt;/p&gt;
 
 &lt;p&gt;Give a bijection between the sets that model the following two counting problems:
 \begin{itemize}
