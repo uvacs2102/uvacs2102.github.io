@@ -17,7 +17,7 @@
       <guid>https://uvacs2102.github.io/class24/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule:86508045a4d3421b9227629a04fa6324&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;Happy Thanksgiving!  (There is no class on Thursday.)&lt;/p&gt;
 
@@ -31,7 +31,7 @@
 
 &lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
+&lt;h2 id=&#34;links:86508045a4d3421b9227629a04fa6324&#34;&gt;Links&lt;/h2&gt;
 
 &lt;p&gt;Ron Rivest, Adi Shamir, and Leonard Adleman. &lt;a href=&#34;https://people.csail.mit.edu/rivest/Rsapaper.pdf&#34;&gt;&lt;em&gt;A Method for Obtaining Digital Signatures and Public-Key Cryptosystems&lt;/em&gt;&lt;/a&gt;, 1977.&lt;/p&gt;
 
@@ -88,7 +88,7 @@ single, readable PDF file on the collab site before &lt;strong&gt;6:29pm&lt;/str
 
 &lt;p&gt;&lt;em&gt;Version:&lt;/em&gt; updated 21 November 2017 (just fixing typos, cosmetic changes, and added $\star$ for problem 9).&lt;/p&gt;
 
-&lt;h3 id=&#34;collaboration-policy-collaboration-policy-identical-to-ps5&#34;&gt;Collaboration Policy - Collaboration Policy (identical to PS5)&lt;/h3&gt;
+&lt;h3 id=&#34;collaboration-policy-collaboration-policy-identical-to-ps5:8a4d4dedc1ccaf65c5e582a2df1d4b81&#34;&gt;Collaboration Policy - Collaboration Policy (identical to PS5)&lt;/h3&gt;
 
 &lt;p&gt;For this assignment, you may work in groups of one to three students
 to write-up a solution together.  If you work with teammates, exactly
@@ -100,7 +100,7 @@ completely on your own.&lt;/em&gt; All teammates must review the submissions
 before it is submitted to make sure you understand everything on it
 and that your name and UVA id are clearly marked on it.&lt;/p&gt;
 
-&lt;h2 id=&#34;preparation&#34;&gt;Preparation&lt;/h2&gt;
+&lt;h2 id=&#34;preparation:8a4d4dedc1ccaf65c5e582a2df1d4b81&#34;&gt;Preparation&lt;/h2&gt;
 
 &lt;p&gt;This problem set focuses on number theory &amp;mdash; Chapter 9 of the MCS book,
 and &lt;a href=&#34;https://uvacs2102.github.io/class20&#34;&gt;Classes 20&lt;/a&gt;, &lt;a href=&#34;https://uvacs2102.github.io/class22&#34;&gt;22&lt;/a&gt;, and &lt;a href=&#34;https://uvacs2102.github.io/class23&#34;&gt;23&lt;/a&gt;.&lt;/p&gt;
@@ -119,11 +119,11 @@ Your response should be submitted as a single PDF file using collab.  Please rea
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;directions&#34;&gt;Directions&lt;/h2&gt;
+&lt;h2 id=&#34;directions:8a4d4dedc1ccaf65c5e582a2df1d4b81&#34;&gt;Directions&lt;/h2&gt;
 
 &lt;p&gt;Solve all the 9 problems.  Your answers should be clear, consise, and convincing.&lt;/p&gt;
 
-&lt;h3 id=&#34;wily-theorem&#34;&gt;Wily Theorem&lt;/h3&gt;
+&lt;h3 id=&#34;wily-theorem:8a4d4dedc1ccaf65c5e582a2df1d4b81&#34;&gt;Wily Theorem&lt;/h3&gt;
 
 &lt;ol&gt;
 &lt;li&gt;&lt;p&gt;Fermat&amp;rsquo;s last theorem, proved by Andrew Wiles in 1994, states that: for any natural $n&amp;gt;2$ there are \emph{no} natural numbers $a,b,c$ such that
@@ -135,7 +135,7 @@ Assuming Fermat&amp;rsquo;s theorem, give a simple proof that $\sqrt[n]{2}$ is \
 
 &lt;!--page--&gt;
 
-&lt;h1 id=&#34;fast-exponentiation&#34;&gt;Fast Exponentiation&lt;/h1&gt;
+&lt;h1 id=&#34;fast-exponentiation:8a4d4dedc1ccaf65c5e582a2df1d4b81&#34;&gt;Fast Exponentiation&lt;/h1&gt;
 
 &lt;ol&gt;
 &lt;li&gt;&lt;p&gt;In the Diffie Hellman key-exchange protocol described in &lt;a href=&#34;https://uvacs2102.github.io/class23&#34;&gt;Class 23&lt;/a&gt;, Alice and Bob need to compute $g^x \mod p$ and $g^y \mod p$ for some  $1 \leq g,x,y \leq p-1$. Suppose $p$ is a (prime) number that has 1000 bits when represented in binary.&lt;/p&gt;
@@ -156,7 +156,7 @@ Assuming Fermat&amp;rsquo;s theorem, give a simple proof that $\sqrt[n]{2}$ is \
 &lt;p&gt;(b) Describe a modified version of the &amp;ldquo;Fast Exponentiation Program&amp;rdquo; in Section 6.3.1 of the book that is useful computing $g^x \mod p$. How many multiplications does this program do in maximum  to obtain $g^x$ for an arbitrary $1\leq x\leq p-1$ for a 1000 digit $p$?&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h3 id=&#34;abelian-groups&#34;&gt;Abelian Groups&lt;/h3&gt;
+&lt;h3 id=&#34;abelian-groups:8a4d4dedc1ccaf65c5e582a2df1d4b81&#34;&gt;Abelian Groups&lt;/h3&gt;
 
 &lt;p&gt;For each set ($R$) and operator ($P$) described below, explain why it
 is not an Abelian group (defined in &lt;a href=&#34;https://uvacs2102.github.io/class22&#34;&gt;Class 22&lt;/a&gt;). Your answer
@@ -173,7 +173,7 @@ properties.&lt;/p&gt;
 and which element has no inverse?)&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h3 id=&#34;fields&#34;&gt;Fields&lt;/h3&gt;
+&lt;h3 id=&#34;fields:8a4d4dedc1ccaf65c5e582a2df1d4b81&#34;&gt;Fields&lt;/h3&gt;
 
 &lt;p&gt;For each set ($R$) and first and second operations ($P&lt;em&gt;+$,
 $P&lt;/em&gt;\times$), answer if the set and operations are a &lt;em&gt;field&lt;/em&gt; (as
@@ -193,7 +193,7 @@ $P&lt;/em&gt;\times = { (\sharp, \sharp) \rightarrow \sharp, (\sharp, \flat) \ri
 &lt;li&gt;&lt;p&gt;$R = \mathbb{N}&lt;em&gt;{31}, P&lt;/em&gt;+ = \times\; (\text{mod}\, 31), P_\times = +\; (\text{mod}\, 31)$.&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h2 id=&#34;field-properties&#34;&gt;Field Properties&lt;/h2&gt;
+&lt;h2 id=&#34;field-properties:8a4d4dedc1ccaf65c5e582a2df1d4b81&#34;&gt;Field Properties&lt;/h2&gt;
 
 &lt;ol&gt;
 &lt;li&gt;&lt;p&gt;($\star$) Suppose $R$ is an arbitrary field with some additive and multiplicative operations $P&lt;em&gt;+, P&lt;/em&gt;\times$. Suppose we are given any $a,b,c\in R$ where $a \neq 0$; namely, $a$ is not the additive identity element (usually denoted with $0$). Then prove  that there is a unique solution for variable $x \in R$ that satisfies $(a ~P&lt;em&gt;\times~ x) ~P&lt;/em&gt;+~ b = c$.&lt;/p&gt;
@@ -216,7 +216,7 @@ multi-variable systems of equations.)&lt;/p&gt;&lt;/li&gt;
       <guid>https://uvacs2102.github.io/class23/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule:5745b40601045f50f1418eebe2f9ce59&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;Here&amp;rsquo;s the updated (and final) schedule for the rest of the semester:&lt;/p&gt;
 
@@ -228,7 +228,7 @@ multi-variable systems of equations.)&lt;/p&gt;&lt;/li&gt;
 
 &lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;galois:5745b40601045f50f1418eebe2f9ce59&#34;&gt;Galois&lt;/h2&gt;
+&lt;h2 id=&#34;galois&#34;&gt;Galois&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://plus.maths.org/content/genius-stupidity-and-genius-again&#34;&gt;&lt;em&gt;Genius, stupidity and genius again&lt;/em&gt;&lt;/a&gt; (the short life of Evariste Galois), by Tope Omitola.&lt;/p&gt;
 
@@ -244,7 +244,7 @@ multi-variable systems of equations.)&lt;/p&gt;&lt;/li&gt;
 &lt;p&gt;&lt;/div&gt;&lt;!--endpdf--&gt;
    &lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;modular-arithmetic:5745b40601045f50f1418eebe2f9ce59&#34;&gt;Modular Arithmetic&lt;/h2&gt;
+&lt;h2 id=&#34;modular-arithmetic&#34;&gt;Modular Arithmetic&lt;/h2&gt;
 
 &lt;p&gt;Definition: A number $a$ is &lt;em&gt;congruent&lt;/em&gt; to $b$ modulo $n$ if and only
 if $n\, | \, (a - b)$.  We can write this as $a \equiv b \;\;
@@ -255,7 +255,7 @@ if $n\, | \, (a - b)$.  We can write this as $a \equiv b \;\;
 
 &lt;p&gt;#&lt;/p&gt;
 
-&lt;h2 id=&#34;groups-rings-and-fields:5745b40601045f50f1418eebe2f9ce59&#34;&gt;Groups, Rings, and Fields&lt;/h2&gt;
+&lt;h2 id=&#34;groups-rings-and-fields&#34;&gt;Groups, Rings, and Fields&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;Abelian group:&lt;/strong&gt; set $R$, with a binary operation $+$:&lt;br /&gt;
    associative, commutative, additive identity (&lt;strong&gt;0&lt;/strong&gt;), additive inverse ($−a$)&lt;/p&gt;
@@ -855,7 +855,7 @@ decreases.&lt;/p&gt;
       <guid>https://uvacs2102.github.io/class19/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule:90174cd8255fa2ab935573c4a489ebf1&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;&lt;strong&gt;Problem Set 8&lt;/strong&gt; is now due on &lt;strong&gt;Friday, Nov 3&lt;/strong&gt;.&lt;/p&gt;
 
@@ -873,7 +873,7 @@ decreases.&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;comparing-sets-recap&#34;&gt;Comparing sets Recap:&lt;/h1&gt;
+&lt;h1 id=&#34;comparing-sets-recap:90174cd8255fa2ab935573c4a489ebf1&#34;&gt;Comparing sets Recap:&lt;/h1&gt;
 
 &lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; Sets $A$ and $B$ have the same cardinality, denoted by $|A|=|B|$ if there is a bijection between $A$ and $B$.&lt;/p&gt;
 
@@ -883,7 +883,7 @@ decreases.&lt;/p&gt;
 \item There is a total injective function from $B$ to $A$.
 \end{enumerate}&lt;/p&gt;
 
-&lt;h1 id=&#34;infinite-sets-recap&#34;&gt;Infinite Sets Recap&lt;/h1&gt;
+&lt;h1 id=&#34;infinite-sets-recap:90174cd8255fa2ab935573c4a489ebf1&#34;&gt;Infinite Sets Recap&lt;/h1&gt;
 
 &lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; A set $C$ is &lt;em&gt;infinite&lt;/em&gt; if and only if &lt;em&gt;either&lt;/em&gt; of the following happens (they are all equivalnet).
 \begin{enumerate}&lt;/p&gt;
@@ -905,7 +905,7 @@ decreases.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; A set $C$ is &lt;em&gt;countably infinite&lt;/em&gt; if and only if there
   exists a bijection between $C$ and $\mathbb{N}$.&lt;/p&gt;
 
-&lt;h1 id=&#34;cantor-s-theorem&#34;&gt;Cantor&amp;rsquo;s Theorem&lt;/h1&gt;
+&lt;h1 id=&#34;cantor-s-theorem:90174cd8255fa2ab935573c4a489ebf1&#34;&gt;Cantor&amp;rsquo;s Theorem&lt;/h1&gt;
 
 &lt;p&gt;For &lt;strong&gt;all&lt;/strong&gt; sets, $S$, $| pow(S) | &amp;gt; | S |$.&lt;/p&gt;
 
@@ -1045,7 +1045,7 @@ Note that you  need to prove &lt;em&gt;two&lt;/em&gt; directions, that whenever 
       <guid>https://uvacs2102.github.io/class18/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule:31a24b707f457b52726ca1d5e1ddffba&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps7&#34;&gt;&lt;strong&gt;Problem Set 7&lt;/strong&gt;&lt;/a&gt; is due &lt;strong&gt;Friday (27 Oct) at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
 
@@ -1061,7 +1061,7 @@ Note that you  need to prove &lt;em&gt;two&lt;/em&gt; directions, that whenever 
    &lt;a href=&#34;https://uvacs2102.github.io/docs/class18.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes&lt;/b&gt;&lt;/a&gt;.
    &lt;/div&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
+&lt;h2 id=&#34;links:31a24b707f457b52726ca1d5e1ddffba&#34;&gt;Links&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://www.amazon.com/Logicomix-search-truth-Apostolos-Doxiadis/dp/1596914521/&#34;&gt;&lt;em&gt;Logicomix: An epic search for truth&lt;/em&gt;&lt;/a&gt;, comic book by Apostolos Doxiadis and &lt;a href=&#34;https://people.eecs.berkeley.edu/~christos/&#34;&gt;Christos H. Papadimitrou&lt;/a&gt;.&lt;/p&gt;
 
@@ -1071,7 +1071,7 @@ Note that you  need to prove &lt;em&gt;two&lt;/em&gt; directions, that whenever 
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;countable-and-uncountable-sets&#34;&gt;Countable and Uncountable Sets&lt;/h2&gt;
+&lt;h2 id=&#34;countable-and-uncountable-sets:31a24b707f457b52726ca1d5e1ddffba&#34;&gt;Countable and Uncountable Sets&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; A set $S$ is &lt;em&gt;countably infinite&lt;/em&gt; if and only if there
   exists a bijection between $S$ and $\mathbb{N}$.&lt;/p&gt;
@@ -1103,7 +1103,7 @@ $$&lt;/p&gt;
 
 &lt;!--page--&gt;
 
-&lt;h2 id=&#34;ordinal-and-cardinal-numbers&#34;&gt;Ordinal and Cardinal Numbers&lt;/h2&gt;
+&lt;h2 id=&#34;ordinal-and-cardinal-numbers:31a24b707f457b52726ca1d5e1ddffba&#34;&gt;Ordinal and Cardinal Numbers&lt;/h2&gt;
 
 &lt;p&gt;$\omega$ is the &lt;em&gt;smallest infinite ordinal&lt;/em&gt;.  The first ordinal after
 $0, 1, 2, \cdots$.&lt;/p&gt;
