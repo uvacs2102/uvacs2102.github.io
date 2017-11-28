@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on cs2102: Discrete Math</title>
-    <link>https://uvacs2102.github.io/post/</link>
-    <description>Recent content in Posts on cs2102: Discrete Math</description>
+    <title>Post-rsses on cs2102: Discrete Math</title>
+    <link>https://uvacs2102.github.io/post/index.xml</link>
+    <description>Recent content in Post-rsses on cs2102: Discrete Math</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 28 Nov 2017 00:00:00 +0000</lastBuildDate>
@@ -17,21 +17,25 @@
       <guid>https://uvacs2102.github.io/class25/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule:48c09636ef2a37766db0522980dbf8fc&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;Reminder for the schedule for the rest of the semester:&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps9&#34;&gt;Problem Set 9&lt;/a&gt;&lt;/strong&gt;: due on Friday, 1 December at 6:29pm.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/psomega&#34;&gt;Problem Set omega;&lt;/a&gt;&lt;/strong&gt;: due on Monday, 4 December at 11:59pm. See the &lt;a href=&#34;https://uvacs2102.github.io/ps/psomega&#34;&gt;Problem Set omega;&lt;/a&gt; description for examples from previous students.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/psomega&#34;&gt;Problem Set Omega&lt;/a&gt;&lt;/strong&gt;: due on Monday, 4 December at 11:59pm. See the &lt;a href=&#34;https://uvacs2102.github.io/ps/psomega&#34;&gt;Problem Set Omega&lt;/a&gt; description for examples from previous students.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Final Exam&lt;/strong&gt;: Thursday, 7 December, 9am-noon (in the normal lecture room)&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;p&gt;Most of today&amp;rsquo;s class is covered in Chapter 15 of the MCS book.&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;center&gt;
 &lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;8f28ff2b235b497ea3b961d81bb051db&#34; data-ratio=&#34;1.77777777777778&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
-   &lt;/center&gt;
+   &lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/center&gt;
  &lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;highlightm&#34;&gt;
@@ -42,9 +46,9 @@
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;examples:48c09636ef2a37766db0522980dbf8fc&#34;&gt;Examples&lt;/h1&gt;
+&lt;h1 id=&#34;examples&#34;&gt;Examples&lt;/h1&gt;
 
-&lt;p&gt;Today, we want to bre able to answer the following questions. The first two are already discussed in class, but we will study them more generally.
+&lt;p&gt;Today, we want to be able to answer the following questions. The first two are already discussed in class, but we will study them more generally.
 \begin{enumerate}
 \item How many subsets does $S$ have if $|S|=n$?
 \item How many numbers are there that can be represented with (at most) $n$ bits (in base 2) ?
@@ -52,9 +56,18 @@
 \item How many ways to choose 12 doughnuts from 5 varieties?
 \end{enumerate}&lt;/p&gt;
 
-&lt;p&gt;The first two have the same answers $2^n$. In fact, because there is a bijection between the set of answers to problem 1 and problem 2, then we already knew that they have the same answers. More generally, all counting problems of today&amp;rsquo;s class could be described as &amp;ldquo;what is the size of a set $A$?&amp;rdquo; We use the definitino of finite cardinality from Class 9, to study these questions. Namely, we try to find another set $B$ whose cardinality is knwon, and that there is a bijection between $A$ and $B$.&lt;/p&gt;
+&lt;p&gt;The first two questions have the same answer: $2^n$. In fact, because
+there is a bijection between the sets described in problem 1 and
+problem 2, then we already know that their answers must be the
+same.&lt;/p&gt;
 
-&lt;h1 id=&#34;why-counting:48c09636ef2a37766db0522980dbf8fc&#34;&gt;Why Counting?&lt;/h1&gt;
+&lt;p&gt;More generally, all counting problems of today&amp;rsquo;s class could be
+described as &amp;ldquo;what is the size of a set $A$?&amp;rdquo; We use the definition of
+finite cardinality from Class 9, to study these questions. Namely, we
+try to find another set $B$ whose cardinality is known, and that there
+is a bijection between $A$ and $B$.&lt;/p&gt;
+
+&lt;h1 id=&#34;why-counting&#34;&gt;Why Counting?&lt;/h1&gt;
 
 &lt;p&gt;Being able to count (exactly or even approximately) is important for many reasons, some of which are:
 \begin{itemize}
@@ -63,7 +76,7 @@
 \item Counting is the fundamental to probability theory.
 \end{itemize}&lt;/p&gt;
 
-&lt;h1 id=&#34;counting-rules:48c09636ef2a37766db0522980dbf8fc&#34;&gt;Counting Rules&lt;/h1&gt;
+&lt;h1 id=&#34;counting-rules&#34;&gt;Counting Rules&lt;/h1&gt;
 
 &lt;p&gt;&lt;strong&gt;Product Rule&lt;/strong&gt; If $A_1,\dots,A_n$ are finite sets, then the size of their cartesian product is
 $$|A_1 \times \dots \times A_n| = |A_1| \cdot |A_2| \dots |A_n| $$&lt;/p&gt;
@@ -79,11 +92,18 @@ $$|A_1 \times \dots \times A_n| = |A_1| \cdot |A_2| \dots |A_n| $$&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Sum Rule&lt;/strong&gt;. If $A_1,\dots,A_n$ are finite \emph{disjoint} sets, then the size of their \emph{union} is
 $$|A_1 \cup \dots \cup A_n| = |A_1| + |A_2| \dots +|A_n|.$$&lt;/p&gt;
 
-&lt;p&gt;The sum rule is even simpler than the product rule, but together with the product rule, theye become very powerful.&lt;/p&gt;
+&lt;p&gt;The sum rule is even simpler than the product rule, but together with
+the product rule, they become very powerful.&lt;/p&gt;
 
-&lt;p&gt;Using the product and sum rules, count now many passwords of 6 to 8 characters exist if the first character can be an english letter (upper or lower case) and the rest could also be a digit.&lt;/p&gt;
+&lt;p&gt;Using the product and sum rules, count how many passwords of 6 to 8
+characters exist if the first character can be an english letter
+(upper or lower case, so $26 \times 2$ possibilities) and the rest of
+the characters are either a letter or digit ($(26 \times 2) + 10$
+possibilities).&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Generalized product rule&lt;/strong&gt; Suppose $S$ is a set containing length-$k$ sequences like $(a_1,\dots,a_k)$. If there are $n_i$ possibilities for $i$&amp;lsquo;th entry $a_i$ for any possible prefix $a&lt;em&gt;1,\dots,a&lt;/em&gt;{i-1}$, then  $|S|=n_1 \cdot n_2 \dots n_k$.&lt;/p&gt;
+&lt;p&gt;#&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Generalized product rule.&lt;/strong&gt; Suppose $S$ is a set containing length-$k$ sequences like $(a_1,\dots,a_k)$. If there are $n_i$ possibilities for $i^{\text th}$ entry $a_i$ for any possible prefix $a&lt;em&gt;1,\dots,a&lt;/em&gt;{i-1}$, then  $|S|=n_1 \cdot n_2 \dots n_k$.&lt;/p&gt;
 
 &lt;p&gt;Using the generalizd product rule, prove that the number of permutations over any set $S={s_1,\dots,s_n}$ is $n!$. A permutation is simply a sequence $(a_1,\dots,a_n)$ where each $s_i$ appears in that sequence exactly once.&lt;/p&gt;
 
@@ -93,15 +113,13 @@ $$|A_1 \cup \dots \cup A_n| = |A_1| + |A_2| \dots +|A_n|.$$&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Division Rule&lt;/strong&gt;. If $f \colon A \to B$ is a $k$ to $1$ (total surjective) function, and if $A,B$ are finite sets then, $|A| = k \cdot |B|$.&lt;/p&gt;
 
-&lt;h1 id=&#34;counting-when-order-does-not-matter:48c09636ef2a37766db0522980dbf8fc&#34;&gt;Counting  when order does not matter&lt;/h1&gt;
+&lt;h1 id=&#34;counting-when-order-does-not-matter&#34;&gt;Counting when order does not matter&lt;/h1&gt;
 
 &lt;p&gt;The number of subsets of size $k$ of  ${1,\dots,n}$ captures a counting problem in which the order of the $k$
  selected elements does not matter. This number is so important that has its own notation ${n \choose k}$.&lt;/p&gt;
 
 &lt;p&gt;Using the division rule, prove that ${n \choose k} = \frac{n!}{k! (n-k)!}$
-#&lt;/p&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
+ &lt;/div&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -168,7 +186,7 @@ collaboration policy carefully.&lt;/p&gt;
       <guid>https://uvacs2102.github.io/class23/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule:5745b40601045f50f1418eebe2f9ce59&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;Here&amp;rsquo;s the updated (and final) schedule for the rest of the semester:&lt;/p&gt;
 
@@ -180,7 +198,7 @@ collaboration policy carefully.&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;galois:5745b40601045f50f1418eebe2f9ce59&#34;&gt;Galois&lt;/h2&gt;
+&lt;h2 id=&#34;galois&#34;&gt;Galois&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://plus.maths.org/content/genius-stupidity-and-genius-again&#34;&gt;&lt;em&gt;Genius, stupidity and genius again&lt;/em&gt;&lt;/a&gt; (the short life of Evariste Galois), by Tope Omitola.&lt;/p&gt;
 
@@ -196,7 +214,7 @@ collaboration policy carefully.&lt;/p&gt;
 &lt;p&gt;&lt;/div&gt;&lt;!--endpdf--&gt;
    &lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;modular-arithmetic:5745b40601045f50f1418eebe2f9ce59&#34;&gt;Modular Arithmetic&lt;/h2&gt;
+&lt;h2 id=&#34;modular-arithmetic&#34;&gt;Modular Arithmetic&lt;/h2&gt;
 
 &lt;p&gt;Definition: A number $a$ is &lt;em&gt;congruent&lt;/em&gt; to $b$ modulo $n$ if and only
 if $n\, | \, (a - b)$.  We can write this as $a \equiv b \;\;
@@ -207,7 +225,7 @@ if $n\, | \, (a - b)$.  We can write this as $a \equiv b \;\;
 
 &lt;p&gt;#&lt;/p&gt;
 
-&lt;h2 id=&#34;groups-rings-and-fields:5745b40601045f50f1418eebe2f9ce59&#34;&gt;Groups, Rings, and Fields&lt;/h2&gt;
+&lt;h2 id=&#34;groups-rings-and-fields&#34;&gt;Groups, Rings, and Fields&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;Abelian group:&lt;/strong&gt; set $R$, with a binary operation $+$:&lt;br /&gt;
    associative, commutative, additive identity (&lt;strong&gt;0&lt;/strong&gt;), additive inverse ($−a$)&lt;/p&gt;
@@ -229,7 +247,7 @@ if $n\, | \, (a - b)$.  We can write this as $a \equiv b \;\;
       <guid>https://uvacs2102.github.io/class22/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule:b1f171c11b7e766822270107caa74abd&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;Here&amp;rsquo;s the updated (and final) schedule for the rest of the semester:&lt;/p&gt;
 
@@ -241,12 +259,12 @@ if $n\, | \, (a - b)$.  We can write this as $a \equiv b \;\;
 
 &lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;challenge-solution:b1f171c11b7e766822270107caa74abd&#34;&gt;Challenge Solution&lt;/h2&gt;
+&lt;h2 id=&#34;challenge-solution&#34;&gt;Challenge Solution&lt;/h2&gt;
 
 &lt;p&gt;Connor Roos&amp;rsquo; solution to the challenge problem about the minimum
 number of NAND operations (using gates, not formulas) is here: &lt;a href=&#34;https://uvacs2102.github.io/docs/nandgates.pdf&#34;&gt;Description (PDF)&lt;/a&gt;, &lt;a href=&#34;https://gist.github.com/cgr3mu/4dd59c1e2994d6b3eb3906dfceb0a5b6&#34;&gt;Code (Java)&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h2 id=&#34;exam-2-solutions:b1f171c11b7e766822270107caa74abd&#34;&gt;Exam 2 Solutions&lt;/h2&gt;
+&lt;h2 id=&#34;exam-2-solutions&#34;&gt;Exam 2 Solutions&lt;/h2&gt;
 
 &lt;p&gt;The solutions for Exam 2 are here:
 &lt;a href=&#34;https://uvacs2102.github.io/docs/exam2comments.pdf&#34;&gt;PDF&lt;/a&gt;. Please read these carefully and come
@@ -261,7 +279,7 @@ difficulties on any of the exam problems.&lt;/p&gt;
    &lt;a href=&#34;https://uvacs2102.github.io/docs/class22.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes and Questions&lt;/b&gt;&lt;/a&gt;.
    &lt;/div&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;excerpt:b1f171c11b7e766822270107caa74abd&#34;&gt;Excerpt&lt;/h2&gt;
+&lt;h2 id=&#34;excerpt&#34;&gt;Excerpt&lt;/h2&gt;
 
 &lt;p&gt;G. H. Hardy, &lt;a href=&#34;http://www.math.ualberta.ca/~mss/misc/A%20Mathematician&#39;s%20Apology.pdf&#34;&gt;&lt;em&gt;A Mathematician&amp;rsquo;s Apology&lt;/em&gt;&lt;/a&gt;, 1940.&lt;/p&gt;
 
@@ -477,7 +495,7 @@ mad, a mathematician may find in mathematics an incomparable anodyne.
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;number-theory:b1f171c11b7e766822270107caa74abd&#34;&gt;Number Theory&lt;/h2&gt;
+&lt;h2 id=&#34;number-theory&#34;&gt;Number Theory&lt;/h2&gt;
 
 &lt;p&gt;Definition: $a$ divides $b$ ($a\, |\, b$) iff there is an integer $k$ such that $ak = b$.&lt;/p&gt;
 
@@ -495,7 +513,7 @@ only by itself and 1.&lt;/p&gt;
 
 &lt;!--page--&gt;
 
-&lt;h2 id=&#34;groups-and-rings:b1f171c11b7e766822270107caa74abd&#34;&gt;Groups and Rings&lt;/h2&gt;
+&lt;h2 id=&#34;groups-and-rings&#34;&gt;Groups and Rings&lt;/h2&gt;
 
 &lt;p&gt;$R$ is an Abelian group with respect to binary operation $P$ if it is:&lt;/p&gt;
 
@@ -550,7 +568,7 @@ we can arrange something different.&lt;/p&gt;
       <guid>https://uvacs2102.github.io/class21/</guid>
       <description>
 
-&lt;h3 id=&#34;exam-2:575cd0e814aa195b2fbaa50f10d15a07&#34;&gt;Exam 2&lt;/h3&gt;
+&lt;h3 id=&#34;exam-2&#34;&gt;Exam 2&lt;/h3&gt;
 
 &lt;p&gt;Exam 2 will be in class on Thursday, 9 Nov. See &lt;a href=&#34;https://uvacs2102.github.io/docs/class20.pdf&#34;&gt;Class 20&lt;/a&gt; notes for details on the exam.&lt;/p&gt;
 
@@ -567,7 +585,7 @@ we can arrange something different.&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;main-topics-for-review:575cd0e814aa195b2fbaa50f10d15a07&#34;&gt;Main Topics for Review&lt;/h2&gt;
+&lt;h2 id=&#34;main-topics-for-review&#34;&gt;Main Topics for Review&lt;/h2&gt;
 
 &lt;p&gt;Today we review the topics that we learned after Exam 1 with the
 exception of number theory (which will not be included in Exam
@@ -581,7 +599,7 @@ exception of number theory (which will not be included in Exam
 &lt;li&gt;&lt;p&gt;Infinite Sets and Cardinalities, and how to show sets are finite, infinite, countable, or uncountable.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;state-machines:575cd0e814aa195b2fbaa50f10d15a07&#34;&gt;State Machines&lt;/h2&gt;
+&lt;h2 id=&#34;state-machines&#34;&gt;State Machines&lt;/h2&gt;
 
 &lt;p&gt;$M = (S, G \subset S \times S, q_0 \in S)$ defines a state machine.&lt;/p&gt;
 
@@ -592,7 +610,7 @@ $$ \forall q \in S. (P(q) \wedge (q \rightarrow r) \in G) \implies P&amp;reg;$$&
   $P(q_0)$ is true, then property $P$ is true for all &lt;strong&gt;reachable
   states&lt;/strong&gt;.&lt;/p&gt;
 
-&lt;h2 id=&#34;proving-program-correctness:575cd0e814aa195b2fbaa50f10d15a07&#34;&gt;Proving Program Correctness&lt;/h2&gt;
+&lt;h2 id=&#34;proving-program-correctness&#34;&gt;Proving Program Correctness&lt;/h2&gt;
 
 &lt;p&gt;To prove a program $R$ produces the correct output:&lt;/p&gt;
 
@@ -612,7 +630,7 @@ $$ \forall q \in S. (P(q) \wedge (q \rightarrow r) \in G) \implies P&amp;reg;$$&
 
 &lt;!--page--&gt;
 
-&lt;h2 id=&#34;recursive-data-types:575cd0e814aa195b2fbaa50f10d15a07&#34;&gt;Recursive Data Types&lt;/h2&gt;
+&lt;h2 id=&#34;recursive-data-types&#34;&gt;Recursive Data Types&lt;/h2&gt;
 
 &lt;p&gt;To define a recursive data type $D$:&lt;/p&gt;
 
@@ -807,7 +825,7 @@ decreases.&lt;/p&gt;
       <guid>https://uvacs2102.github.io/class19/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule:90174cd8255fa2ab935573c4a489ebf1&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;&lt;strong&gt;Problem Set 8&lt;/strong&gt; is now due on &lt;strong&gt;Friday, Nov 3&lt;/strong&gt;.&lt;/p&gt;
 
@@ -825,7 +843,7 @@ decreases.&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;comparing-sets-recap:90174cd8255fa2ab935573c4a489ebf1&#34;&gt;Comparing sets Recap:&lt;/h1&gt;
+&lt;h1 id=&#34;comparing-sets-recap&#34;&gt;Comparing sets Recap:&lt;/h1&gt;
 
 &lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; Sets $A$ and $B$ have the same cardinality, denoted by $|A|=|B|$ if there is a bijection between $A$ and $B$.&lt;/p&gt;
 
@@ -835,7 +853,7 @@ decreases.&lt;/p&gt;
 \item There is a total injective function from $B$ to $A$.
 \end{enumerate}&lt;/p&gt;
 
-&lt;h1 id=&#34;infinite-sets-recap:90174cd8255fa2ab935573c4a489ebf1&#34;&gt;Infinite Sets Recap&lt;/h1&gt;
+&lt;h1 id=&#34;infinite-sets-recap&#34;&gt;Infinite Sets Recap&lt;/h1&gt;
 
 &lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; A set $C$ is &lt;em&gt;infinite&lt;/em&gt; if and only if &lt;em&gt;either&lt;/em&gt; of the following happens (they are all equivalnet).
 \begin{enumerate}&lt;/p&gt;
@@ -857,7 +875,7 @@ decreases.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; A set $C$ is &lt;em&gt;countably infinite&lt;/em&gt; if and only if there
   exists a bijection between $C$ and $\mathbb{N}$.&lt;/p&gt;
 
-&lt;h1 id=&#34;cantor-s-theorem:90174cd8255fa2ab935573c4a489ebf1&#34;&gt;Cantor&amp;rsquo;s Theorem&lt;/h1&gt;
+&lt;h1 id=&#34;cantor-s-theorem&#34;&gt;Cantor&amp;rsquo;s Theorem&lt;/h1&gt;
 
 &lt;p&gt;For &lt;strong&gt;all&lt;/strong&gt; sets, $S$, $| pow(S) | &amp;gt; | S |$.&lt;/p&gt;
 
@@ -897,7 +915,7 @@ collaboration policy carefully.&lt;/p&gt;
       <guid>https://uvacs2102.github.io/class18/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule:31a24b707f457b52726ca1d5e1ddffba&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps7&#34;&gt;&lt;strong&gt;Problem Set 7&lt;/strong&gt;&lt;/a&gt; is due &lt;strong&gt;Friday (27 Oct) at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
 
@@ -913,7 +931,7 @@ collaboration policy carefully.&lt;/p&gt;
    &lt;a href=&#34;https://uvacs2102.github.io/docs/class18.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes&lt;/b&gt;&lt;/a&gt;.
    &lt;/div&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;links:31a24b707f457b52726ca1d5e1ddffba&#34;&gt;Links&lt;/h2&gt;
+&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://www.amazon.com/Logicomix-search-truth-Apostolos-Doxiadis/dp/1596914521/&#34;&gt;&lt;em&gt;Logicomix: An epic search for truth&lt;/em&gt;&lt;/a&gt;, comic book by Apostolos Doxiadis and &lt;a href=&#34;https://people.eecs.berkeley.edu/~christos/&#34;&gt;Christos H. Papadimitrou&lt;/a&gt;.&lt;/p&gt;
 
@@ -923,7 +941,7 @@ collaboration policy carefully.&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;countable-and-uncountable-sets:31a24b707f457b52726ca1d5e1ddffba&#34;&gt;Countable and Uncountable Sets&lt;/h2&gt;
+&lt;h2 id=&#34;countable-and-uncountable-sets&#34;&gt;Countable and Uncountable Sets&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; A set $S$ is &lt;em&gt;countably infinite&lt;/em&gt; if and only if there
   exists a bijection between $S$ and $\mathbb{N}$.&lt;/p&gt;
@@ -955,7 +973,7 @@ $$&lt;/p&gt;
 
 &lt;!--page--&gt;
 
-&lt;h2 id=&#34;ordinal-and-cardinal-numbers:31a24b707f457b52726ca1d5e1ddffba&#34;&gt;Ordinal and Cardinal Numbers&lt;/h2&gt;
+&lt;h2 id=&#34;ordinal-and-cardinal-numbers&#34;&gt;Ordinal and Cardinal Numbers&lt;/h2&gt;
 
 &lt;p&gt;$\omega$ is the &lt;em&gt;smallest infinite ordinal&lt;/em&gt;.  The first ordinal after
 $0, 1, 2, \cdots$.&lt;/p&gt;
@@ -996,7 +1014,7 @@ $0, 1, 2, \cdots$.&lt;/p&gt;
       <guid>https://uvacs2102.github.io/class17/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule:8b7b3a27abcb870c301f99da90607ac1&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;Before Thursday, everyone should have finished reading MCS Chapter 8.&lt;/p&gt;
 
@@ -1011,7 +1029,7 @@ $0, 1, 2, \cdots$.&lt;/p&gt;
    &lt;a href=&#34;https://uvacs2102.github.io/docs/class17.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes&lt;/b&gt;&lt;/a&gt;.
    &lt;/div&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;links:8b7b3a27abcb870c301f99da90607ac1&#34;&gt;Links&lt;/h2&gt;
+&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://www.cs.cornell.edu/courses/cs2800/2017fa/lectures/lec14-cantor.html&#34;&gt;Proof of Schr&amp;ouml;der-Bernstein Theorem&lt;/a&gt;&lt;/p&gt;
 
@@ -1019,7 +1037,7 @@ $0, 1, 2, \cdots$.&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;infinite-sets:8b7b3a27abcb870c301f99da90607ac1&#34;&gt;Infinite Sets&lt;/h1&gt;
+&lt;h1 id=&#34;infinite-sets&#34;&gt;Infinite Sets&lt;/h1&gt;
 
 &lt;p&gt;&lt;strong&gt;Finite Cardinality.&lt;/strong&gt; The &lt;em&gt;cardinality&lt;/em&gt; of the set
 $$
@@ -1037,7 +1055,7 @@ cardinality.  (Class 9)&lt;/p&gt;
 
 &lt;p&gt;Show that $\mathbb{Z}$ is infinite.&lt;/p&gt;
 
-&lt;h3 id=&#34;cardinality-of-infinite-sets:8b7b3a27abcb870c301f99da90607ac1&#34;&gt;Cardinality of Infinite Sets&lt;/h3&gt;
+&lt;h3 id=&#34;cardinality-of-infinite-sets&#34;&gt;Cardinality of Infinite Sets&lt;/h3&gt;
 
 &lt;p&gt;&lt;strong&gt;Equal Carinalities.&lt;/strong&gt; We say $|A|\; = |B|$  for arbitrary sets $A,B$ (and say that they have the same cardinality), if there is a bijection between $A$ and $B$.&lt;/p&gt;
 
@@ -1049,7 +1067,7 @@ cardinality.  (Class 9)&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Schr\wrap{\&amp;ldquo;{o}}der-Bernstein Theorem:&lt;/strong&gt; If $|A|\; \leq |B|$ and $|B|\; \leq |A|$, then there is a bijection between $A$ and $B$, namely $|A|\; = |B|$. (Not proven in cs2102; this is somewhat tricky to prove! For a full proof, see &lt;a href=&#34;http://www.cs.cornell.edu/courses/cs2800/2017fa/lectures/lec14-cantor.html&#34;&gt;the linked lecture notes&lt;/a&gt;.)&lt;/p&gt;
 
-&lt;h3 id=&#34;other-definitions-for-infinite-sets:8b7b3a27abcb870c301f99da90607ac1&#34;&gt;Other Definitions for Infinite Sets&lt;/h3&gt;
+&lt;h3 id=&#34;other-definitions-for-infinite-sets&#34;&gt;Other Definitions for Infinite Sets&lt;/h3&gt;
 
 &lt;p&gt;&lt;strong&gt;Dedekind-Infinite.&lt;/strong&gt; A set $A$ is &lt;em&gt;Dedekind-infinite&lt;/em&gt; if and only if there exists a &lt;em&gt;strict subset&lt;/em&gt; of $A$ with the same cardinality as $A$.  That is,
 $$\exists B \subset A \ldotp \exists R \ldotp R\ \text{is a bijection between}\ A\ \text{and}\ B.$$&lt;/p&gt;

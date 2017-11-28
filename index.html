@@ -34,7 +34,7 @@
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://uvacs2102.github.io/touch-icon-144-precomposed.png">
 <link href="https://uvacs2102.github.io/favicon.png" rel="icon">
 
-<meta name="generator" content="Hugo 0.16-DEV" />
+<meta name="generator" content="Hugo 0.17" />
 
   <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -149,24 +149,28 @@
   </header>
   
   
-  <p class="fronthead"><A href="">Class 25: Counting</a> (Tue, 28 Nov 2017)</p>
+  <p class="fronthead"><A href="/class25/">Class 25: Counting</a> (Tue, 28 Nov 2017)</p>
     
 
-<h3 id="schedule:48c09636ef2a37766db0522980dbf8fc">Schedule</h3>
+<h3 id="schedule">Schedule</h3>
 
 <p>Reminder for the schedule for the rest of the semester:</p>
 
 <ul>
 <li><strong><a href="/ps/ps9">Problem Set 9</a></strong>: due on Friday, 1 December at 6:29pm.</li>
-<li><strong><a href="/ps/psomega">Problem Set omega;</a></strong>: due on Monday, 4 December at 11:59pm. See the <a href="/ps/psomega">Problem Set omega;</a> description for examples from previous students.</li>
+<li><strong><a href="/ps/psomega">Problem Set Omega</a></strong>: due on Monday, 4 December at 11:59pm. See the <a href="/ps/psomega">Problem Set Omega</a> description for examples from previous students.</li>
 <li><strong>Final Exam</strong>: Thursday, 7 December, 9am-noon (in the normal lecture room)</li>
 </ul>
+
+<p>Most of today&rsquo;s class is covered in Chapter 15 of the MCS book.</p>
 
 <p><div class="notpdf"></p>
 
 <p><center>
 <script async class="speakerdeck-embed" data-id="8f28ff2b235b497ea3b961d81bb051db" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-   </center>
+   </center></p>
+
+<p></center>
  </div><!--endpdf--></p>
 
 <p><div class="highlightm">
@@ -177,9 +181,9 @@
 
 <p><div class="latex"></p>
 
-<h1 id="examples:48c09636ef2a37766db0522980dbf8fc">Examples</h1>
+<h1 id="examples">Examples</h1>
 
-<p>Today, we want to bre able to answer the following questions. The first two are already discussed in class, but we will study them more generally.
+<p>Today, we want to be able to answer the following questions. The first two are already discussed in class, but we will study them more generally.
 \begin{enumerate}
 \item How many subsets does $S$ have if $|S|=n$?
 \item How many numbers are there that can be represented with (at most) $n$ bits (in base 2) ?
@@ -187,9 +191,18 @@
 \item How many ways to choose 12 doughnuts from 5 varieties?
 \end{enumerate}</p>
 
-<p>The first two have the same answers $2^n$. In fact, because there is a bijection between the set of answers to problem 1 and problem 2, then we already knew that they have the same answers. More generally, all counting problems of today&rsquo;s class could be described as &ldquo;what is the size of a set $A$?&rdquo; We use the definitino of finite cardinality from Class 9, to study these questions. Namely, we try to find another set $B$ whose cardinality is knwon, and that there is a bijection between $A$ and $B$.</p>
+<p>The first two questions have the same answer: $2^n$. In fact, because
+there is a bijection between the sets described in problem 1 and
+problem 2, then we already know that their answers must be the
+same.</p>
 
-<h1 id="why-counting:48c09636ef2a37766db0522980dbf8fc">Why Counting?</h1>
+<p>More generally, all counting problems of today&rsquo;s class could be
+described as &ldquo;what is the size of a set $A$?&rdquo; We use the definition of
+finite cardinality from Class 9, to study these questions. Namely, we
+try to find another set $B$ whose cardinality is known, and that there
+is a bijection between $A$ and $B$.</p>
+
+<h1 id="why-counting">Why Counting?</h1>
 
 <p>Being able to count (exactly or even approximately) is important for many reasons, some of which are:
 \begin{itemize}
@@ -198,7 +211,7 @@
 \item Counting is the fundamental to probability theory.
 \end{itemize}</p>
 
-<h1 id="counting-rules:48c09636ef2a37766db0522980dbf8fc">Counting Rules</h1>
+<h1 id="counting-rules">Counting Rules</h1>
 
 <p><strong>Product Rule</strong> If $A_1,\dots,A_n$ are finite sets, then the size of their cartesian product is
 $$|A_1 \times \dots \times A_n| = |A_1| \cdot |A_2| \dots |A_n| $$</p>
@@ -214,11 +227,18 @@ $$|A_1 \times \dots \times A_n| = |A_1| \cdot |A_2| \dots |A_n| $$</p>
 <p><strong>Sum Rule</strong>. If $A_1,\dots,A_n$ are finite \emph{disjoint} sets, then the size of their \emph{union} is
 $$|A_1 \cup \dots \cup A_n| = |A_1| + |A_2| \dots +|A_n|.$$</p>
 
-<p>The sum rule is even simpler than the product rule, but together with the product rule, theye become very powerful.</p>
+<p>The sum rule is even simpler than the product rule, but together with
+the product rule, they become very powerful.</p>
 
-<p>Using the product and sum rules, count now many passwords of 6 to 8 characters exist if the first character can be an english letter (upper or lower case) and the rest could also be a digit.</p>
+<p>Using the product and sum rules, count how many passwords of 6 to 8
+characters exist if the first character can be an english letter
+(upper or lower case, so $26 \times 2$ possibilities) and the rest of
+the characters are either a letter or digit ($(26 \times 2) + 10$
+possibilities).</p>
 
-<p><strong>Generalized product rule</strong> Suppose $S$ is a set containing length-$k$ sequences like $(a_1,\dots,a_k)$. If there are $n_i$ possibilities for $i$&lsquo;th entry $a_i$ for any possible prefix $a<em>1,\dots,a</em>{i-1}$, then  $|S|=n_1 \cdot n_2 \dots n_k$.</p>
+<p>#</p>
+
+<p><strong>Generalized product rule.</strong> Suppose $S$ is a set containing length-$k$ sequences like $(a_1,\dots,a_k)$. If there are $n_i$ possibilities for $i^{\text th}$ entry $a_i$ for any possible prefix $a<em>1,\dots,a</em>{i-1}$, then  $|S|=n_1 \cdot n_2 \dots n_k$.</p>
 
 <p>Using the generalizd product rule, prove that the number of permutations over any set $S={s_1,\dots,s_n}$ is $n!$. A permutation is simply a sequence $(a_1,\dots,a_n)$ where each $s_i$ appears in that sequence exactly once.</p>
 
@@ -228,18 +248,16 @@ $$|A_1 \cup \dots \cup A_n| = |A_1| + |A_2| \dots +|A_n|.$$</p>
 
 <p><strong>Division Rule</strong>. If $f \colon A \to B$ is a $k$ to $1$ (total surjective) function, and if $A,B$ are finite sets then, $|A| = k \cdot |B|$.</p>
 
-<h1 id="counting-when-order-does-not-matter:48c09636ef2a37766db0522980dbf8fc">Counting  when order does not matter</h1>
+<h1 id="counting-when-order-does-not-matter">Counting when order does not matter</h1>
 
 <p>The number of subsets of size $k$ of  ${1,\dots,n}$ captures a counting problem in which the order of the $k$
  selected elements does not matter. This number is so important that has its own notation ${n \choose k}$.</p>
 
 <p>Using the division rule, prove that ${n \choose k} = \frac{n!}{k! (n-k)!}$
-#</p>
-
-<p></div></p>
+ </div></p>
  
   
-  <p class="fronthead"><A href="">Class 24: Return of ROCA</a> (Tue, 21 Nov 2017)</p>
+  <p class="fronthead"><A href="/class24/">Class 24: Return of ROCA</a> (Tue, 21 Nov 2017)</p>
     
 
 <h3 id="schedule">Schedule</h3>
@@ -276,16 +294,16 @@ $$|A_1 \cup \dots \cup A_n| = |A_1| + |A_2| \dots +|A_n|.$$</p>
    </div></p>
  
   
-  <p class="fronthead"><A href="">Problem Set 9</a> (Sun, 19 Nov 2017)</p>
+  <p class="fronthead"><A href="/ps9posted/">Problem Set 9</a> (Sun, 19 Nov 2017)</p>
     <p><a href="/ps/ps9"><strong>Problem Set 9</strong></a> [<a href="/docs/ps9.pdf">PDF</a>] is now posted and
 is due <strong>Friday, 1 Dec at 6:29:00pm</strong>. Please read the
 collaboration policy carefully.</p>
  
   
-  <p class="fronthead"><A href="">Class 23: Cryptosystems</a> (Thu, 16 Nov 2017)</p>
+  <p class="fronthead"><A href="/class23/">Class 23: Cryptosystems</a> (Thu, 16 Nov 2017)</p>
     
 
-<h3 id="schedule:5745b40601045f50f1418eebe2f9ce59">Schedule</h3>
+<h3 id="schedule">Schedule</h3>
 
 <p>Here&rsquo;s the updated (and final) schedule for the rest of the semester:</p>
 
@@ -297,7 +315,7 @@ collaboration policy carefully.</p>
 
 <p><div class="notpdf"></p>
 
-<h2 id="galois:5745b40601045f50f1418eebe2f9ce59">Galois</h2>
+<h2 id="galois">Galois</h2>
 
 <p><a href="https://plus.maths.org/content/genius-stupidity-and-genius-again"><em>Genius, stupidity and genius again</em></a> (the short life of Evariste Galois), by Tope Omitola.</p>
 
@@ -313,7 +331,7 @@ collaboration policy carefully.</p>
 <p></div><!--endpdf-->
    <div class="latex"></p>
 
-<h2 id="modular-arithmetic:5745b40601045f50f1418eebe2f9ce59">Modular Arithmetic</h2>
+<h2 id="modular-arithmetic">Modular Arithmetic</h2>
 
 <p>Definition: A number $a$ is <em>congruent</em> to $b$ modulo $n$ if and only
 if $n\, | \, (a - b)$.  We can write this as $a \equiv b \;\;
@@ -324,7 +342,7 @@ if $n\, | \, (a - b)$.  We can write this as $a \equiv b \;\;
 
 <p>#</p>
 
-<h2 id="groups-rings-and-fields:5745b40601045f50f1418eebe2f9ce59">Groups, Rings, and Fields</h2>
+<h2 id="groups-rings-and-fields">Groups, Rings, and Fields</h2>
 
 <p><strong>Abelian group:</strong> set $R$, with a binary operation $+$:<br />
    associative, commutative, additive identity (<strong>0</strong>), additive inverse ($−a$)</p>
@@ -337,10 +355,10 @@ if $n\, | \, (a - b)$.  We can write this as $a \equiv b \;\;
 </div></p>
  
   
-  <p class="fronthead"><A href="">Class 22: Prime Detectives</a> (Tue, 14 Nov 2017)</p>
+  <p class="fronthead"><A href="/class22/">Class 22: Prime Detectives</a> (Tue, 14 Nov 2017)</p>
     
 
-<h3 id="schedule:b1f171c11b7e766822270107caa74abd">Schedule</h3>
+<h3 id="schedule">Schedule</h3>
 
 <p>Here&rsquo;s the updated (and final) schedule for the rest of the semester:</p>
 
@@ -352,12 +370,12 @@ if $n\, | \, (a - b)$.  We can write this as $a \equiv b \;\;
 
 <p><div class="notpdf"></p>
 
-<h2 id="challenge-solution:b1f171c11b7e766822270107caa74abd">Challenge Solution</h2>
+<h2 id="challenge-solution">Challenge Solution</h2>
 
 <p>Connor Roos&rsquo; solution to the challenge problem about the minimum
 number of NAND operations (using gates, not formulas) is here: <a href="/docs/nandgates.pdf">Description (PDF)</a>, <a href="https://gist.github.com/cgr3mu/4dd59c1e2994d6b3eb3906dfceb0a5b6">Code (Java)</a>.</p>
 
-<h2 id="exam-2-solutions:b1f171c11b7e766822270107caa74abd">Exam 2 Solutions</h2>
+<h2 id="exam-2-solutions">Exam 2 Solutions</h2>
 
 <p>The solutions for Exam 2 are here:
 <a href="/docs/exam2comments.pdf">PDF</a>. Please read these carefully and come
@@ -372,7 +390,7 @@ difficulties on any of the exam problems.</p>
    <a href="/docs/class22.pdf">See PDF Version for <b>Notes and Questions</b></a>.
    </div></p>
 
-<h2 id="excerpt:b1f171c11b7e766822270107caa74abd">Excerpt</h2>
+<h2 id="excerpt">Excerpt</h2>
 
 <p>G. H. Hardy, <a href="http://www.math.ualberta.ca/~mss/misc/A%20Mathematician's%20Apology.pdf"><em>A Mathematician&rsquo;s Apology</em></a>, 1940.</p>
 
@@ -588,7 +606,7 @@ mad, a mathematician may find in mathematics an incomparable anodyne.
 
 <p><div class="latex"></p>
 
-<h2 id="number-theory:b1f171c11b7e766822270107caa74abd">Number Theory</h2>
+<h2 id="number-theory">Number Theory</h2>
 
 <p>Definition: $a$ divides $b$ ($a\, |\, b$) iff there is an integer $k$ such that $ak = b$.</p>
 
@@ -606,7 +624,7 @@ only by itself and 1.</p>
 
 <!--page-->
 
-<h2 id="groups-and-rings:b1f171c11b7e766822270107caa74abd">Groups and Rings</h2>
+<h2 id="groups-and-rings">Groups and Rings</h2>
 
 <p>$R$ is an Abelian group with respect to binary operation $P$ if it is:</p>
 
@@ -630,7 +648,7 @@ only by itself and 1.</p>
 <p></div></p>
  
   
-  <p class="fronthead"><A href="">Schedule Updates</a> (Sun, 12 Nov 2017)</p>
+  <p class="fronthead"><A href="/scheduleupdates/">Schedule Updates</a> (Sun, 12 Nov 2017)</p>
     <p>We are adjusting the schedule for Problem Set 9 and Problem Set
 &Omega; from the original schedule. Instead of being due on Wednesday,
 November 22 as previously scheduled, Problem Set 9 will now be due on
@@ -646,10 +664,10 @@ prefer to have a PS9 due on Nov 22, let one of the professors know and
 we can arrange something different.</p>
  
   
-  <p class="fronthead"><A href="">Class 21: Review</a> (Tue, 7 Nov 2017)</p>
+  <p class="fronthead"><A href="/class21/">Class 21: Review</a> (Tue, 7 Nov 2017)</p>
     
 
-<h3 id="exam-2:575cd0e814aa195b2fbaa50f10d15a07">Exam 2</h3>
+<h3 id="exam-2">Exam 2</h3>
 
 <p>Exam 2 will be in class on Thursday, 9 Nov. See <a href="/docs/class20.pdf">Class 20</a> notes for details on the exam.</p>
 
@@ -666,7 +684,7 @@ we can arrange something different.</p>
 
 <p><div class="latex"></p>
 
-<h2 id="main-topics-for-review:575cd0e814aa195b2fbaa50f10d15a07">Main Topics for Review</h2>
+<h2 id="main-topics-for-review">Main Topics for Review</h2>
 
 <p>Today we review the topics that we learned after Exam 1 with the
 exception of number theory (which will not be included in Exam
@@ -680,7 +698,7 @@ exception of number theory (which will not be included in Exam
 <li><p>Infinite Sets and Cardinalities, and how to show sets are finite, infinite, countable, or uncountable.</p></li>
 </ul>
 
-<h2 id="state-machines:575cd0e814aa195b2fbaa50f10d15a07">State Machines</h2>
+<h2 id="state-machines">State Machines</h2>
 
 <p>$M = (S, G \subset S \times S, q_0 \in S)$ defines a state machine.</p>
 
@@ -691,7 +709,7 @@ $$ \forall q \in S. (P(q) \wedge (q \rightarrow r) \in G) \implies P&reg;$$</p>
   $P(q_0)$ is true, then property $P$ is true for all <strong>reachable
   states</strong>.</p>
 
-<h2 id="proving-program-correctness:575cd0e814aa195b2fbaa50f10d15a07">Proving Program Correctness</h2>
+<h2 id="proving-program-correctness">Proving Program Correctness</h2>
 
 <p>To prove a program $R$ produces the correct output:</p>
 
@@ -711,7 +729,7 @@ $$ \forall q \in S. (P(q) \wedge (q \rightarrow r) \in G) \implies P&reg;$$</p>
 
 <!--page-->
 
-<h2 id="recursive-data-types:575cd0e814aa195b2fbaa50f10d15a07">Recursive Data Types</h2>
+<h2 id="recursive-data-types">Recursive Data Types</h2>
 
 <p>To define a recursive data type $D$:</p>
 
@@ -724,11 +742,11 @@ $$ \forall q \in S. (P(q) \wedge (q \rightarrow r) \in G) \implies P&reg;$$</p>
 <p></div></p>
  
   
-  <p class="fronthead"><A href="">Problem Set 8 Comments</a> (Sat, 4 Nov 2017)</p>
+  <p class="fronthead"><A href="/ps8comments/">Problem Set 8 Comments</a> (Sat, 4 Nov 2017)</p>
     <p>The Problem Set 8 solutions and comments are now posted in collab: <a href="https://collab.its.virginia.edu/access/content/group/9bd99d1c-6f18-4542-a7d1-8ffc4fccbd3d/ps8solutions.pdf">PDF</a></p>
  
   
-  <p class="fronthead"><A href="">Class 20: Number Theory</a> (Thu, 2 Nov 2017)</p>
+  <p class="fronthead"><A href="/class20/">Class 20: Number Theory</a> (Thu, 2 Nov 2017)</p>
     
 
 <h3 id="schedule">Schedule</h3>
@@ -875,7 +893,7 @@ decreases.</p>
 </div></p>
  
   
-  <p class="fronthead"><A href="">Problem Set 7 Comments</a> (Wed, 1 Nov 2017)</p>
+  <p class="fronthead"><A href="/ps7comments/">Problem Set 7 Comments</a> (Wed, 1 Nov 2017)</p>
     <p>The Problem Set 7 solutions and comments are now posted in collab: <a href="https://collab.its.virginia.edu/access/content/group/9bd99d1c-6f18-4542-a7d1-8ffc4fccbd3d/ps7solutions.pdf">PDF</a></p>
  
   

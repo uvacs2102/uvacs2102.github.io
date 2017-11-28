@@ -51,7 +51,7 @@
     },
     "datePublished": "2017-10-20",
     "description": "",
-    "wordCount":  1283 
+    "wordCount":  1275 
   }
 </script>
 
@@ -62,7 +62,7 @@
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://uvacs2102.github.io/touch-icon-144-precomposed.png">
 <link href="https://uvacs2102.github.io/favicon.png" rel="icon">
 
-<meta name="generator" content="Hugo 0.16-DEV" />
+<meta name="generator" content="Hugo 0.17" />
 
   <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -269,7 +269,7 @@ natural number.</p>
 
 <p>\begin{equation<em>}
 \begin{split}
-\qquad &amp; \text{\bf null}: \text{\em Tree} \
+\qquad &amp; \text{\bf null}: \text{\em Tree} <br />
        &amp; \text{node}: \text{\em Tree} \times \mathbb{N} \times \text{\em Tree} \rightarrow \text{\em Tree}
 \end{split}
 \end{equation</em>}</p>
@@ -279,11 +279,11 @@ natural number.</p>
 <p>The meaning of the operations is defined for all trees $t_1, t_2$, and all $n \in \mathbb{N}$, by:
 \begin{equation<em>}
 \begin{split}
-\text{label}: \text{\em Tree} \rightarrow \mathbb{N} \colon \qquad &amp; \text{label}(\text{node}(t_1, n, t_2)) \rightarrow n \
-\text{left}: \text{\em Tree} \rightarrow \text{\em Tree} \colon  \qquad &amp; \text{left}(\text{node}(t_1, n, t_2)) \rightarrow t_1 \
-\text{right}: \text{\em Tree} \rightarrow \text{\em Tree} \colon \qquad &amp; \text{right}(\text{node}(t_1, n, t_2)) \rightarrow t_2 \
-\text{empty}: \text{\em Tree} \rightarrow { \T, \F } \colon  \qquad &amp; \text{empty}(\text{\bf null}) \rightarrow \T \
-\qquad &amp; \text{empty}(\text{node}(t_1, n, t_2) \rightarrow \F \
+\text{label}: \text{\em Tree} \rightarrow \mathbb{N} \colon \qquad &amp; \text{label}(\text{node}(t_1, n, t_2)) \rightarrow n <br />
+\text{left}: \text{\em Tree} \rightarrow \text{\em Tree} \colon  \qquad &amp; \text{left}(\text{node}(t_1, n, t_2)) \rightarrow t_1 <br />
+\text{right}: \text{\em Tree} \rightarrow \text{\em Tree} \colon \qquad &amp; \text{right}(\text{node}(t_1, n, t_2)) \rightarrow t_2 <br />
+\text{empty}: \text{\em Tree} \rightarrow { \T, \F } \colon  \qquad &amp; \text{empty}(\text{\bf null}) \rightarrow \T <br />
+\qquad &amp; \text{empty}(\text{node}(t_1, n, t_2) \rightarrow \F <br />
 \end{split}
 \end{equation</em>}</p>
 
@@ -310,8 +310,8 @@ the in-order traversal of the tree shown below would be the list $(4, 8,
 <p>We can define $\text{traverse}$ to produce a (prepend) list as follows (note the $+$ operation here is list concatenation, as defined in <a href="/class16">Class 16</a>) :
 \begin{equation<em>}
 \begin{split}
-&amp; \text{traverse}(\text{\bf null}) = \text{\bf null} \
-&amp; \text{traverse}(\text{node}(t_1, n, t_2)) = \text{traverse}(t_1) + \text{prepend}(n, \text{traverse}(t_2)) \
+&amp; \text{traverse}(\text{\bf null}) = \text{\bf null} <br />
+&amp; \text{traverse}(\text{node}(t_1, n, t_2)) = \text{traverse}(t_1) + \text{prepend}(n, \text{traverse}(t_2)) <br />
 \end{split}
 \end{equation</em>}</p>
 
