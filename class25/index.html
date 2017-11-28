@@ -5,7 +5,7 @@
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <title>Class 25: Cryptography  &middot; cs2102: Discrete Math</title>
+  <title>Class 25: Counting  &middot; cs2102: Discrete Math</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="HandheldFriendly" content="True">
 <meta name="MobileOptimized" content="320">
@@ -17,7 +17,7 @@
 <meta name="keywords" content="">
 
 
-<meta property="og:title" content="Class 25: Cryptography  &middot; cs2102: Discrete Math ">
+<meta property="og:title" content="Class 25: Counting  &middot; cs2102: Discrete Math ">
 <meta property="og:site_name" content="cs2102: Discrete Math"/>
 <meta property="og:url" content="https://uvacs2102.github.io/class25/" />
 <meta property="og:locale" content="en-us">
@@ -25,8 +25,8 @@
 
 <meta property="og:type" content="article" />
 <meta property="og:description" content=""/>
-<meta property="og:article:published_time" content="2016-12-01T00:00:00Z" />
-<meta property="og:article:modified_time" content="2016-12-01T00:00:00Z" />
+<meta property="og:article:published_time" content="2017-11-28T00:00:00Z" />
+<meta property="og:article:modified_time" content="2017-11-28T00:00:00Z" />
 
   
 
@@ -34,7 +34,7 @@
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <meta name="twitter:creator" content="@" />
-<meta name="twitter:title" content="Class 25: Cryptography" />
+<meta name="twitter:title" content="Class 25: Counting" />
 <meta name="twitter:description" content="" />
 <meta name="twitter:url" content="https://uvacs2102.github.io/class25/" />
 <meta name="twitter:domain" content="https://uvacs2102.github.io">
@@ -44,14 +44,14 @@
   {
     "@context": "http://schema.org",
     "@type": "Article",
-    "headline": "Class 25: Cryptography",
+    "headline": "Class 25: Counting",
     "author": {
       "@type": "Person",
       "name": "http://profiles.google.com/+?rel=author"
     },
-    "datePublished": "2016-12-01",
+    "datePublished": "2017-11-28",
     "description": "",
-    "wordCount":  552 
+    "wordCount":  786 
   }
 </script>
 
@@ -62,14 +62,14 @@
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://uvacs2102.github.io/touch-icon-144-precomposed.png">
 <link href="https://uvacs2102.github.io/favicon.png" rel="icon">
 
-<meta name="generator" content="Hugo 0.17" />
+<meta name="generator" content="Hugo 0.16-DEV" />
 
   <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
 
-<link href='https://fonts.googleapis.com/css?family=Merriweather:300%7CRaleway%7COpen+Sans' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,400i,700" rel="stylesheet">
 <link rel="stylesheet" href="https://uvacs2102.github.io/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://uvacs2102.github.io/css/style.css">
 
@@ -104,25 +104,35 @@
 
 
   
-<a href="https://uvacs2102.github.io/f16/syllabus">Syllabus</a>
+<a href="https://uvacs2102.github.io/syllabus">Syllabus</a>
 
-<a href="https://uvacs2102.github.io/f16/schedule">Schedule</a>
+<a href="https://uvacs2102.github.io/schedule">Schedule</a>
 
-<a href="https://uvacs2102.github.io/f16/officehours">Office Hours</a>
+<a href="https://uvacs2102.github.io/officehours">Office Hours</a>
 
-<a href="https://uvacs2102.github.io/f16/docs/mcs.pdf">MCS Book</a>
+<a href="https://uvacs2102.github.io/docs/mcs.pdf">MCS Book</a>
 
-<a href="https://uvacs2102.github.io/f16/pledge">Course Pledge</a>
+<a href="https://uvacs2102.github.io/resources">Resources</a>
 
-<a href="https://collab.itc.virginia.edu/portal/site/e0b17949-c94c-466b-835a-196381f3f911?panel=Main">Collab Site</a>
+<a href="https://uvacs2102.github.io/"></a>
 
-<a href="https://uvacs2102.github.io/f16/docs/finalprep.pdf">Final</a>
+<a href="https://uvacs2102.github.io/pledge">Course Pledge</a>
 
-<a href="https://uvacs2102.github.io/f16/ps/pszhighlights">PS Highlights</a>
+<a href="https://uvacs2102.github.io/ps/psomega">Problem Set Omega</a>
 
-<a href="https://uvacs2102.github.io/f16/challenges">Challenges</a>
+<a href="https://uvacs2102.github.io/ps/ps9">Problem Set 9</a>
 
-<a href="https://uvacs2102.github.io/f16/post">Posts</a>
+<a href="https://uvacs2102.github.io/ps/ps8">Problem Set 8</a>
+
+<a href="https://uvacs2102.github.io/ps/ps7">Problem Set 7</a>
+
+<a href="https://uvacs2102.github.io/ps/">More Problem Sets...</a>
+
+<a href="https://collab.its.virginia.edu/portal/site/9bd99d1c-6f18-4542-a7d1-8ffc4fccbd3d">Collab Site</a>
+
+<a href="https://uvacs2102.github.io/"></a>
+
+<a href="https://uvacs2102.github.io/post">Posts</a>
 
 
 </nav>
@@ -161,11 +171,11 @@
 
 <article id="main-content" class="container main_content single">
   <header class="container hat">
-  <h1><center>Class 25: Cryptography
+  <h1><center>Class 25: Counting
 </center></h1>
 
   <div class="metas">
-<time datetime="2016-12-01">1 Dec, 2016</time>
+<time datetime="2017-11-28">28 Nov, 2017</time>
 
 
   
@@ -182,110 +192,104 @@
 
 <h3 id="schedule">Schedule</h3>
 
-<p><em>Lighting of the Lawn</em> is <strong>tonight</strong>!  (Starts around 7pm)</p>
+<p>Reminder for the schedule for the rest of the semester:</p>
 
-<p>If you would like to present something to the class, you need to
-submit <strong><a href="/ps/psz">Problem Set Omega</a></strong> by <strong>Sunday, 4 December</strong> at
-<strong>6:29pm</strong>.  Your submission should include an answer to &ldquo;Presentation
-option&rdquo; question:</p>
+<ul>
+<li><strong><a href="/ps/ps9">Problem Set 9</a></strong>: due on Friday, 1 December at 6:29pm.</li>
+<li><strong><a href="/ps/psomega">Problem Set omega;</a></strong>: due on Monday, 4 December at 11:59pm. See the <a href="/ps/psomega">Problem Set omega;</a> description for examples from previous students.</li>
+<li><strong>Final Exam</strong>: Thursday, 7 December, 9am-noon (in the normal lecture room)</li>
+</ul>
 
-<blockquote>
-<p>Presentation option: if you would like to present in class Tuesday, write a brief explanation of what you would like to do and how much time you are requesting for it. You can also include anything you want to make a compelling case for why your project should be selected (depending on how many requests for presentation their are, it may be necessary to select only as many as fit into the class).</p>
-</blockquote>
+<p><div class="notpdf"></p>
 
-<p>Your final (optional) submission is due <strong>Tuesday, 6 December</strong>. You
-may revise and update earlier submissions until this deadline.</p>
+<p><center></p>
 
-<p>The <strong>final exam</strong> is scheduled by the registrar for <strong>Saturday, 10
-December, 9am-noon</strong> in our normal classroom.  See the <a href="/finalprep">Final Exam
-Preparation</a> handout for more information and some <strong>practice problems</strong>.</p>
-
-<p><div class="notpdf">
-   <center>
-<script async class="speakerdeck-embed" data-id="05564d4a4f204f10867ae912bc410f93" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-   </center></p>
+<p></center>
+ </div><!--endpdf--></p>
 
 <p><div class="highlightm">
    <a href="/docs/class25.pdf">See PDF Version for <b>Notes</b></a>.
    </div></p>
 
-<h2 id="links">Links</h2>
-
-<p><a href="http://www.cs.virginia.edu/~evans/courses/cs387/">Cryptography Courses</a></p>
-
-<p><a href="http://www.mightbeevil.org">MightBeEvil</a></p>
-
 <p></div><!--endpdf--></p>
 
 <p><div class="latex"></p>
 
-<h1 id="symmetric-cryptography">Symmetric Cryptography</h1>
+<h1 id="examples">Examples</h1>
 
-<p>Correctness: $D(K, E(K, M)) = M$</p>
+<p>Today, we want to bre able to answer the following questions. The first two are already discussed in class, but we will study them more generally.
+\begin{enumerate}
+\item How many subsets does $S$ have if $|S|=n$?
+\item How many numbers are there that can be represented with (at most) $n$ bits (in base 2) ?
+\item How many (at most) 16-bit numbers with exactly 4 ones?
+\item How many ways to choose 12 doughnuts from 5 varieties?
+\end{enumerate}</p>
 
-<p>Security: without $K$, it is hard to learning anything interesting about $M$ from $E(K, M)$.</p>
+<p>The first two have the same answers $2^n$. In fact, because there is a bijection between the set of answers to problem 1 and problem 2, then we already knew that they have the same answers. More generally, all counting problems of today&rsquo;s class could be described as &ldquo;what is the size of a set $A$?&rdquo; We use the definitino of finite cardinality from Class 9, to study these questions. Namely, we try to find another set $B$ whose cardinality is knwon, and that there is a bijection between $A$ and $B$.</p>
 
-<p>Why is $\oplus$ (xor) such a useful operator for cryptography?</p>
+<h1 id="why-counting">Why Counting?</h1>
 
-<p>#</p>
+<p>Being able to count (exactly or even approximately) is important for many reasons, some of which are:
+\begin{itemize}
+\item Estimating the &ldquo;cost&rdquo; of an algorithm, this could be time, space, etc. This comes up when we try to analyze the &ldquo;efficiency&rdquo; of an algorithm.
+\item Estimating the &ldquo;security&rdquo; of a cryptographic algorithm. Basically, we would like to know how big is the &ldquo;space of keys&rdquo; from which the adversary has to &ldquo;guess&rdquo; the correct one.
+\item Counting is the fundamental to probability theory.
+\end{itemize}</p>
 
-<p><strong>Perfect cipher</strong> (Claude Shannon, 1940s).  The ciphertext reveals no
-  information (other than maximum length) about the plaintext.</p>
+<h1 id="counting-rules">Counting Rules</h1>
 
-<p>Why must a perfect cipher have $|K|\, \ge\, |M|$? ($K$ is the set of possible keys, $M$ is the set of plaintext messages)</p>
+<p><strong>Product Rule</strong> If $A_1,\dots,A_n$ are finite sets, then the size of their cartesian product is
+$$|A_1 \times \dots \times A_n| = |A_1| \cdot |A_2| \dots |A_n| $$</p>
 
-<p>#</p>
+<p>We previously saw this rule in Class 7, but we will use it more heavily today, and we will see some extensions of it.</p>
 
-<p>Why is a one-time pad impractical for most purposes?  How do you break a &ldquo;two&rdquo;-time pad?</p>
+<p>Using the product rule, formally prove that the answer to the first two example problems are both $2^n$. (Hint, let $S={a_1,\dots,a_n}$ and let $A_i = {a_i}$.)</p>
 
-<!--page-->
+<p>#
+#
+#</p>
 
-<h1 id="asymmetric-public-key-cryptography">Asymmetric (Public Key) Cryptography</h1>
+<p><strong>Sum Rule</strong>. If $A_1,\dots,A_n$ are finite \emph{disjoint} sets, then the size of their \emph{union} is
+$$|A_1 \cup \dots \cup A_n| = |A_1| + |A_2| \dots +|A_n|.$$</p>
 
-<p>\small</p>
+<p>The sum rule is even simpler than the product rule, but together with the product rule, theye become very powerful.</p>
 
-<blockquote>
-<p><em>We stand today on the brink of a revolution in cryptography. The development of cheap digital hardware has freed it from the design limitations of mechanical computing and brought the cost of high grade cryptographic devices down to where they can be used in such commercial applications as remote cash dispensers and computer terminals. In turn, such applications create a need for new types of cryptographic systems which minimize the necessity of secure key distribution channels and supply the equivalent of a written signature. At the same time, theoretical developments in information theory and computer science show promise of providing provably secure cryptosystems, changing this ancient art into a science.</em><br />
-Whit Diffie and Martin Hellman, <em>New Directions in Cryptography</em>, November 1976</p>
-</blockquote>
+<p>Using the product and sum rules, count now many passwords of 6 to 8 characters exist if the first character can be an english letter (upper or lower case) and the rest could also be a digit.</p>
 
-<p>\normalsize</p>
+<p><strong>Generalized product rule</strong> Suppose $S$ is a set containing length-$k$ sequences like $(a_1,\dots,a_k)$. If there are $n_i$ possibilities for $i$&lsquo;th entry $a_i$ for any possible prefix $a<em>1,\dots,a</em>{i-1}$, then  $|S|=n_1 \cdot n_2 \dots n_k$.</p>
 
-<p><strong>Primitive root.</strong> $\alpha$ is a primitive root of $q$ if $\forall 1 \le n &lt; q \ldotp \exists m, 1 \le m &lt; q\ \text{such that}\ \alpha^m = n \mod q$.  All prime numbers have primitive roots.</p>
+<p>Using the generalizd product rule, prove that the number of permutations over any set $S={s_1,\dots,s_n}$ is $n!$. A permutation is simply a sequence $(a_1,\dots,a_n)$ where each $s_i$ appears in that sequence exactly once.</p>
 
-<h3 id="diffie-hellman-merkle-key-agreement">Diffie-Hellman-Merkle Key Agreement</h3>
+<p>#
+#
+#</p>
 
-<p><strong>Goal:</strong> Alice and Bob agree on a secure key $K$, over an insecure channel with no prior agreement.</p>
+<p><strong>Division Rule</strong>. If $f \colon A \to B$ is a $k$ to $1$ (total surjective) function, and if $A,B$ are finite sets then, $|A| = k \cdot |B|$.</p>
 
-<p><strong>Assumption:</strong> Discrete log problem is hard (for sufficiently large inputs).</p>
+<h1 id="counting-when-order-does-not-matter">Counting  when order does not matter</h1>
 
-<ol>
-<li><p>Choose and public the public parameters:<br />
-$q$, large prime number
-$\alpha$, primitive root of $q$</p></li>
+<p>The number of subsets of size $k$ of  ${1,\dots,n}$ captures a counting problem in which the order of the $k$
+ selected elements does not matter. This number is so important that has its own notation ${n \choose k}$.</p>
 
-<li><p>Alice generates random $X_A$.</p></li>
+<p>Using the division rule, prove that ${n \choose k} = \frac{n!}{k! (n-k)!}$</p>
 
-<li><p>Alice sends $Y_A = \alpha^{X_A} \mod q$.</p></li>
+<p><strong>when repetition is allowed</strong>. Note that in the problem above, we cannot select the same element $s_i$ from $S$ more than once, but suppose we consider the selections to be &ldquo;multi-sets&rdquo; where the order of elements do not matter, but they could be selected more than once. This is a way to model the third example problem about donuts.</p>
 
-<li><p>Bob generates random $X_B$.</p></li>
+<p>Give a bijection between the sets that model the following two counting problems:
+\begin{itemize}
+\item Selecting $k$ elements from  ${1,\dots,n}$ as a &ldquo;multi-set&rdquo;; namely, the order of selection does not matter, but we \emph{can} select an element more than once.
+\item Number of sequences of $0,1$ with $k-1$ ones, and $n$ zeros.
+\end{itemize}</p>
 
-<li><p>Bob sends $Y_B = \alpha^{X_B} \mod q$</p></li>
+<p>Using the above bijection, show that the answer to the example counting problems 3 and 4 are both equal to 4845.</p>
 
-<li><p>Alice computes $K = (Y_B)^{X_A} \mod q$ / Bob computes $K = (Y_A)^{X_B} \mod q$.</p></li>
-</ol>
+<p>#
+#</p>
 
-<p>How do we know Alice and Bob will agree on the same key, $K$?</p>
+<h1 id="proof-by-counting">Proof by counting</h1>
 
-<p>##</p>
-
-<p>What would an eavesdropper need to do to learn $K$?</p>
-
-<p>##</p>
-
-<h1 id="secure-multi-party-computation">Secure Multi-Party Computation</h1>
-
-<p>How can we compute a stable matching without revealing sensitive preferences?</p>
+<p>Prove Pascal&rsquo;s triangle identity:
+$${n \choose k} = {n \choose k-1} + {n-1 \choose k-1}.$$</p>
 
 <p></div></p>
 
@@ -299,15 +303,11 @@ $\alpha$, primitive root of $q$</p></li>
   
 
     
-    <a class="prev" href="https://uvacs2102.github.io/class24/" title="Class 24: Halting Problems">
+    <a class="prev" href="https://uvacs2102.github.io/class24/" title="Class 24: Return of ROCA">
       Previous
     </a>
     
 
-    
-    <a class="next" href="https://uvacs2102.github.io/practicesolutions/" title="Practice Problems Solutions">
-      Next
-    </a>
     
 
   
@@ -332,7 +332,7 @@ $\alpha$, primitive root of $q$</p></li>
   
 <div class="container footline">
   
-  <p align="center">cs2102: Discrete Mathematics | University of Virginia, Fall 2016 | <a href="https://www.cs.virginia.edu/evans">David Evans</a>
+  <p align="center">cs2102: Discrete Mathematics | University of Virginia, Fall 2017 | <a href="https://www.cs.virginia.edu/evans">David Evans</a> and <a href="https://www.cs.virginia.edu/~mohammad/">Mohammad Mahmoody
 
 
 </div>
