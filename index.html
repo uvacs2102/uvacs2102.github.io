@@ -149,113 +149,6 @@
   </header>
   
   
-  <p class="fronthead"><A href="">Class 25: Counting</a> (Tue, 28 Nov 2017)</p>
-    
-
-<h3 id="schedule:48c09636ef2a37766db0522980dbf8fc">Schedule</h3>
-
-<p>Reminder for the schedule for the rest of the semester:</p>
-
-<ul>
-<li><strong><a href="/ps/ps9">Problem Set 9</a></strong>: due on Friday, 1 December at 6:29pm.</li>
-<li><strong><a href="/ps/psomega">Problem Set omega;</a></strong>: due on Monday, 4 December at 11:59pm. See the <a href="/ps/psomega">Problem Set omega;</a> description for examples from previous students.</li>
-<li><strong>Final Exam</strong>: Thursday, 7 December, 9am-noon (in the normal lecture room)</li>
-</ul>
-
-<p><div class="notpdf"></p>
-
-<p><center></p>
-
-<p></center>
- </div><!--endpdf--></p>
-
-<p><div class="highlightm">
-   <a href="/docs/class25.pdf">See PDF Version for <b>Notes</b></a>.
-   </div></p>
-
-<p></div><!--endpdf--></p>
-
-<p><div class="latex"></p>
-
-<h1 id="examples:48c09636ef2a37766db0522980dbf8fc">Examples</h1>
-
-<p>Today, we want to bre able to answer the following questions. The first two are already discussed in class, but we will study them more generally.
-\begin{enumerate}
-\item How many subsets does $S$ have if $|S|=n$?
-\item How many numbers are there that can be represented with (at most) $n$ bits (in base 2) ?
-\item How many (at most) 16-bit numbers with exactly 4 ones?
-\item How many ways to choose 12 doughnuts from 5 varieties?
-\end{enumerate}</p>
-
-<p>The first two have the same answers $2^n$. In fact, because there is a bijection between the set of answers to problem 1 and problem 2, then we already knew that they have the same answers. More generally, all counting problems of today&rsquo;s class could be described as &ldquo;what is the size of a set $A$?&rdquo; We use the definitino of finite cardinality from Class 9, to study these questions. Namely, we try to find another set $B$ whose cardinality is knwon, and that there is a bijection between $A$ and $B$.</p>
-
-<h1 id="why-counting:48c09636ef2a37766db0522980dbf8fc">Why Counting?</h1>
-
-<p>Being able to count (exactly or even approximately) is important for many reasons, some of which are:
-\begin{itemize}
-\item Estimating the &ldquo;cost&rdquo; of an algorithm, this could be time, space, etc. This comes up when we try to analyze the &ldquo;efficiency&rdquo; of an algorithm.
-\item Estimating the &ldquo;security&rdquo; of a cryptographic algorithm. Basically, we would like to know how big is the &ldquo;space of keys&rdquo; from which the adversary has to &ldquo;guess&rdquo; the correct one.
-\item Counting is the fundamental to probability theory.
-\end{itemize}</p>
-
-<h1 id="counting-rules:48c09636ef2a37766db0522980dbf8fc">Counting Rules</h1>
-
-<p><strong>Product Rule</strong> If $A_1,\dots,A_n$ are finite sets, then the size of their cartesian product is
-$$|A_1 \times \dots \times A_n| = |A_1| \cdot |A_2| \dots |A_n| $$</p>
-
-<p>We previously saw this rule in Class 7, but we will use it more heavily today, and we will see some extensions of it.</p>
-
-<p>Using the product rule, formally prove that the answer to the first two example problems are both $2^n$. (Hint, let $S={a_1,\dots,a_n}$ and let $A_i = {a_i}$.)</p>
-
-<p>#
-#
-#</p>
-
-<p><strong>Sum Rule</strong>. If $A_1,\dots,A_n$ are finite \emph{disjoint} sets, then the size of their \emph{union} is
-$$|A_1 \cup \dots \cup A_n| = |A_1| + |A_2| \dots +|A_n|.$$</p>
-
-<p>The sum rule is even simpler than the product rule, but together with the product rule, theye become very powerful.</p>
-
-<p>Using the product and sum rules, count now many passwords of 6 to 8 characters exist if the first character can be an english letter (upper or lower case) and the rest could also be a digit.</p>
-
-<p><strong>Generalized product rule</strong> Suppose $S$ is a set containing length-$k$ sequences like $(a_1,\dots,a_k)$. If there are $n_i$ possibilities for $i$&lsquo;th entry $a_i$ for any possible prefix $a<em>1,\dots,a</em>{i-1}$, then  $|S|=n_1 \cdot n_2 \dots n_k$.</p>
-
-<p>Using the generalizd product rule, prove that the number of permutations over any set $S={s_1,\dots,s_n}$ is $n!$. A permutation is simply a sequence $(a_1,\dots,a_n)$ where each $s_i$ appears in that sequence exactly once.</p>
-
-<p>#
-#
-#</p>
-
-<p><strong>Division Rule</strong>. If $f \colon A \to B$ is a $k$ to $1$ (total surjective) function, and if $A,B$ are finite sets then, $|A| = k \cdot |B|$.</p>
-
-<h1 id="counting-when-order-does-not-matter:48c09636ef2a37766db0522980dbf8fc">Counting  when order does not matter</h1>
-
-<p>The number of subsets of size $k$ of  ${1,\dots,n}$ captures a counting problem in which the order of the $k$
- selected elements does not matter. This number is so important that has its own notation ${n \choose k}$.</p>
-
-<p>Using the division rule, prove that ${n \choose k} = \frac{n!}{k! (n-k)!}$</p>
-
-<p><strong>when repetition is allowed</strong>. Note that in the problem above, we cannot select the same element $s_i$ from $S$ more than once, but suppose we consider the selections to be &ldquo;multi-sets&rdquo; where the order of elements do not matter, but they could be selected more than once. This is a way to model the third example problem about donuts.</p>
-
-<p>Give a bijection between the sets that model the following two counting problems:
-\begin{itemize}
-\item Selecting $k$ elements from  ${1,\dots,n}$ as a &ldquo;multi-set&rdquo;; namely, the order of selection does not matter, but we \emph{can} select an element more than once.
-\item Number of sequences of $0,1$ with $k-1$ ones, and $n$ zeros.
-\end{itemize}</p>
-
-<p>Using the above bijection, show that the answer to the example counting problems 3 and 4 are both equal to 4845.</p>
-
-<p>#
-#</p>
-
-<h1 id="proof-by-counting:48c09636ef2a37766db0522980dbf8fc">Proof by counting</h1>
-
-<p>Prove Pascal&rsquo;s triangle identity:
-$${n \choose k} = {n \choose k-1} + {n-1 \choose k-1}.$$</p>
-
-<p></div></p>
- 
-  
   <p class="fronthead"><A href="">Class 24: Return of ROCA</a> (Tue, 21 Nov 2017)</p>
     
 
@@ -302,7 +195,7 @@ collaboration policy carefully.</p>
   <p class="fronthead"><A href="">Class 23: Cryptosystems</a> (Thu, 16 Nov 2017)</p>
     
 
-<h3 id="schedule:5745b40601045f50f1418eebe2f9ce59">Schedule</h3>
+<h3 id="schedule">Schedule</h3>
 
 <p>Here&rsquo;s the updated (and final) schedule for the rest of the semester:</p>
 
@@ -314,7 +207,7 @@ collaboration policy carefully.</p>
 
 <p><div class="notpdf"></p>
 
-<h2 id="galois:5745b40601045f50f1418eebe2f9ce59">Galois</h2>
+<h2 id="galois">Galois</h2>
 
 <p><a href="https://plus.maths.org/content/genius-stupidity-and-genius-again"><em>Genius, stupidity and genius again</em></a> (the short life of Evariste Galois), by Tope Omitola.</p>
 
@@ -330,7 +223,7 @@ collaboration policy carefully.</p>
 <p></div><!--endpdf-->
    <div class="latex"></p>
 
-<h2 id="modular-arithmetic:5745b40601045f50f1418eebe2f9ce59">Modular Arithmetic</h2>
+<h2 id="modular-arithmetic">Modular Arithmetic</h2>
 
 <p>Definition: A number $a$ is <em>congruent</em> to $b$ modulo $n$ if and only
 if $n\, | \, (a - b)$.  We can write this as $a \equiv b \;\;
@@ -341,7 +234,7 @@ if $n\, | \, (a - b)$.  We can write this as $a \equiv b \;\;
 
 <p>#</p>
 
-<h2 id="groups-rings-and-fields:5745b40601045f50f1418eebe2f9ce59">Groups, Rings, and Fields</h2>
+<h2 id="groups-rings-and-fields">Groups, Rings, and Fields</h2>
 
 <p><strong>Abelian group:</strong> set $R$, with a binary operation $+$:<br />
    associative, commutative, additive identity (<strong>0</strong>), additive inverse ($−a$)</p>
@@ -748,7 +641,7 @@ $$ \forall q \in S. (P(q) \wedge (q \rightarrow r) \in G) \implies P&reg;$$</p>
   <p class="fronthead"><A href="">Class 20: Number Theory</a> (Thu, 2 Nov 2017)</p>
     
 
-<h3 id="schedule:dcf75d114d0b27f85507ff1ab741294c">Schedule</h3>
+<h3 id="schedule">Schedule</h3>
 
 <p><a href="/ps/ps8"><strong>Problem Set 8</strong></a> is due <strong>Friday at 6:29pm</strong>.</p>
 
@@ -761,7 +654,7 @@ $$ \forall q \in S. (P(q) \wedge (q \rightarrow r) \in G) \implies P&reg;$$</p>
 <li>More than 10 requests implies we should spend Thursday’s class on reviewing requested topics, no exam exemptions.</li>
 </ul>
 
-<h3 id="exam-2:dcf75d114d0b27f85507ff1ab741294c">Exam 2</h3>
+<h3 id="exam-2">Exam 2</h3>
 
 <p>Exam 2 will be in class on Thursday, 9 Nov.  You can get a good
 idea for what to expect on Exam 2 based on Exam 1, and also by looking at the <a href="/docs/practiceexam2.pdf">Practice Exam
@@ -809,7 +702,7 @@ benefit from doing #3 and #4 as well.</p>
    <a href="/docs/class20.pdf">See PDF Version for <b>Notes and Questions</b></a>.
    </div></p>
 
-<h2 id="links:dcf75d114d0b27f85507ff1ab741294c">Links</h2>
+<h2 id="links">Links</h2>
 
 <p><a href="https://en.wikipedia.org/wiki/Goldbach%27s_conjecture">Goldbach&rsquo;s conjecture</a></p>
 
@@ -821,7 +714,7 @@ benefit from doing #3 and #4 as well.</p>
 
 <p><div class="latex"></p>
 
-<h2 id="divisibility:dcf75d114d0b27f85507ff1ab741294c">Divisibility</h2>
+<h2 id="divisibility">Divisibility</h2>
 
 <p>Number theory is a study of integers $\mathbb{Z}={0,-1,1,-2,2,\dots}$. Adding, multiplying, and negating, are 3 operators on integers that we can define in a straight-forward way. Dividing is more tricky. For that, we first define the notation $a \mid b$ to denote the simpler situation where $b = k \cdot a$ for some $k \in \mathbb{Z}$. In this case, we say that $a$ is a <em>divisor</em> of $b$ and that $b$ is a <em>multiple</em> of $a$.</p>
 
@@ -845,7 +738,7 @@ where $p<em>i &lt; p</em>{i+1}$ and $p_i$ is prime for all $i$.</p>
 
 <p>Hint for proof: Use strong induction on $n$, and try to show that any two different representations for $n$ will have the same `smallest&rsquo; prime $p_1$ and the same power $a_1$ for $p_1$.</p>
 
-<h2 id="easy-to-state-but-hard-to-solve-problems:dcf75d114d0b27f85507ff1ab741294c">Easy-to-state, but hard-to-solve problems</h2>
+<h2 id="easy-to-state-but-hard-to-solve-problems">Easy-to-state, but hard-to-solve problems</h2>
 
 <p>In number theory, we can easily state problems that are super hard to solve. These are some examples.</p>
 
@@ -855,13 +748,13 @@ where $p<em>i &lt; p</em>{i+1}$ and $p_i$ is prime for all $i$.</p>
 
 <p><strong>Fermat&rsquo;s last theorem:</strong> For any integer $n&gt;2$ there are no integers $a,b,c$ where $a^n + b^n = c^n$. Note that for $n=2$ there are integer solutions like $3^2 + 4^2 = 5^2$. Fermat claimed to have a proof, but nobody knows if he really did or not. Andrew Wiles eventually proved this in 1994, hence we call it a <em>theorem</em> and not a conjecture anymore.</p>
 
-<h2 id="greatest-common-divisor:dcf75d114d0b27f85507ff1ab741294c">Greatest Common Divisor</h2>
+<h2 id="greatest-common-divisor">Greatest Common Divisor</h2>
 
 <p><strong>Definition</strong> For natural numbers $m,n&gt;0$ we call $d&gt;0$ their \emph{greatest common divisor}, denoted by $d=gcd(m,n)$ if $d$ is the largest number such that $d \mid m$ and $d \mid n$. (Make sure to verify why we can always say that such $d$ exists.)</p>
 
 <p>We can use the fundamental theorem of arithmetic, to <em>compute</em> the gcd of any given pairs of integers. But how efficient is it? The problem is that factoring numbers $m,n$ into their prime factors is not something we know how to do efficiently. In particular, no known algorithm is guaranteed to factor all numbers with $1000,000$ digits in less than an (estimated) thousand years! The conjecture is that no such `efficient&rsquo; algorithm exists, and many cryptographic algorithms <em>assume</em> this is the case!</p>
 
-<h2 id="euclid-s-algorithm:dcf75d114d0b27f85507ff1ab741294c">Euclid&rsquo;s Algorithm</h2>
+<h2 id="euclid-s-algorithm">Euclid&rsquo;s Algorithm</h2>
 
 <p>Despite not knowing how to factor integers efficiently, Euclid showed how to find gcd quite efficiently. This shows, even if the most ``natural&rdquo; algorithm fails for doing something efficiently, we should always consider the possibility that an alternative way could still exist.</p>
 
@@ -894,6 +787,78 @@ decreases.</p>
   
   <p class="fronthead"><A href="">Problem Set 7 Comments</a> (Wed, 1 Nov 2017)</p>
     <p>The Problem Set 7 solutions and comments are now posted in collab: <a href="https://collab.its.virginia.edu/access/content/group/9bd99d1c-6f18-4542-a7d1-8ffc4fccbd3d/ps7solutions.pdf">PDF</a></p>
+ 
+  
+  <p class="fronthead"><A href="">Class 19: Reviewing Infinities</a> (Tue, 31 Oct 2017)</p>
+    
+
+<h3 id="schedule">Schedule</h3>
+
+<p><strong>Problem Set 8</strong> is now due on <strong>Friday, Nov 3</strong>.</p>
+
+<p><div class="notpdf">
+   <center>
+<script async class="speakerdeck-embed" data-id="5db039183a334bca9708c9f6c0d3b9dc" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+   </center>
+   </div><!--endpdf--></p>
+
+<p><div class="highlightm">
+   <a href="/docs/class19.pdf">See PDF Version for <b>Notes</b></a>.
+   </div></p>
+
+<p></div><!--endpdf--></p>
+
+<p><div class="latex"></p>
+
+<h1 id="comparing-sets-recap">Comparing sets Recap:</h1>
+
+<p><strong>Definition.</strong> Sets $A$ and $B$ have the same cardinality, denoted by $|A|=|B|$ if there is a bijection between $A$ and $B$.</p>
+
+<p><strong>Definition.</strong> Cardinality of $A$ is at least as big as cardinality of $B$, denoted by $|A|\geq |B|$ if and only if <em>either</em> of the following is true (they are equivalent).
+\begin{enumerate}
+\item There is a surjective function from $A$ to $B$.
+\item There is a total injective function from $B$ to $A$.
+\end{enumerate}</p>
+
+<h1 id="infinite-sets-recap">Infinite Sets Recap</h1>
+
+<p><strong>Definition.</strong> A set $C$ is <em>infinite</em> if and only if <em>either</em> of the following happens (they are all equivalnet).
+\begin{enumerate}</p>
+
+<p>\item Dedekind-infinite: There is a bijection between $C$ and a strict subset $B$ of $C$.</p>
+
+<p>\item There is \emph{no} bijection between $C$ and any $\mathbb{N}_k$ for any natural number $ k \in \mathbb{N}$.</p>
+
+<p>\item There exists a
+  surjective function from $C$ to $\mathbb{N}$.</p>
+
+<p>\item There exists a total injective function from $\mathbb{N}$  to $C$.
+\end{enumerate}</p>
+
+<p><strong>Definition.</strong> A set $C$ is <em>countable</em> if and only if there exists a
+  surjective function from $\mathbb{N}$ to $C$.  (That is, $\le 1$ arrow
+  out from $\mathbb{N}$, $\ge 1$ arrow in to $C$.)</p>
+
+<p><strong>Definition.</strong> A set $C$ is <em>countably infinite</em> if and only if there
+  exists a bijection between $C$ and $\mathbb{N}$.</p>
+
+<h1 id="cantor-s-theorem">Cantor&rsquo;s Theorem</h1>
+
+<p>For <strong>all</strong> sets, $S$, $| pow(S) | &gt; | S |$.</p>
+
+<p>What does this mean for $| \mathbb{N} |$?</p>
+
+<p>#</p>
+
+<p>Show there is a bijection between $[0, 1]$ and $pow(\mathbb{N})$.</p>
+
+<p>#</p>
+
+<p>What is the cardinality of all the real numbers? Show a bijection between $[0, 1]$ and all real numbers. Hint, first show a bijection between $(0, 1)$ and real numbers, and then a bijection between $[0, 1]$ and $(0, 1)$.</p>
+
+<p>#</p>
+
+<p></div></p>
  
   
   
