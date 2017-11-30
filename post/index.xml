@@ -1,13 +1,101 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Post-rsses on cs2102: Discrete Math</title>
-    <link>https://uvacs2102.github.io/post/index.xml</link>
-    <description>Recent content in Post-rsses on cs2102: Discrete Math</description>
+    <title>Posts on cs2102: Discrete Math</title>
+    <link>https://uvacs2102.github.io/post/</link>
+    <description>Recent content in Posts on cs2102: Discrete Math</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 28 Nov 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 30 Nov 2017 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://uvacs2102.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Class 26: Counting and Probability</title>
+      <link>https://uvacs2102.github.io/class26/</link>
+      <pubDate>Thu, 30 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/class26/</guid>
+      <description>
+
+&lt;div class=&#34;notpdf&#34;&gt;
+
+   &lt;center&gt;
+
+   &lt;/center&gt;
+ &lt;/div&gt;&lt;!--endpdf--&gt;
+
+   &lt;div class=&#34;highlightm&#34;&gt;
+   &lt;a href=&#34;https://uvacs2102.github.io/docs/class26.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes&lt;/b&gt;&lt;/a&gt;.
+   &lt;/div&gt;
+   
+
+&lt;p&gt;&lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;recall&#34;&gt;Recall&lt;/h1&gt;
+
+&lt;p&gt;Last time, we went tover two basic counting problems. In both problems, we counted how many ways we can choose $k$ elements from ${1,\dots,n}$ whe the order of selection does matter; namely, we counted \emph{sequences} of length $k$. If repetition was allowed, the answer was $n^k$ (using the product rule) and if the repetition was not allowed, the answer was $n (n-1) \dots (n-k+1) = n!/(n-k)!$ using the generalized product rule.&lt;/p&gt;
+
+&lt;p&gt;Today, we will focus on a similar counting problem but in a scenario in which order does not matter. Before that, let&amp;rsquo;s recall the division rule.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Division Rule&lt;/strong&gt;. If $f \colon A \to B$ is a $k$ to $1$ (total surjective) function, and if $A,B$ are finite sets then, $|A| = k \cdot |B|$.&lt;/p&gt;
+
+&lt;h1 id=&#34;counting-when-order-does-not-matter&#34;&gt;Counting  when order does not matter&lt;/h1&gt;
+
+&lt;p&gt;The number of subsets of size $k$ of  ${1,\dots,n}$ captures a counting problem in which the order of the $k$
+ selected elements does not matter. This is denoted by ${n \choose k}$ and as we show, is equal to ${n \choose k} = \frac{n!}{k! (n-k)!}$.&lt;/p&gt;
+
+&lt;p&gt;The proof uses the division rule. Suppose $S_k$ is the set of all subsets of ${1,\dots,n}$ of size $k$ and let $T_k$ be the set of all \emph{sequences} of length $k$ using ${1,\dots,n}$ (where repetition is not allowed). As we saw before, we know that $|T_k|=n!/(n-k)!$. Now, we show a $\ell$-to-1 mapping from $T_k$ to $S_k$, for $\ell=k!$ which, by the division rule will imply that $|S_k|=\frac{n!/(n-k)!}{k!} = \frac{n!}{(n-k)! k!}$.&lt;/p&gt;
+
+&lt;p&gt;$\ell$-to-1 mapping from $T_k$ to $S_k$: Map any sequence $(a_1,\dots,a_k)$ to the set ${a_1,\dots,a_k}$. First note taht this is a total surjective function from $T_k$ to $S_k$. Furthermore, for any set $A={a_1,\dots,a_k}$ there are $k!$ permutations like $(b_1,\dots,b_k)$ of the same set $A$ (we proved that already!). Therefore, the mapping is $\ell$-to-1 for $\ell=k!$.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;when repetition is allowed&lt;/strong&gt;. Note that in the problem above, we cannot select the same element $i$ from ${1,\dots,n}$ more than once, but suppose we consider the selections to be &amp;ldquo;multi-sets&amp;rdquo; where the order of elements do not matter, but they could be selected more than once. This is a way to model the  example problem from last class about donuts.&lt;/p&gt;
+
+&lt;p&gt;Give a bijection between the sets that model the following two counting problems:
+\begin{itemize}
+\item Selecting $k$ elements from  ${1,\dots,n}$ as a &amp;ldquo;multi-set&amp;rdquo;; namely, the order of selection does not matter, but we \emph{can} select an element more than once.
+\item Number of sequences using elements from ${0,1}$ with exactly $k$ ones, and exaclty $n-1$ zeros.
+\end{itemize}&lt;/p&gt;
+
+&lt;p&gt;Using the above bijection, show that selecting $k$ donuts frm $n$ different varieties is possible in a total of ${n+k-1 \choose n-1}$ many ways.&lt;/p&gt;
+
+&lt;p&gt;#&lt;/p&gt;
+
+&lt;h2 id=&#34;basics-of-probability&#34;&gt;Basics of Probability&lt;/h2&gt;
+
+&lt;p&gt;Probability theory is one of the richest and most beautiful mathematical theories with enormous applications. Here we take a very brief look at it, by using our counting techniques for estimating the &amp;ldquo;chance&amp;rdquo; of certaing &amp;ldquo;outcomes&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;Some of the basic questions we deal with in probability theory look like the following examples.
+\begin{itemize}
+\item Suppose a bag contains $10$ donuts and $5$ bagles. If we pick one of the items in the bad \emph{uniformly} (at random), what is the \emph{probability} that we pick a bagel.
+\item Suppose we do not put back the item that we selected in the previous example. Now, if we take another item, what is the chance that it is a donut \emph{conditioned} on the first item being a bagel?
+\end{itemize}&lt;/p&gt;
+
+&lt;h1 id=&#34;sample-space-and-event&#34;&gt;Sample Space and Event&lt;/h1&gt;
+
+&lt;p&gt;The sample space $\Omega=  {x_1,\dots,x_n }$ includes all the possible outcomes and their own specific probability $\Pr[x&lt;em&gt;i]$, while the total summation is $1=\sum&lt;/em&gt;{x\in \Omega} \Pr[x&lt;em&gt;i]$. An Event $E$ is simply a subset of the sample space $E \subseteq \Omega$, and its probability is defined to be $\Pr[E] = \sum&lt;/em&gt;{x \in E} \Pr[x]$.&lt;/p&gt;
+
+&lt;p&gt;When we draw one item from a bag of  $10$ donuts and $5$ bagles:
+\begin{itemize}
+\item What is the sample space?
+\item What is the probabilty of each outcome?
+\item What is the Event $B$ that we draw a bagel?
+\item What is the probability of $B$?
+\end{itemize}&lt;/p&gt;
+
+&lt;h1 id=&#34;conditional-probability&#34;&gt;Conditional Probability&lt;/h1&gt;
+
+&lt;p&gt;For two events $E,C$, the probability of $E$ hapenning \emph{conditioned} on $C$ happenin is denoted by $\Pr[E \mid C]$ and equal to
+$$\Pr[E \mid C] = \frac{\Pr[E \cap C]}{\Pr[C]}.$$&lt;/p&gt;
+
+&lt;p&gt;For example, for any non-empty $E$, we have $\Pr[E \mid E] = 1$, and for any disjoint events $E,C$ we have $\Pr[E \mid C]=0$.&lt;/p&gt;
+
+&lt;p&gt;What is the probability space of taking two items (without repetition) from the same basket of  $10$ donuts and $5$ bagles? What is the formal definition of the event $B$ that the first item is a bagel? What is the formal definition of the event $D$ that the second item is a donut? What is the probability of $D$ conditioned on $B$?&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Class 25: Counting</title>
@@ -83,7 +171,7 @@ $$|A_1 \times \dots \times A_n| = |A_1| \cdot |A_2| \dots |A_n| $$&lt;/p&gt;
 
 &lt;p&gt;We previously saw this rule in Class 7, but we will use it more heavily today, and we will see some extensions of it.&lt;/p&gt;
 
-&lt;p&gt;Using the product rule, formally prove that the answer to the first two example problems are both $2^n$. (Hint, let $S={a_1,\dots,a_n}$ and let $A_i = {a_i}$.)&lt;/p&gt;
+&lt;p&gt;Using the product rule, formally prove that the answer to the first two example problems are both $2^n$. (Hint, let $S={a_1,\dots,a_n}$ and let $A_i = {a_i,0}$.)&lt;/p&gt;
 
 &lt;p&gt;#
 #
@@ -186,7 +274,7 @@ collaboration policy carefully.&lt;/p&gt;
       <guid>https://uvacs2102.github.io/class23/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule:5745b40601045f50f1418eebe2f9ce59&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;Here&amp;rsquo;s the updated (and final) schedule for the rest of the semester:&lt;/p&gt;
 
@@ -198,7 +286,7 @@ collaboration policy carefully.&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;galois&#34;&gt;Galois&lt;/h2&gt;
+&lt;h2 id=&#34;galois:5745b40601045f50f1418eebe2f9ce59&#34;&gt;Galois&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://plus.maths.org/content/genius-stupidity-and-genius-again&#34;&gt;&lt;em&gt;Genius, stupidity and genius again&lt;/em&gt;&lt;/a&gt; (the short life of Evariste Galois), by Tope Omitola.&lt;/p&gt;
 
@@ -214,7 +302,7 @@ collaboration policy carefully.&lt;/p&gt;
 &lt;p&gt;&lt;/div&gt;&lt;!--endpdf--&gt;
    &lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;modular-arithmetic&#34;&gt;Modular Arithmetic&lt;/h2&gt;
+&lt;h2 id=&#34;modular-arithmetic:5745b40601045f50f1418eebe2f9ce59&#34;&gt;Modular Arithmetic&lt;/h2&gt;
 
 &lt;p&gt;Definition: A number $a$ is &lt;em&gt;congruent&lt;/em&gt; to $b$ modulo $n$ if and only
 if $n\, | \, (a - b)$.  We can write this as $a \equiv b \;\;
@@ -225,7 +313,7 @@ if $n\, | \, (a - b)$.  We can write this as $a \equiv b \;\;
 
 &lt;p&gt;#&lt;/p&gt;
 
-&lt;h2 id=&#34;groups-rings-and-fields&#34;&gt;Groups, Rings, and Fields&lt;/h2&gt;
+&lt;h2 id=&#34;groups-rings-and-fields:5745b40601045f50f1418eebe2f9ce59&#34;&gt;Groups, Rings, and Fields&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;Abelian group:&lt;/strong&gt; set $R$, with a binary operation $+$:&lt;br /&gt;
    associative, commutative, additive identity (&lt;strong&gt;0&lt;/strong&gt;), additive inverse ($−a$)&lt;/p&gt;
@@ -662,7 +750,7 @@ $$ \forall q \in S. (P(q) \wedge (q \rightarrow r) \in G) \implies P&amp;reg;$$&
       <guid>https://uvacs2102.github.io/class20/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule:dcf75d114d0b27f85507ff1ab741294c&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps8&#34;&gt;&lt;strong&gt;Problem Set 8&lt;/strong&gt;&lt;/a&gt; is due &lt;strong&gt;Friday at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
 
@@ -675,7 +763,7 @@ $$ \forall q \in S. (P(q) \wedge (q \rightarrow r) \in G) \implies P&amp;reg;$$&
 &lt;li&gt;More than 10 requests implies we should spend Thursday’s class on reviewing requested topics, no exam exemptions.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;exam-2&#34;&gt;Exam 2&lt;/h3&gt;
+&lt;h3 id=&#34;exam-2:dcf75d114d0b27f85507ff1ab741294c&#34;&gt;Exam 2&lt;/h3&gt;
 
 &lt;p&gt;Exam 2 will be in class on Thursday, 9 Nov.  You can get a good
 idea for what to expect on Exam 2 based on Exam 1, and also by looking at the &lt;a href=&#34;https://uvacs2102.github.io/docs/practiceexam2.pdf&#34;&gt;Practice Exam
@@ -723,7 +811,7 @@ benefit from doing #3 and #4 as well.&lt;/p&gt;
    &lt;a href=&#34;https://uvacs2102.github.io/docs/class20.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes and Questions&lt;/b&gt;&lt;/a&gt;.
    &lt;/div&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
+&lt;h2 id=&#34;links:dcf75d114d0b27f85507ff1ab741294c&#34;&gt;Links&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Goldbach%27s_conjecture&#34;&gt;Goldbach&amp;rsquo;s conjecture&lt;/a&gt;&lt;/p&gt;
 
@@ -735,7 +823,7 @@ benefit from doing #3 and #4 as well.&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;divisibility&#34;&gt;Divisibility&lt;/h2&gt;
+&lt;h2 id=&#34;divisibility:dcf75d114d0b27f85507ff1ab741294c&#34;&gt;Divisibility&lt;/h2&gt;
 
 &lt;p&gt;Number theory is a study of integers $\mathbb{Z}={0,-1,1,-2,2,\dots}$. Adding, multiplying, and negating, are 3 operators on integers that we can define in a straight-forward way. Dividing is more tricky. For that, we first define the notation $a \mid b$ to denote the simpler situation where $b = k \cdot a$ for some $k \in \mathbb{Z}$. In this case, we say that $a$ is a &lt;em&gt;divisor&lt;/em&gt; of $b$ and that $b$ is a &lt;em&gt;multiple&lt;/em&gt; of $a$.&lt;/p&gt;
 
@@ -759,7 +847,7 @@ where $p&lt;em&gt;i &amp;lt; p&lt;/em&gt;{i+1}$ and $p_i$ is prime for all $i$.&
 
 &lt;p&gt;Hint for proof: Use strong induction on $n$, and try to show that any two different representations for $n$ will have the same `smallest&amp;rsquo; prime $p_1$ and the same power $a_1$ for $p_1$.&lt;/p&gt;
 
-&lt;h2 id=&#34;easy-to-state-but-hard-to-solve-problems&#34;&gt;Easy-to-state, but hard-to-solve problems&lt;/h2&gt;
+&lt;h2 id=&#34;easy-to-state-but-hard-to-solve-problems:dcf75d114d0b27f85507ff1ab741294c&#34;&gt;Easy-to-state, but hard-to-solve problems&lt;/h2&gt;
 
 &lt;p&gt;In number theory, we can easily state problems that are super hard to solve. These are some examples.&lt;/p&gt;
 
@@ -769,13 +857,13 @@ where $p&lt;em&gt;i &amp;lt; p&lt;/em&gt;{i+1}$ and $p_i$ is prime for all $i$.&
 
 &lt;p&gt;&lt;strong&gt;Fermat&amp;rsquo;s last theorem:&lt;/strong&gt; For any integer $n&amp;gt;2$ there are no integers $a,b,c$ where $a^n + b^n = c^n$. Note that for $n=2$ there are integer solutions like $3^2 + 4^2 = 5^2$. Fermat claimed to have a proof, but nobody knows if he really did or not. Andrew Wiles eventually proved this in 1994, hence we call it a &lt;em&gt;theorem&lt;/em&gt; and not a conjecture anymore.&lt;/p&gt;
 
-&lt;h2 id=&#34;greatest-common-divisor&#34;&gt;Greatest Common Divisor&lt;/h2&gt;
+&lt;h2 id=&#34;greatest-common-divisor:dcf75d114d0b27f85507ff1ab741294c&#34;&gt;Greatest Common Divisor&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;Definition&lt;/strong&gt; For natural numbers $m,n&amp;gt;0$ we call $d&amp;gt;0$ their \emph{greatest common divisor}, denoted by $d=gcd(m,n)$ if $d$ is the largest number such that $d \mid m$ and $d \mid n$. (Make sure to verify why we can always say that such $d$ exists.)&lt;/p&gt;
 
 &lt;p&gt;We can use the fundamental theorem of arithmetic, to &lt;em&gt;compute&lt;/em&gt; the gcd of any given pairs of integers. But how efficient is it? The problem is that factoring numbers $m,n$ into their prime factors is not something we know how to do efficiently. In particular, no known algorithm is guaranteed to factor all numbers with $1000,000$ digits in less than an (estimated) thousand years! The conjecture is that no such `efficient&amp;rsquo; algorithm exists, and many cryptographic algorithms &lt;em&gt;assume&lt;/em&gt; this is the case!&lt;/p&gt;
 
-&lt;h2 id=&#34;euclid-s-algorithm&#34;&gt;Euclid&amp;rsquo;s Algorithm&lt;/h2&gt;
+&lt;h2 id=&#34;euclid-s-algorithm:dcf75d114d0b27f85507ff1ab741294c&#34;&gt;Euclid&amp;rsquo;s Algorithm&lt;/h2&gt;
 
 &lt;p&gt;Despite not knowing how to factor integers efficiently, Euclid showed how to find gcd quite efficiently. This shows, even if the most ``natural&amp;rdquo; algorithm fails for doing something efficiently, we should always consider the possibility that an alternative way could still exist.&lt;/p&gt;
 
@@ -915,7 +1003,7 @@ collaboration policy carefully.&lt;/p&gt;
       <guid>https://uvacs2102.github.io/class18/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule:31a24b707f457b52726ca1d5e1ddffba&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps7&#34;&gt;&lt;strong&gt;Problem Set 7&lt;/strong&gt;&lt;/a&gt; is due &lt;strong&gt;Friday (27 Oct) at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
 
@@ -931,7 +1019,7 @@ collaboration policy carefully.&lt;/p&gt;
    &lt;a href=&#34;https://uvacs2102.github.io/docs/class18.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes&lt;/b&gt;&lt;/a&gt;.
    &lt;/div&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
+&lt;h2 id=&#34;links:31a24b707f457b52726ca1d5e1ddffba&#34;&gt;Links&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://www.amazon.com/Logicomix-search-truth-Apostolos-Doxiadis/dp/1596914521/&#34;&gt;&lt;em&gt;Logicomix: An epic search for truth&lt;/em&gt;&lt;/a&gt;, comic book by Apostolos Doxiadis and &lt;a href=&#34;https://people.eecs.berkeley.edu/~christos/&#34;&gt;Christos H. Papadimitrou&lt;/a&gt;.&lt;/p&gt;
 
@@ -941,7 +1029,7 @@ collaboration policy carefully.&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;countable-and-uncountable-sets&#34;&gt;Countable and Uncountable Sets&lt;/h2&gt;
+&lt;h2 id=&#34;countable-and-uncountable-sets:31a24b707f457b52726ca1d5e1ddffba&#34;&gt;Countable and Uncountable Sets&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; A set $S$ is &lt;em&gt;countably infinite&lt;/em&gt; if and only if there
   exists a bijection between $S$ and $\mathbb{N}$.&lt;/p&gt;
@@ -973,7 +1061,7 @@ $$&lt;/p&gt;
 
 &lt;!--page--&gt;
 
-&lt;h2 id=&#34;ordinal-and-cardinal-numbers&#34;&gt;Ordinal and Cardinal Numbers&lt;/h2&gt;
+&lt;h2 id=&#34;ordinal-and-cardinal-numbers:31a24b707f457b52726ca1d5e1ddffba&#34;&gt;Ordinal and Cardinal Numbers&lt;/h2&gt;
 
 &lt;p&gt;$\omega$ is the &lt;em&gt;smallest infinite ordinal&lt;/em&gt;.  The first ordinal after
 $0, 1, 2, \cdots$.&lt;/p&gt;
@@ -1003,103 +1091,6 @@ $0, 1, 2, \cdots$.&lt;/p&gt;
       
       <guid>https://uvacs2102.github.io/ps6comments/</guid>
       <description>&lt;p&gt;The Problem Set 6 solutions and comments are now posted in collab: &lt;a href=&#34;https://collab.its.virginia.edu/access/content/group/9bd99d1c-6f18-4542-a7d1-8ffc4fccbd3d/ps6solutions.pdf&#34;&gt;PDF&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Class 17: Infinite Sets</title>
-      <link>https://uvacs2102.github.io/class17/</link>
-      <pubDate>Tue, 24 Oct 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://uvacs2102.github.io/class17/</guid>
-      <description>
-
-&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
-
-&lt;p&gt;Before Thursday, everyone should have finished reading MCS Chapter 8.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps7&#34;&gt;&lt;strong&gt;Problem Set 7&lt;/strong&gt;&lt;/a&gt; is due &lt;strong&gt;Friday (27 Oct) at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;
-   &lt;center&gt;
-&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;57544e0622ea4b4cbe07b4e4385eca85&#34; data-ratio=&#34;1.77777777777778&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
-   &lt;/center&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;highlightm&#34;&gt;
-   &lt;a href=&#34;https://uvacs2102.github.io/docs/class17.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes&lt;/b&gt;&lt;/a&gt;.
-   &lt;/div&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.cs.cornell.edu/courses/cs2800/2017fa/lectures/lec14-cantor.html&#34;&gt;Proof of Schr&amp;ouml;der-Bernstein Theorem&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;infinite-sets&#34;&gt;Infinite Sets&lt;/h1&gt;
-
-&lt;p&gt;&lt;strong&gt;Finite Cardinality.&lt;/strong&gt; The &lt;em&gt;cardinality&lt;/em&gt; of the set
-$$
-\mathbb{N}_k = { n | n \in \mathbb{N} \wedge n &amp;lt; k }
-$$
-is $k$.  If there is a &lt;em&gt;bijection&lt;/em&gt; between two sets, they have the same
-cardinality.  (Class 9)&lt;/p&gt;
-
-&lt;p&gt;Does this definition tell us the cardinality of $\mathbb{N}$?&lt;/p&gt;
-
-&lt;p&gt;###&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; A set $S$ is &lt;em&gt;infinite&lt;/em&gt; if there is no bijection between
-  $S$ and any set $\mathbb{N}_k$ (as defined above).&lt;/p&gt;
-
-&lt;p&gt;Show that $\mathbb{Z}$ is infinite.&lt;/p&gt;
-
-&lt;h3 id=&#34;cardinality-of-infinite-sets&#34;&gt;Cardinality of Infinite Sets&lt;/h3&gt;
-
-&lt;p&gt;&lt;strong&gt;Equal Carinalities.&lt;/strong&gt; We say $|A|\; = |B|$  for arbitrary sets $A,B$ (and say that they have the same cardinality), if there is a bijection between $A$ and $B$.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Comparing Cardinalities.&lt;/strong&gt; We say $|B|\; \leq |A|$  for arbitrary sets $A,B$ (and say that $B$&amp;rsquo;s cardinality is less than or equal to the cardinality of $A$), if there is a &lt;em&gt;surjective function&lt;/em&gt; from $A$ to $B$.&lt;/p&gt;
-
-&lt;p&gt;Show that $|A|\; = |B|$ implies $|B|\; \leq |A|$ and $|A|\; \leq |B|$. Be careful as these sets might not be finite, in which case we cannot simply use natural numbers to denote their cardinalities.&lt;/p&gt;
-
-&lt;p&gt;##&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Schr\wrap{\&amp;ldquo;{o}}der-Bernstein Theorem:&lt;/strong&gt; If $|A|\; \leq |B|$ and $|B|\; \leq |A|$, then there is a bijection between $A$ and $B$, namely $|A|\; = |B|$. (Not proven in cs2102; this is somewhat tricky to prove! For a full proof, see &lt;a href=&#34;http://www.cs.cornell.edu/courses/cs2800/2017fa/lectures/lec14-cantor.html&#34;&gt;the linked lecture notes&lt;/a&gt;.)&lt;/p&gt;
-
-&lt;h3 id=&#34;other-definitions-for-infinite-sets&#34;&gt;Other Definitions for Infinite Sets&lt;/h3&gt;
-
-&lt;p&gt;&lt;strong&gt;Dedekind-Infinite.&lt;/strong&gt; A set $A$ is &lt;em&gt;Dedekind-infinite&lt;/em&gt; if and only if there exists a &lt;em&gt;strict subset&lt;/em&gt; of $A$ with the same cardinality as $A$.  That is,
-$$\exists B \subset A \ldotp \exists R \ldotp R\ \text{is a bijection between}\ A\ \text{and}\ B.$$&lt;/p&gt;
-
-&lt;p&gt;Recall the definition of strict subset:
-$$B \subset A \iff B \subseteq A \wedge \exists x \in A\; .\; x \notin B.$$&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Third Definition.&lt;/strong&gt; A set $S$ is &lt;em&gt;third-definition infinite&lt;/em&gt; if $|S|\; \geq |\mathbb{N}|$ (as defined on the previous page).  Namely, there is a &lt;em&gt;surjective function&lt;/em&gt; from $S$ to $\mathbb{N}$.&lt;/p&gt;
-
-&lt;p&gt;Are the above three definitions of (standard) &lt;em&gt;infinite&lt;/em&gt; and &lt;em&gt;Dedekind-infinite&lt;/em&gt; and &lt;em&gt;third-definition infinite&lt;/em&gt;
-equivalent definitions?&lt;/p&gt;
-
-&lt;p&gt;##&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; A set $S$ is &lt;em&gt;countable&lt;/em&gt; if and only if there exists a
-  surjective function from $\mathbb{N}$ to $S$.  (That is, $\le 1$ arrow
-  out from $\mathbb{N}$, $\ge 1$ arrow in to $S$.) Using our notation defined above, this means $|S|\; \leq |\mathbb{N}|$.&lt;/p&gt;
-
-&lt;p&gt;Prove that these sets are countable: $\mathbb{Z}$, $\mathbb{N} \times
-\mathbb{N}$, $\mathbb{Q}$ (rationals), $\emptyset$, $\mathbb{N} \cup (\mathbb{N} \times \mathbb{N}) \cup (\mathbb{N} \times \mathbb{N} \times \mathbb{N})$, all finite sequences of elements of $\mathbb{N}$.&lt;/p&gt;
-
-&lt;p&gt;#&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; A set $S$ is &lt;em&gt;countably infinite&lt;/em&gt; if and only if it is &lt;em&gt;countable&lt;/em&gt; and it is &lt;em&gt;infinite&lt;/em&gt; (according to standard definition).&lt;/p&gt;
-
-&lt;p&gt;Must a &lt;em&gt;countable&lt;/em&gt; set that is &lt;em&gt;Dedekind-infinite&lt;/em&gt; be &lt;em&gt;countably infinite&lt;/em&gt;?&lt;/p&gt;
-
-&lt;p&gt;#&lt;/p&gt;
-
-&lt;p&gt;Using the definition of countable, and third definition of infinite, show that $S$ is countably infinite if and only if there is a bijection between $S$ and $\mathbb{N}$. (We might as well use this definition in the future.)&lt;/p&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
 </description>
     </item>
     

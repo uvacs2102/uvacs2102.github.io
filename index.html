@@ -34,7 +34,7 @@
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://uvacs2102.github.io/touch-icon-144-precomposed.png">
 <link href="https://uvacs2102.github.io/favicon.png" rel="icon">
 
-<meta name="generator" content="Hugo 0.17" />
+<meta name="generator" content="Hugo 0.16-DEV" />
 
   <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -149,7 +149,89 @@
   </header>
   
   
-  <p class="fronthead"><A href="/class25/">Class 25: Counting</a> (Tue, 28 Nov 2017)</p>
+  <p class="fronthead"><A href="">Class 26: Counting and Probability</a> (Thu, 30 Nov 2017)</p>
+    
+
+<div class="notpdf">
+
+   <center>
+
+   </center>
+ </div><!--endpdf-->
+
+   <div class="highlightm">
+   <a href="/docs/class26.pdf">See PDF Version for <b>Notes</b></a>.
+   </div>
+   
+
+<p></div><!--endpdf--></p>
+
+<p><div class="latex"></p>
+
+<h1 id="recall">Recall</h1>
+
+<p>Last time, we went tover two basic counting problems. In both problems, we counted how many ways we can choose $k$ elements from ${1,\dots,n}$ whe the order of selection does matter; namely, we counted \emph{sequences} of length $k$. If repetition was allowed, the answer was $n^k$ (using the product rule) and if the repetition was not allowed, the answer was $n (n-1) \dots (n-k+1) = n!/(n-k)!$ using the generalized product rule.</p>
+
+<p>Today, we will focus on a similar counting problem but in a scenario in which order does not matter. Before that, let&rsquo;s recall the division rule.</p>
+
+<p><strong>Division Rule</strong>. If $f \colon A \to B$ is a $k$ to $1$ (total surjective) function, and if $A,B$ are finite sets then, $|A| = k \cdot |B|$.</p>
+
+<h1 id="counting-when-order-does-not-matter">Counting  when order does not matter</h1>
+
+<p>The number of subsets of size $k$ of  ${1,\dots,n}$ captures a counting problem in which the order of the $k$
+ selected elements does not matter. This is denoted by ${n \choose k}$ and as we show, is equal to ${n \choose k} = \frac{n!}{k! (n-k)!}$.</p>
+
+<p>The proof uses the division rule. Suppose $S_k$ is the set of all subsets of ${1,\dots,n}$ of size $k$ and let $T_k$ be the set of all \emph{sequences} of length $k$ using ${1,\dots,n}$ (where repetition is not allowed). As we saw before, we know that $|T_k|=n!/(n-k)!$. Now, we show a $\ell$-to-1 mapping from $T_k$ to $S_k$, for $\ell=k!$ which, by the division rule will imply that $|S_k|=\frac{n!/(n-k)!}{k!} = \frac{n!}{(n-k)! k!}$.</p>
+
+<p>$\ell$-to-1 mapping from $T_k$ to $S_k$: Map any sequence $(a_1,\dots,a_k)$ to the set ${a_1,\dots,a_k}$. First note taht this is a total surjective function from $T_k$ to $S_k$. Furthermore, for any set $A={a_1,\dots,a_k}$ there are $k!$ permutations like $(b_1,\dots,b_k)$ of the same set $A$ (we proved that already!). Therefore, the mapping is $\ell$-to-1 for $\ell=k!$.</p>
+
+<p><strong>when repetition is allowed</strong>. Note that in the problem above, we cannot select the same element $i$ from ${1,\dots,n}$ more than once, but suppose we consider the selections to be &ldquo;multi-sets&rdquo; where the order of elements do not matter, but they could be selected more than once. This is a way to model the  example problem from last class about donuts.</p>
+
+<p>Give a bijection between the sets that model the following two counting problems:
+\begin{itemize}
+\item Selecting $k$ elements from  ${1,\dots,n}$ as a &ldquo;multi-set&rdquo;; namely, the order of selection does not matter, but we \emph{can} select an element more than once.
+\item Number of sequences using elements from ${0,1}$ with exactly $k$ ones, and exaclty $n-1$ zeros.
+\end{itemize}</p>
+
+<p>Using the above bijection, show that selecting $k$ donuts frm $n$ different varieties is possible in a total of ${n+k-1 \choose n-1}$ many ways.</p>
+
+<p>#</p>
+
+<h2 id="basics-of-probability">Basics of Probability</h2>
+
+<p>Probability theory is one of the richest and most beautiful mathematical theories with enormous applications. Here we take a very brief look at it, by using our counting techniques for estimating the &ldquo;chance&rdquo; of certaing &ldquo;outcomes&rdquo;.</p>
+
+<p>Some of the basic questions we deal with in probability theory look like the following examples.
+\begin{itemize}
+\item Suppose a bag contains $10$ donuts and $5$ bagles. If we pick one of the items in the bad \emph{uniformly} (at random), what is the \emph{probability} that we pick a bagel.
+\item Suppose we do not put back the item that we selected in the previous example. Now, if we take another item, what is the chance that it is a donut \emph{conditioned} on the first item being a bagel?
+\end{itemize}</p>
+
+<h1 id="sample-space-and-event">Sample Space and Event</h1>
+
+<p>The sample space $\Omega=  {x_1,\dots,x_n }$ includes all the possible outcomes and their own specific probability $\Pr[x<em>i]$, while the total summation is $1=\sum</em>{x\in \Omega} \Pr[x<em>i]$. An Event $E$ is simply a subset of the sample space $E \subseteq \Omega$, and its probability is defined to be $\Pr[E] = \sum</em>{x \in E} \Pr[x]$.</p>
+
+<p>When we draw one item from a bag of  $10$ donuts and $5$ bagles:
+\begin{itemize}
+\item What is the sample space?
+\item What is the probabilty of each outcome?
+\item What is the Event $B$ that we draw a bagel?
+\item What is the probability of $B$?
+\end{itemize}</p>
+
+<h1 id="conditional-probability">Conditional Probability</h1>
+
+<p>For two events $E,C$, the probability of $E$ hapenning \emph{conditioned} on $C$ happenin is denoted by $\Pr[E \mid C]$ and equal to
+$$\Pr[E \mid C] = \frac{\Pr[E \cap C]}{\Pr[C]}.$$</p>
+
+<p>For example, for any non-empty $E$, we have $\Pr[E \mid E] = 1$, and for any disjoint events $E,C$ we have $\Pr[E \mid C]=0$.</p>
+
+<p>What is the probability space of taking two items (without repetition) from the same basket of  $10$ donuts and $5$ bagles? What is the formal definition of the event $B$ that the first item is a bagel? What is the formal definition of the event $D$ that the second item is a donut? What is the probability of $D$ conditioned on $B$?</p>
+
+<p></div></p>
+ 
+  
+  <p class="fronthead"><A href="">Class 25: Counting</a> (Tue, 28 Nov 2017)</p>
     
 
 <h3 id="schedule">Schedule</h3>
@@ -218,7 +300,7 @@ $$|A_1 \times \dots \times A_n| = |A_1| \cdot |A_2| \dots |A_n| $$</p>
 
 <p>We previously saw this rule in Class 7, but we will use it more heavily today, and we will see some extensions of it.</p>
 
-<p>Using the product rule, formally prove that the answer to the first two example problems are both $2^n$. (Hint, let $S={a_1,\dots,a_n}$ and let $A_i = {a_i}$.)</p>
+<p>Using the product rule, formally prove that the answer to the first two example problems are both $2^n$. (Hint, let $S={a_1,\dots,a_n}$ and let $A_i = {a_i,0}$.)</p>
 
 <p>#
 #
@@ -257,7 +339,7 @@ possibilities).</p>
  </div></p>
  
   
-  <p class="fronthead"><A href="/class24/">Class 24: Return of ROCA</a> (Tue, 21 Nov 2017)</p>
+  <p class="fronthead"><A href="">Class 24: Return of ROCA</a> (Tue, 21 Nov 2017)</p>
     
 
 <h3 id="schedule">Schedule</h3>
@@ -294,16 +376,16 @@ possibilities).</p>
    </div></p>
  
   
-  <p class="fronthead"><A href="/ps9posted/">Problem Set 9</a> (Sun, 19 Nov 2017)</p>
+  <p class="fronthead"><A href="">Problem Set 9</a> (Sun, 19 Nov 2017)</p>
     <p><a href="/ps/ps9"><strong>Problem Set 9</strong></a> [<a href="/docs/ps9.pdf">PDF</a>] is now posted and
 is due <strong>Friday, 1 Dec at 6:29:00pm</strong>. Please read the
 collaboration policy carefully.</p>
  
   
-  <p class="fronthead"><A href="/class23/">Class 23: Cryptosystems</a> (Thu, 16 Nov 2017)</p>
+  <p class="fronthead"><A href="">Class 23: Cryptosystems</a> (Thu, 16 Nov 2017)</p>
     
 
-<h3 id="schedule">Schedule</h3>
+<h3 id="schedule:5745b40601045f50f1418eebe2f9ce59">Schedule</h3>
 
 <p>Here&rsquo;s the updated (and final) schedule for the rest of the semester:</p>
 
@@ -315,7 +397,7 @@ collaboration policy carefully.</p>
 
 <p><div class="notpdf"></p>
 
-<h2 id="galois">Galois</h2>
+<h2 id="galois:5745b40601045f50f1418eebe2f9ce59">Galois</h2>
 
 <p><a href="https://plus.maths.org/content/genius-stupidity-and-genius-again"><em>Genius, stupidity and genius again</em></a> (the short life of Evariste Galois), by Tope Omitola.</p>
 
@@ -331,7 +413,7 @@ collaboration policy carefully.</p>
 <p></div><!--endpdf-->
    <div class="latex"></p>
 
-<h2 id="modular-arithmetic">Modular Arithmetic</h2>
+<h2 id="modular-arithmetic:5745b40601045f50f1418eebe2f9ce59">Modular Arithmetic</h2>
 
 <p>Definition: A number $a$ is <em>congruent</em> to $b$ modulo $n$ if and only
 if $n\, | \, (a - b)$.  We can write this as $a \equiv b \;\;
@@ -342,7 +424,7 @@ if $n\, | \, (a - b)$.  We can write this as $a \equiv b \;\;
 
 <p>#</p>
 
-<h2 id="groups-rings-and-fields">Groups, Rings, and Fields</h2>
+<h2 id="groups-rings-and-fields:5745b40601045f50f1418eebe2f9ce59">Groups, Rings, and Fields</h2>
 
 <p><strong>Abelian group:</strong> set $R$, with a binary operation $+$:<br />
    associative, commutative, additive identity (<strong>0</strong>), additive inverse ($−a$)</p>
@@ -355,7 +437,7 @@ if $n\, | \, (a - b)$.  We can write this as $a \equiv b \;\;
 </div></p>
  
   
-  <p class="fronthead"><A href="/class22/">Class 22: Prime Detectives</a> (Tue, 14 Nov 2017)</p>
+  <p class="fronthead"><A href="">Class 22: Prime Detectives</a> (Tue, 14 Nov 2017)</p>
     
 
 <h3 id="schedule">Schedule</h3>
@@ -648,7 +730,7 @@ only by itself and 1.</p>
 <p></div></p>
  
   
-  <p class="fronthead"><A href="/scheduleupdates/">Schedule Updates</a> (Sun, 12 Nov 2017)</p>
+  <p class="fronthead"><A href="">Schedule Updates</a> (Sun, 12 Nov 2017)</p>
     <p>We are adjusting the schedule for Problem Set 9 and Problem Set
 &Omega; from the original schedule. Instead of being due on Wednesday,
 November 22 as previously scheduled, Problem Set 9 will now be due on
@@ -664,7 +746,7 @@ prefer to have a PS9 due on Nov 22, let one of the professors know and
 we can arrange something different.</p>
  
   
-  <p class="fronthead"><A href="/class21/">Class 21: Review</a> (Tue, 7 Nov 2017)</p>
+  <p class="fronthead"><A href="">Class 21: Review</a> (Tue, 7 Nov 2017)</p>
     
 
 <h3 id="exam-2">Exam 2</h3>
@@ -742,14 +824,14 @@ $$ \forall q \in S. (P(q) \wedge (q \rightarrow r) \in G) \implies P&reg;$$</p>
 <p></div></p>
  
   
-  <p class="fronthead"><A href="/ps8comments/">Problem Set 8 Comments</a> (Sat, 4 Nov 2017)</p>
+  <p class="fronthead"><A href="">Problem Set 8 Comments</a> (Sat, 4 Nov 2017)</p>
     <p>The Problem Set 8 solutions and comments are now posted in collab: <a href="https://collab.its.virginia.edu/access/content/group/9bd99d1c-6f18-4542-a7d1-8ffc4fccbd3d/ps8solutions.pdf">PDF</a></p>
  
   
-  <p class="fronthead"><A href="/class20/">Class 20: Number Theory</a> (Thu, 2 Nov 2017)</p>
+  <p class="fronthead"><A href="">Class 20: Number Theory</a> (Thu, 2 Nov 2017)</p>
     
 
-<h3 id="schedule">Schedule</h3>
+<h3 id="schedule:dcf75d114d0b27f85507ff1ab741294c">Schedule</h3>
 
 <p><a href="/ps/ps8"><strong>Problem Set 8</strong></a> is due <strong>Friday at 6:29pm</strong>.</p>
 
@@ -762,7 +844,7 @@ $$ \forall q \in S. (P(q) \wedge (q \rightarrow r) \in G) \implies P&reg;$$</p>
 <li>More than 10 requests implies we should spend Thursday’s class on reviewing requested topics, no exam exemptions.</li>
 </ul>
 
-<h3 id="exam-2">Exam 2</h3>
+<h3 id="exam-2:dcf75d114d0b27f85507ff1ab741294c">Exam 2</h3>
 
 <p>Exam 2 will be in class on Thursday, 9 Nov.  You can get a good
 idea for what to expect on Exam 2 based on Exam 1, and also by looking at the <a href="/docs/practiceexam2.pdf">Practice Exam
@@ -810,7 +892,7 @@ benefit from doing #3 and #4 as well.</p>
    <a href="/docs/class20.pdf">See PDF Version for <b>Notes and Questions</b></a>.
    </div></p>
 
-<h2 id="links">Links</h2>
+<h2 id="links:dcf75d114d0b27f85507ff1ab741294c">Links</h2>
 
 <p><a href="https://en.wikipedia.org/wiki/Goldbach%27s_conjecture">Goldbach&rsquo;s conjecture</a></p>
 
@@ -822,7 +904,7 @@ benefit from doing #3 and #4 as well.</p>
 
 <p><div class="latex"></p>
 
-<h2 id="divisibility">Divisibility</h2>
+<h2 id="divisibility:dcf75d114d0b27f85507ff1ab741294c">Divisibility</h2>
 
 <p>Number theory is a study of integers $\mathbb{Z}={0,-1,1,-2,2,\dots}$. Adding, multiplying, and negating, are 3 operators on integers that we can define in a straight-forward way. Dividing is more tricky. For that, we first define the notation $a \mid b$ to denote the simpler situation where $b = k \cdot a$ for some $k \in \mathbb{Z}$. In this case, we say that $a$ is a <em>divisor</em> of $b$ and that $b$ is a <em>multiple</em> of $a$.</p>
 
@@ -846,7 +928,7 @@ where $p<em>i &lt; p</em>{i+1}$ and $p_i$ is prime for all $i$.</p>
 
 <p>Hint for proof: Use strong induction on $n$, and try to show that any two different representations for $n$ will have the same `smallest&rsquo; prime $p_1$ and the same power $a_1$ for $p_1$.</p>
 
-<h2 id="easy-to-state-but-hard-to-solve-problems">Easy-to-state, but hard-to-solve problems</h2>
+<h2 id="easy-to-state-but-hard-to-solve-problems:dcf75d114d0b27f85507ff1ab741294c">Easy-to-state, but hard-to-solve problems</h2>
 
 <p>In number theory, we can easily state problems that are super hard to solve. These are some examples.</p>
 
@@ -856,13 +938,13 @@ where $p<em>i &lt; p</em>{i+1}$ and $p_i$ is prime for all $i$.</p>
 
 <p><strong>Fermat&rsquo;s last theorem:</strong> For any integer $n&gt;2$ there are no integers $a,b,c$ where $a^n + b^n = c^n$. Note that for $n=2$ there are integer solutions like $3^2 + 4^2 = 5^2$. Fermat claimed to have a proof, but nobody knows if he really did or not. Andrew Wiles eventually proved this in 1994, hence we call it a <em>theorem</em> and not a conjecture anymore.</p>
 
-<h2 id="greatest-common-divisor">Greatest Common Divisor</h2>
+<h2 id="greatest-common-divisor:dcf75d114d0b27f85507ff1ab741294c">Greatest Common Divisor</h2>
 
 <p><strong>Definition</strong> For natural numbers $m,n&gt;0$ we call $d&gt;0$ their \emph{greatest common divisor}, denoted by $d=gcd(m,n)$ if $d$ is the largest number such that $d \mid m$ and $d \mid n$. (Make sure to verify why we can always say that such $d$ exists.)</p>
 
 <p>We can use the fundamental theorem of arithmetic, to <em>compute</em> the gcd of any given pairs of integers. But how efficient is it? The problem is that factoring numbers $m,n$ into their prime factors is not something we know how to do efficiently. In particular, no known algorithm is guaranteed to factor all numbers with $1000,000$ digits in less than an (estimated) thousand years! The conjecture is that no such `efficient&rsquo; algorithm exists, and many cryptographic algorithms <em>assume</em> this is the case!</p>
 
-<h2 id="euclid-s-algorithm">Euclid&rsquo;s Algorithm</h2>
+<h2 id="euclid-s-algorithm:dcf75d114d0b27f85507ff1ab741294c">Euclid&rsquo;s Algorithm</h2>
 
 <p>Despite not knowing how to factor integers efficiently, Euclid showed how to find gcd quite efficiently. This shows, even if the most ``natural&rdquo; algorithm fails for doing something efficiently, we should always consider the possibility that an alternative way could still exist.</p>
 
@@ -891,10 +973,6 @@ decreases.</p>
 
 <p>Amazing thing about Euclid&rsquo;s algorithm is that it is indeed quite efficient. A better analysis shows that it will always terminate in $\log (m+n)$ steps. (Hint: show that after two steps, $m$ will be at most <em>half</em> of what it was before..)
 </div></p>
- 
-  
-  <p class="fronthead"><A href="/ps7comments/">Problem Set 7 Comments</a> (Wed, 1 Nov 2017)</p>
-    <p>The Problem Set 7 solutions and comments are now posted in collab: <a href="https://collab.its.virginia.edu/access/content/group/9bd99d1c-6f18-4542-a7d1-8ffc4fccbd3d/ps7solutions.pdf">PDF</a></p>
  
   
   
