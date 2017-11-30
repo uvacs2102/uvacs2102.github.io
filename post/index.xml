@@ -20,7 +20,7 @@
 &lt;div class=&#34;notpdf&#34;&gt;
 
    &lt;center&gt;
-
+&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;3960811cc5044e19932d697d908555a7&#34; data-ratio=&#34;1.77777777777778&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
    &lt;/center&gt;
  &lt;/div&gt;&lt;!--endpdf--&gt;
 
@@ -33,7 +33,7 @@
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;recall&#34;&gt;Recall&lt;/h1&gt;
+&lt;h1 id=&#34;recall:0b3606b96b9e0d788111e5c141f3acac&#34;&gt;Recall&lt;/h1&gt;
 
 &lt;p&gt;Last time, we went tover two basic counting problems. In both problems, we counted how many ways we can choose $k$ elements from ${1,\dots,n}$ whe the order of selection does matter; namely, we counted \emph{sequences} of length $k$. If repetition was allowed, the answer was $n^k$ (using the product rule) and if the repetition was not allowed, the answer was $n (n-1) \dots (n-k+1) = n!/(n-k)!$ using the generalized product rule.&lt;/p&gt;
 
@@ -41,7 +41,7 @@
 
 &lt;p&gt;&lt;strong&gt;Division Rule&lt;/strong&gt;. If $f \colon A \to B$ is a $k$ to $1$ (total surjective) function, and if $A,B$ are finite sets then, $|A| = k \cdot |B|$.&lt;/p&gt;
 
-&lt;h1 id=&#34;counting-when-order-does-not-matter&#34;&gt;Counting  when order does not matter&lt;/h1&gt;
+&lt;h1 id=&#34;counting-when-order-does-not-matter:0b3606b96b9e0d788111e5c141f3acac&#34;&gt;Counting  when order does not matter&lt;/h1&gt;
 
 &lt;p&gt;The number of subsets of size $k$ of  ${1,\dots,n}$ captures a counting problem in which the order of the $k$
  selected elements does not matter. This is denoted by ${n \choose k}$ and as we show, is equal to ${n \choose k} = \frac{n!}{k! (n-k)!}$.&lt;/p&gt;
@@ -62,7 +62,7 @@
 
 &lt;p&gt;#&lt;/p&gt;
 
-&lt;h2 id=&#34;basics-of-probability&#34;&gt;Basics of Probability&lt;/h2&gt;
+&lt;h2 id=&#34;basics-of-probability:0b3606b96b9e0d788111e5c141f3acac&#34;&gt;Basics of Probability&lt;/h2&gt;
 
 &lt;p&gt;Probability theory is one of the richest and most beautiful mathematical theories with enormous applications. Here we take a very brief look at it, by using our counting techniques for estimating the &amp;ldquo;chance&amp;rdquo; of certaing &amp;ldquo;outcomes&amp;rdquo;.&lt;/p&gt;
 
@@ -72,7 +72,7 @@
 \item Suppose we do not put back the item that we selected in the previous example. Now, if we take another item, what is the chance that it is a donut \emph{conditioned} on the first item being a bagel?
 \end{itemize}&lt;/p&gt;
 
-&lt;h1 id=&#34;sample-space-and-event&#34;&gt;Sample Space and Event&lt;/h1&gt;
+&lt;h1 id=&#34;sample-space-and-event:0b3606b96b9e0d788111e5c141f3acac&#34;&gt;Sample Space and Event&lt;/h1&gt;
 
 &lt;p&gt;The sample space $\Omega=  {x_1,\dots,x_n }$ includes all the possible outcomes and their own specific probability $\Pr[x&lt;em&gt;i]$, while the total summation is $1=\sum&lt;/em&gt;{x\in \Omega} \Pr[x&lt;em&gt;i]$. An Event $E$ is simply a subset of the sample space $E \subseteq \Omega$, and its probability is defined to be $\Pr[E] = \sum&lt;/em&gt;{x \in E} \Pr[x]$.&lt;/p&gt;
 
@@ -84,7 +84,7 @@
 \item What is the probability of $B$?
 \end{itemize}&lt;/p&gt;
 
-&lt;h1 id=&#34;conditional-probability&#34;&gt;Conditional Probability&lt;/h1&gt;
+&lt;h1 id=&#34;conditional-probability:0b3606b96b9e0d788111e5c141f3acac&#34;&gt;Conditional Probability&lt;/h1&gt;
 
 &lt;p&gt;For two events $E,C$, the probability of $E$ hapenning \emph{conditioned} on $C$ happenin is denoted by $\Pr[E \mid C]$ and equal to
 $$\Pr[E \mid C] = \frac{\Pr[E \cap C]}{\Pr[C]}.$$&lt;/p&gt;
@@ -105,7 +105,7 @@ $$\Pr[E \mid C] = \frac{\Pr[E \cap C]}{\Pr[C]}.$$&lt;/p&gt;
       <guid>https://uvacs2102.github.io/class25/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule:48c09636ef2a37766db0522980dbf8fc&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;Reminder for the schedule for the rest of the semester:&lt;/p&gt;
 
@@ -134,7 +134,7 @@ $$\Pr[E \mid C] = \frac{\Pr[E \cap C]}{\Pr[C]}.$$&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;examples&#34;&gt;Examples&lt;/h1&gt;
+&lt;h1 id=&#34;examples:48c09636ef2a37766db0522980dbf8fc&#34;&gt;Examples&lt;/h1&gt;
 
 &lt;p&gt;Today, we want to be able to answer the following questions. The first two are already discussed in class, but we will study them more generally.
 \begin{enumerate}
@@ -155,7 +155,7 @@ finite cardinality from Class 9, to study these questions. Namely, we
 try to find another set $B$ whose cardinality is known, and that there
 is a bijection between $A$ and $B$.&lt;/p&gt;
 
-&lt;h1 id=&#34;why-counting&#34;&gt;Why Counting?&lt;/h1&gt;
+&lt;h1 id=&#34;why-counting:48c09636ef2a37766db0522980dbf8fc&#34;&gt;Why Counting?&lt;/h1&gt;
 
 &lt;p&gt;Being able to count (exactly or even approximately) is important for many reasons, some of which are:
 \begin{itemize}
@@ -164,7 +164,7 @@ is a bijection between $A$ and $B$.&lt;/p&gt;
 \item Counting is the fundamental to probability theory.
 \end{itemize}&lt;/p&gt;
 
-&lt;h1 id=&#34;counting-rules&#34;&gt;Counting Rules&lt;/h1&gt;
+&lt;h1 id=&#34;counting-rules:48c09636ef2a37766db0522980dbf8fc&#34;&gt;Counting Rules&lt;/h1&gt;
 
 &lt;p&gt;&lt;strong&gt;Product Rule&lt;/strong&gt; If $A_1,\dots,A_n$ are finite sets, then the size of their cartesian product is
 $$|A_1 \times \dots \times A_n| = |A_1| \cdot |A_2| \dots |A_n| $$&lt;/p&gt;
@@ -201,7 +201,7 @@ possibilities).&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Division Rule&lt;/strong&gt;. If $f \colon A \to B$ is a $k$ to $1$ (total surjective) function, and if $A,B$ are finite sets then, $|A| = k \cdot |B|$.&lt;/p&gt;
 
-&lt;h1 id=&#34;counting-when-order-does-not-matter&#34;&gt;Counting when order does not matter&lt;/h1&gt;
+&lt;h1 id=&#34;counting-when-order-does-not-matter:48c09636ef2a37766db0522980dbf8fc&#34;&gt;Counting when order does not matter&lt;/h1&gt;
 
 &lt;p&gt;The number of subsets of size $k$ of  ${1,\dots,n}$ captures a counting problem in which the order of the $k$
  selected elements does not matter. This number is so important that has its own notation ${n \choose k}$.&lt;/p&gt;
@@ -913,7 +913,7 @@ decreases.&lt;/p&gt;
       <guid>https://uvacs2102.github.io/class19/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule:90174cd8255fa2ab935573c4a489ebf1&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;&lt;strong&gt;Problem Set 8&lt;/strong&gt; is now due on &lt;strong&gt;Friday, Nov 3&lt;/strong&gt;.&lt;/p&gt;
 
@@ -931,7 +931,7 @@ decreases.&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;comparing-sets-recap&#34;&gt;Comparing sets Recap:&lt;/h1&gt;
+&lt;h1 id=&#34;comparing-sets-recap:90174cd8255fa2ab935573c4a489ebf1&#34;&gt;Comparing sets Recap:&lt;/h1&gt;
 
 &lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; Sets $A$ and $B$ have the same cardinality, denoted by $|A|=|B|$ if there is a bijection between $A$ and $B$.&lt;/p&gt;
 
@@ -941,7 +941,7 @@ decreases.&lt;/p&gt;
 \item There is a total injective function from $B$ to $A$.
 \end{enumerate}&lt;/p&gt;
 
-&lt;h1 id=&#34;infinite-sets-recap&#34;&gt;Infinite Sets Recap&lt;/h1&gt;
+&lt;h1 id=&#34;infinite-sets-recap:90174cd8255fa2ab935573c4a489ebf1&#34;&gt;Infinite Sets Recap&lt;/h1&gt;
 
 &lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; A set $C$ is &lt;em&gt;infinite&lt;/em&gt; if and only if &lt;em&gt;either&lt;/em&gt; of the following happens (they are all equivalnet).
 \begin{enumerate}&lt;/p&gt;
@@ -963,7 +963,7 @@ decreases.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; A set $C$ is &lt;em&gt;countably infinite&lt;/em&gt; if and only if there
   exists a bijection between $C$ and $\mathbb{N}$.&lt;/p&gt;
 
-&lt;h1 id=&#34;cantor-s-theorem&#34;&gt;Cantor&amp;rsquo;s Theorem&lt;/h1&gt;
+&lt;h1 id=&#34;cantor-s-theorem:90174cd8255fa2ab935573c4a489ebf1&#34;&gt;Cantor&amp;rsquo;s Theorem&lt;/h1&gt;
 
 &lt;p&gt;For &lt;strong&gt;all&lt;/strong&gt; sets, $S$, $| pow(S) | &amp;gt; | S |$.&lt;/p&gt;
 
