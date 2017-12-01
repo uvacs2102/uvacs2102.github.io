@@ -149,6 +149,10 @@
   </header>
   
   
+  <p class="fronthead"><A href="/ps8comments/">Problem Set 8 Comments</a> (Sat, 4 Nov 2017)</p>
+    <p>The Problem Set 8 solutions and comments are now posted in collab: <a href="https://collab.its.virginia.edu/access/content/group/9bd99d1c-6f18-4542-a7d1-8ffc4fccbd3d/ps8solutions.pdf">PDF</a></p>
+ 
+  
   <p class="fronthead"><A href="/class20/">Class 20: Number Theory</a> (Thu, 2 Nov 2017)</p>
     
 
@@ -665,118 +669,6 @@ and {\bf inductive step} &amp; $\forall m \in \mathbb{N} \ldotp$ &amp; $\forall 
 <p></div></p>
  
   
-  <p class="fronthead"><A href="/class15/">Class 15: Recursive Data Types</a> (Tue, 17 Oct 2017)</p>
-    
-
-<h3 id="schedule">Schedule</h3>
-
-<p>You should read MCS Chapter 7 this week.</p>
-
-<p><a href="/ps/ps6"><strong>Problem Set 6</strong></a> is due <strong>20 October (Friday) at 6:29pm</strong>.</p>
-
-<p><div class="notpdf">
-   <center>
-<script async class="speakerdeck-embed" data-id="9d25492c6e134346a212652c6d0052ab" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-   </center></p>
-
-<h2 id="links">Links</h2>
-
-<p>Python code from class and list definitions: <a href="/docs/pairs.py">pairs.py</a></p>
-
-<p><div class="highlightm">
-   <a href="/docs/class15.pdf">See PDF Version for <b>Notes</b></a>.
-   </div></p>
-
-<p></div><!--endpdf--></p>
-
-<p><div class="latex"></p>
-
-<h1 id="proving-correctness">Proving Correctness</h1>
-
-<pre><code class="language-python">def slow_power(a, b):
-   y = 1
-   z = b
-   while z &gt; 0:
-      y = y * a
-      z = z - 1
-   return y
-</code></pre>
-
-<p>We model the Python program with a state machine:</p>
-
-<p>$S ::= \mathbb{N} \times \mathbb{N}$<br />
-$G ::= { (y, z) \rightarrow (y \cdot a, z - 1) \, | \, \forall y, z \in \mathbb{N}^{+}}$<br />
-$q_0 ::= (1, b)$</p>
-
-<p>It is important to remember this is a <em>model</em>. It does not capture
-many important aspects of execution of a real Python program. In
-particular, it only models inputs in $\mathbb{N}$, when the actual
-inputs could be other types in PYthon.  It also assume all math
-opderations work mathematically, not Pythonically.</p>
-
-<p>To prove partial correctness, we show $P(q = (y, z)) := y = a^{b-z}$
-is a <em>preserved invariant</em>. Then, we show that it holds in state
-$q_0$.  Finally, we show that in all final states, $y = a^b$.</p>
-
-<p><strong>Invariant is Preserved:</strong> We need to show that $\forall q \in S . \forall t \in S . (q, t) \in G \implies P(q) \implies P(t)$.</p>
-
-<ol>
-<li>$q = (y, z)$. $P(q = (y, z))$: $y = a^{b-z}$.</li>
-<li>If there is an edge from $q$ to $t$, that means $t = (y \cdot a, z-1)$ and $z \ge 1$ since this is the only edge from $q$ in $G$.</li>
-<li>We show $P(t = (y \cdot a, z-1))$ holds by multiplying both sides of $P(q)$ by $a$: $$ya = (a^{b -z}) \cdot a = a^{b - z + 1} = a ^{b - (z - 1)}.$$</li>
-</ol>
-
-<p><strong>Invariant holds in $q_0$:</strong> $q_0 = (1, b)$. So, we need to show $P(q_0 = (1, b))$: $1 = a^{b - b}$. This holds since $a^{0} = 1$.</p>
-
-<p><strong>Final states:</strong> All states where $z \ge 1$ have an outgoing edge, but no states where $z = 0$ do. So, the final states are all of the form $(\alpha, 0)$. If a final state is reachable from $q_0$, the invariant must hold since we proved it is preserve. Hence, in the final state $(\alpha, 0)$ we know $\alpha = a^{b}$.</p>
-
-<p>This proves <em>partial correctness</em>: if the program terminates, it
-terminates in a state where the property ($y = a^b$ is satisfied).  To
-prove <em>total correctness</em> we also need to know the execution
-<em>eventually</em> reaches a final state.</p>
-
-<p>We prove this by showing that from any initial state $q_0 = (1, b)$,
-the machine will reach a final state $q_f = (y, 0)$ in $b$ steps.  The
-proof in class used the Well Ordering Principle. You could also prove
-this using regular Induction.</p>
-
-<h1 id="pairs">Pairs</h1>
-
-<p>What is the difference between scalar data and compound data structures?</p>
-
-<p><strong>Definition.</strong> A $\text{\em Pair}$ is a datatype that supports these three operations:<br />
-\begin{quote}
-     $\text{\em make_pair}: \text{\em Object} \times \text{\em Object} \rightarrow \text{\em Pair}$<br />
-     $\text{\em pair_first}: \text{\em Pair} \rightarrow \text{\em Object}$\<br />
-     $\text{\em pair_last}: \text{\em Pair} \rightarrow \text{\em Object}$\<br />
-\end{quote}
-where, for any objects $a$ and $b$, $\text{\em pair_first}(\text{\em make_pair}(a, b)) = a$ and $\text{\em pair_last}(\text{\em make_pair}(a, b)) = b$.</p>
-
-<pre><code class="language-Python">def make_pair(a, b):
-    def selector(which):
-        if which:
-            return a
-        else:
-            return b
-    return selector
-
-def pair_first(p):
-    return p(True)
-
-def pair_last(p):
-    return p(False)
-</code></pre>
-
-<h1 id="lists">Lists</h1>
-
-<p><strong>Definition (1).</strong> A <em>List</em> is either (1) a <em>Pair</em> where the second part of
-  the pair is a <em>List</em>, or (2) the empty list.</p>
-
-<p><strong>Definition (2).</strong> A <em>List</em> is a ordered sequence of objects.</p>
-
-<p></div></p>
- 
-  
   
 <div class="container pagination">
   
@@ -811,12 +703,16 @@ def pair_last(p):
   5
 </a>
 
+<a href="https://uvacs2102.github.io/page/6/">
+  6
+</a>
+
 
 <a aria-label="Next" href="https://uvacs2102.github.io/page/3/">
   <span aria-hidden="true">»</span>
 </a>
 
-<a aria-label="Last" href="https://uvacs2102.github.io/page/5/">
+<a aria-label="Last" href="https://uvacs2102.github.io/page/6/">
   <span aria-hidden="true">»»</span>
 </a>
 
