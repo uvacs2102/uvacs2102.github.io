@@ -34,7 +34,7 @@
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://uvacs2102.github.io/touch-icon-144-precomposed.png">
 <link href="https://uvacs2102.github.io/favicon.png" rel="icon">
 
-<meta name="generator" content="Hugo 0.16-DEV" />
+<meta name="generator" content="Hugo 0.17" />
 
   <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -149,7 +149,98 @@
   </header>
   
   
-  <p class="fronthead"><A href="">Class 26: Counting and Probability</a> (Thu, 30 Nov 2017)</p>
+  <p class="fronthead"><A href="/finalprep/">Final Exam Preparation</a> (Fri, 1 Dec 2017)</p>
+    
+
+<p>The <em>Final Exam</em> will be Thursday, 7 December, 9am-noon in the normal
+classroom.</p>
+
+<p>The final will cover everything in the course, with an emphasis on the
+most important concepts that have appeared in at least two places.</p>
+
+<p>Most of the questions on the final will be small variations on
+problems you have already seen on previous exams or problem
+sets. Doing well on these questions will make a strong case for
+earning at least a B in the class.  A few of the problems will be
+designed to see how well you can use concepts you have learned in the
+class to solve problems unlike ones you have already seen.  Doing well
+on many of these questions will make a strong case for earning an A in
+the class. (Of course, we will also take into account your performance
+on other parts of the class including the exams and problem sets.)</p>
+
+<p>The format will be fairly similar to Exam 1 and Exam 2, but because of
+the extended time for the final, and the desire to give as much
+opportunity as possible for students to demonstrate what you can do,
+will be a bit longer than those exams.</p>
+
+<p>As with Exam 1 and Exam 2, you will be permitted to use a <strong>single
+paper page of notes that you prepare and bring to the exam</strong>, but no
+other resources.  It is fine to collaborate with others to prepare
+your notes.  The page should be no larger than a US Letter size page
+($8.5 \times 11$ inches), and you may write (or print) on both sides
+of the page.</p>
+
+<h2 id="expected-problems">Expected Problems</h2>
+
+<p>Although the exam covers the whole class, you should not be surprised
+if it includes problems for you to demonstrate:</p>
+
+<ul>
+<li><p>Your understanding of <strong>logical formulas</strong>, <strong>inference rules</strong>, and
+an ability to reason about and manipulate formulas using
+<strong>quantifiers</strong>.</p></li>
+
+<li><p>Your fluency with standard proof techniques including
+<strong>proof-by-contradiction</strong>.</p></li>
+
+<li><p>Your understanding of <strong>well-ordering</strong> and how to construct proofs
+using the <strong>well ordering principle</strong>.</p></li>
+
+<li><p>Your understanding of <strong>sets</strong>, how the set operators are defined,
+and what they mean.</p></li>
+
+<li><p>That you can do a <strong>regular induction</strong> proof similar to ones you
+have seen on previous exams <em>very well</em>.  That you can do an
+induction proof that requires some creativity to <strong>define a good
+induction predicate</strong> and then to complete the proof.</p></li>
+
+<li><p>Your understanding of <strong>state machines</strong>, and ability to use the
+<strong>invariant principle</strong> to prove a property of the reachable states
+for a given state machine.</p></li>
+
+<li><p>Your understanding of <strong>recursive data types</strong>, ability to define
+functions on recursive data types, and to use <strong>structural
+induction</strong> to prove a property about all objects of a recursive
+data type.</p></li>
+
+<li><p>Your understanding of infinite cardinalities including the ability
+to determine if a set is <strong>countable</strong> or <strong>uncountable</strong>, and to
+support your answer with a convincing proof.</p></li>
+
+<li><p>Your understanding of <strong>number theory</strong>, including the ability to
+reason about properties of prime and composite numbers, Abelian
+groups and fields.</p></li>
+</ul>
+
+<h2 id="practice-exam">Practice Exam</h2>
+
+<p>The exam from last year&rsquo;s course is available here:
+[<a href="/docs/practicefinal.pdf">PDF</a>].  All of the questions from last
+year&rsquo;s final would be reasonable questions for this year&rsquo;s final
+except for 6d (we did not cover Turing machines this year) and
+12. Last year&rsquo;s final doesn&rsquo;t include any questions on number theory
+since we didn&rsquo;t cover that enough last year, but your final is likely
+to include a few number theory questions that you will be
+well-prepared for if you understand PS9. Otherwise, the content and
+format of this final is similar to what you should expect on your
+final.</p>
+
+<p>You are strongly encouraged to try to solve the problems yourself,
+before consulting the <a href="/docs/practicefinalsolutions.pdf">Practice Final
+Solutions</a>.</p>
+ 
+  
+  <p class="fronthead"><A href="/class26/">Class 26: Counting and Probability</a> (Thu, 30 Nov 2017)</p>
     
 
 <div class="notpdf">
@@ -168,7 +259,7 @@
 
 <p><div class="latex"></p>
 
-<h1 id="recall:0b3606b96b9e0d788111e5c141f3acac">Recall</h1>
+<h1 id="recall">Recall</h1>
 
 <p>Last time, we went tover two basic counting problems. In both problems, we counted how many ways we can choose $k$ elements from ${1,\dots,n}$ whe the order of selection does matter; namely, we counted \emph{sequences} of length $k$. If repetition was allowed, the answer was $n^k$ (using the product rule) and if the repetition was not allowed, the answer was $n (n-1) \dots (n-k+1) = n!/(n-k)!$ using the generalized product rule.</p>
 
@@ -176,7 +267,7 @@
 
 <p><strong>Division Rule</strong>. If $f \colon A \to B$ is a $k$ to $1$ (total surjective) function, and if $A,B$ are finite sets then, $|A| = k \cdot |B|$.</p>
 
-<h1 id="counting-when-order-does-not-matter:0b3606b96b9e0d788111e5c141f3acac">Counting  when order does not matter</h1>
+<h1 id="counting-when-order-does-not-matter">Counting  when order does not matter</h1>
 
 <p>The number of subsets of size $k$ of  ${1,\dots,n}$ captures a counting problem in which the order of the $k$
  selected elements does not matter. This is denoted by ${n \choose k}$ and as we show, is equal to ${n \choose k} = \frac{n!}{k! (n-k)!}$.</p>
@@ -197,7 +288,7 @@
 
 <p>#</p>
 
-<h2 id="basics-of-probability:0b3606b96b9e0d788111e5c141f3acac">Basics of Probability</h2>
+<h2 id="basics-of-probability">Basics of Probability</h2>
 
 <p>Probability theory is one of the richest and most beautiful mathematical theories with enormous applications. Here we take a very brief look at it, by using our counting techniques for estimating the &ldquo;chance&rdquo; of certaing &ldquo;outcomes&rdquo;.</p>
 
@@ -207,7 +298,7 @@
 \item Suppose we do not put back the item that we selected in the previous example. Now, if we take another item, what is the chance that it is a donut \emph{conditioned} on the first item being a bagel?
 \end{itemize}</p>
 
-<h1 id="sample-space-and-event:0b3606b96b9e0d788111e5c141f3acac">Sample Space and Event</h1>
+<h1 id="sample-space-and-event">Sample Space and Event</h1>
 
 <p>The sample space $\Omega=  {x_1,\dots,x_n }$ includes all the possible outcomes and their own specific probability $\Pr[x<em>i]$, while the total summation is $1=\sum</em>{x\in \Omega} \Pr[x<em>i]$. An Event $E$ is simply a subset of the sample space $E \subseteq \Omega$, and its probability is defined to be $\Pr[E] = \sum</em>{x \in E} \Pr[x]$.</p>
 
@@ -219,7 +310,7 @@
 \item What is the probability of $B$?
 \end{itemize}</p>
 
-<h1 id="conditional-probability:0b3606b96b9e0d788111e5c141f3acac">Conditional Probability</h1>
+<h1 id="conditional-probability">Conditional Probability</h1>
 
 <p>For two events $E,C$, the probability of $E$ hapenning \emph{conditioned} on $C$ happenin is denoted by $\Pr[E \mid C]$ and equal to
 $$\Pr[E \mid C] = \frac{\Pr[E \cap C]}{\Pr[C]}.$$</p>
@@ -231,10 +322,10 @@ $$\Pr[E \mid C] = \frac{\Pr[E \cap C]}{\Pr[C]}.$$</p>
 <p></div></p>
  
   
-  <p class="fronthead"><A href="">Class 25: Counting</a> (Tue, 28 Nov 2017)</p>
+  <p class="fronthead"><A href="/class25/">Class 25: Counting</a> (Tue, 28 Nov 2017)</p>
     
 
-<h3 id="schedule:48c09636ef2a37766db0522980dbf8fc">Schedule</h3>
+<h3 id="schedule">Schedule</h3>
 
 <p>Reminder for the schedule for the rest of the semester:</p>
 
@@ -263,7 +354,7 @@ $$\Pr[E \mid C] = \frac{\Pr[E \cap C]}{\Pr[C]}.$$</p>
 
 <p><div class="latex"></p>
 
-<h1 id="examples:48c09636ef2a37766db0522980dbf8fc">Examples</h1>
+<h1 id="examples">Examples</h1>
 
 <p>Today, we want to be able to answer the following questions. The first two are already discussed in class, but we will study them more generally.
 \begin{enumerate}
@@ -284,7 +375,7 @@ finite cardinality from Class 9, to study these questions. Namely, we
 try to find another set $B$ whose cardinality is known, and that there
 is a bijection between $A$ and $B$.</p>
 
-<h1 id="why-counting:48c09636ef2a37766db0522980dbf8fc">Why Counting?</h1>
+<h1 id="why-counting">Why Counting?</h1>
 
 <p>Being able to count (exactly or even approximately) is important for many reasons, some of which are:
 \begin{itemize}
@@ -293,7 +384,7 @@ is a bijection between $A$ and $B$.</p>
 \item Counting is the fundamental to probability theory.
 \end{itemize}</p>
 
-<h1 id="counting-rules:48c09636ef2a37766db0522980dbf8fc">Counting Rules</h1>
+<h1 id="counting-rules">Counting Rules</h1>
 
 <p><strong>Product Rule</strong> If $A_1,\dots,A_n$ are finite sets, then the size of their cartesian product is
 $$|A_1 \times \dots \times A_n| = |A_1| \cdot |A_2| \dots |A_n| $$</p>
@@ -330,7 +421,7 @@ possibilities).</p>
 
 <p><strong>Division Rule</strong>. If $f \colon A \to B$ is a $k$ to $1$ (total surjective) function, and if $A,B$ are finite sets then, $|A| = k \cdot |B|$.</p>
 
-<h1 id="counting-when-order-does-not-matter:48c09636ef2a37766db0522980dbf8fc">Counting when order does not matter</h1>
+<h1 id="counting-when-order-does-not-matter">Counting when order does not matter</h1>
 
 <p>The number of subsets of size $k$ of  ${1,\dots,n}$ captures a counting problem in which the order of the $k$
  selected elements does not matter. This number is so important that has its own notation ${n \choose k}$.</p>
@@ -339,7 +430,7 @@ possibilities).</p>
  </div></p>
  
   
-  <p class="fronthead"><A href="">Class 24: Return of ROCA</a> (Tue, 21 Nov 2017)</p>
+  <p class="fronthead"><A href="/class24/">Class 24: Return of ROCA</a> (Tue, 21 Nov 2017)</p>
     
 
 <h3 id="schedule">Schedule</h3>
@@ -376,16 +467,16 @@ possibilities).</p>
    </div></p>
  
   
-  <p class="fronthead"><A href="">Problem Set 9</a> (Sun, 19 Nov 2017)</p>
+  <p class="fronthead"><A href="/ps9posted/">Problem Set 9</a> (Sun, 19 Nov 2017)</p>
     <p><a href="/ps/ps9"><strong>Problem Set 9</strong></a> [<a href="/docs/ps9.pdf">PDF</a>] is now posted and
 is due <strong>Friday, 1 Dec at 6:29:00pm</strong>. Please read the
 collaboration policy carefully.</p>
  
   
-  <p class="fronthead"><A href="">Class 23: Cryptosystems</a> (Thu, 16 Nov 2017)</p>
+  <p class="fronthead"><A href="/class23/">Class 23: Cryptosystems</a> (Thu, 16 Nov 2017)</p>
     
 
-<h3 id="schedule:5745b40601045f50f1418eebe2f9ce59">Schedule</h3>
+<h3 id="schedule">Schedule</h3>
 
 <p>Here&rsquo;s the updated (and final) schedule for the rest of the semester:</p>
 
@@ -397,7 +488,7 @@ collaboration policy carefully.</p>
 
 <p><div class="notpdf"></p>
 
-<h2 id="galois:5745b40601045f50f1418eebe2f9ce59">Galois</h2>
+<h2 id="galois">Galois</h2>
 
 <p><a href="https://plus.maths.org/content/genius-stupidity-and-genius-again"><em>Genius, stupidity and genius again</em></a> (the short life of Evariste Galois), by Tope Omitola.</p>
 
@@ -413,7 +504,7 @@ collaboration policy carefully.</p>
 <p></div><!--endpdf-->
    <div class="latex"></p>
 
-<h2 id="modular-arithmetic:5745b40601045f50f1418eebe2f9ce59">Modular Arithmetic</h2>
+<h2 id="modular-arithmetic">Modular Arithmetic</h2>
 
 <p>Definition: A number $a$ is <em>congruent</em> to $b$ modulo $n$ if and only
 if $n\, | \, (a - b)$.  We can write this as $a \equiv b \;\;
@@ -424,7 +515,7 @@ if $n\, | \, (a - b)$.  We can write this as $a \equiv b \;\;
 
 <p>#</p>
 
-<h2 id="groups-rings-and-fields:5745b40601045f50f1418eebe2f9ce59">Groups, Rings, and Fields</h2>
+<h2 id="groups-rings-and-fields">Groups, Rings, and Fields</h2>
 
 <p><strong>Abelian group:</strong> set $R$, with a binary operation $+$:<br />
    associative, commutative, additive identity (<strong>0</strong>), additive inverse ($−a$)</p>
@@ -437,7 +528,7 @@ if $n\, | \, (a - b)$.  We can write this as $a \equiv b \;\;
 </div></p>
  
   
-  <p class="fronthead"><A href="">Class 22: Prime Detectives</a> (Tue, 14 Nov 2017)</p>
+  <p class="fronthead"><A href="/class22/">Class 22: Prime Detectives</a> (Tue, 14 Nov 2017)</p>
     
 
 <h3 id="schedule">Schedule</h3>
@@ -730,7 +821,7 @@ only by itself and 1.</p>
 <p></div></p>
  
   
-  <p class="fronthead"><A href="">Schedule Updates</a> (Sun, 12 Nov 2017)</p>
+  <p class="fronthead"><A href="/scheduleupdates/">Schedule Updates</a> (Sun, 12 Nov 2017)</p>
     <p>We are adjusting the schedule for Problem Set 9 and Problem Set
 &Omega; from the original schedule. Instead of being due on Wednesday,
 November 22 as previously scheduled, Problem Set 9 will now be due on
@@ -746,7 +837,7 @@ prefer to have a PS9 due on Nov 22, let one of the professors know and
 we can arrange something different.</p>
  
   
-  <p class="fronthead"><A href="">Class 21: Review</a> (Tue, 7 Nov 2017)</p>
+  <p class="fronthead"><A href="/class21/">Class 21: Review</a> (Tue, 7 Nov 2017)</p>
     
 
 <h3 id="exam-2">Exam 2</h3>
@@ -824,155 +915,8 @@ $$ \forall q \in S. (P(q) \wedge (q \rightarrow r) \in G) \implies P&reg;$$</p>
 <p></div></p>
  
   
-  <p class="fronthead"><A href="">Problem Set 8 Comments</a> (Sat, 4 Nov 2017)</p>
+  <p class="fronthead"><A href="/ps8comments/">Problem Set 8 Comments</a> (Sat, 4 Nov 2017)</p>
     <p>The Problem Set 8 solutions and comments are now posted in collab: <a href="https://collab.its.virginia.edu/access/content/group/9bd99d1c-6f18-4542-a7d1-8ffc4fccbd3d/ps8solutions.pdf">PDF</a></p>
- 
-  
-  <p class="fronthead"><A href="">Class 20: Number Theory</a> (Thu, 2 Nov 2017)</p>
-    
-
-<h3 id="schedule:dcf75d114d0b27f85507ff1ab741294c">Schedule</h3>
-
-<p><a href="/ps/ps8"><strong>Problem Set 8</strong></a> is due <strong>Friday at 6:29pm</strong>.</p>
-
-<p><strong>Tuesday&rsquo;s class</strong> will include a review for Exam 2.  Before 6:59pm
-  Monday, send to <a href="mailto:uvacs2102staff@gmail.com"><em>uvacs2102staff@gmail.com</em></a> topics you would like to review. We will have a similar rule to Exam 1:</p>
-
-<ul>
-<li>Fewer than 10 total requests: it means, class is not being sufficiently challenged and we should be doing more difficult material (except for the 10 requestors who get exam exemptions).</li>
-<li>Exactly 10 total requests: all requestors get automatic exam exemptions, review requested topics.</li>
-<li>More than 10 requests implies we should spend Thursday’s class on reviewing requested topics, no exam exemptions.</li>
-</ul>
-
-<h3 id="exam-2:dcf75d114d0b27f85507ff1ab741294c">Exam 2</h3>
-
-<p>Exam 2 will be in class on Thursday, 9 Nov.  You can get a good
-idea for what to expect on Exam 2 based on Exam 1, and also by looking at the <a href="/docs/practiceexam2.pdf">Practice Exam
-2</a> (from last year&rsquo;s class). We strongly
-encourage you to try to problems on your own, before looking at the
-<a href="/docs/practiceexam2-solutions.pdf">posted solutions</a>. The main difference is that this year, we did not cover the topic of &ldquo;stable marriage&rdquo;, but the our exam 2 will also cover the topic of infinities (i.e. infinite sets, countable and uncountable sets, etc.) as well.</p>
-
-<p><strong>Resources.</strong> Similarly to Exam 1, you will be permitted to use a <em>single paper page</em> of
-notes that you prepare and bring to the exam.  It is fine to
-collaborate with others to prepare your notes.  The page should be no
-larger than a US Letter size page ($8.5 \times 11$ inches), and you
-may write (or print) on both sides of the page.  You may not use any
-special devices (e.g., magnifying glasses) to read your page. No other
-resources, other than your own brain, body, and writing instrument,
-are permitted during the exam.</p>
-
-<p><strong>Content.</strong> The problems on the exam will cover material from Classes
-  1&ndash;19, Problem Sets 1&ndash;8 (including the provided solutions), and the relevant material from MCS
-  Chapters 1&ndash;8. However, only one problem will be about the material covered by Exam 1, and the rest will be on the material we covered since Exam 1 (namely, classes 13-19, problem sets 6&ndash;8, and chapters 6,7,8).  Everything on the exam will be something you have seen
-  in at least two of these (Classes, Problem Sets, and MCS Book), and
-  most of the exam will be things you have seen in all three.  If you
-  understand the problems on the problem sets and questions on the class
-  notes well enough to be able to answer similar questions, you should
-  do well on the exam.</p>
-
-<p>Simiarly to Exam 1, for most students, we believe the best way to prepare for the exam
-will be to (1) go over the problem sets and their solutions, and make
-sure you understand well any of the problems you did not get before;
-(2) go through the provided practice exam and try to solve all the
-problems on your own before reading the solutions; (3) go through the
-questions in the class notes and convince yourself you can answer them
-well; (4) re-read chapters of the book, solving the associated
-practice problems, especially for any sections on topics where you had
-difficulty on the problem sets.  If you do #1 and #2 and understand
-well the problems on the practice exam, you should be confident you&rsquo;ll
-do well on the exam; if you struggled on the problem sets, you would
-benefit from doing #3 and #4 as well.</p>
-
-<p><div class="notpdf">
-   <center>
-<script async class="speakerdeck-embed" data-id="e587be0cca304366bf9242a5a79d42de" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-   </center></p>
-
-<p><div class="highlightm">
-   <a href="/docs/class20.pdf">See PDF Version for <b>Notes and Questions</b></a>.
-   </div></p>
-
-<h2 id="links:dcf75d114d0b27f85507ff1ab741294c">Links</h2>
-
-<p><a href="https://en.wikipedia.org/wiki/Goldbach%27s_conjecture">Goldbach&rsquo;s conjecture</a></p>
-
-<p><a href="https://www.britannica.com/topic/twin-prime-conjecture">Twin Prime&rsquo;s conjecture</a></p>
-
-<p><a href="https://en.wikipedia.org/wiki/Fermat%27s_Last_Theorem">Fermat&rsquo;s last theorem</a></p>
-
-<p></div><!--endpdf--></p>
-
-<p><div class="latex"></p>
-
-<h2 id="divisibility:dcf75d114d0b27f85507ff1ab741294c">Divisibility</h2>
-
-<p>Number theory is a study of integers $\mathbb{Z}={0,-1,1,-2,2,\dots}$. Adding, multiplying, and negating, are 3 operators on integers that we can define in a straight-forward way. Dividing is more tricky. For that, we first define the notation $a \mid b$ to denote the simpler situation where $b = k \cdot a$ for some $k \in \mathbb{Z}$. In this case, we say that $a$ is a <em>divisor</em> of $b$ and that $b$ is a <em>multiple</em> of $a$.</p>
-
-<p>Show that if we assume $a \mid b$ and $a \mid c$ (for any integers $a,b,c$), then for all integers $x,y$ it will hold that $a \mid xa + yb$.</p>
-
-<p>#</p>
-
-<p>When   $b$ is \emph{not} a multiple of $a$, we can still have some form of division, stated in the following theorem.</p>
-
-<p><strong>Theorem [Division Theorem]</strong> For all integers $n,d$, there are integers $q$ (called the quotiont) and $r$ (called the remainder, denoted by $rem(m,d)$) such that
-$$n = q \cdot d + r \text{<del>and</del>}  0\leq r &lt; |d|.$$
-Note that the remainder, as defined here, is always non-negative. For example when dividing $-3$ by $5$ we get $q=-1$ and $r=2$.</p>
-
-<p><strong>Definition</strong> A <em>prime</em> $p$, is an integer $p&gt;1$ such that  $1$ and $p$ are the only positive divisors of $p$. Other $n&gt;1$ numbers (that are not prime) are called composite.</p>
-
-<p>The following well-known  theorem can be proved by strong induction on $n$.</p>
-
-<p><strong>Theorem [Fundamental theorem of arithmetic]</strong>. Any $n&gt;1$ has a unique represention in the following form:
-$$ n = p_1^{a_1} \dots p_k^{a_k}$$
-where $p<em>i &lt; p</em>{i+1}$ and $p_i$ is prime for all $i$.</p>
-
-<p>Hint for proof: Use strong induction on $n$, and try to show that any two different representations for $n$ will have the same `smallest&rsquo; prime $p_1$ and the same power $a_1$ for $p_1$.</p>
-
-<h2 id="easy-to-state-but-hard-to-solve-problems:dcf75d114d0b27f85507ff1ab741294c">Easy-to-state, but hard-to-solve problems</h2>
-
-<p>In number theory, we can easily state problems that are super hard to solve. These are some examples.</p>
-
-<p><strong>Goldbach&rsquo;s conjecture:</strong> Any even integer $n&gt;2$ can be written as $n=p+q$ where $p,q$ are both primes. The conjecture is still open, though we know that it is correct for all $n \leq 10^{18}$.</p>
-
-<p><strong>Twin prime&rsquo;s conjecture:</strong> There infinite prime numbers $p$ where $p+2$ is also prime. Note that we cannot `check the conjecture up to $n$&rsquo; anymore! And it is still open&hellip;</p>
-
-<p><strong>Fermat&rsquo;s last theorem:</strong> For any integer $n&gt;2$ there are no integers $a,b,c$ where $a^n + b^n = c^n$. Note that for $n=2$ there are integer solutions like $3^2 + 4^2 = 5^2$. Fermat claimed to have a proof, but nobody knows if he really did or not. Andrew Wiles eventually proved this in 1994, hence we call it a <em>theorem</em> and not a conjecture anymore.</p>
-
-<h2 id="greatest-common-divisor:dcf75d114d0b27f85507ff1ab741294c">Greatest Common Divisor</h2>
-
-<p><strong>Definition</strong> For natural numbers $m,n&gt;0$ we call $d&gt;0$ their \emph{greatest common divisor}, denoted by $d=gcd(m,n)$ if $d$ is the largest number such that $d \mid m$ and $d \mid n$. (Make sure to verify why we can always say that such $d$ exists.)</p>
-
-<p>We can use the fundamental theorem of arithmetic, to <em>compute</em> the gcd of any given pairs of integers. But how efficient is it? The problem is that factoring numbers $m,n$ into their prime factors is not something we know how to do efficiently. In particular, no known algorithm is guaranteed to factor all numbers with $1000,000$ digits in less than an (estimated) thousand years! The conjecture is that no such `efficient&rsquo; algorithm exists, and many cryptographic algorithms <em>assume</em> this is the case!</p>
-
-<h2 id="euclid-s-algorithm:dcf75d114d0b27f85507ff1ab741294c">Euclid&rsquo;s Algorithm</h2>
-
-<p>Despite not knowing how to factor integers efficiently, Euclid showed how to find gcd quite efficiently. This shows, even if the most ``natural&rdquo; algorithm fails for doing something efficiently, we should always consider the possibility that an alternative way could still exist.</p>
-
-<pre><code class="language-python">def Euclid_gcd(m, n):
-   while n &gt; 0:
-      r = rem(m,n)
-      m = n
-      n = r
-   return m
-</code></pre>
-
-<p>What is a good state machine modeling the behavior of Euclid&rsquo;s algorithm?</p>
-
-<p>Suppose $d$ is any integer (in particular, it could be the gcd of the original state $(m,n)$ of the state machine for Eclid&rsquo;s algorithm). Show that $gcd(a,b)=d$ is a preserved invariant for the transition graph of this state machine. Namely, if we go from one state to another state, the gcd does not change.</p>
-
-<p>#</p>
-
-<p>If the Euclid&rsquo;s algorithm ends, at the very last step we will have $n=0$ which means $m$ is indeed the right gcd for that particular (final) state. Together with the preserved invariant (that you proved above), argue that the program has \emph{partial correctness}. Namely: if it ends, it outputs correctly.</p>
-
-<p>#</p>
-
-<p>Now prove the termination. Namely, show that the Euclid&rsquo;s gcd algorithm will always end. Hint, look at $a+b$ for any state $(a,b)$ that we are in, and show that it always
-decreases.</p>
-
-<p>#</p>
-
-<p>Amazing thing about Euclid&rsquo;s algorithm is that it is indeed quite efficient. A better analysis shows that it will always terminate in $\log (m+n)$ steps. (Hint: show that after two steps, $m$ will be at most <em>half</em> of what it was before..)
-</div></p>
  
   
   

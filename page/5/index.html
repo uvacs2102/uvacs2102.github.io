@@ -34,7 +34,7 @@
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://uvacs2102.github.io/touch-icon-144-precomposed.png">
 <link href="https://uvacs2102.github.io/favicon.png" rel="icon">
 
-<meta name="generator" content="Hugo 0.16-DEV" />
+<meta name="generator" content="Hugo 0.17" />
 
   <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -149,22 +149,139 @@
   </header>
   
   
-  <p class="fronthead"><A href="">Problem Set 2</a> (Fri, 1 Sep 2017)</p>
+  <p class="fronthead"><A href="/class5/">Class 5: CNF, Computing, Quantifiers</a> (Tue, 5 Sep 2017)</p>
+    
+
+<h3 id="schedule">Schedule</h3>
+
+<p><a href="/ps/ps2"><strong>Problem Set 2</strong></a> is due <strong>Friday at 6:29pm</strong>.</p>
+
+<p><div class="notpdf">
+   <center>
+<script async class="speakerdeck-embed" data-id="b6468be050744777ac59c696390d3d89" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+   </center></p>
+
+<p><div class="highlightm">
+   <a href="/docs/class5.pdf">See PDF Version for <b>Notes and Questions</b></a>.
+   </div></p>
+
+<p><div class="highlightrl">
+<strong>Challenge Problem Opportunity.</strong> Find the shortest formula that is
+  equivalent to XOR(<em>a</em>, <em>b</em>) using just NAND operations. Shortest
+  means the minimum number of NAND operations. A convincing answer
+  would include a proof that no shorter formula exists.
+   </div></p>
+
+<h2 id="links">Links</h2>
+
+<p>If you want to learn more about how to learn the logic implemented by a chip
+and cryptosystems used in car immobolizers, see <a href="https://www.cs.virginia.edu/~evans/pubs/usenix08/usenix08.pdf"><em>Reverse-Engineering a
+Cryptographic RFID
+Tag</em></a> (Karsten
+Nohl, David Evans, Starbug, and Henryk Pl&ouml;tz, <em>USENIX Security
+Symposium</em> 2008), or <a href="https://www.youtube.com/watch?v=fCwY27EnOF8">this
+video</a>.  Please don&rsquo;t steal any
+cars.</p>
+
+<p></div><!--endpdf--></p>
+
+<p><div class="latex"></p>
+
+<h1 id="notes-and-questions">Notes and Questions</h1>
+
+<p><strong>Definition: satisfiable.</strong> A logical formula is <em>satisfiable</em> if there
+  is <em>some</em> way to make it <strong>true</strong>.  That is, there is at least one
+  assignment of truth value to its variables that makes the forumla
+  true.</p>
+
+<p><strong>Definition: conjunctive normal form (CNF).</strong> A logical formula that is
+  written as a conjunction of <em>clauses</em>, where each clause is a
+  disjunction of <em>literals</em>, and each literal is either a variable or a
+  negation of a variable, is in <em>conjunctive normal form</em>.  If each
+  clause has excatly three literals, it is called <em>three conjunctive
+  normal form</em> (3CNF).</p>
+
+<p>$$
+(a_1 \vee a_2 \vee \neg a_3) \wedge
+(a_1 \vee \neg a_2 \vee a_3) \wedge
+(\neg a_1 \vee a_2 \vee \neg a_3) \wedge
+(\neg a_1 \vee a_2 \vee a_3)
+$$</p>
+
+<p>##</p>
+
+<p>Show that every logical formula can be written in conjunctive normal form.
+Also, show that if we only care about <em>satisfiability</em> we can always write it
+in 3CNF form. Namely, for every CNF formula $F$, we can write a 3CNF formula
+$G$ such that $F$ is satisfiable if and only if $G$ is satisfiable.</p>
+
+<div class="biggap"></div>
+
+<p>What is the maximum number of (different) clauses in a 3CNF formula
+involving 5 variables?</p>
+
+<p>##</p>
+
+<p>What is the maximum number of (different) clauses in a <em>satisfiable</em>
+3CNF formula involving 5 variables?</p>
+
+<p>##</p>
+
+<p>What is the maximum number of (different) clauses in a <em>valid</em> 3CNF formula involving 5 variables?</p>
+
+<p>##</p>
+
+<!--page-->
+
+<h2 id="logical-quantifiers">Logical Quantifiers</h2>
+
+<p>$\forall x \in S. P(x)$ means $P$ holds for <em>every</em> element of $S$.<br />
+$\exists x \in S. P(x)$ means $P$ holds for <em>at least one</em> element of $S$.</p>
+
+<p>Define <em>valid</em> and <em>satisfiable</em> using logical quantifiers:</p>
+
+<p>#</p>
+
+<p>$\forall x \in S. P(x)$ is equivalent to $\neg(\exists x \in S. \qquad \qquad)$</p>
+
+<p>###</p>
+
+<p>Notation: $\textrm{pow}(S)$ denotes the <em>powerset</em> of $S$.  The powerset
+of a set is the set of all possible subsets of that S.  So,
+$\textrm{pow}(\mathbb{N})$ denotes all subsets of the natural numbers.</p>
+
+<p>Notation: $A - B$ denotes the <em>difference</em> between two sets.  It is the
+elements of $A$, with every element of $B$ removed.</p>
+
+<p>Notation: $\varnothing$ is the <em>empty set</em>.  It is the set with no elements: ${ }$.</p>
+
+<p>\begin{center}
+\Large</p>
+
+<p>$$
+\fillin S \in \textrm{pow}(\mathbb{N}) - { \varnothing } \ldotp \fillin m \in S\ldotp \fillin x \in S - {m}\ldotp m &lt; x
+$$
+\end{center}</p>
+
+<p></div></p>
+ 
+  
+  <p class="fronthead"><A href="/ps2posted/">Problem Set 2</a> (Fri, 1 Sep 2017)</p>
     <p><a href="/ps/ps2"><strong>Problem Set 2</strong></a> [<a href="/docs/ps2.pdf">PDF</a>] is now posted and
 is due <strong>Friday, 8 September at 6:29:00pm</strong>.</p>
  
   
-  <p class="fronthead"><A href="">Additional Resources</a> (Thu, 31 Aug 2017)</p>
+  <p class="fronthead"><A href="/additionalresources/">Additional Resources</a> (Thu, 31 Aug 2017)</p>
     <p>I&rsquo;ve added a page, <a href="/resources">Resources</a>, with links to some
 suggested resources beyond the course materials. If you find other
 useful resources, please post them in slack and we&rsquo;ll add them to this
 list.</p>
  
   
-  <p class="fronthead"><A href="">Class 4: Logical Operators and Formulas</a> (Thu, 31 Aug 2017)</p>
+  <p class="fronthead"><A href="/class4/">Class 4: Logical Operators and Formulas</a> (Thu, 31 Aug 2017)</p>
     
 
-<h3 id="schedule:a69bef1e5f2725722420b5c4a32452b2">Schedule</h3>
+<h3 id="schedule">Schedule</h3>
 
 <p><a href="/ps/ps1"><strong>Problem Set 1</strong></a> is due <strong>Friday at 6:29pm</strong>.</p>
 
@@ -180,7 +297,7 @@ Quantifiers).</p>
    <a href="/docs/class4.pdf">See PDF Version for <b>Notes and Questions</b></a>.
    </div></p>
 
-<h2 id="links:a69bef1e5f2725722420b5c4a32452b2">Links</h2>
+<h2 id="links">Links</h2>
 
 <p>Scott Brown, <a href="http://ms.appliedprobability.org/data/files/selected%20articles/39-1-1.pdf"><em>The Life and Work of Augustus De Morgan</em></a>. Applied Probability 2006.</p>
 
@@ -190,9 +307,9 @@ Quantifiers).</p>
 
 <p><div class="latex"></p>
 
-<h1 id="notes-and-questions:a69bef1e5f2725722420b5c4a32452b2">Notes and Questions</h1>
+<h1 id="notes-and-questions">Notes and Questions</h1>
 
-<h2 id="well-ordering-principle-proof:a69bef1e5f2725722420b5c4a32452b2">Well-Ordering Principle Proof</h2>
+<h2 id="well-ordering-principle-proof">Well-Ordering Principle Proof</h2>
 
 <p><strong>Odd Summation.</strong> (Problem 2.12) Prove that for all $n &gt; 0$, the sum of the first $n$ odd numbers is $n^2$.</p>
 
@@ -284,7 +401,7 @@ For each of the formulas below, determine if it is _valid_ and if it is _satisfi
 </div>
  
   
-  <p class="fronthead"><A href="">Class 3: Well-Ordering Principle</a> (Tue, 29 Aug 2017)</p>
+  <p class="fronthead"><A href="/class3/">Class 3: Well-Ordering Principle</a> (Tue, 29 Aug 2017)</p>
     
 
 <h3 id="schedule">Schedule</h3>
@@ -382,7 +499,7 @@ _The whole problem with the world is that fools and fanatics are always so certa
 </div>
  
   
-  <p class="fronthead"><A href="">Office Hours Posted</a> (Sat, 26 Aug 2017)</p>
+  <p class="fronthead"><A href="/officehoursposted/">Office Hours Posted</a> (Sat, 26 Aug 2017)</p>
     <p>The office hours schedule is now posted on the course site (<a href="/officehours">Office
 Hours</a>) and
 <a href="https://calendar.google.com/calendar/embed?src=5msg7a1mn7fk4ocj1h41cksh80%40group.calendar.google.com&amp;ctz=America/New_York">Calendar</a>. The
@@ -391,7 +508,7 @@ hours start on Monday (3pm), and will follow the schedule here after
 that.</p>
  
   
-  <p class="fronthead"><A href="">Class 2: Proof Methods</a> (Thu, 24 Aug 2017)</p>
+  <p class="fronthead"><A href="/class2/">Class 2: Proof Methods</a> (Thu, 24 Aug 2017)</p>
     
 
 <h3 id="schedule">Schedule</h3>
@@ -489,10 +606,10 @@ Frank Wilczek</p>
 <p></div></p>
  
   
-  <p class="fronthead"><A href="">Class 1: What makes it go?</a> (Tue, 22 Aug 2017)</p>
+  <p class="fronthead"><A href="/class1/">Class 1: What makes it go?</a> (Tue, 22 Aug 2017)</p>
     
 
-<h3 id="schedule:e795e40ef5a742faa33766b4d984e8c7">Schedule</h3>
+<h3 id="schedule">Schedule</h3>
 
 <p>Before <strong>Thursday&rsquo;s class</strong>: (visit <a href="https://uvacs2102.github.io/class1">https://uvacs2102.github.io/class1</a> for the web version of these notes with links)</p>
 
@@ -568,7 +685,7 @@ mathematicians establish ``<em>truth</em>&rdquo;?</p>
 <p>A <em>predicate</em> is a proposition whose truth may depend on the value of
 variables.</p>
 
-<h3 id="proof:e795e40ef5a742faa33766b4d984e8c7">Proof</h3>
+<h3 id="proof">Proof</h3>
 
 <p>A <em>theorem</em> is a ____________ that has been proven true.</p>
 
@@ -579,7 +696,7 @@ not proven; they are <em>assumed</em> to be true.</p>
   <em>logical deductions</em> starting from a set of accepted <em>axioms</em> that
   leads to the proposition.</p>
 
-<h3 id="rules-of-inference:e795e40ef5a742faa33766b4d984e8c7">Rules of Inference</h3>
+<h3 id="rules-of-inference">Rules of Inference</h3>
 
 <p>The possible steps that can be used in a proof are logical deductions
 based on inference rules.</p>
@@ -625,7 +742,7 @@ Martin Luther King, Jr., <a href="http://kingencyclopedia.stanford.edu/encyclope
    </div></p>
  
   
-  <p class="fronthead"><A href="">Scanning Advice</a> (Tue, 22 Aug 2017)</p>
+  <p class="fronthead"><A href="/scanning/">Scanning Advice</a> (Tue, 22 Aug 2017)</p>
     <p>For many of the assignments in this class, you will need to submit
 your assignment as a PDF file. For the <a href="/pledge">Course Pledge</a>, you
 need to print out a page, sign it, and submit a scan of the page. For
@@ -653,7 +770,7 @@ generate readable PDFs, since you will need to do this for the problem
 sets also.</p>
  
   
-  <p class="fronthead"><A href="">Fall 2017 Course</a> (Fri, 17 Mar 2017)</p>
+  <p class="fronthead"><A href="/fall2017/">Fall 2017 Course</a> (Fri, 17 Mar 2017)</p>
     <p>cs2102 will be offered in Fall 2017, co-taught by <a href="https://www.cs.virginia.edu/~mohammad/">Mohammad
 Mahmoody</a> and <a href="https://www.cs.virginia.edu/evans">David
 Evans</a>.</p>

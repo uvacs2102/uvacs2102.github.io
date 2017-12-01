@@ -1,13 +1,110 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on cs2102: Discrete Math</title>
-    <link>https://uvacs2102.github.io/post/</link>
-    <description>Recent content in Posts on cs2102: Discrete Math</description>
+    <title>Post-rsses on cs2102: Discrete Math</title>
+    <link>https://uvacs2102.github.io/post/index.xml</link>
+    <description>Recent content in Post-rsses on cs2102: Discrete Math</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 30 Nov 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 01 Dec 2017 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://uvacs2102.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Final Exam Preparation</title>
+      <link>https://uvacs2102.github.io/finalprep/</link>
+      <pubDate>Fri, 01 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/finalprep/</guid>
+      <description>
+
+&lt;p&gt;The &lt;em&gt;Final Exam&lt;/em&gt; will be Thursday, 7 December, 9am-noon in the normal
+classroom.&lt;/p&gt;
+
+&lt;p&gt;The final will cover everything in the course, with an emphasis on the
+most important concepts that have appeared in at least two places.&lt;/p&gt;
+
+&lt;p&gt;Most of the questions on the final will be small variations on
+problems you have already seen on previous exams or problem
+sets. Doing well on these questions will make a strong case for
+earning at least a B in the class.  A few of the problems will be
+designed to see how well you can use concepts you have learned in the
+class to solve problems unlike ones you have already seen.  Doing well
+on many of these questions will make a strong case for earning an A in
+the class. (Of course, we will also take into account your performance
+on other parts of the class including the exams and problem sets.)&lt;/p&gt;
+
+&lt;p&gt;The format will be fairly similar to Exam 1 and Exam 2, but because of
+the extended time for the final, and the desire to give as much
+opportunity as possible for students to demonstrate what you can do,
+will be a bit longer than those exams.&lt;/p&gt;
+
+&lt;p&gt;As with Exam 1 and Exam 2, you will be permitted to use a &lt;strong&gt;single
+paper page of notes that you prepare and bring to the exam&lt;/strong&gt;, but no
+other resources.  It is fine to collaborate with others to prepare
+your notes.  The page should be no larger than a US Letter size page
+($8.5 \times 11$ inches), and you may write (or print) on both sides
+of the page.&lt;/p&gt;
+
+&lt;h2 id=&#34;expected-problems&#34;&gt;Expected Problems&lt;/h2&gt;
+
+&lt;p&gt;Although the exam covers the whole class, you should not be surprised
+if it includes problems for you to demonstrate:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Your understanding of &lt;strong&gt;logical formulas&lt;/strong&gt;, &lt;strong&gt;inference rules&lt;/strong&gt;, and
+an ability to reason about and manipulate formulas using
+&lt;strong&gt;quantifiers&lt;/strong&gt;.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Your fluency with standard proof techniques including
+&lt;strong&gt;proof-by-contradiction&lt;/strong&gt;.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Your understanding of &lt;strong&gt;well-ordering&lt;/strong&gt; and how to construct proofs
+using the &lt;strong&gt;well ordering principle&lt;/strong&gt;.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Your understanding of &lt;strong&gt;sets&lt;/strong&gt;, how the set operators are defined,
+and what they mean.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;That you can do a &lt;strong&gt;regular induction&lt;/strong&gt; proof similar to ones you
+have seen on previous exams &lt;em&gt;very well&lt;/em&gt;.  That you can do an
+induction proof that requires some creativity to &lt;strong&gt;define a good
+induction predicate&lt;/strong&gt; and then to complete the proof.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Your understanding of &lt;strong&gt;state machines&lt;/strong&gt;, and ability to use the
+&lt;strong&gt;invariant principle&lt;/strong&gt; to prove a property of the reachable states
+for a given state machine.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Your understanding of &lt;strong&gt;recursive data types&lt;/strong&gt;, ability to define
+functions on recursive data types, and to use &lt;strong&gt;structural
+induction&lt;/strong&gt; to prove a property about all objects of a recursive
+data type.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Your understanding of infinite cardinalities including the ability
+to determine if a set is &lt;strong&gt;countable&lt;/strong&gt; or &lt;strong&gt;uncountable&lt;/strong&gt;, and to
+support your answer with a convincing proof.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Your understanding of &lt;strong&gt;number theory&lt;/strong&gt;, including the ability to
+reason about properties of prime and composite numbers, Abelian
+groups and fields.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;practice-exam&#34;&gt;Practice Exam&lt;/h2&gt;
+
+&lt;p&gt;The exam from last year&amp;rsquo;s course is available here:
+[&lt;a href=&#34;https://uvacs2102.github.io/docs/practicefinal.pdf&#34;&gt;PDF&lt;/a&gt;].  All of the questions from last
+year&amp;rsquo;s final would be reasonable questions for this year&amp;rsquo;s final
+except for 6d (we did not cover Turing machines this year) and
+12. Last year&amp;rsquo;s final doesn&amp;rsquo;t include any questions on number theory
+since we didn&amp;rsquo;t cover that enough last year, but your final is likely
+to include a few number theory questions that you will be
+well-prepared for if you understand PS9. Otherwise, the content and
+format of this final is similar to what you should expect on your
+final.&lt;/p&gt;
+
+&lt;p&gt;You are strongly encouraged to try to solve the problems yourself,
+before consulting the &lt;a href=&#34;https://uvacs2102.github.io/docs/practicefinalsolutions.pdf&#34;&gt;Practice Final
+Solutions&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Class 26: Counting and Probability</title>
@@ -33,7 +130,7 @@
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;recall:0b3606b96b9e0d788111e5c141f3acac&#34;&gt;Recall&lt;/h1&gt;
+&lt;h1 id=&#34;recall&#34;&gt;Recall&lt;/h1&gt;
 
 &lt;p&gt;Last time, we went tover two basic counting problems. In both problems, we counted how many ways we can choose $k$ elements from ${1,\dots,n}$ whe the order of selection does matter; namely, we counted \emph{sequences} of length $k$. If repetition was allowed, the answer was $n^k$ (using the product rule) and if the repetition was not allowed, the answer was $n (n-1) \dots (n-k+1) = n!/(n-k)!$ using the generalized product rule.&lt;/p&gt;
 
@@ -41,7 +138,7 @@
 
 &lt;p&gt;&lt;strong&gt;Division Rule&lt;/strong&gt;. If $f \colon A \to B$ is a $k$ to $1$ (total surjective) function, and if $A,B$ are finite sets then, $|A| = k \cdot |B|$.&lt;/p&gt;
 
-&lt;h1 id=&#34;counting-when-order-does-not-matter:0b3606b96b9e0d788111e5c141f3acac&#34;&gt;Counting  when order does not matter&lt;/h1&gt;
+&lt;h1 id=&#34;counting-when-order-does-not-matter&#34;&gt;Counting  when order does not matter&lt;/h1&gt;
 
 &lt;p&gt;The number of subsets of size $k$ of  ${1,\dots,n}$ captures a counting problem in which the order of the $k$
  selected elements does not matter. This is denoted by ${n \choose k}$ and as we show, is equal to ${n \choose k} = \frac{n!}{k! (n-k)!}$.&lt;/p&gt;
@@ -62,7 +159,7 @@
 
 &lt;p&gt;#&lt;/p&gt;
 
-&lt;h2 id=&#34;basics-of-probability:0b3606b96b9e0d788111e5c141f3acac&#34;&gt;Basics of Probability&lt;/h2&gt;
+&lt;h2 id=&#34;basics-of-probability&#34;&gt;Basics of Probability&lt;/h2&gt;
 
 &lt;p&gt;Probability theory is one of the richest and most beautiful mathematical theories with enormous applications. Here we take a very brief look at it, by using our counting techniques for estimating the &amp;ldquo;chance&amp;rdquo; of certaing &amp;ldquo;outcomes&amp;rdquo;.&lt;/p&gt;
 
@@ -72,7 +169,7 @@
 \item Suppose we do not put back the item that we selected in the previous example. Now, if we take another item, what is the chance that it is a donut \emph{conditioned} on the first item being a bagel?
 \end{itemize}&lt;/p&gt;
 
-&lt;h1 id=&#34;sample-space-and-event:0b3606b96b9e0d788111e5c141f3acac&#34;&gt;Sample Space and Event&lt;/h1&gt;
+&lt;h1 id=&#34;sample-space-and-event&#34;&gt;Sample Space and Event&lt;/h1&gt;
 
 &lt;p&gt;The sample space $\Omega=  {x_1,\dots,x_n }$ includes all the possible outcomes and their own specific probability $\Pr[x&lt;em&gt;i]$, while the total summation is $1=\sum&lt;/em&gt;{x\in \Omega} \Pr[x&lt;em&gt;i]$. An Event $E$ is simply a subset of the sample space $E \subseteq \Omega$, and its probability is defined to be $\Pr[E] = \sum&lt;/em&gt;{x \in E} \Pr[x]$.&lt;/p&gt;
 
@@ -84,7 +181,7 @@
 \item What is the probability of $B$?
 \end{itemize}&lt;/p&gt;
 
-&lt;h1 id=&#34;conditional-probability:0b3606b96b9e0d788111e5c141f3acac&#34;&gt;Conditional Probability&lt;/h1&gt;
+&lt;h1 id=&#34;conditional-probability&#34;&gt;Conditional Probability&lt;/h1&gt;
 
 &lt;p&gt;For two events $E,C$, the probability of $E$ hapenning \emph{conditioned} on $C$ happenin is denoted by $\Pr[E \mid C]$ and equal to
 $$\Pr[E \mid C] = \frac{\Pr[E \cap C]}{\Pr[C]}.$$&lt;/p&gt;
@@ -105,7 +202,7 @@ $$\Pr[E \mid C] = \frac{\Pr[E \cap C]}{\Pr[C]}.$$&lt;/p&gt;
       <guid>https://uvacs2102.github.io/class25/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule:48c09636ef2a37766db0522980dbf8fc&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;Reminder for the schedule for the rest of the semester:&lt;/p&gt;
 
@@ -134,7 +231,7 @@ $$\Pr[E \mid C] = \frac{\Pr[E \cap C]}{\Pr[C]}.$$&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;examples:48c09636ef2a37766db0522980dbf8fc&#34;&gt;Examples&lt;/h1&gt;
+&lt;h1 id=&#34;examples&#34;&gt;Examples&lt;/h1&gt;
 
 &lt;p&gt;Today, we want to be able to answer the following questions. The first two are already discussed in class, but we will study them more generally.
 \begin{enumerate}
@@ -155,7 +252,7 @@ finite cardinality from Class 9, to study these questions. Namely, we
 try to find another set $B$ whose cardinality is known, and that there
 is a bijection between $A$ and $B$.&lt;/p&gt;
 
-&lt;h1 id=&#34;why-counting:48c09636ef2a37766db0522980dbf8fc&#34;&gt;Why Counting?&lt;/h1&gt;
+&lt;h1 id=&#34;why-counting&#34;&gt;Why Counting?&lt;/h1&gt;
 
 &lt;p&gt;Being able to count (exactly or even approximately) is important for many reasons, some of which are:
 \begin{itemize}
@@ -164,7 +261,7 @@ is a bijection between $A$ and $B$.&lt;/p&gt;
 \item Counting is the fundamental to probability theory.
 \end{itemize}&lt;/p&gt;
 
-&lt;h1 id=&#34;counting-rules:48c09636ef2a37766db0522980dbf8fc&#34;&gt;Counting Rules&lt;/h1&gt;
+&lt;h1 id=&#34;counting-rules&#34;&gt;Counting Rules&lt;/h1&gt;
 
 &lt;p&gt;&lt;strong&gt;Product Rule&lt;/strong&gt; If $A_1,\dots,A_n$ are finite sets, then the size of their cartesian product is
 $$|A_1 \times \dots \times A_n| = |A_1| \cdot |A_2| \dots |A_n| $$&lt;/p&gt;
@@ -201,7 +298,7 @@ possibilities).&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Division Rule&lt;/strong&gt;. If $f \colon A \to B$ is a $k$ to $1$ (total surjective) function, and if $A,B$ are finite sets then, $|A| = k \cdot |B|$.&lt;/p&gt;
 
-&lt;h1 id=&#34;counting-when-order-does-not-matter:48c09636ef2a37766db0522980dbf8fc&#34;&gt;Counting when order does not matter&lt;/h1&gt;
+&lt;h1 id=&#34;counting-when-order-does-not-matter&#34;&gt;Counting when order does not matter&lt;/h1&gt;
 
 &lt;p&gt;The number of subsets of size $k$ of  ${1,\dots,n}$ captures a counting problem in which the order of the $k$
  selected elements does not matter. This number is so important that has its own notation ${n \choose k}$.&lt;/p&gt;
@@ -274,7 +371,7 @@ collaboration policy carefully.&lt;/p&gt;
       <guid>https://uvacs2102.github.io/class23/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule:5745b40601045f50f1418eebe2f9ce59&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;Here&amp;rsquo;s the updated (and final) schedule for the rest of the semester:&lt;/p&gt;
 
@@ -286,7 +383,7 @@ collaboration policy carefully.&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;galois:5745b40601045f50f1418eebe2f9ce59&#34;&gt;Galois&lt;/h2&gt;
+&lt;h2 id=&#34;galois&#34;&gt;Galois&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://plus.maths.org/content/genius-stupidity-and-genius-again&#34;&gt;&lt;em&gt;Genius, stupidity and genius again&lt;/em&gt;&lt;/a&gt; (the short life of Evariste Galois), by Tope Omitola.&lt;/p&gt;
 
@@ -302,7 +399,7 @@ collaboration policy carefully.&lt;/p&gt;
 &lt;p&gt;&lt;/div&gt;&lt;!--endpdf--&gt;
    &lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;modular-arithmetic:5745b40601045f50f1418eebe2f9ce59&#34;&gt;Modular Arithmetic&lt;/h2&gt;
+&lt;h2 id=&#34;modular-arithmetic&#34;&gt;Modular Arithmetic&lt;/h2&gt;
 
 &lt;p&gt;Definition: A number $a$ is &lt;em&gt;congruent&lt;/em&gt; to $b$ modulo $n$ if and only
 if $n\, | \, (a - b)$.  We can write this as $a \equiv b \;\;
@@ -313,7 +410,7 @@ if $n\, | \, (a - b)$.  We can write this as $a \equiv b \;\;
 
 &lt;p&gt;#&lt;/p&gt;
 
-&lt;h2 id=&#34;groups-rings-and-fields:5745b40601045f50f1418eebe2f9ce59&#34;&gt;Groups, Rings, and Fields&lt;/h2&gt;
+&lt;h2 id=&#34;groups-rings-and-fields&#34;&gt;Groups, Rings, and Fields&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;Abelian group:&lt;/strong&gt; set $R$, with a binary operation $+$:&lt;br /&gt;
    associative, commutative, additive identity (&lt;strong&gt;0&lt;/strong&gt;), additive inverse ($−a$)&lt;/p&gt;
@@ -750,7 +847,7 @@ $$ \forall q \in S. (P(q) \wedge (q \rightarrow r) \in G) \implies P&amp;reg;$$&
       <guid>https://uvacs2102.github.io/class20/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule:dcf75d114d0b27f85507ff1ab741294c&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps8&#34;&gt;&lt;strong&gt;Problem Set 8&lt;/strong&gt;&lt;/a&gt; is due &lt;strong&gt;Friday at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
 
@@ -763,7 +860,7 @@ $$ \forall q \in S. (P(q) \wedge (q \rightarrow r) \in G) \implies P&amp;reg;$$&
 &lt;li&gt;More than 10 requests implies we should spend Thursday’s class on reviewing requested topics, no exam exemptions.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;exam-2:dcf75d114d0b27f85507ff1ab741294c&#34;&gt;Exam 2&lt;/h3&gt;
+&lt;h3 id=&#34;exam-2&#34;&gt;Exam 2&lt;/h3&gt;
 
 &lt;p&gt;Exam 2 will be in class on Thursday, 9 Nov.  You can get a good
 idea for what to expect on Exam 2 based on Exam 1, and also by looking at the &lt;a href=&#34;https://uvacs2102.github.io/docs/practiceexam2.pdf&#34;&gt;Practice Exam
@@ -811,7 +908,7 @@ benefit from doing #3 and #4 as well.&lt;/p&gt;
    &lt;a href=&#34;https://uvacs2102.github.io/docs/class20.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes and Questions&lt;/b&gt;&lt;/a&gt;.
    &lt;/div&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;links:dcf75d114d0b27f85507ff1ab741294c&#34;&gt;Links&lt;/h2&gt;
+&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Goldbach%27s_conjecture&#34;&gt;Goldbach&amp;rsquo;s conjecture&lt;/a&gt;&lt;/p&gt;
 
@@ -823,7 +920,7 @@ benefit from doing #3 and #4 as well.&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;divisibility:dcf75d114d0b27f85507ff1ab741294c&#34;&gt;Divisibility&lt;/h2&gt;
+&lt;h2 id=&#34;divisibility&#34;&gt;Divisibility&lt;/h2&gt;
 
 &lt;p&gt;Number theory is a study of integers $\mathbb{Z}={0,-1,1,-2,2,\dots}$. Adding, multiplying, and negating, are 3 operators on integers that we can define in a straight-forward way. Dividing is more tricky. For that, we first define the notation $a \mid b$ to denote the simpler situation where $b = k \cdot a$ for some $k \in \mathbb{Z}$. In this case, we say that $a$ is a &lt;em&gt;divisor&lt;/em&gt; of $b$ and that $b$ is a &lt;em&gt;multiple&lt;/em&gt; of $a$.&lt;/p&gt;
 
@@ -847,7 +944,7 @@ where $p&lt;em&gt;i &amp;lt; p&lt;/em&gt;{i+1}$ and $p_i$ is prime for all $i$.&
 
 &lt;p&gt;Hint for proof: Use strong induction on $n$, and try to show that any two different representations for $n$ will have the same `smallest&amp;rsquo; prime $p_1$ and the same power $a_1$ for $p_1$.&lt;/p&gt;
 
-&lt;h2 id=&#34;easy-to-state-but-hard-to-solve-problems:dcf75d114d0b27f85507ff1ab741294c&#34;&gt;Easy-to-state, but hard-to-solve problems&lt;/h2&gt;
+&lt;h2 id=&#34;easy-to-state-but-hard-to-solve-problems&#34;&gt;Easy-to-state, but hard-to-solve problems&lt;/h2&gt;
 
 &lt;p&gt;In number theory, we can easily state problems that are super hard to solve. These are some examples.&lt;/p&gt;
 
@@ -857,13 +954,13 @@ where $p&lt;em&gt;i &amp;lt; p&lt;/em&gt;{i+1}$ and $p_i$ is prime for all $i$.&
 
 &lt;p&gt;&lt;strong&gt;Fermat&amp;rsquo;s last theorem:&lt;/strong&gt; For any integer $n&amp;gt;2$ there are no integers $a,b,c$ where $a^n + b^n = c^n$. Note that for $n=2$ there are integer solutions like $3^2 + 4^2 = 5^2$. Fermat claimed to have a proof, but nobody knows if he really did or not. Andrew Wiles eventually proved this in 1994, hence we call it a &lt;em&gt;theorem&lt;/em&gt; and not a conjecture anymore.&lt;/p&gt;
 
-&lt;h2 id=&#34;greatest-common-divisor:dcf75d114d0b27f85507ff1ab741294c&#34;&gt;Greatest Common Divisor&lt;/h2&gt;
+&lt;h2 id=&#34;greatest-common-divisor&#34;&gt;Greatest Common Divisor&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;Definition&lt;/strong&gt; For natural numbers $m,n&amp;gt;0$ we call $d&amp;gt;0$ their \emph{greatest common divisor}, denoted by $d=gcd(m,n)$ if $d$ is the largest number such that $d \mid m$ and $d \mid n$. (Make sure to verify why we can always say that such $d$ exists.)&lt;/p&gt;
 
 &lt;p&gt;We can use the fundamental theorem of arithmetic, to &lt;em&gt;compute&lt;/em&gt; the gcd of any given pairs of integers. But how efficient is it? The problem is that factoring numbers $m,n$ into their prime factors is not something we know how to do efficiently. In particular, no known algorithm is guaranteed to factor all numbers with $1000,000$ digits in less than an (estimated) thousand years! The conjecture is that no such `efficient&amp;rsquo; algorithm exists, and many cryptographic algorithms &lt;em&gt;assume&lt;/em&gt; this is the case!&lt;/p&gt;
 
-&lt;h2 id=&#34;euclid-s-algorithm:dcf75d114d0b27f85507ff1ab741294c&#34;&gt;Euclid&amp;rsquo;s Algorithm&lt;/h2&gt;
+&lt;h2 id=&#34;euclid-s-algorithm&#34;&gt;Euclid&amp;rsquo;s Algorithm&lt;/h2&gt;
 
 &lt;p&gt;Despite not knowing how to factor integers efficiently, Euclid showed how to find gcd quite efficiently. This shows, even if the most ``natural&amp;rdquo; algorithm fails for doing something efficiently, we should always consider the possibility that an alternative way could still exist.&lt;/p&gt;
 
@@ -913,7 +1010,7 @@ decreases.&lt;/p&gt;
       <guid>https://uvacs2102.github.io/class19/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule:90174cd8255fa2ab935573c4a489ebf1&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;&lt;strong&gt;Problem Set 8&lt;/strong&gt; is now due on &lt;strong&gt;Friday, Nov 3&lt;/strong&gt;.&lt;/p&gt;
 
@@ -931,7 +1028,7 @@ decreases.&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;comparing-sets-recap:90174cd8255fa2ab935573c4a489ebf1&#34;&gt;Comparing sets Recap:&lt;/h1&gt;
+&lt;h1 id=&#34;comparing-sets-recap&#34;&gt;Comparing sets Recap:&lt;/h1&gt;
 
 &lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; Sets $A$ and $B$ have the same cardinality, denoted by $|A|=|B|$ if there is a bijection between $A$ and $B$.&lt;/p&gt;
 
@@ -941,7 +1038,7 @@ decreases.&lt;/p&gt;
 \item There is a total injective function from $B$ to $A$.
 \end{enumerate}&lt;/p&gt;
 
-&lt;h1 id=&#34;infinite-sets-recap:90174cd8255fa2ab935573c4a489ebf1&#34;&gt;Infinite Sets Recap&lt;/h1&gt;
+&lt;h1 id=&#34;infinite-sets-recap&#34;&gt;Infinite Sets Recap&lt;/h1&gt;
 
 &lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; A set $C$ is &lt;em&gt;infinite&lt;/em&gt; if and only if &lt;em&gt;either&lt;/em&gt; of the following happens (they are all equivalnet).
 \begin{enumerate}&lt;/p&gt;
@@ -963,7 +1060,7 @@ decreases.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; A set $C$ is &lt;em&gt;countably infinite&lt;/em&gt; if and only if there
   exists a bijection between $C$ and $\mathbb{N}$.&lt;/p&gt;
 
-&lt;h1 id=&#34;cantor-s-theorem:90174cd8255fa2ab935573c4a489ebf1&#34;&gt;Cantor&amp;rsquo;s Theorem&lt;/h1&gt;
+&lt;h1 id=&#34;cantor-s-theorem&#34;&gt;Cantor&amp;rsquo;s Theorem&lt;/h1&gt;
 
 &lt;p&gt;For &lt;strong&gt;all&lt;/strong&gt; sets, $S$, $| pow(S) | &amp;gt; | S |$.&lt;/p&gt;
 
@@ -1003,7 +1100,7 @@ collaboration policy carefully.&lt;/p&gt;
       <guid>https://uvacs2102.github.io/class18/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule:31a24b707f457b52726ca1d5e1ddffba&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps7&#34;&gt;&lt;strong&gt;Problem Set 7&lt;/strong&gt;&lt;/a&gt; is due &lt;strong&gt;Friday (27 Oct) at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
 
@@ -1019,7 +1116,7 @@ collaboration policy carefully.&lt;/p&gt;
    &lt;a href=&#34;https://uvacs2102.github.io/docs/class18.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes&lt;/b&gt;&lt;/a&gt;.
    &lt;/div&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;links:31a24b707f457b52726ca1d5e1ddffba&#34;&gt;Links&lt;/h2&gt;
+&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://www.amazon.com/Logicomix-search-truth-Apostolos-Doxiadis/dp/1596914521/&#34;&gt;&lt;em&gt;Logicomix: An epic search for truth&lt;/em&gt;&lt;/a&gt;, comic book by Apostolos Doxiadis and &lt;a href=&#34;https://people.eecs.berkeley.edu/~christos/&#34;&gt;Christos H. Papadimitrou&lt;/a&gt;.&lt;/p&gt;
 
@@ -1029,7 +1126,7 @@ collaboration policy carefully.&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;countable-and-uncountable-sets:31a24b707f457b52726ca1d5e1ddffba&#34;&gt;Countable and Uncountable Sets&lt;/h2&gt;
+&lt;h2 id=&#34;countable-and-uncountable-sets&#34;&gt;Countable and Uncountable Sets&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; A set $S$ is &lt;em&gt;countably infinite&lt;/em&gt; if and only if there
   exists a bijection between $S$ and $\mathbb{N}$.&lt;/p&gt;
@@ -1061,7 +1158,7 @@ $$&lt;/p&gt;
 
 &lt;!--page--&gt;
 
-&lt;h2 id=&#34;ordinal-and-cardinal-numbers:31a24b707f457b52726ca1d5e1ddffba&#34;&gt;Ordinal and Cardinal Numbers&lt;/h2&gt;
+&lt;h2 id=&#34;ordinal-and-cardinal-numbers&#34;&gt;Ordinal and Cardinal Numbers&lt;/h2&gt;
 
 &lt;p&gt;$\omega$ is the &lt;em&gt;smallest infinite ordinal&lt;/em&gt;.  The first ordinal after
 $0, 1, 2, \cdots$.&lt;/p&gt;
@@ -1081,16 +1178,6 @@ $0, 1, 2, \cdots$.&lt;/p&gt;
 &lt;p&gt;Prove the number of real numbers in the interval $[0, 1]$ is uncountable.&lt;/p&gt;
 
 &lt;p&gt;&lt;/div&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Problem Set 6 Comments</title>
-      <link>https://uvacs2102.github.io/ps6comments/</link>
-      <pubDate>Wed, 25 Oct 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://uvacs2102.github.io/ps6comments/</guid>
-      <description>&lt;p&gt;The Problem Set 6 solutions and comments are now posted in collab: &lt;a href=&#34;https://collab.its.virginia.edu/access/content/group/9bd99d1c-6f18-4542-a7d1-8ffc4fccbd3d/ps6solutions.pdf&#34;&gt;PDF&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     

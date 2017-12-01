@@ -34,7 +34,7 @@
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://uvacs2102.github.io/touch-icon-144-precomposed.png">
 <link href="https://uvacs2102.github.io/favicon.png" rel="icon">
 
-<meta name="generator" content="Hugo 0.16-DEV" />
+<meta name="generator" content="Hugo 0.17" />
 
   <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -149,14 +149,161 @@
   </header>
   
   
-  <p class="fronthead"><A href="">Problem Set 7 Comments</a> (Wed, 1 Nov 2017)</p>
+  <p class="fronthead"><A href="/class20/">Class 20: Number Theory</a> (Thu, 2 Nov 2017)</p>
+    
+
+<h3 id="schedule">Schedule</h3>
+
+<p><a href="/ps/ps8"><strong>Problem Set 8</strong></a> is due <strong>Friday at 6:29pm</strong>.</p>
+
+<p><strong>Tuesday&rsquo;s class</strong> will include a review for Exam 2.  Before 6:59pm
+  Monday, send to <a href="mailto:uvacs2102staff@gmail.com"><em>uvacs2102staff@gmail.com</em></a> topics you would like to review. We will have a similar rule to Exam 1:</p>
+
+<ul>
+<li>Fewer than 10 total requests: it means, class is not being sufficiently challenged and we should be doing more difficult material (except for the 10 requestors who get exam exemptions).</li>
+<li>Exactly 10 total requests: all requestors get automatic exam exemptions, review requested topics.</li>
+<li>More than 10 requests implies we should spend Thursday’s class on reviewing requested topics, no exam exemptions.</li>
+</ul>
+
+<h3 id="exam-2">Exam 2</h3>
+
+<p>Exam 2 will be in class on Thursday, 9 Nov.  You can get a good
+idea for what to expect on Exam 2 based on Exam 1, and also by looking at the <a href="/docs/practiceexam2.pdf">Practice Exam
+2</a> (from last year&rsquo;s class). We strongly
+encourage you to try to problems on your own, before looking at the
+<a href="/docs/practiceexam2-solutions.pdf">posted solutions</a>. The main difference is that this year, we did not cover the topic of &ldquo;stable marriage&rdquo;, but the our exam 2 will also cover the topic of infinities (i.e. infinite sets, countable and uncountable sets, etc.) as well.</p>
+
+<p><strong>Resources.</strong> Similarly to Exam 1, you will be permitted to use a <em>single paper page</em> of
+notes that you prepare and bring to the exam.  It is fine to
+collaborate with others to prepare your notes.  The page should be no
+larger than a US Letter size page ($8.5 \times 11$ inches), and you
+may write (or print) on both sides of the page.  You may not use any
+special devices (e.g., magnifying glasses) to read your page. No other
+resources, other than your own brain, body, and writing instrument,
+are permitted during the exam.</p>
+
+<p><strong>Content.</strong> The problems on the exam will cover material from Classes
+  1&ndash;19, Problem Sets 1&ndash;8 (including the provided solutions), and the relevant material from MCS
+  Chapters 1&ndash;8. However, only one problem will be about the material covered by Exam 1, and the rest will be on the material we covered since Exam 1 (namely, classes 13-19, problem sets 6&ndash;8, and chapters 6,7,8).  Everything on the exam will be something you have seen
+  in at least two of these (Classes, Problem Sets, and MCS Book), and
+  most of the exam will be things you have seen in all three.  If you
+  understand the problems on the problem sets and questions on the class
+  notes well enough to be able to answer similar questions, you should
+  do well on the exam.</p>
+
+<p>Simiarly to Exam 1, for most students, we believe the best way to prepare for the exam
+will be to (1) go over the problem sets and their solutions, and make
+sure you understand well any of the problems you did not get before;
+(2) go through the provided practice exam and try to solve all the
+problems on your own before reading the solutions; (3) go through the
+questions in the class notes and convince yourself you can answer them
+well; (4) re-read chapters of the book, solving the associated
+practice problems, especially for any sections on topics where you had
+difficulty on the problem sets.  If you do #1 and #2 and understand
+well the problems on the practice exam, you should be confident you&rsquo;ll
+do well on the exam; if you struggled on the problem sets, you would
+benefit from doing #3 and #4 as well.</p>
+
+<p><div class="notpdf">
+   <center>
+<script async class="speakerdeck-embed" data-id="e587be0cca304366bf9242a5a79d42de" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+   </center></p>
+
+<p><div class="highlightm">
+   <a href="/docs/class20.pdf">See PDF Version for <b>Notes and Questions</b></a>.
+   </div></p>
+
+<h2 id="links">Links</h2>
+
+<p><a href="https://en.wikipedia.org/wiki/Goldbach%27s_conjecture">Goldbach&rsquo;s conjecture</a></p>
+
+<p><a href="https://www.britannica.com/topic/twin-prime-conjecture">Twin Prime&rsquo;s conjecture</a></p>
+
+<p><a href="https://en.wikipedia.org/wiki/Fermat%27s_Last_Theorem">Fermat&rsquo;s last theorem</a></p>
+
+<p></div><!--endpdf--></p>
+
+<p><div class="latex"></p>
+
+<h2 id="divisibility">Divisibility</h2>
+
+<p>Number theory is a study of integers $\mathbb{Z}={0,-1,1,-2,2,\dots}$. Adding, multiplying, and negating, are 3 operators on integers that we can define in a straight-forward way. Dividing is more tricky. For that, we first define the notation $a \mid b$ to denote the simpler situation where $b = k \cdot a$ for some $k \in \mathbb{Z}$. In this case, we say that $a$ is a <em>divisor</em> of $b$ and that $b$ is a <em>multiple</em> of $a$.</p>
+
+<p>Show that if we assume $a \mid b$ and $a \mid c$ (for any integers $a,b,c$), then for all integers $x,y$ it will hold that $a \mid xa + yb$.</p>
+
+<p>#</p>
+
+<p>When   $b$ is \emph{not} a multiple of $a$, we can still have some form of division, stated in the following theorem.</p>
+
+<p><strong>Theorem [Division Theorem]</strong> For all integers $n,d$, there are integers $q$ (called the quotiont) and $r$ (called the remainder, denoted by $rem(m,d)$) such that
+$$n = q \cdot d + r \text{<del>and</del>}  0\leq r &lt; |d|.$$
+Note that the remainder, as defined here, is always non-negative. For example when dividing $-3$ by $5$ we get $q=-1$ and $r=2$.</p>
+
+<p><strong>Definition</strong> A <em>prime</em> $p$, is an integer $p&gt;1$ such that  $1$ and $p$ are the only positive divisors of $p$. Other $n&gt;1$ numbers (that are not prime) are called composite.</p>
+
+<p>The following well-known  theorem can be proved by strong induction on $n$.</p>
+
+<p><strong>Theorem [Fundamental theorem of arithmetic]</strong>. Any $n&gt;1$ has a unique represention in the following form:
+$$ n = p_1^{a_1} \dots p_k^{a_k}$$
+where $p<em>i &lt; p</em>{i+1}$ and $p_i$ is prime for all $i$.</p>
+
+<p>Hint for proof: Use strong induction on $n$, and try to show that any two different representations for $n$ will have the same `smallest&rsquo; prime $p_1$ and the same power $a_1$ for $p_1$.</p>
+
+<h2 id="easy-to-state-but-hard-to-solve-problems">Easy-to-state, but hard-to-solve problems</h2>
+
+<p>In number theory, we can easily state problems that are super hard to solve. These are some examples.</p>
+
+<p><strong>Goldbach&rsquo;s conjecture:</strong> Any even integer $n&gt;2$ can be written as $n=p+q$ where $p,q$ are both primes. The conjecture is still open, though we know that it is correct for all $n \leq 10^{18}$.</p>
+
+<p><strong>Twin prime&rsquo;s conjecture:</strong> There infinite prime numbers $p$ where $p+2$ is also prime. Note that we cannot `check the conjecture up to $n$&rsquo; anymore! And it is still open&hellip;</p>
+
+<p><strong>Fermat&rsquo;s last theorem:</strong> For any integer $n&gt;2$ there are no integers $a,b,c$ where $a^n + b^n = c^n$. Note that for $n=2$ there are integer solutions like $3^2 + 4^2 = 5^2$. Fermat claimed to have a proof, but nobody knows if he really did or not. Andrew Wiles eventually proved this in 1994, hence we call it a <em>theorem</em> and not a conjecture anymore.</p>
+
+<h2 id="greatest-common-divisor">Greatest Common Divisor</h2>
+
+<p><strong>Definition</strong> For natural numbers $m,n&gt;0$ we call $d&gt;0$ their \emph{greatest common divisor}, denoted by $d=gcd(m,n)$ if $d$ is the largest number such that $d \mid m$ and $d \mid n$. (Make sure to verify why we can always say that such $d$ exists.)</p>
+
+<p>We can use the fundamental theorem of arithmetic, to <em>compute</em> the gcd of any given pairs of integers. But how efficient is it? The problem is that factoring numbers $m,n$ into their prime factors is not something we know how to do efficiently. In particular, no known algorithm is guaranteed to factor all numbers with $1000,000$ digits in less than an (estimated) thousand years! The conjecture is that no such `efficient&rsquo; algorithm exists, and many cryptographic algorithms <em>assume</em> this is the case!</p>
+
+<h2 id="euclid-s-algorithm">Euclid&rsquo;s Algorithm</h2>
+
+<p>Despite not knowing how to factor integers efficiently, Euclid showed how to find gcd quite efficiently. This shows, even if the most ``natural&rdquo; algorithm fails for doing something efficiently, we should always consider the possibility that an alternative way could still exist.</p>
+
+<pre><code class="language-python">def Euclid_gcd(m, n):
+   while n &gt; 0:
+      r = rem(m,n)
+      m = n
+      n = r
+   return m
+</code></pre>
+
+<p>What is a good state machine modeling the behavior of Euclid&rsquo;s algorithm?</p>
+
+<p>Suppose $d$ is any integer (in particular, it could be the gcd of the original state $(m,n)$ of the state machine for Eclid&rsquo;s algorithm). Show that $gcd(a,b)=d$ is a preserved invariant for the transition graph of this state machine. Namely, if we go from one state to another state, the gcd does not change.</p>
+
+<p>#</p>
+
+<p>If the Euclid&rsquo;s algorithm ends, at the very last step we will have $n=0$ which means $m$ is indeed the right gcd for that particular (final) state. Together with the preserved invariant (that you proved above), argue that the program has \emph{partial correctness}. Namely: if it ends, it outputs correctly.</p>
+
+<p>#</p>
+
+<p>Now prove the termination. Namely, show that the Euclid&rsquo;s gcd algorithm will always end. Hint, look at $a+b$ for any state $(a,b)$ that we are in, and show that it always
+decreases.</p>
+
+<p>#</p>
+
+<p>Amazing thing about Euclid&rsquo;s algorithm is that it is indeed quite efficient. A better analysis shows that it will always terminate in $\log (m+n)$ steps. (Hint: show that after two steps, $m$ will be at most <em>half</em> of what it was before..)
+</div></p>
+ 
+  
+  <p class="fronthead"><A href="/ps7comments/">Problem Set 7 Comments</a> (Wed, 1 Nov 2017)</p>
     <p>The Problem Set 7 solutions and comments are now posted in collab: <a href="https://collab.its.virginia.edu/access/content/group/9bd99d1c-6f18-4542-a7d1-8ffc4fccbd3d/ps7solutions.pdf">PDF</a></p>
  
   
-  <p class="fronthead"><A href="">Class 19: Reviewing Infinities</a> (Tue, 31 Oct 2017)</p>
+  <p class="fronthead"><A href="/class19/">Class 19: Reviewing Infinities</a> (Tue, 31 Oct 2017)</p>
     
 
-<h3 id="schedule:90174cd8255fa2ab935573c4a489ebf1">Schedule</h3>
+<h3 id="schedule">Schedule</h3>
 
 <p><strong>Problem Set 8</strong> is now due on <strong>Friday, Nov 3</strong>.</p>
 
@@ -174,7 +321,7 @@
 
 <p><div class="latex"></p>
 
-<h1 id="comparing-sets-recap:90174cd8255fa2ab935573c4a489ebf1">Comparing sets Recap:</h1>
+<h1 id="comparing-sets-recap">Comparing sets Recap:</h1>
 
 <p><strong>Definition.</strong> Sets $A$ and $B$ have the same cardinality, denoted by $|A|=|B|$ if there is a bijection between $A$ and $B$.</p>
 
@@ -184,7 +331,7 @@
 \item There is a total injective function from $B$ to $A$.
 \end{enumerate}</p>
 
-<h1 id="infinite-sets-recap:90174cd8255fa2ab935573c4a489ebf1">Infinite Sets Recap</h1>
+<h1 id="infinite-sets-recap">Infinite Sets Recap</h1>
 
 <p><strong>Definition.</strong> A set $C$ is <em>infinite</em> if and only if <em>either</em> of the following happens (they are all equivalnet).
 \begin{enumerate}</p>
@@ -206,7 +353,7 @@
 <p><strong>Definition.</strong> A set $C$ is <em>countably infinite</em> if and only if there
   exists a bijection between $C$ and $\mathbb{N}$.</p>
 
-<h1 id="cantor-s-theorem:90174cd8255fa2ab935573c4a489ebf1">Cantor&rsquo;s Theorem</h1>
+<h1 id="cantor-s-theorem">Cantor&rsquo;s Theorem</h1>
 
 <p>For <strong>all</strong> sets, $S$, $| pow(S) | &gt; | S |$.</p>
 
@@ -225,16 +372,16 @@
 <p></div></p>
  
   
-  <p class="fronthead"><A href="">Problem Set 8</a> (Sat, 28 Oct 2017)</p>
+  <p class="fronthead"><A href="/ps8posted/">Problem Set 8</a> (Sat, 28 Oct 2017)</p>
     <p><a href="/ps/ps8"><strong>Problem Set 8</strong></a> [<a href="/docs/ps8.pdf">PDF</a>] is now posted and
 is due <strong>Friday, 3 Nov at 6:29:00pm</strong>. Please read the
 collaboration policy carefully.</p>
  
   
-  <p class="fronthead"><A href="">Class 18: Spooky Infinities</a> (Thu, 26 Oct 2017)</p>
+  <p class="fronthead"><A href="/class18/">Class 18: Spooky Infinities</a> (Thu, 26 Oct 2017)</p>
     
 
-<h3 id="schedule:31a24b707f457b52726ca1d5e1ddffba">Schedule</h3>
+<h3 id="schedule">Schedule</h3>
 
 <p><a href="/ps/ps7"><strong>Problem Set 7</strong></a> is due <strong>Friday (27 Oct) at 6:29pm</strong>.</p>
 
@@ -250,7 +397,7 @@ collaboration policy carefully.</p>
    <a href="/docs/class18.pdf">See PDF Version for <b>Notes</b></a>.
    </div></p>
 
-<h2 id="links:31a24b707f457b52726ca1d5e1ddffba">Links</h2>
+<h2 id="links">Links</h2>
 
 <p><a href="https://www.amazon.com/Logicomix-search-truth-Apostolos-Doxiadis/dp/1596914521/"><em>Logicomix: An epic search for truth</em></a>, comic book by Apostolos Doxiadis and <a href="https://people.eecs.berkeley.edu/~christos/">Christos H. Papadimitrou</a>.</p>
 
@@ -260,7 +407,7 @@ collaboration policy carefully.</p>
 
 <p><div class="latex"></p>
 
-<h2 id="countable-and-uncountable-sets:31a24b707f457b52726ca1d5e1ddffba">Countable and Uncountable Sets</h2>
+<h2 id="countable-and-uncountable-sets">Countable and Uncountable Sets</h2>
 
 <p><strong>Definition.</strong> A set $S$ is <em>countably infinite</em> if and only if there
   exists a bijection between $S$ and $\mathbb{N}$.</p>
@@ -292,7 +439,7 @@ $$</p>
 
 <!--page-->
 
-<h2 id="ordinal-and-cardinal-numbers:31a24b707f457b52726ca1d5e1ddffba">Ordinal and Cardinal Numbers</h2>
+<h2 id="ordinal-and-cardinal-numbers">Ordinal and Cardinal Numbers</h2>
 
 <p>$\omega$ is the <em>smallest infinite ordinal</em>.  The first ordinal after
 $0, 1, 2, \cdots$.</p>
@@ -314,14 +461,14 @@ $0, 1, 2, \cdots$.</p>
 <p></div></p>
  
   
-  <p class="fronthead"><A href="">Problem Set 6 Comments</a> (Wed, 25 Oct 2017)</p>
+  <p class="fronthead"><A href="/ps6comments/">Problem Set 6 Comments</a> (Wed, 25 Oct 2017)</p>
     <p>The Problem Set 6 solutions and comments are now posted in collab: <a href="https://collab.its.virginia.edu/access/content/group/9bd99d1c-6f18-4542-a7d1-8ffc4fccbd3d/ps6solutions.pdf">PDF</a></p>
  
   
-  <p class="fronthead"><A href="">Class 17: Infinite Sets</a> (Tue, 24 Oct 2017)</p>
+  <p class="fronthead"><A href="/class17/">Class 17: Infinite Sets</a> (Tue, 24 Oct 2017)</p>
     
 
-<h3 id="schedule:8b7b3a27abcb870c301f99da90607ac1">Schedule</h3>
+<h3 id="schedule">Schedule</h3>
 
 <p>Before Thursday, everyone should have finished reading MCS Chapter 8.</p>
 
@@ -336,7 +483,7 @@ $0, 1, 2, \cdots$.</p>
    <a href="/docs/class17.pdf">See PDF Version for <b>Notes</b></a>.
    </div></p>
 
-<h2 id="links:8b7b3a27abcb870c301f99da90607ac1">Links</h2>
+<h2 id="links">Links</h2>
 
 <p><a href="http://www.cs.cornell.edu/courses/cs2800/2017fa/lectures/lec14-cantor.html">Proof of Schr&ouml;der-Bernstein Theorem</a></p>
 
@@ -344,7 +491,7 @@ $0, 1, 2, \cdots$.</p>
 
 <p><div class="latex"></p>
 
-<h1 id="infinite-sets:8b7b3a27abcb870c301f99da90607ac1">Infinite Sets</h1>
+<h1 id="infinite-sets">Infinite Sets</h1>
 
 <p><strong>Finite Cardinality.</strong> The <em>cardinality</em> of the set
 $$
@@ -362,7 +509,7 @@ cardinality.  (Class 9)</p>
 
 <p>Show that $\mathbb{Z}$ is infinite.</p>
 
-<h3 id="cardinality-of-infinite-sets:8b7b3a27abcb870c301f99da90607ac1">Cardinality of Infinite Sets</h3>
+<h3 id="cardinality-of-infinite-sets">Cardinality of Infinite Sets</h3>
 
 <p><strong>Equal Carinalities.</strong> We say $|A|\; = |B|$  for arbitrary sets $A,B$ (and say that they have the same cardinality), if there is a bijection between $A$ and $B$.</p>
 
@@ -374,7 +521,7 @@ cardinality.  (Class 9)</p>
 
 <p><strong>Schr\wrap{\&ldquo;{o}}der-Bernstein Theorem:</strong> If $|A|\; \leq |B|$ and $|B|\; \leq |A|$, then there is a bijection between $A$ and $B$, namely $|A|\; = |B|$. (Not proven in cs2102; this is somewhat tricky to prove! For a full proof, see <a href="http://www.cs.cornell.edu/courses/cs2800/2017fa/lectures/lec14-cantor.html">the linked lecture notes</a>.)</p>
 
-<h3 id="other-definitions-for-infinite-sets:8b7b3a27abcb870c301f99da90607ac1">Other Definitions for Infinite Sets</h3>
+<h3 id="other-definitions-for-infinite-sets">Other Definitions for Infinite Sets</h3>
 
 <p><strong>Dedekind-Infinite.</strong> A set $A$ is <em>Dedekind-infinite</em> if and only if there exists a <em>strict subset</em> of $A$ with the same cardinality as $A$.  That is,
 $$\exists B \subset A \ldotp \exists R \ldotp R\ \text{is a bijection between}\ A\ \text{and}\ B.$$</p>
@@ -409,13 +556,13 @@ equivalent definitions?</p>
 <p></div></p>
  
   
-  <p class="fronthead"><A href="">Problem Set 7</a> (Fri, 20 Oct 2017)</p>
+  <p class="fronthead"><A href="/ps7posted/">Problem Set 7</a> (Fri, 20 Oct 2017)</p>
     <p><a href="/ps/ps7"><strong>Problem Set 7</strong></a> [<a href="/docs/ps7.pdf">PDF</a>] is now posted and
 is due <strong>Friday, 27 Oct at 6:29:00pm</strong>. Please read the
 collaboration policy carefully.</p>
  
   
-  <p class="fronthead"><A href="">Class 16: Structural Induction</a> (Thu, 19 Oct 2017)</p>
+  <p class="fronthead"><A href="/class16/">Class 16: Structural Induction</a> (Thu, 19 Oct 2017)</p>
     
 
 <h3 id="schedule">Schedule</h3>
@@ -443,10 +590,10 @@ collaboration policy carefully.</p>
 
 <p>\begin{equation<em>}
 \begin{split}
-\text{\em first}(\text{prepend}(e, l)) &amp;= e \
-\text{\em rest}(\text{prepend}(e, l)) &amp;= l \
-\text{\em empty}(\text{prepend}(e, l)) &amp;= \text{\bf False} \
-\text{\em empty}(\text{\bf null}) &amp;= \text{\bf True} \
+\text{\em first}(\text{prepend}(e, l)) &amp;= e <br />
+\text{\em rest}(\text{prepend}(e, l)) &amp;= l <br />
+\text{\em empty}(\text{prepend}(e, l)) &amp;= \text{\bf False} <br />
+\text{\em empty}(\text{\bf null}) &amp;= \text{\bf True} <br />
 \end{split}
 \end{equation</em>}</p>
 
@@ -454,8 +601,8 @@ collaboration policy carefully.</p>
 \begin{equation<em>}
 \begin{split}
 \begin{cases}
-0 &amp; \text{if}\ p\ \text{is \bf null} \
-\text{\em length}(q) + 1 &amp; \text{otherwise}\ p = \text{\em prepend}(e, q)\ \text{for some object}\ e\ \text{and some list}\ q \
+0 &amp; \text{if}\ p\ \text{is \bf null} <br />
+\text{\em length}(q) + 1 &amp; \text{otherwise}\ p = \text{\em prepend}(e, q)\ \text{for some object}\ e\ \text{and some list}\ q <br />
 \end{cases}
 \end{split}
 \end{equation</em>}</p>
@@ -499,11 +646,11 @@ using any &ldquo;construct case&rdquo; rules, then $P(x)$ is true as well.</li>
 <p>\begin{center}
 \begin{tabular}{lccc}
 &amp; {\bf Regular Induction} &amp; {\bf Invariant Principle} &amp; {\bf Structural Induction} \ \hline
-Works on: &amp; natural numbers &amp; state machines &amp; data types \
-To prove $P(\cdot)$ &amp; {\em for all natural numbers} &amp; {\em for all reachable states} &amp; {\em for all data type objects} \
-Prove {\bf base case(s)} &amp; $P(0)$ &amp; $P(q_0)$ &amp; $P(\text{base object(s)})$ \
-and {\bf inductive step} &amp; $\forall m \in \mathbb{N} \ldotp$ &amp; $\forall (q, r) \in G \ldotp $ &amp; $\forall s \in \text{\em Type} \ldotp$ \
-  &amp; $P(m) \implies P(m+1)$ &amp; $P(q) \implies P&reg;$ &amp; $P(s) \implies P(t)$ \
+Works on: &amp; natural numbers &amp; state machines &amp; data types <br />
+To prove $P(\cdot)$ &amp; {\em for all natural numbers} &amp; {\em for all reachable states} &amp; {\em for all data type objects} <br />
+Prove {\bf base case(s)} &amp; $P(0)$ &amp; $P(q_0)$ &amp; $P(\text{base object(s)})$ <br />
+and {\bf inductive step} &amp; $\forall m \in \mathbb{N} \ldotp$ &amp; $\forall (q, r) \in G \ldotp $ &amp; $\forall s \in \text{\em Type} \ldotp$ <br />
+  &amp; $P(m) \implies P(m+1)$ &amp; $P(q) \implies P&reg;$ &amp; $P(s) \implies P(t)$ <br />
  &amp; &amp; &amp; $\quad \forall t\ \text{constructable from}\ s$ \
 \end{tabular}
 \end{center}</p>
@@ -518,7 +665,7 @@ and {\bf inductive step} &amp; $\forall m \in \mathbb{N} \ldotp$ &amp; $\forall 
 <p></div></p>
  
   
-  <p class="fronthead"><A href="">Class 15: Recursive Data Types</a> (Tue, 17 Oct 2017)</p>
+  <p class="fronthead"><A href="/class15/">Class 15: Recursive Data Types</a> (Tue, 17 Oct 2017)</p>
     
 
 <h3 id="schedule">Schedule</h3>
@@ -599,7 +746,7 @@ this using regular Induction.</p>
 
 <p><strong>Definition.</strong> A $\text{\em Pair}$ is a datatype that supports these three operations:<br />
 \begin{quote}
-     $\text{\em make_pair}: \text{\em Object} \times \text{\em Object} \rightarrow \text{\em Pair}$\
+     $\text{\em make_pair}: \text{\em Object} \times \text{\em Object} \rightarrow \text{\em Pair}$<br />
      $\text{\em pair_first}: \text{\em Pair} \rightarrow \text{\em Object}$\<br />
      $\text{\em pair_last}: \text{\em Pair} \rightarrow \text{\em Object}$\<br />
 \end{quote}
@@ -626,135 +773,6 @@ def pair_last(p):
   the pair is a <em>List</em>, or (2) the empty list.</p>
 
 <p><strong>Definition (2).</strong> A <em>List</em> is a ordered sequence of objects.</p>
-
-<p></div></p>
- 
-  
-  <p class="fronthead"><A href="">Class 14: Invariant Principle</a> (Thu, 12 Oct 2017)</p>
-    
-
-<h3 id="schedule">Schedule</h3>
-
-<p><a href="/ps/ps6"><strong>Problem Set 6</strong></a> is due <strong>20 October (Friday) at 6:29pm</strong>.</p>
-
-<p>Exam 1 was returned Tuesday.  If you did not pick yours up yet, you
-can get it after class today.  We will start charging
-exponentially-increasing storage fees for inexcusably unclaimed exams
-starting after Prof. Mahmoody&rsquo;s office hours Monday.</p>
-
-<p><div class="notpdf">
-   <center>
-<script async class="speakerdeck-embed" data-id="02ef275aa1474918a22516979d995c6d" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-   </center>
-   <div class="highlightm">
-   <a href="/docs/class14.pdf">See PDF Version for <b>Notes</b></a>.
-   </div>
-   </div><!--endpdf--></p>
-
-<p><div class="latex"></p>
-
-<h2 id="state-machines-review-from-class-13">State Machines (review from Class 13)</h2>
-
-<p>A <em>state machine</em>, $M = (S, G: S \times S, q_0 \in S)$, is a binary
-relation (called a <em>transition relation</em>) on a set (both the domain and
-codomain are the same set).  One state, denoted $q_0$, is designated as
-the <em>start state</em>.</p>
-
-<p>An <em>execution</em> of a state machine $M = (S, G \subseteq S \times S, q_0
-\in S)$ is a (possibly infinite) sequence of states, $(x_0, x_1, \cdots,
-x_n)$ where (1) $x_0 = q_0$ (it begins with the start state), and (2)
-$\forall i \in {0, 1, \ldots, n - 1} \ldotp (x<em>i, x</em>{i + 1}) \in G$
-(if $q$ and $r$ are consecutive states in the sequence, then there is an
-edge $q \rightarrow r$ in $G$).</p>
-
-<p>A state $q$ is <em>reachable</em> if it appears in some execution.</p>
-
-<p>A <em>preserved invariant</em> of a state machine $M = (S, G \subseteq S \times
-S, q_0 \in S)$ is a predicate, $P$, on states, such that whenever $P(q)$
-is true of a state $q$, and $q \rightarrow r \in G$, then $P&reg;$ is
-true.</p>
-
-<h3 id="bishop-state-machine">Bishop State Machine</h3>
-
-<p>$S = { (\fillin ) \, | \, r, c \in \mathbb{N} }$
-$G = { (r, c) \rightarrow (r&rsquo;, c&rsquo;) \, | \, r, c \in \mathbb{N} \wedge (\exists d \in \mathbb{N}^{+} \textrm{ such that } r&rsquo; = r \fillin d \wedge r&rsquo; \ge 0 \wedge c&rsquo; = c \fillin d \wedge c&rsquo; \ge 0 }$
-$q_0 = (0, 2)$</p>
-
-<p>What states are <em>reachable</em>?</p>
-
-<p>#</p>
-
-<h3 id="progress-machine">``Progress&rdquo; Machine</h3>
-
-<p>$S = { (x, d) \, | \, x \in \mathbb{Z}, d \in { \mathrm{\bf F}, \mathrm{\bf B}} }$
-$G = { (x, \mathrm{\bf F}) \rightarrow (x + 1, \mathrm{\bf B}) \, | \, x \in \mathbb{Z} } \cup
-     { (x, \mathrm{\bf B}) \rightarrow (x - 2, \mathrm{\bf F}) \, | \, x \in \mathbb{Z} }$
-$q_0 = (0, \mathrm{\bf F})$</p>
-
-<p>Which states are <em>reachable</em>?</p>
-
-<!--page-->
-
-<h2 id="preserved-invariants">Preserved Invariants</h2>
-
-<p>A predicate $P(q)$ is a <em>preserved invariant</em> of machine $M = (S, G \subseteq S \times S, q_0 \in
-  S)$ if:
-$$
-\forall q \in S \ldotp (P(q) \wedge (q \rightarrow r) \in G) \implies P&reg;
-$$</p>
-
-<p>What are some <em>preserved invariants</em> for the (original) Bishop State Machine?</p>
-
-<p><strong>Invariant Principle.</strong> If a <em>preserved invariant</em> of a state machine
-  is true for the start state, it is true for all reachable states.</p>
-
-<p>To show $P(q)$ for machine $M = (S, G \subseteq S \times S, q_0 \in
-  S)$ all $q \in S$, show:</p>
-
-<ol>
-<li>Base case: $P(\fillin)$</li>
-<li>$\forall s \in S \ldotp \fillin \implies \fillin$</li>
-</ol>
-
-<p>Prove that the original Bishop State Machine never reaches a square where $r + c$ is odd.</p>
-
-<!--page-->
-
-<h1 id="slow-exponentiation">Slow Exponentiation</h1>
-
-<pre><code class="language-python">def slow_power(a, b):
-   y = 1
-   z = b
-   while z &gt; 0:
-      y = y * a
-      z = z - 1
-   return y
-</code></pre>
-
-<p>$S ::= \mathbb{N} \times \mathbb{N}$
-$G ::= { (y, z) \rightarrow (y \cdot a, z - 1) \, | \, \forall y, z \in \mathbb{N}^{+}}$
-$q_0 ::= (1, b)$</p>
-
-<p>Prove <code>slow_power(a, b)</code> = $a^b$.</p>
-
-<p>#</p>
-
-<h1 id="fast-exponentiation">Fast Exponentiation</h1>
-
-<p>This is the algorithm from Section 6.3.1 written as Python code:</p>
-
-<pre><code class="language-python">def power(a, b):
-   x = a
-   y = 1
-   z = b
-   while z &gt; 0:
-      r = z % 2 # remainder of z / 2
-      z = z // 2 # quotient of z / 2
-      if r == 1:
-         y = x * y
-      x = x * x
-   return y
-</code></pre>
 
 <p></div></p>
  
