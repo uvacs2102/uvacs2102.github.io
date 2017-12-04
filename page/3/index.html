@@ -34,7 +34,7 @@
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://uvacs2102.github.io/touch-icon-144-precomposed.png">
 <link href="https://uvacs2102.github.io/favicon.png" rel="icon">
 
-<meta name="generator" content="Hugo 0.16-DEV" />
+<meta name="generator" content="Hugo 0.17" />
 
   <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -149,10 +149,10 @@
   </header>
   
   
-  <p class="fronthead"><A href="">Class 16: Structural Induction</a> (Thu, 19 Oct 2017)</p>
+  <p class="fronthead"><A href="/class16/">Class 16: Structural Induction</a> (Thu, 19 Oct 2017)</p>
     
 
-<h3 id="schedule:e5faf2b6fe551ee3e6bfd5f1acfee2f5">Schedule</h3>
+<h3 id="schedule">Schedule</h3>
 
 <p><a href="/ps/ps7"><strong>Problem Set 6</strong></a> is due <strong>tomorrow at 6:29pm</strong>. Make sure to read the corrected version of Problem 7.</p>
 
@@ -169,7 +169,7 @@
 
 <p><div class="latex"></p>
 
-<h1 id="lists:e5faf2b6fe551ee3e6bfd5f1acfee2f5">Lists</h1>
+<h1 id="lists">Lists</h1>
 
 <p><strong>Definition.</strong> A <em>list</em> is an ordered sequence of objects.  A list is
   either the empty list ($\lambda$), or the result of $\text{prepend}(e,
@@ -177,10 +177,10 @@
 
 <p>\begin{equation<em>}
 \begin{split}
-\text{\em first}(\text{prepend}(e, l)) &amp;= e \
-\text{\em rest}(\text{prepend}(e, l)) &amp;= l \
-\text{\em empty}(\text{prepend}(e, l)) &amp;= \text{\bf False} \
-\text{\em empty}(\text{\bf null}) &amp;= \text{\bf True} \
+\text{\em first}(\text{prepend}(e, l)) &amp;= e <br />
+\text{\em rest}(\text{prepend}(e, l)) &amp;= l <br />
+\text{\em empty}(\text{prepend}(e, l)) &amp;= \text{\bf False} <br />
+\text{\em empty}(\text{\bf null}) &amp;= \text{\bf True} <br />
 \end{split}
 \end{equation</em>}</p>
 
@@ -188,8 +188,8 @@
 \begin{equation<em>}
 \begin{split}
 \begin{cases}
-0 &amp; \text{if}\ p\ \text{is \bf null} \
-\text{\em length}(q) + 1 &amp; \text{otherwise}\ p = \text{\em prepend}(e, q)\ \text{for some object}\ e\ \text{and some list}\ q \
+0 &amp; \text{if}\ p\ \text{is \bf null} <br />
+\text{\em length}(q) + 1 &amp; \text{otherwise}\ p = \text{\em prepend}(e, q)\ \text{for some object}\ e\ \text{and some list}\ q <br />
 \end{cases}
 \end{split}
 \end{equation</em>}</p>
@@ -206,7 +206,7 @@
 
 <!--page-->
 
-<h2 id="concatenation:e5faf2b6fe551ee3e6bfd5f1acfee2f5">Concatenation</h2>
+<h2 id="concatenation">Concatenation</h2>
 
 <p><strong>Definition.</strong> The <em>concatenation</em> of two lists, $p = (p_1, p_2, \cdots, p_n)$ and $q = (q_1, q_2, \cdots, q_m)$ is
 $$(p_1, p_2, \cdots, p_n, q_1, q_2, \cdots, q_m).$$</p>
@@ -217,7 +217,7 @@ $$(p_1, p_2, \cdots, p_n, q_1, q_2, \cdots, q_m).$$</p>
 
 <p>#</p>
 
-<h2 id="structural-induction:e5faf2b6fe551ee3e6bfd5f1acfee2f5">Structural Induction</h2>
+<h2 id="structural-induction">Structural Induction</h2>
 
 <p>To prove proposition $P(x)$ for element $x \in D$ where $D$ is a
 recursively-constructed data type, we do two things:</p>
@@ -228,16 +228,16 @@ recursively-constructed data type, we do two things:</p>
 using any &ldquo;construct case&rdquo; rules, then $P(x)$ is true as well.</li>
 </ol>
 
-<h2 id="comparing-various-forms-of-induction:e5faf2b6fe551ee3e6bfd5f1acfee2f5">Comparing Various forms of Induction</h2>
+<h2 id="comparing-various-forms-of-induction">Comparing Various forms of Induction</h2>
 
 <p>\begin{center}
 \begin{tabular}{lccc}
 &amp; {\bf Regular Induction} &amp; {\bf Invariant Principle} &amp; {\bf Structural Induction} \ \hline
-Works on: &amp; natural numbers &amp; state machines &amp; data types \
-To prove $P(\cdot)$ &amp; {\em for all natural numbers} &amp; {\em for all reachable states} &amp; {\em for all data type objects} \
-Prove {\bf base case(s)} &amp; $P(0)$ &amp; $P(q_0)$ &amp; $P(\text{base object(s)})$ \
-and {\bf inductive step} &amp; $\forall m \in \mathbb{N} \ldotp$ &amp; $\forall (q, r) \in G \ldotp $ &amp; $\forall s \in \text{\em Type} \ldotp$ \
-  &amp; $P(m) \implies P(m+1)$ &amp; $P(q) \implies P&reg;$ &amp; $P(s) \implies P(t)$ \
+Works on: &amp; natural numbers &amp; state machines &amp; data types <br />
+To prove $P(\cdot)$ &amp; {\em for all natural numbers} &amp; {\em for all reachable states} &amp; {\em for all data type objects} <br />
+Prove {\bf base case(s)} &amp; $P(0)$ &amp; $P(q_0)$ &amp; $P(\text{base object(s)})$ <br />
+and {\bf inductive step} &amp; $\forall m \in \mathbb{N} \ldotp$ &amp; $\forall (q, r) \in G \ldotp $ &amp; $\forall s \in \text{\em Type} \ldotp$ <br />
+  &amp; $P(m) \implies P(m+1)$ &amp; $P(q) \implies P&reg;$ &amp; $P(s) \implies P(t)$ <br />
  &amp; &amp; &amp; $\quad \forall t\ \text{constructable from}\ s$ \
 \end{tabular}
 \end{center}</p>
@@ -252,7 +252,7 @@ and {\bf inductive step} &amp; $\forall m \in \mathbb{N} \ldotp$ &amp; $\forall 
 <p></div></p>
  
   
-  <p class="fronthead"><A href="">Class 15: Recursive Data Types</a> (Tue, 17 Oct 2017)</p>
+  <p class="fronthead"><A href="/class15/">Class 15: Recursive Data Types</a> (Tue, 17 Oct 2017)</p>
     
 
 <h3 id="schedule">Schedule</h3>
@@ -333,7 +333,7 @@ this using regular Induction.</p>
 
 <p><strong>Definition.</strong> A $\text{\em Pair}$ is a datatype that supports these three operations:<br />
 \begin{quote}
-     $\text{\em make_pair}: \text{\em Object} \times \text{\em Object} \rightarrow \text{\em Pair}$\
+     $\text{\em make_pair}: \text{\em Object} \times \text{\em Object} \rightarrow \text{\em Pair}$<br />
      $\text{\em pair_first}: \text{\em Pair} \rightarrow \text{\em Object}$\<br />
      $\text{\em pair_last}: \text{\em Pair} \rightarrow \text{\em Object}$\<br />
 \end{quote}
@@ -364,7 +364,7 @@ def pair_last(p):
 <p></div></p>
  
   
-  <p class="fronthead"><A href="">Class 14: Invariant Principle</a> (Thu, 12 Oct 2017)</p>
+  <p class="fronthead"><A href="/class14/">Class 14: Invariant Principle</a> (Thu, 12 Oct 2017)</p>
     
 
 <h3 id="schedule">Schedule</h3>
@@ -493,13 +493,13 @@ $q_0 ::= (1, b)$</p>
 <p></div></p>
  
   
-  <p class="fronthead"><A href="">Problem Set 6</a> (Thu, 12 Oct 2017)</p>
+  <p class="fronthead"><A href="/ps6posted/">Problem Set 6</a> (Thu, 12 Oct 2017)</p>
     <p><a href="/ps/ps6"><strong>Problem Set 6</strong></a> [<a href="/docs/ps6.pdf">PDF</a>] is now posted and
 is due <strong>Friday, 20 Oct at 6:29:00pm</strong>. Please read the
 collaboration policy carefully.</p>
  
   
-  <p class="fronthead"><A href="">Class 13: State Machines</a> (Tue, 10 Oct 2017)</p>
+  <p class="fronthead"><A href="/class13/">Class 13: State Machines</a> (Tue, 10 Oct 2017)</p>
     
 
 <h3 id="schedule">Schedule</h3>
@@ -579,7 +579,7 @@ $$</p>
 <p></div></p>
  
   
-  <p class="fronthead"><A href="">Fall Break Office Hours</a> (Sun, 1 Oct 2017)</p>
+  <p class="fronthead"><A href="/fbofficehours/">Fall Break Office Hours</a> (Sun, 1 Oct 2017)</p>
     
 
 <p>The office hours schedule for next week will be different from normal
@@ -620,11 +620,11 @@ Prashant Gorthi, 11am-noon</p>
 hours schedule will resume on Monday, 9 October.</p>
  
   
-  <p class="fronthead"><A href="">Problem Set 5 Comments</a> (Sun, 1 Oct 2017)</p>
+  <p class="fronthead"><A href="/ps5comments/">Problem Set 5 Comments</a> (Sun, 1 Oct 2017)</p>
     <p>The Problem Set 5 solutions and comments are now posted in collab: <a href="https://collab.its.virginia.edu/access/content/group/9bd99d1c-6f18-4542-a7d1-8ffc4fccbd3d/ps5solutions.pdf">PDF</a></p>
  
   
-  <p class="fronthead"><A href="">Class 12: Review</a> (Thu, 28 Sep 2017)</p>
+  <p class="fronthead"><A href="/class12/">Class 12: Review</a> (Thu, 28 Sep 2017)</p>
     
 
 <h3 id="schedule">Schedule</h3>
@@ -757,14 +757,14 @@ properties <em>might</em> be impacted?</p>
 <p></div></p>
  
   
-  <p class="fronthead"><A href="">Problem Set 4 Comments</a> (Wed, 27 Sep 2017)</p>
+  <p class="fronthead"><A href="/ps4comments/">Problem Set 4 Comments</a> (Wed, 27 Sep 2017)</p>
     <p>The Problem Set 4 solutions and comments are now posted in collab: <a href="https://collab.its.virginia.edu/access/content/group/9bd99d1c-6f18-4542-a7d1-8ffc4fccbd3d/ps4solutions.pdf">PDF</a></p>
  
   
-  <p class="fronthead"><A href="">Class 11: Induction Practice</a> (Tue, 26 Sep 2017)</p>
+  <p class="fronthead"><A href="/class11/">Class 11: Induction Practice</a> (Tue, 26 Sep 2017)</p>
     
 
-<h3 id="schedule:af81afa25b288e26509ba0728268a3b7">Schedule</h3>
+<h3 id="schedule">Schedule</h3>
 
 <p><a href="/ps/ps5"><strong>Problem Set 5</strong></a> is due <strong>Friday at 6:29pm</strong>.</p>
 
@@ -777,7 +777,7 @@ properties <em>might</em> be impacted?</p>
 <li>more than 10 requests implies we should spend Thursday’s class on reviewing requested topics, no exam exemptions.</li>
 </ul>
 
-<h3 id="exam-1:af81afa25b288e26509ba0728268a3b7">Exam 1</h3>
+<h3 id="exam-1">Exam 1</h3>
 
 <p>Exam 1 will be in class on Thursday, 5 October.  You can get a good
 idea what to expect on Exam 1 by looking at the <a href="/docs/practiceexam1.pdf">Practice Exam
@@ -860,7 +860,7 @@ benefit from doing #3 and #4 as well.</p>
 
 <p><div class="latex"></p>
 
-<h2 id="induction-principle:af81afa25b288e26509ba0728268a3b7">Induction Principle</h2>
+<h2 id="induction-principle">Induction Principle</h2>
 
 <p>Let $P$ be a predicated on $\mathbb{N}$.  If</p>
 
@@ -883,7 +883,7 @@ benefit from doing #3 and #4 as well.</p>
 
 <div class="biggap"></div>
 
-<h3 id="generalizing-to-well-ordered-sets:af81afa25b288e26509ba0728268a3b7">Generalizing to Well-Ordered Sets</h3>
+<h3 id="generalizing-to-well-ordered-sets">Generalizing to Well-Ordered Sets</h3>
 
 <p>We can use Induction for any well-ordered set, where there is an
 operation (like &lsquo;+ 1&rsquo;) and a starting point (like &lsquo;0&rsquo;) that covers the
@@ -893,7 +893,7 @@ whole set.</p>
 
 <div class="biggap"></div>
 
-<h2 id="induction-practice:af81afa25b288e26509ba0728268a3b7">Induction Practice</h2>
+<h2 id="induction-practice">Induction Practice</h2>
 
 <p>Take-Away Game: start with $n$ sticks; at each turn a player must remove
 1, 2 or 3 sticks; player who takes the last stick wins.</p>
