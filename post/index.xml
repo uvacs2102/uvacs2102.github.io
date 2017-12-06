@@ -6,8 +6,36 @@
     <description>Recent content in Post-rsses on cs2102: Discrete Math</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 02 Dec 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 05 Dec 2017 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://uvacs2102.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Class 27: Conclusion</title>
+      <link>https://uvacs2102.github.io/class27/</link>
+      <pubDate>Tue, 05 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/class27/</guid>
+      <description>
+
+&lt;h1 id=&#34;schedule&#34;&gt;Schedule&lt;/h1&gt;
+
+&lt;p&gt;The &lt;strong&gt;Final Exam&lt;/strong&gt; is this Thursday, 7 December, 9am-noon in the
+normal classroom.  See &lt;a href=&#34;https://uvacs2102.github.io/finalexam&#34;&gt;Final Exam Preparation&lt;/a&gt; for advice
+on preparing for the final.&lt;/p&gt;
+
+&lt;p&gt;Prof. Evans will have his usual office hours tomorrow (2:30-3:30pm),
+and most of the TA office hours schedule for Wednesday will be held
+(but check the Slack group for any updates since some TAs may not be
+able to hold office hours tomorrow).&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;
+&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;761611cf8ece4f74a52a3b71ec9c0ff1&#34; data-ratio=&#34;1.77777777777778&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
+   &lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;More of the &lt;a href=&#34;https://uvacs2102.github.io/ps/psomega&#34;&gt;PS &amp;Omega;&lt;/a&gt; submissions will be posted on
+the course site later.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Problem Set 9 Comments</title>
@@ -1027,84 +1055,6 @@ decreases.&lt;/p&gt;
       
       <guid>https://uvacs2102.github.io/ps7comments/</guid>
       <description>&lt;p&gt;The Problem Set 7 solutions and comments are now posted in collab: &lt;a href=&#34;https://collab.its.virginia.edu/access/content/group/9bd99d1c-6f18-4542-a7d1-8ffc4fccbd3d/ps7solutions.pdf&#34;&gt;PDF&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Class 19: Reviewing Infinities</title>
-      <link>https://uvacs2102.github.io/class19/</link>
-      <pubDate>Tue, 31 Oct 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://uvacs2102.github.io/class19/</guid>
-      <description>
-
-&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
-
-&lt;p&gt;&lt;strong&gt;Problem Set 8&lt;/strong&gt; is now due on &lt;strong&gt;Friday, Nov 3&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;
-   &lt;center&gt;
-&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;5db039183a334bca9708c9f6c0d3b9dc&#34; data-ratio=&#34;1.77777777777778&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
-   &lt;/center&gt;
-   &lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;highlightm&#34;&gt;
-   &lt;a href=&#34;https://uvacs2102.github.io/docs/class19.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes&lt;/b&gt;&lt;/a&gt;.
-   &lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;comparing-sets-recap&#34;&gt;Comparing sets Recap:&lt;/h1&gt;
-
-&lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; Sets $A$ and $B$ have the same cardinality, denoted by $|A|=|B|$ if there is a bijection between $A$ and $B$.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; Cardinality of $A$ is at least as big as cardinality of $B$, denoted by $|A|\geq |B|$ if and only if &lt;em&gt;either&lt;/em&gt; of the following is true (they are equivalent).
-\begin{enumerate}
-\item There is a surjective function from $A$ to $B$.
-\item There is a total injective function from $B$ to $A$.
-\end{enumerate}&lt;/p&gt;
-
-&lt;h1 id=&#34;infinite-sets-recap&#34;&gt;Infinite Sets Recap&lt;/h1&gt;
-
-&lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; A set $C$ is &lt;em&gt;infinite&lt;/em&gt; if and only if &lt;em&gt;either&lt;/em&gt; of the following happens (they are all equivalnet).
-\begin{enumerate}&lt;/p&gt;
-
-&lt;p&gt;\item Dedekind-infinite: There is a bijection between $C$ and a strict subset $B$ of $C$.&lt;/p&gt;
-
-&lt;p&gt;\item There is \emph{no} bijection between $C$ and any $\mathbb{N}_k$ for any natural number $ k \in \mathbb{N}$.&lt;/p&gt;
-
-&lt;p&gt;\item There exists a
-  surjective function from $C$ to $\mathbb{N}$.&lt;/p&gt;
-
-&lt;p&gt;\item There exists a total injective function from $\mathbb{N}$  to $C$.
-\end{enumerate}&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; A set $C$ is &lt;em&gt;countable&lt;/em&gt; if and only if there exists a
-  surjective function from $\mathbb{N}$ to $C$.  (That is, $\le 1$ arrow
-  out from $\mathbb{N}$, $\ge 1$ arrow in to $C$.)&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Definition.&lt;/strong&gt; A set $C$ is &lt;em&gt;countably infinite&lt;/em&gt; if and only if there
-  exists a bijection between $C$ and $\mathbb{N}$.&lt;/p&gt;
-
-&lt;h1 id=&#34;cantor-s-theorem&#34;&gt;Cantor&amp;rsquo;s Theorem&lt;/h1&gt;
-
-&lt;p&gt;For &lt;strong&gt;all&lt;/strong&gt; sets, $S$, $| pow(S) | &amp;gt; | S |$.&lt;/p&gt;
-
-&lt;p&gt;What does this mean for $| \mathbb{N} |$?&lt;/p&gt;
-
-&lt;p&gt;#&lt;/p&gt;
-
-&lt;p&gt;Show there is a bijection between $[0, 1]$ and $pow(\mathbb{N})$.&lt;/p&gt;
-
-&lt;p&gt;#&lt;/p&gt;
-
-&lt;p&gt;What is the cardinality of all the real numbers? Show a bijection between $[0, 1]$ and all real numbers. Hint, first show a bijection between $(0, 1)$ and real numbers, and then a bijection between $[0, 1]$ and $(0, 1)$.&lt;/p&gt;
-
-&lt;p&gt;#&lt;/p&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
 </description>
     </item>
     

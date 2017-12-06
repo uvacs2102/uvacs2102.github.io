@@ -6,8 +6,36 @@
     <description>Recent content on cs2102: Discrete Math</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 02 Dec 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 05 Dec 2017 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://uvacs2102.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Class 27: Conclusion</title>
+      <link>https://uvacs2102.github.io/class27/</link>
+      <pubDate>Tue, 05 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/class27/</guid>
+      <description>
+
+&lt;h1 id=&#34;schedule&#34;&gt;Schedule&lt;/h1&gt;
+
+&lt;p&gt;The &lt;strong&gt;Final Exam&lt;/strong&gt; is this Thursday, 7 December, 9am-noon in the
+normal classroom.  See &lt;a href=&#34;https://uvacs2102.github.io/finalexam&#34;&gt;Final Exam Preparation&lt;/a&gt; for advice
+on preparing for the final.&lt;/p&gt;
+
+&lt;p&gt;Prof. Evans will have his usual office hours tomorrow (2:30-3:30pm),
+and most of the TA office hours schedule for Wednesday will be held
+(but check the Slack group for any updates since some TAs may not be
+able to hold office hours tomorrow).&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;
+&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;761611cf8ece4f74a52a3b71ec9c0ff1&#34; data-ratio=&#34;1.77777777777778&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
+   &lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;More of the &lt;a href=&#34;https://uvacs2102.github.io/ps/psomega&#34;&gt;PS &amp;Omega;&lt;/a&gt; submissions will be posted on
+the course site later.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Problem Set 9 Comments</title>
@@ -1161,16 +1189,6 @@ decreases.&lt;/p&gt;
 
 &lt;p&gt;Amazing thing about Euclid&amp;rsquo;s algorithm is that it is indeed quite efficient. A better analysis shows that it will always terminate in $\log (m+n)$ steps. (Hint: show that after two steps, $m$ will be at most &lt;em&gt;half&lt;/em&gt; of what it was before..)
 &lt;/div&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Problem Set 7 Comments</title>
-      <link>https://uvacs2102.github.io/ps7comments/</link>
-      <pubDate>Wed, 01 Nov 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://uvacs2102.github.io/ps7comments/</guid>
-      <description>&lt;p&gt;The Problem Set 7 solutions and comments are now posted in collab: &lt;a href=&#34;https://collab.its.virginia.edu/access/content/group/9bd99d1c-6f18-4542-a7d1-8ffc4fccbd3d/ps7solutions.pdf&#34;&gt;PDF&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
