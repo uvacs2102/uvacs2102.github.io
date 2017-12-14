@@ -1,13 +1,395 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Post-rsses on cs2102: Discrete Math</title>
-    <link>https://uvacs2102.github.io/post/index.xml</link>
-    <description>Recent content in Post-rsses on cs2102: Discrete Math</description>
+    <title>Posts on cs2102: Discrete Math</title>
+    <link>https://uvacs2102.github.io/post/</link>
+    <description>Recent content in Posts on cs2102: Discrete Math</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 05 Dec 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 12 Dec 2017 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://uvacs2102.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Problem Set Omega Highlights</title>
+      <link>https://uvacs2102.github.io/psomega/</link>
+      <pubDate>Tue, 12 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://uvacs2102.github.io/psomega/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://docs.google.com/presentation/d/1CTIa88VLaxBKTWXa4LyntGLLV82HL7m1m1dwwG4rOXs/edit?usp=sharing&#34;&gt;Beauty of bijection&lt;/a&gt;, Leo Wang, Caroline Zhao&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://drive.google.com/file/d/1saH6taXI6MAglggsTBCCLYPvSoIU4USm/view&#34;&gt;Learning relations through game of thrones&lt;/a&gt;, Yaxin Ren&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/O4T5MZCdbNc&#34; frameborder=&#34;0&#34; gesture=&#34;media&#34; allow=&#34;encrypted-media&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;br&gt;
+Fun with sets, set operations and sequences
+&lt;br&gt;
+Sherry Li
+&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/m_g3ezbx_Tg&#34; frameborder=&#34;0&#34; gesture=&#34;media&#34; allow=&#34;encrypted-media&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;br&gt;
+Recursive Life
+&lt;br&gt;
+Wenjie Liu, Jia Tang, Yuxin Ji
+&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://drive.google.com/file/d/1_5SGdUpWWWq-js8XgRIk3NLLo1mU1r1V/view&#34;&gt;Choosing the right door (game&amp;rsquo;s code) - for David Bowie fans&lt;/a&gt;, Samuel McBroom, Saeed Razavi, Jake Smith, James Chen, Daniel Zarco&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/Ybm-3RIXuNw&#34; frameborder=&#34;0&#34; gesture=&#34;media&#34; allow=&#34;encrypted-media&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;br&gt;
+Diffie Hellman key exchange explained
+&lt;br&gt;
+Taylor Rohrich, Cam Lloyd
+&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://tl9jf4.wixsite.com/discretesoccer&#34;&gt;A great site about soccer skills (approved by Dave and Mohammad)&lt;/a&gt;, Angel Lam, Neely Egan&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://drive.google.com/file/d/16LC2oqZ0I0pITjHoINLYB1Jc0q7SD5MI/view?usp=sharing&#34;&gt;Learning number theory through comics&lt;/a&gt;, Arty Kosolwattana&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/vR-XkUZA3s8&#34; frameborder=&#34;0&#34; gesture=&#34;media&#34; allow=&#34;encrypted-media&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;br&gt;
+Logical Operators, Sets, and Harry Potter
+&lt;br&gt;
+Taylor Rauch
+&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://prezi.com/view/2F44nlWiiSMyJAQ0zG4u/&#34;&gt;Finite state Coca Cola machine&lt;/a&gt;, Thomas Shust&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/jXZ-ikjxD4E&#34; frameborder=&#34;0&#34; gesture=&#34;media&#34; allow=&#34;encrypted-media&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;br&gt;
+Teaching logical operators to local (UVa) people
+&lt;br&gt;
+Stephen Palathingal
+&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/qgXCegJHbTw&#34; frameborder=&#34;0&#34; gesture=&#34;media&#34; allow=&#34;encrypted-media&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;br&gt;
+Proof by contradiction vs. proof by contrapositive
+&lt;br&gt;
+Stephanie Tran, Arushi Kumar
+&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/33twy8-uedk&#34; frameborder=&#34;0&#34; gesture=&#34;media&#34; allow=&#34;encrypted-media&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;br&gt;
+A Discrete Mathematicians Guide to Dating
+&lt;br&gt;
+Sarah Lei, Bhavana Channavajjala, Regina Yap
+&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/kbGnVl53Rm0&#34; frameborder=&#34;0&#34; gesture=&#34;media&#34; allow=&#34;encrypted-media&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;br&gt;
+A rap song on state machine
+&lt;br&gt;
+Surbhi Singh, Raghava Pamula, Anoop Sana
+&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/stevephan98/problem-set-omega-F2017&#34;&gt;Playing the game of NIM against computer&lt;/a&gt;, Steve Phan, Aidan Barnes&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/hnzeV9DSLf4&#34; frameborder=&#34;0&#34; gesture=&#34;media&#34; allow=&#34;encrypted-media&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;br&gt;
+Induction Rocks
+&lt;br&gt;
+Selwyn Hector
+&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://siddharthghatti.wixsite.com/cs2102problemseto&#34;&gt;Project Name&lt;/a&gt;, Siddharth Ghatti&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/BykrsRaovRU&#34; frameborder=&#34;0&#34; gesture=&#34;media&#34; allow=&#34;encrypted-media&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;br&gt;
+Jim, the farmer, learns logical operators
+&lt;br&gt;
+Reeya Rabena
+&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/H0Kuhc61y0g&#34; frameborder=&#34;0&#34; gesture=&#34;media&#34; allow=&#34;encrypted-media&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;br&gt;
+007 using WOP
+&lt;br&gt;
+Rahat Maini, Sean Wolfe, John Watkins
+&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://cryptosystems.surge.sh/&#34;&gt;Symmetric Key vs. Asymetric Key Encryption&lt;/a&gt;, Renee Mitchell&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://drive.google.com/file/d/1yscvglzotYLUsXvUt-7yShMkzZ69sMit/view&#34;&gt;Song (Havana) about logical operations&lt;/a&gt;, Peter Tran, Tiffany Nguyen, Jazlene Guevarra, Victor Shen&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/jSAjrxhY0v0&#34; frameborder=&#34;0&#34; gesture=&#34;media&#34; allow=&#34;encrypted-media&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;br&gt;
+Role of Induction in Star Wars
+&lt;br&gt;
+Phillip LeMaster
+&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://drive.google.com/file/d/11qFfXoF44Rp9yAeHtM_Ud_upUvYh4cjQ/view&#34;&gt;Binary operations for UVa students&lt;/a&gt;, Nitika Kataria, Vivian Pham&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://docs.google.com/presentation/d/1mI2ww8tQrMuvsnUOB7qnV2h2VKY33bqibppCFENzCyg/edit?usp=sharing&#34;&gt;Cooking cardinality&lt;/a&gt;, Nick Van Dyke, Trey Nicholls&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/_zUMVNTQicc&#34; frameborder=&#34;0&#34; gesture=&#34;media&#34; allow=&#34;encrypted-media&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;br&gt;
+Rap about Logical expressions
+&lt;br&gt;
+Neha Chopra, Sanjana Hajela, Kajal Sheth
+&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/YdQ-hgqVWyY&#34; frameborder=&#34;0&#34; gesture=&#34;media&#34; allow=&#34;encrypted-media&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;br&gt;
+Explaining discrete math over Thanksgiving dinner
+&lt;br&gt;
+Matthew Jordan
+&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/lpS6KJ_-M5k&#34; frameborder=&#34;0&#34; gesture=&#34;media&#34; allow=&#34;encrypted-media&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;br&gt;
+Beethoven knew discrete math.
+&lt;br&gt;
+Makonnen Makonnen
+&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/E6QleDw2GAM&#34; frameborder=&#34;0&#34; gesture=&#34;media&#34; allow=&#34;encrypted-media&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;br&gt;
+Logical operators animated
+&lt;br&gt;
+Matthew Han
+&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://drive.google.com/file/d/15aFlT_NJJ-BtdoTe_DWv0YdtAdo0Zoaj/view&#34;&gt;Learning discrete math through basketball&lt;/a&gt;, Mick O&amp;rsquo;Hanlon&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://imgur.com/gallery/vgWzv&#34;&gt;The dude from discrete math learns about induction&lt;/a&gt;, Michael Wood&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://soundcloud.com/max-rifkin/discrete-song-copy&#34;&gt;Discrete Song&lt;/a&gt;, Max Rifkin&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://gsrca.de/145864&#34;&gt;Defending earth using discrete intelligence!&lt;/a&gt;, Matthew Cockrell&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/WBKhCF1Qo8A&#34; frameborder=&#34;0&#34; gesture=&#34;media&#34; allow=&#34;encrypted-media&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;br&gt;
+Galois&amp;rsquo;s life Rapped
+&lt;br&gt;
+Megha Batra, Cathy Chang
+&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/S6_I2IyfN3U&#34; frameborder=&#34;0&#34; gesture=&#34;media&#34; allow=&#34;encrypted-media&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;br&gt;
+Well Ordering Principle vs. WOP
+&lt;br&gt;
+Meghan Tonner
+&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/VT0IdZrRHd0?rel=0&#34; frameborder=&#34;0&#34; gesture=&#34;media&#34; allow=&#34;encrypted-media&#34; allowfullscreen&gt;&lt;/iframe&gt;&lt;br&gt;
+Evariste Galois Rap&lt;br&gt;
+Lindsey Shavers, Danielle Newman, Esther Boachie
+&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://cpgeier.github.io/BinaryRelation/&#34;&gt;Binary Relations: An Interactive Diagram&lt;/a&gt;, Christopher Geier, Hamza Ilzyas&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/vIPbHedxaH8?rel=0&#34; frameborder=&#34;0&#34; gesture=&#34;media&#34; allow=&#34;encrypted-media&#34; allowfullscreen&gt;&lt;/iframe&gt;&lt;br&gt;
+Sets using the Animal Kingdom&lt;br&gt;
+Charles &amp;ldquo;Michael&amp;rdquo; Chang
+&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a
+href=&#34;https://docs.google.com/presentation/d/1_fZP0gW8koGsGIVbpTICh0z6qFEa9U2v3Z_e-8fe1c0/&#34;&gt;&lt;em&gt;If
+I had a Proof&lt;/em&gt; (A Song about Proofs and the Wizard of Oz)&lt;/a&gt;, Avery Burton.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://anniesharkeycs2102.weebly.com/&#34;&gt;&lt;em&gt;Alice in LogicalOperatorLand&lt;/em&gt;&lt;/a&gt;, Annie Sharkey.&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/6Js87ft5GKk?rel=0&#34; frameborder=&#34;0&#34; gesture=&#34;media&#34; allow=&#34;encrypted-media&#34; allowfullscreen&gt;&lt;/iframe&gt;&lt;br&gt;
+Well-Ordering Principle is Hard&lt;br&gt;
+Devin Kim
+&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/d4r_oX1AV_c&#34; frameborder=&#34;0&#34; gesture=&#34;media&#34; allow=&#34;encrypted-media&#34; allowfullscreen&gt;&lt;/iframe&gt;&lt;br&gt;
+The Story of Goldilocks and the Three (Boolean) Bears&lt;br&gt;
+Arjun Iyer, Abhishek Shinde, Chiraag Umesh, Vineeth Gaddam
+&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;
+&lt;iframe id=&#34;iframe_container&#34; frameborder=&#34;0&#34; webkitallowfullscreen=&#34;&#34; mozallowfullscreen=&#34;&#34; allowfullscreen=&#34;&#34; width=&#34;550&#34; height=&#34;400&#34; src=&#34;https://prezi.com/embed/00qnugubzfmv/?bgcolor=ffffff&amp;amp;lock_to_path=0&amp;amp;autoplay=0&amp;amp;autohide_ctrls=0&amp;amp;landing_data=bHVZZmNaNDBIWnNjdEVENDRhZDFNZGNIUE1UMXYwb1FkblhtOXJVaVkzakpMWUlIdmpKVFVDNTBCdFVteFMxTUVPQT0&amp;amp;landing_sign=dRj1td8nhgGo8IwM4chp_ee7fyb8iyrX6SwahHZVEaI&#34;&gt;&lt;/iframe&gt;&lt;br&gt;
+Logical Operators for Kids!&lt;br&gt;
+Cory Ayers, Peter Worcester
+&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/XPp2BZdNjuw?rel=0&#34; frameborder=&#34;0&#34; gesture=&#34;media&#34; allow=&#34;encrypted-media&#34; allowfullscreen&gt;&lt;/iframe&gt;&lt;br&gt;
+Super Mario Sunshine and Sets&lt;br&gt;
+Elizabeth Henning
+&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/1JMJ71MbHsQ?rel=0&#34; frameborder=&#34;0&#34; gesture=&#34;media&#34; allow=&#34;encrypted-media&#34; allowfullscreen&gt;&lt;/iframe&gt;&lt;br&gt;
+Well-Ordering Mystery&lt;br&gt;
+Eimara Mirza
+&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/83plYG3Ew08&#34; frameborder=&#34;0&#34; gesture=&#34;media&#34; allow=&#34;encrypted-media&#34; allowfullscreen&gt;&lt;/iframe&gt;&lt;br&gt;
+Well-Ordering Principle (in terms of Food)&lt;br&gt;
+Emily Zou
+&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/lqRk7t-HFqw?rel=0&#34; frameborder=&#34;0&#34; gesture=&#34;media&#34; allow=&#34;encrypted-media&#34; allowfullscreen&gt;&lt;/iframe&gt;&lt;br&gt;
+Discrete Math in Everyday Life&lt;br&gt;
+Franklin Amaya and Aiden Smith
+&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://docs.google.com/presentation/d/1NWvhZmvyyiKJt5X1bpT75-bkroHDtchznWn0rF0txQI/&#34;&gt;Handsome squidward (as a state machine)&lt;/a&gt;, Gia-Han Nguyen&lt;/p&gt;
+
+&lt;p&gt;&lt;a
+href=&#34;https://drive.google.com/file/d/1a7p3yBr8FKF28xZEWNGiEeJoONDJAEd2/view&#34;&gt;Proven:
+A Murder Mystery&lt;/a&gt; (Galois Musical!), Jared Taylor&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/wCxYlllEBto?rel=0&#34; frameborder=&#34;0&#34; gesture=&#34;media&#34; allow=&#34;encrypted-media&#34; allowfullscreen&gt;&lt;/iframe&gt;&lt;Br&gt;
+The Infinite Dorm: The Ordering of Countably Infinite Sets EXPLAINED&lt;br&gt;
+Grace Wu, Sandy Gould, Kelly Xie, Helen Lin, Ryan Yi, Ruolin Chen
+&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://docs.google.com/presentation/d/1Bc8a9l8MKLeLbva5oTxI-9l9xmV3GD4yMhALtv2xV-s/&#34;&gt;Logical Operators: A guide for current and
+prospective Feline owners&lt;/a&gt;, Helen Lim, Angelica Lavan&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/p0z8Yw8S5E0?rel=0&#34; frameborder=&#34;0&#34; gesture=&#34;media&#34; allow=&#34;encrypted-media&#34; allowfullscreen&gt;&lt;/iframe&gt;&lt;br&gt;
+Hopscotch State Macine&lt;br&gt;
+Kelly McKee
+&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/B0dVd2xCmq8?rel=0&#34; frameborder=&#34;0&#34; gesture=&#34;media&#34; allow=&#34;encrypted-media&#34; allowfullscreen&gt;&lt;/iframe&gt;&lt;br&gt;
+Logical Operators in the Constitution&lt;br&gt;
+Habib Karaky, Kunal Chandak, Rishabh Nagpal, Shivani Saboo
+&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/geBYVDUAPKo?rel=0&#34; frameborder=&#34;0&#34; gesture=&#34;media&#34; allow=&#34;encrypted-media&#34; allowfullscreen&gt;&lt;/iframe&gt;&lt;br&gt;
+State Machines&lt;br&gt;
+Isabel Kershner, Emily Roberts
+&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/d-fYrCaiaCA?rel=0&#34; frameborder=&#34;0&#34; gesture=&#34;media&#34; allow=&#34;encrypted-media&#34; allowfullscreen&gt;&lt;/iframe&gt;&lt;br&gt;
+Set Relations&lt;br&gt;
+Isaac Roberts, Siddhant Goel
+&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.docdroid.net/ZvKtUo3/cs-optional-problem-set.pdf&#34;&gt;Stall Seat Journal&lt;/s&gt;, Jessica Kain&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/_eWIqimX_E8?rel=0&#34; frameborder=&#34;0&#34; gesture=&#34;media&#34; allow=&#34;encrypted-media&#34; allowfullscreen&gt;&lt;/iframe&gt;&lt;br&gt;
+Discrete Mario&lt;br&gt;
+James Hamil
+&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://prezi.com/view/U0W0WspCSReEcqzOCuF9/&#34;&gt;Finite State Machines&lt;/a&gt;, Jack Workman&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/-kDoen8_Ta8?rel=0&#34; frameborder=&#34;0&#34; gesture=&#34;media&#34; allow=&#34;encrypted-media&#34; allowfullscreen&gt;&lt;/iframe&gt;&lt;br&gt;
+Rock Paper Scissors State Machines&lt;br&gt;
+Juan Palacio, Halsing Nordin
+&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://docs.google.com/document/d/1mWD8XjPvH1gkYj9Cvt9mvZ5qxyiHeNsjz18SPqZyC-w/&#34;&gt;&lt;em&gt;The Fault in the Math: John Green and Infinity&lt;/em&gt;&lt;/a&gt;, Joseph Kim&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://drive.google.com/file/d/1mMMzeSHmFSkr8AeBMpE3MNDZ_Pcxg1Si/view&#34;&gt;Rosie Learns Recursion&lt;/a&gt;, Jillian DeWoody&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/yhGlQeqzjXw?rel=0&#34; frameborder=&#34;0&#34; gesture=&#34;media&#34; allow=&#34;encrypted-media&#34; allowfullscreen&gt;&lt;/iframe&gt;&lt;br&gt;
+Boolean Operators&lt;br&gt;
+John Perez
+&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/gdiCL4kzdC0?rel=0&#34; frameborder=&#34;0&#34; gesture=&#34;media&#34; allow=&#34;encrypted-media&#34; allowfullscreen&gt;&lt;/iframe&gt;&lt;br&gt;
+Recursive Radio&lt;br&gt;
+Marcha Kiatrungrit, Cal Ries
+&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/EMp9v2fJlD0?rel=0&#34; frameborder=&#34;0&#34; gesture=&#34;media&#34; allow=&#34;encrypted-media&#34; allowfullscreen&gt;&lt;/iframe&gt;&lt;br&gt;
+Basketball and State Machine&lt;Br&gt;
+Terry
+&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://drive.google.com/file/d/1WOF159Bq-M-rpTs0025D07KmKaNtW6hD/view&#34;&gt;Cartesian Products&lt;/a&gt;, Kelsey Irwin&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;
+&lt;iframe id=&#34;iframe_container&#34; frameborder=&#34;0&#34; webkitallowfullscreen=&#34;&#34; mozallowfullscreen=&#34;&#34; allowfullscreen=&#34;&#34; width=&#34;550&#34; height=&#34;400&#34; src=&#34;https://prezi.com/embed/taigpu2oxyj8/?bgcolor=ffffff&amp;amp;lock_to_path=0&amp;amp;autoplay=0&amp;amp;autohide_ctrls=0&amp;amp;landing_data=bHVZZmNaNDBIWnNjdEVENDRhZDFNZGNIUE1UMXYwb1FkblhtOXJVaVkzalB6TW11ZWxoS0k4elM1N3VFRGw5UWd0Yz0&amp;amp;landing_sign=TavQykd5PoBeYwBQAoYyO3J2PicF_MGGRHS-Dri3QtA&#34;&gt;&lt;/iframe&gt;&lt;br&gt;
+Inference Rules: A Guide to Soundness&lt;br&gt;
+Carl Zhang, Peter Felland
+&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/IL8iUZ533iE?rel=0&#34; frameborder=&#34;0&#34; gesture=&#34;media&#34; allow=&#34;encrypted-media&#34; allowfullscreen&gt;&lt;/iframe&gt;&lt;br&gt;
+Relations and Music&lt;br&gt;
+Daniel Seymour
+&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a
+href=&#34;https://docs.google.com/presentation/d/1zOonRSw-pRbs-NPkwJCl1xCygsEtyxZxKKzPcSEysvs/edit?usp=sharing&#34;&gt;Discrete
+Math Jeopardy&lt;/a&gt;, Anna Davis, Lavonte Brown&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/sU6X-d16wlg?rel=0&#34; frameborder=&#34;0&#34; gesture=&#34;media&#34; allow=&#34;encrypted-media&#34; allowfullscreen&gt;&lt;/iframe&gt;&lt;br&gt;
+Lieutenant Confusion&lt;Br&gt;
+Andrew Zhang
+&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/rez3J2wtLXA?rel=0&#34; frameborder=&#34;0&#34; gesture=&#34;media&#34; allow=&#34;encrypted-media&#34; allowfullscreen&gt;&lt;/iframe&gt;&lt;br&gt;
+Recursive Hershey Bars&lt;br&gt;
+Bailey Snead
+&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://cs2102chessapp.herokuapp.com/&#34;&gt;Chess App&lt;/a&gt;, Branden Kim, Shirley Wang&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://docs.google.com/presentation/d/1fUYkh66hd1wzdiaZmN0wgi8f-QrZmP9EdkGFqzUpRnw/&#34;&gt;Escaping the Monster, by induction!
+&lt;/a&gt;, Joseph Park, Conner Hutson, Jared Tufts&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/lbM91fuLpwY?rel=0&#34; frameborder=&#34;0&#34; gesture=&#34;media&#34; allow=&#34;encrypted-media&#34; allowfullscreen&gt;&lt;/iframe&gt;&lt;br&gt;
+Trump-Putin Key Exchange&lt;br&gt;
+Carter McGhee
+&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;
+&lt;iframe src=&#34;https://player.vimeo.com/video/245800003&#34; width=&#34;640&#34; height=&#34;360&#34; frameborder=&#34;0&#34; webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;&lt;br&gt;
+A Guide to Writing Proofs for Discrete Math&lt;br&gt;
+Kaelyn Carroll, Joshua You
+&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/pzEhVw2Rf7U?rel=0&#34; frameborder=&#34;0&#34; gesture=&#34;media&#34; allow=&#34;encrypted-media&#34; allowfullscreen&gt;&lt;/iframe&gt;&lt;br&gt;
+A Night On the Corner State Machine&lt;br&gt;
+Kristina Colevas
+&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/pMGaj3-6Ppk?rel=0&#34; frameborder=&#34;0&#34; gesture=&#34;media&#34; allow=&#34;encrypted-media&#34; allowfullscreen&gt;&lt;/iframe&gt;&lt;br&gt;
+Relatable State Machines&lt;br&gt;
+Luke Emanuel, William Tonks
+&lt;/center&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Class 27: Conclusion</title>
@@ -83,7 +465,7 @@ your notes.  The page should be no larger than a US Letter size page
 (8.5 x 11 inches), and you may write (or print) on both sides
 of the page.&lt;/p&gt;
 
-&lt;h2 id=&#34;expected-problems&#34;&gt;Expected Problems&lt;/h2&gt;
+&lt;h2 id=&#34;expected-problems:35f28dd49fe771bd44d8a7242e69309d&#34;&gt;Expected Problems&lt;/h2&gt;
 
 &lt;p&gt;Although the exam covers the whole class, you should not be surprised
 if it includes problems for you to demonstrate:&lt;/p&gt;
@@ -125,7 +507,7 @@ reason about properties of prime and composite numbers, Abelian
 groups and fields.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;practice-exam&#34;&gt;Practice Exam&lt;/h2&gt;
+&lt;h2 id=&#34;practice-exam:35f28dd49fe771bd44d8a7242e69309d&#34;&gt;Practice Exam&lt;/h2&gt;
 
 &lt;p&gt;The exam from last year&amp;rsquo;s course is available here:
 [&lt;a href=&#34;https://uvacs2102.github.io/docs/practicefinal.pdf&#34;&gt;PDF&lt;/a&gt;].  All of the questions from last
@@ -186,7 +568,7 @@ details) by &lt;strong&gt;5:559pm&lt;/strong&gt; on &lt;strong&gt;Monday, 4 Dece
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;recall&#34;&gt;Recall&lt;/h1&gt;
+&lt;h1 id=&#34;recall:0b3606b96b9e0d788111e5c141f3acac&#34;&gt;Recall&lt;/h1&gt;
 
 &lt;p&gt;Last time, we went tover two basic counting problems. In both problems, we counted how many ways we can choose $k$ elements from ${1,\dots,n}$ whe the order of selection does matter; namely, we counted \emph{sequences} of length $k$. If repetition was allowed, the answer was $n^k$ (using the product rule) and if the repetition was not allowed, the answer was $n (n-1) \dots (n-k+1) = n!/(n-k)!$ using the generalized product rule.&lt;/p&gt;
 
@@ -194,7 +576,7 @@ details) by &lt;strong&gt;5:559pm&lt;/strong&gt; on &lt;strong&gt;Monday, 4 Dece
 
 &lt;p&gt;&lt;strong&gt;Division Rule&lt;/strong&gt;. If $f \colon A \to B$ is a $k$ to $1$ (total surjective) function, and if $A,B$ are finite sets then, $|A| = k \cdot |B|$.&lt;/p&gt;
 
-&lt;h1 id=&#34;counting-when-order-does-not-matter&#34;&gt;Counting  when order does not matter&lt;/h1&gt;
+&lt;h1 id=&#34;counting-when-order-does-not-matter:0b3606b96b9e0d788111e5c141f3acac&#34;&gt;Counting  when order does not matter&lt;/h1&gt;
 
 &lt;p&gt;The number of subsets of size $k$ of  ${1,\dots,n}$ captures a counting problem in which the order of the $k$
  selected elements does not matter. This is denoted by ${n \choose k}$ and as we show, is equal to ${n \choose k} = \frac{n!}{k! (n-k)!}$.&lt;/p&gt;
@@ -215,7 +597,7 @@ details) by &lt;strong&gt;5:559pm&lt;/strong&gt; on &lt;strong&gt;Monday, 4 Dece
 
 &lt;p&gt;#&lt;/p&gt;
 
-&lt;h2 id=&#34;basics-of-probability&#34;&gt;Basics of Probability&lt;/h2&gt;
+&lt;h2 id=&#34;basics-of-probability:0b3606b96b9e0d788111e5c141f3acac&#34;&gt;Basics of Probability&lt;/h2&gt;
 
 &lt;p&gt;Probability theory is one of the richest and most beautiful mathematical theories with enormous applications. Here we take a very brief look at it, by using our counting techniques for estimating the &amp;ldquo;chance&amp;rdquo; of certaing &amp;ldquo;outcomes&amp;rdquo;.&lt;/p&gt;
 
@@ -225,7 +607,7 @@ details) by &lt;strong&gt;5:559pm&lt;/strong&gt; on &lt;strong&gt;Monday, 4 Dece
 \item Suppose we do not put back the item that we selected in the previous example. Now, if we take another item, what is the chance that it is a donut \emph{conditioned} on the first item being a bagel?
 \end{itemize}&lt;/p&gt;
 
-&lt;h1 id=&#34;sample-space-and-event&#34;&gt;Sample Space and Event&lt;/h1&gt;
+&lt;h1 id=&#34;sample-space-and-event:0b3606b96b9e0d788111e5c141f3acac&#34;&gt;Sample Space and Event&lt;/h1&gt;
 
 &lt;p&gt;The sample space $\Omega=  {x_1,\dots,x_n }$ includes all the possible outcomes and their own specific probability $\Pr[x&lt;em&gt;i]$, while the total summation is $1=\sum&lt;/em&gt;{x\in \Omega} \Pr[x&lt;em&gt;i]$. An Event $E$ is simply a subset of the sample space $E \subseteq \Omega$, and its probability is defined to be $\Pr[E] = \sum&lt;/em&gt;{x \in E} \Pr[x]$.&lt;/p&gt;
 
@@ -237,7 +619,7 @@ details) by &lt;strong&gt;5:559pm&lt;/strong&gt; on &lt;strong&gt;Monday, 4 Dece
 \item What is the probability of $B$?
 \end{itemize}&lt;/p&gt;
 
-&lt;h1 id=&#34;conditional-probability&#34;&gt;Conditional Probability&lt;/h1&gt;
+&lt;h1 id=&#34;conditional-probability:0b3606b96b9e0d788111e5c141f3acac&#34;&gt;Conditional Probability&lt;/h1&gt;
 
 &lt;p&gt;For two events $E,C$, the probability of $E$ hapenning \emph{conditioned} on $C$ happenin is denoted by $\Pr[E \mid C]$ and equal to
 $$\Pr[E \mid C] = \frac{\Pr[E \cap C]}{\Pr[C]}.$$&lt;/p&gt;
@@ -258,7 +640,7 @@ $$\Pr[E \mid C] = \frac{\Pr[E \cap C]}{\Pr[C]}.$$&lt;/p&gt;
       <guid>https://uvacs2102.github.io/class25/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule:48c09636ef2a37766db0522980dbf8fc&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;Reminder for the schedule for the rest of the semester:&lt;/p&gt;
 
@@ -287,7 +669,7 @@ $$\Pr[E \mid C] = \frac{\Pr[E \cap C]}{\Pr[C]}.$$&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;examples&#34;&gt;Examples&lt;/h1&gt;
+&lt;h1 id=&#34;examples:48c09636ef2a37766db0522980dbf8fc&#34;&gt;Examples&lt;/h1&gt;
 
 &lt;p&gt;Today, we want to be able to answer the following questions. The first two are already discussed in class, but we will study them more generally.
 \begin{enumerate}
@@ -308,7 +690,7 @@ finite cardinality from Class 9, to study these questions. Namely, we
 try to find another set $B$ whose cardinality is known, and that there
 is a bijection between $A$ and $B$.&lt;/p&gt;
 
-&lt;h1 id=&#34;why-counting&#34;&gt;Why Counting?&lt;/h1&gt;
+&lt;h1 id=&#34;why-counting:48c09636ef2a37766db0522980dbf8fc&#34;&gt;Why Counting?&lt;/h1&gt;
 
 &lt;p&gt;Being able to count (exactly or even approximately) is important for many reasons, some of which are:
 \begin{itemize}
@@ -317,7 +699,7 @@ is a bijection between $A$ and $B$.&lt;/p&gt;
 \item Counting is the fundamental to probability theory.
 \end{itemize}&lt;/p&gt;
 
-&lt;h1 id=&#34;counting-rules&#34;&gt;Counting Rules&lt;/h1&gt;
+&lt;h1 id=&#34;counting-rules:48c09636ef2a37766db0522980dbf8fc&#34;&gt;Counting Rules&lt;/h1&gt;
 
 &lt;p&gt;&lt;strong&gt;Product Rule&lt;/strong&gt; If $A_1,\dots,A_n$ are finite sets, then the size of their cartesian product is
 $$|A_1 \times \dots \times A_n| = |A_1| \cdot |A_2| \dots |A_n| $$&lt;/p&gt;
@@ -354,7 +736,7 @@ possibilities).&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Division Rule&lt;/strong&gt;. If $f \colon A \to B$ is a $k$ to $1$ (total surjective) function, and if $A,B$ are finite sets then, $|A| = k \cdot |B|$.&lt;/p&gt;
 
-&lt;h1 id=&#34;counting-when-order-does-not-matter&#34;&gt;Counting when order does not matter&lt;/h1&gt;
+&lt;h1 id=&#34;counting-when-order-does-not-matter:48c09636ef2a37766db0522980dbf8fc&#34;&gt;Counting when order does not matter&lt;/h1&gt;
 
 &lt;p&gt;The number of subsets of size $k$ of  ${1,\dots,n}$ captures a counting problem in which the order of the $k$
  selected elements does not matter. This number is so important that has its own notation ${n \choose k}$.&lt;/p&gt;
@@ -427,7 +809,7 @@ collaboration policy carefully.&lt;/p&gt;
       <guid>https://uvacs2102.github.io/class23/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule:5745b40601045f50f1418eebe2f9ce59&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;Here&amp;rsquo;s the updated (and final) schedule for the rest of the semester:&lt;/p&gt;
 
@@ -439,7 +821,7 @@ collaboration policy carefully.&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;notpdf&#34;&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;galois&#34;&gt;Galois&lt;/h2&gt;
+&lt;h2 id=&#34;galois:5745b40601045f50f1418eebe2f9ce59&#34;&gt;Galois&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://plus.maths.org/content/genius-stupidity-and-genius-again&#34;&gt;&lt;em&gt;Genius, stupidity and genius again&lt;/em&gt;&lt;/a&gt; (the short life of Evariste Galois), by Tope Omitola.&lt;/p&gt;
 
@@ -455,7 +837,7 @@ collaboration policy carefully.&lt;/p&gt;
 &lt;p&gt;&lt;/div&gt;&lt;!--endpdf--&gt;
    &lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;modular-arithmetic&#34;&gt;Modular Arithmetic&lt;/h2&gt;
+&lt;h2 id=&#34;modular-arithmetic:5745b40601045f50f1418eebe2f9ce59&#34;&gt;Modular Arithmetic&lt;/h2&gt;
 
 &lt;p&gt;Definition: A number $a$ is &lt;em&gt;congruent&lt;/em&gt; to $b$ modulo $n$ if and only
 if $n\, | \, (a - b)$.  We can write this as $a \equiv b \;\;
@@ -466,7 +848,7 @@ if $n\, | \, (a - b)$.  We can write this as $a \equiv b \;\;
 
 &lt;p&gt;#&lt;/p&gt;
 
-&lt;h2 id=&#34;groups-rings-and-fields&#34;&gt;Groups, Rings, and Fields&lt;/h2&gt;
+&lt;h2 id=&#34;groups-rings-and-fields:5745b40601045f50f1418eebe2f9ce59&#34;&gt;Groups, Rings, and Fields&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;Abelian group:&lt;/strong&gt; set $R$, with a binary operation $+$:&lt;br /&gt;
    associative, commutative, additive identity (&lt;strong&gt;0&lt;/strong&gt;), additive inverse ($−a$)&lt;/p&gt;
@@ -903,7 +1285,7 @@ $$ \forall q \in S. (P(q) \wedge (q \rightarrow r) \in G) \implies P&amp;reg;$$&
       <guid>https://uvacs2102.github.io/class20/</guid>
       <description>
 
-&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule:dcf75d114d0b27f85507ff1ab741294c&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://uvacs2102.github.io/ps/ps8&#34;&gt;&lt;strong&gt;Problem Set 8&lt;/strong&gt;&lt;/a&gt; is due &lt;strong&gt;Friday at 6:29pm&lt;/strong&gt;.&lt;/p&gt;
 
@@ -916,7 +1298,7 @@ $$ \forall q \in S. (P(q) \wedge (q \rightarrow r) \in G) \implies P&amp;reg;$$&
 &lt;li&gt;More than 10 requests implies we should spend Thursday’s class on reviewing requested topics, no exam exemptions.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;exam-2&#34;&gt;Exam 2&lt;/h3&gt;
+&lt;h3 id=&#34;exam-2:dcf75d114d0b27f85507ff1ab741294c&#34;&gt;Exam 2&lt;/h3&gt;
 
 &lt;p&gt;Exam 2 will be in class on Thursday, 9 Nov.  You can get a good
 idea for what to expect on Exam 2 based on Exam 1, and also by looking at the &lt;a href=&#34;https://uvacs2102.github.io/docs/practiceexam2.pdf&#34;&gt;Practice Exam
@@ -964,7 +1346,7 @@ benefit from doing #3 and #4 as well.&lt;/p&gt;
    &lt;a href=&#34;https://uvacs2102.github.io/docs/class20.pdf&#34;&gt;See PDF Version for &lt;b&gt;Notes and Questions&lt;/b&gt;&lt;/a&gt;.
    &lt;/div&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
+&lt;h2 id=&#34;links:dcf75d114d0b27f85507ff1ab741294c&#34;&gt;Links&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Goldbach%27s_conjecture&#34;&gt;Goldbach&amp;rsquo;s conjecture&lt;/a&gt;&lt;/p&gt;
 
@@ -976,7 +1358,7 @@ benefit from doing #3 and #4 as well.&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;divisibility&#34;&gt;Divisibility&lt;/h2&gt;
+&lt;h2 id=&#34;divisibility:dcf75d114d0b27f85507ff1ab741294c&#34;&gt;Divisibility&lt;/h2&gt;
 
 &lt;p&gt;Number theory is a study of integers $\mathbb{Z}={0,-1,1,-2,2,\dots}$. Adding, multiplying, and negating, are 3 operators on integers that we can define in a straight-forward way. Dividing is more tricky. For that, we first define the notation $a \mid b$ to denote the simpler situation where $b = k \cdot a$ for some $k \in \mathbb{Z}$. In this case, we say that $a$ is a &lt;em&gt;divisor&lt;/em&gt; of $b$ and that $b$ is a &lt;em&gt;multiple&lt;/em&gt; of $a$.&lt;/p&gt;
 
@@ -1000,7 +1382,7 @@ where $p&lt;em&gt;i &amp;lt; p&lt;/em&gt;{i+1}$ and $p_i$ is prime for all $i$.&
 
 &lt;p&gt;Hint for proof: Use strong induction on $n$, and try to show that any two different representations for $n$ will have the same `smallest&amp;rsquo; prime $p_1$ and the same power $a_1$ for $p_1$.&lt;/p&gt;
 
-&lt;h2 id=&#34;easy-to-state-but-hard-to-solve-problems&#34;&gt;Easy-to-state, but hard-to-solve problems&lt;/h2&gt;
+&lt;h2 id=&#34;easy-to-state-but-hard-to-solve-problems:dcf75d114d0b27f85507ff1ab741294c&#34;&gt;Easy-to-state, but hard-to-solve problems&lt;/h2&gt;
 
 &lt;p&gt;In number theory, we can easily state problems that are super hard to solve. These are some examples.&lt;/p&gt;
 
@@ -1010,13 +1392,13 @@ where $p&lt;em&gt;i &amp;lt; p&lt;/em&gt;{i+1}$ and $p_i$ is prime for all $i$.&
 
 &lt;p&gt;&lt;strong&gt;Fermat&amp;rsquo;s last theorem:&lt;/strong&gt; For any integer $n&amp;gt;2$ there are no integers $a,b,c$ where $a^n + b^n = c^n$. Note that for $n=2$ there are integer solutions like $3^2 + 4^2 = 5^2$. Fermat claimed to have a proof, but nobody knows if he really did or not. Andrew Wiles eventually proved this in 1994, hence we call it a &lt;em&gt;theorem&lt;/em&gt; and not a conjecture anymore.&lt;/p&gt;
 
-&lt;h2 id=&#34;greatest-common-divisor&#34;&gt;Greatest Common Divisor&lt;/h2&gt;
+&lt;h2 id=&#34;greatest-common-divisor:dcf75d114d0b27f85507ff1ab741294c&#34;&gt;Greatest Common Divisor&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;Definition&lt;/strong&gt; For natural numbers $m,n&amp;gt;0$ we call $d&amp;gt;0$ their \emph{greatest common divisor}, denoted by $d=gcd(m,n)$ if $d$ is the largest number such that $d \mid m$ and $d \mid n$. (Make sure to verify why we can always say that such $d$ exists.)&lt;/p&gt;
 
 &lt;p&gt;We can use the fundamental theorem of arithmetic, to &lt;em&gt;compute&lt;/em&gt; the gcd of any given pairs of integers. But how efficient is it? The problem is that factoring numbers $m,n$ into their prime factors is not something we know how to do efficiently. In particular, no known algorithm is guaranteed to factor all numbers with $1000,000$ digits in less than an (estimated) thousand years! The conjecture is that no such `efficient&amp;rsquo; algorithm exists, and many cryptographic algorithms &lt;em&gt;assume&lt;/em&gt; this is the case!&lt;/p&gt;
 
-&lt;h2 id=&#34;euclid-s-algorithm&#34;&gt;Euclid&amp;rsquo;s Algorithm&lt;/h2&gt;
+&lt;h2 id=&#34;euclid-s-algorithm:dcf75d114d0b27f85507ff1ab741294c&#34;&gt;Euclid&amp;rsquo;s Algorithm&lt;/h2&gt;
 
 &lt;p&gt;Despite not knowing how to factor integers efficiently, Euclid showed how to find gcd quite efficiently. This shows, even if the most ``natural&amp;rdquo; algorithm fails for doing something efficiently, we should always consider the possibility that an alternative way could still exist.&lt;/p&gt;
 
@@ -1045,16 +1427,6 @@ decreases.&lt;/p&gt;
 
 &lt;p&gt;Amazing thing about Euclid&amp;rsquo;s algorithm is that it is indeed quite efficient. A better analysis shows that it will always terminate in $\log (m+n)$ steps. (Hint: show that after two steps, $m$ will be at most &lt;em&gt;half&lt;/em&gt; of what it was before..)
 &lt;/div&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Problem Set 7 Comments</title>
-      <link>https://uvacs2102.github.io/ps7comments/</link>
-      <pubDate>Wed, 01 Nov 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://uvacs2102.github.io/ps7comments/</guid>
-      <description>&lt;p&gt;The Problem Set 7 solutions and comments are now posted in collab: &lt;a href=&#34;https://collab.its.virginia.edu/access/content/group/9bd99d1c-6f18-4542-a7d1-8ffc4fccbd3d/ps7solutions.pdf&#34;&gt;PDF&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
