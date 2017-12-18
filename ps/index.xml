@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ps on cs2102: Discrete Math</title>
-    <link>https://uvacs2102.github.io/ps/</link>
-    <description>Recent content in Ps on cs2102: Discrete Math</description>
+    <title>Ps-rsses on cs2102: Discrete Math</title>
+    <link>https://uvacs2102.github.io/ps/index.xml</link>
+    <description>Recent content in Ps-rsses on cs2102: Discrete Math</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 19 Nov 2017 00:00:00 +0000</lastBuildDate>
@@ -33,7 +33,7 @@ single, readable PDF file on the collab site before &lt;strong&gt;6:29pm&lt;/str
 
 &lt;p&gt;&lt;em&gt;Version:&lt;/em&gt; updated 21 November 2017 (just fixing typos, cosmetic changes, and added $\star$ for problem 9).&lt;/p&gt;
 
-&lt;h3 id=&#34;collaboration-policy-collaboration-policy-identical-to-ps5:8a4d4dedc1ccaf65c5e582a2df1d4b81&#34;&gt;Collaboration Policy - Collaboration Policy (identical to PS5)&lt;/h3&gt;
+&lt;h3 id=&#34;collaboration-policy-collaboration-policy-identical-to-ps5&#34;&gt;Collaboration Policy - Collaboration Policy (identical to PS5)&lt;/h3&gt;
 
 &lt;p&gt;For this assignment, you may work in groups of one to three students
 to write-up a solution together.  If you work with teammates, exactly
@@ -45,7 +45,7 @@ completely on your own.&lt;/em&gt; All teammates must review the submissions
 before it is submitted to make sure you understand everything on it
 and that your name and UVA id are clearly marked on it.&lt;/p&gt;
 
-&lt;h2 id=&#34;preparation:8a4d4dedc1ccaf65c5e582a2df1d4b81&#34;&gt;Preparation&lt;/h2&gt;
+&lt;h2 id=&#34;preparation&#34;&gt;Preparation&lt;/h2&gt;
 
 &lt;p&gt;This problem set focuses on number theory &amp;mdash; Chapter 9 of the MCS book,
 and &lt;a href=&#34;https://uvacs2102.github.io/class20&#34;&gt;Classes 20&lt;/a&gt;, &lt;a href=&#34;https://uvacs2102.github.io/class22&#34;&gt;22&lt;/a&gt;, and &lt;a href=&#34;https://uvacs2102.github.io/class23&#34;&gt;23&lt;/a&gt;.&lt;/p&gt;
@@ -64,11 +64,11 @@ Your response should be submitted as a single PDF file using collab.  Please rea
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;directions:8a4d4dedc1ccaf65c5e582a2df1d4b81&#34;&gt;Directions&lt;/h2&gt;
+&lt;h2 id=&#34;directions&#34;&gt;Directions&lt;/h2&gt;
 
 &lt;p&gt;Solve all the 9 problems.  Your answers should be clear, consise, and convincing.&lt;/p&gt;
 
-&lt;h3 id=&#34;wily-theorem:8a4d4dedc1ccaf65c5e582a2df1d4b81&#34;&gt;Wily Theorem&lt;/h3&gt;
+&lt;h3 id=&#34;wily-theorem&#34;&gt;Wily Theorem&lt;/h3&gt;
 
 &lt;ol&gt;
 &lt;li&gt;&lt;p&gt;Fermat&amp;rsquo;s last theorem, proved by Andrew Wiles in 1994, states that: for any natural $n&amp;gt;2$ there are \emph{no} natural numbers $a,b,c$ such that
@@ -80,7 +80,7 @@ Assuming Fermat&amp;rsquo;s theorem, give a simple proof that $\sqrt[n]{2}$ is \
 
 &lt;!--page--&gt;
 
-&lt;h1 id=&#34;fast-exponentiation:8a4d4dedc1ccaf65c5e582a2df1d4b81&#34;&gt;Fast Exponentiation&lt;/h1&gt;
+&lt;h1 id=&#34;fast-exponentiation&#34;&gt;Fast Exponentiation&lt;/h1&gt;
 
 &lt;ol&gt;
 &lt;li&gt;&lt;p&gt;In the Diffie Hellman key-exchange protocol described in &lt;a href=&#34;https://uvacs2102.github.io/class23&#34;&gt;Class 23&lt;/a&gt;, Alice and Bob need to compute $g^x \mod p$ and $g^y \mod p$ for some  $1 \leq g,x,y \leq p-1$. Suppose $p$ is a (prime) number that has 1000 bits when represented in binary.&lt;/p&gt;
@@ -101,7 +101,7 @@ Assuming Fermat&amp;rsquo;s theorem, give a simple proof that $\sqrt[n]{2}$ is \
 &lt;p&gt;(b) Describe a modified version of the &amp;ldquo;Fast Exponentiation Program&amp;rdquo; in Section 6.3.1 of the book that is useful computing $g^x \mod p$. How many multiplications does this program do in maximum  to obtain $g^x$ for an arbitrary $1\leq x\leq p-1$ for a 1000 digit $p$?&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h3 id=&#34;abelian-groups:8a4d4dedc1ccaf65c5e582a2df1d4b81&#34;&gt;Abelian Groups&lt;/h3&gt;
+&lt;h3 id=&#34;abelian-groups&#34;&gt;Abelian Groups&lt;/h3&gt;
 
 &lt;p&gt;For each set ($R$) and operator ($P$) described below, explain why it
 is not an Abelian group (defined in &lt;a href=&#34;https://uvacs2102.github.io/class22&#34;&gt;Class 22&lt;/a&gt;). Your answer
@@ -118,7 +118,7 @@ properties.&lt;/p&gt;
 and which element has no inverse?)&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h3 id=&#34;fields:8a4d4dedc1ccaf65c5e582a2df1d4b81&#34;&gt;Fields&lt;/h3&gt;
+&lt;h3 id=&#34;fields&#34;&gt;Fields&lt;/h3&gt;
 
 &lt;p&gt;For each set ($R$) and first and second operations ($P&lt;em&gt;+$,
 $P&lt;/em&gt;\times$), answer if the set and operations are a &lt;em&gt;field&lt;/em&gt; (as
@@ -138,7 +138,7 @@ $P&lt;/em&gt;\times = { (\sharp, \sharp) \rightarrow \sharp, (\sharp, \flat) \ri
 &lt;li&gt;&lt;p&gt;$R = \mathbb{N}&lt;em&gt;{31}, P&lt;/em&gt;+ = \times\; (\text{mod}\, 31), P_\times = +\; (\text{mod}\, 31)$.&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h2 id=&#34;field-properties:8a4d4dedc1ccaf65c5e582a2df1d4b81&#34;&gt;Field Properties&lt;/h2&gt;
+&lt;h2 id=&#34;field-properties&#34;&gt;Field Properties&lt;/h2&gt;
 
 &lt;ol&gt;
 &lt;li&gt;&lt;p&gt;($\star$) Suppose $R$ is an arbitrary field with some additive and multiplicative operations $P&lt;em&gt;+, P&lt;/em&gt;\times$. Suppose we are given any $a,b,c\in R$ where $a \neq 0$; namely, $a$ is not the additive identity element (usually denoted with $0$). Then prove  that there is a unique solution for variable $x \in R$ that satisfies $(a ~P&lt;em&gt;\times~ x) ~P&lt;/em&gt;+~ b = c$.&lt;/p&gt;
@@ -175,7 +175,7 @@ single, readable PDF file on the collab site before &lt;strong&gt;6:29pm&lt;/str
    &lt;/div&gt;
    &lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;collaboration-policy-collaboration-policy-identical-to-ps5:23fad65aaed5381e6da046590b749cce&#34;&gt;Collaboration Policy - Collaboration Policy (identical to PS5)&lt;/h3&gt;
+&lt;h3 id=&#34;collaboration-policy-collaboration-policy-identical-to-ps5&#34;&gt;Collaboration Policy - Collaboration Policy (identical to PS5)&lt;/h3&gt;
 
 &lt;p&gt;For this assignment, you may work in groups of one to three students
 to write-up a solution together.  If you work with teammates, exactly
@@ -187,7 +187,7 @@ completely on your own.&lt;/em&gt; All teammates must review the submissions
 before it is submitted to make sure you understand everything on it
 and that your name and UVA id are clearly marked on it.&lt;/p&gt;
 
-&lt;h2 id=&#34;preparation:23fad65aaed5381e6da046590b749cce&#34;&gt;Preparation&lt;/h2&gt;
+&lt;h2 id=&#34;preparation&#34;&gt;Preparation&lt;/h2&gt;
 
 &lt;p&gt;This problem set focuses on infinite sets &amp;mdash; Chapter 8 of the MCS book,
 and &lt;a href=&#34;https://uvacs2102.github.io/class17&#34;&gt;Class 17&lt;/a&gt;, &lt;a href=&#34;https://uvacs2102.github.io/class18&#34;&gt;Class 18&lt;/a&gt;.&lt;/p&gt;
@@ -206,11 +206,11 @@ Your response should be submitted as a single PDF file using collab.  Please rea
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;directions:23fad65aaed5381e6da046590b749cce&#34;&gt;Directions&lt;/h2&gt;
+&lt;h2 id=&#34;directions&#34;&gt;Directions&lt;/h2&gt;
 
 &lt;p&gt;Solve all 8 problems.  Your answers should be clear, consise, and convincing.&lt;/p&gt;
 
-&lt;h3 id=&#34;countable-sets:23fad65aaed5381e6da046590b749cce&#34;&gt;Countable Sets&lt;/h3&gt;
+&lt;h3 id=&#34;countable-sets&#34;&gt;Countable Sets&lt;/h3&gt;
 
 &lt;p&gt;For each set defined below, prove that the set described is &lt;em&gt;countable&lt;/em&gt;.&lt;/p&gt;
 
@@ -224,7 +224,7 @@ for &lt;em&gt;some&lt;/em&gt; natural number $k&amp;gt;0$, and $G \subseteq S \t
 otherwise unrestricted. (Note that here we are &lt;em&gt;not&lt;/em&gt; working with a fixed $k$, and for example machines with  $S = \mathbb{N}_2$ and machines with $S = \mathbb{N}_9$ are both counted in the set $X$).&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h3 id=&#34;possibly-countable-sets:23fad65aaed5381e6da046590b749cce&#34;&gt;Possibly Countable Sets&lt;/h3&gt;
+&lt;h3 id=&#34;possibly-countable-sets&#34;&gt;Possibly Countable Sets&lt;/h3&gt;
 
 &lt;p&gt;For each set defined below, determine if the set is &lt;em&gt;countable&lt;/em&gt; or
 &lt;em&gt;uncountable&lt;/em&gt; and support your answer with a convincing proof.&lt;/p&gt;
@@ -242,7 +242,7 @@ otherwise unrestricted. (Note that here we are &lt;em&gt;not&lt;/em&gt; working 
 otherwise unrestricted.&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h3 id=&#34;properties-of-infinite-sets:23fad65aaed5381e6da046590b749cce&#34;&gt;Properties of Infinite Sets&lt;/h3&gt;
+&lt;h3 id=&#34;properties-of-infinite-sets&#34;&gt;Properties of Infinite Sets&lt;/h3&gt;
 
 &lt;ol&gt;
 &lt;li&gt;&lt;p&gt;In class 17 we defined a set $C$ to be countable, if there is a surjective function $f: \mathbb{N} \rightarrow C$. Prove that we get an equivalent definition if we call $C$ countable whenever then there is a &lt;em&gt;total&lt;/em&gt; surjective function, $$f: \mathbb{N} \rightarrow C.$$
@@ -351,7 +351,7 @@ natural number.&lt;/p&gt;
 
 &lt;p&gt;\begin{equation&lt;em&gt;}
 \begin{split}
-\qquad &amp;amp; \text{\bf null}: \text{\em Tree} \
+\qquad &amp;amp; \text{\bf null}: \text{\em Tree} &lt;br /&gt;
        &amp;amp; \text{node}: \text{\em Tree} \times \mathbb{N} \times \text{\em Tree} \rightarrow \text{\em Tree}
 \end{split}
 \end{equation&lt;/em&gt;}&lt;/p&gt;
@@ -361,11 +361,11 @@ natural number.&lt;/p&gt;
 &lt;p&gt;The meaning of the operations is defined for all trees $t_1, t_2$, and all $n \in \mathbb{N}$, by:
 \begin{equation&lt;em&gt;}
 \begin{split}
-\text{label}: \text{\em Tree} \rightarrow \mathbb{N} \colon \qquad &amp;amp; \text{label}(\text{node}(t_1, n, t_2)) \rightarrow n \
-\text{left}: \text{\em Tree} \rightarrow \text{\em Tree} \colon  \qquad &amp;amp; \text{left}(\text{node}(t_1, n, t_2)) \rightarrow t_1 \
-\text{right}: \text{\em Tree} \rightarrow \text{\em Tree} \colon \qquad &amp;amp; \text{right}(\text{node}(t_1, n, t_2)) \rightarrow t_2 \
-\text{empty}: \text{\em Tree} \rightarrow { \T, \F } \colon  \qquad &amp;amp; \text{empty}(\text{\bf null}) \rightarrow \T \
-\qquad &amp;amp; \text{empty}(\text{node}(t_1, n, t_2) \rightarrow \F \
+\text{label}: \text{\em Tree} \rightarrow \mathbb{N} \colon \qquad &amp;amp; \text{label}(\text{node}(t_1, n, t_2)) \rightarrow n &lt;br /&gt;
+\text{left}: \text{\em Tree} \rightarrow \text{\em Tree} \colon  \qquad &amp;amp; \text{left}(\text{node}(t_1, n, t_2)) \rightarrow t_1 &lt;br /&gt;
+\text{right}: \text{\em Tree} \rightarrow \text{\em Tree} \colon \qquad &amp;amp; \text{right}(\text{node}(t_1, n, t_2)) \rightarrow t_2 &lt;br /&gt;
+\text{empty}: \text{\em Tree} \rightarrow { \T, \F } \colon  \qquad &amp;amp; \text{empty}(\text{\bf null}) \rightarrow \T &lt;br /&gt;
+\qquad &amp;amp; \text{empty}(\text{node}(t_1, n, t_2) \rightarrow \F &lt;br /&gt;
 \end{split}
 \end{equation&lt;/em&gt;}&lt;/p&gt;
 
@@ -392,8 +392,8 @@ the in-order traversal of the tree shown below would be the list $(4, 8,
 &lt;p&gt;We can define $\text{traverse}$ to produce a (prepend) list as follows (note the $+$ operation here is list concatenation, as defined in &lt;a href=&#34;https://uvacs2102.github.io/class16&#34;&gt;Class 16&lt;/a&gt;) :
 \begin{equation&lt;em&gt;}
 \begin{split}
-&amp;amp; \text{traverse}(\text{\bf null}) = \text{\bf null} \
-&amp;amp; \text{traverse}(\text{node}(t_1, n, t_2)) = \text{traverse}(t_1) + \text{prepend}(n, \text{traverse}(t_2)) \
+&amp;amp; \text{traverse}(\text{\bf null}) = \text{\bf null} &lt;br /&gt;
+&amp;amp; \text{traverse}(\text{node}(t_1, n, t_2)) = \text{traverse}(t_1) + \text{prepend}(n, \text{traverse}(t_2)) &lt;br /&gt;
 \end{split}
 \end{equation&lt;/em&gt;}&lt;/p&gt;
 
@@ -842,7 +842,7 @@ generated by LaTeX or Word).
    &lt;/div&gt;
    &lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;collaboration-policy:b76405d9586591cdb5f2d99cbfaaec12&#34;&gt;Collaboration Policy&lt;/h3&gt;
+&lt;h3 id=&#34;collaboration-policy&#34;&gt;Collaboration Policy&lt;/h3&gt;
 
 &lt;p&gt;The collaboration policy is identical to what it was on previous
 assignments (for example see &lt;a href=&#34;https://uvacs2102.github.io/ps/ps3&#34;&gt;PS3&lt;/a&gt;), so is not included
@@ -850,7 +850,7 @@ here. The only change is that except instead of learning something
 interesting about anyone you work with&amp;rsquo;s home town, this time you
 should learn about the first music that was important to them.&lt;/p&gt;
 
-&lt;h2 id=&#34;preparation:b76405d9586591cdb5f2d99cbfaaec12&#34;&gt;Preparation&lt;/h2&gt;
+&lt;h2 id=&#34;preparation&#34;&gt;Preparation&lt;/h2&gt;
 
 &lt;p&gt;This problem set focuses on the parts of Chapter 4 of the MCS book
 that we covered in &lt;a href=&#34;https://uvacs2102.github.io/class7&#34;&gt;Class 7&lt;/a&gt; and &lt;a href=&#34;https://uvacs2102.github.io/class8&#34;&gt;Class 8&lt;/a&gt;. So it
@@ -871,13 +871,13 @@ Your response should be submitted as a single PDF file using collab.  Please rea
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;directions:b76405d9586591cdb5f2d99cbfaaec12&#34;&gt;Directions&lt;/h2&gt;
+&lt;h2 id=&#34;directions&#34;&gt;Directions&lt;/h2&gt;
 
 &lt;p&gt;Solve as many of the problems as you can.
 For maximum credit, your
 answers should be correct, clear, well-written, and convincing.&lt;/p&gt;
 
-&lt;h1 id=&#34;sets:b76405d9586591cdb5f2d99cbfaaec12&#34;&gt;Sets&lt;/h1&gt;
+&lt;h1 id=&#34;sets&#34;&gt;Sets&lt;/h1&gt;
 
 &lt;ol&gt;
 &lt;li&gt;For each set $S$ defined below, indicate whether or not it is
@@ -919,7 +919,7 @@ $$ \overline{A \cup B} = \overline{A} \cap \overline{B} $$
 for any sets $A,B$ and a universe $U$ where $A \subseteq U$ and $B  \subseteq U$.&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h1 id=&#34;functions-and-relations:b76405d9586591cdb5f2d99cbfaaec12&#34;&gt;Functions and Relations&lt;/h1&gt;
+&lt;h1 id=&#34;functions-and-relations&#34;&gt;Functions and Relations&lt;/h1&gt;
 
 &lt;ol&gt;
 &lt;li&gt;For each expression below, identify a &lt;em&gt;domain&lt;/em&gt; and &lt;em&gt;codomain&lt;/em&gt; that
@@ -1011,7 +1011,7 @@ generated by LaTeX or Word).
    &lt;/div&gt;
    &lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;collaboration-policy:b29158b067a206a408f4a3d38e1dbe1a&#34;&gt;Collaboration Policy&lt;/h3&gt;
+&lt;h3 id=&#34;collaboration-policy&#34;&gt;Collaboration Policy&lt;/h3&gt;
 
 &lt;p&gt;The collaboration policy is identical to what it was on previous
 assignments (for example see &lt;a href=&#34;https://uvacs2102.github.io/ps/ps2&#34;&gt;PS2&lt;/a&gt;), so is not included
@@ -1020,7 +1020,7 @@ interesting about anyone you work with&amp;rsquo;s favorite book, for this
 problem set you should learn something surprising about their home
 town.&lt;/p&gt;
 
-&lt;h2 id=&#34;preparation:b29158b067a206a408f4a3d38e1dbe1a&#34;&gt;Preparation&lt;/h2&gt;
+&lt;h2 id=&#34;preparation&#34;&gt;Preparation&lt;/h2&gt;
 
 &lt;p&gt;This problem set focuses on Chapter 3 (especially 3.4-3.6) of the MCS
 book, and &lt;a href=&#34;https://uvacs2102.github.io/class5&#34;&gt;Class 5&lt;/a&gt; and &lt;a href=&#34;https://uvacs2102.github.io/class6&#34;&gt;Class 6&lt;/a&gt; (which include
@@ -1040,7 +1040,7 @@ Your response should be submitted as a single PDF file &lt;a href=&#34;https://c
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;directions:b29158b067a206a408f4a3d38e1dbe1a&#34;&gt;Directions&lt;/h2&gt;
+&lt;h2 id=&#34;directions&#34;&gt;Directions&lt;/h2&gt;
 
 &lt;p&gt;For maximum credit, your answers should be correct, clear, tasteful,
 well-written, and convincing.  The problem (11) marked with $(\star)$
@@ -1048,7 +1048,7 @@ is challenging enough that it is not necessary to solve it well to get
 a ``green-star level&amp;rdquo; grade on this assignment (although we certainly
 hope you will try and some will succeed!)&lt;/p&gt;
 
-&lt;h1 id=&#34;quantified-formulas:b29158b067a206a408f4a3d38e1dbe1a&#34;&gt;Quantified Formulas&lt;/h1&gt;
+&lt;h1 id=&#34;quantified-formulas&#34;&gt;Quantified Formulas&lt;/h1&gt;
 
 &lt;p&gt;State if the the given (quantified) propositions are &lt;em&gt;true&lt;/em&gt; or
 &lt;em&gt;false&lt;/em&gt;.  You should provide a brief argument supporting your answer
@@ -1064,7 +1064,7 @@ integers = ${0, 1, 2, \cdots }$.&lt;/p&gt;
 &lt;li&gt;&lt;p&gt;$\forall F \in \textrm{CNF}\ldotp \exists G \in \textrm{DNF}\ldotp F \equiv G.$ The notation $F \equiv G$ denotes that $F$ and $G$ are logically equivalent. Also, CNF is the set of all CNF formulas and DNF is the set of all DNF formulas.&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h1 id=&#34;negating-quantified-formulas:b29158b067a206a408f4a3d38e1dbe1a&#34;&gt;Negating Quantified Formulas&lt;/h1&gt;
+&lt;h1 id=&#34;negating-quantified-formulas&#34;&gt;Negating Quantified Formulas&lt;/h1&gt;
 
 &lt;ol&gt;
 &lt;li&gt;Write the negation of the quantified formula of problem 1:
@@ -1073,7 +1073,7 @@ y + 1.$$ (Note that if the original proposition was true, you now get
 a false one, and vice versa.)&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h2 id=&#34;conjunctive-normal-form:b29158b067a206a408f4a3d38e1dbe1a&#34;&gt;Conjunctive Normal Form&lt;/h2&gt;
+&lt;h2 id=&#34;conjunctive-normal-form&#34;&gt;Conjunctive Normal Form&lt;/h2&gt;
 
 &lt;ol&gt;
 &lt;li&gt;&lt;p&gt;Write a logical formula in Conjuctive Normal Form that is equivalent to:
@@ -1105,7 +1105,7 @@ below.&lt;/p&gt;&lt;/li&gt;
 \end{circuitikz}
 \end{center}&lt;/p&gt;
 
-&lt;h2 id=&#34;logical-equivalences:b29158b067a206a408f4a3d38e1dbe1a&#34;&gt;Logical Equivalences&lt;/h2&gt;
+&lt;h2 id=&#34;logical-equivalences&#34;&gt;Logical Equivalences&lt;/h2&gt;
 
 &lt;p&gt;Determine if the following statements are logically equivalent, and
 support your answer with a clear, convincing, and concise proof.&lt;/p&gt;
@@ -1116,7 +1116,7 @@ support your answer with a clear, convincing, and concise proof.&lt;/p&gt;
 &lt;li&gt;&lt;p&gt;$Q \implies (P \implies R) \qquad \textrm{and} \qquad (Q \implies P) \implies R$&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h2 id=&#34;satisfaction:b29158b067a206a408f4a3d38e1dbe1a&#34;&gt;Satisfaction&lt;/h2&gt;
+&lt;h2 id=&#34;satisfaction&#34;&gt;Satisfaction&lt;/h2&gt;
 
 &lt;p&gt;The length of the 3CNF formula is the number of clauses, and no clause
 may be repeated.  (The order of literals within a clause doesn&amp;rsquo;t matter,
@@ -1165,7 +1165,7 @@ generated by LaTeX or Word).
    &lt;/div&gt;
    &lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;collaboration-policy-similar-to-problem-set-1:e879021a243163cdf3d1d9f61ef73807&#34;&gt;Collaboration Policy (similar to Problem Set 1)&lt;/h3&gt;
+&lt;h3 id=&#34;collaboration-policy-similar-to-problem-set-1&#34;&gt;Collaboration Policy (similar to Problem Set 1)&lt;/h3&gt;
 
 &lt;p&gt;Remember to follow the &lt;a href=&#34;https://uvacs2102.github.io/pledge&#34;&gt;course pledge&lt;/a&gt; you read and signed at
 the beginning of the semester.  For this assignment, you may discuss
@@ -1197,7 +1197,7 @@ something private with you).&lt;/p&gt;
 &lt;p&gt;You are &lt;b&gt;strongly encouraged&lt;/b&gt; to start early and take advantage of
 the scheduled &lt;a href=&#34;https://uvacs2102.github.io/officehours&#34;&gt;office hours&lt;/a&gt; for this course.&lt;/p&gt;
 
-&lt;h2 id=&#34;preparation:e879021a243163cdf3d1d9f61ef73807&#34;&gt;Preparation&lt;/h2&gt;
+&lt;h2 id=&#34;preparation&#34;&gt;Preparation&lt;/h2&gt;
 
 &lt;p&gt;This problem set focuses on Chapter 2 and Chapter 3 (through 3.4) of the
 MCS book, and &lt;a href=&#34;https://uvacs2102.github.io/class3&#34;&gt;Class 3&lt;/a&gt; and &lt;a href=&#34;https://uvacs2102.github.io/class4&#34;&gt;Class 4&lt;/a&gt;.&lt;/p&gt;
@@ -1216,14 +1216,14 @@ Your response should be &lt;a href=&#34;https://collab.its.virginia.edu/portal/s
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;directions:e879021a243163cdf3d1d9f61ef73807&#34;&gt;Directions&lt;/h2&gt;
+&lt;h2 id=&#34;directions&#34;&gt;Directions&lt;/h2&gt;
 
 &lt;p&gt;Solve all 10 problems that follow.  For full credit, your
 answers should be correct, clear, well-written, and convincing.&lt;/p&gt;
 
 &lt;p&gt;(Updated: 4 Sept 2017 - reworded question 2 to avoid use of $\prec$.)&lt;/p&gt;
 
-&lt;h2 id=&#34;un-well-ordered-sets:e879021a243163cdf3d1d9f61ef73807&#34;&gt;(Un)Well-Ordered Sets&lt;/h2&gt;
+&lt;h2 id=&#34;un-well-ordered-sets&#34;&gt;(Un)Well-Ordered Sets&lt;/h2&gt;
 
 &lt;p&gt;For each of these question, answer if the given set is
 &lt;em&gt;well-ordered&lt;/em&gt; with respect to the given specific comparator. Support your answer with a brief, but clear and
@@ -1243,7 +1243,7 @@ know exist because of the well-ordering principle on the integers!), $a
 = \frac{p}{q}$, $b = \frac{r}{s}$. Then, we announce $a \prec b$ if and only if $2^p 8^q &amp;lt; 2^r 8^s$. (Hint: does this even define an ordering?)&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h2 id=&#34;well-ordering-principle-proofs-and-non-proofs:e879021a243163cdf3d1d9f61ef73807&#34;&gt;Well-Ordering Principle Proofs (and Non-Proofs)&lt;/h2&gt;
+&lt;h2 id=&#34;well-ordering-principle-proofs-and-non-proofs&#34;&gt;Well-Ordering Principle Proofs (and Non-Proofs)&lt;/h2&gt;
 
 &lt;ol&gt;
 &lt;li&gt;&lt;p&gt;MCS Problem 2.2 (explain clearly which proof step is invalid and why).&lt;/p&gt;&lt;/li&gt;
@@ -1255,7 +1255,7 @@ make any bet.  Prove that all integer bets from \$1 to \$2$^{k + 1} - 1$ can
 be made.&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h2 id=&#34;logical-operators:e879021a243163cdf3d1d9f61ef73807&#34;&gt;Logical Operators&lt;/h2&gt;
+&lt;h2 id=&#34;logical-operators&#34;&gt;Logical Operators&lt;/h2&gt;
 
 &lt;ol&gt;
 &lt;li&gt;&lt;p&gt;MCS Problem 3.9.&lt;/p&gt;&lt;/li&gt;
@@ -1264,7 +1264,7 @@ be made.&lt;/p&gt;&lt;/li&gt;
 answer with a convincing, concise justification.&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h2 id=&#34;logical-formulas:e879021a243163cdf3d1d9f61ef73807&#34;&gt;Logical Formulas&lt;/h2&gt;
+&lt;h2 id=&#34;logical-formulas&#34;&gt;Logical Formulas&lt;/h2&gt;
 
 &lt;ol&gt;
 &lt;li&gt;&lt;p&gt;For the following formula, specify whether it is &lt;em&gt;valid&lt;/em&gt;, &lt;em&gt;satisfiable&lt;/em&gt;, &lt;em&gt;both&lt;/em&gt; valid and satisfiable, or &lt;em&gt;neither&lt;/em&gt; valid nor satisfiable:
@@ -1309,7 +1309,7 @@ generated by LaTeX). Please make sure the PDF you submit is redable (see &lt;a h
    &lt;/div&gt;
    &lt;/div&gt;&lt;!--endpdf--&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;collaboration-policy-read-carefully:939ea9b9cc2ea0226c5f2d7200883cc7&#34;&gt;Collaboration Policy - Read Carefully&lt;/h3&gt;
+&lt;h3 id=&#34;collaboration-policy-read-carefully&#34;&gt;Collaboration Policy - Read Carefully&lt;/h3&gt;
 
 &lt;p&gt;Remember to follow the &lt;a href=&#34;https://uvacs2102.github.io/pledge&#34;&gt;course pledge&lt;/a&gt; you read and signed at
 the beginning of the semester.  For this assignment, you may discuss
@@ -1341,7 +1341,7 @@ something private with you).&lt;/p&gt;
 &lt;p&gt;You are &lt;b&gt;strongly encouraged&lt;/b&gt; to start early and take advantage of
 the scheduled &lt;a href=&#34;https://uvacs2102.github.io/officehours&#34;&gt;office hours&lt;/a&gt; for this course.&lt;/p&gt;
 
-&lt;h2 id=&#34;preparation:939ea9b9cc2ea0226c5f2d7200883cc7&#34;&gt;Preparation&lt;/h2&gt;
+&lt;h2 id=&#34;preparation&#34;&gt;Preparation&lt;/h2&gt;
 
 &lt;p&gt;This problem set focuses on Chapter 1 of the MCS book, and &lt;a href=&#34;https://uvacs2102.github.io/class1&#34;&gt;Class
 1&lt;/a&gt; and &lt;a href=&#34;https://uvacs2102.github.io/class2&#34;&gt;Class 2&lt;/a&gt;.&lt;/p&gt;
@@ -1360,14 +1360,14 @@ Your response should be submitted as a single PDF file using collab: &lt;a href=
 
 &lt;p&gt;&lt;div class=&#34;latex&#34;&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;directions:939ea9b9cc2ea0226c5f2d7200883cc7&#34;&gt;Directions&lt;/h2&gt;
+&lt;h2 id=&#34;directions&#34;&gt;Directions&lt;/h2&gt;
 
 &lt;p&gt;Solve all the problems on the next page.  For full credit, your answers
 should be correct, clear, well-written, and convincing.&lt;/p&gt;
 
 &lt;!--page--&gt;
 
-&lt;h2 id=&#34;proofs-and-certification:939ea9b9cc2ea0226c5f2d7200883cc7&#34;&gt;Proofs and Certification&lt;/h2&gt;
+&lt;h2 id=&#34;proofs-and-certification&#34;&gt;Proofs and Certification&lt;/h2&gt;
 
 &lt;p&gt;The introduction for the MCS book states,&lt;/p&gt;
 
@@ -1386,7 +1386,7 @@ your answer with a short justification.&lt;/p&gt;&lt;/li&gt;
 always behave correctly&amp;rdquo;.  Argue that this is not a correct statement.&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h2 id=&#34;inference-rules:939ea9b9cc2ea0226c5f2d7200883cc7&#34;&gt;Inference Rules&lt;/h2&gt;
+&lt;h2 id=&#34;inference-rules&#34;&gt;Inference Rules&lt;/h2&gt;
 
 &lt;p&gt;For each candidate rule below, state whether or not the rule is sound.
 Support your answer with a convincing proof. The variables $P$, $Q$,
@@ -1404,7 +1404,7 @@ and $R$ are Boolean propositions (either &lt;strong&gt;true&lt;/strong&gt; or &l
 &lt;li&gt;&lt;p&gt;$\infer{Q \implies NOT(P)}{P \implies NOT(P)}$&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h2 id=&#34;proofs:939ea9b9cc2ea0226c5f2d7200883cc7&#34;&gt;Proofs&lt;/h2&gt;
+&lt;h2 id=&#34;proofs&#34;&gt;Proofs&lt;/h2&gt;
 
 &lt;ol&gt;
 &lt;li&gt;&lt;p&gt;The proof that $\sqrt{2}$ is irrational (Theorem 1.8.1) in the
@@ -1448,7 +1448,7 @@ deadline is &lt;strong&gt;Monday, 4 December&lt;/strong&gt; at &lt;strong&gt;11:
    &lt;/div&gt;
 --&gt;
 
-&lt;h3 id=&#34;collaboration-policy:5e934397c98d5d8dd1b69fa0eaae1c8c&#34;&gt;Collaboration Policy&lt;/h3&gt;
+&lt;h3 id=&#34;collaboration-policy&#34;&gt;Collaboration Policy&lt;/h3&gt;
 
 &lt;p&gt;For this assignment, you may work alone or with as many other people
 as you choose. If you work in a team, your team should jointly post a
@@ -1465,12 +1465,12 @@ expected from a single student). You are welcome to include people not
 in the class in your team (and they do not increase the value of &lt;span
 class=&#34;math&#34;&gt;&lt;em&gt;N&lt;/em&gt;&lt;/span&gt;).&lt;/p&gt;
 
-&lt;h2 id=&#34;goal:5e934397c98d5d8dd1b69fa0eaae1c8c&#34;&gt;Goal&lt;/h2&gt;
+&lt;h2 id=&#34;goal&#34;&gt;Goal&lt;/h2&gt;
 
 &lt;p&gt;Create an artifact that conveys some idea related to this class to a
 selected target audience.&lt;/p&gt;
 
-&lt;h3 id=&#34;target-audience:5e934397c98d5d8dd1b69fa0eaae1c8c&#34;&gt;Target Audience&lt;/h3&gt;
+&lt;h3 id=&#34;target-audience&#34;&gt;Target Audience&lt;/h3&gt;
 
 &lt;p&gt;You can define your target audience but should specify what it
 is. Examples of target audiences include &amp;ldquo;five year olds&amp;rdquo;, &amp;ldquo;typical
@@ -1486,7 +1486,7 @@ cake, build a quantum computer, or develop a time machine) you should
 still make some description of your artifact (including a picture if
 helpful) that can be posted.&lt;/p&gt;
 
-&lt;h2 id=&#34;submission:5e934397c98d5d8dd1b69fa0eaae1c8c&#34;&gt;Submission&lt;/h2&gt;
+&lt;h2 id=&#34;submission&#34;&gt;Submission&lt;/h2&gt;
 
 &lt;p&gt;You should submit your artifact by use this web form:
 &lt;center&gt;
@@ -1507,7 +1507,7 @@ helpful) that can be posted.&lt;/p&gt;
   submission that explains and justifies your decisions (otherwise,
   you will lose points for any technical inaccuracies).&lt;/p&gt;
 
-&lt;h2 id=&#34;optional-presentation:5e934397c98d5d8dd1b69fa0eaae1c8c&#34;&gt;Optional Presentation&lt;/h2&gt;
+&lt;h2 id=&#34;optional-presentation&#34;&gt;Optional Presentation&lt;/h2&gt;
 
 &lt;p&gt;If you would like to present, perform, or share your artifact in class
 on 5 December (the last day of class), you must submit your request by
@@ -1518,7 +1518,7 @@ teams that want to present to do so, so selection will be done based
 on what you submit with an emphasis on things that will be worthwhile
 or enjoyable for the whole class.&lt;/p&gt;
 
-&lt;h2 id=&#34;evaluation-criteria:5e934397c98d5d8dd1b69fa0eaae1c8c&#34;&gt;Evaluation Criteria&lt;/h2&gt;
+&lt;h2 id=&#34;evaluation-criteria&#34;&gt;Evaluation Criteria&lt;/h2&gt;
 
 &lt;p&gt;Since this is an &amp;ldquo;optional&amp;rdquo; assignment, submissions that are not
 considered to have significant value will not be worth any credit. To
@@ -1532,13 +1532,13 @@ audience.  Aesthetic merit, entertainment value, and creativity are
 also important, but only in as much as they support the goal of
 conveying an idea from discrete math to your target audience.&lt;/p&gt;
 
-&lt;h2 id=&#34;motivating-examples:5e934397c98d5d8dd1b69fa0eaae1c8c&#34;&gt;Motivating Examples&lt;/h2&gt;
+&lt;h2 id=&#34;motivating-examples&#34;&gt;Motivating Examples&lt;/h2&gt;
 
 &lt;p&gt;To give you some ideas, here are some examples of things students have
 done in past years for similar assignments (including some from
 classes other than cs2102).&lt;/p&gt;
 
-&lt;h3 id=&#34;cs2102-fall-2016:5e934397c98d5d8dd1b69fa0eaae1c8c&#34;&gt;cs2102 Fall 2016&lt;/h3&gt;
+&lt;h3 id=&#34;cs2102-fall-2016&#34;&gt;cs2102 Fall 2016&lt;/h3&gt;
 
 &lt;p&gt;(You can see a larger selection of submissions from Fall 2016 here: &lt;a href=&#34;https://uvacs2102.github.io/f16/pszhighlights&#34;&gt;psZhighlights&lt;/a&gt;.)&lt;/p&gt;
 
@@ -1577,7 +1577,7 @@ State Machines and Breakdancing&lt;br&gt;
 Recursive Music&lt;br&gt;
 Jiahong Chen, WenBin Qi&lt;/p&gt;
 
-&lt;h3 id=&#34;other-classes:5e934397c98d5d8dd1b69fa0eaae1c8c&#34;&gt;Other Classes&lt;/h3&gt;
+&lt;h3 id=&#34;other-classes&#34;&gt;Other Classes&lt;/h3&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://www.cs.virginia.edu/~evans/cs1120-f11/conveying-computing-highlights&#34;&gt;&lt;em&gt;Conveying Computing&lt;/em&gt;&lt;/a&gt; (cs1120: Computing: Language, Logic, Machines, Fall 2011)&lt;/p&gt;
 
